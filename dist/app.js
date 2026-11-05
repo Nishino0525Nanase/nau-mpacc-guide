@@ -591,6 +591,11 @@
     emit('guide_open', {id:s.id});
   }
 
+  function openQuietLetter() {
+    const page = $('#quiet-letter-template');
+    if (page?.innerHTML.trim()) openDialog('纸页背面', `<article class="quiet-letter-page">${page.innerHTML}</article>`, 'quiet-letter');
+  }
+
   function openDialog(eyebrow, html, type = '') {
     if (!dialog.open) {
       state.lastFocus = document.activeElement;
@@ -675,6 +680,7 @@
     if (action) {
       const id = action.dataset.id;
       switch(action.dataset.action) {
+        case 'quiet-letter': openQuietLetter(); break;
         case 'compare-toggle': toggleCompare(id); break;
         case 'compare-open': openComparison(); break;
         case 'compare-clear': clearCompare(); break;
