@@ -2,7 +2,7 @@
 'use strict';
 const BASE = new URL('./', self.location.href);
 const CACHE_PREFIX = `nau-guide:${BASE.pathname}:`;
-const CACHE_NAME = `${CACHE_PREFIX}1.0.5-music1`;
+const CACHE_NAME = `${CACHE_PREFIX}1.0.6-embedded-music1`;
 const DATA_PATH = 'data/site-data.json';
 const SHELL_PATHS = [
   './', 'index.html', 'app.js', 'music.js', 'style.css', 'install.js', 'favicon.svg',
@@ -33,7 +33,9 @@ async function usable(response, isData) {
   if (!isData) return true;
   try {
     const value = await response.clone().json();
-    return Array.isArray(value.mentors) && Array.isArray(value.lifeChapters) && Array.isArray(value.socialPosts) && Array.isArray(value.musicPlaylist?.tracks);
+    return Array.isArray(value.mentors) && Array.isArray(value.lifeChapters) && Array.isArray(value.socialPosts)
+      && Array.isArray(value.musicPlaylist?.tracks) && value.musicPlaylist.tracks.length > 0
+      && value.musicPlaylist.tracks.every(track => typeof track.audioUrl === 'string' && track.audioUrl.startsWith('./media/music/'));
   } catch (_) { return false; }
 }
 

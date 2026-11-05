@@ -566,7 +566,7 @@
     },
     "appEdition": {
       "web": {
-        "version": "1.0.5"
+        "version": "1.0.6"
       },
       "android": {
         "available": true,
@@ -45007,6 +45007,9 @@
         "album": "异类",
         "version": "专辑版",
         "durationSeconds": 237.0,
+        "audioUrl": "./media/music/hcy-world-zoo.mp3",
+        "audioBytes": 3882434,
+        "audioSha256": "6a35f61b84d804bd90ab17f9a6c85ea46c3c968cdf4f65be7b9ecd47608e276d",
         "fileNameAliases": [
           "世界是个动物园-华晨宇-异类.mp3",
           "世界是个动物园.mp3",
@@ -45033,6 +45036,9 @@
         "album": "希忘Hope",
         "version": "专辑版",
         "durationSeconds": 357.1,
+        "audioUrl": "./media/music/hcy-when-flowers-fall.mp3",
+        "audioBytes": 5780693,
+        "audioSha256": "fb783536b04fa95fb5cb572a9023a79225a5ec5439042ebae6b3cc7e1dcdbe84",
         "fileNameAliases": [
           "花落时相遇-华晨宇-希忘Hope.mp3",
           "花落时相遇.mp3",
@@ -45059,6 +45065,9 @@
         "album": "希忘Hope",
         "version": "专辑版",
         "durationSeconds": 275.4,
+        "audioUrl": "./media/music/hcy-sunrise.mp3",
+        "audioBytes": 4473328,
+        "audioSha256": "54238da871726edf32a0293a72629bc6c4181d088a52cd37c70ca2f57eb6cc42",
         "fileNameAliases": [
           "走 一起去看日出吧-华晨宇-希忘Hope.mp3",
           "走，一起去看日出吧.mp3",
@@ -45085,6 +45094,9 @@
         "album": "量变临界点",
         "version": "专辑版",
         "durationSeconds": 304.4,
+        "audioUrl": "./media/music/hcy-sea-of-wind.mp3",
+        "audioBytes": 4906704,
+        "audioSha256": "d23861b7f50e6763ea8269df639246c96fccbf3d12c1a3891490a515d88ebd10",
         "fileNameAliases": [
           "风之海-华晨宇-量变临界点.mp3",
           "风之海.mp3",
@@ -45111,6 +45123,9 @@
         "album": "华晨宇日出演唱会特辑",
         "version": "现场版",
         "durationSeconds": 361.1,
+        "audioUrl": "./media/music/hcy-bullfight-live.mp3",
+        "audioBytes": 6224770,
+        "audioSha256": "f32766b3395d140dee6d02f38559ae866d122de45e9fa2e6e751c3f4f4be153b",
         "fileNameAliases": [
           "斗牛-华晨宇-华晨宇日出演唱会特辑.mp3",
           "斗牛.mp3",
@@ -45137,6 +45152,9 @@
         "album": "华晨宇日出演唱会特辑",
         "version": "现场版",
         "durationSeconds": 393.3,
+        "audioUrl": "./media/music/hcy-asylum-live.mp3",
+        "audioBytes": 6740101,
+        "audioSha256": "eeb5dc85f22bb029446cc3cc297bde05f14127e26eb345a8e308311975ee4c1e",
         "fileNameAliases": [
           "疯人院-华晨宇-华晨宇日出演唱会特辑.mp3",
           "疯人院.mp3",
@@ -45163,6 +45181,9 @@
         "album": "雪碧酷光灯",
         "version": "专辑版",
         "durationSeconds": 172.5,
+        "audioUrl": "./media/music/hcy-fearless.mp3",
+        "audioBytes": 3047158,
+        "audioSha256": "d250805d396d196e404cf4758f4f97845e4e01b40c2e885b2751a2db1bb29b02",
         "fileNameAliases": [
           "肆无惧燥-华晨宇-雪碧酷光灯.mp3",
           "肆无惧燥.mp3",
@@ -45189,6 +45210,9 @@
         "album": "寒鸦少年",
         "version": "专辑版",
         "durationSeconds": 315.2,
+        "audioUrl": "./media/music/hcy-jackdaw-boy.mp3",
+        "audioBytes": 5082697,
+        "audioSha256": "15e8e9d42dba7e569a701fcef1e485efc561ab0fd05042679b2c530709850ea4",
         "fileNameAliases": [
           "寒鸦少年-华晨宇-寒鸦少年.mp3",
           "寒鸦少年.mp3",
@@ -45215,6 +45239,9 @@
         "album": "量变临界点",
         "version": "专辑版",
         "durationSeconds": 340.0,
+        "audioUrl": "./media/music/hcy-everlasting-flame.mp3",
+        "audioBytes": 5456051,
+        "audioSha256": "d1d0c778571fee87197ef7eba197ceb55c51ad9bac2ce346be38f7b4512ebe0f",
         "fileNameAliases": [
           "永不熄灭的火焰-华晨宇-量变临界点-45b692.mp3",
           "永不熄灭的火焰.mp3",
@@ -45241,6 +45268,9 @@
         "album": "寻",
         "version": "专辑版",
         "durationSeconds": 270.6,
+        "audioUrl": "./media/music/hcy-seek.mp3",
+        "audioBytes": 4441825,
+        "audioSha256": "b8917a82cbf4244cd5a686536818f58b6eaeb5777006d1b9de76b6bfdb29ba07",
         "fileNameAliases": [
           "寻-华晨宇-寻.mp3",
           "寻.mp3",
@@ -45267,6 +45297,9 @@
         "album": "2016安徽卫视国剧盛典现场原音",
         "version": "现场版",
         "durationSeconds": 178.0,
+        "audioUrl": "./media/music/hcy-king-beggar-live.mp3",
+        "audioBytes": 2954473,
+        "audioSha256": "05f24a54c9496ee28edae94c42cb2424d854c564c0068f3b92755b2c5708cc49",
         "fileNameAliases": [
           "国王与乞丐_华晨宇_2016安徽卫视国剧盛典现场原音.mp3",
           "国王与乞丐.mp3",
@@ -45293,6 +45326,9 @@
         "album": "希忘Hope",
         "version": "专辑版",
         "durationSeconds": 307.5,
+        "audioUrl": "./media/music/hcy-bonfire-at-galaxy-end.mp3",
+        "audioBytes": 4992149,
+        "audioSha256": "fa51bdd1d591ff94a4d3f79bc590f064f4ed9ff8f47cd4f023ec084cadfed637",
         "fileNameAliases": [
           "点燃银河尽头的篝火-华晨宇-希忘Hope.mp3",
           "点燃银河尽头的篝火.mp3",
@@ -45319,6 +45355,9 @@
         "album": "烟火里的尘埃",
         "version": "专辑版",
         "durationSeconds": 321.4,
+        "audioUrl": "./media/music/hcy-dust-in-fireworks.mp3",
+        "audioBytes": 5283309,
+        "audioSha256": "81b4063a914fe5e08c7f53b08beb4f0b6768e30163da09efbd07caa54238f496",
         "fileNameAliases": [
           "烟火里的尘埃-华晨宇-烟火里的尘埃.mp3",
           "烟火里的尘埃.mp3",
@@ -45345,6 +45384,9 @@
         "album": "希忘Hope",
         "version": "专辑版",
         "durationSeconds": 265.8,
+        "audioUrl": "./media/music/hcy-flight-mode.mp3",
+        "audioBytes": 4326386,
+        "audioSha256": "33593406ed8fa34e9149bf07ac4bc0e82d2919904ba5b463434b2f8fd259cfee",
         "fileNameAliases": [
           "飞行模式-华晨宇-希忘Hope.mp3",
           "飞行模式.mp3",
@@ -45371,6 +45413,9 @@
         "album": "H",
         "version": "专辑版",
         "durationSeconds": 280.7,
+        "audioUrl": "./media/music/hcy-for-forever.mp3",
+        "audioBytes": 4617278,
+        "audioSha256": "1393e1b5684d7630775d26146b7d886fd2fdf3d1e6c7f9f89397d44d7832d30c",
         "fileNameAliases": [
           "For_Forever-华晨宇-H.mp3",
           "For Forever.mp3",
@@ -45397,6 +45442,9 @@
         "album": "量变临界点",
         "version": "专辑版",
         "durationSeconds": 261.1,
+        "audioUrl": "./media/music/hcy-ordinary-life.mp3",
+        "audioBytes": 4214754,
+        "audioSha256": "7e4e3963c911a6ae2b32f4a65b3522811480719376d64fb21a32cc0b529da4ef",
         "fileNameAliases": [
           "普通到不普通的人生-华晨宇-量变临界点.mp3",
           "普通到不普通的人生.mp3",
@@ -45423,6 +45471,9 @@
         "album": "好想爱这个世界啊",
         "version": "专辑版",
         "durationSeconds": 258.8,
+        "audioUrl": "./media/music/hcy-love-this-world.m4a",
+        "audioBytes": 4195236,
+        "audioSha256": "287c3108e5200baeb20eaa15eea7104800e48320f824a09352539c136a8bc2fe",
         "fileNameAliases": [
           "好想爱这个世界啊-华晨宇-好想爱这个世界啊.m4a",
           "好想爱这个世界啊.mp3",
@@ -45449,6 +45500,9 @@
         "album": "华晨宇日出演唱会特辑",
         "version": "现场版",
         "durationSeconds": 702.6,
+        "audioUrl": "./media/music/hcy-toward-sun-live.mp3",
+        "audioBytes": 11687560,
+        "audioSha256": "a6c8dda918e2ff7e4f1cfa12006a9d21bef546ed8d687d40d71c034f73282f3c",
         "fileNameAliases": [
           "向阳而生-华晨宇-华晨宇日出演唱会特辑.mp3",
           "向阳而生.mp3",
@@ -45475,6 +45529,9 @@
         "album": "希忘Hope",
         "version": "专辑版",
         "durationSeconds": 305.0,
+        "audioUrl": "./media/music/hcy-return.mp3",
+        "audioBytes": 4952434,
+        "audioSha256": "679393cf1f102cea82dbb527793663d248ecf30614eaf92e6f5814621f9ea23b",
         "fileNameAliases": [
           "好想我回来啊-华晨宇-希忘Hope (1).mp3",
           "好想我回来啊.mp3",
