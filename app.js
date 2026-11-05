@@ -560,21 +560,29 @@
     emit('mentor_save', {id,saved:!remove});
   }
 
+  function renderMusic() {
+    if (window.NAUMusic?.mount) window.NAUMusic.mount(app, state.data.musicPlaylist);
+    else app.innerHTML = emptyState('音乐栏目暂未载入', '请联网刷新页面后再试；其他指南内容仍可阅读。');
+  }
+
   function route(scroll = true) {
     if (!state.data) return;
     const [view, id] = location.hash.replace(/^#/, '').split('/');
-    state.view = ['mentors','life','posts','downloads'].includes(view) ? view : 'mentors';
+    const nextView = ['mentors','life','posts','downloads','music'].includes(view) ? view : 'mentors';
+    const keepMusic = state.view === 'music' && nextView === 'music' && window.NAUMusic?.isMounted?.();
+    if (state.view === 'music' && nextView !== 'music') window.NAUMusic?.leave?.();
+    state.view = nextView;
     if (state.view === 'life' && id && state.data.lifeChapters.some(c => c.id === id)) state.chapter = id;
     $$('[data-nav]').forEach(link => link.dataset.nav === state.view ? link.setAttribute('aria-current','page') : link.removeAttribute('aria-current'));
-    ({mentors:renderMentors,life:renderLife,posts:renderPosts,downloads:renderDownloads})[state.view]();
-    document.title = `${{mentors:'导师导览',life:'学习生活',posts:'原帖索引',downloads:'资料下载'}[state.view]} · 雨诺的南审手记`;
+    if (!keepMusic) ({mentors:renderMentors,life:renderLife,posts:renderPosts,downloads:renderDownloads,music:renderMusic})[state.view]();
+    document.title = `${{mentors:'导师导览',life:'学习生活',posts:'原帖索引',downloads:'资料下载',music:'音乐小憩'}[state.view]} · 雨诺的南审手记`;
     if (scroll) requestAnimationFrame(() => app.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'}));
     emit('page_view', {chapter:state.view==='life'?state.chapter:undefined});
   }
 
   document.addEventListener('click', event => {
     const currentLink = event.target.closest('a[href]');
-    if(currentLink && currentLink.getAttribute('href') === location.hash && /^#(?:mentors|life|posts|downloads)(?:\/.*)?$/.test(location.hash)){
+    if(currentLink && currentLink.getAttribute('href') === location.hash && /^#(?:mentors|life|posts|downloads|music)(?:\/.*)?$/.test(location.hash)){
       event.preventDefault();
       route(true);
     }
