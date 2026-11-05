@@ -1,0 +1,764 @@
+{
+  "batch": "research-round3",
+  "mode": "written",
+  "before": {
+    "socialPosts": 108,
+    "officialEvidence": 85,
+    "sourceRegistry": 286
+  },
+  "decisions": [
+    {
+      "id": "MENTOR-NEW-01",
+      "action": "adopt",
+      "reason": "2021级具名MPAcc共同备赛过程，限定2022竞赛"
+    },
+    {
+      "id": "MENTOR-NEW-02",
+      "action": "adopt",
+      "reason": "2022级具名MPAcc案例过程，与03合为同一事件"
+    },
+    {
+      "id": "MENTOR-NEW-03",
+      "action": "merge",
+      "reason": "仅补02的身份和结果；同队同届不另计事件"
+    },
+    {
+      "id": "MENTOR-NEW-04",
+      "action": "adopt",
+      "reason": "2024晋级团队调研部署，不推断论文导师关系"
+    },
+    {
+      "id": "MENTOR-NEW-05",
+      "action": "adopt",
+      "reason": "2023级全体MPAcc集体指导，不称个人日常指导"
+    },
+    {
+      "id": "MENTOR-NEW-06",
+      "action": "adopt",
+      "reason": "历史导师安排及陈茜MPAcc实习论文个案，保留年级冲突"
+    },
+    {
+      "id": "MENTOR-NEW-07",
+      "action": "adopt_background",
+      "reason": "研究生公开教学，专业未分，不算MPAcc个人指导"
+    },
+    {
+      "id": "MENTOR-NEW-08",
+      "action": "skip",
+      "reason": "师生模型沙龙无MPAcc身份或具体学生训练过程"
+    },
+    {
+      "id": "MENTOR-NEW-09",
+      "action": "skip",
+      "reason": "课程层次未明且李慧为主持，不归因企业嘉宾讲授"
+    },
+    {
+      "id": "LNEW01",
+      "action": "adopt",
+      "reason": "历史实践手册，分清MPAcc/学硕并索取本级新版"
+    },
+    {
+      "id": "LNEW02",
+      "action": "adopt",
+      "reason": "2023暑期初步互选，不当现行正式互选规则"
+    },
+    {
+      "id": "LNEW03",
+      "action": "adopt",
+      "reason": "2025见面会与互选先后，不作个人导师风格证据"
+    },
+    {
+      "id": "LNEW04",
+      "action": "adopt",
+      "reason": "2024材料流程，只作本级节点核实提示"
+    },
+    {
+      "id": "LNEW05",
+      "action": "adopt",
+      "reason": "已截止项目，用来比较条件，不作当前机会"
+    },
+    {
+      "id": "LNEW06",
+      "action": "adopt_background",
+      "reason": "工作站背景，不认定所有MPAcc符合资格"
+    },
+    {
+      "id": "LNEW07",
+      "action": "skip",
+      "reason": "已有2026迎新，避免叠加旧2025接站与报到安排"
+    },
+    {
+      "id": "LNEW08",
+      "action": "skip",
+      "reason": "已有2027目录，不增加旧计划人数作为当前招生信息"
+    },
+    {
+      "id": "LNEW09",
+      "action": "adopt",
+      "reason": "评奖流程，保留2026标题与引用2025通知的冲突"
+    },
+    {
+      "id": "LNEW10",
+      "action": "adopt",
+      "reason": "座谈议题及公开建议，不推导硬性毕业条件"
+    },
+    {
+      "id": "LNEW11",
+      "action": "adopt",
+      "reason": "本级实践动员，不推定历届统一起始月"
+    }
+  ],
+  "duplicates": [
+    {
+      "ids": [
+        "MENTOR-NEW-02",
+        "MENTOR-NEW-03"
+      ],
+      "code": "R302",
+      "reason": "同届同队过程与结果合并，只计一次"
+    }
+  ],
+  "skipped": [
+    {
+      "id": "MENTOR-NEW-08",
+      "url": "https://account.nau.edu.cn/2022/0510/c8917a98642/page.htm",
+      "reason": "师生模型沙龙无MPAcc身份或具体学生训练过程"
+    },
+    {
+      "id": "MENTOR-NEW-09",
+      "url": "https://account.nau.edu.cn/2024/0621/c8919a132565/page.htm",
+      "reason": "课程层次未明且李慧为主持，不归因企业嘉宾讲授"
+    },
+    {
+      "id": "LNEW07",
+      "url": "https://gs.nau.edu.cn/2025/0830/c4414a147023/page.htm",
+      "reason": "已有2026迎新，避免叠加旧2025接站与报到安排"
+    },
+    {
+      "id": "LNEW08",
+      "url": "https://mpacc.nau.edu.cn/2026/0331/c11507a155547/page.htm",
+      "reason": "已有2027目录，不增加旧计划人数作为当前招生信息"
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "6a450bce000000001702dc8b",
+      "title": "（无标题）南审研究生录取通知书到了",
+      "url": "https://www.xiaohongshu.com/explore/6a450bce000000001702dc8b?xsec_token=ABndrDHyaQetI3m3tlDTXvejCGnIyyGjBp1lGXRRwyHjQ=&xsec_source=pc_search",
+      "author": "evergreen",
+      "date": "编辑于 07-01",
+      "reason": "正文仅收到通知书，标签MPAcc；不是研一培养、课程或实习体验，未纳入有效材料。",
+      "readingScope": "文字正文及5条评论中的已加载顶层和可见回复至THE END；一条回复未展开；3图未逐读。",
+      "read": true
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "6ad11140000000001c00e934",
+      "title": "看了一下不包吃包住不就是倒贴吗",
+      "url": "https://www.xiaohongshu.com/explore/6ad11140000000001c00e934?xsec_token=ABV39uj--jPrLMUlfV_Dt9cFIcdtDfP1yYsTY0bwlw4r8=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "轮回因",
+      "date": "编辑于 10-16",
+      "reason": "泛四大八大实习讨论，没有确认南京审计大学或MPAcc身份。",
+      "readingScope": "正文完整；328条评论首批已加载顶层及可见回复，未全部展开。",
+      "read": true
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "6aaf8212000000000b000e5d",
+      "title": "研一有课怎么实习啊",
+      "url": "https://www.xiaohongshu.com/explore/6aaf8212000000000b000e5d?xsec_token=ABjOPBldHiCGv0jJyZo220Nn5Gj19a9P9cS0p5sMHdzfY=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "Zzz",
+      "date": "09-20",
+      "reason": "正文明确OUC海南专项，非南审，不移植其半年实践/考公安排。",
+      "readingScope": "文字正文完整；评论未审读。",
+      "read": true
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "6ad81d4c000000002a03ac6e",
+      "title": "南审会计硕士Mpacc值得选择的理由",
+      "url": "https://www.xiaohongshu.com/explore/6ad81d4c000000002a03ac6e?xsec_token=AB3U6dIQ9X_S-xPg5Z3nSbjTDTb2suwKz-xBPEl4abzQY=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "行审致远",
+      "date": "编辑于 10-21",
+      "reason": "泛择校宣传与就业、排名、实习机会主张，身份不明，无具体本人课程或实习经历；不纳入有效体验。",
+      "readingScope": "文字正文完整；详情显示2条评论，但评论未审读；5张图未逐读。",
+      "read": true
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "6ab9f88900000000020109c6",
+      "title": "南审研一",
+      "url": "https://www.xiaohongshu.com/explore/6ab9f88900000000020109c6?xsec_token=ABFD6J253jVxE9SETNFqMdyYD-YRWI9sUO4_L6XiyBeNA=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "lucky",
+      "date": "09-28",
+      "reason": "明确审计专硕标签，短文仅雨天吃饭生活，无MPAcc培养信息。",
+      "readingScope": "文字正文完整；详情显示45条评论，评论未审读；5图未逐读。",
+      "read": true
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "6a462d92000000000f0162e7",
+      "title": "（无标题）会计专业毕业论文选题求助",
+      "url": "https://www.xiaohongshu.com/explore/6a462d92000000000f0162e7?xsec_token=ABpis2slkSNnLwWA0BML0zu_Z3baFPAEh1Hp8kFIJexFs=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "magic",
+      "date": "07-02",
+      "reason": "正文仅会计专业论文选题求助，不能确认南审或硕士身份。",
+      "readingScope": "文字正文完整，评论未完整阅读。",
+      "read": true
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "6735abad000000001b028f04",
+      "title": "🔥揭㊙️！南审MPAcc读研生活体验🎓",
+      "url": "https://www.xiaohongshu.com/explore/6735abad000000001b028f04?xsec_token=ABAtxIBNC0CaI0rerPdqUbZ_d_N38uTx7p7XmPCCU4QLs=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "述飞MPAcc",
+      "date": "编辑于 2024-11-15",
+      "reason": "培训机构宣传帖，末图明确私聊复试咨询导流。四图虽介绍交通、设施、宿舍、学习与实践，未明确亲历者身份；不作为独立学生体验来源。",
+      "summary": "最后一图称课程多有小组汇报，MPAcc实践不少于6个月；这些泛主张须以当年官方培养文件核验。",
+      "promotionStatus": "visible_private_contact_redirect",
+      "readingScope": "文字正文完整；四张图片全部逐页截图查看；页面显示无评论。",
+      "read": true
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "6a2a3cf00000000007027a48",
+      "title": "毕业plog｜属于我的南审校园生活结束啦",
+      "url": "https://www.xiaohongshu.com/explore/6a2a3cf00000000007027a48?xsec_token=ABPmDLSxO_U2r0828S3M0sSCYqBihL8NXBuLifS6G6sxE=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "bb黄碎碎念",
+      "date": "06-11",
+      "reason": "正文标签明确大四、女大学生，非MPAcc毕业生；宿舍换宿答复为好像，不作研究生政策。",
+      "readingScope": "文字正文完整；25条评论首批已加载顶层及可见回复，未全部读取；18图未逐读。",
+      "read": true
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "685a5862000000002201ccb2",
+      "title": "南审研究生生活-研一总结篇",
+      "url": "https://www.xiaohongshu.com/explore/685a5862000000002201ccb2?xsec_token=AB93LW4q2v8SoGgk5570SVXnQfxefRSuxBxpmVI6FIRWw=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "牛奶味的奥利奥",
+      "date": "2025-06-24",
+      "reason": "作者评论明确我们内审，属审计方向。正文关于财务会计理论、数据结构、期末周和即将实习的经历不能移植到MPAcc。",
+      "readingScope": "文字正文完整；24条评论首批已加载顶层与可见回复至THE END；实习分支10条、生活分支4条回复未展开；18图未逐读。",
+      "read": true
+    }
+  ],
+  "unread": [
+    {
+      "inputFile": "research_life_new.json",
+      "title": "南京审计大学硕士研究生中期考核办法（试行）",
+      "url": "https://gs.nau.edu.cn/2024/1112/c4412a138321/page.htm",
+      "date": "研究生院制度目录显示2025-09-11；URL路径2024年不当作文件发文日",
+      "reason": "公开访问返回当前IP非校内地址、仅校内可访问。只读到目录题名，未用登录、VPN或其他凭据。",
+      "webRefs": [
+        "turn19view1",
+        "turn23view2",
+        "turn28view1"
+      ]
+    },
+    {
+      "inputFile": "research_life_new.json",
+      "title": "南京审计大学硕士研究生校外实践导师评聘与管理办法",
+      "url": "https://gs.nau.edu.cn/2024/1112/c4412a138326/page.htm",
+      "date": "目录显示2024-11-12",
+      "reason": "点击重定向提示页面，未取得正文；不能用题名推断校外导师职责条款。",
+      "webRefs": [
+        "turn19view1",
+        "turn28view3"
+      ]
+    },
+    {
+      "inputFile": "research_life_new.json",
+      "title": "关于印发《会计学院研究生奖学金评审实施细则》的通知",
+      "url": "https://account.nau.edu.cn/2023/0426/c8943a113299/page.htm",
+      "date": "2023-04-26",
+      "reason": "页面可访问但正文与附件未在公开文本中呈现；只确认题名和日期，不能推断学业/科研评分权重。2026国家奖公示仍引用该细则，也不能替代读取细则全文。",
+      "webRefs": [
+        "turn52view0",
+        "turn44view0"
+      ]
+    }
+  ],
+  "inputDuplicateReports": [
+    {
+      "inputFile": "research_mentor_new.json",
+      "title": "我与南审｜崔秀梅：是严师，也是赛场领航人",
+      "url": "https://news.nau.edu.cn/2026/1014/c11360a162564/page.htm",
+      "existingUrl": "https://news.nau.edu.cn/2026/1014/c11360a162564/page.psp",
+      "reason": "相同文章ID a162564，不将.htm/.psp格式差异视作新记录。现有来源17、O-CXM。",
+      "webRefs": [
+        "turn1search0",
+        "turn1search1"
+      ]
+    },
+    {
+      "inputFile": "research_mentor_new.json",
+      "title": "南审本硕毕业，读博的他立志做守护文物的会计学者",
+      "url": "https://nau.edu.cn/2025/0820/c11307a146844/page.htm",
+      "reason": "现有来源18、O-PJ已收录；潘俊—孙昊晨个案。",
+      "webRefs": [
+        "turn3search0"
+      ]
+    },
+    {
+      "inputFile": "research_mentor_new.json",
+      "title": "我校学生团队在全国第十一届MPAcc学生案例大赛中获奖",
+      "url": "https://xxgk.nau.edu.cn/2025/0627/c9179a146011/page.htm",
+      "existingUrl": "https://account.nau.edu.cn/2025/0626/c9702a146002/page.htm",
+      "reason": "新URL但与现有来源09同届同队同导师的2025年比赛结果，不算独立事件。",
+      "webRefs": [
+        "turn1search3",
+        "turn13search9"
+      ]
+    },
+    {
+      "inputFile": "research_mentor_new.json",
+      "title": "会计学院MPACC团队荣获第21届长三角MPAcc智能财会案例研究论坛特等奖",
+      "url": "https://account.nau.edu.cn/2024/0603/c8917a131562/page.htm",
+      "reason": "已完整存在于来源11。全文已重读，可用来校验单文涛、温素彬指导队员身份，但不计新增。",
+      "webRefs": [
+        "turn1search16",
+        "turn9view4"
+      ]
+    },
+    {
+      "inputFile": "research_mentor_new.json",
+      "title": "会计学院2篇教学案例入库全国MPAcc优秀教学案例库",
+      "url": "https://mpacc.nau.edu.cn/2025/1121/c11506a151137/page.htm",
+      "reason": "现有来源10。全文可读，但作者教学案例入库不等于具体学生培养反馈。",
+      "webRefs": [
+        "turn1search18",
+        "turn9view5"
+      ]
+    },
+    {
+      "inputFile": "research_mentor_new.json",
+      "title": "【喜讯】我校会计学院再次获得全国MPAcc优秀硕士学位论文",
+      "url": "https://news.nau.edu.cn/2019/0712/c5796a57152/page.htm",
+      "existingUrl": "https://account.nau.edu.cn/2020/0826/c9005a100242/page.htm",
+      "reason": "陈茜—许汉友2018年度获奖同一事件已见来源14，不计新增独立个案；本篇称陈茜2017级，2020导师事迹及2019学院转载称2016级，需保留年级冲突。",
+      "webRefs": [
+        "turn1search22",
+        "turn9view7",
+        "turn24search3",
+        "turn32view0"
+      ]
+    },
+    {
+      "inputFile": "research_mentor_new.json",
+      "title": "教师个人简介搜索结果（未作为新增培养记录）",
+      "urls": [
+        "https://account.nau.edu.cn/2021/0902/c8880a99579/page.htm",
+        "https://account.nau.edu.cn/2018/1123/c8880a99569/page.htm",
+        "https://account.nau.edu.cn/2020/0829/c9536a99674/page.htm",
+        "https://account.nau.edu.cn/2021/0905/c8882a99685/page.htm"
+      ],
+      "reason": "程博、王烨、傅祥斐、李慧教师页已入现有名册；本轮不以个人履历、论文共著名单替代MPAcc学生指导反馈。",
+      "webRefs": [
+        "turn13search1",
+        "turn17search1",
+        "turn3search4",
+        "turn3search3"
+      ]
+    },
+    {
+      "inputFile": "research_life_new.json",
+      "title": "培养方案（会计学院镜像）",
+      "url": "https://account.nau.edu.cn/9541/list.htm",
+      "baselineMatch": "基线已含该URL，及mpacc.nau.edu.cn/11517/list.htm的F02/F28—F35",
+      "reason": "已有培养方案全文与多条事实，不算新增。",
+      "webRefs": [
+        "turn11search6",
+        "turn14search8",
+        "turn14search9"
+      ]
+    },
+    {
+      "inputFile": "research_life_new.json",
+      "title": "南京审计大学2026年硕士研究生招生简章（MPAcc站转载）",
+      "url": "https://mpacc.nau.edu.cn/2025/1021/c11515a149467/page.htm",
+      "baselineMatch": "https://account.nau.edu.cn/2025/1021/c9539a148686/page.htm",
+      "reason": "同文转载，基线已有学院版且另有2027最新章程，不因换域名新增来源。全日制/非全日制对照用于核验而不另计有效新事实。",
+      "webRefs": [
+        "turn44view1",
+        "turn49search5"
+      ]
+    },
+    {
+      "inputFile": "research_life_new.json",
+      "title": "会计学院召开研究生期中教学检查座谈会（2025年）",
+      "url": "https://account.nau.edu.cn/2025/1030/c8917a149112/page.htm",
+      "baselineMatch": "基线已有同一URL",
+      "reason": "不重复添加。2026年会议为不同年级、不同日期的新报道。",
+      "webRefs": [
+        "turn14search3"
+      ]
+    },
+    {
+      "inputFile": "research_life_new.json",
+      "title": "关于做好2026年秋季学期开学初研究生教育管理工作的通知",
+      "url": "https://gs.nau.edu.cn/2026/0901/c4414a161162/page.htm",
+      "baselineMatch": "基线F14",
+      "reason": "既有正文，不新增。",
+      "webRefs": [
+        "turn34search0"
+      ]
+    },
+    {
+      "inputFile": "research_life_new.json",
+      "title": "南京审计大学会计学院2025年硕士研究生招生计划公告",
+      "url": "https://mpacc.nau.edu.cn/2025/1110/c11507a150290/page.htm",
+      "baselineMatch": "本轮LNEW08为2026更新公告",
+      "reason": "虽然未命中基线URL，2025旧计划与2026同类边界没有独立增量，只用更新的2026公告，不同时计新。网页实际标2025-03-31，不能取URL的2025-11-10当发文日。",
+      "webRefs": [
+        "turn23view1"
+      ]
+    },
+    {
+      "inputFile": "research_life_new.json",
+      "title": "会计学院召开研究生期中教学检查座谈会（2026年5月）",
+      "url": "https://account.nau.edu.cn/2026/0514/c9520a157425/page.htm",
+      "baselineMatch": "本轮LNEW10为2026年10月后续同类会议",
+      "reason": "已读但主要议题重合，不为凑数再列入来源；不将公开会议建议当个人指导评价。",
+      "webRefs": [
+        "turn47view3"
+      ]
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "689161730000000023039374",
+      "title": "南审课表｜会计专硕·研一（下）",
+      "reason": "基线已有，仅列表识别跳过"
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "6706bbc7000000002c02fb54",
+      "title": "南审课表｜会计专硕·研一（上）",
+      "reason": "基线已有，仅列表识别跳过"
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "6966299f000000001a028c53",
+      "title": "NAU研一上 期末考试啦！",
+      "reason": "基线已有，仅列表识别跳过"
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "69317020000000001e025f54",
+      "title": "NAU会计研究生的期末前夕plog",
+      "reason": "基线已有，仅列表识别跳过"
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "690b43480000000004022f3e",
+      "title": "Nau研一到期中啦",
+      "reason": "基线已有，仅列表识别跳过"
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "6aa7737c000000000d025bb7",
+      "title": "南审｜研一plog☀️",
+      "reason": "基线已有，仅列表识别跳过"
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "6ab15986000000003602baaa",
+      "title": "🧩南审读研plog",
+      "reason": "基线已有，仅列表识别跳过"
+    },
+    {
+      "inputFile": "research_xhs_browser_new.json",
+      "note_id": "68ec65dc000000000703b030",
+      "title": "南审毕业条件：博士硕士学位学术成果要求",
+      "reason": "基线已有，仅列表识别跳过"
+    }
+  ],
+  "optionalFilesMissing": [
+    "research_xhs_root_new.json"
+  ],
+  "newSources": [
+    {
+      "code": "R301",
+      "kind": "official",
+      "eventKey": "2022-national-mpacc-case-team",
+      "urls": [
+        "https://account.nau.edu.cn/2022/0428/c9005a98650/page.htm"
+      ]
+    },
+    {
+      "code": "R302",
+      "kind": "official",
+      "eventKey": "2023-national-mpacc-happy-team",
+      "urls": [
+        "https://account.nau.edu.cn/2023/0525/c9718a114696/page.htm",
+        "https://pdo.nau.edu.cn/2023/0907/c9370a118184/page.htm"
+      ]
+    },
+    {
+      "code": "R303",
+      "kind": "official",
+      "eventKey": "2024-national-mpacc-book-team",
+      "urls": [
+        "https://account.nau.edu.cn/2024/0429/c9718a128955/page.htm"
+      ]
+    },
+    {
+      "code": "R304",
+      "kind": "official",
+      "eventKey": "2024-mpacc-case-mobilization",
+      "urls": [
+        "https://account.nau.edu.cn/2024/0317/c9005a126229/page.htm"
+      ]
+    },
+    {
+      "code": "R305",
+      "kind": "official",
+      "eventKey": "2020-xu-mentoring-profile",
+      "urls": [
+        "https://nau.edu.cn/2020/0711/c5729a66714/page.htm"
+      ]
+    },
+    {
+      "code": "R306",
+      "kind": "official",
+      "eventKey": "2026-fu-data-assets-lecture",
+      "urls": [
+        "https://account.nau.edu.cn/2026/0526/c8919a157855/page.htm"
+      ]
+    },
+    {
+      "code": "R307",
+      "kind": "official",
+      "eventKey": "2024-accounting-practice-handbook",
+      "urls": [
+        "https://account.nau.edu.cn/_upload/article/files/d9/c3/7d24068e413cbfabad1f975e1ed0/75c3eb31-2aec-4c4a-a7e0-43d9f582683e.pdf"
+      ]
+    },
+    {
+      "code": "R308",
+      "kind": "official",
+      "eventKey": "2023-accounting-summer-guidance",
+      "urls": [
+        "https://account.nau.edu.cn/2023/0628/c9534a116446/page.htm"
+      ]
+    },
+    {
+      "code": "R309",
+      "kind": "official",
+      "eventKey": "2025-accounting-new-student-meeting",
+      "urls": [
+        "https://account.nau.edu.cn/2025/0915/c9533a147591/page.htm"
+      ]
+    },
+    {
+      "code": "R310",
+      "kind": "official",
+      "eventKey": "2024-graduate-midterm-proposal-notice",
+      "urls": [
+        "https://gs.nau.edu.cn/2024/0419/c10684a128342/page.htm"
+      ]
+    },
+    {
+      "code": "R311",
+      "kind": "official",
+      "eventKey": "2025-central-enterprise-audit-internship",
+      "urls": [
+        "https://gs.nau.edu.cn/2025/0916/c10680a147636/page.htm"
+      ]
+    },
+    {
+      "code": "R312",
+      "kind": "official",
+      "eventKey": "2025-water-workstation-selection",
+      "urls": [
+        "https://gs.nau.edu.cn/2025/0609/c10680a145181/page.htm"
+      ]
+    },
+    {
+      "code": "R313",
+      "kind": "official",
+      "eventKey": "2026-accounting-scholarship-publicity",
+      "urls": [
+        "https://account.nau.edu.cn/2026/1008/c8918a162370/page.htm"
+      ]
+    },
+    {
+      "code": "R314",
+      "kind": "official",
+      "eventKey": "2026-accounting-student-meeting",
+      "urls": [
+        "https://account.nau.edu.cn/2026/1030/c9520a163355/page.htm"
+      ]
+    },
+    {
+      "code": "R315",
+      "kind": "official",
+      "eventKey": "2025-2024-cohort-practice-meeting",
+      "urls": [
+        "https://account.nau.edu.cn/2025/1113/c9520a150551/page.htm"
+      ]
+    },
+    {
+      "code": "R316",
+      "kind": "student",
+      "id": "64e1bfff000000000c034a90",
+      "urls": [
+        "https://www.xiaohongshu.com/explore/64e1bfff000000000c034a90?xsec_token=ABqx9oaoK7ZO_7mfctWpZAZgJInu2mjQlZel5jPxXbgyc=&xsec_source=pc_search"
+      ]
+    },
+    {
+      "code": "R317",
+      "kind": "student",
+      "id": "6a8edcec000000001f000035",
+      "urls": [
+        "https://www.xiaohongshu.com/explore/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes"
+      ]
+    },
+    {
+      "code": "R318",
+      "kind": "student",
+      "id": "67aef89b0000000029009825",
+      "urls": [
+        "https://www.xiaohongshu.com/explore/67aef89b0000000029009825?xsec_token=AB24tiWWVG9hIy5oTAh8zCE2YXimNEIExkpaIrpUOVNm8=&xsec_source=pc_search&source=web_search_result_notes"
+      ]
+    },
+    {
+      "code": "R319",
+      "kind": "student",
+      "id": "6a16a3fb0000000007023990",
+      "urls": [
+        "https://www.xiaohongshu.com/explore/6a16a3fb0000000007023990?xsec_token=ABtJXTEDO_AzD9w2RSYHuPgQu5QDhHnts3scx-Mq492og=&xsec_source=pc_search&source=web_search_result_notes"
+      ]
+    }
+  ],
+  "mentorEvidence": [
+    {
+      "name": "崔秀梅",
+      "code": "R301",
+      "eventKey": "2022-national-mpacc-case-team",
+      "concretePersonalTraining": true,
+      "publicTeachingBackground": false
+    },
+    {
+      "name": "王永妍",
+      "code": "R301",
+      "eventKey": "2022-national-mpacc-case-team",
+      "concretePersonalTraining": true,
+      "publicTeachingBackground": false
+    },
+    {
+      "name": "崔秀梅",
+      "code": "R302",
+      "eventKey": "2023-national-mpacc-happy-team",
+      "concretePersonalTraining": true,
+      "publicTeachingBackground": false
+    },
+    {
+      "name": "温素彬",
+      "code": "R302",
+      "eventKey": "2023-national-mpacc-happy-team",
+      "concretePersonalTraining": true,
+      "publicTeachingBackground": false
+    },
+    {
+      "name": "温素彬",
+      "code": "R303",
+      "eventKey": "2024-national-mpacc-book-team",
+      "concretePersonalTraining": false,
+      "publicTeachingBackground": false
+    },
+    {
+      "name": "黄中生",
+      "code": "R303",
+      "eventKey": "2024-national-mpacc-book-team",
+      "concretePersonalTraining": false,
+      "publicTeachingBackground": false
+    },
+    {
+      "name": "崔秀梅",
+      "code": "R303",
+      "eventKey": "2024-national-mpacc-book-team",
+      "concretePersonalTraining": false,
+      "publicTeachingBackground": false
+    },
+    {
+      "name": "潘俊",
+      "code": "R304",
+      "eventKey": "2024-mpacc-case-mobilization",
+      "concretePersonalTraining": false,
+      "publicTeachingBackground": false
+    },
+    {
+      "name": "崔秀梅",
+      "code": "R304",
+      "eventKey": "2024-mpacc-case-mobilization",
+      "concretePersonalTraining": false,
+      "publicTeachingBackground": false
+    },
+    {
+      "name": "许汉友",
+      "code": "R305",
+      "eventKey": "2020-xu-mentoring-profile",
+      "concretePersonalTraining": true,
+      "publicTeachingBackground": false
+    },
+    {
+      "name": "傅祥斐",
+      "code": "R306",
+      "eventKey": "2026-fu-data-assets-lecture",
+      "concretePersonalTraining": false,
+      "publicTeachingBackground": true
+    }
+  ],
+  "warnings": [
+    {
+      "name": "赵娜",
+      "code": "R302",
+      "reason": "原文角色保留，不在34人名录，不创建卡片"
+    },
+    {
+      "name": "朱明秀",
+      "code": "R303",
+      "reason": "原文角色保留，不在34人名录，不创建卡片"
+    },
+    {
+      "name": "毕超",
+      "code": "R304",
+      "reason": "原文角色保留，不在34人名录，不创建卡片"
+    },
+    {
+      "reason": "app.js下载介绍可能硬编码108条，需上游核对；本脚本仅改数据。"
+    }
+  ],
+  "after": {
+    "socialPosts": 112,
+    "officialEvidence": 100,
+    "sourceRegistry": 305
+  },
+  "counts": {
+    "newSourcesThisRun": 19,
+    "newOfficialIndependentEvents": 15,
+    "newStudentPosts": 4,
+    "retainedRound3Sources": 19,
+    "newMentorEvidenceEntries": 11,
+    "newConcretePersonalTrainingEntries": 5,
+    "newPublicTeachingBackgroundEntries": 1,
+    "newDistinctMentorsWithEvidence": 7,
+    "newDailyPersonalFeedback": 0,
+    "duplicateReports": 1,
+    "unreadNotAccepted": 3,
+    "skippedNotAccepted": 13
+  },
+  "checks": {
+    "rosterUnchanged": true,
+    "mentorCardsUnchanged": true,
+    "authorUnchanged": true,
+    "socialCountExact": true,
+    "officialCountExact": true,
+    "noGeneratedTimestamp": true,
+    "officialParaphrasesWithinBudget": true
+  },
+  "limitations": [
+    "未读、排除、推广及缺字段XHS仅进QA，不计新增有效来源。",
+    "每来源简短转述，不复制全文，不猜名额；未知字段保持null。",
+    "不把历史竞赛/集体教学升级为当前个人日常口碑，不把本科或MAud改成MPAcc。"
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "meta": {
+    "researchedAt": "2026-11-05",
+    "existingData": "/workspace/scratch/6880592399d8/nau-mpacc-guide/dist/data/site-data.json",
+    "existingUrlCount": 434,
+    "method": "先扫描完整JSON URL及文章ID去重；使用公开网络搜索并打开官网正文。未使用浏览器、账号或凭据；未修改网站文件。",
+    "acceptedUrlCount": 9,
+    "independentEventCount": 8,
+    "scope": "5个独立MPAcc训练/论文事件（2023过程与结果为同一事件），另3个研究生或层次未分的教学背景事件。accepted表示全文可读的新增候选，不表示均为学生个人评价。",
+    "generalLimits": "官方报道存在宣传与选择偏差；历史训练安排不能推断2026/2027级日常要求、导师接收名额、论文反馈速度或主观满意度。案例赛指导教师不当然等于参赛者的学位论文导师。"
+  },
+  "queries": [
+    {
+      "engine": "system2",
+      "q": "site.nau.edu.cn MPAcc 温素彬 学生 案例"
+    },
+    {
+      "engine": "system2",
+      "q": "site.nau.edu.cn MPAcc 崔秀梅 案例"
+    },
+    {
+      "engine": "system2",
+      "q": "site.nau.edu.cn 会计专硕 潘俊 学生"
+    },
+    {
+      "engine": "system2",
+      "q": "site.nau.edu.cn MPAcc 导师 许汉友"
+    },
+    {
+      "engine": "system1",
+      "q": "site.nau.edu.cn \"潘俊\" \"孙昊晨\""
+    },
+    {
+      "engine": "system1",
+      "q": "site.nau.edu.cn \"李慧\" \"研究生\" \"论文\""
+    },
+    {
+      "engine": "system1",
+      "q": "site.nau.edu.cn \"傅祥斐\" \"学生\""
+    },
+    {
+      "engine": "system1",
+      "q": "site.nau.edu.cn \"王烨\" \"会计专硕\""
+    },
+    {
+      "engine": "system1",
+      "q": "site.nau.edu.cn \"程博\" \"研究生\" \"指导\""
+    },
+    {
+      "engine": "system1",
+      "q": "site.nau.edu.cn \"李慧\" \"MPAcc\" \"案例\""
+    },
+    {
+      "engine": "system1",
+      "q": "site.nau.edu.cn \"傅祥斐\" \"MPAcc\""
+    },
+    {
+      "engine": "system1",
+      "q": "site.nau.edu.cn \"王烨\" \"优秀\" \"硕士\" \"论文\""
+    },
+    {
+      "engine": "system2",
+      "q": "site.nau.edu.cn \"润泽主张大讲堂\" \"傅祥斐\" 数据资产"
+    },
+    {
+      "engine": "system2",
+      "q": "site.nau.edu.cn \"润泽主张\" \"李慧\""
+    },
+    {
+      "engine": "system2",
+      "q": "site.nau.edu.cn \"程博\" \"研究生\" \"科研\""
+    },
+    {
+      "engine": "system2",
+      "q": "site.nau.edu.cn \"王烨\" \"柳希望\""
+    },
+    {
+      "engine": "system1",
+      "q": "site.nau.edu.cn \"温素彬\" \"会计专硕\" \"研究\""
+    },
+    {
+      "engine": "system1",
+      "q": "site.nau.edu.cn \"李慧\" \"会计\" \"同学\" \"案例\""
+    },
+    {
+      "engine": "system1",
+      "q": "site.nau.edu.cn \"许汉友\" \"陈茜\""
+    },
+    {
+      "engine": "system1",
+      "q": "site.nau.edu.cn \"王烨\" \"同学\" \"科研\""
+    }
+  ],
+  "accepted": [
+    {
+      "id": "MENTOR-NEW-01",
+      "title": "我校MPAcc学子在2022年全国MPAcc学生案例大赛中再创佳绩",
+      "url": "https://account.nau.edu.cn/2022/0428/c9005a98650/page.htm",
+      "platform": "南京审计大学会计学院官网",
+      "author": "会计学院（正文未单列署名）",
+      "date": "2022-04-27（页面显示；URL路径为04-28）",
+      "population": "2021级会计硕士研究生周莹、于洁、陶鑫洋、宣洋莉、程思佳组成的‘赢了开派队！’；与同届本科队伍明确分开",
+      "advisorNames": [
+        "崔秀梅",
+        "王永妍"
+      ],
+      "summary": "具名MPAcc团队的备赛过程，包含高频讨论、修改方式和阶段结果。",
+      "points": [
+        "报道记载近半个月备赛中每天线上讨论，持续补充作品；指导教师多角度启发，并曾与队员讨论至深夜、修改细节。",
+        "队伍进入2022第八届比赛第二阶段，获华东赛区第六、全国前50。"
+      ],
+      "limits": "仅能归属两位教师共同指导的这一届竞赛团队；不能拆分个人贡献，也不能推断日常组会、强制深夜工作或现行名额。",
+      "readingScope": "官网正文第83—92行全部可读；未逐张审读配图。",
+      "webRefs": [
+        "turn1search14",
+        "turn9view3"
+      ],
+      "evidenceTier": "具名MPAcc竞赛训练过程",
+      "eventKey": "2022-national-mpacc-case-team",
+      "newComparedWithSite": true
+    },
+    {
+      "id": "MENTOR-NEW-02",
+      "title": "砥志研思,笃行致远——北京航空航天大学教师团队莅临南审案例指导",
+      "url": "https://account.nau.edu.cn/2023/0525/c9718a114696/page.htm",
+      "platform": "南京审计大学会计学院官网",
+      "author": "会计学院",
+      "date": "2023-05-25；指导发生于2023-05-17",
+      "population": "‘快乐小子队’顾明捷、肖祎宁、龙思玥、马欣、汪仁文、李冠男；2022级会计专硕身份由同年结果报道交叉确认",
+      "advisorNames": [
+        "崔秀梅",
+        "赵娜",
+        "温素彬"
+      ],
+      "summary": "2023年案例赛第二阶段的选企、报告写作及外部专家修改过程。",
+      "points": [
+        "围绕财务体系支持科技创新开展自主选企，团队确定徐工集团；报道记载六名队员五一期间共同分析与写作。",
+        "南审教师介绍参赛情况，学生汇报思路和框架，北航周宁、邹艳、冯帆据报告提出修改方向。"
+      ],
+      "limits": "同一团队由多名教师共同指导，不能把外部教师对框架的建议归给某一位南审导师；节假日备赛只反映当次竞赛。",
+      "readingScope": "官网正文第62—69行全部可读，照片未逐张审读；另读结果报道确认学生身份。",
+      "webRefs": [
+        "turn1search6",
+        "turn9view0",
+        "turn9view1"
+      ],
+      "evidenceTier": "具名MPAcc竞赛训练过程",
+      "eventKey": "2023-national-mpacc-happy-team",
+      "newComparedWithSite": true
+    },
+    {
+      "id": "MENTOR-NEW-03",
+      "title": "【培养高质量创新人才】我校在第九届MPAcc学生案例大赛中荣创佳绩",
+      "url": "https://pdo.nau.edu.cn/2023/0907/c9370a118184/page.htm",
+      "platform": "南京审计大学发展改革办公室官网（会计学院报道）",
+      "author": "发布者：发展改革办公室；正文署会计学院报道",
+      "date": "2023-06-26（正文发布时间；URL路径为2023-09-07）",
+      "population": "2022级会计专硕顾明捷、肖祎宁、龙思玥、马欣、汪仁文、李冠男",
+      "advisorNames": [
+        "崔秀梅",
+        "赵娜",
+        "温素彬"
+      ],
+      "summary": "补足上一条过程报道中的学生专业身份与最终成绩。",
+      "points": [
+        "具名列出2022级会计专硕六名队员及三位共同指导教师。",
+        "2023-06-18比赛，团队经历初赛两阶段、复赛与决赛后获得全国三等奖。"
+      ],
+      "limits": "与MENTOR-NEW-02属于同一支队伍、同一届赛事，不能当作第二个独立培养个案；本篇侧重结果，没有新增个人指导频次。",
+      "readingScope": "官网正文第33—39行全部可读。",
+      "webRefs": [
+        "turn1search8",
+        "turn9view1"
+      ],
+      "evidenceTier": "具名MPAcc竞赛结果交叉验证",
+      "eventKey": "2023-national-mpacc-happy-team",
+      "independentOfPrevious": false,
+      "newComparedWithSite": true
+    },
+    {
+      "id": "MENTOR-NEW-04",
+      "title": "会计学院召开全国MPAcc学生案例大赛第二阶段启动会",
+      "url": "https://account.nau.edu.cn/2024/0429/c9718a128955/page.htm",
+      "platform": "南京审计大学会计学院官网",
+      "author": "页面未单列署名",
+      "date": "2024-04-29；会议发生于2024-04-24",
+      "population": "朱明秀指导的‘book思议汪汪队’，正文称会计专业研究生；未列队员姓名",
+      "advisorNames": [
+        "朱明秀",
+        "温素彬",
+        "崔秀梅",
+        "黄中生"
+      ],
+      "summary": "2024年MPAcc案例赛晋级后的企业调研部署和指导团队组织。",
+      "points": [
+        "队伍以华东赛区第17名晋级第二阶段，研究主题为数智化变革与管理会计创新。",
+        "温素彬强调案例创新和体系构建；黄中生、朱明秀、崔秀梅提出调研建议；会议落实指导团队及调研公司。"
+      ],
+      "limits": "朱明秀是文中明确的原指导教师；其余为启动会参与及提建议，不能据此确认每人的具体分工或学生学位导师。",
+      "readingScope": "官网正文第62—69行全部可读，配图未单独审读。",
+      "webRefs": [
+        "turn1search9",
+        "turn9view2"
+      ],
+      "evidenceTier": "MPAcc竞赛团队调研组织过程",
+      "eventKey": "2024-national-mpacc-book-team",
+      "newComparedWithSite": true
+    },
+    {
+      "id": "MENTOR-NEW-05",
+      "title": "南京审计大学会计学院举行MPAcc研究生案例大赛动员会",
+      "url": "https://account.nau.edu.cn/2024/0317/c9005a126229/page.htm",
+      "platform": "南京审计大学会计学院官网",
+      "author": "页面未单列署名",
+      "date": "2024-03-17；会议发生于2024-03-16",
+      "population": "2023级全体MPAcc研究生；全年级集体指导，不是某导师名下学生",
+      "advisorNames": [
+        "潘俊",
+        "崔秀梅",
+        "毕超"
+      ],
+      "summary": "针对2024年全国与长三角两类案例赛事的集体准备指导。",
+      "points": [
+        "潘俊说明理论分析、数据处理、文字表达及沟通协调、团队领导能力的培养目标。",
+        "崔秀梅比较赛制变化，指导命题案例的题名、框架、内容、表达、排版及整体设计，并提示疏漏和时间安排。"
+      ],
+      "limits": "属于面向全体MPAcc的动员与案例教学，不能当作潘俊或崔秀梅个人带组方式、私下反馈质量或学生评价。",
+      "readingScope": "官网正文第86—102行全部可读；未逐张读图。",
+      "webRefs": [
+        "turn1search20",
+        "turn9view6"
+      ],
+      "evidenceTier": "明确MPAcc群体的案例训练指导",
+      "eventKey": "2024-mpacc-case-mobilization",
+      "newComparedWithSite": true
+    },
+    {
+      "id": "MENTOR-NEW-06",
+      "title": "【优秀导师】立德树人典范|在师生亲情中培养弟子的高尚品格与科研素养 ——许汉友“立德树人”优秀导师事迹介绍",
+      "url": "https://nau.edu.cn/2020/0711/c5729a66714/page.htm",
+      "platform": "南京审计大学官网／新闻网",
+      "author": "会计学院",
+      "date": "2020-07-11",
+      "population": "许汉友所指导研究生，整体未区分学硕与专硕；具名陈茜个案明确关联全国会计专业硕士优秀论文，文中称2016级",
+      "advisorNames": [
+        "许汉友"
+      ],
+      "summary": "历史导师事迹，记录可操作的科研安排及MPAcc陈茜的实习与论文衔接。",
+      "points": [
+        "报道记载每学期期初写科研规划、期末总结，每周师生见面汇报论文、文献和方法，另有导师不参加的同门研讨。",
+        "陈茜本科为服装设计背景，进入服装企业实习、申报创新实践课题，并以该案例形成获奖会计专硕论文。"
+      ],
+      "limits": "是2020年官方评优宣传；每周等整体安排混合不同硕士类型，不能全量套给当年MPAcc。另一2019新闻网报道将陈茜写为2017级，年级存在官网不一致，宜以姓名、论文题目识别。",
+      "readingScope": "官网全文第75—117行可读；重点核读第79—98行，未逐张读图。",
+      "webRefs": [
+        "turn24search4",
+        "turn29view0",
+        "turn32view0"
+      ],
+      "evidenceTier": "历史导师科研安排＋具名MPAcc实习论文个案",
+      "eventKey": "2020-xu-mentoring-profile",
+      "newComparedWithSite": true
+    },
+    {
+      "id": "MENTOR-NEW-07",
+      "title": "润泽主张大讲堂（第22讲）傅祥斐——数据资产入表理论前沿与企业实践",
+      "url": "https://account.nau.edu.cn/2026/0526/c8919a157855/page.htm",
+      "platform": "南京审计大学会计学院官网",
+      "author": "页面未单列署名",
+      "date": "2026-05-26；讲座发生于2026-05-22",
+      "population": "会计学院研究生，未区分会计学学硕、MPAcc等专业；未列具体学生",
+      "advisorNames": [
+        "傅祥斐"
+      ],
+      "summary": "傅祥斐面向研究生讲解数据资产会计实务，并提出选题和研究方法建议。",
+      "points": [
+        "通过企业案例与链路图讲解数据资源转为资产的路径、成本计量及披露。",
+        "师生围绕确认条件和会计分录讨论；报道明确提到学术研究的选题方向、方法建议。"
+      ],
+      "limits": "只能作为公开研究生教学与研究主题背景；不是具名MPAcc师生关系，也没有个人指导风格或满意度反馈。",
+      "readingScope": "官网正文第83—92行全部可读；未逐张审读照片。",
+      "webRefs": [
+        "turn17search0",
+        "turn29view1"
+      ],
+      "evidenceTier": "研究生教学背景；MPAcc身份未分",
+      "eventKey": "2026-fu-data-assets-lecture",
+      "newComparedWithSite": true
+    },
+    {
+      "id": "MENTOR-NEW-08",
+      "title": "敏知会计学术沙龙（第17期）：李慧论“基于盈利质量的DANP变权财务预警模型研究”",
+      "url": "https://account.nau.edu.cn/2022/0510/c8917a98642/page.htm",
+      "platform": "南京审计大学会计学院官网",
+      "author": "会计学院 周可可",
+      "date": "2022-05-10；讲座发生于2022-05-06",
+      "population": "会计学院与泽园书院师生；正文没有具体年级、学位层次或MPAcc身份",
+      "advisorNames": [
+        "李慧"
+      ],
+      "summary": "李慧公开讲解财务预警模型的论文研究结构和实证方法。",
+      "points": [
+        "分享按照问题、文献、理论、模型、实证、结论展开，呈现可供了解研究训练主题的完整论文思路。",
+        "研究示例包含盈利质量评价指标、DANP权重与上市公司样本验证。"
+      ],
+      "limits": "师生学术交流背景；不能认定听众为MPAcc，不是李慧指导某学生完成论文的证据，也不能据论文方法推断其全部指导要求。",
+      "readingScope": "官网正文第83—90行全部可读。",
+      "webRefs": [
+        "turn24search8",
+        "turn29view2"
+      ],
+      "evidenceTier": "公开研究方法教学背景；MPAcc身份未明",
+      "eventKey": "2022-li-danp-seminar",
+      "newComparedWithSite": true
+    },
+    {
+      "id": "MENTOR-NEW-09",
+      "title": "【产教融合】管理会计课程组开展产教融合专业报告会",
+      "url": "https://account.nau.edu.cn/2024/0621/c8919a132565/page.htm",
+      "platform": "南京审计大学会计学院官网",
+      "author": "页面未单列署名",
+      "date": "2024-06-21；活动发生于2024-06-18",
+      "population": "会计智能化课程组教师及学生，未明确学位层次和MPAcc身份",
+      "advisorNames": [
+        "李慧",
+        "赵袁军"
+      ],
+      "summary": "李慧主持课程组的业财融合实务交流，学生就能力准备向企业财务负责人提问。",
+      "points": [
+        "企业嘉宾王伟祥以南钢业务财务场景说明业财融合、驾驶舱和一体化实践。",
+        "学生询问供应链中的数智转型及在校实践能力准备；李慧与嘉宾交流并总结。"
+      ],
+      "limits": "主要讲授者是企业嘉宾，李慧为主持与总结；不能将嘉宾观点写成李慧个人要求，也不能当作MPAcc导师组训练记录。",
+      "readingScope": "直接打开文章正文第81—94行全部可读，非仅列表摘要。",
+      "webRefs": [
+        "turn24search9",
+        "turn32view2",
+        "turn43view0"
+      ],
+      "evidenceTier": "课程产教融合背景；MPAcc身份未明",
+      "eventKey": "2024-li-industry-course-forum",
+      "newComparedWithSite": true
+    }
+  ],
+  "unread": [],
+  "duplicates": [
+    {
+      "title": "我与南审｜崔秀梅：是严师，也是赛场领航人",
+      "url": "https://news.nau.edu.cn/2026/1014/c11360a162564/page.htm",
+      "existingUrl": "https://news.nau.edu.cn/2026/1014/c11360a162564/page.psp",
+      "reason": "相同文章ID a162564，不将.htm/.psp格式差异视作新记录。现有来源17、O-CXM。",
+      "webRefs": [
+        "turn1search0",
+        "turn1search1"
+      ]
+    },
+    {
+      "title": "南审本硕毕业，读博的他立志做守护文物的会计学者",
+      "url": "https://nau.edu.cn/2025/0820/c11307a146844/page.htm",
+      "reason": "现有来源18、O-PJ已收录；潘俊—孙昊晨个案。",
+      "webRefs": [
+        "turn3search0"
+      ]
+    },
+    {
+      "title": "我校学生团队在全国第十一届MPAcc学生案例大赛中获奖",
+      "url": "https://xxgk.nau.edu.cn/2025/0627/c9179a146011/page.htm",
+      "existingUrl": "https://account.nau.edu.cn/2025/0626/c9702a146002/page.htm",
+      "reason": "新URL但与现有来源09同届同队同导师的2025年比赛结果，不算独立事件。",
+      "webRefs": [
+        "turn1search3",
+        "turn13search9"
+      ]
+    },
+    {
+      "title": "会计学院MPACC团队荣获第21届长三角MPAcc智能财会案例研究论坛特等奖",
+      "url": "https://account.nau.edu.cn/2024/0603/c8917a131562/page.htm",
+      "reason": "已完整存在于来源11。全文已重读，可用来校验单文涛、温素彬指导队员身份，但不计新增。",
+      "webRefs": [
+        "turn1search16",
+        "turn9view4"
+      ]
+    },
+    {
+      "title": "会计学院2篇教学案例入库全国MPAcc优秀教学案例库",
+      "url": "https://mpacc.nau.edu.cn/2025/1121/c11506a151137/page.htm",
+      "reason": "现有来源10。全文可读，但作者教学案例入库不等于具体学生培养反馈。",
+      "webRefs": [
+        "turn1search18",
+        "turn9view5"
+      ]
+    },
+    {
+      "title": "【喜讯】我校会计学院再次获得全国MPAcc优秀硕士学位论文",
+      "url": "https://news.nau.edu.cn/2019/0712/c5796a57152/page.htm",
+      "existingUrl": "https://account.nau.edu.cn/2020/0826/c9005a100242/page.htm",
+      "reason": "陈茜—许汉友2018年度获奖同一事件已见来源14，不计新增独立个案；本篇称陈茜2017级，2020导师事迹及2019学院转载称2016级，需保留年级冲突。",
+      "webRefs": [
+        "turn1search22",
+        "turn9view7",
+        "turn24search3",
+        "turn32view0"
+      ]
+    },
+    {
+      "title": "教师个人简介搜索结果（未作为新增培养记录）",
+      "urls": [
+        "https://account.nau.edu.cn/2021/0902/c8880a99579/page.htm",
+        "https://account.nau.edu.cn/2018/1123/c8880a99569/page.htm",
+        "https://account.nau.edu.cn/2020/0829/c9536a99674/page.htm",
+        "https://account.nau.edu.cn/2021/0905/c8882a99685/page.htm"
+      ],
+      "reason": "程博、王烨、傅祥斐、李慧教师页已入现有名册；本轮不以个人履历、论文共著名单替代MPAcc学生指导反馈。",
+      "webRefs": [
+        "turn13search1",
+        "turn17search1",
+        "turn3search4",
+        "turn3search3"
+      ]
+    }
+  ],
+  "coverageGaps": [
+    "程博、王烨检索结果以教师简介、论文共著或制度/会议背景为主，本轮未找到新的、可归属其具体MPAcc学生训练过程的独立公开一手个案。",
+    "傅祥斐与李慧新增资料可以补充公开教学与研究主题，但不能填补具名MPAcc学生个人体验的空白。",
+    "未发现需要用搜索摘要冒充全文的候选；故unread为空。",
+    "另一个生活研究分工已收2026-10-30研究生座谈会和2025新生见面会，本文件避免重复收录。"
+  ]
+}

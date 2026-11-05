@@ -1,0 +1,255 @@
+{
+  "meta": {
+    "research_date": "2026-11-05",
+    "method": "小红书现有登录态的公开可见站内UI，只读正文、图片与可展开评论；不读cookie或隐藏应用状态。",
+    "status": "completed",
+    "target": "MPAcc课程、实践、生活；不为数量纳入本科、MAud或未确认学校帖子",
+    "counts": {
+      "accepted": 4,
+      "screened": 9,
+      "duplicates_listed": 8,
+      "new_full_detail_read": 13
+    }
+  },
+  "queries": [
+    "南审 MPAcc 研一",
+    "南审 会计专硕 实习",
+    "南审 MPAcc 课程",
+    "南审 研一 日常",
+    "南审 会计专硕 论文",
+    "南审 MPAcc 生活"
+  ],
+  "accepted": [
+    {
+      "note_id": "64e1bfff000000000c034a90",
+      "post_id": "64e1bfff000000000c034a90",
+      "title": "南审课表｜会计专硕·所有方向-研一（上）",
+      "url": "https://www.xiaohongshu.com/explore/64e1bfff000000000c034a90?xsec_token=ABqx9oaoK7ZO_7mfctWpZAZgJInu2mjQlZel5jPxXbgyc=&xsec_source=pc_search",
+      "author": "小羽毛学姐",
+      "date": "编辑于 2023-08-20",
+      "platform": "小红书",
+      "population": "第三方汇总的2023年南审MPAcc六方向研一上课表，不是作者本人培养经历",
+      "advisorNames": [],
+      "summary": "历史课表汇总称，研一上尚未加入选修课时六方向课表基本一致，主要差别是上课时间。可辅助理解方向课表的共同基础，不能作当前学年安排。",
+      "points": [
+        "正文明确列出财务会计、管理会计、财务管理、注册会计师审计、政府与非营利组织会计、大数据分析与会计智能化六方向。",
+        "作者比较当时课表后称，尚未加入选修课，课程基本一致，排课时间存在区别。",
+        "评论有人询问案例研究与开发实践的课程评价，但未得到可见答复，不能据此评价该课。"
+      ],
+      "limits": "2023历史第三方资料；不证明2026课表、方向转换规则、就业差别或任何导师风格。两张课表图片未逐张审读，不抄录具体时段与学分。",
+      "readingScope": "文字正文完整；11条评论的已加载顶层与可见回复至THE END；一处分支1条回复未展开；两张图片未逐张审读。",
+      "read": true,
+      "promotionStatus": "none_observed",
+      "webRefs": [],
+      "browserRef": "tab17，站内搜索南审 MPAcc 研一后点击详情"
+    },
+    {
+      "note_id": "6a8edcec000000001f000035",
+      "post_id": "6a8edcec000000001f000035",
+      "title": "南审选课互助｜速来留课评（会计篇）",
+      "url": "https://www.xiaohongshu.com/explore/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "小羽毛学姐",
+      "date": "08-26",
+      "platform": "小红书",
+      "population": "面向南审MPAcc/MAud选课的第三方互助帖；评论者自述上课经验，未核验具体年级及是否全部为MPAcc",
+      "advisorNames": [],
+      "summary": "评论提供较具体的上课方式：商业智能分析需装软件并频繁实操；国家治理与国家审计专题含小组作业、可选汇报和结课论文；司法会计被作者描述为频繁pre。没有具名任课教师，不能映射导师。",
+      "points": [
+        "评论者🍑称商业智能分析每节课需要实操，展开回复后提到Power BI，认为主要靠自己动手，技能可写入简历；其软件名称最初带疑问，仍需向任课教师核对。",
+        "评论者小鱼鱼鱼对国家治理与国家审计专题描述为有小组作业、可选课堂汇报、结课论文；这是未核验身份的课程个案。",
+        "评论者🍑称会计研究方法课堂会抽人回答；关于期末是考试还是论文的追问尚未读取到答复。",
+        "作者评论称司法会计几乎每节课要pre；给分高低是主观判断，不能作为稳定评分承诺。"
+      ],
+      "limits": "日期只见月日，年份不猜。评论未确认具体MPAcc身份和授课年度，也未具名教师。选课学分、开学后选课等答复不当作现行制度。存在多个未展开分支；三张图片未逐张审读。",
+      "readingScope": "文字正文完整；31条评论中的首批已加载顶层和可见回复；商业智能分析分支5条回复已展开并读到关于Power BI与实操的回复；其他分支1/6/1条未展开；未宣称全部评论已读；三图未逐张审读。",
+      "read": true,
+      "promotionStatus": "none_observed",
+      "webRefs": [],
+      "browserRef": "tab17，站内搜索南审 MPAcc 课程后点击详情"
+    },
+    {
+      "note_id": "67aef89b0000000029009825",
+      "post_id": "67aef89b0000000029009825",
+      "title": "✨南审选课攻略·会计专硕篇（欢迎补充！）",
+      "url": "https://www.xiaohongshu.com/explore/67aef89b0000000029009825?xsec_token=AB24tiWWVG9hIy5oTAh8zCE2YXimNEIExkpaIrpUOVNm8=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "小羽毛学姐",
+      "date": "2025-02-14",
+      "platform": "小红书",
+      "population": "作者称由当时南审会计学院研二学姐提供的MPAcc课程主观心得，第三方转述",
+      "advisorNames": [],
+      "summary": "两图给出三门会计专硕选修课的作业与考核形式；政府及非营利组织会计理论与实务含中期读书报告和课程研究设计，司法会计理论与实践含案例论文及频繁pre，数据资产与数据治理采用小组论文。",
+      "points": [
+        "提供者自述政府及非营利组织会计理论与实务中期有读书报告，考查为课程研究设计；本人认为难度不大、有收获。",
+        "司法会计理论与实践被描述为案例论文考查、每节课需要pre，任务较重；同时称对司法感兴趣者可了解经济案件。",
+        "数据资产与数据治理被描述为小组论文考查；提供者认为压力不大。",
+        "可见评论中作者说财务报表分析较难的说法带有据说性质，会计研究方法的评价也来自反馈，不能升级成亲历事实。"
+      ],
+      "limits": "2025历史课评，提供者不具名，未核验实际选课记录。给分与压力均为个人主观感受，不能保证新学期相同。程博相关评论仅赞老师但明确不清楚课程，不用于导师指导评价。",
+      "readingScope": "文字正文完整；1/2与2/2两张图片均截图查看，显示相同三门课评内容；15条评论已加载顶层与可见回复至THE END；财务报表分析对比分支的1条回复点击后显示加载中，未审读该新增回复；程博公司治理分支7条回复未展开。",
+      "read": true,
+      "promotionStatus": "none_observed",
+      "webRefs": [],
+      "browserRef": "tab17，站内搜索南审 会计专硕 论文后点击详情"
+    },
+    {
+      "note_id": "6a16a3fb0000000007023990",
+      "post_id": "6a16a3fb0000000007023990",
+      "title": "学术小渣渣的汇报日",
+      "url": "https://www.xiaohongshu.com/explore/6a16a3fb0000000007023990?xsec_token=ABtJXTEDO_AzD9w2RSYHuPgQu5QDhHnts3scx-Mq492og=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "噗噜噜小熊糖",
+      "date": "05-27",
+      "platform": "小红书",
+      "population": "正文标签明确南审MPAcc的个人研究生日常；未公开具体届别",
+      "advisorNames": [],
+      "summary": "作者亲述赴汕头参加学术会议，以听会为主，并提及此前一直忙于案例大赛。可作为MPAcc课堂以外学术活动与赛事投入的个案。",
+      "points": [
+        "作者说自己到汕头参加学术会议，参加期间主要听讲，空闲时在汕头大学校园走走。",
+        "作者称一段时间未更新是因为忙案例大赛，并坦言结果留有遗憾；说明赛事准备可能持续占用课余精力，不能据此判断学校整体获奖率。",
+        "评论者问这类活动是否自行报名，作者无可见答复，因此报名机制、费用承担、导师是否带队均未确定。"
+      ],
+      "limits": "日期仅月日，年份不猜。没有会议名称、导师姓名、学院安排或费用信息。一次亲历不能外推为每名MPAcc学生固定机会；六张图片未逐张审读。",
+      "readingScope": "文字正文完整；2条评论完整读取至THE END，无未展开回复；六张图片未逐张审读。",
+      "read": true,
+      "promotionStatus": "none_observed",
+      "webRefs": [],
+      "browserRef": "tab17，站内搜索南审 MPAcc 生活后点击详情"
+    }
+  ],
+  "screened": [
+    {
+      "note_id": "6a450bce000000001702dc8b",
+      "title": "（无标题）南审研究生录取通知书到了",
+      "url": "https://www.xiaohongshu.com/explore/6a450bce000000001702dc8b?xsec_token=ABndrDHyaQetI3m3tlDTXvejCGnIyyGjBp1lGXRRwyHjQ=&xsec_source=pc_search",
+      "author": "evergreen",
+      "date": "编辑于 07-01",
+      "reason": "正文仅收到通知书，标签MPAcc；不是研一培养、课程或实习体验，未纳入有效材料。",
+      "readingScope": "文字正文及5条评论中的已加载顶层和可见回复至THE END；一条回复未展开；3图未逐读。",
+      "read": true
+    },
+    {
+      "note_id": "6ad11140000000001c00e934",
+      "title": "看了一下不包吃包住不就是倒贴吗",
+      "url": "https://www.xiaohongshu.com/explore/6ad11140000000001c00e934?xsec_token=ABV39uj--jPrLMUlfV_Dt9cFIcdtDfP1yYsTY0bwlw4r8=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "轮回因",
+      "date": "编辑于 10-16",
+      "reason": "泛四大八大实习讨论，没有确认南京审计大学或MPAcc身份。",
+      "readingScope": "正文完整；328条评论首批已加载顶层及可见回复，未全部展开。",
+      "read": true
+    },
+    {
+      "note_id": "6aaf8212000000000b000e5d",
+      "title": "研一有课怎么实习啊",
+      "url": "https://www.xiaohongshu.com/explore/6aaf8212000000000b000e5d?xsec_token=ABjOPBldHiCGv0jJyZo220Nn5Gj19a9P9cS0p5sMHdzfY=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "Zzz",
+      "date": "09-20",
+      "reason": "正文明确OUC海南专项，非南审，不移植其半年实践/考公安排。",
+      "readingScope": "文字正文完整；评论未审读。",
+      "read": true
+    },
+    {
+      "note_id": "6ad81d4c000000002a03ac6e",
+      "title": "南审会计硕士Mpacc值得选择的理由",
+      "url": "https://www.xiaohongshu.com/explore/6ad81d4c000000002a03ac6e?xsec_token=AB3U6dIQ9X_S-xPg5Z3nSbjTDTb2suwKz-xBPEl4abzQY=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "行审致远",
+      "date": "编辑于 10-21",
+      "reason": "泛择校宣传与就业、排名、实习机会主张，身份不明，无具体本人课程或实习经历；不纳入有效体验。",
+      "readingScope": "文字正文完整；详情显示2条评论，但评论未审读；5张图未逐读。",
+      "read": true
+    },
+    {
+      "note_id": "6ab9f88900000000020109c6",
+      "title": "南审研一",
+      "url": "https://www.xiaohongshu.com/explore/6ab9f88900000000020109c6?xsec_token=ABFD6J253jVxE9SETNFqMdyYD-YRWI9sUO4_L6XiyBeNA=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "lucky",
+      "date": "09-28",
+      "reason": "明确审计专硕标签，短文仅雨天吃饭生活，无MPAcc培养信息。",
+      "readingScope": "文字正文完整；详情显示45条评论，评论未审读；5图未逐读。",
+      "read": true
+    },
+    {
+      "note_id": "6a462d92000000000f0162e7",
+      "title": "（无标题）会计专业毕业论文选题求助",
+      "url": "https://www.xiaohongshu.com/explore/6a462d92000000000f0162e7?xsec_token=ABpis2slkSNnLwWA0BML0zu_Z3baFPAEh1Hp8kFIJexFs=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "magic",
+      "date": "07-02",
+      "reason": "正文仅会计专业论文选题求助，不能确认南审或硕士身份。",
+      "readingScope": "文字正文完整，评论未完整阅读。",
+      "read": true
+    },
+    {
+      "note_id": "6735abad000000001b028f04",
+      "title": "🔥揭㊙️！南审MPAcc读研生活体验🎓",
+      "url": "https://www.xiaohongshu.com/explore/6735abad000000001b028f04?xsec_token=ABAtxIBNC0CaI0rerPdqUbZ_d_N38uTx7p7XmPCCU4QLs=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "述飞MPAcc",
+      "date": "编辑于 2024-11-15",
+      "reason": "培训机构宣传帖，末图明确私聊复试咨询导流。四图虽介绍交通、设施、宿舍、学习与实践，未明确亲历者身份；不作为独立学生体验来源。",
+      "summary": "最后一图称课程多有小组汇报，MPAcc实践不少于6个月；这些泛主张须以当年官方培养文件核验。",
+      "promotionStatus": "visible_private_contact_redirect",
+      "readingScope": "文字正文完整；四张图片全部逐页截图查看；页面显示无评论。",
+      "read": true
+    },
+    {
+      "note_id": "6a2a3cf00000000007027a48",
+      "title": "毕业plog｜属于我的南审校园生活结束啦",
+      "url": "https://www.xiaohongshu.com/explore/6a2a3cf00000000007027a48?xsec_token=ABPmDLSxO_U2r0828S3M0sSCYqBihL8NXBuLifS6G6sxE=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "bb黄碎碎念",
+      "date": "06-11",
+      "reason": "正文标签明确大四、女大学生，非MPAcc毕业生；宿舍换宿答复为好像，不作研究生政策。",
+      "readingScope": "文字正文完整；25条评论首批已加载顶层及可见回复，未全部读取；18图未逐读。",
+      "read": true
+    },
+    {
+      "note_id": "685a5862000000002201ccb2",
+      "title": "南审研究生生活-研一总结篇",
+      "url": "https://www.xiaohongshu.com/explore/685a5862000000002201ccb2?xsec_token=AB93LW4q2v8SoGgk5570SVXnQfxefRSuxBxpmVI6FIRWw=&xsec_source=pc_search&source=web_search_result_notes",
+      "author": "牛奶味的奥利奥",
+      "date": "2025-06-24",
+      "reason": "作者评论明确我们内审，属审计方向。正文关于财务会计理论、数据结构、期末周和即将实习的经历不能移植到MPAcc。",
+      "readingScope": "文字正文完整；24条评论首批已加载顶层与可见回复至THE END；实习分支10条、生活分支4条回复未展开；18图未逐读。",
+      "read": true
+    }
+  ],
+  "unread": [],
+  "duplicates": [
+    {
+      "note_id": "689161730000000023039374",
+      "title": "南审课表｜会计专硕·研一（下）",
+      "reason": "基线已有，仅列表识别跳过"
+    },
+    {
+      "note_id": "6706bbc7000000002c02fb54",
+      "title": "南审课表｜会计专硕·研一（上）",
+      "reason": "基线已有，仅列表识别跳过"
+    },
+    {
+      "note_id": "6966299f000000001a028c53",
+      "title": "NAU研一上 期末考试啦！",
+      "reason": "基线已有，仅列表识别跳过"
+    },
+    {
+      "note_id": "69317020000000001e025f54",
+      "title": "NAU会计研究生的期末前夕plog",
+      "reason": "基线已有，仅列表识别跳过"
+    },
+    {
+      "note_id": "690b43480000000004022f3e",
+      "title": "Nau研一到期中啦",
+      "reason": "基线已有，仅列表识别跳过"
+    },
+    {
+      "note_id": "6aa7737c000000000d025bb7",
+      "title": "南审｜研一plog☀️",
+      "reason": "基线已有，仅列表识别跳过"
+    },
+    {
+      "note_id": "6ab15986000000003602baaa",
+      "title": "🧩南审读研plog",
+      "reason": "基线已有，仅列表识别跳过"
+    },
+    {
+      "note_id": "68ec65dc000000000703b030",
+      "title": "南审毕业条件：博士硕士学位学术成果要求",
+      "reason": "基线已有，仅列表识别跳过"
+    }
+  ]
+}
