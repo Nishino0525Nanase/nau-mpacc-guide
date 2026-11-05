@@ -4,6 +4,11 @@
   const $ = (s, root = document) => root.querySelector(s);
   const $$ = (s, root = document) => Array.from(root.querySelectorAll(s));
   const app = $('#app');
+  const header = $('.site-header');
+  const updateHeaderOffset = () => document.documentElement.style.setProperty('--header-offset', `${Math.ceil(header.getBoundingClientRect().height) + 8}px`);
+  updateHeaderOffset();
+  if ('ResizeObserver' in window) new ResizeObserver(updateHeaderOffset).observe(header);
+  else window.addEventListener('resize', updateHeaderOffset, {passive:true});
   const dialog = $('#detail-dialog');
   const state = { data: null, view: 'mentors', query: '', direction: '', savedOnly: false, postQuery: '', postTopic: '', postCategory: '', postLimit: 20, chapter: 'life-01', saved: {}, postCodes: {}, lastFocus: null, lastFocusId: null };
   const icons = {
@@ -249,7 +254,7 @@
     $$('[data-nav]').forEach(link => link.dataset.nav === state.view ? link.setAttribute('aria-current','page') : link.removeAttribute('aria-current'));
     ({mentors:renderMentors,life:renderLife,posts:renderPosts,downloads:renderDownloads})[state.view]();
     document.title = `${{mentors:'导师导览',life:'学习生活',posts:'原帖索引',downloads:'资料下载'}[state.view]} · 雨诺的南审手记`;
-    if (scroll) requestAnimationFrame(() => $('.section-tabs-wrap').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'}));
+    if (scroll) requestAnimationFrame(() => app.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'}));
     emit('page_view', {chapter:state.view==='life'?state.chapter:undefined});
   }
 
