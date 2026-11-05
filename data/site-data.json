@@ -7,7 +7,7 @@
       "detailedMentorCards": 17,
       "lifeChapters": 12,
       "socialPosts": 113,
-      "officialEvidence": 106,
+      "officialEvidence": 112,
       "feedbackRecords": 21,
       "screenedSources": 15,
       "unreadLeads": 6
@@ -30,7 +30,7 @@
     "directionNote": "G1至G6是资料导览分类，不是统一招生方向；报考以当年125300目录，在读以本级培养方案。",
     "evidenceNote": "官方资料、具名个案、本科课程、研究生转述和身份不明评价分开保留；个人评价不构成导师性格、招生名额或普遍指导风格结论。",
     "quotaNote": "名单内不代表当年仍有名额；正式选导以当年双选通知及导师本人回复为准。",
-    "platformNote": "社交来源索引实际113条，官网证据106条；同帖回复补充不增加帖子数，同届同队转载不增加独立事件。课程反馈与导师日常指导分开，保留年份、对象和阅读范围。",
+    "platformNote": "社交来源索引实际113条，官网证据112条；同帖补读、同事件附件和转载不重复计数。课程反馈与导师日常指导分开，保留年份、对象和阅读范围。",
     "sourceInputFiles": [
       "life_content.json",
       "mentor_expanded_content.json",
@@ -564,7 +564,7 @@
     },
     "appEdition": {
       "web": {
-        "version": "1.0.0"
+        "version": "1.0.1"
       },
       "android": {
         "available": true,
@@ -574,6 +574,41 @@
         "sha256": "11e751241fa263f4d50e9ef54f10f32878a10624030b89f0f59f200825088b09",
         "label": "Android 安装包"
       }
+    },
+    "continueResearch": {
+      "newOfficialSources": 6,
+      "newSocialPosts": 0,
+      "updatedSocialPosts": 0,
+      "highlights": [
+        {
+          "title": "数字化定价教学案例",
+          "text": "王永妍的M企业数字化定价教学案例进入2025年度MPAcc优秀教学案例库，可用于了解其数字化经营决策与案例教学选题。",
+          "sourceCodes": [
+            "C501"
+          ]
+        },
+        {
+          "title": "数据资产与企业实务",
+          "text": "南钢总会计师梅家秀以数据资产入表、财务共享和财资税平台为例，介绍制造业数字治理与智慧财务；可补充课程和实习观察主题。",
+          "sourceCodes": [
+            "C502"
+          ]
+        },
+        {
+          "title": "把研究方向落到具体选题",
+          "text": "官方2026拟推荐附件提供21个会计专硕真实申报选题，涉及数据资产、人工智能审计、预算绩效、碳披露和供应链，可帮助把宽泛方向落到具体问题。",
+          "sourceCodes": [
+            "C503"
+          ]
+        },
+        {
+          "title": "学院专硕历史论文个案",
+          "text": "附件列出董必荣指导王一帆研究牧原股份数字化转型与企业绩效、潘俊指导李亦普研究华设设计集团EPC项目财务风险，可作为有姓名和题目的历史指导个案。",
+          "sourceCodes": [
+            "C504"
+          ]
+        }
+      ]
     }
   },
   "directions": [
@@ -653,6 +688,22 @@
           "sourceIds": [
             "ROSTER-董必荣"
           ]
+        },
+        {
+          "id": "continue-role-56f36ee48608921f",
+          "kind": "official",
+          "category": "学院专硕历史指导个案（附件未单列MPAcc）",
+          "statusLabel": "学院专硕历史指导个案（附件未单列MPAcc）",
+          "population": "会计学院2024优硕拟推荐附件中备注专硕的2项，另1项备注学硕；附件未单列MPAcc、1253代码或专硕专业名称，故仅称学院专硕个案。",
+          "date": "2024-08-11",
+          "author": null,
+          "text": "附件明确列为专硕王一帆数字化转型/畜牧业绩效论文指导老师 [C504]",
+          "limitations": "这是2024年历史拟推荐名单，未读两篇论文全文，不能介绍其方法或结论，也不推断导师目前名额、全体学生产出或日常相处。公示正文写2024年暨2023届，附件未单列毕业年，故不替两人猜届别。 附件仅写专硕，未注明MPAcc/1253，不能直接升级为确认MPAcc个案。 阅读范围：官方公示正文全文已读；附件XLSX实际下载，逐行读完Sheet1（表头及3名申请者），以备注专硕/学硕区分对象。",
+          "url": "https://account.nau.edu.cn/2024/0811/c9534a134393/page.htm",
+          "sourceIds": [
+            "C504"
+          ],
+          "expansionBatch": "continue-research"
         }
       ],
       "links": [
@@ -1906,6 +1957,22 @@
           ],
           "eventKey": "2024-mpacc-case-mobilization",
           "expansionBatch": "research-round3"
+        },
+        {
+          "id": "continue-role-fcba04a46f2b22b5",
+          "kind": "official",
+          "category": "学院专硕历史指导个案（附件未单列MPAcc）",
+          "statusLabel": "学院专硕历史指导个案（附件未单列MPAcc）",
+          "population": "会计学院2024优硕拟推荐附件中备注专硕的2项，另1项备注学硕；附件未单列MPAcc、1253代码或专硕专业名称，故仅称学院专硕个案。",
+          "date": "2024-08-11",
+          "author": null,
+          "text": "附件明确列为专硕李亦普EPC财务风险论文指导老师 [C504]",
+          "limitations": "这是2024年历史拟推荐名单，未读两篇论文全文，不能介绍其方法或结论，也不推断导师目前名额、全体学生产出或日常相处。公示正文写2024年暨2023届，附件未单列毕业年，故不替两人猜届别。 附件仅写专硕，未注明MPAcc/1253，不能直接升级为确认MPAcc个案。 阅读范围：官方公示正文全文已读；附件XLSX实际下载，逐行读完Sheet1（表头及3名申请者），以备注专硕/学硕区分对象。",
+          "url": "https://account.nau.edu.cn/2024/0811/c9534a134393/page.htm",
+          "sourceIds": [
+            "C504"
+          ],
+          "expansionBatch": "continue-research"
         }
       ],
       "links": [
@@ -3464,6 +3531,22 @@
             "09"
           ],
           "expansionBatch": "app-research"
+        },
+        {
+          "id": "continue-role-c457e6ccc7a70c6f",
+          "kind": "official",
+          "category": "MPAcc教学案例作者（非学生指导体验）",
+          "statusLabel": "MPAcc教学案例作者（非学生指导体验）",
+          "population": "王永妍撰写的MPAcc教学案例；不是具名学生论文或学生日常指导经历。",
+          "date": "2026-06-15",
+          "author": null,
+          "text": "该数字化定价MPAcc教学案例作者；仅证明具名教学案例选题，不证明学生指导体验。 [C501]",
+          "limitations": "仅读入库新闻，未取得案例全文；作者关系不等于学生指导关系，不能推定每位学生均参与案例开发、当前名额或相处风格。 阅读范围：已读官方新闻正文L74-L88；未以栏目摘要替代正文，图片未单独审读。",
+          "url": "https://account.nau.edu.cn/2026/0615/c8917a158917/page.htm",
+          "sourceIds": [
+            "C501"
+          ],
+          "expansionBatch": "continue-research"
         }
       ],
       "links": [
@@ -7701,6 +7784,92 @@
           ],
           "expansionId": "app-xhs-6a8edcec000000001f000035",
           "expansionBatch": "app-research"
+        },
+        {
+          "type": "p",
+          "text": "王永妍的M企业数字化定价教学案例进入2025年度MPAcc优秀教学案例库，可用于了解其数字化经营决策与案例教学选题。 仅读入库新闻，未取得案例全文；作者关系不等于学生指导关系，不能推定每位学生均参与案例开发、当前名额或相处风格。 [C501]",
+          "sourceCodes": [
+            "C501"
+          ],
+          "expansionId": "continue-body-a5a8e0112caeb163",
+          "expansionBatch": "continue-research"
+        },
+        {
+          "type": "p",
+          "text": "官方2026拟推荐附件提供21个会计专硕真实申报选题，涉及数据资产、人工智能审计、预算绩效、碳披露和供应链，可帮助把宽泛方向落到具体问题。 正文公示期2026年6月17日至24日已结束，不当作现在开放申请的通知；附件无导师列，21项不分配给任何导师，也不据此推断2027名额、毕业要求或项目完成率。 [C503]",
+          "sourceCodes": [
+            "C503"
+          ],
+          "expansionId": "continue-body-1d953b7f720cae27",
+          "expansionBatch": "continue-research"
+        },
+        {
+          "type": "details",
+          "text": "展开21个会计专硕申报选题主题（转述）",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "下列主题根据2026年学院拟推荐申报附件转述，属于1253会计专业学位。拟推荐不等于最终立项或项目完成，附件未列导师，不能把主题分配给某位导师。 [C503]"
+            },
+            {
+              "type": "list",
+              "items": [
+                "劳动关系与企业审计收费的关联",
+                "国家审计场景中的IPA技术应用",
+                "南钢案例中的数字责任与价值创造",
+                "上市公司低碳供应链的绩效衡量",
+                "数字人民币使用与企业风险承担",
+                "算法审计支持生产力升级的机制",
+                "企业海外经营中地缘风险与供应链韧性",
+                "新能源汽车出海面对的欧盟碳披露合规",
+                "医院AI审计中的算法、数据安全和防控",
+                "企业将数据确认为资产时的全过程风险",
+                "国家人工智能安全风险的审计治理",
+                "行政事业单位预算绩效的数智化改进",
+                "企业AI使用与债券发行定价",
+                "银行内部控制风险的数智预警",
+                "不同行业的数据资产披露及其影响",
+                "国有资产清查、盘活与价值提升",
+                "制造业减碳绩效管理中的智能财务",
+                "教育考试业务的支出标准与成本控制",
+                "审计工作中的机器学习应用",
+                "绿色基金推动企业转型的机制",
+                "国家审计中的知识图谱应用"
+              ]
+            }
+          ],
+          "sourceCodes": [
+            "C503"
+          ],
+          "expansionId": "continue-project-topics-C503",
+          "expansionBatch": "continue-research"
+        },
+        {
+          "type": "p",
+          "text": "附件列出董必荣指导王一帆研究牧原股份数字化转型与企业绩效、潘俊指导李亦普研究华设设计集团EPC项目财务风险，可作为有姓名和题目的历史指导个案。 这是2024年历史拟推荐名单，未读两篇论文全文，不能介绍其方法或结论，也不推断导师目前名额、全体学生产出或日常相处。公示正文写2024年暨2023届，附件未单列毕业年，故不替两人猜届别。 附件仅写专硕，未注明MPAcc/1253，不能直接升级为确认MPAcc个案。 [C504]",
+          "sourceCodes": [
+            "C504"
+          ],
+          "expansionId": "continue-body-10214a9412a26db9",
+          "expansionBatch": "continue-research"
+        },
+        {
+          "type": "p",
+          "text": "官方模板设有三项导师志愿，并留研究生、导师、学科及学院意见签字栏。可在联系导师时顺便核对本级正式互选所需材料与签批步骤。 发布日期和当前执行状态未公开，date为null；不能把模板解读为本级必须填满三个志愿、可以同时确认三位导师或已经开放正式双选。表内个人字段为空，未收集或上传任何个人填报信息。 [C505]",
+          "sourceCodes": [
+            "C505"
+          ],
+          "expansionId": "continue-body-2406c5fc245f48bf",
+          "expansionBatch": "continue-research"
+        },
+        {
+          "type": "p",
+          "text": "可用于入学科研适应的院内交流实例：把目标拆成阶段任务，整理文献与写作逻辑，主动与导师同门交流，并安排运动调节压力。 这是2024年活动的官方转述，不是新的社交学生访谈；李潇琦为会计学硕，三年规划不能移植为MPAcc学制或必修安排。黄中生仅在本次致辞，不据此判定个人日常指导风格。无本级选导时间或导师名额信息。 [C506]",
+          "sourceCodes": [
+            "C506"
+          ],
+          "expansionId": "continue-body-cb06fee8e5f273b2",
+          "expansionBatch": "continue-research"
         }
       ],
       "sourceCodes": [
@@ -7754,7 +7923,12 @@
         "A404",
         "A405",
         "A406",
-        "A407"
+        "A407",
+        "C501",
+        "C503",
+        "C504",
+        "C505",
+        "C506"
       ]
     },
     {
@@ -7929,6 +8103,15 @@
           ],
           "expansionId": "app-public-a163064",
           "expansionBatch": "app-research"
+        },
+        {
+          "type": "p",
+          "text": "南钢总会计师梅家秀以数据资产入表、财务共享和财资税平台为例，介绍制造业数字治理与智慧财务；可补充课程和实习观察主题。 一次公开讲座不代表日常课程安排、实习岗位或录用；凌华为主持人，不能归为她的个人导师训练成果。未读南钢案例全文。 [C502]",
+          "sourceCodes": [
+            "C502"
+          ],
+          "expansionId": "continue-body-acf93f9d75d0188c",
+          "expansionBatch": "continue-research"
         }
       ],
       "sourceCodes": [
@@ -7951,7 +8134,8 @@
         "E010",
         "E001",
         "R313",
-        "A402"
+        "A402",
+        "C502"
       ]
     },
     {
@@ -9343,6 +9527,66 @@
           "expansionId": "app-source-xhs-6a8edcec000000001f000035",
           "expansionBatch": "app-research",
           "url": "https://www.xiaohongshu.com/explore/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "type": "source",
+          "text": "[C501] 会计学院教学案例入库全国MPAcc优秀教学案例库（2025年度数字化定价案例）",
+          "url": "https://account.nau.edu.cn/2026/0615/c8917a158917/page.htm",
+          "sourceCodes": [
+            "C501"
+          ],
+          "expansionId": "continue-source-a5a8e0112caeb163",
+          "expansionBatch": "continue-research"
+        },
+        {
+          "type": "source",
+          "text": "[C502] 润泽产教融合前沿讲坛（第39期）梅家秀——南钢数据资产入表探索与实践",
+          "url": "https://account.nau.edu.cn/2026/0529/c8919a157950/page.htm",
+          "sourceCodes": [
+            "C502"
+          ],
+          "expansionId": "continue-source-acf93f9d75d0188c",
+          "expansionBatch": "continue-research"
+        },
+        {
+          "type": "source",
+          "text": "[C503] 会计学院2026年江苏省研究生科研实践创新计划项目推荐申报公示（含21项1253会计项目）",
+          "url": "https://account.nau.edu.cn/2026/0617/c9534a159213/page.htm",
+          "sourceCodes": [
+            "C503"
+          ],
+          "expansionId": "continue-source-1d953b7f720cae27",
+          "expansionBatch": "continue-research"
+        },
+        {
+          "type": "source",
+          "text": "[C504] 关于推荐2024年校优秀硕士学位论文评审结果的公示（两项专硕具名选题）",
+          "url": "https://account.nau.edu.cn/2024/0811/c9534a134393/page.htm",
+          "sourceCodes": [
+            "C504"
+          ],
+          "expansionId": "continue-source-10214a9412a26db9",
+          "expansionBatch": "continue-research"
+        },
+        {
+          "type": "source",
+          "text": "[C505] 南京审计大学研究生和导师互选志愿表（MPAcc官网下载模板）",
+          "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/23094817-5c38-43a7-a04d-188b86fa560e.docx",
+          "sourceCodes": [
+            "C505"
+          ],
+          "expansionId": "continue-source-2406c5fc245f48bf",
+          "expansionBatch": "continue-research"
+        },
+        {
+          "type": "source",
+          "text": "[C506] MPAcc会人会语（第一期）：学术科研经验分享",
+          "url": "https://mpacc.nau.edu.cn/2024/0423/c11508a150629/page.htm",
+          "sourceCodes": [
+            "C506"
+          ],
+          "expansionId": "continue-source-cb06fee8e5f273b2",
+          "expansionBatch": "continue-research"
         }
       ],
       "sourceCodes": [
@@ -9494,7 +9738,13 @@
         "A404",
         "A405",
         "A406",
-        "A407"
+        "A407",
+        "C501",
+        "C502",
+        "C503",
+        "C504",
+        "C505",
+        "C506"
       ]
     }
   ],
@@ -22792,6 +23042,164 @@
       "originalUrl": "https://www.xiaohongshu.com/explore/697b0ab8000000000a02f013?xsec_token=AByfz0FfCEvosp0FrnPMKqXRD9kMGMPlUlipyg8nLDeac=&xsec_source=pc_search&source=web_search_result_notes",
       "canonicalUrl": "https://www.xiaohongshu.com/explore/697b0ab8000000000a02f013",
       "expansionBatch": "app-research"
+    },
+    "C501": {
+      "code": "C501",
+      "kind": "official",
+      "title": "会计学院教学案例入库全国MPAcc优秀教学案例库（2025年度数字化定价案例）",
+      "url": "https://account.nau.edu.cn/2026/0615/c8917a158917/page.htm",
+      "platform": "南京审计大学官网",
+      "date": "2026-06-15",
+      "author": null,
+      "population": "王永妍撰写的MPAcc教学案例；不是具名学生论文或学生日常指导经历。",
+      "summary": "王永妍的M企业数字化定价教学案例进入2025年度MPAcc优秀教学案例库，可用于了解其数字化经营决策与案例教学选题。",
+      "points": [
+        "案例将企业数字化定价与算法辅助决策结合，可作为联系老师时讨论具体业务场景的切入口。",
+        "可追问案例材料、定价分析与财务决策如何衔接；这些是基于题目的交流问题，并非已读案例全文结论。"
+      ],
+      "limits": "仅读入库新闻，未取得案例全文；作者关系不等于学生指导关系，不能推定每位学生均参与案例开发、当前名额或相处风格。",
+      "readingScope": "已读官方新闻正文L74-L88；未以栏目摘要替代正文，图片未单独审读。",
+      "changeType": "new",
+      "advisorNames": [
+        "王永妍"
+      ],
+      "label": "会计学院教学案例入库全国MPAcc优秀教学案例库（2025年度数字化定价案例）",
+      "originalUrl": "https://account.nau.edu.cn/2026/0615/c8917a158917/page.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/2026/0615/c8917a158917/page.htm",
+      "expansionBatch": "continue-research",
+      "additionalUrls": []
+    },
+    "C502": {
+      "code": "C502",
+      "kind": "official",
+      "title": "润泽产教融合前沿讲坛（第39期）梅家秀——南钢数据资产入表探索与实践",
+      "url": "https://account.nau.edu.cn/2026/0529/c8919a157950/page.htm",
+      "platform": "南京审计大学官网",
+      "date": "2026-05-29",
+      "author": null,
+      "population": "会计学院研究生听众，正文未单列MPAcc；2026年5月27日的一次行业讲座。",
+      "summary": "南钢总会计师梅家秀以数据资产入表、财务共享和财资税平台为例，介绍制造业数字治理与智慧财务；可补充课程和实习观察主题。",
+      "points": [
+        "把数据资产入表放在业务场景、数据治理和价值创造中一起理解，避免只把它看作会计分录问题。",
+        "实习或访企时可关注财务共享、管理驾驶舱及财资税系统如何连接业务；这是从讲座归纳出的观察清单。"
+      ],
+      "limits": "一次公开讲座不代表日常课程安排、实习岗位或录用；凌华为主持人，不能归为她的个人导师训练成果。未读南钢案例全文。",
+      "readingScope": "已读官方新闻全文，重点L81-L92；讲座照片未单独OCR。",
+      "changeType": "new",
+      "advisorNames": [],
+      "label": "润泽产教融合前沿讲坛（第39期）梅家秀——南钢数据资产入表探索与实践",
+      "originalUrl": "https://account.nau.edu.cn/2026/0529/c8919a157950/page.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/2026/0529/c8919a157950/page.htm",
+      "expansionBatch": "continue-research",
+      "additionalUrls": []
+    },
+    "C503": {
+      "code": "C503",
+      "kind": "official",
+      "title": "会计学院2026年江苏省研究生科研实践创新计划项目推荐申报公示（含21项1253会计项目）",
+      "url": "https://account.nau.edu.cn/2026/0617/c9534a159213/page.htm",
+      "platform": "南京审计大学官网",
+      "date": "2026-06-17",
+      "author": null,
+      "population": "附件25项拟推荐项目中，21项专业学位类别代码1253、名称会计，另4项1202工商管理学硕分开排除。",
+      "summary": "官方2026拟推荐附件提供21个会计专硕真实申报选题，涉及数据资产、人工智能审计、预算绩效、碳披露和供应链，可帮助把宽泛方向落到具体问题。",
+      "points": [
+        "项目选题例子包括企业数据资产入表全流程风险、知识图谱在国家审计中的应用、公立医院AI审计风险及行政事业单位预算绩效优化。",
+        "另有南钢企业数字责任案例、欧盟碳披露与新能源汽车出海合规、商业银行内控预警、制造业碳减排绩效等不同业务场景。",
+        "将“研究对象—具体问题—可获得材料”列成小表后，再与意向导师讨论可行性；这是根据公开题目提出的准备方法。",
+        "名单是院级拟推荐申报记录，不是省级最终立项或已完成成果；同一附件只作1个独立来源。"
+      ],
+      "limits": "正文公示期2026年6月17日至24日已结束，不当作现在开放申请的通知；附件无导师列，21项不分配给任何导师，也不据此推断2027名额、毕业要求或项目完成率。",
+      "readingScope": "官方公示正文全文已读；点击附件后以HTTPS实际下载XLSX，openpyxl只读模式逐行读取全部25个项目，以类别代码1253和类别名称会计筛出21条；未按姓名或学号猜专业。",
+      "changeType": "new",
+      "advisorNames": [],
+      "label": "会计学院2026年江苏省研究生科研实践创新计划项目推荐申报公示（含21项1253会计项目）",
+      "originalUrl": "https://account.nau.edu.cn/2026/0617/c9534a159213/page.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/2026/0617/c9534a159213/page.htm",
+      "expansionBatch": "continue-research",
+      "additionalUrls": [
+        "https://account.nau.edu.cn/_upload/article/files/a1/be/fbfb1fdd41898a9db9de5ebcff2f/0a13190a-db1f-4074-95af-01c2270e0621.xlsx"
+      ]
+    },
+    "C504": {
+      "code": "C504",
+      "kind": "official",
+      "title": "关于推荐2024年校优秀硕士学位论文评审结果的公示（两项专硕具名选题）",
+      "url": "https://account.nau.edu.cn/2024/0811/c9534a134393/page.htm",
+      "platform": "南京审计大学官网",
+      "date": "2024-08-11",
+      "author": null,
+      "population": "会计学院2024优硕拟推荐附件中备注专硕的2项，另1项备注学硕；附件未单列MPAcc、1253代码或专硕专业名称，故仅称学院专硕个案。",
+      "summary": "附件列出董必荣指导王一帆研究牧原股份数字化转型与企业绩效、潘俊指导李亦普研究华设设计集团EPC项目财务风险，可作为有姓名和题目的历史指导个案。",
+      "points": [
+        "董必荣指导的王一帆专硕论文，以牧原股份为案例讨论数字化转型与畜牧企业绩效；附件备注专硕1。",
+        "潘俊指导的李亦普专硕论文，以华设设计集团为案例讨论EPC项目财务风险；附件备注专硕2。",
+        "两项均是该校级评选环节的拟推荐实例，不把拟推荐表述为最终省级获奖。"
+      ],
+      "limits": "这是2024年历史拟推荐名单，未读两篇论文全文，不能介绍其方法或结论，也不推断导师目前名额、全体学生产出或日常相处。公示正文写2024年暨2023届，附件未单列毕业年，故不替两人猜届别。 附件仅写专硕，未注明MPAcc/1253，不能直接升级为确认MPAcc个案。",
+      "readingScope": "官方公示正文全文已读；附件XLSX实际下载，逐行读完Sheet1（表头及3名申请者），以备注专硕/学硕区分对象。",
+      "changeType": "new",
+      "advisorNames": [
+        "董必荣",
+        "潘俊"
+      ],
+      "label": "关于推荐2024年校优秀硕士学位论文评审结果的公示（两项专硕具名选题）",
+      "originalUrl": "https://account.nau.edu.cn/2024/0811/c9534a134393/page.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/2024/0811/c9534a134393/page.htm",
+      "expansionBatch": "continue-research",
+      "additionalUrls": [
+        "https://account.nau.edu.cn/_upload/article/files/13/9b/9c1e48724a249f3921b45b1f94ec/74aedf82-d44f-44fb-b46a-c5158d3af78f.xlsx"
+      ]
+    },
+    "C505": {
+      "code": "C505",
+      "kind": "official",
+      "title": "南京审计大学研究生和导师互选志愿表（MPAcc官网下载模板）",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/23094817-5c38-43a7-a04d-188b86fa560e.docx",
+      "platform": "南京审计大学官网",
+      "date": null,
+      "author": null,
+      "population": "MPAcc官网下载中心公开链接的学校通用研究生导师互选模板；未注明适用新生年级或生效日期。",
+      "summary": "官方模板设有三项导师志愿，并留研究生、导师、学科及学院意见签字栏。可在联系导师时顺便核对本级正式互选所需材料与签批步骤。",
+      "points": [
+        "表内依次有第一、第二、第三志愿，以及被选导师意见、学科意见、学院（中心）意见。",
+        "提交前先向本级教务确认是否仍使用此表、是否线上办理、志愿如何填写及签批截止时间；表本身不提供这些答案。"
+      ],
+      "limits": "发布日期和当前执行状态未公开，date为null；不能把模板解读为本级必须填满三个志愿、可以同时确认三位导师或已经开放正式双选。表内个人字段为空，未收集或上传任何个人填报信息。",
+      "readingScope": "MPAcc官网下载中心L33-L48已读并点击对应DOCX链接；实际HTTPS下载后解压读取word/document.xml全文，核对全部志愿及意见签名栏，未把旧模板当作当前通知。",
+      "changeType": "new",
+      "advisorNames": [],
+      "label": "南京审计大学研究生和导师互选志愿表（MPAcc官网下载模板）",
+      "originalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/23094817-5c38-43a7-a04d-188b86fa560e.docx",
+      "canonicalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/23094817-5c38-43a7-a04d-188b86fa560e.docx",
+      "expansionBatch": "continue-research",
+      "additionalUrls": []
+    },
+    "C506": {
+      "code": "C506",
+      "kind": "official",
+      "title": "MPAcc会人会语（第一期）：学术科研经验分享",
+      "url": "https://mpacc.nau.edu.cn/2024/0423/c11508a150629/page.htm",
+      "platform": "南京审计大学MPAcc教育中心官网",
+      "date": "2024-04-23",
+      "author": "会计学院",
+      "population": "MPAcc会人会语活动的院内科研经验分享；李潇琦经官方公示确认为2021级会计学硕，卞子咏学位类别本文未明确。",
+      "summary": "可用于入学科研适应的院内交流实例：把目标拆成阶段任务，整理文献与写作逻辑，主动与导师同门交流，并安排运动调节压力。",
+      "points": [
+        "活动中的李潇琦分享目标规划、文献整理与写作逻辑、和导师同门交流及运动调压。可据此整理入学后的学习与沟通清单。",
+        "卞子咏分享知识和能力准备、按目标院校特点准备博士申请及研究设计；仅面向有继续深造意向者作历史经验参考。"
+      ],
+      "limits": "这是2024年活动的官方转述，不是新的社交学生访谈；李潇琦为会计学硕，三年规划不能移植为MPAcc学制或必修安排。黄中生仅在本次致辞，不据此判定个人日常指导风格。无本级选导时间或导师名额信息。",
+      "readingScope": "官方报道可见全文L48–63已读；配图未逐张审读。身份辅证官方公示正文已读，只用于确认会计学硕类别。",
+      "changeType": "new",
+      "advisorNames": [],
+      "label": "MPAcc会人会语（第一期）：学术科研经验分享",
+      "originalUrl": "https://mpacc.nau.edu.cn/2024/0423/c11508a150629/page.htm",
+      "canonicalUrl": "https://mpacc.nau.edu.cn/2024/0423/c11508a150629/page.htm",
+      "expansionBatch": "continue-research",
+      "additionalUrls": [
+        "https://account.nau.edu.cn/2024/0527/c8918a130712/page.htm"
+      ]
     }
   },
   "targetProfiles": [
@@ -23017,8 +23425,8 @@
       "format": "xlsx",
       "description": "保留既有来源目录，新增19条补充证据（15项官方材料、4篇小红书），逐条标注适用对象与阅读范围",
       "filename": "evidence-index.xlsx",
-      "bytes": 287218,
-      "sha256": "011470529bae9ee7002879cd415d4dbb2e0f394763f3c3186650ad95ccc155ba"
+      "bytes": 295482,
+      "sha256": "774c2d4e144c87736b3321f011ff2489c9042fedc0934a76ab91d72e8ee20bb3"
     }
   ],
   "officialEvidence": [
@@ -26566,6 +26974,177 @@
       "screened_only": false,
       "campus": null,
       "expansionBatch": "app-research"
+    },
+    {
+      "key": "official:continue:93234d82b668ab65",
+      "ids": [
+        "C501"
+      ],
+      "title": "会计学院教学案例入库全国MPAcc优秀教学案例库（2025年度数字化定价案例）",
+      "author": null,
+      "date_display": "2026-06-15",
+      "url": "https://account.nau.edu.cn/2026/0615/c8917a158917/page.htm",
+      "canonical_url": "https://account.nau.edu.cn/2026/0615/c8917a158917/page.htm",
+      "population": "王永妍撰写的MPAcc教学案例；不是具名学生论文或学生日常指导经历。",
+      "summary": "王永妍的M企业数字化定价教学案例进入2025年度MPAcc优秀教学案例库，可用于了解其数字化经营决策与案例教学选题。",
+      "tips": [
+        "案例将企业数字化定价与算法辅助决策结合，可作为联系老师时讨论具体业务场景的切入口。",
+        "可追问案例材料、定价分析与财务决策如何衔接；这些是基于题目的交流问题，并非已读案例全文结论。"
+      ],
+      "comments": [],
+      "limits": "仅读入库新闻，未取得案例全文；作者关系不等于学生指导关系，不能推定每位学生均参与案例开发、当前名额或相处风格。",
+      "topic": "教学案例选题",
+      "use_status": "官方材料",
+      "reading_scopes": [
+        "已读官方新闻正文L74-L88；未以栏目摘要替代正文，图片未单独审读。"
+      ],
+      "official": true,
+      "screened_only": false,
+      "campus": null,
+      "expansionBatch": "continue-research"
+    },
+    {
+      "key": "official:continue:a4c6f8427a38b991",
+      "ids": [
+        "C502"
+      ],
+      "title": "润泽产教融合前沿讲坛（第39期）梅家秀——南钢数据资产入表探索与实践",
+      "author": null,
+      "date_display": "2026-05-29",
+      "url": "https://account.nau.edu.cn/2026/0529/c8919a157950/page.htm",
+      "canonical_url": "https://account.nau.edu.cn/2026/0529/c8919a157950/page.htm",
+      "population": "会计学院研究生听众，正文未单列MPAcc；2026年5月27日的一次行业讲座。",
+      "summary": "南钢总会计师梅家秀以数据资产入表、财务共享和财资税平台为例，介绍制造业数字治理与智慧财务；可补充课程和实习观察主题。",
+      "tips": [
+        "把数据资产入表放在业务场景、数据治理和价值创造中一起理解，避免只把它看作会计分录问题。",
+        "实习或访企时可关注财务共享、管理驾驶舱及财资税系统如何连接业务；这是从讲座归纳出的观察清单。"
+      ],
+      "comments": [],
+      "limits": "一次公开讲座不代表日常课程安排、实习岗位或录用；凌华为主持人，不能归为她的个人导师训练成果。未读南钢案例全文。",
+      "topic": "课程与实习观察",
+      "use_status": "官方材料",
+      "reading_scopes": [
+        "已读官方新闻全文，重点L81-L92；讲座照片未单独OCR。"
+      ],
+      "official": true,
+      "screened_only": false,
+      "campus": null,
+      "expansionBatch": "continue-research"
+    },
+    {
+      "key": "official:continue:ae63a94551ef392b",
+      "ids": [
+        "C503"
+      ],
+      "title": "会计学院2026年江苏省研究生科研实践创新计划项目推荐申报公示（含21项1253会计项目）",
+      "author": null,
+      "date_display": "2026-06-17",
+      "url": "https://account.nau.edu.cn/2026/0617/c9534a159213/page.htm",
+      "canonical_url": "https://account.nau.edu.cn/2026/0617/c9534a159213/page.htm",
+      "population": "附件25项拟推荐项目中，21项专业学位类别代码1253、名称会计，另4项1202工商管理学硕分开排除。",
+      "summary": "官方2026拟推荐附件提供21个会计专硕真实申报选题，涉及数据资产、人工智能审计、预算绩效、碳披露和供应链，可帮助把宽泛方向落到具体问题。",
+      "tips": [
+        "项目选题例子包括企业数据资产入表全流程风险、知识图谱在国家审计中的应用、公立医院AI审计风险及行政事业单位预算绩效优化。",
+        "另有南钢企业数字责任案例、欧盟碳披露与新能源汽车出海合规、商业银行内控预警、制造业碳减排绩效等不同业务场景。",
+        "将“研究对象—具体问题—可获得材料”列成小表后，再与意向导师讨论可行性；这是根据公开题目提出的准备方法。",
+        "名单是院级拟推荐申报记录，不是省级最终立项或已完成成果；同一附件只作1个独立来源。"
+      ],
+      "comments": [],
+      "limits": "正文公示期2026年6月17日至24日已结束，不当作现在开放申请的通知；附件无导师列，21项不分配给任何导师，也不据此推断2027名额、毕业要求或项目完成率。",
+      "topic": "当届真实选题参考",
+      "use_status": "官方材料",
+      "reading_scopes": [
+        "官方公示正文全文已读；点击附件后以HTTPS实际下载XLSX，openpyxl只读模式逐行读取全部25个项目，以类别代码1253和类别名称会计筛出21条；未按姓名或学号猜专业。"
+      ],
+      "official": true,
+      "screened_only": false,
+      "campus": null,
+      "expansionBatch": "continue-research"
+    },
+    {
+      "key": "official:continue:942c462100307e68",
+      "ids": [
+        "C504"
+      ],
+      "title": "关于推荐2024年校优秀硕士学位论文评审结果的公示（两项专硕具名选题）",
+      "author": null,
+      "date_display": "2024-08-11",
+      "url": "https://account.nau.edu.cn/2024/0811/c9534a134393/page.htm",
+      "canonical_url": "https://account.nau.edu.cn/2024/0811/c9534a134393/page.htm",
+      "population": "会计学院2024优硕拟推荐附件中备注专硕的2项，另1项备注学硕；附件未单列MPAcc、1253代码或专硕专业名称，故仅称学院专硕个案。",
+      "summary": "附件列出董必荣指导王一帆研究牧原股份数字化转型与企业绩效、潘俊指导李亦普研究华设设计集团EPC项目财务风险，可作为有姓名和题目的历史指导个案。",
+      "tips": [
+        "董必荣指导的王一帆专硕论文，以牧原股份为案例讨论数字化转型与畜牧企业绩效；附件备注专硕1。",
+        "潘俊指导的李亦普专硕论文，以华设设计集团为案例讨论EPC项目财务风险；附件备注专硕2。",
+        "两项均是该校级评选环节的拟推荐实例，不把拟推荐表述为最终省级获奖。"
+      ],
+      "comments": [],
+      "limits": "这是2024年历史拟推荐名单，未读两篇论文全文，不能介绍其方法或结论，也不推断导师目前名额、全体学生产出或日常相处。公示正文写2024年暨2023届，附件未单列毕业年，故不替两人猜届别。 附件仅写专硕，未注明MPAcc/1253，不能直接升级为确认MPAcc个案。",
+      "topic": "历史论文指导个案",
+      "use_status": "官方材料",
+      "reading_scopes": [
+        "官方公示正文全文已读；附件XLSX实际下载，逐行读完Sheet1（表头及3名申请者），以备注专硕/学硕区分对象。"
+      ],
+      "official": true,
+      "screened_only": false,
+      "campus": null,
+      "expansionBatch": "continue-research"
+    },
+    {
+      "key": "official:continue:de9de1eca4b75414",
+      "ids": [
+        "C505"
+      ],
+      "title": "南京审计大学研究生和导师互选志愿表（MPAcc官网下载模板）",
+      "author": null,
+      "date_display": null,
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/23094817-5c38-43a7-a04d-188b86fa560e.docx",
+      "canonical_url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/23094817-5c38-43a7-a04d-188b86fa560e.docx",
+      "population": "MPAcc官网下载中心公开链接的学校通用研究生导师互选模板；未注明适用新生年级或生效日期。",
+      "summary": "官方模板设有三项导师志愿，并留研究生、导师、学科及学院意见签字栏。可在联系导师时顺便核对本级正式互选所需材料与签批步骤。",
+      "tips": [
+        "表内依次有第一、第二、第三志愿，以及被选导师意见、学科意见、学院（中心）意见。",
+        "提交前先向本级教务确认是否仍使用此表、是否线上办理、志愿如何填写及签批截止时间；表本身不提供这些答案。"
+      ],
+      "comments": [],
+      "limits": "发布日期和当前执行状态未公开，date为null；不能把模板解读为本级必须填满三个志愿、可以同时确认三位导师或已经开放正式双选。表内个人字段为空，未收集或上传任何个人填报信息。",
+      "topic": "互选办事模板",
+      "use_status": "官方材料",
+      "reading_scopes": [
+        "MPAcc官网下载中心L33-L48已读并点击对应DOCX链接；实际HTTPS下载后解压读取word/document.xml全文，核对全部志愿及意见签名栏，未把旧模板当作当前通知。"
+      ],
+      "official": true,
+      "screened_only": false,
+      "campus": null,
+      "expansionBatch": "continue-research"
+    },
+    {
+      "key": "official:continue:fa529ea7e6928154",
+      "ids": [
+        "C506"
+      ],
+      "title": "MPAcc会人会语（第一期）：学术科研经验分享",
+      "author": "会计学院",
+      "date_display": "2024-04-23",
+      "url": "https://mpacc.nau.edu.cn/2024/0423/c11508a150629/page.htm",
+      "canonical_url": "https://mpacc.nau.edu.cn/2024/0423/c11508a150629/page.htm",
+      "population": "MPAcc会人会语活动的院内科研经验分享；李潇琦经官方公示确认为2021级会计学硕，卞子咏学位类别本文未明确。",
+      "summary": "可用于入学科研适应的院内交流实例：把目标拆成阶段任务，整理文献与写作逻辑，主动与导师同门交流，并安排运动调节压力。",
+      "tips": [
+        "活动中的李潇琦分享目标规划、文献整理与写作逻辑、和导师同门交流及运动调压。可据此整理入学后的学习与沟通清单。",
+        "卞子咏分享知识和能力准备、按目标院校特点准备博士申请及研究设计；仅面向有继续深造意向者作历史经验参考。"
+      ],
+      "comments": [],
+      "limits": "这是2024年活动的官方转述，不是新的社交学生访谈；李潇琦为会计学硕，三年规划不能移植为MPAcc学制或必修安排。黄中生仅在本次致辞，不据此判定个人日常指导风格。无本级选导时间或导师名额信息。",
+      "topic": "科研与学位论文",
+      "use_status": "院内科研适应交流（混合学位背景）",
+      "reading_scopes": [
+        "官方报道可见全文L48–63已读；配图未逐张审读。身份辅证官方公示正文已读，只用于确认会计学硕类别。"
+      ],
+      "official": true,
+      "screened_only": false,
+      "campus": null,
+      "expansionBatch": "continue-research"
     }
   ],
   "feedbackIndex": [
@@ -32039,6 +32618,246 @@
       "source_ids": "R317／6a8edcec000000001f000035",
       "source_key": "xhs:6a8edcec000000001f000035",
       "expansionBatch": "app-research"
+    },
+    {
+      "id": "continue:C501:a5a8e0112caeb163:0",
+      "topic": "课程学习与培养",
+      "point": "案例将企业数字化定价与算法辅助决策结合，可作为联系老师时讨论具体业务场景的切入口。",
+      "context": "王永妍的M企业数字化定价教学案例进入2025年度MPAcc优秀教学案例库，可用于了解其数字化经营决策与案例教学选题。",
+      "scope": "王永妍撰写的MPAcc教学案例；不是具名学生论文或学生日常指导经历。",
+      "limits": "仅读入库新闻，未取得案例全文；作者关系不等于学生指导关系，不能推定每位学生均参与案例开发、当前名额或相处风格。",
+      "author": null,
+      "date_display": "2026-06-15",
+      "url": "https://account.nau.edu.cn/2026/0615/c8917a158917/page.htm",
+      "post_title": "会计学院教学案例入库全国MPAcc优秀教学案例库（2025年度数字化定价案例）",
+      "status": "官方公开资料",
+      "source_ids": "C501",
+      "source_key": "continue:93234d82b668ab65",
+      "expansionBatch": "continue-research"
+    },
+    {
+      "id": "continue:C501:a5a8e0112caeb163:1",
+      "topic": "课程学习与培养",
+      "point": "可追问案例材料、定价分析与财务决策如何衔接；这些是基于题目的交流问题，并非已读案例全文结论。",
+      "context": "王永妍的M企业数字化定价教学案例进入2025年度MPAcc优秀教学案例库，可用于了解其数字化经营决策与案例教学选题。",
+      "scope": "王永妍撰写的MPAcc教学案例；不是具名学生论文或学生日常指导经历。",
+      "limits": "仅读入库新闻，未取得案例全文；作者关系不等于学生指导关系，不能推定每位学生均参与案例开发、当前名额或相处风格。",
+      "author": null,
+      "date_display": "2026-06-15",
+      "url": "https://account.nau.edu.cn/2026/0615/c8917a158917/page.htm",
+      "post_title": "会计学院教学案例入库全国MPAcc优秀教学案例库（2025年度数字化定价案例）",
+      "status": "官方公开资料",
+      "source_ids": "C501",
+      "source_key": "continue:93234d82b668ab65",
+      "expansionBatch": "continue-research"
+    },
+    {
+      "id": "continue:C502:acf93f9d75d0188c:0",
+      "topic": "课程学习与培养",
+      "point": "把数据资产入表放在业务场景、数据治理和价值创造中一起理解，避免只把它看作会计分录问题。",
+      "context": "南钢总会计师梅家秀以数据资产入表、财务共享和财资税平台为例，介绍制造业数字治理与智慧财务；可补充课程和实习观察主题。",
+      "scope": "会计学院研究生听众，正文未单列MPAcc；2026年5月27日的一次行业讲座。",
+      "limits": "一次公开讲座不代表日常课程安排、实习岗位或录用；凌华为主持人，不能归为她的个人导师训练成果。未读南钢案例全文。",
+      "author": null,
+      "date_display": "2026-05-29",
+      "url": "https://account.nau.edu.cn/2026/0529/c8919a157950/page.htm",
+      "post_title": "润泽产教融合前沿讲坛（第39期）梅家秀——南钢数据资产入表探索与实践",
+      "status": "官方公开资料",
+      "source_ids": "C502",
+      "source_key": "continue:a4c6f8427a38b991",
+      "expansionBatch": "continue-research"
+    },
+    {
+      "id": "continue:C502:acf93f9d75d0188c:1",
+      "topic": "课程学习与培养",
+      "point": "实习或访企时可关注财务共享、管理驾驶舱及财资税系统如何连接业务；这是从讲座归纳出的观察清单。",
+      "context": "南钢总会计师梅家秀以数据资产入表、财务共享和财资税平台为例，介绍制造业数字治理与智慧财务；可补充课程和实习观察主题。",
+      "scope": "会计学院研究生听众，正文未单列MPAcc；2026年5月27日的一次行业讲座。",
+      "limits": "一次公开讲座不代表日常课程安排、实习岗位或录用；凌华为主持人，不能归为她的个人导师训练成果。未读南钢案例全文。",
+      "author": null,
+      "date_display": "2026-05-29",
+      "url": "https://account.nau.edu.cn/2026/0529/c8919a157950/page.htm",
+      "post_title": "润泽产教融合前沿讲坛（第39期）梅家秀——南钢数据资产入表探索与实践",
+      "status": "官方公开资料",
+      "source_ids": "C502",
+      "source_key": "continue:a4c6f8427a38b991",
+      "expansionBatch": "continue-research"
+    },
+    {
+      "id": "continue:C503:1d953b7f720cae27:0",
+      "topic": "课程学习与培养",
+      "point": "项目选题例子包括企业数据资产入表全流程风险、知识图谱在国家审计中的应用、公立医院AI审计风险及行政事业单位预算绩效优化。",
+      "context": "官方2026拟推荐附件提供21个会计专硕真实申报选题，涉及数据资产、人工智能审计、预算绩效、碳披露和供应链，可帮助把宽泛方向落到具体问题。",
+      "scope": "附件25项拟推荐项目中，21项专业学位类别代码1253、名称会计，另4项1202工商管理学硕分开排除。",
+      "limits": "正文公示期2026年6月17日至24日已结束，不当作现在开放申请的通知；附件无导师列，21项不分配给任何导师，也不据此推断2027名额、毕业要求或项目完成率。",
+      "author": null,
+      "date_display": "2026-06-17",
+      "url": "https://account.nau.edu.cn/2026/0617/c9534a159213/page.htm",
+      "post_title": "会计学院2026年江苏省研究生科研实践创新计划项目推荐申报公示（含21项1253会计项目）",
+      "status": "官方公开资料",
+      "source_ids": "C503",
+      "source_key": "continue:ae63a94551ef392b",
+      "expansionBatch": "continue-research"
+    },
+    {
+      "id": "continue:C503:1d953b7f720cae27:1",
+      "topic": "课程学习与培养",
+      "point": "另有南钢企业数字责任案例、欧盟碳披露与新能源汽车出海合规、商业银行内控预警、制造业碳减排绩效等不同业务场景。",
+      "context": "官方2026拟推荐附件提供21个会计专硕真实申报选题，涉及数据资产、人工智能审计、预算绩效、碳披露和供应链，可帮助把宽泛方向落到具体问题。",
+      "scope": "附件25项拟推荐项目中，21项专业学位类别代码1253、名称会计，另4项1202工商管理学硕分开排除。",
+      "limits": "正文公示期2026年6月17日至24日已结束，不当作现在开放申请的通知；附件无导师列，21项不分配给任何导师，也不据此推断2027名额、毕业要求或项目完成率。",
+      "author": null,
+      "date_display": "2026-06-17",
+      "url": "https://account.nau.edu.cn/2026/0617/c9534a159213/page.htm",
+      "post_title": "会计学院2026年江苏省研究生科研实践创新计划项目推荐申报公示（含21项1253会计项目）",
+      "status": "官方公开资料",
+      "source_ids": "C503",
+      "source_key": "continue:ae63a94551ef392b",
+      "expansionBatch": "continue-research"
+    },
+    {
+      "id": "continue:C503:1d953b7f720cae27:2",
+      "topic": "课程学习与培养",
+      "point": "将“研究对象—具体问题—可获得材料”列成小表后，再与意向导师讨论可行性；这是根据公开题目提出的准备方法。",
+      "context": "官方2026拟推荐附件提供21个会计专硕真实申报选题，涉及数据资产、人工智能审计、预算绩效、碳披露和供应链，可帮助把宽泛方向落到具体问题。",
+      "scope": "附件25项拟推荐项目中，21项专业学位类别代码1253、名称会计，另4项1202工商管理学硕分开排除。",
+      "limits": "正文公示期2026年6月17日至24日已结束，不当作现在开放申请的通知；附件无导师列，21项不分配给任何导师，也不据此推断2027名额、毕业要求或项目完成率。",
+      "author": null,
+      "date_display": "2026-06-17",
+      "url": "https://account.nau.edu.cn/2026/0617/c9534a159213/page.htm",
+      "post_title": "会计学院2026年江苏省研究生科研实践创新计划项目推荐申报公示（含21项1253会计项目）",
+      "status": "官方公开资料",
+      "source_ids": "C503",
+      "source_key": "continue:ae63a94551ef392b",
+      "expansionBatch": "continue-research"
+    },
+    {
+      "id": "continue:C503:1d953b7f720cae27:3",
+      "topic": "课程学习与培养",
+      "point": "名单是院级拟推荐申报记录，不是省级最终立项或已完成成果；同一附件只作1个独立来源。",
+      "context": "官方2026拟推荐附件提供21个会计专硕真实申报选题，涉及数据资产、人工智能审计、预算绩效、碳披露和供应链，可帮助把宽泛方向落到具体问题。",
+      "scope": "附件25项拟推荐项目中，21项专业学位类别代码1253、名称会计，另4项1202工商管理学硕分开排除。",
+      "limits": "正文公示期2026年6月17日至24日已结束，不当作现在开放申请的通知；附件无导师列，21项不分配给任何导师，也不据此推断2027名额、毕业要求或项目完成率。",
+      "author": null,
+      "date_display": "2026-06-17",
+      "url": "https://account.nau.edu.cn/2026/0617/c9534a159213/page.htm",
+      "post_title": "会计学院2026年江苏省研究生科研实践创新计划项目推荐申报公示（含21项1253会计项目）",
+      "status": "官方公开资料",
+      "source_ids": "C503",
+      "source_key": "continue:ae63a94551ef392b",
+      "expansionBatch": "continue-research"
+    },
+    {
+      "id": "continue:C504:10214a9412a26db9:0",
+      "topic": "课程学习与培养",
+      "point": "董必荣指导的王一帆专硕论文，以牧原股份为案例讨论数字化转型与畜牧企业绩效；附件备注专硕1。",
+      "context": "附件列出董必荣指导王一帆研究牧原股份数字化转型与企业绩效、潘俊指导李亦普研究华设设计集团EPC项目财务风险，可作为有姓名和题目的历史指导个案。",
+      "scope": "会计学院2024优硕拟推荐附件中备注专硕的2项，另1项备注学硕；附件未单列MPAcc、1253代码或专硕专业名称，故仅称学院专硕个案。",
+      "limits": "这是2024年历史拟推荐名单，未读两篇论文全文，不能介绍其方法或结论，也不推断导师目前名额、全体学生产出或日常相处。公示正文写2024年暨2023届，附件未单列毕业年，故不替两人猜届别。 附件仅写专硕，未注明MPAcc/1253，不能直接升级为确认MPAcc个案。",
+      "author": null,
+      "date_display": "2024-08-11",
+      "url": "https://account.nau.edu.cn/2024/0811/c9534a134393/page.htm",
+      "post_title": "关于推荐2024年校优秀硕士学位论文评审结果的公示（两项专硕具名选题）",
+      "status": "官方公开资料",
+      "source_ids": "C504",
+      "source_key": "continue:942c462100307e68",
+      "expansionBatch": "continue-research"
+    },
+    {
+      "id": "continue:C504:10214a9412a26db9:1",
+      "topic": "课程学习与培养",
+      "point": "潘俊指导的李亦普专硕论文，以华设设计集团为案例讨论EPC项目财务风险；附件备注专硕2。",
+      "context": "附件列出董必荣指导王一帆研究牧原股份数字化转型与企业绩效、潘俊指导李亦普研究华设设计集团EPC项目财务风险，可作为有姓名和题目的历史指导个案。",
+      "scope": "会计学院2024优硕拟推荐附件中备注专硕的2项，另1项备注学硕；附件未单列MPAcc、1253代码或专硕专业名称，故仅称学院专硕个案。",
+      "limits": "这是2024年历史拟推荐名单，未读两篇论文全文，不能介绍其方法或结论，也不推断导师目前名额、全体学生产出或日常相处。公示正文写2024年暨2023届，附件未单列毕业年，故不替两人猜届别。 附件仅写专硕，未注明MPAcc/1253，不能直接升级为确认MPAcc个案。",
+      "author": null,
+      "date_display": "2024-08-11",
+      "url": "https://account.nau.edu.cn/2024/0811/c9534a134393/page.htm",
+      "post_title": "关于推荐2024年校优秀硕士学位论文评审结果的公示（两项专硕具名选题）",
+      "status": "官方公开资料",
+      "source_ids": "C504",
+      "source_key": "continue:942c462100307e68",
+      "expansionBatch": "continue-research"
+    },
+    {
+      "id": "continue:C504:10214a9412a26db9:2",
+      "topic": "课程学习与培养",
+      "point": "两项均是该校级评选环节的拟推荐实例，不把拟推荐表述为最终省级获奖。",
+      "context": "附件列出董必荣指导王一帆研究牧原股份数字化转型与企业绩效、潘俊指导李亦普研究华设设计集团EPC项目财务风险，可作为有姓名和题目的历史指导个案。",
+      "scope": "会计学院2024优硕拟推荐附件中备注专硕的2项，另1项备注学硕；附件未单列MPAcc、1253代码或专硕专业名称，故仅称学院专硕个案。",
+      "limits": "这是2024年历史拟推荐名单，未读两篇论文全文，不能介绍其方法或结论，也不推断导师目前名额、全体学生产出或日常相处。公示正文写2024年暨2023届，附件未单列毕业年，故不替两人猜届别。 附件仅写专硕，未注明MPAcc/1253，不能直接升级为确认MPAcc个案。",
+      "author": null,
+      "date_display": "2024-08-11",
+      "url": "https://account.nau.edu.cn/2024/0811/c9534a134393/page.htm",
+      "post_title": "关于推荐2024年校优秀硕士学位论文评审结果的公示（两项专硕具名选题）",
+      "status": "官方公开资料",
+      "source_ids": "C504",
+      "source_key": "continue:942c462100307e68",
+      "expansionBatch": "continue-research"
+    },
+    {
+      "id": "continue:C505:2406c5fc245f48bf:0",
+      "topic": "课程学习与培养",
+      "point": "表内依次有第一、第二、第三志愿，以及被选导师意见、学科意见、学院（中心）意见。",
+      "context": "官方模板设有三项导师志愿，并留研究生、导师、学科及学院意见签字栏。可在联系导师时顺便核对本级正式互选所需材料与签批步骤。",
+      "scope": "MPAcc官网下载中心公开链接的学校通用研究生导师互选模板；未注明适用新生年级或生效日期。",
+      "limits": "发布日期和当前执行状态未公开，date为null；不能把模板解读为本级必须填满三个志愿、可以同时确认三位导师或已经开放正式双选。表内个人字段为空，未收集或上传任何个人填报信息。",
+      "author": null,
+      "date_display": null,
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/23094817-5c38-43a7-a04d-188b86fa560e.docx",
+      "post_title": "南京审计大学研究生和导师互选志愿表（MPAcc官网下载模板）",
+      "status": "官方公开资料",
+      "source_ids": "C505",
+      "source_key": "continue:de9de1eca4b75414",
+      "expansionBatch": "continue-research"
+    },
+    {
+      "id": "continue:C505:2406c5fc245f48bf:1",
+      "topic": "课程学习与培养",
+      "point": "提交前先向本级教务确认是否仍使用此表、是否线上办理、志愿如何填写及签批截止时间；表本身不提供这些答案。",
+      "context": "官方模板设有三项导师志愿，并留研究生、导师、学科及学院意见签字栏。可在联系导师时顺便核对本级正式互选所需材料与签批步骤。",
+      "scope": "MPAcc官网下载中心公开链接的学校通用研究生导师互选模板；未注明适用新生年级或生效日期。",
+      "limits": "发布日期和当前执行状态未公开，date为null；不能把模板解读为本级必须填满三个志愿、可以同时确认三位导师或已经开放正式双选。表内个人字段为空，未收集或上传任何个人填报信息。",
+      "author": null,
+      "date_display": null,
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/23094817-5c38-43a7-a04d-188b86fa560e.docx",
+      "post_title": "南京审计大学研究生和导师互选志愿表（MPAcc官网下载模板）",
+      "status": "官方公开资料",
+      "source_ids": "C505",
+      "source_key": "continue:de9de1eca4b75414",
+      "expansionBatch": "continue-research"
+    },
+    {
+      "id": "continue:C506:cb06fee8e5f273b2:0",
+      "topic": "科研与学位论文",
+      "point": "活动中的李潇琦分享目标规划、文献整理与写作逻辑、和导师同门交流及运动调压。可据此整理入学后的学习与沟通清单。",
+      "context": "可用于入学科研适应的院内交流实例：把目标拆成阶段任务，整理文献与写作逻辑，主动与导师同门交流，并安排运动调节压力。",
+      "scope": "MPAcc会人会语活动的院内科研经验分享；李潇琦经官方公示确认为2021级会计学硕，卞子咏学位类别本文未明确。",
+      "limits": "这是2024年活动的官方转述，不是新的社交学生访谈；李潇琦为会计学硕，三年规划不能移植为MPAcc学制或必修安排。黄中生仅在本次致辞，不据此判定个人日常指导风格。无本级选导时间或导师名额信息。",
+      "author": "会计学院",
+      "date_display": "2024-04-23",
+      "url": "https://mpacc.nau.edu.cn/2024/0423/c11508a150629/page.htm",
+      "post_title": "MPAcc会人会语（第一期）：学术科研经验分享",
+      "status": "官方公开资料",
+      "source_ids": "C506",
+      "source_key": "continue:fa529ea7e6928154",
+      "expansionBatch": "continue-research"
+    },
+    {
+      "id": "continue:C506:cb06fee8e5f273b2:1",
+      "topic": "科研与学位论文",
+      "point": "卞子咏分享知识和能力准备、按目标院校特点准备博士申请及研究设计；仅面向有继续深造意向者作历史经验参考。",
+      "context": "可用于入学科研适应的院内交流实例：把目标拆成阶段任务，整理文献与写作逻辑，主动与导师同门交流，并安排运动调节压力。",
+      "scope": "MPAcc会人会语活动的院内科研经验分享；李潇琦经官方公示确认为2021级会计学硕，卞子咏学位类别本文未明确。",
+      "limits": "这是2024年活动的官方转述，不是新的社交学生访谈；李潇琦为会计学硕，三年规划不能移植为MPAcc学制或必修安排。黄中生仅在本次致辞，不据此判定个人日常指导风格。无本级选导时间或导师名额信息。",
+      "author": "会计学院",
+      "date_display": "2024-04-23",
+      "url": "https://mpacc.nau.edu.cn/2024/0423/c11508a150629/page.htm",
+      "post_title": "MPAcc会人会语（第一期）：学术科研经验分享",
+      "status": "官方公开资料",
+      "source_ids": "C506",
+      "source_key": "continue:fa529ea7e6928154",
+      "expansionBatch": "continue-research"
     }
   ],
   "rosterConflicts": [
