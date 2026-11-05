@@ -71,7 +71,23 @@
   ],
   "nativeDataValidation": "passed",
   "invalidDataVariantsRejected": 4,
-  "nativeBuild": "pending",
-  "runtimeSmoke": "pending",
-  "realDeviceTested": false
+  "nativeBuild": "passed",
+  "runtimeSmoke": {
+    "run": 42038566425,
+    "artifact": 13418909364,
+    "sourceCommit": "ade51efbadb8cd0c7f501556542c3444b0b9588b",
+    "status": "passed",
+    "result": "PASS: Android 14 proxy-blocked online startup switched automatically to packaged data, rendered a mentor, closed details with Back, and exited without a fallback history loop."
+  },
+  "realDeviceTested": false,
+  "apk": {
+    "bytes": 1021773,
+    "sha256": "533d1aa994e314898266463e7074aa4483fed611c2d9976cb5427cb79d6313db",
+    "versionCode": 5,
+    "versionName": "1.0.4",
+    "permissions": [
+      "android.permission.INTERNET"
+    ],
+    "certificateSha256": "5ccc0ee83c6b431026e864fa1d15b962a0e4f5e948a43930eb5939aa473d5d29"
+  }
 }
