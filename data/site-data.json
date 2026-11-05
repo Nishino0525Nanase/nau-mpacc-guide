@@ -7,11 +7,11 @@
       "detailedMentorCards": 17,
       "lifeChapters": 12,
       "socialPosts": 114,
-      "officialEvidence": 182,
+      "officialEvidence": 184,
       "feedbackRecords": 21,
       "screenedSources": 15,
       "unreadLeads": 6,
-      "studentReviewRecords": 39,
+      "studentReviewRecords": 40,
       "mentorsWithStudentReviews": 20
     },
     "socialPostCategories": {
@@ -32,7 +32,7 @@
     "directionNote": "G1至G6是资料导览分类，不是统一招生方向；报考以当年125300目录，在读以本级培养方案。",
     "evidenceNote": "官方资料、具名个案、本科课程、研究生转述和身份不明评价分开保留；个人评价不构成导师性格、招生名额或普遍指导风格结论。",
     "quotaNote": "名单内不代表当年仍有名额；正式选导以当年双选通知及导师本人回复为准。",
-    "platformNote": "社交来源索引实际113条，官方公开资料116条；同帖补读、同事件附件和转载不重复计数。课程反馈与导师日常指导分开，保留年份、对象和阅读范围。",
+    "platformNote": "社交来源索引实际114条，官方公开资料184条；同帖补读、同事件附件和转载不重复计数。课程体验、学位类型未明的硕士经历与明确MPAcc指导分开呈现。",
     "sourceInputFiles": [
       "life_content.json",
       "mentor_expanded_content.json",
@@ -566,7 +566,7 @@
     },
     "appEdition": {
       "web": {
-        "version": "1.0.6"
+        "version": "1.0.7"
       },
       "android": {
         "available": true,
@@ -665,17 +665,33 @@
         "guidance_unspecified": 4,
         "non_mpacc_guidance": 1
       },
-      "reviewRecords": 39,
+      "reviewRecords": 40,
       "newSourceCodes": [
         "R701",
-        "R702"
+        "R702",
+        "R801"
       ],
       "newSocialPostCount": 1,
-      "newOfficialEvidenceCount": 1,
+      "newOfficialEvidenceCount": 2,
       "updatedExistingSourceCount": 7,
       "newPostCountNote": "同帖新增评论、重新展开与官方访谈重读均不增加来源或帖子数。",
       "attributionRule": "完整姓名及明确上下文才归名；缩写、单姓和名单唯一匹配不足以归名。",
-      "notFoundMeaning": "未检得不等于没有评价，不据此打分、排序或作避雷结论。"
+      "notFoundMeaning": "未检得不等于没有评价，不据此打分、排序或作避雷结论。",
+      "round7": {
+        "newSources": 1,
+        "newStudentExperiences": 1,
+        "newXhsSources": 0,
+        "screenshotsCaptured": 5,
+        "publicSearchQueriesSubmitted": 89,
+        "browserCaptureStatus": "actual source screenshots acquired; public comments only",
+        "xhsPostBodiesReread": 8,
+        "xhsPublicCommentSourcesReread": 2,
+        "newGeneralMpaccAlumniSources": 1,
+        "sourceCodes": [
+          "R801"
+        ],
+        "scope": "新增1个具名导师学生访谈和1个未具名导师MPAcc校友访谈；旧小红书正文与公开评论补读，不计新帖；折叠登录内容未读"
+      }
     },
     "internshipResearch": {
       "batch": "internship-resources-104",
@@ -2285,8 +2301,28 @@
             "limits": [
               "未说明学位、是否直系或具体帮助过程；主观混合印象不能充当任务量指标。"
             ],
-            "readingScope": "本轮读到首评及作者已显示跟评；该楼另1条折叠回复未重读。",
-            "readThisRound": true
+            "readingScope": "先前文字记录：前次读到首评及作者已显示跟评；该楼另1条折叠回复未重读。；本次截图复核：主评和同一评论者的正面跟评完整保留；下方另2条折叠回复未展开，接触关系与学位阶段未明。",
+            "readThisRound": true,
+            "screenshots": [
+              {
+                "id": "x02-cuixiumei",
+                "src": "./evidence/xhs/x02-cuixiumei.jpg",
+                "alt": "崔秀梅：要求较高与帮助学生的同人跟评",
+                "caption": "崔秀梅：要求较高与帮助学生的同人跟评",
+                "scope": "主评和同一评论者的正面跟评完整保留；下方另2条折叠回复未展开，接触关系与学位阶段未明。",
+                "sourceUrl": "https://www.rednote.com/discovery/item/69cba3e80000000028008246?xsec_token=ABXXzd7QJqqBZWLdP_tsGqidPDO8222rTfv2IL9nkSy3A=&xsec_source=pc_feed",
+                "sourceId": "X02",
+                "width": 380,
+                "height": 253,
+                "bytes": 9833,
+                "sha256": "9fe85c6ef4c84460bc50050054e7137034e5cf8151760f7e16bafaff4a73c01c",
+                "mentorId": "mentor-07",
+                "reviewId": "sr-c8216c4fc1a3f7",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false
+              }
+            ],
+            "priorReadingScope": "本轮读到首评及作者已显示跟评；该楼另1条折叠回复未重读。"
           }
         ],
         "recommendationPoints": [
@@ -3009,8 +3045,28 @@
               "只有总体印象，没有可重现的论文指导、组会、实习安排或反馈频率细节。",
               "不能从本科或阶段不明的评论推出MPAcc当前指导风格。"
             ],
-            "readingScope": "本轮由同组研究代理 reviews_group_a 实际重读X01顶层至THE END并核对本条及相关已显示回复；不是仅凭旧摘要采用。其他未展开分支不称全部读完。",
-            "readThisRound": true
+            "readingScope": "先前文字记录：前次由同组研究代理 reviews_group_a 实际重读X01顶层至THE END并核对本条及相关已显示回复；不是仅凭旧摘要采用。其他未展开分支不称全部读完。；本次截图复核：仅该条主评，显示昵称和日期；未截全部跟评，不属于MPAcc指导评价。",
+            "readThisRound": true,
+            "screenshots": [
+              {
+                "id": "x01-liuguocheng",
+                "src": "./evidence/xhs/x01-liuguocheng.jpg",
+                "alt": "刘国城：评论者自称本科导师",
+                "caption": "刘国城：评论者自称本科导师",
+                "scope": "仅该条主评，显示昵称和日期；未截全部跟评，不属于MPAcc指导评价。",
+                "sourceUrl": "https://www.rednote.com/discovery/item/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+                "sourceId": "X01",
+                "width": 370,
+                "height": 116,
+                "bytes": 6904,
+                "sha256": "fc5e89cedb34cfedef8a5819a079e85a71970a197c088f9514dfa1b8e95652b6",
+                "mentorId": "mentor-10",
+                "reviewId": "sr-129b0dd973f0d1",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false
+              }
+            ],
+            "priorReadingScope": "本轮由同组研究代理 reviews_group_a 实际重读X01顶层至THE END并核对本条及相关已显示回复；不是仅凭旧摘要采用。其他未展开分支不称全部读完。"
           }
         ],
         "recommendationPoints": [
@@ -3201,7 +3257,7 @@
       "studentReviews": {
         "coverageStatus": "mpacc_guidance",
         "coverageLabel": "明确MPAcc指导经历",
-        "summary": "有明确MPAcc具名学生的具体研究训练亲历；只有一个正面历史个案",
+        "summary": "有孙昊晨的明确MPAcc指导经历，另有李佳林的具名硕士研究入门经历（未确认MPAcc）；两者均为学校精选历史访谈。",
         "reviews": [
           {
             "id": "sr-fc7bcc49c9bde1",
@@ -3242,6 +3298,47 @@
             ],
             "readingScope": "通过网页open实际阅读全文，重点核对孙昊晨身份、成为潘俊学生、直接指出问题与2023年选题过程；避免把其他专家/校外导师的指导移给潘俊。",
             "readThisRound": true
+          },
+          {
+            "id": "sr-r7-panjun-lijialin-2022",
+            "sourceIds": [
+              "R801"
+            ],
+            "sourceUrl": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+            "canonicalUrl": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+            "sourceTitle": "他们起航！下一站，读博！",
+            "postAuthor": "南京审计大学·南审青年校园号",
+            "postDate": "2022-12-22",
+            "narrator": "李佳林",
+            "identity": "学校精选访谈中的具名硕士受访者",
+            "date": "2022-12-22",
+            "degree": "会计学硕士（原文，未确认MPAcc）",
+            "year": "2019级，报道发表于2022年",
+            "relationship": "正文及图注明确导师为潘俊，学位类型未确认MPAcc",
+            "experienceType": "interview",
+            "experienceLabel": "具名硕士研究经历，未确认MPAcc",
+            "firsthand": true,
+            "polarity": "positive",
+            "attribution": {
+              "status": "confirmed",
+              "alias": "原文全名",
+              "reason": "李佳林段落明确写导师潘俊，紧接其本人政府会计研究体验；页面有同名图注。"
+            },
+            "text": "李佳林回顾由潘俊引导接触政府会计研究，并逐步确认自己的研究兴趣。",
+            "specifics": [
+              "原文标明2019级会计学硕士，未给出MPAcc或1253代码。",
+              "她也提到研究受阻时的同门支持，不能把同门帮助全部归给导师。"
+            ],
+            "limits": [
+              "校园号是学校精选的正面访谈，不是独立抽样的完整评价。",
+              "原文只写会计学硕士研究生，未给MPAcc或1253；不得列为已确认MPAcc指导经历。",
+              "未说明导师反馈间隔、组会频次、修改要求、事务所实习许可或推荐名额。",
+              "文章整体提到毕业生进入德勤、普华永道，不是李佳林个人的实习/就业经历，不能归给潘俊。",
+              "个人读博与发表成果不构成导师保证，也不能推出当前师门条件。"
+            ],
+            "readingScope": "web open实际读取网页全部文字L0—193，重点李佳林L103—113及署名L123—133；未逐张查看或下载图片；页面评论计数为0。",
+            "readThisRound": true,
+            "expansionBatch": "student-reviews-round7"
           }
         ],
         "recommendationPoints": [
@@ -3257,15 +3354,17 @@
             "scope": "2025届MPAcc个案"
           },
           {
-            "text": "政府会计选题从实务讨论切入，再查报告、准则和文献；对公共文化资产等议题有兴趣者可询问当前研究机会。",
+            "text": "具名硕士学生分别记录了政府会计入门引导与实务问题选题；对该方向有兴趣者可询问目前的文献训练、入门任务和选题渠道。",
             "reviewIds": [
-              "sr-fc7bcc49c9bde1"
+              "sr-fc7bcc49c9bde1",
+              "sr-r7-panjun-lijialin-2022"
             ],
             "sourceIds": [
               "O-PJ",
-              "18"
+              "18",
+              "R801"
             ],
-            "scope": "该生具体选题路径，非每名学生固定配置"
+            "scope": "孙昊晨明确MPAcc；李佳林仅标会计学硕士；两个历史个案，不代表全体现状"
           }
         ],
         "concerns": [
@@ -3283,7 +3382,8 @@
         ],
         "verificationQuestions": [
           "直接指出问题的反馈方式是否适合自己；可请当前学生举最近一次选题或论文修改的具体过程。",
-          "计划就业或考公的MPAcc学生，研究训练任务、成果要求、实习与论文节点分别如何安排，不能照搬申博学生的投入。"
+          "计划就业或考公的MPAcc学生，研究训练任务、成果要求、实习与论文节点分别如何安排，不能照搬申博学生的投入。",
+          "近两届学生每轮改稿一般多久、由谁直接反馈；研二事务所忙季如何协调组会和论文节点？"
         ],
         "gaps": [
           "缺少不同去向MPAcc学生的独立近期经历；研究任务量、回复时长与实习安排未核实。"
@@ -3297,7 +3397,8 @@
             "\"南审\" \"PJ\" 导师 评价"
           ],
           "readingScopes": [
-            "通过网页open实际阅读全文，重点核对孙昊晨身份、成为潘俊学生、直接指出问题与2023年选题过程；避免把其他专家/校外导师的指导移给潘俊。"
+            "通过网页open实际阅读全文，重点核对孙昊晨身份、成为潘俊学生、直接指出问题与2023年选题过程；避免把其他专家/校外导师的指导移给潘俊。",
+            "web open实际读取网页全部文字L0—193，重点李佳林L103—113及署名L123—133；未逐张查看或下载图片；页面评论计数为0。"
           ],
           "gaps": [
             "缺少不同去向MPAcc学生的独立近期经历；研究任务量、回复时长与实习安排未核实。"
@@ -4750,13 +4851,33 @@
             "limits": [
               "本科课程接触是直接经历；研究生 push 是转述，不能写成已核实亲历"
             ],
-            "readingScope": "本轮原帖顶层读取至THE END；对应木渎3条追加回复及🐶🐶1条追加回复均展开；XW1条追加回复已展开；无名玩笑楼及不属于本组的部分分支未重开。",
+            "readingScope": "先前文字记录：前次原帖顶层读取至THE END；对应木渎3条追加回复及🐶🐶1条追加回复均展开；XW1条追加回复已展开；无名玩笑楼及不属于本组的部分分支未重开。；本次截图复核：木渎主评同时说明授课接触和听学姐转述；本图不含折叠回复，不把转述当MPAcc亲历。",
             "readThisRound": true,
             "firsthandScope": "为人及课程接触属于本科亲历；研究生push明确是听学姐说，非本人经历。",
             "hearsayParts": [
               "研究生指导push，未明示研究生学位及具体任务"
             ],
-            "evidenceOrigin": "existing_baseline_reaudited"
+            "evidenceOrigin": "existing_baseline_reaudited",
+            "screenshots": [
+              {
+                "id": "x02-chengbo",
+                "src": "./evidence/xhs/x02-chengbo.jpg",
+                "alt": "程博：课程亲历与研究生转述同框",
+                "caption": "程博：课程亲历与研究生转述同框",
+                "scope": "木渎主评同时说明授课接触和听学姐转述；本图不含折叠回复，不把转述当MPAcc亲历。",
+                "sourceUrl": "https://www.rednote.com/discovery/item/69cba3e80000000028008246?xsec_token=ABXXzd7QJqqBZWLdP_tsGqidPDO8222rTfv2IL9nkSy3A=&xsec_source=pc_feed",
+                "sourceId": "X02",
+                "width": 370,
+                "height": 130,
+                "bytes": 7816,
+                "sha256": "278ab11baebbf94a023e550b24d9246c23ce31a8203d5746b45810d815ea69ee",
+                "mentorId": "mentor-21",
+                "reviewId": "sr-69b5e3bc556593",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false
+              }
+            ],
+            "priorReadingScope": "本轮原帖顶层读取至THE END；对应木渎3条追加回复及🐶🐶1条追加回复均展开；XW1条追加回复已展开；无名玩笑楼及不属于本组的部分分支未重开。"
           },
           {
             "id": "sr-685b44c44b5c9f",
@@ -10453,6 +10574,15 @@
           "expansionBatch": "research-round3"
         },
         {
+          "type": "p",
+          "text": "2020届MPAcc校友袁璐回顾校内、校外导师共同指导文献、框架、调研和写作，并将政府会计学习与行政事业单位实习调研联系起来。硕士导师未具名，属于历史个案；不据此推断当前机会，也不把其厦大博士经历并入南审硕士阶段。[R802]",
+          "sourceCodes": [
+            "R802"
+          ],
+          "expansionId": "round7-mpacc-alumni-yuanlu",
+          "expansionBatch": "student-reviews-round7"
+        },
+        {
           "type": "heading",
           "level": 2,
           "text": "实习先落实认定与证明",
@@ -10980,7 +11110,8 @@
         "D603",
         "D604",
         "10",
-        "X01"
+        "X01",
+        "R802"
       ]
     },
     {
@@ -13474,6 +13605,14 @@
           ],
           "expansionId": "internship-resources-104-source-R311",
           "expansionBatch": "internship-resources-104"
+        },
+        {
+          "type": "source",
+          "text": "[R802] MPAcc筑梦之路：南京审计大学2020届MPAcc校友袁璐  2025-04-14",
+          "url": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+          "sourceCodes": [
+            "R802"
+          ]
         }
       ],
       "sourceCodes": [
@@ -13702,7 +13841,8 @@
         "I862",
         "I863",
         "I864",
-        "I865"
+        "I865",
+        "R802"
       ]
     }
   ],
@@ -16290,7 +16430,8 @@
       "promotion": "原记录未单独标注",
       "readingScopes": [
         "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
-        "本轮文字正文、95条计数所对应的所有已加载顶层评论逐段读取至THE END；新点展开王烨分支的4条追加回复并全部读到。其他折叠支线未全面展开，不能称95条逐字全读；图片未单独重新审读。温素彬提名在冬日来信同条评论内直接见到作者与完整日期。"
+        "本轮文字正文、95条计数所对应的所有已加载顶层评论逐段读取至THE END；新点展开王烨分支的4条追加回复并全部读到。其他折叠支线未全面展开，不能称95条逐字全读；图片未单独重新审读。温素彬提名在冬日来信同条评论内直接见到作者与完整日期。",
+        "本次读到当前已加载的顶层评论与可见跟评；登录后全部评论和折叠支线未读。不称95条逐字全读。"
       ],
       "queries": [
         "上一轮南审会计导师评价检索"
@@ -16319,6 +16460,42 @@
           "changeType": "updated",
           "advisorNames": [],
           "updateKey": "36da79c501f756f2"
+        }
+      ],
+      "screenshots": [
+        {
+          "id": "x01-post-top",
+          "src": "./evidence/xhs/x01-post-top.jpg",
+          "alt": "原帖正文与首段公开评论",
+          "caption": "原帖正文与首段公开评论",
+          "scope": "可见作者、标题、日期及首段缩写讨论；不是导师名单认证，缩写不对应实名。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+          "sourceId": "X01",
+          "width": 400,
+          "height": 725,
+          "bytes": 39245,
+          "sha256": "77bf288c3f704755f9c1f94b0adcf02a9b144f629e9a478cb9145d4cc1c54bf6",
+          "mentorId": null,
+          "reviewId": null,
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        },
+        {
+          "id": "x01-liuguocheng",
+          "src": "./evidence/xhs/x01-liuguocheng.jpg",
+          "alt": "刘国城：评论者自称本科导师",
+          "caption": "刘国城：评论者自称本科导师",
+          "scope": "仅该条主评，显示昵称和日期；未截全部跟评，不属于MPAcc指导评价。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+          "sourceId": "X01",
+          "width": 370,
+          "height": 116,
+          "bytes": 6904,
+          "sha256": "fc5e89cedb34cfedef8a5819a079e85a71970a197c088f9514dfa1b8e95652b6",
+          "mentorId": "mentor-10",
+          "reviewId": "sr-129b0dd973f0d1",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
         }
       ]
     },
@@ -17915,13 +18092,67 @@
       "screenedOnly": false,
       "promotion": "原记录未单独标注",
       "readingScopes": [
-        "逐步读取顶层评论至THE END并展开相关回复；共52评论，一个无姓名玩笑楼尚余1条未展开，不宣称逐字全量。截图名单不是独立官方验证。"
+        "逐步读取顶层评论至THE END并展开相关回复；共52评论，一个无姓名玩笑楼尚余1条未展开，不宣称逐字全量。截图名单不是独立官方验证。",
+        "本次读到当前已加载的顶层评论与可见跟评；登录后全部评论和折叠支线未读。不称52条逐字全读。"
       ],
       "queries": [
         "上一轮南审会计导师评价检索"
       ],
       "inputFiles": [
         "旧轮已读日志"
+      ],
+      "screenshots": [
+        {
+          "id": "x02-post-top",
+          "src": "./evidence/xhs/x02-post-top.jpg",
+          "alt": "第二条选导求助帖的正文与初段评论",
+          "caption": "第二条选导求助帖的正文与初段评论",
+          "scope": "正文表达求助目标；含未实名的许汉y提问。不能把求助、提问或缩写当作具名评价。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/69cba3e80000000028008246?xsec_token=ABXXzd7QJqqBZWLdP_tsGqidPDO8222rTfv2IL9nkSy3A=&xsec_source=pc_feed",
+          "sourceId": "X02",
+          "width": 400,
+          "height": 725,
+          "bytes": 43444,
+          "sha256": "33f8401324c0de96bac34b4bcfa05075d3f4418a61d7b9079f476de6b9bc2a66",
+          "mentorId": null,
+          "reviewId": null,
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        },
+        {
+          "id": "x02-chengbo",
+          "src": "./evidence/xhs/x02-chengbo.jpg",
+          "alt": "程博：课程亲历与研究生转述同框",
+          "caption": "程博：课程亲历与研究生转述同框",
+          "scope": "木渎主评同时说明授课接触和听学姐转述；本图不含折叠回复，不把转述当MPAcc亲历。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/69cba3e80000000028008246?xsec_token=ABXXzd7QJqqBZWLdP_tsGqidPDO8222rTfv2IL9nkSy3A=&xsec_source=pc_feed",
+          "sourceId": "X02",
+          "width": 370,
+          "height": 130,
+          "bytes": 7816,
+          "sha256": "278ab11baebbf94a023e550b24d9246c23ce31a8203d5746b45810d815ea69ee",
+          "mentorId": "mentor-21",
+          "reviewId": "sr-69b5e3bc556593",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        },
+        {
+          "id": "x02-cuixiumei",
+          "src": "./evidence/xhs/x02-cuixiumei.jpg",
+          "alt": "崔秀梅：要求较高与帮助学生的同人跟评",
+          "caption": "崔秀梅：要求较高与帮助学生的同人跟评",
+          "scope": "主评和同一评论者的正面跟评完整保留；下方另2条折叠回复未展开，接触关系与学位阶段未明。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/69cba3e80000000028008246?xsec_token=ABXXzd7QJqqBZWLdP_tsGqidPDO8222rTfv2IL9nkSy3A=&xsec_source=pc_feed",
+          "sourceId": "X02",
+          "width": 380,
+          "height": 253,
+          "bytes": 9833,
+          "sha256": "9fe85c6ef4c84460bc50050054e7137034e5cf8151760f7e16bafaff4a73c01c",
+          "mentorId": "mentor-07",
+          "reviewId": "sr-c8216c4fc1a3f7",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        }
       ]
     },
     {
@@ -23645,7 +23876,44 @@
           "sameSource": true,
           "limits": []
         }
-      ]
+      ],
+      "screenshots": [
+        {
+          "id": "x01-post-top",
+          "src": "./evidence/xhs/x01-post-top.jpg",
+          "alt": "原帖正文与首段公开评论",
+          "caption": "原帖正文与首段公开评论",
+          "scope": "可见作者、标题、日期及首段缩写讨论；不是导师名单认证，缩写不对应实名。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+          "sourceId": "X01",
+          "width": 400,
+          "height": 725,
+          "bytes": 39245,
+          "sha256": "77bf288c3f704755f9c1f94b0adcf02a9b144f629e9a478cb9145d4cc1c54bf6",
+          "mentorId": null,
+          "reviewId": null,
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        },
+        {
+          "id": "x01-liuguocheng",
+          "src": "./evidence/xhs/x01-liuguocheng.jpg",
+          "alt": "刘国城：评论者自称本科导师",
+          "caption": "刘国城：评论者自称本科导师",
+          "scope": "仅该条主评，显示昵称和日期；未截全部跟评，不属于MPAcc指导评价。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+          "sourceId": "X01",
+          "width": 370,
+          "height": 116,
+          "bytes": 6904,
+          "sha256": "fc5e89cedb34cfedef8a5819a079e85a71970a197c088f9514dfa1b8e95652b6",
+          "mentorId": "mentor-10",
+          "reviewId": "sr-129b0dd973f0d1",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        }
+      ],
+      "latestPublicReadingScope": "本次读到当前已加载的顶层评论与可见跟评；登录后全部评论和折叠支线未读。不称95条逐字全读。"
     },
     "X02": {
       "code": "X02",
@@ -23691,7 +23959,61 @@
           "sameSource": true,
           "limits": []
         }
-      ]
+      ],
+      "screenshots": [
+        {
+          "id": "x02-post-top",
+          "src": "./evidence/xhs/x02-post-top.jpg",
+          "alt": "第二条选导求助帖的正文与初段评论",
+          "caption": "第二条选导求助帖的正文与初段评论",
+          "scope": "正文表达求助目标；含未实名的许汉y提问。不能把求助、提问或缩写当作具名评价。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/69cba3e80000000028008246?xsec_token=ABXXzd7QJqqBZWLdP_tsGqidPDO8222rTfv2IL9nkSy3A=&xsec_source=pc_feed",
+          "sourceId": "X02",
+          "width": 400,
+          "height": 725,
+          "bytes": 43444,
+          "sha256": "33f8401324c0de96bac34b4bcfa05075d3f4418a61d7b9079f476de6b9bc2a66",
+          "mentorId": null,
+          "reviewId": null,
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        },
+        {
+          "id": "x02-chengbo",
+          "src": "./evidence/xhs/x02-chengbo.jpg",
+          "alt": "程博：课程亲历与研究生转述同框",
+          "caption": "程博：课程亲历与研究生转述同框",
+          "scope": "木渎主评同时说明授课接触和听学姐转述；本图不含折叠回复，不把转述当MPAcc亲历。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/69cba3e80000000028008246?xsec_token=ABXXzd7QJqqBZWLdP_tsGqidPDO8222rTfv2IL9nkSy3A=&xsec_source=pc_feed",
+          "sourceId": "X02",
+          "width": 370,
+          "height": 130,
+          "bytes": 7816,
+          "sha256": "278ab11baebbf94a023e550b24d9246c23ce31a8203d5746b45810d815ea69ee",
+          "mentorId": "mentor-21",
+          "reviewId": "sr-69b5e3bc556593",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        },
+        {
+          "id": "x02-cuixiumei",
+          "src": "./evidence/xhs/x02-cuixiumei.jpg",
+          "alt": "崔秀梅：要求较高与帮助学生的同人跟评",
+          "caption": "崔秀梅：要求较高与帮助学生的同人跟评",
+          "scope": "主评和同一评论者的正面跟评完整保留；下方另2条折叠回复未展开，接触关系与学位阶段未明。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/69cba3e80000000028008246?xsec_token=ABXXzd7QJqqBZWLdP_tsGqidPDO8222rTfv2IL9nkSy3A=&xsec_source=pc_feed",
+          "sourceId": "X02",
+          "width": 380,
+          "height": 253,
+          "bytes": 9833,
+          "sha256": "9fe85c6ef4c84460bc50050054e7137034e5cf8151760f7e16bafaff4a73c01c",
+          "mentorId": "mentor-07",
+          "reviewId": "sr-c8216c4fc1a3f7",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        }
+      ],
+      "latestPublicReadingScope": "本次读到当前已加载的顶层评论与可见跟评；登录后全部评论和折叠支线未读。不称52条逐字全读。"
     },
     "X03": {
       "code": "X03",
@@ -29831,6 +30153,40 @@
           ]
         }
       ]
+    },
+    "R801": {
+      "code": "R801",
+      "title": "他们起航！下一站，读博！",
+      "label": "他们起航！下一站，读博！",
+      "url": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "originalUrl": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "canonicalUrl": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "date": "2022-12-22",
+      "author": "南京审计大学·南审青年校园号",
+      "platform": "中国大学生在线·南审青年校园号",
+      "kind": "官方学生访谈",
+      "population": "2019级会计学硕士李佳林，原文未确认MPAcc/1253",
+      "summary": "具名受访者李佳林回顾在潘俊引导下接触政府会计研究；这是校园号精选访谈中的个人学习体验。",
+      "readingScope": "web open实际读取网页全部文字L0—193，重点李佳林L103—113及署名L123—133；未逐张查看或下载图片；页面评论计数为0。",
+      "limitations": "2022年学校精选正面访谈；未明确会计学硕士的学位类型，不作为MPAcc直系评价；未说明组会频率、改稿周期或事务所实习安排。",
+      "expansionBatch": "student-reviews-round7"
+    },
+    "R802": {
+      "code": "R802",
+      "title": "【MPAcc教育20周年】MPAcc筑梦之路：从学子到教育者的成长与探索——记南京审计大学2020届MPAcc校友袁璐",
+      "label": "【MPAcc教育20周年】MPAcc筑梦之路：从学子到教育者的成长与探索——记南京审计大学2020届MPAcc校友袁璐",
+      "url": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+      "canonicalUrl": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+      "originalUrl": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+      "date": "2025-04-14",
+      "author": "全国会计专业学位研究生教育指导委员会官网（页面发布方）；访谈对象：袁璐",
+      "platform": "全国MPAcc教指委官网",
+      "kind": "官方MPAcc校友访谈",
+      "population": "南京审计大学2020届MPAcc校友",
+      "summary": "南审2020届MPAcc校友袁璐回顾硕士研究与实践经历，校内、校外导师均未具名。",
+      "readingScope": "已读页面完整提取正文，自标题、日期、校友简介至末段；未读外链、未视觉审读配图，未读取评论。",
+      "limitations": "官方遴选的2020届历史个案，不代表全体学生体验或现行培养制度。；未给南审硕士导师姓名，不归入任一实名导师评价。；实习调研未列具体单位、岗位、名额、补贴或申请方式，不能承诺同等机会。；厦门大学博士阶段的李建发教授指导及回南审任教阶段的目标，不属于南审MPAcc学生经历。",
+      "expansionBatch": "student-reviews-round7"
     }
   },
   "targetProfiles": [
@@ -30056,8 +30412,8 @@
       "format": "xlsx",
       "description": "保留既有来源与学生评价总览，新增四大、国内所实习资源及本地实践基地线索，分列资格、状态、项目期与投递窗口",
       "filename": "evidence-index.xlsx",
-      "bytes": 352276,
-      "sha256": "892a45d1b7821f6148d6220ff39b6058132398ef693059d26ea957d7795244a3"
+      "bytes": 355265,
+      "sha256": "d89f961d3ae7252025e64701926ca26d1fcea36a922d1250b47088a6986c45dd"
     }
   ],
   "officialEvidence": [
@@ -35649,6 +36005,60 @@
       "official": true,
       "screened_only": false,
       "expansionBatch": "internship-resources-104"
+    },
+    {
+      "key": "official:reviews7:2572ea8a146df0",
+      "ids": [
+        "R801"
+      ],
+      "title": "他们起航！下一站，读博！",
+      "author": "南京审计大学·南审青年校园号",
+      "date_display": "2022-12-22",
+      "url": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "canonical_url": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "population": "2019级会计学硕士李佳林，原文未确认MPAcc/1253",
+      "summary": "具名受访者李佳林回顾在潘俊引导下接触政府会计研究；这是校园号精选访谈中的个人学习体验。",
+      "tips": [
+        "李佳林明确导师为潘俊，回顾政府会计研究入门；学位类型未确认MPAcc。"
+      ],
+      "comments": [],
+      "limits": "2022年学校精选正面访谈；未明确会计学硕士的学位类型，不作为MPAcc直系评价；未说明组会频率、改稿周期或事务所实习安排。",
+      "topic": "具名硕士学生的历史研究经历",
+      "use_status": "学校精选访谈；关系可归属，非独立口碑抽样",
+      "reading_scopes": [
+        "web open实际读取网页全部文字L0—193，重点李佳林L103—113及署名L123—133；未逐张查看或下载图片；页面评论计数为0。"
+      ],
+      "official": true,
+      "screened_only": false,
+      "expansionBatch": "student-reviews-round7"
+    },
+    {
+      "key": "official:reviews7:alumni-r802",
+      "ids": [
+        "R802"
+      ],
+      "title": "【MPAcc教育20周年】MPAcc筑梦之路：从学子到教育者的成长与探索——记南京审计大学2020届MPAcc校友袁璐",
+      "author": "全国会计专业学位研究生教育指导委员会官网（页面发布方）；访谈对象：袁璐",
+      "date_display": "2025-04-14",
+      "url": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+      "canonical_url": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+      "population": "南京审计大学2020届MPAcc校友",
+      "summary": "南审2020届MPAcc校友袁璐回顾硕士研究与实践经历，校内、校外导师均未具名。",
+      "tips": [
+        "双导师共同指导文献、框架、调研与写作。",
+        "政府会计学习结合跨学科课程、学术交流与行政事业单位实习调研。",
+        "2020—2024年厦大博士指导及2024年回南审任教经历，与南审硕士阶段分开。"
+      ],
+      "comments": [],
+      "limits": "官方遴选的2020届历史个案，不代表全体学生体验或现行培养制度。；未给南审硕士导师姓名，不归入任一实名导师评价。；实习调研未列具体单位、岗位、名额、补贴或申请方式，不能承诺同等机会。；厦门大学博士阶段的李建发教授指导及回南审任教阶段的目标，不属于南审MPAcc学生经历。",
+      "topic": "MPAcc双导师与实践的历史校友经历",
+      "use_status": "官方精选历史个案；导师未具名，不归到实名导师",
+      "reading_scopes": [
+        "已读页面完整提取正文，自标题、日期、校友简介至末段；未读外链、未视觉审读配图，未读取评论。"
+      ],
+      "official": true,
+      "screened_only": false,
+      "expansionBatch": "student-reviews-round7"
     }
   ],
   "feedbackIndex": [
