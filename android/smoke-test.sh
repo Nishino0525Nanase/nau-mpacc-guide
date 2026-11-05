@@ -41,6 +41,9 @@ for attempt in $(seq 1 180); do
   sleep 2
 done
 test "$(timeout --kill-after=1s 5s "$ADB" shell getprop sys.boot_completed | tr -d '\r')" = 1
+for animation_scale in window_animation_scale transition_animation_scale animator_duration_scale; do
+  timeout --kill-after=1s 5s "$ADB" shell settings put global "$animation_scale" 0
+done
 timeout --kill-after=1s 10s "$ADB" shell input keyevent 82
 timeout --kill-after=3s 60s "$ADB" install -r "${APK_PATH:?APK_PATH is required}"
 # Disable radios before launch so the automatic offline fallback is exercised.
@@ -105,7 +108,22 @@ def label(node):
 
 offline = any('内置资料' in label(n) and bounds(n) for n in nodes)
 mentor = any(os.environ['EXPECTED_MENTOR'] in label(n) and bounds(n) for n in nodes)
-if offline and mentor:
+launcher_anr = any(n.get('package') == 'android'
+                   and n.get('resource-id') == 'android:id/alertTitle'
+                   and n.get('text') == "Pixel Launcher isn't responding"
+                   and bounds(n) for n in nodes)
+close_launcher = next((bounds(n) for n in nodes
+                       if n.get('package') == 'android'
+                       and n.get('resource-id') == 'android:id/aerr_close'
+                       and n.get('text') == 'Close app'
+                       and n.get('clickable') == 'true'
+                       and n.get('enabled') == 'true' and bounds(n)), None)
+if launcher_anr and close_launcher:
+    print('CLOSE_LAUNCHER', (close_launcher[0]+close_launcher[2])//2,
+          (close_launcher[1]+close_launcher[3])//2)
+elif launcher_anr:
+    print('WAIT')
+elif offline and mentor:
     print('PASS')
 elif not offline:
     print('WAIT')
@@ -121,6 +139,7 @@ PY
 
 passed=false
 navigation_tapped=false
+launcher_dialog_closes=0
 UI_DEADLINE=$((SECONDS + 180))
 for attempt in $(seq 1 45); do
   if ((SECONDS >= UI_DEADLINE)); then break; fi
@@ -128,7 +147,15 @@ for attempt in $(seq 1 45); do
   read -r STATE TAP_X TAP_Y <<< "$(ui_state)"
   if [[ "$STATE" == PASS ]]; then passed=true; break; fi
   if ((SECONDS >= UI_DEADLINE)); then break; fi
-  if [[ "$STATE" == NAV && "$navigation_tapped" == false ]]; then
+  if [[ "$STATE" == CLOSE_LAUNCHER ]]; then
+    if ((launcher_dialog_closes >= 3)); then
+      printf '%s\n' 'FAIL: Pixel Launcher system ANR remained after three close attempts.' > android/artifacts/smoke/result.txt
+      break
+    fi
+    launcher_dialog_closes=$((launcher_dialog_closes + 1))
+    cp android/artifacts/smoke/ui.xml "android/artifacts/smoke/launcher-anr-$launcher_dialog_closes.xml"
+    timeout --kill-after=1s 3s "$ADB" shell input tap "$TAP_X" "$TAP_Y" || true
+  elif [[ "$STATE" == NAV && "$navigation_tapped" == false ]]; then
     timeout --kill-after=1s 3s "$ADB" shell input tap "$TAP_X" "$TAP_Y" || true
     navigation_tapped=true
   elif [[ "$STATE" != WAIT ]]; then
@@ -140,7 +167,9 @@ for attempt in $(seq 1 45); do
   if ((remaining > 0)); then sleep "$((remaining < 2 ? remaining : 2))"; fi
 done
 if [[ "$passed" != true ]]; then
-  printf '%s\n' "FAIL: offline mode plus visible dynamic mentor '$EXPECTED_MENTOR' was not reached within the 180-second UI budget." > android/artifacts/smoke/result.txt
+  if [[ ! -s android/artifacts/smoke/result.txt ]]; then
+    printf '%s\n' "FAIL: offline mode plus visible dynamic mentor '$EXPECTED_MENTOR' was not reached within the 180-second UI budget." > android/artifacts/smoke/result.txt
+  fi
   exit 1
 fi
 printf '%s\n' 'PASS: Android 14 emulator launched offline and rendered a mentor from packaged JSON.' > android/artifacts/smoke/result.txt
