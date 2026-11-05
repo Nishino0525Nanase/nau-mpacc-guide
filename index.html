@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#173a49">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="description" content="南京审计大学MPAcc选导与生活指南：34位导师、17张核心信息卡、12章学习生活攻略与82篇原帖。官方资料与学生反馈分层阅读，帮助你找到适合自己的方向。">
-  <title>南京审计大学MPAcc选导与生活指南</title>
+  <meta name="description" content="雨诺的南审手记：南京审计大学MPAcc选导与生活指南。导师研究、学生经历、校园日常与原帖索引，帮助你找到适合自己的方向。策划与设计：胡雨诺。">
+  <title>雨诺的南审手记｜南京审计大学MPAcc选导与生活指南</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./consent.css">
   <script src="./app.js" defer></script>
   <script src="./analytics-config.js" defer></script>
+  <script src="./consent.js" defer></script>
   <script src="./analytics.js" defer></script>
 </head>
 <body>
@@ -18,8 +20,8 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="#mentors" aria-label="指南首页">
-        <span class="brand-mark" aria-hidden="true">南审<span>指南</span></span>
-        <span class="brand-name">MPAcc<span>选导与生活指南</span></span>
+        <span class="brand-mark" aria-hidden="true">雨诺<span>手记</span></span>
+        <span class="brand-name">南审 MPAcc<span>选导与生活指南</span></span>
       </a>
       <nav class="primary-nav" aria-label="主要导航">
         <a href="#mentors" data-nav="mentors">导师导览</a>
@@ -34,21 +36,28 @@
   <main id="main" tabindex="-1">
     <section class="hero" id="hero" aria-labelledby="site-title">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-line"></span>从公开资料到个人选择</div>
-        <h1 id="site-title">南京审计大学<br><span>MPAcc选导与生活指南</span></h1>
+        <div class="eyebrow"><span class="eyebrow-line"></span>从公开资料，到自己的选择</div>
+        <h1 id="site-title">雨诺的南审手记<br><span>MPAcc选导与生活指南</span></h1>
         <p class="hero-lead">把方向选清楚，<br class="mobile-break">把研究生生活安排好。</p>
         <p class="hero-description">研究方向、具体训练、学生经历与校园日常，放在一起看。<br class="desktop-break">给准备报考和刚入学的你，一份可以逐条查证的参考。</p>
-        <div class="hero-meta"><span class="status-dot"></span><span id="updated-at">公开资料整理</span><span class="meta-divider">/</span><span>独立整理 · 非学校官方网站</span></div>
+        <div class="author-signature" aria-label="策划与设计者介绍">
+          <span class="author-monogram" aria-hidden="true">雨诺</span>
+          <div class="author-details">
+            <p class="author-credit">策划与设计 <strong>胡雨诺</strong></p>
+            <p class="author-journey"><span>西南林业大学</span><span class="journey-arrow" aria-hidden="true">→</span><span>南京审计大学 MPAcc</span><span class="journey-note">保研</span></p>
+          </div>
+        </div>
+        <div class="hero-meta"><span class="status-dot"></span><span>独立整理 · 非学校官方网站</span></div>
       </div>
       <aside class="hero-panel" aria-label="指南内容概览">
-        <div class="panel-caption">YOUR GUIDE TO NAU <span aria-hidden="true">↗</span></div>
+        <div class="panel-caption">YU NUO’S GUIDE TO NAU <span aria-hidden="true">↗</span></div>
         <div class="guide-lines"><span>方向</span><i></i><span>导师</span><i></i><span>生活</span></div>
         <p>选方向 + 选人 + 名额可行性</p>
         <div class="hero-stats" id="hero-stats">
           <div><strong>34</strong><span>位导师名录</span></div>
           <div><strong>17</strong><span>张核心资料卡</span></div>
           <div><strong>12</strong><span>章学习生活</span></div>
-          <div><strong>82</strong><span>篇去重原帖</span></div>
+          <div><strong>108</strong><span>条来源索引</span></div>
         </div>
         <div class="panel-footnote"><span class="mini-cross" aria-hidden="true">+</span>官方事实与个人反馈，分开呈现</div>
       </aside>
@@ -70,8 +79,8 @@
   </main>
 
   <footer class="site-footer">
-    <div><a class="footer-title" href="#mentors">南京审计大学MPAcc选导与生活指南</a><p>资料供选导和生活决策参考；当年双选、培养及办事安排，以对应官方通知为准。</p></div>
-    <div class="footer-links"><a href="#downloads">下载资料</a><a href="./admin/">站点管理 <span aria-hidden="true">↗</span></a></div>
+    <div><a class="footer-title" href="#mentors">雨诺的南审手记 · MPAcc选导与生活指南</a><p>策划与设计：胡雨诺。资料供选导和生活决策参考；当年双选、培养及办事安排，以对应官方通知为准。</p></div>
+    <div class="footer-links"><a href="#downloads">下载资料</a><button type="button" data-cookie-settings>Cookie设置</button><a href="./video/">自愿视频交流</a><a href="./admin/">站点管理 <span aria-hidden="true">↗</span></a></div>
   </footer>
   <button type="button" class="back-top" id="back-top" aria-label="返回页面顶部" hidden>↑</button>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>

@@ -12,6 +12,8 @@
   var OPT_OUT = 'nau_analytics_opt_out';
   var BROWSER_ID = 'nau_mpacc_guide_anon_id_v1';
   var locallyDisabled = false;
+  var CONSENT_KEY = 'nau_privacy_consent_v1';
+  var attempted = false;
 
   function storage() {
     try { return window.localStorage; } catch (_) { return null; }
@@ -31,7 +33,21 @@
     } catch (_) { return true; }
   }
 
+  function clearIdentity() {
+    try { var store = storage(); if (store) store.removeItem(BROWSER_ID); } catch (_) {}
+  }
+
+  function consentGranted() {
+    try {
+      if (window.NAUConsent && window.NAUConsent.getAnalyticsConsent() !== 'granted') return false;
+      var store = storage();
+      var value = store && JSON.parse(store.getItem(CONSENT_KEY) || 'null');
+      return !!value && value.version === 1 && value.analytics === true;
+    } catch (_) { return false; }
+  }
+
   function disable() {
+    clearIdentity();
     locallyDisabled = true;
     try { var store = storage(); if (store) store.setItem(OPT_OUT, '1'); } catch (_) {}
   }
@@ -39,7 +55,8 @@
   function enable() {
     locallyDisabled = false;
     try { var store = storage(); if (store) store.setItem(OPT_OUT, '0'); } catch (_) {}
-    // A full reload is needed to capture a new page open. DNT/GPC still take priority.
+    // Owner exclusion and optional consent are separate; enabling does not grant consent.
+    captureIfAllowed();
   }
 
   window.NAUAnalytics = Object.freeze({ disable: disable, enable: enable, isOptedOut: isOptedOut });
@@ -92,8 +109,9 @@
     } catch (_) { return null; }
   }
 
+  function captureIfAllowed() {
   var config = settings();
-  if (!config || isOptedOut() || typeof window.fetch !== 'function') return;
+  if (attempted || !config || isOptedOut() || !consentGranted() || typeof window.fetch !== 'function') return;
   var page = allowedPage(config);
   if (!page) return;
   var id = anonymousId();
@@ -117,6 +135,7 @@
     }
   };
 
+  attempted = true;
   try {
     var request = window.fetch(config.apiHost + '/i/v0/e/', {
       method: 'POST',
@@ -130,5 +149,20 @@
     });
     if (request && typeof request.catch === 'function') request.catch(function () {});
   } catch (_) {}
+  }
+
+  if (!consentGranted() || isOptedOut()) clearIdentity();
+  if (typeof window.addEventListener === 'function') {
+    window.addEventListener('nau:consentchange', function () {
+      if (!consentGranted()) clearIdentity();
+      captureIfAllowed();
+    });
+    window.addEventListener('storage', function (event) {
+      if (event.key !== CONSENT_KEY && event.key !== OPT_OUT && event.key !== null) return;
+      if (!consentGranted() || isOptedOut()) clearIdentity();
+      captureIfAllowed();
+    });
+  }
+  captureIfAllowed();
   // Deliberately no hashchange/history listeners: exactly one attempted PV per full load.
 }());

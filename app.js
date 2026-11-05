@@ -133,13 +133,13 @@
   }
 
   function socialCodes(post) {
-    const short = state.postCodes[post.id] || array(post.sourceIds).filter(s => /^[A-Z]\d{2}$/.test(s));
+    const short = state.postCodes[post.id] || array(post.sourceIds).filter(s => /^[A-Z]\d{2,3}$/.test(s));
     return short.length ? short.join(' / ') : post.id.slice(-7).toUpperCase();
   }
 
   function filteredPosts() {
     const q = normalize(state.postQuery);
-    return state.data.socialPosts.filter(p => (!state.postTopic || p.topic === state.postTopic) && (!state.postCategory || p.category === state.postCategory) && (!q || (/^[a-z]\d{2}$/.test(q) ? (state.postCodes[p.id] || []).some(code=>normalize(code)===q) : normalize([p.title,p.author,p.summary,p.population,p.campus,p.date,p.verificationStatus,...(state.postCodes[p.id] || []),...array(p.comments).map(c => textOf(c))].join(' ')).includes(q))));
+    return state.data.socialPosts.filter(p => (!state.postTopic || p.topic === state.postTopic) && (!state.postCategory || p.category === state.postCategory) && (!q || (/^[a-z]\d{2,3}$/.test(q) ? (state.postCodes[p.id] || []).some(code=>normalize(code)===q) : normalize([p.title,p.author,p.summary,p.population,p.campus,p.date,p.verificationStatus,...(state.postCodes[p.id] || []),...array(p.comments).map(c => textOf(c))].join(' ')).includes(q))));
   }
 
   function postCard(p) {
@@ -148,15 +148,27 @@
 
   function renderPostResults() {
     const posts = filteredPosts(), visible = posts.slice(0, state.postLimit);
-    $('#post-result-count').innerHTML = `找到 <strong>${posts.length}</strong> 篇原帖`;
+    $('#post-result-count').innerHTML = `找到 <strong>${posts.length}</strong> 条来源`;
     $('#post-results').innerHTML = visible.length ? visible.map(postCard).join('') : emptyState('没有找到这类原帖', '换一个关键词，或清除主题与采用类别筛选。', '<button type="button" class="button secondary" data-action="reset-posts">查看全部原帖</button>');
-    $('#post-load-more').innerHTML = posts.length > visible.length ? `<div class="load-more-wrap"><button class="button secondary" type="button" data-action="more-posts">再看 ${Math.min(20, posts.length-visible.length)} 篇 <span aria-hidden="true">↓</span></button><span class="showing-note">已展示 ${visible.length} / ${posts.length} 篇</span></div>` : visible.length ? `<div class="load-more-wrap"><span class="showing-note">已展示全部 ${posts.length} 篇筛选结果</span></div>` : '';
+    $('#post-load-more').innerHTML = posts.length > visible.length ? `<div class="load-more-wrap"><button class="button secondary" type="button" data-action="more-posts">再看 ${Math.min(20, posts.length-visible.length)} 条 <span aria-hidden="true">↓</span></button><span class="showing-note">已展示 ${visible.length} / ${posts.length} 条</span></div>` : visible.length ? `<div class="load-more-wrap"><span class="showing-note">已展示全部 ${posts.length} 条筛选结果</span></div>` : '';
+  }
+
+  function coverageHtml() {
+    const r = state.data.meta.researchExpansion;
+    if (!r) return '';
+    return `<section class="research-coverage reading-notes" aria-label="检索覆盖与采用口径"><h3>检索更广，也把采用边界留下</h3><p>追加 <strong>${esc(r.queryCount)}</strong> 组检索，实际新读 <strong>${esc(r.newActuallyReadUniqueSources)}</strong> 个不同来源；其中 <strong>${esc(r.newIndexedSources)}</strong> 个纳入索引（${esc(r.newXhsSources)} 条小红书、${esc(r.newOtherPlatformSources)} 个其他平台来源）。另有 ${esc(r.newReadExcludedSources)} 个读后筛除，不用于主要建议。</p><p>${esc(r.newConditionalUsefulSources)} 条有条件的操作参考、${esc(r.newBackgroundSources)} 条背景材料分开标记。同一作者的多篇记录不当作多个独立学生样本。本轮未取得新的可靠个人导师日常指导证据，已有导师反馈继续保留原始身份和适用边界。</p></section>`;
+  }
+
+  function unreadLeadsHtml() {
+    const leads = array(state.data.unreadLeads);
+    if (!leads.length) return '';
+    return `<section class="reading-notes unread-leads"><details><summary>继续核实的线索 · ${leads.length} 条正文未读</summary><p>下列条目只读到列表或摘要，未能打开正文；不计作已读来源，不用于导师或政策结论。</p><ul>${leads.map(p=>`<li>${external(p.url,esc(p.title || '待核实线索'))}<p>${esc(p.limitations || p.reading_scope || '正文尚未读取，需自行核实。')}</p></li>`).join('')}</ul></details></section>`;
   }
 
   function renderPosts() {
     const topics = [...new Set(state.data.socialPosts.map(p => p.topic))];
     const cats = [...new Set(state.data.socialPosts.map(p => p.category))];
-    app.innerHTML = heading('03 / SOURCE NOTEBOOK', '建议的背后，是这些原帖', '不只留结论，也留下作者身份、可见日期、具体评论与采用边界。可以按校园主题查找，也可以看看哪些线索被保留、哪些未用于推荐。', `<strong>${state.data.socialPosts.length}</strong> 篇 · 实质去重`) + `<div class="notice">${esc(state.data.meta.platformNote)} 社交平台原页可能需要登录，显示内容也可能随时间变化；本页保留的是当次阅读记录。</div><div class="posts-toolbar">${searchField('post-search','搜索标题、作者、来源编号或经历关键词',state.postQuery)}<div class="select-field"><label for="post-topic">内容主题</label><select id="post-topic"><option value="">全部主题</option>${topics.map(t => `<option${state.postTopic===t?' selected':''}>${esc(t)}</option>`).join('')}</select></div><div class="select-field"><label for="post-category">采用类别</label><select id="post-category"><option value="">全部类别</option>${cats.map(c => `<option${state.postCategory===c?' selected':''}>${esc(c)}</option>`).join('')}</select></div></div><div class="results-bar"><span id="post-result-count" role="status" aria-live="polite"></span><button type="button" class="text-button" data-action="reset-posts">清除筛选</button></div><div class="posts-grid" id="post-results"></div><div id="post-load-more"></div>`;
+    app.innerHTML = heading('03 / SOURCE NOTEBOOK', '建议的背后，是这些原始来源', '不只留结论，也留下作者身份、可见日期、具体评论与采用边界。可以按校园主题查找，也可以看看哪些线索被保留、哪些未用于推荐。', `<strong>${state.data.socialPosts.length}</strong> 条 · 实质去重`) + `<div class="notice">${esc(state.data.meta.platformNote)} 社交平台原页可能需要登录，显示内容也可能随时间变化；本页保留的是当次阅读记录。</div>${coverageHtml()}<div class="posts-toolbar">${searchField('post-search','搜索标题、作者、来源编号或经历关键词',state.postQuery)}<div class="select-field"><label for="post-topic">内容主题</label><select id="post-topic"><option value="">全部主题</option>${topics.map(t => `<option${state.postTopic===t?' selected':''}>${esc(t)}</option>`).join('')}</select></div><div class="select-field"><label for="post-category">采用类别</label><select id="post-category"><option value="">全部类别</option>${cats.map(c => `<option${state.postCategory===c?' selected':''}>${esc(c)}</option>`).join('')}</select></div></div><div class="results-bar"><span id="post-result-count" role="status" aria-live="polite"></span><button type="button" class="text-button" data-action="reset-posts">清除筛选</button></div><div class="posts-grid" id="post-results"></div><div id="post-load-more"></div>${unreadLeadsHtml()}`;
     renderPostResults();
   }
 
@@ -169,7 +181,7 @@
   }
 
   function renderDownloads() {
-    app.innerHTML = heading('04 / TAKE THE GUIDE WITH YOU', '下载一份，留给需要的时候', '三份原始文件保留完整正文、导师卡片和证据索引，适合离线阅读、打印，或做自己的联系与入学清单。') + `<div class="download-grid">${state.data.downloads.map(d => `<article class="download-card"><div class="file-icon" aria-hidden="true">${esc(d.format.toUpperCase())}</div><h3>${esc(d.title)}</h3><p>${esc(d.description)}</p><a class="button" href="${esc(d.url)}" download data-download="${esc(d.id)}">下载${d.format.toLowerCase()==='docx'?' Word':' Excel'}文件 <span aria-hidden="true">↓</span></a><div class="download-meta">${esc(d.format.toUpperCase())}${d.bytes ? ` · ${Math.round(d.bytes/1024)} KB` : ''} · ${esc(state.data.meta.updatedAt)}</div></article>`).join('')}</div><div class="reading-notes"><h3>这份资料，怎样使用更顺手</h3><p><strong>选导之前：</strong>先看本级培养方向，再从导师名录中选出几位，逐条核对研究内容、训练方式与当年名额。联系清单可以帮助你保留第二顺位。</p><p><strong>读学生经历时：</strong>接触身份和具体过程比笼统的好评更有用。本科课程印象、朋友转述和往届MPAcc经历，分别能回答不同问题。</p><p><strong>准备入学时：</strong>先确认校区、楼栋与本级通知，再购置用品、安排实习和核对奖助；攻略中的来源编号都能回到相应公开页面。</p><p><strong>标注说明：</strong>“未公开”指本次整理未见可靠公开信息；“待核实”指身份、阶段或时效仍有缺口。两者均不等同于该事项不存在。</p></div>`;
+    app.innerHTML = heading('04 / TAKE THE GUIDE WITH YOU', '下载一份，留给需要的时候', 'Word 保留基础正文和导师卡片；Excel 完整目录同步收录网页中的108条来源与未读线索。网页另有补充操作说明，阅读时可逐条返回原始来源。') + `<div class="download-grid">${state.data.downloads.map(d => `<article class="download-card"><div class="file-icon" aria-hidden="true">${esc(d.format.toUpperCase())}</div><h3>${esc(d.title)}</h3><p>${esc(d.description)}</p><a class="button" href="${esc(d.url)}" download data-download="${esc(d.id)}">下载${d.format.toLowerCase()==='docx'?' Word':' Excel'}文件 <span aria-hidden="true">↓</span></a><div class="download-meta">${esc(d.format.toUpperCase())}${d.bytes ? ` · ${Math.round(d.bytes/1024)} KB` : ''}</div></article>`).join('')}</div><div class="reading-notes"><h3>这份资料，怎样使用更顺手</h3><p><strong>选导之前：</strong>先看本级培养方向，再从导师名录中选出几位，逐条核对研究内容、训练方式与当年名额。联系清单可以帮助你保留第二顺位。</p><p><strong>读学生经历时：</strong>接触身份和具体过程比笼统的好评更有用。本科课程印象、朋友转述和往届MPAcc经历，分别能回答不同问题。</p><p><strong>准备入学时：</strong>先确认校区、楼栋与本级通知，再购置用品、安排实习和核对奖助；攻略中的来源编号都能回到相应公开页面。</p><p><strong>标注说明：</strong>“未公开”指本次整理未见可靠公开信息；“待核实”指身份、阶段或时效仍有缺口。两者均不等同于该事项不存在。</p></div>`;
   }
 
   function openGuide(section) {
@@ -236,7 +248,7 @@
     if (state.view === 'life' && id && state.data.lifeChapters.some(c => c.id === id)) state.chapter = id;
     $$('[data-nav]').forEach(link => link.dataset.nav === state.view ? link.setAttribute('aria-current','page') : link.removeAttribute('aria-current'));
     ({mentors:renderMentors,life:renderLife,posts:renderPosts,downloads:renderDownloads})[state.view]();
-    document.title = `${{mentors:'导师导览',life:'学习生活',posts:'原帖索引',downloads:'资料下载'}[state.view]} · 南京审计大学MPAcc选导与生活指南`;
+    document.title = `${{mentors:'导师导览',life:'学习生活',posts:'原帖索引',downloads:'资料下载'}[state.view]} · 雨诺的南审手记`;
     if (scroll) requestAnimationFrame(() => $('.section-tabs-wrap').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'}));
     emit('page_view', {chapter:state.view==='life'?state.chapter:undefined});
   }
@@ -294,15 +306,14 @@
       if(!Array.isArray(data.mentors)||!Array.isArray(data.lifeChapters)||!Array.isArray(data.socialPosts))throw new Error('资料格式不完整');
       state.data=data;
       for(const post of data.socialPosts){
-        const codes=array(post.sourceIds).filter(code=>/^[A-Z]\d{2}$/.test(code));
+        const codes=array(post.sourceIds).filter(code=>/^[A-Z]\d{2,3}$/.test(code));
         for(const [code,entry] of Object.entries(data.sourceRegistry||{})){
-          if(!/^[A-Z]\d{2}$/.test(code))continue;
+          if(!/^[A-Z]\d{2,3}$/.test(code))continue;
           if(entry.postId===post.id||entry.original_id===post.id||array(entry.sourceIds).includes(post.id)||String(entry.canonicalUrl||entry.url||'').includes('/'+post.id))codes.push(code);
         }
         state.postCodes[post.id]=[...new Set(codes)];
       }
       try {const saved=JSON.parse(localStorage.getItem('nau-guide-contact-list-v1')||'{}');if(saved&&typeof saved==='object'&&!Array.isArray(saved))state.saved=Object.fromEntries(Object.entries(saved).filter(([id,status])=>data.mentors.some(m=>m.id===id)&&['优先联系','备选','仅了解'].includes(status)));}catch{}
-      if(data.meta.updatedAt)$('#updated-at').textContent='资料核验 '+data.meta.updatedAt.replaceAll('-','.');
       const counts=[data.mentors.length,data.mentorCards.length,data.lifeChapters.length,data.socialPosts.length];
       $$('.hero-stats strong').forEach((s,i)=>s.textContent=counts[i]);
       route(false);
