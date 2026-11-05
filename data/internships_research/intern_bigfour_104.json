@@ -1,0 +1,1432 @@
+{
+  "researchScope": "四大官方项目与南京、苏州、上海及部分江苏办公点；办公室、项目期、网申窗口和具体岗位空缺分开。",
+  "researchDate": "2026-11-05",
+  "firms": [
+    {
+      "company": "普华永道（PwC）",
+      "officeRecords": [
+        {
+          "city": "南京",
+          "district": "鼓楼区",
+          "address": "中央路201号金茂广场南塔12A01室",
+          "sourceIds": [
+            "PWC_OFFICE_NJ"
+          ],
+          "status": "官方办公室地址已核",
+          "workplaceIsConfirmedJobSite": false,
+          "commuteMinutes": null
+        },
+        {
+          "city": "苏州",
+          "district": "苏州工业园区",
+          "address": "苏州大道西9号中海财富中心西塔42楼02室",
+          "sourceIds": [
+            "PWC_OFFICE_SZ"
+          ],
+          "status": "官方办公室地址已核；跨城备选",
+          "workplaceIsConfirmedJobSite": false,
+          "commuteMinutes": null
+        },
+        {
+          "city": "上海",
+          "district": "黄浦区／浦东新区",
+          "addresses": [
+            "湖滨路202号领展企业广场2座普华永道中心10楼",
+            "东育路588号前滩中心42楼"
+          ],
+          "sourceIds": [
+            "PWC_OFFICE_SH"
+          ],
+          "status": "官方列有两处地址；跨城备选",
+          "workplaceIsConfirmedJobSite": false,
+          "commuteMinutes": null
+        }
+      ],
+      "recruitEntries": [
+        {
+          "label": "官方校园招聘与实习项目",
+          "url": "https://www.pwccn.com/zh/careers/students.html",
+          "sourceIds": [
+            "PWC_STUDENTS"
+          ],
+          "status": "项目正文可读",
+          "use": "先选实习计划，再进入申请系统核对城市与具体职位"
+        },
+        {
+          "label": "官网导出的Moka申请系统",
+          "url": "https://app.mokahr.com/campus-recruitment/pwc/148260?locale=zh-CN",
+          "sourceIds": [
+            "PWC_STUDENTS"
+          ],
+          "status": "已确认官网链接；工具打开出现重定向循环，未核到具体职位",
+          "use": "打开后筛南京／苏州／上海及实习类别；以职位详情为准",
+          "requiresLogin": null
+        }
+      ],
+      "programs": [
+        {
+          "id": "pwc-internship-2026-autumn",
+          "name": "实习计划（2026秋季申请／冬季起）",
+          "kind": "internship_program",
+          "status": "官方当期项目介绍可核；南京具体在招岗位未核",
+          "url": "https://www.pwccn.com/zh/careers/students.html",
+          "sourceIds": [
+            "PWC_STUDENTS"
+          ],
+          "cities": null,
+          "graduationRequirement": "2028届或之后，本科及以上",
+          "applicationStart": "2026年秋季起",
+          "deadline": null,
+          "internshipWindow": "2026年冬季起；具体到岗日与时长看职位",
+          "daysPerWeek": null,
+          "duration": null,
+          "process": [
+            "网申",
+            "测评",
+            "面试",
+            "录取",
+            "培训与实习"
+          ],
+          "limits": "未公开本次城市空缺、出勤天数或统一时长；优先录用机会不等于保证转正。",
+          "statusCode": "program_open"
+        },
+        {
+          "id": "pwc-leap-reference",
+          "name": "LEAP校园俱乐部（准备渠道）",
+          "kind": "campus_development_not_internship",
+          "status": "常设项目介绍；页面本轮网申时间2026年2—3月已过",
+          "url": "https://www.pwccn.com/zh/careers/students.html",
+          "sourceIds": [
+            "PWC_STUDENTS"
+          ],
+          "cities": null,
+          "graduationRequirement": "内地／澳门高校本科一二年级、硕士一年级等，专业不限",
+          "applicationStart": "2026年2月",
+          "deadline": null,
+          "internshipWindow": null,
+          "daysPerWeek": null,
+          "duration": null,
+          "limits": "这是校园活动与能力培养渠道，不作为正式实习经历或下一轮已开放。",
+          "applicationWindow": "2026年2—3月（只公布月份，已过）",
+          "statusCode": "closed"
+        }
+      ],
+      "skillsPrep": [
+        {
+          "text": "用真实项目、活动和实习事例准备简历追问，呈现数字技能、商业理解和协作。",
+          "sourceIds": [
+            "PWC_STUDENTS"
+          ]
+        },
+        {
+          "text": "测评邀请后48小时内完成，预留约90分钟，准备电脑、纸笔与稳定网络。",
+          "sourceIds": [
+            "PWC_STUDENTS"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "岗位归属南京、苏州还是上海办公室？实际到岗是否在客户现场，是否跨城出差？",
+        "是否接受当前学籍与毕业年份？保研待入学阶段应如何按真实身份填写？",
+        "一周至少几天、连续几个月，寒假结束返校后能否协调？",
+        "实习安排与审计忙季、课程和论文节点怎样衔接？"
+      ],
+      "primarySources": [
+        {
+          "id": "PWC_STUDENTS",
+          "url": "https://www.pwccn.com/zh/careers/students.html",
+          "title": "普华永道中国：校园招聘",
+          "date": null,
+          "readScope": "实习计划、LEAP及相关申请步骤；点开官方立即申请链接",
+          "facts": [
+            "实习项目面向2028届及以后",
+            "本期秋季申请、冬季起；LEAP本期春季网申已过"
+          ],
+          "limits": "动态职位系统重定向循环；未确认南京实习空缺",
+          "ref": "turn158view0 / turn162view0 / turn172view5"
+        },
+        {
+          "id": "PWC_OFFICE_NJ",
+          "url": "https://www.pwccn.com/zh/about-us/office-locations/our-office-in-nanjing.html",
+          "title": "联系我们 - 南京办公室",
+          "date": null,
+          "readScope": "办公地址正文",
+          "facts": [
+            "鼓楼区中央路201号金茂广场南塔12A01"
+          ],
+          "limits": "办公室地址，不代表实习到岗点或在招",
+          "ref": "turn172view2"
+        },
+        {
+          "id": "PWC_OFFICE_SZ",
+          "url": "https://www.pwccn.com/zh/about-us/office-locations/our-office-in-suzhou.html",
+          "title": "联系我们 - 苏州办公室",
+          "date": null,
+          "readScope": "办公地址正文",
+          "facts": [
+            "苏州工业园区苏州大道西9号中海财富中心西塔42楼02室"
+          ],
+          "limits": "办公室地址，不代表实习到岗点或在招",
+          "ref": "turn172view3 / turn178view5"
+        },
+        {
+          "id": "PWC_OFFICE_SH",
+          "url": "https://www.pwccn.com/zh/about-us/office-locations/our-office-in-shanghai.html",
+          "title": "联系我们 - 上海办公室",
+          "date": null,
+          "readScope": "办公地址正文，两处地点均读取",
+          "facts": [
+            "湖滨路202号普华永道中心、东育路588号前滩中心"
+          ],
+          "limits": "上海两处办公点，投递前确认具体团队地点",
+          "ref": "turn172view4 / turn178view6"
+        }
+      ],
+      "id": "pwc",
+      "name": "普华永道",
+      "group": "四大"
+    },
+    {
+      "company": "安永（EY）",
+      "officeRecords": [
+        {
+          "city": "南京",
+          "district": "建邺区",
+          "address": "河西大街111号国金中心办公楼二期22层2201-06及16室",
+          "sourceIds": [
+            "EY_OFFICES"
+          ],
+          "status": "官方办公室地址已核",
+          "workplaceIsConfirmedJobSite": false,
+          "commuteMinutes": null
+        },
+        {
+          "city": "苏州",
+          "district": "苏州工业园区",
+          "address": "苏州大道东265号苏州现代传媒广场28楼A室",
+          "sourceIds": [
+            "EY_OFFICES"
+          ],
+          "status": "官方办公室地址已核；跨城备选",
+          "workplaceIsConfirmedJobSite": false,
+          "commuteMinutes": null
+        },
+        {
+          "city": "上海",
+          "district": "浦东新区",
+          "address": "世纪大道100号上海环球金融中心50楼",
+          "sourceIds": [
+            "EY_OFFICES"
+          ],
+          "status": "官方安永主办公室地址已核；跨城备选",
+          "workplaceIsConfirmedJobSite": false,
+          "commuteMinutes": null
+        }
+      ],
+      "recruitEntries": [
+        {
+          "label": "中国大陆学生工作机会（官网）",
+          "url": "https://www.ey.com/zh_cn/careers/student-programs-in-chinese-mainland",
+          "sourceIds": [
+            "EY_STUDENT_ZH"
+          ],
+          "status": "官方项目导航可读",
+          "use": "先区别毕业生全职、寒假实习、精英计划与校园活动"
+        },
+        {
+          "label": "安永中国校招申请系统",
+          "url": "https://careers.ey.com.cn",
+          "sourceIds": [
+            "EY_STUDENT_ZH",
+            "EY_WINTER_2627_NOTICE"
+          ],
+          "status": "官网确认的申请入口；工具无法访问正文，未核当前职位列表",
+          "use": "自行进入系统核查是否补录、新轮次或有目标城市职位",
+          "requiresLogin": null
+        }
+      ],
+      "programs": [
+        {
+          "id": "ey-winter-2026-2027",
+          "name": "2026—2027审计寒假实习生招募",
+          "kind": "internship_batch",
+          "status": "公告期已截止；不标当前在招",
+          "url": "https://careers.ey.com.cn",
+          "sourceIds": [
+            "EY_WINTER_2627_NOTICE"
+          ],
+          "cities": null,
+          "graduationRequirement": "2028年毕业生优先；本科及以上，不限专业",
+          "applicationStart": "2026-07-30",
+          "deadline": "2026-10-16",
+          "internshipWindow": "2027年1月初至3月底",
+          "daysPerWeek": "能全勤实习者优先；公告未给统一每周天数",
+          "duration": null,
+          "limits": "11月5日已过公告截止；未核到延期或南京剩余空缺，不推断仍可投。",
+          "statusCode": "closed"
+        },
+        {
+          "id": "ey-winter-program-reference",
+          "name": "寒假实习生项目（长期说明）",
+          "kind": "evergreen_program_reference",
+          "status": "官方项目介绍，不是新一轮职位开放证明",
+          "url": "https://www.ey.com/en_cn/careers/student-programs-in-chinese-mainland",
+          "sourceIds": [
+            "EY_STUDENT_EN"
+          ],
+          "cities": null,
+          "graduationRequirement": "通用页列全日制本科大三或研究生一年级；具体届别以当期岗位为准",
+          "applicationStart": null,
+          "deadline": null,
+          "internshipWindow": null,
+          "daysPerWeek": null,
+          "duration": null,
+          "limits": "不把通用条件替代当期2028届优先等要求。",
+          "statusCode": "entry_only"
+        },
+        {
+          "id": "ey-elite-reference",
+          "name": "精英计划（已获全职Offer后的路径）",
+          "kind": "offer_holder_internship_path",
+          "status": "按业务需要邀请，不是普通学生自行网申项目",
+          "url": "https://www.ey.com/en_cn/careers/student-programs-in-chinese-mainland",
+          "sourceIds": [
+            "EY_STUDENT_EN"
+          ],
+          "cities": null,
+          "graduationRequirement": "已获审计、税务或FSO咨询全职Staff Accountant 1录用且尚未入职",
+          "applicationStart": null,
+          "deadline": null,
+          "internshipWindow": null,
+          "daysPerWeek": null,
+          "duration": null,
+          "limits": "需收到邀请并满足实习时数及表现要求，不向未获全职录用者承诺开放。",
+          "statusCode": "entry_only"
+        }
+      ],
+      "skillsPrep": [
+        {
+          "text": "寒假实习看重解决问题、团队协作与组织能力。",
+          "sourceIds": [
+            "EY_STUDENT_EN"
+          ]
+        },
+        {
+          "text": "当期公告强调中英文表达；数据可视化、数据分析或建模经验可作为准备方向。",
+          "sourceIds": [
+            "EY_WINTER_2627_NOTICE"
+          ],
+          "limits": "公告含全职与实习项目，不推断每个实习岗位统一要求某种工具。"
+        }
+      ],
+      "questionsToAsk": [
+        "本轮网申已过截止，目标团队是否有正式补录公告或新的项目招聘？",
+        "南京录用岗位具体属于哪个团队，办公地点和客户现场怎样安排？",
+        "能否覆盖1月至3月的全勤要求，返校、导师组会与论文节点如何协调？",
+        "当前学籍和毕业年份是否符合岗位要求；能否按真实保研待入学状态报名？",
+        "是否为普通实习投递，而非需要已有全职Offer的精英计划？"
+      ],
+      "primarySources": [
+        {
+          "id": "EY_STUDENT_ZH",
+          "url": "https://www.ey.com/zh_cn/careers/student-programs-in-chinese-mainland",
+          "title": "中国大陆学生工作机会",
+          "date": null,
+          "readScope": "学生项目导航及官网申请链接",
+          "facts": [
+            "官网导向careers.ey.com.cn；列寒假实习与其他学生项目"
+          ],
+          "limits": "中文页折叠详情未被检索器完整抽取，具体通用说明另读英文页",
+          "ref": "turn172view0 / turn178view1"
+        },
+        {
+          "id": "EY_STUDENT_EN",
+          "url": "https://www.ey.com/en_cn/careers/student-programs-in-chinese-mainland",
+          "title": "Student programs in Chinese mainland",
+          "date": null,
+          "readScope": "Winter Internship及Elite Program正文与条件",
+          "facts": [
+            "寒假实习通用条件；Elite仅面向特定全职录用者并由安永邀请"
+          ],
+          "limits": "通用项目说明未列当前城市空缺和截止时间",
+          "ref": "turn178view0 / turn184view2"
+        },
+        {
+          "id": "EY_WINTER_2627_NOTICE",
+          "url": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20268",
+          "title": "EY安永2026-2027安永秋季应届毕业生招聘及审计寒假实习生招聘，网申启动",
+          "date": "2026-09-07",
+          "readScope": "广东注协全文；页面来源注明安永校招官网",
+          "facts": [
+            "寒假实习2028届优先；2027年1初—3末，全勤优先；网申截止2026-10-16"
+          ],
+          "limits": "行业协会转载，不是11月5日招聘系统实时空缺；原网申期已过",
+          "ref": "turn172view1"
+        },
+        {
+          "id": "EY_OFFICES",
+          "url": "https://www.ey.com/zh_cn/locations/greater-china",
+          "title": "大中华区 — 安永办公室地点",
+          "date": null,
+          "readScope": "南京、上海、苏州办公地址段落",
+          "facts": [
+            "南京国金中心二期；上海环球金融中心；苏州现代传媒广场"
+          ],
+          "limits": "官网地址不等于实习实际到岗地点或有空缺；未估算通勤时间",
+          "ref": "turn167view0 / turn178view2 / turn178view3 / turn178view4"
+        }
+      ],
+      "id": "ey",
+      "name": "安永",
+      "group": "四大"
+    },
+    {
+      "id": "deloitte",
+      "name": "德勤",
+      "company": "德勤（Deloitte）",
+      "group": "四大",
+      "officeRecords": [
+        {
+          "city": "南京",
+          "district": "建邺区",
+          "address": "建邺区江东中路347号国金中心办公楼一期40层",
+          "sourceIds": [
+            "D_OFFICE_NJ"
+          ],
+          "officeType": "专业服务办公室",
+          "workplaceIsConfirmedJobSite": false,
+          "commuteMinutes": null,
+          "status": "仅核实官方办公地址；实际岗位地点另确认"
+        },
+        {
+          "city": "苏州",
+          "district": "苏州工业园区",
+          "address": "工业园区苏绣路58号苏州中心广场58幢A座24层",
+          "sourceIds": [
+            "D_OFFICE_SU"
+          ],
+          "officeType": "专业服务办公室",
+          "workplaceIsConfirmedJobSite": false,
+          "commuteMinutes": null,
+          "status": "仅核实官方办公地址；实际岗位地点另确认"
+        },
+        {
+          "city": "上海",
+          "district": null,
+          "address": "延安东路222号外滩中心30楼",
+          "sourceIds": [
+            "D_OFFICE_SH"
+          ],
+          "officeType": "专业服务办公室",
+          "workplaceIsConfirmedJobSite": false,
+          "commuteMinutes": null,
+          "status": "仅核实官方办公地址；实际岗位地点另确认"
+        }
+      ],
+      "recruitEntries": [
+        {
+          "label": "官方实习生计划",
+          "url": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-program.html",
+          "sourceIds": [
+            "D_INTERNSHIP"
+          ],
+          "statusCode": "entry_only",
+          "status": "项目正文可读；地点与具体岗位需进入系统确认",
+          "use": "先看毕业时间与实习期，再进入申请系统核对城市、部门和出勤要求"
+        },
+        {
+          "label": "官网导出的实习申请系统",
+          "url": "https://wecruit.hotjob.cn/SU64365a780dcad43c5ae82bab/pb/interns.html?request_locale=en",
+          "sourceIds": [
+            "D_INTERNSHIP"
+          ],
+          "statusCode": "entry_only",
+          "requiresLogin": null,
+          "status": "官网链接已确认；检索器只读到动态空壳，未核具体JD",
+          "use": "不要把校园招聘正式Associate岗位当作实习；先核岗位性质再申请"
+        }
+      ],
+      "programs": [
+        {
+          "id": "deloitte-seasonal",
+          "name": "寒暑假实习（官网显示冬季招募）",
+          "kind": "internship_program",
+          "statusCode": "program_open",
+          "sourceIds": [
+            "D_INTERNSHIP"
+          ],
+          "url": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-program.html",
+          "cities": null,
+          "targetCities": [
+            "南京",
+            "苏州",
+            "上海"
+          ],
+          "deadline": null,
+          "applicationStart": null,
+          "daysPerWeek": null,
+          "duration": null,
+          "status": "项目层面显示开放；南京／苏州／上海具体空缺未核",
+          "graduationRequirement": "未来1至2年毕业；官网举例为两年制硕士研一、三年制硕士研二或本科大三",
+          "internshipWindow": "寒假或暑假；正文未列本次统一到岗日期",
+          "durationDescription": "通常2至4个月",
+          "roleDirections": [
+            "审计",
+            "税务",
+            "咨询"
+          ],
+          "limits": "不将官网冬季项目招募概括为三城都在招；年份、截止及每周出勤以目标岗位为准。",
+          "typicalDurationRangeMonths": [
+            2,
+            4
+          ],
+          "durationIsMinimum": false
+        },
+        {
+          "id": "deloitte-project-intern",
+          "name": "短期项目实习",
+          "kind": "internship_program",
+          "statusCode": "entry_only",
+          "sourceIds": [
+            "D_INTERNSHIP"
+          ],
+          "url": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-program.html",
+          "cities": null,
+          "targetCities": [
+            "南京",
+            "苏州",
+            "上海"
+          ],
+          "deadline": null,
+          "applicationStart": null,
+          "daysPerWeek": null,
+          "duration": null,
+          "status": "长期项目通道；按部门需求和可实习时间筛选",
+          "graduationRequirement": "先核未来1至2年毕业这一通用条件，具体看项目JD",
+          "internshipWindow": null,
+          "durationDescription": "周期、性质和每周天数因部门及项目而异",
+          "roleDirections": [
+            "按具体项目筛选"
+          ],
+          "limits": "无法据此承诺有每周2至3天岗位；不保证南京本地或不出差。"
+        }
+      ],
+      "skillsPrep": [
+        {
+          "text": "用真实课程或项目事例展示分析复杂问题、判断、沟通和团队协作，先把简历里的每一项讲清楚。",
+          "sourceIds": [
+            "D_PROFILE",
+            "D_FAQ"
+          ]
+        },
+        {
+          "text": "投递前逐项核对岗位与资料；通用FAQ写明不能重复申请或提交后修改，若本期系统规则不同，先核正式说明再提交。",
+          "sourceIds": [
+            "D_FAQ"
+          ]
+        }
+      ],
+      "questionsToAsk": [
+        "当前毕业年份和学籍是否符合岗位？保研待入学身份应如何如实填写？",
+        "是寒暑假项目还是短期项目，实际至少连续多久、每周几天？",
+        "岗位归属城市与实际项目城市分别是哪儿，是否需要跨城出差？",
+        "能否兼顾返校课程、组会和论文节点；请假及到岗变更怎样确认？"
+      ],
+      "primarySources": [
+        {
+          "id": "D_INTERNSHIP",
+          "url": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-program.html",
+          "title": "德勤中国：实习生计划",
+          "date": null,
+          "readScope": "实习正文、两类项目、立即申请官方链接",
+          "facts": [
+            "页面显示冬季寒假招募已启动；审计、税务、咨询寒暑假实习通常2至4个月",
+            "主要面向未来1至2年毕业者；项目实习的时长和每周天数按部门需求确定"
+          ],
+          "limits": "正文未注明统一报名截止和本季年份；未核到南京具体岗位空缺。项目期不是网申截止。",
+          "ref": "turn163view5",
+          "sourceType": "official_firm"
+        },
+        {
+          "id": "D_PROFILE",
+          "url": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-who-we-are-looking-for.html",
+          "title": "德勤中国：我们需要什么样的人才",
+          "date": null,
+          "readScope": "页面人才要求正文",
+          "facts": [
+            "未来1至2年毕业、专业不限；强调学习成绩、快速学习、分析、判断、沟通与协作"
+          ],
+          "limits": "通用选拔要素，不是南京具体岗位的全部任职条件。",
+          "ref": "turn180view3",
+          "sourceType": "official_firm"
+        },
+        {
+          "id": "D_FAQ",
+          "url": "https://www.deloitte.com/cn/en/careers/explore-your-fit/students/internship-faq.html",
+          "title": "Deloitte China: Internship FAQs",
+          "date": null,
+          "readScope": "问题与回答正文",
+          "facts": [
+            "寒暑假实习2至4个月，项目实习按项目长度；通用FAQ说明提交前核对选择和资料"
+          ],
+          "limits": "FAQ为长期说明；申请系统若有本期更新规则，以系统及正式通知为准。",
+          "ref": "turn180view4",
+          "sourceType": "official_firm"
+        },
+        {
+          "id": "D_OFFICE_NJ",
+          "url": "https://www.deloitte.com/cn/zh/offices/nanjing.html",
+          "title": "德勤中国：南京",
+          "date": null,
+          "readScope": "南京办公地址正文",
+          "facts": [
+            "建邺区江东中路347号国金中心办公楼一期40层"
+          ],
+          "limits": "办公室地址，不代表实习在招或客户现场位置。",
+          "ref": "turn169view0",
+          "sourceType": "official_firm"
+        },
+        {
+          "id": "D_OFFICE_SU",
+          "url": "https://www.deloitte.com/cn/en/offices/suzhou.html",
+          "title": "Deloitte China: Suzhou",
+          "date": null,
+          "readScope": "苏州办公地址正文",
+          "facts": [
+            "苏州工业园区苏绣路58号苏州中心广场58幢A座24层"
+          ],
+          "limits": "苏州为跨城备选；没有据此估算浦口每日通勤。",
+          "ref": "turn169view1",
+          "sourceType": "official_firm"
+        },
+        {
+          "id": "D_OFFICE_SH",
+          "url": "https://www.deloitte.com/cn/en/offices/shanghai.html",
+          "title": "Deloitte China: Shanghai",
+          "date": null,
+          "readScope": "上海办公地址正文",
+          "facts": [
+            "上海市延安东路222号外滩中心30楼"
+          ],
+          "limits": "上海为跨城备选；需另核住宿与实际项目地。",
+          "ref": "turn190view0",
+          "sourceType": "official_firm"
+        }
+      ]
+    },
+    {
+      "id": "kpmg",
+      "name": "毕马威",
+      "company": "毕马威（KPMG）",
+      "group": "四大",
+      "officeRecords": [
+        {
+          "city": "南京",
+          "district": "玄武区",
+          "address": "玄武区中山路18号德基广场写字楼12楼",
+          "sourceIds": [
+            "K_OFFICES"
+          ],
+          "officeType": "专业服务办公室",
+          "workplaceIsConfirmedJobSite": false,
+          "commuteMinutes": null,
+          "status": "仅核实官方办公地址；实际岗位地点另确认"
+        },
+        {
+          "city": "南京",
+          "district": "鼓楼区",
+          "address": "鼓楼区集庆门大街272号苏宁慧谷E07-1号楼2101-2107室",
+          "sourceIds": [
+            "K_KDI_ADDRESS"
+          ],
+          "officeType": "KDI技术研发和交付中心",
+          "workplaceIsConfirmedJobSite": false,
+          "commuteMinutes": null,
+          "status": "仅核实官方办公地址；实际岗位地点另确认"
+        },
+        {
+          "city": "苏州",
+          "district": "苏州工业园区",
+          "address": "工业园区苏州中心广场D座2301-2单元",
+          "sourceIds": [
+            "K_OFFICES"
+          ],
+          "officeType": "专业服务办公室",
+          "workplaceIsConfirmedJobSite": false,
+          "commuteMinutes": null,
+          "status": "仅核实官方办公地址；实际岗位地点另确认"
+        },
+        {
+          "city": "上海",
+          "district": null,
+          "address": "南京西路1266号恒隆广场2号楼25楼；申长路988弄虹桥万科中心7号楼",
+          "sourceIds": [
+            "K_OFFICES"
+          ],
+          "officeType": "专业服务办公室",
+          "workplaceIsConfirmedJobSite": false,
+          "commuteMinutes": null,
+          "status": "仅核实官方办公地址；实际岗位地点另确认"
+        },
+        {
+          "city": "无锡",
+          "district": "新吴区",
+          "address": "新吴区和风路32号汇业商务广场8号楼1801",
+          "sourceIds": [
+            "K_OFFICES"
+          ],
+          "officeType": "专业服务办公室",
+          "workplaceIsConfirmedJobSite": false,
+          "commuteMinutes": null,
+          "status": "仅核实官方办公地址；实际岗位地点另确认"
+        }
+      ],
+      "recruitEntries": [
+        {
+          "label": "官方实习项目总览",
+          "url": "https://kpmg.com/cn/zh/careers/campus/basecamp.html",
+          "sourceIds": [
+            "K_BASECAMP"
+          ],
+          "statusCode": "entry_only",
+          "status": "官网正文可读",
+          "use": "先选审计、税务或咨询，再核城市、毕业年份与实习期"
+        },
+        {
+          "label": "前线业务校园申请系统",
+          "url": "https://app.mokahr.com/campus-recruitment/kpmg/74356",
+          "sourceIds": [
+            "K_BASECAMP",
+            "K_AUDIT",
+            "K_TAX",
+            "K_ADVISORY"
+          ],
+          "statusCode": "entry_only",
+          "status": "官网链接已核；检索器打开重定向循环",
+          "requiresLogin": null,
+          "use": "具体城市和职位未核，不将官网项目说明当作南京空缺清单"
+        },
+        {
+          "label": "KDC校园实习入口",
+          "url": "https://app.mokahr.com/campus-recruitment/kpmg/78342",
+          "sourceIds": [
+            "K_KDC"
+          ],
+          "statusCode": "entry_only",
+          "status": "官网实习按钮导出；动态系统未读到具体职位",
+          "requiresLogin": null,
+          "use": "区分实习与应届正式岗，确认交付支持任务与合同主体"
+        },
+        {
+          "label": "KDI实习及应届入口",
+          "url": "https://app.mokahr.com/campus-recruitment/kpmg/98086",
+          "sourceIds": [
+            "K_KDI"
+          ],
+          "statusCode": "entry_only",
+          "status": "官网链接已核；动态系统未读到具体职位",
+          "requiresLogin": null,
+          "use": "只考虑与自身技术能力匹配的实习岗位，勿把应届全职职位当实习"
+        }
+      ],
+      "programs": [
+        {
+          "id": "kpmg-audit-winter-2627",
+          "name": "审计与鉴证寒假实习",
+          "kind": "internship_program",
+          "statusCode": "program_open",
+          "sourceIds": [
+            "K_AUDIT",
+            "K_BASECAMP"
+          ],
+          "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html",
+          "cities": null,
+          "targetCities": [
+            "南京",
+            "苏州",
+            "上海"
+          ],
+          "deadline": null,
+          "applicationStart": null,
+          "daysPerWeek": null,
+          "duration": null,
+          "status": "官网当期项目窗口可核；具体城市空缺待核",
+          "graduationRequirement": "本科或硕士在读；具体JD可能另有届别条件",
+          "internshipWindow": "一般在2026年10月至2027年5月之间，具体起止见录用安排",
+          "roleDirections": [
+            "审计与鉴证"
+          ],
+          "limits": "项目期不是投递截止；未核统一每周天数、津贴、时长和南京岗位。"
+        },
+        {
+          "id": "kpmg-audit-summer-2027",
+          "name": "2027审计暑期实习",
+          "kind": "internship_program",
+          "statusCode": "upcoming",
+          "sourceIds": [
+            "K_AUDIT",
+            "K_BASECAMP"
+          ],
+          "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html",
+          "cities": null,
+          "targetCities": [
+            "南京",
+            "苏州",
+            "上海"
+          ],
+          "deadline": null,
+          "applicationStart": null,
+          "daysPerWeek": null,
+          "duration": null,
+          "status": "官网预计2027年春季开放，不能当成现在可投职位",
+          "graduationRequirement": "以届时具体JD为准",
+          "internshipWindow": "审计部门页为2027年6月至9月；总览为7月至9月",
+          "applicationWindow": "预计2027年春季开放",
+          "roleDirections": [
+            "审计与鉴证"
+          ],
+          "limits": "两页项目期表述不同，具体职位到岗日需单独确认；不设虚构网申截止。"
+        },
+        {
+          "id": "kpmg-audit-regular",
+          "name": "审计常规实习",
+          "kind": "internship_program",
+          "statusCode": "entry_only",
+          "sourceIds": [
+            "K_AUDIT",
+            "K_BASECAMP"
+          ],
+          "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html",
+          "cities": null,
+          "targetCities": [
+            "南京",
+            "苏州",
+            "上海"
+          ],
+          "deadline": null,
+          "applicationStart": null,
+          "daysPerWeek": null,
+          "duration": null,
+          "status": "全年按实际需求发布；具体岗位未核",
+          "graduationRequirement": "以具体JD为准",
+          "internshipWindow": "总览所列招聘年度为2026年10月至2027年9月",
+          "roleDirections": [
+            "审计与鉴证"
+          ],
+          "limits": "常设通道不等于每个城市全年持续有岗位。"
+        },
+        {
+          "id": "kpmg-audit-pioneer",
+          "name": "内地审计先锋者计划",
+          "kind": "internship_program",
+          "statusCode": "program_open",
+          "sourceIds": [
+            "K_AUDIT"
+          ],
+          "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html",
+          "cities": null,
+          "targetCities": [
+            "南京",
+            "苏州",
+            "上海"
+          ],
+          "deadline": null,
+          "applicationStart": null,
+          "daysPerWeek": null,
+          "duration": null,
+          "status": "当期计划在审计寒假实习申请表中选择报名；非独立保证录用",
+          "graduationRequirement": "2026—2027招聘年度面向2028年应届毕业生",
+          "internshipWindow": "随审计寒假实习的具体安排",
+          "roleDirections": [
+            "审计与鉴证"
+          ],
+          "limits": "培养、薪酬和提前转正均为有条件机会，不保证获得；不是对所有本科或硕士年级开放。"
+        },
+        {
+          "id": "kpmg-tax-regular",
+          "name": "税务常规实习",
+          "kind": "internship_program",
+          "statusCode": "entry_only",
+          "sourceIds": [
+            "K_TAX"
+          ],
+          "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/tax.html",
+          "cities": null,
+          "targetCities": [
+            "南京",
+            "苏州",
+            "上海"
+          ],
+          "deadline": null,
+          "applicationStart": null,
+          "daysPerWeek": null,
+          "duration": null,
+          "status": "官网常规招聘通道；按业务需要发布具体岗位",
+          "graduationRequirement": "以具体JD为准",
+          "internshipWindow": null,
+          "roleDirections": [
+            "税务"
+          ],
+          "limits": "南京具体税务JD未在官方系统核到；不采用第三方平台截止日或统一每周时数。"
+        },
+        {
+          "id": "kpmg-advisory-regular",
+          "name": "咨询常规实习",
+          "kind": "internship_program",
+          "statusCode": "entry_only",
+          "sourceIds": [
+            "K_ADVISORY"
+          ],
+          "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/advisory.html",
+          "cities": null,
+          "targetCities": [
+            "南京",
+            "苏州",
+            "上海"
+          ],
+          "deadline": null,
+          "applicationStart": null,
+          "daysPerWeek": null,
+          "duration": null,
+          "status": "官网常规招聘通道；按业务需要发布具体岗位",
+          "graduationRequirement": "以具体JD为准",
+          "internshipWindow": null,
+          "roleDirections": [
+            "咨询"
+          ],
+          "limits": "香港Placement另属5个月以上项目，不作为南京周边普通实习；本条仅常规咨询。"
+        },
+        {
+          "id": "kpmg-kdc-intern",
+          "name": "南京KDC交付支持实习入口",
+          "kind": "internship_program",
+          "statusCode": "entry_only",
+          "sourceIds": [
+            "K_KDC"
+          ],
+          "url": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdc.html",
+          "cities": null,
+          "targetCities": [
+            "南京",
+            "苏州",
+            "上海"
+          ],
+          "deadline": null,
+          "applicationStart": null,
+          "daysPerWeek": null,
+          "duration": null,
+          "status": "官方单列校园实习通道；南京具体岗位未核",
+          "graduationRequirement": "以目标实习JD为准",
+          "internshipWindow": null,
+          "roleDirections": [
+            "审计交付支持",
+            "税务交付支持",
+            "业务支持"
+          ],
+          "limits": "交付中心支持业务与前线审计职责不同；先确认雇佣主体、具体工作和是否客户现场。"
+        },
+        {
+          "id": "kpmg-kdi-intern",
+          "name": "南京KDI数字化实习入口",
+          "kind": "internship_program",
+          "statusCode": "entry_only",
+          "sourceIds": [
+            "K_KDI",
+            "K_KDI_ADDRESS"
+          ],
+          "url": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdi.html",
+          "cities": null,
+          "targetCities": [
+            "南京",
+            "苏州",
+            "上海"
+          ],
+          "deadline": null,
+          "applicationStart": null,
+          "daysPerWeek": null,
+          "duration": null,
+          "status": "官方实习/应届机会通道；具体技术实习岗位未核",
+          "graduationRequirement": "技术岗位有背景及能力要求；MPAcc是否接受看JD",
+          "internshipWindow": null,
+          "roleDirections": [
+            "数据分析",
+            "数字化技术交付",
+            "按JD核对技术方向"
+          ],
+          "limits": "不能凭会计专业或四大品牌就推断适合；不把应届正式岗列为实习。"
+        }
+      ],
+      "skillsPrep": [
+        {
+          "text": "先区分财报审计、税务、咨询、KDC支持和KDI技术研发，再按目标JD准备相关课程或项目经历。",
+          "sourceIds": [
+            "K_AUDIT",
+            "K_TAX",
+            "K_ADVISORY",
+            "K_KDC",
+            "K_KDI"
+          ],
+          "editorialAdvice": true
+        },
+        {
+          "text": "若考虑KDI，在简历中具体说明真实的数据或编程项目及个人贡献，不把只上过课程写成熟练掌握。",
+          "sourceIds": [
+            "K_KDI"
+          ],
+          "editorialAdvice": true,
+          "limits": "准备建议，不是官网统一技能清单。"
+        }
+      ],
+      "questionsToAsk": [
+        "实际岗位是前线审计、税务、咨询、KDC还是KDI，合同主体与团队归属是什么？",
+        "当前学籍和毕业年份符合哪一类实习？先锋者计划是否满足2028届条件？",
+        "实际到岗在德基广场、苏宁慧谷还是客户现场；是否跨城出差？",
+        "每周最低天数、连续时长、返校安排、津贴与食宿如何按正式录用说明确认？",
+        "2027暑期尚待春季开放，是否已有正式岗位与网申截止，而非只看项目介绍？"
+      ],
+      "primarySources": [
+        {
+          "id": "K_BASECAMP",
+          "url": "https://kpmg.com/cn/zh/careers/campus/basecamp.html",
+          "title": "毕马威：实习生项目",
+          "date": null,
+          "readScope": "适用人群、招聘年度项目期、华东及华西区入口；点击申请链接",
+          "facts": [
+            "面向本科或硕士在读；寒假窗口2026年10月至2027年5月，常规窗口2026年10月至2027年9月",
+            "2027暑期投递预计春季开放；南京、苏州、上海的具体岗位需另核"
+          ],
+          "limits": "上述为实习项目期或预计开放时间，不是网申截止。Moka打开重定向循环，未核具体JD。",
+          "ref": "turn159view1",
+          "sourceType": "official_firm"
+        },
+        {
+          "id": "K_AUDIT",
+          "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html",
+          "title": "毕马威：审计与鉴证实习",
+          "date": null,
+          "readScope": "审计实习各期、内地审计先锋者计划及申请链接",
+          "facts": [
+            "寒假实习期一般在2026年10月至2027年5月；审计暑期2027年6月至9月、春季开放",
+            "内地审计先锋者2026至2027招聘年度面向2028年应届毕业生，可在审计寒假申请表选择报名"
+          ],
+          "limits": "部门页审计暑期写6月至9月，总览写7月至9月，不能统一替每份JD定开始日；计划选拔和转正不是保证。",
+          "ref": "turn169view2",
+          "sourceType": "official_firm"
+        },
+        {
+          "id": "K_TAX",
+          "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/tax.html",
+          "title": "毕马威：税务实习",
+          "date": null,
+          "readScope": "税务常规实习及官方申请入口",
+          "facts": [
+            "税务部门实习全年按业务需求发布，建议及时查询具体开放职位"
+          ],
+          "limits": "没有列当前南京税务实习人数、统一出勤、津贴或截止；不据此声称南京正在招。",
+          "ref": "turn190view1",
+          "sourceType": "official_firm"
+        },
+        {
+          "id": "K_ADVISORY",
+          "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/advisory.html",
+          "title": "毕马威：咨询实习",
+          "date": null,
+          "readScope": "常规咨询实习及香港Placement区分",
+          "facts": [
+            "常规咨询实习全年根据部门需求发布；香港Placement另有通常5个月以上要求"
+          ],
+          "limits": "香港长期项目不作为南京周边岗位；此处只采用常规咨询入口。",
+          "ref": "turn190view2",
+          "sourceType": "official_firm"
+        },
+        {
+          "id": "K_OFFICES",
+          "url": "https://kpmg.com/cn/zh/about/office-locations.html",
+          "title": "毕马威：办事处地址",
+          "date": null,
+          "readScope": "南京、上海、苏州及无锡办公室段落",
+          "facts": [
+            "南京中山路18号德基广场写字楼12楼；苏州中心广场D座2301-2",
+            "上海南京西路1266号恒隆广场2号楼25楼及申长路988弄虹桥万科中心7号楼",
+            "无锡新吴区和风路32号汇业商务广场8号楼1801"
+          ],
+          "limits": "仅办公地点；不表示有实习名额、实际到岗点或能每天回浦口。",
+          "ref": "turn163view8",
+          "sourceType": "official_firm"
+        },
+        {
+          "id": "K_KDC",
+          "url": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdc.html",
+          "title": "加入毕马威交付中心",
+          "date": null,
+          "readScope": "南京交付中心介绍、业务支持职责和校园实习申请按钮",
+          "facts": [
+            "南京交付中心于2017年成立；面向审计、税务、咨询与业务支持团队开展标准化智能化交付",
+            "网页单列校园招聘实习生入口"
+          ],
+          "limits": "交付支持与前线审计项目组职责不同；本轮未读到南京具体实习JD和精确办公地址。",
+          "ref": "turn190view3",
+          "sourceType": "official_firm"
+        },
+        {
+          "id": "K_KDI",
+          "url": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdi.html",
+          "title": "毕马威智能创新空间招聘",
+          "date": null,
+          "readScope": "技术中心定位、南京设点及实习/应届申请入口",
+          "facts": [
+            "技术研发交付团队涉及云计算、大数据和人工智能；2017年在南京设立中心",
+            "官网提供实习与应届机会入口，欢迎理工科背景毕业生或相关经验人才"
+          ],
+          "limits": "不把技术中心岗位等同于传统财报审计；MPAcc能否申请应看每份JD，不能保证接受所有专业。",
+          "ref": "turn180view1",
+          "sourceType": "official_firm"
+        },
+        {
+          "id": "K_KDI_ADDRESS",
+          "url": "https://kpmg.com/cn/zh/about/office-locations/kpmg-digital-ignition-centre.html",
+          "title": "毕马威智能创新空间：位置",
+          "date": null,
+          "readScope": "南京地点正文",
+          "facts": [
+            "南京鼓楼区集庆门大街272号苏宁慧谷E07-1号楼2101-2107室"
+          ],
+          "limits": "此为KDI官方位置；不将其未经核实地套用为所有南京KDC或实习岗位地址。",
+          "ref": "turn159view5",
+          "sourceType": "official_firm"
+        },
+        {
+          "id": "K_CONTACT",
+          "url": "https://kpmg.com/cn/zh/careers/contact-us.html",
+          "title": "毕马威招聘联系我们",
+          "date": null,
+          "readScope": "校园招聘、华东及华西区、KDC/KDI区分",
+          "facts": [
+            "校园招聘涵盖南京、苏州、上海、无锡等地；KDC与KDI有单独招聘联系分类"
+          ],
+          "limits": "联系入口不是岗位开放证明；没有通过工具发出咨询或申请。",
+          "ref": "turn216view0",
+          "sourceType": "official_firm"
+        }
+      ]
+    }
+  ],
+  "qualityNotes": [
+    "办公室与具体岗位分开；未确认的城市空缺及截止时间保留null。",
+    "安永本轮公告截止已过，不能因实习在2027年开始而当作仍在招。",
+    "PwC LEAP为校园培养渠道，安永Elite为全职Offer持有人路径，均不冒充普通实习岗位。",
+    "未发起申请、注册、邮件或招聘人员联系；未使用第三方付费内推。",
+    "program_open仅表示官网项目层面公开开放，不代表南京有当前可投JD；所有具体岗位城市仍为null。",
+    "KPMG审计暑期页与项目总览所列实施月份不同，均照录范围并要求核对具体JD。",
+    "KDC/KDI有独立入口，职责与前线财报审计不同；不混同雇佣主体或工作内容。",
+    "未采用招聘平台上的津贴、办公楼层或截止日充当官方核实事实；通勤分钟没有估算。"
+  ],
+  "primarySources": [
+    {
+      "id": "PWC_STUDENTS",
+      "url": "https://www.pwccn.com/zh/careers/students.html",
+      "title": "普华永道中国：校园招聘",
+      "date": null,
+      "readScope": "实习计划、LEAP及相关申请步骤；点开官方立即申请链接",
+      "facts": [
+        "实习项目面向2028届及以后",
+        "本期秋季申请、冬季起；LEAP本期春季网申已过"
+      ],
+      "limits": "动态职位系统重定向循环；未确认南京实习空缺",
+      "ref": "turn158view0 / turn162view0 / turn172view5"
+    },
+    {
+      "id": "PWC_OFFICE_NJ",
+      "url": "https://www.pwccn.com/zh/about-us/office-locations/our-office-in-nanjing.html",
+      "title": "联系我们 - 南京办公室",
+      "date": null,
+      "readScope": "办公地址正文",
+      "facts": [
+        "鼓楼区中央路201号金茂广场南塔12A01"
+      ],
+      "limits": "办公室地址，不代表实习到岗点或在招",
+      "ref": "turn172view2"
+    },
+    {
+      "id": "PWC_OFFICE_SZ",
+      "url": "https://www.pwccn.com/zh/about-us/office-locations/our-office-in-suzhou.html",
+      "title": "联系我们 - 苏州办公室",
+      "date": null,
+      "readScope": "办公地址正文",
+      "facts": [
+        "苏州工业园区苏州大道西9号中海财富中心西塔42楼02室"
+      ],
+      "limits": "办公室地址，不代表实习到岗点或在招",
+      "ref": "turn172view3 / turn178view5"
+    },
+    {
+      "id": "PWC_OFFICE_SH",
+      "url": "https://www.pwccn.com/zh/about-us/office-locations/our-office-in-shanghai.html",
+      "title": "联系我们 - 上海办公室",
+      "date": null,
+      "readScope": "办公地址正文，两处地点均读取",
+      "facts": [
+        "湖滨路202号普华永道中心、东育路588号前滩中心"
+      ],
+      "limits": "上海两处办公点，投递前确认具体团队地点",
+      "ref": "turn172view4 / turn178view6"
+    },
+    {
+      "id": "EY_STUDENT_ZH",
+      "url": "https://www.ey.com/zh_cn/careers/student-programs-in-chinese-mainland",
+      "title": "中国大陆学生工作机会",
+      "date": null,
+      "readScope": "学生项目导航及官网申请链接",
+      "facts": [
+        "官网导向careers.ey.com.cn；列寒假实习与其他学生项目"
+      ],
+      "limits": "中文页折叠详情未被检索器完整抽取，具体通用说明另读英文页",
+      "ref": "turn172view0 / turn178view1"
+    },
+    {
+      "id": "EY_STUDENT_EN",
+      "url": "https://www.ey.com/en_cn/careers/student-programs-in-chinese-mainland",
+      "title": "Student programs in Chinese mainland",
+      "date": null,
+      "readScope": "Winter Internship及Elite Program正文与条件",
+      "facts": [
+        "寒假实习通用条件；Elite仅面向特定全职录用者并由安永邀请"
+      ],
+      "limits": "通用项目说明未列当前城市空缺和截止时间",
+      "ref": "turn178view0 / turn184view2"
+    },
+    {
+      "id": "EY_WINTER_2627_NOTICE",
+      "url": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20268",
+      "title": "EY安永2026-2027安永秋季应届毕业生招聘及审计寒假实习生招聘，网申启动",
+      "date": "2026-09-07",
+      "readScope": "广东注协全文；页面来源注明安永校招官网",
+      "facts": [
+        "寒假实习2028届优先；2027年1初—3末，全勤优先；网申截止2026-10-16"
+      ],
+      "limits": "行业协会转载，不是11月5日招聘系统实时空缺；原网申期已过",
+      "ref": "turn172view1"
+    },
+    {
+      "id": "EY_OFFICES",
+      "url": "https://www.ey.com/zh_cn/locations/greater-china",
+      "title": "大中华区 — 安永办公室地点",
+      "date": null,
+      "readScope": "南京、上海、苏州办公地址段落",
+      "facts": [
+        "南京国金中心二期；上海环球金融中心；苏州现代传媒广场"
+      ],
+      "limits": "官网地址不等于实习实际到岗地点或有空缺；未估算通勤时间",
+      "ref": "turn167view0 / turn178view2 / turn178view3 / turn178view4"
+    },
+    {
+      "id": "D_INTERNSHIP",
+      "url": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-program.html",
+      "title": "德勤中国：实习生计划",
+      "date": null,
+      "readScope": "实习正文、两类项目、立即申请官方链接",
+      "facts": [
+        "页面显示冬季寒假招募已启动；审计、税务、咨询寒暑假实习通常2至4个月",
+        "主要面向未来1至2年毕业者；项目实习的时长和每周天数按部门需求确定"
+      ],
+      "limits": "正文未注明统一报名截止和本季年份；未核到南京具体岗位空缺。项目期不是网申截止。",
+      "ref": "turn163view5",
+      "sourceType": "official_firm"
+    },
+    {
+      "id": "D_PROFILE",
+      "url": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-who-we-are-looking-for.html",
+      "title": "德勤中国：我们需要什么样的人才",
+      "date": null,
+      "readScope": "页面人才要求正文",
+      "facts": [
+        "未来1至2年毕业、专业不限；强调学习成绩、快速学习、分析、判断、沟通与协作"
+      ],
+      "limits": "通用选拔要素，不是南京具体岗位的全部任职条件。",
+      "ref": "turn180view3",
+      "sourceType": "official_firm"
+    },
+    {
+      "id": "D_FAQ",
+      "url": "https://www.deloitte.com/cn/en/careers/explore-your-fit/students/internship-faq.html",
+      "title": "Deloitte China: Internship FAQs",
+      "date": null,
+      "readScope": "问题与回答正文",
+      "facts": [
+        "寒暑假实习2至4个月，项目实习按项目长度；通用FAQ说明提交前核对选择和资料"
+      ],
+      "limits": "FAQ为长期说明；申请系统若有本期更新规则，以系统及正式通知为准。",
+      "ref": "turn180view4",
+      "sourceType": "official_firm"
+    },
+    {
+      "id": "D_OFFICE_NJ",
+      "url": "https://www.deloitte.com/cn/zh/offices/nanjing.html",
+      "title": "德勤中国：南京",
+      "date": null,
+      "readScope": "南京办公地址正文",
+      "facts": [
+        "建邺区江东中路347号国金中心办公楼一期40层"
+      ],
+      "limits": "办公室地址，不代表实习在招或客户现场位置。",
+      "ref": "turn169view0",
+      "sourceType": "official_firm"
+    },
+    {
+      "id": "D_OFFICE_SU",
+      "url": "https://www.deloitte.com/cn/en/offices/suzhou.html",
+      "title": "Deloitte China: Suzhou",
+      "date": null,
+      "readScope": "苏州办公地址正文",
+      "facts": [
+        "苏州工业园区苏绣路58号苏州中心广场58幢A座24层"
+      ],
+      "limits": "苏州为跨城备选；没有据此估算浦口每日通勤。",
+      "ref": "turn169view1",
+      "sourceType": "official_firm"
+    },
+    {
+      "id": "D_OFFICE_SH",
+      "url": "https://www.deloitte.com/cn/en/offices/shanghai.html",
+      "title": "Deloitte China: Shanghai",
+      "date": null,
+      "readScope": "上海办公地址正文",
+      "facts": [
+        "上海市延安东路222号外滩中心30楼"
+      ],
+      "limits": "上海为跨城备选；需另核住宿与实际项目地。",
+      "ref": "turn190view0",
+      "sourceType": "official_firm"
+    },
+    {
+      "id": "K_BASECAMP",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp.html",
+      "title": "毕马威：实习生项目",
+      "date": null,
+      "readScope": "适用人群、招聘年度项目期、华东及华西区入口；点击申请链接",
+      "facts": [
+        "面向本科或硕士在读；寒假窗口2026年10月至2027年5月，常规窗口2026年10月至2027年9月",
+        "2027暑期投递预计春季开放；南京、苏州、上海的具体岗位需另核"
+      ],
+      "limits": "上述为实习项目期或预计开放时间，不是网申截止。Moka打开重定向循环，未核具体JD。",
+      "ref": "turn159view1",
+      "sourceType": "official_firm"
+    },
+    {
+      "id": "K_AUDIT",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html",
+      "title": "毕马威：审计与鉴证实习",
+      "date": null,
+      "readScope": "审计实习各期、内地审计先锋者计划及申请链接",
+      "facts": [
+        "寒假实习期一般在2026年10月至2027年5月；审计暑期2027年6月至9月、春季开放",
+        "内地审计先锋者2026至2027招聘年度面向2028年应届毕业生，可在审计寒假申请表选择报名"
+      ],
+      "limits": "部门页审计暑期写6月至9月，总览写7月至9月，不能统一替每份JD定开始日；计划选拔和转正不是保证。",
+      "ref": "turn169view2",
+      "sourceType": "official_firm"
+    },
+    {
+      "id": "K_TAX",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/tax.html",
+      "title": "毕马威：税务实习",
+      "date": null,
+      "readScope": "税务常规实习及官方申请入口",
+      "facts": [
+        "税务部门实习全年按业务需求发布，建议及时查询具体开放职位"
+      ],
+      "limits": "没有列当前南京税务实习人数、统一出勤、津贴或截止；不据此声称南京正在招。",
+      "ref": "turn190view1",
+      "sourceType": "official_firm"
+    },
+    {
+      "id": "K_ADVISORY",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/advisory.html",
+      "title": "毕马威：咨询实习",
+      "date": null,
+      "readScope": "常规咨询实习及香港Placement区分",
+      "facts": [
+        "常规咨询实习全年根据部门需求发布；香港Placement另有通常5个月以上要求"
+      ],
+      "limits": "香港长期项目不作为南京周边岗位；此处只采用常规咨询入口。",
+      "ref": "turn190view2",
+      "sourceType": "official_firm"
+    },
+    {
+      "id": "K_OFFICES",
+      "url": "https://kpmg.com/cn/zh/about/office-locations.html",
+      "title": "毕马威：办事处地址",
+      "date": null,
+      "readScope": "南京、上海、苏州及无锡办公室段落",
+      "facts": [
+        "南京中山路18号德基广场写字楼12楼；苏州中心广场D座2301-2",
+        "上海南京西路1266号恒隆广场2号楼25楼及申长路988弄虹桥万科中心7号楼",
+        "无锡新吴区和风路32号汇业商务广场8号楼1801"
+      ],
+      "limits": "仅办公地点；不表示有实习名额、实际到岗点或能每天回浦口。",
+      "ref": "turn163view8",
+      "sourceType": "official_firm"
+    },
+    {
+      "id": "K_KDC",
+      "url": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdc.html",
+      "title": "加入毕马威交付中心",
+      "date": null,
+      "readScope": "南京交付中心介绍、业务支持职责和校园实习申请按钮",
+      "facts": [
+        "南京交付中心于2017年成立；面向审计、税务、咨询与业务支持团队开展标准化智能化交付",
+        "网页单列校园招聘实习生入口"
+      ],
+      "limits": "交付支持与前线审计项目组职责不同；本轮未读到南京具体实习JD和精确办公地址。",
+      "ref": "turn190view3",
+      "sourceType": "official_firm"
+    },
+    {
+      "id": "K_KDI",
+      "url": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdi.html",
+      "title": "毕马威智能创新空间招聘",
+      "date": null,
+      "readScope": "技术中心定位、南京设点及实习/应届申请入口",
+      "facts": [
+        "技术研发交付团队涉及云计算、大数据和人工智能；2017年在南京设立中心",
+        "官网提供实习与应届机会入口，欢迎理工科背景毕业生或相关经验人才"
+      ],
+      "limits": "不把技术中心岗位等同于传统财报审计；MPAcc能否申请应看每份JD，不能保证接受所有专业。",
+      "ref": "turn180view1",
+      "sourceType": "official_firm"
+    },
+    {
+      "id": "K_KDI_ADDRESS",
+      "url": "https://kpmg.com/cn/zh/about/office-locations/kpmg-digital-ignition-centre.html",
+      "title": "毕马威智能创新空间：位置",
+      "date": null,
+      "readScope": "南京地点正文",
+      "facts": [
+        "南京鼓楼区集庆门大街272号苏宁慧谷E07-1号楼2101-2107室"
+      ],
+      "limits": "此为KDI官方位置；不将其未经核实地套用为所有南京KDC或实习岗位地址。",
+      "ref": "turn159view5",
+      "sourceType": "official_firm"
+    },
+    {
+      "id": "K_CONTACT",
+      "url": "https://kpmg.com/cn/zh/careers/contact-us.html",
+      "title": "毕马威招聘联系我们",
+      "date": null,
+      "readScope": "校园招聘、华东及华西区、KDC/KDI区分",
+      "facts": [
+        "校园招聘涵盖南京、苏州、上海、无锡等地；KDC与KDI有单独招聘联系分类"
+      ],
+      "limits": "联系入口不是岗位开放证明；没有通过工具发出咨询或申请。",
+      "ref": "turn216view0",
+      "sourceType": "official_firm"
+    }
+  ],
+  "counts": {
+    "firms": 4,
+    "programOrPathRecords": 15,
+    "officeCityRecords": 14,
+    "uniquePrimarySources": 23,
+    "confirmedCitySpecificOpenInternshipJds": 0
+  }
+}

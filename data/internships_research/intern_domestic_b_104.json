@@ -1,0 +1,790 @@
+{
+  "batch": "internship-104-domestic-b",
+  "firms": [
+    {
+      "name": "天职国际",
+      "officialName": "天职国际会计师事务所（特殊普通合伙）",
+      "group": "domestic",
+      "officeRecords": [
+        {
+          "city": "南京",
+          "branch": "江苏分所",
+          "address": "江苏省南京市中山南路1号南京中心39层",
+          "district": null,
+          "sourceIds": [
+            "DB-TZ-OFFICE"
+          ]
+        },
+        {
+          "city": "上海",
+          "branch": "上海分所",
+          "address": "上海市浦东新区世纪大道88号金茂大厦13楼",
+          "district": "浦东新区",
+          "sourceIds": [
+            "DB-TZ-OFFICE"
+          ]
+        }
+      ],
+      "entryLinks": [
+        {
+          "label": "实习生招聘",
+          "url": "https://tzcpa.zhiye.com/intern/jobs",
+          "sourceIds": [
+            "DB-TZ-CAMPUS",
+            "DB-TZ-INTERN"
+          ]
+        },
+        {
+          "label": "校园招聘",
+          "url": "https://tzcpa.zhiye.com/campus",
+          "sourceIds": [
+            "DB-TZ-CAMPUS"
+          ]
+        }
+      ],
+      "resourceIds": [
+        "db-tz-entry",
+        "db-tz-nanjing",
+        "db-tz-campus"
+      ],
+      "applicationPrep": [
+        "在简历说明可实习起止时间、财经基础、英语与既往审计任务；逐条对应目标JD。",
+        "以南京J10565作为检索编号，在官方实习列表重找；把普通实习与2027届秋招分开。"
+      ],
+      "questionsToAsk": [
+        "岗位归属江苏分所后，实际项目是在南京、外地还是轮换？",
+        "最早到岗、每周出勤、最短连续时长和结束条件各是什么？",
+        "该独立实习是否另有限投规则，不要直接套用2027届秋招单岗限制。"
+      ]
+    },
+    {
+      "name": "大华",
+      "officialName": "大华会计师事务所（特殊普通合伙）",
+      "group": "domestic",
+      "officeRecords": [
+        {
+          "city": "南京",
+          "branch": "南京分支机构（旧官网地图列示）",
+          "address": null,
+          "district": null,
+          "sourceIds": [
+            "DB-DH-OFFICE"
+          ],
+          "limits": "新版机构页动态内容未读到具体办公地址。"
+        },
+        {
+          "city": "苏州",
+          "branch": "苏州分所",
+          "address": null,
+          "district": null,
+          "sourceIds": [
+            "DB-DH-OFFICE",
+            "DB-DH-SUZHOU"
+          ]
+        }
+      ],
+      "entryLinks": [
+        {
+          "label": "官网加入大华",
+          "url": "https://job.dahua-cpa.com/",
+          "sourceIds": [
+            "DB-DH-ENTRY"
+          ]
+        },
+        {
+          "label": "官方域职位检索线索",
+          "url": "https://zhaopin.dahua-cpa.com/jobs",
+          "sourceIds": [
+            "DB-DH-SUZHOU"
+          ]
+        }
+      ],
+      "resourceIds": [
+        "db-dh-entry",
+        "db-dh-suzhou"
+      ],
+      "applicationPrep": [
+        "按苏州审计实习的实际职责准备资料整理、底稿编整与盘点协助的课程或项目例子。",
+        "投递前从当前官网主入口核对岗位，避免把旧招聘域中的检索条目当作实时空缺。"
+      ],
+      "questionsToAsk": [
+        "当前南京是否有独立实习岗？苏州岗位是否需要在当地住宿或随项目出差？",
+        "本岗位接受哪个年级、每周几天和最短几个月？",
+        "用工实体、报到地址与客户驻场地址分别是什么？"
+      ]
+    },
+    {
+      "name": "容诚",
+      "officialName": "容诚会计师事务所（特殊普通合伙）",
+      "group": "domestic",
+      "officeRecords": [
+        {
+          "city": "南京",
+          "branch": "南京办公室",
+          "address": "南京市建邺区贤坤路3号江岛智立方C座3层",
+          "district": "建邺区",
+          "sourceIds": [
+            "DB-RC-OFFICE"
+          ]
+        }
+      ],
+      "entryLinks": [
+        {
+          "label": "官方在线申请",
+          "url": "https://careers.rccpa.com.cn",
+          "sourceIds": [
+            "DB-RC-ENTRY"
+          ]
+        }
+      ],
+      "resourceIds": [
+        "db-rc-entry",
+        "db-rc-plan"
+      ],
+      "applicationPrep": [
+        "区分“在校生实习计划”和“2027届毕业生校招”：如果毕业年份不匹配，优先查看独立实习类别。",
+        "把2026年11月—2027年5月视为计划窗口，在申请中填写自己真实能到岗的区间。"
+      ],
+      "questionsToAsk": [
+        "南京城市组当前有哪些实习业务线，审计、财务尽调或内控是否分别招？",
+        "江心洲办公室是面试/培训地点还是日常驻场地？",
+        "周出勤、最短持续时间、学校课程冲突与实习证明怎样安排？"
+      ]
+    },
+    {
+      "name": "中审众环",
+      "officialName": "中审众环会计师事务所（特殊普通合伙）",
+      "group": "domestic",
+      "officeRecords": [
+        {
+          "city": "南京",
+          "branch": "江苏分所",
+          "address": "江苏省南京市鼓楼区江东北路289号银城广场9楼",
+          "district": "鼓楼区",
+          "sourceIds": [
+            "DB-ZH-OFFICE"
+          ]
+        }
+      ],
+      "entryLinks": [
+        {
+          "label": "当前官网校园招聘通道",
+          "url": "https://job.zszhcpa.cn/campus",
+          "sourceIds": [
+            "DB-ZH-ENTRY",
+            "DB-ZH-PLAN"
+          ]
+        },
+        {
+          "label": "官网招聘说明页",
+          "url": "https://www.zszhcpa.cn/Jobopportunities/list.html",
+          "sourceIds": [
+            "DB-ZH-ENTRY"
+          ]
+        }
+      ],
+      "resourceIds": [
+        "db-zh-entry",
+        "db-zh-audit",
+        "db-zh-confirmation",
+        "db-zh-shanghai",
+        "db-zh-history"
+      ],
+      "applicationPrep": [
+        "审计实习与函证实习分开准备：前者强调项目基础协助，后者强调准确核对、信息录入与归档。",
+        "先在当前门户筛南京/江苏分所；旧官网实习页的2022条目和2025校内选派公告都不能代表本期名额。"
+      ],
+      "questionsToAsk": [
+        "这是校内选派还是个人网申，MPAcc本级是否可报？",
+        "实习合同归属江苏分所后，项目是否在安徽、北京或其他客户地？",
+        "审计现场与函证中心岗位在地点、出勤和任务上有哪些差别？"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "db-tz-entry",
+      "firm": "天职国际",
+      "title": "南京/苏州/上海：从官方入口筛实习岗位",
+      "cities": [
+        "南京",
+        "苏州",
+        "上海"
+      ],
+      "kind": "entry",
+      "status": "entry_only",
+      "summary": "进入招聘官网，选择“实习生招聘”，再核对城市、项目地点与可投状态；不要把校招全职审计助理当普通实习。",
+      "url": "https://tzcpa.zhiye.com/intern/jobs",
+      "sourceIds": [
+        "DB-TZ-CAMPUS",
+        "DB-TZ-INTERN"
+      ],
+      "deadline": null,
+      "weeklyDays": null,
+      "minimumDuration": null,
+      "pay": null,
+      "requirements": [],
+      "limits": [
+        "官方域入口可确认；本次直接读取为JS空正文。"
+      ]
+    },
+    {
+      "id": "db-tz-nanjing",
+      "firm": "天职国际",
+      "title": "南京财务审计实习生 J10565",
+      "cities": [
+        "南京"
+      ],
+      "kind": "internship",
+      "status": "official_index_only",
+      "summary": "官方列表检索可见年报/IPO等审计协助实习，先用职位编号重找详情再投递。",
+      "url": "https://tzcpa.zhiye.com/intern/jobs",
+      "sourceIds": [
+        "DB-TZ-INTERN"
+      ],
+      "deadline": null,
+      "weeklyDays": null,
+      "minimumDuration": null,
+      "pay": null,
+      "publishedDate": "2026-10-30",
+      "requirements": [
+        "统招本科以上在校生，财会/财务管理/金融等财经类背景；基础扎实优先。",
+        "既往事务所实习、英语能力是该条可见的优先线索。"
+      ],
+      "limits": [
+        "当前是否仍可投、出勤和期限未核；并非已完整读过职位详情。"
+      ]
+    },
+    {
+      "id": "db-tz-campus",
+      "firm": "天职国际",
+      "title": "2027届秋招：含实习考核的毕业生路径",
+      "cities": [
+        "南京",
+        "苏州",
+        "上海"
+      ],
+      "kind": "graduate_recruitment",
+      "status": "recruitment_announcement",
+      "summary": "适合未来毕业年级匹配后规划；本则面向2027届，流程有实习考核，仍属正式校招。",
+      "url": "https://tzcpa.zhiye.com/campus",
+      "sourceIds": [
+        "DB-TZ-CAMPUS"
+      ],
+      "deadline": null,
+      "weeklyDays": null,
+      "minimumDuration": null,
+      "pay": null,
+      "publishedDate": "2026-09-03",
+      "requirements": [
+        "2027届本科及以上毕业生；本则公告专业不限，需财务基础与数字工具能力。",
+        "该届秋招每人一个分所一个岗位，投前先比较城市和业务。"
+      ],
+      "limits": [
+        "不用于推断研一即可申请；独立实习职位规则另核。"
+      ]
+    },
+    {
+      "id": "db-dh-entry",
+      "firm": "大华",
+      "title": "南京/江苏：先从官网“加入大华”确认入口",
+      "cities": [
+        "南京",
+        "苏州"
+      ],
+      "kind": "entry",
+      "status": "entry_only",
+      "summary": "当前官网主入口指向job.dahua-cpa.com；进入后再筛实习、江苏与具体分所。",
+      "url": "https://job.dahua-cpa.com/",
+      "sourceIds": [
+        "DB-DH-ENTRY",
+        "DB-DH-OFFICE"
+      ],
+      "deadline": null,
+      "weeklyDays": null,
+      "minimumDuration": null,
+      "pay": null,
+      "requirements": [],
+      "limits": [
+        "本次门户直接抓取超时；南京当期实习JD未核实，不写现有名额。"
+      ]
+    },
+    {
+      "id": "db-dh-suzhou",
+      "firm": "大华",
+      "title": "苏州审计实习生 J10706",
+      "cities": [
+        "苏州"
+      ],
+      "kind": "internship",
+      "status": "official_index_only",
+      "summary": "官方域列表检索可见苏州审计实习，职责涉及底稿、盘点与资料归档；可用编号回官方入口核对。",
+      "url": "https://zhaopin.dahua-cpa.com/jobs",
+      "sourceIds": [
+        "DB-DH-SUZHOU",
+        "DB-DH-ENTRY"
+      ],
+      "deadline": null,
+      "weeklyDays": null,
+      "minimumDuration": null,
+      "pay": null,
+      "publishedDate": "2026-09-20",
+      "requirements": [],
+      "limits": [
+        "苏州属于异地项目或阶段性驻留备选，不以浦口每天往返安排。",
+        "未把其他城市JD的年级或时长移植到该岗；当前申请状态待核。"
+      ]
+    },
+    {
+      "id": "db-rc-entry",
+      "firm": "容诚",
+      "title": "官方在线申请：筛南京/苏州/上海实习",
+      "cities": [
+        "南京",
+        "苏州",
+        "上海"
+      ],
+      "kind": "entry",
+      "status": "entry_only",
+      "summary": "大学就业网招聘简章明确列出careers.rccpa.com.cn，注册后按城市与实习类别查看。",
+      "url": "https://careers.rccpa.com.cn",
+      "sourceIds": [
+        "DB-RC-ENTRY",
+        "DB-RC-PLAN"
+      ],
+      "deadline": null,
+      "weeklyDays": null,
+      "minimumDuration": null,
+      "pay": null,
+      "requirements": [],
+      "limits": [
+        "官方入口由完整招聘简章确认；本次直接抓取不可达，具体岗位余量未验证。"
+      ]
+    },
+    {
+      "id": "db-rc-plan",
+      "firm": "容诚",
+      "title": "实习生计划：南京、苏州与上海城市组",
+      "cities": [
+        "南京",
+        "苏州",
+        "上海"
+      ],
+      "kind": "internship_program",
+      "status": "program_announcement",
+      "summary": "已读简章单列面向在校生的实习计划，项目窗口2026年11月—2027年5月；具体业务、出勤与入岗时间依职位确认。",
+      "url": "https://careers.rccpa.com.cn",
+      "sourceIds": [
+        "DB-RC-PLAN",
+        "DB-RC-ENTRY"
+      ],
+      "deadline": null,
+      "weeklyDays": null,
+      "minimumDuration": null,
+      "pay": null,
+      "publishedDate": "2026-10-08",
+      "periodText": "2026年11月—2027年5月（计划窗口，不是统一最低实习时长）",
+      "requirements": [
+        "全日制在读本科大二、大三、大四或研究生。"
+      ],
+      "limits": [
+        "简章列出城市组，不代表每个城市、每条业务线现在都可申请。",
+        "不把同页深圳全职岗位的薪资或2027届限制套到本实习计划。"
+      ]
+    },
+    {
+      "id": "db-zh-entry",
+      "firm": "中审众环",
+      "title": "江苏/上海：由官网转官方招聘门户",
+      "cities": [
+        "南京",
+        "上海"
+      ],
+      "kind": "entry",
+      "status": "entry_only",
+      "summary": "当前官网校园招聘链接为job.zszhcpa.cn；选择岗位时重新核实实习性质与分所。",
+      "url": "https://job.zszhcpa.cn/campus",
+      "sourceIds": [
+        "DB-ZH-ENTRY",
+        "DB-ZH-PLAN"
+      ],
+      "deadline": null,
+      "weeklyDays": null,
+      "minimumDuration": null,
+      "pay": null,
+      "requirements": [],
+      "limits": [
+        "不同旧页面仍链到旧招聘域；不以旧列表2022职位作为当期招聘。"
+      ]
+    },
+    {
+      "id": "db-zh-audit",
+      "firm": "中审众环",
+      "title": "2027简章中的审计实习类别（城市待职位确认）",
+      "cities": [],
+      "kind": "internship_program",
+      "status": "program_announcement",
+      "summary": "简章实习项已读，适合按审计项目协助方向准备；投递页须确认是否有南京或上海分所岗位。",
+      "url": "https://job.zszhcpa.cn/campus",
+      "sourceIds": [
+        "DB-ZH-PLAN"
+      ],
+      "deadline": null,
+      "weeklyDays": null,
+      "minimumDuration": null,
+      "pay": null,
+      "publishedDate": "2026-09-17",
+      "requirements": [
+        "财会、审计、大数据、AI等相关专业在校生。",
+        "了解数字工具在底稿、数据核对和资料归集中的基础应用；接受项目调度与出差。"
+      ],
+      "limits": [
+        "具体城市、年级、出勤、截止均未公开核到；不声称南京当期开放。"
+      ]
+    },
+    {
+      "id": "db-zh-confirmation",
+      "firm": "中审众环",
+      "title": "2027简章中的函证实习类别（城市待职位确认）",
+      "cities": [],
+      "kind": "internship_program",
+      "status": "program_announcement",
+      "summary": "岗位集中于函证信息核对、录入、数据比对和归档，可与审计现场实习比较工作内容与驻场需求。",
+      "url": "https://job.zszhcpa.cn/campus",
+      "sourceIds": [
+        "DB-ZH-PLAN"
+      ],
+      "deadline": null,
+      "weeklyDays": null,
+      "minimumDuration": null,
+      "pay": null,
+      "publishedDate": "2026-09-17",
+      "requirements": [
+        "财会、审计、大数据、AI等相关专业在校生。",
+        "能细致完成信息核对与归档，具有沟通协作能力。"
+      ],
+      "limits": [
+        "与审计实习是同一简章的岗位类别，不是独立招聘来源或新增南京名额。"
+      ]
+    },
+    {
+      "id": "db-zh-shanghai",
+      "firm": "中审众环",
+      "title": "上海自贸区审计实习 J10676",
+      "cities": [
+        "上海"
+      ],
+      "kind": "internship",
+      "status": "official_index_only",
+      "summary": "官方域索引可见2027届校招上海自贸区分所审计实习，包含资料、函件与简单底稿协助。",
+      "url": "https://zszhcpa.zhiye.com/jobs",
+      "sourceIds": [
+        "DB-ZH-SHANGHAI",
+        "DB-ZH-ENTRY"
+      ],
+      "deadline": null,
+      "weeklyDays": null,
+      "minimumDuration": null,
+      "pay": null,
+      "publishedDate": "2026-10-08",
+      "requirements": [],
+      "limits": [
+        "本次未完成职位详情与申请按钮验证。",
+        "异地备选，不按每天由浦口跨城通勤安排；项目地点可能另有分配。"
+      ]
+    },
+    {
+      "id": "db-zh-history",
+      "firm": "中审众环",
+      "title": "校内选派历史：江苏分所的安徽/北京央企项目",
+      "cities": [
+        "安徽",
+        "北京"
+      ],
+      "kind": "historical_program",
+      "status": "expired",
+      "summary": "这次南审官方选派实习已于2026年4月结束；它说明签约南京分所仍可能去外地项目，适合用来准备询问清单。",
+      "url": "https://gs.nau.edu.cn/2025/0916/c10680a147636/page.htm",
+      "sourceIds": [
+        "DB-ZH-NAU-HISTORY"
+      ],
+      "deadline": null,
+      "weeklyDays": null,
+      "minimumDuration": null,
+      "pay": null,
+      "publishedDate": "2025-09-16",
+      "periodText": "2025年10月中旬—2026年4月30日（已结束）",
+      "requirements": [],
+      "limits": [
+        "不提供该旧批次投递按钮，不移植旧待遇和报名截止为当前条件。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "DB-TZ-OFFICE",
+      "url": "https://www.bakertilly.cn/contact",
+      "title": "天职国际｜联系我们",
+      "date": null,
+      "ref": "turn201view0",
+      "kind": "firm_official",
+      "readScope": "网页正文已读",
+      "facts": [
+        "江苏分所：江苏省南京市中山南路1号南京中心39层。",
+        "上海分所：上海市浦东新区世纪大道88号金茂大厦13楼。"
+      ],
+      "limits": [
+        "地址用于确认办公机构，不代表实习项目每日在该楼办公；页面未列更新时间。"
+      ]
+    },
+    {
+      "id": "DB-TZ-CAMPUS",
+      "url": "https://jobs.blcu.edu.cn/front/zpxx.jspa?tid=2095349926408658945",
+      "title": "天职国际2027届秋季校园招聘正式启动！",
+      "date": "2026-09-03",
+      "ref": "turn197view1",
+      "kind": "university_employer_notice",
+      "readScope": "网页正文已读",
+      "facts": [
+        "面向2027届本科及以上毕业生，专业不限但要求一定财务基础与数字工具能力。",
+        "工作城市含南京、苏州、上海；官网投递入口为tzcpa.zhiye.com。",
+        "流程包含实习考核，但该公告是毕业生校园招聘，不是面向全部在校生的普通实习公告。",
+        "该届秋招规定每人一个分所一个岗位。"
+      ],
+      "limits": [
+        "规则只用于这则2027届秋招，不能扩展为所有独立实习岗位的限制。"
+      ]
+    },
+    {
+      "id": "DB-TZ-INTERN",
+      "url": "https://tzcpa.zhiye.com/intern/jobs",
+      "title": "天职国际实习生招聘列表｜南京财务审计实习生J10565",
+      "date": "2026-10-30",
+      "ref": "turn166search0",
+      "kind": "firm_official",
+      "readScope": "官方域搜索索引内容已读；直接open的JS页没有可读正文，未完成职位详情及申请按钮验证",
+      "facts": [
+        "官方域招聘检索内容列南京财务审计实习生J10565，标注实习、南京，发布2026-10-30。",
+        "工作涉及年报、IPO、经济责任、清产核资项目协助；财经类本科以上在校生，基础、既往实习与英语能力为筛选线索。"
+      ],
+      "limits": [
+        "不能据索引断言此刻仍可投递；岗位截止、出勤、最短时长、补贴未核到。"
+      ]
+    },
+    {
+      "id": "DB-TZ-NAU",
+      "url": "https://jjxy.nau.edu.cn/2024/0603/c11116a134963/page.htm",
+      "title": "经济学院赴天职国际会计师事务所江苏分所开展访企拓岗行动",
+      "date": "2024-06-01",
+      "ref": "turn208search8",
+      "kind": "university_official",
+      "readScope": "学校官方网页的搜索返回全文已读",
+      "facts": [
+        "2024年5月30日，南审经济学院与天职江苏分所交流并签署实习基地共建协议。"
+      ],
+      "limits": [
+        "经济学院历史合作，不等于MPAcc当期岗位或可直接获得名额。"
+      ]
+    },
+    {
+      "id": "DB-DH-OFFICE",
+      "url": "https://www.dahua-cpa.com/map/index.html",
+      "title": "大华分支机构",
+      "date": null,
+      "ref": "turn166view0",
+      "kind": "firm_official",
+      "readScope": "网页正文已读",
+      "facts": [
+        "官方分支机构旧地图页列出南京、苏州、上海等城市。"
+      ],
+      "limits": [
+        "当前官网新版联系我们页为动态内容，本次未读到江苏/苏州具体地址；不采用第三方登记地址填办公楼。"
+      ]
+    },
+    {
+      "id": "DB-DH-ENTRY",
+      "url": "https://www.dahua-cpa.com/",
+      "title": "大华会计师事务所官网｜加入大华",
+      "date": null,
+      "ref": "turn199view1",
+      "kind": "firm_official",
+      "readScope": "网页正文已读",
+      "facts": [
+        "官网加入大华链接指向https://job.dahua-cpa.com/。"
+      ],
+      "limits": [
+        "招聘门户本次直接抓取超时，入口已由官网链接确认，不能据此确认任何岗位当前在招。"
+      ]
+    },
+    {
+      "id": "DB-DH-SUZHOU",
+      "url": "https://zhaopin.dahua-cpa.com/jobs",
+      "title": "大华招聘｜审计实习生（苏州）J10706",
+      "date": "2026-09-20",
+      "ref": "turn208search1",
+      "kind": "firm_official",
+      "readScope": "官方域搜索索引已读；直接open的JS页无可读正文，未完成岗位详情核验",
+      "facts": [
+        "官方域索引列审计实习生（苏州）J10706，类别校园招聘、性质实习、地点苏州分所，发布日期2026-09-20。",
+        "可读职责为协助事务工作、底稿资料收集编整、盘点和归档。"
+      ],
+      "limits": [
+        "索引的在招数量不作为实时名额；当前官网主入口已指job.dahua-cpa.com，申请前应从主入口重找苏州岗位。",
+        "未将其他城市岗位资格复制给苏州。"
+      ]
+    },
+    {
+      "id": "DB-RC-OFFICE",
+      "url": "https://www.rsm.global/china/zh-hans/office/nanjing",
+      "title": "南京｜容诚会计师事务所",
+      "date": null,
+      "ref": "turn166view1",
+      "kind": "firm_official",
+      "readScope": "网页正文已读",
+      "facts": [
+        "南京办公室：南京市建邺区贤坤路3号江岛智立方C座3层。"
+      ],
+      "limits": [
+        "这是办公地址，不代表全部实习项目驻场地；未提供门到门通勤时长。"
+      ]
+    },
+    {
+      "id": "DB-RC-PLAN",
+      "url": "https://career.csu.edu.cn/job/view/id/1199995",
+      "title": "容诚2027招聘简章中的实习生计划",
+      "date": "2026-10-08",
+      "ref": "turn160view2",
+      "kind": "university_employer_notice",
+      "readScope": "网页正文已读",
+      "facts": [
+        "正文单列实习生计划，申请对象是全日制在读本科大二至大四或研究生。",
+        "实习窗口为2026年11月—2027年5月，南京、苏州、上海均在相应城市分组中。",
+        "独立实习计划不能与同页2027届毕业生全职招聘和实习考察录用流程混为一谈。"
+      ],
+      "limits": [
+        "页面的职位头是深圳全职审计助理，采用的仅是正文另列的全国实习生计划。",
+        "窗口不是必须连续实习七个月；当前各城市岗位与名额仍需官网确认。"
+      ]
+    },
+    {
+      "id": "DB-RC-ENTRY",
+      "url": "https://jobcareer.sdu.edu.cn/eweb/jygl/index.so?id=87cRceoeYuxj4f83X3DVAs&modcode=jygl_zpxxck&subsyscode=zpfw&type=ssoViewZpxx",
+      "title": "容诚2027招聘简章｜官方在线申请地址",
+      "date": null,
+      "ref": "turn181view0",
+      "kind": "university_employer_notice",
+      "readScope": "学校就业网正文与链接已读；careers.rccpa.com.cn直接抓取不可达",
+      "facts": [
+        "招聘简章直接给出官方在线申请地址https://careers.rccpa.com.cn，注册并申请职位。",
+        "同文包含与中南大学版本相同的实习生计划与城市组。"
+      ],
+      "limits": [
+        "页面发布日期2003-01-01明显与2027简章不符，不采用为发布日期。",
+        "页面总招聘截止2027-08-31不当作各实习岗位截止；deadline保持null。"
+      ]
+    },
+    {
+      "id": "DB-ZH-OFFICE",
+      "url": "https://www.zszhcpa.cn/fsjj/info_itemid_1789.html",
+      "title": "中审众环｜江苏分所",
+      "date": null,
+      "ref": "turn175view0",
+      "kind": "firm_official",
+      "readScope": "网页正文已读",
+      "facts": [
+        "江苏分所位于南京，官网地址为南京市鼓楼区江东北路289号银城广场9楼。"
+      ],
+      "limits": [
+        "机构简介带2020/2021历史规模信息，未用于当前规模或招聘承诺；办公地址与驻场项目应分开核实。"
+      ]
+    },
+    {
+      "id": "DB-ZH-ENTRY",
+      "url": "https://www.zszhcpa.cn/",
+      "title": "中审众环官网｜人才招聘导航",
+      "date": null,
+      "ref": "turn166view3",
+      "kind": "firm_official",
+      "readScope": "网页正文已读",
+      "facts": [
+        "当前官网社会招聘与校园招聘导航指向job.zszhcpa.cn。"
+      ],
+      "limits": [
+        "官网另一招聘落地页仍链到zszhcpa.zhiye.com且旧实习页仍有2022条目；优先由当前主页进入并重新筛选。"
+      ]
+    },
+    {
+      "id": "DB-ZH-PLAN",
+      "url": "https://jyw.gpnu.edu.cn/info/1148/12387.htm",
+      "title": "中审众环2027届校园招聘信息",
+      "date": "2026-09-17",
+      "ref": "turn197view2",
+      "kind": "university_employer_notice",
+      "readScope": "网页正文已读",
+      "facts": [
+        "学校就业网简章将审计实习生、函证实习生单列，均面向相关专业在校生。",
+        "审计实习要求财会/审计/大数据/AI相关背景，了解数字工具应用，能接受项目调度与出差。",
+        "函证实习侧重信息核对、录入、数据比对和归档；官网通道为job.zszhcpa.cn/campus。"
+      ],
+      "limits": [
+        "简章未将这两类实习绑定某一城市；不直接声称南京岗位现可投。",
+        "同页全职岗的2026/2027届与证书要求不复制为独立实习硬门槛；全职福利不复制为实习待遇。"
+      ]
+    },
+    {
+      "id": "DB-ZH-SHANGHAI",
+      "url": "https://zszhcpa.zhiye.com/jobs",
+      "title": "中审众环官方域职位列表｜上海自贸区审计实习J10676",
+      "date": "2026-10-08",
+      "ref": "turn157search10",
+      "kind": "firm_official",
+      "readScope": "官方域搜索索引内容已读；直接open为JS空正文，未完成当期申请状态确认",
+      "facts": [
+        "官方域索引列审计实习生（2027届校招-上海自贸区分所）J10676，实习、上海市、2026-10-08发布。",
+        "职责为资料整理、函件收发、简单科目底稿等项目协助。"
+      ],
+      "limits": [
+        "与job.zszhcpa.cn门户版本关系需由当前官网入口核对；不按索引保证仍有名额。"
+      ]
+    },
+    {
+      "id": "DB-ZH-NAU-HISTORY",
+      "url": "https://gs.nau.edu.cn/2025/0916/c10680a147636/page.htm",
+      "title": "关于选派研究生参与2025年度大型中央企业财务报表审计实习的通知",
+      "date": "2025-09-16",
+      "ref": "turn199view3",
+      "kind": "university_official",
+      "readScope": "网页正文已读",
+      "facts": [
+        "南审研究生院通知中的江苏分所审计项目，实际地点是安徽、北京；当期窗口2025年10月中旬—2026年4月30日。",
+        "当期学生通过研究生系统申请并同步简历，报名截止2025-09-18。"
+      ],
+      "limits": [
+        "已结束历史批次，只供理解项目地点、校内选派与校企合作；不得变成2026冬季报名入口。",
+        "不移植当年补贴、住宿、差旅标准到新岗位。"
+      ]
+    },
+    {
+      "id": "DB-NAU-FAIR",
+      "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+      "title": "“金秋启航”，赋能前行｜10.14事务所专场招聘会预告来袭",
+      "date": "2026-10-13",
+      "ref": "turn181view2",
+      "kind": "university_official",
+      "readScope": "网页正文已读",
+      "facts": [
+        "2026年10月14日南审事务所专场预告列容诚南京（审计/财务尽调/内控咨询）、中审众环江苏（审计/财务核查）。"
+      ],
+      "limits": [
+        "活动已结束，不据此断言当前开放实习。",
+        "预告的岗位类型不等于岗位性质实习，也不证明到场或录用。"
+      ]
+    }
+  ],
+  "methodNotes": [
+    "所有截止、出勤、最短周期、补贴未读到时为null。",
+    "official_index_only是官方域搜索索引，不等于当前职位详情已核实或一定开放申请。",
+    "program_announcement指完整简章中的项目发布证据，不保证每一城市每一岗位仍开放。",
+    "仅作研究输入，无联系HR、加群、投递或创建账户。"
+  ]
+}

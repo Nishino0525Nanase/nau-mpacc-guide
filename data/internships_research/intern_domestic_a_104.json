@@ -1,0 +1,812 @@
+{
+  "batch": "internships-104-domestic-a",
+  "firms": [
+    {
+      "id": "bdo-lixin",
+      "name": "立信",
+      "group": "domestic",
+      "fullName": "立信会计师事务所（特殊普通合伙）",
+      "officeRecords": [
+        {
+          "city": "南京",
+          "address": "南京市建邺区嘉陵江东街8号新城科技园创新综合体B4栋2单元17-18层",
+          "sourceIds": [
+            "DA01"
+          ],
+          "note": "官网列示办公室；具体面试和项目地点另核。",
+          "commuteMinutes": null,
+          "closestStation": null,
+          "clientSiteKnown": false
+        },
+        {
+          "city": "苏州",
+          "address": "苏州市竹辉路477号",
+          "sourceIds": [
+            "DA02"
+          ],
+          "note": "官网列示办公室；具体面试和项目地点另核。",
+          "commuteMinutes": null,
+          "closestStation": null,
+          "clientSiteKnown": false
+        }
+      ],
+      "entryLinks": [
+        {
+          "label": "实习生招聘列表",
+          "url": "https://bdochina.zhiye.com/intern/jobs",
+          "type": "internship",
+          "sourceIds": [
+            "DA06"
+          ]
+        },
+        {
+          "label": "官方校招问答（先核毕业年份）",
+          "url": "https://bdochina.zhiye.com/campus",
+          "type": "graduate",
+          "sourceIds": [
+            "DA03"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "lixin-intern-portal",
+          "title": "立信日常实习筛选入口",
+          "cities": [
+            "南京待筛选",
+            "苏州待筛选",
+            "上海待筛选"
+          ],
+          "url": "https://bdochina.zhiye.com/intern/jobs",
+          "status": "official_entry_only",
+          "sourceIds": [
+            "DA06"
+          ],
+          "jobType": "internship",
+          "deadline": null,
+          "salary": null,
+          "weeklyDays": null,
+          "minimumMonths": null,
+          "summary": "进入实习生列表后按城市、到岗时间和实际项目条件筛选；不能用校招审计员代替实习岗位。",
+          "fieldsToCheck": [
+            "工作地点与是否全国分配",
+            "能否完整全勤",
+            "项目差旅与住宿",
+            "岗位是否仍开放"
+          ]
+        },
+        {
+          "id": "lixin-audit-sep-nov-2026",
+          "title": "审计实习生（26年9月-11月）",
+          "cities": [
+            "全国（南京项目待核）"
+          ],
+          "url": "https://bdochina.zhiye.com/intern/detail?jobAdId=bcb96a34-f2cf-4a1d-95aa-470e54b59b44",
+          "status": "dated_official_listing_needs_vacancy_check",
+          "sourceIds": [
+            "DA05"
+          ],
+          "jobType": "internship",
+          "deadline": null,
+          "salary": null,
+          "weeklyDays": null,
+          "minimumMonths": null,
+          "publishedDate": "2026-09-14",
+          "summary": "可核对的近期官方审计实习说明：以底稿和审计资料整理等辅助工作为主。",
+          "target": "本科及以上在校生，财会类优先；未限定为应届校招毕业生。",
+          "attendanceText": "一周全勤；具体工作日和周末安排需确认。",
+          "preferredMonths": 2,
+          "durationText": "能完整提供约两个月实习时间者优先，并非统一硬性最短期限。",
+          "requirements": [
+            "熟练办公软件",
+            "自备笔记本电脑",
+            "适应出差和短期较高强度工作"
+          ],
+          "limits": [
+            "官网职位地区为全国，南京具体项目与余缺未核实。",
+            "职位名时段不等于申请截止日。",
+            "上海本地项目说明不供住宿，不可套用到全部外地项目。"
+          ]
+        }
+      ],
+      "careerPlanning": [
+        {
+          "title": "南京审计员2027校招：明确为全职",
+          "url": "https://bdochina.zhiye.com/campus/detail?jobAdId=46c7b965-7662-437d-a184-0e632c9ecb21",
+          "jobType": "graduate_full_time",
+          "cities": [
+            "南京"
+          ],
+          "sourceIds": [
+            "DA04",
+            "DA03"
+          ],
+          "note": "适合毕业季规划；在读生找日常实习应使用实习入口，不直接把该校招职位当作实习。"
+        }
+      ],
+      "applicationPrep": [
+        "自行准备建议：在简历醒目标出可到岗日、可连续投入的时间和返校安排。",
+        "先确认全国职位能否分到南京，再安排通勤或短租；不要先把全国岗位当本地坐班。"
+      ],
+      "questionsToAsk": [
+        "江苏分所是否有面向本年级的日常实习名额？",
+        "实际常驻办公室还是客户现场，出差频率与住宿如何安排？",
+        "全勤的具体天数、周末和请假规则怎样？"
+      ]
+    },
+    {
+      "id": "pccpa-tianjian",
+      "name": "天健",
+      "group": "domestic",
+      "fullName": "天健会计师事务所（特殊普通合伙）",
+      "officeRecords": [
+        {
+          "city": "南京",
+          "address": "南京市江东中路215号凤凰文化广场B座11楼",
+          "sourceIds": [
+            "DA07"
+          ],
+          "note": "官网列示办公室；具体面试和项目地点另核。",
+          "commuteMinutes": null,
+          "closestStation": null,
+          "clientSiteKnown": false
+        }
+      ],
+      "entryLinks": [
+        {
+          "label": "实习生招聘",
+          "url": "https://zhaopin.pccpa.cn/hr/recruit/internship",
+          "type": "internship",
+          "sourceIds": [
+            "DA08"
+          ]
+        },
+        {
+          "label": "校园招聘（毕业季正式录用通道）",
+          "url": "https://zhaopin.pccpa.cn/hr/recruit/school",
+          "type": "graduate",
+          "sourceIds": [
+            "DA09"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "pccpa-intern-portal",
+          "title": "天健南京及周边实习筛选入口",
+          "cities": [
+            "南京待筛选",
+            "上海待筛选"
+          ],
+          "url": "https://zhaopin.pccpa.cn/hr/recruit/internship",
+          "status": "official_entry_only",
+          "sourceIds": [
+            "DA08"
+          ],
+          "jobType": "internship",
+          "deadline": null,
+          "salary": null,
+          "weeklyDays": null,
+          "minimumMonths": null,
+          "summary": "官方有独立实习通道；本轮未核到南京当前独立日常实习正文，需在官方列表筛城市与部门。",
+          "fieldsToCheck": [
+            "是日常实习、非校招实习还是应届校招考察",
+            "江苏分所或上海具体岗位是否开放",
+            "项目驻地及出差",
+            "到岗日与最短连续时长"
+          ]
+        }
+      ],
+      "careerPlanning": [
+        {
+          "title": "2027校招与约两个月实习考察",
+          "url": "https://career.uibe.edu.cn/front/zpxx.jspa?tid=2105129673322205185",
+          "jobType": "graduate_recruitment_with_practicum",
+          "cities": [
+            "南京",
+            "上海"
+          ],
+          "sourceIds": [
+            "DA09"
+          ],
+          "target": "2027届本科及硕士毕业生，具体专业和其他条件按岗位。",
+          "deadline": "2027-04-30",
+          "note": "南京出现在部分业务城市列表，上海也有部分业务；约两个月是正式校招选拔中的实习考察，不是所有日常实习的统一标准。"
+        }
+      ],
+      "applicationPrep": [
+        "自行准备建议：先区分“校园招聘”和“实习生招聘”，再把毕业年月、课程和可出勤安排与岗位逐项对照。",
+        "对南京岗位先确认项目实际地点，避免只拿江苏办公室地址估通勤。"
+      ],
+      "questionsToAsk": [
+        "目前江苏分所有没有不走当届正式校招的在校生实习？",
+        "业务线是财务审计、管理咨询还是其他，是否可以选项目城市？",
+        "约两个月考察是否仅针对应届校招，当前实习另有什么期限？"
+      ]
+    },
+    {
+      "id": "grantthornton",
+      "name": "致同",
+      "group": "domestic",
+      "fullName": "致同会计师事务所（特殊普通合伙）",
+      "officeRecords": [
+        {
+          "city": "南京",
+          "address": null,
+          "sourceIds": [
+            "DA10",
+            "DA12"
+          ],
+          "note": "官网2027招聘问答确认办公室城市；具体街址本轮未取得官方可读正文。",
+          "commuteMinutes": null,
+          "closestStation": null,
+          "clientSiteKnown": false
+        },
+        {
+          "city": "苏州",
+          "address": null,
+          "sourceIds": [
+            "DA10",
+            "DA12"
+          ],
+          "note": "官网2027招聘问答确认办公室城市；具体街址本轮未取得官方可读正文。",
+          "commuteMinutes": null,
+          "closestStation": null,
+          "clientSiteKnown": false
+        },
+        {
+          "city": "上海",
+          "address": null,
+          "sourceIds": [
+            "DA10",
+            "DA12"
+          ],
+          "note": "官网2027招聘问答确认办公室城市；具体街址本轮未取得官方可读正文。",
+          "commuteMinutes": null,
+          "closestStation": null,
+          "clientSiteKnown": false
+        }
+      ],
+      "entryLinks": [
+        {
+          "label": "官方实习生招聘",
+          "url": "https://www.grantthornton.cn/Internship-recruitment/",
+          "type": "internship",
+          "sourceIds": [
+            "DA11"
+          ]
+        },
+        {
+          "label": "2027校招及问答",
+          "url": "https://www.grantthornton.cn/campus-recruitment",
+          "type": "graduate",
+          "sourceIds": [
+            "DA10"
+          ]
+        },
+        {
+          "label": "官方办公地点查询",
+          "url": "https://www.grantthornton.cn/locations/",
+          "type": "office",
+          "sourceIds": [
+            "DA12"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "gt-intern-portal",
+          "title": "致同实习岗位入口",
+          "cities": [
+            "南京待筛选",
+            "苏州待筛选",
+            "上海待筛选"
+          ],
+          "url": "https://www.grantthornton.cn/Internship-recruitment/",
+          "status": "official_entry_only",
+          "sourceIds": [
+            "DA11"
+          ],
+          "jobType": "internship",
+          "deadline": null,
+          "salary": null,
+          "weeklyDays": null,
+          "minimumMonths": null,
+          "summary": "官网提供审计、税务、咨询等实习方向入口；南京和苏州是否有当期实习应进入具体职位核对。"
+        },
+        {
+          "id": "gt-audit-shanghai-2026",
+          "title": "上海审计实习（8月招募公告）",
+          "cities": [
+            "上海"
+          ],
+          "url": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20236",
+          "status": "dated_association_repost_needs_vacancy_check",
+          "sourceIds": [
+            "DA13"
+          ],
+          "jobType": "internship",
+          "deadline": null,
+          "salary": null,
+          "weeklyDays": null,
+          "minimumMonths": null,
+          "publishedDate": "2026-08-25",
+          "summary": "在项目人员指导下做部分审计、底稿及报告辅助，需办公与财务软件能力。",
+          "target": "全日制本科及以上在校生，财经类相关专业优先；英语与财会实习经历为加分项。",
+          "requirements": [
+            "办公及财务软件能力",
+            "沟通与认真负责的工作习惯"
+          ],
+          "limits": [
+            "公告审计base没有南京或苏州，不作南京实习在招证据。",
+            "出勤、期限、薪资和余缺均需核实。"
+          ]
+        },
+        {
+          "id": "gt-consulting-shanghai-2026",
+          "title": "上海咨询实习（8月招募公告）",
+          "cities": [
+            "上海"
+          ],
+          "url": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20236",
+          "status": "dated_association_repost_needs_vacancy_check",
+          "sourceIds": [
+            "DA13"
+          ],
+          "jobType": "internship",
+          "deadline": null,
+          "salary": null,
+          "weeklyDays": null,
+          "minimumMonths": null,
+          "publishedDate": "2026-08-25",
+          "summary": "辅助数据处理、初步报告与咨询项目，方向涉及管理、风险、IT等，岗位原文未细分到每个项目。",
+          "target": "本科以上相关专业背景，专业范围包括财经、统计、计算机等。",
+          "requirements": [
+            "Office",
+            "分析推理与文档编写",
+            "沟通及学习能力"
+          ],
+          "limits": [
+            "与审计实习共用同一公告，不是新的独立来源。",
+            "当前上海具体团队与职位余缺仍需官网核实。"
+          ]
+        }
+      ],
+      "careerPlanning": [
+        {
+          "title": "2027校招的办公室与业务线选择",
+          "url": "https://www.grantthornton.cn/campus-recruitment",
+          "jobType": "graduate_full_time",
+          "cities": [
+            "南京",
+            "苏州",
+            "上海"
+          ],
+          "sourceIds": [
+            "DA10"
+          ],
+          "note": "2027毕业本科以上；校招规则为一个办公室、两条业务线，不能自行套用为所有实习投递规则。"
+        }
+      ],
+      "applicationPrep": [
+        "自行准备建议：用一个清楚的项目例子展示数据整理、底稿或报告能力，标注自己的真实贡献。",
+        "上海机会先核实连续出勤与住宿，再决定是否离校实习；南京有办公室不意味着近期有实习空缺。"
+      ],
+      "questionsToAsk": [
+        "南京/苏州当前是否单独招实习，还是需跨城参加项目？",
+        "岗位具体属于审计、税务还是咨询，实习任务与项目地点是什么？",
+        "最短连续时间、每周出勤和是否提供住宿或差旅安排怎样？"
+      ]
+    },
+    {
+      "id": "shinewing",
+      "name": "信永中和",
+      "group": "domestic",
+      "fullName": "信永中和会计师事务所（特殊普通合伙）",
+      "officeRecords": [
+        {
+          "city": "南京",
+          "address": "南京市鼓楼区山西路128号和泰国际大厦7层",
+          "sourceIds": [
+            "DA14"
+          ],
+          "note": "官网列示办公室；具体面试和项目地点另核。",
+          "commuteMinutes": null,
+          "closestStation": null,
+          "clientSiteKnown": false
+        },
+        {
+          "city": "上海",
+          "address": "上海市浦东新区陆家嘴环路1233号汇亚中心大厦20楼",
+          "sourceIds": [
+            "DA14"
+          ],
+          "note": "官网列示办公室；具体面试和项目地点另核。",
+          "commuteMinutes": null,
+          "closestStation": null,
+          "clientSiteKnown": false
+        },
+        {
+          "city": "苏州",
+          "address": "苏州市苏州工业园区苏州大道东400号苏州中海大厦东塔30F",
+          "sourceIds": [
+            "DA14"
+          ],
+          "note": "官网列示办公室；具体面试和项目地点另核。",
+          "commuteMinutes": null,
+          "closestStation": null,
+          "clientSiteKnown": false
+        }
+      ],
+      "entryLinks": [
+        {
+          "label": "官方招聘平台",
+          "url": "https://job.shinewing.com/",
+          "type": "internship_and_graduate",
+          "sourceIds": [
+            "DA14",
+            "DA15"
+          ]
+        },
+        {
+          "label": "2027招聘公告（学校官方发布，区分实习通道）",
+          "url": "https://career.hebut.edu.cn/correcruit/content/id/82058.html",
+          "type": "announcement",
+          "sourceIds": [
+            "DA16"
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "id": "sw-official-portal",
+          "title": "信永中和官方实习筛选入口",
+          "cities": [
+            "南京待筛选",
+            "苏州待筛选",
+            "上海待筛选"
+          ],
+          "url": "https://job.shinewing.com/",
+          "status": "official_entry_only",
+          "sourceIds": [
+            "DA14",
+            "DA15"
+          ],
+          "jobType": "internship",
+          "deadline": null,
+          "salary": null,
+          "weeklyDays": null,
+          "minimumMonths": null,
+          "summary": "经集团官网“加入我们”进入招聘平台，筛实习类型、工作城市和业务部门；平台依赖JavaScript。"
+        },
+        {
+          "id": "sw-2027-student-intern",
+          "title": "2027招聘公告中的在校生实习通道",
+          "cities": [
+            "南京",
+            "苏州",
+            "上海"
+          ],
+          "url": "https://career.hebut.edu.cn/correcruit/content/id/82058.html",
+          "status": "announced_program_specific_city_vacancy_unconfirmed",
+          "sourceIds": [
+            "DA16"
+          ],
+          "jobType": "internship",
+          "deadline": null,
+          "salary": null,
+          "weeklyDays": null,
+          "minimumMonths": null,
+          "publishedDate": "2026-10-19",
+          "applicationWindow": "2026年9月至12月（公告未给具体日）",
+          "target": "大三、大四及研究生在校学生；与2027届正式校招分列。",
+          "summary": "先网申及在线测评，再参加实习。公告覆盖南京、苏州、上海等城市，具体职位以官方平台为准。",
+          "roleFamilies": [
+            "审计",
+            "税务咨询",
+            "会计代理",
+            "管理咨询",
+            "信息系统审计"
+          ],
+          "limits": [
+            "不能推定每条业务线在三城都招实习。",
+            "周出勤、连续月数、具体岗位截止和南京薪资没有可用的已核字段。"
+          ]
+        }
+      ],
+      "careerPlanning": [
+        {
+          "title": "2027届正式校招流程另列",
+          "url": "https://career.hebut.edu.cn/correcruit/content/id/82058.html",
+          "jobType": "graduate_full_time",
+          "cities": [
+            "南京",
+            "苏州",
+            "上海"
+          ],
+          "sourceIds": [
+            "DA16"
+          ],
+          "note": "正式校招面向2027届毕业生，包含测评、笔试、面试与可能的实习环节；在校实习通道不是直接承诺转正。"
+        }
+      ],
+      "applicationPrep": [
+        "自行准备建议：把在校身份、毕业年月、可到岗日期和完整实习区间填写准确，投递后自行留存申请状态。",
+        "先确认当地具体岗位与项目城市，再评估南京/苏州/上海的住宿和课程安排。"
+      ],
+      "questionsToAsk": [
+        "南京当前有哪些实习业务组在招，岗位是否仍有名额？",
+        "官网城市与实际客户项目城市是否一致，是否需要出差？",
+        "周出勤、实习月份、学校实习协议和论文节点如何协调？"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "DA01",
+      "url": "https://www.bdo.com.cn/locations/江苏分所",
+      "title": "立信官网：江苏分所",
+      "date": null,
+      "readScope": "已打开官网正文，读机构介绍及联系方式（119-176行）。",
+      "facts": [
+        "江苏分所列示地址为南京市建邺区嘉陵江东街8号新城科技园创新综合体B4栋2单元17-18层。"
+      ],
+      "limits": [
+        "办公地点不能替代具体项目驻地，也不证明该地址有日常实习空缺。"
+      ],
+      "ref": "turn168view0",
+      "read": true
+    },
+    {
+      "id": "DA02",
+      "url": "https://www.bdo.com.cn/locations/江南分所",
+      "title": "立信官网：江南分所",
+      "date": null,
+      "readScope": "已打开官网正文，读机构介绍及联系方式（119-165行）。",
+      "facts": [
+        "江南分所位于苏州市竹辉路477号。"
+      ],
+      "limits": [
+        "江南分所办公地址与base苏州校招岗位的具体用工机构、项目驻地不能直接画等号。"
+      ],
+      "ref": "turn200view0",
+      "read": true
+    },
+    {
+      "id": "DA03",
+      "url": "https://bdochina.zhiye.com/campus",
+      "title": "立信2027校园招聘及官方问答",
+      "date": null,
+      "readScope": "官方站点完整索引文字已读；直接打开为动态空壳，未进行注册或投递。",
+      "facts": [
+        "2027校招面向2027届及部分2026届本科以上毕业生；每人仅能投一个校招职位。",
+        "站点将校园招聘、社会招聘、实习生招聘分开；校招职位限制不应扩大到所有实习项目。"
+      ],
+      "limits": [
+        "这是应届校招规则，不是全体在校生实习申请资格。"
+      ],
+      "ref": "turn164search4",
+      "read": true
+    },
+    {
+      "id": "DA04",
+      "url": "https://bdochina.zhiye.com/campus/detail?jobAdId=46c7b965-7662-437d-a184-0e632c9ecb21",
+      "title": "审计员（江苏分所）2027校招",
+      "date": "2026-08-27",
+      "readScope": "已读官网索引中的职位类型、城市、职责与任职资格；动态详情正文未被阅读工具展开。",
+      "facts": [
+        "该职位标注南京、校园招聘、全职，要求2027届本科及以上毕业生；相关实习经历为优先项。"
+      ],
+      "limits": [
+        "明确是全职校招，不能以职位存在推定南京日常审计实习正在招聘。"
+      ],
+      "ref": "turn164search0",
+      "read": true
+    },
+    {
+      "id": "DA05",
+      "url": "https://bdochina.zhiye.com/intern/detail?jobAdId=bcb96a34-f2cf-4a1d-95aa-470e54b59b44",
+      "title": "审计实习生（26年9月-11月）",
+      "date": "2026-09-14",
+      "readScope": "已读官方招聘索引所列完整职责及资格；详情动态页直接打开无可读行。",
+      "facts": [
+        "官方职位标注全国，内容为审计底稿及资料整理等辅助工作。",
+        "本科以上在校生，财会类专业优先；要求周全勤、自备笔记本，能完整提供约两个月实习者优先，并需适应出差。",
+        "该岗位说明上海本地项目不提供住宿。"
+      ],
+      "limits": [
+        "没有核得南京项目分配或剩余名额；9-11月是职位名称中的时段，不是明确申请截止日。",
+        "全勤不能自动换算成每周5天，也不能据此判断周末安排。"
+      ],
+      "ref": "turn164search3",
+      "read": true
+    },
+    {
+      "id": "DA06",
+      "url": "https://bdochina.zhiye.com/intern/jobs",
+      "title": "立信官方实习生招聘列表",
+      "date": null,
+      "readScope": "已确认官网入口及URL；直接打开为动态页面，无可读职位列表行。",
+      "facts": [
+        "立信设有独立实习生招聘入口。"
+      ],
+      "limits": [
+        "入口可用不等于南京当前在招；应进入后按地点、职位类型和正文核对。"
+      ],
+      "ref": "turn179view3",
+      "read": true
+    },
+    {
+      "id": "DA07",
+      "url": "https://www.pccpa.com/cnchs/contactus",
+      "title": "天健官网：联系我们",
+      "date": null,
+      "readScope": "已读官方搜索索引中江苏分所的完整地址条目；直开网页为动态空壳。",
+      "facts": [
+        "江苏分所官网列示地址为南京市江东中路215号凤凰文化广场B座11楼。"
+      ],
+      "limits": [
+        "地址来自官方可检索条目，面试或入项前仍需复核；不是项目驻地或在招证据。"
+      ],
+      "ref": "turn189search0",
+      "read": true
+    },
+    {
+      "id": "DA08",
+      "url": "https://zhaopin.pccpa.cn/hr/recruit/internship",
+      "title": "天健招聘：实习生招聘",
+      "date": null,
+      "readScope": "官网首页及学校发布的招聘公告均指向此入口；直开动态列表无可读行。",
+      "facts": [
+        "天健招聘将实习生招聘与校园招聘分开。"
+      ],
+      "limits": [
+        "本次未能在官方正文核到南京独立日常实习职位；未知字段保持空值。"
+      ],
+      "ref": "turn156view1",
+      "read": true
+    },
+    {
+      "id": "DA09",
+      "url": "https://career.uibe.edu.cn/front/zpxx.jspa?tid=2105129673322205185",
+      "title": "天健会计师事务所2027校园招聘（对外经贸大学就业网发布）",
+      "date": "2026-09-30",
+      "readScope": "已读学校官方页完整招聘计划、流程、城市和网申时间（43-122行）。",
+      "facts": [
+        "2027届本科及硕士毕业生可按岗位要求申请，网申截止2027-04-30，唯一网申通道为天健招聘官网。",
+        "财务审计覆盖分所所在地；军民融合审计及管理咨询列有南京，金融审计等业务列有上海。",
+        "校招选拔含约2个月实习考察，通过后进入体检和就业协议环节。"
+      ],
+      "limits": [
+        "这是正式校招选拔流程；约2个月不是所有日常实习统一时长。",
+        "学校公告不提供南京日常实习具体名额；各业务线和城市不能互相套用。"
+      ],
+      "ref": "turn207view0",
+      "read": true
+    },
+    {
+      "id": "DA10",
+      "url": "https://www.grantthornton.cn/campus-recruitment",
+      "title": "致同2027校园招聘及问答",
+      "date": null,
+      "readScope": "官网正文与官方索引均已读；核对2027申请对象、办公室城市与志愿规则。",
+      "facts": [
+        "2027校招面向2027年毕业本科以上学生，城市含南京、苏州、上海。",
+        "校招可选一个办公室及该办公室两条业务线；CPA部分科目、英语及相关事务所经历为加分项。"
+      ],
+      "limits": [
+        "校招规则不能移植为所有实习申请规则；出现南京办公室不等于南京实习职位在招。"
+      ],
+      "ref": "turn186search1",
+      "read": true
+    },
+    {
+      "id": "DA11",
+      "url": "https://www.grantthornton.cn/Internship-recruitment/",
+      "title": "致同官网：实习生招聘",
+      "date": null,
+      "readScope": "已打开官网页面并阅读官方索引；索引列有审计、税务、咨询等实习方向，动态页面不展开城市岗位。",
+      "facts": [
+        "官网提供独立实习生入口，方向含审计、税务、咨询、评估估值等。"
+      ],
+      "limits": [
+        "仅方向入口，不能确认南京各岗位是否开放或具体到岗条件。"
+      ],
+      "ref": "turn186search0",
+      "read": true
+    },
+    {
+      "id": "DA12",
+      "url": "https://www.grantthornton.cn/locations/",
+      "title": "致同官网：办公地点",
+      "date": null,
+      "readScope": "已打开官方办公地点动态查询页，正文仅显示城市筛选壳；办公室城市由官方2027招聘问答交叉确认。",
+      "facts": [
+        "官方有办公地点查询入口；2027官方招聘问答列南京、苏州、上海办公室。"
+      ],
+      "limits": [
+        "本次没有核得这三城的官方具体街址，地址保持null，不采用第三方地图或注册地冒充当前办公室。"
+      ],
+      "ref": "turn168view2",
+      "read": true
+    },
+    {
+      "id": "DA13",
+      "url": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20236",
+      "title": "致同实习生招募（广东省注协转企业官微）",
+      "date": "2026-08-25",
+      "readScope": "已读注协正文全部招聘段落（9-85行），明确来源为企业公众号“致同人与文化”。",
+      "facts": [
+        "审计实习面向本科以上在校生，财会等专业优先，需要办公及财务软件能力；英语与财会经历是加分项。审计base含上海、杭州、宁波等，未列南京或苏州。",
+        "咨询实习base为上海、深圳，相关专业含财经、统计、计算机等，工作涉及数据处理与初步报告。"
+      ],
+      "limits": [
+        "同一公告的两个岗位，不计成两个独立来源；没有公布截止日、每周出勤和最短时长。",
+        "8月公告不等于今日每个base仍有余缺；页面给的官网校招入口是公告投递指引，仍需选择实习类型核对。"
+      ],
+      "ref": "turn189view0",
+      "read": true
+    },
+    {
+      "id": "DA14",
+      "url": "https://www.shinewing.com/about/branch/",
+      "title": "信永中和官网：分支机构",
+      "date": null,
+      "readScope": "已读官网境内分支机构中南京、上海、苏州条目及首页招聘链接。",
+      "facts": [
+        "南京：鼓楼区山西路128号和泰国际大厦7层；上海：浦东新区陆家嘴环路1233号汇亚中心大厦20楼；苏州：工业园区苏州大道东400号苏州中海大厦东塔30F。",
+        "官网“加入我们”链接指向job.shinewing.com。"
+      ],
+      "limits": [
+        "办公室地址不是客户项目驻地；不能据机构覆盖断言当地实习名额。"
+      ],
+      "ref": "turn156view3",
+      "read": true
+    },
+    {
+      "id": "DA15",
+      "url": "https://job.shinewing.com/",
+      "title": "信永中和官方招聘平台",
+      "date": null,
+      "readScope": "官网分支机构导航确认链接；直开招聘平台仅返回需JavaScript的壳，未登录或提交材料。",
+      "facts": [
+        "这是官网指向的官方招聘平台。"
+      ],
+      "limits": [
+        "动态空壳不能核实具体城市岗位余缺、出勤或薪资。"
+      ],
+      "ref": "turn168view3",
+      "read": true
+    },
+    {
+      "id": "DA16",
+      "url": "https://career.hebut.edu.cn/correcruit/content/id/82058.html",
+      "title": "信永中和2027校园招聘正式启动（河北工业大学就业网发布）",
+      "date": "2026-10-19",
+      "readScope": "已读学校正文119-172行：岗位方向、分别列示的校招/实习流程、城市列表与网申窗口。",
+      "facts": [
+        "在校生实习通道面向大三、大四及研究生，网申与在线测评窗口为2026年9-12月，随后参加实习。",
+        "公告城市包括南京、苏州和上海；另有单列的2027届正式校招流程。",
+        "方向列审计、税务、会计代理、管理咨询及信息系统审计等，具体职位以官方平台为准。"
+      ],
+      "limits": [
+        "城市是整份公告覆盖，不能认定每条业务线在三城均有实习名额。",
+        "正文没有给到每周出勤、实习月数或确切截止日；页头北京市工资字段不作为南京实习薪资。"
+      ],
+      "ref": "turn189view1",
+      "read": true
+    }
+  ],
+  "qa": {
+    "firmCount": 4,
+    "sourceCount": 16,
+    "internshipResourceCount": 8,
+    "officeRecordCount": 9,
+    "currentSpecificNanjingJobVerified": false,
+    "note": "入口、公告、正式校招分别标注；没有把地区办公室存在、全国岗位或实习考察写成南京日常实习正在招聘。",
+    "noApplicationsSent": true,
+    "noMessagesSent": true,
+    "commuteTimesEstimated": false,
+    "unpublishedFieldsNull": true
+  }
+}

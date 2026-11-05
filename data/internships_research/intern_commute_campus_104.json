@@ -1,0 +1,749 @@
+{
+  "batch": "internship-104-campus-commute",
+  "researchScope": "南审浦口校区交通、校内实习渠道与申请准备；只记录实际读到的主源，不投递、不联系。",
+  "sources": [
+    {
+      "id": "PC01",
+      "url": "https://www.nau.edu.cn/main.htm",
+      "title": "南京审计大学官网导航",
+      "date": null,
+      "official": true,
+      "refId": "turn182view0",
+      "readingScope": "读取首页导航与就业信息网、校车信息链接。",
+      "facts": [
+        "学校官网的就业信息网链接指向nau.91job.org.cn。"
+      ],
+      "limits": [
+        "仅核对官方入口，不表示某个岗位仍在招。"
+      ]
+    },
+    {
+      "id": "PC02",
+      "url": "https://nau.91job.org.cn/sub-station/home/11287",
+      "canonicalUrl": "https://nau.91job.org.cn/",
+      "title": "南京审计大学智慧就业平台",
+      "date": null,
+      "official": true,
+      "refId": "turn185view5",
+      "readingScope": "从学校官网点击就业信息网，跳转到智慧就业平台；抽取正文仅1行，未取得内部岗位列表。",
+      "facts": [
+        "官方链接可进入南审智慧就业平台。"
+      ],
+      "limits": [
+        "本轮未读到岗位详情，不记录在招职位或统一申请条件；页面可能依赖脚本。"
+      ]
+    },
+    {
+      "id": "PC03",
+      "url": "https://yx.nau.edu.cn/9073/list.htm",
+      "title": "南京审计大学迎新网：交通路线",
+      "date": null,
+      "official": true,
+      "refId": "turn182view1",
+      "readingScope": "读取全部交通路线与校区地址。",
+      "facts": [
+        "浦口校区地址为南京市浦口区江浦街道雨山西路86号。",
+        "迎新路线列出雨山路站5号口接站，以及集庆门大街接D7的来校方案。"
+      ],
+      "limits": [
+        "迎新接站班车不是常年每日实习接驳承诺；公交班次、运营变化和具体校门应出发前核实。"
+      ]
+    },
+    {
+      "id": "PC04",
+      "url": "https://www.nanjing.gov.cn/xxgkn/jytabljggk/2024njytabl/shirddbjy/202411/t20241114_5009238.html",
+      "title": "关于加快南京地铁线路延伸至南京审计大学的建议答复",
+      "date": "2024-11-14",
+      "official": true,
+      "refId": "turn182view2",
+      "readingScope": "读取交通区位、现有车站与规划线路段。",
+      "facts": [
+        "答复由南京市地铁集团署名，称浦口校区处江北核心区、研创园、浦口高新区交界。",
+        "2024答复记录文德路、雨山路两站距校直线约1.1/1.5公里。"
+      ],
+      "limits": [
+        "直线距离不能当步行距离或通勤时间；文中的13/17号线是当时规划，不能据此生成现成出行路线。"
+      ]
+    },
+    {
+      "id": "PC05",
+      "url": "https://www.njjy.gov.cn/jyyw/202601/t20260108_5760664.html",
+      "title": "正式投用！地铁元通站更方便了",
+      "date": "2026-01-08",
+      "official": true,
+      "refId": "turn182view3",
+      "readingScope": "读取建邺区政府元通站换乘、出口与周边连接说明。",
+      "facts": [
+        "元通是地铁2号线、10号线换乘站。",
+        "新增出入口连接国金中心和国际博览中心。"
+      ],
+      "limits": [
+        "可支持河西片区路线骨架，不证明任何事务所固定在该楼办公；具体出口应按最终办公楼导航。"
+      ]
+    },
+    {
+      "id": "PC06",
+      "url": "https://qilinpark.nanjing.gov.cn/xwzx/202512/t20251222_5748356.html",
+      "title": "地铁10号线二期今起开通初期运营",
+      "date": "2025-12-19",
+      "dateBasis": "网页正文显示时间；URL日期不是发布日期。",
+      "official": true,
+      "refId": "turn191view1",
+      "readingScope": "读取开通日期、区间、换乘站和运营说明。",
+      "facts": [
+        "10号线二期2025-12-19开通，由安德门向东延伸到东麒路。",
+        "线路跨江连接江北与主城、南部新城、麒麟等片区。"
+      ],
+      "limits": [
+        "不再将安德门写成10号线现行终点；首末班和交路可调整，本文不固化时间表。"
+      ]
+    },
+    {
+      "id": "PC07",
+      "url": "https://jtj.nanjing.gov.cn/hdjl/zsk/202411/t20241127_5019735.html",
+      "title": "南京市交通运输局：如何查询地铁线路？",
+      "date": "2026-07-30",
+      "dateBasis": "网页正文显示时间，不能以URL中的2024年替代。",
+      "official": true,
+      "refId": "turn191view0",
+      "readingScope": "读取交通局答复。",
+      "facts": [
+        "交通局建议通过南京地铁官网、官方公众号或与宁同行APP查询线路。"
+      ],
+      "limits": [
+        "这是查询渠道，不是实时列车班次或地图API结果。"
+      ]
+    },
+    {
+      "id": "PC08",
+      "url": "https://www.nau.edu.cn/5827/list.htm",
+      "title": "南京审计大学校车运行时间及路线",
+      "date": null,
+      "official": true,
+      "refId": "turn187view0",
+      "readingScope": "读取工作日、周末班次和路线。",
+      "facts": [
+        "公开校车页区分莫愁至浦口、浦口至莫愁方向。",
+        "部分班次注明学生可刷卡乘坐，公开浦口出发班次主要在中午和傍晚。"
+      ],
+      "limits": [
+        "没有发布日期，不能保证当前班次；不能把莫愁早班错当浦口早晨外出通勤班，更不能把校车当所有实习生均可乘的固定接驳。"
+      ]
+    },
+    {
+      "id": "PC09",
+      "url": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm",
+      "title": "南京审计大学2027届毕业生事务所专场招聘会顺利举行",
+      "date": "2026-10-18",
+      "dateBasis": "正文发布日期；活动2026-10-14。",
+      "official": true,
+      "refId": "turn185view4",
+      "readingScope": "读取全文，活动报道与实习选拔段均已读。",
+      "facts": [
+        "会计学院等联合主办的10月14日招聘会面向毕业生并给在校生实习实践对接机会。",
+        "报道提到德勤、普华永道、毕马威、天健、容诚、立信等参会；中名国成同期开展实习项目选拔。"
+      ],
+      "limits": [
+        "活动已结束；到场或合作不等于现在仍有名额，不保证任何学生获得实习。"
+      ]
+    },
+    {
+      "id": "PC10",
+      "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+      "title": "10.14事务所专场招聘会预告",
+      "date": "2026-10-13",
+      "dateBasis": "正文发布日期；URL日期不同。",
+      "official": true,
+      "refId": "turn211view0",
+      "readingScope": "读取活动对象、时间、参会部分企业与岗位方向。",
+      "facts": [
+        "预告面向社会审计学院本科、研究生，列出审计、税务、咨询、财务核查等岗位方向。",
+        "天衡、中汇、大信等也在到会名单。"
+      ],
+      "limits": [
+        "这是历史宣讲/招聘会名单，不当作当前职位详情，也不能自动把社会审计学院专场条件扩大到全部MPAcc。"
+      ]
+    },
+    {
+      "id": "PC11",
+      "url": "https://shsjxy.nau.edu.cn/2026/0903/c7575a161299/page.htm",
+      "title": "一大波事务所来校招聘啦",
+      "date": "2026-09-02",
+      "official": true,
+      "refId": "turn177view0",
+      "readingScope": "读取四大及立信、天职国际宣讲时间与准备提示。",
+      "facts": [
+        "当时列出毕马威、德勤、安永、普华永道、立信和天职国际校内宣讲。",
+        "学院提示参加前整理简历、查看企业官网和具体岗位要求。"
+      ],
+      "limits": [
+        "9月宣讲已结束；文中社审学院简历指导时段不保证对会计学院MPAcc开放或长期不变。"
+      ]
+    },
+    {
+      "id": "PC12",
+      "url": "https://mpacc.nau.edu.cn/11520/list.htm",
+      "title": "MPAcc实践基地",
+      "date": null,
+      "official": true,
+      "refId": "turn185view0",
+      "readingScope": "读取全部13项基地/合作机构列表。",
+      "facts": [
+        "列有江苏省注协、天衡、中审众环江苏、立信江苏、立信中联江苏、苏州新区高新、南钢、南京文投、沈阳跃客、苏亚金诚、信永中和、新道科技、南审希地。"
+      ],
+      "limits": [
+        "页面无发布日期；机构列入名单不等于当前招聘、当年实习名额、校内推荐资格或保证录用。沈阳机构不作为南京周边通勤资源。"
+      ]
+    },
+    {
+      "id": "PC13",
+      "url": "https://mpacc.nau.edu.cn/11517/list.htm",
+      "title": "会计硕士专业学位研究生培养方案（125300）",
+      "date": null,
+      "official": true,
+      "existingSourceIds": [
+        "F02",
+        "F27",
+        "F28",
+        "F29",
+        "F30",
+        "F31",
+        "F32",
+        "F33",
+        "F34",
+        "F35"
+      ],
+      "refId": "turn182view8",
+      "readingScope": "读取社会实践、计划、考核要求；不改原方案措辞。",
+      "facts": [
+        "公开方案允许社会实践集中与分段结合，包含实践计划、总结及单位鉴定评价。",
+        "分多个单位实践时，每个单位需出具鉴定评价。"
+      ],
+      "limits": [
+        "网页未明确本级施行日期；个人应核对自己年级的培养方案和学院通知，不能仅凭网页数字安排实习。"
+      ]
+    },
+    {
+      "id": "PC14",
+      "url": "https://account.nau.edu.cn/_upload/article/files/d9/c3/7d24068e413cbfabad1f975e1ed0/75c3eb31-2aec-4c4a-a7e0-43d9f582683e.pdf",
+      "alternateReadUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/75c3eb31-2aec-4c4a-a7e0-43d9f582683e.pdf",
+      "title": "南京审计大学会计学院硕士研究生社会实践指导手册",
+      "date": "2024-11",
+      "dateBasis": "封面；当前下载入口标2023级。",
+      "official": true,
+      "existingSourceIds": [
+        "R307"
+      ],
+      "refId": "turn195view0",
+      "readingScope": "从MPAcc下载中心进入同文件名PDF镜像；27页全文抽取，重点p3-p5实践细则、p10-p13申请/变更表。",
+      "facts": [
+        "手册区分集中派遣和自主实践；导师推荐或自行联系的单位，经导师同意、学院批准可纳入集中派遣。",
+        "开始前需计划及导师、学院认可的相应申请；中途变更应先办理审批。",
+        "手册将审计学习内容描述为程序、证据、函证、底稿等专业训练。"
+      ],
+      "limits": [
+        "既有R307来源复读，不计新独立来源。入口年级与封面年份不一致，不作为未来入学年级现行规则保证；183天、请假次数等不改写成所有年级统一规定。"
+      ]
+    },
+    {
+      "id": "PC15",
+      "url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "title": "会计学院研究生毕业生经验分享会（2026）",
+      "date": "2026-06-26",
+      "official": true,
+      "existingSourceIds": [
+        "D601"
+      ],
+      "refId": "turn182view7",
+      "readingScope": "重读林洛妤2023级会计专硕身份、安永实习经验及上海分所毕业去向段。",
+      "facts": [
+        "具名2023级MPAcc林洛妤分享安永实习与校招准备，毕业去向为安永华明上海分所。",
+        "她强调实习后复盘案例、按岗位补短板，并统筹论文和求职。"
+      ],
+      "limits": [
+        "一个具名个案，不是录取概率、通用面试题或所有学生可获得相同机会；既有D601复读不加来源数。"
+      ]
+    },
+    {
+      "id": "PC16",
+      "url": "https://www.jscpa.com.cn/",
+      "title": "天衡会计师事务所官网",
+      "date": null,
+      "official": true,
+      "refId": "turn211view2",
+      "readingScope": "读取主页地址、服务分类与诚聘英才链接。",
+      "facts": [
+        "官方地址为南京市建邺区江东中路106号万达广场商务楼B座19-20楼。",
+        "官网服务含审计、税务、管理及IT咨询等。"
+      ],
+      "limits": [
+        "办公室地址不是项目实习实际工作地点，也不能据服务分类断言某业务线招实习生。"
+      ]
+    },
+    {
+      "id": "PC17",
+      "url": "https://www.jscpa.com.cn/join-us/",
+      "title": "天衡：诚聘英才",
+      "date": null,
+      "official": true,
+      "refId": "turn211view3",
+      "readingScope": "读取招聘页文字，见2025年应届审计助理栏目；图片未补读成当前公告。",
+      "facts": [
+        "官网有招聘入口，抽取文字仍出现2025年应届审计助理标题。"
+      ],
+      "limits": [
+        "属于长期入口兼旧招聘展示，不称2026-11当前实习开放，不引用40人作为当前名额。"
+      ]
+    },
+    {
+      "id": "PC18",
+      "url": "https://www.cicpa.org.cn/xxfb/topnews/202608/t20260817_66062.html",
+      "title": "江苏省注协助推大学生就业成才",
+      "date": "2026-08-17",
+      "official": true,
+      "refId": "turn211view1",
+      "readingScope": "读取春秋行业招聘、线上专栏与校所合作段。",
+      "facts": [
+        "中注协报道江苏省注协组织春秋招聘并设线上招聘专栏。"
+      ],
+      "limits": [
+        "报道中的订单培养、定向通道属于特定合作项目，不能扩大为南审MPAcc均可参加或保证就业；本轮未取得该招聘专栏的可读具体URL。"
+      ]
+    }
+  ],
+  "campusChannels": [
+    {
+      "id": "campus-job-portal",
+      "name": "南审智慧就业平台",
+      "url": "https://nau.91job.org.cn/",
+      "kind": "school_portal",
+      "status": "长期入口；内部岗位需再查",
+      "sourceIds": [
+        "PC01",
+        "PC02"
+      ],
+      "use": "优先按‘实习’、‘会计师事务所’、‘南京/江苏/苏州/上海’检索，核对具体岗位正文。",
+      "deadline": null,
+      "limits": "仅核实官网跳转，没有把平台标题当成在招证据。"
+    },
+    {
+      "id": "campus-mpacc-practice",
+      "name": "MPAcc实践基地目录",
+      "url": "https://mpacc.nau.edu.cn/11520/list.htm",
+      "kind": "school_cooperation",
+      "status": "合作线索；非当前在招",
+      "sourceIds": [
+        "PC12"
+      ],
+      "use": "带拟投机构和具体岗位向学院核对当前合作、推荐流程、名额及实践认定。",
+      "deadline": null,
+      "limits": "名单不代表自动获得实习或能跳过网申。"
+    },
+    {
+      "id": "campus-practice-guide",
+      "name": "实践计划与申请材料",
+      "url": "https://mpacc.nau.edu.cn/11500/list.htm",
+      "kind": "school_practice_procedure",
+      "status": "旧版手册参考；核本级",
+      "sourceIds": [
+        "PC13",
+        "PC14"
+      ],
+      "use": "对照本级通知准备计划、申请表、过程记录及结束鉴定，不把录用通知等同学院实践批准。",
+      "deadline": null,
+      "limits": "下载入口标2023级、PDF封面2024-11，不保证未来年级规则。"
+    },
+    {
+      "id": "campus-fair-oct",
+      "name": "事务所专场招聘会的后续信息",
+      "url": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm",
+      "kind": "past_campus_event",
+      "status": "2026-10-14活动已结束",
+      "sourceIds": [
+        "PC09",
+        "PC10"
+      ],
+      "use": "把报道中的参会机构作为关注名单，继续回就业网、企业官网和学院当期通知查看新批次。",
+      "deadline": null,
+      "limits": "不是现在可报名的招聘会，也不保证原岗位仍开放。"
+    },
+    {
+      "id": "campus-fair-sep",
+      "name": "四大与大所校内宣讲记录",
+      "url": "https://shsjxy.nau.edu.cn/2026/0903/c7575a161299/page.htm",
+      "kind": "past_campus_event",
+      "status": "2026年9月宣讲已结束",
+      "sourceIds": [
+        "PC11"
+      ],
+      "use": "关注下一批宣讲公告；提前写好对具体岗位、团队、工作地点和招聘流程的问题。",
+      "deadline": null,
+      "limits": "该公告面向社会审计学院，不自动承诺会计学院学生可参与专属服务。"
+    },
+    {
+      "id": "campus-ey-peer",
+      "name": "MPAcc到安永的具名经验",
+      "url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "kind": "named_student_experience",
+      "status": "2026毕业生经验；非招聘入口",
+      "sourceIds": [
+        "PC15"
+      ],
+      "use": "从林洛妤的实习复盘与论文统筹经验，整理自己的能力差距和可用时间表。",
+      "deadline": null,
+      "limits": "无面试逐题讲解或录取保证。"
+    },
+    {
+      "id": "industry-campus-events",
+      "name": "江苏注协行业招聘渠道线索",
+      "url": "https://www.cicpa.org.cn/xxfb/topnews/202608/t20260817_66062.html",
+      "kind": "industry_channel_information",
+      "status": "官方报道；具体报名入口待核",
+      "sourceIds": [
+        "PC18"
+      ],
+      "use": "关注学院转发的省内行业专场、新发布企业名单；把岗位正文核到企业或学校平台。",
+      "deadline": null,
+      "limits": "不把报道中其他学校订单班机制移植为南审MPAcc政策。"
+    }
+  ],
+  "commuteZones": [
+    {
+      "id": "jiangbei",
+      "label": "江北：先按项目地址筛",
+      "commuteType": "same_city",
+      "route": "从所在园区与校门出发，比较文德路/雨山路接驳及目的地的公交、单车或地铁组合。",
+      "oneWayMinutes": null,
+      "sourceIds": [
+        "PC03",
+        "PC04",
+        "PC07"
+      ],
+      "facts": "学校处多个江北产业板块交界；同在江北不表示一定步行可达。",
+      "editorialAdvice": "若仍有课，可优先核对同城岗位，再用实际办公地点测通勤；不能只看‘江北’标签判断远近。",
+      "limits": "未测绘具体公司/客户地址，不提供固定分钟数。"
+    },
+    {
+      "id": "hexi",
+      "label": "河西：元通及周边办公片区",
+      "commuteType": "same_city_cross_river",
+      "route": "先接10号线到元通；再按办公楼确定步行、公交或换乘。",
+      "oneWayMinutes": null,
+      "sourceIds": [
+        "PC03",
+        "PC04",
+        "PC05",
+        "PC07"
+      ],
+      "facts": "元通为2号线与10号线换乘站，2026年政府信息确认部分新出入口连接周边商业建筑。",
+      "editorialAdvice": "看具体楼宇和出入口；固定办公室与客户现场分别测试，晚间离场也测一次。",
+      "limits": "不能把元通作为全部河西事务所的最近站，不能据办公片区保证通勤时间。"
+    },
+    {
+      "id": "xinjiekou",
+      "label": "新街口：10号线接2号线",
+      "commuteType": "same_city_cross_river",
+      "route": "先接10号线，在元通换2号线到新街口，之后按办公楼选择出口。",
+      "oneWayMinutes": null,
+      "sourceIds": [
+        "PC03",
+        "PC05",
+        "PC07"
+      ],
+      "facts": "迎新页确认新街口的2号线换乘，建邺政府页确认元通2/10号线换乘。",
+      "editorialAdvice": "把校门到车站、换乘、最后步行和到岗缓冲一起计算，不能只看地铁车上时间。",
+      "limits": "路线骨架为已读官方信息归纳，未做实时导航；临时调整需出行前核实。"
+    },
+    {
+      "id": "south-yuhua",
+      "label": "南京南站/雨花：先核具体园区",
+      "commuteType": "same_city_cross_river",
+      "route": "10号线至安德门，换1号线可连接南京南站；办公园区的最后一段另查。",
+      "oneWayMinutes": null,
+      "sourceIds": [
+        "PC03",
+        "PC06",
+        "PC07"
+      ],
+      "facts": "学校来校方案含南京南站—安德门—雨山路的轨道连接；10号线现已延伸过安德门。",
+      "editorialAdvice": "‘南京南站附近’与园区实际工位可能仍有接驳，特别核清加班后返程。",
+      "limits": "不使用安德门作为现行10号线终点，也不固化车次。"
+    },
+    {
+      "id": "suzhou",
+      "label": "苏州：按阶段驻留评估",
+      "commuteType": "cross_city",
+      "route": "先确定市区/园区等实际工作地址，再核铁路到站、市内接驳和住宿。",
+      "oneWayMinutes": null,
+      "sourceIds": [
+        "PC13",
+        "PC14",
+        "PC07"
+      ],
+      "facts": "本组未取得具体项目通勤与出勤班表。",
+      "editorialAdvice": "若岗位要求连续现场出勤，优先评估一段时间驻留与返校安排，不把每日跨城往返当默认方案。",
+      "limits": "这是时间安排建议，不表示铁路不可往返；无车次、房租或耗时保证。"
+    },
+    {
+      "id": "shanghai",
+      "label": "上海：实习与返校节点一起算",
+      "commuteType": "cross_city",
+      "route": "先确认项目组实际办公/客户地点，再核到沪交通、住宿、通勤与必要返校。",
+      "oneWayMinutes": null,
+      "sourceIds": [
+        "PC14",
+        "PC15"
+      ],
+      "facts": "具名MPAcc个案存在安永上海去向，但不证明所有实习都在分所办公室。",
+      "editorialAdvice": "连续现场项目应先把阶段住宿、论文节点和返校频率谈清，再决定是否接受。",
+      "limits": "驻留是编辑建议，不是岗位统一要求；未估票价或住宿成本。"
+    }
+  ],
+  "firstMileNotes": [
+    {
+      "text": "文德路与雨山路应按所在园区、当日校门通行与实时导航选择；2024官方直线距离不能替代实际步行。",
+      "sourceIds": [
+        "PC04",
+        "PC07"
+      ]
+    },
+    {
+      "text": "迎新接站班车只说明迎新安排，不能当日常实习上下班接驳。",
+      "sourceIds": [
+        "PC03"
+      ]
+    },
+    {
+      "text": "校车先核方向、学生可乘班次与最新安排；公开页未显示早晨浦口对外出发的普遍通勤保障。",
+      "sourceIds": [
+        "PC08"
+      ]
+    },
+    {
+      "text": "用实际工作日出发时段测一次到岗路线，并核晚间返程；出差项目另问差旅和住宿安排。",
+      "sourceIds": [
+        "PC07"
+      ],
+      "kind": "editorial_checklist"
+    }
+  ],
+  "practiceBoundary": {
+    "sourceIds": [
+      "PC13",
+      "PC14"
+    ],
+    "summary": "旧版手册提供集中派遣和自主实践两条路径；自行找到岗位仍应先核本级流程与学院、导师认可。",
+    "steps": [
+      "先向学院核对本年级实践要求、开始时间与材料版本。",
+      "拿具体单位、岗位、起止时间与导师讨论实践计划。",
+      "按要求走自主/派遣申请及学院审核；不要把企业offer当作实践认定已完成。",
+      "单位或项目中途变化先核变更流程，保留过程材料与单位鉴定。"
+    ],
+    "limits": "这是一份2024年封面、入口标2023级的公开手册归纳；不把183天、请假上限等直接宣称为未来年级统一现行标准。"
+  },
+  "localExtensions": [
+    {
+      "id": "local-tianheng",
+      "name": "天衡会计师事务所（特殊普通合伙）",
+      "schoolSource": "https://mpacc.nau.edu.cn/11520/list.htm",
+      "officialUrl": "https://www.jscpa.com.cn/",
+      "recruitUrl": "https://www.jscpa.com.cn/join-us/",
+      "officeAddress": "南京市建邺区江东中路106号万达广场商务楼B座19-20楼",
+      "businessDirections": [
+        "审计",
+        "税务",
+        "管理及IT咨询"
+      ],
+      "status": "校内基地与官方招聘长期入口；当前实习开放未确认",
+      "sourceIds": [
+        "PC12",
+        "PC16",
+        "PC17"
+      ],
+      "editorialWatch": "可继续查审计实习、数字化审计等当期公告。",
+      "limits": "官网招聘抽取仍见2025应届岗位，不称在招；实际工作地点以项目组为准。"
+    },
+    {
+      "id": "local-suyajincheng",
+      "name": "苏亚金诚会计师事务所",
+      "schoolSource": "https://mpacc.nau.edu.cn/11520/list.htm",
+      "officialUrl": null,
+      "recruitUrl": null,
+      "officeAddress": null,
+      "businessDirections": [],
+      "status": "校内基地关注线索；非当前在招",
+      "sourceIds": [
+        "PC12"
+      ],
+      "editorialWatch": "在校内就业网与机构当期公告中检索会计、审计实习；核对招聘实体名称。",
+      "limits": "本轮未取得可读机构官网或当期官方实习正文，不使用第三方薪资/地址作确定事实。"
+    },
+    {
+      "id": "local-lixinzhonglian",
+      "name": "立信中联会计师事务所（特殊普通合伙）江苏分所",
+      "schoolSource": "https://mpacc.nau.edu.cn/11520/list.htm",
+      "officialUrl": null,
+      "recruitUrl": null,
+      "officeAddress": null,
+      "businessDirections": [],
+      "status": "校内基地关注线索；非当前在招",
+      "sourceIds": [
+        "PC12"
+      ],
+      "editorialWatch": "与‘立信’分别检索，不混淆两家招聘系统；确认江苏岗位究竟在南京还是苏州。",
+      "limits": "本组官网读取超时；第三方出现苏州与南京岗位，未提升为已核官方实习。"
+    },
+    {
+      "id": "local-nanshenxidi",
+      "name": "南京南审希地会计师事务所有限公司",
+      "schoolSource": "https://mpacc.nau.edu.cn/11520/list.htm",
+      "officialUrl": null,
+      "recruitUrl": null,
+      "officeAddress": null,
+      "businessDirections": [],
+      "status": "校内基地关注线索；非当前在招",
+      "sourceIds": [
+        "PC12"
+      ],
+      "editorialWatch": "通过学院公开渠道核对合作是否持续、是否有当期实习发布与材料要求。",
+      "limits": "只有基地名单，未核当前招聘入口、工位地址或业务组。"
+    },
+    {
+      "id": "local-nangang",
+      "name": "南京钢铁股份有限公司",
+      "schoolSource": "https://mpacc.nau.edu.cn/11520/list.htm",
+      "officialUrl": null,
+      "recruitUrl": null,
+      "officeAddress": null,
+      "businessDirections": [],
+      "status": "企业财会方向拓展线索；非当前在招",
+      "sourceIds": [
+        "PC12"
+      ],
+      "editorialWatch": "可检索财务、内控、财务共享等关键词，作为事务所以外的能力训练备选。",
+      "limits": "关键词为编辑建议；基地名单未给当前岗位，也不能把公司名称当项目工位地点。"
+    },
+    {
+      "id": "local-wentou",
+      "name": "南京市文化投资控股集团有限责任公司",
+      "schoolSource": "https://mpacc.nau.edu.cn/11520/list.htm",
+      "officialUrl": null,
+      "recruitUrl": null,
+      "officeAddress": null,
+      "businessDirections": [],
+      "status": "企业财会方向拓展线索；非当前在招",
+      "sourceIds": [
+        "PC12"
+      ],
+      "editorialWatch": "可关注集团及所属企业官方财务、会计相关实习公告。",
+      "limits": "只有基地名单，未核当期岗位与工作地点。"
+    },
+    {
+      "id": "regional-suzhounewdistrict",
+      "name": "苏州新区高新技术产业股份有限公司",
+      "schoolSource": "https://mpacc.nau.edu.cn/11520/list.htm",
+      "officialUrl": null,
+      "recruitUrl": null,
+      "officeAddress": null,
+      "businessDirections": [],
+      "status": "苏州跨城拓展线索；非当前在招",
+      "sourceIds": [
+        "PC12"
+      ],
+      "editorialWatch": "若愿阶段驻留，可核具体子公司/岗位与实习周期后再比较。",
+      "limits": "不得按‘周边’写成每天从浦口往返方便，也没有当前开放名额证据。"
+    }
+  ],
+  "actionPlan": [
+    {
+      "stage": "先确定身份与可用时间",
+      "kind": "editorial_advice",
+      "sourceIds": [
+        "PC13",
+        "PC14"
+      ],
+      "items": [
+        "填写预计毕业年月、保研/拟入学或实际在读身份、可到岗日和能持续出勤的周期。",
+        "分别核对企业面向的毕业年份与学院本级实践要求，不把2027校招自动当作未来MPAcc毕业求职岗位。"
+      ]
+    },
+    {
+      "stage": "按岗位写一页简历",
+      "kind": "editorial_advice",
+      "sourceIds": [
+        "PC11",
+        "PC15"
+      ],
+      "items": [
+        "把会计/审计课程、真实项目和可核实技能写成任务、做法、结果，保留真实证书状态。",
+        "按所投业务线准备中文或英文版本；是否必须英文简历、英语成绩或CPA科目通过数，以岗位正文为准。",
+        "保研资格与尚未入学的硕士经历如实表述，不写成已经在读或已完成硕士课程。"
+      ]
+    },
+    {
+      "stage": "准备一个能讲清的专业样本",
+      "kind": "editorial_advice",
+      "sourceIds": [
+        "PC14"
+      ],
+      "items": [
+        "可用公开或自拟数据做一次勾稽核对、Excel清洗/透视和简短说明，训练准确、留痕与解释；这不是所有事务所统一考试要求。",
+        "复习审计证据、函证、底稿与风险识别的基本逻辑，能说明发现差异后如何核查。",
+        "所有作品只使用允许公开的数据，不携带原单位底稿或客户资料。"
+      ]
+    },
+    {
+      "stage": "投递后做对应复盘",
+      "kind": "editorial_advice",
+      "sourceIds": [
+        "PC11",
+        "PC15"
+      ],
+      "items": [
+        "记录机构、业务线、城市、公告毕业年份、岗位链接、提交状态和下一步；过期或正式校招单独标明。",
+        "围绕一段真实团队协作、发现错误并修正、处理多任务的经历准备表达。",
+        "实习后及时复盘问题与可匿名化案例，并与论文进度协调；不把个案去向当录用保证。"
+      ]
+    }
+  ],
+  "askBeforeAccepting": [
+    "这是实习还是正式校招？面向哪一届、哪一种学籍状态？",
+    "实际业务组、办公地址和客户现场在哪里？是否经常出差、是否可能临时换项目？",
+    "每周出勤、连续周期、到岗时间与请假安排是什么？能否与课程或论文节点协调？",
+    "谁指导实习、能接触哪些专业任务、反馈方式是什么？",
+    "薪资计算、发放、交通、差旅和住宿各由谁承担？以书面说明核实，不按行业印象估计。",
+    "能否提供学院要求的考勤、鉴定及盖章材料？学院是否认可该单位与岗位？",
+    "所谓留用是否另有考核、毕业年份和审批条件？不要把‘有机会’当承诺。"
+  ],
+  "budgetTemplate": {
+    "kind": "user_fill_template",
+    "fields": [
+      {
+        "label": "每周实际到岗天数",
+        "value": null,
+        "unit": "天"
+      },
+      {
+        "label": "门到门单程实测时间",
+        "value": null,
+        "unit": "分钟"
+      },
+      {
+        "label": "月交通支出",
+        "value": null,
+        "unit": "元"
+      },
+      {
+        "label": "住宿及必要返校支出",
+        "value": null,
+        "unit": "元"
+      },
+      {
+        "label": "岗位书面确认的实习收入",
+        "value": null,
+        "unit": "元"
+      }
+    ],
+    "note": "数值由本人按实际岗位填写，本研究不编固定通勤、房租或薪资。"
+  }
+}

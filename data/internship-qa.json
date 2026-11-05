@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "errors": [],
+  "summary": {
+    "batch": "internship-resources-104",
+    "firmCount": 12,
+    "bigFourCount": 4,
+    "domesticFirmCount": 8,
+    "resourceCount": 35,
+    "internshipResourceCount": 33,
+    "resourceStatusCounts": {
+      "program_open": 5,
+      "closed": 2,
+      "entry_only": 16,
+      "upcoming": 1,
+      "program_announced": 7,
+      "listing_seen": 3,
+      "historical": 1
+    },
+    "officeRecordCount": 29,
+    "officeRecordCountMeaning": "不同机构的办公地址组，不是不同城市数或实习岗位数。",
+    "newOfficialSources": 65,
+    "usedSourceCount": 69,
+    "socialTotal": 114,
+    "officialTotal": 182,
+    "resourceCountNote": "同一公告可能含多个项目；资源条目不是独立岗位、空缺人数或录取机会。"
+  },
+  "preservedHashes": {
+    "mentors": "4f13a7b3775f3baeb8c60c64a3995045724d16b283fcf51386d7a614c3821581",
+    "mentorCards": "8b22db1dc497f9006fa21a7c2e1fdc2a57bc49123e695ce91d359a7f6f3d24d1",
+    "directions": "0b51a3eac71cd495bf8e1784b34ff02f0b4d1230b126b6130e893f264aa7d6ac",
+    "socialPosts": "45b703dbe6673d641ea18425978bd9b3d8ec8f121f92735b92a53687ca1d546c",
+    "downloads": "29315667f076c1aad32470daf227b0d2a5a155e9064e336847b4a614494bd393"
+  },
+  "studentReviewsSha256": "690bf80efa08d7964cf2b68008979edbac3b310f816654de43b712288c5804b9",
+  "preserved": {
+    "mentors": 34,
+    "detailedCards": 17,
+    "chapters": 12,
+    "studentReviewRecords": 39,
+    "author": true,
+    "appEdition": true,
+    "existingSourceMetadata": true
+  },
+  "checks": [
+    "Project period is not an inferred deadline",
+    "Offices do not create job vacancies",
+    "National application channels do not create Nanjing job city tags",
+    "Graduate recruitment and preparation activities are not counted as internship resources"
+  ]
+}

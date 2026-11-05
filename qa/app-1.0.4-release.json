@@ -1,0 +1,77 @@
+{
+  "version": "1.0.4",
+  "frontendTests": 41,
+  "research": {
+    "firms": 12,
+    "resourceRecords": 35,
+    "resourceRecordsAreNotVacancies": true,
+    "officeRecords": 29,
+    "commuteZones": 6,
+    "campusChannels": 7,
+    "localExtensions": 7,
+    "newOfficialSources": 65,
+    "socialTotal": 114,
+    "officialTotal": 182,
+    "counts": {
+      "batch": "internship-resources-104",
+      "firmCount": 12,
+      "bigFourCount": 4,
+      "domesticFirmCount": 8,
+      "resourceCount": 35,
+      "internshipResourceCount": 33,
+      "resourceStatusCounts": {
+        "program_open": 5,
+        "closed": 2,
+        "entry_only": 16,
+        "upcoming": 1,
+        "program_announced": 7,
+        "listing_seen": 3,
+        "historical": 1
+      },
+      "officeRecordCount": 29,
+      "officeRecordCountMeaning": "不同机构的办公地址组，不是不同城市数或实习岗位数。",
+      "newOfficialSources": 65,
+      "usedSourceCount": 69,
+      "socialTotal": 114,
+      "officialTotal": 182,
+      "resourceCountNote": "同一公告可能含多个项目；资源条目不是独立岗位、空缺人数或录取机会。"
+    },
+    "mentorCountPreserved": 34,
+    "studentReviewRecordsPreserved": 39
+  },
+  "browserQA": {
+    "firmCityAndStatusFilters": true,
+    "cityDoesNotComeFromOffice": true,
+    "applicationWindowAndProjectPeriodSeparated": true,
+    "officeBranchesDistinguished": true,
+    "singleFourItemNavigation": true,
+    "originalScholarshipMaterialPreserved": true,
+    "letterDefaultClosed": true,
+    "letterToneRestrained": true,
+    "comparisonAndEditableSessionDraftsPreserved": true
+  },
+  "downloads": [
+    {
+      "id": "evidence-index",
+      "bytes": 352276,
+      "sha256": "892a45d1b7821f6148d6220ff39b6058132398ef693059d26ea957d7795244a3"
+    },
+    {
+      "id": "life-guide",
+      "bytes": 77514,
+      "sha256": "fb02cc0734cf5804867386b6ef05349ca27128eb217dc15717f67b935d26384f"
+    },
+    {
+      "id": "mentor-guide",
+      "bytes": 68020,
+      "sha256": "4779ac40bf414ab397567492adac80a10e430effffb69dc17c65a7c2c99178e5",
+      "documentUnchanged": true,
+      "matchesPreviouslyPublishedFile": true
+    }
+  ],
+  "nativeDataValidation": "passed",
+  "invalidDataVariantsRejected": 4,
+  "nativeBuild": "pending",
+  "runtimeSmoke": "pending",
+  "realDeviceTested": false
+}

@@ -59,9 +59,46 @@ def verify_apk(apk, project):
             target = "assets/guide/" + source.relative_to(project / "dist").as_posix()
             assert target in names, f"Missing offline asset: {target}"
             assert hashlib.sha256(package.read(target)).digest() == hashlib.sha256(source.read_bytes()).digest(), f"Stale offline asset: {target}"
-        verify_student_reviews(json.loads(package.read("assets/guide/data/site-data.json")))
+        data = json.loads(package.read("assets/guide/data/site-data.json"))
+        verify_student_reviews(data)
+        verify_internships(data)
+
+
+def verify_internships(data):
+    """Ensure the offline internship guide retains its evidence boundaries."""
+    guide = data.get("internships")
+    assert isinstance(guide, dict), "Missing offline internship resources"
+    firms = guide.get("firms", [])
+    assert len(firms) == 12 and len({firm["id"] for firm in firms}) == 12, "Incomplete or duplicate internship firms"
+    assert sum(firm["group"] == "big_four" for firm in firms) == 4, "Four international firms required"
+    assert sum(firm["group"] == "domestic" for firm in firms) == 8, "Eight domestic firms required"
+    statuses = {"program_open", "program_announced", "listing_seen", "entry_only", "closed", "historical", "upcoming"}
+    kinds = {"internship_program", "job_listing", "channel", "historical", "graduate_recruitment", "preparation_program"}
+    registry = data["sourceRegistry"]
+    ids = set()
+    for firm in firms:
+        assert firm.get("entryLinks"), "Firm lacks a recruitment entry"
+        for entry in firm["entryLinks"]:
+            assert entry.get("url", "").startswith(("https://", "http://")), "Invalid recruitment entry URL"
+        assert firm.get("resources"), "Firm lacks resource records"
+        for resource in firm["resources"]:
+            assert resource.get("id") and resource["id"] not in ids, "Duplicate or missing internship resource id"
+            ids.add(resource["id"])
+            assert resource.get("status") in statuses and resource.get("kind") in kinds, "Unknown internship resource classification"
+            sources = resource.get("sourceIds")
+            assert sources and all(code in registry for code in sources), "Internship resource lacks registered sources"
+            assert resource.get("url", "").startswith(("https://", "http://")), "Invalid internship source URL"
+            assert isinstance(resource.get("cityTags"), list), "Missing explicit project-city list"
+            assert all(field in resource for field in ("applicationWindow", "period", "deadline")), "Application window, implementation period and deadline must remain separate"
+            deadline = resource["deadline"]
+            assert deadline is None or re.fullmatch(r"\d{4}-\d{2}-\d{2}", deadline), "Unknown deadline must remain null"
+            assert resource.get("summary"), "Missing internship resource context"
+            if resource["status"] != "entry_only":
+                assert resource.get("limits"), "Missing program or listing scope limits"
+            if resource["kind"] in ("graduate_recruitment", "preparation_program"):
+                assert resource["status"] != "program_open", "Non-internship program mislabeled as an open internship window"
 
 
 if __name__ == "__main__":
     verify_apk(Path(sys.argv[1]).resolve(), Path(__file__).resolve().parent.parent)
-    print("PASS: APK structure, every dist reading asset and all 34 student-review dossiers match (installers excluded)")
+    print("PASS: APK structure, every dist reading asset, 34 student-review dossiers and 12 internship firms match (installers excluded)")

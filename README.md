@@ -40,3 +40,9 @@ Android 返回键会先关闭资料详情；自动切换离线资料后会清理
 34位导师逐人记录评价覆盖与缺口。学生经历前置展示，标明评论者、接触关系、学位阶段、年份、本人经历或转述及原始来源；推荐理由与适配提醒引用具体经历，缺证时提供核实问题。姓名缩写只作检索线索，不按名单匹配推定实名。可按评价覆盖类型筛选，并在导师对比中核对这些边界。
 
 评价合并脚本为 `data/build_student_review_dossiers.py`，发布用研究输入放在 `data/reviews_research/`。`data/student-review-coverage.json` 记录逐人覆盖，`data/student-review-sources.json` 保留来源与阅读范围。Excel索引另附学生评价总览。
+
+### 1.0.4 实习资源与申请准备
+
+学习生活第九章新增四大、国内所与南京周边实习资源，可按机构、项目地区和资源状态筛选。分别显示申请资格、出勤、时长、项目期、投递窗口和已公布的截止日；官方入口、项目公告、待核列表、已过窗口及正式校招分别标注。办公室和合作基地不代表当前岗位或名额，苏沪机会需另核实际驻地及课业安排。
+
+实习研究脚本为 `data/build_internship_resources.py`，安全输入放在 `data/internships_research/`，来源与QA记录为 `data/internship-sources.json`、`data/internship-qa.json`。网页、Word、Excel与应用版同步；信的文字改为平常、克制的祝福。

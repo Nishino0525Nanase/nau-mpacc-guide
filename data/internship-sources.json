@@ -1,0 +1,2456 @@
+{
+  "batch": "internship-resources-104",
+  "sourceCodes": [
+    "D601",
+    "F02",
+    "I801",
+    "I802",
+    "I803",
+    "I804",
+    "I805",
+    "I806",
+    "I807",
+    "I808",
+    "I809",
+    "I810",
+    "I811",
+    "I812",
+    "I813",
+    "I814",
+    "I815",
+    "I816",
+    "I817",
+    "I818",
+    "I819",
+    "I820",
+    "I821",
+    "I822",
+    "I823",
+    "I824",
+    "I825",
+    "I826",
+    "I827",
+    "I828",
+    "I829",
+    "I830",
+    "I831",
+    "I832",
+    "I833",
+    "I834",
+    "I835",
+    "I836",
+    "I837",
+    "I838",
+    "I839",
+    "I840",
+    "I841",
+    "I842",
+    "I843",
+    "I844",
+    "I845",
+    "I846",
+    "I847",
+    "I848",
+    "I849",
+    "I850",
+    "I851",
+    "I852",
+    "I853",
+    "I854",
+    "I855",
+    "I856",
+    "I857",
+    "I858",
+    "I859",
+    "I860",
+    "I861",
+    "I862",
+    "I863",
+    "I864",
+    "I865",
+    "R307",
+    "R311"
+  ],
+  "sources": [
+    {
+      "code": "D601",
+      "kind": "official",
+      "title": "“薪火相传，职引未来”会计学院研究生毕业生经验分享会（2026）",
+      "url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "platform": "南京审计大学会计学院官网",
+      "date": "2026-06-26",
+      "author": null,
+      "population": "2026年毕业生分享会；胡朝会、陆欣昀、林洛妤由正文明确为2023级会计专硕，蔡云霏为会计学硕，分开采用。",
+      "summary": "三位具名会计专硕分别分享申博准备、江苏电网求职和安永实习与论文统筹，可作为不同发展路径的具体准备例子。",
+      "points": [
+        "胡朝会分享科研成果积累、工作论文、研究计划及院校导师匹配；正文记录其升学去向为上海财经大学博士研究生。",
+        "陆欣昀从流程、笔面试差异、简历与复盘介绍江苏电网求职；正文记录其去向为国网江苏常州供电单位。",
+        "林洛妤强调实习后沉淀案例、按岗位补技能，并统筹实习与论文；正文记录其去向为安永华明上海分所。",
+        "三条路径可用于整理个人的论文、实习与求职时间表；公务员分享者为会计学硕，不当作MPAcc专属经验。"
+      ],
+      "limits": "新闻记录3个具名个案，不是完整就业样本，不能推算就业率、工资、所有学生的去向或相同准备必然成功。未读论文全文，不猜其学位导师；只作2026届毕业经验而非2027招录规则。",
+      "readingScope": "官方正文L81—L131已实际读完；以L89、L111、L122明确区分专硕，L100明确学硕；照片未独立审读。",
+      "changeType": "new",
+      "advisorNames": [],
+      "label": "“薪火相传，职引未来”会计学院研究生毕业生经验分享会（2026）",
+      "originalUrl": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "expansionBatch": "research-102",
+      "additionalUrls": [],
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "重读林洛妤2023级会计专硕身份、安永实习经验及上海分所毕业去向段。",
+          "facts": [
+            "具名2023级MPAcc林洛妤分享安永实习与校招准备，毕业去向为安永华明上海分所。",
+            "她强调实习后复盘案例、按岗位补短板，并统筹论文和求职。"
+          ],
+          "limits": [
+            "一个具名个案，不是录取概率、通用面试题或所有学生可获得相同机会；既有D601复读不加来源数。"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "会计硕士专业学位研究生培养方案（125300）",
+      "url": "https://mpacc.nau.edu.cn/11517/list.htm",
+      "date": "页面未标公开日期/适用级别",
+      "kind": "官方",
+      "original_id": "F02",
+      "code": "F02",
+      "label": "会计硕士专业学位研究生培养方案（125300）",
+      "originalUrl": "https://mpacc.nau.edu.cn/11517/list.htm",
+      "canonicalUrl": "https://mpacc.nau.edu.cn/11517/list.htm",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "读取社会实践、计划、考核要求；不改原方案措辞。",
+          "facts": [
+            "公开方案允许社会实践集中与分段结合，包含实践计划、总结及单位鉴定评价。",
+            "分多个单位实践时，每个单位需出具鉴定评价。"
+          ],
+          "limits": [
+            "网页未明确本级施行日期；个人应核对自己年级的培养方案和学院通知，不能仅凭网页数字安排实习。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I801",
+      "title": "普华永道中国：校园招聘",
+      "label": "普华永道中国：校园招聘",
+      "url": "https://www.pwccn.com/zh/careers/students.html",
+      "originalUrl": "https://www.pwccn.com/zh/careers/students.html",
+      "canonicalUrl": "https://www.pwccn.com/zh/careers/students.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "实习项目面向2028届及以后；本期秋季申请、冬季起；LEAP本期春季网申已过",
+      "points": [
+        "实习项目面向2028届及以后",
+        "本期秋季申请、冬季起；LEAP本期春季网申已过"
+      ],
+      "limitations": "动态职位系统重定向循环；未确认南京实习空缺",
+      "readingScopes": [
+        "实习计划、LEAP及相关申请步骤；点开官方立即申请链接"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "实习计划、LEAP及相关申请步骤；点开官方立即申请链接",
+          "facts": [
+            "实习项目面向2028届及以后",
+            "本期秋季申请、冬季起；LEAP本期春季网申已过"
+          ],
+          "limits": [
+            "动态职位系统重定向循环；未确认南京实习空缺"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I802",
+      "title": "联系我们 - 南京办公室",
+      "label": "联系我们 - 南京办公室",
+      "url": "https://www.pwccn.com/zh/about-us/office-locations/our-office-in-nanjing.html",
+      "originalUrl": "https://www.pwccn.com/zh/about-us/office-locations/our-office-in-nanjing.html",
+      "canonicalUrl": "https://www.pwccn.com/zh/about-us/office-locations/our-office-in-nanjing.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "鼓楼区中央路201号金茂广场南塔12A01",
+      "points": [
+        "鼓楼区中央路201号金茂广场南塔12A01"
+      ],
+      "limitations": "办公室地址，不代表实习到岗点或在招",
+      "readingScopes": [
+        "办公地址正文"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "办公地址正文",
+          "facts": [
+            "鼓楼区中央路201号金茂广场南塔12A01"
+          ],
+          "limits": [
+            "办公室地址，不代表实习到岗点或在招"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I803",
+      "title": "联系我们 - 苏州办公室",
+      "label": "联系我们 - 苏州办公室",
+      "url": "https://www.pwccn.com/zh/about-us/office-locations/our-office-in-suzhou.html",
+      "originalUrl": "https://www.pwccn.com/zh/about-us/office-locations/our-office-in-suzhou.html",
+      "canonicalUrl": "https://www.pwccn.com/zh/about-us/office-locations/our-office-in-suzhou.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "苏州工业园区苏州大道西9号中海财富中心西塔42楼02室",
+      "points": [
+        "苏州工业园区苏州大道西9号中海财富中心西塔42楼02室"
+      ],
+      "limitations": "办公室地址，不代表实习到岗点或在招",
+      "readingScopes": [
+        "办公地址正文"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "办公地址正文",
+          "facts": [
+            "苏州工业园区苏州大道西9号中海财富中心西塔42楼02室"
+          ],
+          "limits": [
+            "办公室地址，不代表实习到岗点或在招"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I804",
+      "title": "联系我们 - 上海办公室",
+      "label": "联系我们 - 上海办公室",
+      "url": "https://www.pwccn.com/zh/about-us/office-locations/our-office-in-shanghai.html",
+      "originalUrl": "https://www.pwccn.com/zh/about-us/office-locations/our-office-in-shanghai.html",
+      "canonicalUrl": "https://www.pwccn.com/zh/about-us/office-locations/our-office-in-shanghai.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "湖滨路202号普华永道中心、东育路588号前滩中心",
+      "points": [
+        "湖滨路202号普华永道中心、东育路588号前滩中心"
+      ],
+      "limitations": "上海两处办公点，投递前确认具体团队地点",
+      "readingScopes": [
+        "办公地址正文，两处地点均读取"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "办公地址正文，两处地点均读取",
+          "facts": [
+            "湖滨路202号普华永道中心、东育路588号前滩中心"
+          ],
+          "limits": [
+            "上海两处办公点，投递前确认具体团队地点"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I805",
+      "title": "EY安永2026-2027安永秋季应届毕业生招聘及审计寒假实习生招聘，网申启动",
+      "label": "EY安永2026-2027安永秋季应届毕业生招聘及审计寒假实习生招聘，网申启动",
+      "url": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20268",
+      "originalUrl": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20268",
+      "canonicalUrl": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20268",
+      "date": "2026-09-07",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "寒假实习2028届优先；2027年1初—3末，全勤优先；网申截止2026-10-16",
+      "points": [
+        "寒假实习2028届优先；2027年1初—3末，全勤优先；网申截止2026-10-16"
+      ],
+      "limitations": "行业协会转载，不是11月5日招聘系统实时空缺；原网申期已过",
+      "readingScopes": [
+        "广东注协全文；页面来源注明安永校招官网"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "广东注协全文；页面来源注明安永校招官网",
+          "facts": [
+            "寒假实习2028届优先；2027年1初—3末，全勤优先；网申截止2026-10-16"
+          ],
+          "limits": [
+            "行业协会转载，不是11月5日招聘系统实时空缺；原网申期已过"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I806",
+      "title": "Student programs in Chinese mainland",
+      "label": "Student programs in Chinese mainland",
+      "url": "https://www.ey.com/en_cn/careers/student-programs-in-chinese-mainland",
+      "originalUrl": "https://www.ey.com/en_cn/careers/student-programs-in-chinese-mainland",
+      "canonicalUrl": "https://www.ey.com/en_cn/careers/student-programs-in-chinese-mainland",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "寒假实习通用条件；Elite仅面向特定全职录用者并由安永邀请",
+      "points": [
+        "寒假实习通用条件；Elite仅面向特定全职录用者并由安永邀请"
+      ],
+      "limitations": "通用项目说明未列当前城市空缺和截止时间",
+      "readingScopes": [
+        "Winter Internship及Elite Program正文与条件"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "Winter Internship及Elite Program正文与条件",
+          "facts": [
+            "寒假实习通用条件；Elite仅面向特定全职录用者并由安永邀请"
+          ],
+          "limits": [
+            "通用项目说明未列当前城市空缺和截止时间"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I807",
+      "title": "大中华区 — 安永办公室地点",
+      "label": "大中华区 — 安永办公室地点",
+      "url": "https://www.ey.com/zh_cn/locations/greater-china",
+      "originalUrl": "https://www.ey.com/zh_cn/locations/greater-china",
+      "canonicalUrl": "https://www.ey.com/zh_cn/locations/greater-china",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "南京国金中心二期；上海环球金融中心；苏州现代传媒广场",
+      "points": [
+        "南京国金中心二期；上海环球金融中心；苏州现代传媒广场"
+      ],
+      "limitations": "官网地址不等于实习实际到岗地点或有空缺；未估算通勤时间",
+      "readingScopes": [
+        "南京、上海、苏州办公地址段落"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "南京、上海、苏州办公地址段落",
+          "facts": [
+            "南京国金中心二期；上海环球金融中心；苏州现代传媒广场"
+          ],
+          "limits": [
+            "官网地址不等于实习实际到岗地点或有空缺；未估算通勤时间"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I808",
+      "title": "中国大陆学生工作机会",
+      "label": "中国大陆学生工作机会",
+      "url": "https://www.ey.com/zh_cn/careers/student-programs-in-chinese-mainland",
+      "originalUrl": "https://www.ey.com/zh_cn/careers/student-programs-in-chinese-mainland",
+      "canonicalUrl": "https://www.ey.com/zh_cn/careers/student-programs-in-chinese-mainland",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "官网导向careers.ey.com.cn；列寒假实习与其他学生项目",
+      "points": [
+        "官网导向careers.ey.com.cn；列寒假实习与其他学生项目"
+      ],
+      "limitations": "中文页折叠详情未被检索器完整抽取，具体通用说明另读英文页",
+      "readingScopes": [
+        "学生项目导航及官网申请链接"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "学生项目导航及官网申请链接",
+          "facts": [
+            "官网导向careers.ey.com.cn；列寒假实习与其他学生项目"
+          ],
+          "limits": [
+            "中文页折叠详情未被检索器完整抽取，具体通用说明另读英文页"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I809",
+      "title": "德勤中国：实习生计划",
+      "label": "德勤中国：实习生计划",
+      "url": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-program.html",
+      "originalUrl": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-program.html",
+      "canonicalUrl": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-program.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "页面显示冬季寒假招募已启动；审计、税务、咨询寒暑假实习通常2至4个月；主要面向未来1至2年毕业者；项目实习的时长和每周天数按部门需求确定",
+      "points": [
+        "页面显示冬季寒假招募已启动；审计、税务、咨询寒暑假实习通常2至4个月",
+        "主要面向未来1至2年毕业者；项目实习的时长和每周天数按部门需求确定"
+      ],
+      "limitations": "正文未注明统一报名截止和本季年份；未核到南京具体岗位空缺。项目期不是网申截止。",
+      "readingScopes": [
+        "实习正文、两类项目、立即申请官方链接"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "实习正文、两类项目、立即申请官方链接",
+          "facts": [
+            "页面显示冬季寒假招募已启动；审计、税务、咨询寒暑假实习通常2至4个月",
+            "主要面向未来1至2年毕业者；项目实习的时长和每周天数按部门需求确定"
+          ],
+          "limits": [
+            "正文未注明统一报名截止和本季年份；未核到南京具体岗位空缺。项目期不是网申截止。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I810",
+      "title": "德勤中国：南京",
+      "label": "德勤中国：南京",
+      "url": "https://www.deloitte.com/cn/zh/offices/nanjing.html",
+      "originalUrl": "https://www.deloitte.com/cn/zh/offices/nanjing.html",
+      "canonicalUrl": "https://www.deloitte.com/cn/zh/offices/nanjing.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "建邺区江东中路347号国金中心办公楼一期40层",
+      "points": [
+        "建邺区江东中路347号国金中心办公楼一期40层"
+      ],
+      "limitations": "办公室地址，不代表实习在招或客户现场位置。",
+      "readingScopes": [
+        "南京办公地址正文"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "南京办公地址正文",
+          "facts": [
+            "建邺区江东中路347号国金中心办公楼一期40层"
+          ],
+          "limits": [
+            "办公室地址，不代表实习在招或客户现场位置。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I811",
+      "title": "Deloitte China: Suzhou",
+      "label": "Deloitte China: Suzhou",
+      "url": "https://www.deloitte.com/cn/en/offices/suzhou.html",
+      "originalUrl": "https://www.deloitte.com/cn/en/offices/suzhou.html",
+      "canonicalUrl": "https://www.deloitte.com/cn/en/offices/suzhou.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "苏州工业园区苏绣路58号苏州中心广场58幢A座24层",
+      "points": [
+        "苏州工业园区苏绣路58号苏州中心广场58幢A座24层"
+      ],
+      "limitations": "苏州为跨城备选；没有据此估算浦口每日通勤。",
+      "readingScopes": [
+        "苏州办公地址正文"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "苏州办公地址正文",
+          "facts": [
+            "苏州工业园区苏绣路58号苏州中心广场58幢A座24层"
+          ],
+          "limits": [
+            "苏州为跨城备选；没有据此估算浦口每日通勤。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I812",
+      "title": "Deloitte China: Shanghai",
+      "label": "Deloitte China: Shanghai",
+      "url": "https://www.deloitte.com/cn/en/offices/shanghai.html",
+      "originalUrl": "https://www.deloitte.com/cn/en/offices/shanghai.html",
+      "canonicalUrl": "https://www.deloitte.com/cn/en/offices/shanghai.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "上海市延安东路222号外滩中心30楼",
+      "points": [
+        "上海市延安东路222号外滩中心30楼"
+      ],
+      "limitations": "上海为跨城备选；需另核住宿与实际项目地。",
+      "readingScopes": [
+        "上海办公地址正文"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "上海办公地址正文",
+          "facts": [
+            "上海市延安东路222号外滩中心30楼"
+          ],
+          "limits": [
+            "上海为跨城备选；需另核住宿与实际项目地。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I813",
+      "title": "德勤中国：我们需要什么样的人才",
+      "label": "德勤中国：我们需要什么样的人才",
+      "url": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-who-we-are-looking-for.html",
+      "originalUrl": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-who-we-are-looking-for.html",
+      "canonicalUrl": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-who-we-are-looking-for.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "未来1至2年毕业、专业不限；强调学习成绩、快速学习、分析、判断、沟通与协作",
+      "points": [
+        "未来1至2年毕业、专业不限；强调学习成绩、快速学习、分析、判断、沟通与协作"
+      ],
+      "limitations": "通用选拔要素，不是南京具体岗位的全部任职条件。",
+      "readingScopes": [
+        "页面人才要求正文"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "页面人才要求正文",
+          "facts": [
+            "未来1至2年毕业、专业不限；强调学习成绩、快速学习、分析、判断、沟通与协作"
+          ],
+          "limits": [
+            "通用选拔要素，不是南京具体岗位的全部任职条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I814",
+      "title": "Deloitte China: Internship FAQs",
+      "label": "Deloitte China: Internship FAQs",
+      "url": "https://www.deloitte.com/cn/en/careers/explore-your-fit/students/internship-faq.html",
+      "originalUrl": "https://www.deloitte.com/cn/en/careers/explore-your-fit/students/internship-faq.html",
+      "canonicalUrl": "https://www.deloitte.com/cn/en/careers/explore-your-fit/students/internship-faq.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "寒暑假实习2至4个月，项目实习按项目长度；通用FAQ说明提交前核对选择和资料",
+      "points": [
+        "寒暑假实习2至4个月，项目实习按项目长度；通用FAQ说明提交前核对选择和资料"
+      ],
+      "limitations": "FAQ为长期说明；申请系统若有本期更新规则，以系统及正式通知为准。",
+      "readingScopes": [
+        "问题与回答正文"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "问题与回答正文",
+          "facts": [
+            "寒暑假实习2至4个月，项目实习按项目长度；通用FAQ说明提交前核对选择和资料"
+          ],
+          "limits": [
+            "FAQ为长期说明；申请系统若有本期更新规则，以系统及正式通知为准。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I815",
+      "title": "毕马威：审计与鉴证实习",
+      "label": "毕马威：审计与鉴证实习",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html",
+      "originalUrl": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html",
+      "canonicalUrl": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "寒假实习期一般在2026年10月至2027年5月；审计暑期2027年6月至9月、春季开放；内地审计先锋者2026至2027招聘年度面向2028年应届毕业生，可在审计寒假申请表选择报名",
+      "points": [
+        "寒假实习期一般在2026年10月至2027年5月；审计暑期2027年6月至9月、春季开放",
+        "内地审计先锋者2026至2027招聘年度面向2028年应届毕业生，可在审计寒假申请表选择报名"
+      ],
+      "limitations": "部门页审计暑期写6月至9月，总览写7月至9月，不能统一替每份JD定开始日；计划选拔和转正不是保证。",
+      "readingScopes": [
+        "审计实习各期、内地审计先锋者计划及申请链接"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "审计实习各期、内地审计先锋者计划及申请链接",
+          "facts": [
+            "寒假实习期一般在2026年10月至2027年5月；审计暑期2027年6月至9月、春季开放",
+            "内地审计先锋者2026至2027招聘年度面向2028年应届毕业生，可在审计寒假申请表选择报名"
+          ],
+          "limits": [
+            "部门页审计暑期写6月至9月，总览写7月至9月，不能统一替每份JD定开始日；计划选拔和转正不是保证。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I816",
+      "title": "毕马威：实习生项目",
+      "label": "毕马威：实习生项目",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp.html",
+      "originalUrl": "https://kpmg.com/cn/zh/careers/campus/basecamp.html",
+      "canonicalUrl": "https://kpmg.com/cn/zh/careers/campus/basecamp.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "面向本科或硕士在读；寒假窗口2026年10月至2027年5月，常规窗口2026年10月至2027年9月；2027暑期投递预计春季开放；南京、苏州、上海的具体岗位需另核",
+      "points": [
+        "面向本科或硕士在读；寒假窗口2026年10月至2027年5月，常规窗口2026年10月至2027年9月",
+        "2027暑期投递预计春季开放；南京、苏州、上海的具体岗位需另核"
+      ],
+      "limitations": "上述为实习项目期或预计开放时间，不是网申截止。Moka打开重定向循环，未核具体JD。",
+      "readingScopes": [
+        "适用人群、招聘年度项目期、华东及华西区入口；点击申请链接"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "适用人群、招聘年度项目期、华东及华西区入口；点击申请链接",
+          "facts": [
+            "面向本科或硕士在读；寒假窗口2026年10月至2027年5月，常规窗口2026年10月至2027年9月",
+            "2027暑期投递预计春季开放；南京、苏州、上海的具体岗位需另核"
+          ],
+          "limits": [
+            "上述为实习项目期或预计开放时间，不是网申截止。Moka打开重定向循环，未核具体JD。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I817",
+      "title": "毕马威：税务实习",
+      "label": "毕马威：税务实习",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/tax.html",
+      "originalUrl": "https://kpmg.com/cn/zh/careers/campus/basecamp/tax.html",
+      "canonicalUrl": "https://kpmg.com/cn/zh/careers/campus/basecamp/tax.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "税务部门实习全年按业务需求发布，建议及时查询具体开放职位",
+      "points": [
+        "税务部门实习全年按业务需求发布，建议及时查询具体开放职位"
+      ],
+      "limitations": "没有列当前南京税务实习人数、统一出勤、津贴或截止；不据此声称南京正在招。",
+      "readingScopes": [
+        "税务常规实习及官方申请入口"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "税务常规实习及官方申请入口",
+          "facts": [
+            "税务部门实习全年按业务需求发布，建议及时查询具体开放职位"
+          ],
+          "limits": [
+            "没有列当前南京税务实习人数、统一出勤、津贴或截止；不据此声称南京正在招。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I818",
+      "title": "毕马威：咨询实习",
+      "label": "毕马威：咨询实习",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/advisory.html",
+      "originalUrl": "https://kpmg.com/cn/zh/careers/campus/basecamp/advisory.html",
+      "canonicalUrl": "https://kpmg.com/cn/zh/careers/campus/basecamp/advisory.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "常规咨询实习全年根据部门需求发布；香港Placement另有通常5个月以上要求",
+      "points": [
+        "常规咨询实习全年根据部门需求发布；香港Placement另有通常5个月以上要求"
+      ],
+      "limitations": "香港长期项目不作为南京周边岗位；此处只采用常规咨询入口。",
+      "readingScopes": [
+        "常规咨询实习及香港Placement区分"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "常规咨询实习及香港Placement区分",
+          "facts": [
+            "常规咨询实习全年根据部门需求发布；香港Placement另有通常5个月以上要求"
+          ],
+          "limits": [
+            "香港长期项目不作为南京周边岗位；此处只采用常规咨询入口。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I819",
+      "title": "加入毕马威交付中心",
+      "label": "加入毕马威交付中心",
+      "url": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdc.html",
+      "originalUrl": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdc.html",
+      "canonicalUrl": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdc.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "南京交付中心于2017年成立；面向审计、税务、咨询与业务支持团队开展标准化智能化交付；网页单列校园招聘实习生入口",
+      "points": [
+        "南京交付中心于2017年成立；面向审计、税务、咨询与业务支持团队开展标准化智能化交付",
+        "网页单列校园招聘实习生入口"
+      ],
+      "limitations": "交付支持与前线审计项目组职责不同；本轮未读到南京具体实习JD和精确办公地址。",
+      "readingScopes": [
+        "南京交付中心介绍、业务支持职责和校园实习申请按钮"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "南京交付中心介绍、业务支持职责和校园实习申请按钮",
+          "facts": [
+            "南京交付中心于2017年成立；面向审计、税务、咨询与业务支持团队开展标准化智能化交付",
+            "网页单列校园招聘实习生入口"
+          ],
+          "limits": [
+            "交付支持与前线审计项目组职责不同；本轮未读到南京具体实习JD和精确办公地址。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I820",
+      "title": "毕马威智能创新空间招聘",
+      "label": "毕马威智能创新空间招聘",
+      "url": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdi.html",
+      "originalUrl": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdi.html",
+      "canonicalUrl": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdi.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "技术研发交付团队涉及云计算、大数据和人工智能；2017年在南京设立中心；官网提供实习与应届机会入口，欢迎理工科背景毕业生或相关经验人才",
+      "points": [
+        "技术研发交付团队涉及云计算、大数据和人工智能；2017年在南京设立中心",
+        "官网提供实习与应届机会入口，欢迎理工科背景毕业生或相关经验人才"
+      ],
+      "limitations": "不把技术中心岗位等同于传统财报审计；MPAcc能否申请应看每份JD，不能保证接受所有专业。",
+      "readingScopes": [
+        "技术中心定位、南京设点及实习/应届申请入口"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "技术中心定位、南京设点及实习/应届申请入口",
+          "facts": [
+            "技术研发交付团队涉及云计算、大数据和人工智能；2017年在南京设立中心",
+            "官网提供实习与应届机会入口，欢迎理工科背景毕业生或相关经验人才"
+          ],
+          "limits": [
+            "不把技术中心岗位等同于传统财报审计；MPAcc能否申请应看每份JD，不能保证接受所有专业。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I821",
+      "title": "毕马威智能创新空间：位置",
+      "label": "毕马威智能创新空间：位置",
+      "url": "https://kpmg.com/cn/zh/about/office-locations/kpmg-digital-ignition-centre.html",
+      "originalUrl": "https://kpmg.com/cn/zh/about/office-locations/kpmg-digital-ignition-centre.html",
+      "canonicalUrl": "https://kpmg.com/cn/zh/about/office-locations/kpmg-digital-ignition-centre.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "南京鼓楼区集庆门大街272号苏宁慧谷E07-1号楼2101-2107室",
+      "points": [
+        "南京鼓楼区集庆门大街272号苏宁慧谷E07-1号楼2101-2107室"
+      ],
+      "limitations": "此为KDI官方位置；不将其未经核实地套用为所有南京KDC或实习岗位地址。",
+      "readingScopes": [
+        "南京地点正文"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "南京地点正文",
+          "facts": [
+            "南京鼓楼区集庆门大街272号苏宁慧谷E07-1号楼2101-2107室"
+          ],
+          "limits": [
+            "此为KDI官方位置；不将其未经核实地套用为所有南京KDC或实习岗位地址。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I822",
+      "title": "毕马威：办事处地址",
+      "label": "毕马威：办事处地址",
+      "url": "https://kpmg.com/cn/zh/about/office-locations.html",
+      "originalUrl": "https://kpmg.com/cn/zh/about/office-locations.html",
+      "canonicalUrl": "https://kpmg.com/cn/zh/about/office-locations.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "南京中山路18号德基广场写字楼12楼；苏州中心广场D座2301-2；上海南京西路1266号恒隆广场2号楼25楼及申长路988弄虹桥万科中心7号楼；无锡新吴区和风路32号汇业商务广场8号楼1801",
+      "points": [
+        "南京中山路18号德基广场写字楼12楼；苏州中心广场D座2301-2",
+        "上海南京西路1266号恒隆广场2号楼25楼及申长路988弄虹桥万科中心7号楼",
+        "无锡新吴区和风路32号汇业商务广场8号楼1801"
+      ],
+      "limitations": "仅办公地点；不表示有实习名额、实际到岗点或能每天回浦口。",
+      "readingScopes": [
+        "南京、上海、苏州及无锡办公室段落"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "南京、上海、苏州及无锡办公室段落",
+          "facts": [
+            "南京中山路18号德基广场写字楼12楼；苏州中心广场D座2301-2",
+            "上海南京西路1266号恒隆广场2号楼25楼及申长路988弄虹桥万科中心7号楼",
+            "无锡新吴区和风路32号汇业商务广场8号楼1801"
+          ],
+          "limits": [
+            "仅办公地点；不表示有实习名额、实际到岗点或能每天回浦口。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I823",
+      "title": "立信官方实习生招聘列表",
+      "label": "立信官方实习生招聘列表",
+      "url": "https://bdochina.zhiye.com/intern/jobs",
+      "originalUrl": "https://bdochina.zhiye.com/intern/jobs",
+      "canonicalUrl": "https://bdochina.zhiye.com/intern/jobs",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "立信设有独立实习生招聘入口。",
+      "points": [
+        "立信设有独立实习生招聘入口。"
+      ],
+      "limitations": "入口可用不等于南京当前在招；应进入后按地点、职位类型和正文核对。",
+      "readingScopes": [
+        "已确认官网入口及URL；直接打开为动态页面，无可读职位列表行。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "已确认官网入口及URL；直接打开为动态页面，无可读职位列表行。",
+          "facts": [
+            "立信设有独立实习生招聘入口。"
+          ],
+          "limits": [
+            "入口可用不等于南京当前在招；应进入后按地点、职位类型和正文核对。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I824",
+      "title": "审计实习生（26年9月-11月）",
+      "label": "审计实习生（26年9月-11月）",
+      "url": "https://bdochina.zhiye.com/intern/detail?jobAdId=bcb96a34-f2cf-4a1d-95aa-470e54b59b44",
+      "originalUrl": "https://bdochina.zhiye.com/intern/detail?jobAdId=bcb96a34-f2cf-4a1d-95aa-470e54b59b44",
+      "canonicalUrl": "https://bdochina.zhiye.com/intern/detail?jobAdId=bcb96a34-f2cf-4a1d-95aa-470e54b59b44",
+      "date": "2026-09-14",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "官方职位标注全国，内容为审计底稿及资料整理等辅助工作。；本科以上在校生，财会类专业优先；要求周全勤、自备笔记本，能完整提供约两个月实习者优先，并需适应出差。；该岗位说明上海本地项目不提供住宿。",
+      "points": [
+        "官方职位标注全国，内容为审计底稿及资料整理等辅助工作。",
+        "本科以上在校生，财会类专业优先；要求周全勤、自备笔记本，能完整提供约两个月实习者优先，并需适应出差。",
+        "该岗位说明上海本地项目不提供住宿。"
+      ],
+      "limitations": "没有核得南京项目分配或剩余名额；9-11月是职位名称中的时段，不是明确申请截止日。；全勤不能自动换算成每周5天，也不能据此判断周末安排。",
+      "readingScopes": [
+        "已读官方招聘索引所列完整职责及资格；详情动态页直接打开无可读行。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "已读官方招聘索引所列完整职责及资格；详情动态页直接打开无可读行。",
+          "facts": [
+            "官方职位标注全国，内容为审计底稿及资料整理等辅助工作。",
+            "本科以上在校生，财会类专业优先；要求周全勤、自备笔记本，能完整提供约两个月实习者优先，并需适应出差。",
+            "该岗位说明上海本地项目不提供住宿。"
+          ],
+          "limits": [
+            "没有核得南京项目分配或剩余名额；9-11月是职位名称中的时段，不是明确申请截止日。",
+            "全勤不能自动换算成每周5天，也不能据此判断周末安排。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I825",
+      "title": "立信官网：江苏分所",
+      "label": "立信官网：江苏分所",
+      "url": "https://www.bdo.com.cn/locations/江苏分所",
+      "originalUrl": "https://www.bdo.com.cn/locations/江苏分所",
+      "canonicalUrl": "https://www.bdo.com.cn/locations/江苏分所",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "江苏分所列示地址为南京市建邺区嘉陵江东街8号新城科技园创新综合体B4栋2单元17-18层。",
+      "points": [
+        "江苏分所列示地址为南京市建邺区嘉陵江东街8号新城科技园创新综合体B4栋2单元17-18层。"
+      ],
+      "limitations": "办公地点不能替代具体项目驻地，也不证明该地址有日常实习空缺。",
+      "readingScopes": [
+        "已打开官网正文，读机构介绍及联系方式（119-176行）。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "已打开官网正文，读机构介绍及联系方式（119-176行）。",
+          "facts": [
+            "江苏分所列示地址为南京市建邺区嘉陵江东街8号新城科技园创新综合体B4栋2单元17-18层。"
+          ],
+          "limits": [
+            "办公地点不能替代具体项目驻地，也不证明该地址有日常实习空缺。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I826",
+      "title": "立信官网：江南分所",
+      "label": "立信官网：江南分所",
+      "url": "https://www.bdo.com.cn/locations/江南分所",
+      "originalUrl": "https://www.bdo.com.cn/locations/江南分所",
+      "canonicalUrl": "https://www.bdo.com.cn/locations/江南分所",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "江南分所位于苏州市竹辉路477号。",
+      "points": [
+        "江南分所位于苏州市竹辉路477号。"
+      ],
+      "limitations": "江南分所办公地址与base苏州校招岗位的具体用工机构、项目驻地不能直接画等号。",
+      "readingScopes": [
+        "已打开官网正文，读机构介绍及联系方式（119-165行）。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "已打开官网正文，读机构介绍及联系方式（119-165行）。",
+          "facts": [
+            "江南分所位于苏州市竹辉路477号。"
+          ],
+          "limits": [
+            "江南分所办公地址与base苏州校招岗位的具体用工机构、项目驻地不能直接画等号。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I827",
+      "title": "立信2027校园招聘及官方问答",
+      "label": "立信2027校园招聘及官方问答",
+      "url": "https://bdochina.zhiye.com/campus",
+      "originalUrl": "https://bdochina.zhiye.com/campus",
+      "canonicalUrl": "https://bdochina.zhiye.com/campus",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "2027校招面向2027届及部分2026届本科以上毕业生；每人仅能投一个校招职位。；站点将校园招聘、社会招聘、实习生招聘分开；校招职位限制不应扩大到所有实习项目。",
+      "points": [
+        "2027校招面向2027届及部分2026届本科以上毕业生；每人仅能投一个校招职位。",
+        "站点将校园招聘、社会招聘、实习生招聘分开；校招职位限制不应扩大到所有实习项目。"
+      ],
+      "limitations": "这是应届校招规则，不是全体在校生实习申请资格。",
+      "readingScopes": [
+        "官方站点完整索引文字已读；直接打开为动态空壳，未进行注册或投递。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "官方站点完整索引文字已读；直接打开为动态空壳，未进行注册或投递。",
+          "facts": [
+            "2027校招面向2027届及部分2026届本科以上毕业生；每人仅能投一个校招职位。",
+            "站点将校园招聘、社会招聘、实习生招聘分开；校招职位限制不应扩大到所有实习项目。"
+          ],
+          "limits": [
+            "这是应届校招规则，不是全体在校生实习申请资格。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I828",
+      "title": "天健招聘：实习生招聘",
+      "label": "天健招聘：实习生招聘",
+      "url": "https://zhaopin.pccpa.cn/hr/recruit/internship",
+      "originalUrl": "https://zhaopin.pccpa.cn/hr/recruit/internship",
+      "canonicalUrl": "https://zhaopin.pccpa.cn/hr/recruit/internship",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "天健招聘将实习生招聘与校园招聘分开。",
+      "points": [
+        "天健招聘将实习生招聘与校园招聘分开。"
+      ],
+      "limitations": "本次未能在官方正文核到南京独立日常实习职位；未知字段保持空值。",
+      "readingScopes": [
+        "官网首页及学校发布的招聘公告均指向此入口；直开动态列表无可读行。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "官网首页及学校发布的招聘公告均指向此入口；直开动态列表无可读行。",
+          "facts": [
+            "天健招聘将实习生招聘与校园招聘分开。"
+          ],
+          "limits": [
+            "本次未能在官方正文核到南京独立日常实习职位；未知字段保持空值。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I829",
+      "title": "天健官网：联系我们",
+      "label": "天健官网：联系我们",
+      "url": "https://www.pccpa.com/cnchs/contactus",
+      "originalUrl": "https://www.pccpa.com/cnchs/contactus",
+      "canonicalUrl": "https://www.pccpa.com/cnchs/contactus",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "江苏分所官网列示地址为南京市江东中路215号凤凰文化广场B座11楼。",
+      "points": [
+        "江苏分所官网列示地址为南京市江东中路215号凤凰文化广场B座11楼。"
+      ],
+      "limitations": "地址来自官方可检索条目，面试或入项前仍需复核；不是项目驻地或在招证据。",
+      "readingScopes": [
+        "已读官方搜索索引中江苏分所的完整地址条目；直开网页为动态空壳。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "已读官方搜索索引中江苏分所的完整地址条目；直开网页为动态空壳。",
+          "facts": [
+            "江苏分所官网列示地址为南京市江东中路215号凤凰文化广场B座11楼。"
+          ],
+          "limits": [
+            "地址来自官方可检索条目，面试或入项前仍需复核；不是项目驻地或在招证据。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I830",
+      "title": "天健会计师事务所2027校园招聘（对外经贸大学就业网发布）",
+      "label": "天健会计师事务所2027校园招聘（对外经贸大学就业网发布）",
+      "url": "https://career.uibe.edu.cn/front/zpxx.jspa?tid=2105129673322205185",
+      "originalUrl": "https://career.uibe.edu.cn/front/zpxx.jspa?tid=2105129673322205185",
+      "canonicalUrl": "https://career.uibe.edu.cn/front/zpxx.jspa?tid=2105129673322205185",
+      "date": "2026-09-30",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "2027届本科及硕士毕业生可按岗位要求申请，网申截止2027-04-30，唯一网申通道为天健招聘官网。；财务审计覆盖分所所在地；军民融合审计及管理咨询列有南京，金融审计等业务列有上海。；校招选拔含约2个月实习考察，通过后进入体检和就业协议环节。",
+      "points": [
+        "2027届本科及硕士毕业生可按岗位要求申请，网申截止2027-04-30，唯一网申通道为天健招聘官网。",
+        "财务审计覆盖分所所在地；军民融合审计及管理咨询列有南京，金融审计等业务列有上海。",
+        "校招选拔含约2个月实习考察，通过后进入体检和就业协议环节。"
+      ],
+      "limitations": "这是正式校招选拔流程；约2个月不是所有日常实习统一时长。；学校公告不提供南京日常实习具体名额；各业务线和城市不能互相套用。",
+      "readingScopes": [
+        "已读学校官方页完整招聘计划、流程、城市和网申时间（43-122行）。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "已读学校官方页完整招聘计划、流程、城市和网申时间（43-122行）。",
+          "facts": [
+            "2027届本科及硕士毕业生可按岗位要求申请，网申截止2027-04-30，唯一网申通道为天健招聘官网。",
+            "财务审计覆盖分所所在地；军民融合审计及管理咨询列有南京，金融审计等业务列有上海。",
+            "校招选拔含约2个月实习考察，通过后进入体检和就业协议环节。"
+          ],
+          "limits": [
+            "这是正式校招选拔流程；约2个月不是所有日常实习统一时长。",
+            "学校公告不提供南京日常实习具体名额；各业务线和城市不能互相套用。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I831",
+      "title": "致同官网：实习生招聘",
+      "label": "致同官网：实习生招聘",
+      "url": "https://www.grantthornton.cn/Internship-recruitment/",
+      "originalUrl": "https://www.grantthornton.cn/Internship-recruitment/",
+      "canonicalUrl": "https://www.grantthornton.cn/Internship-recruitment/",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "官网提供独立实习生入口，方向含审计、税务、咨询、评估估值等。",
+      "points": [
+        "官网提供独立实习生入口，方向含审计、税务、咨询、评估估值等。"
+      ],
+      "limitations": "仅方向入口，不能确认南京各岗位是否开放或具体到岗条件。",
+      "readingScopes": [
+        "已打开官网页面并阅读官方索引；索引列有审计、税务、咨询等实习方向，动态页面不展开城市岗位。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "已打开官网页面并阅读官方索引；索引列有审计、税务、咨询等实习方向，动态页面不展开城市岗位。",
+          "facts": [
+            "官网提供独立实习生入口，方向含审计、税务、咨询、评估估值等。"
+          ],
+          "limits": [
+            "仅方向入口，不能确认南京各岗位是否开放或具体到岗条件。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I832",
+      "title": "致同实习生招募（广东省注协转企业官微）",
+      "label": "致同实习生招募（广东省注协转企业官微）",
+      "url": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20236",
+      "originalUrl": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20236",
+      "canonicalUrl": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20236",
+      "date": "2026-08-25",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "审计实习面向本科以上在校生，财会等专业优先，需要办公及财务软件能力；英语与财会经历是加分项。审计base含上海、杭州、宁波等，未列南京或苏州。；咨询实习base为上海、深圳，相关专业含财经、统计、计算机等，工作涉及数据处理与初步报告。",
+      "points": [
+        "审计实习面向本科以上在校生，财会等专业优先，需要办公及财务软件能力；英语与财会经历是加分项。审计base含上海、杭州、宁波等，未列南京或苏州。",
+        "咨询实习base为上海、深圳，相关专业含财经、统计、计算机等，工作涉及数据处理与初步报告。"
+      ],
+      "limitations": "同一公告的两个岗位，不计成两个独立来源；没有公布截止日、每周出勤和最短时长。；8月公告不等于今日每个base仍有余缺；页面给的官网校招入口是公告投递指引，仍需选择实习类型核对。",
+      "readingScopes": [
+        "已读注协正文全部招聘段落（9-85行），明确来源为企业公众号“致同人与文化”。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "已读注协正文全部招聘段落（9-85行），明确来源为企业公众号“致同人与文化”。",
+          "facts": [
+            "审计实习面向本科以上在校生，财会等专业优先，需要办公及财务软件能力；英语与财会经历是加分项。审计base含上海、杭州、宁波等，未列南京或苏州。",
+            "咨询实习base为上海、深圳，相关专业含财经、统计、计算机等，工作涉及数据处理与初步报告。"
+          ],
+          "limits": [
+            "同一公告的两个岗位，不计成两个独立来源；没有公布截止日、每周出勤和最短时长。",
+            "8月公告不等于今日每个base仍有余缺；页面给的官网校招入口是公告投递指引，仍需选择实习类型核对。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I833",
+      "title": "致同2027校园招聘及问答",
+      "label": "致同2027校园招聘及问答",
+      "url": "https://www.grantthornton.cn/campus-recruitment",
+      "originalUrl": "https://www.grantthornton.cn/campus-recruitment",
+      "canonicalUrl": "https://www.grantthornton.cn/campus-recruitment",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "2027校招面向2027年毕业本科以上学生，城市含南京、苏州、上海。；校招可选一个办公室及该办公室两条业务线；CPA部分科目、英语及相关事务所经历为加分项。",
+      "points": [
+        "2027校招面向2027年毕业本科以上学生，城市含南京、苏州、上海。",
+        "校招可选一个办公室及该办公室两条业务线；CPA部分科目、英语及相关事务所经历为加分项。"
+      ],
+      "limitations": "校招规则不能移植为所有实习申请规则；出现南京办公室不等于南京实习职位在招。",
+      "readingScopes": [
+        "官网正文与官方索引均已读；核对2027申请对象、办公室城市与志愿规则。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "官网正文与官方索引均已读；核对2027申请对象、办公室城市与志愿规则。",
+          "facts": [
+            "2027校招面向2027年毕业本科以上学生，城市含南京、苏州、上海。",
+            "校招可选一个办公室及该办公室两条业务线；CPA部分科目、英语及相关事务所经历为加分项。"
+          ],
+          "limits": [
+            "校招规则不能移植为所有实习申请规则；出现南京办公室不等于南京实习职位在招。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I834",
+      "title": "致同官网：办公地点",
+      "label": "致同官网：办公地点",
+      "url": "https://www.grantthornton.cn/locations/",
+      "originalUrl": "https://www.grantthornton.cn/locations/",
+      "canonicalUrl": "https://www.grantthornton.cn/locations/",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "官方有办公地点查询入口；2027官方招聘问答列南京、苏州、上海办公室。",
+      "points": [
+        "官方有办公地点查询入口；2027官方招聘问答列南京、苏州、上海办公室。"
+      ],
+      "limitations": "本次没有核得这三城的官方具体街址，地址保持null，不采用第三方地图或注册地冒充当前办公室。",
+      "readingScopes": [
+        "已打开官方办公地点动态查询页，正文仅显示城市筛选壳；办公室城市由官方2027招聘问答交叉确认。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "已打开官方办公地点动态查询页，正文仅显示城市筛选壳；办公室城市由官方2027招聘问答交叉确认。",
+          "facts": [
+            "官方有办公地点查询入口；2027官方招聘问答列南京、苏州、上海办公室。"
+          ],
+          "limits": [
+            "本次没有核得这三城的官方具体街址，地址保持null，不采用第三方地图或注册地冒充当前办公室。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I835",
+      "title": "信永中和官网：分支机构",
+      "label": "信永中和官网：分支机构",
+      "url": "https://www.shinewing.com/about/branch/",
+      "originalUrl": "https://www.shinewing.com/about/branch/",
+      "canonicalUrl": "https://www.shinewing.com/about/branch/",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "南京：鼓楼区山西路128号和泰国际大厦7层；上海：浦东新区陆家嘴环路1233号汇亚中心大厦20楼；苏州：工业园区苏州大道东400号苏州中海大厦东塔30F。；官网“加入我们”链接指向job.shinewing.com。",
+      "points": [
+        "南京：鼓楼区山西路128号和泰国际大厦7层；上海：浦东新区陆家嘴环路1233号汇亚中心大厦20楼；苏州：工业园区苏州大道东400号苏州中海大厦东塔30F。",
+        "官网“加入我们”链接指向job.shinewing.com。"
+      ],
+      "limitations": "办公室地址不是客户项目驻地；不能据机构覆盖断言当地实习名额。",
+      "readingScopes": [
+        "已读官网境内分支机构中南京、上海、苏州条目及首页招聘链接。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "已读官网境内分支机构中南京、上海、苏州条目及首页招聘链接。",
+          "facts": [
+            "南京：鼓楼区山西路128号和泰国际大厦7层；上海：浦东新区陆家嘴环路1233号汇亚中心大厦20楼；苏州：工业园区苏州大道东400号苏州中海大厦东塔30F。",
+            "官网“加入我们”链接指向job.shinewing.com。"
+          ],
+          "limits": [
+            "办公室地址不是客户项目驻地；不能据机构覆盖断言当地实习名额。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I836",
+      "title": "信永中和官方招聘平台",
+      "label": "信永中和官方招聘平台",
+      "url": "https://job.shinewing.com/",
+      "originalUrl": "https://job.shinewing.com/",
+      "canonicalUrl": "https://job.shinewing.com/",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "这是官网指向的官方招聘平台。",
+      "points": [
+        "这是官网指向的官方招聘平台。"
+      ],
+      "limitations": "动态空壳不能核实具体城市岗位余缺、出勤或薪资。",
+      "readingScopes": [
+        "官网分支机构导航确认链接；直开招聘平台仅返回需JavaScript的壳，未登录或提交材料。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "官网分支机构导航确认链接；直开招聘平台仅返回需JavaScript的壳，未登录或提交材料。",
+          "facts": [
+            "这是官网指向的官方招聘平台。"
+          ],
+          "limits": [
+            "动态空壳不能核实具体城市岗位余缺、出勤或薪资。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I837",
+      "title": "信永中和2027校园招聘正式启动（河北工业大学就业网发布）",
+      "label": "信永中和2027校园招聘正式启动（河北工业大学就业网发布）",
+      "url": "https://career.hebut.edu.cn/correcruit/content/id/82058.html",
+      "originalUrl": "https://career.hebut.edu.cn/correcruit/content/id/82058.html",
+      "canonicalUrl": "https://career.hebut.edu.cn/correcruit/content/id/82058.html",
+      "date": "2026-10-19",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "在校生实习通道面向大三、大四及研究生，网申与在线测评窗口为2026年9-12月，随后参加实习。；公告城市包括南京、苏州和上海；另有单列的2027届正式校招流程。；方向列审计、税务、会计代理、管理咨询及信息系统审计等，具体职位以官方平台为准。",
+      "points": [
+        "在校生实习通道面向大三、大四及研究生，网申与在线测评窗口为2026年9-12月，随后参加实习。",
+        "公告城市包括南京、苏州和上海；另有单列的2027届正式校招流程。",
+        "方向列审计、税务、会计代理、管理咨询及信息系统审计等，具体职位以官方平台为准。"
+      ],
+      "limitations": "城市是整份公告覆盖，不能认定每条业务线在三城均有实习名额。；正文没有给到每周出勤、实习月数或确切截止日；页头北京市工资字段不作为南京实习薪资。",
+      "readingScopes": [
+        "已读学校正文119-172行：岗位方向、分别列示的校招/实习流程、城市列表与网申窗口。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "已读学校正文119-172行：岗位方向、分别列示的校招/实习流程、城市列表与网申窗口。",
+          "facts": [
+            "在校生实习通道面向大三、大四及研究生，网申与在线测评窗口为2026年9-12月，随后参加实习。",
+            "公告城市包括南京、苏州和上海；另有单列的2027届正式校招流程。",
+            "方向列审计、税务、会计代理、管理咨询及信息系统审计等，具体职位以官方平台为准。"
+          ],
+          "limits": [
+            "城市是整份公告覆盖，不能认定每条业务线在三城均有实习名额。",
+            "正文没有给到每周出勤、实习月数或确切截止日；页头北京市工资字段不作为南京实习薪资。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I838",
+      "title": "天职国际2027届秋季校园招聘正式启动！",
+      "label": "天职国际2027届秋季校园招聘正式启动！",
+      "url": "https://jobs.blcu.edu.cn/front/zpxx.jspa?tid=2095349926408658945",
+      "originalUrl": "https://jobs.blcu.edu.cn/front/zpxx.jspa?tid=2095349926408658945",
+      "canonicalUrl": "https://jobs.blcu.edu.cn/front/zpxx.jspa?tid=2095349926408658945",
+      "date": "2026-09-03",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "university_employer_notice",
+      "summary": "面向2027届本科及以上毕业生，专业不限但要求一定财务基础与数字工具能力。；工作城市含南京、苏州、上海；官网投递入口为tzcpa.zhiye.com。；流程包含实习考核，但该公告是毕业生校园招聘，不是面向全部在校生的普通实习公告。",
+      "points": [
+        "面向2027届本科及以上毕业生，专业不限但要求一定财务基础与数字工具能力。",
+        "工作城市含南京、苏州、上海；官网投递入口为tzcpa.zhiye.com。",
+        "流程包含实习考核，但该公告是毕业生校园招聘，不是面向全部在校生的普通实习公告。",
+        "该届秋招规定每人一个分所一个岗位。"
+      ],
+      "limitations": "规则只用于这则2027届秋招，不能扩展为所有独立实习岗位的限制。",
+      "readingScopes": [
+        "网页正文已读"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "网页正文已读",
+          "facts": [
+            "面向2027届本科及以上毕业生，专业不限但要求一定财务基础与数字工具能力。",
+            "工作城市含南京、苏州、上海；官网投递入口为tzcpa.zhiye.com。",
+            "流程包含实习考核，但该公告是毕业生校园招聘，不是面向全部在校生的普通实习公告。",
+            "该届秋招规定每人一个分所一个岗位。"
+          ],
+          "limits": [
+            "规则只用于这则2027届秋招，不能扩展为所有独立实习岗位的限制。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I839",
+      "title": "天职国际实习生招聘列表｜南京财务审计实习生J10565",
+      "label": "天职国际实习生招聘列表｜南京财务审计实习生J10565",
+      "url": "https://tzcpa.zhiye.com/intern/jobs",
+      "originalUrl": "https://tzcpa.zhiye.com/intern/jobs",
+      "canonicalUrl": "https://tzcpa.zhiye.com/intern/jobs",
+      "date": "2026-10-30",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "firm_official",
+      "summary": "官方域招聘检索内容列南京财务审计实习生J10565，标注实习、南京，发布2026-10-30。；工作涉及年报、IPO、经济责任、清产核资项目协助；财经类本科以上在校生，基础、既往实习与英语能力为筛选线索。",
+      "points": [
+        "官方域招聘检索内容列南京财务审计实习生J10565，标注实习、南京，发布2026-10-30。",
+        "工作涉及年报、IPO、经济责任、清产核资项目协助；财经类本科以上在校生，基础、既往实习与英语能力为筛选线索。"
+      ],
+      "limitations": "不能据索引断言此刻仍可投递；岗位截止、出勤、最短时长、补贴未核到。",
+      "readingScopes": [
+        "官方域搜索索引内容已读；直接open的JS页没有可读正文，未完成职位详情及申请按钮验证"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "官方域搜索索引内容已读；直接open的JS页没有可读正文，未完成职位详情及申请按钮验证",
+          "facts": [
+            "官方域招聘检索内容列南京财务审计实习生J10565，标注实习、南京，发布2026-10-30。",
+            "工作涉及年报、IPO、经济责任、清产核资项目协助；财经类本科以上在校生，基础、既往实习与英语能力为筛选线索。"
+          ],
+          "limits": [
+            "不能据索引断言此刻仍可投递；岗位截止、出勤、最短时长、补贴未核到。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I840",
+      "title": "天职国际｜联系我们",
+      "label": "天职国际｜联系我们",
+      "url": "https://www.bakertilly.cn/contact",
+      "originalUrl": "https://www.bakertilly.cn/contact",
+      "canonicalUrl": "https://www.bakertilly.cn/contact",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "firm_official",
+      "summary": "江苏分所：江苏省南京市中山南路1号南京中心39层。；上海分所：上海市浦东新区世纪大道88号金茂大厦13楼。",
+      "points": [
+        "江苏分所：江苏省南京市中山南路1号南京中心39层。",
+        "上海分所：上海市浦东新区世纪大道88号金茂大厦13楼。"
+      ],
+      "limitations": "地址用于确认办公机构，不代表实习项目每日在该楼办公；页面未列更新时间。",
+      "readingScopes": [
+        "网页正文已读"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "网页正文已读",
+          "facts": [
+            "江苏分所：江苏省南京市中山南路1号南京中心39层。",
+            "上海分所：上海市浦东新区世纪大道88号金茂大厦13楼。"
+          ],
+          "limits": [
+            "地址用于确认办公机构，不代表实习项目每日在该楼办公；页面未列更新时间。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I841",
+      "title": "大华会计师事务所官网｜加入大华",
+      "label": "大华会计师事务所官网｜加入大华",
+      "url": "https://www.dahua-cpa.com/",
+      "originalUrl": "https://www.dahua-cpa.com/",
+      "canonicalUrl": "https://www.dahua-cpa.com/",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "firm_official",
+      "summary": "官网加入大华链接指向https://job.dahua-cpa.com/。",
+      "points": [
+        "官网加入大华链接指向https://job.dahua-cpa.com/。"
+      ],
+      "limitations": "招聘门户本次直接抓取超时，入口已由官网链接确认，不能据此确认任何岗位当前在招。",
+      "readingScopes": [
+        "网页正文已读"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "网页正文已读",
+          "facts": [
+            "官网加入大华链接指向https://job.dahua-cpa.com/。"
+          ],
+          "limits": [
+            "招聘门户本次直接抓取超时，入口已由官网链接确认，不能据此确认任何岗位当前在招。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I842",
+      "title": "大华分支机构",
+      "label": "大华分支机构",
+      "url": "https://www.dahua-cpa.com/map/index.html",
+      "originalUrl": "https://www.dahua-cpa.com/map/index.html",
+      "canonicalUrl": "https://www.dahua-cpa.com/map/index.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "firm_official",
+      "summary": "官方分支机构旧地图页列出南京、苏州、上海等城市。",
+      "points": [
+        "官方分支机构旧地图页列出南京、苏州、上海等城市。"
+      ],
+      "limitations": "当前官网新版联系我们页为动态内容，本次未读到江苏/苏州具体地址；不采用第三方登记地址填办公楼。",
+      "readingScopes": [
+        "网页正文已读"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "网页正文已读",
+          "facts": [
+            "官方分支机构旧地图页列出南京、苏州、上海等城市。"
+          ],
+          "limits": [
+            "当前官网新版联系我们页为动态内容，本次未读到江苏/苏州具体地址；不采用第三方登记地址填办公楼。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I843",
+      "title": "大华招聘｜审计实习生（苏州）J10706",
+      "label": "大华招聘｜审计实习生（苏州）J10706",
+      "url": "https://zhaopin.dahua-cpa.com/jobs",
+      "originalUrl": "https://zhaopin.dahua-cpa.com/jobs",
+      "canonicalUrl": "https://zhaopin.dahua-cpa.com/jobs",
+      "date": "2026-09-20",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "firm_official",
+      "summary": "官方域索引列审计实习生（苏州）J10706，类别校园招聘、性质实习、地点苏州分所，发布日期2026-09-20。；可读职责为协助事务工作、底稿资料收集编整、盘点和归档。",
+      "points": [
+        "官方域索引列审计实习生（苏州）J10706，类别校园招聘、性质实习、地点苏州分所，发布日期2026-09-20。",
+        "可读职责为协助事务工作、底稿资料收集编整、盘点和归档。"
+      ],
+      "limitations": "索引的在招数量不作为实时名额；当前官网主入口已指job.dahua-cpa.com，申请前应从主入口重找苏州岗位。；未将其他城市岗位资格复制给苏州。",
+      "readingScopes": [
+        "官方域搜索索引已读；直接open的JS页无可读正文，未完成岗位详情核验"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "官方域搜索索引已读；直接open的JS页无可读正文，未完成岗位详情核验",
+          "facts": [
+            "官方域索引列审计实习生（苏州）J10706，类别校园招聘、性质实习、地点苏州分所，发布日期2026-09-20。",
+            "可读职责为协助事务工作、底稿资料收集编整、盘点和归档。"
+          ],
+          "limits": [
+            "索引的在招数量不作为实时名额；当前官网主入口已指job.dahua-cpa.com，申请前应从主入口重找苏州岗位。",
+            "未将其他城市岗位资格复制给苏州。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I844",
+      "title": "容诚2027招聘简章｜官方在线申请地址",
+      "label": "容诚2027招聘简章｜官方在线申请地址",
+      "url": "https://jobcareer.sdu.edu.cn/eweb/jygl/index.so?id=87cRceoeYuxj4f83X3DVAs&modcode=jygl_zpxxck&subsyscode=zpfw&type=ssoViewZpxx",
+      "originalUrl": "https://jobcareer.sdu.edu.cn/eweb/jygl/index.so?id=87cRceoeYuxj4f83X3DVAs&modcode=jygl_zpxxck&subsyscode=zpfw&type=ssoViewZpxx",
+      "canonicalUrl": "https://jobcareer.sdu.edu.cn/eweb/jygl/index.so?id=87cRceoeYuxj4f83X3DVAs&modcode=jygl_zpxxck&subsyscode=zpfw&type=ssoViewZpxx",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "university_employer_notice",
+      "summary": "招聘简章直接给出官方在线申请地址https://careers.rccpa.com.cn，注册并申请职位。；同文包含与中南大学版本相同的实习生计划与城市组。",
+      "points": [
+        "招聘简章直接给出官方在线申请地址https://careers.rccpa.com.cn，注册并申请职位。",
+        "同文包含与中南大学版本相同的实习生计划与城市组。"
+      ],
+      "limitations": "页面发布日期2003-01-01明显与2027简章不符，不采用为发布日期。；页面总招聘截止2027-08-31不当作各实习岗位截止；deadline保持null。",
+      "readingScopes": [
+        "学校就业网正文与链接已读；careers.rccpa.com.cn直接抓取不可达"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "学校就业网正文与链接已读；careers.rccpa.com.cn直接抓取不可达",
+          "facts": [
+            "招聘简章直接给出官方在线申请地址https://careers.rccpa.com.cn，注册并申请职位。",
+            "同文包含与中南大学版本相同的实习生计划与城市组。"
+          ],
+          "limits": [
+            "页面发布日期2003-01-01明显与2027简章不符，不采用为发布日期。",
+            "页面总招聘截止2027-08-31不当作各实习岗位截止；deadline保持null。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I845",
+      "title": "容诚2027招聘简章中的实习生计划",
+      "label": "容诚2027招聘简章中的实习生计划",
+      "url": "https://career.csu.edu.cn/job/view/id/1199995",
+      "originalUrl": "https://career.csu.edu.cn/job/view/id/1199995",
+      "canonicalUrl": "https://career.csu.edu.cn/job/view/id/1199995",
+      "date": "2026-10-08",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "university_employer_notice",
+      "summary": "正文单列实习生计划，申请对象是全日制在读本科大二至大四或研究生。；实习窗口为2026年11月—2027年5月，南京、苏州、上海均在相应城市分组中。；独立实习计划不能与同页2027届毕业生全职招聘和实习考察录用流程混为一谈。",
+      "points": [
+        "正文单列实习生计划，申请对象是全日制在读本科大二至大四或研究生。",
+        "实习窗口为2026年11月—2027年5月，南京、苏州、上海均在相应城市分组中。",
+        "独立实习计划不能与同页2027届毕业生全职招聘和实习考察录用流程混为一谈。"
+      ],
+      "limitations": "页面的职位头是深圳全职审计助理，采用的仅是正文另列的全国实习生计划。；窗口不是必须连续实习七个月；当前各城市岗位与名额仍需官网确认。",
+      "readingScopes": [
+        "网页正文已读"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "网页正文已读",
+          "facts": [
+            "正文单列实习生计划，申请对象是全日制在读本科大二至大四或研究生。",
+            "实习窗口为2026年11月—2027年5月，南京、苏州、上海均在相应城市分组中。",
+            "独立实习计划不能与同页2027届毕业生全职招聘和实习考察录用流程混为一谈。"
+          ],
+          "limits": [
+            "页面的职位头是深圳全职审计助理，采用的仅是正文另列的全国实习生计划。",
+            "窗口不是必须连续实习七个月；当前各城市岗位与名额仍需官网确认。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I846",
+      "title": "南京｜容诚会计师事务所",
+      "label": "南京｜容诚会计师事务所",
+      "url": "https://www.rsm.global/china/zh-hans/office/nanjing",
+      "originalUrl": "https://www.rsm.global/china/zh-hans/office/nanjing",
+      "canonicalUrl": "https://www.rsm.global/china/zh-hans/office/nanjing",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "firm_official",
+      "summary": "南京办公室：南京市建邺区贤坤路3号江岛智立方C座3层。",
+      "points": [
+        "南京办公室：南京市建邺区贤坤路3号江岛智立方C座3层。"
+      ],
+      "limitations": "这是办公地址，不代表全部实习项目驻场地；未提供门到门通勤时长。",
+      "readingScopes": [
+        "网页正文已读"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "网页正文已读",
+          "facts": [
+            "南京办公室：南京市建邺区贤坤路3号江岛智立方C座3层。"
+          ],
+          "limits": [
+            "这是办公地址，不代表全部实习项目驻场地；未提供门到门通勤时长。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I847",
+      "title": "中审众环官网｜人才招聘导航",
+      "label": "中审众环官网｜人才招聘导航",
+      "url": "https://www.zszhcpa.cn/",
+      "originalUrl": "https://www.zszhcpa.cn/",
+      "canonicalUrl": "https://www.zszhcpa.cn/",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "firm_official",
+      "summary": "当前官网社会招聘与校园招聘导航指向job.zszhcpa.cn。",
+      "points": [
+        "当前官网社会招聘与校园招聘导航指向job.zszhcpa.cn。"
+      ],
+      "limitations": "官网另一招聘落地页仍链到zszhcpa.zhiye.com且旧实习页仍有2022条目；优先由当前主页进入并重新筛选。",
+      "readingScopes": [
+        "网页正文已读"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "网页正文已读",
+          "facts": [
+            "当前官网社会招聘与校园招聘导航指向job.zszhcpa.cn。"
+          ],
+          "limits": [
+            "官网另一招聘落地页仍链到zszhcpa.zhiye.com且旧实习页仍有2022条目；优先由当前主页进入并重新筛选。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I848",
+      "title": "中审众环2027届校园招聘信息",
+      "label": "中审众环2027届校园招聘信息",
+      "url": "https://jyw.gpnu.edu.cn/info/1148/12387.htm",
+      "originalUrl": "https://jyw.gpnu.edu.cn/info/1148/12387.htm",
+      "canonicalUrl": "https://jyw.gpnu.edu.cn/info/1148/12387.htm",
+      "date": "2026-09-17",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "university_employer_notice",
+      "summary": "学校就业网简章将审计实习生、函证实习生单列，均面向相关专业在校生。；审计实习要求财会/审计/大数据/AI相关背景，了解数字工具应用，能接受项目调度与出差。；函证实习侧重信息核对、录入、数据比对和归档；官网通道为job.zszhcpa.cn/campus。",
+      "points": [
+        "学校就业网简章将审计实习生、函证实习生单列，均面向相关专业在校生。",
+        "审计实习要求财会/审计/大数据/AI相关背景，了解数字工具应用，能接受项目调度与出差。",
+        "函证实习侧重信息核对、录入、数据比对和归档；官网通道为job.zszhcpa.cn/campus。"
+      ],
+      "limitations": "简章未将这两类实习绑定某一城市；不直接声称南京岗位现可投。；同页全职岗的2026/2027届与证书要求不复制为独立实习硬门槛；全职福利不复制为实习待遇。",
+      "readingScopes": [
+        "网页正文已读"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "网页正文已读",
+          "facts": [
+            "学校就业网简章将审计实习生、函证实习生单列，均面向相关专业在校生。",
+            "审计实习要求财会/审计/大数据/AI相关背景，了解数字工具应用，能接受项目调度与出差。",
+            "函证实习侧重信息核对、录入、数据比对和归档；官网通道为job.zszhcpa.cn/campus。"
+          ],
+          "limits": [
+            "简章未将这两类实习绑定某一城市；不直接声称南京岗位现可投。",
+            "同页全职岗的2026/2027届与证书要求不复制为独立实习硬门槛；全职福利不复制为实习待遇。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I849",
+      "title": "中审众环官方域职位列表｜上海自贸区审计实习J10676",
+      "label": "中审众环官方域职位列表｜上海自贸区审计实习J10676",
+      "url": "https://zszhcpa.zhiye.com/jobs",
+      "originalUrl": "https://zszhcpa.zhiye.com/jobs",
+      "canonicalUrl": "https://zszhcpa.zhiye.com/jobs",
+      "date": "2026-10-08",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "firm_official",
+      "summary": "官方域索引列审计实习生（2027届校招-上海自贸区分所）J10676，实习、上海市、2026-10-08发布。；职责为资料整理、函件收发、简单科目底稿等项目协助。",
+      "points": [
+        "官方域索引列审计实习生（2027届校招-上海自贸区分所）J10676，实习、上海市、2026-10-08发布。",
+        "职责为资料整理、函件收发、简单科目底稿等项目协助。"
+      ],
+      "limitations": "与job.zszhcpa.cn门户版本关系需由当前官网入口核对；不按索引保证仍有名额。",
+      "readingScopes": [
+        "官方域搜索索引内容已读；直接open为JS空正文，未完成当期申请状态确认"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "官方域搜索索引内容已读；直接open为JS空正文，未完成当期申请状态确认",
+          "facts": [
+            "官方域索引列审计实习生（2027届校招-上海自贸区分所）J10676，实习、上海市、2026-10-08发布。",
+            "职责为资料整理、函件收发、简单科目底稿等项目协助。"
+          ],
+          "limits": [
+            "与job.zszhcpa.cn门户版本关系需由当前官网入口核对；不按索引保证仍有名额。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I850",
+      "title": "中审众环｜江苏分所",
+      "label": "中审众环｜江苏分所",
+      "url": "https://www.zszhcpa.cn/fsjj/info_itemid_1789.html",
+      "originalUrl": "https://www.zszhcpa.cn/fsjj/info_itemid_1789.html",
+      "canonicalUrl": "https://www.zszhcpa.cn/fsjj/info_itemid_1789.html",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "firm_official",
+      "summary": "江苏分所位于南京，官网地址为南京市鼓楼区江东北路289号银城广场9楼。",
+      "points": [
+        "江苏分所位于南京，官网地址为南京市鼓楼区江东北路289号银城广场9楼。"
+      ],
+      "limitations": "机构简介带2020/2021历史规模信息，未用于当前规模或招聘承诺；办公地址与驻场项目应分开核实。",
+      "readingScopes": [
+        "网页正文已读"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "网页正文已读",
+          "facts": [
+            "江苏分所位于南京，官网地址为南京市鼓楼区江东北路289号银城广场9楼。"
+          ],
+          "limits": [
+            "机构简介带2020/2021历史规模信息，未用于当前规模或招聘承诺；办公地址与驻场项目应分开核实。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I851",
+      "title": "南京审计大学迎新网：交通路线",
+      "label": "南京审计大学迎新网：交通路线",
+      "url": "https://yx.nau.edu.cn/9073/list.htm",
+      "originalUrl": "https://yx.nau.edu.cn/9073/list.htm",
+      "canonicalUrl": "https://yx.nau.edu.cn/9073/list.htm",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "浦口校区地址为南京市浦口区江浦街道雨山西路86号。；迎新路线列出雨山路站5号口接站，以及集庆门大街接D7的来校方案。",
+      "points": [
+        "浦口校区地址为南京市浦口区江浦街道雨山西路86号。",
+        "迎新路线列出雨山路站5号口接站，以及集庆门大街接D7的来校方案。"
+      ],
+      "limitations": "迎新接站班车不是常年每日实习接驳承诺；公交班次、运营变化和具体校门应出发前核实。",
+      "readingScopes": [
+        "读取全部交通路线与校区地址。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "读取全部交通路线与校区地址。",
+          "facts": [
+            "浦口校区地址为南京市浦口区江浦街道雨山西路86号。",
+            "迎新路线列出雨山路站5号口接站，以及集庆门大街接D7的来校方案。"
+          ],
+          "limits": [
+            "迎新接站班车不是常年每日实习接驳承诺；公交班次、运营变化和具体校门应出发前核实。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I852",
+      "title": "关于加快南京地铁线路延伸至南京审计大学的建议答复",
+      "label": "关于加快南京地铁线路延伸至南京审计大学的建议答复",
+      "url": "https://www.nanjing.gov.cn/xxgkn/jytabljggk/2024njytabl/shirddbjy/202411/t20241114_5009238.html",
+      "originalUrl": "https://www.nanjing.gov.cn/xxgkn/jytabljggk/2024njytabl/shirddbjy/202411/t20241114_5009238.html",
+      "canonicalUrl": "https://www.nanjing.gov.cn/xxgkn/jytabljggk/2024njytabl/shirddbjy/202411/t20241114_5009238.html",
+      "date": "2024-11-14",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "答复由南京市地铁集团署名，称浦口校区处江北核心区、研创园、浦口高新区交界。；2024答复记录文德路、雨山路两站距校直线约1.1/1.5公里。",
+      "points": [
+        "答复由南京市地铁集团署名，称浦口校区处江北核心区、研创园、浦口高新区交界。",
+        "2024答复记录文德路、雨山路两站距校直线约1.1/1.5公里。"
+      ],
+      "limitations": "直线距离不能当步行距离或通勤时间；文中的13/17号线是当时规划，不能据此生成现成出行路线。",
+      "readingScopes": [
+        "读取交通区位、现有车站与规划线路段。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "读取交通区位、现有车站与规划线路段。",
+          "facts": [
+            "答复由南京市地铁集团署名，称浦口校区处江北核心区、研创园、浦口高新区交界。",
+            "2024答复记录文德路、雨山路两站距校直线约1.1/1.5公里。"
+          ],
+          "limits": [
+            "直线距离不能当步行距离或通勤时间；文中的13/17号线是当时规划，不能据此生成现成出行路线。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I853",
+      "title": "南京市交通运输局：如何查询地铁线路？",
+      "label": "南京市交通运输局：如何查询地铁线路？",
+      "url": "https://jtj.nanjing.gov.cn/hdjl/zsk/202411/t20241127_5019735.html",
+      "originalUrl": "https://jtj.nanjing.gov.cn/hdjl/zsk/202411/t20241127_5019735.html",
+      "canonicalUrl": "https://jtj.nanjing.gov.cn/hdjl/zsk/202411/t20241127_5019735.html",
+      "date": "2026-07-30",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "交通局建议通过南京地铁官网、官方公众号或与宁同行APP查询线路。",
+      "points": [
+        "交通局建议通过南京地铁官网、官方公众号或与宁同行APP查询线路。"
+      ],
+      "limitations": "这是查询渠道，不是实时列车班次或地图API结果。",
+      "readingScopes": [
+        "读取交通局答复。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "读取交通局答复。",
+          "facts": [
+            "交通局建议通过南京地铁官网、官方公众号或与宁同行APP查询线路。"
+          ],
+          "limits": [
+            "这是查询渠道，不是实时列车班次或地图API结果。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I854",
+      "title": "正式投用！地铁元通站更方便了",
+      "label": "正式投用！地铁元通站更方便了",
+      "url": "https://www.njjy.gov.cn/jyyw/202601/t20260108_5760664.html",
+      "originalUrl": "https://www.njjy.gov.cn/jyyw/202601/t20260108_5760664.html",
+      "canonicalUrl": "https://www.njjy.gov.cn/jyyw/202601/t20260108_5760664.html",
+      "date": "2026-01-08",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "元通是地铁2号线、10号线换乘站。；新增出入口连接国金中心和国际博览中心。",
+      "points": [
+        "元通是地铁2号线、10号线换乘站。",
+        "新增出入口连接国金中心和国际博览中心。"
+      ],
+      "limitations": "可支持河西片区路线骨架，不证明任何事务所固定在该楼办公；具体出口应按最终办公楼导航。",
+      "readingScopes": [
+        "读取建邺区政府元通站换乘、出口与周边连接说明。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "读取建邺区政府元通站换乘、出口与周边连接说明。",
+          "facts": [
+            "元通是地铁2号线、10号线换乘站。",
+            "新增出入口连接国金中心和国际博览中心。"
+          ],
+          "limits": [
+            "可支持河西片区路线骨架，不证明任何事务所固定在该楼办公；具体出口应按最终办公楼导航。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I855",
+      "title": "地铁10号线二期今起开通初期运营",
+      "label": "地铁10号线二期今起开通初期运营",
+      "url": "https://qilinpark.nanjing.gov.cn/xwzx/202512/t20251222_5748356.html",
+      "originalUrl": "https://qilinpark.nanjing.gov.cn/xwzx/202512/t20251222_5748356.html",
+      "canonicalUrl": "https://qilinpark.nanjing.gov.cn/xwzx/202512/t20251222_5748356.html",
+      "date": "2025-12-19",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "10号线二期2025-12-19开通，由安德门向东延伸到东麒路。；线路跨江连接江北与主城、南部新城、麒麟等片区。",
+      "points": [
+        "10号线二期2025-12-19开通，由安德门向东延伸到东麒路。",
+        "线路跨江连接江北与主城、南部新城、麒麟等片区。"
+      ],
+      "limitations": "不再将安德门写成10号线现行终点；首末班和交路可调整，本文不固化时间表。",
+      "readingScopes": [
+        "读取开通日期、区间、换乘站和运营说明。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "读取开通日期、区间、换乘站和运营说明。",
+          "facts": [
+            "10号线二期2025-12-19开通，由安德门向东延伸到东麒路。",
+            "线路跨江连接江北与主城、南部新城、麒麟等片区。"
+          ],
+          "limits": [
+            "不再将安德门写成10号线现行终点；首末班和交路可调整，本文不固化时间表。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I856",
+      "title": "南京审计大学校车运行时间及路线",
+      "label": "南京审计大学校车运行时间及路线",
+      "url": "https://www.nau.edu.cn/5827/list.htm",
+      "originalUrl": "https://www.nau.edu.cn/5827/list.htm",
+      "canonicalUrl": "https://www.nau.edu.cn/5827/list.htm",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "公开校车页区分莫愁至浦口、浦口至莫愁方向。；部分班次注明学生可刷卡乘坐，公开浦口出发班次主要在中午和傍晚。",
+      "points": [
+        "公开校车页区分莫愁至浦口、浦口至莫愁方向。",
+        "部分班次注明学生可刷卡乘坐，公开浦口出发班次主要在中午和傍晚。"
+      ],
+      "limitations": "没有发布日期，不能保证当前班次；不能把莫愁早班错当浦口早晨外出通勤班，更不能把校车当所有实习生均可乘的固定接驳。",
+      "readingScopes": [
+        "读取工作日、周末班次和路线。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "读取工作日、周末班次和路线。",
+          "facts": [
+            "公开校车页区分莫愁至浦口、浦口至莫愁方向。",
+            "部分班次注明学生可刷卡乘坐，公开浦口出发班次主要在中午和傍晚。"
+          ],
+          "limits": [
+            "没有发布日期，不能保证当前班次；不能把莫愁早班错当浦口早晨外出通勤班，更不能把校车当所有实习生均可乘的固定接驳。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I857",
+      "title": "南京审计大学官网导航",
+      "label": "南京审计大学官网导航",
+      "url": "https://www.nau.edu.cn/main.htm",
+      "originalUrl": "https://www.nau.edu.cn/main.htm",
+      "canonicalUrl": "https://www.nau.edu.cn/main.htm",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "学校官网的就业信息网链接指向nau.91job.org.cn。",
+      "points": [
+        "学校官网的就业信息网链接指向nau.91job.org.cn。"
+      ],
+      "limitations": "仅核对官方入口，不表示某个岗位仍在招。",
+      "readingScopes": [
+        "读取首页导航与就业信息网、校车信息链接。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "读取首页导航与就业信息网、校车信息链接。",
+          "facts": [
+            "学校官网的就业信息网链接指向nau.91job.org.cn。"
+          ],
+          "limits": [
+            "仅核对官方入口，不表示某个岗位仍在招。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I858",
+      "title": "南京审计大学智慧就业平台",
+      "label": "南京审计大学智慧就业平台",
+      "url": "https://nau.91job.org.cn/sub-station/home/11287",
+      "originalUrl": "https://nau.91job.org.cn/sub-station/home/11287",
+      "canonicalUrl": "https://nau.91job.org.cn/",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "官方链接可进入南审智慧就业平台。",
+      "points": [
+        "官方链接可进入南审智慧就业平台。"
+      ],
+      "limitations": "本轮未读到岗位详情，不记录在招职位或统一申请条件；页面可能依赖脚本。",
+      "readingScopes": [
+        "从学校官网点击就业信息网，跳转到智慧就业平台；抽取正文仅1行，未取得内部岗位列表。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "从学校官网点击就业信息网，跳转到智慧就业平台；抽取正文仅1行，未取得内部岗位列表。",
+          "facts": [
+            "官方链接可进入南审智慧就业平台。"
+          ],
+          "limits": [
+            "本轮未读到岗位详情，不记录在招职位或统一申请条件；页面可能依赖脚本。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I859",
+      "title": "MPAcc实践基地",
+      "label": "MPAcc实践基地",
+      "url": "https://mpacc.nau.edu.cn/11520/list.htm",
+      "originalUrl": "https://mpacc.nau.edu.cn/11520/list.htm",
+      "canonicalUrl": "https://mpacc.nau.edu.cn/11520/list.htm",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "列有江苏省注协、天衡、中审众环江苏、立信江苏、立信中联江苏、苏州新区高新、南钢、南京文投、沈阳跃客、苏亚金诚、信永中和、新道科技、南审希地。",
+      "points": [
+        "列有江苏省注协、天衡、中审众环江苏、立信江苏、立信中联江苏、苏州新区高新、南钢、南京文投、沈阳跃客、苏亚金诚、信永中和、新道科技、南审希地。"
+      ],
+      "limitations": "页面无发布日期；机构列入名单不等于当前招聘、当年实习名额、校内推荐资格或保证录用。沈阳机构不作为南京周边通勤资源。",
+      "readingScopes": [
+        "读取全部13项基地/合作机构列表。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "读取全部13项基地/合作机构列表。",
+          "facts": [
+            "列有江苏省注协、天衡、中审众环江苏、立信江苏、立信中联江苏、苏州新区高新、南钢、南京文投、沈阳跃客、苏亚金诚、信永中和、新道科技、南审希地。"
+          ],
+          "limits": [
+            "页面无发布日期；机构列入名单不等于当前招聘、当年实习名额、校内推荐资格或保证录用。沈阳机构不作为南京周边通勤资源。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I860",
+      "title": "南京审计大学2027届毕业生事务所专场招聘会顺利举行",
+      "label": "南京审计大学2027届毕业生事务所专场招聘会顺利举行",
+      "url": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm",
+      "originalUrl": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm",
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm",
+      "date": "2026-10-18",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "会计学院等联合主办的10月14日招聘会面向毕业生并给在校生实习实践对接机会。；报道提到德勤、普华永道、毕马威、天健、容诚、立信等参会；中名国成同期开展实习项目选拔。",
+      "points": [
+        "会计学院等联合主办的10月14日招聘会面向毕业生并给在校生实习实践对接机会。",
+        "报道提到德勤、普华永道、毕马威、天健、容诚、立信等参会；中名国成同期开展实习项目选拔。"
+      ],
+      "limitations": "活动已结束；到场或合作不等于现在仍有名额，不保证任何学生获得实习。",
+      "readingScopes": [
+        "读取全文，活动报道与实习选拔段均已读。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "读取全文，活动报道与实习选拔段均已读。",
+          "facts": [
+            "会计学院等联合主办的10月14日招聘会面向毕业生并给在校生实习实践对接机会。",
+            "报道提到德勤、普华永道、毕马威、天健、容诚、立信等参会；中名国成同期开展实习项目选拔。"
+          ],
+          "limits": [
+            "活动已结束；到场或合作不等于现在仍有名额，不保证任何学生获得实习。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I861",
+      "title": "10.14事务所专场招聘会预告",
+      "label": "10.14事务所专场招聘会预告",
+      "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+      "originalUrl": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+      "date": "2026-10-13",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "预告面向社会审计学院本科、研究生，列出审计、税务、咨询、财务核查等岗位方向。；天衡、中汇、大信等也在到会名单。",
+      "points": [
+        "预告面向社会审计学院本科、研究生，列出审计、税务、咨询、财务核查等岗位方向。",
+        "天衡、中汇、大信等也在到会名单。"
+      ],
+      "limitations": "这是历史宣讲/招聘会名单，不当作当前职位详情，也不能自动把社会审计学院专场条件扩大到全部MPAcc。",
+      "readingScopes": [
+        "读取活动对象、时间、参会部分企业与岗位方向。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "读取活动对象、时间、参会部分企业与岗位方向。",
+          "facts": [
+            "预告面向社会审计学院本科、研究生，列出审计、税务、咨询、财务核查等岗位方向。",
+            "天衡、中汇、大信等也在到会名单。"
+          ],
+          "limits": [
+            "这是历史宣讲/招聘会名单，不当作当前职位详情，也不能自动把社会审计学院专场条件扩大到全部MPAcc。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I862",
+      "title": "一大波事务所来校招聘啦",
+      "label": "一大波事务所来校招聘啦",
+      "url": "https://shsjxy.nau.edu.cn/2026/0903/c7575a161299/page.htm",
+      "originalUrl": "https://shsjxy.nau.edu.cn/2026/0903/c7575a161299/page.htm",
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/0903/c7575a161299/page.htm",
+      "date": "2026-09-02",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "当时列出毕马威、德勤、安永、普华永道、立信和天职国际校内宣讲。；学院提示参加前整理简历、查看企业官网和具体岗位要求。",
+      "points": [
+        "当时列出毕马威、德勤、安永、普华永道、立信和天职国际校内宣讲。",
+        "学院提示参加前整理简历、查看企业官网和具体岗位要求。"
+      ],
+      "limitations": "9月宣讲已结束；文中社审学院简历指导时段不保证对会计学院MPAcc开放或长期不变。",
+      "readingScopes": [
+        "读取四大及立信、天职国际宣讲时间与准备提示。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "读取四大及立信、天职国际宣讲时间与准备提示。",
+          "facts": [
+            "当时列出毕马威、德勤、安永、普华永道、立信和天职国际校内宣讲。",
+            "学院提示参加前整理简历、查看企业官网和具体岗位要求。"
+          ],
+          "limits": [
+            "9月宣讲已结束；文中社审学院简历指导时段不保证对会计学院MPAcc开放或长期不变。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I863",
+      "title": "江苏省注协助推大学生就业成才",
+      "label": "江苏省注协助推大学生就业成才",
+      "url": "https://www.cicpa.org.cn/xxfb/topnews/202608/t20260817_66062.html",
+      "originalUrl": "https://www.cicpa.org.cn/xxfb/topnews/202608/t20260817_66062.html",
+      "canonicalUrl": "https://www.cicpa.org.cn/xxfb/topnews/202608/t20260817_66062.html",
+      "date": "2026-08-17",
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "中注协报道江苏省注协组织春秋招聘并设线上招聘专栏。",
+      "points": [
+        "中注协报道江苏省注协组织春秋招聘并设线上招聘专栏。"
+      ],
+      "limitations": "报道中的订单培养、定向通道属于特定合作项目，不能扩大为南审MPAcc均可参加或保证就业；本轮未取得该招聘专栏的可读具体URL。",
+      "readingScopes": [
+        "读取春秋行业招聘、线上专栏与校所合作段。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "读取春秋行业招聘、线上专栏与校所合作段。",
+          "facts": [
+            "中注协报道江苏省注协组织春秋招聘并设线上招聘专栏。"
+          ],
+          "limits": [
+            "报道中的订单培养、定向通道属于特定合作项目，不能扩大为南审MPAcc均可参加或保证就业；本轮未取得该招聘专栏的可读具体URL。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I864",
+      "title": "天衡会计师事务所官网",
+      "label": "天衡会计师事务所官网",
+      "url": "https://www.jscpa.com.cn/",
+      "originalUrl": "https://www.jscpa.com.cn/",
+      "canonicalUrl": "https://www.jscpa.com.cn/",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "官方地址为南京市建邺区江东中路106号万达广场商务楼B座19-20楼。；官网服务含审计、税务、管理及IT咨询等。",
+      "points": [
+        "官方地址为南京市建邺区江东中路106号万达广场商务楼B座19-20楼。",
+        "官网服务含审计、税务、管理及IT咨询等。"
+      ],
+      "limitations": "办公室地址不是项目实习实际工作地点，也不能据服务分类断言某业务线招实习生。",
+      "readingScopes": [
+        "读取主页地址、服务分类与诚聘英才链接。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "读取主页地址、服务分类与诚聘英才链接。",
+          "facts": [
+            "官方地址为南京市建邺区江东中路106号万达广场商务楼B座19-20楼。",
+            "官网服务含审计、税务、管理及IT咨询等。"
+          ],
+          "limits": [
+            "办公室地址不是项目实习实际工作地点，也不能据服务分类断言某业务线招实习生。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "I865",
+      "title": "天衡：诚聘英才",
+      "label": "天衡：诚聘英才",
+      "url": "https://www.jscpa.com.cn/join-us/",
+      "originalUrl": "https://www.jscpa.com.cn/join-us/",
+      "canonicalUrl": "https://www.jscpa.com.cn/join-us/",
+      "date": null,
+      "author": null,
+      "kind": "官方实习与职业资料",
+      "sourceType": "official",
+      "summary": "官网有招聘入口，抽取文字仍出现2025年应届审计助理标题。",
+      "points": [
+        "官网有招聘入口，抽取文字仍出现2025年应届审计助理标题。"
+      ],
+      "limitations": "属于长期入口兼旧招聘展示，不称2026-11当前实习开放，不引用40人作为当前名额。",
+      "readingScopes": [
+        "读取招聘页文字，见2025年应届审计助理栏目；图片未补读成当前公告。"
+      ],
+      "expansionBatch": "internship-resources-104",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "读取招聘页文字，见2025年应届审计助理栏目；图片未补读成当前公告。",
+          "facts": [
+            "官网有招聘入口，抽取文字仍出现2025年应届审计助理标题。"
+          ],
+          "limits": [
+            "属于长期入口兼旧招聘展示，不称2026-11当前实习开放，不引用40人作为当前名额。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "R307",
+      "title": "南京审计大学会计学院硕士研究生社会实践指导手册（封面2024年11月；入口标2023级）",
+      "url": "https://account.nau.edu.cn/_upload/article/files/d9/c3/7d24068e413cbfabad1f975e1ed0/75c3eb31-2aec-4c4a-a7e0-43d9f582683e.pdf",
+      "platform": "会计学院官网PDF",
+      "date": "2024-11（PDF封面与给实习单位的信落款）；下载入口标2023级",
+      "population": "会计学院会计学硕士与MPAcc硕士；实习长度分专业规定",
+      "advisorNames": [],
+      "summary": "2024年11月版实践手册入口标2023级，其中MPAcc为六个月且183天以上，可连续或分段；计划须导师与学院认可，实践期间保留原宿舍，异地住宿另安排，返校需材料和考核。",
+      "points": [
+        "2024年11月版实践手册入口标2023级，其中MPAcc为六个月且183天以上，可连续或分段；计划须导师与学院认可，实践期间保留原宿舍，异地住宿另安排，返校需材料和考核。"
+      ],
+      "limits": "历史版本不直接宣布适用2026/2027级；出发前领取本级最新版，核对天数、换单位审批、住宿及材料。",
+      "readingScope": "已读PDF封面、目录、实践细则和实习行为守则（PDF第1—5页）、给实习单位的信及部分表单；未逐项复核全部27页表格的排版。",
+      "kind": "official",
+      "label": "南京审计大学会计学院硕士研究生社会实践指导手册（封面2024年11月；入口标2023级）",
+      "original_id": "LNEW01",
+      "originalUrl": "https://account.nau.edu.cn/_upload/article/files/d9/c3/7d24068e413cbfabad1f975e1ed0/75c3eb31-2aec-4c4a-a7e0-43d9f582683e.pdf",
+      "canonicalUrl": "https://account.nau.edu.cn/_upload/article/files/d9/c3/7d24068e413cbfabad1f975e1ed0/75c3eb31-2aec-4c4a-a7e0-43d9f582683e.pdf",
+      "sourceUrls": [
+        "https://account.nau.edu.cn/_upload/article/files/d9/c3/7d24068e413cbfabad1f975e1ed0/75c3eb31-2aec-4c4a-a7e0-43d9f582683e.pdf"
+      ],
+      "additionalUrls": [],
+      "dateVariants": [
+        "2024-11（PDF封面与给实习单位的信落款）；下载入口标2023级"
+      ],
+      "eventKey": "2024-accounting-practice-handbook",
+      "expansionBatch": "research-round3",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "从MPAcc下载中心进入同文件名PDF镜像；27页全文抽取，重点p3-p5实践细则、p10-p13申请/变更表。",
+          "facts": [
+            "手册区分集中派遣和自主实践；导师推荐或自行联系的单位，经导师同意、学院批准可纳入集中派遣。",
+            "开始前需计划及导师、学院认可的相应申请；中途变更应先办理审批。",
+            "手册将审计学习内容描述为程序、证据、函证、底稿等专业训练。"
+          ],
+          "limits": [
+            "既有R307来源复读，不计新独立来源。入口年级与封面年份不一致，不作为未来入学年级现行规则保证；183天、请假次数等不改写成所有年级统一规定。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "R311",
+      "title": "关于选派研究生参与2025年度大型中央企业财务报表审计实习的通知",
+      "url": "https://gs.nau.edu.cn/2025/0916/c10680a147636/page.htm",
+      "platform": "研究生院官网",
+      "date": "2025-09-16",
+      "population": "学校研究生自愿申请选派项目；未写MPAcc专属或全员安排",
+      "advisorNames": [],
+      "summary": "2025年度一项央企审计实习通知列工作期、地点、审计助理任务和指导，出差补贴不低于90元/天，按项目规定提供出差住宿及差旅。比较实习时应逐项问清这些条件。",
+      "points": [
+        "2025年度一项央企审计实习通知列工作期、地点、审计助理任务和指导，出差补贴不低于90元/天，按项目规定提供出差住宿及差旅。比较实习时应逐项问清这些条件。"
+      ],
+      "limits": "项目已截止；补贴限出差期间，不是MPAcc统一收入、当前机会或学分认定承诺。",
+      "readingScope": "网页正文全读，含时间、地点、保障、申请段落。",
+      "kind": "official",
+      "label": "关于选派研究生参与2025年度大型中央企业财务报表审计实习的通知",
+      "original_id": "LNEW05",
+      "originalUrl": "https://gs.nau.edu.cn/2025/0916/c10680a147636/page.htm",
+      "canonicalUrl": "https://gs.nau.edu.cn/2025/0916/c10680a147636/page.htm",
+      "sourceUrls": [
+        "https://gs.nau.edu.cn/2025/0916/c10680a147636/page.htm"
+      ],
+      "additionalUrls": [],
+      "dateVariants": [
+        "2025-09-16"
+      ],
+      "eventKey": "2025-central-enterprise-audit-internship",
+      "expansionBatch": "research-round3",
+      "internshipUpdates": [
+        {
+          "batch": "internship-resources-104",
+          "readingScope": "网页正文已读",
+          "facts": [
+            "南审研究生院通知中的江苏分所审计项目，实际地点是安徽、北京；当期窗口2025年10月中旬—2026年4月30日。",
+            "当期学生通过研究生系统申请并同步简历，报名截止2025-09-18。"
+          ],
+          "limits": [
+            "已结束历史批次，只供理解项目地点、校内选派与校企合作；不得变成2026冬季报名入口。",
+            "不移植当年补贴、住宿、差旅标准到新岗位。"
+          ]
+        }
+      ]
+    }
+  ]
+}
