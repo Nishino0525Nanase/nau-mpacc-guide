@@ -1,168 +1,128 @@
-/* Minimal anonymous page-open analytics. No SDK, autocapture, replay or identity calls.
- * Public config must be loaded first as window.NAU_ANALYTICS.
- * Event contract: $pageview, properties.source === 'nau-mpacc-guide'.
- * Local storage holds a random browser ID and opt-out flag, never visit counters.
- * Docs: https://posthog.com/docs/api/capture
- *       https://posthog.com/docs/data/anonymous-vs-identified-events
+/* Aggregate page-open counts only. No cookies, visitor ID, SDK or replay.
+ * Each page load gets an ephemeral random event ID; never interpret it as UV.
+ * Owner exclusion uses a local preference, processed before any capture.
  */
 (function () {
   'use strict';
   if (typeof window === 'undefined' || window.NAUAnalytics) return;
-
   var OPT_OUT = 'nau_analytics_opt_out';
-  var BROWSER_ID = 'nau_mpacc_guide_anon_id_v1';
-  var locallyDisabled = false;
-  var CONSENT_KEY = 'nau_privacy_consent_v1';
+  var OLD_ID = 'nau_mpacc_guide_anon_id_v1';
+  var OLD_CHOICE = 'nau_privacy_consent_v1';
+  var disabled = false;
   var attempted = false;
-
   function storage() {
     try { return window.localStorage; } catch (_) { return null; }
   }
-
-  function privacySignal() {
-    var nav = window.navigator || {};
-    var dnt = String(nav.doNotTrack || window.doNotTrack || nav.msDoNotTrack || '').toLowerCase();
-    return dnt === '1' || dnt === 'yes' || nav.globalPrivacyControl === true;
+  function clearOldIdentity() {
+    try { var s = storage(); if (s) s.removeItem(OLD_ID); } catch (_) {}
   }
-
   function isOptedOut() {
-    if (locallyDisabled || privacySignal()) return true;
+    if (disabled) return true;
+    var n = window.navigator || {};
+    var dnt = String(n.doNotTrack || window.doNotTrack || n.msDoNotTrack || '').toLowerCase();
+    if (dnt === '1' || dnt === 'yes' || n.globalPrivacyControl === true) return true;
     try {
-      var store = storage();
-      return !store || store.getItem(OPT_OUT) === '1';
+      var s = storage();
+      if (!s || s.getItem(OPT_OUT) === '1') return true;
+      // Respect an explicit refusal from an earlier release.
+      var raw = s.getItem(OLD_CHOICE);
+      if (raw) {
+        var choice = JSON.parse(raw);
+        if (choice && choice.version === 1 && choice.analytics === false) return true;
+      }
+      return false;
     } catch (_) { return true; }
   }
-
-  function clearIdentity() {
-    try { var store = storage(); if (store) store.removeItem(BROWSER_ID); } catch (_) {}
-  }
-
-  function consentGranted() {
+  function disable() {
+    disabled = true;
+    clearOldIdentity();
     try {
-      if (window.NAUConsent && window.NAUConsent.getAnalyticsConsent() !== 'granted') return false;
-      var store = storage();
-      var value = store && JSON.parse(store.getItem(CONSENT_KEY) || 'null');
-      return !!value && value.version === 1 && value.analytics === true;
+      var s = storage();
+      if (!s) return false;
+      s.setItem(OPT_OUT, '1');
+      return s.getItem(OPT_OUT) === '1';
     } catch (_) { return false; }
   }
-
-  function disable() {
-    clearIdentity();
-    locallyDisabled = true;
-    try { var store = storage(); if (store) store.setItem(OPT_OUT, '1'); } catch (_) {}
-  }
-
-  function enable() {
-    locallyDisabled = false;
-    try { var store = storage(); if (store) store.setItem(OPT_OUT, '0'); } catch (_) {}
-    // Owner exclusion and optional consent are separate; enabling does not grant consent.
-    captureIfAllowed();
-  }
-
-  window.NAUAnalytics = Object.freeze({ disable: disable, enable: enable, isOptedOut: isOptedOut });
-
-  function settings() {
-    var config = window.NAU_ANALYTICS;
-    if (!config || config.enabled === false || typeof config.token !== 'string') return null;
-    var token = config.token.trim();
-    // Reject personal/secret API keys rather than accidentally publish them in a request.
-    if (!/^phc_[A-Za-z0-9_-]{10,}$/.test(token)) return null;
-    if (typeof config.allowedHost !== 'string' || typeof config.pathPrefix !== 'string') return null;
-    var host = config.allowedHost.trim().toLowerCase();
-    var prefix = config.pathPrefix;
-    if (!host || /[/:?#\s]/.test(host) || prefix.charAt(0) !== '/' || /[?#]/.test(prefix)) return null;
-    if (prefix.charAt(prefix.length - 1) !== '/') prefix += '/';
+  function config() {
+    var c = window.NAU_ANALYTICS;
+    if (!c || c.enabled === false || typeof c.token !== 'string' || !/^phc_[A-Za-z0-9_-]{10,}$/.test(c.token)) return null;
+    if (typeof c.allowedHost !== 'string' || typeof c.pathPrefix !== 'string') return null;
+    if (!c.allowedHost || /[/:?#\s]/.test(c.allowedHost) || c.pathPrefix.charAt(0) !== '/' || /[?#]/.test(c.pathPrefix)) return null;
     try {
-      var api = new URL(config.apiHost);
+      var api = new URL(c.apiHost);
       if (!['https://us.i.posthog.com', 'https://eu.i.posthog.com'].includes(api.origin)) return null;
       if (api.pathname !== '/' || api.search || api.hash || api.username || api.password) return null;
-      return { token: token, apiHost: api.origin, allowedHost: host, pathPrefix: prefix };
+      return { token: c.token, apiHost: api.origin, host: c.allowedHost.toLowerCase(), prefix: c.pathPrefix.replace(/\/?$/, '/') };
     } catch (_) { return null; }
   }
-
-  function allowedPage(config) {
+  function allowedPage(c) {
     try {
-      var page = new URL(window.location.href);
-      var host = page.hostname.toLowerCase();
-      if (page.protocol !== 'https:' || host !== config.allowedHost) return null;
-      if (host === 'localhost' || host.endsWith('.localhost') || /^127\./.test(host) || host === '0.0.0.0' || host === '[::1]') return null;
-      if (page.pathname !== config.pathPrefix.slice(0, -1) && !page.pathname.startsWith(config.pathPrefix)) return null;
-      var path = decodeURIComponent(page.pathname);
-      if (/(?:^|\/)(?:admin|analytics-admin|dashboard)(?:\.html)?(?:\/|$)/i.test(path)) return null;
-      if (page.searchParams.has('admin') || /^(?:#\/?)(?:admin|dashboard)(?:[/?]|$)/i.test(page.hash)) return null;
-      return page;
+      var p = new URL(window.location.href);
+      if (p.protocol !== 'https:' || p.hostname.toLowerCase() !== c.host) return null;
+      if (c.host === 'localhost' || c.host.endsWith('.localhost') || /^127\./.test(c.host) || c.host === '0.0.0.0' || c.host === '[::1]') return null;
+      if (![c.prefix, c.prefix.slice(0, -1), c.prefix + 'index.html'].includes(p.pathname)) return null;
+      if (p.searchParams.has('admin') || /^#\/?(?:admin|dashboard)(?:[/?]|$)/i.test(p.hash)) return null;
+      return p;
     } catch (_) { return null; }
   }
-
-  function anonymousId() {
-    try {
-      var store = storage();
-      if (!store) return null;
-      var id = store.getItem(BROWSER_ID);
-      if (/^anon_[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id || '')) return id;
-      var crypto = window.crypto;
-      if (!crypto || typeof crypto.randomUUID !== 'function') return null;
-      id = 'anon_' + crypto.randomUUID();
-      store.setItem(BROWSER_ID, id);
-      // Do not silently switch to a new per-load ID when storage is blocked: that inflates UV.
-      return store.getItem(BROWSER_ID) === id ? id : null;
-    } catch (_) { return null; }
+  function notifyOwner(saved) {
+    var doc = window.document;
+    var target = doc && doc.getElementById && doc.getElementById('toast');
+    if (!target) return;
+    target.textContent = saved ? '已排除当前浏览器：以后的访问不计入统计。' : '本次访问已排除，但设置未能保存；下次请仍使用排除链接打开。';
+    if (target.classList) target.classList.add('visible');
   }
-
-  function captureIfAllowed() {
-  var config = settings();
-  if (attempted || !config || isOptedOut() || !consentGranted() || typeof window.fetch !== 'function') return;
-  var page = allowedPage(config);
-  if (!page) return;
-  var id = anonymousId();
-  if (!id) return;
-
-  var referrerHost = '';
-  try { referrerHost = new URL(window.document.referrer).hostname; } catch (_) {}
-  var payload = {
-    api_key: config.token,
-    event: '$pageview',
-    distinct_id: id,
-    properties: {
-      source: 'nau-mpacc-guide',
-      $process_person_profile: false,
-      $current_url: page.origin + page.pathname,
-      $pathname: page.pathname,
-      $host: page.hostname,
-      referrer_host: referrerHost,
-      $ip: null,
-      $geoip_disable: true
-    }
-  };
-
-  attempted = true;
+  clearOldIdentity();
+  window.NAUAnalytics = Object.freeze({ disable: disable, isOptedOut: isOptedOut });
   try {
-    var request = window.fetch(config.apiHost + '/i/v0/e/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-      credentials: 'omit',
-      referrerPolicy: 'no-referrer',
-      cache: 'no-store',
-      keepalive: true,
-      mode: 'cors'
-    });
-    if (request && typeof request.catch === 'function') request.catch(function () {});
-  } catch (_) {}
+    var ownerPage = new URL(window.location.href);
+    if (ownerPage.searchParams.get('exclude_self') === '1') {
+      var saved = disable();
+      ownerPage.searchParams.delete('exclude_self');
+      if (window.history && typeof window.history.replaceState === 'function') window.history.replaceState(null, '', ownerPage.href);
+      notifyOwner(saved);
+      return;
+    }
+  } catch (_) { return; }
+  function capture() {
+    var c = config();
+    if (attempted || !c || isOptedOut() || typeof window.fetch !== 'function') return;
+    var p = allowedPage(c);
+    if (!p || !window.crypto || typeof window.crypto.randomUUID !== 'function') return;
+    var id;
+    try { id = 'pv_' + window.crypto.randomUUID(); } catch (_) { return; }
+    var referrer = '';
+    try { referrer = new URL(window.document.referrer).hostname; } catch (_) {}
+    var payload = {
+      api_key: c.token,
+      event: '$pageview',
+      distinct_id: id,
+      properties: {
+        source: 'nau-mpacc-guide',
+        analytics_mode: 'aggregate_v2',
+        $process_person_profile: false,
+        $current_url: p.origin + p.pathname,
+        $pathname: p.pathname,
+        $host: p.hostname,
+        referrer_host: referrer,
+        $ip: null,
+        $geoip_disable: true
+      }
+    };
+    attempted = true;
+    try {
+      var request = window.fetch(c.apiHost + '/i/v0/e/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+        credentials: 'omit',
+        referrerPolicy: 'no-referrer',
+        cache: 'no-store',
+        keepalive: true,
+        mode: 'cors'
+      });
+      if (request && typeof request.catch === 'function') request.catch(function () {});
+    } catch (_) {}
   }
-
-  if (!consentGranted() || isOptedOut()) clearIdentity();
-  if (typeof window.addEventListener === 'function') {
-    window.addEventListener('nau:consentchange', function () {
-      if (!consentGranted()) clearIdentity();
-      captureIfAllowed();
-    });
-    window.addEventListener('storage', function (event) {
-      if (event.key !== CONSENT_KEY && event.key !== OPT_OUT && event.key !== null) return;
-      if (!consentGranted() || isOptedOut()) clearIdentity();
-      captureIfAllowed();
-    });
-  }
-  captureIfAllowed();
-  // Deliberately no hashchange/history listeners: exactly one attempted PV per full load.
+  capture();
 }());
