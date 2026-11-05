@@ -10,7 +10,7 @@
   if ('ResizeObserver' in window) new ResizeObserver(updateHeaderOffset).observe(header);
   else window.addEventListener('resize', updateHeaderOffset, {passive:true});
   const dialog = $('#detail-dialog');
-  const state = { data: null, view: 'mentors', query: '', direction: '', savedOnly: false, postQuery: '', postTopic: '', postCategory: '', postLimit: 20, chapter: 'life-01', saved: {}, compareIds: [], dialogType: '', contactMentorId: '', contactMode: 'outline', contactEdits: {}, postCodes: {}, lastFocus: null, lastFocusId: null };
+  const state = { data: null, view: 'mentors', query: '', direction: '', savedOnly: false, reviewCoverage: '', postQuery: '', postTopic: '', postCategory: '', postLimit: 20, chapter: 'life-01', saved: {}, compareIds: [], dialogType: '', contactMentorId: '', contactMode: 'outline', contactEdits: {}, postCodes: {}, lastFocus: null, lastFocusId: null };
   const icons = {
     search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.6" cy="10.6" r="6.8"/><path d="m16 16 5 5"/></svg>',
     bookmark: '<svg viewBox="0 0 18 22" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 2h12v18l-6-4-6 4z"/></svg>'
@@ -129,9 +129,106 @@
   }
 
   function comparisonEvidence(mentor, official) {
+    if (!official && mentor.studentReviews) return studentReviewSection(mentor, true);
     const entries = array(mentor.evidence).filter(e => official ? e.kind === 'official' && e.id !== `${mentor.id}-official` : e.kind !== 'official');
     if (!entries.length) return `<p class="compare-empty">${official ? '尚无单独的培养或教学实例；可继续核对教师主页。' : '尚未取得可归属的个人经历反馈，需向近年直系学生核实。'}</p>`;
     return entries.slice(0, 3).map(item => `<details class="compare-evidence"><summary>${esc(item.statusLabel || item.category || (official ? '官方记录' : '反馈线索'))}${item.date ? ` · ${esc(item.date)}` : ''}</summary><p class="compare-population">${esc(official ? '官方资料' : ({firsthand:'本人经历自述',secondhand:'二手转述',uncertain:'身份或细节待核实'}[item.kind] || '反馈线索'))} · ${esc(item.population || '接触身份未说明')}</p><p>${inline(item.text)}</p><p class="evidence-limit">${inline(item.limitations || '仅限该条来源描述的对象和情境，不能概括所有学生的体验。')}</p>${item.url ? external(item.url, '原始来源 ↗') : ''}</details>`).join('') + (entries.length > 3 ? `<p class="compare-empty">另有 ${entries.length-3} 条记录，可在完整资料中继续核对。</p>` : '');
+  }
+
+  const reviewStatusLabels = {
+    mpacc_guidance: 'MPAcc指导亲历',
+    guidance_unspecified: '指导经历 · 阶段未明',
+    non_mpacc_guidance: '非MPAcc指导经历',
+    course_only: '课程接触或二手线索',
+    weak_mentions: '笼统提名 · 弱线索',
+    not_found: '暂无可归属学生评价'
+  };
+
+  function dossierReviews(mentor) {
+    return array(mentor.studentReviews?.reviews).filter(item => item && item.attribution?.status === 'confirmed');
+  }
+
+  function reviewStatus(mentor) {
+    if (!mentor.studentReviews) return 'legacy';
+    if (!dossierReviews(mentor).length) return 'not_found';
+    const status = mentor.studentReviews.coverageStatus;
+    return Object.prototype.hasOwnProperty.call(reviewStatusLabels, status) ? status : 'weak_mentions';
+  }
+
+  function reviewCoverageLabel(mentor) {
+    const status = reviewStatus(mentor);
+    if (status === 'legacy') return mentor.feedbackStatus || '个人评价待补充';
+    if (status === 'not_found') return reviewStatusLabels.not_found;
+    return mentor.studentReviews.coverageLabel || reviewStatusLabels[status];
+  }
+
+  function reviewFilterMatches(mentor) {
+    if (!state.reviewCoverage) return true;
+    const status = reviewStatus(mentor);
+    if (state.reviewCoverage === 'has_records') return dossierReviews(mentor).length > 0;
+    if (state.reviewCoverage === 'other_guidance') return ['guidance_unspecified','non_mpacc_guidance'].includes(status);
+    return status === state.reviewCoverage;
+  }
+
+  function reviewCoverageHtml() {
+    const mentors = state.data.mentors;
+    if (!mentors.some(m => m.studentReviews)) return '';
+    const withRecords = mentors.filter(m => dossierReviews(m).length).length;
+    const direct = mentors.filter(m => reviewStatus(m) === 'mpacc_guidance').length;
+    const aliases = [...new Set(array(state.data.ambiguousMentorAliases).flatMap(item => {
+      if (item?.status === 'search_only') return [];
+      const value = typeof item === 'string' ? item : item?.alias;
+      if (typeof value !== 'string' || !/^[A-Za-z\s/／]+$/.test(value)) return [];
+      return value.split(/[/／]+/).flatMap(part => {
+        const words = part.trim().split(/\s+/).filter(Boolean);
+        return words.length && words.every(word => word.length === 1) ? [words.join('')] : words;
+      }).filter(alias => /^[A-Za-z]{1,6}$/.test(alias)).map(alias => alias.toUpperCase());
+    }))];
+    return `<section class="review-coverage" aria-label="逐位学生评价覆盖"><div><span class="small-label">STUDENT EXPERIENCES</span><h3>先看谁说了什么，再看推荐与提醒</h3><p>${mentors.length} 位导师逐人核对，<strong>${withRecords}</strong> 位有可归属记录，其中 <strong>${direct}</strong> 位有明确MPAcc指导亲历；其余老师的材料缺口也分别列出。</p><p class="review-coverage-note">可归属记录表示评价指向的老师可确认；课程印象、转述、弱提名与指导亲历分别标注。</p></div><details class="alias-guide"><summary>缩写评价怎样归人</summary><p>拼音缩写只作检索线索。LH、WY在名录中都可能对应多位老师，需要原文全名、作者明确确认或可核对的上下文，才归到具体老师。</p>${aliases.length ? `<p>已核对的缩写与归属线索：${aliases.map(esc).join('、')}。未确认内容不进入任何具体老师的评价。</p>` : '<p>未确认的缩写或只有姓氏的评论，保留为核实线索，不据此给老师作推荐或避雷结论。</p>'}</details></section>`;
+  }
+
+  function reviewFilterHtml() {
+    if (!state.data.mentors.some(m => m.studentReviews)) return '';
+    const options = [['','全部评价覆盖'],['has_records','有可归属记录'],['mpacc_guidance','明确MPAcc指导亲历'],['other_guidance','其他指导经历'],['course_only','课程接触或二手线索'],['weak_mentions','笼统提名／弱线索'],['not_found','暂无可归属评价']];
+    return `<div class="review-filter"><label for="review-coverage">按学生评价筛选</label><select id="review-coverage">${options.map(([value,label]) => `<option value="${value}"${state.reviewCoverage === value ? ' selected' : ''}>${label}</option>`).join('')}</select><span>筛选的是证据类型，不是老师评分。</span></div>`;
+  }
+
+  function supportedReviewPoints(mentor, key) {
+    const ids = new Set(dossierReviews(mentor).map(item => item.id).filter(Boolean));
+    return array(mentor.studentReviews?.[key]).filter(point => point && typeof point === 'object' && point.text && array(point.reviewIds).some(id => ids.has(id)));
+  }
+
+  function reviewPointHtml(point) {
+    const codes = array(point.sourceIds).filter(code => typeof code === 'string' && source(code));
+    return `<li><p>${inline(point.text)}${codes.length ? ` ${inline('[' + codes.join('、') + ']')}` : ''}</p>${point.scope ? `<small>${inline(point.scope)}</small>` : ''}</li>`;
+  }
+
+  function studentReviewRecord(item, compact = false) {
+    const experience = {guidance:'具体指导经历',course:'课程接触',general:'笼统提名或印象',interview:'学生访谈中的经历'}[item.experienceType] || '学生经历记录';
+    const limits = array(item.limits).map(textOf).filter(Boolean).join('；');
+    const readingScope = array(item.readingScope).map(textOf).filter(Boolean).join('；');
+    const firsthandScope = array(item.firsthandScope).map(textOf).filter(Boolean).join('；');
+    const hearsayParts = array(item.hearsayParts).map(textOf).filter(Boolean).join('；');
+    const voice = item.firsthand === true ? (hearsayParts ? '本人经历自述 · 含转述（分开标注）' : '本人经历自述') : item.firsthand === false ? '转述／他人信息' : '亲历情况未明确';
+    const tone = {positive:'正面体验',negative:'需重视的具体体验',mixed:'体验有利弊',neutral:'经历描述'}[item.polarity] || '经历描述';
+    const identity = [item.degree || '专业／学位未说明',item.year ? `年级／经历年份：${textOf(item.year)}` : '年级／经历年份未说明',item.relationship || '与老师的接触关系未说明'];
+    const codes = array(item.sourceIds).filter(code => typeof code === 'string' && source(code));
+    return `<details class="student-review-record${compact ? ' compact' : ''}"><summary><span>${esc(experience)} · ${esc(tone)}</span><small>${esc(item.narrator || '评论者未记录')} · ${esc(item.date || '日期未显示')}</small></summary><div class="student-review-meta"><span>${esc(voice)}</span><p>${identity.map(esc).join(' · ')}</p>${firsthandScope ? `<p class="review-experience-scope"><strong>本人亲历范围：</strong>${inline(firsthandScope)}</p>` : ''}${hearsayParts ? `<p class="review-experience-scope"><strong>转述／朋友经历的部分：</strong>${inline(hearsayParts)}</p>` : ''}</div><p>${inline(item.text || item.summary || '')}</p>${array(item.specifics).length ? `<ul class="tip-list">${array(item.specifics).map(value => `<li>${inline(value)}</li>`).join('')}</ul>` : ''}<p class="review-attribution"><strong>归属依据：</strong>${item.attribution?.alias ? `原帖写法 ${esc(item.attribution.alias)}；` : ''}${inline(item.attribution?.reason || '原始材料明确指向这位老师。')}</p><p class="evidence-limit"><strong>适用边界：</strong>${inline(limits || '仅限记录中的具体身份、时间与经历，其他情况需另行核实。')}</p>${readingScope ? `<details class="review-reading-scope"><summary>实际阅读范围</summary><p>${inline(readingScope)}</p></details>` : ''}<div class="source-actions">${item.sourceUrl ? external(item.sourceUrl, esc(item.sourceTitle || '打开评价原始来源') + ' ↗') : ''}${codes.length ? inline('[' + codes.join('、') + ']') : ''}</div></details>`;
+  }
+
+  function studentReviewSection(mentor, compact = false) {
+    const dossier = mentor.studentReviews;
+    if (!dossier) {
+      const feedback = array(mentor.evidence).filter(item => item.kind !== 'official');
+      return `<section class="dialog-section student-review-section"><h3>${compact ? '' : '<span class="section-number">01</span>'}学生个人评价</h3><p class="dialog-content-intro">${esc(mentor.feedbackStatus || '个人评价待补充')}</p>${feedback.length ? feedback.map(renderEvidence).join('') : '<p class="review-gap">目前尚未取得可归属的学生个人体验。可先向近年直系学生了解具体指导过程。</p>'}</section>`;
+    }
+    const reviews = dossierReviews(mentor);
+    const positive = supportedReviewPoints(mentor, 'recommendationPoints');
+    const concerns = supportedReviewPoints(mentor, 'concerns');
+    const questions = array(dossier.verificationQuestions).filter(Boolean);
+    const gaps = array(dossier.gaps).filter(Boolean);
+    if (compact) return `<div class="compare-student-reviews"><p class="review-coverage-badge">${esc(reviewCoverageLabel(mentor))}</p>${dossier.summary ? `<p>${inline(dossier.summary)}</p>` : ''}${positive.length ? `<h4>被推荐的具体理由</h4><ul class="review-point-list">${positive.map(reviewPointHtml).join('')}</ul>` : ''}${concerns.length ? `<h4>避雷与适配提醒</h4><ul class="review-point-list">${concerns.map(reviewPointHtml).join('')}</ul>` : ''}${reviews.length ? reviews.slice(0,2).map(item => studentReviewRecord(item,true)).join('') : '<p class="compare-empty">暂无可归属的学生个人评价，不能据此作口碑推荐或排除。</p>'}${reviews.length > 2 ? `<p class="compare-empty">另有 ${reviews.length-2} 条经历，见完整资料。</p>` : ''}${questions.length ? `<details class="review-questions"><summary>联系时需要核实的问题</summary><ul class="tip-list">${questions.map(item => `<li>${inline(item)}</li>`).join('')}</ul></details>` : ''}</div>`;
+    return `<section class="dialog-section student-review-section" aria-label="学生个人评价"><h3><span class="section-number">01</span>学生个人评价</h3><p class="review-coverage-badge">${esc(reviewCoverageLabel(mentor))} · ${reviews.length} 条可归属记录</p>${dossier.summary ? `<p class="dialog-content-intro">${inline(dossier.summary)}</p>` : ''}${positive.length ? `<section class="review-assessment"><h4>被推荐的具体理由</h4><ul class="review-point-list">${positive.map(reviewPointHtml).join('')}</ul></section>` : '<p class="review-gap">现有个人体验材料不足以形成具体推荐理由，联系前可继续补证。</p>'}${concerns.length ? `<section class="review-assessment concerns"><h4>避雷与适配提醒 · 限定具体经历</h4><ul class="review-point-list">${concerns.map(reviewPointHtml).join('')}</ul></section>` : ''}${reviews.length ? `<div class="student-review-records"><h4>学生怎么说 · 逐条看身份与过程</h4>${reviews.map(item => studentReviewRecord(item)).join('')}</div>` : '<p class="review-gap">暂无可归属的公开学生体验。官方论文、案例和课程记录在下方单独呈现。</p>'}${questions.length ? `<section class="review-questions"><h4>联系前向直系学生核实</h4><ul class="tip-list">${questions.map(item => `<li>${inline(item)}</li>`).join('')}</ul></section>` : ''}${gaps.length ? `<details class="review-gaps"><summary>本轮仍缺哪些材料</summary><ul class="tip-list">${gaps.map(item => `<li>${inline(item)}</li>`).join('')}</ul></details>` : ''}</section>`;
   }
 
   function currentContact(mentor) {
@@ -194,12 +291,12 @@
 
   function mentorCard(mentor) {
     const status = isSaved(mentor.id) ? `<span class="tag warm">${esc(state.saved[mentor.id])}</span>` : '';
-    return `<article class="mentor-card"><div class="mentor-card-head"><div><h3 class="mentor-name">${esc(mentor.name)}${mentor.hasDetailedCard ? '<span class="core-label">核心资料卡</span>' : ''}</h3><p class="title-line">${esc(mentor.title || '职称未公开')} · 125300名单内</p></div>${saveButton(mentor)}</div><div class="tags">${mentor.directions.map((id, i) => `<span class="tag${i ? ' secondary' : ''}">${esc(shortDirection(id))}</span>`).join('')}${status}</div><p class="mentor-research">${esc(mentor.research || '研究方向未公开')}</p><div class="mentor-feedback"><span class="evidence-dot" aria-hidden="true"></span><span>${esc(mentor.feedbackStatus || '个人指导反馈待补充了解')}</span></div><div class="mentor-card-actions"><button type="button" class="card-action" data-action="mentor" data-id="${esc(mentor.id)}"><span>查看资料与反馈</span><span aria-hidden="true">↗</span><span class="sr-only">：${esc(mentor.name)}</span></button>${compareButton(mentor)}</div></article>`;
+    return `<article class="mentor-card"><div class="mentor-card-head"><div><h3 class="mentor-name">${esc(mentor.name)}${mentor.hasDetailedCard ? '<span class="core-label">核心资料卡</span>' : ''}</h3><p class="title-line">${esc(mentor.title || '职称未公开')} · 125300名单内</p></div>${saveButton(mentor)}</div><div class="tags">${mentor.directions.map((id, i) => `<span class="tag${i ? ' secondary' : ''}">${esc(shortDirection(id))}</span>`).join('')}${status}</div><p class="mentor-research">${esc(mentor.research || '研究方向未公开')}</p><div class="mentor-feedback"><span class="evidence-dot" aria-hidden="true"></span><span>${esc(reviewCoverageLabel(mentor))}</span></div><div class="mentor-card-actions"><button type="button" class="card-action" data-action="mentor" data-id="${esc(mentor.id)}"><span>查看资料与反馈</span><span aria-hidden="true">↗</span><span class="sr-only">：${esc(mentor.name)}</span></button>${compareButton(mentor)}</div></article>`;
   }
 
   function filteredMentors() {
     const query = normalize(state.query);
-    return state.data.mentors.filter(m => (!state.direction || m.directions.includes(state.direction)) && (!state.savedOnly || isSaved(m.id)) && (!query || normalize([m.name, m.research, m.title, m.summary, m.qualification, ...m.directions.map(directionName), ...array(m.profileFields).map(f => textOf(f.value))].join(' ')).includes(query)));
+    return state.data.mentors.filter(m => (!state.direction || m.directions.includes(state.direction)) && (!state.savedOnly || isSaved(m.id)) && reviewFilterMatches(m) && (!query || normalize([m.name, m.research, m.title, m.summary, m.qualification, ...m.directions.map(directionName), ...array(m.profileFields).map(f => textOf(f.value))].join(' ')).includes(query)));
   }
 
   function renderMentorResults() {
@@ -217,7 +314,7 @@
   function researchHighlightsHtml() {
     const highlights = array((state.data.meta.research102?.highlights?.length ? state.data.meta.research102 : state.data.meta.continueResearch || state.data.meta.appResearch || state.data.meta.round3Research)?.highlights).filter(item => item?.title && item?.text).slice(0, 4);
     if (!highlights.length) return '';
-    return `<details class="research-updates" open><summary>新增核验：具体训练与学习安排</summary><div class="research-updates-grid">${highlights.map(item => {
+    return `<details class="research-updates"><summary>新增核验：具体训练与学习安排</summary><div class="research-updates-grid">${highlights.map(item => {
       const text = textOf(item.text);
       const extraCodes = array(item.sourceCodes).filter(code => typeof code === 'string' && source(code) && !text.includes(code));
       return `<article><h3>${esc(item.title)}</h3><p>${inline(text + (extraCodes.length ? ` [${extraCodes.join('、')}]` : ''))}</p></article>`;
@@ -225,8 +322,8 @@
   }
 
   function renderMentors() {
-    app.innerHTML = heading('01 / MENTOR DIRECTORY', '先选方向，再了解具体的人', '六类研究主题，帮助你建立自己的了解顺序。研究方向看官方资料，相处与训练看具体经历；每条反馈都保留接触身份与年份。', `<strong>${state.data.mentors.length}</strong> 位导师 · ${state.data.mentorCards.length} 张核心卡`) + researchHighlightsHtml() +
-      `<div class="notice">${esc(state.data.meta.directionNote)} <button type="button" class="text-button" data-action="guide" data-section="0">读懂方向与报名的关系 ↗</button></div><div class="toolbar">${searchField('mentor-search', '搜索导师姓名、研究方向或关键词', state.query)}<button id="saved-filter" type="button" class="save-filter" data-action="saved-only" aria-pressed="${state.savedOnly}">${icons.bookmark}我的清单</button></div><div class="filter-groups"><div class="filter-line" role="group" aria-label="按研究方向筛选"><button class="filter-chip direction-chip" type="button" data-action="direction" data-id="" aria-pressed="${!state.direction}">全部方向<small>${state.data.mentors.length}</small></button>${state.data.directions.map(d => `<button class="filter-chip direction-chip" type="button" data-action="direction" data-id="${esc(d.id)}" aria-pressed="${state.direction === d.id}">${esc(shortDirection(d.id))}<small>${state.data.mentors.filter(m => m.directions.includes(d.id)).length}</small></button>`).join('')}</div><div class="direction-note">${state.direction ? `${esc(state.direction)} · ${esc(directionName(state.direction))}。交叉归类可重复出现，不等同当年招生分组。` : '每位导师最多列两类，允许主方向与交叉方向；名录内不代表当年仍有名额。'}</div></div><section class="mentor-tools" id="mentor-tools" aria-label="导师对比与联系准备"></section><div class="results-bar"><span id="mentor-result-count" role="status" aria-live="polite"></span><span id="mentor-result-order"></span></div><div class="mentor-grid" id="mentor-results"></div><section class="goal-section" aria-labelledby="goal-title"><span class="small-label">FIND YOUR STARTING POINT</span><h3 id="goal-title">从你想要的研究生生活出发</h3><div class="goal-grid">${state.data.targetProfiles.map(p => `<details class="goal-card"><summary>${esc(p.title.replace(/^希望/, ''))}</summary><div class="goal-content article-body">${array(p.blocks).map(blockHtml).join('') || `<p>${inline(p.summary)}</p>`}</div><div class="source-actions">${p.mentorIds.map(id => {const m = state.data.mentors.find(m => m.id === id); return m ? `<button class="text-button" type="button" data-action="mentor" data-id="${esc(id)}">${esc(m.name)} ↗</button>` : '';}).join('')}</div></details>`).join('')}</div><div class="guide-action-row"><button type="button" class="text-button" data-action="guide" data-section="3">名额、双选与备选方案 ↗</button><button type="button" class="text-button" data-action="guide" data-section="4">怎样写一封具体的联系邮件 ↗</button><span>清单保存在当前浏览器，可标记优先联系、备选或仅了解。</span></div></section>`;
+    app.innerHTML = heading('01 / MENTOR DIRECTORY', '先选方向，再了解具体的人', '六类研究主题，帮助你建立自己的了解顺序。研究方向看官方资料，相处与训练看具体经历；每条反馈都保留接触身份与年份。', `<strong>${state.data.mentors.length}</strong> 位导师 · ${state.data.mentorCards.length} 张核心卡`) + reviewCoverageHtml() + researchHighlightsHtml() +
+      `<div class="notice">${esc(state.data.meta.directionNote)} <button type="button" class="text-button" data-action="guide" data-section="0">读懂方向与报名的关系 ↗</button></div><div class="toolbar">${searchField('mentor-search', '搜索导师姓名、研究方向或关键词', state.query)}<button id="saved-filter" type="button" class="save-filter" data-action="saved-only" aria-pressed="${state.savedOnly}">${icons.bookmark}我的清单</button></div><div class="filter-groups"><div class="filter-line" role="group" aria-label="按研究方向筛选"><button class="filter-chip direction-chip" type="button" data-action="direction" data-id="" aria-pressed="${!state.direction}">全部方向<small>${state.data.mentors.length}</small></button>${state.data.directions.map(d => `<button class="filter-chip direction-chip" type="button" data-action="direction" data-id="${esc(d.id)}" aria-pressed="${state.direction === d.id}">${esc(shortDirection(d.id))}<small>${state.data.mentors.filter(m => m.directions.includes(d.id)).length}</small></button>`).join('')}</div><div class="direction-note">${state.direction ? `${esc(state.direction)} · ${esc(directionName(state.direction))}。交叉归类可重复出现，不等同当年招生分组。` : '每位导师最多列两类，允许主方向与交叉方向；名录内不代表当年仍有名额。'}</div></div>${reviewFilterHtml()}<section class="mentor-tools" id="mentor-tools" aria-label="导师对比与联系准备"></section><div class="results-bar"><span id="mentor-result-count" role="status" aria-live="polite"></span><span id="mentor-result-order"></span></div><div class="mentor-grid" id="mentor-results"></div><section class="goal-section" aria-labelledby="goal-title"><span class="small-label">FIND YOUR STARTING POINT</span><h3 id="goal-title">从你想要的研究生生活出发</h3><div class="goal-grid">${state.data.targetProfiles.map(p => `<details class="goal-card"><summary>${esc(p.title.replace(/^希望/, ''))}</summary><div class="goal-content article-body">${array(p.blocks).map(blockHtml).join('') || `<p>${inline(p.summary)}</p>`}</div><div class="source-actions">${p.mentorIds.map(id => {const m = state.data.mentors.find(m => m.id === id); return m ? `<button class="text-button" type="button" data-action="mentor" data-id="${esc(id)}">${esc(m.name)} ↗</button>` : '';}).join('')}</div></details>`).join('')}</div><div class="guide-action-row"><button type="button" class="text-button" data-action="guide" data-section="3">名额、双选与备选方案 ↗</button><button type="button" class="text-button" data-action="guide" data-section="4">怎样写一封具体的联系邮件 ↗</button><span>清单保存在当前浏览器，可标记优先联系、备选或仅了解。</span></div></section>`;
     renderMentorResults();
   }
 
@@ -242,8 +339,7 @@
     const card = state.data.mentorCards.find(c => c.mentorId === id);
     const fields = m.profileFields?.length ? m.profileFields : (card?.profileFields || card?.fields || []);
     const official = array(m.evidence).filter(e => e.kind === 'official');
-    const feedback = array(m.evidence).filter(e => e.kind !== 'official');
-    openDialog('导师资料 / ' + (m.hasDetailedCard ? '核心资料卡' : '补充了解名录'), `<div class="dialog-heading"><div><h2 id="dialog-title">${esc(m.name)}</h2><div class="dialog-subtitle">${esc(m.qualification || m.title)}</div></div>${saveButton(m)}</div><div class="tags">${m.directions.map((d,i) => `<span class="tag${i ? ' secondary' : ''}">${esc(d)} · ${esc(directionName(d))}</span>`).join('')}</div>${card?.reason || m.summary ? `<p class="dialog-content-intro">${inline(card?.reason || m.summary)}</p>` : ''}<section class="dialog-section"><h3><span class="section-number">01</span>公开信息</h3><dl class="profile-fields">${fields.filter(f => f.label !== '姓名').map(f => `<div class="profile-row"><dt>${esc(f.label)}</dt><dd>${f.label.includes('联系') ? contactHtml(f.value) : inline(f.value)}</dd></div>`).join('')}</dl><div class="source-actions">${array(m.links).map(link => external(link.url, esc(link.label || '官方来源') + ' ↗')).join('')}</div></section>${official.length ? `<section class="dialog-section"><h3><span class="section-number">02</span>官方记录与具名个案</h3>${official.map(renderEvidence).join('')}</section>` : ''}<section class="dialog-section"><h3><span class="section-number">03</span>学生自述与反馈线索</h3><div class="evidence-note">${esc(state.data.meta.evidenceNote)}</div>${feedback.length ? feedback.map(renderEvidence).join('') : `<p class="dialog-content-intro">本次尚未取得可归属的个人指导反馈。${esc(m.feedbackDetails?.limits || '可向近年直系MPAcc学生了解具体指导过程。')}</p>`}</section><div class="quota-note"><strong>名额与联系：</strong>${inline(m.quotaStatus || state.data.meta.quotaNote)}</div><div class="save-control">${saveButton(m, true)}<label for="contact-status">联系顺位</label><select id="contact-status" data-id="${esc(m.id)}"${isSaved(m.id) ? '' : ' disabled'}>${['优先联系','备选','仅了解'].map(status => `<option${state.saved[m.id] === status ? ' selected' : ''}>${status}</option>`).join('')}</select></div><div class="mentor-detail-tools">${compareButton(m)}<button type="button" class="button secondary" data-action="contact-prepare" data-id="${esc(m.id)}">联系准备：${esc(m.name)}</button></div>`);
+    openDialog('导师资料 / ' + (m.hasDetailedCard ? '核心资料卡' : '补充了解名录'), `<div class="dialog-heading"><div><h2 id="dialog-title">${esc(m.name)}</h2><div class="dialog-subtitle">${esc(m.qualification || m.title)}</div></div>${saveButton(m)}</div><div class="tags">${m.directions.map((d,i) => `<span class="tag${i ? ' secondary' : ''}">${esc(d)} · ${esc(directionName(d))}</span>`).join('')}</div>${card?.reason || m.summary ? `<p class="dialog-content-intro">${inline(card?.reason || m.summary)}</p>` : ''}${studentReviewSection(m)}<section class="dialog-section"><h3><span class="section-number">02</span>公开信息</h3><dl class="profile-fields">${fields.filter(f => f.label !== '姓名').map(f => `<div class="profile-row"><dt>${esc(f.label)}</dt><dd>${f.label.includes('联系') ? contactHtml(f.value) : inline(f.value)}</dd></div>`).join('')}</dl><div class="source-actions">${array(m.links).map(link => external(link.url, esc(link.label || '官方来源') + ' ↗')).join('')}</div></section>${official.length ? `<section class="dialog-section"><h3><span class="section-number">03</span>官方记录与具名个案</h3><p class="review-coverage-note">公开成果和集体教学记录单独核对，不当作学生个人口碑。</p>${official.map(renderEvidence).join('')}</section>` : ''}<div class="quota-note"><strong>名额与联系：</strong>${inline(m.quotaStatus || state.data.meta.quotaNote)}</div><div class="save-control">${saveButton(m, true)}<label for="contact-status">联系顺位</label><select id="contact-status" data-id="${esc(m.id)}"${isSaved(m.id) ? '' : ' disabled'}>${['优先联系','备选','仅了解'].map(status => `<option${state.saved[m.id] === status ? ' selected' : ''}>${status}</option>`).join('')}</select></div><div class="mentor-detail-tools">${compareButton(m)}<button type="button" class="button secondary" data-action="contact-prepare" data-id="${esc(m.id)}">联系准备：${esc(m.name)}</button></div>`);
     emit('mentor_open', {id, name:m.name});
   }
 
@@ -423,7 +519,7 @@
         case 'guide': openGuide(action.dataset.section); break;
         case 'direction': state.direction=id; $$('[data-action="direction"]').forEach(b=>b.setAttribute('aria-pressed', String(b.dataset.id===id))); $('.direction-note').textContent=id?`${id} · ${directionName(id)}。交叉归类可重复出现，不等同当年招生分组。`:'每位导师最多列两类，允许主方向与交叉方向；名录内不代表当年仍有名额。'; renderMentorResults(); emit('direction_filter',{id}); break;
         case 'saved-only': state.savedOnly=!state.savedOnly;action.setAttribute('aria-pressed',String(state.savedOnly));renderMentorResults();break;
-        case 'reset-mentors': state.query='';state.direction='';state.savedOnly=false;renderMentors();break;
+        case 'reset-mentors': state.query='';state.direction='';state.savedOnly=false;state.reviewCoverage='';renderMentors();break;
         case 'reset-posts': state.postQuery='';state.postTopic='';state.postCategory='';state.postLimit=20;renderPosts();break;
         case 'more-posts': {const prior=state.postLimit;state.postLimit+=20;renderPostResults();const first=$$('.post-card')[prior];if(first){first.setAttribute('tabindex','-1');first.focus({preventScroll:true});first.scrollIntoView({behavior:'smooth',block:'nearest'});}break;}
         case 'clear-search': {const input=$('#'+action.dataset.input);input.value='';input.dispatchEvent(new Event('input',{bubbles:true}));input.focus();break;}
@@ -440,7 +536,8 @@
     event.target.parentElement.querySelector('.search-clear').hidden=!event.target.value;
   });
   document.addEventListener('change', event => {
-    if(event.target.id==='contact-mentor'){openContactPreparation(event.target.value);$('#contact-mentor',dialog)?.focus({preventScroll:true});}
+    if(event.target.id==='review-coverage'){state.reviewCoverage=event.target.value;renderMentorResults();}
+    else if(event.target.id==='contact-mentor'){openContactPreparation(event.target.value);$('#contact-mentor',dialog)?.focus({preventScroll:true});}
     else if(event.target.id==='mobile-chapter')location.hash='life/'+event.target.value;
     else if(event.target.id==='post-topic'){state.postTopic=event.target.value;state.postLimit=20;renderPostResults();}
     else if(event.target.id==='post-category'){state.postCategory=event.target.value;state.postLimit=20;renderPostResults();}

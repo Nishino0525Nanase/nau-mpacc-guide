@@ -1,0 +1,48 @@
+{
+  "version": "1.0.3",
+  "frontendTests": 38,
+  "research": {
+    "mentorsSearched": 34,
+    "mentorsWithAttributableRecords": 20,
+    "explicitMpaccGuidanceMentors": 3,
+    "recordsArchivedByMentor": 39,
+    "recordsAreNotIndependentStudents": true,
+    "coverage": {
+      "mpacc_guidance": 3,
+      "guidance_unspecified": 4,
+      "non_mpacc_guidance": 1,
+      "course_only": 9,
+      "weak_mentions": 3,
+      "not_found": 14
+    },
+    "socialTotal": 114,
+    "officialTotal": 117,
+    "recommendationPoints": 11,
+    "supportedFitReminders": 2
+  },
+  "browserQA": {
+    "coverageFilters": true,
+    "identityAndDegreeBoundaries": true,
+    "unassignedInitialsStayUnassigned": true,
+    "compositeInitialsShown": true,
+    "firsthandAndHearsaySeparated": true,
+    "comparisonLimitThree": true,
+    "comparisonSurvivesRoutes": true,
+    "editableSessionDrafts": true,
+    "modalFocusAndScrollRestored": true,
+    "letterDefaultClosed": true,
+    "singleFourItemNavigation": true
+  },
+  "nativeBuild": "pending",
+  "runtimeSmoke": "pending",
+  "realDeviceTested": false,
+  "workbook": {
+    "sheets": 12,
+    "tables": 10,
+    "hyperlinkFormulas": 417,
+    "originalSheetsPreserved": 11,
+    "formulaErrors": 0,
+    "bytes": 331355,
+    "sha256": "018742bf9ff5a40528499cfa36cc0cdfd89781e76dff8d596409d85a26f7d2c0"
+  }
+}

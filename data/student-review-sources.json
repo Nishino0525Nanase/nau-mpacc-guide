@@ -1,0 +1,461 @@
+{
+  "batch": "student-reviews-2026-11",
+  "newSourceCodes": [
+    "R701",
+    "R702"
+  ],
+  "sources": [
+    {
+      "code": "X01",
+      "title": "X01 小红书《南审mpacc导师求推荐》｜银河落九天｜2025年4月2日｜评论见第三部分",
+      "label": "X01 小红书《南审mpacc导师求推荐》｜银河落九天｜2025年4月2日｜评论见第三部分",
+      "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+      "originalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+      "kind": "导师手册来源",
+      "date": "",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "postId": "67ecb72b000000001e0042af",
+      "sourceIds": [
+        "X01",
+        "67ecb72b000000001e0042af"
+      ],
+      "population": "求助者与评论者身份各异；可归属反馈以本科或阶段未知为主",
+      "campus": "未说明",
+      "category": "有边界的导师课程反馈",
+      "limitations": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+      "research102Updates": [
+        {
+          "code": "X01",
+          "kind": "student",
+          "title": "南审mpacc导师求推荐",
+          "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+          "platform": "其他公开平台",
+          "date": "2025-04-02",
+          "author": "银河落九天",
+          "population": "本轮只修温素彬笼统提名的评论归因；评论者未说明自己与温素彬的接触关系、学位类别或年级。",
+          "summary": "X01中温素彬的笼统正面提名，可以准确归于冬日来信在2025-04-02发布的一条评论；并未提供与温素彬的具体课程或指导经历。",
+          "points": [
+            "补全既有温素彬弱线索的评论者为冬日来信，显示日期为2025-04-02。",
+            "同条评论中的本人课程接触指王菁华，竞赛求教指王敬勇；这两段关系不能转接成与温素彬的关系。",
+            "只修归因和阅读范围，不增加新帖子，也不把笼统提名改为MPAcc亲历或日常指导证据。"
+          ],
+          "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。负面缩写及只有姓氏的评论不映射给任何导师。",
+          "readingScope": "本轮文字正文、95条计数所对应的所有已加载顶层评论逐段读取至THE END；新点展开王烨分支的4条追加回复并全部读到。其他折叠支线未全面展开，不能称95条逐字全读；图片未单独重新审读。温素彬提名在冬日来信同条评论内直接见到作者与完整日期。",
+          "changeType": "updated",
+          "advisorNames": [],
+          "updateKey": "36da79c501f756f2"
+        }
+      ],
+      "additionalUrls": [
+        "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed"
+      ],
+      "studentReviewUpdates": [
+        {
+          "readingScope": "文字正文及全部已加载顶层评论至THE END，本轮展开董2、黄中生2、王烨4、择师要求2条附加回复；其他折叠分支未全量展开，图片未重读。页面显示95评论，不宣称95条均读或均是评价。",
+          "read": true,
+          "readThisRound": true,
+          "sameSource": true,
+          "limits": []
+        },
+        {
+          "readingScope": "同组代理reviews_group_a本轮重读顶层至THE END并核本组相关评论；折叠支线未称全量",
+          "read": true,
+          "readThisRound": true,
+          "sameSource": true,
+          "limits": []
+        },
+        {
+          "readingScope": "既有已读数据复核：王菁华c7与王敬勇c8；未本轮重开。",
+          "read": true,
+          "readThisRound": false,
+          "sameSource": true,
+          "limits": [
+            "不计新增，不能把课程或竞赛求教外推MPAcc直系指导。"
+          ]
+        },
+        {
+          "readingScope": "本轮读取上述引用的顶层评论；X01另展开傅祥斐1条回复。只宣称对应条目已读，不宣称全帖全部展开。",
+          "read": true,
+          "readThisRound": true,
+          "sameSource": true,
+          "limits": []
+        }
+      ]
+    },
+    {
+      "code": "X02",
+      "title": "X02 小红书《nau会计专硕导师求推荐》｜17元博物馆✨｜页面仅显示03-31，年份未公开",
+      "label": "X02 小红书《nau会计专硕导师求推荐》｜17元博物馆✨｜页面仅显示03-31，年份未公开",
+      "url": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246?xsec_token=ABXXzd7QJqqBZWLdP_tsGqidPDO8222rTfv2IL9nkSy3A=&xsec_source=pc_feed",
+      "originalUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246?xsec_token=ABXXzd7QJqqBZWLdP_tsGqidPDO8222rTfv2IL9nkSy3A=&xsec_source=pc_feed",
+      "kind": "导师手册来源",
+      "date": "",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+      "postId": "69cba3e80000000028008246",
+      "sourceIds": [
+        "X02",
+        "69cba3e80000000028008246"
+      ],
+      "population": "评论主要来自本科课程接触者；部分身份未明",
+      "campus": "未说明",
+      "category": "有边界的导师课程反馈",
+      "limitations": "逐步读取顶层评论至THE END并展开相关回复；共52评论，一个无姓名玩笑楼尚余1条未展开，不宣称逐字全量。截图名单不是独立官方验证。",
+      "studentReviewUpdates": [
+        {
+          "readingScope": "文字正文、初始顶层评论和高凤莲楼全部8条回复读到。此次未继续滚至末尾；崔秀梅楼仅首评与已显同人跟评。许汉y展开后未读到额外2条。",
+          "read": true,
+          "readThisRound": true,
+          "sameSource": true,
+          "limits": []
+        },
+        {
+          "readingScope": "顶层逐批读取至THE END；本组相关程博木渎3条、程博🐶🐶1条、XW1条追加回复展开并读完。凌华、蔡显军、WJY主评和可见致谢已读。其他组分支未逐一重开。",
+          "read": true,
+          "readThisRound": true,
+          "sameSource": true,
+          "limits": [
+            "本轮没有完整逐字读取全部52条嵌套评论。",
+            "图片名单未当作独立官方导师名录。",
+            "普通读取超时后一次重载恢复，无反机器人提示。"
+          ]
+        },
+        {
+          "readingScope": "本轮读取上述引用的顶层评论；X01另展开傅祥斐1条回复。只宣称对应条目已读，不宣称全帖全部展开。",
+          "read": true,
+          "readThisRound": true,
+          "sameSource": true,
+          "limits": []
+        }
+      ]
+    },
+    {
+      "code": "17",
+      "title": "17 崔秀梅具名学生访谈｜2026年10月19日｜注意区分本科备赛与研究生论文阶段",
+      "label": "17 崔秀梅具名学生访谈｜2026年10月19日｜注意区分本科备赛与研究生论文阶段",
+      "url": "https://news.nau.edu.cn/2026/1014/c11360a162564/page.psp",
+      "originalUrl": "https://news.nau.edu.cn/2026/1014/c11360a162564/page.psp",
+      "kind": "导师手册来源",
+      "date": "",
+      "canonicalUrl": "https://news.nau.edu.cn/2026/1014/c11360a162564/page.psp",
+      "studentReviewUpdates": [
+        {
+          "readingScope": "本轮通过web open重读全文；明确区分本科备赛和MPAcc论文/课堂。",
+          "read": true,
+          "readThisRound": true,
+          "sameSource": true,
+          "limits": []
+        },
+        {
+          "readingScope": "web open全文；王永妍只出现在本科共同指导语境，后续具体陪改等行为明确属于崔秀梅，不归给王永妍。",
+          "read": true,
+          "readThisRound": true,
+          "sameSource": true,
+          "limits": []
+        }
+      ]
+    },
+    {
+      "code": "19",
+      "title": "19 许汉友指导的2015级MPAcc张蓓访谈｜2017年6月16日｜历史记录",
+      "label": "19 许汉友指导的2015级MPAcc张蓓访谈｜2017年6月16日｜历史记录",
+      "url": "https://gs.nau.edu.cn/2017/1023/c4415a31467/page.htm",
+      "originalUrl": "https://gs.nau.edu.cn/2017/1023/c4415a31467/page.htm",
+      "kind": "导师手册来源",
+      "date": "",
+      "canonicalUrl": "https://gs.nau.edu.cn/2017/1023/c4415a31467/page.htm",
+      "studentReviewUpdates": [
+        {
+          "readingScope": "本轮web open重读全文，确认2015级会计专硕与许汉友全名。",
+          "read": true,
+          "readThisRound": true,
+          "sameSource": true,
+          "limits": []
+        }
+      ]
+    },
+    {
+      "code": "O-PJ",
+      "title": "潘俊：具名MPAcc学生个案",
+      "label": "潘俊：具名MPAcc学生个案",
+      "url": "https://nau.edu.cn/2025/0820/c11307a146844/page.htm",
+      "originalUrl": "https://nau.edu.cn/2025/0820/c11307a146844/page.htm",
+      "canonicalUrl": "https://nau.edu.cn/2025/0820/c11307a146844/page.htm",
+      "date": "2025-08-20",
+      "kind": "官方",
+      "population": "具体受访MPAcc学生",
+      "limitations": "单个学生经历，不意味着所有学生必须读博或发表论文。",
+      "category": "官方资料",
+      "originalId": "",
+      "postId": "",
+      "studentReviewUpdates": [
+        {
+          "readingScope": "实际全文读取",
+          "read": true,
+          "readThisRound": true,
+          "sameSource": true,
+          "limits": []
+        }
+      ]
+    },
+    {
+      "code": "R701",
+      "title": "6人签约华为，2022届南审人棒！",
+      "label": "6人签约华为，2022届南审人棒！",
+      "url": "https://www.sohu.com/a/500320907_769713",
+      "originalUrl": "https://www.sohu.com/a/500320907_769713",
+      "canonicalUrl": "https://www.sohu.com/a/500320907_769713",
+      "author": "页面来源署名：南京审计大学；文图：王雨宁、朱安琪、李明旺、王佳慧、王星、王旭",
+      "date": "2021-11-10 17:42",
+      "kind": "公开平台具名学生故事",
+      "population": "朱安琪，具名受访者且列为文图作者之一；本科计算机科学与技术，硕士阶段会计学专业",
+      "limitations": "这是2021年报道中的单个历史经历；不能承诺现在仍以同样频次开组会或人人获得同样项目。；“会计学专业硕士”可能指会计学专业的硕士，正文没有明确MPAcc、会计专硕或1253，故不归入已确认MPAcc。；文章为学校署名账号的就业故事，属于精选正面样本；未给组会间隔、每轮论文反馈时长、项目任务量。",
+      "readingScopes": [
+        "通过网页open实际读取全文，重点核对朱安琪段落及全文文图署名；未只采用搜索摘要。"
+      ],
+      "expansionBatch": "student-reviews-2026-11",
+      "studentReviewUpdates": [
+        {
+          "readingScope": "实际全文读取，朱安琪段落及文图作者署名",
+          "read": true,
+          "readThisRound": true,
+          "sameSource": false,
+          "limits": []
+        }
+      ]
+    },
+    {
+      "code": "R702",
+      "title": "我与南审 | 浦军：敏知楼417的灯，还亮着",
+      "label": "我与南审 | 浦军：敏知楼417的灯，还亮着",
+      "url": "https://news.nau.edu.cn/2026/0622/c5799a159560/page.htm",
+      "originalUrl": "https://news.nau.edu.cn/2026/0622/c5799a159560/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2026/0622/c5799a159560/page.htm",
+      "author": "南京审计大学新闻网",
+      "date": "2026-07-08（页面显示；URL路径0622不作为发表日期）",
+      "kind": "官方",
+      "population": "浦军，社会审计学院（中审学院）2024级CPA一班学生，比部团队创始人；经历由学校报道叙述并引用本人感受",
+      "limitations": "这是本科团队的一次具体项目经历，由学校正面人物故事呈现，并非MPAcc日常指导的独立评价。；不能根据一次夜间集中指导，承诺随时回复、长期同样投入或适用于所有学生。；文中提到的成果与效率由报道叙述，本档不用于验证技术效果，也不把团队成果等同个人指导质量。",
+      "readingScopes": [
+        "通过网页open实际阅读全文，核对页面显示日期、浦军班级身份、2025年11月瓶颈过程及三位老师各自分工；未只读检索摘要。"
+      ],
+      "expansionBatch": "student-reviews-2026-11",
+      "studentReviewUpdates": [
+        {
+          "readingScope": "实际全文读取；采用本科团队项目中的叶邦银个人分工",
+          "read": true,
+          "readThisRound": true,
+          "sameSource": false,
+          "limits": []
+        }
+      ]
+    },
+    {
+      "code": "R318",
+      "original_id": "67aef89b0000000029009825",
+      "title": "✨南审选课攻略·会计专硕篇（欢迎补充！）",
+      "label": "✨南审选课攻略·会计专硕篇（欢迎补充！）",
+      "url": "https://www.xiaohongshu.com/explore/67aef89b0000000029009825?xsec_token=AB24tiWWVG9hIy5oTAh8zCE2YXimNEIExkpaIrpUOVNm8=&xsec_source=pc_search&source=web_search_result_notes",
+      "originalUrl": "https://www.xiaohongshu.com/explore/67aef89b0000000029009825?xsec_token=AB24tiWWVG9hIy5oTAh8zCE2YXimNEIExkpaIrpUOVNm8=&xsec_source=pc_search&source=web_search_result_notes",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/67aef89b0000000029009825",
+      "date": "2025-02-14",
+      "kind": "student",
+      "platform": "小红书",
+      "population": "作者称由当时南审会计学院研二学姐提供的MPAcc课程主观心得，第三方转述",
+      "status": "可见正文已读；身份按来源自述，现行适用性待核实",
+      "limitations": "第三方历史转述，选课记录未核验；压力与给分是个人感受，不保证新学期相同，程博课程评论不作导师评价。",
+      "expansionBatch": "research-round3",
+      "appResearchUpdates": [
+        {
+          "code": "R318",
+          "kind": "student",
+          "title": "✨南审选课攻略·会计专硕篇（欢迎补充！）",
+          "url": "https://www.xiaohongshu.com/explore/67aef89b0000000029009825?xsec_token=AB24tiWWVG9hIy5oTAh8zCE2YXimNEIExkpaIrpUOVNm8=&xsec_source=pc_search&source=web_search_result_notes",
+          "date": "2025-02-14",
+          "author": "小羽毛学姐",
+          "population": "会计专硕选课帖；小鱼鱼鱼先提问、后回访自述该次课程经历，专业年级未独立核验。",
+          "summary": "同帖补充：原先未展开的程博公司治理分支中，原提问者回访称课程为一次汇报和一篇研究设计。",
+          "points": [
+            "小鱼鱼鱼在01-29问程博公司治理，08-26回访自述已上课，称一次汇报加一篇研究设计；其对要求和评分的正面感受是个人评价。",
+            "可在程博卡片加入有边界的课程考核个案：先核本学期教学大纲与考核安排；该来源不证明其研究生指导方式。"
+          ],
+          "limits": "日期仅月日的评论年份不猜；作者正文是转述、不等于小鱼鱼鱼的亲历身份获核验；评分感受不保证新学期结果；只属课程反馈，不能写成导师指导行为或普遍性格。资料帖带工作室/考研答疑标签，当前该分支未见收费导流。",
+          "readingScope": "本轮完整文字正文及全部可见主楼，程博公司治理原先7条追加回复已点展开并再点展开更多，7条均读到；财务报表分析分支1条尝试展开但未显示新增内容，仍未读；图片本轮未重复逐张审读。",
+          "changeType": "updated"
+        }
+      ],
+      "studentReviewUpdates": [
+        {
+          "readingScope": "既有已读日志复核：程博公司治理分支7条追加回复此前已全展开；不计新增。",
+          "read": true,
+          "readThisRound": false,
+          "sameSource": true,
+          "limits": [
+            "课程反馈单独展示，不提升为导师指导评价。"
+          ]
+        }
+      ]
+    },
+    {
+      "code": "6a50b7c5000000002103f3aa",
+      "title": "一人提名一位南京审计大学夯爆了的老师",
+      "label": "一人提名一位南京审计大学夯爆了的老师",
+      "url": "https://www.xiaohongshu.com/explore/6a50b7c5000000002103f3aa?xsec_token=ABqjywljijhRozLpJoV7164Ql1WFPPN9wMQMFbugnf6bs=&xsec_source=pc_search&source=web_explore_feed",
+      "originalUrl": "https://www.xiaohongshu.com/explore/6a50b7c5000000002103f3aa?xsec_token=ABqjywljijhRozLpJoV7164Ql1WFPPN9wMQMFbugnf6bs=&xsec_source=pc_search&source=web_explore_feed",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6a50b7c5000000002103f3aa",
+      "date": "07-10（页面未显示年份）\n07-10（年份未显示）",
+      "kind": "小红书原帖",
+      "population": "本科课程评价为主\n以本科授课体验为主，不是MPAcc导师评价帖",
+      "limitations": "已看主图、正文，向下加载多段评论并展开Fantastic支线；未穷尽全部106评论的每个折叠支线。\n没有发现G1/G2导师研究生指导经历；不因搜索命中就归属姓名。\n作者引流校园群语境，证据独立性需保留。\n页面显示106条评论；读取已加载的全部顶层评论并展开黄中生所在讨论的4条回复，未展开其他与MPAcc无关的数学教师回复。存在无理由辱骂，未收录；教师提名不作为导师排名。",
+      "category": "有边界的导师课程反馈",
+      "originalId": "6a50b7c5000000002103f3aa",
+      "postId": "6a50b7c5000000002103f3aa",
+      "sourceIds": [
+        "6a50b7c5000000002103f3aa",
+        "M01"
+      ],
+      "campus": "南京审计大学\n正文标签浦口",
+      "studentReviewUpdates": [
+        {
+          "readingScope": "已读正文及已加载顶层/默认回复，至组织行为学赵燕梅一条；106评论未全展开。上述9人未出现在本轮已读范围。黄中生与张兴亮有泛化提名，另报根代理。",
+          "read": true,
+          "readThisRound": true,
+          "sameSource": true,
+          "limits": []
+        }
+      ]
+    }
+  ],
+  "ambiguousAliases": [
+    {
+      "alias": "董",
+      "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "sourceCode": "X01",
+      "status": "unresolved",
+      "label": "已见线索但归属未确认",
+      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
+      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
+      "publishUnderNamedMentor": false
+    },
+    {
+      "alias": "d b r",
+      "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "sourceCode": "X01",
+      "status": "unresolved",
+      "label": "已见线索但归属未确认",
+      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
+      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
+      "publishUnderNamedMentor": false
+    },
+    {
+      "alias": "mdl",
+      "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "sourceCode": "X01",
+      "status": "unresolved",
+      "label": "已见线索但归属未确认",
+      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
+      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
+      "publishUnderNamedMentor": false
+    },
+    {
+      "alias": "zl",
+      "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "sourceCode": "X01",
+      "status": "unresolved",
+      "label": "已见线索但归属未确认",
+      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
+      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
+      "publishUnderNamedMentor": false
+    },
+    {
+      "alias": "黄老师/黄导",
+      "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "sourceCode": "X01",
+      "status": "unresolved",
+      "label": "已见线索但归属未确认",
+      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
+      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
+      "publishUnderNamedMentor": false
+    },
+    {
+      "alias": "WY",
+      "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "sourceCode": "X01",
+      "status": "potential_collision",
+      "label": "缩写存在潜在重名",
+      "reason": "同一拼音缩写可能对应多名教师；这是归属核验提示，不表示本轮出现了该缩写的真实评价。",
+      "verificationGap": "如遇缩写评论，需要独立的全名确认与本人接触关系，不能按名单猜测。",
+      "publishUnderNamedMentor": false
+    },
+    {
+      "alias": "崔老师",
+      "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "sourceCode": "X01",
+      "status": "unresolved",
+      "label": "已见线索但归属未确认",
+      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
+      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
+      "publishUnderNamedMentor": false
+    },
+    {
+      "alias": "许汉 y",
+      "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+      "sourceCode": "X02",
+      "status": "unresolved",
+      "label": "已见线索但归属未确认",
+      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
+      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
+      "publishUnderNamedMentor": false
+    },
+    {
+      "alias": "XW/xw",
+      "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+      "sourceCode": "X02",
+      "status": "unresolved",
+      "label": "已见线索但归属未确认",
+      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
+      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
+      "publishUnderNamedMentor": false
+    },
+    {
+      "alias": "WJY/wjy",
+      "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+      "sourceCode": "X02",
+      "status": "unresolved",
+      "label": "已见线索但归属未确认",
+      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
+      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
+      "publishUnderNamedMentor": false
+    },
+    {
+      "alias": "LH/lh",
+      "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+      "sourceCode": "X02",
+      "status": "potential_collision",
+      "label": "缩写存在潜在重名",
+      "reason": "同一拼音缩写可能对应多名教师；这是归属核验提示，不表示本轮出现了该缩写的真实评价。",
+      "verificationGap": "如遇缩写评论，需要独立的全名确认与本人接触关系，不能按名单猜测。",
+      "publishUnderNamedMentor": false
+    },
+    {
+      "alias": "SWT / DWT",
+      "sourceUrl": null,
+      "sourceCode": null,
+      "status": "search_only",
+      "label": "仅检索候选",
+      "reason": "仅为检索尝试的拼音缩写；本轮未取得对应评价原文，不表示发现了未确认的学生评价。",
+      "verificationGap": "如以后检得实际评论，再核对原文全名、接触身份和具体经历。",
+      "publishUnderNamedMentor": false
+    },
+    {
+      "alias": "高老师",
+      "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+      "sourceCode": "X02",
+      "status": "unresolved",
+      "label": "已见线索但归属未确认",
+      "reason": "原文仅有姓氏，所在对话未给出全名；不跨楼沿用其他评论的对象。",
+      "verificationGap": "需要作者明确姓名和本人接触关系。",
+      "publishUnderNamedMentor": false
+    }
+  ],
+  "policy": "未确认实名的材料仅保留缩写、来源与归属缺口；不保存未核指控、私生活或辱骂原句。"
+}

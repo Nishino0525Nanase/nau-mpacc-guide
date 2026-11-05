@@ -1,0 +1,118 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import vm from 'node:vm';
+
+const script=readFileSync(new URL('../dist/app.js',import.meta.url),'utf8');
+const dataset=JSON.parse(readFileSync(new URL('../dist/data/site-data.json',import.meta.url),'utf8'));
+const decode=value=>value.replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&amp;/g,'&');
+
+async function app({secure=true,clipboard=true,denied=false,data=dataset}={}) {
+  const elements=new Map(), handlers=new Map(), winHandlers=new Map(), copies=[], writes=[];
+  let document;
+  class Element {
+    constructor(selector){this.selector=selector;this.dataset={};this.style={};this.attributes={};this.isConnected=true;this.open=false;this._html='';this.value='';this.textContent='';this.classList={add(){},remove(){},contains(){return false;}};}
+    set innerHTML(value){
+      this._html=value;
+      if(this.selector==='#dialog-content') {
+        const match=value.match(/<textarea[^>]*id="contact-copy-text"[^>]*>([\s\S]*?)<\/textarea>/);
+        if(match) get('#contact-copy-text').value=decode(match[1]);
+      }
+    }
+    get innerHTML(){return this._html;}
+    querySelector(selector){return get(selector);}
+    querySelectorAll(){return [];}
+    addEventListener(name,fn){handlers.set(this.selector+':'+name,fn);}
+    setAttribute(name,value){this.attributes[name]=value;}
+    removeAttribute(name){delete this.attributes[name];}
+    getBoundingClientRect(){return {height:90,left:0,right:800,top:0,bottom:700};}
+    focus(){document.activeElement=this;}
+    select(){this.selected=true;}
+    scrollIntoView(){}
+    showModal(){this.open=true;}
+    close(){this.open=false;}
+  }
+  const get=selector=>{if(!elements.has(selector))elements.set(selector,new Element(selector));return elements.get(selector);};
+  document={querySelector:get,querySelectorAll:()=>[],documentElement:{style:{setProperty(){}}},body:{style:{}},activeElement:get('start'),title:'',addEventListener:(name,fn)=>handlers.set(name,fn)};
+  const location={href:'https://example.github.io/nau-mpacc-guide/',hash:''};
+  const window={location,isSecureContext:secure,matchMedia:()=>({matches:false}),addEventListener:(name,fn)=>winHandlers.set(name,fn),dispatchEvent(){},scrollTo(){},scrollY:0};
+  const navigator=clipboard?{clipboard:{writeText:async text=>{if(denied)throw new Error("NotAllowedError");copies.push(text);}}}:{};
+  vm.runInNewContext(script,{document,window,location,navigator,URL,console,CSS:{escape:x=>x},CustomEvent:class{constructor(name,options){this.type=name;this.detail=options?.detail;}},Event:class{},fetch:async()=>({ok:true,json:async()=>structuredClone(data),headers:{get:()=>null}}),localStorage:{getItem:()=>null,setItem:(key,value)=>writes.push([key,value])},requestAnimationFrame:fn=>fn(),setTimeout:()=>1,clearTimeout(){}});
+  for(let i=0;i<12;i++)await Promise.resolve();
+  const click=(action,id,extra={})=>handlers.get('click')({target:{closest:selector=>selector==='[data-action]'?{dataset:{action,id,...extra}}:null}});
+  return {get,copies,writes,click,location,window,changeReview(value){handlers.get('change')({target:{id:'review-coverage',value}});},editContact(text){get('#contact-copy-text').value=text;handlers.get('input')({target:{id:'contact-copy-text',value:text}});},async changeMentor(id){handlers.get('change')({target:{id:'contact-mentor',value:id}});await Promise.resolve();},route(hash){location.hash=hash;winHandlers.get('hashchange')();},async flush(){for(let i=0;i<6;i++)await Promise.resolve();}};
+}
+
+
+const emptyDossier=()=>({coverageStatus:'not_found',coverageLabel:'暂无可归属学生评价',summary:'尚缺可归属的学生体验。',reviews:[],recommendationPoints:[],concerns:[],verificationQuestions:['近期是否固定组会，论文每轮反馈一般多久？'],gaps:['近年直系学生的公开经历尚缺。']});
+const reviewFixture=()=>{
+  const data=structuredClone(dataset);
+  data.ambiguousMentorAliases=[{alias:'LH/lh',text:'UNRESOLVED_GLOBAL_ALLEGATION'}, {alias:'WY',text:'DO_NOT_ASSIGN'}, {alias:'XW/xw',status:'unresolved'}, {alias:'WJY/wjy',status:'unresolved'}, {alias:'d b r',status:'unresolved'}, {alias:'XW xw',status:'unresolved'}, {alias:'SWT / DWT',status:'search_only'}, {alias:'高老师',status:'unresolved'}, {alias:'许汉 y',status:'unresolved'}, {alias:'QZ',status:'potential_collision'}];
+  data.sourceRegistry.TEST_GOOD={url:'https://example.org/student-story',title:'学生经历来源'};
+  data.sourceRegistry.TEST_BAD={url:'javascript:alert(1)',title:'不安全地址'};
+  data.mentors.forEach(mentor=>mentor.studentReviews=emptyDossier());
+  const missing=data.mentors[0];
+  missing.studentReviews.reviews=[{id:'unresolved',text:'UNRESOLVED_PERSONAL_ALLEGATION',attribution:{status:'unresolved',alias:'LH'}}];
+  missing.studentReviews.recommendationPoints=[{text:'UNSUPPORTED_PRAISE',reviewIds:['missing-review']}];
+  missing.studentReviews.concerns=[{text:'UNSUPPORTED_CONCERN',reviewIds:['unresolved']}];
+  const course=data.mentors[1];
+  course.studentReviews={...emptyDossier(),coverageStatus:'course_only',coverageLabel:'本科课程经历',summary:'只有本科课程接触，不能推广到研究生培养。',reviews:[{
+    id:'course-confirmed',sourceIds:['TEST_GOOD','TEST_BAD'],sourceUrl:'javascript:alert(2)',sourceTitle:'课程评价原文',narrator:'课程评论者 <img src=x onerror=alert(3)>',date:'2025-05-01',degree:'本科会计学',year:'2024级',relationship:'只上过本科课程',experienceType:'course',firsthand:true,polarity:'mixed',attribution:{status:'confirmed',alias:course.name,reason:'评论原文写出完整姓名。'},text:'老师逐步讲解分析过程 <script>alert(4)</script> [TEST_GOOD]',specifics:['每次作业会指出计算和论证步骤。'],limits:['没有跟随该老师写MPAcc论文，不能据此判断专硕指导。','仅限该课程。'],readingScope:['已读原帖正文。','已读完整评论。'],firsthandScope:['本人只上过本科课程。','本人没有参与论文指导。'],hearsayParts:'朋友的论文体验属于转述。'
+  },{id:'unresolved-course',text:'HIDDEN_ALIAS_CLAIM',attribution:{status:'unresolved',alias:'WY'}}],recommendationPoints:[{text:'作业反馈有具体步骤。',reviewIds:['course-confirmed'],sourceIds:['TEST_GOOD'],scope:'仅限该本科课程经历。'}],concerns:[{text:'课程作业反馈较密，需要预留时间。',reviewIds:['course-confirmed'],scope:'仅适用于该学期的课程安排。'}],verificationQuestions:['MPAcc论文反馈频率与课程作业要求是否不同？']};
+  course.evidence.push({kind:'firsthand',text:'LEGACY_DUPLICATE_FEEDBACK'});
+  const direct=data.mentors[2];
+  direct.studentReviews={...emptyDossier(),coverageStatus:'mpacc_guidance',coverageLabel:'MPAcc指导亲历',summary:'有明确MPAcc身份的论文指导经历。',reviews:[{id:'mpacc-confirmed',narrator:'2023级MPAcc学生',degree:'MPAcc',year:'2023级',relationship:'论文指导学生',firsthand:true,experienceType:'guidance',polarity:'positive',attribution:{status:'confirmed',alias:direct.name,reason:'作者明确导师全名和专硕身份。'},text:'选题后逐次修改研究设计。',limits:'只反映这一位学生的经历。'}]};
+  const undergraduate=data.mentors[3];
+  undergraduate.studentReviews={...emptyDossier(),coverageStatus:'non_mpacc_guidance',coverageLabel:'本科项目经历／非MPAcc指导',summary:'仅本科项目指导。',reviews:[{id:'undergrad-confirmed',degree:'本科',relationship:'本科项目指导',firsthand:true,experienceType:'guidance',attribution:{status:'confirmed',reason:'本科项目文章写出指导老师全名。'},text:'项目中讨论问题。',limits:'不能当作MPAcc培养体验。'}]};
+  const unknown=data.mentors[4];
+  unknown.studentReviews={...emptyDossier(),coverageStatus:'guidance_unspecified',coverageLabel:'指导经历 · 阶段未明',reviews:[{id:'unknown-confirmed',degree:'学位阶段未知',firsthand:true,experienceType:'guidance',attribution:{status:'confirmed',reason:'写出全名，未说明学位。'},text:'询问过论文问题。'}]};
+  return data;
+};
+
+test('missing personal evidence cannot create praise, concerns or named abbreviation allegations',async()=>{
+ const a=await app({data:reviewFixture()});
+ assert.match(a.get('#app').innerHTML,/34 位导师逐人核对/);
+ assert.match(a.get('#app').innerHTML,/LH、WY/);
+ assert.doesNotMatch(a.get('#app').innerHTML,/UNRESOLVED_GLOBAL_ALLEGATION|DO_NOT_ASSIGN/);
+ const aliases=a.get('#app').innerHTML.match(/已核对的缩写与归属线索：([^<]+?)。/)?.[1];
+ assert.equal(aliases,'LH、WY、XW、WJY、DBR、QZ','combined aliases normalize, de-duplicate and omit search-only or partial non-Latin names');
+ assert.doesNotMatch(a.get('#app').innerHTML,/本轮仍需核实的缩写/,'potential collisions must not be described as observed comments');
+ a.click('mentor','mentor-01');const html=a.get('#dialog-content').innerHTML;
+ assert.match(html,/暂无可归属的公开学生体验/);
+ assert.match(html,/联系前向直系学生核实/);
+ assert.match(html,/近期是否固定组会/);
+ assert.doesNotMatch(html,/UNSUPPORTED_PRAISE|UNSUPPORTED_CONCERN|UNRESOLVED_PERSONAL_ALLEGATION|避雷与适配提醒|被推荐的具体理由/);
+ assert(html.indexOf('学生个人评价')<html.indexOf('公开信息'));
+});
+
+test('student experience records expose identity, attribution, specific process and limits with safe sources',async()=>{
+ const a=await app({data:reviewFixture()});a.click('mentor','mentor-02');const html=a.get('#dialog-content').innerHTML;
+ for(const text of ['本科课程经历','本人经历自述','本科会计学','2024级','只上过本科课程','作业反馈有具体步骤','课程作业反馈较密','原帖写法','评论原文写出完整姓名','实际阅读范围','不能据此判断专硕指导','MPAcc论文反馈频率','本人亲历范围','本人只上过本科课程。；本人没有参与论文指导。','转述／朋友经历的部分','朋友的论文体验属于转述。','已读原帖正文。；已读完整评论。'])assert(html.includes(text),text);
+ assert.match(html,/&lt;script&gt;alert\(4\)&lt;\/script&gt;/);
+ assert.match(html,/&lt;img src=x onerror=alert\(3\)&gt;/);
+ assert.match(html,/href="https:\/\/example.org\/student-story"/);
+ assert.doesNotMatch(html,/<script>|<img src=x|href="javascript:|HIDDEN_ALIAS_CLAIM|LEGACY_DUPLICATE_FEEDBACK/);
+ assert.doesNotMatch(html,/\[&quot;没有跟随|\[&quot;已读原帖|\[&quot;本人只上过/,'array metadata must render as prose, not serialized JSON');
+ assert.match(html,/<details class="student-review-record"><summary>/,'records should start folded');
+});
+
+test('coverage filtering keeps MPAcc distinct from other guidance and keeps comparison and session drafts',async()=>{
+ const data=reviewFixture(), a=await app({data});
+ a.click('compare-toggle','mentor-01');a.click('compare-toggle','mentor-02');a.click('compare-toggle','mentor-04');
+ a.changeReview('mpacc_guidance');let html=a.get('#mentor-results').innerHTML;
+ assert(html.includes(data.mentors[2].name));assert(!html.includes(data.mentors[3].name));
+ a.changeReview('other_guidance');html=a.get('#mentor-results').innerHTML;
+ assert(html.includes(data.mentors[3].name));assert(html.includes(data.mentors[4].name));assert(!html.includes(data.mentors[2].name));
+ a.changeReview('has_records');html=a.get('#mentor-results').innerHTML;
+ assert(!html.includes(data.mentors[0].name));assert(html.includes(data.mentors[1].name));
+ a.click('compare-open');html=a.get('#dialog-content').innerHTML;
+ assert.match(html,/3 \/ 3|董必荣/);
+ assert.match(html,/本科项目经历／非MPAcc指导/);
+ assert.match(html,/暂无可归属的学生个人评价/);
+ assert.match(html,/作业反馈有具体步骤/);
+ assert.doesNotMatch(html,/LEGACY_DUPLICATE_FEEDBACK|UNSUPPORTED_CONCERN|HIDDEN_ALIAS_CLAIM/);
+ a.click('contact-prepare','mentor-02');a.editContact('保留课程老师的联系提纲');a.click('compare-close');
+ a.route('#life/life-08');a.route('#mentors');a.click('contact-prepare','mentor-02');assert.equal(a.get('#contact-copy-text').value,'保留课程老师的联系提纲');
+ a.click('compare-close');a.click('reset-mentors');assert.match(a.get('#mentor-results').innerHTML,new RegExp(data.mentors[0].name));
+ assert.deepEqual(a.writes,[]);
+});

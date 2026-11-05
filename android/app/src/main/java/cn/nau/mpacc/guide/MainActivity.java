@@ -46,7 +46,7 @@ public final class MainActivity extends Activity {
     private static final String SITE_HOST = "nishino0525nanase.github.io";
     private static final String SITE_PATH = "/nau-mpacc-guide/";
     private static final String SITE = "https://" + SITE_HOST + SITE_PATH;
-    private static final String APP_VERSION = "1.0.2";
+    private static final String APP_VERSION = "1.0.3";
     private static final String ASSET_HOST = "appassets.androidplatform.net";
     private static final String LOCAL = "https://" + ASSET_HOST + "/guide/index.html?app_version=" + APP_VERSION;
     private static final int SAVE_DOCUMENT = 40;

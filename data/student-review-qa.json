@@ -1,0 +1,56 @@
+{
+  "ok": true,
+  "errors": [],
+  "counts": {
+    "batch": "student-reviews-2026-11",
+    "teachersSearched": 34,
+    "teacherCount": 34,
+    "teachersWithAttributableReviews": 20,
+    "coverageCounts": {
+      "not_found": 14,
+      "weak_mentions": 3,
+      "course_only": 9,
+      "mpacc_guidance": 3,
+      "guidance_unspecified": 4,
+      "non_mpacc_guidance": 1
+    },
+    "reviewRecords": 39,
+    "newSourceCodes": [
+      "R701",
+      "R702"
+    ],
+    "newSocialPostCount": 1,
+    "newOfficialEvidenceCount": 1,
+    "updatedExistingSourceCount": 7,
+    "newPostCountNote": "同帖新增评论、重新展开与官方访谈重读均不增加来源或帖子数。",
+    "attributionRule": "完整姓名及明确上下文才归名；缩写、单姓和名单唯一匹配不足以归名。",
+    "notFoundMeaning": "未检得不等于没有评价，不据此打分、排序或作避雷结论。"
+  },
+  "sourceChanges": [
+    {
+      "code": "R701",
+      "action": "new_social_post"
+    },
+    {
+      "code": "R702",
+      "action": "new_official_evidence"
+    }
+  ],
+  "existingReviewRecordsRefined": 21,
+  "unrepeatedLegacyRecordsRetained": 2,
+  "ambiguousAliasRecords": 13,
+  "preserved": {
+    "mentors": 34,
+    "mentorCards": 17,
+    "author": true,
+    "appEdition": true,
+    "existingSourceMetadata": true
+  },
+  "checks": [
+    "No initial-only reviews under named mentors",
+    "Every editorial point links confirmed review ids",
+    "No awards, lecture listings or coauthored papers substituted for student experiences",
+    "Historical/non-MPAcc/courses separated from explicit MPAcc guidance",
+    "Original post metadata preserved separately from comment metadata"
+  ]
+}

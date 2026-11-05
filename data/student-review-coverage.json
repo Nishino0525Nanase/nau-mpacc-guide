@@ -1,0 +1,487 @@
+{
+  "batch": "student-reviews-2026-11",
+  "summary": {
+    "batch": "student-reviews-2026-11",
+    "teachersSearched": 34,
+    "teacherCount": 34,
+    "teachersWithAttributableReviews": 20,
+    "coverageCounts": {
+      "not_found": 14,
+      "weak_mentions": 3,
+      "course_only": 9,
+      "mpacc_guidance": 3,
+      "guidance_unspecified": 4,
+      "non_mpacc_guidance": 1
+    },
+    "reviewRecords": 39,
+    "newSourceCodes": [
+      "R701",
+      "R702"
+    ],
+    "newSocialPostCount": 1,
+    "newOfficialEvidenceCount": 1,
+    "updatedExistingSourceCount": 7,
+    "newPostCountNote": "同帖新增评论、重新展开与官方访谈重读均不增加来源或帖子数。",
+    "attributionRule": "完整姓名及明确上下文才归名；缩写、单姓和名单唯一匹配不足以归名。",
+    "notFoundMeaning": "未检得不等于没有评价，不据此打分、排序或作避雷结论。"
+  },
+  "teachers": [
+    {
+      "mentorId": "mentor-01",
+      "name": "董必荣",
+      "coverageStatus": "not_found",
+      "coverageLabel": "未找到可归属的个人评价",
+      "reviewCount": 0,
+      "firsthandCount": 0,
+      "sourceIds": [],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-02",
+      "name": "温素彬",
+      "coverageStatus": "weak_mentions",
+      "coverageLabel": "仅笼统提名或身份未明",
+      "reviewCount": 1,
+      "firsthandCount": 0,
+      "sourceIds": [
+        "X01"
+      ],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-03",
+      "name": "王烨",
+      "coverageStatus": "weak_mentions",
+      "coverageLabel": "仅笼统提名或身份未明",
+      "reviewCount": 1,
+      "firsthandCount": 0,
+      "sourceIds": [
+        "X01"
+      ],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-04",
+      "name": "张力",
+      "coverageStatus": "course_only",
+      "coverageLabel": "仅课程接触与有限转述",
+      "reviewCount": 3,
+      "firsthandCount": 1,
+      "sourceIds": [
+        "X01"
+      ],
+      "recommendationPointCount": 1,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-05",
+      "name": "马德林",
+      "coverageStatus": "not_found",
+      "coverageLabel": "未找到可归属的个人评价",
+      "reviewCount": 0,
+      "firsthandCount": 0,
+      "sourceIds": [],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-06",
+      "name": "黄中生",
+      "coverageStatus": "course_only",
+      "coverageLabel": "仅课程接触与有限转述",
+      "reviewCount": 4,
+      "firsthandCount": 3,
+      "sourceIds": [
+        "M01",
+        "X01"
+      ],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-07",
+      "name": "崔秀梅",
+      "coverageStatus": "mpacc_guidance",
+      "coverageLabel": "明确MPAcc指导经历",
+      "reviewCount": 3,
+      "firsthandCount": 2,
+      "sourceIds": [
+        "17",
+        "X01",
+        "X02"
+      ],
+      "recommendationPointCount": 2,
+      "supportedConcernCount": 1,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-08",
+      "name": "许汉友",
+      "coverageStatus": "mpacc_guidance",
+      "coverageLabel": "明确MPAcc指导经历",
+      "reviewCount": 1,
+      "firsthandCount": 1,
+      "sourceIds": [
+        "19"
+      ],
+      "recommendationPointCount": 1,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-09",
+      "name": "高凤莲",
+      "coverageStatus": "course_only",
+      "coverageLabel": "仅课程接触与有限转述",
+      "reviewCount": 3,
+      "firsthandCount": 1,
+      "sourceIds": [
+        "X02",
+        "X01"
+      ],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-10",
+      "name": "刘国城",
+      "coverageStatus": "guidance_unspecified",
+      "coverageLabel": "历史硕士项目经历，类别待核",
+      "reviewCount": 2,
+      "firsthandCount": 2,
+      "sourceIds": [
+        "R701",
+        "X01"
+      ],
+      "recommendationPointCount": 1,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-11",
+      "name": "潘俊",
+      "coverageStatus": "mpacc_guidance",
+      "coverageLabel": "明确MPAcc指导经历",
+      "reviewCount": 1,
+      "firsthandCount": 1,
+      "sourceIds": [
+        "O-PJ",
+        "18"
+      ],
+      "recommendationPointCount": 2,
+      "supportedConcernCount": 1,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-12",
+      "name": "章之旺",
+      "coverageStatus": "not_found",
+      "coverageLabel": "未找到可归属的个人评价",
+      "reviewCount": 0,
+      "firsthandCount": 0,
+      "sourceIds": [],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-13",
+      "name": "张兴亮",
+      "coverageStatus": "guidance_unspecified",
+      "coverageLabel": "曾受指导者弱评价，阶段未明",
+      "reviewCount": 2,
+      "firsthandCount": 2,
+      "sourceIds": [
+        "X01"
+      ],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-14",
+      "name": "叶邦银",
+      "coverageStatus": "non_mpacc_guidance",
+      "coverageLabel": "本科项目指导经历",
+      "reviewCount": 1,
+      "firsthandCount": 1,
+      "sourceIds": [
+        "R702"
+      ],
+      "recommendationPointCount": 1,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-15",
+      "name": "罗琰",
+      "coverageStatus": "not_found",
+      "coverageLabel": "未找到可归属的个人评价",
+      "reviewCount": 0,
+      "firsthandCount": 0,
+      "sourceIds": [],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-16",
+      "name": "吴青川",
+      "coverageStatus": "not_found",
+      "coverageLabel": "未找到可归属的个人评价",
+      "reviewCount": 0,
+      "firsthandCount": 0,
+      "sourceIds": [],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-17",
+      "name": "刘静",
+      "coverageStatus": "not_found",
+      "coverageLabel": "未找到可归属的个人评价",
+      "reviewCount": 0,
+      "firsthandCount": 0,
+      "sourceIds": [],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-18",
+      "name": "李华",
+      "coverageStatus": "not_found",
+      "coverageLabel": "未找到可归属的个人评价",
+      "reviewCount": 0,
+      "firsthandCount": 0,
+      "sourceIds": [],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-19",
+      "name": "徐伟",
+      "coverageStatus": "not_found",
+      "coverageLabel": "未找到可归属的个人评价",
+      "reviewCount": 0,
+      "firsthandCount": 0,
+      "sourceIds": [],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-20",
+      "name": "王敬勇",
+      "coverageStatus": "guidance_unspecified",
+      "coverageLabel": "竞赛求教自述，阶段未明",
+      "reviewCount": 1,
+      "firsthandCount": 1,
+      "sourceIds": [
+        "X01"
+      ],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-21",
+      "name": "程博",
+      "coverageStatus": "course_only",
+      "coverageLabel": "仅课程接触与有限转述",
+      "reviewCount": 4,
+      "firsthandCount": 2,
+      "sourceIds": [
+        "X02",
+        "R318"
+      ],
+      "recommendationPointCount": 2,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 3
+    },
+    {
+      "mentorId": "mentor-22",
+      "name": "凌华",
+      "coverageStatus": "course_only",
+      "coverageLabel": "仅课程接触与有限转述",
+      "reviewCount": 1,
+      "firsthandCount": 1,
+      "sourceIds": [
+        "X02"
+      ],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-23",
+      "name": "谭志东",
+      "coverageStatus": "not_found",
+      "coverageLabel": "未找到可归属的个人评价",
+      "reviewCount": 0,
+      "firsthandCount": 0,
+      "sourceIds": [],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-24",
+      "name": "王菁华",
+      "coverageStatus": "course_only",
+      "coverageLabel": "仅课程接触与有限转述",
+      "reviewCount": 1,
+      "firsthandCount": 1,
+      "sourceIds": [
+        "X01"
+      ],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-25",
+      "name": "蔡显军",
+      "coverageStatus": "weak_mentions",
+      "coverageLabel": "仅笼统提名或身份未明",
+      "reviewCount": 1,
+      "firsthandCount": 0,
+      "sourceIds": [
+        "X02"
+      ],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-26",
+      "name": "傅祥斐",
+      "coverageStatus": "guidance_unspecified",
+      "coverageLabel": "论文指导自述，阶段未明",
+      "reviewCount": 4,
+      "firsthandCount": 3,
+      "sourceIds": [
+        "X02",
+        "X01"
+      ],
+      "recommendationPointCount": 1,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-27",
+      "name": "王永妍",
+      "coverageStatus": "not_found",
+      "coverageLabel": "未找到可归属的个人评价",
+      "reviewCount": 0,
+      "firsthandCount": 0,
+      "sourceIds": [],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-28",
+      "name": "李仲泽",
+      "coverageStatus": "course_only",
+      "coverageLabel": "仅课程接触与有限转述",
+      "reviewCount": 3,
+      "firsthandCount": 1,
+      "sourceIds": [
+        "X01",
+        "X02"
+      ],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-29",
+      "name": "王永青",
+      "coverageStatus": "not_found",
+      "coverageLabel": "未找到可归属的个人评价",
+      "reviewCount": 0,
+      "firsthandCount": 0,
+      "sourceIds": [],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-30",
+      "name": "贺建刚",
+      "coverageStatus": "not_found",
+      "coverageLabel": "未找到可归属的个人评价",
+      "reviewCount": 0,
+      "firsthandCount": 0,
+      "sourceIds": [],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-31",
+      "name": "王禹",
+      "coverageStatus": "course_only",
+      "coverageLabel": "仅课程接触与有限转述",
+      "reviewCount": 1,
+      "firsthandCount": 1,
+      "sourceIds": [
+        "X02"
+      ],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-32",
+      "name": "李慧",
+      "coverageStatus": "course_only",
+      "coverageLabel": "仅课程接触与有限转述",
+      "reviewCount": 1,
+      "firsthandCount": 1,
+      "sourceIds": [
+        "X02"
+      ],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-33",
+      "name": "陈冬华",
+      "coverageStatus": "not_found",
+      "coverageLabel": "未找到可归属的个人评价",
+      "reviewCount": 0,
+      "firsthandCount": 0,
+      "sourceIds": [],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    },
+    {
+      "mentorId": "mentor-34",
+      "name": "单文涛",
+      "coverageStatus": "not_found",
+      "coverageLabel": "未找到可归属的个人评价",
+      "reviewCount": 0,
+      "firsthandCount": 0,
+      "sourceIds": [],
+      "recommendationPointCount": 0,
+      "supportedConcernCount": 0,
+      "verificationQuestionCount": 2
+    }
+  ]
+}

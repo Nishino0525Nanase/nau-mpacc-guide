@@ -1,0 +1,668 @@
+{
+  "batch": "student-reviews-2026-11",
+  "teachers": [
+    {
+      "name": "刘国城",
+      "aliasesTried": [
+        "LGC"
+      ],
+      "queries": [
+        "南京审计大学 刘国城 导师 学生 评价 LGC",
+        "\"南审\" \"LGC\" 导师",
+        "\"刘国城\" (\"我的导师\" OR \"老师\" OR \"指导\") 学生 感谢",
+        "\"刘国城\" \"定期开组会\"",
+        "小红书站内：南审 刘国城",
+        "小红书站内：南审 LGC"
+      ],
+      "coverageStatus": "有具名硕士历史项目/组会亲历及本科弱评价；MPAcc类别与当前安排仍缺证据",
+      "reviews": [
+        {
+          "sourceUrl": "https://www.sohu.com/a/500320907_769713",
+          "canonicalUrl": "https://www.sohu.com/a/500320907_769713",
+          "sourceCodeIfExisting": null,
+          "postTitle": "6人签约华为，2022届南审人棒！",
+          "postAuthor": "页面来源署名：南京审计大学；文图：王雨宁、朱安琪、李明旺、王佳慧、王星、王旭",
+          "commentAuthor": null,
+          "postDate": "2021-11-10 17:42",
+          "commentDate": null,
+          "identity": "朱安琪，具名受访者且列为文图作者之一；本科计算机科学与技术，硕士阶段会计学专业",
+          "degree": "硕士（原文会计学专业，学术/专硕未确认）",
+          "year": "原文称“2022级会计学专业硕士毕业生”，标题为2022届；届/级不一致，不自行推定",
+          "relationship": "正文自称刘国城教授的硕士学生",
+          "experienceType": "named-student-experience-in-institutional-account",
+          "firsthand": true,
+          "polarity": "positive",
+          "summary": "一名跨专业硕士学生回忆，导师通过同门共同做项目与定期组会帮助自己补足专业基础。",
+          "specifics": [
+            "朱安琪自述跨专业、与其他研究生相比基础较弱。",
+            "明确点名刘国城为自己的导师，并描述经常带自己与同门一起做项目、定期开组会及因材施教。",
+            "她将自己的专业能力逐步改善与这些训练联系起来。"
+          ],
+          "limits": [
+            "这是2021年报道中的单个历史经历；不能承诺现在仍以同样频次开组会或人人获得同样项目。",
+            "“会计学专业硕士”可能指会计学专业的硕士，正文没有明确MPAcc、会计专硕或1253，故不归入已确认MPAcc。",
+            "文章为学校署名账号的就业故事，属于精选正面样本；未给组会间隔、每轮论文反馈时长、项目任务量。"
+          ],
+          "readingScope": "通过网页open实际读取全文，重点核对朱安琪段落及全文文图署名；未只采用搜索摘要。",
+          "attribution": {
+            "status": "confirmed-full-name",
+            "alias": null,
+            "reason": "朱安琪段落明确称“我的导师刘国城教授”；学历类型和届/级疑点原样保留。"
+          },
+          "read": true
+        },
+        {
+          "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+          "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+          "sourceCodeIfExisting": "X01",
+          "postTitle": "南审mpacc导师求推荐",
+          "postAuthor": "银河落九天",
+          "commentAuthor": "白昼岑星（高珊珊附体版）",
+          "postDate": "2025-04-02",
+          "commentDate": "2025-04-09",
+          "identity": "公开评论账号自述，身份未独立认证",
+          "degree": "本科（评论者自述）",
+          "year": null,
+          "relationship": "本科导师（评论者自述）",
+          "experienceType": "student-comment-general-impression",
+          "firsthand": true,
+          "polarity": "positive",
+          "summary": "自称本科导师是刘国城的评论者给出笼统正面评价。",
+          "specifics": [],
+          "limits": [
+            "只有总体印象，没有可重现的论文指导、组会、实习安排或反馈频率细节。",
+            "不能从本科或阶段不明的评论推出MPAcc当前指导风格。"
+          ],
+          "readingScope": "本轮由同组研究代理 reviews_group_a 实际重读X01顶层至THE END并核对本条及相关已显示回复；不是仅凭旧摘要采用。其他未展开分支不称全部读完。",
+          "attribution": {
+            "status": "confirmed-full-name-in-comment",
+            "alias": null,
+            "reason": "评论写出该导师完整姓名；接触关系仅以评论者自述为限，未独立认证其身份。"
+          },
+          "read": true
+        }
+      ],
+      "positiveReasons": [
+        "若希望通过项目实践、同门讨论补足跨专业基础，朱安琪的历史亲历提供了值得继续了解的训练线索；应向当前学生核对是否仍有相同安排。",
+        "本科匿名评论可补充一般相处印象，但不能单独构成硕士指导推荐。"
+      ],
+      "concernsToVerify": [
+        "确认当前MPAcc是否参加同一项目或组会；组会多久一次、由导师还是同门主导，缺席实习期间怎样补交流。",
+        "跨专业学生是否有文献、软件、方法的入门清单；项目任务如何与学位论文衔接，初稿通常经过几轮具体修改。"
+      ],
+      "gaps": [
+        "明确MPAcc直系的近期亲历、当前组会间隔、论文反馈与实习协调未核实。",
+        "X02现有资料仅有上学期授课接触声明，无具体评价；本轮点击后浏览器读取超时，未把它算成新增评价。"
+      ]
+    },
+    {
+      "name": "潘俊",
+      "aliasesTried": [
+        "PJ"
+      ],
+      "queries": [
+        "南京审计大学 潘俊 导师 学生 评价 PJ",
+        "\"南审\" \"PJ\" 导师 评价"
+      ],
+      "coverageStatus": "有明确MPAcc具名学生的具体研究训练亲历；只有一个正面历史个案",
+      "reviews": [
+        {
+          "sourceUrl": "https://nau.edu.cn/2025/0820/c11307a146844/page.htm",
+          "canonicalUrl": "https://nau.edu.cn/2025/0820/c11307a146844/page.htm",
+          "sourceCodeIfExisting": "O-PJ / 18",
+          "postTitle": "南审本硕毕业，读博的他立志做守护文物的会计学者",
+          "postAuthor": "南京审计大学官方报道",
+          "commentAuthor": null,
+          "postDate": "2025-08-20",
+          "commentDate": null,
+          "identity": "孙昊晨，2025届会计专业硕士毕业生，具名受访者",
+          "degree": "MPAcc（正文明确会计专业硕士）",
+          "year": "2025届",
+          "relationship": "硕士导师，另曾上本科政府与非营利组织会计课",
+          "experienceType": "official-named-student-interview",
+          "firsthand": true,
+          "polarity": "positive",
+          "summary": "孙昊晨描述导师会直接指出研究与学习问题背后的逻辑，并要求研究生训练研究能力、让成果回应实践问题。",
+          "specifics": [
+            "孙昊晨进入研究生阶段后成为潘俊学生；他回忆老师会严格指出研究乃至日常学习中的疏漏，并解释错误背后的逻辑、督促改正。",
+            "在导师指导下做政府会计研究；2023年初请教时，导师提出实务界的文物文化资产入账入表议题，成为其研究切入点。",
+            "文章记载学生自行查国内外报告与准则、向行业专家及校外导师请教；这些校外具体指导不能全部归功潘俊。"
+          ],
+          "limits": [
+            "单名选择继续读博学生的官方正面访谈，有选择性；不能代表所有学生体验。",
+            "可证实研究能力导向，不等于所有MPAcc学生必须申博或发表论文。",
+            "没有固定组会频次、反馈期限、能否长期实习或统一毕业要求的信息。"
+          ],
+          "readingScope": "通过网页open实际阅读全文，重点核对孙昊晨身份、成为潘俊学生、直接指出问题与2023年选题过程；避免把其他专家/校外导师的指导移给潘俊。",
+          "attribution": {
+            "status": "confirmed-full-name",
+            "alias": null,
+            "reason": "正文明确写出导师全名及该名学生的接触关系；不是依靠缩写反推。"
+          },
+          "read": true
+        }
+      ],
+      "positiveReasons": [
+        "对愿意接受直接纠错、希望系统训练研究能力，尤其关注政府会计与公共文化资产议题的学生，这个个案支持进一步联系了解。",
+        "选题来自实务讨论，再查文献、报告与准则的路径较具体，可据此询问当前是否有类似课题与训练机会。"
+      ],
+      "concernsToVerify": [
+        "直接指出问题的反馈方式是否适合自己；可请当前学生举最近一次选题或论文修改的具体过程。",
+        "计划就业或考公的MPAcc学生，研究训练任务、成果要求、实习与论文节点分别如何安排，不能照搬申博学生的投入。"
+      ],
+      "gaps": [
+        "缺少不同去向MPAcc学生的独立近期经历；研究任务量、回复时长与实习安排未核实。"
+      ]
+    },
+    {
+      "name": "章之旺",
+      "aliasesTried": [
+        "ZZW"
+      ],
+      "queries": [
+        "南京审计大学 章之旺 导师 评价 ZZW",
+        "\"南审\" \"ZZW\" 导师",
+        "\"章之旺\" 学生 导师 感谢",
+        "\"章之旺\" \"学生\" \"感谢\""
+      ],
+      "coverageStatus": "已检索全名及大写缩写；未找到可采用的具体个人指导经历",
+      "reviews": [],
+      "positiveReasons": [],
+      "concernsToVerify": [
+        "若考虑司法会计或法务会计，先问案例资料取得、法律知识入门及论文可行性评估由谁指导。",
+        "确认当前MPAcc招生资格与名额、师生交流安排、反馈周期及实习期间的论文节点。"
+      ],
+      "gaps": [
+        "全名和ZZW检索未读到可归属个人的学生指导经历。",
+        "官方资料的MAud案例、公开讲座与教师科研成果不能代替MPAcc学生个人评价；目前不据此给出“避雷”或指导风格标签。"
+      ]
+    },
+    {
+      "name": "张兴亮",
+      "aliasesTried": [
+        "ZXL"
+      ],
+      "queries": [
+        "南京审计大学 张兴亮 导师 评价 ZXL",
+        "\"南审\" \"ZXL\" 导师",
+        "\"张兴亮\" 学生 导师 感谢",
+        "\"张兴亮\" \"南审\" \"感谢\""
+      ],
+      "coverageStatus": "有阶段不明的曾受指导者及本科授课者弱评价；无具体MPAcc指导过程",
+      "reviews": [
+        {
+          "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+          "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+          "sourceCodeIfExisting": "X01",
+          "postTitle": "南审mpacc导师求推荐",
+          "postAuthor": "银河落九天",
+          "commentAuthor": "momo",
+          "postDate": "2025-04-02",
+          "commentDate": "2025-04-03",
+          "identity": "公开评论账号自述，身份未独立认证",
+          "degree": "未说明",
+          "year": null,
+          "relationship": "自称曾经受其指导，阶段与年份均未说明",
+          "experienceType": "student-comment-general-impression",
+          "firsthand": true,
+          "polarity": "positive",
+          "summary": "自称曾经的导师为张兴亮的评论者表示推荐，并给出一般相处正面印象。",
+          "specifics": [],
+          "limits": [
+            "只有总体印象，没有可重现的论文指导、组会、实习安排或反馈频率细节。",
+            "不能从本科或阶段不明的评论推出MPAcc当前指导风格。"
+          ],
+          "readingScope": "本轮由同组研究代理 reviews_group_a 实际重读X01顶层至THE END并核对本条及相关已显示回复；不是仅凭旧摘要采用。其他未展开分支不称全部读完。",
+          "attribution": {
+            "status": "confirmed-full-name-in-comment",
+            "alias": null,
+            "reason": "评论写出该导师完整姓名；接触关系仅以评论者自述为限，未独立认证其身份。"
+          },
+          "read": true
+        },
+        {
+          "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+          "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+          "sourceCodeIfExisting": "X01",
+          "postTitle": "南审mpacc导师求推荐",
+          "postAuthor": "银河落九天",
+          "commentAuthor": "1874",
+          "postDate": "2025-04-02",
+          "commentDate": "2025-04-04",
+          "identity": "公开评论账号自述，身份未独立认证",
+          "degree": "本科（评论者明确自述）",
+          "year": null,
+          "relationship": "曾上张力、张兴亮、黄中生的本科课程",
+          "experienceType": "student-comment-general-impression",
+          "firsthand": true,
+          "polarity": "positive",
+          "summary": "一名本科上课者将张兴亮与另外两位老师并列给出一般正面印象；没有张兴亮单独的教学行为细节。",
+          "specifics": [],
+          "limits": [
+            "只有总体印象，没有可重现的论文指导、组会、实习安排或反馈频率细节。",
+            "不能从本科或阶段不明的评论推出MPAcc当前指导风格。"
+          ],
+          "readingScope": "本轮由同组研究代理 reviews_group_a 实际重读X01顶层至THE END并核对本条及相关已显示回复；不是仅凭旧摘要采用。其他未展开分支不称全部读完。",
+          "attribution": {
+            "status": "confirmed-full-name-in-comment",
+            "alias": null,
+            "reason": "评论写出该导师完整姓名；接触关系仅以评论者自述为限，未独立认证其身份。"
+          },
+          "read": true
+        }
+      ],
+      "positiveReasons": [
+        "两条自述接触关系的评论给出一般正面印象，可作为进一步访谈的线索；还不足以细分其论文训练或实习管理适合谁。"
+      ],
+      "concernsToVerify": [
+        "让当前MPAcc学生具体举一次选题纠偏、实证方法或论文初稿反馈的例子，并核实交流频次。",
+        "若关注会计信息与公司治理，确认所需数据和方法训练、当前课题选择空间以及实习时的任务安排。"
+      ],
+      "gaps": [
+        "两条评论没有组会、论文反馈或实习协调细节；不能据此写“耐心改论文”“放养”“不push”。",
+        "1874同条中的耐心解答问题描述仅指张力，不能移接给张兴亮。",
+        "外网搜索出现西北大学地质学张兴亮和宜春学院同名教师，已排除。"
+      ]
+    },
+    {
+      "name": "叶邦银",
+      "aliasesTried": [
+        "YBY"
+      ],
+      "queries": [
+        "\"南审\" \"叶邦银\" 学生 评价",
+        "\"南审\" \"YBY\" 导师",
+        "\"叶邦银\" 学生 感谢 导师"
+      ],
+      "coverageStatus": "新增具名本科智能审计项目的具体支持经历；MPAcc日常指导仍是缺口",
+      "reviews": [
+        {
+          "sourceUrl": "https://news.nau.edu.cn/2026/0622/c5799a159560/page.htm",
+          "canonicalUrl": "https://news.nau.edu.cn/2026/0622/c5799a159560/page.htm",
+          "sourceCodeIfExisting": null,
+          "postTitle": "我与南审 | 浦军：敏知楼417的灯，还亮着",
+          "postAuthor": "南京审计大学新闻网",
+          "commentAuthor": null,
+          "postDate": "2026-07-08（页面显示；URL路径0622不作为发表日期）",
+          "commentDate": null,
+          "identity": "浦军，社会审计学院（中审学院）2024级CPA一班学生，比部团队创始人；经历由学校报道叙述并引用本人感受",
+          "degree": "本科（CPA班项目经历；不当成MPAcc）",
+          "year": "2024级CPA一班",
+          "relationship": "审计课程教师及团队项目指导；不是已确认MPAcc直系导师关系",
+          "experienceType": "official-named-undergraduate-project-experience",
+          "firsthand": true,
+          "polarity": "positive",
+          "summary": "具名学生的智能审计团队遇到模型瓶颈时，叶邦银与郭岚、柏菊共同帮忙，叶主要把关项目方向和行业需求。",
+          "specifics": [
+            "报道记载2025年11月团队在模型构建与异常点识别上受阻，向郭岚求助后，由三位老师共同梳理。",
+            "叶邦银负责项目整体方向、行业需求与算法研发的核心定位；郭岚负责实务异常判断维度，柏菊负责代码及流程拆解。",
+            "这是一次具体团队协作支持经历；不能把其他老师的逐行代码指导写成叶邦银个人行为。"
+          ],
+          "limits": [
+            "这是本科团队的一次具体项目经历，由学校正面人物故事呈现，并非MPAcc日常指导的独立评价。",
+            "不能根据一次夜间集中指导，承诺随时回复、长期同样投入或适用于所有学生。",
+            "文中提到的成果与效率由报道叙述，本档不用于验证技术效果，也不把团队成果等同个人指导质量。"
+          ],
+          "readingScope": "通过网页open实际阅读全文，核对页面显示日期、浦军班级身份、2025年11月瓶颈过程及三位老师各自分工；未只读检索摘要。",
+          "attribution": {
+            "status": "confirmed-full-name-and-role",
+            "alias": null,
+            "reason": "正文明确写叶邦银全名并逐项区分三位老师分工，学生姓名与班级明确。"
+          },
+          "read": true
+        }
+      ],
+      "positiveReasons": [
+        "若关注智能审计与行业问题的结合，本科项目例子显示曾参与方向定位和行业需求把关；可进一步核实MPAcc学生是否能进入类似团队。"
+      ],
+      "concernsToVerify": [
+        "确认当前MPAcc能否参与智能审计项目、谁承担算法或论文方法的日常辅导、需具备何种编程与审计基础。",
+        "问清导师本人和团队其他教师各自职责、定期讨论安排，不能把集体指导资源默认为每名MPAcc学生的固定配置。"
+      ],
+      "gaps": [
+        "没有直接MPAcc学生讲述论文指导、反馈周期、项目任务量与实习协调的资料。"
+      ]
+    },
+    {
+      "name": "罗琰",
+      "aliasesTried": [
+        "LY"
+      ],
+      "queries": [
+        "\"南审\" \"罗琰\" 导师 推荐",
+        "\"南审\" \"LY\" 导师 评价",
+        "\"罗琰\" 学生 \"导师\" 感谢"
+      ],
+      "coverageStatus": "已检索全名及大写缩写；未找到可采用的具体个人指导经历",
+      "reviews": [],
+      "positiveReasons": [],
+      "concernsToVerify": [
+        "若选风险管理、公司金融或保险审计，确认当前MPAcc选题、数据来源与量化方法训练，基础不足时由谁提供支持。",
+        "向当前学生核实本人指导频次、初稿反馈方式、实习协调和当前招生名额。"
+      ],
+      "gaps": [
+        "全名和LY检索未读到能可靠归属罗琰的个人指导经历。",
+        "LY在其他学校和专业也有评价，不能仅凭缩写挂到罗琰名下。",
+        "官方论文、课题及参访记录不作为学生个人评价。"
+      ]
+    },
+    {
+      "name": "吴青川",
+      "aliasesTried": [
+        "WQC"
+      ],
+      "queries": [
+        "\"南京审计\" \"吴青川\" 学生 评价",
+        "\"南审\" \"WQC\" 导师 评价",
+        "\"吴青川\" 学生 感谢 导师",
+        "\"吴青川\" \"南审\" \"我的老师\""
+      ],
+      "coverageStatus": "已检索全名及大写缩写；未找到可采用的具体个人指导经历",
+      "reviews": [],
+      "positiveReasons": [],
+      "concernsToVerify": [
+        "若关注注册会计师审计或国际公共部门审计，核实当前MPAcc可选课题、资料可得性与指导安排；不能把联合国审计履历写成学生参与保障。",
+        "问清论文反馈、实习期间交流渠道及导师/团队分工，尤其外出工作时如何保持联系。"
+      ],
+      "gaps": [
+        "全名和WQC检索未找到可采用的具名或可归属学生亲历。",
+        "优秀论文指导教师等荣誉、学院导师制工作要求不能代替本人对具体MPAcc学生的实际指导评价。",
+        "检索出现河源/韩山师范学院同名领导，已排除。"
+      ]
+    },
+    {
+      "name": "刘静",
+      "aliasesTried": [
+        "LJ"
+      ],
+      "queries": [
+        "\"南审\" \"刘静\" 导师 评价",
+        "\"南审\" \"LJ\" 导师 评价",
+        "\"刘静\" \"南京审计\" 学生 导师 感谢"
+      ],
+      "coverageStatus": "已检索全名及大写缩写；未找到可采用的具体个人指导经历",
+      "reviews": [],
+      "positiveReasons": [],
+      "concernsToVerify": [
+        "若关注公司财务或政府会计，先问当前MPAcc研究方向、数据与方法要求、选题自由度和初稿修改安排。",
+        "向当前学生核实组会、单独沟通和实习期间的论文节点。"
+      ],
+      "gaps": [
+        "全名和LJ检索未读到可可靠归属的学生个人指导经历。",
+        "财务报表课程中出现姓名仅证明授课接触，不能当教学质量或硕士指导评价。",
+        "同名校友、外校教师及行政会议发言频繁出现，未从这些记录推定导师风格。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "code": "O-PJ / 18",
+      "existing": true,
+      "url": "https://nau.edu.cn/2025/0820/c11307a146844/page.htm",
+      "canonicalUrl": "https://nau.edu.cn/2025/0820/c11307a146844/page.htm",
+      "title": "南审本硕毕业，读博的他立志做守护文物的会计学者",
+      "platform": "南京审计大学官网",
+      "read": true,
+      "date": "2025-08-20",
+      "readingScope": "实际全文读取",
+      "newSource": false,
+      "webRef": "turn131view0"
+    },
+    {
+      "code": "B-O-LGC",
+      "existing": false,
+      "url": "https://www.sohu.com/a/500320907_769713",
+      "canonicalUrl": "https://www.sohu.com/a/500320907_769713",
+      "title": "6人签约华为，2022届南审人棒！",
+      "platform": "搜狐（来源署名南京审计大学）",
+      "read": true,
+      "date": "2021-11-10 17:42",
+      "readingScope": "实际全文读取，朱安琪段落及文图作者署名",
+      "newSource": true,
+      "webRef": "turn145view0"
+    },
+    {
+      "code": "B-O-YBY",
+      "existing": false,
+      "url": "https://news.nau.edu.cn/2026/0622/c5799a159560/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2026/0622/c5799a159560/page.htm",
+      "title": "我与南审 | 浦军：敏知楼417的灯，还亮着",
+      "platform": "南京审计大学新闻网",
+      "read": true,
+      "date": "2026-07-08",
+      "readingScope": "实际全文读取；采用本科团队项目中的叶邦银个人分工",
+      "newSource": true,
+      "webRef": "turn131view1"
+    },
+    {
+      "code": "X01",
+      "existing": true,
+      "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "title": "南审mpacc导师求推荐",
+      "platform": "小红书",
+      "read": true,
+      "date": "2025-04-02",
+      "readingScope": "同组代理reviews_group_a本轮重读顶层至THE END并核本组相关评论；折叠支线未称全量",
+      "newSource": false
+    }
+  ],
+  "ambiguousAliases": [
+    {
+      "alias": "高老师",
+      "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+      "sourceCode": "X02",
+      "status": "unresolved",
+      "label": "已见线索但归属未确认",
+      "reason": "原文仅有姓氏，所在对话未给出全名；不跨楼沿用其他评论的对象。",
+      "verificationGap": "需要作者明确姓名和本人接触关系。",
+      "publishUnderNamedMentor": false
+    }
+  ],
+  "searchLog": [
+    {
+      "teacher": "刘国城",
+      "query": "南京审计大学 刘国城 导师 学生 评价 LGC",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "刘国城",
+      "query": "\"南审\" \"LGC\" 导师",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "刘国城",
+      "query": "\"刘国城\" (\"我的导师\" OR \"老师\" OR \"指导\") 学生 感谢",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "刘国城",
+      "query": "\"刘国城\" \"定期开组会\"",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "刘国城",
+      "query": "小红书站内：南审 刘国城",
+      "platform": "小红书站内",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "刘国城",
+      "query": "小红书站内：南审 LGC",
+      "platform": "小红书站内",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "潘俊",
+      "query": "南京审计大学 潘俊 导师 学生 评价 PJ",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "潘俊",
+      "query": "\"南审\" \"PJ\" 导师 评价",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "章之旺",
+      "query": "南京审计大学 章之旺 导师 评价 ZZW",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "章之旺",
+      "query": "\"南审\" \"ZZW\" 导师",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "章之旺",
+      "query": "\"章之旺\" 学生 导师 感谢",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "章之旺",
+      "query": "\"章之旺\" \"学生\" \"感谢\"",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "张兴亮",
+      "query": "南京审计大学 张兴亮 导师 评价 ZXL",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "张兴亮",
+      "query": "\"南审\" \"ZXL\" 导师",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "张兴亮",
+      "query": "\"张兴亮\" 学生 导师 感谢",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "张兴亮",
+      "query": "\"张兴亮\" \"南审\" \"感谢\"",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "叶邦银",
+      "query": "\"南审\" \"叶邦银\" 学生 评价",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "叶邦银",
+      "query": "\"南审\" \"YBY\" 导师",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "叶邦银",
+      "query": "\"叶邦银\" 学生 感谢 导师",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "罗琰",
+      "query": "\"南审\" \"罗琰\" 导师 推荐",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "罗琰",
+      "query": "\"南审\" \"LY\" 导师 评价",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "罗琰",
+      "query": "\"罗琰\" 学生 \"导师\" 感谢",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "吴青川",
+      "query": "\"南京审计\" \"吴青川\" 学生 评价",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "吴青川",
+      "query": "\"南审\" \"WQC\" 导师 评价",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "吴青川",
+      "query": "\"吴青川\" 学生 感谢 导师",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "吴青川",
+      "query": "\"吴青川\" \"南审\" \"我的老师\"",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "刘静",
+      "query": "\"南审\" \"刘静\" 导师 评价",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "刘静",
+      "query": "\"南审\" \"LJ\" 导师 评价",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    },
+    {
+      "teacher": "刘静",
+      "query": "\"刘静\" \"南京审计\" 学生 导师 感谢",
+      "platform": "公开网页检索",
+      "result": "姓名/缩写分开核对；具体采用与排除见teachers/sources/screened/unread",
+      "readScope": "结果卡片仅用于发现线索；只有实际打开全文或同组鲜读评论才写入reviews"
+    }
+  ],
+  "methodNote": "仅保存已归名且有阅读记录的研究条目；不公开未核负面原句或候选实名。"
+}
