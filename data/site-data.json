@@ -7,7 +7,7 @@
       "detailedMentorCards": 17,
       "lifeChapters": 12,
       "socialPosts": 113,
-      "officialEvidence": 112,
+      "officialEvidence": 116,
       "feedbackRecords": 21,
       "screenedSources": 15,
       "unreadLeads": 6
@@ -30,7 +30,7 @@
     "directionNote": "G1至G6是资料导览分类，不是统一招生方向；报考以当年125300目录，在读以本级培养方案。",
     "evidenceNote": "官方资料、具名个案、本科课程、研究生转述和身份不明评价分开保留；个人评价不构成导师性格、招生名额或普遍指导风格结论。",
     "quotaNote": "名单内不代表当年仍有名额；正式选导以当年双选通知及导师本人回复为准。",
-    "platformNote": "社交来源索引实际113条，官网证据112条；同帖补读、同事件附件和转载不重复计数。课程反馈与导师日常指导分开，保留年份、对象和阅读范围。",
+    "platformNote": "社交来源索引实际113条，官方公开资料116条；同帖补读、同事件附件和转载不重复计数。课程反馈与导师日常指导分开，保留年份、对象和阅读范围。",
     "sourceInputFiles": [
       "life_content.json",
       "mentor_expanded_content.json",
@@ -564,7 +564,7 @@
     },
     "appEdition": {
       "web": {
-        "version": "1.0.1"
+        "version": "1.0.2"
       },
       "android": {
         "available": true,
@@ -612,6 +612,41 @@
           "text": "附件列出董必荣指导王一帆研究牧原股份数字化转型与企业绩效、潘俊指导李亦普研究华设设计集团EPC项目财务风险，可作为有姓名和题目的历史指导个案。",
           "sourceCodes": [
             "C504"
+          ]
+        }
+      ]
+    },
+    "research102": {
+      "newOfficialSources": 4,
+      "newSocialPosts": 0,
+      "updatedSocialPosts": 1,
+      "highlights": [
+        {
+          "title": "三位会计专硕的准备路径",
+          "text": "三位具名会计专硕分别分享申博准备、江苏电网求职和安永实习与论文统筹，可作为不同发展路径的具体准备例子。",
+          "sourceCodes": [
+            "D601"
+          ]
+        },
+        {
+          "title": "智能财务共享的实践环节",
+          "text": "官方课程报道说明以智慧业财实验室模拟共享中心，把报账、审批、审核、支付和数据分析串入教学，可据此理解课程实践任务。",
+          "sourceCodes": [
+            "D602"
+          ]
+        },
+        {
+          "title": "案例论文先怎样提问题",
+          "text": "案例研究方法报道提供从问题、文献、证据到研究设计的准备思路，可作联系导师前理解案例论文的延伸阅读。",
+          "sourceCodes": [
+            "D603"
+          ]
+        },
+        {
+          "title": "公开会计学基础复习入口",
+          "text": "公开文字大纲按会计信息、会计循环、各项目核算、财务报告分析组织，可据此安排入学前基础复习。",
+          "sourceCodes": [
+            "D604"
           ]
         }
       ]
@@ -710,6 +745,22 @@
             "C504"
           ],
           "expansionBatch": "continue-research"
+        },
+        {
+          "id": "research102-role-1adebf97b1c55030",
+          "kind": "official",
+          "category": "公开基础课程团队（非MPAcc指导关系）",
+          "statusLabel": "公开基础课程团队（非MPAcc指导关系）",
+          "population": "南京审计大学教学团队的公开基础课程，页面未将其认定为本级MPAcc必修课；适合按已有基础补会计循环和报表阅读。",
+          "date": null,
+          "author": null,
+          "text": "国家平台列为这门公开会计学课程的授课团队成员，非本级MPAcc指导关系。 [D604]",
+          "limitations": "仅读课程介绍和文字大纲，未观看视频、完成测验或验证全部视频访问权限；不承诺免费证书、学分抵扣、MPAcc考试范围及教师回应速度。 阅读范围：中国大学MOOC正文L16—L62与国家智慧教育平台L28—L206均实际读取；仅介绍、教师名单和文字大纲，两个镜像合一个课程资源。",
+          "url": "https://www.icourse163.org/course/NAU-1449494161",
+          "sourceIds": [
+            "D604"
+          ],
+          "expansionBatch": "research-102"
         }
       ],
       "links": [
@@ -815,16 +866,21 @@
           "category": "按接触身份限定的匿名线索",
           "statusLabel": "笼统弱线索",
           "population": "身份未说明",
-          "date": "既有汇总未记录日期",
+          "date": "2025-04-02",
           "text": "既有主稿记录X01有笼统正面提名，没有具体日常指导过程。",
           "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
-          "limitations": "只保留主稿已有线索，不补充评论者身份、阶段或行为；案例指导另以官方报道为准。",
-          "author": "既有汇总未记录评论者",
+          "limitations": "只保留主稿已有线索，不补充评论者身份、阶段或行为；案例指导另以官方报道为准。 本次只核对评论署名和日期，身份与原行为描述不升级。阅读范围：直接核对同一条评论中关于温素彬的提名、评论署名和可见日期；其他老师的课程或竞赛关系不转接。",
+          "author": "冬日来信",
           "sourceIds": [
             "X01",
             "67ecb72b000000001e0042af"
           ],
-          "postId": "67ecb72b000000001e0042af"
+          "postId": "67ecb72b000000001e0042af",
+          "attributionCorrection": {
+            "readingScope": "直接核对同一条评论中关于温素彬的提名、评论署名和可见日期；其他老师的课程或竞赛关系不转接。",
+            "limits": "仅评论署名与可见日期归因；身份不明，笼统提名强度不升级。",
+            "changeType": "comment attribution correction only"
+          }
         },
         {
           "id": "R302-mentor-mentor-02",
@@ -1267,6 +1323,22 @@
           ],
           "eventKey": "2024-national-mpacc-book-team",
           "expansionBatch": "research-round3"
+        },
+        {
+          "id": "research102-role-88df3a94aadab908",
+          "kind": "official",
+          "category": "公开基础课程团队（非MPAcc指导关系）",
+          "statusLabel": "公开基础课程团队（非MPAcc指导关系）",
+          "population": "南京审计大学教学团队的公开基础课程，页面未将其认定为本级MPAcc必修课；适合按已有基础补会计循环和报表阅读。",
+          "date": null,
+          "author": null,
+          "text": "国家平台列为这门公开会计学课程的授课团队成员，非本级MPAcc指导关系。 [D604]",
+          "limitations": "仅读课程介绍和文字大纲，未观看视频、完成测验或验证全部视频访问权限；不承诺免费证书、学分抵扣、MPAcc考试范围及教师回应速度。 阅读范围：中国大学MOOC正文L16—L62与国家智慧教育平台L28—L206均实际读取；仅介绍、教师名单和文字大纲，两个镜像合一个课程资源。",
+          "url": "https://www.icourse163.org/course/NAU-1449494161",
+          "sourceIds": [
+            "D604"
+          ],
+          "expansionBatch": "research-102"
         }
       ],
       "links": [
@@ -2143,6 +2215,22 @@
             "67ecb72b000000001e0042af"
           ],
           "postId": "67ecb72b000000001e0042af"
+        },
+        {
+          "id": "research102-role-2c0d291c8229dac9",
+          "kind": "official",
+          "category": "公开基础课程团队（非MPAcc指导关系）",
+          "statusLabel": "公开基础课程团队（非MPAcc指导关系）",
+          "population": "南京审计大学教学团队的公开基础课程，页面未将其认定为本级MPAcc必修课；适合按已有基础补会计循环和报表阅读。",
+          "date": null,
+          "author": null,
+          "text": "国家平台列为这门公开会计学课程的授课团队成员，非本级MPAcc指导关系。 [D604]",
+          "limitations": "仅读课程介绍和文字大纲，未观看视频、完成测验或验证全部视频访问权限；不承诺免费证书、学分抵扣、MPAcc考试范围及教师回应速度。 阅读范围：中国大学MOOC正文L16—L62与国家智慧教育平台L28—L206均实际读取；仅介绍、教师名单和文字大纲，两个镜像合一个课程资源。",
+          "url": "https://www.icourse163.org/course/NAU-1449494161",
+          "sourceIds": [
+            "D604"
+          ],
+          "expansionBatch": "research-102"
         }
       ],
       "links": [
@@ -3553,6 +3641,22 @@
             "C501"
           ],
           "expansionBatch": "continue-research"
+        },
+        {
+          "id": "research102-role-398c0d5ce1a84d31",
+          "kind": "official",
+          "category": "既有案例公开讲解（非学生日常指导）",
+          "statusLabel": "既有案例公开讲解（非学生日常指导）",
+          "population": "2026年6月17日学院研究生讲座，未单列MPAcc；王永妍为主讲人，内容围绕既有G公司作业成本项目。",
+          "date": "2026-06-22",
+          "author": null,
+          "text": "2026年学院研究生讲座主讲人，介绍G企业作业成本咨询项目的诊断、模型与Excel部署过程；非确认学生学位指导关系。 [10]",
+          "limitations": "这是2026讲座而非2025入库报道的同一天事件，但使用相同G企业成本案例，保守归入已有案例的过程补充，不另加独立案例数。未取得咨询资料、Excel模型或讲座全文，不能声称能复现模型；主讲不等于全部学生的日常指导。 阅读范围：官方报道L79—L90已实际读取，未看完整录像、模型或案例全文，照片未逐张审读。",
+          "url": "https://account.nau.edu.cn/2026/0622/c8919a159585/page.htm",
+          "sourceIds": [
+            "10"
+          ],
+          "expansionBatch": "research-102"
         }
       ],
       "links": [
@@ -7876,6 +7980,51 @@
           ],
           "expansionId": "continue-body-cb06fee8e5f273b2",
           "expansionBatch": "continue-research"
+        },
+        {
+          "type": "p",
+          "text": "官方课程报道说明以智慧业财实验室模拟共享中心，把报账、审批、审核、支付和数据分析串入教学，可据此理解课程实践任务。 混合本科/研究生课程报道，不证明本级MPAcc必修、每人获得平台账号、操作课时或课程成绩规则；正文没有具名任课教师，不挂个人导师训练证据。 [D602]",
+          "sourceCodes": [
+            "D602"
+          ],
+          "expansionId": "research102-body-dc256a7a936d6fed",
+          "expansionBatch": "research-102"
+        },
+        {
+          "type": "p",
+          "text": "案例研究方法报道提供从问题、文献、证据到研究设计的准备思路，可作联系导师前理解案例论文的延伸阅读。 只读活动报道，未取得讲座完整录像、讲义或所涉论文，不声称学习过完整方法课程。听众不是已确认MPAcc，温素彬只是主持/致辞，不归为其个人日常指导，也不作为学位论文硬要求。 [D603]",
+          "sourceCodes": [
+            "D603"
+          ],
+          "expansionId": "research102-body-c5bce7702e338609",
+          "expansionBatch": "research-102"
+        },
+        {
+          "type": "p",
+          "text": "公开文字大纲按会计信息、会计循环、各项目核算、财务报告分析组织，可据此安排入学前基础复习。 仅读课程介绍和文字大纲，未观看视频、完成测验或验证全部视频访问权限；不承诺免费证书、学分抵扣、MPAcc考试范围及教师回应速度。 [D604]",
+          "sourceCodes": [
+            "D604"
+          ],
+          "expansionId": "research102-body-5c4d0bbd72cb1bae",
+          "expansionBatch": "research-102"
+        },
+        {
+          "type": "p",
+          "text": "为来源10已有大数据企业成本管理案例补充一次公开讲解过程：从核算痛点诊断到混合成本核算框架，并用Excel轻量化部署。 这是2026讲座而非2025入库报道的同一天事件，但使用相同G企业成本案例，保守归入已有案例的过程补充，不另加独立案例数。未取得咨询资料、Excel模型或讲座全文，不能声称能复现模型；主讲不等于全部学生的日常指导。 [10]",
+          "sourceCodes": [
+            "10"
+          ],
+          "expansionId": "research102-body-c65ea111a85b7d15",
+          "expansionBatch": "research-102"
+        },
+        {
+          "type": "p",
+          "text": "X01中温素彬的笼统正面提名，可以准确归于冬日来信在2025-04-02发布的一条评论；并未提供与温素彬的具体课程或指导经历。 温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。负面缩写及只有姓氏的评论不映射给任何导师。 [X01]",
+          "sourceCodes": [
+            "X01"
+          ],
+          "expansionId": "research102-body-36da79c501f756f2",
+          "expansionBatch": "research-102"
         }
       ],
       "sourceCodes": [
@@ -7934,7 +8083,12 @@
         "C503",
         "C504",
         "C505",
-        "C506"
+        "C506",
+        "D602",
+        "D603",
+        "D604",
+        "10",
+        "X01"
       ]
     },
     {
@@ -8118,6 +8272,15 @@
           ],
           "expansionId": "continue-body-acf93f9d75d0188c",
           "expansionBatch": "continue-research"
+        },
+        {
+          "type": "p",
+          "text": "三位具名会计专硕分别分享申博准备、江苏电网求职和安永实习与论文统筹，可作为不同发展路径的具体准备例子。 新闻记录3个具名个案，不是完整就业样本，不能推算就业率、工资、所有学生的去向或相同准备必然成功。未读论文全文，不猜其学位导师；只作2026届毕业经验而非2027招录规则。 [D601]",
+          "sourceCodes": [
+            "D601"
+          ],
+          "expansionId": "research102-body-e1c45ded6d95797a",
+          "expansionBatch": "research-102"
         }
       ],
       "sourceCodes": [
@@ -8141,7 +8304,8 @@
         "E001",
         "R313",
         "A402",
-        "C502"
+        "C502",
+        "D601"
       ]
     },
     {
@@ -9593,6 +9757,66 @@
           ],
           "expansionId": "continue-source-cb06fee8e5f273b2",
           "expansionBatch": "continue-research"
+        },
+        {
+          "type": "source",
+          "text": "[D601] “薪火相传，职引未来”会计学院研究生毕业生经验分享会（2026）",
+          "url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+          "sourceCodes": [
+            "D601"
+          ],
+          "expansionId": "research102-source-e1c45ded6d95797a",
+          "expansionBatch": "research-102"
+        },
+        {
+          "type": "source",
+          "text": "[D602] 会计学院邀请中兴新云为《智能财务共享》课程提供实训平台支持",
+          "url": "https://account.nau.edu.cn/2026/0519/c8917a157673/page.htm",
+          "sourceCodes": [
+            "D602"
+          ],
+          "expansionId": "research102-source-dc256a7a936d6fed",
+          "expansionBatch": "research-102"
+        },
+        {
+          "type": "source",
+          "text": "[D603] 润泽学术名家论坛第85期：祝继高谈案例研究方法",
+          "url": "https://account.nau.edu.cn/2026/0326/c8919a155331/page.htm",
+          "sourceCodes": [
+            "D603"
+          ],
+          "expansionId": "research102-source-c5bce7702e338609",
+          "expansionBatch": "research-102"
+        },
+        {
+          "type": "source",
+          "text": "[D604] 南京审计大学《会计学》公开慕课：会计循环与财务报表阅读分析",
+          "url": "https://www.icourse163.org/course/NAU-1449494161",
+          "sourceCodes": [
+            "D604"
+          ],
+          "expansionId": "research102-source-5c4d0bbd72cb1bae",
+          "expansionBatch": "research-102"
+        },
+        {
+          "type": "source",
+          "text": "[10] 王永妍讲解大数据企业作业成本管理项目（既有G公司案例过程补充）",
+          "url": "https://account.nau.edu.cn/2026/0622/c8919a159585/page.htm",
+          "sourceCodes": [
+            "10"
+          ],
+          "expansionId": "research102-source-c65ea111a85b7d15",
+          "expansionBatch": "research-102"
+        },
+        {
+          "type": "source",
+          "text": "[X01] 南审mpacc导师求推荐",
+          "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+          "sourceCodes": [
+            "X01"
+          ],
+          "expansionId": "research102-source-36da79c501f756f2",
+          "expansionBatch": "research-102"
         }
       ],
       "sourceCodes": [
@@ -9750,7 +9974,13 @@
         "C503",
         "C504",
         "C505",
-        "C506"
+        "C506",
+        "D601",
+        "D602",
+        "D603",
+        "D604",
+        "10",
+        "X01"
       ]
     }
   ],
@@ -12236,7 +12466,11 @@
       "campus": "未说明",
       "population": "求助者与评论者身份各异；可归属反馈以本科或阶段未知为主",
       "summary": "围绕导师推荐、相处与投入展开讨论；少量完整姓名及具体经历，多数评论不足以判断MPAcc指导安排。",
-      "tips": [],
+      "tips": [
+        "补全既有温素彬弱线索的评论者为冬日来信，显示日期为2025-04-02。",
+        "同条评论中的本人课程接触指王菁华，竞赛求教指王敬勇；这两段关系不能转接成与温素彬的关系。",
+        "只修归因和阅读范围，不增加新帖子，也不把笼统提名改为MPAcc亲历或日常指导证据。"
+      ],
       "comments": [
         {
           "teacher": "傅祥斐",
@@ -12312,12 +12546,17 @@
         },
         {
           "teacher": "温素彬",
-          "author": "既有汇总未记录评论者",
-          "date_display": "既有汇总未记录日期",
+          "author": "冬日来信",
+          "date_display": "2025-04-02",
           "relationship": "身份未说明",
           "content": "既有主稿记录X01有笼统正面提名，没有具体日常指导过程。",
           "limits": "只保留主稿已有线索，不补充评论者身份、阶段或行为；案例指导另以官方报道为准。",
-          "use_status": "笼统弱线索"
+          "use_status": "笼统弱线索",
+          "attributionCorrection": {
+            "sourceCode": "X01",
+            "readingScope": "直接核对同一条评论中关于温素彬的提名、评论署名和可见日期；其他老师的课程或竞赛关系不转接。",
+            "limits": "仅核对评论署名及可见日期；接触身份和既有行为描述不升级。"
+          }
         }
       ],
       "limitations": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
@@ -12328,13 +12567,37 @@
       "screenedOnly": false,
       "promotion": "原记录未单独标注",
       "readingScopes": [
-        "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。"
+        "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+        "本轮文字正文、95条计数所对应的所有已加载顶层评论逐段读取至THE END；新点展开王烨分支的4条追加回复并全部读到。其他折叠支线未全面展开，不能称95条逐字全读；图片未单独重新审读。温素彬提名在冬日来信同条评论内直接见到作者与完整日期。"
       ],
       "queries": [
         "上一轮南审会计导师评价检索"
       ],
       "inputFiles": [
         "旧轮已读日志"
+      ],
+      "research102Updates": [
+        {
+          "code": "X01",
+          "kind": "student",
+          "title": "南审mpacc导师求推荐",
+          "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+          "platform": "其他公开平台",
+          "date": "2025-04-02",
+          "author": "银河落九天",
+          "population": "本轮只修温素彬笼统提名的评论归因；评论者未说明自己与温素彬的接触关系、学位类别或年级。",
+          "summary": "X01中温素彬的笼统正面提名，可以准确归于冬日来信在2025-04-02发布的一条评论；并未提供与温素彬的具体课程或指导经历。",
+          "points": [
+            "补全既有温素彬弱线索的评论者为冬日来信，显示日期为2025-04-02。",
+            "同条评论中的本人课程接触指王菁华，竞赛求教指王敬勇；这两段关系不能转接成与温素彬的关系。",
+            "只修归因和阅读范围，不增加新帖子，也不把笼统提名改为MPAcc亲历或日常指导证据。"
+          ],
+          "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。负面缩写及只有姓氏的评论不映射给任何导师。",
+          "readingScope": "本轮文字正文、95条计数所对应的所有已加载顶层评论逐段读取至THE END；新点展开王烨分支的4条追加回复并全部读到。其他折叠支线未全面展开，不能称95条逐字全读；图片未单独重新审读。温素彬提名在冬日来信同条评论内直接见到作者与完整日期。",
+          "changeType": "updated",
+          "advisorNames": [],
+          "updateKey": "36da79c501f756f2"
+        }
       ]
     },
     {
@@ -19347,7 +19610,34 @@
       "originalUrl": "https://mpacc.nau.edu.cn/2025/1121/c11506a151137/page.htm",
       "kind": "导师手册来源",
       "date": "",
-      "canonicalUrl": "https://mpacc.nau.edu.cn/2025/1121/c11506a151137/page.htm"
+      "canonicalUrl": "https://mpacc.nau.edu.cn/2025/1121/c11506a151137/page.htm",
+      "research102Updates": [
+        {
+          "code": "10",
+          "kind": "official",
+          "title": "王永妍讲解大数据企业作业成本管理项目（既有G公司案例过程补充）",
+          "url": "https://account.nau.edu.cn/2026/0622/c8919a159585/page.htm",
+          "platform": "南京审计大学会计学院官网",
+          "date": "2026-06-22",
+          "author": null,
+          "population": "2026年6月17日学院研究生讲座，未单列MPAcc；王永妍为主讲人，内容围绕既有G公司作业成本项目。",
+          "summary": "为来源10已有大数据企业成本管理案例补充一次公开讲解过程：从核算痛点诊断到混合成本核算框架，并用Excel轻量化部署。",
+          "points": [
+            "报道讨论定制开发、组合服务和收费多样化下，传统部门核算难以归集成本的问题。",
+            "讲座以真实咨询项目还原诊断与落地，并介绍借助Excel实现的混合核算框架，可帮助把“管理会计”落到具体任务。"
+          ],
+          "limits": "这是2026讲座而非2025入库报道的同一天事件，但使用相同G企业成本案例，保守归入已有案例的过程补充，不另加独立案例数。未取得咨询资料、Excel模型或讲座全文，不能声称能复现模型；主讲不等于全部学生的日常指导。",
+          "readingScope": "官方报道L79—L90已实际读取，未看完整录像、模型或案例全文，照片未逐张审读。",
+          "changeType": "supplement",
+          "advisorNames": [
+            "王永妍"
+          ],
+          "updateKey": "c65ea111a85b7d15"
+        }
+      ],
+      "additionalUrls": [
+        "https://account.nau.edu.cn/2026/0622/c8919a159585/page.htm"
+      ]
     },
     "11": {
       "code": "11",
@@ -19506,7 +19796,33 @@
       "population": "求助者与评论者身份各异；可归属反馈以本科或阶段未知为主",
       "campus": "未说明",
       "category": "有边界的导师课程反馈",
-      "limitations": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。"
+      "limitations": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+      "research102Updates": [
+        {
+          "code": "X01",
+          "kind": "student",
+          "title": "南审mpacc导师求推荐",
+          "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+          "platform": "其他公开平台",
+          "date": "2025-04-02",
+          "author": "银河落九天",
+          "population": "本轮只修温素彬笼统提名的评论归因；评论者未说明自己与温素彬的接触关系、学位类别或年级。",
+          "summary": "X01中温素彬的笼统正面提名，可以准确归于冬日来信在2025-04-02发布的一条评论；并未提供与温素彬的具体课程或指导经历。",
+          "points": [
+            "补全既有温素彬弱线索的评论者为冬日来信，显示日期为2025-04-02。",
+            "同条评论中的本人课程接触指王菁华，竞赛求教指王敬勇；这两段关系不能转接成与温素彬的关系。",
+            "只修归因和阅读范围，不增加新帖子，也不把笼统提名改为MPAcc亲历或日常指导证据。"
+          ],
+          "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。负面缩写及只有姓氏的评论不映射给任何导师。",
+          "readingScope": "本轮文字正文、95条计数所对应的所有已加载顶层评论逐段读取至THE END；新点展开王烨分支的4条追加回复并全部读到。其他折叠支线未全面展开，不能称95条逐字全读；图片未单独重新审读。温素彬提名在冬日来信同条评论内直接见到作者与完整日期。",
+          "changeType": "updated",
+          "advisorNames": [],
+          "updateKey": "36da79c501f756f2"
+        }
+      ],
+      "additionalUrls": [
+        "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed"
+      ]
     },
     "X02": {
       "code": "X02",
@@ -23206,6 +23522,112 @@
       "additionalUrls": [
         "https://account.nau.edu.cn/2024/0527/c8918a130712/page.htm"
       ]
+    },
+    "D601": {
+      "code": "D601",
+      "kind": "official",
+      "title": "“薪火相传，职引未来”会计学院研究生毕业生经验分享会（2026）",
+      "url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "platform": "南京审计大学会计学院官网",
+      "date": "2026-06-26",
+      "author": null,
+      "population": "2026年毕业生分享会；胡朝会、陆欣昀、林洛妤由正文明确为2023级会计专硕，蔡云霏为会计学硕，分开采用。",
+      "summary": "三位具名会计专硕分别分享申博准备、江苏电网求职和安永实习与论文统筹，可作为不同发展路径的具体准备例子。",
+      "points": [
+        "胡朝会分享科研成果积累、工作论文、研究计划及院校导师匹配；正文记录其升学去向为上海财经大学博士研究生。",
+        "陆欣昀从流程、笔面试差异、简历与复盘介绍江苏电网求职；正文记录其去向为国网江苏常州供电单位。",
+        "林洛妤强调实习后沉淀案例、按岗位补技能，并统筹实习与论文；正文记录其去向为安永华明上海分所。",
+        "三条路径可用于整理个人的论文、实习与求职时间表；公务员分享者为会计学硕，不当作MPAcc专属经验。"
+      ],
+      "limits": "新闻记录3个具名个案，不是完整就业样本，不能推算就业率、工资、所有学生的去向或相同准备必然成功。未读论文全文，不猜其学位导师；只作2026届毕业经验而非2027招录规则。",
+      "readingScope": "官方正文L81—L131已实际读完；以L89、L111、L122明确区分专硕，L100明确学硕；照片未独立审读。",
+      "changeType": "new",
+      "advisorNames": [],
+      "label": "“薪火相传，职引未来”会计学院研究生毕业生经验分享会（2026）",
+      "originalUrl": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "expansionBatch": "research-102",
+      "additionalUrls": []
+    },
+    "D602": {
+      "code": "D602",
+      "kind": "official",
+      "title": "会计学院邀请中兴新云为《智能财务共享》课程提供实训平台支持",
+      "url": "https://account.nau.edu.cn/2026/0519/c8917a157673/page.htm",
+      "platform": "南京审计大学会计学院官网",
+      "date": "2026-05-19",
+      "author": null,
+      "population": "《智能财务共享》课程面向本科生与研究生同步开设；正文未单列MPAcc年级、选课资格或任课导师。",
+      "summary": "官方课程报道说明以智慧业财实验室模拟共享中心，把报账、审批、审核、支付和数据分析串入教学，可据此理解课程实践任务。",
+      "points": [
+        "公开报道中的实践环节涵盖智能报账、业务审批、财务审核、资金支付与数据分析。",
+        "了解课程前可先整理“业务单据—流程控制—系统输出—分析解释”的学习问题，核对本级是否开设、如何选课和考核。"
+      ],
+      "limits": "混合本科/研究生课程报道，不证明本级MPAcc必修、每人获得平台账号、操作课时或课程成绩规则；正文没有具名任课教师，不挂个人导师训练证据。",
+      "readingScope": "官方新闻正文L81—L90已实际读取；平台流程来自L84文字，未实际登录实训平台或操作软件，图片未逐张审读。",
+      "changeType": "new",
+      "advisorNames": [],
+      "label": "会计学院邀请中兴新云为《智能财务共享》课程提供实训平台支持",
+      "originalUrl": "https://account.nau.edu.cn/2026/0519/c8917a157673/page.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/2026/0519/c8917a157673/page.htm",
+      "expansionBatch": "research-102",
+      "additionalUrls": []
+    },
+    "D603": {
+      "code": "D603",
+      "kind": "official",
+      "title": "润泽学术名家论坛第85期：祝继高谈案例研究方法",
+      "url": "https://account.nau.edu.cn/2026/0326/c8919a155331/page.htm",
+      "platform": "南京审计大学会计学院官网",
+      "date": "2026-03-26",
+      "author": null,
+      "population": "2026年3月24日研讨会，报道明确听众为学院青年教师与博士生；不是已确认MPAcc学生课程。",
+      "summary": "案例研究方法报道提供从问题、文献、证据到研究设计的准备思路，可作联系导师前理解案例论文的延伸阅读。",
+      "points": [
+        "报道强调问题应同时考虑价值、新意和可行性；案例研究需要解释机制并与文献对话，不能停在企业故事复述。",
+        "以国家电网数字化转型为例，报道列出选题、实地调研、编码和论文修改的研究流程。",
+        "准备联系提纲时可区分已有事实、需要的数据和拟解释的问题；此为根据公开方法报道整理的操作建议。"
+      ],
+      "limits": "只读活动报道，未取得讲座完整录像、讲义或所涉论文，不声称学习过完整方法课程。听众不是已确认MPAcc，温素彬只是主持/致辞，不归为其个人日常指导，也不作为学位论文硬要求。",
+      "readingScope": "官方新闻全文L79—L102已读，重点L81、L89、L92、L96；未看腾讯会议录像或新闻照片细节。",
+      "changeType": "new",
+      "advisorNames": [],
+      "label": "润泽学术名家论坛第85期：祝继高谈案例研究方法",
+      "originalUrl": "https://account.nau.edu.cn/2026/0326/c8919a155331/page.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/2026/0326/c8919a155331/page.htm",
+      "expansionBatch": "research-102",
+      "additionalUrls": []
+    },
+    "D604": {
+      "code": "D604",
+      "kind": "official",
+      "title": "南京审计大学《会计学》公开慕课：会计循环与财务报表阅读分析",
+      "url": "https://www.icourse163.org/course/NAU-1449494161",
+      "platform": "南京审计大学官网",
+      "date": null,
+      "author": null,
+      "population": "南京审计大学教学团队的公开基础课程，页面未将其认定为本级MPAcc必修课；适合按已有基础补会计循环和报表阅读。",
+      "summary": "公开文字大纲按会计信息、会计循环、各项目核算、财务报告分析组织，可据此安排入学前基础复习。",
+      "points": [
+        "可以先自查借贷记账、凭证与账簿、四张报表的生成，再补资产、负债、收入等项目核算。",
+        "报表分析部分列有现金流量、流动性、长期偿债、投资报酬及杜邦分析，可按薄弱点选学。",
+        "国家平台列董必荣、路国平、张兴亮、黄中生、鄢志娟为课程教师；仅作公开课程角色，不能推断MPAcc日常指导。"
+      ],
+      "limits": "仅读课程介绍和文字大纲，未观看视频、完成测验或验证全部视频访问权限；不承诺免费证书、学分抵扣、MPAcc考试范围及教师回应速度。",
+      "readingScope": "中国大学MOOC正文L16—L62与国家智慧教育平台L28—L206均实际读取；仅介绍、教师名单和文字大纲，两个镜像合一个课程资源。",
+      "changeType": "new",
+      "advisorNames": [
+        "董必荣",
+        "张兴亮",
+        "黄中生"
+      ],
+      "label": "南京审计大学《会计学》公开慕课：会计循环与财务报表阅读分析",
+      "originalUrl": "https://www.icourse163.org/course/NAU-1449494161",
+      "canonicalUrl": "https://www.icourse163.org/course/NAU-1449494161",
+      "expansionBatch": "research-102",
+      "additionalUrls": [
+        "https://higher.smartedu.cn/course/687ffc0216c43a09c0ec2ca4"
+      ]
     }
   },
   "targetProfiles": [
@@ -23431,8 +23853,8 @@
       "format": "xlsx",
       "description": "保留既有来源目录，新增19条补充证据（15项官方材料、4篇小红书），逐条标注适用对象与阅读范围",
       "filename": "evidence-index.xlsx",
-      "bytes": 295482,
-      "sha256": "774c2d4e144c87736b3321f011ff2489c9042fedc0934a76ab91d72e8ee20bb3"
+      "bytes": 303459,
+      "sha256": "f7fa8822626ec412385f2d744696b934d8f8338c43b52d395241f903b412418b"
     }
   ],
   "officialEvidence": [
@@ -27151,6 +27573,122 @@
       "screened_only": false,
       "campus": null,
       "expansionBatch": "continue-research"
+    },
+    {
+      "key": "official:research102:0fa23382691f2382",
+      "ids": [
+        "D601"
+      ],
+      "title": "“薪火相传，职引未来”会计学院研究生毕业生经验分享会（2026）",
+      "author": null,
+      "date_display": "2026-06-26",
+      "url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "canonical_url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "population": "2026年毕业生分享会；胡朝会、陆欣昀、林洛妤由正文明确为2023级会计专硕，蔡云霏为会计学硕，分开采用。",
+      "summary": "三位具名会计专硕分别分享申博准备、江苏电网求职和安永实习与论文统筹，可作为不同发展路径的具体准备例子。",
+      "tips": [
+        "胡朝会分享科研成果积累、工作论文、研究计划及院校导师匹配；正文记录其升学去向为上海财经大学博士研究生。",
+        "陆欣昀从流程、笔面试差异、简历与复盘介绍江苏电网求职；正文记录其去向为国网江苏常州供电单位。",
+        "林洛妤强调实习后沉淀案例、按岗位补技能，并统筹实习与论文；正文记录其去向为安永华明上海分所。",
+        "三条路径可用于整理个人的论文、实习与求职时间表；公务员分享者为会计学硕，不当作MPAcc专属经验。"
+      ],
+      "comments": [],
+      "limits": "新闻记录3个具名个案，不是完整就业样本，不能推算就业率、工资、所有学生的去向或相同准备必然成功。未读论文全文，不猜其学位导师；只作2026届毕业经验而非2027招录规则。",
+      "topic": "具名会计专硕学习与职业准备个案",
+      "use_status": "官方材料",
+      "reading_scopes": [
+        "官方正文L81—L131已实际读完；以L89、L111、L122明确区分专硕，L100明确学硕；照片未独立审读。"
+      ],
+      "official": true,
+      "screened_only": false,
+      "campus": null,
+      "expansionBatch": "research-102"
+    },
+    {
+      "key": "official:research102:93fcadb6ec09aee8",
+      "ids": [
+        "D602"
+      ],
+      "title": "会计学院邀请中兴新云为《智能财务共享》课程提供实训平台支持",
+      "author": null,
+      "date_display": "2026-05-19",
+      "url": "https://account.nau.edu.cn/2026/0519/c8917a157673/page.htm",
+      "canonical_url": "https://account.nau.edu.cn/2026/0519/c8917a157673/page.htm",
+      "population": "《智能财务共享》课程面向本科生与研究生同步开设；正文未单列MPAcc年级、选课资格或任课导师。",
+      "summary": "官方课程报道说明以智慧业财实验室模拟共享中心，把报账、审批、审核、支付和数据分析串入教学，可据此理解课程实践任务。",
+      "tips": [
+        "公开报道中的实践环节涵盖智能报账、业务审批、财务审核、资金支付与数据分析。",
+        "了解课程前可先整理“业务单据—流程控制—系统输出—分析解释”的学习问题，核对本级是否开设、如何选课和考核。"
+      ],
+      "comments": [],
+      "limits": "混合本科/研究生课程报道，不证明本级MPAcc必修、每人获得平台账号、操作课时或课程成绩规则；正文没有具名任课教师，不挂个人导师训练证据。",
+      "topic": "课程实践流程参考",
+      "use_status": "官方材料",
+      "reading_scopes": [
+        "官方新闻正文L81—L90已实际读取；平台流程来自L84文字，未实际登录实训平台或操作软件，图片未逐张审读。"
+      ],
+      "official": true,
+      "screened_only": false,
+      "campus": null,
+      "expansionBatch": "research-102"
+    },
+    {
+      "key": "official:research102:c7ce74502a065842",
+      "ids": [
+        "D603"
+      ],
+      "title": "润泽学术名家论坛第85期：祝继高谈案例研究方法",
+      "author": null,
+      "date_display": "2026-03-26",
+      "url": "https://account.nau.edu.cn/2026/0326/c8919a155331/page.htm",
+      "canonical_url": "https://account.nau.edu.cn/2026/0326/c8919a155331/page.htm",
+      "population": "2026年3月24日研讨会，报道明确听众为学院青年教师与博士生；不是已确认MPAcc学生课程。",
+      "summary": "案例研究方法报道提供从问题、文献、证据到研究设计的准备思路，可作联系导师前理解案例论文的延伸阅读。",
+      "tips": [
+        "报道强调问题应同时考虑价值、新意和可行性；案例研究需要解释机制并与文献对话，不能停在企业故事复述。",
+        "以国家电网数字化转型为例，报道列出选题、实地调研、编码和论文修改的研究流程。",
+        "准备联系提纲时可区分已有事实、需要的数据和拟解释的问题；此为根据公开方法报道整理的操作建议。"
+      ],
+      "comments": [],
+      "limits": "只读活动报道，未取得讲座完整录像、讲义或所涉论文，不声称学习过完整方法课程。听众不是已确认MPAcc，温素彬只是主持/致辞，不归为其个人日常指导，也不作为学位论文硬要求。",
+      "topic": "案例论文方法延伸阅读",
+      "use_status": "官方材料",
+      "reading_scopes": [
+        "官方新闻全文L79—L102已读，重点L81、L89、L92、L96；未看腾讯会议录像或新闻照片细节。"
+      ],
+      "official": true,
+      "screened_only": false,
+      "campus": null,
+      "expansionBatch": "research-102"
+    },
+    {
+      "key": "official:research102:c4e162731b6a9bd3",
+      "ids": [
+        "D604"
+      ],
+      "title": "南京审计大学《会计学》公开慕课：会计循环与财务报表阅读分析",
+      "author": null,
+      "date_display": null,
+      "url": "https://www.icourse163.org/course/NAU-1449494161",
+      "canonical_url": "https://www.icourse163.org/course/NAU-1449494161",
+      "population": "南京审计大学教学团队的公开基础课程，页面未将其认定为本级MPAcc必修课；适合按已有基础补会计循环和报表阅读。",
+      "summary": "公开文字大纲按会计信息、会计循环、各项目核算、财务报告分析组织，可据此安排入学前基础复习。",
+      "tips": [
+        "可以先自查借贷记账、凭证与账簿、四张报表的生成，再补资产、负债、收入等项目核算。",
+        "报表分析部分列有现金流量、流动性、长期偿债、投资报酬及杜邦分析，可按薄弱点选学。",
+        "国家平台列董必荣、路国平、张兴亮、黄中生、鄢志娟为课程教师；仅作公开课程角色，不能推断MPAcc日常指导。"
+      ],
+      "comments": [],
+      "limits": "仅读课程介绍和文字大纲，未观看视频、完成测验或验证全部视频访问权限；不承诺免费证书、学分抵扣、MPAcc考试范围及教师回应速度。",
+      "topic": "公开课程学习资源",
+      "use_status": "官方材料",
+      "reading_scopes": [
+        "中国大学MOOC正文L16—L62与国家智慧教育平台L28—L206均实际读取；仅介绍、教师名单和文字大纲，两个镜像合一个课程资源。"
+      ],
+      "official": true,
+      "screened_only": false,
+      "campus": null,
+      "expansionBatch": "research-102"
     }
   ],
   "feedbackIndex": [
@@ -32864,6 +33402,278 @@
       "source_ids": "C506",
       "source_key": "continue:fa529ea7e6928154",
       "expansionBatch": "continue-research"
+    },
+    {
+      "id": "research102:D601:e1c45ded6d95797a:0",
+      "topic": "课程学习与培养",
+      "point": "胡朝会分享科研成果积累、工作论文、研究计划及院校导师匹配；正文记录其升学去向为上海财经大学博士研究生。",
+      "context": "三位具名会计专硕分别分享申博准备、江苏电网求职和安永实习与论文统筹，可作为不同发展路径的具体准备例子。",
+      "scope": "2026年毕业生分享会；胡朝会、陆欣昀、林洛妤由正文明确为2023级会计专硕，蔡云霏为会计学硕，分开采用。",
+      "limits": "新闻记录3个具名个案，不是完整就业样本，不能推算就业率、工资、所有学生的去向或相同准备必然成功。未读论文全文，不猜其学位导师；只作2026届毕业经验而非2027招录规则。",
+      "author": null,
+      "date_display": "2026-06-26",
+      "url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "post_title": "“薪火相传，职引未来”会计学院研究生毕业生经验分享会（2026）",
+      "status": "官方公开资料",
+      "source_ids": "D601",
+      "source_key": "research102:0fa23382691f2382",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:D601:e1c45ded6d95797a:1",
+      "topic": "课程学习与培养",
+      "point": "陆欣昀从流程、笔面试差异、简历与复盘介绍江苏电网求职；正文记录其去向为国网江苏常州供电单位。",
+      "context": "三位具名会计专硕分别分享申博准备、江苏电网求职和安永实习与论文统筹，可作为不同发展路径的具体准备例子。",
+      "scope": "2026年毕业生分享会；胡朝会、陆欣昀、林洛妤由正文明确为2023级会计专硕，蔡云霏为会计学硕，分开采用。",
+      "limits": "新闻记录3个具名个案，不是完整就业样本，不能推算就业率、工资、所有学生的去向或相同准备必然成功。未读论文全文，不猜其学位导师；只作2026届毕业经验而非2027招录规则。",
+      "author": null,
+      "date_display": "2026-06-26",
+      "url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "post_title": "“薪火相传，职引未来”会计学院研究生毕业生经验分享会（2026）",
+      "status": "官方公开资料",
+      "source_ids": "D601",
+      "source_key": "research102:0fa23382691f2382",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:D601:e1c45ded6d95797a:2",
+      "topic": "课程学习与培养",
+      "point": "林洛妤强调实习后沉淀案例、按岗位补技能，并统筹实习与论文；正文记录其去向为安永华明上海分所。",
+      "context": "三位具名会计专硕分别分享申博准备、江苏电网求职和安永实习与论文统筹，可作为不同发展路径的具体准备例子。",
+      "scope": "2026年毕业生分享会；胡朝会、陆欣昀、林洛妤由正文明确为2023级会计专硕，蔡云霏为会计学硕，分开采用。",
+      "limits": "新闻记录3个具名个案，不是完整就业样本，不能推算就业率、工资、所有学生的去向或相同准备必然成功。未读论文全文，不猜其学位导师；只作2026届毕业经验而非2027招录规则。",
+      "author": null,
+      "date_display": "2026-06-26",
+      "url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "post_title": "“薪火相传，职引未来”会计学院研究生毕业生经验分享会（2026）",
+      "status": "官方公开资料",
+      "source_ids": "D601",
+      "source_key": "research102:0fa23382691f2382",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:D601:e1c45ded6d95797a:3",
+      "topic": "课程学习与培养",
+      "point": "三条路径可用于整理个人的论文、实习与求职时间表；公务员分享者为会计学硕，不当作MPAcc专属经验。",
+      "context": "三位具名会计专硕分别分享申博准备、江苏电网求职和安永实习与论文统筹，可作为不同发展路径的具体准备例子。",
+      "scope": "2026年毕业生分享会；胡朝会、陆欣昀、林洛妤由正文明确为2023级会计专硕，蔡云霏为会计学硕，分开采用。",
+      "limits": "新闻记录3个具名个案，不是完整就业样本，不能推算就业率、工资、所有学生的去向或相同准备必然成功。未读论文全文，不猜其学位导师；只作2026届毕业经验而非2027招录规则。",
+      "author": null,
+      "date_display": "2026-06-26",
+      "url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "post_title": "“薪火相传，职引未来”会计学院研究生毕业生经验分享会（2026）",
+      "status": "官方公开资料",
+      "source_ids": "D601",
+      "source_key": "research102:0fa23382691f2382",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:D602:dc256a7a936d6fed:0",
+      "topic": "课程学习与培养",
+      "point": "公开报道中的实践环节涵盖智能报账、业务审批、财务审核、资金支付与数据分析。",
+      "context": "官方课程报道说明以智慧业财实验室模拟共享中心，把报账、审批、审核、支付和数据分析串入教学，可据此理解课程实践任务。",
+      "scope": "《智能财务共享》课程面向本科生与研究生同步开设；正文未单列MPAcc年级、选课资格或任课导师。",
+      "limits": "混合本科/研究生课程报道，不证明本级MPAcc必修、每人获得平台账号、操作课时或课程成绩规则；正文没有具名任课教师，不挂个人导师训练证据。",
+      "author": null,
+      "date_display": "2026-05-19",
+      "url": "https://account.nau.edu.cn/2026/0519/c8917a157673/page.htm",
+      "post_title": "会计学院邀请中兴新云为《智能财务共享》课程提供实训平台支持",
+      "status": "官方公开资料",
+      "source_ids": "D602",
+      "source_key": "research102:93fcadb6ec09aee8",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:D602:dc256a7a936d6fed:1",
+      "topic": "课程学习与培养",
+      "point": "了解课程前可先整理“业务单据—流程控制—系统输出—分析解释”的学习问题，核对本级是否开设、如何选课和考核。",
+      "context": "官方课程报道说明以智慧业财实验室模拟共享中心，把报账、审批、审核、支付和数据分析串入教学，可据此理解课程实践任务。",
+      "scope": "《智能财务共享》课程面向本科生与研究生同步开设；正文未单列MPAcc年级、选课资格或任课导师。",
+      "limits": "混合本科/研究生课程报道，不证明本级MPAcc必修、每人获得平台账号、操作课时或课程成绩规则；正文没有具名任课教师，不挂个人导师训练证据。",
+      "author": null,
+      "date_display": "2026-05-19",
+      "url": "https://account.nau.edu.cn/2026/0519/c8917a157673/page.htm",
+      "post_title": "会计学院邀请中兴新云为《智能财务共享》课程提供实训平台支持",
+      "status": "官方公开资料",
+      "source_ids": "D602",
+      "source_key": "research102:93fcadb6ec09aee8",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:D603:c5bce7702e338609:0",
+      "topic": "课程学习与培养",
+      "point": "报道强调问题应同时考虑价值、新意和可行性；案例研究需要解释机制并与文献对话，不能停在企业故事复述。",
+      "context": "案例研究方法报道提供从问题、文献、证据到研究设计的准备思路，可作联系导师前理解案例论文的延伸阅读。",
+      "scope": "2026年3月24日研讨会，报道明确听众为学院青年教师与博士生；不是已确认MPAcc学生课程。",
+      "limits": "只读活动报道，未取得讲座完整录像、讲义或所涉论文，不声称学习过完整方法课程。听众不是已确认MPAcc，温素彬只是主持/致辞，不归为其个人日常指导，也不作为学位论文硬要求。",
+      "author": null,
+      "date_display": "2026-03-26",
+      "url": "https://account.nau.edu.cn/2026/0326/c8919a155331/page.htm",
+      "post_title": "润泽学术名家论坛第85期：祝继高谈案例研究方法",
+      "status": "官方公开资料",
+      "source_ids": "D603",
+      "source_key": "research102:c7ce74502a065842",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:D603:c5bce7702e338609:1",
+      "topic": "课程学习与培养",
+      "point": "以国家电网数字化转型为例，报道列出选题、实地调研、编码和论文修改的研究流程。",
+      "context": "案例研究方法报道提供从问题、文献、证据到研究设计的准备思路，可作联系导师前理解案例论文的延伸阅读。",
+      "scope": "2026年3月24日研讨会，报道明确听众为学院青年教师与博士生；不是已确认MPAcc学生课程。",
+      "limits": "只读活动报道，未取得讲座完整录像、讲义或所涉论文，不声称学习过完整方法课程。听众不是已确认MPAcc，温素彬只是主持/致辞，不归为其个人日常指导，也不作为学位论文硬要求。",
+      "author": null,
+      "date_display": "2026-03-26",
+      "url": "https://account.nau.edu.cn/2026/0326/c8919a155331/page.htm",
+      "post_title": "润泽学术名家论坛第85期：祝继高谈案例研究方法",
+      "status": "官方公开资料",
+      "source_ids": "D603",
+      "source_key": "research102:c7ce74502a065842",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:D603:c5bce7702e338609:2",
+      "topic": "课程学习与培养",
+      "point": "准备联系提纲时可区分已有事实、需要的数据和拟解释的问题；此为根据公开方法报道整理的操作建议。",
+      "context": "案例研究方法报道提供从问题、文献、证据到研究设计的准备思路，可作联系导师前理解案例论文的延伸阅读。",
+      "scope": "2026年3月24日研讨会，报道明确听众为学院青年教师与博士生；不是已确认MPAcc学生课程。",
+      "limits": "只读活动报道，未取得讲座完整录像、讲义或所涉论文，不声称学习过完整方法课程。听众不是已确认MPAcc，温素彬只是主持/致辞，不归为其个人日常指导，也不作为学位论文硬要求。",
+      "author": null,
+      "date_display": "2026-03-26",
+      "url": "https://account.nau.edu.cn/2026/0326/c8919a155331/page.htm",
+      "post_title": "润泽学术名家论坛第85期：祝继高谈案例研究方法",
+      "status": "官方公开资料",
+      "source_ids": "D603",
+      "source_key": "research102:c7ce74502a065842",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:D604:5c4d0bbd72cb1bae:0",
+      "topic": "课程学习与培养",
+      "point": "可以先自查借贷记账、凭证与账簿、四张报表的生成，再补资产、负债、收入等项目核算。",
+      "context": "公开文字大纲按会计信息、会计循环、各项目核算、财务报告分析组织，可据此安排入学前基础复习。",
+      "scope": "南京审计大学教学团队的公开基础课程，页面未将其认定为本级MPAcc必修课；适合按已有基础补会计循环和报表阅读。",
+      "limits": "仅读课程介绍和文字大纲，未观看视频、完成测验或验证全部视频访问权限；不承诺免费证书、学分抵扣、MPAcc考试范围及教师回应速度。",
+      "author": null,
+      "date_display": null,
+      "url": "https://www.icourse163.org/course/NAU-1449494161",
+      "post_title": "南京审计大学《会计学》公开慕课：会计循环与财务报表阅读分析",
+      "status": "官方公开资料",
+      "source_ids": "D604",
+      "source_key": "research102:c4e162731b6a9bd3",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:D604:5c4d0bbd72cb1bae:1",
+      "topic": "课程学习与培养",
+      "point": "报表分析部分列有现金流量、流动性、长期偿债、投资报酬及杜邦分析，可按薄弱点选学。",
+      "context": "公开文字大纲按会计信息、会计循环、各项目核算、财务报告分析组织，可据此安排入学前基础复习。",
+      "scope": "南京审计大学教学团队的公开基础课程，页面未将其认定为本级MPAcc必修课；适合按已有基础补会计循环和报表阅读。",
+      "limits": "仅读课程介绍和文字大纲，未观看视频、完成测验或验证全部视频访问权限；不承诺免费证书、学分抵扣、MPAcc考试范围及教师回应速度。",
+      "author": null,
+      "date_display": null,
+      "url": "https://www.icourse163.org/course/NAU-1449494161",
+      "post_title": "南京审计大学《会计学》公开慕课：会计循环与财务报表阅读分析",
+      "status": "官方公开资料",
+      "source_ids": "D604",
+      "source_key": "research102:c4e162731b6a9bd3",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:D604:5c4d0bbd72cb1bae:2",
+      "topic": "课程学习与培养",
+      "point": "国家平台列董必荣、路国平、张兴亮、黄中生、鄢志娟为课程教师；仅作公开课程角色，不能推断MPAcc日常指导。",
+      "context": "公开文字大纲按会计信息、会计循环、各项目核算、财务报告分析组织，可据此安排入学前基础复习。",
+      "scope": "南京审计大学教学团队的公开基础课程，页面未将其认定为本级MPAcc必修课；适合按已有基础补会计循环和报表阅读。",
+      "limits": "仅读课程介绍和文字大纲，未观看视频、完成测验或验证全部视频访问权限；不承诺免费证书、学分抵扣、MPAcc考试范围及教师回应速度。",
+      "author": null,
+      "date_display": null,
+      "url": "https://www.icourse163.org/course/NAU-1449494161",
+      "post_title": "南京审计大学《会计学》公开慕课：会计循环与财务报表阅读分析",
+      "status": "官方公开资料",
+      "source_ids": "D604",
+      "source_key": "research102:c4e162731b6a9bd3",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:10:c65ea111a85b7d15:0",
+      "topic": "课程学习与培养",
+      "point": "报道讨论定制开发、组合服务和收费多样化下，传统部门核算难以归集成本的问题。",
+      "context": "为来源10已有大数据企业成本管理案例补充一次公开讲解过程：从核算痛点诊断到混合成本核算框架，并用Excel轻量化部署。",
+      "scope": "2026年6月17日学院研究生讲座，未单列MPAcc；王永妍为主讲人，内容围绕既有G公司作业成本项目。",
+      "limits": "这是2026讲座而非2025入库报道的同一天事件，但使用相同G企业成本案例，保守归入已有案例的过程补充，不另加独立案例数。未取得咨询资料、Excel模型或讲座全文，不能声称能复现模型；主讲不等于全部学生的日常指导。",
+      "author": null,
+      "date_display": "2026-06-22",
+      "url": "https://account.nau.edu.cn/2026/0622/c8919a159585/page.htm",
+      "post_title": "王永妍讲解大数据企业作业成本管理项目（既有G公司案例过程补充）",
+      "status": "官方公开资料",
+      "source_ids": "10",
+      "source_key": "research102:1806b1ec6f100322",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:10:c65ea111a85b7d15:1",
+      "topic": "课程学习与培养",
+      "point": "讲座以真实咨询项目还原诊断与落地，并介绍借助Excel实现的混合核算框架，可帮助把“管理会计”落到具体任务。",
+      "context": "为来源10已有大数据企业成本管理案例补充一次公开讲解过程：从核算痛点诊断到混合成本核算框架，并用Excel轻量化部署。",
+      "scope": "2026年6月17日学院研究生讲座，未单列MPAcc；王永妍为主讲人，内容围绕既有G公司作业成本项目。",
+      "limits": "这是2026讲座而非2025入库报道的同一天事件，但使用相同G企业成本案例，保守归入已有案例的过程补充，不另加独立案例数。未取得咨询资料、Excel模型或讲座全文，不能声称能复现模型；主讲不等于全部学生的日常指导。",
+      "author": null,
+      "date_display": "2026-06-22",
+      "url": "https://account.nau.edu.cn/2026/0622/c8919a159585/page.htm",
+      "post_title": "王永妍讲解大数据企业作业成本管理项目（既有G公司案例过程补充）",
+      "status": "官方公开资料",
+      "source_ids": "10",
+      "source_key": "research102:1806b1ec6f100322",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:X01:36da79c501f756f2:0",
+      "topic": "导师选择与联系准备",
+      "point": "补全既有温素彬弱线索的评论者为冬日来信，显示日期为2025-04-02。",
+      "context": "X01中温素彬的笼统正面提名，可以准确归于冬日来信在2025-04-02发布的一条评论；并未提供与温素彬的具体课程或指导经历。",
+      "scope": "本轮只修温素彬笼统提名的评论归因；评论者未说明自己与温素彬的接触关系、学位类别或年级。",
+      "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。负面缩写及只有姓氏的评论不映射给任何导师。",
+      "author": "银河落九天",
+      "date_display": "2025-04-02",
+      "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+      "post_title": "南审mpacc导师求推荐",
+      "status": "新读正文或回复",
+      "source_ids": "X01",
+      "source_key": "research102:bafe27918cb64ae3",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:X01:36da79c501f756f2:1",
+      "topic": "导师选择与联系准备",
+      "point": "同条评论中的本人课程接触指王菁华，竞赛求教指王敬勇；这两段关系不能转接成与温素彬的关系。",
+      "context": "X01中温素彬的笼统正面提名，可以准确归于冬日来信在2025-04-02发布的一条评论；并未提供与温素彬的具体课程或指导经历。",
+      "scope": "本轮只修温素彬笼统提名的评论归因；评论者未说明自己与温素彬的接触关系、学位类别或年级。",
+      "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。负面缩写及只有姓氏的评论不映射给任何导师。",
+      "author": "银河落九天",
+      "date_display": "2025-04-02",
+      "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+      "post_title": "南审mpacc导师求推荐",
+      "status": "新读正文或回复",
+      "source_ids": "X01",
+      "source_key": "research102:bafe27918cb64ae3",
+      "expansionBatch": "research-102"
+    },
+    {
+      "id": "research102:X01:36da79c501f756f2:2",
+      "topic": "导师选择与联系准备",
+      "point": "只修归因和阅读范围，不增加新帖子，也不把笼统提名改为MPAcc亲历或日常指导证据。",
+      "context": "X01中温素彬的笼统正面提名，可以准确归于冬日来信在2025-04-02发布的一条评论；并未提供与温素彬的具体课程或指导经历。",
+      "scope": "本轮只修温素彬笼统提名的评论归因；评论者未说明自己与温素彬的接触关系、学位类别或年级。",
+      "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。负面缩写及只有姓氏的评论不映射给任何导师。",
+      "author": "银河落九天",
+      "date_display": "2025-04-02",
+      "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+      "post_title": "南审mpacc导师求推荐",
+      "status": "新读正文或回复",
+      "source_ids": "X01",
+      "source_key": "research102:bafe27918cb64ae3",
+      "expansionBatch": "research-102"
     }
   ],
   "rosterConflicts": [
