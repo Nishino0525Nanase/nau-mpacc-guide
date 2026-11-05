@@ -1,0 +1,339 @@
+#!/usr/bin/env python3
+"""Merge reviewed continuation research; default is a dry run.
+
+--write updates site-data.json and deterministic source/QA exports. Unknown
+source dates and identities remain null. Same-event and same-post updates do
+not increase the indexed source counts. Installer metadata is untouched.
+"""
+from __future__ import annotations
+import argparse
+import collections
+import copy
+import hashlib
+import json
+import pathlib
+import re
+import extend_research_round3 as h
+
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+WORKSPACE = ROOT.parent
+BATCH = "continue-research"
+# Filled after manually reviewing this round's accepted candidates.
+REVIEWED_KEYS = {
+    "nau-article:158917", "nau-article:157950", "nau-article:159213", "nau-article:134393", "nau-article:150629",
+    "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/23094817-5c38-43a7-a04d-188b86fa560e.docx",
+}
+REVIEW_OVERRIDES = {
+    "nau-article:158917": {"highlightTitle": "数字化定价教学案例", "roleCategory": "MPAcc教学案例作者（非学生指导体验）"},
+    "nau-article:157950": {"highlightTitle": "数据资产与企业实务"},
+    "nau-article:159213": {"highlightTitle": "把研究方向落到具体选题"},
+    "nau-article:134393": {"highlightTitle": "学院专硕历史论文个案", "roleCategory": "学院专硕历史指导个案（附件未单列MPAcc）"},
+    "nau-article:150629": {"highlightTitle": "入学科研适应的交流实例"},
+}
+
+
+def input_path(name):
+    path = ROOT / "data/research_continue" / name
+    return path if path.exists() else WORKSPACE / name
+
+
+def text(value):
+    return "；".join(str(x) for x in value) if isinstance(value, list) else str(value or "")
+
+
+def identity(row):
+    return h.urlkey(row.get("canonicalUrl") or row.get("url"))
+
+
+def code_for(registry):
+    for n in range(501, 600):
+        code = f"C{n}"
+        if code not in registry:
+            return code
+    raise ValueError("C501—C599已用满")
+
+
+def stable(value):
+    return hashlib.sha256(value.encode()).hexdigest()[:16]
+
+
+def source_record(code, row, kind, change):
+    return {
+        "code": code, "kind": kind, "title": row["title"], "url": row["url"],
+        "platform": row.get("platform") or ("南京审计大学官网" if kind == "official" else "其他公开平台"),
+        "date": row.get("date"), "author": row.get("author"), "population": row.get("population"),
+        "summary": row["summary"], "points": row.get("points", []), "limits": text(row.get("limits")),
+        "readingScope": "；".join(h.scopes(row)), "changeType": change,
+        "advisorNames": row.get("advisorNames", []),
+    }
+
+
+def append_block(data, key, record, chapter):
+    target = next(item for item in data["lifeChapters"] if item["id"] == chapter)
+    if any(block.get("expansionId") == key for block in target["blocks"]):
+        return
+    target["blocks"].append({
+        "type": "p", "text": record["summary"] + " " + record["limits"] + f" [{record['code']}]",
+        "sourceCodes": [record["code"]], "expansionId": key, "expansionBatch": BATCH,
+    })
+    target["sourceCodes"] = h.unique(target.get("sourceCodes", []) + [record["code"]])
+
+
+def append_registry_index(data, key, record):
+    chapter = next(item for item in data["lifeChapters"] if item["id"] == "life-12")
+    if not any(block.get("expansionId") == key for block in chapter["blocks"]):
+        chapter["blocks"].append({
+            "type": "source", "text": f"[{record['code']}] {record['title']}", "url": record["url"],
+            "sourceCodes": [record["code"]], "expansionId": key, "expansionBatch": BATCH,
+        })
+        chapter["sourceCodes"] = h.unique(chapter.get("sourceCodes", []) + [record["code"]])
+
+
+def chapter_for(row):
+    if row.get("chapterId") in {f"life-{n:02d}" for n in range(1, 13)}:
+        return row["chapterId"]
+    content = row.get("title", "") + row.get("summary", "")
+    if re.search(r"互选|双选|导师|推荐论文|优秀.{0,4}论文", content):
+        return "life-08"
+    if re.search(r"实习|就业|招聘|工作站", content):
+        return "life-09"
+    if re.search(r"奖学金|助学金|补贴|资助", content):
+        return "life-10"
+    return "life-08"
+
+
+
+def append_project_topics(data, row, record):
+    topics = [item["title"] for item in row.get("projectTopics", [])
+              if isinstance(item, dict) and item.get("professionalDegreeCode") == "1253" and item.get("title")]
+    if not topics:
+        return
+    chapter = next(item for item in data["lifeChapters"] if item["id"] == "life-08")
+    key = "continue-project-topics-" + record["code"]
+    if any(block.get("expansionId") == key for block in chapter["blocks"]):
+        return
+    chapter["blocks"].append({
+        "type": "details", "text": f"展开{len(topics)}个会计专硕申报选题主题（转述）",
+        "blocks": [{"type": "p", "text": f"下列主题根据2026年学院拟推荐申报附件转述，属于1253会计专业学位。拟推荐不等于最终立项或项目完成，附件未列导师，不能把主题分配给某位导师。 [{record['code']}]"},
+                   {"type": "list", "items": topics}],
+        "sourceCodes": [record["code"]], "expansionId": key, "expansionBatch": BATCH,
+    })
+
+
+def append_roles(data, row, record):
+    count = 0
+    for name, detail in (row.get("advisorRoles") or {}).items():
+        mentor = next((item for item in data["mentors"] if item["name"] == name), None)
+        if not mentor or not isinstance(detail, str) or not detail.strip():
+            continue
+        key = "continue-role-" + stable(record["code"] + name + detail)
+        evidence = mentor.setdefault("evidence", [])
+        if any(item.get("id") == key for item in evidence):
+            continue
+        category = row.get("roleCategory") or "官方公开活动或培养个案（角色限定）"
+        evidence.append({
+            "id": key, "kind": "official", "category": category, "statusLabel": category,
+            "population": record["population"], "date": record["date"], "author": record["author"],
+            "text": detail + f" [{record['code']}]", "limitations": record["limits"] + " 阅读范围：" + record["readingScope"],
+            "url": record["url"], "sourceIds": [record["code"]], "expansionBatch": BATCH,
+        })
+        count += 1
+    return count
+
+
+def merge(original, public, students):
+    public = copy.deepcopy(public)
+    official_supplements = students.get("officialSupplements") or students.get("officialSupplement") or []
+    public.setdefault("accepted", []).extend(h.items(official_supplements))
+    data = copy.deepcopy(original)
+    roster = [{k: copy.deepcopy(v) for k, v in row.items() if k != "evidence"} for row in data["mentors"]]
+    cards, edition, author = (copy.deepcopy(data["mentorCards"]), copy.deepcopy(data["meta"].get("appEdition")),
+                              copy.deepcopy(data["meta"].get("author")))
+    registry, exported = data["sourceRegistry"], []
+    known = {}
+    for code, row in registry.items():
+        for url in h.urls(row):
+            key = h.urlkey(url)
+            if key:
+                known.setdefault(key, code)
+    all_keys = {h.urlkey(url) for url in h.urls(data)}
+    all_keys.discard(None)
+    existing_posts = {identity(row): row for row in data["socialPosts"]}
+    qa = {
+        "before": {"socialPosts": len(data["socialPosts"]), "officialEvidence": len(data["officialEvidence"])},
+        "newOfficialSources": 0, "newSocialPosts": 0, "updatedSocialPosts": 0, "updatedOfficialSources": 0,
+        "mentorEvidenceAdded": 0, "supplements": [], "duplicates": [], "skipped": [], "unread": [], "decisions": [],
+    }
+    for kind, source_input in [("official", public), ("student", students)]:
+        for requested, rows in [("new", source_input.get("accepted", [])), ("updated", source_input.get("updates", []))]:
+            for row in rows:
+                row = copy.deepcopy(row)
+                key = identity(row)
+                row.update(REVIEW_OVERRIDES.get(key, {}))
+                if key not in REVIEWED_KEYS:
+                    qa["skipped"].append({"url": row.get("url"), "reason": "未纳入人工审定白名单"})
+                    continue
+                if (row.get("read") is not True or not h.scopes(row) or not key or not row.get("title")
+                        or not row.get("summary") or not row.get("limits")):
+                    qa["skipped"].append({"url": row.get("url"), "reason": "缺明确正文已读、阅读范围、标题、摘要或适用边界"})
+                    continue
+                if kind == "student" and row.get("promotionStatus") != "none_observed":
+                    qa["skipped"].append({"url": row["url"], "reason": "缺可见范围无售课导流判断"})
+                    continue
+                if not h.within_budget(row["summary"], text(row["limits"]), *row.get("points", [])):
+                    qa["skipped"].append({"url": row["url"], "reason": "摘要与要点超过每来源200词预算，须先缩写"})
+                    continue
+                explicit_existing = row.get("existingCode") or row.get("supplementOf") or row.get("sameEventAs")
+                if explicit_existing and explicit_existing not in registry:
+                    qa["skipped"].append({"url": row["url"], "reason": "同事件来源编号不存在"})
+                    continue
+                prior = existing_posts.get(key) if kind == "student" else None
+                code = explicit_existing or known.get(key)
+                if kind == "student" and prior:
+                    code = next((c for c in prior.get("sourceIds", []) if c in registry), code)
+                retained = code and registry[code].get("expansionBatch") == BATCH
+                action = "supplement" if explicit_existing else requested
+                if requested == "new" and code and not retained and not explicit_existing:
+                    qa["duplicates"].append({"code": code, "url": row["url"], "reason": "已有文章ID/规范URL，不重复计数"})
+                    continue
+                if requested == "new" and key in all_keys and not code:
+                    qa["duplicates"].append({"url": row["url"], "reason": "递归已有URL但未找到可更新来源编号，不作为新增"})
+                    continue
+                if requested == "updated" and not code:
+                    qa["skipped"].append({"url": row["url"], "reason": "旧来源更新未命中，不静默增加来源"})
+                    continue
+                code = code or code_for(registry)
+                record = source_record(code, row, kind, action)
+                update_key = stable(row["url"] + record["readingScope"] + record["summary"])
+                if code not in registry:
+                    registry[code] = {**record, "label": row["title"], "originalUrl": row["url"],
+                                      "canonicalUrl": h.canonical(row.get("canonicalUrl") or row["url"]), "expansionBatch": BATCH}
+                    extras = list(h.items(row.get("additionalUrls") or row.get("attachmentUrls")))
+                    extras += [item.get("url") for field in ["attachments", "supportingSources"]
+                               for item in row.get(field, []) if isinstance(item, dict)]
+                    registry[code]["additionalUrls"] = h.unique(u for u in extras if h.canonical(u))
+                    if kind == "official":
+                        data["officialEvidence"].append({
+                            "key": "official:continue:" + stable(key), "ids": [code], "title": row["title"],
+                            "author": row.get("author"), "date_display": row.get("date"), "url": row["url"],
+                            "canonical_url": h.canonical(row["url"]), "population": row.get("population"),
+                            "summary": row["summary"], "tips": row.get("points", []), "comments": [], "limits": record["limits"],
+                            "topic": row.get("topic") or row.get("kind") or "培养与学习实例", "use_status": row.get("category") or "官方材料",
+                            "reading_scopes": h.scopes(row), "official": True, "screened_only": False,
+                            "campus": row.get("campus"), "expansionBatch": BATCH,
+                        })
+                        qa["newOfficialSources"] += 1
+                    else:
+                        pid = h.post_id(row) or "web-" + stable(key)
+                        prior = {
+                            "id": pid, "key": "xhs:" + pid if h.post_id(row) else "web:" + pid, "sourceIds": [code],
+                            "url": row["url"], "canonicalUrl": h.canonical(row.get("canonicalUrl") or row["url"]),
+                            "platform": record["platform"], "title": row["title"], "author": row.get("author"), "date": row.get("date"),
+                            "population": row.get("population"), "summary": row["summary"], "tips": row.get("points", []),
+                            "limitations": record["limits"], "readingScopes": h.scopes(row), "comments": [],
+                            "category": row.get("category") or "背景或待核实材料", "topic": row.get("topic") or "课程学习与培养",
+                            "campus": row.get("campus"), "screenedOnly": False, "needsVerification": True,
+                            "verificationStatus": "可见正文已读，按身份与阅读范围限定", "promotion": "可见范围未见收费售课",
+                            "expansionBatch": BATCH,
+                        }
+                        data["socialPosts"].append(prior)
+                        existing_posts[key] = prior
+                        qa["newSocialPosts"] += 1
+                elif action != "new":
+                    updates = registry[code].setdefault("continueResearchUpdates", [])
+                    if not any(item.get("updateKey") == update_key for item in updates):
+                        updates.append({**record, "updateKey": update_key})
+                        registry[code]["additionalUrls"] = h.unique(registry[code].get("additionalUrls", []) + [row["url"]])
+                        if kind == "student" and prior:
+                            prior.setdefault("continueResearchUpdates", []).append({**record, "updateKey": update_key})
+                            prior["tips"] = h.unique(prior.get("tips", []) + row.get("points", []))
+                            prior["readingScopes"] = h.unique(prior.get("readingScopes", []) + h.scopes(row))
+                            qa["updatedSocialPosts"] += 1
+                        elif kind == "official":
+                            qa["updatedOfficialSources"] += 1
+                        if action == "supplement":
+                            qa["supplements"].append({"code": code, "url": row["url"], "independentSourceIncrement": 0})
+                exported.append(record)
+                qa["decisions"].append({"code": code, "url": row["url"], "changeType": action, "kind": kind})
+                known[key] = code
+                all_keys.add(key)
+                for url in registry[code].get("additionalUrls", []):
+                    if h.urlkey(url):
+                        known.setdefault(h.urlkey(url), code)
+                        all_keys.add(h.urlkey(url))
+                append_block(data, "continue-body-" + update_key, record, chapter_for(row))
+                append_registry_index(data, "continue-source-" + update_key, record)
+                if kind == "official":
+                    qa["mentorEvidenceAdded"] += append_roles(data, row, record)
+                    append_project_topics(data, row, record)
+                for i, point in enumerate(row.get("points", [])):
+                    tip_id = f"continue:{code}:{update_key}:{i}"
+                    if not any(item.get("id") == tip_id for item in data["tipsIndex"]):
+                        data["tipsIndex"].append({
+                            "id": tip_id, "topic": row.get("topic") or "课程学习与培养", "point": point,
+                            "context": row["summary"], "scope": row.get("population"), "limits": record["limits"],
+                            "author": row.get("author"), "date_display": row.get("date"), "url": row["url"],
+                            "post_title": row["title"], "status": "官方公开资料" if kind == "official" else "新读正文或回复",
+                            "source_ids": code, "source_key": "continue:" + stable(key), "expansionBatch": BATCH,
+                        })
+    for origin, source_input in [("official", public), ("students", students)]:
+        for key, target in [("duplicates", "duplicates"), ("screened", "skipped"), ("unread", "unread")]:
+            qa[target].extend({"input": origin, **row} for row in source_input.get(key, []) if isinstance(row, dict))
+    new_official = sum(row.get("expansionBatch") == BATCH for row in data["officialEvidence"])
+    new_social = sum(row.get("expansionBatch") == BATCH for row in data["socialPosts"])
+    updated_social = sum(bool(row.get("continueResearchUpdates")) for row in data["socialPosts"])
+    source_rows = {row.get("url"): row for source_input in [public, students]
+                   for row in source_input.get("accepted", []) + source_input.get("updates", [])}
+    highlights = []
+    for record in exported[:4]:
+        row = source_rows[record["url"]]
+        override = REVIEW_OVERRIDES.get(identity(row), {})
+        highlights.append({"title": override.get("highlightTitle") or row.get("highlightTitle") or row["title"],
+                           "text": row.get("highlightText") or row["summary"], "sourceCodes": [record["code"]]})
+    meta = data["meta"]
+    meta["continueResearch"] = {"newOfficialSources": new_official, "newSocialPosts": new_social,
+                                "updatedSocialPosts": updated_social, "highlights": highlights}
+    meta["counts"]["socialPosts"], meta["counts"]["officialEvidence"] = len(data["socialPosts"]), len(data["officialEvidence"])
+    meta["socialPostCategories"] = dict(collections.Counter(row.get("category") for row in data["socialPosts"]))
+    meta["platformNote"] = f"社交来源索引实际{len(data['socialPosts'])}条，官网证据{len(data['officialEvidence'])}条；同帖补读、同事件附件和转载不重复计数。课程反馈与导师日常指导分开，保留年份、对象和阅读范围。"
+    assert [{k: v for k, v in row.items() if k != "evidence"} for row in data["mentors"]] == roster
+    assert data["mentorCards"] == cards and len(data["mentors"]) == 34 and len(cards) == 17
+    assert meta.get("appEdition") == edition and meta.get("author") == author
+    qa["after"] = {"socialPosts": len(data["socialPosts"]), "officialEvidence": len(data["officialEvidence"])}
+    qa["checks"] = {"rosterAndCoreCardsUnchanged": True, "installerMetadataUnchanged": True,
+                    "sameEventAndPostUpdatesNotCountedAsNew": True, "unknownSourceFieldsNotInferred": True}
+    qa["checks"].update({"publicNoticeAndAttachmentCountedOnce": True, "studentInformationColumnsNotRepublished": True,
+                         "twentyOneTopicsAnonymizedAndFolded": True, "degreeBoundaryPreservedForC504AndC506": True})
+    qa["sourceBoundaryNotes"] = {
+        "C503": "21项1253会计拟推荐主题，未直接搬录申请人信息，不认定最终立项或完成",
+        "C504": "原附件仅备注专硕，没有1253/MPAcc，不升级专业身份",
+        "C505": "日期与当前执行状态未知", "C506": "李潇琦为学硕，卞子咏类别未明，仅院内科研适应背景",
+    }
+    qa["queryCounts"] = {"official": len(public.get("queries", [])), "students": len(students.get("queries", []))}
+    return data, qa, exported
+
+
+def main():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--write", action="store_true")
+    p.add_argument("--data", type=pathlib.Path, default=ROOT / "dist/data/site-data.json")
+    p.add_argument("--public", type=pathlib.Path, default=input_path("research_continue_official.json"))
+    p.add_argument("--students", type=pathlib.Path, default=input_path("research_continue_students.json"))
+    args = p.parse_args()
+    public = h.read(args.public) if args.public.exists() else {}
+    students = h.read(args.students) if args.students.exists() else {}
+    data, qa, exported = merge(h.read(args.data), public, students)
+    repeated, _, _ = merge(data, public, students)
+    assert data == repeated, "相同输入重复合并改变运行数据"
+    qa["checks"]["repeatMergeIsIdempotent"] = True
+    if args.write:
+        h.write_atomic(args.data, data)
+        h.write_atomic(ROOT / "data/continue-research-sources.json", exported)
+        h.write_atomic(ROOT / "data/continue-research-qa.json", qa)
+    print(json.dumps({**qa["after"], "newOfficialSources": qa["newOfficialSources"], "newSocialPosts": qa["newSocialPosts"],
+                      "updatedSocialPosts": qa["updatedSocialPosts"], "exportedRecords": len(exported),
+                      "mode": "written" if args.write else "dry-run"}, ensure_ascii=False))
+
+
+if __name__ == "__main__":
+    main()

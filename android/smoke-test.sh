@@ -22,7 +22,13 @@ if [[ -e /dev/kvm ]]; then sudo chmod 666 /dev/kvm; fi
 EMULATOR_PID=$!
 cleanup() {
   local exit_status=$?
-  if [[ ! -s android/artifacts/smoke/result.txt ]]; then
+  local result_line=''
+  if [[ -s android/artifacts/smoke/result.txt ]]; then
+    IFS= read -r result_line < android/artifacts/smoke/result.txt || true
+  fi
+  if [[ "$exit_status" -ne 0 && "$result_line" != FAIL:* ]]; then
+    printf '%s\n' "FAIL: smoke test exited before all reading and Back checks completed (status $exit_status). See emulator.log and logcat.txt." > android/artifacts/smoke/result.txt
+  elif [[ ! -s android/artifacts/smoke/result.txt ]]; then
     printf '%s\n' "FAIL: smoke test exited before UI verification (status $exit_status). See emulator.log and logcat.txt." > android/artifacts/smoke/result.txt
   fi
   # logcat otherwise waits forever when a failed emulator never comes online.
@@ -172,4 +178,104 @@ if [[ "$passed" != true ]]; then
   fi
   exit 1
 fi
-printf '%s\n' 'PASS: Android 14 emulator launched offline and rendered a mentor from packaged JSON.' > android/artifacts/smoke/result.txt
+printf '%s\n' 'PENDING: offline mentor rendered; checking Android Back behavior next.' > android/artifacts/smoke/result.txt
+# Keep the reading proof before later Back checks leave the activity.
+cp android/artifacts/smoke/ui.xml android/artifacts/smoke/mentor-visible.xml
+timeout --kill-after=3s 10s "$ADB" exec-out screencap -p > android/artifacts/smoke/mentor-visible.png
+
+back_ui_state() {
+  python3 - <<'PY'
+import os
+import re
+import xml.etree.ElementTree as ET
+from pathlib import Path
+p = Path('android/artifacts/smoke/ui.xml')
+try:
+    nodes = list(ET.parse(p).iter('node')) if p.exists() else []
+except ET.ParseError:
+    nodes = []
+def visible(node):
+    a = list(map(int, re.findall(r'-?\d+', node.get('bounds', ''))))
+    if len(a) != 4:
+        return None
+    a = [max(0, a[0]), max(0, a[1]), min(int(os.environ['SCREEN_WIDTH']), a[2]), min(int(os.environ['SCREEN_HEIGHT']), a[3])]
+    return a if a[2] > a[0] and a[3] > a[1] else None
+def label(node):
+    return node.get('text', '') + ' ' + node.get('content-desc', '')
+close = next((n for n in nodes if '关闭详情' in label(n) and visible(n)), None)
+offline = any('内置资料' in label(n) and visible(n) for n in nodes)
+mentor = any(os.environ['EXPECTED_MENTOR'] in label(n) and visible(n) for n in nodes)
+if os.environ['BACK_STAGE'] == 'open':
+    if close is not None and mentor:
+        print('OPEN')
+    else:
+        action = next((visible(n) for n in nodes if '查看资料与反馈' in label(n)
+                       and os.environ['EXPECTED_MENTOR'] in label(n) and visible(n)), None)
+        if action:
+            print('TAP', (action[0]+action[2])//2, (action[1]+action[3])//2)
+        else:
+            print('SCROLL')
+else:
+    print('CLOSED' if offline and mentor and close is None else 'WAIT')
+PY
+}
+
+export BACK_STAGE=open
+UI_DEADLINE=$((SECONDS + 70))
+dialog_open=false
+for attempt in $(seq 1 18); do
+  if ((SECONDS >= UI_DEADLINE)); then break; fi
+  dump_ui
+  read -r STATE TAP_X TAP_Y <<< "$(back_ui_state)"
+  if [[ "$STATE" == OPEN ]]; then dialog_open=true; break; fi
+  if [[ "$STATE" == TAP ]]; then
+    timeout --kill-after=1s 3s "$ADB" shell input tap "$TAP_X" "$TAP_Y"
+  else
+    timeout --kill-after=1s 3s "$ADB" shell input swipe "$SWIPE_X" "$SWIPE_START" "$SWIPE_X" "$((SCREEN_HEIGHT * 60 / 100))" 350
+  fi
+  sleep 1
+done
+if [[ "$dialog_open" != true ]]; then
+  printf '%s\n' 'FAIL: could not open the visible mentor details for the Back check.' > android/artifacts/smoke/result.txt
+  exit 1
+fi
+cp android/artifacts/smoke/ui.xml android/artifacts/smoke/dialog-open.xml
+timeout --kill-after=3s 10s "$ADB" exec-out screencap -p > android/artifacts/smoke/dialog-open.png
+
+timeout --kill-after=1s 5s "$ADB" shell input keyevent 4
+export BACK_STAGE=closed
+UI_DEADLINE=$((SECONDS + 35))
+dialog_closed=false
+for attempt in $(seq 1 10); do
+  if ((SECONDS >= UI_DEADLINE)); then break; fi
+  dump_ui
+  if [[ "$(back_ui_state)" == CLOSED ]]; then dialog_closed=true; break; fi
+  sleep 1
+done
+if [[ "$dialog_closed" != true ]]; then
+  printf '%s\n' 'FAIL: Android Back did not close mentor details while retaining the offline guide.' > android/artifacts/smoke/result.txt
+  exit 1
+fi
+cp android/artifacts/smoke/ui.xml android/artifacts/smoke/dialog-closed.xml
+timeout --kill-after=3s 10s "$ADB" exec-out screencap -p > android/artifacts/smoke/dialog-closed.png
+
+# The mentor hash can add one history entry. More than three Back presses would
+# indicate a failed-online/fallback loop rather than ordinary page navigation.
+exited=false
+for attempt in $(seq 1 3); do
+  timeout --kill-after=1s 5s "$ADB" shell input keyevent 4
+  sleep 2
+  timeout --kill-after=2s 10s "$ADB" shell dumpsys activity activities > android/artifacts/smoke/activity-after-back.txt
+  if python3 - <<'PY'
+from pathlib import Path
+text = Path('android/artifacts/smoke/activity-after-back.txt').read_text()
+resumed = [line for line in text.splitlines() if 'mResumedActivity' in line or 'topResumedActivity=' in line]
+assert resumed and not any('cn.nau.mpacc.guide/' in line for line in resumed)
+PY
+  then exited=true; break; fi
+done
+if [[ "$exited" != true ]]; then
+  printf '%s\n' 'FAIL: Android Back remained inside the guide after three presses; possible fallback history loop.' > android/artifacts/smoke/result.txt
+  exit 1
+fi
+printf '%s\n' 'PASS: Android 14 launched offline, rendered a packaged mentor, closed details with Back, and exited without a fallback history loop.' > android/artifacts/smoke/result.txt

@@ -1,0 +1,424 @@
+{
+  "accepted": [
+    {
+      "title": "会计学院教学案例入库全国MPAcc优秀教学案例库（2025年度数字化定价案例）",
+      "url": "https://account.nau.edu.cn/2026/0615/c8917a158917/page.htm",
+      "date": "2026-06-15",
+      "population": "王永妍撰写的MPAcc教学案例；不是具名学生论文或学生日常指导经历。",
+      "summary": "王永妍的M企业数字化定价教学案例进入2025年度MPAcc优秀教学案例库，可用于了解其数字化经营决策与案例教学选题。",
+      "points": [
+        "案例将企业数字化定价与算法辅助决策结合，可作为联系老师时讨论具体业务场景的切入口。",
+        "可追问案例材料、定价分析与财务决策如何衔接；这些是基于题目的交流问题，并非已读案例全文结论。"
+      ],
+      "limits": "仅读入库新闻，未取得案例全文；作者关系不等于学生指导关系，不能推定每位学生均参与案例开发、当前名额或相处风格。",
+      "readingScope": "已读官方新闻正文L74-L88；未以栏目摘要替代正文，图片未单独审读。",
+      "advisorNames": [
+        "王永妍"
+      ],
+      "advisorRoles": {
+        "王永妍": "该数字化定价MPAcc教学案例作者；仅证明具名教学案例选题，不证明学生指导体验。"
+      },
+      "kind": "教学案例选题",
+      "read": true,
+      "webRefs": [
+        "turn91view2"
+      ]
+    },
+    {
+      "title": "润泽产教融合前沿讲坛（第39期）梅家秀——南钢数据资产入表探索与实践",
+      "url": "https://account.nau.edu.cn/2026/0529/c8919a157950/page.htm",
+      "date": "2026-05-29",
+      "population": "会计学院研究生听众，正文未单列MPAcc；2026年5月27日的一次行业讲座。",
+      "summary": "南钢总会计师梅家秀以数据资产入表、财务共享和财资税平台为例，介绍制造业数字治理与智慧财务；可补充课程和实习观察主题。",
+      "points": [
+        "把数据资产入表放在业务场景、数据治理和价值创造中一起理解，避免只把它看作会计分录问题。",
+        "实习或访企时可关注财务共享、管理驾驶舱及财资税系统如何连接业务；这是从讲座归纳出的观察清单。"
+      ],
+      "limits": "一次公开讲座不代表日常课程安排、实习岗位或录用；凌华为主持人，不能归为她的个人导师训练成果。未读南钢案例全文。",
+      "readingScope": "已读官方新闻全文，重点L81-L92；讲座照片未单独OCR。",
+      "advisorNames": [],
+      "advisorRoles": {},
+      "relatedStaffRoles": {
+        "凌华": "讲座主持，非学生指导证据",
+        "梅家秀": "行业主讲人"
+      },
+      "kind": "课程与实习观察",
+      "read": true,
+      "webRefs": [
+        "turn91view1"
+      ]
+    },
+    {
+      "title": "会计学院2026年江苏省研究生科研实践创新计划项目推荐申报公示（含21项1253会计项目）",
+      "url": "https://account.nau.edu.cn/2026/0617/c9534a159213/page.htm",
+      "date": "2026-06-17",
+      "population": "附件25项拟推荐项目中，21项专业学位类别代码1253、名称会计，另4项1202工商管理学硕分开排除。",
+      "summary": "官方2026拟推荐附件提供21个会计专硕真实申报选题，涉及数据资产、人工智能审计、预算绩效、碳披露和供应链，可帮助把宽泛方向落到具体问题。",
+      "points": [
+        "项目选题例子包括企业数据资产入表全流程风险、知识图谱在国家审计中的应用、公立医院AI审计风险及行政事业单位预算绩效优化。",
+        "另有南钢企业数字责任案例、欧盟碳披露与新能源汽车出海合规、商业银行内控预警、制造业碳减排绩效等不同业务场景。",
+        "将“研究对象—具体问题—可获得材料”列成小表后，再与意向导师讨论可行性；这是根据公开题目提出的准备方法。",
+        "名单是院级拟推荐申报记录，不是省级最终立项或已完成成果；同一附件只作1个独立来源。"
+      ],
+      "limits": "正文公示期2026年6月17日至24日已结束，不当作现在开放申请的通知；附件无导师列，21项不分配给任何导师，也不据此推断2027名额、毕业要求或项目完成率。",
+      "readingScope": "官方公示正文全文已读；点击附件后以HTTPS实际下载XLSX，openpyxl只读模式逐行读取全部25个项目，以类别代码1253和类别名称会计筛出21条；未按姓名或学号猜专业。",
+      "advisorNames": [],
+      "advisorRoles": {},
+      "kind": "当届真实选题参考",
+      "read": true,
+      "webRefs": [
+        "turn93view0",
+        "turn95view1"
+      ],
+      "attachments": [
+        {
+          "title": "会计学院-2026年江苏省研究生科研实践创新计划推荐申报项目公示.xlsx",
+          "url": "https://account.nau.edu.cn/_upload/article/files/a1/be/fbfb1fdd41898a9db9de5ebcff2f/0a13190a-db1f-4074-95af-01c2270e0621.xlsx",
+          "read": true,
+          "sha256": "3838a96e97056f63f255b04d8bda47ebd93a2c5f52e0e245204213a3dbf58eaf"
+        }
+      ],
+      "projectTopics": [
+        {
+          "title": "劳动关系与企业审计收费的关联",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "国家审计场景中的IPA技术应用",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "南钢案例中的数字责任与价值创造",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "上市公司低碳供应链的绩效衡量",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "数字人民币使用与企业风险承担",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "算法审计支持生产力升级的机制",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "企业海外经营中地缘风险与供应链韧性",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "新能源汽车出海面对的欧盟碳披露合规",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "医院AI审计中的算法、数据安全和防控",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "企业将数据确认为资产时的全过程风险",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "国家人工智能安全风险的审计治理",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "行政事业单位预算绩效的数智化改进",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "企业AI使用与债券发行定价",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "银行内部控制风险的数智预警",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "不同行业的数据资产披露及其影响",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "国有资产清查、盘活与价值提升",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "制造业减碳绩效管理中的智能财务",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "教育考试业务的支出标准与成本控制",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "审计工作中的机器学习应用",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "绿色基金推动企业转型的机制",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        },
+        {
+          "title": "国家审计中的知识图谱应用",
+          "professionalDegreeCode": "1253",
+          "professionalDegree": "会计",
+          "status": "学院拟推荐申报，未据此认定省级获批或项目完成",
+          "advisor": null,
+          "descriptionType": "根据公示题目转述的主题，非逐字题名"
+        }
+      ],
+      "projectTopicsAreParaphrases": true
+    },
+    {
+      "title": "关于推荐2024年校优秀硕士学位论文评审结果的公示（两项专硕具名选题）",
+      "url": "https://account.nau.edu.cn/2024/0811/c9534a134393/page.htm",
+      "date": "2024-08-11",
+      "population": "会计学院2024优硕拟推荐附件中备注专硕的2项，另1项备注学硕；附件未单列MPAcc、1253代码或专硕专业名称，故仅称学院专硕个案。",
+      "summary": "附件列出董必荣指导王一帆研究牧原股份数字化转型与企业绩效、潘俊指导李亦普研究华设设计集团EPC项目财务风险，可作为有姓名和题目的历史指导个案。",
+      "points": [
+        "董必荣指导的王一帆专硕论文，以牧原股份为案例讨论数字化转型与畜牧企业绩效；附件备注专硕1。",
+        "潘俊指导的李亦普专硕论文，以华设设计集团为案例讨论EPC项目财务风险；附件备注专硕2。",
+        "两项均是该校级评选环节的拟推荐实例，不把拟推荐表述为最终省级获奖。"
+      ],
+      "limits": "这是2024年历史拟推荐名单，未读两篇论文全文，不能介绍其方法或结论，也不推断导师目前名额、全体学生产出或日常相处。公示正文写2024年暨2023届，附件未单列毕业年，故不替两人猜届别。 附件仅写专硕，未注明MPAcc/1253，不能直接升级为确认MPAcc个案。",
+      "readingScope": "官方公示正文全文已读；附件XLSX实际下载，逐行读完Sheet1（表头及3名申请者），以备注专硕/学硕区分对象。",
+      "advisorNames": [
+        "董必荣",
+        "潘俊"
+      ],
+      "advisorRoles": {
+        "董必荣": "附件明确列为专硕王一帆数字化转型/畜牧业绩效论文指导老师",
+        "潘俊": "附件明确列为专硕李亦普EPC财务风险论文指导老师"
+      },
+      "kind": "历史论文指导个案",
+      "read": true,
+      "webRefs": [
+        "turn89view3",
+        "turn91view4"
+      ],
+      "attachments": [
+        {
+          "title": "2024年优秀硕士学位论文评审结果一览表.xlsx",
+          "url": "https://account.nau.edu.cn/_upload/article/files/13/9b/9c1e48724a249f3921b45b1f94ec/74aedf82-d44f-44fb-b46a-c5158d3af78f.xlsx",
+          "read": true,
+          "sha256": "96599e1e044eeb07fc3ffb4886112982fec39ce4d948d6375a460e7422ce961c"
+        }
+      ]
+    },
+    {
+      "title": "南京审计大学研究生和导师互选志愿表（MPAcc官网下载模板）",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/23094817-5c38-43a7-a04d-188b86fa560e.docx",
+      "date": null,
+      "population": "MPAcc官网下载中心公开链接的学校通用研究生导师互选模板；未注明适用新生年级或生效日期。",
+      "summary": "官方模板设有三项导师志愿，并留研究生、导师、学科及学院意见签字栏。可在联系导师时顺便核对本级正式互选所需材料与签批步骤。",
+      "points": [
+        "表内依次有第一、第二、第三志愿，以及被选导师意见、学科意见、学院（中心）意见。",
+        "提交前先向本级教务确认是否仍使用此表、是否线上办理、志愿如何填写及签批截止时间；表本身不提供这些答案。"
+      ],
+      "limits": "发布日期和当前执行状态未公开，date为null；不能把模板解读为本级必须填满三个志愿、可以同时确认三位导师或已经开放正式双选。表内个人字段为空，未收集或上传任何个人填报信息。",
+      "readingScope": "MPAcc官网下载中心L33-L48已读并点击对应DOCX链接；实际HTTPS下载后解压读取word/document.xml全文，核对全部志愿及意见签名栏，未把旧模板当作当前通知。",
+      "advisorNames": [],
+      "advisorRoles": {},
+      "kind": "互选办事模板",
+      "read": true,
+      "webRefs": [
+        "turn89view2",
+        "turn91view3"
+      ],
+      "parentUrl": "https://mpacc.nau.edu.cn/11500/list.htm",
+      "attachmentSha256": "56144eb240d612cdc96a631241b9398b073364acf7ec65a6d9cb5e733f726bd6"
+    }
+  ],
+  "duplicates": [
+    {
+      "title": "2026师生见面会",
+      "url": "https://mpacc.nau.edu.cn/2026/0917/c11506a161857/page.htm",
+      "reason": "递归基线已有文章ID161857。"
+    },
+    {
+      "title": "2023全国MPAcc优硕华雨倩",
+      "url": "https://account.nau.edu.cn/2024/0509/c9005a129421/page.htm",
+      "reason": "A403已有。"
+    },
+    {
+      "title": "2023省优硕董必荣/高凤莲个案",
+      "url": "https://account.nau.edu.cn/2024/0118/c8917a124812/page.htm",
+      "reason": "基线已有文章ID124812。"
+    },
+    {
+      "title": "2024两篇MPAcc教学案例",
+      "url": "https://account.nau.edu.cn/2025/1118/c9533a150972/page.htm",
+      "reason": "与已有来源10（mpacc/2025/1121/...151137）同两篇案例同一年度入库事件，不因镜像文章ID不同增加来源数。",
+      "existingCode": "10"
+    },
+    {
+      "title": "2024第21届长三角MPAcc论坛",
+      "url": "https://account.nau.edu.cn/2024/0603/c8917a131562/page.htm",
+      "reason": "已有来源11，虽未收录每个学生姓名，但不是新事件。",
+      "existingCode": "11"
+    },
+    {
+      "title": "2026研究生国家奖学金推荐",
+      "url": "https://account.nau.edu.cn/2026/1008/c8918a162370/page.htm",
+      "reason": "递归基线已有文章ID162370，不重复收录。"
+    },
+    {
+      "title": "2023暑期培养指南",
+      "url": "https://account.nau.edu.cn/2023/0628/c8943a116446/page.htm",
+      "reason": "已有文章ID116446。"
+    },
+    {
+      "title": "MPAcc培养方案",
+      "url": "https://mpacc.nau.edu.cn/11517/list.htm",
+      "reason": "已有，account镜像也不增加来源数。"
+    },
+    {
+      "title": "于昊平优秀论文及奖学金",
+      "url": "https://account.nau.edu.cn/xyxw/list1.htm",
+      "reason": "基线已有该具名论文实例，不以新栏目摘要再算。"
+    }
+  ],
+  "screened": [
+    {
+      "title": "立德树人，数智赋能，产教融合，协同育人",
+      "url": "https://account.nau.edu.cn/2025/1021/c9539a148688/page.htm",
+      "read": true,
+      "reason": "已全文阅读，但大部分内容为项目概况及基线已覆盖的课程/产教融合；不为数量重复加入。培养方向只可按2025项目宣传语境理解，8基地名称在图片未OCR，未据其扩写具体单位。",
+      "webRefs": [
+        "turn95view0"
+      ]
+    },
+    {
+      "title": "2026本科生国家奖学金",
+      "url": "https://account.nau.edu.cn/2026/1014/c8918a162580/page.htm",
+      "reason": "本科生对象，不混入MPAcc。"
+    },
+    {
+      "title": "首届博士生集中会议",
+      "url": "https://account.nau.edu.cn/2025/0912/c8917a147534/page.htm",
+      "reason": "博士生对象，不用来说明MPAcc双选或培养。"
+    },
+    {
+      "title": "会计学院培养成果栏目",
+      "url": "https://account.nau.edu.cn/rcpy/list.htm",
+      "reason": "检索摘要主要2018—2021历史成果，导师部分不在当前34名录；未为增量数量继续采旧获奖清单。"
+    },
+    {
+      "title": "2026届优秀毕业生拟推荐名单",
+      "url": "https://account.nau.edu.cn/2026/0529/c8943a158001/page.htm",
+      "reason": "主要名单，缺具体训练过程；未继续获取名单作推荐依据。"
+    }
+  ],
+  "unread": [],
+  "queries": [
+    "site:account.nau.edu.cn MPAcc 2026 导师 论文 实践",
+    "site:mpacc.nau.edu.cn 2026 研究生 导师 双选",
+    "site:account.nau.edu.cn 会计 专硕 2025 优秀 学位论文 导师",
+    "site:account.nau.edu.cn 2026 MPAcc 案例 论文 导师 -129421 -148688 -124812",
+    "site:account.nau.edu.cn 2025 2026 会计 研究生 奖学金 公示",
+    "site:mpacc.nau.edu.cn 2026 实习 实践 学员",
+    "site:account.nau.edu.cn 2026 研究生 导师 互选",
+    "site:account.nau.edu.cn \"第21届长三角MPAcc\" \"单文涛\"",
+    "site:account.nau.edu.cn \"2026\" \"科研实践创新计划项目推荐申报公示\"",
+    "site:account.nau.edu.cn \"会计学院\" \"互选\" \"2026\"",
+    "site:account.nau.edu.cn \"2024年度\" \"优秀\" \"王永妍\" \"案例\"",
+    "\"0a13190a-db1f-4074-95af-01c2270e0621\"",
+    "\"23094817-5c38-43a7-a04d-188b86fa560e\"",
+    "\"74aedf82-d44f-44fb-b46a-c5158d3af78f\""
+  ],
+  "queryCount": 14,
+  "baseline": {
+    "socialPosts": 113,
+    "officialEvidence": 106,
+    "recursiveDistinctUrls": 461
+  },
+  "checks": {
+    "onlyFiveIndependentNewSources": true,
+    "projectsAreProposalsNotCompleted": true,
+    "projectAdvisorUnknownKeptNull": true,
+    "sameEventMirrorsExcluded": true,
+    "unknownDateNull": true,
+    "noDistMutation": true
+  }
+}

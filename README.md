@@ -24,3 +24,9 @@
 浏览器版支持添加到桌面；首次联网打开后可缓存指南。iPhone 使用 Safari 的“分享 → 添加到主屏幕”。Android 原生源码与构建说明见 [android/README.md](android/README.md)。
 
 追加研究材料可用 `python data/extend_app_research.py --write` 合并；已读来源、重复项及适用边界保留在 `data/research_app/` 与 QA 记录中。
+
+### 1.0.1 改进
+
+Android 返回键会先关闭资料详情；自动切换离线资料后会清理失败的在线导航，避免返回循环。文件保存完成且关闭成功后才显示成功提示。内置模式显示当前客户端版本，不再重复提示安装自己。
+
+研究补充脚本为 `data/extend_continue_research.py`，输入放在 `data/research_continue/`。公开项目主题只作为有来源的选题参考，不据此分配导师或推断当年名额。

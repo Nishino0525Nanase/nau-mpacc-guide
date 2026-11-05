@@ -44,11 +44,11 @@
     const button = $('#install-app');
     const status = $('#install-status');
     if (button) {
-      button.hidden = installed;
+      button.hidden = bundledEdition || installed;
       button.disabled = prompting;
       button.textContent = pendingPrompt ? '安装到此设备' : '查看安装方法';
     }
-    if (status) status.textContent = installed ? (standalone.matches || navigator.standalone === true ? '已在独立应用窗口中打开。' : '已安装，可从桌面或主屏幕打开。') : actionMessage || (pendingPrompt ? '此浏览器支持直接安装，点按后请完成浏览器确认。' : '若未出现安装提示，可按下方步骤添加；是否支持安装由浏览器决定。');
+    if (status) status.textContent = bundledEdition ? '正在使用 Android 应用，内置资料可直接离线阅读。' : installed ? (standalone.matches || navigator.standalone === true ? '已在独立应用窗口中打开。' : '已安装，可从桌面或主屏幕打开。') : actionMessage || (pendingPrompt ? '此浏览器支持直接安装，点按后请完成浏览器确认。' : '若未出现安装提示，可按下方步骤添加；是否支持安装由浏览器决定。');
     const connection = $('#edition-connection');
     if (connection) {
       connection.textContent = bundledEdition ? '正在阅读安装包内置资料，可直接离线使用；点应用顶部“在线”查看最新内容。' : navigator.onLine === false || offlineCache
@@ -69,19 +69,45 @@
     }
   }
 
+  function currentAndroidVersion(meta) {
+    // The package can contain an older public download record while a new APK is built.
+    // Only the native asset origin may provide the running package version.
+    if (bundledEdition) {
+      try {
+        const value = new URL(location.href).searchParams.get('app_version');
+        if (typeof value === 'string' && value.length <= 40 && /^(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)$/.test(value)) return value;
+      } catch (_) {}
+    }
+    return [meta?.android?.version, meta?.web?.version].find(value => typeof value === 'string' && value.trim()) || '';
+  }
+
+  function changesHtml(android) {
+    const changes = Array.isArray(android.changes)
+      ? android.changes.filter(item => typeof item === 'string' && item.trim()).slice(0, 8)
+      : [];
+    return changes.length ? `<div class="edition-changes"><h5>此版本更新</h5><ul>${changes.map(item => `<li>${esc(item)}</li>`).join('')}</ul></div>` : '';
+  }
+
   function mount(meta = {}) {
     const target = $('#app-edition-cards');
     if (!target) return;
     const android = meta?.android || {};
+    if (bundledEdition) {
+      const version = currentAndroidVersion(meta);
+      target.innerHTML = `<article class="edition-card native-edition"><div class="edition-card-title"><img src="./icons/app-192.png" alt="" width="44" height="44"><div><h4>正在使用 Android 版</h4><span>${version ? `版本 ${esc(version)}` : '安装包内置版本'}</span></div></div><p>指南、导师资料和原帖摘记随应用保存在本机，断网时也可继续阅读。Word / Excel 文件可保存到你选择的位置。</p><p id="edition-connection" class="edition-connection" role="status" aria-live="polite"></p>${changesHtml(android)}<p class="edition-footnote">点顶部“在线”读取网站上的最新资料，点“内置”返回本机内容。应用本身的更新可在在线指南的下载页获取。</p></article>`;
+      renderState();
+      return;
+    }
     const androidUrl = android.available === true ? downloadUrl(android.url) : '';
     const bytes = Number.isFinite(android.bytes) && android.bytes > 0 ? ` · ${(android.bytes / 1024 / 1024).toFixed(1)} MB` : '';
     const checksum = /^[a-f\d]{64}$/i.test(android.sha256 || '') ? `<details class="apk-checksum"><summary>核对 SHA-256</summary><code>${esc(android.sha256.toLowerCase())}</code></details>` : '';
-    target.innerHTML = `<article class="edition-card"><div class="edition-card-title"><img src="./icons/app-192.png" alt="" width="44" height="44"><div><h4>网页应用</h4><span>版本 ${esc(meta?.web?.version || '1.0.0')} · PWA</span></div></div><p>添加到主屏幕或桌面，可用独立窗口阅读同一份指南。导师、生活章节与原帖摘记支持离线阅读。</p><button class="button" id="install-app" type="button">查看安装方法</button><p id="install-status" class="edition-status" role="status" aria-live="polite"></p><p id="edition-connection" class="edition-connection" role="status" aria-live="polite"></p><details class="install-steps" id="install-steps"><summary>按设备查看安装方法</summary><ol><li><strong>Android：</strong>用 Chrome 打开此页，点右上角“更多” → “安装并创建快捷方式” → “安装”。部分版本显示“安装应用”或“添加到主屏幕”，按提示操作。</li><li><strong>iPhone / iPad：</strong>用 Safari 打开此页，点“分享” → “添加到主屏幕”；若出现“作为网页 App 打开”，保持开启，再点“添加”。</li><li><strong>电脑：</strong>用 Chrome 或 Edge 打开此页，点地址栏的安装图标；Chrome 也可在“更多” → “投放、保存和分享” → “将网页安装为应用”中操作。</li></ol><p>菜单名称会随版本变化。若应用内浏览器没有安装项，请先用 Safari、Chrome 或 Edge 打开；没有安装项时可继续使用网页。</p></details></article><article class="edition-card android-card"><div class="edition-card-title"><span class="file-icon apk-icon" aria-hidden="true">APK</span><div><h4>Android安装包</h4><span>${androidUrl ? `版本 ${esc(android.version || '待标注')}${esc(bytes)}` : '暂未提供下载'}</span></div></div><p>${androidUrl ? '内置完整指南，断网也可阅读；联网时可查看最新内容。下载后打开安装包，按系统提示安装。支持 Android 7.0 及以上，更新应用需下载新版安装包。' : '安装包准备完成后会在这里提供版本、文件大小与校验值。目前可先使用上方网页应用。'}</p>${androidUrl ? `<a class="button" href="${esc(androidUrl)}" download data-download="android-app">${esc(android.label || '下载 Android 安装包')} <span aria-hidden="true">↓</span></a>${checksum}` : '<span class="edition-unavailable">准备中</span>'}<p class="edition-footnote">应用版与网页使用同一份公开指南，原帖链接需要联网打开。</p></article>`;
+    target.innerHTML = `<article class="edition-card"><div class="edition-card-title"><img src="./icons/app-192.png" alt="" width="44" height="44"><div><h4>网页应用</h4><span>版本 ${esc(meta?.web?.version || '1.0.0')} · PWA</span></div></div><p>添加到主屏幕或桌面，可用独立窗口阅读同一份指南。导师、生活章节与原帖摘记支持离线阅读。</p><button class="button" id="install-app" type="button">查看安装方法</button><p id="install-status" class="edition-status" role="status" aria-live="polite"></p><p id="edition-connection" class="edition-connection" role="status" aria-live="polite"></p><details class="install-steps" id="install-steps"><summary>按设备查看安装方法</summary><ol><li><strong>Android：</strong>用 Chrome 打开此页，点右上角“更多” → “安装并创建快捷方式” → “安装”。部分版本显示“安装应用”或“添加到主屏幕”，按提示操作。</li><li><strong>iPhone / iPad：</strong>用 Safari 打开此页，点“分享” → “添加到主屏幕”；若出现“作为网页 App 打开”，保持开启，再点“添加”。</li><li><strong>电脑：</strong>用 Chrome 或 Edge 打开此页，点地址栏的安装图标；Chrome 也可在“更多” → “投放、保存和分享” → “将网页安装为应用”中操作。</li></ol><p>菜单名称会随版本变化。若应用内浏览器没有安装项，请先用 Safari、Chrome 或 Edge 打开；没有安装项时可继续使用网页。</p></details></article><article class="edition-card android-card"><div class="edition-card-title"><span class="file-icon apk-icon" aria-hidden="true">APK</span><div><h4>Android安装包</h4><span>${androidUrl ? `版本 ${esc(android.version || '待标注')}${esc(bytes)}` : '暂未提供下载'}</span></div></div><p>${androidUrl ? '内置完整指南，断网也可阅读；联网时可查看最新内容。下载后打开安装包，按系统提示安装。支持 Android 7.0 及以上，更新应用需下载新版安装包。' : '安装包准备完成后会在这里提供版本、文件大小与校验值。目前可先使用上方网页应用。'}</p>${androidUrl ? `<a class="button" href="${esc(androidUrl)}" download data-download="android-app">下载 Android 安装包 <span aria-hidden="true">↓</span></a>${checksum}` : '<span class="edition-unavailable">准备中</span>'}${changesHtml(android)}<p class="edition-footnote">应用版与网页使用同一份公开指南，原帖链接需要联网打开。</p></article>`;
     renderState();
   }
 
   window.addEventListener('beforeinstallprompt', event => {
     event.preventDefault();
+    if (bundledEdition) return;
     pendingPrompt = event;
     actionMessage = '';
     renderState();
@@ -99,7 +125,7 @@
   if (standalone.addEventListener) standalone.addEventListener('change', displayChanged);
   else if (standalone.addListener) standalone.addListener(displayChanged);
   document.addEventListener('click', async event => {
-    if (!event.target.closest('#install-app') || prompting || installed) return;
+    if (bundledEdition || !event.target.closest('#install-app') || prompting || installed) return;
     if (!pendingPrompt) {
       const steps = $('#install-steps');
       if (steps) { steps.open = true; steps.querySelector('summary')?.focus(); }

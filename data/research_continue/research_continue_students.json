@@ -1,0 +1,389 @@
+{
+  "baseline": {
+    "socialPosts": 113,
+    "officialEvidence": 106,
+    "uniqueXhsIds": 125,
+    "recursiveUrls": 467
+  },
+  "queries": [
+    {
+      "channel": "web-system2",
+      "q": "南京审计大学 MPAcc 研究生 导师 经验 实习 论文"
+    },
+    {
+      "channel": "web-system2",
+      "q": "南京审计大学 mpacc 研究生 选课 研一 课程 经验 小红书"
+    },
+    {
+      "channel": "web-system2",
+      "q": "南京审计大学 会计专硕 导师 学生 经验 知乎"
+    },
+    {
+      "channel": "web-system1",
+      "q": "\"南审\" \"MPAcc\" \"导师\" \"小红书\""
+    },
+    {
+      "channel": "web-system1",
+      "q": "\"南审\" \"mpacc\" \"实习\" \"研一\""
+    },
+    {
+      "channel": "web-system1",
+      "q": "\"南京审计大学\" \"会计专硕\" \"读研\" 经验"
+    },
+    {
+      "channel": "web-system2",
+      "q": "site:xiaohongshu.com \"南审\" \"mpacc\" \"研一\""
+    },
+    {
+      "channel": "web-system2",
+      "q": "site:zhihu.com \"南京审计\" \"研究生\" \"导师\""
+    },
+    {
+      "channel": "web-system2",
+      "q": "site:bilibili.com \"南审\" \"MPAcc\" \"研究生生活\""
+    },
+    {
+      "channel": "web-system2",
+      "q": "\"南审\" \"mpacc\" \"实习\" \"小红书\""
+    },
+    {
+      "channel": "xiaohongshu-site",
+      "q": "南审 mpacc 实习",
+      "readingScope": "首批约20个可见检索卡；部分打开帖后列表继续懒加载，未声称全站或完整翻页检索"
+    },
+    {
+      "channel": "xiaohongshu-site",
+      "q": "南审 mpacc 导师",
+      "readingScope": "首批约20个可见检索卡；部分打开帖后列表继续懒加载，未声称全站或完整翻页检索"
+    },
+    {
+      "channel": "xiaohongshu-site",
+      "q": "南审 MPAcc 研一",
+      "readingScope": "首批约20个可见检索卡；部分打开帖后列表继续懒加载，未声称全站或完整翻页检索"
+    },
+    {
+      "channel": "xiaohongshu-site",
+      "q": "南审 mpacc 论文",
+      "readingScope": "首批约20个可见检索卡；部分打开帖后列表继续懒加载，未声称全站或完整翻页检索"
+    },
+    {
+      "channel": "web-system2",
+      "q": "\"李潇琦\" \"卞子咏\" \"会人会语\""
+    },
+    {
+      "channel": "web-system2",
+      "q": "\"南京审计大学\" \"李潇琦\" 科研"
+    }
+  ],
+  "accepted": [],
+  "updates": [],
+  "officialSupplement": [
+    {
+      "title": "MPAcc会人会语（第一期）：学术科研经验分享",
+      "url": "https://mpacc.nau.edu.cn/2024/0423/c11508a150629/page.htm",
+      "canonicalUrl": "https://mpacc.nau.edu.cn/2024/0423/c11508a150629/page.htm",
+      "platform": "南京审计大学MPAcc教育中心官网",
+      "date": "2024-04-23",
+      "eventDate": "2024-04-17",
+      "author": "会计学院",
+      "population": "MPAcc会人会语活动的院内科研经验分享；李潇琦经官方公示确认为2021级会计学硕，卞子咏学位类别本文未明确。",
+      "summary": "可用于入学科研适应的院内交流实例：把目标拆成阶段任务，整理文献与写作逻辑，主动与导师同门交流，并安排运动调节压力。",
+      "points": [
+        "活动中的李潇琦分享目标规划、文献整理与写作逻辑、和导师同门交流及运动调压。可据此整理入学后的学习与沟通清单。",
+        "卞子咏分享知识和能力准备、按目标院校特点准备博士申请及研究设计；仅面向有继续深造意向者作历史经验参考。"
+      ],
+      "limits": "这是2024年活动的官方转述，不是新的社交学生访谈；李潇琦为会计学硕，三年规划不能移植为MPAcc学制或必修安排。黄中生仅在本次致辞，不据此判定个人日常指导风格。无本级选导时间或导师名额信息。",
+      "readingScope": "官方报道可见全文L48–63已读；配图未逐张审读。身份辅证官方公示正文已读，只用于确认会计学硕类别。",
+      "category": "院内科研适应交流（混合学位背景）",
+      "topic": "科研与学位论文",
+      "kind": "official_student_learning_exchange",
+      "advisorNames": [],
+      "read": true,
+      "promotionStatus": "none_observed",
+      "webRefs": [
+        "turn98view0",
+        "turn99view0"
+      ],
+      "independentSourceIncrement": 1,
+      "supportingSources": [
+        {
+          "title": "会计学院2024届研究生优秀毕业生拟推荐名单公示",
+          "url": "https://account.nau.edu.cn/2024/0527/c8918a130712/page.htm",
+          "date": "2024-05-27",
+          "use": "仅确认李潇琦为2021级会计学硕；不复制学号或联系方式",
+          "read": true,
+          "readingScope": "公示正文身份行已读",
+          "independentSourceIncrement": 0,
+          "webRefs": [
+            "turn99view0"
+          ]
+        }
+      ]
+    }
+  ],
+  "duplicates": [
+    {
+      "note_id": "6ac73fe600000000180063c9",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "6826b072000000002301cd81",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "67ecb72b000000001e0042af",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "67d6ec7c000000001e009e13",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "6719d7da00000000210007e5",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "69cba3e80000000028008246",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "69e610c20000000023023ac8",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "67efc4a9000000001202f70c",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "69d4c3b2000000001a0213ae",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "690c5ab40000000005032c8f",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "6a54f2d800000000080022ee",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "662e2606000000000100765a",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "67ecf7eb000000001202caae",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "64366709000000001300f56c",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "689161730000000023039374",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "6966299f000000001a028c53",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "6706bbc7000000002c02fb54",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "69317020000000001e025f54",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "69aec1a7000000001a02c06e",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "64e1bfff000000000c034a90",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "690b43480000000004022f3e",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "note_id": "6ac857e8000000001303c954",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    }
+  ],
+  "screened": [
+    {
+      "note_id": "6aaf8212000000000b000e5d",
+      "title": "研一有课怎么实习啊",
+      "author": "Zzz",
+      "date": null,
+      "url": "https://www.xiaohongshu.com/explore/6aaf8212000000000b000e5d",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6aaf8212000000000b000e5d",
+      "platform": "小红书",
+      "population": "中国海洋大学海南专项会计专硕求助者",
+      "summary": "求助课程与半年实习安排。",
+      "points": [],
+      "limits": "正文明确OUC海南专项，不是南京审计大学；不移植其实习要求到南审。",
+      "readingScope": "正文及全部可见标签已读；评论未作证据。",
+      "category": "不纳入新增依据",
+      "topic": "研究生学习与实践",
+      "read": true,
+      "promotionStatus": "not_applicable_screened",
+      "webRefs": [],
+      "date_display": "09-20"
+    },
+    {
+      "note_id": "6a583c76000000001303cbe9",
+      "title": "问答贴",
+      "author": "CC学姐（南审版）",
+      "date": null,
+      "url": "https://www.xiaohongshu.com/explore/6a583c76000000001303cbe9",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6a583c76000000001303cbe9",
+      "platform": "小红书",
+      "population": "南审大学生，学位阶段未核实",
+      "summary": "作者询问寒假投事务所还是公关运营岗位。",
+      "points": [],
+      "limits": "仅有南审与大学生标签，未说明研究生/MPAcc身份；问题本身也不提供已发生的实习安排。",
+      "readingScope": "正文及全部可见标签已读；未展开评论。",
+      "category": "不纳入新增依据",
+      "topic": "研究生学习与实践",
+      "read": true,
+      "promotionStatus": "not_applicable_screened",
+      "webRefs": [],
+      "date_display": "07-16"
+    },
+    {
+      "note_id": "6ac77f5e000000001400349f",
+      "title": "mpacc寒假实习求建议",
+      "author": "werwer.略略",
+      "date": null,
+      "url": "https://www.xiaohongshu.com/explore/6ac77f5e000000001400349f",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6ac77f5e000000001400349f",
+      "platform": "小红书",
+      "population": "MPAcc标签求职者，学校与届别未知",
+      "summary": "作者不愿再做事务所审计并关注到岗月份、异地住宿；置顶称已找到实习。",
+      "points": [],
+      "limits": "学校未公开，前批评论多为蹲帖或群聊导流；无可用于南审实习制度或导师安排的具体证据。",
+      "readingScope": "文字正文及88评论中的首批顶层/已显示首回复已读，其他回复未展开；不声称全88条已读。",
+      "category": "不纳入新增依据",
+      "topic": "研究生学习与实践",
+      "read": true,
+      "promotionStatus": "not_applicable_screened",
+      "webRefs": [],
+      "date_display": "10-08"
+    },
+    {
+      "note_id": "6ae095ce000000003402a399",
+      "title": "南审会计专硕导师求推荐（封面文字）",
+      "author": "糯米团子",
+      "date": null,
+      "url": "https://www.xiaohongshu.com/explore/6ae095ce000000003402a399",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6ae095ce000000003402a399",
+      "platform": "小红书",
+      "population": "拟了解南审会计专硕导师者，在读身份未确认",
+      "summary": "图片为导师求推荐，正文仅会计专硕标签。",
+      "points": [],
+      "limits": "当前无评论，没有可采纳的导师接触或指导经历；不以新ID增加证据数量。",
+      "readingScope": "单张封面、文字正文与无评论状态均已读。",
+      "category": "不纳入新增依据",
+      "topic": "研究生学习与实践",
+      "read": true,
+      "promotionStatus": "not_applicable_screened",
+      "webRefs": [],
+      "date_display": "10-27"
+    },
+    {
+      "note_id": "688ed65b000000002502b268",
+      "title": "有没有人告诉我南审考研是不是歧视民办本科",
+      "author": "骤雨落_",
+      "date": "2025-08-03",
+      "url": "https://www.xiaohongshu.com/explore/688ed65b000000002502b268",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/688ed65b000000002502b268",
+      "platform": "小红书",
+      "population": "考研求助者及混合专业评论者",
+      "summary": "讨论南审考研复试背景与上岸难度，评论含不同说法。",
+      "points": [],
+      "limits": "审计学/学硕专硕混合提问，非MPAcc具体在读或导师经历；评论身份未认证，争议不形成歧视结论。",
+      "readingScope": "文字正文、27评论中可见顶层至THE END及首回复已读；12/3/1条展开分支未读。",
+      "category": "不纳入新增依据",
+      "topic": "研究生学习与实践",
+      "read": true,
+      "promotionStatus": "not_applicable_screened",
+      "webRefs": [],
+      "date_display": "2025-08-03"
+    }
+  ],
+  "unread": [
+    {
+      "note_id": "6a1e7f920000000021019bd1",
+      "title": "八大审计实习碎碎念|经管生友好版",
+      "url": "https://www.xiaohongshu.com/explore/6a1e7f920000000021019bd1",
+      "read": false,
+      "readingScope": "仅站内检索卡，不用于攻略结论",
+      "reason": "学校与学位身份未核实；未打开正文"
+    },
+    {
+      "note_id": "6995b8d5000000000e00e012",
+      "title": "有偿求学长学姐推荐导师",
+      "url": "https://www.xiaohongshu.com/explore/6995b8d5000000000e00e012",
+      "read": false,
+      "readingScope": "仅站内检索卡，不用于攻略结论",
+      "reason": "有偿求助标题，未打开正文，不作导师材料"
+    },
+    {
+      "note_id": "66d52bd6000000001d039073",
+      "title": "选导师攻略｜ 南京审计大学会计学院名单",
+      "url": "https://www.xiaohongshu.com/explore/66d52bd6000000001d039073",
+      "read": false,
+      "readingScope": "仅站内检索卡，不用于攻略结论",
+      "reason": "2024年历史第三方名单，未读图片，不能当本级名额"
+    },
+    {
+      "note_id": "68764aa30000000010012363",
+      "title": "南审导师情况更新表（截至25.7.15）",
+      "url": "https://www.xiaohongshu.com/explore/68764aa30000000010012363",
+      "read": false,
+      "readingScope": "仅站内检索卡，不用于攻略结论",
+      "reason": "2025历史第三方情况表，未读图片，不能当2027名额"
+    },
+    {
+      "note_id": "6aa8b54500000000260161ec",
+      "title": "会计专硕",
+      "url": "https://www.xiaohongshu.com/explore/6aa8b54500000000260161ec",
+      "read": false,
+      "readingScope": "仅站内检索卡，不用于攻略结论",
+      "reason": "仅泛标题，未读取身份"
+    },
+    {
+      "note_id": "69ff21bc00000000200395dd",
+      "title": "MPAcc学位论文选题",
+      "url": "https://www.xiaohongshu.com/explore/69ff21bc00000000200395dd",
+      "read": false,
+      "readingScope": "仅站内检索卡，不用于攻略结论",
+      "reason": "学校未确认，未读正文，未作选题建议"
+    },
+    {
+      "note_id": "69dc5f4b000000001b0237ba",
+      "title": "毕业论文",
+      "url": "https://www.xiaohongshu.com/explore/69dc5f4b000000001b0237ba",
+      "read": false,
+      "readingScope": "仅站内检索卡，不用于攻略结论",
+      "reason": "仅泛标题，学位阶段未核实"
+    }
+  ],
+  "summary": {
+    "newSocialPosts": 0,
+    "updatedSocialPosts": 0,
+    "officialIndependentEvents": 1,
+    "officialIdentitySupportOnly": 1,
+    "actuallyReadNewSocialPosts": 5,
+    "siteQueries": 4,
+    "webQueries": 12,
+    "credibleNewMpaccDailyMentoringAccounts": 0
+  },
+  "notes": [
+    "本站检索卡不是已读正文；不同学校、未知阶段及纯求助帖不纳入新增社交依据。",
+    "官网页面中的MPAcc活动名称不能代替分享者本人学位类别验证。",
+    "保持基线数据不变，本文件仅供root/merge审查。"
+  ]
+}

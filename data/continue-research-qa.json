@@ -1,0 +1,460 @@
+{
+  "before": {
+    "socialPosts": 113,
+    "officialEvidence": 106
+  },
+  "newOfficialSources": 6,
+  "newSocialPosts": 0,
+  "updatedSocialPosts": 0,
+  "updatedOfficialSources": 0,
+  "mentorEvidenceAdded": 3,
+  "supplements": [],
+  "duplicates": [
+    {
+      "input": "official",
+      "title": "2026师生见面会",
+      "url": "https://mpacc.nau.edu.cn/2026/0917/c11506a161857/page.htm",
+      "reason": "递归基线已有文章ID161857。"
+    },
+    {
+      "input": "official",
+      "title": "2023全国MPAcc优硕华雨倩",
+      "url": "https://account.nau.edu.cn/2024/0509/c9005a129421/page.htm",
+      "reason": "A403已有。"
+    },
+    {
+      "input": "official",
+      "title": "2023省优硕董必荣/高凤莲个案",
+      "url": "https://account.nau.edu.cn/2024/0118/c8917a124812/page.htm",
+      "reason": "基线已有文章ID124812。"
+    },
+    {
+      "input": "official",
+      "title": "2024两篇MPAcc教学案例",
+      "url": "https://account.nau.edu.cn/2025/1118/c9533a150972/page.htm",
+      "reason": "与已有来源10（mpacc/2025/1121/...151137）同两篇案例同一年度入库事件，不因镜像文章ID不同增加来源数。",
+      "existingCode": "10"
+    },
+    {
+      "input": "official",
+      "title": "2024第21届长三角MPAcc论坛",
+      "url": "https://account.nau.edu.cn/2024/0603/c8917a131562/page.htm",
+      "reason": "已有来源11，虽未收录每个学生姓名，但不是新事件。",
+      "existingCode": "11"
+    },
+    {
+      "input": "official",
+      "title": "2026研究生国家奖学金推荐",
+      "url": "https://account.nau.edu.cn/2026/1008/c8918a162370/page.htm",
+      "reason": "递归基线已有文章ID162370，不重复收录。"
+    },
+    {
+      "input": "official",
+      "title": "2023暑期培养指南",
+      "url": "https://account.nau.edu.cn/2023/0628/c8943a116446/page.htm",
+      "reason": "已有文章ID116446。"
+    },
+    {
+      "input": "official",
+      "title": "MPAcc培养方案",
+      "url": "https://mpacc.nau.edu.cn/11517/list.htm",
+      "reason": "已有，account镜像也不增加来源数。"
+    },
+    {
+      "input": "official",
+      "title": "于昊平优秀论文及奖学金",
+      "url": "https://account.nau.edu.cn/xyxw/list1.htm",
+      "reason": "基线已有该具名论文实例，不以新栏目摘要再算。"
+    },
+    {
+      "input": "students",
+      "note_id": "6ac73fe600000000180063c9",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "6826b072000000002301cd81",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "67ecb72b000000001e0042af",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "67d6ec7c000000001e009e13",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "6719d7da00000000210007e5",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "69cba3e80000000028008246",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "69e610c20000000023023ac8",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "67efc4a9000000001202f70c",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "69d4c3b2000000001a0213ae",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "690c5ab40000000005032c8f",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "6a54f2d800000000080022ee",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "662e2606000000000100765a",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "67ecf7eb000000001202caae",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "64366709000000001300f56c",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "689161730000000023039374",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "6966299f000000001a028c53",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "6706bbc7000000002c02fb54",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "69317020000000001e025f54",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "69aec1a7000000001a02c06e",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "64e1bfff000000000c034a90",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "690b43480000000004022f3e",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    },
+    {
+      "input": "students",
+      "note_id": "6ac857e8000000001303c954",
+      "reason": "站内可见检索卡命中递归基线ID；本轮不重新计为已读新增。"
+    }
+  ],
+  "skipped": [
+    {
+      "input": "official",
+      "title": "立德树人，数智赋能，产教融合，协同育人",
+      "url": "https://account.nau.edu.cn/2025/1021/c9539a148688/page.htm",
+      "read": true,
+      "reason": "已全文阅读，但大部分内容为项目概况及基线已覆盖的课程/产教融合；不为数量重复加入。培养方向只可按2025项目宣传语境理解，8基地名称在图片未OCR，未据其扩写具体单位。",
+      "webRefs": [
+        "turn95view0"
+      ]
+    },
+    {
+      "input": "official",
+      "title": "2026本科生国家奖学金",
+      "url": "https://account.nau.edu.cn/2026/1014/c8918a162580/page.htm",
+      "reason": "本科生对象，不混入MPAcc。"
+    },
+    {
+      "input": "official",
+      "title": "首届博士生集中会议",
+      "url": "https://account.nau.edu.cn/2025/0912/c8917a147534/page.htm",
+      "reason": "博士生对象，不用来说明MPAcc双选或培养。"
+    },
+    {
+      "input": "official",
+      "title": "会计学院培养成果栏目",
+      "url": "https://account.nau.edu.cn/rcpy/list.htm",
+      "reason": "检索摘要主要2018—2021历史成果，导师部分不在当前34名录；未为增量数量继续采旧获奖清单。"
+    },
+    {
+      "input": "official",
+      "title": "2026届优秀毕业生拟推荐名单",
+      "url": "https://account.nau.edu.cn/2026/0529/c8943a158001/page.htm",
+      "reason": "主要名单，缺具体训练过程；未继续获取名单作推荐依据。"
+    },
+    {
+      "input": "students",
+      "note_id": "6aaf8212000000000b000e5d",
+      "title": "研一有课怎么实习啊",
+      "author": "Zzz",
+      "date": null,
+      "url": "https://www.xiaohongshu.com/explore/6aaf8212000000000b000e5d",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6aaf8212000000000b000e5d",
+      "platform": "小红书",
+      "population": "中国海洋大学海南专项会计专硕求助者",
+      "summary": "求助课程与半年实习安排。",
+      "points": [],
+      "limits": "正文明确OUC海南专项，不是南京审计大学；不移植其实习要求到南审。",
+      "readingScope": "正文及全部可见标签已读；评论未作证据。",
+      "category": "不纳入新增依据",
+      "topic": "研究生学习与实践",
+      "read": true,
+      "promotionStatus": "not_applicable_screened",
+      "webRefs": [],
+      "date_display": "09-20"
+    },
+    {
+      "input": "students",
+      "note_id": "6a583c76000000001303cbe9",
+      "title": "问答贴",
+      "author": "CC学姐（南审版）",
+      "date": null,
+      "url": "https://www.xiaohongshu.com/explore/6a583c76000000001303cbe9",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6a583c76000000001303cbe9",
+      "platform": "小红书",
+      "population": "南审大学生，学位阶段未核实",
+      "summary": "作者询问寒假投事务所还是公关运营岗位。",
+      "points": [],
+      "limits": "仅有南审与大学生标签，未说明研究生/MPAcc身份；问题本身也不提供已发生的实习安排。",
+      "readingScope": "正文及全部可见标签已读；未展开评论。",
+      "category": "不纳入新增依据",
+      "topic": "研究生学习与实践",
+      "read": true,
+      "promotionStatus": "not_applicable_screened",
+      "webRefs": [],
+      "date_display": "07-16"
+    },
+    {
+      "input": "students",
+      "note_id": "6ac77f5e000000001400349f",
+      "title": "mpacc寒假实习求建议",
+      "author": "werwer.略略",
+      "date": null,
+      "url": "https://www.xiaohongshu.com/explore/6ac77f5e000000001400349f",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6ac77f5e000000001400349f",
+      "platform": "小红书",
+      "population": "MPAcc标签求职者，学校与届别未知",
+      "summary": "作者不愿再做事务所审计并关注到岗月份、异地住宿；置顶称已找到实习。",
+      "points": [],
+      "limits": "学校未公开，前批评论多为蹲帖或群聊导流；无可用于南审实习制度或导师安排的具体证据。",
+      "readingScope": "文字正文及88评论中的首批顶层/已显示首回复已读，其他回复未展开；不声称全88条已读。",
+      "category": "不纳入新增依据",
+      "topic": "研究生学习与实践",
+      "read": true,
+      "promotionStatus": "not_applicable_screened",
+      "webRefs": [],
+      "date_display": "10-08"
+    },
+    {
+      "input": "students",
+      "note_id": "6ae095ce000000003402a399",
+      "title": "南审会计专硕导师求推荐（封面文字）",
+      "author": "糯米团子",
+      "date": null,
+      "url": "https://www.xiaohongshu.com/explore/6ae095ce000000003402a399",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6ae095ce000000003402a399",
+      "platform": "小红书",
+      "population": "拟了解南审会计专硕导师者，在读身份未确认",
+      "summary": "图片为导师求推荐，正文仅会计专硕标签。",
+      "points": [],
+      "limits": "当前无评论，没有可采纳的导师接触或指导经历；不以新ID增加证据数量。",
+      "readingScope": "单张封面、文字正文与无评论状态均已读。",
+      "category": "不纳入新增依据",
+      "topic": "研究生学习与实践",
+      "read": true,
+      "promotionStatus": "not_applicable_screened",
+      "webRefs": [],
+      "date_display": "10-27"
+    },
+    {
+      "input": "students",
+      "note_id": "688ed65b000000002502b268",
+      "title": "有没有人告诉我南审考研是不是歧视民办本科",
+      "author": "骤雨落_",
+      "date": "2025-08-03",
+      "url": "https://www.xiaohongshu.com/explore/688ed65b000000002502b268",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/688ed65b000000002502b268",
+      "platform": "小红书",
+      "population": "考研求助者及混合专业评论者",
+      "summary": "讨论南审考研复试背景与上岸难度，评论含不同说法。",
+      "points": [],
+      "limits": "审计学/学硕专硕混合提问，非MPAcc具体在读或导师经历；评论身份未认证，争议不形成歧视结论。",
+      "readingScope": "文字正文、27评论中可见顶层至THE END及首回复已读；12/3/1条展开分支未读。",
+      "category": "不纳入新增依据",
+      "topic": "研究生学习与实践",
+      "read": true,
+      "promotionStatus": "not_applicable_screened",
+      "webRefs": [],
+      "date_display": "2025-08-03"
+    }
+  ],
+  "unread": [
+    {
+      "input": "students",
+      "note_id": "6a1e7f920000000021019bd1",
+      "title": "八大审计实习碎碎念|经管生友好版",
+      "url": "https://www.xiaohongshu.com/explore/6a1e7f920000000021019bd1",
+      "read": false,
+      "readingScope": "仅站内检索卡，不用于攻略结论",
+      "reason": "学校与学位身份未核实；未打开正文"
+    },
+    {
+      "input": "students",
+      "note_id": "6995b8d5000000000e00e012",
+      "title": "有偿求学长学姐推荐导师",
+      "url": "https://www.xiaohongshu.com/explore/6995b8d5000000000e00e012",
+      "read": false,
+      "readingScope": "仅站内检索卡，不用于攻略结论",
+      "reason": "有偿求助标题，未打开正文，不作导师材料"
+    },
+    {
+      "input": "students",
+      "note_id": "66d52bd6000000001d039073",
+      "title": "选导师攻略｜ 南京审计大学会计学院名单",
+      "url": "https://www.xiaohongshu.com/explore/66d52bd6000000001d039073",
+      "read": false,
+      "readingScope": "仅站内检索卡，不用于攻略结论",
+      "reason": "2024年历史第三方名单，未读图片，不能当本级名额"
+    },
+    {
+      "input": "students",
+      "note_id": "68764aa30000000010012363",
+      "title": "南审导师情况更新表（截至25.7.15）",
+      "url": "https://www.xiaohongshu.com/explore/68764aa30000000010012363",
+      "read": false,
+      "readingScope": "仅站内检索卡，不用于攻略结论",
+      "reason": "2025历史第三方情况表，未读图片，不能当2027名额"
+    },
+    {
+      "input": "students",
+      "note_id": "6aa8b54500000000260161ec",
+      "title": "会计专硕",
+      "url": "https://www.xiaohongshu.com/explore/6aa8b54500000000260161ec",
+      "read": false,
+      "readingScope": "仅站内检索卡，不用于攻略结论",
+      "reason": "仅泛标题，未读取身份"
+    },
+    {
+      "input": "students",
+      "note_id": "69ff21bc00000000200395dd",
+      "title": "MPAcc学位论文选题",
+      "url": "https://www.xiaohongshu.com/explore/69ff21bc00000000200395dd",
+      "read": false,
+      "readingScope": "仅站内检索卡，不用于攻略结论",
+      "reason": "学校未确认，未读正文，未作选题建议"
+    },
+    {
+      "input": "students",
+      "note_id": "69dc5f4b000000001b0237ba",
+      "title": "毕业论文",
+      "url": "https://www.xiaohongshu.com/explore/69dc5f4b000000001b0237ba",
+      "read": false,
+      "readingScope": "仅站内检索卡，不用于攻略结论",
+      "reason": "仅泛标题，学位阶段未核实"
+    }
+  ],
+  "decisions": [
+    {
+      "code": "C501",
+      "url": "https://account.nau.edu.cn/2026/0615/c8917a158917/page.htm",
+      "changeType": "new",
+      "kind": "official"
+    },
+    {
+      "code": "C502",
+      "url": "https://account.nau.edu.cn/2026/0529/c8919a157950/page.htm",
+      "changeType": "new",
+      "kind": "official"
+    },
+    {
+      "code": "C503",
+      "url": "https://account.nau.edu.cn/2026/0617/c9534a159213/page.htm",
+      "changeType": "new",
+      "kind": "official"
+    },
+    {
+      "code": "C504",
+      "url": "https://account.nau.edu.cn/2024/0811/c9534a134393/page.htm",
+      "changeType": "new",
+      "kind": "official"
+    },
+    {
+      "code": "C505",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/23094817-5c38-43a7-a04d-188b86fa560e.docx",
+      "changeType": "new",
+      "kind": "official"
+    },
+    {
+      "code": "C506",
+      "url": "https://mpacc.nau.edu.cn/2024/0423/c11508a150629/page.htm",
+      "changeType": "new",
+      "kind": "official"
+    }
+  ],
+  "after": {
+    "socialPosts": 113,
+    "officialEvidence": 112
+  },
+  "checks": {
+    "rosterAndCoreCardsUnchanged": true,
+    "installerMetadataUnchanged": true,
+    "sameEventAndPostUpdatesNotCountedAsNew": true,
+    "unknownSourceFieldsNotInferred": true,
+    "publicNoticeAndAttachmentCountedOnce": true,
+    "studentInformationColumnsNotRepublished": true,
+    "twentyOneTopicsAnonymizedAndFolded": true,
+    "degreeBoundaryPreservedForC504AndC506": true,
+    "repeatMergeIsIdempotent": true
+  },
+  "queryCounts": {
+    "official": 14,
+    "students": 16
+  },
+  "sourceBoundaryNotes": {
+    "C503": "21项1253会计拟推荐主题，未直接搬录申请人信息，不认定最终立项或完成",
+    "C504": "原附件仅备注专硕，没有1253/MPAcc，不升级专业身份",
+    "C505": "日期与当前执行状态未知",
+    "C506": "李潇琦为学硕，卞子咏类别未明，仅院内科研适应背景"
+  },
+  "workbook": {
+    "bytes": 295482,
+    "sha256": "774c2d4e144c87736b3321f011ff2489c9042fedc0934a76ab91d72e8ee20bb3",
+    "sheets": 10,
+    "newSourceRows": 6,
+    "originalSheetsBytePreserved": 9,
+    "originalTablesBytePreserved": 7,
+    "originalHyperlinkFormulasBytePreserved": 377,
+    "newClickableHyperlinks": 6,
+    "errorCells": 0
+  }
+}

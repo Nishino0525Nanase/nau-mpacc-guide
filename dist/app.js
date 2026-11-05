@@ -55,6 +55,7 @@
       const tag = block.level >= 3 ? 'h4' : 'h3';
       return `<${tag}>${inline(block.text)}</${tag}>`;
     }
+    if (block.type === 'details') return `<details class="source-disclosure"><summary>${inline(block.text || '展开查看')}</summary><div>${array(block.blocks).map(blockHtml).join('')}</div></details>`;
     if (block.type === 'table') return `<div class="table-scroll" role="region" aria-label="${esc(array(block.headers).map(textOf).join('、'))}" tabindex="0"><table class="content-table"><thead><tr>${array(block.headers).map(h => `<th scope="col">${inline(h)}</th>`).join('')}</tr></thead><tbody>${array(block.rows).map(row => `<tr>${array(row).map(cell => `<td>${inline(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
     if (block.type === 'source') return `<div class="source-link-block">${external(block.url, esc(block.text || block.title || '查看来源'))} <span aria-hidden="true">↗</span></div>`;
     if (block.type === 'list') return `<ul class="tip-list">${array(block.items).map(item => `<li>${inline(item)}</li>`).join('')}</ul>`;
@@ -102,7 +103,7 @@
   }
 
   function researchHighlightsHtml() {
-    const highlights = array((state.data.meta.appResearch || state.data.meta.round3Research)?.highlights).filter(item => item?.title && item?.text).slice(0, 4);
+    const highlights = array((state.data.meta.continueResearch || state.data.meta.appResearch || state.data.meta.round3Research)?.highlights).filter(item => item?.title && item?.text).slice(0, 4);
     if (!highlights.length) return '';
     return `<details class="research-updates" open><summary>新增核验：具体训练与学习安排</summary><div class="research-updates-grid">${highlights.map(item => {
       const text = textOf(item.text);
@@ -169,6 +170,14 @@
   }
 
   function coverageHtml() {
+    const continued = state.data.meta.continueResearch;
+    if (continued) {
+      const additions = [];
+      if (continued.newOfficialSources) additions.push(`<strong>${esc(continued.newOfficialSources)}</strong> 条官方来源`);
+      if (continued.newSocialPosts) additions.push(`<strong>${esc(continued.newSocialPosts)}</strong> 篇社交原帖`);
+      const update = continued.updatedSocialPosts ? `，并补读更新 <strong>${esc(continued.updatedSocialPosts)}</strong> 篇旧帖` : '';
+      return `<section class="research-coverage reading-notes" aria-label="新增资料与采用口径"><h3>这轮补进了什么</h3><p>${additions.length ? `新增 ${additions.join('、')}${update}。` : continued.updatedSocialPosts ? `补读更新 <strong>${esc(continued.updatedSocialPosts)}</strong> 篇旧帖。` : '本轮继续核对来源，没有把重复材料计成新增。'}新增内容已归入对应的导师资料与学习生活章节，原始出处和实际阅读范围一并保留。</p><p>论文推荐、科研项目公示和教学案例分别标注；往届材料保留年份，不能直接推断当年名额或本级执行安排。社交材料只采用可核对的正文或回复，不把混合专业课程印象改写成导师日常指导结论。</p></section>`;
+    }
     const latest = state.data.meta.appResearch;
     if (latest) return `<section class="research-coverage reading-notes" aria-label="新增资料与采用口径"><h3>这轮补进了什么</h3><p>新增 <strong>${esc(latest.newOfficialSources)}</strong> 条官方来源、<strong>${esc(latest.newSocialPosts)}</strong> 篇小红书原帖，并补读更新 <strong>${esc(latest.updatedSocialPosts)}</strong> 篇旧帖的回复。课程现场教学、论文个案与课程考核经验已写入对应章节，旧帖更新单列，不重复增加篇数。</p><p>历史制度只作延伸阅读；混合专业的选课评论保留身份限制。个人日常指导的新评价仍有限，课程体验不能直接当作导师相处评价。</p></section>`;
     const current = state.data.meta.round3Research;

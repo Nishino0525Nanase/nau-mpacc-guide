@@ -122,7 +122,7 @@ function installer({standalone=false,ios=false,href=base+'#downloads',storageFai
   const doc={querySelector:selector=>ids.get(selector),addEventListener:(name,fn)=>docEvents.set(name,fn),currentScript:{src:base+'install.js?v=edition1'}};
   const serviceWorker={addEventListener(){},ready:Promise.resolve(),register:(url,options)=>{registered.push([String(url),options]);return Promise.resolve({active:{postMessage(){}}});}};
   const localStorage={setItem:(key,value)=>{if(storageFails)throw new Error('storage unavailable');storage.set(key,value);},getItem:key=>storage.get(key),removeItem:key=>storage.delete(key)};
-  const location={href};
+  const location=new URL(href);
   vm.runInNewContext(readFileSync(new URL('install.js',root),'utf8'), {window:win,document:doc,navigator:{standalone:ios,onLine:true,serviceWorker},location,localStorage,URL,console});
   return {win,ids,storage,registered,events,location,
     mount(meta) {win.NAUEdition.mount(meta);},
@@ -182,4 +182,60 @@ test('owner exclusion works with analytics unavailable and preserves the paramet
   const failed=installer({href,storageFails:true});
   assert.match(failed.ids.get('#toast').textContent,/未能保存/);
   assert.equal(failed.location.href,href);
+});
+
+
+test('bundled Android edition shows its current version without a second installation prompt', async () => {
+  const env=installer({href:'https://appassets.androidplatform.net/guide/index.html'});
+  env.mount({android:{available:false,version:'1.0.1',changes:['返回键先关闭资料弹窗']}});
+  let html=env.ids.get('#app-edition-cards').innerHTML;
+  assert.match(html,/正在使用 Android 版/);
+  assert.match(html,/版本 1\.0\.1/);
+  assert.match(html,/Word \/ Excel/);
+  assert.match(html,/返回键先关闭资料弹窗/);
+  assert.doesNotMatch(html,/准备中|暂未提供下载|网页应用|id="install-app"|id="install-steps"|data-download="android-app"/);
+  assert.match(env.ids.get('#edition-connection').textContent,/内置资料/);
+  assert.equal(env.ids.get('#install-app').hidden,true);
+  assert.equal(env.registered.length,0,'native assets do not attempt a browser service worker');
+  let prompted=0;
+  env.event('beforeinstallprompt',{preventDefault(){},async prompt(){prompted++;},userChoice:Promise.resolve({outcome:'accepted'})});
+  await env.click();
+  assert.equal(prompted,0);
+  env.mount({android:{available:true,url:'./downloads/app.apk',version:'1.0.1'}});
+  html=env.ids.get('#app-edition-cards').innerHTML;
+  assert.doesNotMatch(html,/data-download="android-app"/,'an installed native reader does not offer to install itself');
+});
+
+test('release changes are optional, limited to text, and escaped beside a verified download', () => {
+  const env=installer();
+  env.mount({android:{available:true,url:'./downloads/app.apk',version:'1.0.1',label:'旧按钮名',changes:['返回 <资料> 后继续阅读',null,{html:'<script>bad()</script>'},'']}});
+  const html=env.ids.get('#app-edition-cards').innerHTML;
+  assert.match(html,/下载 Android 安装包/);
+  assert.match(html,/返回 &lt;资料&gt; 后继续阅读/);
+  assert.doesNotMatch(html,/<script>|\[object Object\]|旧按钮名/);
+  assert.match(html,/data-download="android-app"/);
+  env.mount({android:{available:false,changes:'不是清单'}});
+  assert.doesNotMatch(env.ids.get('#app-edition-cards').innerHTML,/edition-changes/);
+});
+
+
+test('only a native asset URL can supply the running package version, with safe fallback', () => {
+  const native=installer({href:'https://appassets.androidplatform.net/guide/index.html?app_version=1.0.1'});
+  native.mount({android:{version:'1.0.0'}});
+  assert.match(native.ids.get('#app-edition-cards').innerHTML,/版本 1\.0\.1/);
+  assert.doesNotMatch(native.ids.get('#app-edition-cards').innerHTML,/版本 1\.0\.0/);
+  for (const invalid of ['1.0','01.0.1','1.0.1<script>','https://example.com/1.0.1']) {
+    const env=installer({href:'https://appassets.androidplatform.net/guide/index.html?app_version='+encodeURIComponent(invalid)});
+    env.mount({android:{version:'1.0.0'},web:{version:'0.9.0'}});
+    assert.match(env.ids.get('#app-edition-cards').innerHTML,/版本 1\.0\.0/);
+    assert.doesNotMatch(env.ids.get('#app-edition-cards').innerHTML,/<script>/);
+  }
+  const nativeFallback=installer({href:'https://appassets.androidplatform.net/guide/index.html?app_version=invalid'});
+  nativeFallback.mount({web:{version:'1.0.1'}});
+  assert.match(nativeFallback.ids.get('#app-edition-cards').innerHTML,/版本 1\.0\.1/);
+  const web=installer({href:base+'?app_version=9.9.9#downloads'});
+  web.mount({web:{version:'1.0.1'},android:{available:true,url:'./downloads/app.apk',version:'1.0.0'}});
+  const html=web.ids.get('#app-edition-cards').innerHTML;
+  assert.match(html,/版本 1\.0\.0/);
+  assert.doesNotMatch(html,/9\.9\.9|正在使用 Android 版/);
 });

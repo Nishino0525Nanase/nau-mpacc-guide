@@ -46,8 +46,9 @@ public final class MainActivity extends Activity {
     private static final String SITE_HOST = "nishino0525nanase.github.io";
     private static final String SITE_PATH = "/nau-mpacc-guide/";
     private static final String SITE = "https://" + SITE_HOST + SITE_PATH;
+    private static final String APP_VERSION = "1.0.1";
     private static final String ASSET_HOST = "appassets.androidplatform.net";
-    private static final String LOCAL = "https://" + ASSET_HOST + "/guide/index.html";
+    private static final String LOCAL = "https://" + ASSET_HOST + "/guide/index.html?app_version=" + APP_VERSION;
     private static final int SAVE_DOCUMENT = 40;
     private final Handler main = new Handler(Looper.getMainLooper());
     private final ExecutorService files = Executors.newSingleThreadExecutor();
@@ -57,6 +58,8 @@ public final class MainActivity extends Activity {
     private String pendingAsset;
     private boolean offline;
     private boolean restoreAfterLoad;
+    private boolean clearHistoryAfterFallback;
+    private boolean backPending;
     private Runnable timeout;
 
     @Override public void onCreate(Bundle state) {
@@ -156,7 +159,7 @@ public final class MainActivity extends Activity {
         PopupMenu menu = new PopupMenu(this, anchor);
         menu.getMenu().add(0, 1, 0, "不计入本机访问量");
         menu.getMenu().add(0, 2, 1, "在浏览器打开官网");
-        menu.getMenu().add(0, 3, 2, "关于 1.0.0 测试版");
+        menu.getMenu().add(0, 3, 2, "关于 " + APP_VERSION + " 测试版");
         menu.setOnMenuItemClickListener(item -> {
             if (item.getItemId() == 1) {
                 preferences.edit().putBoolean("excludeSelf", true).apply();
@@ -165,7 +168,7 @@ public final class MainActivity extends Activity {
             } else if (item.getItemId() == 2) {
                 openExternal(Uri.parse(SITE + (preferences.getBoolean("excludeSelf", false) ? "?exclude_self=1" : "")));
             } else {
-                new android.app.AlertDialog.Builder(this).setTitle("雨诺的南审手记 1.0.0")
+                new android.app.AlertDialog.Builder(this).setTitle("雨诺的南审手记 " + APP_VERSION)
                     .setMessage("个人测试版 · 非学校官方应用\n\n在线读取最新指南；断网可读随安装包提供的资料。外部来源在系统浏览器打开。内置版 Word / Excel 可保存到你选择的位置。\n\n仅申请联网权限；联系清单保存在本机。清除应用数据或卸载会移除清单。")
                     .setPositiveButton("知道了", null).show();
             }
@@ -196,10 +199,11 @@ public final class MainActivity extends Activity {
     }
     private void loadMode(boolean local, String hash) {
         cancelTimeout();
+        clearHistoryAfterFallback = false;
         offline = local;
         restoreAfterLoad = true;
         web.stopLoading();
-        status.setText(local ? "雨诺手记\n内置资料 · 1.0.0" : "雨诺手记\n在线最新资料");
+        status.setText(local ? "雨诺手记\n内置资料 · " + APP_VERSION : "雨诺手记\n在线最新资料");
         String url = local ? LOCAL : SITE + (preferences.getBoolean("excludeSelf", false) ? "?exclude_self=1" : "");
         web.loadUrl(url + hash);
         if (!local) {
@@ -220,6 +224,7 @@ public final class MainActivity extends Activity {
         // A failed, partly loaded online page may still contain an older origin copy.
         // Preserve the last valid native checklist instead of copying that stale value.
         loadMode(true, currentHash());
+        clearHistoryAfterFallback = true;
     }
 
     private boolean handleNavigation(Uri uri) {
@@ -275,13 +280,17 @@ public final class MainActivity extends Activity {
         Uri destination = data.getData();
         files.execute(() -> {
             try (InputStream input = getAssets().open(asset);
-                 OutputStream output = getContentResolver().openOutputStream(destination, "w")) {
+                 OutputStream output = getContentResolver().openOutputStream(destination, "wt")) {
                 if (output == null) throw new IOException("No output stream");
                 byte[] buffer = new byte[16384];
                 int n;
                 while ((n = input.read(buffer)) != -1) output.write(buffer, 0, n);
-                main.post(() -> toast("资料已保存到你选择的位置"));
-            } catch (IOException | SecurityException e) { main.post(() -> toast("未能保存文件，请重新选择保存位置")); }
+            } catch (IOException | SecurityException e) {
+                main.post(() -> toast("未能保存文件，请重新选择保存位置"));
+                return;
+            }
+            // A provider may report a write failure only when its stream closes.
+            main.post(() -> toast("资料已保存到你选择的位置"));
         });
     }
 
@@ -358,7 +367,7 @@ public final class MainActivity extends Activity {
             Uri uri = Uri.parse(url);
             if (isGuide(uri)) {
                 offline = isLocal(uri);
-                status.setText(offline ? "雨诺手记\n内置资料 · 1.0.0" : "雨诺手记\n在线最新资料");
+                status.setText(offline ? "雨诺手记\n内置资料 · " + APP_VERSION : "雨诺手记\n在线最新资料");
             }
         }
         @Override public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
@@ -384,6 +393,13 @@ public final class MainActivity extends Activity {
             if (isOnline(Uri.parse(error.getUrl()))) main.post(MainActivity.this::fallback);
         }
         @Override public void onPageFinished(WebView view, String url) {
+            // Ignore a late finish callback from the canceled online navigation.
+            // Clear only the automatic fallback entry, after it actually exists.
+            if (clearHistoryAfterFallback && isLocal(Uri.parse(url)) && isGuide(Uri.parse(url))
+                    && url.equals(view.getUrl())) {
+                clearHistoryAfterFallback = false;
+                view.clearHistory();
+            }
             if (restoreAfterLoad && isGuide(Uri.parse(url))) {
                 restoreAfterLoad = false;
                 restoreChecklist(url);
@@ -393,8 +409,29 @@ public final class MainActivity extends Activity {
     }
 
     @Override public void onBackPressed() {
-        if (web.canGoBack()) rememberChecklist(() -> web.goBack());
-        else super.onBackPressed();
+        if (backPending || isFinishing()) return;
+        backPending = true;
+        String url = web.getUrl();
+        if (url == null || !isGuide(Uri.parse(url))) { navigateBack(); return; }
+        // Use the page's cancel handler so its focus and scroll cleanup still run.
+        web.evaluateJavascript("(function(){var d=document.querySelector('dialog[open]');if(!d)return false;"
+                + "var allowed=d.dispatchEvent(new Event('cancel',{cancelable:true}));"
+                + "if(allowed&&d.open)d.close();return true})()", result -> {
+            if (isFinishing() || isDestroyed()) return;
+            if ("true".equals(result)) backPending = false;
+            else navigateBack();
+        });
+    }
+    private void navigateBack() {
+        if (web.canGoBack()) {
+            rememberChecklist(() -> {
+                if (!isFinishing() && !isDestroyed()) web.goBack();
+                backPending = false;
+            });
+        } else {
+            backPending = false;
+            super.onBackPressed();
+        }
     }
     @Override protected void onPause() {
         rememberChecklist(() -> {});
