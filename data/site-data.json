@@ -566,7 +566,7 @@
     },
     "appEdition": {
       "web": {
-        "version": "1.0.9"
+        "version": "1.0.10"
       },
       "android": {
         "available": true,
