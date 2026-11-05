@@ -57,6 +57,18 @@ timeout --kill-after=1s 10s "$ADB" shell svc wifi disable
 timeout --kill-after=1s 10s "$ADB" shell svc data disable
 timeout --kill-after=1s 10s "$ADB" shell cmd connectivity airplane-mode enable
 test "$(timeout --kill-after=1s 5s "$ADB" shell settings get global airplane_mode_on | tr -d '\r')" = 1
+# A virtual Ethernet route can survive radio/airplane settings on some runners.
+# Block WebView HTTP(S) with the Android system proxy pointing to a closed local
+# port before creating the first WebView. Keep the app's default online startup:
+# it must fail and switch itself to the packaged guide; do not tap “内置”.
+# Android's HTTP_PROXY setting is a host:port pair; browsers use this proxy.
+# https://developer.android.com/reference/android/provider/Settings.Global#HTTP_PROXY
+# https://developer.android.com/studio/run/emulator-networking-proxy
+timeout --kill-after=1s 5s "$ADB" shell settings put global http_proxy 127.0.0.1:1
+PROXY_SETTING=$(timeout --kill-after=1s 5s "$ADB" shell settings get global http_proxy | tr -d '\r')
+test "$PROXY_SETTING" = '127.0.0.1:1'
+printf '%s\n' 'airplane_mode_on=1' "http_proxy=$PROXY_SETTING" 'mode=proxy-blocked default online startup; automatic fallback required' > android/artifacts/smoke/network-conditions.txt
+sleep 2
 timeout --kill-after=3s 45s "$ADB" shell am start -W -n cn.nau.mpacc.guide/.MainActivity
 export EXPECTED_MENTOR
 EXPECTED_MENTOR=$(python3 -c "import json; print(json.load(open('dist/data/site-data.json'))['mentors'][0]['name'])")
@@ -278,4 +290,4 @@ if [[ "$exited" != true ]]; then
   printf '%s\n' 'FAIL: Android Back remained inside the guide after three presses; possible fallback history loop.' > android/artifacts/smoke/result.txt
   exit 1
 fi
-printf '%s\n' 'PASS: Android 14 launched offline, rendered a packaged mentor, closed details with Back, and exited without a fallback history loop.' > android/artifacts/smoke/result.txt
+printf '%s\n' 'PASS: Android 14 proxy-blocked online startup switched automatically to packaged data, rendered a mentor, closed details with Back, and exited without a fallback history loop.' > android/artifacts/smoke/result.txt
