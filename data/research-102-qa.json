@@ -1,0 +1,373 @@
+{
+  "before": {
+    "socialPosts": 113,
+    "officialEvidence": 112
+  },
+  "newOfficialSources": 4,
+  "newSocialPosts": 0,
+  "updatedSocialPosts": 1,
+  "updatedOfficialSources": 1,
+  "mentorEvidenceAdded": 4,
+  "attributionFieldsCorrected": 1,
+  "supplements": [
+    {
+      "code": "10",
+      "url": "https://account.nau.edu.cn/2026/0622/c8919a159585/page.htm",
+      "independentSourceIncrement": 0
+    }
+  ],
+  "duplicates": [
+    {
+      "input": "official",
+      "title": "王永妍2025年度数字化定价教学案例",
+      "url": "https://account.nau.edu.cn/2026/0615/c8917a158917/page.htm",
+      "existingCode": "C501",
+      "reason": "已收同一案例入库新闻，不重复。"
+    },
+    {
+      "input": "official",
+      "title": "傅祥斐数据资产入表讲座",
+      "url": "https://account.nau.edu.cn/2026/0526/c8919a157855/page.htm",
+      "reason": "递归基线已存在文章ID157855；全文再读后不增数。",
+      "read": true,
+      "webRefs": [
+        "turn116view1"
+      ]
+    },
+    {
+      "input": "official",
+      "title": "单文涛MPAcc官网镜像教师资料",
+      "url": "https://account.nau.edu.cn/2026/0104/c9536a153044/page.htm",
+      "reason": "与既有官方教师页同人同履历镜像，不作为独立培养事件。",
+      "read": true,
+      "webRefs": [
+        "turn112view2"
+      ]
+    },
+    {
+      "input": "official",
+      "title": "国家智慧教育平台同一会计学课程镜像",
+      "url": "https://higher.smartedu.cn/course/687ffc0216c43a09c0ec2ca4",
+      "reason": "与NAU-1449494161介绍及大纲相符，合并一个学习资源，不能算两个独立来源。"
+    },
+    {
+      "input": "official",
+      "title": "第21届长三角MPAcc案例论坛原始报道重读",
+      "url": "https://account.nau.edu.cn/2024/0603/c8917a131562/page.htm",
+      "existingCode": "11",
+      "read": true,
+      "reason": "全文重读确认2024-06-03发布日期、单文涛/温素彬两队指导关系及论坛分区性质；基线已收，未新增。",
+      "webRefs": [
+        "turn118view0"
+      ]
+    },
+    {
+      "input": "students",
+      "note_id": "6ab15986000000003602baaa",
+      "title": "🧩南审读研plog",
+      "reason": "递归当前site-data已收录；本轮只见搜索卡不重复计数。"
+    },
+    {
+      "input": "students",
+      "note_id": "6aa4f4f20000000027015216",
+      "title": "Nau研2｜开学第一周碎碎念",
+      "reason": "递归当前site-data已收录；本轮只见搜索卡不重复计数。"
+    },
+    {
+      "input": "students",
+      "note_id": "6aa7737c000000000d025bb7",
+      "title": "南审｜研一plog☀️",
+      "reason": "递归当前site-data已收录；本轮只见搜索卡不重复计数。"
+    },
+    {
+      "input": "students",
+      "note_id": "6ac73fe600000000180063c9",
+      "title": "南京审计mpacc",
+      "reason": "递归当前site-data已收录；本轮只见搜索卡不重复计数。"
+    }
+  ],
+  "skipped": [
+    {
+      "input": "official",
+      "title": "2025年度管理会计师资培训班",
+      "url": "https://account.nau.edu.cn/2025/0530/c9533a144719/page.htm",
+      "read": true,
+      "reason": "正文已读，主要为教师参加外校师资培训，不足以推出本校学生具体课程任务或个人日常指导，未纳本轮主要证据。",
+      "webRefs": [
+        "turn108view1"
+      ]
+    },
+    {
+      "input": "official",
+      "title": "第六届江苏MPAcc教育发展高层论坛",
+      "url": "https://account.nau.edu.cn/2025/0517/c9702a144195/page.htm",
+      "read": true,
+      "reason": "正文已读，侧重宏观教育改革与外校专家观点，未作为本校具体导师训练结论；本轮已有更具体方法/课程材料。",
+      "webRefs": [
+        "turn108view2"
+      ]
+    },
+    {
+      "input": "official",
+      "title": "金审学院税收风险案例竞赛",
+      "url": "https://www.naujsc.edu.cn/2024/1107/c53a17724/page.htm",
+      "read": false,
+      "reason": "检索信息已明为金审学院本科项目，学校与人群均不符；不采。",
+      "webRefs": [
+        "turn114search4"
+      ]
+    },
+    {
+      "input": "official",
+      "title": "2026南京审计大学mpacc会计专硕复试内容解析",
+      "url": "https://www.bilibili.com/video/BV1CvmMB7EH3/",
+      "reason": "检索元数据可见机构招生/1V1咨询导流；无可读字幕正文，不作在校经历或导师证据。",
+      "read": false,
+      "webRefs": [
+        "turn109search0",
+        "turn111view2"
+      ]
+    },
+    {
+      "input": "official",
+      "title": "26/27会计审计MPAcc考研择校NO.20",
+      "url": "https://search.bilibili.com/all?keyword=%E5%8D%97%E4%BA%AC%E5%AE%A1%E8%AE%A1%E5%A4%A7%E5%AD%A6%E8%80%83%E7%A0%94%E5%88%86%E6%95%B0%E7%BA%BF",
+      "reason": "仅检索卡片的招生人数/择校标题，未读视频，不符合具体训练材料目标。",
+      "read": false,
+      "webRefs": [
+        "turn109search6"
+      ]
+    },
+    {
+      "input": "students",
+      "note_id": "6ab07637000000002601444c",
+      "title": "Mpacc...",
+      "url": "https://www.xiaohongshu.com/search_result/6ab07637000000002601444c?xsec_token=AB6B0yGn08BY0yFa7EzLZCp7zCFx0d3P6hTICyXZUTbDo=&xsec_source=",
+      "author": "雪雪暗语",
+      "date": "09-21",
+      "read": true,
+      "population": "自称MPAcc学生，学校未说明；评论回复只称双非，并否认AHU猜测。",
+      "summary": "作者因同学有任务而自己没有任务感到焦虑；评论谈实习、职业规划和Stata，没有可靠的南审身份。",
+      "reason": "学校未知，不能用于南审MPAcc指导安排或任务判断。",
+      "readingScope": "完整文字正文及首批可见41评论计数中的约10个顶层和可见首回复；未展开其余3/4/1/2等追加分支，图片未逐张审读。",
+      "promotionStatus": "unrelated_comment_group_promotion_observed"
+    },
+    {
+      "input": "students",
+      "note_id": "6aaf90310000000028003a10",
+      "title": "【碎碎念】研究生第一次组会之后的聚餐",
+      "url": "https://www.xiaohongshu.com/search_result/6aaf90310000000028003a10?xsec_token=ABjOPBldHiCGv0jJyZo220NrywO6xNRDWdRgbTXBfb3yE=&xsec_source=",
+      "author": "喝美式昏睡一天",
+      "date": "09-20",
+      "read": true,
+      "population": "自称硕士生，学校和学位专业未说明；不因南审搜索命中或上海IP推断院校。",
+      "summary": "作者自述提交三志愿前主动邮件联系、翌日收到回复并面谈入组，首次组会认识师兄姐和领取任务、后聚餐。",
+      "reason": "具体过程存在，但学校、专业、导师均不明，不能归为南审MPAcc流程或任何导师的日常风格，也不拿类似三志愿表反向认证身份。",
+      "readingScope": "完整文字正文及6评论计数中的2个顶层与各自可见首回复，末尾THE END已见；两条折叠追加回复未展开。",
+      "promotionStatus": "none_observed"
+    }
+  ],
+  "unread": [
+    {
+      "input": "official",
+      "title": "南京审计大学四支队伍晋级第十二届全国MPAcc案例赛第二阶段",
+      "url": "https://account.nau.edu.cn/xyxw/list2.htm",
+      "reason": "搜索引擎缓存栏目有队名/指导教师摘要，但当前可读官方栏目页面已更新，未取得独立正文链接，不将摘要当已读案例。",
+      "read": false,
+      "webRefs": [
+        "turn110search0",
+        "turn114search0"
+      ]
+    },
+    {
+      "input": "official",
+      "title": "2026南京审计大学mpacc会计专硕复试内容解析",
+      "url": "https://www.bilibili.com/video/BV1CvmMB7EH3/",
+      "reason": "一次打开返回412 Precondition Failed，停止，不将其当已读视频或规避访问限制。",
+      "webRefs": [
+        "turn111view2"
+      ]
+    },
+    {
+      "input": "students",
+      "note_id": "6aafb08e000000002901aa1d",
+      "title": "上岸【会计专硕】后你会经历的生活be like：",
+      "url": "https://www.xiaohongshu.com/explore/6aafb08e000000002901aa1d",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "input": "students",
+      "note_id": "6acdabe20000000018019651",
+      "title": "还没想好到底报哪个学校",
+      "url": "https://www.xiaohongshu.com/explore/6acdabe20000000018019651",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "input": "students",
+      "note_id": "6acae60e000000001801085c",
+      "title": "南审复试难度能对标cpa",
+      "url": "https://www.xiaohongshu.com/explore/6acae60e000000001801085c",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "input": "students",
+      "note_id": "6a6065ec000000001302c115",
+      "title": "你们好奇的【会计专硕】读研问题be like：",
+      "url": "https://www.xiaohongshu.com/explore/6a6065ec000000001302c115",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "input": "students",
+      "note_id": "6a93a7b00000000026037a93",
+      "title": "南审会计学硕研二上课表",
+      "url": "https://www.xiaohongshu.com/explore/6a93a7b00000000026037a93",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "input": "students",
+      "note_id": "6ab75a77000000001a02972e",
+      "title": "南审开学典礼",
+      "url": "https://www.xiaohongshu.com/explore/6ab75a77000000001a02972e",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "input": "students",
+      "note_id": "69d4f134000000002102c848",
+      "title": "从双非审计到北大光华｜小c你终于别再自责",
+      "url": "https://www.xiaohongshu.com/explore/69d4f134000000002102c848",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "input": "students",
+      "note_id": "6ab11d090000000031017a82",
+      "title": "如图",
+      "url": "https://www.xiaohongshu.com/explore/6ab11d090000000031017a82",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "input": "students",
+      "note_id": "6aca71df0000000015016e1e",
+      "title": "文科研究生的日常be like……",
+      "url": "https://www.xiaohongshu.com/explore/6aca71df0000000015016e1e",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "input": "students",
+      "note_id": "6ae20b2f0000000027023651",
+      "title": "南京审计大学MPAcc经验贴来啦！",
+      "url": "https://www.xiaohongshu.com/explore/6ae20b2f0000000027023651",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "input": "students",
+      "note_id": "6aa8b54500000000260161ec",
+      "title": "会计专硕",
+      "url": "https://www.xiaohongshu.com/explore/6aa8b54500000000260161ec",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "input": "students",
+      "note_id": "6ae18088000000002b000090",
+      "title": "我一定要上上海大学！",
+      "url": "https://www.xiaohongshu.com/explore/6ae18088000000002b000090",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "input": "students",
+      "note_id": "6aa80f81000000002a006925",
+      "title": "擦边上岸南审！！",
+      "url": "https://www.xiaohongshu.com/explore/6aa80f81000000002a006925",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "input": "students",
+      "note_id": "6a314e7500000000210152f2",
+      "title": "会计专硕的真实生活是这样的be like：",
+      "url": "https://www.xiaohongshu.com/explore/6a314e7500000000210152f2",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    }
+  ],
+  "decisions": [
+    {
+      "code": "D601",
+      "url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "changeType": "new",
+      "kind": "official"
+    },
+    {
+      "code": "D602",
+      "url": "https://account.nau.edu.cn/2026/0519/c8917a157673/page.htm",
+      "changeType": "new",
+      "kind": "official"
+    },
+    {
+      "code": "D603",
+      "url": "https://account.nau.edu.cn/2026/0326/c8919a155331/page.htm",
+      "changeType": "new",
+      "kind": "official"
+    },
+    {
+      "code": "D604",
+      "url": "https://www.icourse163.org/course/NAU-1449494161",
+      "changeType": "new",
+      "kind": "official"
+    },
+    {
+      "code": "10",
+      "url": "https://account.nau.edu.cn/2026/0622/c8919a159585/page.htm",
+      "changeType": "supplement",
+      "kind": "official"
+    },
+    {
+      "code": "X01",
+      "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+      "changeType": "updated",
+      "kind": "student"
+    }
+  ],
+  "after": {
+    "socialPosts": 113,
+    "officialEvidence": 116
+  },
+  "checks": {
+    "rosterAndCoreCardsUnchanged": true,
+    "installerMetadataUnchanged": true,
+    "sameEventAndPostUpdatesNotCountedAsNew": true,
+    "unknownSourceFieldsNotInferred": true,
+    "publicNoticeAndAttachmentCountedOnce": true,
+    "studentInformationColumnsNotRepublished": true,
+    "sourceRoleAndDegreeBoundariesPreserved": true,
+    "attributionLeavesPostAndOtherTeachersUnchanged": true,
+    "weakNominationStrengthNotUpgraded": true,
+    "repeatMergeIsIdempotent": true,
+    "attributionMentorCardReadingScopeIsTeacherSpecific": true
+  },
+  "sourceBoundaryNotes": {
+    "D601": "新闻记录3个具名个案，不是完整就业样本，不能推算就业率、工资、所有学生的去向或相同准备必然成功。未读论文全文，不猜其学位导师；只作2026届毕业经验而非2027招录规则。",
+    "D602": "混合本科/研究生课程报道，不证明本级MPAcc必修、每人获得平台账号、操作课时或课程成绩规则；正文没有具名任课教师，不挂个人导师训练证据。",
+    "D603": "只读活动报道，未取得讲座完整录像、讲义或所涉论文，不声称学习过完整方法课程。听众不是已确认MPAcc，温素彬只是主持/致辞，不归为其个人日常指导，也不作为学位论文硬要求。",
+    "D604": "仅读课程介绍和文字大纲，未观看视频、完成测验或验证全部视频访问权限；不承诺免费证书、学分抵扣、MPAcc考试范围及教师回应速度。",
+    "10": "这是2026讲座而非2025入库报道的同一天事件，但使用相同G企业成本案例，保守归入已有案例的过程补充，不另加独立案例数。未取得咨询资料、Excel模型或讲座全文，不能声称能复现模型；主讲不等于全部学生的日常指导。",
+    "X01": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。负面缩写及只有姓氏的评论不映射给任何导师。"
+  },
+  "queryCounts": {
+    "official": 13,
+    "students": 5
+  },
+  "spreadsheet": {
+    "sheet": "继续补读",
+    "records": 6,
+    "bytes": 303459,
+    "sha256": "f7fa8822626ec412385f2d744696b934d8f8338c43b52d395241f903b412418b",
+    "originalSheets": 10,
+    "finalSheets": 11,
+    "originalTables": 8,
+    "finalTables": 9,
+    "originalFormulas": 383,
+    "finalFormulas": 389,
+    "oldPartsAndFormulaCachesBytePreserved": true,
+    "newHyperlinkCachesCalculatedBy": "LibreOffice Calc, new stage only",
+    "errors": 0,
+    "qaPath": "outputs/nau-evidence-index-102/final-verification.json"
+  }
+}

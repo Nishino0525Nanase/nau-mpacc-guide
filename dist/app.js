@@ -10,7 +10,7 @@
   if ('ResizeObserver' in window) new ResizeObserver(updateHeaderOffset).observe(header);
   else window.addEventListener('resize', updateHeaderOffset, {passive:true});
   const dialog = $('#detail-dialog');
-  const state = { data: null, view: 'mentors', query: '', direction: '', savedOnly: false, postQuery: '', postTopic: '', postCategory: '', postLimit: 20, chapter: 'life-01', saved: {}, postCodes: {}, lastFocus: null, lastFocusId: null };
+  const state = { data: null, view: 'mentors', query: '', direction: '', savedOnly: false, postQuery: '', postTopic: '', postCategory: '', postLimit: 20, chapter: 'life-01', saved: {}, compareIds: [], dialogType: '', contactMentorId: '', contactMode: 'outline', contactEdits: {}, postCodes: {}, lastFocus: null, lastFocusId: null };
   const icons = {
     search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.6" cy="10.6" r="6.8"/><path d="m16 16 5 5"/></svg>',
     bookmark: '<svg viewBox="0 0 18 22" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 2h12v18l-6-4-6 4z"/></svg>'
@@ -81,9 +81,120 @@
     return inDetail ? `<button type="button" class="button secondary" data-action="save" data-id="${esc(mentor.id)}" aria-pressed="${saved}">${icons.bookmark}${saved ? '已加入联系清单' : '加入联系清单'}</button>` : `<button type="button" class="save-button" data-action="save" data-id="${esc(mentor.id)}" aria-label="${saved ? '从联系清单移除' : '将'}${esc(mentor.name)}${saved ? '' : '加入联系清单'}" aria-pressed="${saved}" title="${saved ? '已加入联系清单' : '加入联系清单'}">${icons.bookmark}</button>`;
   }
 
+  const compared = id => state.compareIds.includes(id);
+  const comparedMentors = () => state.compareIds.map(id => state.data.mentors.find(m => m.id === id)).filter(Boolean);
+
+  function compareButton(mentor) {
+    const selected = compared(mentor.id);
+    return `<button type="button" class="compare-toggle" data-action="compare-toggle" data-id="${esc(mentor.id)}" aria-pressed="${selected}" aria-label="${selected ? '从对比中移除' : '将'}${esc(mentor.name)}${selected ? '' : '加入对比'}">${selected ? '已选对比' : '加入对比'}</button>`;
+  }
+
+  function renderCompareBar() {
+    const target = $('#mentor-tools');
+    if (!target) return;
+    const mentors = comparedMentors();
+    target.innerHTML = `<div class="mentor-tools-heading"><div><strong>导师对比 <span>${mentors.length} / 3</span></strong><p>选两至三位，放在一起核对研究内容与证据。</p></div><div class="mentor-tools-actions"><button type="button" class="button" data-action="compare-open"${mentors.length < 2 ? ' disabled' : ''}>开始对比</button><button type="button" class="button secondary" data-action="contact-prepare">联系准备</button>${mentors.length ? '<button type="button" class="text-button" data-action="compare-clear">清空对比</button>' : ''}</div></div>${mentors.length ? `<div class="compare-selection" aria-label="已选对比导师">${mentors.map(m => `<button type="button" data-action="compare-toggle" data-id="${esc(m.id)}" aria-label="从对比中移除${esc(m.name)}">${esc(m.name)} <span aria-hidden="true">×</span></button>`).join('')}</div>` : ''}`;
+  }
+
+  function syncCompareButtons() {
+    $$('[data-action="compare-toggle"].compare-toggle').forEach(button => {
+      const mentor = state.data.mentors.find(m => m.id === button.dataset.id);
+      if (!mentor) return;
+      const selected = compared(mentor.id);
+      button.setAttribute('aria-pressed', String(selected));
+      button.setAttribute('aria-label', selected ? `从对比中移除${mentor.name}` : `将${mentor.name}加入对比`);
+      button.textContent = selected ? '已选对比' : '加入对比';
+    });
+  }
+
+  function toggleCompare(id) {
+    const mentor = state.data.mentors.find(m => m.id === id);
+    if (!mentor) return;
+    const index = state.compareIds.indexOf(id);
+    if (index < 0 && state.compareIds.length >= 3) { notify('最多同时对比三位导师，请先移除一位。'); return; }
+    if (index >= 0) state.compareIds.splice(index, 1);
+    else state.compareIds.push(id);
+    if (state.view === 'mentors') renderMentorResults();
+    syncCompareButtons();
+    if (state.dialogType === 'comparison') openComparison();
+    notify(index >= 0 ? `已将${mentor.name}移出对比` : `已将${mentor.name}加入对比（${state.compareIds.length}/3）`);
+  }
+
+  function clearCompare() {
+    state.compareIds = [];
+    if (state.view === 'mentors') renderMentorResults();
+    syncCompareButtons();
+    if (state.dialogType === 'comparison') openComparison();
+    notify('已清空本次对比');
+  }
+
+  function comparisonEvidence(mentor, official) {
+    const entries = array(mentor.evidence).filter(e => official ? e.kind === 'official' && e.id !== `${mentor.id}-official` : e.kind !== 'official');
+    if (!entries.length) return `<p class="compare-empty">${official ? '尚无单独的培养或教学实例；可继续核对教师主页。' : '尚未取得可归属的个人经历反馈，需向近年直系学生核实。'}</p>`;
+    return entries.slice(0, 3).map(item => `<details class="compare-evidence"><summary>${esc(item.statusLabel || item.category || (official ? '官方记录' : '反馈线索'))}${item.date ? ` · ${esc(item.date)}` : ''}</summary><p class="compare-population">${esc(official ? '官方资料' : ({firsthand:'本人经历自述',secondhand:'二手转述',uncertain:'身份或细节待核实'}[item.kind] || '反馈线索'))} · ${esc(item.population || '接触身份未说明')}</p><p>${inline(item.text)}</p><p class="evidence-limit">${inline(item.limitations || '仅限该条来源描述的对象和情境，不能概括所有学生的体验。')}</p>${item.url ? external(item.url, '原始来源 ↗') : ''}</details>`).join('') + (entries.length > 3 ? `<p class="compare-empty">另有 ${entries.length-3} 条记录，可在完整资料中继续核对。</p>` : '');
+  }
+
+  function currentContact(mentor) {
+    const fields = array(mentor.profileFields).filter(f => /联系方式|邮箱/.test(f.label || ''));
+    const values = [...new Set([mentor.email, ...fields.map(f => textOf(f.value))].filter(value => typeof value === 'string' && value.trim()))];
+    return `<p>${values.length ? values.map(contactHtml).join('<br>') : '当前公开联系方式未见，需核对教师主页。'}</p>${mentor.profileUrl ? external(mentor.profileUrl, '核对教师主页 ↗') : ''}`;
+  }
+
+  function openComparison() {
+    const mentors = comparedMentors();
+    if (mentors.length < 2) {
+      openDialog('选导工具 / 本次对比', '<h2 id="dialog-title">导师对比</h2><p class="dialog-content-intro">请在导师卡片中选择两至三位，再一起核对资料。</p><button type="button" class="button secondary" data-action="compare-close">返回导师列表继续选择</button>', 'comparison');
+      return;
+    }
+    const rows = [
+      ['研究内容', m => `<p class="compare-directions">${m.directions.map(id => esc(shortDirection(id))).join(' · ')}</p><p>${inline(m.research || '研究方向未公开，需核实。')}</p>`],
+      ['公开记录与作品', m => comparisonEvidence(m, true)],
+      ['学生经历与边界', m => comparisonEvidence(m, false)],
+      ['名额与联系顺位', m => `<p>${inline(m.quotaStatus || state.data.meta.quotaNote || '当年名额未公开，需核对本级双选通知并向导师确认。')}</p><p>我的联系顺位：${esc(state.saved[m.id] || '尚未加入联系清单')}</p>`],
+      ['当前公开联系', currentContact],
+      ['接着了解', m => `<div class="compare-cell-actions"><button type="button" class="text-button" data-action="mentor" data-id="${esc(m.id)}">查看${esc(m.name)}完整资料</button><button type="button" class="text-button" data-action="contact-prepare" data-id="${esc(m.id)}">联系准备：${esc(m.name)}</button></div>`]
+    ];
+    openDialog('选导工具 / 并排核对', `<h2 id="dialog-title">导师对比</h2><p class="dialog-content-intro">并排看研究内容、具体作品和反馈的接触身份，再决定下一步向谁了解。公开名单、获奖案例和课程体验各自保留适用范围。</p><p class="compare-scroll-note">表格可横向滚动；点开证据可看身份、限制与原始来源。</p><div class="mentor-compare-scroll" role="region" aria-label="导师并排对比表" tabindex="0"><table class="mentor-compare-table"><thead><tr><th scope="col">核对项目</th>${mentors.map(m => `<th scope="col"><strong>${esc(m.name)}</strong><small>${esc(m.title || '职称未公开')}</small><button type="button" class="text-button" data-action="compare-toggle" data-id="${esc(m.id)}" aria-label="从对比中移除${esc(m.name)}">移出对比</button></th>`).join('')}</tr></thead><tbody>${rows.map(([title, html]) => `<tr><th scope="row">${esc(title)}</th>${mentors.map(m => `<td>${html(m)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><div class="source-actions"><button type="button" class="button secondary" data-action="compare-close">返回列表调整</button><button type="button" class="text-button" data-action="compare-clear">清空本次对比</button></div>`, 'comparison');
+  }
+
+  function contactPreparationText(mentor, mode) {
+    const name = mentor?.name || '【导师姓名】';
+    const research = mentor?.research || '【老师公开研究方向】';
+    if (mode === 'draft') return `邮件标题：MPAcc导师联系咨询—【姓名】—【拟入学年级】\n\n${name}老师您好：\n\n我是【姓名】，目前【学校、专业及年级／拟入学项目】。我正在了解您公开介绍中的研究方向：${research}\n\n我准备进一步阅读【具体论文或案例名称及年份】，对【一个具体问题】比较感兴趣。希望结合【自己的真实课程、项目或实习背景；无则删除本句】，向您请教是否与您的近期工作契合。\n\n想请问您在【本级／年份】是否接收MPAcc学生，以及现阶段建议优先准备哪些文献、方法或数据。如方便，也想了解论文与实践训练的大致安排。\n\n附件为【一页简历及确有需要的材料】。感谢您抽空阅读，期待您的建议。\n\n祝工作顺利！\n【姓名】\n【联系方式】`;
+    return `联系${name}前的准备提纲\n\n一、先核对\n□ 本级双选通知、导师资格及当年可选情况；公开名单不等于仍有名额。\n□ 当前教师主页和公开联系方式；旧页联系方式先核实。\n□ 公开研究方向：${research}\n□ 准备读的具体论文／案例：【名称、年份及一个想问的问题】。\n\n二、准备自己的材料\n□ 一页简历：【学校、专业、年级／拟入学项目、相关技能与真实经历】。\n□ 如对方需要，再补充【成绩、项目或实习材料】，核对内容真实且适合发送。\n□ 把兴趣缩小为【研究对象—具体问题—目前能取得的材料】。\n\n三、向老师了解\n□ 【本级／年份】是否接收MPAcc学生，后续正式双选怎样办理？\n□ 日常交流、组会、论文选题和反馈通常怎样安排？\n□ 论文数据、方法训练与实践项目通常如何获取和推进？\n□ 实习与课程、论文进度如何协调，有哪些需要提前沟通的事项？\n\n四、向近年直系学生核实\n□ 对方的专业、年级、实际指导关系及经历年份。\n□ 请对方举一次具体指导、修改或实习协调的例子，再判断适用性。\n\n最后检查\n□ 将【占位符】全部填写，只保留真实经历。\n□ 每封联系文字对应一位老师，保留合理回复时间，并记录下一步。`;
+  }
+
+  const contactEditKey = () => `${state.contactMentorId || 'generic'}:${state.contactMode}`;
+
+  function openContactPreparation(id = '', mode = state.contactMode) {
+    const mentor = state.data.mentors.find(m => m.id === id) || null;
+    state.contactMentorId = mentor?.id || '';
+    state.contactMode = mode === 'draft' ? 'draft' : 'outline';
+    const key = contactEditKey();
+    const text = Object.prototype.hasOwnProperty.call(state.contactEdits, key) ? state.contactEdits[key] : contactPreparationText(mentor, state.contactMode);
+    openDialog('选导工具 / 联系准备', `<h2 id="dialog-title">联系导师前，先把问题准备具体</h2><p class="dialog-content-intro">先核对公开资料，再填写自己的真实信息。下面的文本可自行修改后使用。</p><label class="contact-mentor-label" for="contact-mentor">选择一位老师</label><select id="contact-mentor"><option value="">通用准备模板</option>${state.data.mentors.map(m => `<option value="${esc(m.id)}"${m.id === state.contactMentorId ? ' selected' : ''}>${esc(m.name)}</option>`).join('')}</select>${mentor?.profileUrl ? `<p class="contact-source">${external(mentor.profileUrl, '核对这位老师的官方介绍 ↗')}</p>` : ''}<div class="contact-mode-switch" role="group" aria-label="联系准备文本类型"><button type="button" data-action="contact-mode" data-mode="outline" aria-pressed="${state.contactMode === 'outline'}">准备提纲</button><button type="button" data-action="contact-mode" data-mode="draft" aria-pressed="${state.contactMode === 'draft'}">联系草稿</button></div><label class="sr-only" for="contact-copy-text">联系准备文本</label><textarea id="contact-copy-text" class="contact-copy-text" rows="17">${esc(text)}</textarea><div class="contact-copy-actions"><button type="button" class="button" data-action="copy-contact">复制当前文本</button><span id="contact-copy-status" role="status" aria-live="polite">发送前请填写占位符，并核对研究内容与联系方式。</span></div>`, 'contact');
+  }
+
+  async function copyContactPreparation() {
+    const field = $('#contact-copy-text', dialog);
+    const status = $('#contact-copy-status', dialog);
+    if (!field) return;
+    try {
+      if (!window.isSecureContext || !navigator.clipboard?.writeText) throw new Error('manual-copy');
+      await navigator.clipboard.writeText(field.value);
+      if (status) status.textContent = '已复制。发送前请填写占位符，并只保留真实经历。';
+      notify('联系文本已复制');
+    } catch (_) {
+      field.focus();
+      field.select();
+      if (status) status.textContent = '文本已选中，请按 Ctrl/Cmd+C 或长按选区复制。';
+      notify('文本已选中，可手动复制');
+    }
+  }
+
   function mentorCard(mentor) {
     const status = isSaved(mentor.id) ? `<span class="tag warm">${esc(state.saved[mentor.id])}</span>` : '';
-    return `<article class="mentor-card"><div class="mentor-card-head"><div><h3 class="mentor-name">${esc(mentor.name)}${mentor.hasDetailedCard ? '<span class="core-label">核心资料卡</span>' : ''}</h3><p class="title-line">${esc(mentor.title || '职称未公开')} · 125300名单内</p></div>${saveButton(mentor)}</div><div class="tags">${mentor.directions.map((id, i) => `<span class="tag${i ? ' secondary' : ''}">${esc(shortDirection(id))}</span>`).join('')}${status}</div><p class="mentor-research">${esc(mentor.research || '研究方向未公开')}</p><div class="mentor-feedback"><span class="evidence-dot" aria-hidden="true"></span><span>${esc(mentor.feedbackStatus || '个人指导反馈待补充了解')}</span></div><button type="button" class="card-action" data-action="mentor" data-id="${esc(mentor.id)}"><span>查看资料与反馈</span><span aria-hidden="true">↗</span><span class="sr-only">：${esc(mentor.name)}</span></button></article>`;
+    return `<article class="mentor-card"><div class="mentor-card-head"><div><h3 class="mentor-name">${esc(mentor.name)}${mentor.hasDetailedCard ? '<span class="core-label">核心资料卡</span>' : ''}</h3><p class="title-line">${esc(mentor.title || '职称未公开')} · 125300名单内</p></div>${saveButton(mentor)}</div><div class="tags">${mentor.directions.map((id, i) => `<span class="tag${i ? ' secondary' : ''}">${esc(shortDirection(id))}</span>`).join('')}${status}</div><p class="mentor-research">${esc(mentor.research || '研究方向未公开')}</p><div class="mentor-feedback"><span class="evidence-dot" aria-hidden="true"></span><span>${esc(mentor.feedbackStatus || '个人指导反馈待补充了解')}</span></div><div class="mentor-card-actions"><button type="button" class="card-action" data-action="mentor" data-id="${esc(mentor.id)}"><span>查看资料与反馈</span><span aria-hidden="true">↗</span><span class="sr-only">：${esc(mentor.name)}</span></button>${compareButton(mentor)}</div></article>`;
   }
 
   function filteredMentors() {
@@ -98,12 +209,13 @@
     $('#mentor-result-count').innerHTML = `找到 <strong>${mentors.length}</strong> 位导师${state.savedOnly ? ' · 我的联系清单' : ''}`;
     $('#mentor-result-order').textContent = '按官方名单原序 · 不构成排名';
     results.innerHTML = mentors.length ? mentors.map(mentorCard).join('') : emptyState(state.savedOnly ? '清单里暂时没有匹配的导师' : '没有找到匹配的导师', state.savedOnly ? '点击导师卡右上角的书签，将感兴趣的老师加入清单。清单仅保存在当前浏览器。' : '试试搜索姓名、预算、智能财务、公司治理等关键词，或切换方向。', '<button type="button" class="button secondary" data-action="reset-mentors">查看全部导师</button>');
+    renderCompareBar();
     const filter = $('#saved-filter');
     if (filter) filter.innerHTML = `${icons.bookmark}我的清单${Object.keys(state.saved).length ? ` (${Object.keys(state.saved).length})` : ''}`;
   }
 
   function researchHighlightsHtml() {
-    const highlights = array((state.data.meta.continueResearch || state.data.meta.appResearch || state.data.meta.round3Research)?.highlights).filter(item => item?.title && item?.text).slice(0, 4);
+    const highlights = array((state.data.meta.research102?.highlights?.length ? state.data.meta.research102 : state.data.meta.continueResearch || state.data.meta.appResearch || state.data.meta.round3Research)?.highlights).filter(item => item?.title && item?.text).slice(0, 4);
     if (!highlights.length) return '';
     return `<details class="research-updates" open><summary>新增核验：具体训练与学习安排</summary><div class="research-updates-grid">${highlights.map(item => {
       const text = textOf(item.text);
@@ -114,7 +226,7 @@
 
   function renderMentors() {
     app.innerHTML = heading('01 / MENTOR DIRECTORY', '先选方向，再了解具体的人', '六类研究主题，帮助你建立自己的了解顺序。研究方向看官方资料，相处与训练看具体经历；每条反馈都保留接触身份与年份。', `<strong>${state.data.mentors.length}</strong> 位导师 · ${state.data.mentorCards.length} 张核心卡`) + researchHighlightsHtml() +
-      `<div class="notice">${esc(state.data.meta.directionNote)} <button type="button" class="text-button" data-action="guide" data-section="0">读懂方向与报名的关系 ↗</button></div><div class="toolbar">${searchField('mentor-search', '搜索导师姓名、研究方向或关键词', state.query)}<button id="saved-filter" type="button" class="save-filter" data-action="saved-only" aria-pressed="${state.savedOnly}">${icons.bookmark}我的清单</button></div><div class="filter-groups"><div class="filter-line" role="group" aria-label="按研究方向筛选"><button class="filter-chip direction-chip" type="button" data-action="direction" data-id="" aria-pressed="${!state.direction}">全部方向<small>${state.data.mentors.length}</small></button>${state.data.directions.map(d => `<button class="filter-chip direction-chip" type="button" data-action="direction" data-id="${esc(d.id)}" aria-pressed="${state.direction === d.id}">${esc(shortDirection(d.id))}<small>${state.data.mentors.filter(m => m.directions.includes(d.id)).length}</small></button>`).join('')}</div><div class="direction-note">${state.direction ? `${esc(state.direction)} · ${esc(directionName(state.direction))}。交叉归类可重复出现，不等同当年招生分组。` : '每位导师最多列两类，允许主方向与交叉方向；名录内不代表当年仍有名额。'}</div></div><div class="results-bar"><span id="mentor-result-count" role="status" aria-live="polite"></span><span id="mentor-result-order"></span></div><div class="mentor-grid" id="mentor-results"></div><section class="goal-section" aria-labelledby="goal-title"><span class="small-label">FIND YOUR STARTING POINT</span><h3 id="goal-title">从你想要的研究生生活出发</h3><div class="goal-grid">${state.data.targetProfiles.map(p => `<details class="goal-card"><summary>${esc(p.title.replace(/^希望/, ''))}</summary><div class="goal-content article-body">${array(p.blocks).map(blockHtml).join('') || `<p>${inline(p.summary)}</p>`}</div><div class="source-actions">${p.mentorIds.map(id => {const m = state.data.mentors.find(m => m.id === id); return m ? `<button class="text-button" type="button" data-action="mentor" data-id="${esc(id)}">${esc(m.name)} ↗</button>` : '';}).join('')}</div></details>`).join('')}</div><div class="guide-action-row"><button type="button" class="text-button" data-action="guide" data-section="3">名额、双选与备选方案 ↗</button><button type="button" class="text-button" data-action="guide" data-section="4">怎样写一封具体的联系邮件 ↗</button><span>清单保存在当前浏览器，可标记优先联系、备选或仅了解。</span></div></section>`;
+      `<div class="notice">${esc(state.data.meta.directionNote)} <button type="button" class="text-button" data-action="guide" data-section="0">读懂方向与报名的关系 ↗</button></div><div class="toolbar">${searchField('mentor-search', '搜索导师姓名、研究方向或关键词', state.query)}<button id="saved-filter" type="button" class="save-filter" data-action="saved-only" aria-pressed="${state.savedOnly}">${icons.bookmark}我的清单</button></div><div class="filter-groups"><div class="filter-line" role="group" aria-label="按研究方向筛选"><button class="filter-chip direction-chip" type="button" data-action="direction" data-id="" aria-pressed="${!state.direction}">全部方向<small>${state.data.mentors.length}</small></button>${state.data.directions.map(d => `<button class="filter-chip direction-chip" type="button" data-action="direction" data-id="${esc(d.id)}" aria-pressed="${state.direction === d.id}">${esc(shortDirection(d.id))}<small>${state.data.mentors.filter(m => m.directions.includes(d.id)).length}</small></button>`).join('')}</div><div class="direction-note">${state.direction ? `${esc(state.direction)} · ${esc(directionName(state.direction))}。交叉归类可重复出现，不等同当年招生分组。` : '每位导师最多列两类，允许主方向与交叉方向；名录内不代表当年仍有名额。'}</div></div><section class="mentor-tools" id="mentor-tools" aria-label="导师对比与联系准备"></section><div class="results-bar"><span id="mentor-result-count" role="status" aria-live="polite"></span><span id="mentor-result-order"></span></div><div class="mentor-grid" id="mentor-results"></div><section class="goal-section" aria-labelledby="goal-title"><span class="small-label">FIND YOUR STARTING POINT</span><h3 id="goal-title">从你想要的研究生生活出发</h3><div class="goal-grid">${state.data.targetProfiles.map(p => `<details class="goal-card"><summary>${esc(p.title.replace(/^希望/, ''))}</summary><div class="goal-content article-body">${array(p.blocks).map(blockHtml).join('') || `<p>${inline(p.summary)}</p>`}</div><div class="source-actions">${p.mentorIds.map(id => {const m = state.data.mentors.find(m => m.id === id); return m ? `<button class="text-button" type="button" data-action="mentor" data-id="${esc(id)}">${esc(m.name)} ↗</button>` : '';}).join('')}</div></details>`).join('')}</div><div class="guide-action-row"><button type="button" class="text-button" data-action="guide" data-section="3">名额、双选与备选方案 ↗</button><button type="button" class="text-button" data-action="guide" data-section="4">怎样写一封具体的联系邮件 ↗</button><span>清单保存在当前浏览器，可标记优先联系、备选或仅了解。</span></div></section>`;
     renderMentorResults();
   }
 
@@ -131,7 +243,7 @@
     const fields = m.profileFields?.length ? m.profileFields : (card?.profileFields || card?.fields || []);
     const official = array(m.evidence).filter(e => e.kind === 'official');
     const feedback = array(m.evidence).filter(e => e.kind !== 'official');
-    openDialog('导师资料 / ' + (m.hasDetailedCard ? '核心资料卡' : '补充了解名录'), `<div class="dialog-heading"><div><h2 id="dialog-title">${esc(m.name)}</h2><div class="dialog-subtitle">${esc(m.qualification || m.title)}</div></div>${saveButton(m)}</div><div class="tags">${m.directions.map((d,i) => `<span class="tag${i ? ' secondary' : ''}">${esc(d)} · ${esc(directionName(d))}</span>`).join('')}</div>${card?.reason || m.summary ? `<p class="dialog-content-intro">${inline(card?.reason || m.summary)}</p>` : ''}<section class="dialog-section"><h3><span class="section-number">01</span>公开信息</h3><dl class="profile-fields">${fields.filter(f => f.label !== '姓名').map(f => `<div class="profile-row"><dt>${esc(f.label)}</dt><dd>${f.label.includes('联系') ? contactHtml(f.value) : inline(f.value)}</dd></div>`).join('')}</dl><div class="source-actions">${array(m.links).map(link => external(link.url, esc(link.label || '官方来源') + ' ↗')).join('')}</div></section>${official.length ? `<section class="dialog-section"><h3><span class="section-number">02</span>官方记录与具名个案</h3>${official.map(renderEvidence).join('')}</section>` : ''}<section class="dialog-section"><h3><span class="section-number">03</span>学生自述与反馈线索</h3><div class="evidence-note">${esc(state.data.meta.evidenceNote)}</div>${feedback.length ? feedback.map(renderEvidence).join('') : `<p class="dialog-content-intro">本次尚未取得可归属的个人指导反馈。${esc(m.feedbackDetails?.limits || '可向近年直系MPAcc学生了解具体指导过程。')}</p>`}</section><div class="quota-note"><strong>名额与联系：</strong>${inline(m.quotaStatus || state.data.meta.quotaNote)}</div><div class="save-control">${saveButton(m, true)}<label for="contact-status">联系顺位</label><select id="contact-status" data-id="${esc(m.id)}"${isSaved(m.id) ? '' : ' disabled'}>${['优先联系','备选','仅了解'].map(status => `<option${state.saved[m.id] === status ? ' selected' : ''}>${status}</option>`).join('')}</select></div>`);
+    openDialog('导师资料 / ' + (m.hasDetailedCard ? '核心资料卡' : '补充了解名录'), `<div class="dialog-heading"><div><h2 id="dialog-title">${esc(m.name)}</h2><div class="dialog-subtitle">${esc(m.qualification || m.title)}</div></div>${saveButton(m)}</div><div class="tags">${m.directions.map((d,i) => `<span class="tag${i ? ' secondary' : ''}">${esc(d)} · ${esc(directionName(d))}</span>`).join('')}</div>${card?.reason || m.summary ? `<p class="dialog-content-intro">${inline(card?.reason || m.summary)}</p>` : ''}<section class="dialog-section"><h3><span class="section-number">01</span>公开信息</h3><dl class="profile-fields">${fields.filter(f => f.label !== '姓名').map(f => `<div class="profile-row"><dt>${esc(f.label)}</dt><dd>${f.label.includes('联系') ? contactHtml(f.value) : inline(f.value)}</dd></div>`).join('')}</dl><div class="source-actions">${array(m.links).map(link => external(link.url, esc(link.label || '官方来源') + ' ↗')).join('')}</div></section>${official.length ? `<section class="dialog-section"><h3><span class="section-number">02</span>官方记录与具名个案</h3>${official.map(renderEvidence).join('')}</section>` : ''}<section class="dialog-section"><h3><span class="section-number">03</span>学生自述与反馈线索</h3><div class="evidence-note">${esc(state.data.meta.evidenceNote)}</div>${feedback.length ? feedback.map(renderEvidence).join('') : `<p class="dialog-content-intro">本次尚未取得可归属的个人指导反馈。${esc(m.feedbackDetails?.limits || '可向近年直系MPAcc学生了解具体指导过程。')}</p>`}</section><div class="quota-note"><strong>名额与联系：</strong>${inline(m.quotaStatus || state.data.meta.quotaNote)}</div><div class="save-control">${saveButton(m, true)}<label for="contact-status">联系顺位</label><select id="contact-status" data-id="${esc(m.id)}"${isSaved(m.id) ? '' : ' disabled'}>${['优先联系','备选','仅了解'].map(status => `<option${state.saved[m.id] === status ? ' selected' : ''}>${status}</option>`).join('')}</select></div><div class="mentor-detail-tools">${compareButton(m)}<button type="button" class="button secondary" data-action="contact-prepare" data-id="${esc(m.id)}">联系准备：${esc(m.name)}</button></div>`);
     emit('mentor_open', {id, name:m.name});
   }
 
@@ -170,7 +282,7 @@
   }
 
   function coverageHtml() {
-    const continued = state.data.meta.continueResearch;
+    const continued = state.data.meta.research102 || state.data.meta.continueResearch;
     if (continued) {
       const additions = [];
       if (continued.newOfficialSources) additions.push(`<strong>${esc(continued.newOfficialSources)}</strong> 条官方来源`);
@@ -222,9 +334,12 @@
     emit('guide_open', {id:s.id});
   }
 
-  function openDialog(eyebrow, html) {
-    state.lastFocus = document.activeElement;
-    state.lastFocusId = state.lastFocus?.dataset?.id || null;
+  function openDialog(eyebrow, html, type = '') {
+    if (!dialog.open) {
+      state.lastFocus = document.activeElement;
+      state.lastFocusId = state.lastFocus?.dataset?.id || null;
+    }
+    state.dialogType = type;
     $('#dialog-eyebrow').textContent = eyebrow;
     $('#dialog-content').innerHTML = html;
     if (!dialog.open) dialog.showModal();
@@ -234,6 +349,7 @@
   }
 
   function closeDialog() {
+    state.dialogType = '';
     if (dialog.open) dialog.close();
     document.body.style.overflow = '';
     if (state.lastFocus?.isConnected) state.lastFocus.focus({preventScroll:true});
@@ -294,6 +410,13 @@
     if (action) {
       const id = action.dataset.id;
       switch(action.dataset.action) {
+        case 'compare-toggle': toggleCompare(id); break;
+        case 'compare-open': openComparison(); break;
+        case 'compare-clear': clearCompare(); break;
+        case 'compare-close': closeDialog(); break;
+        case 'contact-prepare': openContactPreparation(id || state.compareIds[0] || ''); break;
+        case 'contact-mode': openContactPreparation(state.contactMentorId, action.dataset.mode); break;
+        case 'copy-contact': copyContactPreparation(); break;
         case 'mentor': openMentor(id); break;
         case 'post': openPost(id); break;
         case 'save': toggleSaved(id); break;
@@ -310,13 +433,15 @@
     if(download)emit('download',{id:download.dataset.download});
   });
   document.addEventListener('input', event => {
+    if(event.target.id==='contact-copy-text'){state.contactEdits[contactEditKey()]=event.target.value;return;}
     if(event.target.id==='mentor-search'){state.query=event.target.value;renderMentorResults();}
     else if(event.target.id==='post-search'){state.postQuery=event.target.value;state.postLimit=20;renderPostResults();}
     else return;
     event.target.parentElement.querySelector('.search-clear').hidden=!event.target.value;
   });
   document.addEventListener('change', event => {
-    if(event.target.id==='mobile-chapter')location.hash='life/'+event.target.value;
+    if(event.target.id==='contact-mentor'){openContactPreparation(event.target.value);$('#contact-mentor',dialog)?.focus({preventScroll:true});}
+    else if(event.target.id==='mobile-chapter')location.hash='life/'+event.target.value;
     else if(event.target.id==='post-topic'){state.postTopic=event.target.value;state.postLimit=20;renderPostResults();}
     else if(event.target.id==='post-category'){state.postCategory=event.target.value;state.postLimit=20;renderPostResults();}
     else if(event.target.id==='contact-status'){state.saved[event.target.dataset.id]=event.target.value;persistSaved();if(state.view==='mentors')renderMentorResults();notify('已更新联系顺位');}

@@ -239,3 +239,14 @@ test('only a native asset URL can supply the running package version, with safe 
   assert.match(html,/版本 1\.0\.0/);
   assert.doesNotMatch(html,/9\.9\.9|正在使用 Android 版/);
 });
+
+
+test('a new native package does not show the previous public APK changelog as its own', () => {
+  const env=installer({href:'https://appassets.androidplatform.net/guide/index.html?app_version=1.0.2'});
+  env.mount({android:{version:'1.0.1',changes:['旧版本说明']},web:{version:'1.0.2'}});
+  const html=env.ids.get('#app-edition-cards').innerHTML;
+  assert.match(html,/版本 1\.0\.2/);
+  assert.doesNotMatch(html,/旧版本说明|edition-changes/);
+  env.mount({android:{version:'1.0.2',changes:['当前版本说明']}});
+  assert.match(env.ids.get('#app-edition-cards').innerHTML,/当前版本说明/);
+});

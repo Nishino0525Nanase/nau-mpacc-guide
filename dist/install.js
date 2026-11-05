@@ -94,7 +94,8 @@
     const android = meta?.android || {};
     if (bundledEdition) {
       const version = currentAndroidVersion(meta);
-      target.innerHTML = `<article class="edition-card native-edition"><div class="edition-card-title"><img src="./icons/app-192.png" alt="" width="44" height="44"><div><h4>正在使用 Android 版</h4><span>${version ? `版本 ${esc(version)}` : '安装包内置版本'}</span></div></div><p>指南、导师资料和原帖摘记随应用保存在本机，断网时也可继续阅读。Word / Excel 文件可保存到你选择的位置。</p><p id="edition-connection" class="edition-connection" role="status" aria-live="polite"></p>${changesHtml(android)}<p class="edition-footnote">点顶部“在线”读取网站上的最新资料，点“内置”返回本机内容。应用本身的更新可在在线指南的下载页获取。</p></article>`;
+      const currentRelease = android.version === version ? android : {};
+      target.innerHTML = `<article class="edition-card native-edition"><div class="edition-card-title"><img src="./icons/app-192.png" alt="" width="44" height="44"><div><h4>正在使用 Android 版</h4><span>${version ? `版本 ${esc(version)}` : '安装包内置版本'}</span></div></div><p>指南、导师资料和原帖摘记随应用保存在本机，断网时也可继续阅读。Word / Excel 文件可保存到你选择的位置。</p><p id="edition-connection" class="edition-connection" role="status" aria-live="polite"></p>${changesHtml(currentRelease)}<p class="edition-footnote">点顶部“在线”读取网站上的最新资料，点“内置”返回本机内容。应用本身的更新可在在线指南的下载页获取。</p></article>`;
       renderState();
       return;
     }

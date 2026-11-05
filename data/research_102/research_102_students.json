@@ -1,0 +1,208 @@
+{
+  "accepted": [],
+  "updates": [
+    {
+      "existingCode": "X01",
+      "updateType": "attributionCorrection",
+      "note_id": "67ecb72b000000001e0042af",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+      "title": "南审mpacc导师求推荐",
+      "author": "银河落九天",
+      "date": "2025-04-02",
+      "population": "本轮只修温素彬笼统提名的评论归因；评论者未说明自己与温素彬的接触关系、学位类别或年级。",
+      "summary": "X01中温素彬的笼统正面提名，可以准确归于冬日来信在2025-04-02发布的一条评论；并未提供与温素彬的具体课程或指导经历。",
+      "points": [
+        "补全既有温素彬弱线索的评论者为冬日来信，显示日期为2025-04-02。",
+        "同条评论中的本人课程接触指王菁华，竞赛求教指王敬勇；这两段关系不能转接成与温素彬的关系。",
+        "只修归因和阅读范围，不增加新帖子，也不把笼统提名改为MPAcc亲历或日常指导证据。"
+      ],
+      "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。负面缩写及只有姓氏的评论不映射给任何导师。",
+      "readingScope": "本轮文字正文、95条计数所对应的所有已加载顶层评论逐段读取至THE END；新点展开王烨分支的4条追加回复并全部读到。其他折叠支线未全面展开，不能称95条逐字全读；图片未单独重新审读。温素彬提名在冬日来信同条评论内直接见到作者与完整日期。",
+      "read": true,
+      "promotionStatus": "none_observed",
+      "promotionNote": "本帖及本轮所读评论未见作者收费售课；不将无关群口令用于推荐。",
+      "category": "背景或待核实材料",
+      "topic": "导师选择与联系准备",
+      "teacherAttribution": {
+        "teacherName": "温素彬",
+        "commentAuthor": "冬日来信",
+        "commentDate": "2025-04-02",
+        "evidenceId": "67ecb72b000000001e0042af:c9",
+        "strength": "笼统弱线索，身份不明，原强度不升级"
+      },
+      "webRefs": []
+    }
+  ],
+  "duplicates": [
+    {
+      "note_id": "6ab15986000000003602baaa",
+      "title": "🧩南审读研plog",
+      "reason": "递归当前site-data已收录；本轮只见搜索卡不重复计数。"
+    },
+    {
+      "note_id": "6aa4f4f20000000027015216",
+      "title": "Nau研2｜开学第一周碎碎念",
+      "reason": "递归当前site-data已收录；本轮只见搜索卡不重复计数。"
+    },
+    {
+      "note_id": "6aa7737c000000000d025bb7",
+      "title": "南审｜研一plog☀️",
+      "reason": "递归当前site-data已收录；本轮只见搜索卡不重复计数。"
+    },
+    {
+      "note_id": "6ac73fe600000000180063c9",
+      "title": "南京审计mpacc",
+      "reason": "递归当前site-data已收录；本轮只见搜索卡不重复计数。"
+    }
+  ],
+  "screened": [
+    {
+      "note_id": "6ab07637000000002601444c",
+      "title": "Mpacc...",
+      "url": "https://www.xiaohongshu.com/search_result/6ab07637000000002601444c?xsec_token=AB6B0yGn08BY0yFa7EzLZCp7zCFx0d3P6hTICyXZUTbDo=&xsec_source=",
+      "author": "雪雪暗语",
+      "date": "09-21",
+      "read": true,
+      "population": "自称MPAcc学生，学校未说明；评论回复只称双非，并否认AHU猜测。",
+      "summary": "作者因同学有任务而自己没有任务感到焦虑；评论谈实习、职业规划和Stata，没有可靠的南审身份。",
+      "reason": "学校未知，不能用于南审MPAcc指导安排或任务判断。",
+      "readingScope": "完整文字正文及首批可见41评论计数中的约10个顶层和可见首回复；未展开其余3/4/1/2等追加分支，图片未逐张审读。",
+      "promotionStatus": "unrelated_comment_group_promotion_observed"
+    },
+    {
+      "note_id": "6aaf90310000000028003a10",
+      "title": "【碎碎念】研究生第一次组会之后的聚餐",
+      "url": "https://www.xiaohongshu.com/search_result/6aaf90310000000028003a10?xsec_token=ABjOPBldHiCGv0jJyZo220NrywO6xNRDWdRgbTXBfb3yE=&xsec_source=",
+      "author": "喝美式昏睡一天",
+      "date": "09-20",
+      "read": true,
+      "population": "自称硕士生，学校和学位专业未说明；不因南审搜索命中或上海IP推断院校。",
+      "summary": "作者自述提交三志愿前主动邮件联系、翌日收到回复并面谈入组，首次组会认识师兄姐和领取任务、后聚餐。",
+      "reason": "具体过程存在，但学校、专业、导师均不明，不能归为南审MPAcc流程或任何导师的日常风格，也不拿类似三志愿表反向认证身份。",
+      "readingScope": "完整文字正文及6评论计数中的2个顶层与各自可见首回复，末尾THE END已见；两条折叠追加回复未展开。",
+      "promotionStatus": "none_observed"
+    }
+  ],
+  "unread": [
+    {
+      "note_id": "6aafb08e000000002901aa1d",
+      "title": "上岸【会计专硕】后你会经历的生活be like：",
+      "url": "https://www.xiaohongshu.com/explore/6aafb08e000000002901aa1d",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "note_id": "6acdabe20000000018019651",
+      "title": "还没想好到底报哪个学校",
+      "url": "https://www.xiaohongshu.com/explore/6acdabe20000000018019651",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "note_id": "6acae60e000000001801085c",
+      "title": "南审复试难度能对标cpa",
+      "url": "https://www.xiaohongshu.com/explore/6acae60e000000001801085c",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "note_id": "6a6065ec000000001302c115",
+      "title": "你们好奇的【会计专硕】读研问题be like：",
+      "url": "https://www.xiaohongshu.com/explore/6a6065ec000000001302c115",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "note_id": "6a93a7b00000000026037a93",
+      "title": "南审会计学硕研二上课表",
+      "url": "https://www.xiaohongshu.com/explore/6a93a7b00000000026037a93",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "note_id": "6ab75a77000000001a02972e",
+      "title": "南审开学典礼",
+      "url": "https://www.xiaohongshu.com/explore/6ab75a77000000001a02972e",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "note_id": "69d4f134000000002102c848",
+      "title": "从双非审计到北大光华｜小c你终于别再自责",
+      "url": "https://www.xiaohongshu.com/explore/69d4f134000000002102c848",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "note_id": "6ab11d090000000031017a82",
+      "title": "如图",
+      "url": "https://www.xiaohongshu.com/explore/6ab11d090000000031017a82",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "note_id": "6aca71df0000000015016e1e",
+      "title": "文科研究生的日常be like……",
+      "url": "https://www.xiaohongshu.com/explore/6aca71df0000000015016e1e",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "note_id": "6ae20b2f0000000027023651",
+      "title": "南京审计大学MPAcc经验贴来啦！",
+      "url": "https://www.xiaohongshu.com/explore/6ae20b2f0000000027023651",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "note_id": "6aa8b54500000000260161ec",
+      "title": "会计专硕",
+      "url": "https://www.xiaohongshu.com/explore/6aa8b54500000000260161ec",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "note_id": "6ae18088000000002b000090",
+      "title": "我一定要上上海大学！",
+      "url": "https://www.xiaohongshu.com/explore/6ae18088000000002b000090",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "note_id": "6aa80f81000000002a006925",
+      "title": "擦边上岸南审！！",
+      "url": "https://www.xiaohongshu.com/explore/6aa80f81000000002a006925",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    },
+    {
+      "note_id": "6a314e7500000000210152f2",
+      "title": "会计专硕的真实生活是这样的be like：",
+      "url": "https://www.xiaohongshu.com/explore/6a314e7500000000210152f2",
+      "reason": "只读搜索卡，未开正文；不用于任何学校/导师/课程结论。"
+    }
+  ],
+  "queries": [
+    {
+      "engine": "web-system2",
+      "q": "site.xiaohongshu.com 南审 MPAcc 温素彬 导师",
+      "result": "未返回可直接核验的XHS正文，主要为官方教师/培养报道。"
+    },
+    {
+      "engine": "web-system2",
+      "q": "site.xiaohongshu.com 南京审计大学 崔秀梅 潘俊 导师 研究生",
+      "result": "主要为官方网页，未取得新学生亲历正文。"
+    },
+    {
+      "engine": "web-system2",
+      "q": "南审 MPAcc 程博 凌华 组会 导师 学生",
+      "result": "未取得新可用学生经历。"
+    },
+    {
+      "engine": "XHS-site",
+      "q": "南审 MPAcc 组会",
+      "readScope": "首批20个结果卡；2个新候选正文实际读后筛除，其余见duplicates/unread。"
+    },
+    {
+      "engine": "XHS-existing-note",
+      "q": "X01具名评论及王烨追加4回复",
+      "readScope": "顶层逐段至THE END；选择性展开4条。"
+    }
+  ],
+  "counts": {
+    "newSocialPosts": 0,
+    "updatedSocialPosts": 1,
+    "attributionCorrections": 1,
+    "newActuallyReadPostsScreened": 2,
+    "searchCardsReviewed": 20
+  },
+  "limits": "本轮没有新的可确认MPAcc日常指导样本；唯一更新是旧帖的归因校正，不增加或强化原导师评价。未向任何人发消息、未要求登录、未读取私信。"
+}
