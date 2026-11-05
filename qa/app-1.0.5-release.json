@@ -20,7 +20,8 @@
     "officialEvidence": 182,
     "internshipFirms": 12,
     "internshipResources": 35,
-    "letterVersion": "1.0.4"
+    "letterVersion": "1.0.4",
+    "letterMatchesOriginalTested104Apk": true
   },
   "downloads": [
     {
@@ -42,8 +43,97 @@
       "unchanged": true
     }
   ],
-  "browserQA": "pending",
-  "nativeBuild": "pending",
-  "runtimeSmoke": "pending",
-  "realDeviceTested": false
+  "browserQA": {
+    "version": "1.0.5",
+    "status": "passed_with_limitations",
+    "method": "Real CUA cloud browser UI checks against managed preview; no product code changes.",
+    "checked_route": "#music",
+    "passed": [
+      {
+        "check": "Primary navigation",
+        "observed": "Five unique navigation items; music is the fifth item and targets #music."
+      },
+      {
+        "check": "Music initial state",
+        "observed": "Music heading displayed, playlist count 19, album selector exposes 11 albums; playback and seek disabled before local audio selection."
+      },
+      {
+        "check": "Official platform entry",
+        "observed": "QQ Music search links with matching song query and visible warning that search results can contain other versions; no exact-version playback promise."
+      },
+      {
+        "check": "Search",
+        "input": "好想",
+        "observed_result_count": 2
+      },
+      {
+        "check": "Album filter",
+        "input": "希忘Hope",
+        "observed_result_count": 5
+      },
+      {
+        "check": "Version filter",
+        "input": "现场版",
+        "observed_result_count": 4
+      },
+      {
+        "check": "Album plus version filter",
+        "input": "华晨宇日出演唱会特辑 + 现场版",
+        "observed_result_count": 3
+      },
+      {
+        "check": "No results",
+        "input": "不存在的QA歌曲",
+        "observed_result_count": 0,
+        "observed": "Clear no-results guidance and show-all action."
+      },
+      {
+        "check": "Clear filters",
+        "observed": "Clear-filters action used successfully between search, album, and version checks."
+      }
+    ],
+    "not_verified": [
+      "Actual local audio import, manual play, elapsed-time progression, pause, seek, volume, mute, or previous/next playback.",
+      "Pause on leaving music, page-session local source retention, and local source reset after refresh.",
+      "Final pagehide/bfcache patch in the browser; targeted automated coverage is reported separately.",
+      "Final screenshot and visual QA; no browser screenshot was saved.",
+      "Old feature regression: mentor comparison and internship tools were not exercised in this browser pass.",
+      "Narrow or mobile viewport: the available browser API did not advertise viewport resizing."
+    ],
+    "limitations": [
+      "A combined CUA action call attempting song selection and the documented file-chooser flow returned no output for more than eight minutes and was interrupted. It is unknown which action it reached.",
+      "One recovery getAXState call also failed to return and was interrupted. Browser checks stopped; no repeated file-chooser attempt was made.",
+      "These are browser-tool availability limits, not confirmed product defects. No unobserved step is recorded as passed.",
+      "The successful filter observations preceded the final lifecycle-only pagehide patch; that patch did not change the UI contract."
+    ]
+  },
+  "nativeBuild": "passed",
+  "runtimeSmoke": {
+    "run": 42048297388,
+    "artifact": 13426351499,
+    "sourceCommit": "68a9781c6dd147078abe2d7eff094bab0584327d",
+    "status": "passed",
+    "result": "PASS: Android 14 proxy-blocked online startup switched automatically to packaged data, rendered a mentor, closed details with Back, and exited without a fallback history loop.",
+    "musicResult": "PASS: Android 14 offline music rendered 19 tracks, selected the generated local QA WAV through the system audio picker, decoded it and advanced playback time, then paused and retained the session file after cancelling a second picker. No user recording was used or uploaded."
+  },
+  "realDeviceTested": false,
+  "visualQA": {
+    "platform": "Android 14 emulator",
+    "status": "passed",
+    "screenshots": [
+      "music-visible.png",
+      "local-audio-playing.png"
+    ],
+    "observed": "Five readable navigation items, music heading, 19-track count, responsive stacked player, local audio controls, 0:02 decoded test-audio progression, import and filter controls; no horizontal overflow observed in these screenshots."
+  },
+  "apk": {
+    "bytes": 1037472,
+    "sha256": "21af195ff9b7288bac97bd9fe9ab41017f80adb94dd949a930d5ec3233f5e566",
+    "versionCode": 6,
+    "versionName": "1.0.5",
+    "permissions": [
+      "android.permission.INTERNET"
+    ],
+    "certificateSha256": "5ccc0ee83c6b431026e864fa1d15b962a0e4f5e948a43930eb5939aa473d5d29"
+  }
 }
