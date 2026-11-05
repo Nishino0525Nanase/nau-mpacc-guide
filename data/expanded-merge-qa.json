@@ -1,0 +1,45 @@
+{
+  "socialPosts": 108,
+  "newIndexedSources": 26,
+  "newXhsSources": 23,
+  "newOtherPlatformSources": 3,
+  "newConditionalUsefulSources": 15,
+  "newBackgroundSources": 11,
+  "newActuallyReadUniqueSources": 40,
+  "newReadExcludedSources": 14,
+  "newScreenedOnlySources": 1,
+  "newUnreadLeads": 6,
+  "newPersonalMentorEvidence": 0,
+  "queryCount": 74,
+  "distinctQueryCount": 72,
+  "categoryCounts": {
+    "背景或待核实材料": 31,
+    "可用生活学习线索": 52,
+    "排除主要攻略选导依据": 20,
+    "有边界的导师课程反馈": 3,
+    "仅筛选记录": 2
+  },
+  "sourceAliases": 286,
+  "uniqueSourceUrls": 193,
+  "sourceCodesUnresolved": [],
+  "originalAliasesPreserved": true,
+  "authorPreserved": true,
+  "updatedAtAbsent": true,
+  "originalChapter12BlocksPreserved": true,
+  "mentorEvidenceUnchanged": true,
+  "newParagraphs": 9,
+  "writeRequested": true,
+  "sourceFileHashes": {
+    "life": "9bb46e7d199052084ef35e27089c7b377253869c8a239186b17ced2c4da30bb9",
+    "mentors": "f936673a92aa45d5e04a6423f81806d21e958feb2128a6ecd4077addee8d9bf5",
+    "public": "77b49c114c8ced56d34b52ff195d603e5ffb60b392be0aa78790fd699d9616fe"
+  },
+  "outputSha256": "2cede8b936a102dc94531cbceda4b7f5af7c0395f67874ebd7371c1eec5a7947",
+  "outputBytes": 1349376,
+  "downloadSizes": {
+    "mentor-guide": 68020,
+    "life-guide": 68365,
+    "evidence-index": 130404
+  },
+  "uniqueRawSourceUrls": 194
+}

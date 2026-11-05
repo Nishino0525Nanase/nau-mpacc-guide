@@ -1,8 +1,8 @@
-# 南审 MPAcc 选导与生活指南
+# 雨诺的南审手记 · MPAcc 选导与生活指南
 
 独立 GitHub Pages 网站。目标仓库：`Nishino0525Nanase/nau-mpacc-guide`，项目路径：`/nau-mpacc-guide/`。
 
-已于 2026-11-05 发布并验证。
+网页已发布。策划与设计：胡雨诺；西南林业大学 → 南京审计大学 MPAcc（保研），介绍由委托方提供。
 
 - [打开指南](https://nishino0525nanase.github.io/nau-mpacc-guide/)
 - [站点管理与私人统计入口](https://nishino0525nanase.github.io/nau-mpacc-guide/admin/)
@@ -32,3 +32,18 @@
 ## 内容边界
 
 指南为非官方资料。官方导师名单、公开资料与社交平台自述分别标记；本科课程印象、二手转述、历史经历不等同于当年 MPAcc 日常指导风格。名额以当年学院通知和导师回复为准。
+
+## 资料扩充与隐私选择
+
+当前来源索引为108条，本轮新增收录26条（小红书23、其他平台3），另列筛除和未读线索。来源数量不等于独立学生数或导师评价数量。
+
+网页不显示资料生成日期；原帖发布日期和政策年份用于判断适用边界。匿名统计只有访客明确同意后才启用，拒绝不影响阅读，且可随时撤回。
+
+## 自愿视频共享
+
+`video/` 为独立自愿共享页，先本机预览，再单独明示同意共享给网站管理员 GitHub Nishino0525Nanase（不等同于页面策划署名者）。Cookie 同意不会获取摄像头。页面始终显示预览与共享状态，停止、切后台和10分钟到期会关闭摄像头，不录音、不录像、不截帧。
+
+- [视频共享页](https://nishino0525nanase.github.io/nau-mpacc-guide/video/)
+- [私人视频后台](https://nau-guide-video-owner.nishinonanase77.chatgpt.site/)：Sites平台保持仅站主账号可访问。
+- `services/video-signal` 与 `services/video-owner` 是服务源码；运行时凭据不在仓库。信令只临时处理SDP和连接信息，视频走点对点连接；过期授权立即失效，物理清理在后续有效请求触发。
+- 当前使用公共STUN；未配置TURN，部分网络可能不能连通。真实摄像头与跨网络视频需要实际设备验收，单元测试不替代此检查。

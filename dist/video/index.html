@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+  <title>自愿视频共享 · 雨诺的南审手记</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./video.css">
+  <script src="./video-config.js" defer></script>
+  <script src="./sender.js" defer></script>
+</head>
+<body>
+  <main class="video-shell">
+    <a class="back-link" href="../">← 返回雨诺的南审手记</a>
+    <header class="page-heading">
+      <span class="eyebrow">OPTIONAL VIDEO SHARING</span>
+      <h1>自愿视频共享</h1>
+      <p class="important">开启共享后，网站管理员（GitHub：Nishino0525Nanase）可实时看到你的摄像头画面。</p>
+      <p class="intro">阅读指南不需要摄像头权限。本页与 Cookie 设置分开：先在本机预览，再由你决定是否将画面共享给站主。</p>
+    </header>
+    <div class="setup-notice" id="setup-notice" role="status"></div>
+    <div class="video-layout">
+      <section class="preview-card" aria-labelledby="preview-heading">
+        <div class="preview-heading"><h2 id="preview-heading">你的前置摄像头</h2><span class="state-badge" id="state-badge">未开启</span></div>
+        <div class="video-stage">
+          <video id="local-video" autoplay muted playsinline aria-label="本机摄像头预览"></video>
+          <div class="video-empty" id="video-empty"><span aria-hidden="true">◎</span><p>点击“预览前置摄像头”后，<br>才会向浏览器请求摄像头权限。</p></div>
+        </div>
+        <div class="preview-status"><span class="state-dot" id="state-dot" aria-hidden="true"></span><p id="video-status" role="status" aria-live="polite">摄像头尚未开启，没有共享画面。</p></div>
+        <p class="countdown" id="countdown" hidden></p>
+        <button class="stop-button" type="button" id="stop-video" disabled>停止共享并关闭摄像头</button>
+      </section>
+      <section class="controls-card" aria-labelledby="steps-heading">
+        <h2 id="steps-heading">每一步，都由你决定</h2>
+        <div class="step"><span class="step-number">01</span><div><h3>先在本机预览</h3><p>请求摄像头权限后，画面只在下方播放器中显示，不会因此传给站主。不会请求麦克风权限。</p><button class="secondary-button" type="button" id="preview-video">预览前置摄像头</button></div></div>
+        <div class="step"><span class="step-number">02</span><div><h3>单独同意，再共享</h3><label class="camera-consent"><input type="checkbox" id="camera-consent"><span>我同意将实时摄像头画面共享给网站管理员（GitHub：Nishino0525Nanase），并知道可随时停止。<strong>这不是 Cookie 或匿名统计同意，接收方也不等同于网页署名者。</strong></span></label><button class="primary-button" type="button" id="share-video" disabled>将画面共享给网站管理员</button><p class="small-note">在你主动点击此按钮前，不会创建远程视频共享会话。</p></div></div>
+        <details class="privacy-details"><summary>隐私与连接说明</summary><ul><li>本站不录音、不录制视频、不截取照片。站主只能查看你主动开启的实时会话。</li><li>每次共享最长 10 分钟。停止、关闭本页或切换到后台时，会关闭摄像头并终止连接。</li><li>点对点连接会交换临时网络连接信息。信令服务只暂存建立连接所需的信息，不保存视频画面。</li><li>部分网络需要额外中继才能连接。如果本次无法建立连接，页面会明确提示并关闭摄像头。</li></ul></details>
+      </section>
+    </div>
+    <p class="footer-note">不想共享？直接 <a href="../">继续阅读指南</a>。任何时候都无需授权摄像头才能访问资料。</p>
+    <noscript><p class="setup-notice">需要 JavaScript 才能使用自愿视频功能。你仍可直接返回指南阅读资料。</p></noscript>
+  </main>
+</body>
+</html>
