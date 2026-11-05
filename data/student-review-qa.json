@@ -18,10 +18,11 @@
     "newSourceCodes": [
       "R701",
       "R702",
-      "R801"
+      "R801",
+      "R901"
     ],
     "newSocialPostCount": 1,
-    "newOfficialEvidenceCount": 2,
+    "newOfficialEvidenceCount": 3,
     "updatedExistingSourceCount": 7,
     "newPostCountNote": "同帖新增评论、重新展开与官方访谈重读均不增加来源或帖子数。",
     "attributionRule": "完整姓名及明确上下文才归名；缩写、单姓和名单唯一匹配不足以归名。",
@@ -40,6 +41,31 @@
         "R801"
       ],
       "scope": "新增1个具名导师学生访谈和1个未具名导师MPAcc校友访谈；旧小红书正文与公开评论补读，不计新帖；折叠登录内容未读"
+    },
+    "round8": {
+      "newOfficialSources": 1,
+      "newTeacherSelfReports": 1,
+      "sourceCodes": [
+        "R901",
+        "R317"
+      ],
+      "newStudentExperiences": 0,
+      "newXhsSources": 0,
+      "authenticatedXhsSourcesReread": 2,
+      "reconfirmedExistingReviewRecords": 16,
+      "newCommentContextWithoutExperience": 1,
+      "screenshotsCaptured": 5,
+      "existingScreenshotFilesPreserved": 5,
+      "publicSearchQueriesSubmitted": 31,
+      "scope": "登录后补读X01和R317相关支线，课程帖附5张实际截图；新增一份明确标注的教师本人自述。未新增学生指导评价、小红书帖子或独立学生来源；未读评论与日期差异保留。",
+      "courseCommentsRead": 5,
+      "namedMentorReviewsFromCoursePost": 0,
+      "newScreenshotSources": [
+        "R317"
+      ],
+      "totalPublishedScreenshotFiles": 10,
+      "courseScreenshotBytes": 91099,
+      "courseCommentImageAttachments": 4
     }
   },
   "sourceChanges": [
@@ -54,6 +80,18 @@
     {
       "code": "R801",
       "action": "new_official_student_interview"
+    },
+    {
+      "code": "R901",
+      "action": "new_official_teacher_self_report_not_student_review"
+    },
+    {
+      "code": "X01",
+      "action": "authenticated_reread_no_new_student_experiences"
+    },
+    {
+      "code": "R317",
+      "action": "existing_course_post_reread_five_actual_screenshots_no_mentor_attribution"
     }
   ],
   "existingReviewRecordsRefined": 21,

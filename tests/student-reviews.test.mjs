@@ -148,3 +148,38 @@ test('post details expose registered captures and explicit comment captures whil
  a.click('mentor','mentor-01');html=a.get('#dialog-content').innerHTML;
  assert.doesNotMatch(html,/原帖与评论截图|截图未提供|post-overview|comment-01/);
 });
+
+test('post dialog keeps a shared capture under its explicit comment and shows each image once',async()=>{
+ const data=reviewFixture(), post=data.socialPosts[0];
+ const shared={src:'./evidence/xhs/shared-comment.jpg',caption:'明确归属的评论截图'};
+ const overview={src:'./evidence/xhs/shared-post-top.jpg',caption:'原帖正文截图'};
+ post.sourceIds=['R799'];post.screenshots=[shared,overview];
+ data.sourceRegistry.R799={title:'同帖来源',url:post.url,screenshots:[shared,overview]};
+ post.comments=[{author:'原评论者',text:'THIS_COMMENT_OWNS_CAPTURE',screenshots:[shared]},
+  {author:'其他回复者',text:'ANOTHER_COMMENT',screenshots:[shared]}];
+ const a=await app({data});a.route('#posts');
+ assert.match(a.get('#post-results').innerHTML,/附 2 张原帖／评论截图/);
+ a.click('post',post.id);const html=a.get('#dialog-content').innerHTML;
+ assert.equal((html.match(/<img[^>]+src="\.\/evidence\/xhs\/shared-comment\.jpg"/g)||[]).length,1);
+ assert.equal((html.match(/<img[^>]+src="\.\/evidence\/xhs\/shared-post-top\.jpg"/g)||[]).length,1);
+ assert(html.indexOf('THIS_COMMENT_OWNS_CAPTURE')<html.indexOf('shared-comment.jpg'));
+ assert(html.indexOf('shared-comment.jpg')<html.indexOf('ANOTHER_COMMENT'));
+ assert(html.indexOf('ANOTHER_COMMENT')<html.indexOf('shared-post-top.jpg'));
+});
+
+test('latest review summary reports self-reports and rereads without recycling older batch additions',async()=>{
+ const data=reviewFixture();
+ data.meta.research102={newOfficialSources:987,updatedSocialPosts:988};
+ data.meta.studentReviewResearch.round8={newTeacherSelfReports:1,authenticatedXhsSourcesReread:2,screenshotsCaptured:5,newStudentExperiences:0,newXhsSources:0};
+ const a=await app({data});a.route('#posts');
+ const html=a.get('#app').innerHTML;
+ assert.match(html,/新增 <strong>1<\/strong> 份教师本人自述（非学生评价）/);
+ assert.match(html,/补读 <strong>2<\/strong> 篇既有小红书/);
+ assert.match(html,/补入 <strong>5<\/strong> 张真实截图/);
+ assert.match(html,/本轮未新增学生指导评价或小红书帖子/);
+ assert.doesNotMatch(html,/<strong>987<\/strong>|<strong>988<\/strong>/);
+ delete data.meta.studentReviewResearch.round8;
+ const older=await app({data});older.route('#posts');
+ assert.match(older.get('#app').innerHTML,/<strong>987<\/strong> 条官方来源/);
+ assert.match(older.get('#app').innerHTML,/<strong>988<\/strong> 篇旧帖/);
+});

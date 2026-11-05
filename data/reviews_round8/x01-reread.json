@@ -1,0 +1,68 @@
+{
+  "batch": "student-reviews-round8",
+  "sourceCode": "X01",
+  "postId": "67ecb72b000000001e0042af",
+  "title": "南审mpacc导师求推荐",
+  "author": "银河落九天",
+  "postDate": "2025-04-02",
+  "loginStateVerified": true,
+  "expandedRepliesWorked": true,
+  "readingScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。",
+  "threadsRead": [
+    "王烨首评及展开的4条追加回复",
+    "黄中生本科课程主评与2条教材讨论回复",
+    "傅祥斐论文及课程评论与显示跟评",
+    "李仲泽课程亲历、朋友论文转述及显示追问",
+    "冬日来信同条评论中的王菁华课程、王敬勇竞赛、温素彬笼统提名",
+    "董、cxj等缩写或单姓支线，仍不归名"
+  ],
+  "newAttributableStudentExperienceCount": 0,
+  "newXhsPostCount": 0,
+  "reconfirmedTeachers": [
+    "王烨",
+    "黄中生",
+    "崔秀梅",
+    "刘国城",
+    "张兴亮",
+    "王敬勇",
+    "王菁华",
+    "温素彬",
+    "傅祥斐",
+    "李仲泽"
+  ],
+  "additionalContext": [
+    {
+      "author": "林瑜",
+      "date_display": "2025-04-02",
+      "teacher": "潘俊",
+      "text": "评论者对潘俊作笼统提名并提及读博，但没有交代本人学位、指导关系或具体经历。",
+      "limitations": "不作为新增学生亲历或博士去向承诺；已有MPAcc指导证据另见具名访谈。",
+      "use_status": "新增可见评论语境，非学生指导评价"
+    }
+  ],
+  "unresolvedAliases": [
+    "董",
+    "c开头",
+    "yby",
+    "cxj",
+    "xw",
+    "tzd",
+    "zl",
+    "黄老师",
+    "黄导",
+    "张老师"
+  ],
+  "attributionLimits": [
+    "只有姓氏、缩写或称呼的评论不归到实名导师，即使出现在同一帖的相邻位置。",
+    "姓名明确但仅有行政职务描述的评论不属于个人指导评价。",
+    "同一评论者的跟评、同帖重读与已收录评论不增加独立来源。",
+    "个别评论日期与既有日志存在显示差异，保留原记录，不据单次二手提取覆盖历史日期。"
+  ],
+  "screenshotExport": {
+    "actualNewFiles": 0,
+    "providerExportSupported": false,
+    "status": "阅读工具未返回可下载截图文件或可用图片链接；浏览记录页另查为404；不将文字总结或原帖配图当评论截图。",
+    "existingPublishedFilesPreserved": 5
+  },
+  "limits": "本轮新见完整姓名不等于新评价；有实质内容者与现有记录重合。仅更新阅读范围并保留一条无具体经历的评论语境。"
+}

@@ -1,0 +1,56 @@
+{
+  "changedCells": {
+    "xl/worksheets/research-102-supplement.xml": [
+      "A3",
+      "L12",
+      "A13",
+      "B13",
+      "C13",
+      "D13",
+      "E13",
+      "F13",
+      "G13",
+      "H13",
+      "I13",
+      "J13",
+      "K13",
+      "L13",
+      "M13"
+    ],
+    "xl/worksheets/app-supplement.xml": [
+      "H16",
+      "I16",
+      "J16",
+      "K16",
+      "L16"
+    ]
+  },
+  "newSource": "R901",
+  "studentReviewRecords": 40,
+  "officialEvidence": 185,
+  "socialPosts": 114,
+  "sheets": 13,
+  "tables": 11,
+  "newSourceRow": 13,
+  "rowHeights": {
+    "cont12": 147,
+    "cont13": 82,
+    "app16": 120
+  },
+  "allOtherPackagePartsByteIdentical": true,
+  "allOtherCellsUnchanged": true,
+  "nativeHyperlinkCached": true,
+  "original": {
+    "formulas": 525,
+    "cached": 525,
+    "errors": 0
+  },
+  "final": {
+    "formulas": 526,
+    "cached": 526,
+    "errors": 0
+  },
+  "sourceSha256": "d89f961d3ae7252025e64701926ca26d1fcea36a922d1250b47088a6986c45dd",
+  "outputSha256": "c014f4ef8546b681d01f064c17701d8fb351dd4855950299835fd932b9c26683",
+  "outputBytes": 357245
+}

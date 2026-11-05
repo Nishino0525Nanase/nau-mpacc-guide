@@ -1,0 +1,61 @@
+{
+  "batch": "student-reviews-round8",
+  "sourceCode": "R317",
+  "postId": "6a8edcec000000001f000035",
+  "date": "08-26，年份未显示",
+  "bodyRead": true,
+  "readingScope": "补读已加载顶层与可见跟评，展开会计研究方法和商业智能分析相关回复；页面显示31评论，不用计数推断逐条全部读完；三幅原帖配图未逐张审读。另原生截图复核4条公开可见课程评论与正文。",
+  "comments": [
+    {
+      "id": "r8-course-method",
+      "author": "🍑",
+      "date_display": "08-26；结课形式跟评月日存在显示差异",
+      "course": "会计研究方法",
+      "text": "评论者对课堂与给分的总体感受正面，也提到课堂会抽人回答；跟评回答结课形式为论文。",
+      "limitations": "专业、年级与教师姓名未说明；跟评日期本次提取08-27、既有日志08-28，保留差异，不猜年份或覆盖旧日期。考核以本学期通知为准。"
+    },
+    {
+      "id": "r8-course-software",
+      "author": "🍑",
+      "date_display": "08-26至08-29，年份未显示",
+      "course": "商业智能分析",
+      "text": "评论者说需要安装软件并且每节课实操；展开的同人跟评提及Power BI，并强调主要靠自己动手练习。",
+      "limitations": "最初的软件回答带疑问语气，当前软件与教学要求仍需问任课教师；不承诺简历或就业效果；同人跟评不算独立口碑。"
+    },
+    {
+      "id": "r8-course-audit",
+      "author": "小鱼鱼鱼",
+      "date_display": "08-26，年份未显示",
+      "course": "国家治理与国家审计专题",
+      "text": "评论提到小组作业、可选且加分的课堂汇报及结课论文；个人回忆当时不点名，给分感受居中。",
+      "limitations": "未具名教师，未核实评论者专业年级；历史点名和评分印象不构成本学期安排。"
+    },
+    {
+      "id": "r8-course-forensic",
+      "author": "小羽毛学姐（帖主）",
+      "date_display": "08-26，年份未显示",
+      "course": "司法会计",
+      "text": "帖主分享的课程印象是课堂汇报频繁，给分感受一般。",
+      "limitations": "没有交代本人是否选过该课，按帖主分享保留，不升级为已核实亲历；没有教师姓名。"
+    },
+    {
+      "id": "r8-course-smart-analysis",
+      "author": "濯缨",
+      "date_display": "08-26，年份未显示",
+      "course": "智能商业分析",
+      "text": "评论按“智能商业分析”这一写法给出笼统正面印象。",
+      "limitations": "未说明教师、作业和考核细节；不把“智能商业分析”与另一评论的“商业智能分析”强行认定为同一课程。"
+    }
+  ],
+  "expandedThreads": [
+    "会计研究方法：结课形式回答",
+    "商业智能分析：安装软件与实操的后续讨论"
+  ],
+  "teacherRosterCount": 34,
+  "newNamedStudentReviews": 0,
+  "newXhsPostCount": 0,
+  "namedTeacherMentions": [],
+  "unread": "未穷尽所有选课时间、学分等支线和三幅原图；未具名课程不关联导师。",
+  "screenshotCount": 5,
+  "limits": "课程反馈仅作为历史学习准备线索；评论者专业、年级与亲历程度按原文限定，不自动视为MPAcc学生。"
+}

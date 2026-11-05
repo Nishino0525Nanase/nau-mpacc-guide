@@ -7,7 +7,7 @@
       "detailedMentorCards": 17,
       "lifeChapters": 12,
       "socialPosts": 114,
-      "officialEvidence": 184,
+      "officialEvidence": 185,
       "feedbackRecords": 21,
       "screenedSources": 15,
       "unreadLeads": 6,
@@ -32,7 +32,7 @@
     "directionNote": "G1至G6是资料导览分类，不是统一招生方向；报考以当年125300目录，在读以本级培养方案。",
     "evidenceNote": "官方资料、具名个案、本科课程、研究生转述和身份不明评价分开保留；个人评价不构成导师性格、招生名额或普遍指导风格结论。",
     "quotaNote": "名单内不代表当年仍有名额；正式选导以当年双选通知及导师本人回复为准。",
-    "platformNote": "社交来源索引实际114条，官方公开资料184条；同帖补读、同事件附件和转载不重复计数。课程体验、学位类型未明的硕士经历与明确MPAcc指导分开呈现。",
+    "platformNote": "社交来源索引实际114条，官方公开资料185条；同帖补读、同事件附件和转载不重复计数。课程体验、学位类型未明的硕士经历与明确MPAcc指导分开呈现；教师自述不计作学生个人评价。",
     "sourceInputFiles": [
       "life_content.json",
       "mentor_expanded_content.json",
@@ -566,7 +566,7 @@
     },
     "appEdition": {
       "web": {
-        "version": "1.0.7"
+        "version": "1.0.8"
       },
       "android": {
         "available": true,
@@ -669,10 +669,11 @@
       "newSourceCodes": [
         "R701",
         "R702",
-        "R801"
+        "R801",
+        "R901"
       ],
       "newSocialPostCount": 1,
-      "newOfficialEvidenceCount": 2,
+      "newOfficialEvidenceCount": 3,
       "updatedExistingSourceCount": 7,
       "newPostCountNote": "同帖新增评论、重新展开与官方访谈重读均不增加来源或帖子数。",
       "attributionRule": "完整姓名及明确上下文才归名；缩写、单姓和名单唯一匹配不足以归名。",
@@ -691,6 +692,31 @@
           "R801"
         ],
         "scope": "新增1个具名导师学生访谈和1个未具名导师MPAcc校友访谈；旧小红书正文与公开评论补读，不计新帖；折叠登录内容未读"
+      },
+      "round8": {
+        "newOfficialSources": 1,
+        "newTeacherSelfReports": 1,
+        "sourceCodes": [
+          "R901",
+          "R317"
+        ],
+        "newStudentExperiences": 0,
+        "newXhsSources": 0,
+        "authenticatedXhsSourcesReread": 2,
+        "reconfirmedExistingReviewRecords": 16,
+        "newCommentContextWithoutExperience": 1,
+        "screenshotsCaptured": 5,
+        "existingScreenshotFilesPreserved": 5,
+        "publicSearchQueriesSubmitted": 31,
+        "scope": "登录后补读X01和R317相关支线，课程帖附5张实际截图；新增一份明确标注的教师本人自述。未新增学生指导评价、小红书帖子或独立学生来源；未读评论与日期差异保留。",
+        "courseCommentsRead": 5,
+        "namedMentorReviewsFromCoursePost": 0,
+        "newScreenshotSources": [
+          "R317"
+        ],
+        "totalPublishedScreenshotFiles": 10,
+        "courseScreenshotBytes": 91099,
+        "courseCommentImageAttachments": 4
       }
     },
     "internshipResearch": {
@@ -1101,7 +1127,8 @@
               "无学位、年级、导师关系或具体反馈事例。"
             ],
             "readingScope": "已读该完整评论及显示回复；将王菁华、王敬勇、董必荣和温素彬分别归因。",
-            "readThisRound": true
+            "readThisRound": true,
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           }
         ],
         "recommendationPoints": [],
@@ -1125,7 +1152,8 @@
             "\"南审\" \"wsb\" 导师"
           ],
           "readingScopes": [
-            "已读该完整评论及显示回复；将王菁华、王敬勇、董必荣和温素彬分别归因。"
+            "已读该完整评论及显示回复；将王菁华、王敬勇、董必荣和温素彬分别归因。",
+            "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           ],
           "gaps": [
             "尚缺近年直系MPAcc对选题/改稿/组会/实习冲突的实际经历。",
@@ -1265,7 +1293,8 @@
               "附和不增加独立来源；不能据此断言放养、轻松毕业或不负责任。"
             ],
             "readingScope": "首评及全部5条显示回复本轮实际读到（原已显示1条、展开追加4条）。",
-            "readThisRound": true
+            "readThisRound": true,
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           }
         ],
         "recommendationPoints": [],
@@ -1291,7 +1320,8 @@
             "\"南京审计大学\" \"王烨\" \"评价\" 导师"
           ],
           "readingScopes": [
-            "首评及全部5条显示回复本轮实际读到（原已显示1条、展开追加4条）。"
+            "首评及全部5条显示回复本轮实际读到（原已显示1条、展开追加4条）。",
+            "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           ],
           "gaps": [
             "尚缺经确认的近年直系MPAcc具体事例；WY与王禹同缩写，不能将WY评论自动归王烨。",
@@ -1880,7 +1910,8 @@
               "教材跟评有“好像”“忘记了”，不得当教材事实。"
             ],
             "readingScope": "首评、同人既显跟评和新展开2条回复均读到。",
-            "readThisRound": true
+            "readThisRound": true,
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           },
           {
             "id": "sr-919e575806f96f",
@@ -1913,7 +1944,8 @@
               "没有具体课堂行为、年级和学位信息；仅授课维度。"
             ],
             "readingScope": "本轮浏览器实际读取文字评论；不含未展开回复或图片名单验证。",
-            "readThisRound": true
+            "readThisRound": true,
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           },
           {
             "id": "sr-9b7c6d9b39f91a",
@@ -1947,7 +1979,8 @@
               "无黄中生独立行为细节。"
             ],
             "readingScope": "本轮浏览器实际读取文字评论；不含未展开回复或图片名单验证。",
-            "readThisRound": true
+            "readThisRound": true,
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           }
         ],
         "recommendationPoints": [],
@@ -1975,7 +2008,8 @@
           "readingScopes": [
             "保留既有已读且已限定归因的评论；本轮没有重读时不计为新增评论。",
             "首评、同人既显跟评和新展开2条回复均读到。",
-            "本轮浏览器实际读取文字评论；不含未展开回复或图片名单验证。"
+            "本轮浏览器实际读取文字评论；不含未展开回复或图片名单验证。",
+            "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           ],
           "gaps": [
             "X01黄老师/黄导正面提名没有全名确认，不能归黄中生。",
@@ -2269,7 +2303,8 @@
               "没有明确本科/研究生，也没有个人导师关系；不转写成MPAcc工作量事实。"
             ],
             "readingScope": "本轮浏览器实际读取文字评论；不含未展开回复或图片名单验证。",
-            "readThisRound": true
+            "readThisRound": true,
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           },
           {
             "id": "sr-c8216c4fc1a3f7",
@@ -2381,7 +2416,8 @@
           "readingScopes": [
             "全文L18-L96读到；区分本科比赛、研究生课堂与毕业论文三个阶段。",
             "本轮浏览器实际读取文字评论；不含未展开回复或图片名单验证。",
-            "本轮读到首评及作者已显示跟评；该楼另1条折叠回复未重读。"
+            "本轮读到首评及作者已显示跟评；该楼另1条折叠回复未重读。",
+            "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           ],
           "gaps": [
             "官方成功访谈存在选择偏差；缺少近年不同目标学生的独立长期经历。",
@@ -3066,7 +3102,8 @@
                 "textAltered": false
               }
             ],
-            "priorReadingScope": "本轮由同组研究代理 reviews_group_a 实际重读X01顶层至THE END并核对本条及相关已显示回复；不是仅凭旧摘要采用。其他未展开分支不称全部读完。"
+            "priorReadingScope": "本轮由同组研究代理 reviews_group_a 实际重读X01顶层至THE END并核对本条及相关已显示回复；不是仅凭旧摘要采用。其他未展开分支不称全部读完。",
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           }
         ],
         "recommendationPoints": [
@@ -3105,7 +3142,8 @@
           ],
           "readingScopes": [
             "通过网页open实际读取全文，重点核对朱安琪段落及全文文图署名；未只采用搜索摘要。",
-            "本轮由同组研究代理 reviews_group_a 实际重读X01顶层至THE END并核对本条及相关已显示回复；不是仅凭旧摘要采用。其他未展开分支不称全部读完。"
+            "本轮由同组研究代理 reviews_group_a 实际重读X01顶层至THE END并核对本条及相关已显示回复；不是仅凭旧摘要采用。其他未展开分支不称全部读完。",
+            "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           ],
           "gaps": [
             "明确MPAcc直系的近期亲历、当前组会间隔、论文反馈与实习协调未核实。",
@@ -3658,7 +3696,8 @@
               "不能从本科或阶段不明的评论推出MPAcc当前指导风格。"
             ],
             "readingScope": "本轮由同组研究代理 reviews_group_a 实际重读X01顶层至THE END并核对本条及相关已显示回复；不是仅凭旧摘要采用。其他未展开分支不称全部读完。",
-            "readThisRound": true
+            "readThisRound": true,
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           },
           {
             "id": "sr-ea460f83b4da49",
@@ -3692,7 +3731,8 @@
               "不能从本科或阶段不明的评论推出MPAcc当前指导风格。"
             ],
             "readingScope": "本轮由同组研究代理 reviews_group_a 实际重读X01顶层至THE END并核对本条及相关已显示回复；不是仅凭旧摘要采用。其他未展开分支不称全部读完。",
-            "readThisRound": true
+            "readThisRound": true,
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           }
         ],
         "recommendationPoints": [],
@@ -3718,7 +3758,8 @@
             "\"张兴亮\" \"南审\" \"感谢\""
           ],
           "readingScopes": [
-            "本轮由同组研究代理 reviews_group_a 实际重读X01顶层至THE END并核对本条及相关已显示回复；不是仅凭旧摘要采用。其他未展开分支不称全部读完。"
+            "本轮由同组研究代理 reviews_group_a 实际重读X01顶层至THE END并核对本条及相关已显示回复；不是仅凭旧摘要采用。其他未展开分支不称全部读完。",
+            "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           ],
           "gaps": [
             "两条评论没有组会、论文反馈或实习协调细节；不能据此写“耐心改论文”“放养”“不push”。",
@@ -4638,7 +4679,8 @@
             ],
             "readingScope": "既有已读日志复核；本轮未重开X01，不计新增来源或新增学生评价。",
             "readThisRound": false,
-            "evidenceOrigin": "existing_baseline_reaudited"
+            "evidenceOrigin": "existing_baseline_reaudited",
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           }
         ],
         "recommendationPoints": [],
@@ -4663,7 +4705,8 @@
             "\"南审\" \"王敬勇\" \"评价\""
           ],
           "readingScopes": [
-            "既有已读日志复核；本轮未重开X01，不计新增来源或新增学生评价。"
+            "既有已读日志复核；本轮未重开X01，不计新增来源或新增学生评价。",
+            "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           ],
           "gaps": [
             "竞赛类型和学位阶段未知",
@@ -5501,7 +5544,8 @@
             ],
             "readingScope": "既有已读日志复核；本轮未重开X01，不计新增来源或新增学生评价。",
             "readThisRound": false,
-            "evidenceOrigin": "existing_baseline_reaudited"
+            "evidenceOrigin": "existing_baseline_reaudited",
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           }
         ],
         "recommendationPoints": [],
@@ -5526,7 +5570,8 @@
             "\"南京审计大学\" \"王菁华\" \"学生\" \"老师\""
           ],
           "readingScopes": [
-            "既有已读日志复核；本轮未重开X01，不计新增来源或新增学生评价。"
+            "既有已读日志复核；本轮未重开X01，不计新增来源或新增学生评价。",
+            "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           ],
           "gaps": [
             "只有本科课程体验",
@@ -5820,6 +5865,22 @@
           ],
           "eventKey": "2026-fu-data-assets-lecture",
           "expansionBatch": "research-round3"
+        },
+        {
+          "id": "R901-mentor-26-self-report",
+          "kind": "official",
+          "category": "教师本人自述·非学生评价",
+          "statusLabel": "教师本人自述·非学生评价",
+          "population": "文章没有说明所指导论文的学生学位阶段",
+          "date": "2023-07-21",
+          "author": "傅祥斐（本人署名段落）",
+          "text": "本人回顾通过案例准备和演练改进《成本与管理会计》教学；在学年、毕业论文指导中交流学习与未来规划，并指导学科竞赛。[R901]",
+          "url": "https://www.zgcznet.com/zdct/202307/20230721/j_2023072108461800016899005117157198.html",
+          "limitations": "教师本人署名自述，不能算学生一手评价或独立印证匿名评论。；文中前6%的评教结果为教师自述，未提供原始评教数据，不应作导师排名。；没有组会频次、改稿周期、研究任务量、实习放行或就业资源分配的细节。；2023年的历史经历不保证当前指导方式和名额。",
+          "sourceIds": [
+            "R901"
+          ],
+          "expansionBatch": "student-reviews-round8"
         }
       ],
       "links": [
@@ -5834,6 +5895,10 @@
         {
           "label": "补充官方来源",
           "url": "https://gs.nau.edu.cn/_upload/article/files/2b/76/9e8c6b23473eb26a5da0457c937f/a4c5a1b9-5d7b-46d5-b86d-b4c4362f2d67.pdf"
+        },
+        {
+          "label": "教师本人自述（非学生评价）",
+          "url": "https://www.zgcznet.com/zdct/202307/20230721/j_2023072108461800016899005117157198.html"
         }
       ],
       "feedbackStatus": "论文指导自述，阶段未明",
@@ -5849,7 +5914,9 @@
       "rosterOrder": 26,
       "rosterSourceUrl": "https://gs.nau.edu.cn/2018/0928/c5011a44003/page.htm",
       "rosterSourceDate": "2026-01-08",
-      "sourceCodes": [],
+      "sourceCodes": [
+        "R901"
+      ],
       "studentReviews": {
         "coverageStatus": "guidance_unspecified",
         "coverageLabel": "论文指导自述，阶段未明",
@@ -5925,7 +5992,8 @@
               "“不push”是个人描述，不能承诺当前学生任务轻或一定好毕业"
             ],
             "readingScope": "本轮原帖顶层评论及展开1条回复；读到小饭追问和原作者2025-04-04跟评",
-            "readThisRound": true
+            "readThisRound": true,
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           },
           {
             "id": "sr-cc151a6d666e87",
@@ -5962,7 +6030,8 @@
               "不能据此推断研究生论文指导、回复速度或实习自由度"
             ],
             "readingScope": "本轮打开原帖、读取相应可见顶层评论",
-            "readThisRound": true
+            "readThisRound": true,
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           },
           {
             "id": "sr-6cc30c5c8335af",
@@ -6000,7 +6069,8 @@
               "没有具体反馈时效、训练安排和实习规则"
             ],
             "readingScope": "本轮打开原帖、读取相应可见顶层评论",
-            "readThisRound": true
+            "readThisRound": true,
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           }
         ],
         "recommendationPoints": [
@@ -6037,7 +6107,8 @@
           "readingScopes": [
             "保留既有已读且已限定归因的评论；本轮没有重读时不计为新增评论。",
             "本轮原帖顶层评论及展开1条回复；读到小饭追问和原作者2025-04-04跟评",
-            "本轮打开原帖、读取相应可见顶层评论"
+            "本轮打开原帖、读取相应可见顶层评论",
+            "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           ],
           "gaps": [
             "未找到已核身份的当前MPAcc亲历者对组会、研究任务、实习和就业支持的具体描述。",
@@ -6412,7 +6483,8 @@
             "firsthandScope": "本人课程接触是直接经历；朋友的论文指导感受为转述，不计为本人硕士指导亲历。",
             "hearsayParts": [
               "朋友的论文指导感受，朋友本人未在本评论中发言。"
-            ]
+            ],
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           },
           {
             "id": "sr-4f903dfc6b113f",
@@ -6449,7 +6521,8 @@
               "不能记作已发生的论文帮助，也不能承诺指导投入或成果"
             ],
             "readingScope": "本轮打开原帖、读取相应可见顶层评论",
-            "readThisRound": true
+            "readThisRound": true,
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           },
           {
             "id": "sr-421ff5269383ef",
@@ -6510,7 +6583,8 @@
             "\"南审\" \"LZZ\" 导师"
           ],
           "readingScopes": [
-            "本轮打开原帖、读取相应可见顶层评论"
+            "本轮打开原帖、读取相应可见顶层评论",
+            "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
           ],
           "gaps": [
             "无明确当前MPAcc身份的一手论文指导过程。",
@@ -10547,13 +10621,58 @@
           "expansionBatch": "research-round3"
         },
         {
-          "type": "p",
-          "text": "MPAcc/MAud选课互助帖的评论提到软件实操、小组作业、课堂汇报和结课论文，评论者年级与专业未全部核验。 商业智能分析评论提到频繁实操及Power BI，软件仍需问任课教师。 国家治理与国家审计专题被描述为小组作业、可选汇报和结课论文；司法会计频繁pre来自作者转述。 仅月日，年份不猜；未具名教师，不能映射导师或承诺评分，图片与部分回复未读全。 [R317]",
+          "type": "details",
+          "text": "展开五条历史课程反馈（原帖附5张截图）",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "选课互助帖的五条课程反馈可用于估算实操、汇报与写作投入。评论仅显示月日，年份、专业和年级未全部核验；没有任课教师全名，不写入导师评价。[R317]"
+            },
+            {
+              "type": "table",
+              "headers": [
+                "课程原文写法",
+                "已读课程反馈",
+                "采用边界"
+              ],
+              "rows": [
+                [
+                  "会计研究方法",
+                  "🍑｜08-26；结课形式跟评月日存在显示差异：评论者对课堂与给分的总体感受正面，也提到课堂会抽人回答；跟评回答结课形式为论文。",
+                  "专业、年级与教师姓名未说明；跟评日期本次提取08-27、既有日志08-28，保留差异，不猜年份或覆盖旧日期。考核以本学期通知为准。"
+                ],
+                [
+                  "商业智能分析",
+                  "🍑｜08-26至08-29，年份未显示：评论者说需要安装软件并且每节课实操；展开的同人跟评提及Power BI，并强调主要靠自己动手练习。",
+                  "最初的软件回答带疑问语气，当前软件与教学要求仍需问任课教师；不承诺简历或就业效果；同人跟评不算独立口碑。"
+                ],
+                [
+                  "国家治理与国家审计专题",
+                  "小鱼鱼鱼｜08-26，年份未显示：评论提到小组作业、可选且加分的课堂汇报及结课论文；个人回忆当时不点名，给分感受居中。",
+                  "未具名教师，未核实评论者专业年级；历史点名和评分印象不构成本学期安排。"
+                ],
+                [
+                  "司法会计",
+                  "小羽毛学姐（帖主）｜08-26，年份未显示：帖主分享的课程印象是课堂汇报频繁，给分感受一般。",
+                  "没有交代本人是否选过该课，按帖主分享保留，不升级为已核实亲历；没有教师姓名。"
+                ],
+                [
+                  "智能商业分析",
+                  "濯缨｜08-26，年份未显示：评论按“智能商业分析”这一写法给出笼统正面印象。",
+                  "未说明教师、作业和考核细节；不把“智能商业分析”与另一评论的“商业智能分析”强行认定为同一课程。"
+                ]
+              ]
+            },
+            {
+              "type": "p",
+              "text": "会计研究方法结课形式的跟评，本次读取显示08-27，既有日志记08-28；保留两次显示差异，不猜年份、不覆盖原记录。 “商业智能分析”与“智能商业分析”按各评论原文分别保留，不因名称相近合并课程，也不关联未具名任课教师。 原帖索引R317附5张真实截图：正文1张和4条课程评论；会计研究方法的论文结课跟评、商业智能分析的Power BI跟评未在截图中。 考核、软件、点名与评分均以本学期任课教师通知为准。[R317]"
+            }
+          ],
           "sourceCodes": [
             "R317"
           ],
-          "expansionId": "round3-xhs-6a8edcec000000001f000035",
-          "expansionBatch": "research-round3"
+          "expansionId": "round8-course-feedback-R317",
+          "expansionBatch": "student-reviews-round8"
         },
         {
           "type": "p",
@@ -10899,15 +11018,6 @@
             "R318"
           ],
           "expansionId": "app-xhs-67aef89b0000000029009825",
-          "expansionBatch": "app-research"
-        },
-        {
-          "type": "p",
-          "text": "同帖补充：会计研究方法分支中，原评论者🍑在08-28回答结课形式为论文。 仅月日，年份不猜；不将评论者自动视为MPAcc，不将未具名课程绑定某位导师；历史个案不保证本学期考核。 [R317]",
-          "sourceCodes": [
-            "R317"
-          ],
-          "expansionId": "app-xhs-6a8edcec000000001f000035",
           "expansionBatch": "app-research"
         },
         {
@@ -16419,6 +16529,15 @@
             "readingScope": "直接核对同一条评论中关于温素彬的提名、评论署名和可见日期；其他老师的课程或竞赛关系不转接。",
             "limits": "仅核对评论署名及可见日期；接触身份和既有行为描述不升级。"
           }
+        },
+        {
+          "author": "林瑜",
+          "date_display": "2025-04-02",
+          "teacher": "潘俊",
+          "text": "评论者对潘俊作笼统提名并提及读博，但没有交代本人学位、指导关系或具体经历。",
+          "limitations": "不作为新增学生亲历或博士去向承诺；已有MPAcc指导证据另见具名访谈。",
+          "use_status": "新增可见评论语境，非学生指导评价",
+          "expansionBatch": "student-reviews-round8"
         }
       ],
       "limitations": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
@@ -16431,7 +16550,8 @@
       "readingScopes": [
         "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
         "本轮文字正文、95条计数所对应的所有已加载顶层评论逐段读取至THE END；新点展开王烨分支的4条追加回复并全部读到。其他折叠支线未全面展开，不能称95条逐字全读；图片未单独重新审读。温素彬提名在冬日来信同条评论内直接见到作者与完整日期。",
-        "本次读到当前已加载的顶层评论与可见跟评；登录后全部评论和折叠支线未读。不称95条逐字全读。"
+        "本次读到当前已加载的顶层评论与可见跟评；登录后全部评论和折叠支线未读。不称95条逐字全读。",
+        "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
       ],
       "queries": [
         "上一轮南审会计导师评价检索"
@@ -16497,6 +16617,13 @@
           "kind": "actual-browser-screenshot",
           "textAltered": false
         }
+      ],
+      "latestAuthenticatedReadingScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。",
+      "authenticatedReadingLimits": [
+        "只有姓氏、缩写或称呼的评论不归到实名导师，即使出现在同一帖的相邻位置。",
+        "姓名明确但仅有行政职务描述的评论不属于个人指导评价。",
+        "同一评论者的跟评、同帖重读与已收录评论不增加独立来源。",
+        "个别评论日期与既有日志存在显示差异，保留原记录，不据单次二手提取覆盖历史日期。"
       ]
     },
     {
@@ -21713,9 +21840,148 @@
         "商业智能分析评论提到频繁实操及Power BI，软件仍需问任课教师。",
         "国家治理与国家审计专题被描述为小组作业、可选汇报和结课论文；司法会计频繁pre来自作者转述。",
         "🍑在08-26称会计研究方法课堂会抽人回答问题；本轮新展开08-28回复，回答结课形式是论文。",
-        "准备课程时可把课堂参与和结课写作时间一并考虑；该评论不含任课教师姓名。"
+        "准备课程时可把课堂参与和结课写作时间一并考虑；该评论不含任课教师姓名。",
+        "“商业智能分析”与“智能商业分析”按各评论原文分别保留，不因名称相近合并课程，也不关联未具名任课教师。",
+        "原帖索引R317附5张真实截图：正文1张和4条课程评论；会计研究方法的论文结课跟评、商业智能分析的Power BI跟评未在截图中。"
       ],
-      "comments": [],
+      "comments": [
+        {
+          "id": "r8-course-method",
+          "author": "🍑",
+          "date_display": "08-26；结课形式跟评月日存在显示差异",
+          "course": "会计研究方法",
+          "text": "会计研究方法：评论者对课堂与给分的总体感受正面，也提到课堂会抽人回答；跟评回答结课形式为论文。",
+          "limitations": "专业、年级与教师姓名未说明；跟评日期本次提取08-27、既有日志08-28，保留差异，不猜年份或覆盖旧日期。考核以本学期通知为准。",
+          "sourceIds": [
+            "R317"
+          ],
+          "expansionBatch": "student-reviews-round8",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/r317-course-method.jpg",
+              "alt": "🍑：会计研究方法课堂抽答",
+              "caption": "🍑：会计研究方法课堂抽答",
+              "scope": "仅会计研究方法主评，含昵称和08-26日期；论文结课跟评未在本图中。",
+              "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+              "sourceId": "R317",
+              "mentorId": null,
+              "reviewId": null,
+              "commentId": "r8-course-method",
+              "width": 375,
+              "height": 128,
+              "bytes": 7076,
+              "sha256": "c06e152d60e2593645bfdda7a83c5ca156fcc058d3999c338662c3a5783703f3",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false
+            }
+          ]
+        },
+        {
+          "id": "r8-course-software",
+          "author": "🍑",
+          "date_display": "08-26至08-29，年份未显示",
+          "course": "商业智能分析",
+          "text": "商业智能分析：评论者说需要安装软件并且每节课实操；展开的同人跟评提及Power BI，并强调主要靠自己动手练习。",
+          "limitations": "最初的软件回答带疑问语气，当前软件与教学要求仍需问任课教师；不承诺简历或就业效果；同人跟评不算独立口碑。",
+          "sourceIds": [
+            "R317"
+          ],
+          "expansionBatch": "student-reviews-round8",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/r317-course-software.jpg",
+              "alt": "🍑：商业智能分析的软件实操",
+              "caption": "🍑：商业智能分析的软件实操",
+              "scope": "仅商业智能分析实操回复，含昵称和08-26日期；Power BI讨论未在本图中。",
+              "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+              "sourceId": "R317",
+              "mentorId": null,
+              "reviewId": null,
+              "commentId": "r8-course-software",
+              "width": 324,
+              "height": 129,
+              "bytes": 6742,
+              "sha256": "d130c310c4cab57c8be6e3bb43f5cc771b89faf160149f434b57891ef03f95e3",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false
+            }
+          ]
+        },
+        {
+          "id": "r8-course-audit",
+          "author": "小鱼鱼鱼",
+          "date_display": "08-26，年份未显示",
+          "course": "国家治理与国家审计专题",
+          "text": "国家治理与国家审计专题：评论提到小组作业、可选且加分的课堂汇报及结课论文；个人回忆当时不点名，给分感受居中。",
+          "limitations": "未具名教师，未核实评论者专业年级；历史点名和评分印象不构成本学期安排。",
+          "sourceIds": [
+            "R317"
+          ],
+          "expansionBatch": "student-reviews-round8",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/r317-course-audit.jpg",
+              "alt": "小鱼鱼鱼：国家治理与国家审计专题",
+              "caption": "小鱼鱼鱼：国家治理与国家审计专题",
+              "scope": "该条课程评论全文，含昵称和08-26日期；无任课教师全名。",
+              "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+              "sourceId": "R317",
+              "mentorId": null,
+              "reviewId": null,
+              "commentId": "r8-course-audit",
+              "width": 375,
+              "height": 187,
+              "bytes": 15508,
+              "sha256": "bcc05470691f343805a19289e93b960b169da1e59a0b2082b4c0e0e88e1225a3",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false
+            }
+          ]
+        },
+        {
+          "id": "r8-course-forensic",
+          "author": "小羽毛学姐（帖主）",
+          "date_display": "08-26，年份未显示",
+          "course": "司法会计",
+          "text": "司法会计：帖主分享的课程印象是课堂汇报频繁，给分感受一般。",
+          "limitations": "没有交代本人是否选过该课，按帖主分享保留，不升级为已核实亲历；没有教师姓名。",
+          "sourceIds": [
+            "R317"
+          ],
+          "expansionBatch": "student-reviews-round8",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/r317-course-forensic.jpg",
+              "alt": "小羽毛学姐：司法会计课堂汇报",
+              "caption": "小羽毛学姐：司法会计课堂汇报",
+              "scope": "帖主分享的司法会计课程印象，含昵称、作者标记与08-26日期；未核实本人选课身份。",
+              "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+              "sourceId": "R317",
+              "mentorId": null,
+              "reviewId": null,
+              "commentId": "r8-course-forensic",
+              "width": 375,
+              "height": 110,
+              "bytes": 7120,
+              "sha256": "0f2bd3fc5d32258cf46339f21eab1a97ee214836867fc85840c31341d1949b05",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false
+            }
+          ]
+        },
+        {
+          "id": "r8-course-smart-analysis",
+          "author": "濯缨",
+          "date_display": "08-26，年份未显示",
+          "course": "智能商业分析",
+          "text": "智能商业分析：评论按“智能商业分析”这一写法给出笼统正面印象。",
+          "limitations": "未说明教师、作业和考核细节；不把“智能商业分析”与另一评论的“商业智能分析”强行认定为同一课程。",
+          "sourceIds": [
+            "R317"
+          ],
+          "expansionBatch": "student-reviews-round8"
+        }
+      ],
       "limitations": "仅月日，年份不猜；未具名教师，不能映射导师或承诺评分，图片与部分回复未读全。",
       "category": "可用生活学习线索",
       "reviewReason": "保留作者自述或第三方转述身份，不将MAud、本科或未明评论改称MPAcc亲历。",
@@ -21725,7 +21991,9 @@
       "promotion": "可见范围未见明显推广",
       "readingScopes": [
         "文字正文完整；31条评论中的首批已加载顶层和可见回复；商业智能分析分支5条回复已展开并读到关于Power BI与实操的回复；其他分支1/6/1条未展开；未宣称全部评论已读；三图未逐张审读。",
-        "本轮补充：完整文字正文和首批10主楼；本轮展开会计研究方法1条追加回复并读到论文回答；原基线已读商业智能分析分支不重复计新材料；选课时间6条和学分列1条分支仍未展开；三图本轮未逐张审读。"
+        "本轮补充：完整文字正文和首批10主楼；本轮展开会计研究方法1条追加回复并读到论文回答；原基线已读商业智能分析分支不重复计新材料；选课时间6条和学分列1条分支仍未展开；三图本轮未逐张审读。",
+        "补读已加载顶层与可见跟评，展开会计研究方法和商业智能分析相关回复；页面显示31评论，不用计数推断逐条全部读完；三幅原帖配图未逐张审读。另原生截图复核4条公开可见课程评论与正文。",
+        "会计研究方法结课形式的跟评，本次读取显示08-27，既有日志记08-28；保留两次显示差异，不猜年份、不覆盖原记录。"
       ],
       "queries": [],
       "evidenceIdentity": null,
@@ -21764,7 +22032,102 @@
           "limits": "仅月日，年份不猜；不将评论者自动视为MPAcc，不将未具名课程绑定某位导师；历史个案不保证本学期考核。",
           "readingScope": "完整文字正文和首批10主楼；本轮展开会计研究方法1条追加回复并读到论文回答；原基线已读商业智能分析分支不重复计新材料；选课时间6条和学分列1条分支仍未展开；三图本轮未逐张审读。"
         }
-      ]
+      ],
+      "screenshots": [
+        {
+          "src": "./evidence/xhs/r317-course-post-top.jpg",
+          "alt": "选课帖标题、作者与正文",
+          "caption": "选课帖标题、作者与正文",
+          "scope": "标题、作者、正文及08-26日期；未逐张审读其三幅配图。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+          "sourceId": "R317",
+          "mentorId": null,
+          "reviewId": null,
+          "commentId": null,
+          "width": 400,
+          "height": 725,
+          "bytes": 54653,
+          "sha256": "3f424b7d27417efea70a8a545e1282d1b89b224c2a2310d08b4b9677beded908",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        },
+        {
+          "src": "./evidence/xhs/r317-course-method.jpg",
+          "alt": "🍑：会计研究方法课堂抽答",
+          "caption": "🍑：会计研究方法课堂抽答",
+          "scope": "仅会计研究方法主评，含昵称和08-26日期；论文结课跟评未在本图中。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+          "sourceId": "R317",
+          "mentorId": null,
+          "reviewId": null,
+          "commentId": "r8-course-method",
+          "width": 375,
+          "height": 128,
+          "bytes": 7076,
+          "sha256": "c06e152d60e2593645bfdda7a83c5ca156fcc058d3999c338662c3a5783703f3",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        },
+        {
+          "src": "./evidence/xhs/r317-course-audit.jpg",
+          "alt": "小鱼鱼鱼：国家治理与国家审计专题",
+          "caption": "小鱼鱼鱼：国家治理与国家审计专题",
+          "scope": "该条课程评论全文，含昵称和08-26日期；无任课教师全名。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+          "sourceId": "R317",
+          "mentorId": null,
+          "reviewId": null,
+          "commentId": "r8-course-audit",
+          "width": 375,
+          "height": 187,
+          "bytes": 15508,
+          "sha256": "bcc05470691f343805a19289e93b960b169da1e59a0b2082b4c0e0e88e1225a3",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        },
+        {
+          "src": "./evidence/xhs/r317-course-forensic.jpg",
+          "alt": "小羽毛学姐：司法会计课堂汇报",
+          "caption": "小羽毛学姐：司法会计课堂汇报",
+          "scope": "帖主分享的司法会计课程印象，含昵称、作者标记与08-26日期；未核实本人选课身份。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+          "sourceId": "R317",
+          "mentorId": null,
+          "reviewId": null,
+          "commentId": "r8-course-forensic",
+          "width": 375,
+          "height": 110,
+          "bytes": 7120,
+          "sha256": "0f2bd3fc5d32258cf46339f21eab1a97ee214836867fc85840c31341d1949b05",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        },
+        {
+          "src": "./evidence/xhs/r317-course-software.jpg",
+          "alt": "🍑：商业智能分析的软件实操",
+          "caption": "🍑：商业智能分析的软件实操",
+          "scope": "仅商业智能分析实操回复，含昵称和08-26日期；Power BI讨论未在本图中。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+          "sourceId": "R317",
+          "mentorId": null,
+          "reviewId": null,
+          "commentId": "r8-course-software",
+          "width": 324,
+          "height": 129,
+          "bytes": 6742,
+          "sha256": "d130c310c4cab57c8be6e3bb43f5cc771b89faf160149f434b57891ef03f95e3",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        }
+      ],
+      "latestAuthenticatedReadingScope": "补读已加载顶层与可见跟评，展开会计研究方法和商业智能分析相关回复；页面显示31评论，不用计数推断逐条全部读完；三幅原帖配图未逐张审读。另原生截图复核4条公开可见课程评论与正文。",
+      "courseFeedbackLimits": [
+        "课程反馈仅作为历史学习准备线索；评论者专业、年级与亲历程度按原文限定，不自动视为MPAcc学生。",
+        "未穷尽所有选课时间、学分等支线和三幅原图；未具名课程不关联导师。",
+        "会计研究方法结课形式的跟评，本次读取显示08-27，既有日志记08-28；保留两次显示差异，不猜年份、不覆盖原记录。",
+        "“商业智能分析”与“智能商业分析”按各评论原文分别保留，不因名称相近合并课程，也不关联未具名任课教师。"
+      ],
+      "screenshotScope": "仅图中所见内容；截图原生裁切自公开可见评论，不包含登录二维码、手机号、群二维码或私信；未具名教师，不挂到任何导师卡。"
     },
     {
       "id": "67aef89b0000000029009825",
@@ -23913,7 +24276,20 @@
           "textAltered": false
         }
       ],
-      "latestPublicReadingScope": "本次读到当前已加载的顶层评论与可见跟评；登录后全部评论和折叠支线未读。不称95条逐字全读。"
+      "latestPublicReadingScope": "本次读到当前已加载的顶层评论与可见跟评；登录后全部评论和折叠支线未读。不称95条逐字全读。",
+      "latestAuthenticatedReadingScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。",
+      "authenticatedReadingLimits": [
+        "只有姓氏、缩写或称呼的评论不归到实名导师，即使出现在同一帖的相邻位置。",
+        "姓名明确但仅有行政职务描述的评论不属于个人指导评价。",
+        "同一评论者的跟评、同帖重读与已收录评论不增加独立来源。",
+        "个别评论日期与既有日志存在显示差异，保留原记录，不据单次二手提取覆盖历史日期。"
+      ],
+      "authenticatedScreenshotExport": {
+        "actualNewFiles": 0,
+        "providerExportSupported": false,
+        "status": "阅读工具未返回可下载截图文件或可用图片链接；浏览记录页另查为404；不将文字总结或原帖配图当评论截图。",
+        "existingPublishedFilesPreserved": 5
+      }
     },
     "X02": {
       "code": "X02",
@@ -27382,6 +27758,121 @@
           "readingScope": "完整文字正文和首批10主楼；本轮展开会计研究方法1条追加回复并读到论文回答；原基线已读商业智能分析分支不重复计新材料；选课时间6条和学分列1条分支仍未展开；三图本轮未逐张审读。",
           "changeType": "updated"
         }
+      ],
+      "screenshots": [
+        {
+          "src": "./evidence/xhs/r317-course-post-top.jpg",
+          "alt": "选课帖标题、作者与正文",
+          "caption": "选课帖标题、作者与正文",
+          "scope": "标题、作者、正文及08-26日期；未逐张审读其三幅配图。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+          "sourceId": "R317",
+          "mentorId": null,
+          "reviewId": null,
+          "commentId": null,
+          "width": 400,
+          "height": 725,
+          "bytes": 54653,
+          "sha256": "3f424b7d27417efea70a8a545e1282d1b89b224c2a2310d08b4b9677beded908",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        },
+        {
+          "src": "./evidence/xhs/r317-course-method.jpg",
+          "alt": "🍑：会计研究方法课堂抽答",
+          "caption": "🍑：会计研究方法课堂抽答",
+          "scope": "仅会计研究方法主评，含昵称和08-26日期；论文结课跟评未在本图中。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+          "sourceId": "R317",
+          "mentorId": null,
+          "reviewId": null,
+          "commentId": "r8-course-method",
+          "width": 375,
+          "height": 128,
+          "bytes": 7076,
+          "sha256": "c06e152d60e2593645bfdda7a83c5ca156fcc058d3999c338662c3a5783703f3",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        },
+        {
+          "src": "./evidence/xhs/r317-course-audit.jpg",
+          "alt": "小鱼鱼鱼：国家治理与国家审计专题",
+          "caption": "小鱼鱼鱼：国家治理与国家审计专题",
+          "scope": "该条课程评论全文，含昵称和08-26日期；无任课教师全名。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+          "sourceId": "R317",
+          "mentorId": null,
+          "reviewId": null,
+          "commentId": "r8-course-audit",
+          "width": 375,
+          "height": 187,
+          "bytes": 15508,
+          "sha256": "bcc05470691f343805a19289e93b960b169da1e59a0b2082b4c0e0e88e1225a3",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        },
+        {
+          "src": "./evidence/xhs/r317-course-forensic.jpg",
+          "alt": "小羽毛学姐：司法会计课堂汇报",
+          "caption": "小羽毛学姐：司法会计课堂汇报",
+          "scope": "帖主分享的司法会计课程印象，含昵称、作者标记与08-26日期；未核实本人选课身份。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+          "sourceId": "R317",
+          "mentorId": null,
+          "reviewId": null,
+          "commentId": "r8-course-forensic",
+          "width": 375,
+          "height": 110,
+          "bytes": 7120,
+          "sha256": "0f2bd3fc5d32258cf46339f21eab1a97ee214836867fc85840c31341d1949b05",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        },
+        {
+          "src": "./evidence/xhs/r317-course-software.jpg",
+          "alt": "🍑：商业智能分析的软件实操",
+          "caption": "🍑：商业智能分析的软件实操",
+          "scope": "仅商业智能分析实操回复，含昵称和08-26日期；Power BI讨论未在本图中。",
+          "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+          "sourceId": "R317",
+          "mentorId": null,
+          "reviewId": null,
+          "commentId": "r8-course-software",
+          "width": 324,
+          "height": 129,
+          "bytes": 6742,
+          "sha256": "d130c310c4cab57c8be6e3bb43f5cc771b89faf160149f434b57891ef03f95e3",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false
+        }
+      ],
+      "latestAuthenticatedReadingScope": "补读已加载顶层与可见跟评，展开会计研究方法和商业智能分析相关回复；页面显示31评论，不用计数推断逐条全部读完；三幅原帖配图未逐张审读。另原生截图复核4条公开可见课程评论与正文。",
+      "courseFeedbackLimits": [
+        "课程反馈仅作为历史学习准备线索；评论者专业、年级与亲历程度按原文限定，不自动视为MPAcc学生。",
+        "未穷尽所有选课时间、学分等支线和三幅原图；未具名课程不关联导师。",
+        "会计研究方法结课形式的跟评，本次读取显示08-27，既有日志记08-28；保留两次显示差异，不猜年份、不覆盖原记录。",
+        "“商业智能分析”与“智能商业分析”按各评论原文分别保留，不因名称相近合并课程，也不关联未具名任课教师。"
+      ],
+      "screenshotScope": "仅图中所见内容；截图原生裁切自公开可见评论，不包含登录二维码、手机号、群二维码或私信；未具名教师，不挂到任何导师卡。",
+      "archivedLifeBlocksBeforeRound8": [
+        {
+          "type": "p",
+          "text": "MPAcc/MAud选课互助帖的评论提到软件实操、小组作业、课堂汇报和结课论文，评论者年级与专业未全部核验。 商业智能分析评论提到频繁实操及Power BI，软件仍需问任课教师。 国家治理与国家审计专题被描述为小组作业、可选汇报和结课论文；司法会计频繁pre来自作者转述。 仅月日，年份不猜；未具名教师，不能映射导师或承诺评分，图片与部分回复未读全。 [R317]",
+          "sourceCodes": [
+            "R317"
+          ],
+          "expansionId": "round3-xhs-6a8edcec000000001f000035",
+          "expansionBatch": "research-round3"
+        },
+        {
+          "type": "p",
+          "text": "同帖补充：会计研究方法分支中，原评论者🍑在08-28回答结课形式为论文。 仅月日，年份不猜；不将评论者自动视为MPAcc，不将未具名课程绑定某位导师；历史个案不保证本学期考核。 [R317]",
+          "sourceCodes": [
+            "R317"
+          ],
+          "expansionId": "app-xhs-6a8edcec000000001f000035",
+          "expansionBatch": "app-research"
+        }
       ]
     },
     "R318": {
@@ -30187,6 +30678,23 @@
       "readingScope": "已读页面完整提取正文，自标题、日期、校友简介至末段；未读外链、未视觉审读配图，未读取评论。",
       "limitations": "官方遴选的2020届历史个案，不代表全体学生体验或现行培养制度。；未给南审硕士导师姓名，不归入任一实名导师评价。；实习调研未列具体单位、岗位、名额、补贴或申请方式，不能承诺同等机会。；厦门大学博士阶段的李建发教授指导及回南审任教阶段的目标，不属于南审MPAcc学生经历。",
       "expansionBatch": "student-reviews-round7"
+    },
+    "R901": {
+      "code": "R901",
+      "title": "财务与会计 | 财会审青年风采（六）",
+      "label": "财务与会计 | 财会审青年风采（六）",
+      "url": "https://www.zgcznet.com/zdct/202307/20230721/j_2023072108461800016899005117157198.html",
+      "originalUrl": "https://www.zgcznet.com/zdct/202307/20230721/j_2023072108461800016899005117157198.html",
+      "canonicalUrl": "https://www.zgcznet.com/zdct/202307/20230721/j_2023072108461800016899005117157198.html",
+      "date": "2023-07-21",
+      "author": "傅祥斐（本人署名段落）",
+      "platform": "中国财政杂志社网站；原文标注来源为财务与会计微信公众号",
+      "kind": "教师本人自述·非学生评价",
+      "population": "文章没有说明所指导论文的学生学位阶段",
+      "summary": "傅祥斐回顾入职初期的成本与管理会计教学：通过向同事请教、增加案例准备与演练，再将知识联系时事改善授课。她自述担任班主任及学年、毕业论文指导时会交流学习、生活与职业规划，并指导学科竞赛。",
+      "readingScope": "全文读取，具体采纳仅傅祥斐本人段落；不保存全文。",
+      "limitations": "教师本人署名自述，不能算学生一手评价或独立印证匿名评论。；文中前6%的评教结果为教师自述，未提供原始评教数据，不应作导师排名。；没有组会频次、改稿周期、研究任务量、实习放行或就业资源分配的细节。；2023年的历史经历不保证当前指导方式和名额。",
+      "expansionBatch": "student-reviews-round8"
     }
   },
   "targetProfiles": [
@@ -30412,8 +30920,8 @@
       "format": "xlsx",
       "description": "保留既有来源与学生评价总览，新增四大、国内所实习资源及本地实践基地线索，分列资格、状态、项目期与投递窗口",
       "filename": "evidence-index.xlsx",
-      "bytes": 355265,
-      "sha256": "d89f961d3ae7252025e64701926ca26d1fcea36a922d1250b47088a6986c45dd"
+      "bytes": 357245,
+      "sha256": "c014f4ef8546b681d01f064c17701d8fb351dd4855950299835fd932b9c26683"
     }
   ],
   "officialEvidence": [
@@ -36059,6 +36567,32 @@
       "official": true,
       "screened_only": false,
       "expansionBatch": "student-reviews-round7"
+    },
+    {
+      "key": "official:reviews8:fu-teacher-self-report",
+      "ids": [
+        "R901"
+      ],
+      "title": "财务与会计 | 财会审青年风采（六）",
+      "author": "傅祥斐（本人署名段落）",
+      "date_display": "2023-07-21",
+      "url": "https://www.zgcznet.com/zdct/202307/20230721/j_2023072108461800016899005117157198.html",
+      "canonical_url": "https://www.zgcznet.com/zdct/202307/20230721/j_2023072108461800016899005117157198.html",
+      "population": "文章没有说明所指导论文的学生学位阶段",
+      "summary": "傅祥斐回顾入职初期的成本与管理会计教学：通过向同事请教、增加案例准备与演练，再将知识联系时事改善授课。她自述担任班主任及学年、毕业论文指导时会交流学习、生活与职业规划，并指导学科竞赛。",
+      "tips": [
+        "本人回顾案例备课，以及学年、毕业论文和竞赛指导；不属于学生个人评价。"
+      ],
+      "comments": [],
+      "limits": "教师本人署名自述，不能算学生一手评价或独立印证匿名评论。；文中前6%的评教结果为教师自述，未提供原始评教数据，不应作导师排名。；没有组会频次、改稿周期、研究任务量、实习放行或就业资源分配的细节。；2023年的历史经历不保证当前指导方式和名额。",
+      "topic": "教师本人回顾教学与论文指导",
+      "use_status": "教师本人自述；未确认MPAcc阶段，不作为学生评价或独立口碑",
+      "reading_scopes": [
+        "全文读取，具体采纳仅傅祥斐本人段落；不保存全文。"
+      ],
+      "official": true,
+      "screened_only": false,
+      "expansionBatch": "student-reviews-round8"
     }
   ],
   "feedbackIndex": [
