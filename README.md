@@ -2,7 +2,12 @@
 
 独立 GitHub Pages 网站。目标仓库：`Nishino0525Nanase/nau-mpacc-guide`，项目路径：`/nau-mpacc-guide/`。
 
-当前状态：网页与私人统计后台已准备完成，新仓库创建与发布尚待确认。发布时应单独授权此新仓库，不能将资料写入其他项目。未确认上线前，不应把预定路径作为已发布网址分享。
+已于 2026-11-05 发布并验证。
+
+- [打开指南](https://nishino0525nanase.github.io/nau-mpacc-guide/)
+- [站点管理与私人统计入口](https://nishino0525nanase.github.io/nau-mpacc-guide/admin/)
+
+统计数据需使用站主的 PostHog 账号登录查看。上线验收产生过一次访问。
 
 `main` 分支保存源码及整理后的 `dist/`。发布时将 `dist/` 内的文件映射到 `gh-pages` 分支根目录，GitHub Pages 的发布源设置为 `gh-pages` 分支、根目录 `/`。发布分支另加空 `.nojekyll` 文件，直接提供静态文件。
 
