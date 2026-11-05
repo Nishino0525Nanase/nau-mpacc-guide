@@ -2,8 +2,11 @@ package cn.nau.mpacc.guide;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
+import android.content.ClipData;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.AssetFileDescriptor;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.net.Uri;
 import android.net.http.SslError;
@@ -11,8 +14,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+import android.provider.OpenableColumns;
 import android.webkit.PermissionRequest;
 import android.webkit.SslErrorHandler;
+import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
@@ -38,6 +43,8 @@ import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Locale;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -46,16 +53,23 @@ public final class MainActivity extends Activity {
     private static final String SITE_HOST = "nishino0525nanase.github.io";
     private static final String SITE_PATH = "/nau-mpacc-guide/";
     private static final String SITE = "https://" + SITE_HOST + SITE_PATH;
-    private static final String APP_VERSION = "1.0.4";
+    private static final String APP_VERSION = "1.0.5";
     private static final String ASSET_HOST = "appassets.androidplatform.net";
     private static final String LOCAL = "https://" + ASSET_HOST + "/guide/index.html?app_version=" + APP_VERSION;
     private static final int SAVE_DOCUMENT = 40;
+    private static final int PICK_AUDIO = 41;
+    private static final int MAX_AUDIO_FILES = 128;
     private final Handler main = new Handler(Looper.getMainLooper());
     private final ExecutorService files = Executors.newSingleThreadExecutor();
     private WebView web;
     private TextView status;
     private SharedPreferences preferences;
     private String pendingAsset;
+    private ValueCallback<Uri[]> pendingAudioCallback;
+    private boolean pendingAudioMultiple;
+    private int audioChooserGeneration;
+    private int nextAudioRequest = PICK_AUDIO;
+    private int pendingAudioRequest;
     private boolean offline;
     private boolean restoreAfterLoad;
     private boolean clearHistoryAfterFallback;
@@ -96,6 +110,10 @@ public final class MainActivity extends Activity {
         web.setWebViewClient(new ReaderClient());
         web.setWebChromeClient(new WebChromeClient() {
             @Override public void onPermissionRequest(PermissionRequest request) { request.deny(); }
+            @Override public boolean onShowFileChooser(WebView view, ValueCallback<Uri[]> callback,
+                    WebChromeClient.FileChooserParams parameters) {
+                return chooseAudio(view, callback, parameters);
+            }
             @Override public boolean onCreateWindow(WebView view, boolean dialog, boolean userGesture, Message result) {
                 if (!userGesture) return false;
                 WebView popup = new WebView(MainActivity.this);
@@ -198,6 +216,7 @@ public final class MainActivity extends Activity {
         rememberChecklist(() -> loadMode(local, hash));
     }
     private void loadMode(boolean local, String hash) {
+        cancelAudioChooser();
         cancelTimeout();
         clearHistoryAfterFallback = false;
         offline = local;
@@ -273,6 +292,10 @@ public final class MainActivity extends Activity {
     }
     @Override protected void onActivityResult(int request, int result, Intent data) {
         super.onActivityResult(request, result, data);
+        if (request >= PICK_AUDIO && request <= 65535) {
+            if (request == pendingAudioRequest) receiveAudio(result, data);
+            return;
+        }
         if (request != SAVE_DOCUMENT) return;
         String asset = pendingAsset;
         pendingAsset = null;
@@ -291,6 +314,120 @@ public final class MainActivity extends Activity {
             }
             // A provider may report a write failure only when its stream closes.
             main.post(() -> toast("资料已保存到你选择的位置"));
+        });
+    }
+
+    private boolean acceptsAudio(WebChromeClient.FileChooserParams parameters) {
+        if (parameters == null || parameters.isCaptureEnabled()) return false;
+        int mode = parameters.getMode();
+        if (mode != WebChromeClient.FileChooserParams.MODE_OPEN
+                && mode != WebChromeClient.FileChooserParams.MODE_OPEN_MULTIPLE) return false;
+        String[] types = parameters.getAcceptTypes();
+        if (types == null) return false;
+        boolean found = false;
+        for (String group : types) {
+            if (group == null) continue;
+            for (String raw : group.split(",")) {
+                String value = raw.trim().toLowerCase(Locale.ROOT);
+                if (value.isEmpty()) continue;
+                if (!(value.startsWith("audio/") || value.matches("\\.(mp3|m4a|aac|ogg|oga|wav|flac|opus)"))) return false;
+                found = true;
+            }
+        }
+        return found;
+    }
+
+    private boolean chooseAudio(WebView view, ValueCallback<Uri[]> callback,
+            WebChromeClient.FileChooserParams parameters) {
+        cancelAudioChooser();
+        if (view != web || web.getUrl() == null || !isGuide(Uri.parse(web.getUrl()))
+                || !acceptsAudio(parameters)) return false;
+        pendingAudioCallback = callback;
+        // A late result from an earlier picker must never complete a newer input.
+        if (nextAudioRequest > 65535) {
+            cancelAudioChooser();
+            toast("请重新打开应用后再选择音频");
+            return true;
+        }
+        pendingAudioRequest = nextAudioRequest++;
+        pendingAudioMultiple = parameters.getMode() == WebChromeClient.FileChooserParams.MODE_OPEN_MULTIPLE;
+        Intent picker = new Intent(Intent.ACTION_OPEN_DOCUMENT).addCategory(Intent.CATEGORY_OPENABLE);
+        picker.setType("audio/*");
+        picker.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, pendingAudioMultiple);
+        picker.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        try {
+            startActivityForResult(picker, pendingAudioRequest);
+        } catch (ActivityNotFoundException | SecurityException error) {
+            cancelAudioChooser();
+            toast("当前系统没有可用的音频文件选择器");
+        }
+        return true;
+    }
+
+    private void cancelAudioChooser() {
+        audioChooserGeneration++;
+        ValueCallback<Uri[]> callback = pendingAudioCallback;
+        pendingAudioCallback = null;
+        pendingAudioRequest = 0;
+        if (callback != null) callback.onReceiveValue(null);
+    }
+
+    private boolean readableAudio(Uri uri) {
+        if (uri == null || !"content".equalsIgnoreCase(uri.getScheme()) || uri.getAuthority() == null) return false;
+        try {
+            String type = getContentResolver().getType(uri);
+            boolean audio = type != null && type.toLowerCase(Locale.ROOT).startsWith("audio/");
+            if (!audio && (type == null || "application/octet-stream".equalsIgnoreCase(type))) {
+                try (Cursor cursor = getContentResolver().query(uri, new String[]{OpenableColumns.DISPLAY_NAME}, null, null, null)) {
+                    if (cursor != null && cursor.moveToFirst()) {
+                        String name = cursor.getString(0);
+                        audio = name != null && name.toLowerCase(Locale.ROOT).matches(".*\\.(mp3|m4a|aac|ogg|oga|wav|flac|opus)$");
+                    }
+                }
+            }
+            if (!audio) return false;
+            // Validate the temporary user grant without copying or retaining the file.
+            try (AssetFileDescriptor input = getContentResolver().openAssetFileDescriptor(uri, "r")) {
+                return input != null;
+            }
+        } catch (Exception error) {
+            return false;
+        }
+    }
+
+    private void receiveAudio(int result, Intent data) {
+        if (pendingAudioCallback == null) return;
+        if (result != RESULT_OK || data == null) { cancelAudioChooser(); return; }
+        LinkedHashSet<Uri> chosen = new LinkedHashSet<>();
+        ClipData multiple = data.getClipData();
+        if (multiple != null) {
+            if (multiple.getItemCount() > MAX_AUDIO_FILES) {
+                cancelAudioChooser();
+                toast("一次请选择不超过128个音频文件");
+                return;
+            }
+            for (int i = 0; i < multiple.getItemCount(); i++) chosen.add(multiple.getItemAt(i).getUri());
+        }
+        if (data.getData() != null) chosen.add(data.getData());
+        if (chosen.isEmpty() || chosen.size() > MAX_AUDIO_FILES || (!pendingAudioMultiple && chosen.size() > 1)) {
+            cancelAudioChooser();
+            return;
+        }
+        final int generation = audioChooserGeneration;
+        final ValueCallback<Uri[]> callback = pendingAudioCallback;
+        files.execute(() -> {
+            Uri[] valid = chosen.stream().filter(this::readableAudio).toArray(Uri[]::new);
+            main.post(() -> {
+                if (generation != audioChooserGeneration || callback != pendingAudioCallback) return;
+                if (isFinishing() || isDestroyed() || web.getUrl() == null || !isGuide(Uri.parse(web.getUrl()))) {
+                    cancelAudioChooser();
+                    return;
+                }
+                pendingAudioCallback = null;
+                pendingAudioRequest = 0;
+                callback.onReceiveValue(valid.length == 0 ? null : valid);
+                if (valid.length != chosen.size()) toast("部分文件无法读取或不是受支持的音频，请重新选择");
+            });
         });
     }
 
@@ -364,6 +501,7 @@ public final class MainActivity extends Activity {
 
     private final class ReaderClient extends WebViewClient {
         @Override public void onPageStarted(WebView view, String url, android.graphics.Bitmap icon) {
+            cancelAudioChooser();
             Uri uri = Uri.parse(url);
             if (isGuide(uri)) {
                 offline = isLocal(uri);
@@ -435,6 +573,9 @@ public final class MainActivity extends Activity {
     }
     @Override protected void onPause() {
         rememberChecklist(() -> {});
+        if (web.getUrl() != null && isGuide(Uri.parse(web.getUrl()))) {
+            web.evaluateJavascript("window.dispatchEvent(new Event('nau:audio-pause'))", null);
+        }
         web.onPause();
         super.onPause();
     }
@@ -444,6 +585,7 @@ public final class MainActivity extends Activity {
         super.onSaveInstanceState(state);
     }
     @Override protected void onDestroy() {
+        cancelAudioChooser();
         cancelTimeout();
         web.destroy();
         files.shutdown();

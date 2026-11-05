@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       smoke_test:
-        description: 'Also boot an Android 14 emulator and verify offline reading (slower)'
+        description: 'Also boot Android 14 and verify offline reading, Back and local audio (slower)'
         type: boolean
         default: false
   push:
@@ -83,18 +83,18 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p android/artifacts
-          cp 'android/app/build/outputs/apk/${{ steps.edition.outputs.variant }}/app-${{ steps.edition.outputs.variant }}.apk' 'android/artifacts/nau-mpacc-guide-1.0.4${{ steps.edition.outputs.suffix }}.apk'
-          APK='android/artifacts/nau-mpacc-guide-1.0.4${{ steps.edition.outputs.suffix }}.apk'
+          cp 'android/app/build/outputs/apk/${{ steps.edition.outputs.variant }}/app-${{ steps.edition.outputs.variant }}.apk' 'android/artifacts/nau-mpacc-guide-1.0.5${{ steps.edition.outputs.suffix }}.apk'
+          APK='android/artifacts/nau-mpacc-guide-1.0.5${{ steps.edition.outputs.suffix }}.apk'
           "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --print-certs "$APK" | tee android/artifacts/signature.txt
           "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" > android/artifacts/package-info.txt
           "$ANDROID_HOME/build-tools/35.0.0/aapt" dump permissions "$APK" > android/artifacts/permissions.txt
           python3 android/verify-apk.py "$APK"
           (cd android/artifacts && sha256sum *.apk > SHA256SUMS.txt)
-      - name: Optional Android 14 offline smoke test
+      - name: Optional Android 14 offline reading and music smoke test
         timeout-minutes: 12
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.smoke_test }}
         env:
-          APK_PATH: android/artifacts/nau-mpacc-guide-1.0.4${{ steps.edition.outputs.suffix }}.apk
+          APK_PATH: android/artifacts/nau-mpacc-guide-1.0.5${{ steps.edition.outputs.suffix }}.apk
         run: bash android/smoke-test.sh
       - name: Remove private signing material
         if: always()
@@ -104,7 +104,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          name: nau-mpacc-guide-1.0.4-android-${{ steps.edition.outputs.variant }}
+          name: nau-mpacc-guide-1.0.5-android-${{ steps.edition.outputs.variant }}
           path: android/artifacts/
           if-no-files-found: error
           retention-days: 30

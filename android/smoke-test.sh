@@ -4,6 +4,7 @@ set -euo pipefail
 SDK="${ANDROID_HOME:?ANDROID_HOME is required}"
 ADB="$SDK/platform-tools/adb"
 mkdir -p android/artifacts/smoke
+printf '%s\n' 'PENDING: real system audio picker, decoding, progress and pause checks have not run.' > android/artifacts/smoke/music-result.txt
 # Both command-line tools must resolve the same AVD directory. Runner defaults
 # can otherwise create the AVD in a directory the emulator does not search.
 export ANDROID_USER_HOME="${RUNNER_TEMP:-/tmp}/nau-android-user"
@@ -26,10 +27,15 @@ cleanup() {
   if [[ -s android/artifacts/smoke/result.txt ]]; then
     IFS= read -r result_line < android/artifacts/smoke/result.txt || true
   fi
-  if [[ "$exit_status" -ne 0 && "$result_line" != FAIL:* ]]; then
+  if [[ "$exit_status" -ne 0 && "$result_line" != FAIL:* && "$result_line" != PASS:* ]]; then
     printf '%s\n' "FAIL: smoke test exited before all reading and Back checks completed (status $exit_status). See emulator.log and logcat.txt." > android/artifacts/smoke/result.txt
   elif [[ ! -s android/artifacts/smoke/result.txt ]]; then
     printf '%s\n' "FAIL: smoke test exited before UI verification (status $exit_status). See emulator.log and logcat.txt." > android/artifacts/smoke/result.txt
+  fi
+  local music_line=''
+  IFS= read -r music_line < android/artifacts/smoke/music-result.txt || true
+  if [[ "$exit_status" -ne 0 && "$music_line" != FAIL:* && "$music_line" != PASS:* ]]; then
+    printf '%s\n' "FAIL: music smoke exited before picker, playback, progress and pause were verified (status $exit_status). See emulator.log and logcat.txt." > android/artifacts/smoke/music-result.txt
   fi
   # logcat otherwise waits forever when a failed emulator never comes online.
   timeout --kill-after=3s 10s "$ADB" logcat -d > android/artifacts/smoke/logcat.txt 2>&1 || true
@@ -291,3 +297,81 @@ if [[ "$exited" != true ]]; then
   exit 1
 fi
 printf '%s\n' 'PASS: Android 14 proxy-blocked online startup switched automatically to packaged data, rendered a mentor, closed details with Back, and exited without a fallback history loop.' > android/artifacts/smoke/result.txt
+
+# Keep the original reading/Back suite above intact. Independently restart and
+# exercise the real Android DocumentsUI picker; no commercial recording is used.
+python3 - <<'PY'
+from pathlib import Path
+import math
+import struct
+import wave
+target = Path('android/artifacts/smoke/寻.wav')
+with wave.open(str(target), 'wb') as audio:
+    audio.setnchannels(1)
+    audio.setsampwidth(2)
+    audio.setframerate(16000)
+    audio.writeframes(b''.join(struct.pack('<h', int(1600 * math.sin(2*math.pi*220*n/16000))) for n in range(30*16000)))
+PY
+timeout --kill-after=2s 15s "$ADB" push android/artifacts/smoke/寻.wav /sdcard/Download/寻.wav >/dev/null
+timeout --kill-after=1s 5s "$ADB" shell am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d 'file:///sdcard/Download/%E5%AF%BB.wav' >/dev/null
+timeout --kill-after=3s 45s "$ADB" shell am start -W -n cn.nau.mpacc.guide/.MainActivity
+MUSIC_DEADLINE=$((SECONDS + 180))
+export MUSIC_FILE_TAPPED=false MUSIC_PLAY_TAPPED=false MUSIC_DRAWER_TAPS=0
+
+music_stage() {
+  local stage="$1" expected="$2" budget="$3" state tap_x tap_y remaining
+  UI_DEADLINE=$((SECONDS + budget))
+  if ((UI_DEADLINE > MUSIC_DEADLINE)); then UI_DEADLINE=$MUSIC_DEADLINE; fi
+  for attempt in $(seq 1 24); do
+    if ((SECONDS >= UI_DEADLINE)); then break; fi
+    dump_ui
+    read -r state tap_x tap_y <<< "$(python3 android/music-smoke-state.py "$stage")"
+    if [[ "$state" == "$expected" ]]; then return 0; fi
+    if ((SECONDS >= UI_DEADLINE)); then break; fi
+    case "$state" in
+      ERROR) break ;;
+      CLOSE_LAUNCHER)
+        if ((launcher_dialog_closes >= 3)); then break; fi
+        launcher_dialog_closes=$((launcher_dialog_closes + 1))
+        cp android/artifacts/smoke/ui.xml "android/artifacts/smoke/launcher-anr-$launcher_dialog_closes.xml"
+        timeout --kill-after=1s 3s "$ADB" shell input tap "$tap_x" "$tap_y"
+        ;;
+      TAP|FILE|CONFIRM|DOWNLOADS|DRAWER)
+        timeout --kill-after=1s 3s "$ADB" shell input tap "$tap_x" "$tap_y"
+        if [[ "$stage" == play && "$state" == TAP ]]; then export MUSIC_PLAY_TAPPED=true; fi
+        if [[ "$state" == FILE ]]; then export MUSIC_FILE_TAPPED=true; fi
+        if [[ "$state" == DRAWER ]]; then export MUSIC_DRAWER_TAPS=$((MUSIC_DRAWER_TAPS + 1)); fi
+        ;;
+      SCROLL)
+        timeout --kill-after=1s 3s "$ADB" shell input swipe "$SWIPE_X" "$SWIPE_START" "$SWIPE_X" "$SWIPE_END" 350
+        ;;
+      SCROLL_UP)
+        timeout --kill-after=1s 3s "$ADB" shell input swipe "$SWIPE_X" "$SWIPE_END" "$SWIPE_X" "$SWIPE_START" 350
+        ;;
+    esac
+    remaining=$((UI_DEADLINE - SECONDS))
+    if ((remaining > 0)); then sleep 1; fi
+  done
+  printf '%s\n' "FAIL: music phase '$stage' did not reach '$expected' within its bounded UI budget (last state: ${state:-none})." > android/artifacts/smoke/music-result.txt
+  return 1
+}
+
+music_proof() {
+  cp android/artifacts/smoke/ui.xml "android/artifacts/smoke/$1.xml"
+  timeout --kill-after=2s 8s "$ADB" exec-out screencap -p > "android/artifacts/smoke/$1.png"
+}
+
+music_stage nav READY 45
+music_proof music-visible
+music_stage picker PICKER 25
+music_proof audio-picker
+music_stage file LOADED 45
+music_stage play PLAYING 40
+music_proof local-audio-playing
+# Opening another picker leaves the reader and must pause audio. Back cancels
+# that new callback and retains the earlier session file without auto-playing it.
+music_stage picker PICKER 25
+timeout --kill-after=1s 5s "$ADB" shell input keyevent 4
+music_stage cancelled PAUSED 30
+music_proof local-audio-paused-after-cancel
+printf '%s\n' 'PASS: Android 14 offline music rendered 19 tracks, selected the generated local QA WAV through the system audio picker, decoded it and advanced playback time, then paused and retained the session file after cancelling a second picker. No user recording was used or uploaded.' > android/artifacts/smoke/music-result.txt

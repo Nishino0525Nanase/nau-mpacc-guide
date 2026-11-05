@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "errors": [],
+  "batch": "music-playlist-105",
+  "trackCount": 19,
+  "artistCount": 1,
+  "albumCount": 11,
+  "versionCounts": {
+    "专辑版": 15,
+    "现场版": 4
+  },
+  "totalDurationSeconds": 5907.5,
+  "playlistSha256": "58c0d76f1c8e0767b7a7ea73488c2823c05736e5d830bcee1bb40252f61e827d",
+  "existingGuideDataSha256": "736213483122c4d2a32562f7d649b296a6cf7d51eb869d02cc736df46f42cabb",
+  "existingGuideDataUnchanged": true,
+  "preservedCounts": {
+    "mentors": 34,
+    "mentorCards": 17,
+    "lifeChapters": 12,
+    "studentReviewRecords": 39,
+    "internshipFirms": 12,
+    "internshipResources": 35,
+    "socialPosts": 114,
+    "officialEvidence": 182
+  },
+  "platformLinkCount": 19,
+  "platformLinksAreSearchesNotPlaybackGuarantees": true,
+  "audioBytesPublished": false,
+  "lyricsPublished": false,
+  "artworkPublished": false,
+  "privatePathsAndLibraryIdsPublished": false,
+  "metadataSource": "Reviewed tags and durations of the 19 user-supplied files; no full-track listening claim",
+  "versionMethod": "Files explicitly labelled as concert/live releases are现场版; other supplied album tags are专辑版, not a claim about physical recording location"
+}

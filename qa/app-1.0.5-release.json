@@ -1,0 +1,49 @@
+{
+  "version": "1.0.5",
+  "frontendTests": 50,
+  "music": {
+    "tracks": 19,
+    "albums": 11,
+    "liveVersions": 4,
+    "totalDurationSeconds": 5907.5,
+    "publicAudioFiles": 0,
+    "platformLinksAreSearch": true,
+    "autoplay": false,
+    "localFilesUploaded": false,
+    "localFilesPersisted": false,
+    "catalogSha256": "716281fc0149f947e5cc62e44e2e94c6003407f6a3738517df870efb0309fa22"
+  },
+  "preserved": {
+    "mentors": 34,
+    "studentReviewRecords": 39,
+    "socialPosts": 114,
+    "officialEvidence": 182,
+    "internshipFirms": 12,
+    "internshipResources": 35,
+    "letterVersion": "1.0.4"
+  },
+  "downloads": [
+    {
+      "id": "evidence-index",
+      "sha256": "892a45d1b7821f6148d6220ff39b6058132398ef693059d26ea957d7795244a3",
+      "bytes": 352276,
+      "unchanged": true
+    },
+    {
+      "id": "life-guide",
+      "sha256": "fb02cc0734cf5804867386b6ef05349ca27128eb217dc15717f67b935d26384f",
+      "bytes": 77514,
+      "unchanged": true
+    },
+    {
+      "id": "mentor-guide",
+      "sha256": "4779ac40bf414ab397567492adac80a10e430effffb69dc17c65a7c2c99178e5",
+      "bytes": 68020,
+      "unchanged": true
+    }
+  ],
+  "browserQA": "pending",
+  "nativeBuild": "pending",
+  "runtimeSmoke": "pending",
+  "realDeviceTested": false
+}

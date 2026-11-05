@@ -566,7 +566,7 @@
     },
     "appEdition": {
       "web": {
-        "version": "1.0.4"
+        "version": "1.0.5"
       },
       "android": {
         "available": true,
@@ -44992,5 +44992,509 @@
       "officialTotal": 182,
       "resourceCountNote": "同一公告可能含多个项目；资源条目不是独立岗位、空缺人数或录取机会。"
     }
+  },
+  "musicPlaylist": {
+    "title": "音乐小憩",
+    "subtitle": "雨诺自选 · 19首华晨宇",
+    "ownerLabel": "雨诺自选",
+    "artist": "华晨宇",
+    "intro": "读累了，挑一首歌，换个节奏。",
+    "tracks": [
+      {
+        "id": "hcy-world-zoo",
+        "title": "世界是个动物园",
+        "artist": "华晨宇",
+        "album": "异类",
+        "version": "专辑版",
+        "durationSeconds": 237.0,
+        "fileNameAliases": [
+          "世界是个动物园-华晨宇-异类.mp3",
+          "世界是个动物园.mp3",
+          "世界是个动物园.m4a",
+          "世界是个动物园.wav",
+          "世界是个动物园.aac",
+          "世界是个动物园.ogg",
+          "世界是个动物园.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E5%8A%A8%E7%89%A9%E5%9B%AD",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-when-flowers-fall",
+        "title": "花落时相遇",
+        "artist": "华晨宇",
+        "album": "希忘Hope",
+        "version": "专辑版",
+        "durationSeconds": 357.1,
+        "fileNameAliases": [
+          "花落时相遇-华晨宇-希忘Hope.mp3",
+          "花落时相遇.mp3",
+          "花落时相遇.m4a",
+          "花落时相遇.wav",
+          "花落时相遇.aac",
+          "花落时相遇.ogg",
+          "花落时相遇.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E8%8A%B1%E8%90%BD%E6%97%B6%E7%9B%B8%E9%81%87",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-sunrise",
+        "title": "走，一起去看日出吧",
+        "artist": "华晨宇",
+        "album": "希忘Hope",
+        "version": "专辑版",
+        "durationSeconds": 275.4,
+        "fileNameAliases": [
+          "走 一起去看日出吧-华晨宇-希忘Hope.mp3",
+          "走，一起去看日出吧.mp3",
+          "走，一起去看日出吧.m4a",
+          "走，一起去看日出吧.wav",
+          "走，一起去看日出吧.aac",
+          "走，一起去看日出吧.ogg",
+          "走，一起去看日出吧.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E8%B5%B0%EF%BC%8C%E4%B8%80%E8%B5%B7%E5%8E%BB%E7%9C%8B%E6%97%A5%E5%87%BA%E5%90%A7",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-sea-of-wind",
+        "title": "风之海",
+        "artist": "华晨宇",
+        "album": "量变临界点",
+        "version": "专辑版",
+        "durationSeconds": 304.4,
+        "fileNameAliases": [
+          "风之海-华晨宇-量变临界点.mp3",
+          "风之海.mp3",
+          "风之海.m4a",
+          "风之海.wav",
+          "风之海.aac",
+          "风之海.ogg",
+          "风之海.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E9%A3%8E%E4%B9%8B%E6%B5%B7",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-bullfight-live",
+        "title": "斗牛",
+        "artist": "华晨宇",
+        "album": "华晨宇日出演唱会特辑",
+        "version": "现场版",
+        "durationSeconds": 361.1,
+        "fileNameAliases": [
+          "斗牛-华晨宇-华晨宇日出演唱会特辑.mp3",
+          "斗牛.mp3",
+          "斗牛.m4a",
+          "斗牛.wav",
+          "斗牛.aac",
+          "斗牛.ogg",
+          "斗牛.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E6%96%97%E7%89%9B%20%E6%97%A5%E5%87%BA%E6%BC%94%E5%94%B1%E4%BC%9A",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-asylum-live",
+        "title": "疯人院",
+        "artist": "华晨宇",
+        "album": "华晨宇日出演唱会特辑",
+        "version": "现场版",
+        "durationSeconds": 393.3,
+        "fileNameAliases": [
+          "疯人院-华晨宇-华晨宇日出演唱会特辑.mp3",
+          "疯人院.mp3",
+          "疯人院.m4a",
+          "疯人院.wav",
+          "疯人院.aac",
+          "疯人院.ogg",
+          "疯人院.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E7%96%AF%E4%BA%BA%E9%99%A2%20%E6%97%A5%E5%87%BA%E6%BC%94%E5%94%B1%E4%BC%9A",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-fearless",
+        "title": "肆无惧燥",
+        "artist": "华晨宇",
+        "album": "雪碧酷光灯",
+        "version": "专辑版",
+        "durationSeconds": 172.5,
+        "fileNameAliases": [
+          "肆无惧燥-华晨宇-雪碧酷光灯.mp3",
+          "肆无惧燥.mp3",
+          "肆无惧燥.m4a",
+          "肆无惧燥.wav",
+          "肆无惧燥.aac",
+          "肆无惧燥.ogg",
+          "肆无惧燥.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E8%82%86%E6%97%A0%E6%83%A7%E7%87%A5",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-jackdaw-boy",
+        "title": "寒鸦少年",
+        "artist": "华晨宇",
+        "album": "寒鸦少年",
+        "version": "专辑版",
+        "durationSeconds": 315.2,
+        "fileNameAliases": [
+          "寒鸦少年-华晨宇-寒鸦少年.mp3",
+          "寒鸦少年.mp3",
+          "寒鸦少年.m4a",
+          "寒鸦少年.wav",
+          "寒鸦少年.aac",
+          "寒鸦少年.ogg",
+          "寒鸦少年.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E5%AF%92%E9%B8%A6%E5%B0%91%E5%B9%B4",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-everlasting-flame",
+        "title": "永不熄灭的火焰",
+        "artist": "华晨宇",
+        "album": "量变临界点",
+        "version": "专辑版",
+        "durationSeconds": 340.0,
+        "fileNameAliases": [
+          "永不熄灭的火焰-华晨宇-量变临界点-45b692.mp3",
+          "永不熄灭的火焰.mp3",
+          "永不熄灭的火焰.m4a",
+          "永不熄灭的火焰.wav",
+          "永不熄灭的火焰.aac",
+          "永不熄灭的火焰.ogg",
+          "永不熄灭的火焰.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E6%B0%B8%E4%B8%8D%E7%86%84%E7%81%AD%E7%9A%84%E7%81%AB%E7%84%B0",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-seek",
+        "title": "寻",
+        "artist": "华晨宇",
+        "album": "寻",
+        "version": "专辑版",
+        "durationSeconds": 270.6,
+        "fileNameAliases": [
+          "寻-华晨宇-寻.mp3",
+          "寻.mp3",
+          "寻.m4a",
+          "寻.wav",
+          "寻.aac",
+          "寻.ogg",
+          "寻.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E5%AF%BB",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-king-beggar-live",
+        "title": "国王与乞丐",
+        "artist": "华晨宇",
+        "album": "2016安徽卫视国剧盛典现场原音",
+        "version": "现场版",
+        "durationSeconds": 178.0,
+        "fileNameAliases": [
+          "国王与乞丐_华晨宇_2016安徽卫视国剧盛典现场原音.mp3",
+          "国王与乞丐.mp3",
+          "国王与乞丐.m4a",
+          "国王与乞丐.wav",
+          "国王与乞丐.aac",
+          "国王与乞丐.ogg",
+          "国王与乞丐.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E5%9B%BD%E7%8E%8B%E4%B8%8E%E4%B9%9E%E4%B8%90%202016%20%E5%9B%BD%E5%89%A7%E7%9B%9B%E5%85%B8%20%E7%8E%B0%E5%9C%BA",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-bonfire-at-galaxy-end",
+        "title": "点燃银河尽头的篝火",
+        "artist": "华晨宇",
+        "album": "希忘Hope",
+        "version": "专辑版",
+        "durationSeconds": 307.5,
+        "fileNameAliases": [
+          "点燃银河尽头的篝火-华晨宇-希忘Hope.mp3",
+          "点燃银河尽头的篝火.mp3",
+          "点燃银河尽头的篝火.m4a",
+          "点燃银河尽头的篝火.wav",
+          "点燃银河尽头的篝火.aac",
+          "点燃银河尽头的篝火.ogg",
+          "点燃银河尽头的篝火.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E7%82%B9%E7%87%83%E9%93%B6%E6%B2%B3%E5%B0%BD%E5%A4%B4%E7%9A%84%E7%AF%9D%E7%81%AB",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-dust-in-fireworks",
+        "title": "烟火里的尘埃",
+        "artist": "华晨宇",
+        "album": "烟火里的尘埃",
+        "version": "专辑版",
+        "durationSeconds": 321.4,
+        "fileNameAliases": [
+          "烟火里的尘埃-华晨宇-烟火里的尘埃.mp3",
+          "烟火里的尘埃.mp3",
+          "烟火里的尘埃.m4a",
+          "烟火里的尘埃.wav",
+          "烟火里的尘埃.aac",
+          "烟火里的尘埃.ogg",
+          "烟火里的尘埃.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E7%83%9F%E7%81%AB%E9%87%8C%E7%9A%84%E5%B0%98%E5%9F%83",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-flight-mode",
+        "title": "飞行模式",
+        "artist": "华晨宇",
+        "album": "希忘Hope",
+        "version": "专辑版",
+        "durationSeconds": 265.8,
+        "fileNameAliases": [
+          "飞行模式-华晨宇-希忘Hope.mp3",
+          "飞行模式.mp3",
+          "飞行模式.m4a",
+          "飞行模式.wav",
+          "飞行模式.aac",
+          "飞行模式.ogg",
+          "飞行模式.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E9%A3%9E%E8%A1%8C%E6%A8%A1%E5%BC%8F",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-for-forever",
+        "title": "For Forever",
+        "artist": "华晨宇",
+        "album": "H",
+        "version": "专辑版",
+        "durationSeconds": 280.7,
+        "fileNameAliases": [
+          "For_Forever-华晨宇-H.mp3",
+          "For Forever.mp3",
+          "For Forever.m4a",
+          "For Forever.wav",
+          "For Forever.aac",
+          "For Forever.ogg",
+          "For Forever.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20For%20Forever",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-ordinary-life",
+        "title": "普通到不普通的人生",
+        "artist": "华晨宇",
+        "album": "量变临界点",
+        "version": "专辑版",
+        "durationSeconds": 261.1,
+        "fileNameAliases": [
+          "普通到不普通的人生-华晨宇-量变临界点.mp3",
+          "普通到不普通的人生.mp3",
+          "普通到不普通的人生.m4a",
+          "普通到不普通的人生.wav",
+          "普通到不普通的人生.aac",
+          "普通到不普通的人生.ogg",
+          "普通到不普通的人生.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E6%99%AE%E9%80%9A%E5%88%B0%E4%B8%8D%E6%99%AE%E9%80%9A%E7%9A%84%E4%BA%BA%E7%94%9F",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-love-this-world",
+        "title": "好想爱这个世界啊",
+        "artist": "华晨宇",
+        "album": "好想爱这个世界啊",
+        "version": "专辑版",
+        "durationSeconds": 258.8,
+        "fileNameAliases": [
+          "好想爱这个世界啊-华晨宇-好想爱这个世界啊.m4a",
+          "好想爱这个世界啊.mp3",
+          "好想爱这个世界啊.m4a",
+          "好想爱这个世界啊.wav",
+          "好想爱这个世界啊.aac",
+          "好想爱这个世界啊.ogg",
+          "好想爱这个世界啊.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E5%A5%BD%E6%83%B3%E7%88%B1%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E5%95%8A",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-toward-sun-live",
+        "title": "向阳而生",
+        "artist": "华晨宇",
+        "album": "华晨宇日出演唱会特辑",
+        "version": "现场版",
+        "durationSeconds": 702.6,
+        "fileNameAliases": [
+          "向阳而生-华晨宇-华晨宇日出演唱会特辑.mp3",
+          "向阳而生.mp3",
+          "向阳而生.m4a",
+          "向阳而生.wav",
+          "向阳而生.aac",
+          "向阳而生.ogg",
+          "向阳而生.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E5%90%91%E9%98%B3%E8%80%8C%E7%94%9F%20%E6%97%A5%E5%87%BA%E6%BC%94%E5%94%B1%E4%BC%9A",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      },
+      {
+        "id": "hcy-return",
+        "title": "好想我回来啊",
+        "artist": "华晨宇",
+        "album": "希忘Hope",
+        "version": "专辑版",
+        "durationSeconds": 305.0,
+        "fileNameAliases": [
+          "好想我回来啊-华晨宇-希忘Hope (1).mp3",
+          "好想我回来啊.mp3",
+          "好想我回来啊.m4a",
+          "好想我回来啊.wav",
+          "好想我回来啊.aac",
+          "好想我回来啊.ogg",
+          "好想我回来啊.flac"
+        ],
+        "listeningLinks": [
+          {
+            "label": "QQ音乐搜索",
+            "url": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E5%A5%BD%E6%83%B3%E6%88%91%E5%9B%9E%E6%9D%A5%E5%95%8A",
+            "type": "search",
+            "platform": "QQ音乐",
+            "versionNote": "平台搜索结果的可听状态与版本以其页面标注为准。"
+          }
+        ]
+      }
+    ],
+    "totalDurationSeconds": 5907.5
   }
 }

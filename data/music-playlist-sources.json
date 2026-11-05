@@ -1,0 +1,31 @@
+{
+  "batch": "music-playlist-105",
+  "metadata": {
+    "origin": "用户提供的19个音频文件",
+    "fields": [
+      "title",
+      "artist",
+      "album",
+      "durationSeconds",
+      "filenameAliases"
+    ],
+    "verification": "ffprobe tags/durations were checked against all supplied files",
+    "limits": "不从歌单推断个人心理或关系含义；元数据核对不等于完整试听或歌词分析。"
+  },
+  "platformEntries": [
+    {
+      "platform": "QQ音乐",
+      "url": "https://y.qq.com/n/ryqq_v2/search",
+      "exampleUrl": "https://y.qq.com/n/ryqq_v2/search?w=%E5%8D%8E%E6%99%A8%E5%AE%87%20%E5%AF%BB",
+      "requestFormat": "HTTPS official search page with URL-encoded w keyword",
+      "httpStatus": 200,
+      "pageTitleObserved": "搜索 - QQ音乐",
+      "readingScope": "官方搜索HTML shell可读，旧ryqq搜索路径自动跳到ryqq_v2；关键词保留。未取得客户端曲目结果、版权可听状态或逐一现场版本确认。",
+      "use": "Only search entry links, no invented song ids, audio URLs or playback guarantee"
+    }
+  ],
+  "excludedEntry": {
+    "platform": "网易云音乐",
+    "reason": "旧search/m直达路径在本次检查跳到404；泛用shell不足以确认旧hash搜索路径，未作为曲目入口。"
+  }
+}

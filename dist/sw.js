@@ -2,10 +2,10 @@
 'use strict';
 const BASE = new URL('./', self.location.href);
 const CACHE_PREFIX = `nau-guide:${BASE.pathname}:`;
-const CACHE_NAME = `${CACHE_PREFIX}1.0.0-edition1`;
+const CACHE_NAME = `${CACHE_PREFIX}1.0.5-music1`;
 const DATA_PATH = 'data/site-data.json';
 const SHELL_PATHS = [
-  './', 'index.html', 'app.js', 'style.css', 'install.js', 'favicon.svg',
+  './', 'index.html', 'app.js', 'music.js', 'style.css', 'install.js', 'favicon.svg',
   'manifest.webmanifest', 'icons/app-192.png', 'icons/app-512.png'
 ];
 const SHELL = new Set(SHELL_PATHS.map(path => new URL(path, BASE).href));
@@ -33,7 +33,7 @@ async function usable(response, isData) {
   if (!isData) return true;
   try {
     const value = await response.clone().json();
-    return Array.isArray(value.mentors) && Array.isArray(value.lifeChapters) && Array.isArray(value.socialPosts);
+    return Array.isArray(value.mentors) && Array.isArray(value.lifeChapters) && Array.isArray(value.socialPosts) && Array.isArray(value.musicPlaylist?.tracks);
   } catch (_) { return false; }
 }
 
