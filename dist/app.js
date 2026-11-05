@@ -102,7 +102,7 @@
   }
 
   function researchHighlightsHtml() {
-    const highlights = array(state.data.meta.round3Research?.highlights).filter(item => item?.title && item?.text).slice(0, 4);
+    const highlights = array((state.data.meta.appResearch || state.data.meta.round3Research)?.highlights).filter(item => item?.title && item?.text).slice(0, 4);
     if (!highlights.length) return '';
     return `<details class="research-updates" open><summary>新增核验：具体训练与学习安排</summary><div class="research-updates-grid">${highlights.map(item => {
       const text = textOf(item.text);
@@ -169,6 +169,8 @@
   }
 
   function coverageHtml() {
+    const latest = state.data.meta.appResearch;
+    if (latest) return `<section class="research-coverage reading-notes" aria-label="新增资料与采用口径"><h3>这轮补进了什么</h3><p>新增 <strong>${esc(latest.newOfficialSources)}</strong> 条官方来源、<strong>${esc(latest.newSocialPosts)}</strong> 篇小红书原帖，并补读更新 <strong>${esc(latest.updatedSocialPosts)}</strong> 篇旧帖的回复。课程现场教学、论文个案与课程考核经验已写入对应章节，旧帖更新单列，不重复增加篇数。</p><p>历史制度只作延伸阅读；混合专业的选课评论保留身份限制。个人日常指导的新评价仍有限，课程体验不能直接当作导师相处评价。</p></section>`;
     const current = state.data.meta.round3Research;
     if (current) return `<section class="research-coverage reading-notes" aria-label="新增资料与采用口径"><h3>这轮补进了什么</h3><p>新增 <strong>${esc(current.studentPosts)}</strong> 篇小红书正文材料与 <strong>${esc(current.officialIndependentEvents)}</strong> 项官方培养及实践记录。具体课程任务、案例训练、论文与实习衔接已写进相应章节，来源与实际阅读范围一并保留。</p><p>导师补充主要是有对象、有年份的培养个案及集体教学记录。个人日常指导的新评价仍有限；课程体验中的亲历、第三方转述和未核验身份分别注明。</p></section>`;
     const r = state.data.meta.researchExpansion;
@@ -200,7 +202,8 @@
   function renderDownloads() {
     const socialCount = state.data.socialPosts.length;
     const officialCount = array(state.data.officialEvidence).length;
-    app.innerHTML = heading('04 / TAKE THE GUIDE WITH YOU', '下载一份，留给需要的时候', `Word 保留基础正文和导师卡片；Excel 提供原帖目录与官方补充证据。网页当前收录 ${socialCount} 条社交原帖，另有新增核验与操作说明，可逐条返回原始来源。`) + `<div class="download-grid">${state.data.downloads.map(d => `<article class="download-card"><div class="file-icon" aria-hidden="true">${esc(d.format.toUpperCase())}</div><h3>${esc(d.title)}</h3><p>${esc(d.format.toLowerCase() === 'xlsx' ? `原帖与官方补充证据目录；网页当前可查 ${socialCount} 条社交原帖${officialCount ? `、${officialCount} 条官方资料` : ''}，附适用人群与证据边界。` : d.description)}</p><a class="button" href="${esc(d.url)}" download data-download="${esc(d.id)}">下载${d.format.toLowerCase()==='docx'?' Word':' Excel'}文件 <span aria-hidden="true">↓</span></a><div class="download-meta">${esc(d.format.toUpperCase())}${d.bytes ? ` · ${Math.round(d.bytes/1024)} KB` : ''}</div></article>`).join('')}</div><div class="reading-notes"><h3>这份资料，怎样使用更顺手</h3><p><strong>选导之前：</strong>先看本级培养方向，再从导师名录中选出几位，逐条核对研究内容、训练方式与当年名额。联系清单可以帮助你保留第二顺位。</p><p><strong>读学生经历时：</strong>接触身份和具体过程比笼统的好评更有用。本科课程印象、朋友转述和往届MPAcc经历，分别能回答不同问题。</p><p><strong>准备入学时：</strong>先确认校区、楼栋与本级通知，再购置用品、安排实习和核对奖助；攻略中的来源编号都能回到相应公开页面。</p><p><strong>标注说明：</strong>“未公开”指本次整理未见可靠公开信息；“待核实”指身份、阶段或时效仍有缺口。两者均不等同于该事项不存在。</p></div>`;
+    app.innerHTML = heading('04 / TAKE THE GUIDE WITH YOU', '下载一份，留给需要的时候', `Word 保留基础正文和导师卡片；Excel 提供原帖目录与官方补充证据。网页当前收录 ${socialCount} 条社交原帖，另有新增核验与操作说明，可逐条返回原始来源。`) + `<div class="download-grid">${state.data.downloads.map(d => `<article class="download-card"><div class="file-icon" aria-hidden="true">${esc(d.format.toUpperCase())}</div><h3>${esc(d.title)}</h3><p>${esc(d.format.toLowerCase() === 'xlsx' ? `原帖与官方补充证据目录；网页当前可查 ${socialCount} 条社交原帖${officialCount ? `、${officialCount} 条官方资料` : ''}，附适用人群与证据边界。` : d.description)}</p><a class="button" href="${esc(d.url)}" download data-download="${esc(d.id)}">下载${d.format.toLowerCase()==='docx'?' Word':' Excel'}文件 <span aria-hidden="true">↓</span></a><div class="download-meta">${esc(d.format.toUpperCase())}${d.bytes ? ` · ${Math.round(d.bytes/1024)} KB` : ''}</div></article>`).join('')}</div><section class="app-edition" aria-labelledby="app-edition-title"><div class="app-edition-heading"><span class="small-label">KEEP IT CLOSE</span><h3 id="app-edition-title">应用版</h3><p>将手记放到桌面或主屏幕，随时回来接着读。</p></div><div id="app-edition-cards" class="app-edition-grid"></div></section><div class="reading-notes"><h3>这份资料，怎样使用更顺手</h3><p><strong>选导之前：</strong>先看本级培养方向，再从导师名录中选出几位，逐条核对研究内容、训练方式与当年名额。联系清单可以帮助你保留第二顺位。</p><p><strong>读学生经历时：</strong>接触身份和具体过程比笼统的好评更有用。本科课程印象、朋友转述和往届MPAcc经历，分别能回答不同问题。</p><p><strong>准备入学时：</strong>先确认校区、楼栋与本级通知，再购置用品、安排实习和核对奖助；攻略中的来源编号都能回到相应公开页面。</p><p><strong>标注说明：</strong>“未公开”指本次整理未见可靠公开信息；“待核实”指身份、阶段或时效仍有缺口。两者均不等同于该事项不存在。</p></div>`;
+    window.NAUEdition?.mount(state.data.meta.appEdition);
   }
 
   function openGuide(section) {
@@ -319,11 +322,12 @@
 
   async function boot() {
     try {
-      const response=await fetch('./data/site-data.json?v=round3');
-      if(!response.ok)throw new Error('资料文件返回 '+response.status);
+      const response=await fetch('./data/site-data.json?v=edition1', {cache:'no-cache'});
+      if(!response.ok){const failure=new Error('资料文件返回 '+response.status);failure.missingOfflineData=response.headers.get('X-Guide-Offline')==='missing';throw failure;}
       const data=await response.json();
       if(!Array.isArray(data.mentors)||!Array.isArray(data.lifeChapters)||!Array.isArray(data.socialPosts))throw new Error('资料格式不完整');
       state.data=data;
+      window.dispatchEvent(new CustomEvent('nau:data-ready', {detail:{offlineCache:response.headers.get('X-Guide-Offline')==='cached'}}));
       for(const post of data.socialPosts){
         const codes=array(post.sourceIds).filter(code=>/^[A-Z]\d{2,3}$/.test(code));
         for(const [code,entry] of Object.entries(data.sourceRegistry||{})){
@@ -338,7 +342,8 @@
       if (Array.isArray(data.officialEvidence)) $('.panel-footnote').innerHTML = `<span class="mini-cross" aria-hidden="true">+</span>另有 ${data.officialEvidence.length} 条官方资料 · 分开核验`;
       route(false);
     } catch(error) {
-      app.innerHTML=emptyState('指南内容暂时未能载入','请刷新页面重试，或检查当前网络连接。','<button type="button" class="button secondary" onclick="location.reload()">重新载入</button>')+`<p class="error-details">${esc(error.message)}</p>`;
+      const offlineMissing=error.missingOfflineData || navigator.onLine===false;
+      app.innerHTML=emptyState(offlineMissing?'此设备还没有可离线阅读的资料':'指南内容暂时未能载入',offlineMissing?'首次使用请先联网打开本页，等待资料载入。之后可离线查看导师、生活章节和原帖摘记；原帖原网页仍需要联网。':'请刷新页面重试，或检查当前网络连接。','<button type="button" class="button secondary" onclick="location.reload()">重新载入</button>')+`<p class="error-details">${esc(error.message)}</p>`;
       console.error('Guide load failed:',error);
     }
   }

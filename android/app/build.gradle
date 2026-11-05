@@ -1,0 +1,47 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'cn.nau.mpacc.guide'
+    compileSdk 35
+    buildToolsVersion '35.0.0'
+    defaultConfig {
+        applicationId 'cn.nau.mpacc.guide'
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName '1.0.0'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    def signingPath = System.getenv('ANDROID_KEYSTORE_PATH')
+    def signingPassword = System.getenv('NAU_ANDROID_STORE_PASSWORD')
+    if (signingPath && signingPassword && file(signingPath).isFile()) {
+        signingConfigs {
+            privateRelease {
+                storeFile file(signingPath)
+                storePassword signingPassword
+                keyAlias 'nauguide'
+                keyPassword signingPassword
+            }
+        }
+        buildTypes.release.signingConfig = signingConfigs.privateRelease
+    }
+}
+
+// Package the exact current website, including JSON and Word/Excel documents.
+// Generated assets are ignored; the website has only one source of truth.
+tasks.register('syncGuideAssets', Sync) {
+    from rootProject.file('../dist')
+    // Never embed a previous installer inside its next build.
+    exclude '**/*.apk', '**/*.apk.sha256'
+    into layout.projectDirectory.dir('src/main/assets/guide')
+    doFirst {
+        if (!rootProject.file('../dist/index.html').isFile() ||
+                !rootProject.file('../dist/data/site-data.json').isFile()) {
+            throw new GradleException('Missing dist guide: check out the complete repository before building.')
+        }
+    }
+}
+tasks.named('preBuild').configure { dependsOn 'syncGuideAssets' }

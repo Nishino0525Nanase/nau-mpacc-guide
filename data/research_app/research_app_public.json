@@ -1,0 +1,293 @@
+{
+  "meta": {
+    "researchedAt": "2026-11-05",
+    "baseline": "/workspace/scratch/6880592399d8/nau-mpacc-guide/dist/data/site-data.json",
+    "baselineCounts": {"socialPosts": 112, "officialEvidence": 100, "recursiveUniqueUrls": 452, "recursiveNauArticleIds": 97},
+    "dedupMethod": "递归检查基线全部字符串URL及南京审计大学c栏目a文章ID；另检查具名学生、事件、PDF文件名，避免同一事件换栏目或域名重复。",
+    "scope": "只作公开资料研究，未改网站，未发布，未使用浏览器或凭据。",
+    "selectionNote": "新增7条，含4篇独立培养/实习/选题实例和3项仍由MPAcc学位论文栏目公开链接的校级办法。历史文件及非MPAcc专属范围均在相邻字段标注。"
+  },
+  "queries": [
+    "南京审计大学 MPAcc 2026 导师 双选 论文 专业实践",
+    "南京审计大学 MPAcc 2025 培养 学生 就业 实践",
+    "site:account.nau.edu.cn \"MPAcc\" \"2026\" \"论文\"",
+    "site:account.nau.edu.cn \"导师双选\" 2025",
+    "site:mpacc.nau.edu.cn \"实践\" \"2026\"",
+    "site:account.nau.edu.cn \"双选\" \"研究生\"",
+    "site:gs.nau.edu.cn 2026 \"会计\" \"实践\"",
+    "site:account.nau.edu.cn \"于昊平\"",
+    "site:account.nau.edu.cn \"社会实践\" \"2026\"",
+    "site:account.nau.edu.cn \"论文\" \"2025\" \"开题\"",
+    "site:account.nau.edu.cn \"曾铁兵\" \"2025\"",
+    "site:account.nau.edu.cn \"柴小莺\"",
+    "\"我校在MPAcc学生案例大赛中荣创佳绩\"",
+    "\"华雨倩\" \"南京审计大学\"",
+    "\"南京审计大学\" \"导师双选\"",
+    "site:account.nau.edu.cn \"华雨倩\" \"论文\"",
+    "site:account.nau.edu.cn \"曾铁兵\" \"会计审计行业\"",
+    "\"会计学院组织MPAcc学员赴南钢智慧中心开展现场教学活动\"",
+    "site:account.nau.edu.cn \"南钢智慧中心\" \"2025\"",
+    "site:mpacc.nau.edu.cn \"南钢\"",
+    "site:account.nau.edu.cn 导师双选",
+    "site:mpacc.nau.edu.cn 双选",
+    "site:gs.nau.edu.cn 导师 双向选择 2026",
+    "南京审计大学 导师双选 2025",
+    "site:nau.edu.cn 2025/2026 研究生与导师 互选"
+  ],
+  "accepted": [
+    {
+      "title": "【移动课堂】会计学院组织MPAcc学员赴南钢开展三门核心课程融合式现场教学",
+      "url": "https://account.nau.edu.cn/2026/0428/c8917a156709/page.htm",
+      "platform": "南京审计大学会计学院官网",
+      "author": null,
+      "date": "2026-04-28",
+      "population": "明确为2025级MPAcc全体学员；2026年4月24日现场教学实例。",
+      "advisorNames": ["马德林", "凌华"],
+      "summary": "2025级MPAcc将三门课程连接到南钢数字化生产与财务场景，可用于判断学校数智课程的实际学习形式。",
+      "points": [
+        "参与课程为《财务管理理论与实务》《管理会计理论与实务》《数据资产与数据处理》。",
+        "马德林为课程负责人，凌华、周樱樱等带队；观察内容包括生产数据、成本管控及智能调度。",
+        "备课或选题可关注财务数据如何与业务流程相连；这是依据活动内容提出的学习建议。"
+      ],
+      "limits": [
+        "一次现场教学不代表每届同样安排，也不是企业实习录用承诺。",
+        "带队和课程角色不能据此视为每位参加者的学位导师关系；导师当年名额未知。"
+      ],
+      "readingScope": "已读新闻全文，重点正文L83-L96；没有以栏目摘要代替正文。",
+      "read": true,
+      "webRefs": ["turn81view0", "turn80search0"]
+    },
+    {
+      "title": "润泽产教融合前沿讲坛（第41期）柴小莺——行政事业单位财务工作实践与人才培养",
+      "url": "https://account.nau.edu.cn/2026/1023/c8920a163064/page.htm",
+      "platform": "南京审计大学会计学院官网",
+      "author": null,
+      "date": "2026-10-23",
+      "population": "正文称会计学院研究生参加；未单独区分MPAcc与会计学学硕。",
+      "advisorNames": ["凌华"],
+      "summary": "2026年10月21日的实务讲座具体解释行政事业单位财务任务及实习的岗位适配用途，适合准备政府会计方向、事业单位求职或实习的同学。",
+      "points": [
+        "业务内容覆盖核算、预决算、财务报告、资产、绩效、项目与内控管理，并说明年末任务集中等节奏。",
+        "主讲人建议通过实习检验理论应用及岗位匹配，主动学习并分清职责。",
+        "讲座强调专业判断、沟通和风险识别等能力；可据此设计实习观察清单。"
+      ],
+      "limits": [
+        "这是学院对一场讲座的转述，未读到讲义或逐字稿。",
+        "不能据此推定事业单位岗位数量、上岸率或就业保障；凌华为主持人，导师名额未知。"
+      ],
+      "readingScope": "已读新闻全文，正文L83-L90；人物、日期和参会对象均取自正文。",
+      "read": true,
+      "webRefs": ["turn69view0"]
+    },
+    {
+      "title": "我校在MPAcc学生案例大赛中荣创佳绩（2025年全国第十一届）",
+      "url": "https://mpacc.nau.edu.cn/2025/1107/c11508a150102/page.htm",
+      "platform": "南京审计大学MPAcc官网",
+      "author": "会计学院（机构署名，无具名作者）",
+      "date": "2025-06-26",
+      "population": "明确为2024级会计专硕研究生瞿佳健、乔一蕊、孙夏、樊普、卢淑洁、侯心怡；2025年赛事历史实例。",
+      "advisorNames": ["王永妍", "崔秀梅", "温素彬"],
+      "summary": "具名团队的培养过程包括校内选拔、企业调研和案例专题研讨，可作为了解MPAcc案例训练及三位老师参与实践指导的证据。",
+      "points": [
+        "三位老师指导“熬肿一队是一队”，队员均被明确为2024级会计专硕。",
+        "正文确认团队第二阶段开展企业调研、组织专题研讨并完成案例分析，最终获全国三等奖。",
+        "用于了解案例竞赛投入与企业问题研究；无法从单一团队判断日常课题组节奏。"
+      ],
+      "limits": [
+        "2025年赛事不能当作2026年报名通知；三位老师的参赛指导身份不等同于六人的学位导师。",
+        "URL路径为2025/1107，页面正文发布时间为2025-06-26，本条按正文日期记录。",
+        "不由此推断老师性格、普遍指导强度或当前招生名额。"
+      ],
+      "readingScope": "已读新闻全文，重点L46-L73；未依靠获奖图片识别额外信息。",
+      "read": true,
+      "webRefs": ["turn73view0", "turn69search0"]
+    },
+    {
+      "title": "【喜讯】我院研究生荣获2023年全国MPAcc优秀学位论文奖（华雨倩：企业数据合规案例）",
+      "url": "https://account.nau.edu.cn/2024/0509/c9005a129421/page.htm",
+      "platform": "南京审计大学会计学院官网",
+      "author": "沈静",
+      "date": "2024-05-09",
+      "population": "明确为MPAcc研究生华雨倩的2023年度优秀论文实例；不是2026在读生或新选题征集。",
+      "advisorNames": ["王敬勇"],
+      "summary": "官方披露一项由王敬勇指导的具名MPAcc论文，可帮助对数据治理感兴趣的学生把宽泛方向收窄到企业案例及监管事件。",
+      "points": [
+        "论文题目为《交易所问询函对企业数据合规的影响及其经济后果研究——以华大基因为例》。",
+        "原文明确作者、论文题目及指导教师，可作为导师参与数据合规题材指导的历史证据。",
+        "从题目可观察到“监管工具—企业合规—经济后果—单一企业”结构；该结构分析为研究者解读，非论文方法全文。"
+      ],
+      "limits": [
+        "只读到获奖新闻，未取得学位论文全文，不能声称掌握其数据、方法或结论。",
+        "不能外推至王敬勇当前全部研究方向、学生体验或招生名额。"
+      ],
+      "readingScope": "已读新闻全文，尤其L78-L85；本条采纳的是具名论文选题和指导关系，非单纯获奖数量。",
+      "read": true,
+      "webRefs": ["turn75view1", "turn73search0"]
+    },
+    {
+      "title": "南京审计大学硕士研究生学位论文开题工作管理规定（南审研发〔2018〕31号；官网仍挂历史文本）",
+      "url": "https://account.nau.edu.cn/_upload/article/files/e9/f0/a39ce55c47dcaae7abe6f7dce147/917bf89f-cf4a-4d63-bce4-b265c665c6d4.pdf",
+      "platform": "南京审计大学会计学院MPAcc学位论文栏目／官方PDF",
+      "author": null,
+      "date": null,
+      "population": "全校硕士研究生通用文件，正文特别区分专业学位选题；2018年文号，2026年仍被MPAcc栏目公开链接。",
+      "advisorNames": [],
+      "summary": "选题应先检查实践来源、可用资料和完成可行性；该历史制度还提供开题报告构成与更换选题的流程参照。",
+      "points": [
+        "专业学位论文应从专业实践提出问题，兼顾应用价值与工作量可行性。",
+        "文本要求开题报告至少6000字、参考文献至少20篇；报告覆盖文献、方法、条件、难点及进度。",
+        "通过后改题需书面申请、导师签字与学院审批，并重新开题。"
+      ],
+      "limits": [
+        "只有2018年文号，无准确发布月日，date保留null；不是2026年度开题通知。",
+        "旧文列两年制和三年制的原则时间，实际届别节点及是否有更新必须核对本级通知；不直接套用旧学期安排。",
+        "本条只作官网当前可读历史规则参考，未声称已穷尽全校后续修订。"
+      ],
+      "readingScope": "PDF正文全文5页（文本层）；从官方学位论文栏目点击附件，非搜索摘要。",
+      "read": true,
+      "webRefs": ["turn73view2", "turn78view2", "turn69view2"]
+    },
+    {
+      "title": "南京审计大学硕士研究生学位论文答辩与学位申请管理办法（南审校发〔2024〕43号）",
+      "url": "https://account.nau.edu.cn/_upload/article/files/e9/f0/a39ce55c47dcaae7abe6f7dce147/730a7e8f-710f-4177-868f-f2d051099005.pdf",
+      "platform": "南京审计大学会计学院MPAcc学位论文栏目／官方PDF",
+      "author": null,
+      "date": null,
+      "population": "全校硕士研究生通用文件，含专业硕士条款；2024年文号，非MPAcc专属安排。",
+      "advisorNames": [],
+      "summary": "毕业论文需要给预答辩、检测、评阅和正式答辩分别留时间；专业硕士还需解释论文如何解决实际问题。",
+      "points": [
+        "文件规定预答辩通过后再做学术不端检测，检测通过后再进入校外匿名评阅。",
+        "院级评审包括2名校外及1名校内专家；按此文本，任一人不同意答辩即不能安排答辩。",
+        "专业硕士答辩委员会须有实践部门专家；导师不参加本人学生所在组的答辩委员会。"
+      ],
+      "limits": [
+        "2024年文号未给准确发布月日，date保留null；具体当年送审截止日、更新文件以学院正式通知为准。",
+        "专业学位可提交被实践单位采纳的报告等成果证明，不等于自动满足学位成果要求，仍须按学位授予细则审核。",
+        "本条不提供通过率或预测个人能否毕业。"
+      ],
+      "readingScope": "PDF正文全文7页（文本层），并查看第一页截图核对文号；附件目录已读，未称已下载各附件。",
+      "read": true,
+      "webRefs": ["turn75view0", "turn78view0", "turn78view3", "turn69view2"]
+    },
+    {
+      "title": "南京审计大学研究生科研及实践创新计划项目管理办法（南审校发〔2024〕19号）",
+      "url": "https://account.nau.edu.cn/_upload/article/files/e9/f0/a39ce55c47dcaae7abe6f7dce147/98137a50-94fc-418f-93d7-00230a31b940.pdf",
+      "platform": "南京审计大学会计学院MPAcc学位论文栏目／官方PDF",
+      "author": null,
+      "date": null,
+      "population": "符合文件所列学制和年级条件的全日制在读研究生；专业学位申报实践创新计划，学硕申报科研创新计划。",
+      "advisorNames": [],
+      "summary": "MPAcc学生准备省研究生项目时应核对实践创新类别、年级资格和导师支持，也要提前安排结项条件。",
+      "points": [
+        "两年制全日制研一、三年制全日制研一或研二可按条件申报；正在承担同类省级创新计划者不可重复申请。",
+        "申报需可行方案、实践基础、合理预算及导师支持，由学院评议推荐、公示后报送。",
+        "导师负责全过程指导；项目成果须标注项目及编号，未标注不能作结题评价材料。"
+      ],
+      "limits": [
+        "2024年文号未给准确发布月日，date保留null；不是2026年度申报公告。",
+        "本条不能证明个人已满足资格，也未披露2026MPAcc可推荐名额、项目资助额或当期截止日。",
+        "学术型与专业学位项目类别不可混写；非全日制不在这份文件所列申报对象内。"
+      ],
+      "readingScope": "PDF正文全文3页（文本层）；从官方学位论文栏目进入。",
+      "read": true,
+      "webRefs": ["turn78view1", "turn75view3", "turn69view2"]
+    }
+  ],
+  "unread": [
+    {
+      "title": "南京审计大学研究生与导师互选办法",
+      "url": "https://gs.nau.edu.cn/2024/1112/c4412a138319/page.psp",
+      "author": null,
+      "date": null,
+      "read": false,
+      "readingScope": "仅读到访问限制页面，未读制度正文。",
+      "reason": "页面明确提示当前IP不是校内地址、仅允许校内访问；不能据此提取双选顺序或2026日程。",
+      "webRefs": ["turn82view0", "turn79view1"]
+    },
+    {
+      "title": "南京审计大学研究生和导师互选志愿表.docx（下载中心入口）",
+      "url": "https://mpacc.nau.edu.cn/11500/list.htm",
+      "author": null,
+      "date": null,
+      "read": false,
+      "readingScope": "已读下载中心列表，看到link33表名；未打开DOCX表内内容。",
+      "reason": "列表只证明有表格入口，不能证明2026双选时间、导师名额或具体流程。",
+      "webRefs": ["turn82view1", "turn79view0"]
+    }
+  ],
+  "duplicates": [
+    {
+      "title": "研途初见，师引新程——师生见面会顺利举行（2026）",
+      "url": "https://mpacc.nau.edu.cn/2026/0917/c11506a161857/page.htm",
+      "reason": "递归基线已有文章ID161857；虽未在顶层officialEvidence明显出现，仍排除。",
+      "webRefs": ["turn66view0"]
+    },
+    {
+      "title": "会计硕士专业学位研究生培养方案",
+      "url": "https://mpacc.nau.edu.cn/11517/list.htm",
+      "reason": "基线已多处收录，不将account镜像栏目或末尾斜杠变体作为新增。",
+      "webRefs": ["turn62search2"]
+    },
+    {
+      "title": "会计学院召开2024级研究生社会实践动员会",
+      "url": "https://account.nau.edu.cn/2025/1113/c9520a150551/page.htm",
+      "reason": "前轮已收，基线有文章ID150551；不重复。",
+      "webRefs": ["turn67search0"]
+    },
+    {
+      "title": "于昊平优秀硕士论文及培养成果",
+      "url": "https://account.nau.edu.cn/xyxw/list1.htm",
+      "reason": "基线全文已有于昊平个案；不以栏目摘要中的获奖报道再次添加同一培养实例。",
+      "webRefs": ["turn63search0"]
+    },
+    {
+      "title": "2023年第九届MPAcc案例大赛及快乐小子队",
+      "url": "https://account.nau.edu.cn/2023/0626/c9718a116357/page.htm",
+      "reason": "父任务明确前轮已加入2023比赛与相关指导过程；即使当前文章ID未命中，也按同一历史事件排除。",
+      "webRefs": ["turn69search4", "turn69search10"]
+    }
+  ],
+  "screened": [
+    {
+      "title": "立德树人，数智赋能，产教融合，协同育人",
+      "url": "https://account.nau.edu.cn/2025/1021/c9538a148688/page.htm",
+      "read": true,
+      "readingScope": "全文含项目方向、课程、三师共育及培养成效。",
+      "reason": "官方项目推介，含可用课程名，但与基线培养方案和质量报告重叠较多；不以笼统就业单位列举证明个人就业结果，本轮优先具体课程实践。",
+      "webRefs": ["turn68view3", "turn75view2"]
+    },
+    {
+      "title": "孙李静——从账房先生到战略伙伴：财务价值重塑与职业进阶指南",
+      "url": "https://account.nau.edu.cn/2026/0420/c8919a156296/page.htm",
+      "read": true,
+      "readingScope": "新闻全文。",
+      "reason": "能力建议偏宽泛且正文未明确参加者为研究生或MPAcc，弱于本轮柴小莺讲座的实习适配与岗位信息，未采纳。",
+      "webRefs": ["turn69view1"]
+    },
+    {
+      "title": "喜报！南京审计大学荣获会计专业学位教育质量认证A级认证结论",
+      "url": "https://account.nau.edu.cn/2026/0804/c9520a160843/page.htm",
+      "read": false,
+      "readingScope": "仅搜索结果和列表摘要筛选，未打开独立正文。",
+      "reason": "项目认证信息，缺少本轮重点寻找的课程、选导、论文、实践操作细节；未作为任何新增培养细节的论据。",
+      "webRefs": ["turn62search1"]
+    },
+    {
+      "title": "会计学院组织MPAcc学员赴南钢智慧中心开展现场教学活动（旧栏目内嵌正文）",
+      "url": "https://account.nau.edu.cn/9717/list.htm",
+      "read": true,
+      "readingScope": "栏目内嵌全文，明确2024级MPAcc、5月9日，但未显示年份和发布日期。",
+      "reason": "改采日期清晰、对象为2025级且有三门课程的2026年独立新闻；不从该栏目页推定缺失年份。",
+      "webRefs": ["turn73view1"]
+    },
+    {
+      "title": "南京审计大学MPAcc近两年比较稳定,27可以考虑!",
+      "url": "https://b.460.net.cn/a/574473.html",
+      "read": false,
+      "readingScope": "仅搜索结果筛选。",
+      "reason": "第三方择校推介与笼统就业判断，未作为学生经验或官方培养事实。",
+      "webRefs": ["turn62search13"]
+    }
+  ]
+}

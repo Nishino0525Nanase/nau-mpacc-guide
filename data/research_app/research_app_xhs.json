@@ -1,0 +1,164 @@
+{
+  "batch": "research-app-xhs-20261105",
+  "method": "现有小红书登录态的站内搜索与公开可见正文、图片及展开评论；未读取cookie、隐藏state，未直接fetch；未触发点赞收藏关注消息。先对site-data.json含screened/unread的全部24位十六进制标识去重，共140个保守排除标识。",
+  "baseline": {"socialPosts":112,"officialEvidence":100,"dedupIdentifiers":140},
+  "queries": [
+    {"query":"南审 mpacc 导师","method":"小红书站内搜索"},
+    {"query":"南审 MPAcc 论文","method":"小红书站内搜索"},
+    {"query":"南审 会计专硕 实习","method":"小红书站内搜索"},
+    {"query":"南审 mpacc 选课","method":"小红书站内搜索","revisited":true},
+    {"query":"南审 mpacc 研二","method":"小红书站内搜索"}
+  ],
+  "accepted": [
+    {
+      "note_id":"697b0ab8000000000a02f013",
+      "title":"🔥南审研究生选课攻略（评论区见）",
+      "url":"https://www.xiaohongshu.com/explore/697b0ab8000000000a02f013?xsec_token=AByfz0FfCEvosp0FrnPMKqXRD9kMGMPlUlipyg8nLDeac=&xsec_source=pc_search&source=web_search_result_notes",
+      "author":"小羽毛学姐",
+      "date":"01-29",
+      "platform":"小红书",
+      "population":"面向南审研究生的混合选课互助帖，标签含会计专硕、审计专硕、国际审计；回复者专业和年级未核验。",
+      "advisorNames":["刘静"],
+      "summary":"新来源仅作为课程名称辨别与选课核实线索。财务报表分析专题分支中，提问者明确纠正其问题不指审计案例研究，并自述所问课程由刘静、王蕾任课；未出现两位老师的有效课程评价。",
+      "points":["佳乐雾在财务报表分析专题分支纠正作者找错课程，称任课教师是刘静、王蕾；选课咨询应带课程全名、教师和班次，防止同名近名误认。","呆梨反映公共课未选上；作者转述24级同学曾遇到原有班级扩容安排。只能作为联系教务询问的历史线索，不能保证会补录。","作者在开课人数分支称未达人数可能取消；不当作现行规则，仍核本级系统通知。"],
+      "limits":"未确认每位评论者为MPAcc；只接受课程辨别/教务核实用途，不形成刘静或王蕾课程好坏、指导风格评价。仅月日，年份不猜。作者有考研答疑品牌标签，当前可见范围未见收费或售课内容。",
+      "readingScope":"文字正文完整；65条评论中的首批10个顶层及已显示首回复；财务报表分析专题的5条追加回复全部展开读到；其他3/4/4/1/6/1/3/2/2回复分支未展开，后续未加载评论未读；图片未逐张审读。",
+      "read":true,
+      "promotionStatus":"none_observed",
+      "category":"背景或待核实材料"
+    }
+  ],
+  "updates": [
+    {
+      "note_id":"67aef89b0000000029009825",
+      "title":"✨南审选课攻略·会计专硕篇（欢迎补充！）",
+      "url":"https://www.xiaohongshu.com/explore/67aef89b0000000029009825?xsec_token=AB24tiWWVG9hIy5oTAh8zCE2YXimNEIExkpaIrpUOVNm8=&xsec_source=pc_search&source=web_search_result_notes",
+      "author":"小羽毛学姐",
+      "date":"2025-02-14",
+      "platform":"小红书",
+      "population":"会计专硕选课帖；小鱼鱼鱼先提问、后回访自述该次课程经历，专业年级未独立核验。",
+      "advisorNames":["程博"],
+      "summary":"同帖补充：原先未展开的程博公司治理分支中，原提问者回访称课程为一次汇报和一篇研究设计。",
+      "points":["小鱼鱼鱼在01-29问程博公司治理，08-26回访自述已上课，称一次汇报加一篇研究设计；其对要求和评分的正面感受是个人评价。","可在程博卡片加入有边界的课程考核个案：先核本学期教学大纲与考核安排；该来源不证明其研究生指导方式。"],
+      "limits":"日期仅月日的评论年份不猜；作者正文是转述、不等于小鱼鱼鱼的亲历身份获核验；评分感受不保证新学期结果；只属课程反馈，不能写成导师指导行为或普遍性格。资料帖带工作室/考研答疑标签，当前该分支未见收费导流。",
+      "readingScope":"本轮完整文字正文及全部可见主楼，程博公司治理原先7条追加回复已点展开并再点展开更多，7条均读到；财务报表分析分支1条尝试展开但未显示新增内容，仍未读；图片本轮未重复逐张审读。",
+      "read":true,
+      "promotionStatus":"none_observed",
+      "independentSourceIncrement":0,
+      "updateType":"同帖补充"
+    },
+    {
+      "note_id":"6a8edcec000000001f000035",
+      "title":"南审选课互助｜速来留课评（会计篇）",
+      "url":"https://www.xiaohongshu.com/explore/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+      "author":"小羽毛学姐",
+      "date":"08-26",
+      "platform":"小红书",
+      "population":"南审MPAcc/MAud混合选课互助帖；评论者🍑自述课程经历，具体专业年级未核验。",
+      "advisorNames":[],
+      "summary":"同帖补充：会计研究方法分支中，原评论者🍑在08-28回答结课形式为论文。",
+      "points":["🍑在08-26称会计研究方法课堂会抽人回答问题；本轮新展开08-28回复，回答结课形式是论文。","准备课程时可把课堂参与和结课写作时间一并考虑；该评论不含任课教师姓名。"],
+      "limits":"仅月日，年份不猜；不将评论者自动视为MPAcc，不将未具名课程绑定某位导师；历史个案不保证本学期考核。",
+      "readingScope":"完整文字正文和首批10主楼；本轮展开会计研究方法1条追加回复并读到论文回答；原基线已读商业智能分析分支不重复计新材料；选课时间6条和学分列1条分支仍未展开；三图本轮未逐张审读。",
+      "read":true,
+      "promotionStatus":"none_observed",
+      "independentSourceIncrement":0,
+      "updateType":"同帖补充"
+    }
+  ],
+  "screened": [
+    {
+      "note_id":"6ad81d4c000000002a03ac6e",
+      "title":"南审会计硕士Mpacc值得选择的理由",
+      "url":"https://www.xiaohongshu.com/explore/6ad81d4c000000002a03ac6e?xsec_token=AB3U6dIQ9X_S-xPg5Z3nSbjTDTb2suwKz-xBPEl4abzQY=&xsec_source=pc_search",
+      "author":"行审致远","date":"编辑于 10-21","platform":"小红书","read":true,
+      "population":"MPAcc项目泛介绍；作者学生身份未证实",
+      "summary":"泛称会计学院政校合作可提供审计机关实习等资源，缺具体参加项目、课程或亲历细节。评论仅涉及复试是否照顾本校。",
+      "reason":"不新增真正可用的在读经验；不采用排名、就业目标校、报考资格等未经官方核验泛论。",
+      "readingScope":"全文与2条评论读至THE END；5张图未逐张审读。",
+      "promotionStatus":"none_observed"
+    },
+    {
+      "note_id":"67e93bc1000000000b02c91e",
+      "title":"南审宝藏教授陈艳娇：学术大咖+教学能手，",
+      "url":"https://www.xiaohongshu.com/explore/67e93bc1000000000b02c91e?xsec_token=AB4UDzYbzaZATPMjOLOz8DngVAKHcBmYjgxQ2q6xlRm9s=&xsec_source=pc_search",
+      "author":"澄☆*:.","date":"2025-03-30","platform":"小红书","read":true,
+      "population":"作者自称南审本硕、毕业五年；未指明学位专业",
+      "advisorNames":["陈艳娇"],
+      "summary":"作者称其课堂涉及经典理论和前沿，课题组有接触真实审计项目的机会，并表达正面主观感受。评论含2025年名额已满说法。",
+      "reason":"陈艳娇不在本项目当前34位MPAcc名单；专业不明，不进入MPAcc导师卡或计作MPAcc真实指导评价。名额评论过时且无官方确认。",
+      "readingScope":"完整正文、6条评论及已显示回复读至THE END。",
+      "promotionStatus":"none_observed"
+    },
+    {
+      "note_id":"68d012b70000000011014436","title":"无标题：MPAcc研一求问小论文",
+      "url":"https://www.xiaohongshu.com/explore/68d012b70000000011014436?xsec_token=ABd6jpn7yC_St-s-0h85FPkPAQapfa-CrRD_dHZ6ykmjE=&xsec_source=pc_search&source=web_search_result_notes",
+      "author":"带刺的玫瑰","date":"2025-09-21","platform":"小红书","read":true,
+      "population":"自称南审MPAcc研一",
+      "summary":"仅求问小论文怎样开始及发表，未获公开评论回答。",
+      "reason":"未回答的求助不形成论文经验或毕业要求依据。",
+      "readingScope":"完整正文与搜索首图；评论区显示这是一片荒地。",
+      "promotionStatus":"none_observed"
+    },
+    {
+      "note_id":"6a583c76000000001303cbe9","title":"问答贴",
+      "url":"https://www.xiaohongshu.com/explore/6a583c76000000001303cbe9?xsec_token=ABvqWtkb6btoZsBee_A07obabYGQaOJdqJTVaIuT7Mc08=&xsec_source=pc_search&source=web_search_result_notes",
+      "author":"CC学姐（南审版）","date":"07-16","platform":"小红书","read":true,
+      "population":"南审大学生，未明确MPAcc或研究生",
+      "summary":"问寒假去八大还是公关运营岗位；可见回复推荐年审。",
+      "reason":"学位阶段不明，无可用MPAcc亲历细节。",
+      "readingScope":"全文及9评论中的可见主楼和首回复；5条分支未展开。",
+      "promotionStatus":"none_observed"
+    },
+    {
+      "note_id":"6aaf8212000000000b000e5d","title":"研一有课怎么实习啊",
+      "url":"https://www.xiaohongshu.com/explore/6aaf8212000000000b000e5d?xsec_token=ABjOPBldHiCGv0jJyZo220Nn5Gj19a9P9cS0p5sMHdzfY=&xsec_source=pc_search&source=web_search_result_notes",
+      "author":"Zzz","date":"09-20","platform":"小红书","read":true,
+      "population":"中国海洋大学海南专项MPAcc",
+      "summary":"担忧课程、考公与半年实习冲突。",
+      "reason":"其他高校，排除南审培养和实习依据。",
+      "readingScope":"完整正文和3条评论读至THE END。",
+      "promotionStatus":"none_observed"
+    },
+    {
+      "note_id":"6a96cb3d0000000029017b09","title":"研二斩杀线",
+      "url":"https://www.xiaohongshu.com/explore/6a96cb3d0000000029017b09?xsec_token=ABvtl0tMDD1M6MzctVK0AuyiV--FYxZRAyNQfPWTpRNXs=&xsec_source=pc_search&source=web_search_result_notes",
+      "author":"吾乃天之饺子","date":"09-01","platform":"小红书","read":true,
+      "population":"研二，学校和专业未在本帖明确",
+      "summary":"图片有每周PPT组会及实习需与老师商量等个人进度；作者评论解释其专业没有小论文毕业要求。",
+      "reason":"不能由搜索命中或同账号其他结果标题推定为南审MPAcc；不得把小论文要求、组会节奏外推到本项目。",
+      "readingScope":"完整文字、首图截图；137条评论中的首批10主楼和可见首回复；所有追加分支未展开。",
+      "promotionStatus":"none_observed"
+    }
+  ],
+  "unread": [
+    {"note_id":"6ae095ce000000003402a399","title":"无标题（糯米团子）","query":"南审 mpacc 导师","reason":"搜索卡无标题，点击未形成可见打开结果；未读，不作依据。"},
+    {"note_id":"6995b8d5000000000e00e012","title":"有偿求学长学姐推荐导师！！","query":"南审 mpacc 导师","reason":"仅检索卡，未读正文评论。"},
+    {"note_id":"694e5092000000001f00d746","title":"求推荐/建议/指导","query":"南审 mpacc 导师","reason":"仅检索卡，未读正文评论。"},
+    {"note_id":"6aa0f766000000002803210b","title":"求工作","query":"南审 会计专硕 实习","reason":"仅检索卡，未读正文评论。"},
+    {"note_id":"6aa91bf70000000028029ad7","title":"感受一下会计专硕的总结（研二版！","query":"南审 mpacc 研二","reason":"仅检索卡，学校未确定，未作依据。"},
+    {"note_id":"6a7337550000000025014cfc","title":"会计专硕｜读研两年我的成功与失败！","query":"南审 mpacc 研二","reason":"仅检索卡，学校未确定，未作依据。"}
+  ],
+  "duplicates": [
+    {"note_id":"67ecb72b000000001e0042af","action":"基线已收录，未重读"},
+    {"note_id":"67d6ec7c000000001e009e13","action":"基线已收录，未重读"},
+    {"note_id":"6719d7da00000000210007e5","action":"基线已收录，未重读"},
+    {"note_id":"69cba3e80000000028008246","action":"基线已收录，未重读"},
+    {"note_id":"69e610c20000000023023ac8","action":"基线已收录，未重读"},
+    {"note_id":"67efc4a9000000001202f70c","action":"基线已收录，未重读"},
+    {"note_id":"69d4c3b2000000001a0213ae","action":"基线已收录，未重读"},
+    {"note_id":"690c5ab40000000005032c8f","action":"基线已收录，未重读"},
+    {"note_id":"6a54f2d800000000080022ee","action":"基线已收录，未重读"},
+    {"note_id":"662e2606000000000100765a","action":"基线已收录，未重读"},
+    {"note_id":"690b43480000000004022f3e","action":"基线已收录，未重读"},
+    {"note_id":"681f10a4000000002301dff6","action":"基线已收录，未重读"},
+    {"note_id":"6826b072000000002301cd81","action":"基线已收录，未重读"},
+    {"note_id":"689161730000000023039374","action":"基线已收录，未重读"},
+    {"note_id":"68b54ee5000000001b030a6a","action":"基线已收录，未重读"},
+    {"note_id":"6ab15986000000003602baaa","action":"基线已收录，未重读"},
+    {"note_id":"6aa7737c000000000d025bb7","action":"基线已收录，未重读"},
+    {"note_id":"67aef89b0000000029009825","action":"同帖补充，独立来源增量0"},
+    {"note_id":"6a8edcec000000001f000035","action":"同帖补充，独立来源增量0"}
+  ],
+  "outcome": {"newUsefulSources":1,"samePostSupplements":2,"newNamedMPAccAdvisorGuidanceAccounts":0,"note":"未凑5至8条；新来源仍为混合人群的课程核实线索。最有用增量是程博公司治理的回访课程个案。未编辑网站、未发布。"}
+}

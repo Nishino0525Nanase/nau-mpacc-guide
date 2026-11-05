@@ -16,3 +16,11 @@
 - `tests/analytics.test.mjs`：计数边界、排除设置与匿名化验证。
 
 基础访问量仅统计页面打开次数，不使用 Cookie 或长期访客标识。遵循浏览器隐私信号与已保存的退出选择。不启用自动点击采集、录屏或身份识别。统计报表需要账号权限，不提供公开读取接口。
+
+## 应用版
+
+网页“资料下载 → 应用版”提供 Android 安装包和浏览器安装说明。Android 版可在线读取更新，并内置随安装包提供的指南与 Word / Excel 资料供离线阅读；仅需联网权限。使用“内置”切换离线资料，“在线”返回网站。
+
+浏览器版支持添加到桌面；首次联网打开后可缓存指南。iPhone 使用 Safari 的“分享 → 添加到主屏幕”。Android 原生源码与构建说明见 [android/README.md](android/README.md)。
+
+追加研究材料可用 `python data/extend_app_research.py --write` 合并；已读来源、重复项及适用边界保留在 `data/research_app/` 与 QA 记录中。

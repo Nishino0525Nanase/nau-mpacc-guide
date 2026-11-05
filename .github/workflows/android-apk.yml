@@ -1,0 +1,109 @@
+name: Build Android app
+
+on:
+  workflow_dispatch:
+    inputs:
+      smoke_test:
+        description: 'Also boot an Android 14 emulator and verify offline reading (slower)'
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - 'android/**'
+      - 'dist/**'
+      - '!dist/downloads/*.apk'
+      - '!dist/downloads/*.apk.sha256'
+      - '.github/workflows/android-apk.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: android-apk-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up JDK 17
+        uses: actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78 # v6.2.0
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Set up Gradle 8.9
+        uses: gradle/actions/setup-gradle@8da46b539cd8fe6ab27ca75128919a18d757604c # v6.4.1
+        with:
+          gradle-version: '8.9'
+          cache-disabled: true
+          dependency-graph: disabled
+      - name: Ensure Android platform and build tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${ANDROID_HOME:-}"
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-35' 'build-tools;35.0.0'
+      - name: Select signing edition
+        id: edition
+        env:
+          SIGNING_KEY: ${{ secrets.NAU_ANDROID_KEYSTORE_BASE64 }}
+          SIGNING_PASSWORD: ${{ secrets.NAU_ANDROID_STORE_PASSWORD }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -n "$SIGNING_KEY" && -n "$SIGNING_PASSWORD" ]]; then
+            umask 077
+            printf '%s' "$SIGNING_KEY" | base64 --decode > "$RUNNER_TEMP/nau-android.jks"
+            echo 'variant=release' >> "$GITHUB_OUTPUT"
+            echo 'task=assembleRelease' >> "$GITHUB_OUTPUT"
+            echo 'suffix=' >> "$GITHUB_OUTPUT"
+          elif [[ -n "$SIGNING_KEY" || -n "$SIGNING_PASSWORD" ]]; then
+            echo 'Both Android signing secrets must be configured together.' >&2
+            exit 1
+          else
+            echo 'variant=debug' >> "$GITHUB_OUTPUT"
+            echo 'task=assembleDebug' >> "$GITHUB_OUTPUT"
+            echo 'suffix=-test' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Build and lint Android edition
+        working-directory: android
+        env:
+          ANDROID_KEYSTORE_PATH: ${{ runner.temp }}/nau-android.jks
+          NAU_ANDROID_STORE_PASSWORD: ${{ secrets.NAU_ANDROID_STORE_PASSWORD }}
+          BUILD_TASK: ${{ steps.edition.outputs.task }}
+        run: gradle --no-daemon --console=plain ":app:$BUILD_TASK" :app:lintDebug
+      - name: Verify package, signature and reading assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p android/artifacts
+          cp 'android/app/build/outputs/apk/${{ steps.edition.outputs.variant }}/app-${{ steps.edition.outputs.variant }}.apk' 'android/artifacts/nau-mpacc-guide-1.0.0${{ steps.edition.outputs.suffix }}.apk'
+          APK='android/artifacts/nau-mpacc-guide-1.0.0${{ steps.edition.outputs.suffix }}.apk'
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --print-certs "$APK" | tee android/artifacts/signature.txt
+          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging "$APK" > android/artifacts/package-info.txt
+          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump permissions "$APK" > android/artifacts/permissions.txt
+          python3 android/verify-apk.py "$APK"
+          (cd android/artifacts && sha256sum *.apk > SHA256SUMS.txt)
+      - name: Optional Android 14 offline smoke test
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.smoke_test }}
+        env:
+          APK_PATH: android/artifacts/nau-mpacc-guide-1.0.0${{ steps.edition.outputs.suffix }}.apk
+        run: bash android/smoke-test.sh
+      - name: Remove private signing material
+        if: always()
+        shell: bash
+        run: rm -f "$RUNNER_TEMP/nau-android.jks"
+      - name: Upload installable APK and verification
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: nau-mpacc-guide-1.0.0-android-${{ steps.edition.outputs.variant }}
+          path: android/artifacts/
+          if-no-files-found: error
+          retention-days: 30
