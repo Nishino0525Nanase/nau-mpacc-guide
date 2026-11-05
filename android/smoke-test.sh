@@ -4,8 +4,19 @@ set -euo pipefail
 SDK="${ANDROID_HOME:?ANDROID_HOME is required}"
 ADB="$SDK/platform-tools/adb"
 mkdir -p android/artifacts/smoke
+# Both command-line tools must resolve the same AVD directory. Runner defaults
+# can otherwise create the AVD in a directory the emulator does not search.
+export ANDROID_USER_HOME="${RUNNER_TEMP:-/tmp}/nau-android-user"
+export ANDROID_EMULATOR_HOME="$ANDROID_USER_HOME"
+export ANDROID_AVD_HOME="$ANDROID_USER_HOME/avd"
+unset ANDROID_SDK_HOME
+mkdir -p "$ANDROID_AVD_HOME"
 "$SDK/cmdline-tools/latest/bin/sdkmanager" 'emulator' 'platform-tools' 'system-images;android-34;google_apis;x86_64'
-printf 'no\n' | "$SDK/cmdline-tools/latest/bin/avdmanager" create avd --name nau-smoke --package 'system-images;android-34;google_apis;x86_64' --device pixel_6 --force
+printf 'no\n' | "$SDK/cmdline-tools/latest/bin/avdmanager" create avd --name nau-smoke --package 'system-images;android-34;google_apis;x86_64' --device pixel_6 --path "$ANDROID_AVD_HOME/nau-smoke.avd" --force
+if [[ ! -s "$ANDROID_AVD_HOME/nau-smoke.ini" ]]; then
+  printf '%s\n' 'FAIL: avdmanager did not create the emulator AVD locator.' > android/artifacts/smoke/result.txt
+  exit 1
+fi
 if [[ -e /dev/kvm ]]; then sudo chmod 666 /dev/kvm; fi
 "$SDK/emulator/emulator" -avd nau-smoke -no-window -no-audio -no-boot-anim -no-snapshot -gpu swiftshader_indirect > android/artifacts/smoke/emulator.log 2>&1 &
 EMULATOR_PID=$!
@@ -22,23 +33,25 @@ cleanup() {
   return "$exit_status"
 }
 trap cleanup EXIT
-timeout 360 "$ADB" wait-for-device
+BOOT_DEADLINE=$((SECONDS + 240))
+timeout --kill-after=3s 120s "$ADB" wait-for-device
 for attempt in $(seq 1 180); do
-  if [[ "$("$ADB" shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" == 1 ]]; then break; fi
+  if ((SECONDS >= BOOT_DEADLINE)); then break; fi
+  if [[ "$(timeout --kill-after=1s 5s "$ADB" shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" == 1 ]]; then break; fi
   sleep 2
 done
-test "$("$ADB" shell getprop sys.boot_completed | tr -d '\r')" = 1
-"$ADB" shell input keyevent 82
-"$ADB" install -r "${APK_PATH:?APK_PATH is required}"
+test "$(timeout --kill-after=1s 5s "$ADB" shell getprop sys.boot_completed | tr -d '\r')" = 1
+timeout --kill-after=1s 10s "$ADB" shell input keyevent 82
+timeout --kill-after=3s 60s "$ADB" install -r "${APK_PATH:?APK_PATH is required}"
 # Disable radios before launch so the automatic offline fallback is exercised.
-"$ADB" shell svc wifi disable
-"$ADB" shell svc data disable
-"$ADB" shell cmd connectivity airplane-mode enable
-test "$("$ADB" shell settings get global airplane_mode_on | tr -d '\r')" = 1
-"$ADB" shell am start -W -n cn.nau.mpacc.guide/.MainActivity
+timeout --kill-after=1s 10s "$ADB" shell svc wifi disable
+timeout --kill-after=1s 10s "$ADB" shell svc data disable
+timeout --kill-after=1s 10s "$ADB" shell cmd connectivity airplane-mode enable
+test "$(timeout --kill-after=1s 5s "$ADB" shell settings get global airplane_mode_on | tr -d '\r')" = 1
+timeout --kill-after=3s 45s "$ADB" shell am start -W -n cn.nau.mpacc.guide/.MainActivity
 export EXPECTED_MENTOR
 EXPECTED_MENTOR=$(python3 -c "import json; print(json.load(open('dist/data/site-data.json'))['mentors'][0]['name'])")
-SCREEN_SIZE=$("$ADB" shell wm size | tr -d '\r' | sed -nE 's/.*size: ([0-9]+)x([0-9]+).*/\1 \2/p' | tail -n 1)
+SCREEN_SIZE=$(timeout --kill-after=1s 5s "$ADB" shell wm size | tr -d '\r' | sed -nE 's/.*size: ([0-9]+)x([0-9]+).*/\1 \2/p' | tail -n 1)
 read -r SCREEN_WIDTH SCREEN_HEIGHT <<< "$SCREEN_SIZE"
 test "${SCREEN_WIDTH:-0}" -gt 0
 test "${SCREEN_HEIGHT:-0}" -gt 0

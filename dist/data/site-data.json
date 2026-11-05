@@ -567,8 +567,12 @@
         "version": "1.0.0"
       },
       "android": {
-        "available": false,
-        "version": "1.0.0"
+        "available": true,
+        "url": "./downloads/nau-mpacc-guide-1.0.0.apk",
+        "version": "1.0.0",
+        "bytes": 815929,
+        "sha256": "11e751241fa263f4d50e9ef54f10f32878a10624030b89f0f59f200825088b09",
+        "label": "Android 安装包"
       }
     }
   },
