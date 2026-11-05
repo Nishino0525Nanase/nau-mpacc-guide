@@ -46,7 +46,7 @@ python3 verify-apk.py app/build/outputs/apk/debug/app-debug.apk
 
 手动触发时可启用 `smoke_test`（默认 false）：下载 API34 模拟器，关闭网络后启动应用，等待内置模式与第一个导师姓名出现在可访问性树，再打开导师详情，用系统返回键关闭弹窗，并核验返回入口后能离开应用，导出日志、截图和结果到同一 artifact。此项较慢，默认构建不运行。模拟器验证不等同于 Redmi 真机验证。
 
-当前容器没有完整 JDK/Android SDK。上一版 1.0.0 已通过 GitHub Actions 构建、签名与 Android 14 模拟器离线导师显示检查；1.0.1 的返回键与保存修复需以对应版本实际 CI 结果为准。尚未验证 Redmi 真机。
+当前容器没有完整 JDK/Android SDK。1.0.1 已通过 GitHub Actions 构建、签名、内置资产逐字节校验和 Android 14 模拟器检查：代理阻断联网后自动回退、显示内置导师、返回关闭详情并正常退出。尚未验证 Redmi 真机。
 
 Redmi / Android 14 安装：下载并解压 artifact，点 APK，按系统提示仅为当前使用的浏览器或文件管理器允许“安装未知应用”。安装后先测试在线页、搜索、联系清单、外部原帖；再断网重启测试内置页及 Word/Excel 保存。暂不包含自动更新，后续同包名且同证书 APK 可覆盖升级。
 
