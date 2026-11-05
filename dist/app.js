@@ -210,6 +210,32 @@
     return status === state.reviewCoverage;
   }
 
+  function reviewSourceConcentrationHtml(mentors) {
+    const posts = new Map();
+    for (const review of mentors.flatMap(dossierReviews)) {
+      let noteId = '';
+      for (const value of [review.canonicalUrl, review.sourceUrl]) {
+        try {
+          const url = new URL(value);
+          if (!['xiaohongshu.com', 'rednote.com'].includes(url.hostname.toLowerCase().replace(/^www\./, ''))) continue;
+          const match = url.pathname.match(/\/(?:explore|discovery\/item)\/([a-f0-9]{24})(?:\/|$)/i);
+          if (match) { noteId = match[1].toLowerCase(); break; }
+        } catch (_) {}
+      }
+      if (!noteId) continue;
+      if (!posts.has(noteId)) posts.set(noteId, {id:noteId, records:0, codes:new Set()});
+      const post = posts.get(noteId);
+      post.records++;
+      for (const code of array(review.sourceIds)) if (/^[A-Z]\d{2,3}$/.test(code)) post.codes.add(code);
+    }
+    if (!posts.size) return '';
+    const sorted = [...posts.values()].sort((a,b) => b.records-a.records || a.id.localeCompare(b.id));
+    const records = sorted.reduce((sum, post) => sum+post.records, 0);
+    const largest = sorted.slice(0,2);
+    const concentration = largest.length === 2 ? `其中记录最多的两帖（${largest.map(post => esc([...post.codes].sort().join('／') || post.id.slice(-6).toUpperCase())).join('、')}）合计 <strong>${largest.reduce((sum, post) => sum+post.records,0)}</strong> 条。` : '';
+    return `<p class="review-coverage-note">小红书相关记录 <strong>${records}</strong> 条，按帖子编号去重来自 <strong>${posts.size}</strong> 篇原帖。${concentration}全站 <strong>${array(state.data.socialPosts).length}</strong> 条社交索引还包含生活、背景与排除线索，不等于同数量的导师亲历来源；同帖多条记录、同人跟评不算独立口碑样本。</p>`;
+  }
+
   function reviewCoverageHtml() {
     const mentors = state.data.mentors;
     if (!mentors.some(m => m.studentReviews)) return '';
@@ -224,7 +250,7 @@
         return words.length && words.every(word => word.length === 1) ? [words.join('')] : words;
       }).filter(alias => /^[A-Za-z]{1,6}$/.test(alias)).map(alias => alias.toUpperCase());
     }))];
-    return `<section class="review-coverage" aria-label="逐位学生评价覆盖"><div><span class="small-label">STUDENT EXPERIENCES</span><h3>先看谁说了什么，再看推荐与提醒</h3><p>${mentors.length} 位导师逐人核对，<strong>${withRecords}</strong> 位有可归属记录，其中 <strong>${direct}</strong> 位有明确MPAcc指导亲历；其余老师的材料缺口也分别列出。</p><p class="review-coverage-note">可归属记录表示评价指向的老师可确认；课程印象、转述、弱提名与指导亲历分别标注。</p></div><details class="alias-guide"><summary>缩写评价怎样归人</summary><p>拼音缩写只作检索线索。LH、WY在名录中都可能对应多位老师，需要原文全名、作者明确确认或可核对的上下文，才归到具体老师。</p>${aliases.length ? `<p>已核对的缩写与归属线索：${aliases.map(esc).join('、')}。未确认内容不进入任何具体老师的评价。</p>` : '<p>未确认的缩写或只有姓氏的评论，保留为核实线索，不据此给老师作推荐或避雷结论。</p>'}</details></section>`;
+    return `<section class="review-coverage" aria-label="逐位学生评价覆盖"><div><span class="small-label">STUDENT EXPERIENCES</span><h3>先看谁说了什么，再看推荐与提醒</h3><p>${mentors.length} 位导师逐人核对，<strong>${withRecords}</strong> 位有可归属记录，其中 <strong>${direct}</strong> 位有明确MPAcc指导亲历；其余老师的材料缺口也分别列出。</p><p class="review-coverage-note">可归属记录表示评价指向的老师可确认；课程印象、转述、弱提名与指导亲历分别标注。</p>${reviewSourceConcentrationHtml(mentors)}</div><details class="alias-guide"><summary>缩写评价怎样归人</summary><p>拼音缩写只作检索线索。LH、WY在名录中都可能对应多位老师，需要原文全名、作者明确确认或可核对的上下文，才归到具体老师。</p>${aliases.length ? `<p>已核对的缩写与归属线索：${aliases.map(esc).join('、')}。未确认内容不进入任何具体老师的评价。</p>` : '<p>未确认的缩写或只有姓氏的评论，保留为核实线索，不据此给老师作推荐或避雷结论。</p>'}</details></section>`;
   }
 
   function reviewFilterHtml() {
@@ -234,7 +260,8 @@
   }
 
   function supportedReviewPoints(mentor, key) {
-    const ids = new Set(dossierReviews(mentor).map(item => item.id).filter(Boolean));
+    const eligibility = key === 'recommendationPoints' ? 'eligibleForRecommendation' : 'eligibleForConcern';
+    const ids = new Set(dossierReviews(mentor).filter(item => item.contextAssessment?.[eligibility] !== false).map(item => item.id).filter(Boolean));
     return array(mentor.studentReviews?.[key]).filter(point => point && typeof point === 'object' && point.text && array(point.reviewIds).some(id => ids.has(id)));
   }
 
@@ -250,7 +277,9 @@
     const firsthandScope = array(item.firsthandScope).map(textOf).filter(Boolean).join('；');
     const hearsayParts = array(item.hearsayParts).map(textOf).filter(Boolean).join('；');
     const voice = item.firsthand === true ? (hearsayParts ? '本人经历自述 · 含转述（分开标注）' : '本人经历自述') : item.firsthand === false ? '转述／他人信息' : '亲历情况未明确';
-    const tone = {positive:'正面体验',negative:'需重视的具体体验',mixed:'体验有利弊',neutral:'经历描述'}[item.polarity] || '经历描述';
+    const tone = item.experienceType === 'general' && item.firsthand !== true
+      ? (item.contextAssessment?.displayLabel || '仅提名／语气与身份待核')
+      : ({positive:'正面体验',negative:'需重视的具体体验',mixed:'体验有利弊',neutral:'经历描述'}[item.polarity] || '经历描述');
     const identity = [item.degree || '专业／学位未说明',item.year ? `年级／经历年份：${textOf(item.year)}` : '年级／经历年份未说明',item.relationship || '与老师的接触关系未说明'];
     const codes = array(item.sourceIds).filter(code => typeof code === 'string' && source(code));
     return `<details class="student-review-record${compact ? ' compact' : ''}"><summary><span>${esc(experience)} · ${esc(tone)}</span><small>${esc(item.narrator || '评论者未记录')} · ${esc(item.date || '日期未显示')}</small></summary><div class="student-review-meta"><span>${esc(voice)}</span><p>${identity.map(esc).join(' · ')}</p>${firsthandScope ? `<p class="review-experience-scope"><strong>本人亲历范围：</strong>${inline(firsthandScope)}</p>` : ''}${hearsayParts ? `<p class="review-experience-scope"><strong>转述／朋友经历的部分：</strong>${inline(hearsayParts)}</p>` : ''}</div><p>${inline(item.text || item.summary || '')}</p>${array(item.specifics).length ? `<ul class="tip-list">${array(item.specifics).map(value => `<li>${inline(value)}</li>`).join('')}</ul>` : ''}<p class="review-attribution"><strong>归属依据：</strong>${item.attribution?.alias ? `原帖写法 ${esc(item.attribution.alias)}；` : ''}${inline(item.attribution?.reason || '原始材料明确指向这位老师。')}</p><p class="evidence-limit"><strong>适用边界：</strong>${inline(limits || '仅限记录中的具体身份、时间与经历，其他情况需另行核实。')}</p>${readingScope ? `<details class="review-reading-scope"><summary>实际阅读范围</summary><p>${inline(readingScope)}</p></details>` : ''}${screenshotsHtml(item.screenshots, item.sourceUrl)}<div class="source-actions">${item.sourceUrl ? external(item.sourceUrl, esc(item.sourceTitle || '打开评价原始来源') + ' ↗') : ''}${codes.length ? inline('[' + codes.join('、') + ']') : ''}</div></details>`;
@@ -268,7 +297,7 @@
     const questions = array(dossier.verificationQuestions).filter(Boolean);
     const gaps = array(dossier.gaps).filter(Boolean);
     if (compact) return `<div class="compare-student-reviews"><p class="review-coverage-badge">${esc(reviewCoverageLabel(mentor))}</p>${dossier.summary ? `<p>${inline(dossier.summary)}</p>` : ''}${positive.length ? `<h4>被推荐的具体理由</h4><ul class="review-point-list">${positive.map(reviewPointHtml).join('')}</ul>` : ''}${concerns.length ? `<h4>避雷与适配提醒</h4><ul class="review-point-list">${concerns.map(reviewPointHtml).join('')}</ul>` : ''}${reviews.length ? reviews.slice(0,2).map(item => studentReviewRecord(item,true)).join('') : '<p class="compare-empty">暂无可归属的学生个人评价，不能据此作口碑推荐或排除。</p>'}${reviews.length > 2 ? `<p class="compare-empty">另有 ${reviews.length-2} 条经历，见完整资料。</p>` : ''}${questions.length ? `<details class="review-questions"><summary>联系时需要核实的问题</summary><ul class="tip-list">${questions.map(item => `<li>${inline(item)}</li>`).join('')}</ul></details>` : ''}</div>`;
-    return `<section class="dialog-section student-review-section" aria-label="学生个人评价"><h3><span class="section-number">01</span>学生个人评价</h3><p class="review-coverage-badge">${esc(reviewCoverageLabel(mentor))} · ${reviews.length} 条可归属记录</p>${dossier.summary ? `<p class="dialog-content-intro">${inline(dossier.summary)}</p>` : ''}${positive.length ? `<section class="review-assessment"><h4>被推荐的具体理由</h4><ul class="review-point-list">${positive.map(reviewPointHtml).join('')}</ul></section>` : '<p class="review-gap">现有个人体验材料不足以形成具体推荐理由，联系前可继续补证。</p>'}${concerns.length ? `<section class="review-assessment concerns"><h4>避雷与适配提醒 · 限定具体经历</h4><ul class="review-point-list">${concerns.map(reviewPointHtml).join('')}</ul></section>` : ''}${reviews.length ? `<div class="student-review-records"><h4>学生怎么说 · 逐条看身份与过程</h4>${reviews.map(item => studentReviewRecord(item)).join('')}</div>` : '<p class="review-gap">暂无可归属的公开学生体验。官方论文、案例和课程记录在下方单独呈现。</p>'}${questions.length ? `<section class="review-questions"><h4>联系前向直系学生核实</h4><ul class="tip-list">${questions.map(item => `<li>${inline(item)}</li>`).join('')}</ul></section>` : ''}${gaps.length ? `<details class="review-gaps"><summary>本轮仍缺哪些材料</summary><ul class="tip-list">${gaps.map(item => `<li>${inline(item)}</li>`).join('')}</ul></details>` : ''}</section>`;
+    return `<section class="dialog-section student-review-section" aria-label="学生个人评价"><h3><span class="section-number">01</span>学生个人评价</h3><p class="review-coverage-badge">${esc(reviewCoverageLabel(mentor))} · ${reviews.length} 条可归属记录</p>${dossier.summary ? `<p class="dialog-content-intro">${inline(dossier.summary)}</p>` : ''}${positive.length ? `<section class="review-assessment"><h4>被推荐的具体理由</h4><ul class="review-point-list">${positive.map(reviewPointHtml).join('')}</ul></section>` : '<p class="review-gap">现有个人体验材料不足以形成具体推荐理由，联系前可继续补证。</p>'}${concerns.length ? `<section class="review-assessment concerns"><h4>避雷与适配提醒 · 限定具体经历</h4><ul class="review-point-list">${concerns.map(reviewPointHtml).join('')}</ul></section>` : ''}${reviews.length ? `<div class="student-review-records"><h4>原文与评论 · 逐条看身份与过程</h4>${reviews.map(item => studentReviewRecord(item)).join('')}</div>` : '<p class="review-gap">暂无可归属的公开学生体验。官方论文、案例和课程记录在下方单独呈现。</p>'}${questions.length ? `<section class="review-questions"><h4>联系前向直系学生核实</h4><ul class="tip-list">${questions.map(item => `<li>${inline(item)}</li>`).join('')}</ul></section>` : ''}${gaps.length ? `<details class="review-gaps"><summary>本轮仍缺哪些材料</summary><ul class="tip-list">${gaps.map(item => `<li>${inline(item)}</li>`).join('')}</ul></details>` : ''}</section>`;
   }
 
   function currentContact(mentor) {
@@ -495,6 +524,8 @@
   }
 
   function coverageHtml() {
+    const contextAudit = state.data.meta.reviewContextAudit;
+    if (contextAudit) return `<section class="research-coverage reading-notes" aria-label="新增资料与采用口径"><h3>本轮核对与采用口径</h3><p>本轮修正 <strong>${esc(contextAudit.reclassifiedReviewRecords || 0)}</strong> 条弱提名和 <strong>${esc(contextAudit.reclassifiedSocialContexts || 0)}</strong> 条口号式评论的用途；玩笑、夸张、反讽和不明语气不作为具体指导体验或推荐／避雷依据。本轮未新增独立学生评价、小红书帖子或截图。旧帖补读、既有截图和历史访谈保留原来的批次记录。</p></section>`;
     const reviews = state.data.meta.studentReviewResearch?.round8;
     if (reviews) {
       const additions = reviews.newStudentExperiences || reviews.newXhsSources

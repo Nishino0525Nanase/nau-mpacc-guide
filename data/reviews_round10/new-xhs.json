@@ -1,0 +1,125 @@
+{
+  "batch": "reviews-round10-new-xhs-discovery",
+  "knownSocialNoteRecords": 114,
+  "knownTeacherCount": 34,
+  "queriesSubmitted": 12,
+  "queryLog": [
+    {
+      "index": 1,
+      "tool": "web-system1",
+      "query": "site:xiaohongshu.com 南审 导师 组会"
+    },
+    {
+      "index": 2,
+      "tool": "web-system1",
+      "query": "site:rednote.com 南京审计大学 会计 导师"
+    },
+    {
+      "index": 3,
+      "tool": "web-system1",
+      "query": "南审 mpacc 导师 实习 直系 小红书"
+    },
+    {
+      "index": 4,
+      "tool": "tinyfish-search",
+      "query": "南审 研究生 导师 论文 组会",
+      "includeDomains": [
+        "xiaohongshu.com",
+        "rednote.com"
+      ]
+    },
+    {
+      "index": 5,
+      "tool": "tinyfish-search",
+      "query": "\"南京审计\" \"导师\" \"小红书\" \"改\""
+    },
+    {
+      "index": 6,
+      "tool": "tinyfish-search",
+      "query": "\"南审\" \"黄中生\" 小红书"
+    },
+    {
+      "index": 7,
+      "tool": "tinyfish-search",
+      "query": "\"南审\" \"程博\" 小红书"
+    },
+    {
+      "index": 8,
+      "tool": "web-system1",
+      "query": "\"南审\" \"傅祥斐\" 小红书 论文"
+    },
+    {
+      "index": 9,
+      "tool": "web-system1",
+      "query": "\"南审\" \"李仲泽\" 小红书 导师"
+    },
+    {
+      "index": 10,
+      "tool": "web-system1",
+      "query": "\"南京审计大学\" \"导师评价\" \"小红书\""
+    },
+    {
+      "index": 11,
+      "tool": "web-system1",
+      "query": "\"南审\" \"我的导师\" 小红书"
+    },
+    {
+      "index": 12,
+      "tool": "web-system1",
+      "query": "\"南审\" \"导师\" \"实习\" site:xhslink.com"
+    }
+  ],
+  "newSources": [],
+  "newRelevantXhsPostEntrances": 0,
+  "candidateBodiesRead": 0,
+  "newNamedStudentExperiences": 0,
+  "summary": "12条定向公开网页检索没有找到可作为新候选的小红书原帖入口；未重新读取X01/X02，也没有把校园宣传、教师自述、资料页或无关平台命中充作新个人评价。",
+  "limitations": [
+    "仅说明公开搜索结果的本次检索结果，不代表平台站内没有其他帖子或已经检索全网。",
+    "没有新候选原帖可进入正文核读，因此正文新读数量为0；不将搜索摘要当成已读原文。",
+    "原114条社交来源已用于ID去重；同帖重读、同一事件镜像和同一作者跟评不增加独立来源。",
+    "未获得新原评截图；不使用课程无教师名截图替代导师记录。"
+  ],
+  "rejectedSearchHits": [
+    {
+      "url": "https://www.zgcznet.com/zdct/202307/20230721/j_2023072108461800016899005117157198.html",
+      "reason": "已收录R901的教师本人自述；不是新小红书原帖或学生个人评价。",
+      "bodyReadThisTask": false
+    },
+    {
+      "url": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "reason": "已收录R801的学校精选访谈；不是独立小红书新帖。",
+      "bodyReadThisTask": false
+    },
+    {
+      "url": "https://www.sohu.com/a/500320907_769713",
+      "reason": "已收录R701的官方访谈转载；不重复计数。",
+      "bodyReadThisTask": false
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/595507870",
+      "reason": "搜索摘要为MAud复试备考，与本任务新MPAcc导师亲历不符，未读正文。",
+      "bodyReadThisTask": false
+    },
+    {
+      "url": "https://www.163.com/dy/article/KLIS76QN0556GP73.html",
+      "reason": "留学中介推广型标题与不具名小红书转述，不是可核对的原评。",
+      "bodyReadThisTask": false
+    },
+    {
+      "url": "https://www.zucaitz.com/rzjt/list3.htm",
+      "reason": "域名非学校且摘要夹杂异常足彩词，排除。",
+      "bodyReadThisTask": false
+    },
+    {
+      "url": "https://findskills.vercel.app/skills/yadnuses-academic-detective",
+      "reason": "不相关AI工具说明页，不是南审导师学生经历；页面中的操作指令未执行。",
+      "bodyReadThisTask": false
+    },
+    {
+      "url": "https://job.xiaohongshu.com/campus/intern/position/22841",
+      "reason": "小红书公司招聘，不是社区笔记。",
+      "bodyReadThisTask": false
+    }
+  ]
+}

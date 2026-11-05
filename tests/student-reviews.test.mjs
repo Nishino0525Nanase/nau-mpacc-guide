@@ -169,6 +169,7 @@ test('post dialog keeps a shared capture under its explicit comment and shows ea
 
 test('latest review summary reports self-reports and rereads without recycling older batch additions',async()=>{
  const data=reviewFixture();
+ delete data.meta.reviewContextAudit;
  data.meta.research102={newOfficialSources:987,updatedSocialPosts:988};
  data.meta.studentReviewResearch.round8={newTeacherSelfReports:1,authenticatedXhsSourcesReread:2,screenshotsCaptured:5,newStudentExperiences:0,newXhsSources:0};
  const a=await app({data});a.route('#posts');
@@ -182,4 +183,29 @@ test('latest review summary reports self-reports and rereads without recycling o
  const older=await app({data});older.route('#posts');
  assert.match(older.get('#app').innerHTML,/<strong>987<\/strong> 条官方来源/);
  assert.match(older.get('#app').innerHTML,/<strong>988<\/strong> 篇旧帖/);
+});
+
+test('ambiguous endorsements stay neutral and source breadth counts unique note IDs across host aliases',async()=>{
+ const data=reviewFixture();
+ data.socialPosts=data.socialPosts.slice(0,7);
+ data.meta.reviewContextAudit={reclassifiedReviewRecords:3,reclassifiedSocialContexts:1};
+ data.mentors.forEach(mentor=>mentor.studentReviews=emptyDossier());
+ const urls=['https://www.xiaohongshu.com/explore/000000000000000000000001','https://xiaohongshu.com/explore/000000000000000000000001','https://www.rednote.com/discovery/item/000000000000000000000002'];
+ for(let i=0;i<3;i++) {
+  const mentor=data.mentors[i],id=`weak-context-${i}`;
+  mentor.studentReviews={...emptyDossier(),coverageStatus:'weak_mentions',reviews:[{id,sourceIds:[i<2?'X01':'X02'],canonicalUrl:urls[i],sourceUrl:urls[i],experienceType:'general',firsthand:null,polarity:['positive','mixed','negative'][i],attribution:{status:'confirmed',reason:'全名仅确认讨论对象。'},text:'只有笼统提名，没有本人接触过程。',contextAssessment:{displayLabel:'仅提名／语气与身份待核',eligibleForRecommendation:false,eligibleForConcern:false}}],recommendationPoints:[{text:'JOKE_SUPPORT_MUST_NOT_RENDER',reviewIds:[id]}],concerns:[{text:'AMBIGUOUS_CONCERN_MUST_NOT_RENDER',reviewIds:[id]}]};
+ }
+ const a=await app({data}), overview=a.get('#app').innerHTML;
+ assert.match(overview,/小红书相关记录 <strong>3<\/strong> 条，按帖子编号去重来自 <strong>2<\/strong> 篇原帖/);
+ assert.match(overview,/两帖（X01、X02）合计 <strong>3<\/strong> 条/);
+ assert.match(overview,/全站 <strong>7<\/strong> 条社交索引还包含生活、背景与排除线索/);
+ for(let i=0;i<3;i++) {
+  a.click('mentor',data.mentors[i].id);const html=a.get('#dialog-content').innerHTML;
+  assert.match(html,/仅提名／语气与身份待核/);
+  assert.doesNotMatch(html,/正面体验|体验有利弊|需重视的具体体验|JOKE_SUPPORT_MUST_NOT_RENDER|AMBIGUOUS_CONCERN_MUST_NOT_RENDER/);
+ }
+ a.route('#posts');const latest=a.get('#app').innerHTML;
+ assert.match(latest,/本轮修正 <strong>3<\/strong> 条弱提名和 <strong>1<\/strong> 条口号式评论/);
+ assert.match(latest,/本轮未新增独立学生评价、小红书帖子或截图/);
+ assert.doesNotMatch(latest,/新增 <strong>1<\/strong> 份教师本人自述|补入 <strong>5<\/strong> 张真实截图/);
 });

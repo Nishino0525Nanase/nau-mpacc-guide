@@ -1,0 +1,97 @@
+{
+  "ok": true,
+  "batch": "review-context-audit-round10",
+  "reclassifiedReviewRecords": 3,
+  "reclassifiedSocialContexts": 1,
+  "newStudentExperiences": 0,
+  "newXhsPosts": 0,
+  "newScreenshots": 0,
+  "xhsMentorReviewRecords": 34,
+  "distinctXhsMentorPosts": 4,
+  "largestTwoPostRecords": 32,
+  "postRecordCounts": {
+    "67aef89b0000000029009825": 1,
+    "67ecb72b000000001e0042af": 20,
+    "69cba3e80000000028008246": 12,
+    "6a50b7c5000000002103f3aa": 1
+  },
+  "useRule": "玩笑化、语气不明或未说明本人接触的简短提名，不当作具体体验或推荐／避雷依据。",
+  "reviewIds": [
+    "sr-56c2d22b39f07a",
+    "sr-6f547fefb6425f",
+    "sr-e63702f4d750b2"
+  ],
+  "sourceCodes": [
+    "X01",
+    "X02"
+  ],
+  "reviewRecords": 40,
+  "officialEvidence": 185,
+  "socialPosts": 114,
+  "screenshotsPreserved": 10,
+  "unchangedReviewIds": [
+    "sr-0d724bc0692077",
+    "sr-129b0dd973f0d1",
+    "sr-158538e20f5e0f",
+    "sr-31d691701e3414",
+    "sr-34a7e9d17a7ee0",
+    "sr-3a193b9650523d",
+    "sr-3ec4800bf7c77e",
+    "sr-421ff5269383ef",
+    "sr-4c04a46901e7aa",
+    "sr-4f903dfc6b113f",
+    "sr-4fbfea450b83a9",
+    "sr-587b14b4d29676",
+    "sr-5a6799f7da764b",
+    "sr-685b44c44b5c9f",
+    "sr-69b5e3bc556593",
+    "sr-6c241a500ddbae",
+    "sr-6cc30c5c8335af",
+    "sr-6eb60f59829dc8",
+    "sr-750f53d05ce465",
+    "sr-7bab2c5d878adc",
+    "sr-818ece587d45da",
+    "sr-85d51ea94d9f58",
+    "sr-8eb242b45986c8",
+    "sr-919e575806f96f",
+    "sr-9b7c6d9b39f91a",
+    "sr-b159805b34d9db",
+    "sr-c00afa8e554a7f",
+    "sr-c2059cb1c24af6",
+    "sr-c605b1a1635921",
+    "sr-c8216c4fc1a3f7",
+    "sr-cc151a6d666e87",
+    "sr-cdcc2e0a36c2e2",
+    "sr-d89d4112f56288",
+    "sr-da5ecd5a194ba6",
+    "sr-ea460f83b4da49",
+    "sr-fc7bcc49c9bde1",
+    "sr-r7-panjun-lijialin-2022"
+  ],
+  "recommendationLeaks": [],
+  "unrelatedContentPreserved": true,
+  "noNewSourceOrExperienceClaimed": true,
+  "frontendTests": {
+    "passed": 55,
+    "failed": 0
+  },
+  "workbook": {
+    "bytes": 359476,
+    "sha256": "be79e2024c5a59247785d262b3f330988fa1346ed87b06e66ccbcd6f1264df47",
+    "cachedHyperlinks": 526,
+    "formulaErrors": 0,
+    "worksheets": 13,
+    "tables": 11
+  },
+  "browserPreview": {
+    "independentPostCountsVisible": true,
+    "weakReviewNeutralLabelVisible": true
+  },
+  "release": {
+    "webVersion": "1.0.9",
+    "newStudentExperiences": 0,
+    "newIndependentSources": 0,
+    "newScreenshots": 0,
+    "existingScreenshotFiles": 10
+  }
+}

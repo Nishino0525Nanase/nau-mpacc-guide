@@ -2,7 +2,7 @@
 'use strict';
 const BASE = new URL('./', self.location.href);
 const CACHE_PREFIX = `nau-guide:${BASE.pathname}:`;
-const CACHE_NAME = `${CACHE_PREFIX}1.0.8-course-evidence2`;
+const CACHE_NAME = `${CACHE_PREFIX}1.0.9-review-context3`;
 const DATA_PATH = 'data/site-data.json';
 const SHELL_PATHS = [
   './', 'index.html', 'app.js', 'music.js', 'style.css', 'install.js', 'favicon.svg',

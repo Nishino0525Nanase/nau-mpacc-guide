@@ -1,0 +1,160 @@
+{
+  "batch": "student-reviews-round10-cross-platform",
+  "queryCount": 12,
+  "queries": [
+    {
+      "engine": "web-system1",
+      "query": "site:zhihu.com 南京审计大学 MPAcc 导师 学生 评价"
+    },
+    {
+      "engine": "web-system1",
+      "query": "site:tieba.baidu.com 南京审计 会计专硕 导师"
+    },
+    {
+      "engine": "web-system1",
+      "query": "site:bilibili.com 南京审计大学 会计专硕 选导师"
+    },
+    {
+      "engine": "web-system1",
+      "query": "南京审计 崔秀梅 导师 评价 贴吧；domains=tieba.baidu.com"
+    },
+    {
+      "engine": "web-system1",
+      "query": "南京审计 许汉友 学生 导师；domains=zhihu.com"
+    },
+    {
+      "engine": "web-system1",
+      "query": "南审 MPAcc 导师 实习；domains=weibo.com,weibo.cn"
+    },
+    {
+      "engine": "tinyfish-search",
+      "query": "\"南京审计\" \"导师\" \"改稿\" -site:nau.edu.cn"
+    },
+    {
+      "engine": "tinyfish-search",
+      "query": "\"南审\" \"组会\" \"导师\" -site:nau.edu.cn"
+    },
+    {
+      "engine": "tinyfish-search",
+      "query": "\"南京审计\" \"导师\" \"实习\" site:tieba.baidu.com/p/"
+    },
+    {
+      "engine": "web-system1",
+      "query": "\"南京审计大学\" \"导师评价\" -site:nau.edu.cn"
+    },
+    {
+      "engine": "web-system1",
+      "query": "\"南京审计\" \"傅祥斐\" 学生 评价 -site:nau.edu.cn"
+    },
+    {
+      "engine": "web-system1",
+      "query": "\"南京审计\" \"程博\" 老师 评价 -site:nau.edu.cn"
+    }
+  ],
+  "newIndependentStudentSources": [],
+  "newIndependentStudentSourceCount": 0,
+  "newNamedStudentExperienceCount": 0,
+  "x01AndX02RereadThisTask": false,
+  "scope": "围绕知乎、贴吧、微博、B站及独立导师评价目录，12条聚焦查询；不声称覆盖全部平台、全部评论或全网。",
+  "summary": "未检得同时满足原作者学生经历、可明确归属34位会计导师之一、含具体指导过程且非已有转载的新增来源。没有补造推荐或避雷。",
+  "directoryChecked": {
+    "site": "导师推荐人",
+    "directoryUrl": "https://www.mysupervisor.org/forum/view/6716",
+    "universityUrl": "https://www.mysupervisor.org/Forum/View/6804",
+    "universityLabel": "南京审计学院",
+    "universityVisibleMentorReviewCount": 2,
+    "accountingUrl": "https://www.mysupervisor.org/Forum/View/8442",
+    "accountingVisibleMentorCount": 0,
+    "accountingVisibleVerifiedPostgraduateCount": 0,
+    "otherTwoEntries": [
+      {
+        "teacherText": "戚振东",
+        "department": "国际审计学院",
+        "url": "https://www.mysupervisor.org/Forum/View/8441",
+        "inTarget34Roster": false
+      },
+      {
+        "teacherText": "卢亚娟",
+        "department": "金融学院",
+        "url": "https://www.mysupervisor.org/Forum/View/8443",
+        "inTarget34Roster": false
+      }
+    ],
+    "readingScope": "实际读取目录、学校页、会计学院页和另外两学院导师目录；没有读取或迁移两位名单外教师的评价正文。学校真实链接由该公开目录HTML中的href确认，不按链接序号猜测。",
+    "limits": "只说明该站当前已读目录的状态；不表示其他站点、私下渠道或所有历史评价不存在。此处没有新增可给34位会计导师归属的个人评价。",
+    "webRefs": [
+      "turn268view0",
+      "turn271view0",
+      "turn272view0",
+      "turn272view1",
+      "turn272view2"
+    ]
+  },
+  "excludedCandidates": [
+    {
+      "url": "https://www.bilibili.com/video/BV1CvmMB7EH3/",
+      "title": "2026南京审计大学mpacc会计专硕复试内容解析",
+      "inspection": "搜索结果摘要",
+      "reason": "账号展示考研辅导咨询信息，内容主题为复试，没有具名导师日常指导经历；不是新增学生口碑。"
+    },
+    {
+      "url": "https://tieba.baidu.com/hottopic/browse/hottopic?topic_id=4611341",
+      "title": "八大事务所话题中的南审MPAcc就业提问",
+      "inspection": "搜索结果摘要",
+      "reason": "仅问进入四大八大机会及比例；未提供个人导师或实习指导经历。"
+    },
+    {
+      "url": "https://www.zhihu.com/en/article/697833974",
+      "title": "江浙沪MPAcc招生数据整理",
+      "inspection": "搜索结果摘要",
+      "reason": "院校招生数据整理，非导师个人相处或指导亲历。"
+    },
+    {
+      "url": "https://www.zhihu.com/en/answer/2723073221",
+      "title": "院校报考难度比较",
+      "inspection": "搜索结果摘要",
+      "reason": "报考招生信息，非具名导师指导经历。"
+    },
+    {
+      "url": "https://www.zgcznet.com/zdct/202307/20230721/j_2023072108461800016899005117157198.html",
+      "title": "财务与会计 | 财会审青年风采（六）",
+      "inspection": "搜索摘要与当前来源索引去重",
+      "reason": "既有R901；教师本人自述，不能算新增独立学生评价。"
+    },
+    {
+      "url": "https://nau.edu.cn/_t1096/2026/1104/c5728a163549/page.htm",
+      "title": "南京审计大学内部审计学院双导师制实践纪实",
+      "inspection": "搜索结果摘要",
+      "reason": "学校宣传、内部审计学院青年教师培养，不是34位会计导师的学生亲述。"
+    },
+    {
+      "url": "https://kjxy.naujsc.edu.cn/2026/0403/c703a23106/page.htm",
+      "title": "程博教授与学院科研团队首次见面会",
+      "inspection": "搜索结果摘要",
+      "reason": "金审学院教师科研团队的官方活动，不是南京审计大学MPAcc学生亲述。"
+    },
+    {
+      "url": "https://www.163.com/dy/article/E60CQQF4053643JX.html",
+      "title": "三位学霸成功升级博士",
+      "inspection": "搜索结果摘要",
+      "reason": "学校精选报道线索，摘录对象及导师不属于当前34位会计导师，未作为独立学生口碑。"
+    },
+    {
+      "url": "https://www.zucaitz.com/2021/0902/c9536a99579/page.htm",
+      "title": "程博（污染镜像）",
+      "inspection": "搜索结果摘要",
+      "reason": "页面出现足彩投注替换文字，非可靠原始来源，排除。"
+    }
+  ],
+  "retrievalLimits": [
+    "微博检索返回weibo.com的robots访问限制；只说明本次工具可读范围，不推断用户无法访问。",
+    "多个精确姓名和平台限定查询仍返回院校官方材料或外校信息，未把这些结果换算为新增有效评价数量。",
+    "未检得可新增的学生经历不代表没有评价；也不据搜索命中、点赞数、玩笑口号或复制转帖给教师排名。"
+  ],
+  "credibilityHandling": [
+    "需要完整姓名与接触关系，且可见上下文包含具体过程；不靠名单唯一匹配或缩写猜人。",
+    "第一人称语气不等于身份经过认证；学位、年级与是否直系不明时保持未知。",
+    "反讽、玩梗、姓氏口号、附和及未回答的提问，不作为推荐或避雷支持。",
+    "本任务没有发现可新增的玩梗实例如实作为新证据，因此没有凭印象给未知作者贴讽刺或恶意标签。"
+  ]
+}

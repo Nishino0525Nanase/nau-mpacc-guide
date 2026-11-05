@@ -566,7 +566,7 @@
     },
     "appEdition": {
       "web": {
-        "version": "1.0.8"
+        "version": "1.0.9"
       },
       "android": {
         "available": true,
@@ -717,6 +717,33 @@
         "totalPublishedScreenshotFiles": 10,
         "courseScreenshotBytes": 91099,
         "courseCommentImageAttachments": 4
+      },
+      "contextAudit": {
+        "batch": "review-context-audit-round10",
+        "reclassifiedReviewRecords": 3,
+        "reclassifiedSocialContexts": 1,
+        "newStudentExperiences": 0,
+        "newXhsPosts": 0,
+        "newScreenshots": 0,
+        "xhsMentorReviewRecords": 34,
+        "distinctXhsMentorPosts": 4,
+        "largestTwoPostRecords": 32,
+        "postRecordCounts": {
+          "67aef89b0000000029009825": 1,
+          "67ecb72b000000001e0042af": 20,
+          "69cba3e80000000028008246": 12,
+          "6a50b7c5000000002103f3aa": 1
+        },
+        "useRule": "玩笑化、语气不明或未说明本人接触的简短提名，不当作具体体验或推荐／避雷依据。",
+        "reviewIds": [
+          "sr-56c2d22b39f07a",
+          "sr-6f547fefb6425f",
+          "sr-e63702f4d750b2"
+        ],
+        "sourceCodes": [
+          "X01",
+          "X02"
+        ]
       }
     },
     "internshipResearch": {
@@ -742,6 +769,33 @@
       "socialTotal": 114,
       "officialTotal": 182,
       "resourceCountNote": "同一公告可能含多个项目；资源条目不是独立岗位、空缺人数或录取机会。"
+    },
+    "reviewContextAudit": {
+      "batch": "review-context-audit-round10",
+      "reclassifiedReviewRecords": 3,
+      "reclassifiedSocialContexts": 1,
+      "newStudentExperiences": 0,
+      "newXhsPosts": 0,
+      "newScreenshots": 0,
+      "xhsMentorReviewRecords": 34,
+      "distinctXhsMentorPosts": 4,
+      "largestTwoPostRecords": 32,
+      "postRecordCounts": {
+        "67aef89b0000000029009825": 1,
+        "67ecb72b000000001e0042af": 20,
+        "69cba3e80000000028008246": 12,
+        "6a50b7c5000000002103f3aa": 1
+      },
+      "useRule": "玩笑化、语气不明或未说明本人接触的简短提名，不当作具体体验或推荐／避雷依据。",
+      "reviewIds": [
+        "sr-56c2d22b39f07a",
+        "sr-6f547fefb6425f",
+        "sr-e63702f4d750b2"
+      ],
+      "sourceCodes": [
+        "X01",
+        "X02"
+      ]
     }
   },
   "directions": [
@@ -996,13 +1050,13 @@
         {
           "id": "67ecb72b000000001e0042af:c9",
           "kind": "uncertain",
-          "category": "按接触身份限定的匿名线索",
-          "statusLabel": "笼统弱线索",
+          "category": "非具体亲历的待核语境",
+          "statusLabel": "笼统好感／接触未明",
           "population": "身份未说明",
           "date": "2025-04-02",
-          "text": "既有主稿记录X01有笼统正面提名，没有具体日常指导过程。",
+          "text": "评论只表达对温素彬的总体好感，没有交代本人接触关系或具体过程；不作为指导风格判断。",
           "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
-          "limitations": "只保留主稿已有线索，不补充评论者身份、阶段或行为；案例指导另以官方报道为准。 本次只核对评论署名和日期，身份与原行为描述不升级。阅读范围：直接核对同一条评论中关于温素彬的提名、评论署名和可见日期；其他老师的课程或竞赛关系不转接。",
+          "limitations": "只保留主稿已有线索，不补充评论者身份、阶段或行为；案例指导另以官方报道为准。 本次只核对评论署名和日期，身份与原行为描述不升级。阅读范围：直接核对同一条评论中关于温素彬的提名、评论署名和可见日期；其他老师的课程或竞赛关系不转接。 仅总体好感，未说明本人接触，不作为指导体验。",
           "author": "冬日来信",
           "sourceIds": [
             "X01",
@@ -1013,6 +1067,21 @@
             "readingScope": "直接核对同一条评论中关于温素彬的提名、评论署名和可见日期；其他老师的课程或竞赛关系不转接。",
             "limits": "仅评论署名与可见日期归因；身份不明，笼统提名强度不升级。",
             "changeType": "comment attribution correction only"
+          },
+          "contextInterpretationBeforeRound10": {
+            "text": "既有主稿记录X01有笼统正面提名，没有具体日常指导过程。",
+            "statusLabel": "笼统弱线索",
+            "category": "按接触身份限定的匿名线索",
+            "limitations": "只保留主稿已有线索，不补充评论者身份、阶段或行为；案例指导另以官方报道为准。 本次只核对评论署名和日期，身份与原行为描述不升级。阅读范围：直接核对同一条评论中关于温素彬的提名、评论署名和可见日期；其他老师的课程或竞赛关系不转接。"
+          },
+          "contextAssessment": {
+            "status": "general_endorsement_no_relation",
+            "displayLabel": "笼统好感／接触未明",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "笼统好感／社交提名；没有证据认定为玩梗，但也没有本人接触事实",
+            "scope": "复核既有摘记，未新增原帖或学生经历；不武断确认反讽。",
+            "batch": "review-context-audit-round10"
           }
         },
         {
@@ -1075,7 +1144,7 @@
       "feedbackStatus": "仅笼统提名或身份未明",
       "feedbackDetails": {
         "status": "仅笼统提名或身份未明",
-        "basis": "只有明确全名的弱正面提名",
+        "basis": "只有笼统好感，未说明本人接触关系；不作为具体指导体验。",
         "limits": "尚缺近年直系MPAcc对选题/改稿/组会/实习冲突的实际经历。；尚缺近两届明确MPAcc直系学生的具体日常指导经历。"
       },
       "quotaStatus": "未公开/须向当年学院双选通知及导师本人核实",
@@ -1091,7 +1160,7 @@
       "studentReviews": {
         "coverageStatus": "weak_mentions",
         "coverageLabel": "仅笼统提名或身份未明",
-        "summary": "只有明确全名的弱正面提名",
+        "summary": "只有笼统好感，未说明本人接触关系；不作为具体指导体验。",
         "reviews": [
           {
             "id": "sr-6f547fefb6425f",
@@ -1110,15 +1179,15 @@
             "year": "未说明",
             "relationship": "未说明",
             "experienceType": "general",
-            "experienceLabel": "身份未明的笼统提名",
+            "experienceLabel": "笼统好感，未说明本人接触",
             "firsthand": null,
-            "polarity": "positive",
+            "polarity": "neutral",
             "attribution": {
               "status": "confirmed",
               "alias": "原文全名",
               "reason": "原文直接出现该导师全名；确认仅指文本对象归属，不代表评论者身份已认证。"
             },
-            "text": "评论者对温素彬作笼统正面提名，未描述与其接触过程。",
+            "text": "评论只表达对温素彬的总体好感，没有交代本人接触关系或具体过程；不作为指导风格判断。",
             "specifics": [
               "温素彬部分仅评价人好。"
             ],
@@ -1128,7 +1197,28 @@
             ],
             "readingScope": "已读该完整评论及显示回复；将王菁华、王敬勇、董必荣和温素彬分别归因。",
             "readThisRound": true,
-            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。",
+            "contextInterpretationBeforeRound10": {
+              "text": "评论者对温素彬作笼统正面提名，未描述与其接触过程。",
+              "specifics": [
+                "温素彬部分仅评价人好。"
+              ],
+              "limits": [
+                "同条评论的本人课程经历属于王菁华，竞赛经历属于王敬勇，不能归给温素彬。",
+                "无学位、年级、导师关系或具体反馈事例。"
+              ],
+              "polarity": "positive",
+              "experienceLabel": "身份未明的笼统提名"
+            },
+            "contextAssessment": {
+              "status": "general_endorsement_no_relation",
+              "displayLabel": "笼统好感／接触未明",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "笼统好感／社交提名；没有证据认定为玩梗，但也没有本人接触事实",
+              "scope": "复核既有摘记，未新增原帖或学生经历；不武断确认反讽。",
+              "batch": "review-context-audit-round10"
+            }
           }
         ],
         "recommendationPoints": [],
@@ -1161,7 +1251,10 @@
           ],
           "note": "只说明实际检索和阅读边界，不声称覆盖全网或完整平台评论。"
         },
-        "sampleCountNote": "同一评论者的跟评合并；同帖多条不等于多独立来源；学校精选访谈有选择偏差。"
+        "sampleCountNote": "同一评论者的跟评合并；同帖多条不等于多独立来源；学校精选访谈有选择偏差。",
+        "contextInterpretationBeforeRound10": {
+          "summary": "只有明确全名的弱正面提名"
+        }
       }
     },
     {
@@ -1218,19 +1311,34 @@
         {
           "id": "67ecb72b000000001e0042af:c4",
           "kind": "uncertain",
-          "category": "按接触身份限定的匿名线索",
-          "statusLabel": "既有资料中经归因限定的反馈",
+          "category": "非具体亲历的待核语境",
+          "statusLabel": "仅提名／语气与身份待核",
           "population": "关系身份未明",
           "date": "2025-04-02／03",
-          "text": "围绕自主安排的评论存在不同理解，缺少具体指导过程。",
+          "text": "该讨论以轻松、夸张的措辞提名，并出现追问和附和；没有交代本人指导关系或具体过程，暂不解读为真实推荐、避雷或指导强度结论。",
           "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
-          "limitations": "不能推出容易毕业。若考虑，重点问固定交流、遇阻支持及实习期间的论文节点。",
+          "limitations": "不能推出容易毕业。若考虑，重点问固定交流、遇阻支持及实习期间的论文节点。 玩笑、夸张与反讽方向未核，不用于推荐或避雷。",
           "author": "超酷酷的、wm等",
           "sourceIds": [
             "X01",
             "67ecb72b000000001e0042af"
           ],
-          "postId": "67ecb72b000000001e0042af"
+          "postId": "67ecb72b000000001e0042af",
+          "contextInterpretationBeforeRound10": {
+            "text": "围绕自主安排的评论存在不同理解，缺少具体指导过程。",
+            "statusLabel": "既有资料中经归因限定的反馈",
+            "category": "按接触身份限定的匿名线索",
+            "limitations": "不能推出容易毕业。若考虑，重点问固定交流、遇阻支持及实习期间的论文节点。"
+          },
+          "contextAssessment": {
+            "status": "playful_ambiguous",
+            "displayLabel": "仅提名／语气与身份待核",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "玩笑化／夸张措辞明显；不能确认是否反讽，也未核实亲历身份",
+            "scope": "复核既有摘记，未新增原帖或学生经历；不武断确认反讽。",
+            "batch": "review-context-audit-round10"
+          }
         }
       ],
       "links": [
@@ -1242,7 +1350,7 @@
       "feedbackStatus": "仅笼统提名或身份未明",
       "feedbackDetails": {
         "status": "仅笼统提名或身份未明",
-        "basis": "全名讨论已读；对自主安排的主观看法不能保证毕业或工作量",
+        "basis": "有全名讨论，但含玩笑化或夸张措辞；语气与接触关系未核，不据此作推荐或避雷。",
         "limits": "尚缺经确认的近年直系MPAcc具体事例；WY与王禹同缩写，不能将WY评论自动归王烨。；尚缺近两届明确MPAcc直系学生的具体日常指导经历。"
       },
       "quotaStatus": "未公开/须向当年学院双选通知及导师本人核实",
@@ -1256,7 +1364,7 @@
       "studentReviews": {
         "coverageStatus": "weak_mentions",
         "coverageLabel": "仅笼统提名或身份未明",
-        "summary": "全名讨论已读；对自主安排的主观看法不能保证毕业或工作量",
+        "summary": "有全名讨论，但含玩笑化或夸张措辞；语气与接触关系未核，不据此作推荐或避雷。",
         "reviews": [
           {
             "id": "sr-e63702f4d750b2",
@@ -1275,26 +1383,49 @@
             "year": "未说明",
             "relationship": "未说明",
             "experienceType": "general",
-            "experienceLabel": "自主安排风格的主观讨论",
+            "experienceLabel": "带玩笑化措辞的讨论，语气与身份待核",
             "firsthand": null,
-            "polarity": "mixed",
+            "polarity": "neutral",
             "attribution": {
               "status": "confirmed",
               "alias": "原文全名",
               "reason": "原文直接出现该导师全名；确认仅指文本对象归属，不代表评论者身份已认证。"
             },
-            "text": "评论线程对自主安排的感受偏正面，也有人把它理解为缺少主动督促。",
+            "text": "该讨论以轻松、夸张的措辞提名，并出现追问和附和；没有交代本人指导关系或具体过程，暂不解读为真实推荐、避雷或指导强度结论。",
             "specifics": [
-              "首评为希望自行安排学习者提名王烨；wm把这种状态解释为老师不主动干预。",
-              "“任务轻好毕业”“不卡毕业”来自提问/理解，未见毕业记录或回复承诺。"
+              "有关毕业是否轻松的说法是提问或附和，不是已发生的毕业经历。",
+              "跟评没有给出改稿周期、研究任务、主动求助或实习协调的实例。"
             ],
             "limits": [
               "评论者未说明本科/MPAcc、是否直系学生；无任务量、改稿节点或失联时长等具体过程。",
-              "附和不增加独立来源；不能据此断言放养、轻松毕业或不负责任。"
+              "附和不增加独立来源；不能据此断言放养、轻松毕业或不负责任。",
+              "可能含玩笑或反讽，现有语境不足以确认；不把表面褒贬当作已核实态度。"
             ],
             "readingScope": "首评及全部5条显示回复本轮实际读到（原已显示1条、展开追加4条）。",
             "readThisRound": true,
-            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。",
+            "contextInterpretationBeforeRound10": {
+              "text": "评论线程对自主安排的感受偏正面，也有人把它理解为缺少主动督促。",
+              "specifics": [
+                "首评为希望自行安排学习者提名王烨；wm把这种状态解释为老师不主动干预。",
+                "“任务轻好毕业”“不卡毕业”来自提问/理解，未见毕业记录或回复承诺。"
+              ],
+              "limits": [
+                "评论者未说明本科/MPAcc、是否直系学生；无任务量、改稿节点或失联时长等具体过程。",
+                "附和不增加独立来源；不能据此断言放养、轻松毕业或不负责任。"
+              ],
+              "polarity": "mixed",
+              "experienceLabel": "自主安排风格的主观讨论"
+            },
+            "contextAssessment": {
+              "status": "playful_ambiguous",
+              "displayLabel": "仅提名／语气与身份待核",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "玩笑化／夸张措辞明显；不能确认是否反讽，也未核实亲历身份",
+              "scope": "复核既有摘记，未新增原帖或学生经历；不武断确认反讽。",
+              "batch": "review-context-audit-round10"
+            }
           }
         ],
         "recommendationPoints": [],
@@ -1329,7 +1460,10 @@
           ],
           "note": "只说明实际检索和阅读边界，不声称覆盖全网或完整平台评论。"
         },
-        "sampleCountNote": "同一评论者的跟评合并；同帖多条不等于多独立来源；学校精选访谈有选择偏差。"
+        "sampleCountNote": "同一评论者的跟评合并；同帖多条不等于多独立来源；学校精选访谈有选择偏差。",
+        "contextInterpretationBeforeRound10": {
+          "summary": "全名讨论已读；对自主安排的主观看法不能保证毕业或工作量"
+        }
       }
     },
     {
@@ -5636,19 +5770,34 @@
         {
           "id": "69cba3e80000000028008246:c11",
           "kind": "uncertain",
-          "category": "按接触身份限定的匿名线索",
-          "statusLabel": "按接触身份限定的待核实线索",
+          "category": "非具体亲历的待核语境",
+          "statusLabel": "仅提名／语气与身份待核",
           "population": "未明示",
           "date": "03-31",
-          "text": "推荐并形容过得轻松，无行为例子",
+          "text": "现有摘记记录一条全名提名和轻松感受，但没有具体行为或明确接触关系；完整语境不足，暂不作正负向结论。",
           "url": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246?xsec_token=ABXXzd7QJqqBZWLdP_tsGqidPDO8222rTfv2IL9nkSy3A=&xsec_source=pc_feed",
-          "limitations": "身份不明的单条轻松体验线索，不能推成低要求、允许实习或基本指导保障",
+          "limitations": "身份不明的简短提名不足以推断低要求、实习安排或指导保障。；未确认原评论是否含玩笑、夸张或反讽；不把表面推荐词直接写成导师指导体验。",
           "author": "ki1catta",
           "sourceIds": [
             "X02",
             "69cba3e80000000028008246"
           ],
-          "postId": "69cba3e80000000028008246"
+          "postId": "69cba3e80000000028008246",
+          "contextInterpretationBeforeRound10": {
+            "text": "推荐并形容过得轻松，无行为例子",
+            "statusLabel": "按接触身份限定的待核实线索",
+            "category": "按接触身份限定的匿名线索",
+            "limitations": "身份不明的单条轻松体验线索，不能推成低要求、允许实习或基本指导保障"
+          },
+          "contextAssessment": {
+            "status": "insufficient_original_context",
+            "displayLabel": "仅提名／语气与身份待核",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "语气无法确认；目前存档仅有摘要，不足以判断真心推荐或反串",
+            "scope": "复核既有摘记，未新增原帖或学生经历；不武断确认反讽。",
+            "batch": "review-context-audit-round10"
+          }
         }
       ],
       "links": [
@@ -5660,7 +5809,7 @@
       "feedbackStatus": "仅笼统提名或身份未明",
       "feedbackDetails": {
         "status": "仅笼统提名或身份未明",
-        "basis": "有实名推荐但身份、学位及具体经历不明；不支持低要求、允许实习或毕业保障结论。",
+        "basis": "全名简短提名的原话及语境不足，不能确认是真实推荐、玩笑或反讽。",
         "limits": "推荐者身份未知；无具体过程；缺MPAcc当前直系反馈；尚缺近两届明确MPAcc直系学生的具体日常指导经历。"
       },
       "quotaStatus": "未公开/须向当年学院双选通知及导师本人核实",
@@ -5674,7 +5823,7 @@
       "studentReviews": {
         "coverageStatus": "weak_mentions",
         "coverageLabel": "仅笼统提名或身份未明",
-        "summary": "有实名推荐但身份、学位及具体经历不明；不支持低要求、允许实习或毕业保障结论。",
+        "summary": "全名简短提名的原话及语境不足，不能确认是真实推荐、玩笑或反讽。",
         "reviews": [
           {
             "id": "sr-56c2d22b39f07a",
@@ -5693,24 +5842,45 @@
             "year": "未显示或未核实",
             "relationship": "未明示",
             "experienceType": "general",
-            "experienceLabel": "未明示身份的主观推荐",
+            "experienceLabel": "简短提名，语气与接触身份待核",
             "firsthand": null,
-            "polarity": "positive",
+            "polarity": "neutral",
             "attribution": {
               "status": "confirmed",
               "alias": "蔡显军",
               "reason": "原评论明确完整姓名；不借同缩写映射"
             },
-            "text": "推荐并形容过得轻松，无行为例子",
+            "text": "现有摘记记录一条全名提名和轻松感受，但没有具体行为或明确接触关系；完整语境不足，暂不作正负向结论。",
             "specifics": [
-              "推荐并形容过得轻松，无行为例子"
+              "没有已发生的论文指导、任务安排、反馈或实习事例。"
             ],
             "limits": [
-              "身份不明的单条轻松体验线索，不能推成低要求、允许实习或基本指导保障"
+              "身份不明的简短提名不足以推断低要求、实习安排或指导保障。",
+              "未确认原评论是否含玩笑、夸张或反讽；不把表面推荐词直接写成导师指导体验。"
             ],
             "readingScope": "本轮原帖顶层读取至THE END；对应木渎3条追加回复及🐶🐶1条追加回复均展开；XW1条追加回复已展开；无名玩笑楼及不属于本组的部分分支未重开。",
             "readThisRound": true,
-            "evidenceOrigin": "existing_baseline_reaudited"
+            "evidenceOrigin": "existing_baseline_reaudited",
+            "contextInterpretationBeforeRound10": {
+              "text": "推荐并形容过得轻松，无行为例子",
+              "specifics": [
+                "推荐并形容过得轻松，无行为例子"
+              ],
+              "limits": [
+                "身份不明的单条轻松体验线索，不能推成低要求、允许实习或基本指导保障"
+              ],
+              "polarity": "positive",
+              "experienceLabel": "未明示身份的主观推荐"
+            },
+            "contextAssessment": {
+              "status": "insufficient_original_context",
+              "displayLabel": "仅提名／语气与身份待核",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "语气无法确认；目前存档仅有摘要，不足以判断真心推荐或反串",
+              "scope": "复核既有摘记，未新增原帖或学生经历；不武断确认反讽。",
+              "batch": "review-context-audit-round10"
+            }
           }
         ],
         "recommendationPoints": [],
@@ -5746,7 +5916,10 @@
           ],
           "note": "只说明实际检索和阅读边界，不声称覆盖全网或完整平台评论。"
         },
-        "sampleCountNote": "同一评论者的跟评合并；同帖多条不等于多独立来源；学校精选访谈有选择偏差。"
+        "sampleCountNote": "同一评论者的跟评合并；同帖多条不等于多独立来源；学校精选访谈有选择偏差。",
+        "contextInterpretationBeforeRound10": {
+          "summary": "有实名推荐但身份、学位及具体经历不明；不支持低要求、允许实习或毕业保障结论。"
+        }
       }
     },
     {
@@ -16476,9 +16649,23 @@
           "author": "超酷酷的、wm等",
           "date_display": "2025-04-02／03",
           "relationship": "关系身份未明",
-          "content": "围绕自主安排的评论存在不同理解，缺少具体指导过程。",
+          "content": "该讨论以轻松、夸张的措辞提名，并出现追问和附和；没有交代本人指导关系或具体过程，暂不解读为真实推荐、避雷或指导强度结论。",
           "limits": "不能推出容易毕业。若考虑，重点问固定交流、遇阻支持及实习期间的论文节点。",
-          "use_status": "既有资料中经归因限定的反馈"
+          "use_status": "仅提名／语气与身份待核；未用于推荐或避雷",
+          "contextInterpretationBeforeRound10": {
+            "content": "围绕自主安排的评论存在不同理解，缺少具体指导过程。",
+            "limits": "不能推出容易毕业。若考虑，重点问固定交流、遇阻支持及实习期间的论文节点。",
+            "use_status": "既有资料中经归因限定的反馈"
+          },
+          "contextAssessment": {
+            "status": "playful_ambiguous",
+            "displayLabel": "仅提名／语气与身份待核",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "玩笑化／夸张措辞明显；不能确认是否反讽，也未核实亲历身份",
+            "scope": "复核既有摘记，未新增原帖或学生经历；不武断确认反讽。",
+            "batch": "review-context-audit-round10"
+          }
         },
         {
           "teacher": "刘国城",
@@ -16521,23 +16708,49 @@
           "author": "冬日来信",
           "date_display": "2025-04-02",
           "relationship": "身份未说明",
-          "content": "既有主稿记录X01有笼统正面提名，没有具体日常指导过程。",
+          "content": "评论只表达对温素彬的总体好感，没有交代本人接触关系或具体过程；不作为指导风格判断。",
           "limits": "只保留主稿已有线索，不补充评论者身份、阶段或行为；案例指导另以官方报道为准。",
-          "use_status": "笼统弱线索",
+          "use_status": "笼统好感／接触未明；未用于推荐或避雷",
           "attributionCorrection": {
             "sourceCode": "X01",
             "readingScope": "直接核对同一条评论中关于温素彬的提名、评论署名和可见日期；其他老师的课程或竞赛关系不转接。",
             "limits": "仅核对评论署名及可见日期；接触身份和既有行为描述不升级。"
+          },
+          "contextInterpretationBeforeRound10": {
+            "content": "既有主稿记录X01有笼统正面提名，没有具体日常指导过程。",
+            "limits": "只保留主稿已有线索，不补充评论者身份、阶段或行为；案例指导另以官方报道为准。",
+            "use_status": "笼统弱线索"
+          },
+          "contextAssessment": {
+            "status": "general_endorsement_no_relation",
+            "displayLabel": "笼统好感／接触未明",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "笼统好感／社交提名；没有证据认定为玩梗，但也没有本人接触事实",
+            "scope": "复核既有摘记，未新增原帖或学生经历；不武断确认反讽。",
+            "batch": "review-context-audit-round10"
           }
         },
         {
           "author": "林瑜",
           "date_display": "2025-04-02",
           "teacher": "潘俊",
-          "text": "评论者对潘俊作笼统提名并提及读博，但没有交代本人学位、指导关系或具体经历。",
-          "limitations": "不作为新增学生亲历或博士去向承诺；已有MPAcc指导证据另见具名访谈。",
-          "use_status": "新增可见评论语境，非学生指导评价",
-          "expansionBatch": "student-reviews-round8"
+          "text": "评论以口号式措辞提到潘俊和读博，没有说明本人经历或实际去向；语气未核实，仅保留讨论语境。",
+          "limitations": "可能含玩笑或夸张，不当作导师安排、升学保证或学生指导事实；同帖提名不增加独立评价。",
+          "use_status": "玩笑化／口号式表达，未用于推荐或避雷",
+          "expansionBatch": "student-reviews-round8",
+          "contextInterpretationBeforeRound10": {
+            "text": "评论者对潘俊作笼统提名并提及读博，但没有交代本人学位、指导关系或具体经历。",
+            "limitations": "不作为新增学生亲历或博士去向承诺；已有MPAcc指导证据另见具名访谈。",
+            "use_status": "新增可见评论语境，非学生指导评价"
+          },
+          "contextAssessment": {
+            "status": "slogan_or_hyperbole",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "没有本人指导关系、事件或实际去向。",
+            "batch": "review-context-audit-round10"
+          }
         }
       ],
       "limitations": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
@@ -18206,9 +18419,23 @@
           "author": "ki1catta",
           "date_display": "03-31",
           "relationship": "未明示",
-          "content": "推荐并形容过得轻松，无行为例子",
-          "limits": "身份不明的单条轻松体验线索，不能推成低要求、允许实习或基本指导保障",
-          "use_status": "按接触身份限定的待核实线索"
+          "content": "现有摘记记录一条全名提名和轻松感受，但没有具体行为或明确接触关系；完整语境不足，暂不作正负向结论。",
+          "limits": "身份不明的简短提名不足以推断低要求、实习安排或指导保障。；未确认原评论是否含玩笑、夸张或反讽；不把表面推荐词直接写成导师指导体验。",
+          "use_status": "仅提名／语气与身份待核；未用于推荐或避雷",
+          "contextInterpretationBeforeRound10": {
+            "content": "推荐并形容过得轻松，无行为例子",
+            "limits": "身份不明的单条轻松体验线索，不能推成低要求、允许实习或基本指导保障",
+            "use_status": "按接触身份限定的待核实线索"
+          },
+          "contextAssessment": {
+            "status": "insufficient_original_context",
+            "displayLabel": "仅提名／语气与身份待核",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "语气无法确认；目前存档仅有摘要，不足以判断真心推荐或反串",
+            "scope": "复核既有摘记，未新增原帖或学生经历；不武断确认反讽。",
+            "batch": "review-context-audit-round10"
+          }
         }
       ],
       "limitations": "逐步读取顶层评论至THE END并展开相关回复；共52评论，一个无姓名玩笑楼尚余1条未展开，不宣称逐字全量。截图名单不是独立官方验证。",
@@ -24289,6 +24516,14 @@
         "providerExportSupported": false,
         "status": "阅读工具未返回可下载截图文件或可用图片链接；浏览记录页另查为404；不将文字总结或原帖配图当评论截图。",
         "existingPublishedFilesPreserved": 5
+      },
+      "contextInterpretationAudit": {
+        "batch": "review-context-audit-round10",
+        "reviewIds": [
+          "sr-e63702f4d750b2",
+          "sr-6f547fefb6425f"
+        ],
+        "scope": "只修正既有弱提名的语气和用途，不算新来源；表面褒贬、口号和附和不能替代具体经历。"
       }
     },
     "X02": {
@@ -24389,7 +24624,14 @@
           "textAltered": false
         }
       ],
-      "latestPublicReadingScope": "本次读到当前已加载的顶层评论与可见跟评；登录后全部评论和折叠支线未读。不称52条逐字全读。"
+      "latestPublicReadingScope": "本次读到当前已加载的顶层评论与可见跟评；登录后全部评论和折叠支线未读。不称52条逐字全读。",
+      "contextInterpretationAudit": {
+        "batch": "review-context-audit-round10",
+        "reviewIds": [
+          "sr-56c2d22b39f07a"
+        ],
+        "scope": "只修正既有弱提名的语气和用途，不算新来源；表面褒贬、口号和附和不能替代具体经历。"
+      }
     },
     "X03": {
       "code": "X03",
@@ -30920,8 +31162,8 @@
       "format": "xlsx",
       "description": "保留既有来源与学生评价总览，新增四大、国内所实习资源及本地实践基地线索，分列资格、状态、项目期与投递窗口",
       "filename": "evidence-index.xlsx",
-      "bytes": 357245,
-      "sha256": "c014f4ef8546b681d01f064c17701d8fb351dd4855950299835fd932b9c26683"
+      "bytes": 359476,
+      "sha256": "be79e2024c5a59247785d262b3f330988fa1346ed87b06e66ccbcd6f1264df47"
     }
   ],
   "officialEvidence": [

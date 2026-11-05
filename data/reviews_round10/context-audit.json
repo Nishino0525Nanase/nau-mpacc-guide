@@ -1,0 +1,213 @@
+{
+  "batch": "student-reviews-round10-context-audit",
+  "readOnlyProposal": true,
+  "scope": "仅复核当前发布数据、既有研究摘记和已知评论语境；本轮未重开原帖，不声称新近逐字核读所有原评论。",
+  "currentCounts": {
+    "reviewRecords": 40,
+    "xhsReviewRecords": 34,
+    "distinctXhsPostIds": 4,
+    "xhsRecordsFromX01AndX02": 32,
+    "xhsPosts": {
+      "67ecb72b000000001e0042af": 20,
+      "6a50b7c5000000002103f3aa": 1,
+      "69cba3e80000000028008246": 12,
+      "67aef89b0000000029009825": 1
+    },
+    "generalRecords": 13,
+    "firsthandNotExplicitTrue": 14
+  },
+  "sourceBreadthNote": "114是全站社交索引，含生活、背景和排除线索，不是114篇独立导师亲历帖；同一条评论跨导师拆分、同人跟评、同帖重读均不增加独立来源。",
+  "reviewProposals": [
+    {
+      "mentorId": "mentor-03",
+      "mentorName": "王烨",
+      "reviewId": "sr-e63702f4d750b2",
+      "sourceCode": "X01",
+      "assessment": "玩笑化／夸张措辞明显；不能确认是否反讽，也未核实亲历身份",
+      "basis": [
+        "首评以躺平取向和笑语提名；跟评有夸张描述、追问与附和。",
+        "任务轻、好毕业及不卡毕业属于询问或理解，没有具体指导或毕业过程。",
+        "完整姓名可确认讨论对象，但不等于能确认叙述真实性、态度方向或导师风格。"
+      ],
+      "currentDisplayIssue": "polarity=mixed被界面译为体验有利弊；现文本把玩笑化讨论平滑改写成对自主安排的正面体验，显得比材料更确定。",
+      "proposedFields": {
+        "experienceLabel": "带玩笑化措辞的讨论，语气与身份待核",
+        "polarity": "neutral",
+        "text": "该讨论以轻松、夸张的措辞提名，并出现追问和附和；没有交代本人指导关系或具体过程，暂不解读为真实推荐、避雷或指导强度结论。",
+        "specifics": [
+          "有关毕业是否轻松的说法是提问或附和，不是已发生的毕业经历。",
+          "跟评没有给出改稿周期、研究任务、主动求助或实习协调的实例。"
+        ],
+        "additionalLimit": "可能含玩笑或反讽，现有语境不足以确认；不把表面褒贬当作已核实态度。"
+      },
+      "recommendedUsage": "仅保留原帖语境／继续核实线索，不进入推荐或避雷理由",
+      "recommendationOrConcernLeakFound": false
+    },
+    {
+      "mentorId": "mentor-25",
+      "mentorName": "蔡显军",
+      "reviewId": "sr-56c2d22b39f07a",
+      "sourceCode": "X02",
+      "assessment": "语气无法确认；目前存档仅有摘要，不足以判断真心推荐或反串",
+      "basis": [
+        "现有发布输入只保留轻松感受的二次摘记，没有足够逐字原话及相关回复。",
+        "没有明确学位、年级、指导关系或行为例子。",
+        "不能根据另帖未确认缩写的负面评论反推这条是反讽；也不能按表面正向措辞认定为可靠推荐。"
+      ],
+      "currentDisplayIssue": "polarity=positive被译成正面体验，超出目前可确认的接触事实和语气。",
+      "proposedFields": {
+        "experienceLabel": "简短提名，语气与接触身份待核",
+        "polarity": "neutral",
+        "text": "现有摘记记录一条全名提名和轻松感受，但没有具体行为或明确接触关系；完整语境不足，暂不作正负向结论。",
+        "specifics": [
+          "没有已发生的论文指导、任务安排、反馈或实习事例。"
+        ],
+        "additionalLimit": "未确认原评论是否含玩笑、夸张或反讽；不把表面推荐词直接写成导师指导体验。",
+        "limits": [
+          "身份不明的简短提名不足以推断低要求、实习安排或指导保障。"
+        ]
+      },
+      "recommendedUsage": "仅保留待核语境，不支持低要求、允许实习、毕业保障或避雷结论",
+      "recommendationOrConcernLeakFound": false
+    },
+    {
+      "mentorId": "mentor-02",
+      "mentorName": "温素彬",
+      "reviewId": "sr-6f547fefb6425f",
+      "sourceCode": "X01",
+      "assessment": "笼统好感／社交提名；没有证据认定为玩梗，但也没有本人接触事实",
+      "basis": [
+        "同一长评论中的课程经历明确属于王菁华，竞赛经历明确属于王敬勇。",
+        "温素彬部分仅有总体好感，没有课程、指导或年级关系。"
+      ],
+      "currentDisplayIssue": "正面体验标签容易把单纯好感变成亲历；原摘要及归因限制本身已比较克制。",
+      "proposedFields": {
+        "experienceLabel": "笼统好感，未说明本人接触",
+        "text": "评论只表达对温素彬的总体好感，没有交代本人接触关系或具体过程；不作为指导风格判断。"
+      },
+      "recommendedUsage": "保留笼统提名，不称已发生的体验；不武断标为反讽",
+      "recommendationOrConcernLeakFound": false
+    },
+    {
+      "mentorId": "mentor-21",
+      "mentorName": "程博",
+      "reviewId": "sr-c605b1a1635921",
+      "sourceCode": "X02",
+      "assessment": "口号式赞扬，没有足够事实判断是否玩笑或真实体验",
+      "basis": [
+        "记录本身已说明高度肯定但无行为细节；未说明接触身份。"
+      ],
+      "currentDisplayIssue": "界面若显示正面体验，会超出笼统态度表达。",
+      "proposedFields": {
+        "experienceLabel": "口号式赞扬，未提供具体经历",
+        "polarity": "neutral",
+        "text": "评论仅表达高度肯定，未交代接触关系和具体事件；语气未核实，不作为独立推荐理由。"
+      },
+      "recommendedUsage": "语境材料，不增加独立学生体验",
+      "recommendationOrConcernLeakFound": false
+    }
+  ],
+  "socialContextProposals": [
+    {
+      "sourceCode": "X01",
+      "author": "林瑜",
+      "teacherText": "潘俊",
+      "shortCue": "带你读博",
+      "assessment": "口号式、夸张化表达，可能含玩笑；不是学生指导或读博结果的证据",
+      "currentStatus": "只在socialPosts.comments，未进入任何studentReviews；潘俊的实际推荐理由来自两份具名访谈，不引用本评论。",
+      "proposedComment": {
+        "text": "评论以口号式措辞提到潘俊和读博，没有说明本人经历或实际去向；语气未核实，仅保留讨论语境。",
+        "limitations": "可能含玩笑或夸张，不当作导师安排、升学保证或学生指导事实；同帖提名不增加独立评价。",
+        "use_status": "玩笑化／口号式表达，未用于推荐或避雷"
+      }
+    },
+    {
+      "sourceCode": "X01",
+      "teacherText": "姓程的",
+      "assessment": "姓氏双关／玩笑语境较明确",
+      "basis": "帖主跟评将对方本人和其他同姓者分开，说明不是可靠的实名教师推荐。",
+      "recommendedUsage": "不归到程博，不纳入教师评价或独立来源。"
+    },
+    {
+      "sourceCode": "X01",
+      "teacherText": "董",
+      "assessment": "疑似反讽支线；对象及态度方向都不足确认",
+      "basis": "单姓主评与坏人多一类回应不足以确立真人关系或具体指导经历；后续模糊的学长转述也不能补成亲历。",
+      "recommendedUsage": "继续未归属，不按名单猜人，也不按字面褒贬生成避雷。"
+    },
+    {
+      "sourceCode": "X01",
+      "teacherText": "c开头/yby/cxj/xw/tzd/zl",
+      "assessment": "缩写口号或态度表达；部分是负面语气，但不足以确认身份及经历",
+      "recommendedUsage": "保留未归属；不通过拼音唯一匹配、同楼相邻位置或另一帖表面态度强配实名。"
+    },
+    {
+      "sourceCode": "X01",
+      "teacherText": "黄老师/黄导/张老师",
+      "assessment": "称呼式支持或应援；不是实名亲历",
+      "recommendedUsage": "没有明确全名的独立确认时不归给黄中生或张兴亮；应援强度、点赞数不等于可信度。"
+    }
+  ],
+  "specificFactsToRetain": [
+    {
+      "mentorName": "傅祥斐",
+      "reviewId": "sr-6eb60f59829dc8",
+      "why": "自称论文指导关系，描述初稿质量差时解释修改办法；粗俗、轻松语气不自动使具体自述失效。",
+      "limits": "身份未独立认证、学位阶段不明、没有固定反馈时限；同人不push跟评只算一名来源。"
+    },
+    {
+      "mentorName": "张力",
+      "reviewId": "sr-750f53d05ce465",
+      "why": "明确本科上课，单独描述答疑耐心；可保留为本人自述课堂印象。",
+      "limits": "不能外推MPAcc改稿或实习协调。"
+    },
+    {
+      "mentorName": "程博",
+      "reviewId": "sr-685b44c44b5c9f",
+      "why": "具体描述中财答疑过程及温和表达；不是单纯口号。",
+      "limits": "课堂接触，不是硕士日常指导。"
+    },
+    {
+      "mentorName": "程博",
+      "reviewId": "sr-b159805b34d9db",
+      "why": "同一提问者之后回访已上课，给出汇报加研究设计的具体考核。",
+      "limits": "历史课程个案，专业年级未独立核验。"
+    },
+    {
+      "mentorName": "李仲泽",
+      "reviewId": "sr-d89d4112f56288",
+      "why": "本人上课与朋友论文两部分已拆清。",
+      "limits": "朋友论文经历仍是二手；不push不等于反馈充分或准许长期实习。"
+    },
+    {
+      "mentorName": "崔秀梅",
+      "reviewId": "sr-c8216c4fc1a3f7",
+      "why": "同人同时表示要求较高、愿帮助学生；不应只取其中半句。",
+      "limits": "关系身份未明，不把相处总体印象当具体改稿机制。"
+    },
+    {
+      "mentorName": "李仲泽",
+      "reviewId": "sr-4f903dfc6b113f",
+      "why": "现有记录已将论文帮助称为期待性想象，没有把它冒充实际事件。",
+      "limits": "仍不应把总体赞扬包装成已发生的论文帮助；可沿用弱语境标签。"
+    }
+  ],
+  "recommendationLeaksFound": [],
+  "uiProposal": {
+    "issue": "polarity当前被统一翻译为正面体验／体验有利弊，未区分态度、玩笑化表达与已发生的亲历。",
+    "rule": "general且firsthand未明确为true的记录，应优先显示笼统态度／语气或身份待核；不要仅因字面正向或反向词就标成正面体验、体验有利弊或避雷。",
+    "suggestedContextFields": [
+      "contextAssessment.status",
+      "contextAssessment.eligibleForRecommendation",
+      "contextAssessment.eligibleForConcern",
+      "contextAssessment.reason"
+    ],
+    "invariants": [
+      "不因emoji或口语就断定玩梗",
+      "不因负面缩写与正面全名相反就认定某条反串",
+      "可确认姓名归属不等于可确认真实性、语气或接触身份",
+      "具体事实与夸张感叹可分开保留",
+      "不删除历史摘记、不改计数，待root审核后另行应用"
+    ]
+  }
+}

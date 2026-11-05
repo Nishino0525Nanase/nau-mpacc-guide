@@ -66,6 +66,33 @@
       "totalPublishedScreenshotFiles": 10,
       "courseScreenshotBytes": 91099,
       "courseCommentImageAttachments": 4
+    },
+    "contextAudit": {
+      "batch": "review-context-audit-round10",
+      "reclassifiedReviewRecords": 3,
+      "reclassifiedSocialContexts": 1,
+      "newStudentExperiences": 0,
+      "newXhsPosts": 0,
+      "newScreenshots": 0,
+      "xhsMentorReviewRecords": 34,
+      "distinctXhsMentorPosts": 4,
+      "largestTwoPostRecords": 32,
+      "postRecordCounts": {
+        "67aef89b0000000029009825": 1,
+        "67ecb72b000000001e0042af": 20,
+        "69cba3e80000000028008246": 12,
+        "6a50b7c5000000002103f3aa": 1
+      },
+      "useRule": "玩笑化、语气不明或未说明本人接触的简短提名，不当作具体体验或推荐／避雷依据。",
+      "reviewIds": [
+        "sr-56c2d22b39f07a",
+        "sr-6f547fefb6425f",
+        "sr-e63702f4d750b2"
+      ],
+      "sourceCodes": [
+        "X01",
+        "X02"
+      ]
     }
   },
   "sourceChanges": [
@@ -92,6 +119,14 @@
     {
       "code": "R317",
       "action": "existing_course_post_reread_five_actual_screenshots_no_mentor_attribution"
+    },
+    {
+      "code": "X01",
+      "action": "context_interpretation_review_without_new_evidence"
+    },
+    {
+      "code": "X02",
+      "action": "context_interpretation_review_without_new_evidence"
     }
   ],
   "existingReviewRecordsRefined": 21,
@@ -110,5 +145,32 @@
     "No awards, lecture listings or coauthored papers substituted for student experiences",
     "Historical/non-MPAcc/courses separated from explicit MPAcc guidance",
     "Original post metadata preserved separately from comment metadata"
-  ]
+  ],
+  "contextAudit": {
+    "batch": "review-context-audit-round10",
+    "reclassifiedReviewRecords": 3,
+    "reclassifiedSocialContexts": 1,
+    "newStudentExperiences": 0,
+    "newXhsPosts": 0,
+    "newScreenshots": 0,
+    "xhsMentorReviewRecords": 34,
+    "distinctXhsMentorPosts": 4,
+    "largestTwoPostRecords": 32,
+    "postRecordCounts": {
+      "67aef89b0000000029009825": 1,
+      "67ecb72b000000001e0042af": 20,
+      "69cba3e80000000028008246": 12,
+      "6a50b7c5000000002103f3aa": 1
+    },
+    "useRule": "玩笑化、语气不明或未说明本人接触的简短提名，不当作具体体验或推荐／避雷依据。",
+    "reviewIds": [
+      "sr-56c2d22b39f07a",
+      "sr-6f547fefb6425f",
+      "sr-e63702f4d750b2"
+    ],
+    "sourceCodes": [
+      "X01",
+      "X02"
+    ]
+  }
 }

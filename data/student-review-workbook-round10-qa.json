@@ -1,0 +1,63 @@
+{
+  "changedCells": [
+    "A3",
+    "C6",
+    "B8",
+    "C8",
+    "D8",
+    "E8",
+    "F8",
+    "G8",
+    "H8",
+    "B9",
+    "C9",
+    "D9",
+    "E9",
+    "F9",
+    "G9",
+    "H9",
+    "B31",
+    "C31",
+    "D31",
+    "E31",
+    "F31",
+    "G31",
+    "H31"
+  ],
+  "changedWeakRows": [
+    8,
+    9,
+    31
+  ],
+  "headerUpdated": true,
+  "studentRecords": 40,
+  "teachersWithRecords": 20,
+  "explicitMpaccTeachers": 3,
+  "xhsRecords": 34,
+  "xhsPostCount": 4,
+  "recordsInTwoLargestPosts": 32,
+  "totalSiteSocialIndex": 114,
+  "sheets": 13,
+  "tables": 11,
+  "rowHeights": {
+    "8": 133.5,
+    "9": 147,
+    "31": 174
+  },
+  "allOtherPackagePartsByteIdentical": true,
+  "allOtherCellsUnchanged": true,
+  "formulasAndCachesUnchanged": true,
+  "original": {
+    "formulas": 526,
+    "cached": 526,
+    "errors": 0
+  },
+  "final": {
+    "formulas": 526,
+    "cached": 526,
+    "errors": 0
+  },
+  "sourceSha256": "c014f4ef8546b681d01f064c17701d8fb351dd4855950299835fd932b9c26683",
+  "outputSha256": "be79e2024c5a59247785d262b3f330988fa1346ed87b06e66ccbcd6f1264df47",
+  "outputBytes": 359476
+}

@@ -95,6 +95,14 @@
         "providerExportSupported": false,
         "status": "阅读工具未返回可下载截图文件或可用图片链接；浏览记录页另查为404；不将文字总结或原帖配图当评论截图。",
         "existingPublishedFilesPreserved": 5
+      },
+      "contextInterpretationAudit": {
+        "batch": "review-context-audit-round10",
+        "reviewIds": [
+          "sr-e63702f4d750b2",
+          "sr-6f547fefb6425f"
+        ],
+        "scope": "只修正既有弱提名的语气和用途，不算新来源；表面褒贬、口号和附和不能替代具体经历。"
       }
     },
     {
@@ -141,7 +149,14 @@
           "sameSource": true,
           "limits": []
         }
-      ]
+      ],
+      "contextInterpretationAudit": {
+        "batch": "review-context-audit-round10",
+        "reviewIds": [
+          "sr-56c2d22b39f07a"
+        ],
+        "scope": "只修正既有弱提名的语气和用途，不算新来源；表面褒贬、口号和附和不能替代具体经历。"
+      }
     },
     {
       "code": "17",
@@ -657,5 +672,32 @@
       "publishUnderNamedMentor": false
     }
   ],
-  "policy": "未确认实名的材料仅保留缩写、来源与归属缺口；不保存未核指控、私生活或辱骂原句。"
+  "policy": "未确认实名的材料仅保留缩写、来源与归属缺口；不保存未核指控、私生活或辱骂原句。",
+  "contextAudit": {
+    "batch": "review-context-audit-round10",
+    "reclassifiedReviewRecords": 3,
+    "reclassifiedSocialContexts": 1,
+    "newStudentExperiences": 0,
+    "newXhsPosts": 0,
+    "newScreenshots": 0,
+    "xhsMentorReviewRecords": 34,
+    "distinctXhsMentorPosts": 4,
+    "largestTwoPostRecords": 32,
+    "postRecordCounts": {
+      "67aef89b0000000029009825": 1,
+      "67ecb72b000000001e0042af": 20,
+      "69cba3e80000000028008246": 12,
+      "6a50b7c5000000002103f3aa": 1
+    },
+    "useRule": "玩笑化、语气不明或未说明本人接触的简短提名，不当作具体体验或推荐／避雷依据。",
+    "reviewIds": [
+      "sr-56c2d22b39f07a",
+      "sr-6f547fefb6425f",
+      "sr-e63702f4d750b2"
+    ],
+    "sourceCodes": [
+      "X01",
+      "X02"
+    ]
+  }
 }

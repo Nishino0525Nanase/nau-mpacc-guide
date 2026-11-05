@@ -1,0 +1,14 @@
+{
+  "batch": "review-context-round10",
+  "platform": "小红书",
+  "task": "站内搜索新独立来源，排除X01/X02及泛攻略引流",
+  "query": "南审 mpacc 导师",
+  "status": "login_wall",
+  "visibleMessage": "Log in to view search results",
+  "visibleSearchResults": 0,
+  "postBodiesRead": 0,
+  "newAttributableStudentExperiences": 0,
+  "scope": "仅站内一次检索，搜索结果被登录提示挡住；没有返回结果不表示不存在其他帖子。",
+  "loginWorkflowStarted": false,
+  "previousPostsReread": false
+}
