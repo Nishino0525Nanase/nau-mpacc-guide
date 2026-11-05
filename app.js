@@ -101,8 +101,18 @@
     if (filter) filter.innerHTML = `${icons.bookmark}我的清单${Object.keys(state.saved).length ? ` (${Object.keys(state.saved).length})` : ''}`;
   }
 
+  function researchHighlightsHtml() {
+    const highlights = array(state.data.meta.round3Research?.highlights).filter(item => item?.title && item?.text).slice(0, 4);
+    if (!highlights.length) return '';
+    return `<details class="research-updates" open><summary>新增核验：具体训练与学习安排</summary><div class="research-updates-grid">${highlights.map(item => {
+      const text = textOf(item.text);
+      const extraCodes = array(item.sourceCodes).filter(code => typeof code === 'string' && source(code) && !text.includes(code));
+      return `<article><h3>${esc(item.title)}</h3><p>${inline(text + (extraCodes.length ? ` [${extraCodes.join('、')}]` : ''))}</p></article>`;
+    }).join('')}</div></details>`;
+  }
+
   function renderMentors() {
-    app.innerHTML = heading('01 / MENTOR DIRECTORY', '先选方向，再了解具体的人', '六类研究主题，帮助你建立自己的了解顺序。研究方向看官方资料，相处与训练看具体经历；每条反馈都保留接触身份与年份。', `<strong>${state.data.mentors.length}</strong> 位导师 · ${state.data.mentorCards.length} 张核心卡`) +
+    app.innerHTML = heading('01 / MENTOR DIRECTORY', '先选方向，再了解具体的人', '六类研究主题，帮助你建立自己的了解顺序。研究方向看官方资料，相处与训练看具体经历；每条反馈都保留接触身份与年份。', `<strong>${state.data.mentors.length}</strong> 位导师 · ${state.data.mentorCards.length} 张核心卡`) + researchHighlightsHtml() +
       `<div class="notice">${esc(state.data.meta.directionNote)} <button type="button" class="text-button" data-action="guide" data-section="0">读懂方向与报名的关系 ↗</button></div><div class="toolbar">${searchField('mentor-search', '搜索导师姓名、研究方向或关键词', state.query)}<button id="saved-filter" type="button" class="save-filter" data-action="saved-only" aria-pressed="${state.savedOnly}">${icons.bookmark}我的清单</button></div><div class="filter-groups"><div class="filter-line" role="group" aria-label="按研究方向筛选"><button class="filter-chip direction-chip" type="button" data-action="direction" data-id="" aria-pressed="${!state.direction}">全部方向<small>${state.data.mentors.length}</small></button>${state.data.directions.map(d => `<button class="filter-chip direction-chip" type="button" data-action="direction" data-id="${esc(d.id)}" aria-pressed="${state.direction === d.id}">${esc(shortDirection(d.id))}<small>${state.data.mentors.filter(m => m.directions.includes(d.id)).length}</small></button>`).join('')}</div><div class="direction-note">${state.direction ? `${esc(state.direction)} · ${esc(directionName(state.direction))}。交叉归类可重复出现，不等同当年招生分组。` : '每位导师最多列两类，允许主方向与交叉方向；名录内不代表当年仍有名额。'}</div></div><div class="results-bar"><span id="mentor-result-count" role="status" aria-live="polite"></span><span id="mentor-result-order"></span></div><div class="mentor-grid" id="mentor-results"></div><section class="goal-section" aria-labelledby="goal-title"><span class="small-label">FIND YOUR STARTING POINT</span><h3 id="goal-title">从你想要的研究生生活出发</h3><div class="goal-grid">${state.data.targetProfiles.map(p => `<details class="goal-card"><summary>${esc(p.title.replace(/^希望/, ''))}</summary><div class="goal-content article-body">${array(p.blocks).map(blockHtml).join('') || `<p>${inline(p.summary)}</p>`}</div><div class="source-actions">${p.mentorIds.map(id => {const m = state.data.mentors.find(m => m.id === id); return m ? `<button class="text-button" type="button" data-action="mentor" data-id="${esc(id)}">${esc(m.name)} ↗</button>` : '';}).join('')}</div></details>`).join('')}</div><div class="guide-action-row"><button type="button" class="text-button" data-action="guide" data-section="3">名额、双选与备选方案 ↗</button><button type="button" class="text-button" data-action="guide" data-section="4">怎样写一封具体的联系邮件 ↗</button><span>清单保存在当前浏览器，可标记优先联系、备选或仅了解。</span></div></section>`;
     renderMentorResults();
   }
@@ -159,6 +169,8 @@
   }
 
   function coverageHtml() {
+    const current = state.data.meta.round3Research;
+    if (current) return `<section class="research-coverage reading-notes" aria-label="新增资料与采用口径"><h3>这轮补进了什么</h3><p>新增 <strong>${esc(current.studentPosts)}</strong> 篇小红书正文材料与 <strong>${esc(current.officialIndependentEvents)}</strong> 项官方培养及实践记录。具体课程任务、案例训练、论文与实习衔接已写进相应章节，来源与实际阅读范围一并保留。</p><p>导师补充主要是有对象、有年份的培养个案及集体教学记录。个人日常指导的新评价仍有限；课程体验中的亲历、第三方转述和未核验身份分别注明。</p></section>`;
     const r = state.data.meta.researchExpansion;
     if (!r) return '';
     return `<section class="research-coverage reading-notes" aria-label="检索覆盖与采用口径"><h3>检索更广，也把采用边界留下</h3><p>追加 <strong>${esc(r.queryCount)}</strong> 组检索，实际新读 <strong>${esc(r.newActuallyReadUniqueSources)}</strong> 个不同来源；其中 <strong>${esc(r.newIndexedSources)}</strong> 个纳入索引（${esc(r.newXhsSources)} 条小红书、${esc(r.newOtherPlatformSources)} 个其他平台来源）。另有 ${esc(r.newReadExcludedSources)} 个读后筛除，不用于主要建议。</p><p>${esc(r.newConditionalUsefulSources)} 条有条件的操作参考、${esc(r.newBackgroundSources)} 条背景材料分开标记。同一作者的多篇记录不当作多个独立学生样本。本轮未取得新的可靠个人导师日常指导证据，已有导师反馈继续保留原始身份和适用边界。</p></section>`;
@@ -171,8 +183,8 @@
   }
 
   function renderPosts() {
-    const topics = [...new Set(state.data.socialPosts.map(p => p.topic))];
-    const cats = [...new Set(state.data.socialPosts.map(p => p.category))];
+    const topics = [...new Set(state.data.socialPosts.map(p => p.topic).filter(Boolean))];
+    const cats = [...new Set(state.data.socialPosts.map(p => p.category).filter(Boolean))];
     app.innerHTML = heading('03 / SOURCE NOTEBOOK', '建议的背后，是这些原始来源', '不只留结论，也留下作者身份、可见日期、具体评论与采用边界。可以按校园主题查找，也可以看看哪些线索被保留、哪些未用于推荐。', `<strong>${state.data.socialPosts.length}</strong> 条 · 实质去重`) + `<div class="notice">${esc(state.data.meta.platformNote)} 社交平台原页可能需要登录，显示内容也可能随时间变化；本页保留的是当次阅读记录。</div>${coverageHtml()}<div class="posts-toolbar">${searchField('post-search','搜索标题、作者、来源编号或经历关键词',state.postQuery)}<div class="select-field"><label for="post-topic">内容主题</label><select id="post-topic"><option value="">全部主题</option>${topics.map(t => `<option${state.postTopic===t?' selected':''}>${esc(t)}</option>`).join('')}</select></div><div class="select-field"><label for="post-category">采用类别</label><select id="post-category"><option value="">全部类别</option>${cats.map(c => `<option${state.postCategory===c?' selected':''}>${esc(c)}</option>`).join('')}</select></div></div><div class="results-bar"><span id="post-result-count" role="status" aria-live="polite"></span><button type="button" class="text-button" data-action="reset-posts">清除筛选</button></div><div class="posts-grid" id="post-results"></div><div id="post-load-more"></div>${unreadLeadsHtml()}`;
     renderPostResults();
   }
@@ -186,7 +198,9 @@
   }
 
   function renderDownloads() {
-    app.innerHTML = heading('04 / TAKE THE GUIDE WITH YOU', '下载一份，留给需要的时候', 'Word 保留基础正文和导师卡片；Excel 完整目录同步收录网页中的108条来源与未读线索。网页另有补充操作说明，阅读时可逐条返回原始来源。') + `<div class="download-grid">${state.data.downloads.map(d => `<article class="download-card"><div class="file-icon" aria-hidden="true">${esc(d.format.toUpperCase())}</div><h3>${esc(d.title)}</h3><p>${esc(d.description)}</p><a class="button" href="${esc(d.url)}" download data-download="${esc(d.id)}">下载${d.format.toLowerCase()==='docx'?' Word':' Excel'}文件 <span aria-hidden="true">↓</span></a><div class="download-meta">${esc(d.format.toUpperCase())}${d.bytes ? ` · ${Math.round(d.bytes/1024)} KB` : ''}</div></article>`).join('')}</div><div class="reading-notes"><h3>这份资料，怎样使用更顺手</h3><p><strong>选导之前：</strong>先看本级培养方向，再从导师名录中选出几位，逐条核对研究内容、训练方式与当年名额。联系清单可以帮助你保留第二顺位。</p><p><strong>读学生经历时：</strong>接触身份和具体过程比笼统的好评更有用。本科课程印象、朋友转述和往届MPAcc经历，分别能回答不同问题。</p><p><strong>准备入学时：</strong>先确认校区、楼栋与本级通知，再购置用品、安排实习和核对奖助；攻略中的来源编号都能回到相应公开页面。</p><p><strong>标注说明：</strong>“未公开”指本次整理未见可靠公开信息；“待核实”指身份、阶段或时效仍有缺口。两者均不等同于该事项不存在。</p></div>`;
+    const socialCount = state.data.socialPosts.length;
+    const officialCount = array(state.data.officialEvidence).length;
+    app.innerHTML = heading('04 / TAKE THE GUIDE WITH YOU', '下载一份，留给需要的时候', `Word 保留基础正文和导师卡片；Excel 提供原帖目录与官方补充证据。网页当前收录 ${socialCount} 条社交原帖，另有新增核验与操作说明，可逐条返回原始来源。`) + `<div class="download-grid">${state.data.downloads.map(d => `<article class="download-card"><div class="file-icon" aria-hidden="true">${esc(d.format.toUpperCase())}</div><h3>${esc(d.title)}</h3><p>${esc(d.format.toLowerCase() === 'xlsx' ? `原帖与官方补充证据目录；网页当前可查 ${socialCount} 条社交原帖${officialCount ? `、${officialCount} 条官方资料` : ''}，附适用人群与证据边界。` : d.description)}</p><a class="button" href="${esc(d.url)}" download data-download="${esc(d.id)}">下载${d.format.toLowerCase()==='docx'?' Word':' Excel'}文件 <span aria-hidden="true">↓</span></a><div class="download-meta">${esc(d.format.toUpperCase())}${d.bytes ? ` · ${Math.round(d.bytes/1024)} KB` : ''}</div></article>`).join('')}</div><div class="reading-notes"><h3>这份资料，怎样使用更顺手</h3><p><strong>选导之前：</strong>先看本级培养方向，再从导师名录中选出几位，逐条核对研究内容、训练方式与当年名额。联系清单可以帮助你保留第二顺位。</p><p><strong>读学生经历时：</strong>接触身份和具体过程比笼统的好评更有用。本科课程印象、朋友转述和往届MPAcc经历，分别能回答不同问题。</p><p><strong>准备入学时：</strong>先确认校区、楼栋与本级通知，再购置用品、安排实习和核对奖助；攻略中的来源编号都能回到相应公开页面。</p><p><strong>标注说明：</strong>“未公开”指本次整理未见可靠公开信息；“待核实”指身份、阶段或时效仍有缺口。两者均不等同于该事项不存在。</p></div>`;
   }
 
   function openGuide(section) {
@@ -305,7 +319,7 @@
 
   async function boot() {
     try {
-      const response=await fetch('./data/site-data.json');
+      const response=await fetch('./data/site-data.json?v=round3');
       if(!response.ok)throw new Error('资料文件返回 '+response.status);
       const data=await response.json();
       if(!Array.isArray(data.mentors)||!Array.isArray(data.lifeChapters)||!Array.isArray(data.socialPosts))throw new Error('资料格式不完整');
@@ -321,6 +335,7 @@
       try {const saved=JSON.parse(localStorage.getItem('nau-guide-contact-list-v1')||'{}');if(saved&&typeof saved==='object'&&!Array.isArray(saved))state.saved=Object.fromEntries(Object.entries(saved).filter(([id,status])=>data.mentors.some(m=>m.id===id)&&['优先联系','备选','仅了解'].includes(status)));}catch{}
       const counts=[data.mentors.length,data.mentorCards.length,data.lifeChapters.length,data.socialPosts.length];
       $$('.hero-stats strong').forEach((s,i)=>s.textContent=counts[i]);
+      if (Array.isArray(data.officialEvidence)) $('.panel-footnote').innerHTML = `<span class="mini-cross" aria-hidden="true">+</span>另有 ${data.officialEvidence.length} 条官方资料 · 分开核验`;
       route(false);
     } catch(error) {
       app.innerHTML=emptyState('指南内容暂时未能载入','请刷新页面重试，或检查当前网络连接。','<button type="button" class="button secondary" onclick="location.reload()">重新载入</button>')+`<p class="error-details">${esc(error.message)}</p>`;
