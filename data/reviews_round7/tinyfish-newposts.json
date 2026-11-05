@@ -1,0 +1,568 @@
+{
+  "schemaVersion": 2,
+  "batch": "reviews_round7-tinyfish",
+  "readDate": "2026-11-05",
+  "status": "frozen-publishable-summary",
+  "counts": {
+    "searchQueries": 18,
+    "newXhsPosts": 0,
+    "existingXhsBodiesReRead": 6,
+    "newXhsCommentsRead": 0,
+    "newNamedMentorReviews": 0,
+    "newOfficialAlumniSource": 1
+  },
+  "searches": [
+    {
+      "group": "domain-first",
+      "query": "南审 MPAcc 导师 推荐 组会",
+      "parameters": {
+        "include_domains": "xiaohongshu.com,rednote.com"
+      },
+      "status": "fulfilled",
+      "totalResults": 0,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "domain-first",
+      "query": "南京审计大学 MPAcc 导师 实习",
+      "parameters": {
+        "include_domains": "xiaohongshu.com,rednote.com"
+      },
+      "status": "fulfilled",
+      "totalResults": 0,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "domain-first",
+      "query": "南审 会计专硕 导师 避雷",
+      "parameters": {
+        "include_domains": "xiaohongshu.com,rednote.com"
+      },
+      "status": "fulfilled",
+      "totalResults": 0,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "domain-first",
+      "query": "南审 mpacc 选导师 老师",
+      "parameters": {
+        "include_domains": "xiaohongshu.com,rednote.com"
+      },
+      "status": "fulfilled",
+      "totalResults": 0,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "domain-first",
+      "query": "南审 导师 lx xh mpacc",
+      "parameters": {
+        "include_domains": "xiaohongshu.com,rednote.com"
+      },
+      "status": "fulfilled",
+      "totalResults": 0,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "domain-first",
+      "query": "南京审计大学 mpacc 导师 小红书",
+      "parameters": {},
+      "status": "fulfilled",
+      "totalResults": 10,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "site-operator",
+      "query": "site:xiaohongshu.com 南审 导师",
+      "parameters": {},
+      "status": "fulfilled",
+      "totalResults": 0,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "site-operator",
+      "query": "site:rednote.com 南审 导师",
+      "parameters": {},
+      "status": "fulfilled",
+      "totalResults": 0,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "site-operator",
+      "query": "site:xiaohongshu.com \"南审\" \"mpacc\"",
+      "parameters": {},
+      "status": "fulfilled",
+      "totalResults": 0,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "site-operator",
+      "query": "site:xiaohongshu.com \"南京审计大学\" \"导师\"",
+      "parameters": {},
+      "status": "fulfilled",
+      "totalResults": 0,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "general",
+      "query": "南审 mpacc 导师",
+      "parameters": {},
+      "status": "fulfilled",
+      "totalResults": 10,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "general",
+      "query": "南审选导师 小红书",
+      "parameters": {},
+      "status": "fulfilled",
+      "totalResults": 10,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "general",
+      "query": "南京审计大学 导师 小红书 实习",
+      "parameters": {},
+      "status": "fulfilled",
+      "totalResults": 9,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "general",
+      "query": "南审 mpacc 组会",
+      "parameters": {},
+      "status": "fulfilled",
+      "totalResults": 9,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "phrase-exact",
+      "query": "\"南审\" \"MPAcc\" \"导师\" 小红书 笔记",
+      "parameters": {
+        "language": "zh",
+        "location": "cn"
+      },
+      "status": "fulfilled",
+      "totalResults": 5,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "phrase-exact",
+      "query": "\"南京审计大学\" \"会计专硕\" \"导师\" 小红书",
+      "parameters": {
+        "language": "zh",
+        "location": "cn"
+      },
+      "status": "fulfilled",
+      "totalResults": 10,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "phrase-exact",
+      "query": "\"南审mpacc\" \"实习\"",
+      "parameters": {
+        "language": "zh",
+        "location": "cn"
+      },
+      "status": "fulfilled",
+      "totalResults": 5,
+      "relatedNewXhsNoteCount": 0
+    },
+    {
+      "group": "phrase-exact",
+      "query": "\"南审\" \"选导师\" \"推荐\"",
+      "parameters": {
+        "language": "zh",
+        "location": "cn"
+      },
+      "status": "fulfilled",
+      "totalResults": 10,
+      "relatedNewXhsNoteCount": 0
+    }
+  ],
+  "excludedSearchHits": [
+    {
+      "url": "https://www.xiaohongshu.com/user/profile/6501de51000000001603ac71",
+      "finalUrl": "https://www.rednote.com/user/profile/6501de51000000001603ac71",
+      "title": "Students Union UCL - rednote",
+      "reason": "实际打开为不相关机构官方主页，无南审导师原帖，排除"
+    },
+    {
+      "url": "https://www.xiaohongshu.com/user/profile/65cc63c6000000000401e541?xsec_token=YBBLeOvZ0m56dqcFnMLzER40adU5jxsB658MMZ5zwqGrk=&xsec_source=app_share&xhsshare=CopyLink&appuid=663c9e530000000003030c0d&apptime=1741863088&share_id=3e69fbffc8734270b7296c29294eaab7",
+      "finalUrl": "https://www.rednote.com/user/profile/65cc63c6000000000401e541?xsec_token=YBBLeOvZ0m56dqcFnMLzER40adU5jxsB658MMZ5zwqGrk=&xsec_source=app_share&xhsshare=CopyLink&appuid=663c9e530000000003030c0d&apptime=1741863088&share_id=3e69fbffc8734270b7296c29294eaab7",
+      "title": "香港政府新聞處添馬台 - rednote",
+      "reason": "实际打开为不相关机构官方主页，无南审导师原帖，排除"
+    }
+  ],
+  "newSources": [
+    {
+      "sourceCode": "R802",
+      "title": "【MPAcc教育20周年】MPAcc筑梦之路：从学子到教育者的成长与探索——记南京审计大学2020届MPAcc校友袁璐",
+      "url": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+      "canonicalUrl": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+      "platform": "全国MPAcc教指委官网",
+      "author": "全国会计专业学位研究生教育指导委员会官网（页面发布方）；访谈对象：袁璐",
+      "date": "2025-04-14",
+      "population": "南京审计大学2020届MPAcc校友",
+      "mentorId": null,
+      "bodyRead": true,
+      "readingScope": "已读页面完整提取正文，自标题、日期、校友简介至末段；未读外链、未视觉审读配图，未读取评论。",
+      "summary": "南审2020届MPAcc校友袁璐回顾硕士研究与实践经历，校内、校外导师均未具名。",
+      "points": [
+        "双导师共同指导文献、框架、调研与写作。",
+        "政府会计学习结合跨学科课程、学术交流与行政事业单位实习调研。",
+        "2020—2024年厦大博士指导及2024年回南审任教经历，与南审硕士阶段分开。"
+      ],
+      "limits": [
+        "官方遴选的2020届历史个案，不代表全体学生体验或现行培养制度。",
+        "未给南审硕士导师姓名，不归入任一实名导师评价。",
+        "实习调研未列具体单位、岗位、名额、补贴或申请方式，不能承诺同等机会。",
+        "厦门大学博士阶段的李建发教授指导及回南审任教阶段的目标，不属于南审MPAcc学生经历。"
+      ],
+      "duplicate": false,
+      "duplicateCheck": "对sourceRegistry按规范URL、标题及袁璐姓名未发现匹配；与R801潘俊—李佳林不是同一人物或来源。"
+    }
+  ],
+  "existingPostsReRead": [
+    {
+      "id": "6826b072000000002301cd81",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6826b072000000002301cd81",
+      "url": "https://www.xiaohongshu.com/explore/6826b072000000002301cd81?xsec_token=ABXethABZoU3tPBUjw-JyDj0UNDNxipT97D9etDCOvwvM=&xsec_source=pc_search&source=web_search_result_notes",
+      "finalUrl": "https://www.rednote.com/discovery/item/6826b072000000002301cd81?xsec_token=ABXethABZoU3tPBUjw-JyDj0UNDNxipT97D9etDCOvwvM=&xsec_source=pc_search&source=web_search_result_notes",
+      "title": "南京审计大学研究生实习安排指南",
+      "author": "小羽毛学姐",
+      "originalRecordedDate": "2025-05-16",
+      "dateObserved": "5/15/2025",
+      "population": "资料整理号，未自证MPAcc亲历身份",
+      "duplicate": true,
+      "duplicateReason": "canonical noteId已存在socialPosts/sourceRegistry；本轮仅加深原来源，不计新帖、新评价或独立来源",
+      "newPost": false,
+      "mentorId": null,
+      "bodyRead": true,
+      "readingScope": "完整已提取文字正文和页面元数据已读；评论区仅显示Loading.../加载中，本轮没有任何评论可读；图URL仅提取，图像内容未视觉审读",
+      "commentsReadCount": 0,
+      "commentsState": "Loading...",
+      "summary": "重读资料整理号实习指南正文。作者按五学院描述历史实习时段，原文明确每届安排、导师计划与项目可能改变，并以实习单位正式通知为准。没有本人实际岗位、导师支持行为或实名导师评价。",
+      "newUsablePoints": [],
+      "newUsablePointsReason": "本轮正文与既有摘要一致；未读评论或图像，没有可作为新增事实发布的增量。",
+      "imageLinks": [
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/8fdac4ed913d3fbb52dbd77a7ef97f37/notes_pre_post/1040g3k031hhf465f38005n11ilp1fpqgnv65r4o!nd_dft_wgth_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        },
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/7457c6cb7a7e522ab41c7f9a83eccc81/notes_pre_post/1040g3k031hhf465f380g5n11ilp1fpqgrskchmg!nd_dft_wgth_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        },
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/d0f3ee74eb17b8ebf3b3c98194c787c1/notes_pre_post/1040g3k031hhf465f38105n11ilp1fpqgrhdgtd8!nd_dft_wgth_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        }
+      ],
+      "limits": [
+        "日期本次页面显示5/15/2025，与既有条目的2025-05-16有一天差异；保留原记录，不据此改日期。",
+        "未经学院当年文件核验，不承诺统一实习时段、单位或名额。",
+        "本轮评论未加载；不把Loading视为评论已读。",
+        "原帖配图未视觉审读，不从图片URL或缩略图名称生成内容。"
+      ]
+    },
+    {
+      "id": "67ecf7eb000000001202caae",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecf7eb000000001202caae",
+      "url": "https://www.xiaohongshu.com/explore/67ecf7eb000000001202caae?xsec_token=ABhGgw9PirLc0MBu2eKS0U-78meegPN-pZxyOfLjVNVPU=&xsec_source=pc_search&source=web_search_result_notes",
+      "finalUrl": "https://www.rednote.com/discovery/item/67ecf7eb000000001202caae?xsec_token=ABhGgw9PirLc0MBu2eKS0U-78meegPN-pZxyOfLjVNVPU=&xsec_source=pc_search&source=web_search_result_notes",
+      "title": "南审选导师｜信息分享笔记",
+      "author": "小羽毛学姐",
+      "originalRecordedDate": "编辑于 2025-04-16",
+      "dateObserved": "Edited at 4/16/2025",
+      "population": "第三方信息汇总，未自证学生亲历",
+      "duplicate": true,
+      "duplicateReason": "canonical noteId已存在socialPosts/sourceRegistry；本轮仅加深原来源，不计新帖、新评价或独立来源",
+      "newPost": false,
+      "mentorId": null,
+      "bodyRead": true,
+      "readingScope": "完整已提取文字正文和页面元数据已读；评论区仅显示Loading.../加载中，本轮没有任何评论可读；图URL仅提取，图像内容未视觉审读",
+      "commentsReadCount": 0,
+      "commentsState": "Loading...",
+      "summary": "重读历史选导信息分享正文，内容为第三方当时名额状态汇总和邀请交流，没有导师日常指导行为；不复述或采纳任何历史名额状态。",
+      "newUsablePoints": [],
+      "newUsablePointsReason": "本轮正文与既有摘要一致；未读评论或图像，没有可作为新增事实发布的增量。",
+      "imageLinks": [
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/1cbe1aa83549b640ec6e3550abb52a0a/notes_pre_post/1040g3k831fonvelmni505n11ilp1fpqgvohn5k8!nd_dft_wlteh_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        }
+      ],
+      "limits": [
+        "本次未读取评论，既有程博评论记录不在本轮重新验证范围。",
+        "本轮评论未加载；不把Loading视为评论已读。",
+        "原帖配图未视觉审读，不从图片URL或缩略图名称生成内容。"
+      ]
+    },
+    {
+      "id": "6919c257000000000d00e4f3",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6919c257000000000d00e4f3",
+      "url": "https://www.xiaohongshu.com/explore/6919c257000000000d00e4f3?xsec_token=ABgcN812oxKlJFhwQGJFj-vM0BMVKpuQRN43AtIBeNxyU=&xsec_source=pc_search&source=web_search_result_notes",
+      "finalUrl": "https://www.rednote.com/discovery/item/6919c257000000000d00e4f3?xsec_token=ABgcN812oxKlJFhwQGJFj-vM0BMVKpuQRN43AtIBeNxyU=&xsec_source=pc_search&source=web_search_result_notes",
+      "title": "考研到南审",
+      "author": "I'm OK 2.0",
+      "originalRecordedDate": "2025-11-16",
+      "dateObserved": "11/16/2025",
+      "population": "拟报考者，非已确认南审MPAcc在读",
+      "duplicate": true,
+      "duplicateReason": "canonical noteId已存在socialPosts/sourceRegistry；本轮仅加深原来源，不计新帖、新评价或独立来源",
+      "newPost": false,
+      "mentorId": null,
+      "bodyRead": true,
+      "readingScope": "完整已提取文字正文和页面元数据已读；评论区仅显示Loading.../加载中，本轮没有任何评论可读；图URL仅提取，图像内容未视觉审读",
+      "commentsReadCount": 0,
+      "commentsState": "Loading...",
+      "summary": "正文是拟报考者向在校生求建议，未提供其本人在南审读研或实习经历。",
+      "newUsablePoints": [],
+      "newUsablePointsReason": "本轮正文与既有摘要一致；未读评论或图像，没有可作为新增事实发布的增量。",
+      "imageLinks": [
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/446d61350fd9216fcd7910b06ca9a626/1040g00831our6cl5hq605q5b1v46kqujmigk7dg!nd_dft_wlteh_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        }
+      ],
+      "limits": [
+        "导师介绍工作线索来自旧评论；本次评论Loading，不重新验证也不追加。",
+        "本轮评论未加载；不把Loading视为评论已读。",
+        "原帖配图未视觉审读，不从图片URL或缩略图名称生成内容。"
+      ]
+    },
+    {
+      "id": "6aa4f4f20000000027015216",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6aa4f4f20000000027015216",
+      "url": "https://www.xiaohongshu.com/explore/6aa4f4f20000000027015216?xsec_token=ABCjidZrHiVEnC4YwC-_Hm8hESnjeYaBfWndsJ6kHHAjQ=&xsec_source=pc_search&source=web_search_result_notes",
+      "finalUrl": "https://www.rednote.com/discovery/item/6aa4f4f20000000027015216?xsec_token=ABCjidZrHiVEnC4YwC-_Hm8hESnjeYaBfWndsJ6kHHAjQ=&xsec_source=pc_search&source=web_search_result_notes",
+      "title": "Nau研2｜开学第一周碎碎念",
+      "author": "噗噜噜小熊糖",
+      "originalRecordedDate": "09-12（页面未标年份）",
+      "dateObserved": "09-12（页面未标年份）",
+      "population": "作者自称研二；本条正文未单独写MPAcc，同作者其他已读帖曾明示MPAcc",
+      "duplicate": true,
+      "duplicateReason": "canonical noteId已存在socialPosts/sourceRegistry；本轮仅加深原来源，不计新帖、新评价或独立来源",
+      "newPost": false,
+      "mentorId": null,
+      "bodyRead": true,
+      "readingScope": "完整已提取文字正文和页面元数据已读；评论区仅显示Loading.../加载中，本轮没有任何评论可读；图URL仅提取，图像内容未视觉审读",
+      "commentsReadCount": 0,
+      "commentsState": "加载中",
+      "summary": "作者自述进入研二，教师节当天开展该学期第一次组会，并计划该学期上半学期课程后出去实习；与同作者其他学期记录为同一个案。",
+      "newUsablePoints": [],
+      "newUsablePointsReason": "本轮正文与既有摘要一致；未读评论或图像，没有可作为新增事实发布的增量。",
+      "imageLinks": [
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/c4c47ba918b3c36d9aaf699160364462/notes_pre_post/1040g3k83250p1b0mjo8g5psoo3ejidufer0ftj0!nd_dft_wlteh_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        },
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/d1967889558fd32c67309626d463bb12/notes_pre_post/1040g3k83250p1b0mjo905psoo3ejidufgvcfaso!nd_dft_wlteh_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        },
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/bdb8e0046539088b0800584dcd9bceeb/notes_pre_post/1040g3k83250p1b0mjo9g5psoo3ejiduftqabcvo!nd_dft_wlteh_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        },
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/9adb922f3177342a2ebb9542b0926a1a/notes_pre_post/1040g3k83250p1b0mjoa05psoo3ejiduft8asmcg!nd_dft_wlteh_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        }
+      ],
+      "limits": [
+        "导师没有具名；不因共同作者或标签对任一导师配名。",
+        "页面只显示09-12，不推年份；8张图本轮未视觉审读。",
+        "没有实习单位、申请方式、导师是否放行或推荐岗位信息。",
+        "本轮评论未加载；不把Loading视为评论已读。",
+        "原帖配图未视觉审读，不从图片URL或缩略图名称生成内容。"
+      ]
+    },
+    {
+      "id": "6a8edcec000000001f000035",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6a8edcec000000001f000035",
+      "url": "https://www.xiaohongshu.com/explore/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+      "finalUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+      "title": "南审选课互助｜速来留课评（会计篇）",
+      "author": "小羽毛学姐",
+      "originalRecordedDate": "08-26",
+      "dateObserved": "Aug 26（页面未标年份）",
+      "population": "资料整理号的MPAcc/MAud课程互助征集",
+      "duplicate": true,
+      "duplicateReason": "canonical noteId已存在socialPosts/sourceRegistry；本轮仅加深原来源，不计新帖、新评价或独立来源",
+      "newPost": false,
+      "mentorId": null,
+      "bodyRead": true,
+      "readingScope": "完整已提取文字正文和页面元数据已读；评论区仅显示Loading.../加载中，本轮没有任何评论可读；图URL仅提取，图像内容未视觉审读",
+      "commentsReadCount": 0,
+      "commentsState": "Loading...",
+      "summary": "本轮正文是课程评价征集，列出作业量、期末考核、给分和点名等问题；具体课程评价位于未加载评论区，正文自身没有课程或导师口碑。",
+      "newUsablePoints": [],
+      "newUsablePointsReason": "本轮正文与既有摘要一致；未读评论或图像，没有可作为新增事实发布的增量。",
+      "imageLinks": [
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/c7ff1071e33096aadeb9f0c6629e5633/notes_pre_post/1040g3k0324b2m6con42g5n11ilp1fpqgcke9dp0!nd_dft_wlteh_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        },
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/87f656a115f63c0783fd6c195002abad/notes_pre_post/1040g3k0324b2m6con4305n11ilp1fpqgrvnnngo!nd_dft_wlteh_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        },
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/bfc0138c95e9af2aa95a40c0e35858ec/notes_pre_post/1040g3k0324b2m6con43g5n11ilp1fpqg859q738!nd_dft_wlteh_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        }
+      ],
+      "limits": [
+        "本轮没有读到评论，不复核旧课程评价摘要，也不新增课程评价。",
+        "3张图本轮未视觉审读；不能通过图片URL推断内容。",
+        "本轮评论未加载；不把Loading视为评论已读。",
+        "原帖配图未视觉审读，不从图片URL或缩略图名称生成内容。"
+      ]
+    },
+    {
+      "id": "6a16a3fb0000000007023990",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6a16a3fb0000000007023990",
+      "url": "https://www.xiaohongshu.com/explore/6a16a3fb0000000007023990?xsec_token=ABtJXTEDO_AzD9w2RSYHuPgQu5QDhHnts3scx-Mq492og=&xsec_source=pc_search&source=web_search_result_notes",
+      "finalUrl": "https://www.rednote.com/discovery/item/6a16a3fb0000000007023990?xsec_token=ABtJXTEDO_AzD9w2RSYHuPgQu5QDhHnts3scx-Mq492og=&xsec_source=pc_search&source=web_search_result_notes",
+      "title": "学术小渣渣的汇报日",
+      "author": "噗噜噜小熊糖",
+      "originalRecordedDate": "05-27",
+      "dateObserved": "May 27（页面未标年份）",
+      "population": "标签明示南审MPAcc；自称研究生日常",
+      "duplicate": true,
+      "duplicateReason": "canonical noteId已存在socialPosts/sourceRegistry；本轮仅加深原来源，不计新帖、新评价或独立来源",
+      "newPost": false,
+      "mentorId": null,
+      "bodyRead": true,
+      "readingScope": "完整已提取文字正文和页面元数据已读；评论区仅显示Loading.../加载中，本轮没有任何评论可读；图URL仅提取，图像内容未视觉审读",
+      "commentsReadCount": 0,
+      "commentsState": "Loading...",
+      "summary": "原文标签明示南审mpacc；作者自述赴汕头参加学术会议，以听会为主，近期忙于案例大赛。没有说是导师推荐、资助或组织，也没有具名导师。",
+      "newUsablePoints": [],
+      "newUsablePointsReason": "本轮正文与既有摘要一致；未读评论或图像，没有可作为新增事实发布的增量。",
+      "imageLinks": [
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/bb4b06c622fc0c6c90ad8b693238bd69/notes_pre_post/1040g3k8320lpo6etm2705psoo3ejiduft2voo50!nd_dft_wlteh_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        },
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/319e98308b49ad3c33baf5b31a5b6c29/notes_pre_post/1040g3k8320lpo6etm27g5psoo3ejiduf708qhl8!nd_dft_wlteh_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        },
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/e70c4f68313d0f0a06682a55dfc2ebcd/notes_pre_post/1040g3k8320lpo6etm2805psoo3ejidufch6om6o!nd_dft_wgth_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        },
+        {
+          "url": "https://sns-web-i10.rednotecdn.com/202611052352/29e565caa699c87c9fec4cae721b2c1d/notes_pre_post/1040g3k8320lpo6etm28g5psoo3ejiduf9mi5gbo!nd_dft_wlteh_webp_3",
+          "label": "原帖配图",
+          "visuallyRead": false,
+          "isScreenshot": false
+        }
+      ],
+      "limits": [
+        "会议名、报名来源、费用、导师、届别均未公开。",
+        "6张图本轮未视觉审读；不靠图片路径或日期推断年份。",
+        "本轮评论未加载；不把Loading视为评论已读。",
+        "原帖配图未视觉审读，不从图片URL或缩略图名称生成内容。"
+      ]
+    }
+  ],
+  "failedOrExcludedFetches": [
+    {
+      "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "title": "rednote - Your lifestyle guide",
+      "bodyRead": false,
+      "classification": "不可读导航壳",
+      "reason": "未带现有完整token，本次返回404，不更新旧来源读取状态。"
+    },
+    {
+      "url": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+      "title": "rednote - Your lifestyle guide",
+      "bodyRead": false,
+      "classification": "不可读导航壳",
+      "reason": "未带现有完整token，本次返回404，不更新旧来源读取状态。"
+    },
+    {
+      "url": "https://www.xiaohongshu.com/explore/6a50b7c5000000002103f3aa",
+      "title": "rednote - Your lifestyle guide",
+      "bodyRead": false,
+      "classification": "不可读导航壳",
+      "reason": "未带现有完整token，本次返回404，不更新旧来源读取状态。"
+    },
+    {
+      "url": "https://www.rednote.com/discovery/item/67ecb72b000000001e0042af",
+      "title": "rednote - Your lifestyle guide",
+      "bodyRead": false,
+      "classification": "不可读导航壳",
+      "reason": "未带现有完整token，本次返回404，不更新旧来源读取状态。"
+    },
+    {
+      "url": "https://www.rednote.com/discovery/item/69cba3e80000000028008246",
+      "title": "rednote - Your lifestyle guide",
+      "bodyRead": false,
+      "classification": "不可读导航壳",
+      "reason": "未带现有完整token，本次返回404，不更新旧来源读取状态。"
+    },
+    {
+      "url": "https://www.rednote.com/discovery/item/6a50b7c5000000002103f3aa",
+      "title": "rednote - Your lifestyle guide",
+      "bodyRead": false,
+      "classification": "不可读导航壳",
+      "reason": "未带现有完整token，本次返回404，不更新旧来源读取状态。"
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/676079452",
+      "title": "南审MPAcc经验分享",
+      "bodyRead": true,
+      "classification": "已读取但不新增",
+      "reason": "正文主要备考与跨考经验，没有导师指导评价；未完成全库叙述者去重，不新增。"
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/595507870",
+      "title": "南京审计大学MAud复试备考经验",
+      "bodyRead": true,
+      "classification": "已读取但不新增",
+      "reason": "MAud历史复试且有培训推广，无具名导师经历。"
+    }
+  ],
+  "globalLimits": [
+    "新增小红书相关原帖0，不把搜索结果snippets变为评价。",
+    "六篇旧帖正文重读不增加socialPosts帖子数、独立作者数或导师具名评价数。",
+    "本轮所有已读小红书评论区均未加载，新增评论0；既有评论记录不在本轮重新验证范围。",
+    "配图URL不等于页面截图；未视觉阅读的图片不概括文字，不伪装成评论截图。",
+    "缩写、姓氏与名单不强配，具名但仅历史名额状态不构成导师风格评价。"
+  ],
+  "publicationNote": "仅保留查询、来源元数据、原创摘要和读取范围；完整抓取记录已移出网站项目，不随公开源码发布。"
+}

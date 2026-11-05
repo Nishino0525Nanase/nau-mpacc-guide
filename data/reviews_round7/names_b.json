@@ -1,0 +1,439 @@
+{
+  "batch": "reviews-round7-b",
+  "scope": "名单后17名与总体选导/缩写检索；潘俊访谈为旁支新增发现",
+  "mentorCoverage": [
+    {
+      "id": "mentor-18",
+      "name": "李华",
+      "aliasesAlreadyKnown": [
+        "李华",
+        "lh",
+        "LH（与凌华、李慧重名缩写）"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-19",
+      "name": "徐伟",
+      "aliasesAlreadyKnown": [
+        "徐伟",
+        "xw"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-20",
+      "name": "王敬勇",
+      "aliasesAlreadyKnown": [
+        "王敬勇",
+        "wjy"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-21",
+      "name": "程博",
+      "aliasesAlreadyKnown": [
+        "程博",
+        "cb"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-22",
+      "name": "凌华",
+      "aliasesAlreadyKnown": [
+        "凌华",
+        "lh",
+        "LH（与李华、李慧重名缩写）"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-23",
+      "name": "谭志东",
+      "aliasesAlreadyKnown": [
+        "谭志东",
+        "tzd"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-24",
+      "name": "王菁华",
+      "aliasesAlreadyKnown": [
+        "王菁华",
+        "wjh"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-25",
+      "name": "蔡显军",
+      "aliasesAlreadyKnown": [
+        "蔡显军",
+        "cxj"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-26",
+      "name": "傅祥斐",
+      "aliasesAlreadyKnown": [
+        "傅祥斐",
+        "FXF"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-27",
+      "name": "王永妍",
+      "aliasesAlreadyKnown": [
+        "王永妍",
+        "WYY"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-28",
+      "name": "李仲泽",
+      "aliasesAlreadyKnown": [
+        "李仲泽",
+        "LZZ"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-29",
+      "name": "王永青",
+      "aliasesAlreadyKnown": [
+        "王永青",
+        "WYQ"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-30",
+      "name": "贺建刚",
+      "aliasesAlreadyKnown": [
+        "贺建刚",
+        "HJG"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-31",
+      "name": "王禹",
+      "aliasesAlreadyKnown": [
+        "王禹",
+        "WY"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-32",
+      "name": "李慧",
+      "aliasesAlreadyKnown": [
+        "李慧",
+        "LH"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-33",
+      "name": "陈冬华",
+      "aliasesAlreadyKnown": [
+        "陈冬华",
+        "CDH"
+      ],
+      "newAttributableSocialReviews": 0
+    },
+    {
+      "id": "mentor-34",
+      "name": "单文涛",
+      "aliasesAlreadyKnown": [
+        "单文涛",
+        "SWT",
+        "DWT"
+      ],
+      "newAttributableSocialReviews": 0
+    }
+  ],
+  "queryCount": 32,
+  "queryLog": [
+    {
+      "engine": "system2",
+      "q": "\"南审\" \"导师\" \"避雷\" \"mpacc\""
+    },
+    {
+      "engine": "system2",
+      "q": "\"南京审计大学\" \"李仲泽\" \"学生\" \"评价\""
+    },
+    {
+      "engine": "system2",
+      "q": "\"南审\" \"王永妍\" \"导师\""
+    },
+    {
+      "engine": "system2",
+      "q": "\"南审\" \"傅祥斐\" \"导师\" \"小红书\""
+    },
+    {
+      "engine": "system1",
+      "q": "site:xiaohongshu.com \"南审\" \"导师\""
+    },
+    {
+      "engine": "system1",
+      "q": "\"南审\" \"导师\" \"避雷\""
+    },
+    {
+      "engine": "system1",
+      "q": "\"南京审计大学\" \"李仲泽\" \"评价\""
+    },
+    {
+      "engine": "system1",
+      "q": "南审 mpacc 导师求推荐 小红书"
+    },
+    {
+      "engine": "system1",
+      "q": "南审 会计专硕 导师 学生 评价 贴吧 知乎"
+    },
+    {
+      "engine": "system1",
+      "q": "南京审计大学 导师 王敬勇 程博 凌华 学生"
+    },
+    {
+      "engine": "system2",
+      "q": "site:tieba.baidu.com 南京审计大学 会计 导师 推荐"
+    },
+    {
+      "engine": "system2",
+      "q": "site:zhihu.com 南京审计大学 会计 导师 评价"
+    },
+    {
+      "engine": "system2",
+      "q": "site:bilibili.com 南京审计大学 mpacc 导师"
+    },
+    {
+      "engine": "system2",
+      "q": "\"南审\" \"cb\" \"导师\""
+    },
+    {
+      "engine": "system1",
+      "q": "\"南审\" \"徐伟\" 学生 老师"
+    },
+    {
+      "engine": "system1",
+      "q": "\"南审\" \"谭志东\" 学生 老师"
+    },
+    {
+      "engine": "system1",
+      "q": "\"南审\" \"蔡显军\" \"推荐\""
+    },
+    {
+      "engine": "system1",
+      "q": "\"王菁华\" \"老师\" -site:nau.edu.cn -site:zucaitz.com"
+    },
+    {
+      "engine": "system1",
+      "q": "\"傅祥斐\" \"老师\" -site:nau.edu.cn -site:zucaitz.com"
+    },
+    {
+      "engine": "system1",
+      "q": "\"王永妍\" \"老师\" -site:nau.edu.cn -site:zucaitz.com"
+    },
+    {
+      "engine": "system1",
+      "q": "\"南审\" \"王永青\" \"导师\" \"学生\""
+    },
+    {
+      "engine": "system1",
+      "q": "\"南京审计大学\" \"贺建刚\" \"怎么样\""
+    },
+    {
+      "engine": "system1",
+      "q": "\"南审\" \"单文涛\" \"老师\""
+    },
+    {
+      "engine": "system1",
+      "q": "\"感谢\" \"贺建刚\" \"导师\""
+    },
+    {
+      "engine": "system1",
+      "q": "\"感谢\" \"王永青\" \"导师\""
+    },
+    {
+      "engine": "system1",
+      "q": "\"感谢\" \"单文涛\" \"导师\""
+    },
+    {
+      "engine": "system1",
+      "q": "\"南京审计大学\" \"李华\" \"评价\""
+    },
+    {
+      "engine": "system1",
+      "q": "\"南京审计大学\" \"王禹\" \"老师\" \"学生\""
+    },
+    {
+      "engine": "system1",
+      "q": "\"南京审计大学\" \"李慧\" \"老师\" \"学生\""
+    },
+    {
+      "engine": "system1",
+      "q": "\"陈冬华\" \"导师\" \"感谢\" 学生"
+    },
+    {
+      "engine": "system1",
+      "q": "\"南京审计大学\" \"王敬勇\" \"感谢\""
+    },
+    {
+      "engine": "system1",
+      "q": "\"李仲泽\" \"感谢\" \"老师\""
+    }
+  ],
+  "sources": [
+    {
+      "id": "round7b-univs-lijialin-2022",
+      "changeType": "new",
+      "title": "他们起航！下一站，读博！",
+      "url": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "canonicalUrl": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "date": "2022-12-22",
+      "author": "南审青年／南京审计大学；整理刘琦，责任编辑四月；学生自述者李佳林",
+      "platform": "中国大学生在线校园号·南审青年",
+      "sourceKind": "学校选编学生访谈（不是独立社媒帖）",
+      "content_read_scope": "web open实际读取整篇文字正文L18–133，相关学生段为L103–113；未逐图解读原图，无社媒评论需要展开，页面评论计数0。",
+      "webRefs": [
+        "turn240search10",
+        "turn242view0"
+      ],
+      "summary": "2019级会计学硕士李佳林在学校选编访谈中回顾，导师潘俊引导其接触政府会计研究。文中另介绍其读研期间参加会议、科研项目及随后读博的个人经历；这些结果不能外推为导师承诺或所有学生的常态。",
+      "mentorId": "mentor-11",
+      "mentorName": "潘俊",
+      "alias": null,
+      "attribution": {
+        "status": "confirmed",
+        "basis": "L108直接写导师潘俊，L112图片说明亦写李佳林和导师潘俊；与学校会计研究语境一致。"
+      },
+      "degree": "2019级会计学硕士（文章用语；未单列专业代码或MPAcc/1253字样，不当作已确认MPAcc个案）",
+      "firsthand": true,
+      "firsthandBasis": "学生段落以本人回顾形式说明进入政府会计研究的导师引导。",
+      "recommendationPoints": [
+        {
+          "text": "有一名具名会计学硕士学生回顾导师对政府会计研究入门的引导。若自己希望走同类研究方向，可据此进一步询问近两届指导内容。",
+          "basis": "L103–113；前一句为报道中的个人经历，后一句为据方向匹配作出的核实建议，不是口碑排名。"
+        }
+      ],
+      "concerns": [],
+      "limits": [
+        "学校精选报道存在选材偏差，并非未筛选的社媒评价。",
+        "2019级、2022年发布的历史个案；不能证明2026/2027指导频率、反馈速度、实习自由或招生名额。",
+        "文章用语是会计学硕士，未写MPAcc/1253，不扩大为会计专硕直系亲历。",
+        "科研项目、论文、升博是学生个人经历，不能推出导师对所有学生的培养效果。"
+      ],
+      "verificationQuestions": [
+        "近两届MPAcc是否仍有政府会计研究方向的学生，通常如何入门选题？",
+        "在实习期间，论文里程碑、返稿周期及阶段沟通怎样安排？"
+      ],
+      "publicQuotation": null,
+      "screenshots": [],
+      "duplicateCheck": "已对现有sourceRegistry全字段及所有mentors内容搜索1824163／他们起航／李佳林，未发现；不是既有来源的改写。"
+    }
+  ],
+  "updates": [],
+  "accessFailures": [
+    {
+      "existingSourceId": "X01",
+      "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "attempt": "web open既有带xsec_token完整URL",
+      "result": "not accessible via this tool",
+      "ref": "turn250view0",
+      "readThisRound": false,
+      "countsAsNewSource": false
+    },
+    {
+      "existingSourceId": "X02",
+      "url": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+      "attempt": "web open既有带xsec_token完整URL",
+      "result": "not accessible via this tool",
+      "ref": "turn250view1",
+      "readThisRound": false,
+      "countsAsNewSource": false
+    }
+  ],
+  "ambiguousAliases": [
+    {
+      "alias": "LH/lh",
+      "possibleMentors": [
+        "李华",
+        "凌华",
+        "李慧"
+      ],
+      "action": "本轮不据缩写或名单唯一性归名"
+    },
+    {
+      "alias": "WY/wy",
+      "possibleMentors": [
+        "王禹",
+        "王烨"
+      ],
+      "action": "单缩写不归名；只有完整姓名和上下文可确认"
+    }
+  ],
+  "excludedResults": [
+    {
+      "type": "官方履历、讲座、赛事简讯",
+      "examples": [
+        "李仲泽教师页",
+        "王永妍教师页",
+        "傅祥斐教师页",
+        "贺建刚新生讲座",
+        "单文涛指导案例赛获奖"
+      ],
+      "reason": "不是学生个人评价，不增加推荐/避雷或评论记录"
+    },
+    {
+      "type": "同名异人",
+      "examples": [
+        "青岛理工大学马克思主义学院王菁华",
+        "大连理工大学机械工程学院王永青",
+        "西南财经大学天府学院指导老师李慧",
+        "上海财经大学导师贺小刚"
+      ],
+      "reason": "不归属本项目导师"
+    },
+    {
+      "type": "被篡改/博彩镜像",
+      "examples": [
+        "www.zucaitz.com",
+        "www.jnsport.net",
+        "www.alewahouse.com",
+        "www.jynsvc.com"
+      ],
+      "reason": "不采信，不引用其改写学校名称的内容"
+    },
+    {
+      "type": "复试/择校培训与泛院校宣传",
+      "examples": [
+        "B站BV1CvmMB7EH3复试内容解析",
+        "b.460.net.cn招生宣传"
+      ],
+      "reason": "没有可归属的导师本人指导经历，不充作个人评价"
+    }
+  ],
+  "counts": {
+    "searchedMentors": 17,
+    "newReadSources": 1,
+    "newIndependentSocialSources": 0,
+    "newStudentExperienceRecords": 1,
+    "newMpaccGuidanceReviews": 0,
+    "deepenedExistingSources": 0,
+    "newUnopenedSocialLeads": 0,
+    "existingSourceOpenFailures": 2,
+    "screenshotsCreated": 0
+  },
+  "notes": [
+    "两引擎搜索未取得后17名新的可读社媒评价，不据此推断这些老师没有评价。",
+    "新发现为前17名潘俊的具名学生访谈，单列而不冒充XHS或MPAcc。",
+    "截图代理已另向root报告浏览器transport故障，本文件不将其历史阅读记录视作本轮新读。"
+  ]
+}

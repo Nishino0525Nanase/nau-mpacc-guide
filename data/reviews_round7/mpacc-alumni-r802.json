@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "sourceCode": "R802",
+  "title": "【MPAcc教育20周年】MPAcc筑梦之路：从学子到教育者的成长与探索——记南京审计大学2020届MPAcc校友袁璐",
+  "url": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+  "canonicalUrl": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+  "platform": "全国MPAcc教指委官网",
+  "author": "全国会计专业学位研究生教育指导委员会官网（页面发布方）；访谈对象：袁璐",
+  "date": "2025-04-14",
+  "dateSource": "已读取页面正文日期；抓取元数据未提供published_date",
+  "population": "南京审计大学2020届MPAcc校友",
+  "mentorId": null,
+  "bodyRead": true,
+  "readingScope": "已读页面完整提取正文，自标题、日期、校友简介至末段；未读外链、未视觉审读配图，未读取评论。",
+  "summary": "南审2020届MPAcc校友袁璐回顾硕士研究与实践经历，校内、校外导师均未具名。",
+  "points": [
+    "双导师共同指导文献、框架、调研与写作。",
+    "政府会计学习结合跨学科课程、学术交流与行政事业单位实习调研。",
+    "2020—2024年厦大博士指导及2024年回南审任教经历，与南审硕士阶段分开。"
+  ],
+  "summaryAndPointsCharacters": 129,
+  "limits": [
+    "官方遴选的2020届历史个案，不代表全体学生体验或现行培养制度。",
+    "未给南审硕士导师姓名，不归入任一实名导师评价。",
+    "实习调研未列具体单位、岗位、名额、补贴或申请方式，不能承诺同等机会。",
+    "厦门大学博士阶段的李建发教授指导及回南审任教阶段的目标，不属于南审MPAcc学生经历。"
+  ],
+  "questions": [
+    "本级校内、校外导师分别负责哪些任务，如何联系及反馈？",
+    "政府会计方向有哪些可申请的实习调研机会，是否与论文选题衔接？",
+    "跨学科课程、实地调研及交流活动如何计入培养要求？"
+  ],
+  "duplicate": false,
+  "duplicateCheck": "对sourceRegistry按规范URL、标题及袁璐姓名未发现匹配；与R801潘俊—李佳林不是同一人物或来源。",
+  "recommendedPlacement": {
+    "chapterId": "life-08",
+    "chapterTitle": "第八章 课程论文和实习怎样衔接",
+    "position": "接在“标签明确MPAcc的作者亲述赴汕头听学术会议”段落之后、“实习先落实认定与证明”小标题之前；当前dist/data/site-data.json为blocks[7]之后。",
+    "appendBlock": {
+      "type": "p",
+      "text": "南审2020届MPAcc校友袁璐回顾硕士研究与实践经历，校内、校外导师均未具名。双导师共同指导文献、框架、调研与写作。 政府会计学习结合跨学科课程、学术交流与行政事业单位实习调研。 这是官方校友访谈中的历史个案，南审硕士导师未具名；不代表当届人人获得相同实践机会。厦门大学博士指导和回南审任教经历不并入本段。[R802]",
+      "sourceCodes": [
+        "R802"
+      ],
+      "expansionId": "round7-mpacc-alumni-yuanlu",
+      "expansionBatch": "reviews-round7"
+    },
+    "sourceIndexChapterId": "life-12",
+    "sourceIndexBlock": {
+      "type": "source",
+      "text": "[R802] MPAcc筑梦之路：南京审计大学2020届MPAcc校友袁璐  2025-04-14",
+      "url": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+      "sourceCodes": [
+        "R802"
+      ]
+    }
+  }
+}

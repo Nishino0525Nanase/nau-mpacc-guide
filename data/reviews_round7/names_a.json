@@ -1,0 +1,347 @@
+{
+  "batch": "reviews-round7-web-names-a",
+  "scope": "名录前17名；只做公开web搜索/open，不使用浏览器或截图，不变更网站",
+  "queries": [
+    "site:xiaohongshu.com 南京审计大学 MPAcc 导师 推荐 避雷",
+    "site:xiaohongshu.com 南审 导师 实习 论文",
+    "\"南审\" \"温素彬\" \"导师\" 学生",
+    "\"南审\" \"导师\" \"避雷\"",
+    "\"南京审计大学\" \"导师\" \"实习\" 小红书",
+    "\"南审mpacc导师求推荐\"",
+    "\"南审\" \"崔秀梅\" 评价",
+    "\"董必荣\" \"学生\" 评价 导师",
+    "\"马德林\" \"老师\" 学生",
+    "\"黄中生\" \"老师\" 推荐",
+    "\"南审\" \"王烨\" 评价",
+    "\"南京审计大学\" \"张力\" 学生 评价",
+    "\"许汉友\" 导师 学生 感谢",
+    "\"南审\" \"高凤莲\" 学生 老师",
+    "\"刘国城\" \"导师\" 学生 感谢",
+    "\"潘俊\" \"导师\" \"南审\" 学生 评价",
+    "\"南审\" 导师 推荐 -site:nau.edu.cn -site:sohu.com -site:baike.baidu.com",
+    "\"南审\" \"导师\" 小红书 -site:nau.edu.cn",
+    "\"南京审计大学\" \"导师\" \"知乎\"",
+    "\"章之旺\" 导师 学生 评价",
+    "\"张兴亮\" \"老师\" \"南审\"",
+    "\"叶邦银\" \"学生\" 感谢 导师",
+    "\"南审\" \"罗琰\" 评价",
+    "\"南审\" \"吴青川\" 学生",
+    "\"南审\" \"刘静\" 导师 评价",
+    "\"南审\" \"WSB\" 导师",
+    "\"南审\" \"CXM\" 导师",
+    "\"南审\" \"GFL\" 导师",
+    "site:zhihu.com \"南京审计大学\" \"导师\"",
+    "site:tieba.baidu.com \"南审\" \"导师\"",
+    "site:bilibili.com \"南京审计大学\" \"导师\"",
+    "site:xiaohongshu.com/explore \"会计专硕\" \"南审\"",
+    "\"南京审计大学\" \"温素彬\" \"感谢\"",
+    "\"高凤莲\" \"导师\" \"感谢\"",
+    "\"刘国城\" \"硕士\" \"老师\"",
+    "\"南审\" (\"DBR\" OR \"MDL\" OR \"HZS\" OR \"ZL\") 导师",
+    "\"南审\" (\"WY\" OR \"XHY\" OR \"LGC\" OR \"PJ\") 导师",
+    "\"南审\" (\"ZZW\" OR \"ZXL\" OR \"YBY\") 导师",
+    "\"南审\" (\"LY\" OR \"WQC\" OR \"LJ\") 导师"
+  ],
+  "queryCount": 39,
+  "coverage": [
+    {
+      "mentorId": "mentor-01",
+      "name": "董必荣",
+      "aliases": [
+        "董必荣",
+        "DBR",
+        "d b r",
+        "董"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-02",
+      "name": "温素彬",
+      "aliases": [
+        "温素彬",
+        "WSB"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-03",
+      "name": "王烨",
+      "aliases": [
+        "王烨",
+        "WY",
+        "王禹（排歧）"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-04",
+      "name": "张力",
+      "aliases": [
+        "张力",
+        "ZL"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-05",
+      "name": "马德林",
+      "aliases": [
+        "马德林",
+        "MDL"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-06",
+      "name": "黄中生",
+      "aliases": [
+        "黄中生",
+        "HZS",
+        "黄老师（未归属）"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-07",
+      "name": "崔秀梅",
+      "aliases": [
+        "崔秀梅",
+        "CXM",
+        "崔老师（未归属）"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-08",
+      "name": "许汉友",
+      "aliases": [
+        "许汉友",
+        "XHY",
+        "许汉 y"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-09",
+      "name": "高凤莲",
+      "aliases": [
+        "高凤莲",
+        "GFL"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-10",
+      "name": "刘国城",
+      "aliases": [
+        "LGC"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-11",
+      "name": "潘俊",
+      "aliases": [
+        "PJ"
+      ],
+      "newAttributableStudentReviewFound": true,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-12",
+      "name": "章之旺",
+      "aliases": [
+        "ZZW"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-13",
+      "name": "张兴亮",
+      "aliases": [
+        "ZXL"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-14",
+      "name": "叶邦银",
+      "aliases": [
+        "YBY"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-15",
+      "name": "罗琰",
+      "aliases": [
+        "LY"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-16",
+      "name": "吴青川",
+      "aliases": [
+        "WQC"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    },
+    {
+      "mentorId": "mentor-17",
+      "name": "刘静",
+      "aliases": [
+        "LJ"
+      ],
+      "newAttributableStudentReviewFound": false,
+      "newXhsSourceFound": false
+    }
+  ],
+  "sources": [
+    {
+      "candidateId": "R7-A-01",
+      "suggestedSourceCode": null,
+      "title": "他们起航！下一站，读博！",
+      "url": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "canonicalUrl": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "date": "2022-12-22",
+      "author": "页面原创署名南京审计大学；整理刘琦；责任编辑四月；校园号为南审青年",
+      "platform": "中国大学生在线·南审青年校园号",
+      "sourceKind": "institutional-student-interview",
+      "content_read_scope": "web open实际读取网页全部文字L0—193，重点李佳林L103—113及署名L123—133；未逐张查看或下载图片；页面评论计数为0。",
+      "read": true,
+      "readThisRound": true,
+      "searchRef": "turn235search8",
+      "readRef": "turn247view0",
+      "readLines": "L103—113",
+      "summary": "具名受访者李佳林回顾在潘俊引导下接触政府会计研究；这是校园号精选访谈中的个人学习体验。",
+      "attribution": {
+        "status": "confirmed",
+        "mentorId": "mentor-11",
+        "mentorName": "潘俊",
+        "reason": "李佳林段落明确写导师潘俊，紧接其本人政府会计研究体验；页面有同名图注。"
+      },
+      "mentorId": "mentor-11",
+      "mentorName": "潘俊",
+      "degree": "会计学硕士（原文，未确认MPAcc）",
+      "degreeKind": "unspecified",
+      "year": "2019级；报道2022年发布",
+      "firsthand": true,
+      "narrator": "李佳林",
+      "relationship": "具名硕士受访者，正文及图注明确导师为潘俊",
+      "coverageStatus": "guidance_unspecified",
+      "review": {
+        "id": "r7a-panjun-lijialin-2022",
+        "polarity": "positive",
+        "text": "李佳林自述由导师引导进入政府会计领域，并在研究中逐渐确定兴趣。",
+        "specifics": [
+          "受访者将自己初次接触政府会计研究与潘俊的引导联系起来。",
+          "她回顾硕士阶段曾经历数据不显著、理论解释受阻，并提到同学分享陪伴与师长熏陶；这一段没有把每次帮助具体归给某位老师。"
+        ],
+        "recommendationPoints": [
+          {
+            "text": "对政府会计方向感兴趣者，可据此询问师门的入门选题和文献训练安排。",
+            "type": "editorial-question-inferred-from-student-experience"
+          }
+        ],
+        "concerns": [],
+        "limits": [
+          "校园号是学校精选的正面访谈，不是独立抽样的完整评价。",
+          "原文只写会计学硕士研究生，未给MPAcc或1253；不得列为已确认MPAcc指导经历。",
+          "未说明导师反馈间隔、组会频次、修改要求、事务所实习许可或推荐名额。",
+          "文章整体提到毕业生进入德勤、普华永道，不是李佳林个人的实习/就业经历，不能归给潘俊。",
+          "个人读博与发表成果不构成导师保证，也不能推出当前师门条件。"
+        ],
+        "verificationQuestions": [
+          "目前是否仍以政府会计为主，MPAcc入门文献和案例任务如何安排？",
+          "若研二参加四大/国内所忙季，论文和组会如何协调？",
+          "每轮改稿的大致反馈周期与实际负责反馈者是谁？"
+        ]
+      },
+      "deduplication": {
+        "exactOrCanonicalUrlAlreadyInRegistry": false,
+        "narratorNameAlreadyInRegistry": false,
+        "eventIdentityCheck": "基线潘俊个人评价为2025孙昊晨访谈；本条为2019级李佳林，人物与报道不同。"
+      }
+    }
+  ],
+  "existingSourcesReread": [
+    {
+      "existingSourceId": "R305",
+      "title": "许汉友立德树人优秀导师事迹介绍",
+      "url": "https://nau.edu.cn/2020/0711/c5729a66714/page.htm",
+      "readRef": "turn234view0",
+      "content_read_scope": "网页文字L75—117实际重读；未逐张查看图片。",
+      "newSource": false,
+      "newPersonalReview": false,
+      "substantiveNewInformation": false,
+      "note": "学期规划、每周师生会、每周同门研讨和陈茜实习论文联动已在基线R305，不重复计数。"
+    },
+    {
+      "existingSourceId": "R701",
+      "title": "6人签约华为，2022届南审人棒！",
+      "url": "https://www.sohu.com/a/500320907_769713",
+      "readRef": "turn247view1",
+      "content_read_scope": "网页文字L0—99实际重读，重点朱安琪L71—89。",
+      "newSource": false,
+      "newPersonalReview": false,
+      "substantiveNewInformation": false,
+      "note": "刘国城具名学生的跨专业补基础、项目及定期组会已记入基线；届/级和学硕/专硕疑点也已保留，不重复扩增。"
+    }
+  ],
+  "unreadRelevantNewLeads": [],
+  "filteredOut": [
+    {
+      "category": "official-profile-or-event-only",
+      "note": "履历、获奖、访问企业、招生宣讲和课程活动不算学生个人评价；未用这些凑新增。"
+    },
+    {
+      "category": "offtopic-or-commercial",
+      "urls": [
+        "https://www.bilibili.com/video/BV1CD421M71F/",
+        "https://www.bilibili.com/read/cv43761171/"
+      ],
+      "note": "前者作者昵称有导师但视频是学校梗，不是导师评价；后者是留学中介广告，不作口碑证据。"
+    },
+    {
+      "category": "untrusted-cloned-pages",
+      "domains": [
+        "wfaozh.com",
+        "zucaitz.com",
+        "capesq.com",
+        "jynsvc.com"
+      ],
+      "note": "检索出现仿官方内容及博彩品牌污染页面；全部排除，不按学校原站或独立学生反馈使用。"
+    }
+  ],
+  "counts": {
+    "newSources": 1,
+    "newPersonalReviewRecords": 1,
+    "newXhsSources": 0,
+    "oldSourcesActuallyReread": 2,
+    "oldSourcesWithSubstantiveNewInformation": 0,
+    "unreadRelevantNewLeads": 0
+  },
+  "limits": [
+    "公开搜索对小红书索引覆盖弱，不得把未检出等同没有评价。",
+    "没有新获取XHS原帖URL，需由独占浏览器的代理站内搜索/截图。",
+    "缩写查询只作找帖线索，未将任何缩写映射为实名负面评价。",
+    "所有查询均实际提交，OR缩写组合结果明显无关，不声称穷尽站内评价。"
+  ]
+}

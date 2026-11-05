@@ -23,6 +23,46 @@
   const validUrl = value => { try { const url = new URL(value, window.location.href); return ['http:', 'https:', 'mailto:', 'tel:'].includes(url.protocol) ? url.href : ''; } catch { return ''; } };
   const external = (url, label, className = '') => { const safe = validUrl(url); return safe ? `<a href="${esc(safe)}" target="_blank" rel="noopener noreferrer"${className ? ` class="${className}"` : ''}>${label}</a>` : label; };
   const source = code => state.data.sourceRegistry?.[code];
+  const screenshotPath = value => typeof value === 'string' && /^\.\/evidence\/xhs\/[A-Za-z0-9][A-Za-z0-9_-]{0,160}\.(?:png|jpe?g|webp)$/i.test(value) ? value : '';
+  const screenshotSource = value => {
+    if (typeof value !== 'string' || !/^https?:\/\//i.test(value)) return '';
+    try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol) && !url.username && !url.password ? url.href : ''; } catch { return ''; }
+  };
+
+  function screenshotItems(items, defaultSourceUrl = '') {
+    const seen = new Set();
+    return array(items).filter(item => {
+      if (!item || typeof item !== 'object' || !screenshotPath(item.src) || seen.has(item.src)) return false;
+      seen.add(item.src);
+      return true;
+    }).map(item => ({...item, src:screenshotPath(item.src), sourceUrl:screenshotSource(item.sourceUrl) || screenshotSource(defaultSourceUrl)}));
+  }
+
+  function postScreenshots(post) {
+    const codes = [...new Set([...array(post.sourceIds), ...array(state.postCodes[post.id])])];
+    return screenshotItems([...array(post.screenshots), ...codes.flatMap(code => array(source(code)?.screenshots))], post.url || post.canonicalUrl);
+  }
+
+  function screenshotsHtml(items, defaultSourceUrl = '') {
+    const shots = screenshotItems(items, defaultSourceUrl);
+    if (!shots.length) return '';
+    const dimension = (value, fallback) => Number.isInteger(value) && value >= 1 && value <= 16000 ? value : fallback;
+    return `<section class="evidence-screenshots" aria-label="原帖与评论截图"><div class="evidence-screenshots-heading"><h4>原帖与评论截图</h4><span>${shots.length} 张 · 点图查看原图</span></div><div class="evidence-screenshots-grid">${shots.map((item, index) => {
+      const caption = textOf(item.caption || `截图 ${index + 1}`);
+      const scope = array(item.scope).map(textOf).filter(Boolean).join('；') || '仅保留画面中可见的内容，未展示部分仍需打开原帖核对。';
+      return `<figure class="evidence-shot"><div class="evidence-shot-media"><a class="evidence-shot-open" href="${esc(item.src)}" target="_blank" rel="noopener noreferrer" aria-label="${esc('查看截图原图：' + caption)}"><img class="evidence-shot-thumb" src="${esc(item.src)}" alt="${esc(item.alt || caption)}" width="${dimension(item.width, 1200)}" height="${dimension(item.height, 900)}" loading="lazy" decoding="async" data-evidence-shot></a><span class="evidence-shot-fallback" hidden>截图暂时无法载入，请打开下方原帖核对。</span></div><figcaption><strong>${esc(caption)}</strong><p><span>截图范围：</span>${esc(scope)}</p><div class="evidence-shot-links"><a href="${esc(item.src)}" target="_blank" rel="noopener noreferrer">查看原图 ↗</a>${item.sourceUrl ? external(item.sourceUrl, '打开原帖 ↗') : ''}</div></figcaption></figure>`;
+    }).join('')}</div></section>`;
+  }
+
+  document.addEventListener('error', event => {
+    const image = event.target;
+    if (!image?.matches?.('img[data-evidence-shot]')) return;
+    const media = image.closest('.evidence-shot-media');
+    const link = media?.querySelector('.evidence-shot-open');
+    const fallback = media?.querySelector('.evidence-shot-fallback');
+    if (link) link.hidden = true;
+    if (fallback) fallback.hidden = false;
+  }, true);
   const directionName = id => state.data.directions.find(d => d.id === id)?.label || id;
   const shortDirection = id => ({ G1: '智能会计与智能财务', G2: '管理会计与内部控制', G3: '资本市场与财务管理', G4: '政府会计与国家治理', G5: '注会审计与财会监督', G6: '大数据审计与会计智能化' }[id] || directionName(id));
   const isSaved = id => Object.prototype.hasOwnProperty.call(state.saved, id);
@@ -213,7 +253,7 @@
     const tone = {positive:'正面体验',negative:'需重视的具体体验',mixed:'体验有利弊',neutral:'经历描述'}[item.polarity] || '经历描述';
     const identity = [item.degree || '专业／学位未说明',item.year ? `年级／经历年份：${textOf(item.year)}` : '年级／经历年份未说明',item.relationship || '与老师的接触关系未说明'];
     const codes = array(item.sourceIds).filter(code => typeof code === 'string' && source(code));
-    return `<details class="student-review-record${compact ? ' compact' : ''}"><summary><span>${esc(experience)} · ${esc(tone)}</span><small>${esc(item.narrator || '评论者未记录')} · ${esc(item.date || '日期未显示')}</small></summary><div class="student-review-meta"><span>${esc(voice)}</span><p>${identity.map(esc).join(' · ')}</p>${firsthandScope ? `<p class="review-experience-scope"><strong>本人亲历范围：</strong>${inline(firsthandScope)}</p>` : ''}${hearsayParts ? `<p class="review-experience-scope"><strong>转述／朋友经历的部分：</strong>${inline(hearsayParts)}</p>` : ''}</div><p>${inline(item.text || item.summary || '')}</p>${array(item.specifics).length ? `<ul class="tip-list">${array(item.specifics).map(value => `<li>${inline(value)}</li>`).join('')}</ul>` : ''}<p class="review-attribution"><strong>归属依据：</strong>${item.attribution?.alias ? `原帖写法 ${esc(item.attribution.alias)}；` : ''}${inline(item.attribution?.reason || '原始材料明确指向这位老师。')}</p><p class="evidence-limit"><strong>适用边界：</strong>${inline(limits || '仅限记录中的具体身份、时间与经历，其他情况需另行核实。')}</p>${readingScope ? `<details class="review-reading-scope"><summary>实际阅读范围</summary><p>${inline(readingScope)}</p></details>` : ''}<div class="source-actions">${item.sourceUrl ? external(item.sourceUrl, esc(item.sourceTitle || '打开评价原始来源') + ' ↗') : ''}${codes.length ? inline('[' + codes.join('、') + ']') : ''}</div></details>`;
+    return `<details class="student-review-record${compact ? ' compact' : ''}"><summary><span>${esc(experience)} · ${esc(tone)}</span><small>${esc(item.narrator || '评论者未记录')} · ${esc(item.date || '日期未显示')}</small></summary><div class="student-review-meta"><span>${esc(voice)}</span><p>${identity.map(esc).join(' · ')}</p>${firsthandScope ? `<p class="review-experience-scope"><strong>本人亲历范围：</strong>${inline(firsthandScope)}</p>` : ''}${hearsayParts ? `<p class="review-experience-scope"><strong>转述／朋友经历的部分：</strong>${inline(hearsayParts)}</p>` : ''}</div><p>${inline(item.text || item.summary || '')}</p>${array(item.specifics).length ? `<ul class="tip-list">${array(item.specifics).map(value => `<li>${inline(value)}</li>`).join('')}</ul>` : ''}<p class="review-attribution"><strong>归属依据：</strong>${item.attribution?.alias ? `原帖写法 ${esc(item.attribution.alias)}；` : ''}${inline(item.attribution?.reason || '原始材料明确指向这位老师。')}</p><p class="evidence-limit"><strong>适用边界：</strong>${inline(limits || '仅限记录中的具体身份、时间与经历，其他情况需另行核实。')}</p>${readingScope ? `<details class="review-reading-scope"><summary>实际阅读范围</summary><p>${inline(readingScope)}</p></details>` : ''}${screenshotsHtml(item.screenshots, item.sourceUrl)}<div class="source-actions">${item.sourceUrl ? external(item.sourceUrl, esc(item.sourceTitle || '打开评价原始来源') + ' ↗') : ''}${codes.length ? inline('[' + codes.join('、') + ']') : ''}</div></details>`;
   }
 
   function studentReviewSection(mentor, compact = false) {
@@ -443,7 +483,8 @@
   }
 
   function postCard(p) {
-    return `<article class="post-card"><div class="post-topline"><span class="post-platform">${esc(p.platform)} / ${esc(p.topic)}</span><span class="post-codes">${esc(socialCodes(p))}</span></div><h3 class="post-title">${esc(p.title)}</h3><div class="post-byline">${esc(p.author || '作者未记录')} · ${esc(p.date || '日期未显示')}</div><p class="post-summary">${esc(p.summary || '本条为检索筛选记录，详见阅读与采用边界。')}</p><div class="tags"><span class="tag${p.category.includes('排除') || p.screenedOnly ? ' secondary' : ' warm'}">${esc(p.category)}</span></div><div class="post-population">接触身份：${esc(p.population || '未说明')}${p.campus && p.campus !== '未说明' ? ` · ${esc(p.campus)}` : ''}</div><div class="post-actions"><button type="button" data-action="post" data-id="${esc(p.id)}">展开摘记与评论 <span aria-hidden="true">↗</span><span class="sr-only">：${esc(p.title)}</span></button>${external(p.url || p.canonicalUrl, '打开原帖 ↗')}</div></article>`;
+    const shots = postScreenshots(p);
+    return `<article class="post-card"><div class="post-topline"><span class="post-platform">${esc(p.platform)} / ${esc(p.topic)}</span><span class="post-codes">${esc(socialCodes(p))}</span></div><h3 class="post-title">${esc(p.title)}</h3><div class="post-byline">${esc(p.author || '作者未记录')} · ${esc(p.date || '日期未显示')}</div><p class="post-summary">${esc(p.summary || '本条为检索筛选记录，详见阅读与采用边界。')}</p><div class="tags"><span class="tag${p.category.includes('排除') || p.screenedOnly ? ' secondary' : ' warm'}">${esc(p.category)}</span></div><div class="post-population">接触身份：${esc(p.population || '未说明')}${p.campus && p.campus !== '未说明' ? ` · ${esc(p.campus)}` : ''}</div>${shots.length ? `<p class="post-shot-count">附 ${shots.length} 张原帖／评论截图</p>` : ''}<div class="post-actions"><button type="button" data-action="post" data-id="${esc(p.id)}">${shots.length ? '展开截图与摘记' : '展开摘记与评论'} <span aria-hidden="true">↗</span><span class="sr-only">：${esc(p.title)}</span></button>${external(p.url || p.canonicalUrl, '打开原帖 ↗')}</div></article>`;
   }
 
   function renderPostResults() {
@@ -488,7 +529,7 @@
     const p = state.data.socialPosts.find(p => p.id === id);
     if (!p) return;
     const comments = array(p.comments);
-    openDialog('原帖摘记 / ' + socialCodes(p), `<div class="dialog-heading"><div><h2 id="dialog-title">${esc(p.title)}</h2><div class="dialog-subtitle">${esc(p.platform)} · ${esc(p.author || '作者未记录')} · ${esc(p.date || '日期未显示')}</div></div></div><div class="tags"><span class="tag warm">${esc(p.category)}</span><span class="tag secondary">${esc(p.topic)}</span></div><dl class="profile-fields"><div class="profile-row"><dt>接触身份</dt><dd>${esc(p.population || '未说明')}</dd></div><div class="profile-row"><dt>适用校区</dt><dd>${esc(p.campus || '未说明')}</dd></div><div class="profile-row"><dt>核实状态</dt><dd>${esc(p.verificationStatus || '见采用边界')}</dd></div>${p.promotion ? `<div class="profile-row"><dt>商业或导流线索</dt><dd>${esc(p.promotion)}</dd></div>` : ''}</dl><section class="dialog-section"><h3>正文摘记</h3><p class="dialog-content-intro">${inline(p.summary || '本条只保留筛选范围，未形成可采用的具体内容。')}</p>${array(p.tips).length ? `<ul class="tip-list">${array(p.tips).map(t => `<li>${inline(t)}</li>`).join('')}</ul>` : ''}</section>${comments.length ? `<section class="dialog-section"><h3>可见评论与回复摘记</h3>${comments.map(c => typeof c === 'string' ? `<div class="comment-block"><p>${inline(c)}</p></div>` : `<div class="comment-block"><small>${esc(c.author || c.user || '评论者未记录')}${c.date_display || c.date ? ' · ' + esc(c.date_display || c.date) : ''}</small>${c.identity || c.stage ? `<small> · ${esc([c.identity,c.stage].filter(Boolean).join(' / '))}</small>` : ''}<p>${inline(c.text || c.summary || c.content || c)}</p>${c.assessment || c.limitation || c.limitations ? `<p class="evidence-limit">${inline(c.assessment || c.limitation || c.limitations)}</p>` : ''}</div>`).join('')}</section>` : ''}<section class="dialog-section"><h3>采用与阅读边界</h3><div class="evidence-note">${inline(p.reviewReason || '')}${p.limitations ? `<p>${inline(p.limitations)}</p>` : ''}</div>${array(p.readingScopes).length ? `<ul class="tip-list">${array(p.readingScopes).map(scope => `<li>${inline(scope)}</li>`).join('')}</ul>` : ''}</section><div class="source-actions">${external(p.url || p.canonicalUrl, '打开原帖 ↗', 'button secondary')}</div>`);
+    openDialog('原帖摘记 / ' + socialCodes(p), `<div class="dialog-heading"><div><h2 id="dialog-title">${esc(p.title)}</h2><div class="dialog-subtitle">${esc(p.platform)} · ${esc(p.author || '作者未记录')} · ${esc(p.date || '日期未显示')}</div></div></div><div class="tags"><span class="tag warm">${esc(p.category)}</span><span class="tag secondary">${esc(p.topic)}</span></div><dl class="profile-fields"><div class="profile-row"><dt>接触身份</dt><dd>${esc(p.population || '未说明')}</dd></div><div class="profile-row"><dt>适用校区</dt><dd>${esc(p.campus || '未说明')}</dd></div><div class="profile-row"><dt>核实状态</dt><dd>${esc(p.verificationStatus || '见采用边界')}</dd></div>${p.promotion ? `<div class="profile-row"><dt>商业或导流线索</dt><dd>${esc(p.promotion)}</dd></div>` : ''}</dl><section class="dialog-section"><h3>正文摘记</h3><p class="dialog-content-intro">${inline(p.summary || '本条只保留筛选范围，未形成可采用的具体内容。')}</p>${array(p.tips).length ? `<ul class="tip-list">${array(p.tips).map(t => `<li>${inline(t)}</li>`).join('')}</ul>` : ''}</section>${comments.length ? `<section class="dialog-section"><h3>可见评论与回复摘记</h3>${comments.map(c => typeof c === 'string' ? `<div class="comment-block"><p>${inline(c)}</p></div>` : `<div class="comment-block"><small>${esc(c.author || c.user || '评论者未记录')}${c.date_display || c.date ? ' · ' + esc(c.date_display || c.date) : ''}</small>${c.identity || c.stage ? `<small> · ${esc([c.identity,c.stage].filter(Boolean).join(' / '))}</small>` : ''}<p>${inline(c.text || c.summary || c.content || c)}</p>${c.assessment || c.limitation || c.limitations ? `<p class="evidence-limit">${inline(c.assessment || c.limitation || c.limitations)}</p>` : ''}${screenshotsHtml(c.screenshots, p.url || p.canonicalUrl)}</div>`).join('')}</section>` : ''}${screenshotsHtml(postScreenshots(p), p.url || p.canonicalUrl)}<section class="dialog-section"><h3>采用与阅读边界</h3><div class="evidence-note">${inline(p.reviewReason || '')}${p.limitations ? `<p>${inline(p.limitations)}</p>` : ''}</div>${array(p.readingScopes).length ? `<ul class="tip-list">${array(p.readingScopes).map(scope => `<li>${inline(scope)}</li>`).join('')}</ul>` : ''}</section><div class="source-actions">${external(p.url || p.canonicalUrl, '打开原帖 ↗', 'button secondary')}</div>`);
     emit('post_open', {id});
   }
 

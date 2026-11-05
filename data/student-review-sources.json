@@ -2,7 +2,8 @@
   "batch": "student-reviews-2026-11",
   "newSourceCodes": [
     "R701",
-    "R702"
+    "R702",
+    "R801"
   ],
   "sources": [
     {
@@ -323,6 +324,23 @@
           "limits": []
         }
       ]
+    },
+    {
+      "code": "R801",
+      "title": "他们起航！下一站，读博！",
+      "label": "他们起航！下一站，读博！",
+      "url": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "originalUrl": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "canonicalUrl": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "date": "2022-12-22",
+      "author": "南京审计大学·南审青年校园号",
+      "platform": "中国大学生在线·南审青年校园号",
+      "kind": "官方学生访谈",
+      "population": "2019级会计学硕士李佳林，原文未确认MPAcc/1253",
+      "summary": "具名受访者李佳林回顾在潘俊引导下接触政府会计研究；这是校园号精选访谈中的个人学习体验。",
+      "readingScope": "web open实际读取网页全部文字L0—193，重点李佳林L103—113及署名L123—133；未逐张查看或下载图片；页面评论计数为0。",
+      "limitations": "2022年学校精选正面访谈；未明确会计学硕士的学位类型，不作为MPAcc直系评价；未说明组会频率、改稿周期或事务所实习安排。",
+      "expansionBatch": "student-reviews-round7"
     }
   ],
   "ambiguousAliases": [

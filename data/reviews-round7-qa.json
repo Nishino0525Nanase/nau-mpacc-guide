@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "newSources": 1,
+  "newStudentExperiences": 1,
+  "newXhsSources": 0,
+  "screenshotsCaptured": 5,
+  "publicSearchQueriesSubmitted": 89,
+  "browserCaptureStatus": "actual source screenshots acquired; public comments only",
+  "xhsPostBodiesReread": 8,
+  "xhsPublicCommentSourcesReread": 2,
+  "newGeneralMpaccAlumniSources": 1,
+  "sourceCodes": [
+    "R801"
+  ],
+  "scope": "新增1个具名导师学生访谈和1个未具名导师MPAcc校友访谈；旧小红书正文与公开评论补读，不计新帖；折叠登录内容未读",
+  "reviewRecords": 40,
+  "officialEvidence": 184,
+  "socialPosts": 114,
+  "sameNewSourceFoundByBothAgentsCountedOnce": true,
+  "unrelatedMusicAndInternshipDataPreserved": true,
+  "workbook": {
+    "bytes": 355265,
+    "sha256": "d89f961d3ae7252025e64701926ca26d1fcea36a922d1250b47088a6986c45dd",
+    "sheets": 13,
+    "tables": 11,
+    "cachedHyperlinks": 525,
+    "formulaErrors": 0,
+    "otherWorkbookPartsPreserved": true
+  },
+  "frontendTests": 52,
+  "browserQA": {
+    "mentorExplicitScreenshotMatched": true,
+    "postGalleryThreeImagesLoaded": true,
+    "postCardScreenshotCount": true,
+    "figureScopesAndOriginalLinksVisible": true,
+    "imageNaturalSizesVerified": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "batch": "reviews-round7",
+  "status": "actual-source-screenshots-acquired",
+  "screenshotsAcquired": 5,
+  "screenshotManifest": "data/reviews_round7/screenshot-manifest.json",
+  "sources": [
+    "X01",
+    "X02"
+  ],
+  "scope": "公开可见正文、顶层评论和已显示跟评；登录后完整内容与折叠回复未读",
+  "initialBrowserAttempt": "Connection and accessibility timeouts; no screenshots acquired in that initial attempt",
+  "laterReadAndCapture": "TinyFish read public comments; resumed browser produced the actual JPEG files referenced in the manifest",
+  "newXhsPosts": 0,
+  "noInitialsMappedToNames": true,
+  "noRedrawnEvidence": true
+}

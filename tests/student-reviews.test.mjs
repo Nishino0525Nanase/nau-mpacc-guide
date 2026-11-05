@@ -116,3 +116,35 @@ test('coverage filtering keeps MPAcc distinct from other guidance and keeps comp
  a.click('compare-close');a.click('reset-mentors');assert.match(a.get('#mentor-results').innerHTML,new RegExp(data.mentors[0].name));
  assert.deepEqual(a.writes,[]);
 });
+
+test('review screenshots reject unsafe paths, escape captions, and never inherit another branch from the same post',async()=>{
+ const data=reviewFixture(), review=data.mentors[1].studentReviews.reviews[0];
+ review.sourceUrl='https://example.org/student-story';
+ data.sourceRegistry.TEST_GOOD.screenshots=[{src:'./evidence/xhs/other-mentor-branch.png',caption:'OTHER_TEACHER_BRANCH'}];
+ review.screenshots=[{src:'./evidence/xhs/review-safe-01.png',caption:'<img src=x onerror=alert(8)>',alt:'评论" onload="alert(9)',scope:'只截<一条>回复，不包含后续讨论。',sourceUrl:'javascript:alert(6)',width:1360,height:900},
+  ...['https://evil.example/evidence.png','javascript:alert(7)','./evidence/xhs/../secret.png','./evidence/xhs/a.png?token=private','./evidence/xhs/a%2fb.png','data:image/png;base64,bad'].map(src=>({src,caption:'UNSAFE_CAPTURE'}))];
+ const a=await app({data});a.click('mentor','mentor-02');const html=a.get('#dialog-content').innerHTML;
+ assert.match(html,/src="\.\/evidence\/xhs\/review-safe-01\.png"/);
+ assert.match(html,/width="1360" height="900" loading="lazy" decoding="async"/);
+ assert.match(html,/&lt;img src=x onerror=alert\(8\)&gt;/);
+ assert.match(html,/alt="评论&quot; onload=&quot;alert\(9\)"/);
+ assert.match(html,/只截&lt;一条&gt;回复/);
+ assert.match(html,/打开原帖 ↗/);
+ assert.doesNotMatch(html,/OTHER_TEACHER_BRANCH|other-mentor-branch|UNSAFE_CAPTURE|href="javascript:|src="https:\/\/evil|<img src=x/);
+});
+
+test('post details expose registered captures and explicit comment captures while posts without images stay quiet',async()=>{
+ const data=reviewFixture(), post=data.socialPosts[0];
+ post.sourceIds=['R799'];post.screenshots=[];
+ data.sourceRegistry.R799={title:'同帖截图来源',url:post.url,postId:post.id,screenshots:[{src:'./evidence/xhs/post-overview.jpg',caption:'正文与可见评论',scope:'仅本屏，不代表全部评论。'}]};
+ post.comments=[{author:'公开评论者',text:'课程经历的补充。',screenshots:[{src:'./evidence/xhs/comment-01.webp',caption:'评论分支',scope:'只记录这一条跟评。'}]}];
+ const a=await app({data});a.route('#posts');assert.match(a.get('#post-results').innerHTML,/附 1 张原帖／评论截图/);
+ a.click('post',post.id);let html=a.get('#dialog-content').innerHTML;
+ assert.match(html,/src="\.\/evidence\/xhs\/post-overview\.jpg"/);
+ assert.match(html,/src="\.\/evidence\/xhs\/comment-01\.webp"/);
+ assert.match(html,/仅本屏，不代表全部评论/);
+ assert.match(html,/只记录这一条跟评/);
+ assert.match(html,/查看原图 ↗/);
+ a.click('mentor','mentor-01');html=a.get('#dialog-content').innerHTML;
+ assert.doesNotMatch(html,/原帖与评论截图|截图未提供|post-overview|comment-01/);
+});

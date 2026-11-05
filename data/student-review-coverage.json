@@ -13,17 +13,33 @@
       "guidance_unspecified": 4,
       "non_mpacc_guidance": 1
     },
-    "reviewRecords": 39,
+    "reviewRecords": 40,
     "newSourceCodes": [
       "R701",
-      "R702"
+      "R702",
+      "R801"
     ],
     "newSocialPostCount": 1,
-    "newOfficialEvidenceCount": 1,
+    "newOfficialEvidenceCount": 2,
     "updatedExistingSourceCount": 7,
     "newPostCountNote": "同帖新增评论、重新展开与官方访谈重读均不增加来源或帖子数。",
     "attributionRule": "完整姓名及明确上下文才归名；缩写、单姓和名单唯一匹配不足以归名。",
-    "notFoundMeaning": "未检得不等于没有评价，不据此打分、排序或作避雷结论。"
+    "notFoundMeaning": "未检得不等于没有评价，不据此打分、排序或作避雷结论。",
+    "round7": {
+      "newSources": 1,
+      "newStudentExperiences": 1,
+      "newXhsSources": 0,
+      "screenshotsCaptured": 5,
+      "publicSearchQueriesSubmitted": 89,
+      "browserCaptureStatus": "actual source screenshots acquired; public comments only",
+      "xhsPostBodiesReread": 8,
+      "xhsPublicCommentSourcesReread": 2,
+      "newGeneralMpaccAlumniSources": 1,
+      "sourceCodes": [
+        "R801"
+      ],
+      "scope": "新增1个具名导师学生访谈和1个未具名导师MPAcc校友访谈；旧小红书正文与公开评论补读，不计新帖；折叠登录内容未读"
+    }
   },
   "teachers": [
     {
@@ -172,15 +188,16 @@
       "name": "潘俊",
       "coverageStatus": "mpacc_guidance",
       "coverageLabel": "明确MPAcc指导经历",
-      "reviewCount": 1,
-      "firsthandCount": 1,
+      "reviewCount": 2,
+      "firsthandCount": 2,
       "sourceIds": [
         "O-PJ",
-        "18"
+        "18",
+        "R801"
       ],
       "recommendationPointCount": 2,
       "supportedConcernCount": 1,
-      "verificationQuestionCount": 2
+      "verificationQuestionCount": 3
     },
     {
       "mentorId": "mentor-12",
