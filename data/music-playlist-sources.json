@@ -1,5 +1,5 @@
 {
-  "batch": "music-playlist-105",
+  "batch": "music-playlist-embedded-audio",
   "metadata": {
     "origin": "用户提供的19个音频文件",
     "fields": [
@@ -7,10 +7,135 @@
       "artist",
       "album",
       "durationSeconds",
-      "filenameAliases"
+      "fileNameAliases",
+      "audioUrl",
+      "audioBytes",
+      "audioSha256"
     ],
     "verification": "ffprobe tags/durations were checked against all supplied files",
     "limits": "不从歌单推断个人心理或关系含义；元数据核对不等于完整试听或歌词分析。"
+  },
+  "embeddedAudio": {
+    "origin": "用户明确要求嵌入的19个已上传音频文件",
+    "use": "同站播放器直接读取已发布的原始音频；不要求访客再选择本机文件。",
+    "processing": "逐字节复制；不重新编码、不更改音频标签，不另行提取歌词或封面。",
+    "privateSourceLocationsPublished": false,
+    "files": [
+      {
+        "id": "hcy-world-zoo",
+        "url": "./media/music/hcy-world-zoo.mp3",
+        "bytes": 3882434,
+        "sha256": "6a35f61b84d804bd90ab17f9a6c85ea46c3c968cdf4f65be7b9ecd47608e276d"
+      },
+      {
+        "id": "hcy-when-flowers-fall",
+        "url": "./media/music/hcy-when-flowers-fall.mp3",
+        "bytes": 5780693,
+        "sha256": "fb783536b04fa95fb5cb572a9023a79225a5ec5439042ebae6b3cc7e1dcdbe84"
+      },
+      {
+        "id": "hcy-sunrise",
+        "url": "./media/music/hcy-sunrise.mp3",
+        "bytes": 4473328,
+        "sha256": "54238da871726edf32a0293a72629bc6c4181d088a52cd37c70ca2f57eb6cc42"
+      },
+      {
+        "id": "hcy-sea-of-wind",
+        "url": "./media/music/hcy-sea-of-wind.mp3",
+        "bytes": 4906704,
+        "sha256": "d23861b7f50e6763ea8269df639246c96fccbf3d12c1a3891490a515d88ebd10"
+      },
+      {
+        "id": "hcy-bullfight-live",
+        "url": "./media/music/hcy-bullfight-live.mp3",
+        "bytes": 6224770,
+        "sha256": "f32766b3395d140dee6d02f38559ae866d122de45e9fa2e6e751c3f4f4be153b"
+      },
+      {
+        "id": "hcy-asylum-live",
+        "url": "./media/music/hcy-asylum-live.mp3",
+        "bytes": 6740101,
+        "sha256": "eeb5dc85f22bb029446cc3cc297bde05f14127e26eb345a8e308311975ee4c1e"
+      },
+      {
+        "id": "hcy-fearless",
+        "url": "./media/music/hcy-fearless.mp3",
+        "bytes": 3047158,
+        "sha256": "d250805d396d196e404cf4758f4f97845e4e01b40c2e885b2751a2db1bb29b02"
+      },
+      {
+        "id": "hcy-jackdaw-boy",
+        "url": "./media/music/hcy-jackdaw-boy.mp3",
+        "bytes": 5082697,
+        "sha256": "15e8e9d42dba7e569a701fcef1e485efc561ab0fd05042679b2c530709850ea4"
+      },
+      {
+        "id": "hcy-everlasting-flame",
+        "url": "./media/music/hcy-everlasting-flame.mp3",
+        "bytes": 5456051,
+        "sha256": "d1d0c778571fee87197ef7eba197ceb55c51ad9bac2ce346be38f7b4512ebe0f"
+      },
+      {
+        "id": "hcy-seek",
+        "url": "./media/music/hcy-seek.mp3",
+        "bytes": 4441825,
+        "sha256": "b8917a82cbf4244cd5a686536818f58b6eaeb5777006d1b9de76b6bfdb29ba07"
+      },
+      {
+        "id": "hcy-king-beggar-live",
+        "url": "./media/music/hcy-king-beggar-live.mp3",
+        "bytes": 2954473,
+        "sha256": "05f24a54c9496ee28edae94c42cb2424d854c564c0068f3b92755b2c5708cc49"
+      },
+      {
+        "id": "hcy-bonfire-at-galaxy-end",
+        "url": "./media/music/hcy-bonfire-at-galaxy-end.mp3",
+        "bytes": 4992149,
+        "sha256": "fa51bdd1d591ff94a4d3f79bc590f064f4ed9ff8f47cd4f023ec084cadfed637"
+      },
+      {
+        "id": "hcy-dust-in-fireworks",
+        "url": "./media/music/hcy-dust-in-fireworks.mp3",
+        "bytes": 5283309,
+        "sha256": "81b4063a914fe5e08c7f53b08beb4f0b6768e30163da09efbd07caa54238f496"
+      },
+      {
+        "id": "hcy-flight-mode",
+        "url": "./media/music/hcy-flight-mode.mp3",
+        "bytes": 4326386,
+        "sha256": "33593406ed8fa34e9149bf07ac4bc0e82d2919904ba5b463434b2f8fd259cfee"
+      },
+      {
+        "id": "hcy-for-forever",
+        "url": "./media/music/hcy-for-forever.mp3",
+        "bytes": 4617278,
+        "sha256": "1393e1b5684d7630775d26146b7d886fd2fdf3d1e6c7f9f89397d44d7832d30c"
+      },
+      {
+        "id": "hcy-ordinary-life",
+        "url": "./media/music/hcy-ordinary-life.mp3",
+        "bytes": 4214754,
+        "sha256": "7e4e3963c911a6ae2b32f4a65b3522811480719376d64fb21a32cc0b529da4ef"
+      },
+      {
+        "id": "hcy-love-this-world",
+        "url": "./media/music/hcy-love-this-world.m4a",
+        "bytes": 4195236,
+        "sha256": "287c3108e5200baeb20eaa15eea7104800e48320f824a09352539c136a8bc2fe"
+      },
+      {
+        "id": "hcy-toward-sun-live",
+        "url": "./media/music/hcy-toward-sun-live.mp3",
+        "bytes": 11687560,
+        "sha256": "a6c8dda918e2ff7e4f1cfa12006a9d21bef546ed8d687d40d71c034f73282f3c"
+      },
+      {
+        "id": "hcy-return",
+        "url": "./media/music/hcy-return.mp3",
+        "bytes": 4952434,
+        "sha256": "679393cf1f102cea82dbb527793663d248ecf30614eaf92e6f5814621f9ea23b"
+      }
+    ]
   },
   "platformEntries": [
     {
@@ -21,7 +146,7 @@
       "httpStatus": 200,
       "pageTitleObserved": "搜索 - QQ音乐",
       "readingScope": "官方搜索HTML shell可读，旧ryqq搜索路径自动跳到ryqq_v2；关键词保留。未取得客户端曲目结果、版权可听状态或逐一现场版本确认。",
-      "use": "Only search entry links, no invented song ids, audio URLs or playback guarantee"
+      "use": "Only official platform search links; no invented third-party song ids, streams or version guarantee. Supplied recordings are served separately from the guide site."
     }
   ],
   "excludedEntry": {

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       smoke_test:
-        description: 'Also boot Android 14 and verify offline reading, Back and local audio (slower)'
+        description: 'Also verify Android 14 offline reading and Back; online music is tested separately'
         type: boolean
         default: false
   push:
@@ -90,7 +90,7 @@ jobs:
           "$ANDROID_HOME/build-tools/35.0.0/aapt" dump permissions "$APK" > android/artifacts/permissions.txt
           python3 android/verify-apk.py "$APK"
           (cd android/artifacts && sha256sum *.apk > SHA256SUMS.txt)
-      - name: Optional Android 14 offline reading and music smoke test
+      - name: Optional Android 14 offline reading smoke test
         timeout-minutes: 12
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.smoke_test }}
         env:

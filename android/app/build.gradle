@@ -30,12 +30,14 @@ android {
     }
 }
 
-// Package the exact current website, including JSON and Word/Excel documents.
+// Package reading assets, including JSON and Word/Excel documents.
 // Generated assets are ignored; the website has only one source of truth.
 tasks.register('syncGuideAssets', Sync) {
     from rootProject.file('../dist')
     // Never embed a previous installer inside its next build.
     exclude '**/*.apk', '**/*.apk.sha256'
+    // Website music streams over HTTPS; recordings are not bundled in the APK.
+    exclude 'media/music/**'
     into layout.projectDirectory.dir('src/main/assets/guide')
     doFirst {
         if (!rootProject.file('../dist/index.html').isFile() ||

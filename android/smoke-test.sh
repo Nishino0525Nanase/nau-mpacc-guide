@@ -298,6 +298,21 @@ if [[ "$exited" != true ]]; then
 fi
 printf '%s\n' 'PASS: Android 14 proxy-blocked online startup switched automatically to packaged data, rendered a mentor, closed details with Back, and exited without a fallback history loop.' > android/artifacts/smoke/result.txt
 
+# Embedded recordings are website streams and excluded from the APK. This
+# offline suite does not claim online playback coverage or use the removed
+# file-picker controls. Keep the older picker suite for metadata-only snapshots.
+HAS_STREAMS=$(python3 - <<'PY'
+import json
+with open('dist/data/site-data.json') as source:
+    data = json.load(source)
+print('true' if any(track.get('audioUrl') for track in data.get('musicPlaylist', {}).get('tracks', [])) else 'false')
+PY
+)
+if [[ "$HAS_STREAMS" == true ]]; then
+  printf '%s\n' 'SKIPPED: embedded streaming is verified in the web browser; this offline native smoke covers reading only.' > android/artifacts/smoke/music-result.txt
+  exit 0
+fi
+
 # Keep the original reading/Back suite above intact. Independently restart and
 # exercise the real Android DocumentsUI picker; no commercial recording is used.
 python3 - <<'PY'

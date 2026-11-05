@@ -5,7 +5,7 @@ import vm from 'node:vm';
 
 const root = new URL('../dist/', import.meta.url);
 const base = 'https://example.github.io/nau-mpacc-guide/';
-const sample = {mentors:[{name:'导师'}],lifeChapters:[{title:'生活'}],socialPosts:[{title:'摘记'}],musicPlaylist:{tracks:[{id:'sample-track'}]}};
+const sample = {mentors:[{name:'导师'}],lifeChapters:[{title:'生活'}],socialPosts:[{title:'摘记'}],musicPlaylist:{tracks:[{id:'sample-track',audioUrl:'./media/music/sample-track.mp3'}]}};
 const json = value => new Response(JSON.stringify(value), {headers:{'Content-Type':'application/json'}});
 
 function worker() {
@@ -73,7 +73,7 @@ test('SW only intercepts the exact local GET whitelist, including owner exclusio
   await sw.lifecycle('install');
   for (const path of ['', 'index.html?exclude_self=1', 'app.js?v=edition1','music.js?v=edition1','data/site-data.json?v=edition1']) assert(await sw.request(path),path);
   const count=sw.calls.length;
-  for (const path of ['analytics.js','analytics-config.js','admin/','admin/index.html','video/','?admin=1','?unexpected=1','downloads/test.apk','music/private-song.mp3','../another-project/','https://us.i.posthog.com/i/v0/e/','https://example.com/app.js']) assert.equal(await sw.request(path),null,path);
+  for (const path of ['analytics.js','analytics-config.js','admin/','admin/index.html','video/','?admin=1','?unexpected=1','downloads/test.apk','music/private-song.mp3','media/music/sample-track.mp3','media/music/sample-track.m4a','../another-project/','https://us.i.posthog.com/i/v0/e/','https://example.com/app.js']) assert.equal(await sw.request(path),null,path);
   assert.equal(await sw.request('data/site-data.json','POST'),null);
   assert.equal(sw.calls.length,count,'bypassed requests must not reach worker fetch');
 });
@@ -84,7 +84,7 @@ test('JSON is fresh online and falls back to valid cached data for network, HTTP
   const newer={...sample,socialPosts:[{title:'新摘记'},{title:'另篇'}]};
   sw.setFetch(async()=>json(newer));
   assert.equal((await (await sw.request('data/site-data.json?v=edition1')).json()).socialPosts.length,2);
-  for (const fail of [async()=>{throw new Error('offline');},async()=>new Response('failure',{status:500}),async()=>json({wrong:true}),async()=>json({mentors:[],lifeChapters:[],socialPosts:[]}),async()=>new Response('not json')]) {
+  for (const fail of [async()=>{throw new Error('offline');},async()=>new Response('failure',{status:500}),async()=>json({wrong:true}),async()=>json({mentors:[],lifeChapters:[],socialPosts:[]}),async()=>json({...sample,musicPlaylist:{tracks:[{id:'sample-track'}]}}),async()=>new Response('not json')]) {
     sw.setFetch(fail);
     const response=await sw.request('data/site-data.json?v=edition1');
     assert.equal(response.headers.get('X-Guide-Offline'),'cached');

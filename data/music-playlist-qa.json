@@ -1,7 +1,7 @@
 {
   "ok": true,
   "errors": [],
-  "batch": "music-playlist-105",
+  "batch": "music-playlist-embedded-audio",
   "trackCount": 19,
   "artistCount": 1,
   "albumCount": 11,
@@ -10,8 +10,8 @@
     "现场版": 4
   },
   "totalDurationSeconds": 5907.5,
-  "playlistSha256": "58c0d76f1c8e0767b7a7ea73488c2823c05736e5d830bcee1bb40252f61e827d",
-  "existingGuideDataSha256": "736213483122c4d2a32562f7d649b296a6cf7d51eb869d02cc736df46f42cabb",
+  "playlistSha256": "e754ba4bd1a93aa4c7136b3ba111ec58fc68b79e7da052b6e3d10a98f8fe2171",
+  "existingGuideDataSha256": "3860e2b9b03cfdbbc9e2a25bdf70e0dffd51cc7422216e64092d2f478f40c6d9",
   "existingGuideDataUnchanged": true,
   "preservedCounts": {
     "mentors": 34,
@@ -25,9 +25,14 @@
   },
   "platformLinkCount": 19,
   "platformLinksAreSearchesNotPlaybackGuarantees": true,
-  "audioBytesPublished": false,
-  "lyricsPublished": false,
-  "artworkPublished": false,
+  "audioBytesPublished": true,
+  "embeddedAudioTrackCount": 19,
+  "embeddedAudioTotalBytes": 97259340,
+  "embeddedAudioLargestBytes": 11687560,
+  "originalAudioBytesPreserved": true,
+  "audioTranscoded": false,
+  "separateLyricsPublished": false,
+  "standaloneArtworkPublished": false,
   "privatePathsAndLibraryIdsPublished": false,
   "metadataSource": "Reviewed tags and durations of the 19 user-supplied files; no full-track listening claim",
   "versionMethod": "Files explicitly labelled as concert/live releases are现场版; other supplied album tags are专辑版, not a claim about physical recording location"

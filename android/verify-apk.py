@@ -58,7 +58,10 @@ def verify_apk(apk, project):
         for source in sorted((project / "dist").rglob("*")):
             if not source.is_file() or source.name.endswith((".apk", ".apk.sha256")):
                 continue
-            target = "assets/guide/" + source.relative_to(project / "dist").as_posix()
+            relative = source.relative_to(project / "dist")
+            if relative.parts[:2] == ('media', 'music'):
+                continue
+            target = "assets/guide/" + relative.as_posix()
             assert target in names, f"Missing offline asset: {target}"
             assert hashlib.sha256(package.read(target)).digest() == hashlib.sha256(source.read_bytes()).digest(), f"Stale offline asset: {target}"
         data = json.loads(package.read("assets/guide/data/site-data.json"))
@@ -67,6 +70,7 @@ def verify_apk(apk, project):
         verify_music_playlist(data)
         audio_suffixes = ('.mp3', '.m4a', '.aac', '.ogg', '.oga', '.wav', '.flac', '.opus')
         assert not any(name.lower().endswith(audio_suffixes) for name in names), "Audio recordings must not be distributed inside the guide APK"
+        assert not any(name.startswith('assets/guide/media/music/') for name in names), "Website music resources must remain outside the APK"
 
 
 def verify_internships(data):
@@ -105,22 +109,31 @@ def verify_internships(data):
 
 
 def verify_music_playlist(data):
-    """The bundled playlist is metadata and search links, never uploaded recordings."""
+    """Validate playlist records and site-relative streams; recordings stay on the website."""
     playlist = data.get('musicPlaylist')
     assert isinstance(playlist, dict), 'Missing music playlist'
     assert set(playlist).issubset({'title', 'subtitle', 'ownerLabel', 'artist', 'intro', 'totalDurationSeconds', 'tracks'}), 'Unexpected playlist payload field'
     tracks = playlist.get('tracks', [])
     assert len(tracks) == 19 and len({track.get('id') for track in tracks}) == 19, 'Missing or duplicate playlist tracks'
     total = 0.0
-    forbidden_fields = {'audioUrl', 'audio_url', 'src', 'base64', 'lyrics', 'filePath', 'path', 'libraryFileId', 'library_file_id'}
+    forbidden_fields = {'audio_url', 'src', 'base64', 'lyrics', 'filePath', 'path', 'libraryFileId', 'library_file_id'}
     for track in tracks:
-        assert set(track).issubset({'id', 'title', 'artist', 'album', 'version', 'durationSeconds', 'fileNameAliases', 'listeningLinks'}), 'Unexpected track payload field'
+        assert set(track).issubset({'id', 'title', 'artist', 'album', 'version', 'durationSeconds', 'fileNameAliases', 'listeningLinks', 'audioUrl', 'audioBytes', 'audioSha256'}), 'Unexpected track payload field'
         assert track.get('id') and track.get('title') and track.get('artist') == '华晨宇', 'Invalid playlist identity'
         assert track.get('album') and track.get('version') in ('专辑版', '现场版'), 'Missing album or recording version'
         duration = track.get('durationSeconds')
         assert isinstance(duration, (int, float)) and not isinstance(duration, bool) and math.isfinite(duration) and duration > 0, 'Invalid playlist duration'
         total += duration
         assert not forbidden_fields.intersection(track), 'Playlist must not contain audio payloads, lyrics or private paths'
+        if 'audioUrl' in track:
+            stream = track['audioUrl']
+            assert isinstance(stream, str) and re.fullmatch(r'\./media/music/' + re.escape(track['id']) + r'\.(?:mp3|m4a)', stream), 'Audio URL must name this track in the website music directory'
+        if 'audioBytes' in track:
+            size = track['audioBytes']
+            assert 'audioUrl' in track and isinstance(size, int) and not isinstance(size, bool) and size > 0, 'Invalid website audio size'
+        if 'audioSha256' in track:
+            digest = track['audioSha256']
+            assert 'audioUrl' in track and isinstance(digest, str) and re.fullmatch(r'[0-9a-f]{64}', digest), 'Invalid website audio checksum'
         aliases = track.get('fileNameAliases')
         assert aliases and all(isinstance(alias, str) and alias and '/' not in alias and '\\' not in alias and ':' not in alias for alias in aliases), 'Local-file matching aliases must be basenames only'
         links = track.get('listeningLinks')
@@ -137,4 +150,4 @@ def verify_music_playlist(data):
 
 if __name__ == "__main__":
     verify_apk(Path(sys.argv[1]).resolve(), Path(__file__).resolve().parent.parent)
-    print("PASS: APK structure, all reading assets, 34 mentor dossiers, 12 internship firms and 19 metadata-only music tracks match (installers excluded)")
+    print("PASS: APK structure, reading assets, 34 mentor dossiers, 12 internship firms and 19 music records match (installers and website audio excluded)")

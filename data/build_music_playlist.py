@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Add the supplied 19-track playlist metadata. Dry-run unless --write.
+"""Build the supplied 19-track playlist and its embedded audio. Dry-run by default.
 
-Only descriptive tags and filename aliases are published. Audio bytes, lyrics,
-artwork, private file locations and Library identifiers are never copied into
-the website. --audio-dir optionally checks the supplied files with ffprobe.
+The user-supplied audio is copied without re-encoding to stable same-site URLs.
+Private source locations and Library identifiers are never published. Supply
+--audio-dir for the initial copy or to restore/recheck the original files; later
+runs validate the embedded assets and preserve their URLs without source access.
 """
 from __future__ import annotations
 
@@ -21,7 +22,7 @@ from urllib.parse import quote, urlencode, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'dist/data/site-data.json'
 ARTIST = '华晨宇'
-BATCH = 'music-playlist-105'
+BATCH = 'music-playlist-embedded-audio'
 
 # Descriptive metadata checked against the files supplied by the user. Order
 # follows the two batches of 10 and 9 tracks, without claiming a platform order.
@@ -56,7 +57,7 @@ def norm(value):
     return re.sub(r'[\W_]+', '', value.casefold(), flags=re.UNICODE)
 
 
-def playlist():
+def playlist(audio_assets):
     tracks = []
     for slug, title, album, duration, filename in TRACKS:
         live = '演唱会' in album or '现场' in album
@@ -71,6 +72,7 @@ def playlist():
             'album': album,
             'version': '现场版' if live else '专辑版',
             'durationSeconds': duration,
+            **audio_assets['hcy-' + slug],
             'fileNameAliases': aliases,
             'listeningLinks': [{
                 'label': 'QQ音乐搜索',
@@ -89,6 +91,34 @@ def playlist():
         'tracks': tracks,
         'totalDurationSeconds': round(sum(t['durationSeconds'] for t in tracks), 1),
     }
+
+
+def embedded_audio(audio_dir, existing_music):
+    """Hash existing assets or supplied files; keep all source paths private."""
+    existing = {track['id']: track for track in existing_music.get('tracks', [])}
+    assets = {}
+    copies = []
+    for slug, _, _, _, filename in TRACKS:
+        track_id = 'hcy-' + slug
+        extension = Path(filename).suffix.lower()
+        assert extension in ('.mp3', '.m4a')
+        relative = Path('media/music') / (track_id + extension)
+        target = ROOT / 'dist' / relative
+        source = audio_dir / filename if audio_dir is not None else target
+        if not source.is_file():
+            raise SystemExit('An embedded audio asset is missing; use --audio-dir with the supplied files to restore it')
+        payload = source.read_bytes()
+        checksum = sha256(payload).hexdigest()
+        expected = existing.get(track_id, {}).get('audioSha256')
+        if expected and checksum != expected:
+            raise SystemExit('Audio bytes differ from the previously reviewed supplied file')
+        assets[track_id] = {'audioUrl': './' + relative.as_posix(),
+                            'audioBytes': len(payload), 'audioSha256': checksum}
+        if audio_dir is not None:
+            copies.append((source, target, checksum))
+    if len(assets) != 19 or len({item['audioUrl'] for item in assets.values()}) != 19:
+        raise SystemExit('Embedded audio mapping is incomplete or ambiguous')
+    return assets, copies
 
 
 def verify_local(audio_dir):
@@ -113,7 +143,10 @@ def verify_local(audio_dir):
 def build(write=False, audio_dir=None):
     before = json.loads(DATA.read_text())
     data = deepcopy(before)
-    music = playlist()
+    if audio_dir is not None:
+        verify_local(audio_dir)
+    audio_assets, copies = embedded_audio(audio_dir, before.get('musicPlaylist', {}))
+    music = playlist(audio_assets)
     errors = []
     tracks = music['tracks']
     if len(tracks) != 19 or len({t['id'] for t in tracks}) != 19:
@@ -124,6 +157,11 @@ def build(write=False, audio_dir=None):
             errors.append('Missing descriptive music metadata')
         if not 0 < track['durationSeconds'] < 3600:
             errors.append('Implausible source duration')
+        expected_suffix = '.m4a' if track['id'] == 'hcy-love-this-world' else '.mp3'
+        if track['audioUrl'] != './media/music/' + track['id'] + expected_suffix:
+            errors.append('Unexpected embedded audio route')
+        if track['audioBytes'] <= 0 or not re.fullmatch(r'[a-f0-9]{64}', track['audioSha256']):
+            errors.append('Missing embedded audio integrity data')
         for alias in track['fileNameAliases']:
             if Path(alias).name != alias or '/' in alias or '\\' in alias:
                 errors.append('A filename alias contains a file location')
@@ -140,8 +178,6 @@ def build(write=False, audio_dir=None):
     serialized = json.dumps(music, ensure_ascii=False)
     if any(marker in serialized for marker in ('/workspace/', 'libfile_', 'data:audio', 'base64', 'ghp_')):
         errors.append('Private file location or media/credential material in public metadata')
-    if audio_dir is not None:
-        verify_local(audio_dir)
     data['musicPlaylist'] = music
     old_without_music = {k: v for k, v in before.items() if k != 'musicPlaylist'}
     new_without_music = {k: v for k, v in data.items() if k != 'musicPlaylist'}
@@ -166,23 +202,35 @@ def build(write=False, audio_dir=None):
         'preservedCounts': counts,
         'platformLinkCount': sum(len(t['listeningLinks']) for t in tracks),
         'platformLinksAreSearchesNotPlaybackGuarantees': True,
-        'audioBytesPublished': False, 'lyricsPublished': False, 'artworkPublished': False,
+        'audioBytesPublished': True, 'embeddedAudioTrackCount': len(audio_assets),
+        'embeddedAudioTotalBytes': sum(asset['audioBytes'] for asset in audio_assets.values()),
+        'embeddedAudioLargestBytes': max(asset['audioBytes'] for asset in audio_assets.values()),
+        'originalAudioBytesPreserved': True, 'audioTranscoded': False,
+        'separateLyricsPublished': False, 'standaloneArtworkPublished': False,
         'privatePathsAndLibraryIdsPublished': False,
         'metadataSource': 'Reviewed tags and durations of the 19 user-supplied files; no full-track listening claim',
         'versionMethod': 'Files explicitly labelled as concert/live releases are现场版; other supplied album tags are专辑版, not a claim about physical recording location',
     }
     sources = {
         'batch': BATCH,
-        'metadata': {'origin': '用户提供的19个音频文件', 'fields': ['title', 'artist', 'album', 'durationSeconds', 'filenameAliases'],
+        'metadata': {'origin': '用户提供的19个音频文件', 'fields': ['title', 'artist', 'album', 'durationSeconds', 'fileNameAliases', 'audioUrl', 'audioBytes', 'audioSha256'],
                      'verification': 'ffprobe tags/durations were checked against all supplied files',
                      'limits': '不从歌单推断个人心理或关系含义；元数据核对不等于完整试听或歌词分析。'},
+        'embeddedAudio': {
+            'origin': '用户明确要求嵌入的19个已上传音频文件',
+            'use': '同站播放器直接读取已发布的原始音频；不要求访客再选择本机文件。',
+            'processing': '逐字节复制；不重新编码、不更改音频标签，不另行提取歌词或封面。',
+            'privateSourceLocationsPublished': False,
+            'files': [{'id': track['id'], 'url': track['audioUrl'], 'bytes': track['audioBytes'],
+                       'sha256': track['audioSha256']} for track in tracks],
+        },
         'platformEntries': [{
             'platform': 'QQ音乐', 'url': 'https://y.qq.com/n/ryqq_v2/search',
             'exampleUrl': tracks[9]['listeningLinks'][0]['url'],
             'requestFormat': 'HTTPS official search page with URL-encoded w keyword',
             'httpStatus': 200, 'pageTitleObserved': '搜索 - QQ音乐',
             'readingScope': '官方搜索HTML shell可读，旧ryqq搜索路径自动跳到ryqq_v2；关键词保留。未取得客户端曲目结果、版权可听状态或逐一现场版本确认。',
-            'use': 'Only search entry links, no invented song ids, audio URLs or playback guarantee',
+            'use': 'Only official platform search links; no invented third-party song ids, streams or version guarantee. Supplied recordings are served separately from the guide site.',
         }],
         'excludedEntry': {'platform': '网易云音乐', 'reason': '旧search/m直达路径在本次检查跳到404；泛用shell不足以确认旧hash搜索路径，未作为曲目入口。'},
     }
@@ -190,6 +238,12 @@ def build(write=False, audio_dir=None):
         print(json.dumps(qa, ensure_ascii=False, indent=2))
         raise SystemExit(1)
     if write:
+        for source, target, checksum in copies:
+            target.parent.mkdir(parents=True, exist_ok=True)
+            if not target.is_file() or sha256(target.read_bytes()).hexdigest() != checksum:
+                shutil.copyfile(source, target)
+            if sha256(target.read_bytes()).hexdigest() != checksum:
+                raise SystemExit('Copied audio asset failed its integrity check')
         DATA.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
         (ROOT / 'data/music-playlist-qa.json').write_text(json.dumps(qa, ensure_ascii=False, indent=2) + '\n')
         (ROOT / 'data/music-playlist-sources.json').write_text(json.dumps(sources, ensure_ascii=False, indent=2) + '\n')
@@ -199,6 +253,6 @@ def build(write=False, audio_dir=None):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--write', action='store_true')
-    parser.add_argument('--audio-dir', type=Path, help='Optionally recheck supplied files locally; locations are never exported')
+    parser.add_argument('--audio-dir', type=Path, help='Initial audio copy, restore, or source verification; private source locations are never exported')
     args = parser.parse_args()
     build(args.write, args.audio_dir)

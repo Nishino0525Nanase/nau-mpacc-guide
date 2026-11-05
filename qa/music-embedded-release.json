@@ -1,0 +1,193 @@
+{
+  "webVersion": "1.0.6",
+  "frontendTests": 50,
+  "audio": {
+    "tracks": 19,
+    "totalBytes": 97259340,
+    "formats": {
+      "mp3": 18,
+      "m4a": 1
+    },
+    "sourceBytesPreserved": true,
+    "reencoded": false,
+    "assets": [
+      {
+        "id": "hcy-world-zoo",
+        "url": "./media/music/hcy-world-zoo.mp3",
+        "bytes": 3882434,
+        "sha256": "6a35f61b84d804bd90ab17f9a6c85ea46c3c968cdf4f65be7b9ecd47608e276d"
+      },
+      {
+        "id": "hcy-when-flowers-fall",
+        "url": "./media/music/hcy-when-flowers-fall.mp3",
+        "bytes": 5780693,
+        "sha256": "fb783536b04fa95fb5cb572a9023a79225a5ec5439042ebae6b3cc7e1dcdbe84"
+      },
+      {
+        "id": "hcy-sunrise",
+        "url": "./media/music/hcy-sunrise.mp3",
+        "bytes": 4473328,
+        "sha256": "54238da871726edf32a0293a72629bc6c4181d088a52cd37c70ca2f57eb6cc42"
+      },
+      {
+        "id": "hcy-sea-of-wind",
+        "url": "./media/music/hcy-sea-of-wind.mp3",
+        "bytes": 4906704,
+        "sha256": "d23861b7f50e6763ea8269df639246c96fccbf3d12c1a3891490a515d88ebd10"
+      },
+      {
+        "id": "hcy-bullfight-live",
+        "url": "./media/music/hcy-bullfight-live.mp3",
+        "bytes": 6224770,
+        "sha256": "f32766b3395d140dee6d02f38559ae866d122de45e9fa2e6e751c3f4f4be153b"
+      },
+      {
+        "id": "hcy-asylum-live",
+        "url": "./media/music/hcy-asylum-live.mp3",
+        "bytes": 6740101,
+        "sha256": "eeb5dc85f22bb029446cc3cc297bde05f14127e26eb345a8e308311975ee4c1e"
+      },
+      {
+        "id": "hcy-fearless",
+        "url": "./media/music/hcy-fearless.mp3",
+        "bytes": 3047158,
+        "sha256": "d250805d396d196e404cf4758f4f97845e4e01b40c2e885b2751a2db1bb29b02"
+      },
+      {
+        "id": "hcy-jackdaw-boy",
+        "url": "./media/music/hcy-jackdaw-boy.mp3",
+        "bytes": 5082697,
+        "sha256": "15e8e9d42dba7e569a701fcef1e485efc561ab0fd05042679b2c530709850ea4"
+      },
+      {
+        "id": "hcy-everlasting-flame",
+        "url": "./media/music/hcy-everlasting-flame.mp3",
+        "bytes": 5456051,
+        "sha256": "d1d0c778571fee87197ef7eba197ceb55c51ad9bac2ce346be38f7b4512ebe0f"
+      },
+      {
+        "id": "hcy-seek",
+        "url": "./media/music/hcy-seek.mp3",
+        "bytes": 4441825,
+        "sha256": "b8917a82cbf4244cd5a686536818f58b6eaeb5777006d1b9de76b6bfdb29ba07"
+      },
+      {
+        "id": "hcy-king-beggar-live",
+        "url": "./media/music/hcy-king-beggar-live.mp3",
+        "bytes": 2954473,
+        "sha256": "05f24a54c9496ee28edae94c42cb2424d854c564c0068f3b92755b2c5708cc49"
+      },
+      {
+        "id": "hcy-bonfire-at-galaxy-end",
+        "url": "./media/music/hcy-bonfire-at-galaxy-end.mp3",
+        "bytes": 4992149,
+        "sha256": "fa51bdd1d591ff94a4d3f79bc590f064f4ed9ff8f47cd4f023ec084cadfed637"
+      },
+      {
+        "id": "hcy-dust-in-fireworks",
+        "url": "./media/music/hcy-dust-in-fireworks.mp3",
+        "bytes": 5283309,
+        "sha256": "81b4063a914fe5e08c7f53b08beb4f0b6768e30163da09efbd07caa54238f496"
+      },
+      {
+        "id": "hcy-flight-mode",
+        "url": "./media/music/hcy-flight-mode.mp3",
+        "bytes": 4326386,
+        "sha256": "33593406ed8fa34e9149bf07ac4bc0e82d2919904ba5b463434b2f8fd259cfee"
+      },
+      {
+        "id": "hcy-for-forever",
+        "url": "./media/music/hcy-for-forever.mp3",
+        "bytes": 4617278,
+        "sha256": "1393e1b5684d7630775d26146b7d886fd2fdf3d1e6c7f9f89397d44d7832d30c"
+      },
+      {
+        "id": "hcy-ordinary-life",
+        "url": "./media/music/hcy-ordinary-life.mp3",
+        "bytes": 4214754,
+        "sha256": "7e4e3963c911a6ae2b32f4a65b3522811480719376d64fb21a32cc0b529da4ef"
+      },
+      {
+        "id": "hcy-love-this-world",
+        "url": "./media/music/hcy-love-this-world.m4a",
+        "bytes": 4195236,
+        "sha256": "287c3108e5200baeb20eaa15eea7104800e48320f824a09352539c136a8bc2fe"
+      },
+      {
+        "id": "hcy-toward-sun-live",
+        "url": "./media/music/hcy-toward-sun-live.mp3",
+        "bytes": 11687560,
+        "sha256": "a6c8dda918e2ff7e4f1cfa12006a9d21bef546ed8d687d40d71c034f73282f3c"
+      },
+      {
+        "id": "hcy-return",
+        "url": "./media/music/hcy-return.mp3",
+        "bytes": 4952434,
+        "sha256": "679393cf1f102cea82dbb527793663d248ecf30614eaf92e6f5814621f9ea23b"
+      }
+    ]
+  },
+  "behavior": {
+    "directInPagePlayback": true,
+    "localFileSelectionRequired": false,
+    "autoplay": false,
+    "bulkAudioPrecache": false,
+    "pauseOnLeaving": true
+  },
+  "preserved": {
+    "letterAndIndexUnchanged": true,
+    "mentors": 34,
+    "studentReviews": 39,
+    "internshipFirms": 12,
+    "internshipResources": 35,
+    "downloadedAndroidApkVersion": "1.0.5",
+    "androidApkUnchanged": true
+  },
+  "browserQA": {
+    "version": "1.0.6",
+    "status": "passed",
+    "method": "Real CUA browser interaction with the managed static preview; no JavaScript state injection or local-file import.",
+    "passed": [
+      {
+        "check": "Direct playlist initial state",
+        "observed": "19 tracks, 11 album options, five unique primary navigation links; 0:00 and click-to-play prompt; no file-import or matching entrance."
+      },
+      {
+        "check": "MP3 actual playback",
+        "track": "寻",
+        "observed": "Clicked its row play button; status became 正在播放：寻, toggle 暂停：寻, elapsed 0:03 and decoded seek enabled, total 4:30."
+      },
+      {
+        "check": "Pause and seek",
+        "track": "寻",
+        "observed": "Manual pause at 0:12; setting the rendered progress slider to 90 displayed 1:30; explicit resume advanced to 1:34 with playing state."
+      },
+      {
+        "check": "M4A actual playback",
+        "track": "好想爱这个世界啊",
+        "observed": "Clicked its row play button; status became 正在播放：好想爱这个世界啊, toggle labelled 暂停：好想爱这个世界啊, elapsed 0:03, total 4:18."
+      },
+      {
+        "check": "Leave music and return",
+        "observed": "Navigated to mentors while M4A was playing, then returned to music. Same track and position 0:09 retained, toggle returned to play, message 已离开音乐栏目，播放已暂停。; later screenshot still showed 0:09."
+      },
+      {
+        "check": "Desktop visual inspection",
+        "observed": "Readable header, stacked playlist rows alongside player, direct play buttons and progress/volume controls; no horizontal overflow observed in captured viewport."
+      }
+    ],
+    "screenshot": {
+      "filename": "music-direct-preview-106.jpg",
+      "savedOutsideCheckout": true,
+      "bytes": 69229
+    },
+    "not_verified": [
+      "Playback of all 19 full tracks",
+      "Mobile viewport and physical phone playback",
+      "Native app playback",
+      "Background/tab visibility and bfcache in this browser pass",
+      "Public deployment URLs and HTTP range responses; release verification is separate"
+    ]
+  },
+  "publicVerification": "pending"
+}
