@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "mentors_34": true,
+    "cards_17": true,
+    "life_chapters_12": true,
+    "social_posts_82": true,
+    "unique_post_ids": true,
+    "all_mentor_directions_present": true,
+    "all_social_population_preserved": true,
+    "all_source_codes_resolve": true,
+    "all_download_hashes_match": true
+  },
+  "bytes": 1444417,
+  "sourceAliases": 260,
+  "uniqueSourceUrls": 168
+}
