@@ -91,6 +91,7 @@ jobs:
           python3 android/verify-apk.py "$APK"
           (cd android/artifacts && sha256sum *.apk > SHA256SUMS.txt)
       - name: Optional Android 14 offline smoke test
+        timeout-minutes: 12
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.smoke_test }}
         env:
           APK_PATH: android/artifacts/nau-mpacc-guide-1.0.0${{ steps.edition.outputs.suffix }}.apk

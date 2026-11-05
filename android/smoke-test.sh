@@ -10,10 +10,16 @@ if [[ -e /dev/kvm ]]; then sudo chmod 666 /dev/kvm; fi
 "$SDK/emulator/emulator" -avd nau-smoke -no-window -no-audio -no-boot-anim -no-snapshot -gpu swiftshader_indirect > android/artifacts/smoke/emulator.log 2>&1 &
 EMULATOR_PID=$!
 cleanup() {
-  "$ADB" logcat -d > android/artifacts/smoke/logcat.txt 2>&1 || true
-  "$ADB" exec-out screencap -p > android/artifacts/smoke/screenshot.png 2>/dev/null || true
-  "$ADB" emu kill >/dev/null 2>&1 || true
+  local exit_status=$?
+  if [[ ! -s android/artifacts/smoke/result.txt ]]; then
+    printf '%s\n' "FAIL: smoke test exited before UI verification (status $exit_status). See emulator.log and logcat.txt." > android/artifacts/smoke/result.txt
+  fi
+  # logcat otherwise waits forever when a failed emulator never comes online.
+  timeout --kill-after=3s 10s "$ADB" logcat -d > android/artifacts/smoke/logcat.txt 2>&1 || true
+  timeout --kill-after=3s 10s "$ADB" exec-out screencap -p > android/artifacts/smoke/screenshot.png 2>/dev/null || true
+  timeout --kill-after=3s 10s "$ADB" emu kill >/dev/null 2>&1 || true
   kill "$EMULATOR_PID" 2>/dev/null || true
+  return "$exit_status"
 }
 trap cleanup EXIT
 timeout 360 "$ADB" wait-for-device
@@ -42,11 +48,21 @@ SWIPE_START=$((SCREEN_HEIGHT * 78 / 100))
 SWIPE_END=$((SCREEN_HEIGHT * 45 / 100))
 
 dump_ui() {
+  local remaining command_limit
   # A failed dump must not reuse a previous frame and accidentally pass.
   rm -f android/artifacts/smoke/ui.xml
-  "$ADB" shell rm -f /sdcard/nau-ui.xml >/dev/null 2>&1 || true
-  timeout 20 "$ADB" shell uiautomator dump /sdcard/nau-ui.xml >/dev/null 2>&1 || true
-  timeout 15 "$ADB" pull /sdcard/nau-ui.xml android/artifacts/smoke/ui.xml >/dev/null 2>&1 || true
+  remaining=$((UI_DEADLINE - SECONDS))
+  if ((remaining <= 0)); then return; fi
+  command_limit=$((remaining < 3 ? remaining : 3))
+  timeout --kill-after=1s "${command_limit}s" "$ADB" shell rm -f /sdcard/nau-ui.xml >/dev/null 2>&1 || true
+  remaining=$((UI_DEADLINE - SECONDS))
+  if ((remaining <= 0)); then return; fi
+  command_limit=$((remaining < 20 ? remaining : 20))
+  timeout --kill-after=1s "${command_limit}s" "$ADB" shell uiautomator dump /sdcard/nau-ui.xml >/dev/null 2>&1 || true
+  remaining=$((UI_DEADLINE - SECONDS))
+  if ((remaining <= 0)); then return; fi
+  command_limit=$((remaining < 15 ? remaining : 15))
+  timeout --kill-after=1s "${command_limit}s" "$ADB" pull /sdcard/nau-ui.xml android/artifacts/smoke/ui.xml >/dev/null 2>&1 || true
 }
 
 ui_state() {
@@ -92,22 +108,26 @@ PY
 
 passed=false
 navigation_tapped=false
+UI_DEADLINE=$((SECONDS + 180))
 for attempt in $(seq 1 45); do
+  if ((SECONDS >= UI_DEADLINE)); then break; fi
   dump_ui
   read -r STATE TAP_X TAP_Y <<< "$(ui_state)"
   if [[ "$STATE" == PASS ]]; then passed=true; break; fi
+  if ((SECONDS >= UI_DEADLINE)); then break; fi
   if [[ "$STATE" == NAV && "$navigation_tapped" == false ]]; then
-    "$ADB" shell input tap "$TAP_X" "$TAP_Y"
+    timeout --kill-after=1s 3s "$ADB" shell input tap "$TAP_X" "$TAP_Y" || true
     navigation_tapped=true
   elif [[ "$STATE" != WAIT ]]; then
     # Heading, notice, search and filters can still hide the first mentor after
     # anchor navigation. Advance by a third of the screen without resetting it.
-    "$ADB" shell input swipe "$SWIPE_X" "$SWIPE_START" "$SWIPE_X" "$SWIPE_END" 400
+    timeout --kill-after=1s 3s "$ADB" shell input swipe "$SWIPE_X" "$SWIPE_START" "$SWIPE_X" "$SWIPE_END" 400 || true
   fi
-  sleep 2
+  remaining=$((UI_DEADLINE - SECONDS))
+  if ((remaining > 0)); then sleep "$((remaining < 2 ? remaining : 2))"; fi
 done
 if [[ "$passed" != true ]]; then
-  printf '%s\n' "FAIL: offline mode plus visible dynamic mentor '$EXPECTED_MENTOR' was not reached." > android/artifacts/smoke/result.txt
+  printf '%s\n' "FAIL: offline mode plus visible dynamic mentor '$EXPECTED_MENTOR' was not reached within the 180-second UI budget." > android/artifacts/smoke/result.txt
   exit 1
 fi
 printf '%s\n' 'PASS: Android 14 emulator launched offline and rendered a mentor from packaged JSON.' > android/artifacts/smoke/result.txt
