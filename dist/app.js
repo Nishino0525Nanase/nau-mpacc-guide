@@ -56,6 +56,14 @@
 
   document.addEventListener('error', event => {
     const image = event.target;
+    if (image?.matches?.('img[data-life-image]')) {
+      const media = image.closest('.life-photo-media');
+      const link = media?.querySelector('.life-photo-open');
+      const fallback = media?.querySelector('.life-photo-fallback');
+      if (link) link.hidden = true;
+      if (fallback) fallback.hidden = false;
+      return;
+    }
     if (!image?.matches?.('img[data-evidence-shot]')) return;
     const media = image.closest('.evidence-shot-media');
     const link = media?.querySelector('.evidence-shot-open');
@@ -497,7 +505,9 @@
     const hasInternships = Boolean(state.data.internships && array(state.data.internships.firms).length);
     const showInternships = hasInternships && chapter.id === 'life-09';
     const chapterBody = chapter.blocks.map(blockHtml).join('');
-    app.innerHTML = heading('02 / CAMPUS & GRADUATE LIFE', '在南审，慢慢把生活安顿好', '从入学与住宿，到课程、实习、论文和办事。以浦口校区为主，涉及本科、MAud、莫愁或历史年份的经验，在正文里分别说明。', `<strong>${chapters.length}</strong> 章 · 可逐条返回来源`) + `${hasInternships ? '<a class="intern-life-shortcut" href="#life/life-09"><span>实习准备</span>查看四大、国内所与南京周边资源 <span aria-hidden="true">↗</span></a>' : ''}<div class="life-mobile-index"><label for="mobile-chapter">选择章节</label><select id="mobile-chapter">${chapters.map(c => `<option value="${esc(c.id)}"${c.id === chapter.id ? ' selected' : ''}>${esc(c.title)}</option>`).join('')}</select></div><div class="life-layout"><aside class="chapter-sidebar"><div class="sidebar-label"><span>阅读目录</span><span>CONTENTS</span></div><nav aria-label="学习生活章节目录">${chapters.map(c => `<a class="chapter-link" href="#life/${esc(c.id)}"${c.id === chapter.id ? ' aria-current="page"' : ''}><span class="chapter-number">${String(c.number).padStart(2,'0')}</span><span>${esc(c.title.replace(/^第[一二三四五六七八九十十二]+章\s*/,''))}</span></a>`).join('')}</nav></aside><article class="article-panel" id="current-chapter"><div class="article-kicker">CHAPTER ${String(chapter.number).padStart(2,'0')} / ${String(chapters.length).padStart(2,'0')}</div><h2 class="article-title">${esc(chapter.title)}</h2><div class="article-body">${showInternships ? internshipHubHtml() + `<details class="intern-legacy-chapter"><summary>奖助、预算与原职业准备资料</summary>${chapterBody}</details>` : chapterBody}</div><nav class="chapter-pagination" aria-label="章节翻页">${i > 0 ? `<a href="#life/${esc(chapters[i-1].id)}"><small>← 上一章</small>${esc(chapters[i-1].title)}</a>` : '<span></span>'}${i < chapters.length-1 ? `<a href="#life/${esc(chapters[i+1].id)}"><small>下一章 →</small>${esc(chapters[i+1].title)}</a>` : '<span></span>'}</nav></article></div>`;
+    const chapterImages = window.NAULifeImages?.renderChapter?.(chapter.id, state.data.lifeImageIndex) || '';
+    const imageShortcut = array(state.data.lifeImageIndex?.entries).length ? '<div class="life-image-shortcut"><button type="button" class="text-button" data-action="life-images">图片与原帖索引 <span aria-hidden="true">↗</span></button><span>按章节找图片，点图查看原图与来源。</span></div>' : '';
+    app.innerHTML = heading('02 / CAMPUS & GRADUATE LIFE', '在南审，慢慢把生活安顿好', '从入学与住宿，到课程、实习、论文和办事。以浦口校区为主，涉及本科、MAud、莫愁或历史年份的经验，在正文里分别说明。', `<strong>${chapters.length}</strong> 章 · 可逐条返回来源`) + `${imageShortcut}${hasInternships ? '<a class="intern-life-shortcut" href="#life/life-09"><span>实习准备</span>查看四大、国内所与南京周边资源 <span aria-hidden="true">↗</span></a>' : ''}<div class="life-mobile-index"><label for="mobile-chapter">选择章节</label><select id="mobile-chapter">${chapters.map(c => `<option value="${esc(c.id)}"${c.id === chapter.id ? ' selected' : ''}>${esc(c.title)}</option>`).join('')}</select></div><div class="life-layout"><aside class="chapter-sidebar"><div class="sidebar-label"><span>阅读目录</span><span>CONTENTS</span></div><nav aria-label="学习生活章节目录">${chapters.map(c => `<a class="chapter-link" href="#life/${esc(c.id)}"${c.id === chapter.id ? ' aria-current="page"' : ''}><span class="chapter-number">${String(c.number).padStart(2,'0')}</span><span>${esc(c.title.replace(/^第[一二三四五六七八九十十二]+章\s*/,''))}</span></a>`).join('')}</nav></aside><article class="article-panel" id="current-chapter"><div class="article-kicker">CHAPTER ${String(chapter.number).padStart(2,'0')} / ${String(chapters.length).padStart(2,'0')}</div><h2 class="article-title">${esc(chapter.title)}</h2>${chapterImages}<div class="article-body">${showInternships ? internshipHubHtml() + `<details class="intern-legacy-chapter"><summary>奖助、预算与原职业准备资料</summary>${chapterBody}</details>` : chapterBody}</div><nav class="chapter-pagination" aria-label="章节翻页">${i > 0 ? `<a href="#life/${esc(chapters[i-1].id)}"><small>← 上一章</small>${esc(chapters[i-1].title)}</a>` : '<span></span>'}${i < chapters.length-1 ? `<a href="#life/${esc(chapters[i+1].id)}"><small>下一章 →</small>${esc(chapters[i+1].title)}</a>` : '<span></span>'}</nav></article></div>`;
     if (showInternships) renderInternshipResults();
   }
 
@@ -591,30 +601,11 @@
     emit('guide_open', {id:s.id});
   }
 
-  let letterHold = null, letterKeyRelease = '';
-
-  function cancelLetterHold() {
-    if (letterHold) clearTimeout(letterHold.timer);
-    letterHold = null;
-  }
-
-  function beginLetterHold(title, input) {
-    cancelLetterHold();
-    const hold = {title, ...input};
-    letterHold = hold;
-    hold.timer = setTimeout(() => {
-      if (letterHold !== hold || !dialog.open || !title.isConnected || document.hidden) return;
-      if (hold.key) letterKeyRelease = hold.key;
-      cancelLetterHold();
-      openQuietLetter();
-    }, 2000);
-  }
-
   function openShortLetter() {
     const page = $('#short-letter-template');
     if (!page?.innerHTML.trim()) return;
-    const copy = page.innerHTML.replace('<h3>', '<h2 id="dialog-title" class="quiet-letter-seal" tabindex="0" data-letter-seal>').replace('</h3>', '</h2>');
-    openDialog('纸页背面', `<article class="quiet-letter-page">${copy}</article>`, 'quiet-letter');
+    const copy = page.innerHTML.replace('<h3>', '<h2 id="dialog-title">').replace('</h3>', '</h2>');
+    openDialog('纸页背面', `<article class="quiet-letter-page">${copy}<div class="letter-page-turn"><button type="button" class="text-button letter-code-entry" data-action="letter-code">封存的一页 <span aria-hidden="true">↗</span></button></div></article>`, 'quiet-letter');
   }
 
   function openQuietLetter() {
@@ -622,8 +613,34 @@
     if (page?.innerHTML.trim()) openDialog('纸页背面', `<article class="quiet-letter-page">${page.innerHTML}<div class="letter-page-turn"><button type="button" class="text-button" data-action="short-letter">← 回到小信</button></div></article>`, 'quiet-letter');
   }
 
+  function openLetterCode() {
+    openDialog('夹页', '<section class="letter-code-page"><h2 id="dialog-title">封存的一页</h2><p>用一段旧日期，翻开这一页。</p><form id="letter-code-form" novalidate><label for="letter-code">八位日期</label><input id="letter-code" type="password" inputmode="numeric" maxlength="8" autocomplete="off" placeholder="YYYYMMDD" aria-describedby="letter-code-hint letter-code-error"><p id="letter-code-hint" class="letter-code-hint">按年月日填写。</p><p id="letter-code-error" class="letter-code-error" role="alert" hidden></p><div class="letter-code-actions"><button type="button" class="text-button" data-action="short-letter">← 回到小信</button><button type="submit" class="button secondary">翻开</button></div></form></section>', 'letter-code');
+    $('#letter-code').focus({preventScroll:true});
+  }
+
+  function openLifeImages() {
+    const content = window.NAULifeImages?.renderIndex?.(state.data.lifeImageIndex, state.data.lifeChapters);
+    if (content) openDialog('学习生活 / 图片与原帖', `<h2 id="dialog-title" class="article-title">图片与原帖索引</h2>${content}`, 'life-images');
+  }
+
+  document.addEventListener('submit', event => {
+    if (event.target.id !== 'letter-code-form') return;
+    event.preventDefault();
+    const input = $('#letter-code');
+    if (input.value === '20230613') {
+      input.value = '';
+      openQuietLetter();
+      return;
+    }
+    const error = $('#letter-code-error');
+    error.textContent = input.value.length === 8 ? '日期似乎不对，再想一想。' : '请输入八位日期。';
+    error.hidden = false;
+    input.setAttribute('aria-invalid', 'true');
+    input.focus({preventScroll:true});
+    input.select();
+  });
+
   function openDialog(eyebrow, html, type = '') {
-    cancelLetterHold();
     if (!dialog.open) {
       state.lastFocus = document.activeElement;
       state.lastFocusId = state.lastFocus?.dataset?.id || null;
@@ -638,7 +655,6 @@
   }
 
   function closeDialog() {
-    cancelLetterHold();
     state.dialogType = '';
     if (dialog.open) dialog.close();
     document.body.style.overflow = '';
@@ -700,6 +716,7 @@
 
   document.addEventListener('click', event => {
     const currentLink = event.target.closest('a[href]');
+    if (currentLink?.closest('.life-photo-chapters')) closeDialog();
     if(currentLink && currentLink.getAttribute('href') === location.hash && /^#(?:mentors|life|posts|downloads|music)(?:\/.*)?$/.test(location.hash)){
       event.preventDefault();
       route(true);
@@ -710,6 +727,8 @@
       switch(action.dataset.action) {
         case 'short-letter': if (!dialog.open) action.focus({preventScroll:true}); openShortLetter(); break;
         case 'quiet-letter': openQuietLetter(); break;
+        case 'letter-code': openLetterCode(); break;
+        case 'life-images': openLifeImages(); break;
         case 'compare-toggle': toggleCompare(id); break;
         case 'compare-open': openComparison(); break;
         case 'compare-clear': clearCompare(); break;
@@ -734,6 +753,11 @@
     if(download)emit('download',{id:download.dataset.download});
   });
   document.addEventListener('input', event => {
+    if (event.target.id === 'letter-code') {
+      $('#letter-code-error').hidden = true;
+      event.target.removeAttribute('aria-invalid');
+      return;
+    }
     if(event.target.id==='contact-copy-text'){state.contactEdits[contactEditKey()]=event.target.value;return;}
     if(event.target.id==='mentor-search'){state.query=event.target.value;renderMentorResults();}
     else if(event.target.id==='post-search'){state.postQuery=event.target.value;state.postLimit=20;renderPostResults();}
@@ -752,42 +776,6 @@
     else if(event.target.id==='post-category'){state.postCategory=event.target.value;state.postLimit=20;renderPostResults();}
     else if(event.target.id==='contact-status'){state.saved[event.target.dataset.id]=event.target.value;persistSaved();if(state.view==='mentors')renderMentorResults();notify('已更新联系顺位');}
   });
-  dialog.addEventListener('pointerdown', event => {
-    const title = event.target.closest('[data-letter-seal]');
-    if (!title || event.button !== 0 || !event.isPrimary) return;
-    event.preventDefault();
-    title.focus({preventScroll:true});
-    title.setPointerCapture(event.pointerId);
-    beginLetterHold(title, {pointerId:event.pointerId, x:event.clientX, y:event.clientY});
-  });
-  dialog.addEventListener('pointermove', event => {
-    if (letterHold?.pointerId === event.pointerId && Math.hypot(event.clientX-letterHold.x,event.clientY-letterHold.y)>10) cancelLetterHold();
-  });
-  for (const type of ['pointerup','pointercancel','lostpointercapture']) dialog.addEventListener(type, event => {
-    if (letterHold?.pointerId === event.pointerId) cancelLetterHold();
-  });
-  dialog.addEventListener('keydown', event => {
-    if (!event.target.matches('[data-letter-seal]') || !['Enter',' '].includes(event.key)) return;
-    event.preventDefault();
-    if (!event.repeat) beginLetterHold(event.target, {key:event.key});
-  });
-  dialog.addEventListener('keyup', event => {
-    if (letterHold?.key === event.key) cancelLetterHold();
-  });
-  document.addEventListener('keydown', event => {
-    if (letterKeyRelease === event.key) { event.preventDefault(); event.stopPropagation(); }
-  }, true);
-  document.addEventListener('keyup', event => {
-    if (letterKeyRelease === event.key) { event.preventDefault(); event.stopPropagation(); letterKeyRelease = ''; }
-  }, true);
-  dialog.addEventListener('focusout', event => {
-    if (letterHold?.title === event.target) cancelLetterHold();
-  });
-  dialog.addEventListener('contextmenu', event => {
-    if (event.target.closest('[data-letter-seal]')) event.preventDefault();
-  });
-  window.addEventListener('blur', () => { cancelLetterHold(); letterKeyRelease = ''; });
-  document.addEventListener('visibilitychange', () => { if (document.hidden) { cancelLetterHold(); letterKeyRelease = ''; } });
   $('#dialog-close').addEventListener('click',closeDialog);
   dialog.addEventListener('cancel',event=>{event.preventDefault();closeDialog();});
   dialog.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)closeDialog();}});

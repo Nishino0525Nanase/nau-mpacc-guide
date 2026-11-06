@@ -48,7 +48,7 @@
     "author": {
       "name": "胡雨诺",
       "role": "策划与设计",
-      "background": "西南林业大学 → 南京审计大学 MPAcc（保研）",
+      "background": "西南林业大学 → 南京审计大学 MPAcc",
       "informationSource": "用户提供"
     },
     "researchExpansion": {
@@ -566,7 +566,7 @@
     },
     "appEdition": {
       "web": {
-        "version": "1.0.10"
+        "version": "1.0.12"
       },
       "android": {
         "available": true,
@@ -575,11 +575,7 @@
         "bytes": 1037472,
         "sha256": "21af195ff9b7288bac97bd9fe9ab41017f80adb94dd949a930d5ec3233f5e566",
         "label": "下载 Android 安装包",
-        "changes": [
-          "新增音乐小憩栏目，收录19首自选歌曲，支持按歌名、专辑和版本筛选。",
-          "通过系统选择本机音频，在页面内播放、切歌、调节进度和音量；离开或退到后台暂停。",
-          "提供QQ音乐官方搜索入口；原有信件、导师、实习和Word/Excel资料保留。"
-        ]
+        "changes": []
       }
     },
     "continueResearch": {
@@ -46739,5 +46735,483 @@
       }
     ],
     "totalDurationSeconds": 5907.5
+  },
+  "lifeImageIndex": {
+    "entries": [
+      {
+        "id": "life-map-official-2019",
+        "title": "官网校园图 · 中文历史图",
+        "chapterIds": [
+          "life-01",
+          "life-02",
+          "life-06",
+          "life-11"
+        ],
+        "sourceCode": "MAP01",
+        "sourceUrl": "https://www.nau.edu.cn/_t505/2019/0610/c5755a55736/page.htm",
+        "sourceTitle": "南京审计大学卡通版地图",
+        "sourceAuthor": "南京审计大学官网",
+        "sourceDate": "2019-06-10",
+        "kind": "map",
+        "scopeNote": "图中可见沁园、润园、泽园、澄园及食堂、图书馆、教学楼、大门等中文名称；非实时导航、非比例尺路线图。 页面发布时间为2019-06-10，不证明地图按2026现状更新。 部分建筑、出入口和服务点可能变化；到校后按当届通知、现场指示核对。 不用于确认当前宿舍分配、营业时间、外卖取餐点或道路开放情况。",
+        "images": [
+          {
+            "src": "./evidence/life/nau-official-cartoon-map-2019.jpg",
+            "width": 5031,
+            "height": 3437,
+            "bytes": 8791070,
+            "sha256": "e8b9bc2c44ea1159cff6bdee00d59e734b352027979782cc569e4f497764cf00",
+            "caption": "学校官网发布的卡通校园图（2019年页面），可对照四园区、图书馆、食堂与主要教学楼的大致关系。",
+            "alt": "南京审计大学卡通版地图",
+            "kind": "official-source-image",
+            "originalImageUrl": "https://www.nau.edu.cn/_upload/article/images/cb/62/8aa0acd74574a1ccfb98d7ae3fc9/a96e91b7-6712-4a79-a81c-467adebaca0b.jpg",
+            "visualReview": "已用原图的临时缩略预览确认是中文手绘校园地图；原始发布图片字节未修改。"
+          }
+        ]
+      },
+      {
+        "id": "life-map-official-2024",
+        "title": "官网校园图 · 英文示意图",
+        "chapterIds": [
+          "life-01",
+          "life-02",
+          "life-06",
+          "life-11"
+        ],
+        "sourceCode": "MAP02",
+        "sourceUrl": "https://lxsy.nau.edu.cn/2024/0926/c8311a151052/page.htm",
+        "sourceTitle": "Campus Map of Nanjing Audit University",
+        "sourceAuthor": "南京审计大学留学生院",
+        "sourceDate": "2024-09-08",
+        "kind": "map",
+        "scopeNote": "英文标注主要教学楼、图书馆、运动场、部分餐厅与入口；原图文字方向横置。 2024-09-08是网页显示的发布时间，不是已核实的地图测绘或更新日期。 图中英文标注及图形用于认校园大致分区，不是现行路线、宿舍分配或服务营业承诺。",
+        "images": [
+          {
+            "src": "./evidence/life/nau-official-campus-map-2024.jpg",
+            "width": 799,
+            "height": 1205,
+            "bytes": 777543,
+            "sha256": "b19aada61524286dc4b5cf30d9862d97bf971c7855cf2712308ceaaafb1b5f19",
+            "caption": "留学生院校园示意图（2024年发布页面），保留英文楼名标注的原图。",
+            "alt": "Campus Map of Nanjing Audit University",
+            "kind": "official-source-image",
+            "originalImageUrl": "https://lxsy.nau.edu.cn/_upload/article/images/52/03/c5016f384d2f9a2530cfb7e42001/eff69b7f-af02-441c-8ee3-f1a801dcb67e.jpg",
+            "visualReview": "已直接查看下载原图，确认为校园三维示意图，无二维码或私人联系方式。"
+          }
+        ]
+      },
+      {
+        "id": "life-images-l01",
+        "title": "沁园宿舍 · 两种南向布局",
+        "chapterIds": [
+          "life-02",
+          "life-03"
+        ],
+        "sourceCode": "L01",
+        "sourceUrl": "https://www.xiaohongshu.com/explore/6a8827f80000000028027a78",
+        "sourceTitle": "南审沁园宿舍（热门问题解答）",
+        "sourceAuthor": "小羽毛学姐",
+        "sourceDate": "08-21（年份未显示）",
+        "kind": "housing",
+        "scopeNote": "原帖年份未显示；两张照片仅展示作者标注的沁园南向宿舍布局，不能代表所有园区或当前 MPAcc 宿舍安排。",
+        "images": [
+          {
+            "src": "./evidence/life/l01-image-01.webp",
+            "width": 1080,
+            "height": 1513,
+            "bytes": 87538,
+            "sha256": "4f548b18dc23995313c0ec72e25dee01b9bb739a71cda3557c0f5224677747d4",
+            "caption": "原帖第1图：沁园南向宿舍，作者标注竖排衣柜、上下铺与双人联排桌椅。",
+            "alt": "沁园南向宿舍衣柜与上下铺原图",
+            "kind": "original-source-image",
+            "originalImageUrl": "https://sns-web-i10.rednotecdn.com/202611061929/957b6ccb3c1c9b8907e01d22d95345c9/notes_pre_post/1040g3k03243cv8ra0m2g5n11ilp1fpqg80ll8ag!nd_dft_wlteh_webp_3",
+            "sourceImageNumber": 1,
+            "visualReview": "已查看下载原图；未发现二维码、私人联系方式或私信内容；原始下载字节未修改。"
+          },
+          {
+            "src": "./evidence/life/l01-image-02.webp",
+            "width": 1080,
+            "height": 1512,
+            "bytes": 103398,
+            "sha256": "de76576dfdf180811f2755840994d9f310810131a3fabbe38fbdf83c264b8a21",
+            "caption": "原帖第2图：沁园南向宿舍飘窗版，保留作者原始空间标注。",
+            "alt": "沁园南向飘窗宿舍与联排书桌原图",
+            "kind": "original-source-image",
+            "originalImageUrl": "https://sns-web-i10.rednotecdn.com/202611061929/2a233083a103828b76d3496059503600/notes_pre_post/1040g3k03243cv8ra0m305n11ilp1fpqgbekhcs8!nd_dft_wlteh_webp_3",
+            "sourceImageNumber": 2,
+            "visualReview": "已查看下载原图；未发现二维码、私人联系方式或私信内容；原始下载字节未修改。"
+          }
+        ]
+      },
+      {
+        "id": "life-images-l06",
+        "title": "外卖服务 · 先认名称再核实配送",
+        "chapterIds": [
+          "life-04",
+          "life-05"
+        ],
+        "sourceCode": "L06",
+        "sourceUrl": "https://www.xiaohongshu.com/explore/687474460000000017034e47",
+        "sourceTitle": "南审的一些可以送到楼下的外卖们",
+        "sourceAuthor": "摸喵的鱼",
+        "sourceDate": "2025-07-14",
+        "kind": "takeaway",
+        "scopeNote": "2025-07-14 个人攻略中的服务识别图。图内免配送费、送楼或上楼等说法是作者当时的描述；当前覆盖、门禁、配送费及取餐点须在下单页核实。此次未下单测试。",
+        "images": [
+          {
+            "src": "./evidence/life/l06-image-01.webp",
+            "width": 1080,
+            "height": 1139,
+            "bytes": 37254,
+            "sha256": "7f78bc1bb6fcf3ff4c23d4c1fd8f19a6436f528aeb37debc0a0df852d8684650",
+            "caption": "原帖第1图：趣团校园及作者列举的品牌。仅供识别服务名称。",
+            "alt": "原帖趣团校园服务识别图",
+            "kind": "original-source-image",
+            "originalImageUrl": "https://sns-web-i10.rednotecdn.com/202611061928/bd2de0e1e54b892d13c35770eae4f52b/notes_pre_post/1040g3k831jtde147j2c05pk05fq1oj2c95tt3ko!nd_dft_wlteh_webp_3",
+            "sourceImageNumber": 1,
+            "visualReview": "已查看下载原图；未发现二维码、私人联系方式或私信内容；原始下载字节未修改。"
+          },
+          {
+            "src": "./evidence/life/l06-image-03.webp",
+            "width": 1080,
+            "height": 1093,
+            "bytes": 37720,
+            "sha256": "656c64aa29937d22c225779b72c4d4434b7a903e1f7244ecc873571c3690513d",
+            "caption": "原帖第3图：江浦小二。图内配送说明为2025年作者记录，当前以订单页面为准。",
+            "alt": "原帖江浦小二服务识别图",
+            "kind": "original-source-image",
+            "originalImageUrl": "https://sns-web-i10.rednotecdn.com/202611061928/3842fa10d4d3180ed7e46c6899bdcf15/notes_pre_post/1040g3k031jtde177j46g5pk05fq1oj2cv598pv0!nd_dft_wlteh_webp_3",
+            "sourceImageNumber": 3,
+            "visualReview": "已查看下载原图；未发现二维码、私人联系方式或私信内容；原始下载字节未修改。"
+          }
+        ]
+      },
+      {
+        "id": "life-images-l08",
+        "title": "一周吃啥 · 原帖食物照片",
+        "chapterIds": [
+          "life-05"
+        ],
+        "sourceCode": "L08",
+        "sourceUrl": "https://www.xiaohongshu.com/explore/6ad47e9b000000002803b18a",
+        "sourceTitle": "南审一周吃啥",
+        "sourceAuthor": "小鱼鱼鱼",
+        "sourceDate": "10-18（年份未显示）",
+        "kind": "food",
+        "scopeNote": "原帖显示10-18，年份未显示。只展示实际取得并查看的第1、4图，不代表14图全部审读；菜品照片不保证当前档口、价格、份量或营业状态。",
+        "images": [
+          {
+            "src": "./evidence/life/l08-image-01.webp",
+            "width": 1080,
+            "height": 1440,
+            "bytes": 160268,
+            "sha256": "dd99d94ae53294be2fd6aff137966fb6fd1ad9aced3b7ef8db3b65f327fd778f",
+            "caption": "原帖第1图：鸭肉与卷饼照片。原图未标店名，不据照片补写具体档口。",
+            "alt": "原帖鸭肉与卷饼照片",
+            "kind": "original-source-image",
+            "originalImageUrl": "https://sns-web-i10.rednotecdn.com/202611061928/56939cff56afa6f193d093c18a554443/notes_uhdr/1040g3qg326f6m4035g005otsqic9t776kscaqi0!nd_dft_wlteh_webp_3",
+            "sourceImageNumber": 1,
+            "visualReview": "已查看下载原图；未发现二维码、私人联系方式或私信内容；原始下载字节未修改。"
+          },
+          {
+            "src": "./evidence/life/l08-image-04.webp",
+            "width": 1080,
+            "height": 1440,
+            "bytes": 220696,
+            "sha256": "85819bcc419dea4c78c4b194f1cda6f5582aca5510d61e7fe6cf2323ae54af5f",
+            "caption": "原帖第4图：炒拉面照片；既有作者回复将p4标注为“澄一兰州牛肉面”。",
+            "alt": "原帖第4图炒拉面照片",
+            "kind": "original-source-image",
+            "originalImageUrl": "https://sns-web-i10.rednotecdn.com/202611061928/e2da5ffd902e36932a637f29fc081a70/notes_uhdr/1040g3qg326f6m4035g1g5otsqic9t7767t14eu8!nd_dft_wlteh_webp_3",
+            "sourceImageNumber": 4,
+            "visualReview": "已查看下载原图；未发现二维码、私人联系方式或私信内容；原始下载字节未修改。"
+          }
+        ]
+      },
+      {
+        "id": "life-images-l09",
+        "title": "快递篇 · 分园区说明与寄件写法",
+        "chapterIds": [
+          "life-02",
+          "life-04",
+          "life-11"
+        ],
+        "sourceCode": "L09",
+        "sourceUrl": "https://www.xiaohongshu.com/explore/6a5dbcd00000000011005411",
+        "sourceTitle": "南审快递篇",
+        "sourceAuthor": "今天吃什么",
+        "sourceDate": "07-20；首图内部日期2026/7/20",
+        "kind": "parcel",
+        "scopeNote": "两张均为原帖文字指南配图，不是站点地图或现场照片。页面显示07-20，首图内部日期为2026/7/20；地址与站点须按实际宿舍、物流公司及到件通知确认。",
+        "images": [
+          {
+            "src": "./evidence/life/l09-image-01.webp",
+            "width": 1080,
+            "height": 2002,
+            "bytes": 139314,
+            "sha256": "d28c8e707ba35991eb1e02f1e87ac7e0707b817e99351fe253a1ca807081b89a",
+            "caption": "原帖第1图：沁、润、泽、澄园的快递取件文字说明（图内日期2026/7/20）。",
+            "alt": "原帖分园区快递位置文字页",
+            "kind": "original-source-image",
+            "originalImageUrl": "https://sns-web-i10.rednotecdn.com/202611061928/849b0ca794b13c644147f011bd8afade/1040g008322q963ik74105on7hk57qg1vr2ohrn0!nd_dft_wlteh_webp_3",
+            "sourceImageNumber": 1,
+            "visualReview": "已查看下载原图；未发现二维码、私人联系方式或私信内容；原始下载字节未修改。"
+          },
+          {
+            "src": "./evidence/life/l09-image-02.webp",
+            "width": 1198,
+            "height": 1080,
+            "bytes": 82564,
+            "sha256": "13193966a998ad3a45a4aaaa123b880f82f0cd7a3431be1fda5c9b7e26a326ca",
+            "caption": "原帖第2图：邮寄地址写法与开学快递拥堵提醒；XX园须替换为本人实际园区。",
+            "alt": "原帖快递地址模板与报到提醒文字页",
+            "kind": "original-source-image",
+            "originalImageUrl": "https://sns-web-i10.rednotecdn.com/202611061928/dfa16bbd3f04688e41ade80d2c8b40c7/1040g008322q963ik740g5on7hk57qg1vsqqajqo!nd_dft_wgth_webp_3",
+            "sourceImageNumber": 2,
+            "visualReview": "已查看下载原图；未发现二维码、私人联系方式或私信内容；原始下载字节未修改。"
+          }
+        ]
+      },
+      {
+        "id": "life-images-p03",
+        "title": "周边吃饭 · 龙华美食街原图",
+        "chapterIds": [
+          "life-05",
+          "life-07"
+        ],
+        "sourceCode": "P03",
+        "sourceUrl": "https://www.xiaohongshu.com/explore/6acc45ea000000001802caef",
+        "sourceTitle": "南审/南工大周边一些好吃的🍽️",
+        "sourceAuthor": "90210.",
+        "sourceDate": "编辑于10-24 江苏",
+        "kind": "food",
+        "scopeNote": "原帖编辑日期10-24，年份未显示。作者明确第1图为南工大附近龙华美食街的八草食堂；不将其描述为南审校门口或当前步行距离。",
+        "images": [
+          {
+            "src": "./evidence/life/p03-image-01.webp",
+            "width": 1080,
+            "height": 1440,
+            "bytes": 196134,
+            "sha256": "53e7dfded267e83b84dcc79f0f3341e852f1aa620a5cda28fca60c93eb4b5988",
+            "caption": "原帖第1图：八草食堂豚骨拉面与叉烧拉面，地点按作者正文为南工大附近龙华美食街。",
+            "alt": "八草食堂拉面原帖照片",
+            "kind": "original-source-image",
+            "originalImageUrl": "https://sns-web-i10.rednotecdn.com/202611061929/a69f88364637ea6c1cb17c14e9d36274/notes_uhdr/1040g3qo32675oqsg58005q43cpr3fva4sqgssh0!nd_dft_wlteh_webp_3",
+            "sourceImageNumber": 1,
+            "visualReview": "已查看下载原图；未发现二维码、私人联系方式或私信内容；原始下载字节未修改。"
+          }
+        ]
+      },
+      {
+        "id": "life-images-p09",
+        "title": "换个地方自习 · 原帖首图",
+        "chapterIds": [
+          "life-07"
+        ],
+        "sourceCode": "P09",
+        "sourceUrl": "https://www.xiaohongshu.com/explore/68773318000000002400acc8",
+        "sourceTitle": "南审／南工周边学习地点推荐",
+        "sourceAuthor": "Colin陈",
+        "sourceDate": "2025-07-16",
+        "kind": "service",
+        "scopeNote": "2025-07-16 的个人自习地点记录。首图是作者使用的馆舍外观配图，正文未逐图确认建筑身份，不据照片认定某馆入口；距离、费用及开放时间未按当前日期复核。含个人读者证界面的第2图不收录。",
+        "images": [
+          {
+            "src": "./evidence/life/p09-image-01.webp",
+            "width": 1440,
+            "height": 1080,
+            "bytes": 207288,
+            "sha256": "b7cd78dad02efbc267b891ea2d3792eaf6c931db7b5575bd8b06c9c651fffb67",
+            "caption": "原帖首图：馆舍外观配图。具体地点、入口与开放安排请另按原帖及官方信息核实。",
+            "alt": "自习地点推荐原帖馆舍外观配图",
+            "kind": "original-source-image",
+            "originalImageUrl": "https://sns-web-i10.rednotecdn.com/202611061929/3d2d142e5c2c1d1112ac8f217f8267b1/notes_pre_post/1040g3k831k031kei2uc04brl09e6pi9fug3tlgg!nd_dft_wgth_webp_3",
+            "sourceImageNumber": 1,
+            "visualReview": "已查看下载原图；未发现二维码、私人联系方式或私信内容；原始下载字节未修改。"
+          }
+        ]
+      },
+      {
+        "id": "life-images-l11",
+        "title": "校园 App · 原帖图标速认",
+        "chapterIds": [
+          "life-03",
+          "life-04",
+          "life-11"
+        ],
+        "sourceCode": "L11",
+        "sourceUrl": "https://www.xiaohongshu.com/explore/68a1e4de000000001b0304dc",
+        "sourceTitle": "南审新生必备学习/生活app",
+        "sourceAuthor": "我是贱贱小女孩",
+        "sourceDate": "2025-08-17",
+        "kind": "service",
+        "scopeNote": "2025-08-17 的新生个人整理，包含本科场景。App用途保留为作者当时标注，不推定所有 App 均适用于 MPAcc 或当前仍采用同一系统；按学院和宿管通知确认。",
+        "images": [
+          {
+            "src": "./evidence/life/l11-image-01.webp",
+            "width": 1080,
+            "height": 1440,
+            "bytes": 99184,
+            "sha256": "5f1d5401d5db5ad388e9c3ac5b5f8bfff166112c410e5de9f3be9722f9d6b42d",
+            "caption": "原帖App图标与用途汇总：洗衣、浴室、饭卡、学习平台等。具体使用要求按当前通知确认。",
+            "alt": "原帖南审学习生活App图标汇总",
+            "kind": "original-source-image",
+            "originalImageUrl": "https://sns-web-i10.rednotecdn.com/202611061929/376173f94e0acd12d87c824632b8343b/notes_pre_post/1040g3k831l9ov8c658905opo8chm3r6ia6h9sio!nd_dft_wlteh_webp_3",
+            "sourceImageNumber": 1,
+            "visualReview": "已查看下载原图；未发现二维码、私人联系方式或私信内容；原始下载字节未修改。"
+          }
+        ]
+      },
+      {
+        "id": "life-images-p17",
+        "title": "雨山龙湖天街 · 原帖周末索引",
+        "chapterIds": [
+          "life-05",
+          "life-07"
+        ],
+        "sourceCode": "P17",
+        "sourceUrl": "https://www.xiaohongshu.com/explore/68830134000000000b02c152",
+        "sourceTitle": "第三弹 雨山龙湖天街",
+        "sourceAuthor": "夹心白兰地（南审学姐版）",
+        "sourceDate": "2025-07-25",
+        "kind": "service",
+        "scopeNote": "2025-07-25 周边消费个人攻略的封面拼图；只展示商场外观与餐饮照片，不据此确认当前商户、活动、价格或交通路线。",
+        "images": [
+          {
+            "src": "./evidence/life/p17-image-01.webp",
+            "width": 1080,
+            "height": 1440,
+            "bytes": 338230,
+            "sha256": "4d043ed9e72ac13d9b82cd98d74f3532448e6df862af5c0e089a4269ff2d8c02",
+            "caption": "原帖封面：雨山龙湖天街夜间外观与作者餐饮照片拼图。",
+            "alt": "雨山龙湖天街原帖封面拼图",
+            "kind": "original-source-image",
+            "originalImageUrl": "https://sns-web-i10.rednotecdn.com/202611061929/b6f33b12476bc8bce6941a8fa144de3b/notes_pre_post/1040g3k031kbjbom5ig5g5pj0ifogu4iu6gnp9fo!nd_dft_wlteh_webp_3",
+            "sourceImageNumber": 1,
+            "visualReview": "已查看下载原图；未发现二维码、私人联系方式或私信内容；原始下载字节未修改。"
+          }
+        ]
+      },
+      {
+        "id": "life-images-r317",
+        "title": "课程怎么上 · 已存原帖与评论截图",
+        "chapterIds": [
+          "life-08"
+        ],
+        "sourceCode": "R317",
+        "sourceUrl": "https://www.xiaohongshu.com/explore/6a8edcec000000001f000035",
+        "sourceTitle": "南审选课互助｜速来留课评（会计篇）",
+        "sourceAuthor": "小羽毛学姐",
+        "sourceDate": "08-26（年份未显示）",
+        "kind": "course",
+        "scopeNote": "复用此前保存的5张实际浏览器截图，包含帖文与具体课程回复；不是此次重新读取的评论。截图未说明任课教师全名，不能据此归入导师评价，也不代表所有MPAcc课程的现行考核要求。",
+        "images": [
+          {
+            "src": "./evidence/xhs/r317-course-post-top.jpg",
+            "alt": "选课帖标题、作者与正文",
+            "caption": "选课帖标题、作者与正文",
+            "scope": "标题、作者、正文及08-26日期；未逐张审读其三幅配图。",
+            "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+            "sourceId": "R317",
+            "mentorId": null,
+            "reviewId": null,
+            "commentId": null,
+            "width": 400,
+            "height": 725,
+            "bytes": 54653,
+            "sha256": "3f424b7d27417efea70a8a545e1282d1b89b224c2a2310d08b4b9677beded908",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false
+          },
+          {
+            "src": "./evidence/xhs/r317-course-method.jpg",
+            "alt": "🍑：会计研究方法课堂抽答",
+            "caption": "🍑：会计研究方法课堂抽答",
+            "scope": "仅会计研究方法主评，含昵称和08-26日期；论文结课跟评未在本图中。",
+            "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+            "sourceId": "R317",
+            "mentorId": null,
+            "reviewId": null,
+            "commentId": "r8-course-method",
+            "width": 375,
+            "height": 128,
+            "bytes": 7076,
+            "sha256": "c06e152d60e2593645bfdda7a83c5ca156fcc058d3999c338662c3a5783703f3",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false
+          },
+          {
+            "src": "./evidence/xhs/r317-course-audit.jpg",
+            "alt": "小鱼鱼鱼：国家治理与国家审计专题",
+            "caption": "小鱼鱼鱼：国家治理与国家审计专题",
+            "scope": "该条课程评论全文，含昵称和08-26日期；无任课教师全名。",
+            "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+            "sourceId": "R317",
+            "mentorId": null,
+            "reviewId": null,
+            "commentId": "r8-course-audit",
+            "width": 375,
+            "height": 187,
+            "bytes": 15508,
+            "sha256": "bcc05470691f343805a19289e93b960b169da1e59a0b2082b4c0e0e88e1225a3",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false
+          },
+          {
+            "src": "./evidence/xhs/r317-course-forensic.jpg",
+            "alt": "小羽毛学姐：司法会计课堂汇报",
+            "caption": "小羽毛学姐：司法会计课堂汇报",
+            "scope": "帖主分享的司法会计课程印象，含昵称、作者标记与08-26日期；未核实本人选课身份。",
+            "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+            "sourceId": "R317",
+            "mentorId": null,
+            "reviewId": null,
+            "commentId": "r8-course-forensic",
+            "width": 375,
+            "height": 110,
+            "bytes": 7120,
+            "sha256": "0f2bd3fc5d32258cf46339f21eab1a97ee214836867fc85840c31341d1949b05",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false
+          },
+          {
+            "src": "./evidence/xhs/r317-course-software.jpg",
+            "alt": "🍑：商业智能分析的软件实操",
+            "caption": "🍑：商业智能分析的软件实操",
+            "scope": "仅商业智能分析实操回复，含昵称和08-26日期；Power BI讨论未在本图中。",
+            "sourceUrl": "https://www.rednote.com/discovery/item/6a8edcec000000001f000035?xsec_token=ABPUzRXfHhA-mRiBFWT9gsO0LB49J5KFLZFcNDAe2p4C0=&xsec_source=pc_search&source=web_search_result_notes",
+            "sourceId": "R317",
+            "mentorId": null,
+            "reviewId": null,
+            "commentId": "r8-course-software",
+            "width": 324,
+            "height": 129,
+            "bytes": 6742,
+            "sha256": "d130c310c4cab57c8be6e3bb43f5cc771b89faf160149f434b57891ef03f95e3",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false
+          }
+        ]
+      }
+    ],
+    "limits": [
+      "新增14张原始来源图片，来自8篇小红书生活/周边帖与2个学校官网页面；另外复用R317的5张既有真实浏览器截图。原图和浏览器截图分别标注，不以图片张数虚增来源数或学生评价条数。",
+      "小红书图片来自此次实际读取页面的原图元数据，已下载为本地文件，字节保持不变；未伪造、重绘或生成截图。CDN链接仅作溯源，网站应使用本地src。",
+      "已取得8篇帖的23张图片，但每篇元数据最多提供前4张；精选12张入库。不宣称看完全部相册或全部评论，评论此次显示Loading，未重新展开。",
+      "L10、P02、P16此次读取超时，未据此增加配图或声称审读。",
+      "L08第2图出现商业包装二维码，未收录；P09第2图为含已遮挡个人读者证界面的截图，也未收录。其余未选图只作为研究文件保存，不发布。",
+      "P06公共交通线路图原帖明确为虚构线路，未采用为校园导航。",
+      "地图为2019与2024发布页面的历史示意图；2024为网页日期，不是已核实的测绘更新日期。地图不能确认当前宿舍分配、道路开放或服务点状态。",
+      "价格、营业时间、配送范围、门禁与服务平台均可能变化；配图仅说明来源当时记录，实际使用前按官方通知或实时订单核实。",
+      "2019中文官网地图原始文件约8.8MB，建议惰性加载，并保留查看原图功能。"
+    ],
+    "counts": {
+      "entries": 11,
+      "newSourceOriginalImages": 14,
+      "reusedBrowserScreenshots": 5,
+      "images": 19,
+      "sources": 11,
+      "chaptersWithImages": 9
+    }
   }
 }
