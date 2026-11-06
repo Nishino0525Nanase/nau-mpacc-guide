@@ -591,9 +591,16 @@
     emit('guide_open', {id:s.id});
   }
 
+  function openShortLetter() {
+    const page = $('#short-letter-template');
+    if (!page?.innerHTML.trim()) return;
+    const copy = page.innerHTML.replace('<h3>', '<h2 id="dialog-title">').replace('</h3>', '</h2>');
+    openDialog('纸页背面', `<article class="quiet-letter-page">${copy}<div class="letter-page-turn"><button type="button" class="text-button" data-action="quiet-letter">还有一页 →</button></div></article>`, 'quiet-letter');
+  }
+
   function openQuietLetter() {
     const page = $('#quiet-letter-template');
-    if (page?.innerHTML.trim()) openDialog('纸页背面', `<article class="quiet-letter-page">${page.innerHTML}</article>`, 'quiet-letter');
+    if (page?.innerHTML.trim()) openDialog('纸页背面', `<article class="quiet-letter-page">${page.innerHTML}<div class="letter-page-turn"><button type="button" class="text-button" data-action="short-letter">← 回到小信</button></div></article>`, 'quiet-letter');
   }
 
   function openDialog(eyebrow, html, type = '') {
@@ -680,6 +687,7 @@
     if (action) {
       const id = action.dataset.id;
       switch(action.dataset.action) {
+        case 'short-letter': if (!dialog.open) action.focus({preventScroll:true}); openShortLetter(); break;
         case 'quiet-letter': openQuietLetter(); break;
         case 'compare-toggle': toggleCompare(id); break;
         case 'compare-open': openComparison(); break;
