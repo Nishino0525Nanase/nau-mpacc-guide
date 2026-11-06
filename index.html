@@ -80,16 +80,7 @@
       <div class="journey-note-copy">
         <p>雨诺，恭喜你顺利保研。这份指南整理了选导师和准备入学时可能用到的信息，希望能帮你省些查找资料的时间。</p>
         <p class="journey-note-wish">祝你选到合适的老师，接下来的学习和生活都顺利。</p>
-        <details class="personal-letter">
-          <summary>读一封小信</summary>
-          <div class="personal-letter-copy">
-            <h3>愿新的开始，顺利也从容。</h3>
-            <p>雨诺，恭喜你顺利保研。选导师、准备入学、了解实习，接下来要做的事情不少。这份指南就当作一份资料整理，希望能替你省些查找的时间。</p>
-            <p>愿你遇到合适的老师和实习机会，也给自己的生活留一些余地。忙完一阵，吃点应季的葡萄，回家时喝一碗熟悉的黄骨鱼汤；累了，就安心歇一歇。</p>
-            <p>新的阶段，不必一下子把所有事都安排妥当。祝你按自己的节奏慢慢向前，有想争取的机会，也有踏实自在的日常。</p>
-          </div>
-          <div class="afterword-corner"><button type="button" class="afterword-key" data-action="quiet-letter" aria-label="翻到另一页"><span aria-hidden="true">·</span></button></div>
-        </details>
+        <div class="afterword-corner"><button type="button" class="afterword-key" data-action="short-letter" aria-label="读一封小信"><span aria-hidden="true">·</span></button></div>
       </div>
     </section>
   </main>
@@ -104,6 +95,14 @@
     <div class="dialog-top"><span id="dialog-eyebrow">详细资料</span><button type="button" class="icon-button" id="dialog-close" aria-label="关闭详情">×</button></div>
     <div id="dialog-content"></div>
   </dialog>
+  <template id="short-letter-template">
+    <div class="personal-letter-copy">
+            <h3>愿新的开始，顺利也从容。</h3>
+            <p>雨诺，恭喜你顺利保研。选导师、准备入学、了解实习，接下来要做的事情不少。这份指南就当作一份资料整理，希望能替你省些查找的时间。</p>
+            <p>愿你遇到合适的老师和实习机会，也给自己的生活留一些余地。忙完一阵，吃点应季的葡萄，回家时喝一碗熟悉的黄骨鱼汤；累了，就安心歇一歇。</p>
+            <p>新的阶段，不必一下子把所有事都安排妥当。祝你按自己的节奏慢慢向前，有想争取的机会，也有踏实自在的日常。</p>
+          </div>
+  </template>
   <template id="quiet-letter-template">
     <h2 id="dialog-title">留在这一页</h2>
     <p class="quiet-letter-salutation">雨诺，见字好。</p>
