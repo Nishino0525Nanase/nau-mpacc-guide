@@ -2,10 +2,10 @@
 'use strict';
 const BASE = new URL('./', self.location.href);
 const CACHE_PREFIX = `nau-guide:${BASE.pathname}:`;
-const CACHE_NAME = `${CACHE_PREFIX}1.0.10-letterhold1`;
+const CACHE_NAME = `${CACHE_PREFIX}1.0.12-date-gallery1`;
 const DATA_PATH = 'data/site-data.json';
 const SHELL_PATHS = [
-  './', 'index.html', 'app.js', 'music.js', 'style.css', 'install.js', 'favicon.svg',
+  './', 'index.html', 'app.js', 'music.js', 'life-images.js', 'style.css', 'install.js', 'favicon.svg',
   'manifest.webmanifest', 'icons/app-192.png', 'icons/app-512.png'
 ];
 const SHELL = new Set(SHELL_PATHS.map(path => new URL(path, BASE).href));
