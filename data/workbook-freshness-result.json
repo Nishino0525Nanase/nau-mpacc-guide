@@ -1,0 +1,67 @@
+{
+  "workbook": "dist/downloads/evidence-index.xlsx",
+  "bytes": 287164,
+  "sha256": "3d45c51b94d7729613b0bd7ada4ed4b3d7c31d3c55cc11b097ec031433cdbd4a",
+  "sheetCount": 13,
+  "nativeTableCount": 11,
+  "internshipResourceCount": 36,
+  "cooperationLeadCount": 7,
+  "newPublicSources": [
+    "L101",
+    "L102",
+    "L103",
+    "L104",
+    "L105",
+    "L106"
+  ],
+  "officialJobSourcesAddedToOfficialSheet": [
+    "I839",
+    "I866"
+  ],
+  "hyperlinkFormulaCount": 567,
+  "formulaErrorCount": 0,
+  "unchangedSheetsVerified": [
+    "正文未读线索",
+    "生活学习要点",
+    "导师反馈",
+    "检索覆盖",
+    "补充证据",
+    "应用版补充",
+    "延伸核验",
+    "继续补读"
+  ],
+  "existingCellDiffCounts": {
+    "完整来源目录": 1,
+    "正文未读线索": 0,
+    "生活学习要点": 0,
+    "导师反馈": 0,
+    "官方核实": 0,
+    "帖子索引": 1,
+    "检索覆盖": 0,
+    "补充证据": 0,
+    "应用版补充": 0,
+    "延伸核验": 0,
+    "继续补读": 0,
+    "学生评价总览": 1,
+    "实习资源": 254
+  },
+  "tableRanges": {
+    "NauTable1": "A5:L194",
+    "NauTable2": "A5:L26",
+    "NauTable3": "A5:L92",
+    "NauTable4": "A5:M93",
+    "NauTable5": "A5:I74",
+    "Round3EvidenceSources": "A6:M25",
+    "AppResearchSources": "A6:M16",
+    "ContinueResearchSources": "A6:M12",
+    "Research102Sources": "A6:M13",
+    "StudentReviews103": "A6:K40",
+    "InternshipResources104": "A6:R49"
+  },
+  "notes": [
+    "13个页签与11个原生表格保留；岗位、原帖及官网来源链接保留公式。",
+    "HYPERLINK计算器不支持该函数；导出后只按公式中的字面显示文字修复缓存，公式保留；尚未在Excel桌面版交互验证。",
+    "未改导师评价内容；学生评价总览仅将全站来源总数114更新为120。",
+    "原目录108条新增6条生活与学习来源，现114条；与全站120条统计口径不同，其他补充批次仍在后续页。"
+  ]
+}

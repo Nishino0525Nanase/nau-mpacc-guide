@@ -75,14 +75,20 @@
     const remaining = entry.images.slice(1);
     const cover = imageHtml(entry.images[0], title, 1);
     const coverHtml = Number(entry.images[0].bytes) > 4 * 1024 * 1024 ? `<details class="life-photo-more"><summary>展开原图 · 约 ${(entry.images[0].bytes / 1024 / 1024).toFixed(1)} MB</summary>${cover}</details>` : `<div class="life-photo-cover">${cover}</div>`;
-    return `<article class="life-photo-card"><div class="life-photo-card-top"><span class="life-photo-kind">${esc(kindNames[entry.kind])}</span>${entry.sourceCode ? `<span class="life-photo-code">${esc(entry.sourceCode)}</span>` : ''}<span class="life-photo-count">${entry.images.length} 张图</span></div><h4>${esc(title)}</h4>${byline ? `<p class="life-photo-byline">${byline}</p>` : ''}${coverHtml}${remaining.length ? `<details class="life-photo-more"><summary>再看 ${remaining.length} 张图片</summary><div class="life-photo-expanded">${remaining.map((image, index) => imageHtml(image, title, index + 2)).join('')}</div></details>` : ''}${entry.scopeNote ? `<p class="life-photo-scope">${esc(entry.scopeNote)}</p>` : ''}${entry.sourceUrl ? `<div class="life-photo-source"><span>${esc(entry.sourceTitle || '图片来源')}</span><a href="${esc(entry.sourceUrl)}" target="_blank" rel="noopener noreferrer">${label}</a></div>` : ''}${chaptersHtml ? `<div class="life-photo-chapters"><span>对应章节</span>${chaptersHtml}</div>` : ''}</article>`;
+    return `<article class="life-photo-card${entry.primary ? ' life-photo-card-wide' : ''}"><div class="life-photo-card-top"><span class="life-photo-kind">${esc(kindNames[entry.kind])}</span>${entry.sourceCode ? `<span class="life-photo-code">${esc(entry.sourceCode)}</span>` : ''}<span class="life-photo-count">${entry.images.length} 张图</span></div><h4>${esc(title)}</h4>${byline ? `<p class="life-photo-byline">${byline}</p>` : ''}${coverHtml}${remaining.length ? `<details class="life-photo-more"><summary>再看 ${remaining.length} 张图片</summary><div class="life-photo-expanded">${remaining.map((image, index) => imageHtml(image, title, index + 2)).join('')}</div></details>` : ''}${entry.scopeNote ? `<p class="life-photo-scope">${esc(entry.scopeNote)}</p>` : ''}${entry.sourceUrl ? `<div class="life-photo-source"><span>${esc(entry.sourceTitle || '图片来源')}</span><a href="${esc(entry.sourceUrl)}" target="_blank" rel="noopener noreferrer">${label}</a></div>` : ''}${chaptersHtml ? `<div class="life-photo-chapters"><span>对应章节</span>${chaptersHtml}</div>` : ''}</article>`;
+  }
+
+  function cardsHtml(entries, chapters, showChapters) {
+    const main = entries.filter(entry => !entry.archived);
+    const other = entries.filter(entry => entry.archived);
+    return `${main.length ? `<div class="life-photo-cards">${main.map(entry => cardHtml(entry, chapters, showChapters)).join('')}</div>` : ''}${other.length ? `<details class="life-photo-archives"><summary>高清大图与其他地图参考</summary><div class="life-photo-cards">${other.map(entry => cardHtml(entry, chapters, showChapters)).join('')}</div></details>` : ''}`;
   }
 
   function renderChapter(chapterId, index) {
     const entries = entriesOf(index).filter(entry => entry.chapterIds.includes(chapterId));
     if (!entries.length) return '';
     const count = counts(entries);
-    return `<section class="life-photo-index" aria-label="本章图片索引"><div class="life-photo-heading"><div><span class="small-label">PICTURE NOTES</span><h3>本章图片索引</h3></div><span>${count.images} 张图 · ${count.sources} 个来源</span></div><p class="life-photo-intro">先看图，再结合下方正文核对。点图片可打开大图，原帖与来源页也一并保留。</p><div class="life-photo-cards">${entries.map(entry => cardHtml(entry, [], false)).join('')}</div><p class="life-photo-note">图片保留的是来源当时的记录；地图、营业与配送安排仍需核对当前信息。</p></section>`;
+    return `<section class="life-photo-index" aria-label="本章图片索引"><div class="life-photo-heading"><div><span class="small-label">PICTURE NOTES</span><h3>本章图片索引</h3></div><span>${count.images} 张图 · ${count.sources} 个来源</span></div><p class="life-photo-intro">点图查看大图，原帖与来源页见图片下方。</p>${cardsHtml(entries, [], false)}<p class="life-photo-note">地图、营业与配送安排以当前通知和现场情况为准。</p></section>`;
   }
 
   function renderIndex(index, chapters = []) {
@@ -91,7 +97,7 @@
     const count = counts(entries);
     const chapterList = array(chapters).filter(chapter => chapter && typeof chapter === 'object');
     const groups = kinds.map(([kind, label]) => ({kind, label, entries:entries.filter(entry => entry.kind === kind)})).filter(group => group.entries.length);
-    return `<div class="life-photo-overview"><p class="life-photo-total"><strong>${count.images}</strong> 张来源图片，来自 <strong>${count.sources}</strong> 个原始来源。</p><p>按生活主题查看，或从图片下方跳到对应章节。图片与原帖分开保留，方便回头核对。</p><div class="life-photo-categories" aria-label="图片主题">${groups.map(group => `<span>${esc(group.label)}<small>${counts(group.entries).images}</small></span>`).join('')}</div></div>${groups.map(group => `<section class="life-photo-group" aria-label="${esc(group.label)}"><div class="life-photo-group-heading"><h3>${esc(group.label)}</h3><span>${counts(group.entries).images} 张图</span></div><div class="life-photo-cards">${group.entries.map(entry => cardHtml(entry, chapterList, true)).join('')}</div></section>`).join('')}<p class="life-photo-note">本索引只展示已归档的真实来源图像。图中位置、营业、配送或课程安排具有时间范围，请结合原帖日期与当前通知使用。</p>`;
+    return `<div class="life-photo-overview"><p class="life-photo-total"><strong>${count.images}</strong> 张来源图片，来自 <strong>${count.sources}</strong> 个原始来源。</p><p>按生活主题查看，或从图片下方跳到对应章节。</p><div class="life-photo-categories" aria-label="图片主题">${groups.map(group => `<span>${esc(group.label)}<small>${counts(group.entries).images}</small></span>`).join('')}</div></div>${groups.map(group => `<section class="life-photo-group" aria-label="${esc(group.label)}"><div class="life-photo-group-heading"><h3>${esc(group.label)}</h3><span>${counts(group.entries).images} 张图</span></div>${cardsHtml(group.entries, chapterList, true)}</section>`).join('')}<p class="life-photo-note">图中位置、营业、配送或课程安排具有时间范围，请结合原帖日期与当前通知使用。</p>`;
   }
 
   window.NAULifeImages = Object.freeze({renderChapter, renderIndex});

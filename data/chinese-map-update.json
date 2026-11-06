@@ -1,0 +1,81 @@
+{
+  "status": "selected-original-source-image",
+  "checkedAt": "2026-11-06",
+  "recommendedDefault": {
+    "id": "life-map-official-chinese-2022",
+    "title": "中文校园图 · 官网轻图",
+    "chapterIds": [
+      "life-01",
+      "life-02",
+      "life-06",
+      "life-11"
+    ],
+    "sourceCode": "MAP03",
+    "sourceUrl": "https://lxsy.nau.edu.cn/2022/0318/c7261a94405/page.htm",
+    "sourceTitle": "校园地图",
+    "sourceAuthor": "南京审计大学留学生院（原页发布者：国际联合）",
+    "sourceDate": "2022-03-18",
+    "kind": "map",
+    "scopeNote": "官方2022年校园地图页面中的第二幅图；中文卡通建筑示意，带有留学生院/澄园书院位置的原始彩色标记。文字和机构归属为历史标注，不据此推定当前MPAcc位置、道路开放或宿舍安排。",
+    "images": [
+      {
+        "src": "./evidence/life/nau-official-campus-map-2022-b.jpg",
+        "caption": "留学生院官网中文校园示意图（2022年页面，保留原图旧机构标注）。",
+        "width": 799,
+        "height": 546,
+        "bytes": 431294,
+        "sha256": "ff55ebfdeb2d1b5d4df2418dc4915ba20c6b12f152a093e0254716a63dab7609",
+        "kind": "official-source-image",
+        "visualReview": "已直接查看下载原图：中文楼名、四园区/宿舍及食堂、运动场等可见；无二维码、私人联系方式或私信内容；原始图像字节未修改。",
+        "alt": "南京审计大学浦口校区中文校园图（2022年官网历史标注）",
+        "originalImageUrl": "https://lxsy.nau.edu.cn/_upload/article/images/a8/d1/40378fe64afaa95cf1a9ce5e792d/4a0221f5-9f4e-4b9d-968c-1da9bc598c38.jpg"
+      }
+    ]
+  },
+  "recommendedFullResolution": {
+    "id": "life-map-official-2019",
+    "sourceCode": "MAP01",
+    "src": "./evidence/life/nau-official-cartoon-map-2019.jpg",
+    "sourceUrl": "https://www.nau.edu.cn/_t505/2019/0610/c5755a55736/page.htm",
+    "sourceDate": "2019-06-10",
+    "originalImageUrl": "https://www.nau.edu.cn/_upload/article/images/cb/62/8aa0acd74574a1ccfb98d7ae3fc9/a96e91b7-6712-4a79-a81c-467adebaca0b.jpg",
+    "width": 5031,
+    "height": 3437,
+    "bytes": 8791070,
+    "sha256": "e8b9bc2c44ea1159cff6bdee00d59e734b352027979782cc569e4f497764cf00",
+    "caption": "中文高清校园图：2026年研究生院通知仍采用此图；图稿与2019年官网原图字节一致，不代表2026年重新测绘。"
+  },
+  "supplementalOfficialEvidence": [
+    {
+      "sourceUrl": "https://gs.nau.edu.cn/2026/0321/c4396a155184/page.htm",
+      "sourceTitle": "南京审计大学2026年硕士研究生复试校外考生进校须知",
+      "sourceAuthor": "南京审计大学研究生院",
+      "sourceDate": "2026-03-21",
+      "attachmentLabel": "南京审计大学校园地图.jpg",
+      "originalImageUrl": "https://gs.nau.edu.cn/_upload/article/images/94/39/ecc491fa4cce8384ef917239021e/f999ab9b-415f-4ab8-b662-8b373eb1d48e.jpg",
+      "downloadedSha256": "e8b9bc2c44ea1159cff6bdee00d59e734b352027979782cc569e4f497764cf00",
+      "bytes": 8791070,
+      "sameBytesAs2019Map": true,
+      "scopeNote": "2026为采用该附件的通知发布日期；附件原始字节与2019官网中文图完全一致，不能称为2026更新地图或现行道路测绘图。"
+    }
+  ],
+  "limits": [
+    "中文默认图为2022官网独立原图，不是自行压缩、翻译、生成、重绘或2026附件的精确缩略图。",
+    "2022图含留学生院、澄园书院及爱心等历史机构标记，不能当作当前MPAcc位置。",
+    "未找到可证明2024—2026重新测绘/更新的官方中文全校地图；2026官方再次采用图只证明来源，不证明图稿更新。",
+    "2025研究生报到指南中的平面图仅为沁园体育馆迎新部门位置，不是全校地图。",
+    "地图只供辨认园区和主要建筑；宿舍分配、道路开放、服务点及进校规则按当期通知核对。"
+  ],
+  "browserScreenshotAttempt": {
+    "runId": "d5c2b808-5cda-4250-afe5-cbaa88f037b5",
+    "status": "completed-no-accessible-artifact",
+    "adoptOnlyIfActualAccessibleArtifact": true,
+    "outcome": "成功导航至官方附件；两次截图各超45秒超时，未产生可访问截图或可用浏览器缩略图。未采用任何伪造或替代截图。",
+    "durationSeconds": 117
+  },
+  "provenanceFiles": [
+    "data/recent-official-chinese-map-candidate.json",
+    "data/chinese-map-2026-download.json",
+    "data/official-map-image-research.json"
+  ]
+}

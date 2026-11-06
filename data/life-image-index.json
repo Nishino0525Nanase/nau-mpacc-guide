@@ -1,8 +1,40 @@
 {
   "entries": [
     {
+      "id": "life-map-official-chinese-2022",
+      "title": "中文校园地图",
+      "chapterIds": [
+        "life-01",
+        "life-02",
+        "life-06",
+        "life-11"
+      ],
+      "sourceCode": "MAP03",
+      "sourceUrl": "https://lxsy.nau.edu.cn/2022/0318/c7261a94405/page.htm",
+      "sourceTitle": "校园地图",
+      "sourceAuthor": "南京审计大学留学生院（原页发布者：国际联合）",
+      "sourceDate": "2022-03-18",
+      "kind": "map",
+      "scopeNote": "中文建筑示意图。图中的旧机构标记不代表当前MPAcc教学或住宿位置；到校路线与宿舍安排按本级通知确认。",
+      "images": [
+        {
+          "src": "./evidence/life/nau-official-campus-map-2022-b.jpg",
+          "caption": "留学生院官网中文校园示意图（2022年页面，保留原图旧机构标注）。",
+          "width": 799,
+          "height": 546,
+          "bytes": 431294,
+          "sha256": "ff55ebfdeb2d1b5d4df2418dc4915ba20c6b12f152a093e0254716a63dab7609",
+          "kind": "official-source-image",
+          "visualReview": "已直接查看下载原图：中文楼名、四园区/宿舍及食堂、运动场等可见；无二维码、私人联系方式或私信内容；原始图像字节未修改。",
+          "alt": "南京审计大学浦口校区中文校园图（2022年官网历史标注）",
+          "originalImageUrl": "https://lxsy.nau.edu.cn/_upload/article/images/a8/d1/40378fe64afaa95cf1a9ce5e792d/4a0221f5-9f4e-4b9d-968c-1da9bc598c38.jpg"
+        }
+      ],
+      "primary": true
+    },
+    {
       "id": "life-map-official-2019",
-      "title": "官网校园图 · 中文历史图",
+      "title": "中文高清地图",
       "chapterIds": [
         "life-01",
         "life-02",
@@ -10,12 +42,12 @@
         "life-11"
       ],
       "sourceCode": "MAP01",
-      "sourceUrl": "https://www.nau.edu.cn/_t505/2019/0610/c5755a55736/page.htm",
-      "sourceTitle": "南京审计大学卡通版地图",
-      "sourceAuthor": "南京审计大学官网",
-      "sourceDate": "2019-06-10",
+      "sourceUrl": "https://gs.nau.edu.cn/2026/0321/c4396a155184/page.htm",
+      "sourceTitle": "南京审计大学2026年硕士研究生复试校外考生进校须知",
+      "sourceAuthor": "南京审计大学研究生院",
+      "sourceDate": "2026-03-21（通知引用）",
       "kind": "map",
-      "scopeNote": "图中可见沁园、润园、泽园、澄园及食堂、图书馆、教学楼、大门等中文名称；非实时导航、非比例尺路线图。 页面发布时间为2019-06-10，不证明地图按2026现状更新。 部分建筑、出入口和服务点可能变化；到校后按当届通知、现场指示核对。 不用于确认当前宿舍分配、营业时间、外卖取餐点或道路开放情况。",
+      "scopeNote": "研究生院2026年进校通知采用的中文大图，图稿与2019年官网版本一致。道路开放、建筑用途和宿舍安排以现行通知为准。",
       "images": [
         {
           "src": "./evidence/life/nau-official-cartoon-map-2019.jpg",
@@ -23,17 +55,18 @@
           "height": 3437,
           "bytes": 8791070,
           "sha256": "e8b9bc2c44ea1159cff6bdee00d59e734b352027979782cc569e4f497764cf00",
-          "caption": "学校官网发布的卡通校园图（2019年页面），可对照四园区、图书馆、食堂与主要教学楼的大致关系。",
+          "caption": "中文校园高清示意图（5031×3437）；可打开原图放大。",
           "alt": "南京审计大学卡通版地图",
           "kind": "official-source-image",
           "originalImageUrl": "https://www.nau.edu.cn/_upload/article/images/cb/62/8aa0acd74574a1ccfb98d7ae3fc9/a96e91b7-6712-4a79-a81c-467adebaca0b.jpg",
           "visualReview": "已用原图的临时缩略预览确认是中文手绘校园地图；原始发布图片字节未修改。"
         }
-      ]
+      ],
+      "archived": true
     },
     {
       "id": "life-map-official-2024",
-      "title": "官网校园图 · 英文示意图",
+      "title": "英文校园示意图（补充参考）",
       "chapterIds": [
         "life-01",
         "life-02",
@@ -46,7 +79,7 @@
       "sourceAuthor": "南京审计大学留学生院",
       "sourceDate": "2024-09-08",
       "kind": "map",
-      "scopeNote": "英文标注主要教学楼、图书馆、运动场、部分餐厅与入口；原图文字方向横置。 2024-09-08是网页显示的发布时间，不是已核实的地图测绘或更新日期。 图中英文标注及图形用于认校园大致分区，不是现行路线、宿舍分配或服务营业承诺。",
+      "scopeNote": "英文建筑标注的校园示意图，仅作补充参考；建筑用途和校门开放情况以现场为准。",
       "images": [
         {
           "src": "./evidence/life/nau-official-campus-map-2024.jpg",
@@ -60,7 +93,8 @@
           "originalImageUrl": "https://lxsy.nau.edu.cn/_upload/article/images/52/03/c5016f384d2f9a2530cfb7e42001/eff69b7f-af02-441c-8ee3-f1a801dcb67e.jpg",
           "visualReview": "已直接查看下载原图，确认为校园三维示意图，无二维码或私人联系方式。"
         }
-      ]
+      ],
+      "archived": true
     },
     {
       "id": "life-images-l01",
@@ -118,7 +152,7 @@
       "sourceAuthor": "摸喵的鱼",
       "sourceDate": "2025-07-14",
       "kind": "takeaway",
-      "scopeNote": "2025-07-14 个人攻略中的服务识别图。图内免配送费、送楼或上楼等说法是作者当时的描述；当前覆盖、门禁、配送费及取餐点须在下单页核实。此次未下单测试。",
+      "scopeNote": "校园配送服务识别图。覆盖范围、配送费、门禁和取餐点以下单页及宿管通知为准。",
       "images": [
         {
           "src": "./evidence/life/l06-image-01.webp",
@@ -160,7 +194,7 @@
       "sourceAuthor": "小鱼鱼鱼",
       "sourceDate": "10-18（年份未显示）",
       "kind": "food",
-      "scopeNote": "原帖显示10-18，年份未显示。只展示实际取得并查看的第1、4图，不代表14图全部审读；菜品照片不保证当前档口、价格、份量或营业状态。",
+      "scopeNote": "原帖年份未显示；图片展示菜品样式，档口、价格、份量和营业状态以现场为准。",
       "images": [
         {
           "src": "./evidence/life/l08-image-01.webp",
@@ -276,7 +310,7 @@
       "sourceAuthor": "Colin陈",
       "sourceDate": "2025-07-16",
       "kind": "service",
-      "scopeNote": "2025-07-16 的个人自习地点记录。首图是作者使用的馆舍外观配图，正文未逐图确认建筑身份，不据照片认定某馆入口；距离、费用及开放时间未按当前日期复核。含个人读者证界面的第2图不收录。",
+      "scopeNote": "馆舍外观与自习地点参考；入口、费用和开放时间以场馆现行安排为准。",
       "images": [
         {
           "src": "./evidence/life/p09-image-01.webp",
@@ -366,7 +400,7 @@
       "sourceAuthor": "小羽毛学姐",
       "sourceDate": "08-26（年份未显示）",
       "kind": "course",
-      "scopeNote": "复用此前保存的5张实际浏览器截图，包含帖文与具体课程回复；不是此次重新读取的评论。截图未说明任课教师全名，不能据此归入导师评价，也不代表所有MPAcc课程的现行考核要求。",
+      "scopeNote": "课程相关帖文与回复。截图未明确任课教师全名，仅作课程体验参考；现行考核要求按任课通知确认。",
       "images": [
         {
           "src": "./evidence/xhs/r317-course-post-top.jpg",
@@ -468,11 +502,11 @@
     "2019中文官网地图原始文件约8.8MB，建议惰性加载，并保留查看原图功能。"
   ],
   "counts": {
-    "entries": 11,
-    "newSourceOriginalImages": 14,
+    "entries": 12,
+    "newSourceOriginalImages": 15,
     "reusedBrowserScreenshots": 5,
-    "images": 19,
-    "sources": 11,
+    "images": 20,
+    "sources": 12,
     "chaptersWithImages": 9
   }
 }

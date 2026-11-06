@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-11-06",
+  "socialPosts": [],
+  "sourceRegistry": {},
+  "lifeChapterAdditions": [],
+  "lifeImageIndexEntries": [],
+  "existingSourceCorrections": [
+    {
+      "code": "L103",
+      "socialPostId": "nau-chen-xiaoran-155199",
+      "date": "2026-03-23（官网更新时间）",
+      "verifiedUrl": "https://nau.edu.cn/_t505/2026/0323/c11308a155199/page.htm",
+      "visibleDateText": "来源：点击数：10 更新时间：2026-03-23",
+      "readingScope": "search_service open实际读取官方镜像网页，标题与全文一致；第50行显示更新时间。镜像不算新独立帖子。",
+      "removeLimitationSentences": [
+        "正文未显示发布日期；URL的2026/0323仅作日期线索。",
+        "原文日期未显示"
+      ]
+    },
+    {
+      "code": "L104",
+      "socialPostId": "nau-hu-xin-160511",
+      "date": "2026-07-08",
+      "verifiedUrl": "https://news.nau.edu.cn/2026/0708/c5799a160511/page.htm",
+      "visibleDateText": "2026.07.08",
+      "readingScope": "search_service open实际读取原网页，标题后第21行显示日期2026.07.08。",
+      "removeLimitationSentences": [
+        "正文未显示发布日期；URL的2026/0708仅作日期线索。",
+        "原文日期未显示"
+      ]
+    }
+  ],
+  "researchNotes": [
+    "有界追加检索共2批、每批3个system1关键词查询：南审浦口外卖、小红书宿舍2026、图书馆日常及对应XHS域名限定检索。",
+    "没有返回可采用的新XHS校园帖子；域名限定结果主要是小红书通用页面、开发文档和协议，与南审校园生活无关，均未作为帖子。",
+    "未重新访问银河落九天；未探测登录态、未等待认证、未运行媒体任务。",
+    "没有新增独立帖子；仅核准两条原已采用官方来源的可见日期，不冒充新增数量。",
+    "倪亦涵原网页search_service open不可访问，不反复重试；既有TinyFish全文范围不变，发布日期仍不采用URL推断。"
+  ]
+}

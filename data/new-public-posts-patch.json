@@ -1,0 +1,420 @@
+{
+  "generatedAt": "2026-11-06",
+  "socialPosts": [
+    {
+      "id": "colleges-nau-pukou-A34252",
+      "key": "大学生活质量指北（匿名问卷）:colleges-nau-pukou-A34252",
+      "sourceIds": [
+        "L101",
+        "colleges-nau-pukou-A34252"
+      ],
+      "canonicalUrl": "https://cf-pages.colleges.chat/universities/nan-jing-shen-ji-da-xue-pu-kou-qu/",
+      "url": "https://cf-pages.colleges.chat/universities/nan-jing-shen-ji-da-xue-pu-kou-qu/",
+      "title": "浦口校区生活问卷：泽园住宿与外卖取餐",
+      "author": "匿名答卷 A34252",
+      "date": "2026年06月",
+      "platform": "大学生活质量指北（匿名问卷）",
+      "topic": "住宿与校园日常",
+      "campus": "浦口校区；回答具体提到泽园",
+      "population": "匿名答卷，未说明学院、学位及入住楼栋；不能确认为MPAcc",
+      "summary": "一份浦口校区答卷记录泽园套间的共用卫浴、外卖取餐和生活设施；同一学校仍需按本人园区、楼栋分别核对。",
+      "tips": [
+        "答卷描述的泽园房型为三个四人小寝共用两个浴室、三个蹲位与一个客厅；不能据此推定所有楼栋相同。",
+        "外卖有的可到宿舍楼门口，有的需到校门口取；下单时先核对取餐点与本人园区。",
+        "洗衣机、空调和热水为该答卷的生活观察；入住前仍应确认本楼设施及供应安排。"
+      ],
+      "comments": [],
+      "limitations": "独立问卷编号A34252，不与已有南京审计大学汇总页的8份答卷合并为新增多人证据。匿名身份、楼栋和培养层次未核实；本科晚自习、晨训不得套用于研究生。通勤40分钟、门禁、电动车等表述不作为当前规定；食堂异物是转述，翻墙是个人说法，均未采纳。",
+      "category": "可用生活学习线索",
+      "reviewReason": "用于校园生活与学习准备；不属于MPAcc导师评价或当前岗位承诺。",
+      "verificationStatus": "正文已读；个体经历与适用范围有边界",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": "匿名公益问卷，无实名或学籍核验。",
+      "readingScopes": [
+        "已读该浦口区页面的A34252完整答卷；可见答卷日期2026年06月。没有评论区或回复展开。"
+      ],
+      "queries": [],
+      "inputFiles": [
+        "new-public-posts-notes.md"
+      ],
+      "expansionBatch": "public-life-20261106"
+    },
+    {
+      "id": "nau-ni-yihan-163116",
+      "key": "南京审计大学新闻网:nau-ni-yihan-163116",
+      "sourceIds": [
+        "L102",
+        "nau-ni-yihan-163116"
+      ],
+      "canonicalUrl": "https://news.nau.edu.cn/2026/1026/c5799a163116/page.htm",
+      "url": "https://news.nau.edu.cn/2026/1026/c5799a163116/page.htm",
+      "title": "南审倪亦涵：7段实习，走成1张“好奇心地图”",
+      "author": "倪亦涵（受访者）；南京审计大学新闻网",
+      "date": "日期未显示（2026年网页）",
+      "platform": "南京审计大学新闻网",
+      "topic": "就业与实习",
+      "campus": "校友实习经历；非单一校内场所",
+      "population": "国家安全学院劳动与社会保障专业2026届本科毕业生；不是MPAcc学生经历",
+      "summary": "倪亦涵回顾从信永中和审计到券商行研、咨询和互联网产品的七段实习，具体写到审计基础任务，以及Excel、Stata、SQL与岗位工作的衔接。",
+      "tips": [
+        "她的两个月信永中和审计实习涉及穿行测试、银行流水核查、盘点、函证及审计底稿；可据此了解基础任务，再核对具体岗位职责。",
+        "把Excel、数据处理与文字/PPT表达放进实习准备清单；Stata和SQL对应文中不同阶段，不能当成所有审计岗的统一门槛。",
+        "她根据行业与岗位调整简历及准备面试；七段实习是个人探索路径，无须把数量当成目标。"
+      ],
+      "comments": [],
+      "limitations": "校方精选的具名本科生职业经历，不是MPAcc培养政策、岗位推荐、四大八大名额或当前招聘信息。文中蔡老师、冀老师未全名，不映射导师。正文提取未显示发布日期；URL的2026/1026仅作日期线索，不当可见日期。配图、外链、评论未逐一读取。",
+      "category": "可用生活学习线索",
+      "reviewReason": "用于校园生活与学习准备；不属于MPAcc导师评价或当前岗位承诺。",
+      "verificationStatus": "正文已读；个体经历与适用范围有边界",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": "未据阅读确认商业推广；校方访谈属于精选公开样本。",
+      "readingScopes": [
+        "实际读到全文，包括七段实习单位与方向、首段审计的具体任务、课程技能及简历面试准备；未读评论、未视觉审读配图。"
+      ],
+      "queries": [],
+      "inputFiles": [
+        "new-public-posts-notes.md"
+      ],
+      "expansionBatch": "public-life-20261106"
+    },
+    {
+      "id": "nau-chen-xiaoran-155199",
+      "key": "南京审计大学新闻网:nau-chen-xiaoran-155199",
+      "sourceIds": [
+        "L103",
+        "nau-chen-xiaoran-155199"
+      ],
+      "canonicalUrl": "https://news.nau.edu.cn/2026/0323/c5799a155199/page.htm",
+      "url": "https://news.nau.edu.cn/2026/0323/c5799a155199/page.htm",
+      "title": "四级702分！大一学生陈晓然解锁不内卷的成长密码",
+      "author": "陈晓然（自述者）；南京审计大学新闻网",
+      "date": "日期未显示（2026年网页）",
+      "platform": "南京审计大学新闻网",
+      "topic": "学习与就业",
+      "campus": "叙述涉及沁园、竞秀北楼、得一图书馆",
+      "population": "金融工程专业大一本科生；非MPAcc学习经验",
+      "summary": "陈晓然讲述把英语练习融入课间与食堂排队、在图书馆逐句复听错题，以及重新安排社团和自习时间的过程。",
+      "tips": [
+        "听力错题按句暂停，结合原文查生词与连读，再复听；她强调精做与理解，而非只累计刷题量。",
+        "初入学时她报了三个社团，后来减少不合适的活动，给自己留出稳定自习时间；安排应结合自己的课程强度。",
+        "图书馆三楼靠窗位是这段个人经历的具体学习场景，座位与开放规则仍以当前馆方安排为准。"
+      ],
+      "comments": [],
+      "limitations": "校方发布的具名本科生学习自述，四级702分和学习法属于单一个案，不代表MPAcc课程负担、统一备考方案或效果保证。原文未提供完整成绩核验材料；未据此评价会计导师。正文未显示发布日期；URL的2026/0323仅作日期线索。",
+      "category": "可用生活学习线索",
+      "reviewReason": "用于校园生活与学习准备；不属于MPAcc导师评价或当前岗位承诺。",
+      "verificationStatus": "正文已读；个体经历与适用范围有边界",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": "未据阅读确认商业推广；校方访谈属于精选公开样本。",
+      "readingScopes": [
+        "实际读取正文全部学习方法、大学适应与入学体会段落；未读评论、未核验配图中的考试材料。"
+      ],
+      "queries": [],
+      "inputFiles": [
+        "new-public-posts-notes.md"
+      ],
+      "expansionBatch": "public-life-20261106"
+    },
+    {
+      "id": "nau-hu-xin-160511",
+      "key": "南京审计大学新闻网:nau-hu-xin-160511",
+      "sourceIds": [
+        "L104",
+        "nau-hu-xin-160511"
+      ],
+      "canonicalUrl": "https://news.nau.edu.cn/2026/0708/c5799a160511/page.htm",
+      "url": "https://news.nau.edu.cn/2026/0708/c5799a160511/page.htm",
+      "title": "一位校友的自述：数学专业的我在南审收获了…",
+      "author": "胡鑫（自述者）；南京审计大学新闻网",
+      "date": "日期未显示（2026年网页）",
+      "platform": "南京审计大学新闻网",
+      "topic": "自习空间与校园散步",
+      "campus": "浦口校园回忆：图书馆、润泽湖、润园与泽园",
+      "population": "2021届数学与应用数学本科校友，毕业后赴中国人民大学读研；非MPAcc",
+      "summary": "胡鑫以毕业五年的视角回忆图书馆、润泽湖、竞慧楼长椅与润园操场，把学习之外可散步、短暂休息的校园位置写得具体。",
+      "tips": [
+        "阅读与休息的历史场景包括图书馆一楼经典书库、四楼沙发、竞慧楼间长椅和文心楼前水塘；使用时确认当前分区及开放安排。",
+        "散步线索有润泽湖、润园睡莲和泽园步行道路；可在到校后按自己的宿舍位置串成短路线。",
+        "文中的泽园餐食和运动课程是2017—2021年前后回忆，不能据此确认今天的档口、菜品或课程。"
+      ],
+      "comments": [],
+      "limitations": "具名校友的历史本科回忆，非当前场所开放公告。37号座位、夜间书库轮换、餐饮档口和课程不作为现行安排。原文老师多为数学等本科课程教师，不归入MPAcc导师推荐。正文未显示发布日期；URL的2026/0708仅作日期线索。",
+      "category": "可用生活学习线索",
+      "reviewReason": "用于校园生活与学习准备；不属于MPAcc导师评价或当前岗位承诺。",
+      "verificationStatus": "正文已读；个体经历与适用范围有边界",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": "未据阅读确认商业推广；校方访谈属于精选公开样本。",
+      "readingScopes": [
+        "实际读取完整正文，重点校园四季、图书馆学习空间、散步与运动段；没有从未审读配图推断位置或设施。"
+      ],
+      "queries": [],
+      "inputFiles": [
+        "new-public-posts-notes.md"
+      ],
+      "expansionBatch": "public-life-20261106"
+    },
+    {
+      "id": "BV17Z4y1F74F",
+      "key": "bilibili:BV17Z4y1F74F",
+      "canonicalUrl": "https://www.bilibili.com/video/BV17Z4y1F74F/",
+      "url": "https://www.bilibili.com/video/BV17Z4y1F74F/",
+      "title": "〖南京审计大学〗震惊！南审研究生宿舍长这样！研一学姐的南审研究生宿舍介绍",
+      "author": "Connie_980401",
+      "date": "2021-05-01",
+      "platform": "哔哩哔哩",
+      "topic": "研究生住宿影像参考",
+      "campus": "文字简介未注明校区、楼栋",
+      "population": "标题自称研一学姐；简介明确介绍2020级研究生宿舍；未说明MPAcc",
+      "summary": "2021年发布的2020级研究生宿舍介绍。作者特别提醒，后续年级住在哪里仍取决于学院分配，适合了解较早的研究生住宿影像。",
+      "tips": [
+        "先核对自己年级、学院和楼栋，再参照这段历史宿舍视频。",
+        "作者未在文字简介说明房型、床位数和设施，不据标题推断当前MPAcc住宿条件。"
+      ],
+      "comments": [],
+      "limitations": "仅视频页标题、作者、日期和作者文字简介已读；视频未播放，画面、弹幕和评论未核实。所述为2020级研究生宿舍，不能代表2026年或之后MPAcc住宿分配。",
+      "category": "历史生活影像",
+      "reviewReason": "具有明确的研究生群体与2020级范围；只提供历史视频入口，不从未观看画面补充设施事实。",
+      "verificationStatus": "作者简介已读；历史影像，现行住宿条件待核实",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": "简介未见培训招生或商品推销；不转载视频或封面。",
+      "readingScopes": [
+        "视频页标题、作者、发布日、作者简介已读；主视频08:39、花絮00:16的列表可见。",
+        "未观看视频；未展开弹幕或评论；不将封面作为视频画面证据。"
+      ],
+      "evidenceIdentity": "作者以研一学姐身份发布；学籍未独立核验。",
+      "provenance": {
+        "retrieval": "TinyFish fetch_content 实际读取 Bilibili 视频页",
+        "requestedUrl": "https://www.bilibili.com/video/BV17Z4y1F74F/",
+        "finalUrl": "https://www.bilibili.com/en/video/BV17Z4y1F74F/",
+        "publishedDateMetadata": "2021-05-01T07:28:05.000Z",
+        "readDate": "2026-11-06",
+        "originalChineseTitleVerifiedInPrimarySearch": true
+      },
+      "suggestedLifeChapter": "住宿/报到",
+      "sourceIds": [
+        "L105",
+        "BV17Z4y1F74F"
+      ],
+      "queries": [],
+      "inputFiles": [
+        "new-public-video-candidates.json"
+      ],
+      "expansionBatch": "public-life-20261106"
+    },
+    {
+      "id": "BV1hh4y1o7XV",
+      "key": "bilibili:BV1hh4y1o7XV",
+      "canonicalUrl": "https://www.bilibili.com/video/BV1hh4y1o7XV/",
+      "url": "https://www.bilibili.com/video/BV1hh4y1o7XV/",
+      "title": "vlog2%｜江江将的环游记｜南京｜夏记早点｜乌米饭团｜龙屋砂锅｜江南里｜南京审计大学｜泽园",
+      "author": "江江将0825",
+      "date": "2023-05-23",
+      "platform": "哔哩哔哩",
+      "topic": "泽园与南京饮食影像参考",
+      "campus": "简介出现南京审计大学泽园一楼；未明确校区",
+      "population": "旅行/美食vlog；作者是否南审学生未说明，不标为MPAcc经验",
+      "summary": "南京美食vlog的作者简介列出夏记早点、龙屋砂锅、江南里、南京审计大学泽园一楼和蜜雪冰城，可作为泽园食堂及南京饮食的历史影像入口。",
+      "tips": [
+        "校内线索只有“南京审计大学泽园一楼”；其余店名需要分别查询地点，不能全部当成校内或校门口商户。",
+        "视频发布于2023年，具体档口、菜单、价格及营业状态应另查当前信息。"
+      ],
+      "comments": [],
+      "limitations": "只读到作者列出的地点清单；视频未播放，未确认菜品、口味、价格、路线距离和当前营业情况。平台公开页检索时间与元数据时刻不一致，因此仅记录2023-05-23，不保存具体时分。",
+      "category": "历史生活影像",
+      "reviewReason": "作者文字简介含具体饮食地点，适合作为泽园/饮食的补充链接；身份与适用范围从严标注。",
+      "verificationStatus": "作者地点清单已读；历史内容，商户现况待核实",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": "未据文字简介确认商业推广；不转载视频或封面。",
+      "readingScopes": [
+        "视频页标题、作者、发布日期元数据与作者文字简介中的5个饮食地点已读。",
+        "未观看视频；未查看弹幕和评论；不把未观看的画面写成实读体验。"
+      ],
+      "evidenceIdentity": "普通公开投稿者；未明确南审在校生、学位或学院。",
+      "provenance": {
+        "retrieval": "TinyFish fetch_content 实际读取 Bilibili 视频页",
+        "requestedUrl": "https://www.bilibili.com/video/BV1hh4y1o7XV/",
+        "finalUrl": "https://www.bilibili.com/en/video/BV1hh4y1o7XV/",
+        "publishedDateMetadata": "2023-05-23T04:31:13.000Z",
+        "readDate": "2026-11-06",
+        "timeConflict": "主站检索可见时刻10:01:13，抓取元数据为UTC04:31:13；只采用两者一致的日期。"
+      },
+      "suggestedLifeChapter": "食堂/周边饮食",
+      "sourceIds": [
+        "L106",
+        "BV1hh4y1o7XV"
+      ],
+      "queries": [],
+      "inputFiles": [
+        "new-public-video-candidates.json"
+      ],
+      "expansionBatch": "public-life-20261106"
+    }
+  ],
+  "sourceRegistry": {
+    "L101": {
+      "code": "L101",
+      "title": "浦口校区生活问卷：泽园住宿与外卖取餐",
+      "label": "浦口校区生活问卷：泽园住宿与外卖取餐",
+      "url": "https://cf-pages.colleges.chat/universities/nan-jing-shen-ji-da-xue-pu-kou-qu/",
+      "originalUrl": "https://cf-pages.colleges.chat/universities/nan-jing-shen-ji-da-xue-pu-kou-qu/",
+      "canonicalUrl": "https://cf-pages.colleges.chat/universities/nan-jing-shen-ji-da-xue-pu-kou-qu/",
+      "date": "2026年06月",
+      "author": "匿名答卷 A34252",
+      "platform": "大学生活质量指北（匿名问卷）",
+      "kind": "独立编号的匿名校园生活问卷",
+      "population": "匿名答卷，未说明学院、学位及入住楼栋；不能确认为MPAcc",
+      "summary": "一份浦口校区答卷记录泽园套间的共用卫浴、外卖取餐和生活设施；同一学校仍需按本人园区、楼栋分别核对。",
+      "readingScope": "已读该浦口区页面的A34252完整答卷；可见答卷日期2026年06月。没有评论区或回复展开。",
+      "limitations": "独立问卷编号A34252，不与已有南京审计大学汇总页的8份答卷合并为新增多人证据。匿名身份、楼栋和培养层次未核实；本科晚自习、晨训不得套用于研究生。通勤40分钟、门禁、电动车等表述不作为当前规定；食堂异物是转述，翻墙是个人说法，均未采纳。",
+      "expansionBatch": "public-life-20261106"
+    },
+    "L102": {
+      "code": "L102",
+      "title": "南审倪亦涵：7段实习，走成1张“好奇心地图”",
+      "label": "南审倪亦涵：7段实习，走成1张“好奇心地图”",
+      "url": "https://news.nau.edu.cn/2026/1026/c5799a163116/page.htm",
+      "originalUrl": "https://news.nau.edu.cn/2026/1026/c5799a163116/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2026/1026/c5799a163116/page.htm",
+      "date": "日期未显示（2026年网页）",
+      "author": "倪亦涵（受访者）；南京审计大学新闻网",
+      "platform": "南京审计大学新闻网",
+      "kind": "官方发布的具名本科生实习自述",
+      "population": "国家安全学院劳动与社会保障专业2026届本科毕业生；不是MPAcc学生经历",
+      "summary": "倪亦涵回顾从信永中和审计到券商行研、咨询和互联网产品的七段实习，具体写到审计基础任务，以及Excel、Stata、SQL与岗位工作的衔接。",
+      "readingScope": "实际读到全文，包括七段实习单位与方向、首段审计的具体任务、课程技能及简历面试准备；未读评论、未视觉审读配图。",
+      "limitations": "校方精选的具名本科生职业经历，不是MPAcc培养政策、岗位推荐、四大八大名额或当前招聘信息。文中蔡老师、冀老师未全名，不映射导师。正文提取未显示发布日期；URL的2026/1026仅作日期线索，不当可见日期。配图、外链、评论未逐一读取。",
+      "expansionBatch": "public-life-20261106"
+    },
+    "L103": {
+      "code": "L103",
+      "title": "四级702分！大一学生陈晓然解锁不内卷的成长密码",
+      "label": "四级702分！大一学生陈晓然解锁不内卷的成长密码",
+      "url": "https://news.nau.edu.cn/2026/0323/c5799a155199/page.htm",
+      "originalUrl": "https://news.nau.edu.cn/2026/0323/c5799a155199/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2026/0323/c5799a155199/page.htm",
+      "date": "日期未显示（2026年网页）",
+      "author": "陈晓然（自述者）；南京审计大学新闻网",
+      "platform": "南京审计大学新闻网",
+      "kind": "官方发布的具名学生学习自述",
+      "population": "金融工程专业大一本科生；非MPAcc学习经验",
+      "summary": "陈晓然讲述把英语练习融入课间与食堂排队、在图书馆逐句复听错题，以及重新安排社团和自习时间的过程。",
+      "readingScope": "实际读取正文全部学习方法、大学适应与入学体会段落；未读评论、未核验配图中的考试材料。",
+      "limitations": "校方发布的具名本科生学习自述，四级702分和学习法属于单一个案，不代表MPAcc课程负担、统一备考方案或效果保证。原文未提供完整成绩核验材料；未据此评价会计导师。正文未显示发布日期；URL的2026/0323仅作日期线索。",
+      "expansionBatch": "public-life-20261106"
+    },
+    "L104": {
+      "code": "L104",
+      "title": "一位校友的自述：数学专业的我在南审收获了…",
+      "label": "一位校友的自述：数学专业的我在南审收获了…",
+      "url": "https://news.nau.edu.cn/2026/0708/c5799a160511/page.htm",
+      "originalUrl": "https://news.nau.edu.cn/2026/0708/c5799a160511/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2026/0708/c5799a160511/page.htm",
+      "date": "日期未显示（2026年网页）",
+      "author": "胡鑫（自述者）；南京审计大学新闻网",
+      "platform": "南京审计大学新闻网",
+      "kind": "官方发布的具名校友校园回忆",
+      "population": "2021届数学与应用数学本科校友，毕业后赴中国人民大学读研；非MPAcc",
+      "summary": "胡鑫以毕业五年的视角回忆图书馆、润泽湖、竞慧楼长椅与润园操场，把学习之外可散步、短暂休息的校园位置写得具体。",
+      "readingScope": "实际读取完整正文，重点校园四季、图书馆学习空间、散步与运动段；没有从未审读配图推断位置或设施。",
+      "limitations": "具名校友的历史本科回忆，非当前场所开放公告。37号座位、夜间书库轮换、餐饮档口和课程不作为现行安排。原文老师多为数学等本科课程教师，不归入MPAcc导师推荐。正文未显示发布日期；URL的2026/0708仅作日期线索。",
+      "expansionBatch": "public-life-20261106"
+    },
+    "L105": {
+      "code": "L105",
+      "title": "〖南京审计大学〗震惊！南审研究生宿舍长这样！研一学姐的南审研究生宿舍介绍",
+      "label": "〖南京审计大学〗震惊！南审研究生宿舍长这样！研一学姐的南审研究生宿舍介绍",
+      "url": "https://www.bilibili.com/video/BV17Z4y1F74F/",
+      "originalUrl": "https://www.bilibili.com/video/BV17Z4y1F74F/",
+      "canonicalUrl": "https://www.bilibili.com/video/BV17Z4y1F74F/",
+      "date": "2021-05-01",
+      "author": "Connie_980401",
+      "platform": "哔哩哔哩",
+      "kind": "历史视频入口·仅作者文字简介已读",
+      "population": "标题自称研一学姐；简介明确介绍2020级研究生宿舍；未说明MPAcc",
+      "summary": "2021年发布的2020级研究生宿舍介绍。作者特别提醒，后续年级住在哪里仍取决于学院分配，适合了解较早的研究生住宿影像。",
+      "readingScope": "视频页标题、作者、发布日、作者简介已读；主视频08:39、花絮00:16的列表可见。；未观看视频；未展开弹幕或评论；不将封面作为视频画面证据。",
+      "limitations": "仅视频页标题、作者、日期和作者文字简介已读；视频未播放，画面、弹幕和评论未核实。所述为2020级研究生宿舍，不能代表2026年或之后MPAcc住宿分配。",
+      "expansionBatch": "public-life-20261106"
+    },
+    "L106": {
+      "code": "L106",
+      "title": "vlog2%｜江江将的环游记｜南京｜夏记早点｜乌米饭团｜龙屋砂锅｜江南里｜南京审计大学｜泽园",
+      "label": "vlog2%｜江江将的环游记｜南京｜夏记早点｜乌米饭团｜龙屋砂锅｜江南里｜南京审计大学｜泽园",
+      "url": "https://www.bilibili.com/video/BV1hh4y1o7XV/",
+      "originalUrl": "https://www.bilibili.com/video/BV1hh4y1o7XV/",
+      "canonicalUrl": "https://www.bilibili.com/video/BV1hh4y1o7XV/",
+      "date": "2023-05-23",
+      "author": "江江将0825",
+      "platform": "哔哩哔哩",
+      "kind": "历史视频入口·仅作者文字简介已读",
+      "population": "旅行/美食vlog；作者是否南审学生未说明，不标为MPAcc经验",
+      "summary": "南京美食vlog的作者简介列出夏记早点、龙屋砂锅、江南里、南京审计大学泽园一楼和蜜雪冰城，可作为泽园食堂及南京饮食的历史影像入口。",
+      "readingScope": "视频页标题、作者、发布日期元数据与作者文字简介中的5个饮食地点已读。；未观看视频；未查看弹幕和评论；不把未观看的画面写成实读体验。",
+      "limitations": "只读到作者列出的地点清单；视频未播放，未确认菜品、口味、价格、路线距离和当前营业情况。平台公开页检索时间与元数据时刻不一致，因此仅记录2023-05-23，不保存具体时分。",
+      "expansionBatch": "public-life-20261106"
+    }
+  },
+  "lifeChapterAdditions": [
+    {
+      "chapterId": "life-03",
+      "block": {
+        "type": "p",
+        "text": "泽园一份2026年6月匿名答卷描述的是三个四人小寝共用浴室、卫生间与客厅的套间；不要把它当成所有寝室的统一配置。看宿舍影像时同样先认年级和学院：一位研一作者介绍2020级研究生宿舍时，就提醒后续分配要看学院安排。采购用品前，先拿到自己的园区、楼栋和房型。[L101][L105]",
+        "sourceCodes": [
+          "L101",
+          "L105"
+        ],
+        "expansionId": "public-life-dorm-20261106"
+      }
+    },
+    {
+      "chapterId": "life-04",
+      "block": {
+        "type": "p",
+        "text": "外卖先看具体交接点，再看步行距离。浦口校区2026年6月的一份匿名答卷中，部分订单到宿舍楼门口，部分仍要到校门口；这取决于本人园区和订单安排，不能只凭“南审可送到寝室”就下结论。[L101]",
+        "sourceCodes": [
+          "L101"
+        ],
+        "expansionId": "public-life-delivery-20261106"
+      }
+    },
+    {
+      "chapterId": "life-07",
+      "block": {
+        "type": "p",
+        "text": "给读书之外留一点短暂休息的位置。胡鑫的校园回忆写到竞慧楼间长椅、文心楼前水塘和绕润泽湖散步；陈晓然则讲到在课间、食堂排队和固定自习时间之间安排英语练习。可按自己的住宿和课表串起一条日常路线，图书馆具体分区、座位与开放时间另看当前通知。[L103][L104]",
+        "sourceCodes": [
+          "L103",
+          "L104"
+        ],
+        "expansionId": "public-life-study-20261106"
+      }
+    },
+    {
+      "chapterId": "life-09",
+      "block": {
+        "type": "p",
+        "text": "想了解审计实习究竟会做什么，可看校友倪亦涵对信永中和两个月经历的具体回顾：穿行测试、银行流水核查、实地盘点、函证与底稿。把这些任务和正在投递岗位的职责逐条对照，再准备Excel、资料整理、沟通及文字表达；这是劳保专业本科生的历史个案，不是MPAcc统一实践安排或在招岗位。[L102]",
+        "sourceCodes": [
+          "L102"
+        ],
+        "expansionId": "public-life-intern-tasks-20261106"
+      }
+    }
+  ],
+  "lifeImageIndexEntries": [],
+  "metadata": {
+    "newFullTextSources": 4,
+    "newVideoDescriptionEntries": 2,
+    "newMentorReviews": 0,
+    "newXhsFullTextSources": 0,
+    "newImages": 0,
+    "notesFile": "data/new-public-posts-notes.md"
+  }
+}
