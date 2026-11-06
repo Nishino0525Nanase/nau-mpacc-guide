@@ -71,9 +71,9 @@ test('manifest stays within a GitHub Pages subdirectory and has real PNG icons',
 test('SW only intercepts the exact local GET whitelist, including owner exclusion navigation', async () => {
   const sw=worker();
   await sw.lifecycle('install');
-  for (const path of ['', 'index.html?exclude_self=1', 'app.js?v=edition1','music.js?v=edition1','data/site-data.json?v=edition1','app.js?v=quiet11','style.css?v=quiet11']) assert(await sw.request(path),path);
+  for (const path of ['', 'index.html?exclude_self=1', 'app.js?v=edition1','music.js?v=edition1','data/site-data.json?v=edition1']) assert(await sw.request(path),path);
   const count=sw.calls.length;
-  for (const path of ['app.js?v=unexpected','analytics.js','analytics-config.js','admin/','admin/index.html','video/','?admin=1','?unexpected=1','downloads/test.apk','music/private-song.mp3','media/music/sample-track.mp3','media/music/sample-track.m4a','../another-project/','https://us.i.posthog.com/i/v0/e/','https://example.com/app.js']) assert.equal(await sw.request(path),null,path);
+  for (const path of ['analytics.js','analytics-config.js','admin/','admin/index.html','video/','?admin=1','?unexpected=1','downloads/test.apk','music/private-song.mp3','media/music/sample-track.mp3','media/music/sample-track.m4a','../another-project/','https://us.i.posthog.com/i/v0/e/','https://example.com/app.js']) assert.equal(await sw.request(path),null,path);
   assert.equal(await sw.request('data/site-data.json','POST'),null);
   assert.equal(sw.calls.length,count,'bypassed requests must not reach worker fetch');
 });

@@ -591,41 +591,10 @@
     emit('guide_open', {id:s.id});
   }
 
-  function openQuietRoom() {
-    openDialog('夹页', '<section class="quiet-room"><h2 id="dialog-title">书页夹层</h2><p>几页文字，一会儿音乐。</p><div class="quiet-room-options"><button type="button" class="button secondary" data-action="short-letter">翻一页纸</button><button type="button" class="button secondary" data-action="quiet-music">听一会儿歌</button></div></section>', 'quiet-room');
-  }
-
-  function openShortLetter() {
-    const page = $('#short-letter-template');
-    if (!page?.innerHTML.trim()) return;
-    const copy = page.innerHTML.replace('<h3>', '<h2 id="dialog-title">').replace('</h3>', '</h2>');
-    openDialog('纸页背面', `<article class="quiet-letter-page">${copy}<div class="quiet-page-turn"><button type="button" class="text-button" data-action="quiet-room">回到夹页</button><button type="button" class="text-button" data-action="quiet-letter">还有一页 →</button></div></article>`, 'quiet-letter');
-  }
-
   function openQuietLetter() {
     const page = $('#quiet-letter-template');
-    if (page?.innerHTML.trim()) openDialog('纸页背面', `<article class="quiet-letter-page">${page.innerHTML}<div class="quiet-page-turn"><button type="button" class="text-button" data-action="short-letter">← 回到前页</button><button type="button" class="text-button" data-action="quiet-room">回到夹页</button></div></article>`, 'quiet-letter');
+    if (page?.innerHTML.trim()) openDialog('纸页背面', `<article class="quiet-letter-page">${page.innerHTML}</article>`, 'quiet-letter');
   }
-
-  const pageSeal = $('#page-seal');
-  let sealClicks = 0, sealStarted = 0;
-  let focusMusicOnRoute = false;
-  pageSeal.addEventListener('keydown', event => {
-    if (event.repeat && ['Enter', ' '].includes(event.key)) event.preventDefault();
-  });
-  pageSeal.addEventListener('click', () => {
-    const now = Date.now();
-    if (!sealClicks || now - sealStarted > 6000) {
-      sealClicks = 0;
-      sealStarted = now;
-    }
-    sealClicks += 1;
-    if (sealClicks < 5) return;
-    sealClicks = 0;
-    sealStarted = 0;
-    pageSeal.focus({preventScroll:true});
-    openQuietRoom();
-  });
 
   function openDialog(eyebrow, html, type = '') {
     if (!dialog.open) {
@@ -698,13 +667,6 @@
     if (!keepMusic) ({mentors:renderMentors,life:renderLife,posts:renderPosts,downloads:renderDownloads,music:renderMusic})[state.view]();
     document.title = `${{mentors:'导师导览',life:'学习生活',posts:'原帖索引',downloads:'资料下载',music:'音乐小憩'}[state.view]} · 雨诺的南审手记`;
     if (scroll) requestAnimationFrame(() => app.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'}));
-    if (focusMusicOnRoute && state.view === 'music') {
-      focusMusicOnRoute = false;
-      requestAnimationFrame(() => {
-        const heading = app.querySelector('h2');
-        if (heading) { heading.tabIndex = -1; heading.focus({preventScroll:true}); }
-      });
-    }
     emit('page_view', {chapter:state.view==='life'?state.chapter:undefined});
   }
 
@@ -718,16 +680,7 @@
     if (action) {
       const id = action.dataset.id;
       switch(action.dataset.action) {
-        case 'quiet-room': openQuietRoom(); break;
-        case 'short-letter': openShortLetter(); break;
         case 'quiet-letter': openQuietLetter(); break;
-        case 'quiet-music': {
-          closeDialog();
-          focusMusicOnRoute = true;
-          if (location.hash === '#music') route(true);
-          else location.hash = 'music';
-          break;
-        }
         case 'compare-toggle': toggleCompare(id); break;
         case 'compare-open': openComparison(); break;
         case 'compare-clear': clearCompare(); break;

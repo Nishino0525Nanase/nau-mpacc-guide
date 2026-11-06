@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#173a49">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="description" content="雨诺的南审手记：南京审计大学MPAcc选导与生活指南。导师研究、学生经历、校园日常与原帖索引，帮助你找到适合自己的方向。策划与设计：胡雨诺。">
+  <meta name="description" content="雨诺的南审手记：南京审计大学MPAcc选导与生活指南。导师研究、学生经历、校园日常、原帖索引与自选歌单，帮助你找到适合自己的方向。策划与设计：胡雨诺。">
   <title>雨诺的南审手记｜南京审计大学MPAcc选导与生活指南</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -13,10 +13,10 @@
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="apple-touch-icon" href="./icons/app-192.png">
   <link rel="icon" href="./favicon.svg?v=edition1" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css?v=quiet11">
+  <link rel="stylesheet" href="./style.css?v=edition1">
   <script src="./install.js?v=edition1" defer></script>
   <script src="./music.js?v=edition1" defer></script>
-  <script src="./app.js?v=quiet11" defer></script>
+  <script src="./app.js?v=edition1" defer></script>
   <script src="./analytics-config.js?v=round3" defer></script>
   <script src="./analytics.js?v=round3" defer></script>
 </head>
@@ -46,7 +46,7 @@
         <p class="hero-lead">把方向选清楚，<br class="mobile-break">把研究生生活安排好。</p>
         <p class="hero-description">研究方向、具体训练、学生经历与校园日常，放在一起看。<br class="desktop-break">给准备报考和刚入学的你，一份可以逐条查证的参考。</p>
         <div class="author-signature" aria-label="策划与设计者介绍">
-          <button type="button" class="author-monogram" id="page-seal" aria-label="雨诺">雨诺</button>
+          <span class="author-monogram" aria-hidden="true">雨诺</span>
           <div class="author-details">
             <p class="author-credit">策划与设计 <strong>胡雨诺</strong></p>
             <p class="author-journey"><span>西南林业大学</span><span class="journey-arrow" aria-hidden="true">→</span><span>南京审计大学 MPAcc</span><span class="journey-note">保研</span></p>
@@ -80,13 +80,23 @@
       <div class="journey-note-copy">
         <p>雨诺，恭喜你顺利保研。这份指南整理了选导师和准备入学时可能用到的信息，希望能帮你省些查找资料的时间。</p>
         <p class="journey-note-wish">祝你选到合适的老师，接下来的学习和生活都顺利。</p>
+        <details class="personal-letter">
+          <summary>读一封小信</summary>
+          <div class="personal-letter-copy">
+            <h3>愿新的开始，顺利也从容。</h3>
+            <p>雨诺，恭喜你顺利保研。选导师、准备入学、了解实习，接下来要做的事情不少。这份指南就当作一份资料整理，希望能替你省些查找的时间。</p>
+            <p>愿你遇到合适的老师和实习机会，也给自己的生活留一些余地。忙完一阵，吃点应季的葡萄，回家时喝一碗熟悉的黄骨鱼汤；累了，就安心歇一歇。</p>
+            <p>新的阶段，不必一下子把所有事都安排妥当。祝你按自己的节奏慢慢向前，有想争取的机会，也有踏实自在的日常。</p>
+          </div>
+          <div class="afterword-corner"><button type="button" class="afterword-key" data-action="quiet-letter" aria-label="翻到另一页"><span aria-hidden="true">·</span></button></div>
+        </details>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div><a class="footer-title" href="#mentors">雨诺的南审手记 · MPAcc选导与生活指南</a><p>策划与设计：胡雨诺。资料供选导和生活决策参考；当年双选、培养及办事安排，以对应官方通知为准。</p><p id="offline-status" class="offline-status" role="status" aria-live="polite" hidden></p></div>
-    <div class="footer-links"><a href="#downloads">下载资料</a></div>
+    <div class="footer-links"><a href="#downloads">下载资料</a><a class="footer-music-entry" href="#music" aria-label="打开音乐小憩"><span aria-hidden="true">♪</span></a></div>
   </footer>
   <button type="button" class="back-top" id="back-top" aria-label="返回页面顶部" hidden>↑</button>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -94,14 +104,6 @@
     <div class="dialog-top"><span id="dialog-eyebrow">详细资料</span><button type="button" class="icon-button" id="dialog-close" aria-label="关闭详情">×</button></div>
     <div id="dialog-content"></div>
   </dialog>
-  <template id="short-letter-template">
-          <div class="personal-letter-copy">
-            <h3>愿新的开始，顺利也从容。</h3>
-            <p>雨诺，恭喜你顺利保研。选导师、准备入学、了解实习，接下来要做的事情不少。这份指南就当作一份资料整理，希望能替你省些查找的时间。</p>
-            <p>愿你遇到合适的老师和实习机会，也给自己的生活留一些余地。忙完一阵，吃点应季的葡萄，回家时喝一碗熟悉的黄骨鱼汤；累了，就安心歇一歇。</p>
-            <p>新的阶段，不必一下子把所有事都安排妥当。祝你按自己的节奏慢慢向前，有想争取的机会，也有踏实自在的日常。</p>
-          </div>
-  </template>
   <template id="quiet-letter-template">
     <h2 id="dialog-title">留在这一页</h2>
     <p class="quiet-letter-salutation">雨诺，见字好。</p>
