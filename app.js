@@ -591,11 +591,30 @@
     emit('guide_open', {id:s.id});
   }
 
+  let letterHold = null, letterKeyRelease = '';
+
+  function cancelLetterHold() {
+    if (letterHold) clearTimeout(letterHold.timer);
+    letterHold = null;
+  }
+
+  function beginLetterHold(title, input) {
+    cancelLetterHold();
+    const hold = {title, ...input};
+    letterHold = hold;
+    hold.timer = setTimeout(() => {
+      if (letterHold !== hold || !dialog.open || !title.isConnected || document.hidden) return;
+      if (hold.key) letterKeyRelease = hold.key;
+      cancelLetterHold();
+      openQuietLetter();
+    }, 2000);
+  }
+
   function openShortLetter() {
     const page = $('#short-letter-template');
     if (!page?.innerHTML.trim()) return;
-    const copy = page.innerHTML.replace('<h3>', '<h2 id="dialog-title">').replace('</h3>', '</h2>');
-    openDialog('纸页背面', `<article class="quiet-letter-page">${copy}<div class="afterword-corner"><button type="button" class="afterword-key" data-action="quiet-letter" aria-label="翻到另一页"><span aria-hidden="true">·</span></button></div></article>`, 'quiet-letter');
+    const copy = page.innerHTML.replace('<h3>', '<h2 id="dialog-title" class="quiet-letter-seal" tabindex="0" data-letter-seal>').replace('</h3>', '</h2>');
+    openDialog('纸页背面', `<article class="quiet-letter-page">${copy}</article>`, 'quiet-letter');
   }
 
   function openQuietLetter() {
@@ -604,6 +623,7 @@
   }
 
   function openDialog(eyebrow, html, type = '') {
+    cancelLetterHold();
     if (!dialog.open) {
       state.lastFocus = document.activeElement;
       state.lastFocusId = state.lastFocus?.dataset?.id || null;
@@ -618,6 +638,7 @@
   }
 
   function closeDialog() {
+    cancelLetterHold();
     state.dialogType = '';
     if (dialog.open) dialog.close();
     document.body.style.overflow = '';
@@ -731,6 +752,42 @@
     else if(event.target.id==='post-category'){state.postCategory=event.target.value;state.postLimit=20;renderPostResults();}
     else if(event.target.id==='contact-status'){state.saved[event.target.dataset.id]=event.target.value;persistSaved();if(state.view==='mentors')renderMentorResults();notify('已更新联系顺位');}
   });
+  dialog.addEventListener('pointerdown', event => {
+    const title = event.target.closest('[data-letter-seal]');
+    if (!title || event.button !== 0 || !event.isPrimary) return;
+    event.preventDefault();
+    title.focus({preventScroll:true});
+    title.setPointerCapture(event.pointerId);
+    beginLetterHold(title, {pointerId:event.pointerId, x:event.clientX, y:event.clientY});
+  });
+  dialog.addEventListener('pointermove', event => {
+    if (letterHold?.pointerId === event.pointerId && Math.hypot(event.clientX-letterHold.x,event.clientY-letterHold.y)>10) cancelLetterHold();
+  });
+  for (const type of ['pointerup','pointercancel','lostpointercapture']) dialog.addEventListener(type, event => {
+    if (letterHold?.pointerId === event.pointerId) cancelLetterHold();
+  });
+  dialog.addEventListener('keydown', event => {
+    if (!event.target.matches('[data-letter-seal]') || !['Enter',' '].includes(event.key)) return;
+    event.preventDefault();
+    if (!event.repeat) beginLetterHold(event.target, {key:event.key});
+  });
+  dialog.addEventListener('keyup', event => {
+    if (letterHold?.key === event.key) cancelLetterHold();
+  });
+  document.addEventListener('keydown', event => {
+    if (letterKeyRelease === event.key) { event.preventDefault(); event.stopPropagation(); }
+  }, true);
+  document.addEventListener('keyup', event => {
+    if (letterKeyRelease === event.key) { event.preventDefault(); event.stopPropagation(); letterKeyRelease = ''; }
+  }, true);
+  dialog.addEventListener('focusout', event => {
+    if (letterHold?.title === event.target) cancelLetterHold();
+  });
+  dialog.addEventListener('contextmenu', event => {
+    if (event.target.closest('[data-letter-seal]')) event.preventDefault();
+  });
+  window.addEventListener('blur', () => { cancelLetterHold(); letterKeyRelease = ''; });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) { cancelLetterHold(); letterKeyRelease = ''; } });
   $('#dialog-close').addEventListener('click',closeDialog);
   dialog.addEventListener('cancel',event=>{event.preventDefault();closeDialog();});
   dialog.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)closeDialog();}});
