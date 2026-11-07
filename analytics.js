@@ -1,6 +1,7 @@
-/* Aggregate page-open counts only. No cookies, visitor ID, SDK or replay.
+/* Page-open counts with coarse device categories. No cookies, visitor ID, SDK or replay.
  * Each page load gets an ephemeral random event ID; never interpret it as UV.
  * Owner exclusion uses a local preference, processed before any capture.
+ * Device categories are estimates, not a hardware model or persistent identity.
  */
 (function () {
   'use strict';
@@ -72,6 +73,48 @@
     target.textContent = saved ? '已排除当前浏览器：以后的访问不计入统计。' : '本次访问已排除，但设置未能保存；下次请仍使用排除链接打开。';
     if (target.classList) target.classList.add('visible');
   }
+  function coarseDevice(n) {
+    var out = { type: '其他', os: '未知', browser: '未知' };
+    try {
+      n = n || {};
+      var ua = String(n.userAgent || '');
+      var platform = String(n.platform || '');
+      var hints = n.userAgentData || {};
+      var hintPlatform = String(hints.platform || '');
+      var mobile = typeof hints.mobile === 'boolean' ? hints.mobile : null;
+      var brands = Array.isArray(hints.brands) ? hints.brands : [];
+      function brand(name) {
+        return brands.some(function (item) { return item && item.brand === name; });
+      }
+      var tablet = /iPad/i.test(ua) || (platform === 'MacIntel' && Number(n.maxTouchPoints) > 1);
+      var iosPhone = /iPhone|iPod/i.test(ua);
+      var android = hintPlatform === 'Android' || /Android/i.test(ua);
+      if (tablet || /Tablet|PlayBook/i.test(ua)) out.type = '平板';
+      else if (iosPhone || /Windows Phone/i.test(ua) || mobile === true || (android && /Mobile/i.test(ua))) out.type = '手机';
+      // An Android UA without Mobile may be a tablet or a phone in desktop mode.
+      else if (!android && (/Windows|macOS|Chrome OS|Linux/i.test(hintPlatform) || /Win|Mac|Linux|CrOS|X11/i.test(platform + ' ' + ua))) out.type = '电脑';
+
+      if (tablet) out.os = 'iPadOS';
+      else if (iosPhone) out.os = 'iOS';
+      else if (/Windows Phone/i.test(ua)) out.os = 'Windows Phone';
+      else if (android) out.os = 'Android';
+      else if (hintPlatform === 'Windows' || /Windows NT|Win32|Win64/i.test(ua + ' ' + platform)) out.os = 'Windows';
+      else if (hintPlatform === 'Chrome OS' || /CrOS/i.test(ua)) out.os = 'Chrome OS';
+      else if (hintPlatform === 'macOS' || /Macintosh|MacIntel|MacPPC|Mac OS X/i.test(ua + ' ' + platform)) out.os = 'macOS';
+      else if (hintPlatform === 'Linux' || /Linux|X11/i.test(ua + ' ' + platform)) out.os = 'Linux';
+
+      if (/MicroMessenger/i.test(ua)) out.browser = '微信内置浏览器';
+      else if (/Edg(?:A|iOS)?\//i.test(ua) || brand('Microsoft Edge')) out.browser = 'Edge';
+      else if (/OPR\/|OPiOS\/|OPT\//i.test(ua) || brand('Opera')) out.browser = 'Opera';
+      else if (/SamsungBrowser\//i.test(ua)) out.browser = '三星浏览器';
+      else if (/Firefox\/|FxiOS\//i.test(ua)) out.browser = 'Firefox';
+      else if (/;\s*wv\)/i.test(ua)) out.browser = 'Android WebView';
+      else if (/Chrome\/|CriOS\//i.test(ua) || brand('Google Chrome')) out.browser = 'Chrome';
+      else if (/Version\/.+Safari\//i.test(ua)) out.browser = 'Safari';
+      else if (brand('Chromium')) out.browser = 'Chromium系浏览器';
+    } catch (_) {}
+    return out;
+  }
   clearOldIdentity();
   window.NAUAnalytics = Object.freeze({ disable: disable, isOptedOut: isOptedOut });
   try {
@@ -93,13 +136,17 @@
     try { id = 'pv_' + window.crypto.randomUUID(); } catch (_) { return; }
     var referrer = '';
     try { referrer = new URL(window.document.referrer).hostname; } catch (_) {}
+    var device = coarseDevice(window.navigator);
     var payload = {
       api_key: c.token,
       event: '$pageview',
       distinct_id: id,
       properties: {
         source: 'nau-mpacc-guide',
-        analytics_mode: 'aggregate_v2',
+        analytics_mode: 'aggregate_v3_devices',
+        device_type: device.type,
+        device_os: device.os,
+        device_browser: device.browser,
         $process_person_profile: false,
         $current_url: p.origin + p.pathname,
         $pathname: p.pathname,
