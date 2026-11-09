@@ -6,8 +6,8 @@
       "mentors": 34,
       "detailedMentorCards": 17,
       "lifeChapters": 12,
-      "socialPosts": 130,
-      "officialEvidence": 201,
+      "socialPosts": 143,
+      "officialEvidence": 214,
       "feedbackRecords": 21,
       "screenedSources": 15,
       "unreadLeads": 6,
@@ -15,16 +15,18 @@
       "mentorsWithStudentReviews": 20
     },
     "socialPostCategories": {
+      "学习生活资料": 1,
+      "实习申请资料": 6,
       "可用生活学习线索": 64,
       "实务学习资料": 2,
-      "实习申请资料": 1,
       "校内合作资料": 1,
       "历史职业参考": 1,
       "历史生活影像": 2,
       "背景或待核实材料": 33,
       "排除主要攻略选导依据": 20,
       "有边界的导师课程反馈": 4,
-      "仅筛选记录": 2
+      "仅筛选记录": 2,
+      "历史学习经验": 7
     },
     "rosterSource": {
       "title": "十、会计（125300）专业学位硕士研究生导师",
@@ -11445,6 +11447,30 @@
             }
           ],
           "sourceUrl": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm"
+        },
+        {
+          "type": "heading",
+          "text": "把实习和论文准备连起来"
+        },
+        {
+          "type": "p",
+          "text": "2019年MPAcc工作站走访记录把阶段实习汇报和论文选题讨论放在同一次交流中；2017年MAud访谈则分享了提前推进写作、用节点协调实习的方法。这些是历史参考，可以借来整理自己的材料，不是当前MPAcc时长或分配规定。[U917][U922]",
+          "sourceCodes": [
+            "U917",
+            "U922"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "每阶段记下做过的任务、遇到的业务问题、已有证据与尚缺材料，再与导师讨论题目是否可开展。",
+            "参加案例赛前先协调出勤、分工与提交节点。2019级别的团队报道可帮助认识这一过程，当前赛事要求另看当年通知。[U919]",
+            "课程学分、开题答辩、系统或住宿问题可通过学委和学院反馈；2026年5月座谈会记录了这些问题类型，未公开逐项处理结果。[U920]"
+          ],
+          "sourceCodes": [
+            "U919",
+            "U920"
+          ]
         }
       ],
       "sourceCodes": [
@@ -11514,7 +11540,11 @@
         "U902",
         "U903",
         "U906",
-        "U907"
+        "U907",
+        "U917",
+        "U922",
+        "U919",
+        "U920"
       ]
     },
     {
@@ -16490,6 +16520,188 @@
     }
   ],
   "socialPosts": [
+    {
+      "id": "nau-accounting-student-feedback-157425",
+      "key": "南京审计大学会计学院:nau-accounting-student-feedback-157425",
+      "sourceIds": [
+        "U920"
+      ],
+      "canonicalUrl": "https://account.nau.edu.cn/2026/0514/c8917a157425/page.htm",
+      "url": "https://account.nau.edu.cn/2026/0514/c8917a157425/page.htm",
+      "title": "会计学院召开研究生期中教学检查座谈会（2026年5月）",
+      "author": "南京审计大学会计学院",
+      "date": "2026-05-14",
+      "platform": "南京审计大学会计学院",
+      "category": "学习生活资料",
+      "topic": "课程、开题答辩、住宿和生活问题的院内反馈",
+      "population": "2023—2025级会计学、会计专业研究生学委代表；混合学位类别且未逐人具名",
+      "campus": "按原文的学段与项目所在地",
+      "summary": "2023—2025级会计学和会计专业研究生学委集中反馈教学、课程学分、开题答辩、研究生系统、住宿及施工等问题，可用于了解需要主动核实和协调的学习生活事项。",
+      "tips": [
+        "参会身份同时包含会计学与会计专业研究生学委，不能全部算为MPAcc。",
+        "反馈范围包括教学安排、课程学分、科研成果、学术讲座、社会实践、开题和答辩安排、研究生系统、就业、住宿、生活及学校施工。",
+        "报道记录学院当场回应，并提醒研究生提前规划科研、关注案例典型性、主动与导师沟通；没有公布逐项问题和解决结果。"
+      ],
+      "comments": [],
+      "limitations": "参会者包含会计学与会计专业研究生，未逐人具名。报道列出反馈问题类型，没有公布逐项处理结果，不能据此认定当前仍有同样问题。",
+      "reviewReason": "保留原始身份和年份；用于理解学习与岗位，不推定当年名额或导师口碑。",
+      "verificationStatus": "原始发布正文可核对；适用范围见说明",
+      "screenedOnly": false,
+      "needsVerification": true,
+      "readingScopes": [],
+      "expansionBatch": "content-round-20261110b"
+    },
+    {
+      "id": "job-hutchmed-finance-intern-shanghai-20260917",
+      "key": "企业职位原文／高校就业网:job-hutchmed-finance-intern-shanghai-20260917",
+      "sourceIds": [
+        "U924"
+      ],
+      "canonicalUrl": "https://jy.scu.edu.cn/index/index/employjobdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh4Y5WKubbSyobddricp9CWi5qikaeWacSdqLqGfaK2w4iil5C4zNbGiL-E",
+      "url": "https://jy.scu.edu.cn/index/index/employjobdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh4Y5WKubbSyobddricp9CWi5qikaeWacSdqLqGfaK2w4iil5C4zNbGiL-E",
+      "title": "财务部实习生｜上海浦东",
+      "author": "企业职位原文／高校就业网",
+      "date": "2026-09-17",
+      "platform": "企业职位原文／高校就业网",
+      "category": "实习申请资料",
+      "topic": "企业财务实习",
+      "population": "本科及以上在校生，正文要求财会相关专业（表格专业栏另写不限，投递前请核实）。",
+      "campus": "按原文的学段与项目所在地",
+      "summary": "财务票据和凭证整理归档、基础数据录入、台账与核对等财务内勤辅助。 学校职位有效期至2026-11-29 23:59:59，截至核验日未到期；未核实际余缺。",
+      "tips": [
+        "本科及以上在校生，正文要求财会相关专业（表格专业栏另写不限，投递前请核实）。",
+        "每周稳定不少于3天；周二、周三需全天在岗。",
+        "连续实习6个月及以上优先。"
+      ],
+      "comments": [],
+      "limitations": "学校页面有效期不保证实际余缺；到岗及证明安排以招聘方确认为准。；公告薪资栏为3000-4000，未注明结算周期，需向招聘方确认。",
+      "reviewReason": "保留原始身份和年份；用于理解学习与岗位，不推定当年名额或导师口碑。",
+      "verificationStatus": "原始发布正文可核对；适用范围见说明",
+      "screenedOnly": false,
+      "needsVerification": true,
+      "readingScopes": [],
+      "expansionBatch": "content-round-20261110b"
+    },
+    {
+      "id": "job-zeron-finance-intern-taicang-20260908",
+      "key": "企业职位原文／高校就业网:job-zeron-finance-intern-taicang-20260908",
+      "sourceIds": [
+        "U925"
+      ],
+      "canonicalUrl": "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=5AD1C40BF1B24985E0653A68DD0E9B18",
+      "url": "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=5AD1C40BF1B24985E0653A68DD0E9B18",
+      "title": "财务实习生｜苏州太仓",
+      "author": "企业职位原文／高校就业网",
+      "date": "2026-09-08",
+      "platform": "企业职位原文／高校就业网",
+      "category": "实习申请资料",
+      "topic": "企业财务实习",
+      "population": "财务相关专业硕士在校生。",
+      "campus": "按原文的学段与项目所在地",
+      "summary": "银行存款日记账、回单、对账与财务资料整理，协助银行外勤。 学校页面有效期至2027-06-30；当前实际余缺、到岗与材料要求请向招聘方核对。",
+      "tips": [
+        "财务相关专业硕士在校生。",
+        "每周出勤3天以上优先。",
+        "持续半年以上优先。"
+      ],
+      "comments": [],
+      "limitations": "招聘人数为原公告需求，当前余缺需向招聘方确认。；公告薪资栏为5000-6000，未注明结算周期，需向招聘方确认。",
+      "reviewReason": "保留原始身份和年份；用于理解学习与岗位，不推定当年名额或导师口碑。",
+      "verificationStatus": "原始发布正文可核对；适用范围见说明",
+      "screenedOnly": false,
+      "needsVerification": true,
+      "readingScopes": [],
+      "expansionBatch": "content-round-20261110b"
+    },
+    {
+      "id": "job-fosun-fssc-finance-intern-yangpu",
+      "key": "企业职位原文／高校就业网:job-fosun-fssc-finance-intern-yangpu",
+      "sourceIds": [
+        "U926"
+      ],
+      "canonicalUrl": "https://bs-cdc.ecust.edu.cn/6109/",
+      "url": "https://bs-cdc.ecust.edu.cn/6109/",
+      "title": "财务实习生｜上海杨浦（申请期未注明）",
+      "author": "企业职位原文／高校就业网",
+      "date": null,
+      "platform": "企业职位原文／高校就业网",
+      "category": "实习申请资料",
+      "topic": "企业财务实习",
+      "population": "本科及以上，财税专业优先；公告未独立限定届别。",
+      "campus": "按原文的学段与项目所在地",
+      "summary": "单据和档案、收支核对、费用初审、对账、结账报税、资金与费用检查及SOP。 页面未列发布日期或申请截止，当前余缺和适用届别需向招聘方确认。",
+      "tips": [
+        "本科及以上，财税专业优先；公告未独立限定届别。",
+        "每周至少3天。",
+        "至少3个月；希望尽快到岗。"
+      ],
+      "comments": [],
+      "limitations": "岗位要求至少3个月；满2个月可开证明不等于最短只需实习2个月。；留用机会以应届身份和用人部门考核为条件。",
+      "reviewReason": "保留原始身份和年份；用于理解学习与岗位，不推定当年名额或导师口碑。",
+      "verificationStatus": "原始发布正文可核对；适用范围见说明",
+      "screenedOnly": false,
+      "needsVerification": true,
+      "readingScopes": [],
+      "expansionBatch": "content-round-20261110b"
+    },
+    {
+      "id": "job-suning-finance-intern-nanjing-27745",
+      "key": "企业职位原文／高校就业网:job-suning-finance-intern-nanjing-27745",
+      "sourceIds": [
+        "U927"
+      ],
+      "canonicalUrl": "https://campus.suning.cn/rps-campus/ftl/campus/campusPositionDetail.htm?poId=27745",
+      "url": "https://campus.suning.cn/rps-campus/ftl/campus/campusPositionDetail.htm?poId=27745",
+      "title": "财务实习生｜南京（具体JD）",
+      "author": "企业职位原文／高校就业网",
+      "date": null,
+      "platform": "企业职位原文／高校就业网",
+      "category": "实习申请资料",
+      "topic": "企业财务实习",
+      "population": "本科学历以上；财务管理、会计、审计、经济金融及数学统计等相关专业；未明示年级或毕业届别。",
+      "campus": "按原文的学段与项目所在地",
+      "summary": "协助会计核算、财报与内控，及预算绩效、费用管控和业务财务支持。 页面未列发布日期或申请截止，当前余缺和适用届别需向招聘方确认。",
+      "tips": [
+        "本科学历以上；财务管理、会计、审计、经济金融及数学统计等相关专业；未明示年级或毕业届别。"
+      ],
+      "comments": [],
+      "limitations": "职位标题及导航属于实习，系统工作性质字段显示全职；在校生接受范围及周出勤须另核。；优秀者直通管培生招录属于有条件机会，不保证转正。",
+      "reviewReason": "保留原始身份和年份；用于理解学习与岗位，不推定当年名额或导师口碑。",
+      "verificationStatus": "原始发布正文可核对；适用范围见说明",
+      "screenedOnly": false,
+      "needsVerification": true,
+      "readingScopes": [],
+      "expansionBatch": "content-round-20261110b"
+    },
+    {
+      "id": "job-shzhiming-finance-intern-2027-jiding",
+      "key": "企业职位原文／高校就业网:job-shzhiming-finance-intern-2027-jiding",
+      "sourceIds": [
+        "U928"
+      ],
+      "canonicalUrl": "https://ejob.dhu.edu.cn/single/2026/04/13/2604131508252818905719111514160682210002.html",
+      "url": "https://ejob.dhu.edu.cn/single/2026/04/13/2604131508252818905719111514160682210002.html",
+      "title": "2027届财务实习生｜上海嘉定",
+      "author": "企业职位原文／高校就业网",
+      "date": "2026-04-13（来源路径与检索标注）",
+      "platform": "企业职位原文／高校就业网",
+      "category": "实习申请资料",
+      "topic": "企业财务实习",
+      "population": "标题27届实习；统招本科及以上。未见具体专业要求段。",
+      "campus": "按原文的学段与项目所在地",
+      "summary": "报销票据、凭证归档、发票和税务辅助、财务系统数据录入、往来核对、基础透视表与资产盘点。 2026年4月发布的2027届实习公告，未给申请截止或当前余缺；不作为11月新开职位。",
+      "tips": [
+        "标题27届实习；统招本科及以上。未见具体专业要求段。"
+      ],
+      "comments": [],
+      "limitations": "周出勤、最短时长和申请截止未注明。；原公告人数不等于当前余缺。；原公告薪酬：180-200元/天；当前安排以招聘方确认为准。",
+      "reviewReason": "保留原始身份和年份；用于理解学习与岗位，不推定当年名额或导师口碑。",
+      "verificationStatus": "原始发布正文可核对；适用范围见说明",
+      "screenedOnly": false,
+      "needsVerification": true,
+      "readingScopes": [],
+      "expansionBatch": "content-round-20261110b"
+    },
     {
       "id": "nau-social-audit-enterprise-156017",
       "key": "南京审计大学社会审计学院:nau-social-audit-enterprise-156017",
@@ -23339,6 +23551,222 @@
       "needsVerification": true,
       "verificationStatus": "具名学生历史经历，硕士类别与届级待核",
       "expansionBatch": "student-reviews-2026-11"
+    },
+    {
+      "id": "nau-liang-siyuan-study-246821158",
+      "key": "南京审计大学搜狐官方账号:nau-liang-siyuan-study-246821158",
+      "sourceIds": [
+        "U916"
+      ],
+      "canonicalUrl": "https://www.sohu.com/a/246821158_769713",
+      "url": "https://www.sohu.com/a/246821158_769713",
+      "title": "他本科、硕士读南审，研究国家审计，还考上了上海财经大学的博士",
+      "author": "南京审计大学搜狐官方账号",
+      "date": "2018-08-13",
+      "platform": "南京审计大学搜狐官方账号",
+      "category": "历史学习经验",
+      "topic": "课前文献阅读、PPT汇报和论文反复修改",
+      "population": "梁思源，2018届审计学硕士毕业生；正文明确选择审计学硕，非MAud、非MPAcc",
+      "campus": "按原文的学段与项目所在地",
+      "summary": "梁思源回顾审计学硕阶段的学习：围绕讨论主题先查资料和读论文，再形成观点进行课堂汇报；参加研讨班、准备学术年会点评，并与合作教师反复讨论文章框架。",
+      "tips": [
+        "每节课围绕待讨论主题自行查资料、读论文，形成观点并作PPT汇报；学生将其理解为知识由输入转为输出。",
+        "2017年参加联合学术年会前，他查资料、翻文献、准备论文点评和PPT。",
+        "与马志娟合作论文遇到文献少和知识储备不足的问题，后来多次讨论逻辑框架、修改文章。"
+      ],
+      "comments": [],
+      "limitations": "2018年审计学硕个人访谈；可参考阅读和汇报方法，不能据此判断当前MPAcc课程考核或教师的统一要求。",
+      "reviewReason": "保留原始身份和年份；用于理解学习与岗位，不推定当年名额或导师口碑。",
+      "verificationStatus": "原始发布正文可核对；适用范围见说明",
+      "screenedOnly": false,
+      "needsVerification": true,
+      "readingScopes": [],
+      "expansionBatch": "content-round-20261110b"
+    },
+    {
+      "id": "nau-mpacc-nantong-practice-50277",
+      "key": "南京审计大学会计学院:nau-mpacc-nantong-practice-50277",
+      "sourceIds": [
+        "U917"
+      ],
+      "canonicalUrl": "https://account.nau.edu.cn/2019/0414/c809a50277/page.htm",
+      "url": "https://account.nau.edu.cn/2019/0414/c809a50277/page.htm",
+      "title": "会计学院走访江苏省研究生工作站和研究生实习基地——南通滨海投资发展有限公司",
+      "author": "南京审计大学会计学院",
+      "date": "2019-04-14",
+      "platform": "南京审计大学会计学院",
+      "category": "历史学习经验",
+      "topic": "实习复盘与学位论文选题沟通",
+      "population": "四位会计专业硕士研究生，正文未公开姓名和年级",
+      "campus": "按原文的学段与项目所在地",
+      "summary": "四位会计专业硕士在南通滨海投资发展有限公司实习约三个月后汇报工作和心得，并讨论学位论文选题的可行性，展示实习复盘与论文准备可以相互连接。",
+      "tips": [
+        "报道明确四位会计专业硕士分别进行近三个月实习工作总结和心得汇报。",
+        "座谈交流实习安排与体会，同时讨论研究生论文选题的可行性和科学性。",
+        "学生汇总反馈提到企业负责人利用时间指导论文，但没有公开具体题目、数据或岗位任务。"
+      ],
+      "comments": [],
+      "limitations": "2019年四位MPAcc学生的群体反馈，未公布姓名、具体岗位任务和现行申请名额；当年约三个月实习不是当前实践时长要求。",
+      "reviewReason": "保留原始身份和年份；用于理解学习与岗位，不推定当年名额或导师口碑。",
+      "verificationStatus": "原始发布正文可核对；适用范围见说明",
+      "screenedOnly": false,
+      "needsVerification": true,
+      "readingScopes": [],
+      "expansionBatch": "content-round-20261110b"
+    },
+    {
+      "id": "nau-parttime-mpacc-thesis-sharing-50541",
+      "key": "南京审计大学会计学院:nau-parttime-mpacc-thesis-sharing-50541",
+      "sourceIds": [
+        "U918"
+      ],
+      "canonicalUrl": "https://account.nau.edu.cn/2019/0418/c809a50541/page.htm",
+      "url": "https://account.nau.edu.cn/2019/0418/c809a50541/page.htm",
+      "title": "首届非全日制会计专硕学术报告交流会——学位论文经验分享",
+      "author": "南京审计大学会计学院",
+      "date": "2019-04-18",
+      "platform": "南京审计大学会计学院",
+      "category": "历史学习经验",
+      "topic": "论文进展汇报、案例分析和开题沟通",
+      "population": "2017级非全日制会计专硕9名同学，未公开姓名；2018级同学为经验交流对象",
+      "campus": "按原文的学段与项目所在地",
+      "summary": "2017级非全日制会计专硕9名同学汇报论文进展、案例分析和社会经验；活动提醒下一届尽早准备开题，并带着已有成果与导师沟通选题。",
+      "tips": [
+        "报道明确参与汇报的为2017级非全日制会计专硕9名学生，报告内容包括学位论文进展、案例分析和社会经验。",
+        "教师提醒2017级继续修改论文，并建议2018级尽快进入开题、带着成果与导师积极沟通，核对选题的实际意义和可开展性。"
+      ],
+      "comments": [],
+      "limitations": "2019年非全日制MPAcc群体交流，未给出逐人论文题目或学生原话；全日制及当前年级的培养节点以本级安排为准。",
+      "reviewReason": "保留原始身份和年份；用于理解学习与岗位，不推定当年名额或导师口碑。",
+      "verificationStatus": "原始发布正文可核对；适用范围见说明",
+      "screenedOnly": false,
+      "needsVerification": true,
+      "readingScopes": [],
+      "expansionBatch": "content-round-20261110b"
+    },
+    {
+      "id": "nau-mpacc-case-team-50391",
+      "key": "南京审计大学会计学院:nau-mpacc-case-team-50391",
+      "sourceIds": [
+        "U919"
+      ],
+      "canonicalUrl": "https://account.nau.edu.cn/2019/0417/c809a50391/page.htm",
+      "url": "https://account.nau.edu.cn/2019/0417/c809a50391/page.htm",
+      "title": "我院本、硕团队在第六届中国MPAcc学生案例大赛中初尝胜果",
+      "author": "南京审计大学会计学院",
+      "date": "2019-04-17",
+      "platform": "南京审计大学会计学院",
+      "category": "历史学习经验",
+      "topic": "实习期间参加案例赛与团队报告写作",
+      "population": "李琪、胡婕、刘阳、虞惠钦等，2018级MPAcc‘那一’队；原文另一支‘誓不做假账’为本科生团队，不合并为MPAcc经历",
+      "campus": "按原文的学段与项目所在地",
+      "summary": "2019年会计学院组织在外实习的2018级MPAcc学生组队参赛，团队在教师指导下分析讨论案例、按时间和格式提交报告；李琪等组成的‘那一’队进入第二阶段。",
+      "tips": [
+        "报道指出研究生当时在外实习，学院自3月初开始组织，至3月底报出10支MPAcc团队及2支本科生团队。",
+        "参赛团队在教师指导下对案例分析、讨论，并在规定时间和格式要求下撰写案例分析报告。",
+        "崔秀梅指导的2018级MPAcc李琪、胡婕、刘阳、虞惠钦等组建‘那一’队，以华东赛区第七进入第二阶段；这是2019年阶段成绩。"
+      ],
+      "comments": [],
+      "limitations": "记录为2019年案例赛阶段成绩，并非当前赛事规则或最终全国奖项；没有学生对导师指导的个人评价，文中的本科团队与MPAcc团队分别看待。",
+      "reviewReason": "保留原始身份和年份；用于理解学习与岗位，不推定当年名额或导师口碑。",
+      "verificationStatus": "原始发布正文可核对；适用范围见说明",
+      "screenedOnly": false,
+      "needsVerification": true,
+      "readingScopes": [],
+      "expansionBatch": "content-round-20261110b"
+    },
+    {
+      "id": "nau-yin-zhengxin-research-31456",
+      "key": "南京审计大学研究生院:nau-yin-zhengxin-research-31456",
+      "sourceIds": [
+        "U921"
+      ],
+      "canonicalUrl": "https://gs.nau.edu.cn/2017/1023/c4415a31456/page.htm",
+      "url": "https://gs.nau.edu.cn/2017/1023/c4415a31456/page.htm",
+      "title": "2017 优秀硕士毕业生特辑 · 殷正馨",
+      "author": "南京审计大学研究生院",
+      "date": "2017-07-04",
+      "platform": "南京审计大学研究生院",
+      "category": "历史学习经验",
+      "topic": "访谈、实习案例和论文选题",
+      "population": "殷正馨，2015级审计专硕MAud；非MPAcc",
+      "campus": "按原文的学段与项目所在地",
+      "summary": "殷正馨围绕精准扶贫绩效审计研究，借助访谈实务工作者和审计机关实习搜集案例，结合文献完善选题，并建议通过实习了解职业方向。",
+      "tips": [
+        "选题较新，她一度遇到写作方向和案例搜集困难。",
+        "在导师带领下访谈参加审计干部培训的实务人员，并通过政府审计机关实习参与、搜集典型地区案例。",
+        "就业部分建议先结合自身特点规划职业，并通过实习加深对岗位的了解。"
+      ],
+      "comments": [],
+      "limitations": "2017年MAud历史访谈；当时的学制与机关实习安排不代表现在MPAcc的制度或申请名额。",
+      "reviewReason": "保留原始身份和年份；用于理解学习与岗位，不推定当年名额或导师口碑。",
+      "verificationStatus": "原始发布正文可核对；适用范围见说明",
+      "screenedOnly": false,
+      "needsVerification": true,
+      "readingScopes": [],
+      "expansionBatch": "content-round-20261110b"
+    },
+    {
+      "id": "nau-wang-nannan-thesis-31458",
+      "key": "南京审计大学研究生院:nau-wang-nannan-thesis-31458",
+      "sourceIds": [
+        "U922"
+      ],
+      "canonicalUrl": "https://gs.nau.edu.cn/2017/1023/c4415a31458/page.htm",
+      "url": "https://gs.nau.edu.cn/2017/1023/c4415a31458/page.htm",
+      "title": "2017优秀毕业研究生&优秀硕士论文获奖者特辑 · 王楠楠",
+      "author": "南京审计大学研究生院",
+      "date": "2017-07-03",
+      "platform": "南京审计大学研究生院",
+      "category": "历史学习经验",
+      "topic": "文献笔记、论文框架和科研实习时间协调",
+      "population": "王楠楠，2015级审计专硕MAud；非MPAcc",
+      "campus": "按原文的学段与项目所在地",
+      "summary": "王楠楠工作两年后返校读审计专硕，分享文献阅读笔记、多方讨论和搭建文章框架的方法；她通过提前推进论文、划定时间节点，协调研究和实习。",
+      "tips": [
+        "她描述从被动接受知识转向主动检索、阅读和提出观点，借与师生讨论完善知识结构。",
+        "论文写作建议包括及时概括和整理文献、遇瓶颈主动交流，以及先理清文章框架和行文细节。",
+        "为避免实习与科研冲突，她将写作关口提前，并用时间节点督促行动、随时记录灵感和工作技巧。"
+      ],
+      "comments": [],
+      "limitations": "2017年MAud个人自述；可参考文献整理和时间规划，当前MPAcc的学制、实践学分和实习安排应核对本级通知。",
+      "reviewReason": "保留原始身份和年份；用于理解学习与岗位，不推定当年名额或导师口碑。",
+      "verificationStatus": "原始发布正文可核对；适用范围见说明",
+      "screenedOnly": false,
+      "needsVerification": true,
+      "readingScopes": [],
+      "expansionBatch": "content-round-20261110b"
+    },
+    {
+      "id": "nau-jiao-sheng-thesis-life-31464",
+      "key": "南京审计大学研究生院:nau-jiao-sheng-thesis-life-31464",
+      "sourceIds": [
+        "U923"
+      ],
+      "canonicalUrl": "https://gs.nau.edu.cn/2017/1023/c4415a31464/page.htm",
+      "url": "https://gs.nau.edu.cn/2017/1023/c4415a31464/page.htm",
+      "title": "2017 优秀硕士论文获奖者特辑 · 焦胜",
+      "author": "南京审计大学研究生院",
+      "date": "2017-06-25",
+      "platform": "南京审计大学研究生院",
+      "category": "历史学习经验",
+      "topic": "文献交流、论文修改和研究生运动生活",
+      "population": "焦胜，2015级审计专硕MAud；非MPAcc",
+      "campus": "按原文的学段与项目所在地",
+      "summary": "焦胜从公共工程兴趣逐步聚焦PPP项目审计，回顾定期文献交流、旁听前届开题和论文多轮修改；生活方面提到加入研究生篮球队。",
+      "tips": [
+        "他回忆研一开始约每两周与导师和同门报告近期阅读的文献专著，交流下一阶段研究内容，并参加学长学姐的开题。",
+        "研究兴趣经多次交流聚焦PPP项目政府审计，小论文和研创项目为毕业论文准备奠定基础。",
+        "他描述毕业论文指导后常需较大幅度修改；研究生阶段还参加篮球队训练和比赛。"
+      ],
+      "comments": [],
+      "limitations": "2017年MAud个案；约每两周交流仅为该学生当年的经历，不代表MPAcc统一组会频率或毕业要求。",
+      "reviewReason": "保留原始身份和年份；用于理解学习与岗位，不推定当年名额或导师口碑。",
+      "verificationStatus": "原始发布正文可核对；适用范围见说明",
+      "screenedOnly": false,
+      "needsVerification": true,
+      "readingScopes": [],
+      "expansionBatch": "content-round-20261110b"
     }
   ],
   "sourceRegistry": {
@@ -32252,6 +32680,201 @@
       "readingScope": "全文；报道未公布MPAcc资格、申请入口或名额。学校主站同编号163076是同篇转载，不计独立来源",
       "limitations": "单位入口和历史活动不等于当前在招实习岗位；资格及名额以具体公告为准。",
       "expansionBatch": "web-content-20261110"
+    },
+    "U916": {
+      "code": "U916",
+      "title": "他本科、硕士读南审，研究国家审计，还考上了上海财经大学的博士",
+      "label": "他本科、硕士读南审，研究国家审计，还考上了上海财经大学的博士",
+      "url": "https://www.sohu.com/a/246821158_769713",
+      "canonicalUrl": "https://www.sohu.com/a/246821158_769713",
+      "originalUrl": "https://www.sohu.com/a/246821158_769713",
+      "date": "2018-08-13",
+      "summary": "梁思源回顾审计学硕阶段的学习：围绕讨论主题先查资料和读论文，再形成观点进行课堂汇报；参加研讨班、准备学术年会点评，并与合作教师反复讨论文章框架。",
+      "kind": "学校官方账号发布的具名学生访谈",
+      "population": "梁思源，2018届审计学硕士毕业生；正文明确选择审计学硕，非MAud、非MPAcc",
+      "readingScope": "实际阅读全文L0—L119，重点核对L42学硕身份、L51课堂汇报、L55研讨班、L59—L71参会和论文修改；未读取图片内论文清单，不扩写研究成果。",
+      "limitations": "2018年的学硕个人历史经历，属于学校精选访谈。不能转写为MPAcc每门课的现行考核、统一研讨班安排或工作量承诺；郑石桥和马志娟不是据此添加到当前MPAcc导师名单。学生熬夜修改不作为健康学习建议。",
+      "expansionBatch": "content-round-20261110b"
+    },
+    "U917": {
+      "code": "U917",
+      "title": "会计学院走访江苏省研究生工作站和研究生实习基地——南通滨海投资发展有限公司",
+      "label": "会计学院走访江苏省研究生工作站和研究生实习基地——南通滨海投资发展有限公司",
+      "url": "https://account.nau.edu.cn/2019/0414/c809a50277/page.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/2019/0414/c809a50277/page.htm",
+      "originalUrl": "https://account.nau.edu.cn/2019/0414/c809a50277/page.htm",
+      "date": "2019-04-14",
+      "summary": "四位会计专业硕士在南通滨海投资发展有限公司实习约三个月后汇报工作和心得，并讨论学位论文选题的可行性，展示实习复盘与论文准备可以相互连接。",
+      "kind": "官方实习走访报道，含四位MPAcc学生的汇总反馈",
+      "population": "四位会计专业硕士研究生，正文未公开姓名和年级",
+      "readingScope": "实际阅读全文L70—L83，核对页面日期、活动日期、四位MPAcc身份、三个月实习和论文讨论；不将配图识别为具名身份。",
+      "limitations": "2019年历史MPAcc群体记录，不是学生逐人访谈、当前实习招聘、统一分配或现行时长要求。没有具体岗位任务，不补写核算、审计或报销内容；不把企业方论文指导归给校内导师，也不将此记录作为导师口碑。",
+      "expansionBatch": "content-round-20261110b"
+    },
+    "U918": {
+      "code": "U918",
+      "title": "首届非全日制会计专硕学术报告交流会——学位论文经验分享",
+      "label": "首届非全日制会计专硕学术报告交流会——学位论文经验分享",
+      "url": "https://account.nau.edu.cn/2019/0418/c809a50541/page.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/2019/0418/c809a50541/page.htm",
+      "originalUrl": "https://account.nau.edu.cn/2019/0418/c809a50541/page.htm",
+      "date": "2019-04-18",
+      "summary": "2017级非全日制会计专硕9名同学汇报论文进展、案例分析和社会经验；活动提醒下一届尽早准备开题，并带着已有成果与导师沟通选题。",
+      "kind": "官方非全日制MPAcc群体论文交流纪要",
+      "population": "2017级非全日制会计专硕9名同学，未公开姓名；2018级同学为经验交流对象",
+      "readingScope": "实际阅读全文L70—L89，核对非全身份、年级、人数、汇报范围和教师提醒。",
+      "limitations": "2019年非全日制MPAcc历史交流记录，不能套用为全日制现行培养时点、论文流程或每位导师要求。原文没有逐人论文题目和学生原话，不生成个人评价或替9位学生推定专业方向。",
+      "expansionBatch": "content-round-20261110b"
+    },
+    "U919": {
+      "code": "U919",
+      "title": "我院本、硕团队在第六届中国MPAcc学生案例大赛中初尝胜果",
+      "label": "我院本、硕团队在第六届中国MPAcc学生案例大赛中初尝胜果",
+      "url": "https://account.nau.edu.cn/2019/0417/c809a50391/page.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/2019/0417/c809a50391/page.htm",
+      "originalUrl": "https://account.nau.edu.cn/2019/0417/c809a50391/page.htm",
+      "date": "2019-04-17",
+      "summary": "2019年会计学院组织在外实习的2018级MPAcc学生组队参赛，团队在教师指导下分析讨论案例、按时间和格式提交报告；李琪等组成的‘那一’队进入第二阶段。",
+      "kind": "官方具名MPAcc团队案例竞赛过程报道，另含本科团队",
+      "population": "李琪、胡婕、刘阳、虞惠钦等，2018级MPAcc‘那一’队；原文另一支‘誓不做假账’为本科生团队，不合并为MPAcc经历",
+      "readingScope": "实际阅读全文L71—L89，重点核对L82学段区分、L84实习和报告过程、L87具名MPAcc团队。",
+      "limitations": "2019年竞赛过程及阶段成绩，不是当前赛事规则、必修考核或毕业要求；公开报道没有给出学生对指导方式的评价，不据团队获奖推定导师口碑。与原文本科生队伍分开；不把第一阶段成绩写成最终全国奖项。",
+      "expansionBatch": "content-round-20261110b"
+    },
+    "U920": {
+      "code": "U920",
+      "title": "会计学院召开研究生期中教学检查座谈会（2026年5月）",
+      "label": "会计学院召开研究生期中教学检查座谈会（2026年5月）",
+      "url": "https://account.nau.edu.cn/2026/0514/c8917a157425/page.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/2026/0514/c8917a157425/page.htm",
+      "originalUrl": "https://account.nau.edu.cn/2026/0514/c8917a157425/page.htm",
+      "date": "2026-05-14",
+      "summary": "2023—2025级会计学和会计专业研究生学委集中反馈教学、课程学分、开题答辩、研究生系统、住宿及施工等问题，可用于了解需要主动核实和协调的学习生活事项。",
+      "kind": "官方研究生学委学习生活反馈纪要，非个人帖",
+      "population": "2023—2025级会计学、会计专业研究生学委代表；混合学位类别且未逐人具名",
+      "readingScope": "实际阅读全文L74—L96；c9520目录链接一度读取失败后，通过同一文章编号c8917栏目页面核读全文。两个URL只计一个来源。",
+      "limitations": "官方群体反馈摘要，未公开学生个人诉求、逐项处理内容和最终效果。不能由列出施工或住宿推断具体故障、服务差评或问题已解决；不作为教师个人评价。和2025年10月、2026年10月座谈会是不同活动，不合并日期。",
+      "expansionBatch": "content-round-20261110b"
+    },
+    "U921": {
+      "code": "U921",
+      "title": "2017 优秀硕士毕业生特辑 · 殷正馨",
+      "label": "2017 优秀硕士毕业生特辑 · 殷正馨",
+      "url": "https://gs.nau.edu.cn/2017/1023/c4415a31456/page.htm",
+      "canonicalUrl": "https://gs.nau.edu.cn/2017/1023/c4415a31456/page.htm",
+      "originalUrl": "https://gs.nau.edu.cn/2017/1023/c4415a31456/page.htm",
+      "date": "2017-07-04",
+      "summary": "殷正馨围绕精准扶贫绩效审计研究，借助访谈实务工作者和审计机关实习搜集案例，结合文献完善选题，并建议通过实习了解职业方向。",
+      "kind": "学校发布的具名MAud学生自述",
+      "population": "殷正馨，2015级审计专硕MAud；非MPAcc",
+      "readingScope": "实际阅读全文L2—L18，核对2015级身份、正文署期、科研材料搜集及就业建议；未读取图片内容。",
+      "limitations": "2017年MAud历史个案，学校精选自述。原文两年学制、学校安排的机关实习属于当时背景，不能作为现行MPAcc学制、分配或名额依据；不将该导师添入当前MPAcc名册。",
+      "expansionBatch": "content-round-20261110b"
+    },
+    "U922": {
+      "code": "U922",
+      "title": "2017优秀毕业研究生&优秀硕士论文获奖者特辑 · 王楠楠",
+      "label": "2017优秀毕业研究生&优秀硕士论文获奖者特辑 · 王楠楠",
+      "url": "https://gs.nau.edu.cn/2017/1023/c4415a31458/page.htm",
+      "canonicalUrl": "https://gs.nau.edu.cn/2017/1023/c4415a31458/page.htm",
+      "originalUrl": "https://gs.nau.edu.cn/2017/1023/c4415a31458/page.htm",
+      "date": "2017-07-03",
+      "summary": "王楠楠工作两年后返校读审计专硕，分享文献阅读笔记、多方讨论和搭建文章框架的方法；她通过提前推进论文、划定时间节点，协调研究和实习。",
+      "kind": "学校发布的具名MAud学生访谈及本人论文写作分享",
+      "population": "王楠楠，2015级审计专硕MAud；非MPAcc",
+      "readingScope": "实际阅读全文L2—L30，核对2015级身份、署期、工作返校经历、论文方法及实习平衡建议。",
+      "limitations": "2017年MAud历史自述，非MPAcc日常课程或现行实习制度。原文第二学年上学期不短于6个月实践、两年学制和浙商银行去向均为当时背景，不当作当前安排、在招岗位或所有学生体验。",
+      "expansionBatch": "content-round-20261110b"
+    },
+    "U923": {
+      "code": "U923",
+      "title": "2017 优秀硕士论文获奖者特辑 · 焦胜",
+      "label": "2017 优秀硕士论文获奖者特辑 · 焦胜",
+      "url": "https://gs.nau.edu.cn/2017/1023/c4415a31464/page.htm",
+      "canonicalUrl": "https://gs.nau.edu.cn/2017/1023/c4415a31464/page.htm",
+      "originalUrl": "https://gs.nau.edu.cn/2017/1023/c4415a31464/page.htm",
+      "date": "2017-06-25",
+      "summary": "焦胜从公共工程兴趣逐步聚焦PPP项目审计，回顾定期文献交流、旁听前届开题和论文多轮修改；生活方面提到加入研究生篮球队。",
+      "kind": "学校发布的具名MAud学生访谈",
+      "population": "焦胜，2015级审计专硕MAud；非MPAcc",
+      "readingScope": "实际阅读全文L2—L44，核对2015级审计专硕、正文署期、研一文献交流、论文修改和研究生篮球队内容。",
+      "limitations": "2017年MAud学校精选历史访谈；每两周交流是该学生当年的经历，不是MPAcc固定组会频率。原文两年学制、中信银行去向及教师职务不作为现行制度或当前岗位；不据此将时现加入当前MPAcc导师列表。",
+      "expansionBatch": "content-round-20261110b"
+    },
+    "U924": {
+      "code": "U924",
+      "title": "上海和记黄埔医药销售有限公司（和黄医药）｜财务部实习生｜上海浦东",
+      "label": "上海和记黄埔医药销售有限公司（和黄医药）｜财务部实习生｜上海浦东",
+      "url": "https://jy.scu.edu.cn/index/index/employjobdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh4Y5WKubbSyobddricp9CWi5qikaeWacSdqLqGfaK2w4iil5C4zNbGiL-E",
+      "canonicalUrl": "https://jy.scu.edu.cn/index/index/employjobdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh4Y5WKubbSyobddricp9CWi5qikaeWacSdqLqGfaK2w4iil5C4zNbGiL-E",
+      "originalUrl": "https://jy.scu.edu.cn/index/index/employjobdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh4Y5WKubbSyobddricp9CWi5qikaeWacSdqLqGfaK2w4iil5C4zNbGiL-E",
+      "date": "2026-09-17",
+      "summary": "财务票据和凭证整理归档、基础数据录入、台账与核对等财务内勤辅助。",
+      "kind": "具体财务实习职位资料",
+      "population": "本科及以上在校学生，正文要求财会相关专业。表格专业栏写不限，与正文并存，采用正文更具体条件。",
+      "readingScope": "四川大学就业指导中心职位全文已读；web refs turn72view0 / turn91search1；正文17-33行。未验证邮箱是否接收、未发送申请。",
+      "limitations": "学校页面有效期不保证实时余缺。；不将医药研发企业背景推定为研发财务、管理会计或财务分析实习。；公告薪资栏为3000-4000，未注明结算周期，需向招聘方确认。",
+      "expansionBatch": "content-round-20261110b"
+    },
+    "U925": {
+      "code": "U925",
+      "title": "上海零动智卡汽车科技有限公司（零一汽车全资公司）｜财务实习生｜苏州太仓",
+      "label": "上海零动智卡汽车科技有限公司（零一汽车全资公司）｜财务实习生｜苏州太仓",
+      "url": "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=5AD1C40BF1B24985E0653A68DD0E9B18",
+      "canonicalUrl": "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=5AD1C40BF1B24985E0653A68DD0E9B18",
+      "originalUrl": "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=5AD1C40BF1B24985E0653A68DD0E9B18",
+      "date": "2026-09-08",
+      "summary": "银行存款日记账、回单、对账与财务资料整理，协助银行外勤。",
+      "kind": "具体财务实习职位资料",
+      "population": "财务相关专业，硕士；表格硕士实习，不能自行扩大为全部本科在校生。",
+      "readingScope": "主代理通过TinyFish直接读取浙江大学就业服务平台该职位全文，核对2026-09-08日期、苏州太仓、硕士、出勤偏好、半年偏好、2027-06-30及公开招聘邮箱；未登录或提交申请。",
+      "limitations": "需求2人属于公告，实际余缺未核。；公告薪资栏为5000-6000，未注明结算周期，需向招聘方确认。",
+      "expansionBatch": "content-round-20261110b"
+    },
+    "U926": {
+      "code": "U926",
+      "title": "复星财务共享服务中心｜财务实习生｜上海杨浦（申请期未注明）",
+      "label": "复星财务共享服务中心｜财务实习生｜上海杨浦（申请期未注明）",
+      "url": "https://bs-cdc.ecust.edu.cn/6109/",
+      "canonicalUrl": "https://bs-cdc.ecust.edu.cn/6109/",
+      "originalUrl": "https://bs-cdc.ecust.edu.cn/6109/",
+      "date": null,
+      "summary": "单据和档案、收支核对、费用初审、对账、结账报税、资金与费用检查及SOP。",
+      "kind": "具体财务实习职位资料",
+      "population": "本科及以上，财税专业优先；公告未独立限定届别。",
+      "readingScope": "华东理工大学商学院职业发展中心公告正文0-39行已读，web ref turn72view1；未直接检查企业招聘系统。",
+      "limitations": "无日期与截止，当前余缺需核。；期满2个月可开证明不等于最短实习2个月，岗位要求仍是至少3个月。；优秀应届生可留用属于有条件机会。；不将另一个HR岗位可2天等信息混到该财务岗。",
+      "expansionBatch": "content-round-20261110b"
+    },
+    "U927": {
+      "code": "U927",
+      "title": "苏宁易购｜财务实习生｜南京（具体JD）",
+      "label": "苏宁易购｜财务实习生｜南京（具体JD）",
+      "url": "https://campus.suning.cn/rps-campus/ftl/campus/campusPositionDetail.htm?poId=27745",
+      "canonicalUrl": "https://campus.suning.cn/rps-campus/ftl/campus/campusPositionDetail.htm?poId=27745",
+      "originalUrl": "https://campus.suning.cn/rps-campus/ftl/campus/campusPositionDetail.htm?poId=27745",
+      "date": null,
+      "summary": "协助会计核算、财报与内控，及预算绩效、费用管控和业务财务支持。",
+      "kind": "具体财务实习职位资料",
+      "population": "本科学历以上；财务管理、会计、审计、经济金融及数学统计等相关专业；未明示年级或毕业届别。",
+      "readingScope": "企业官方职位详情19-36行已读，web ref turn89view0；未点击申请、未登录。",
+      "limitations": "标题财务实习生且位于实习生招聘导航，系统工作性质字段显示全职，保留该冲突。；在校身份接受范围、周出勤、最短时长与日期均需另确认。；优秀者可直通1200管培生招录是有条件机会，不写保证转正。",
+      "expansionBatch": "content-round-20261110b"
+    },
+    "U928": {
+      "code": "U928",
+      "title": "上海陟明信息技术有限责任公司｜2027届财务实习生｜上海嘉定",
+      "label": "上海陟明信息技术有限责任公司｜2027届财务实习生｜上海嘉定",
+      "url": "https://ejob.dhu.edu.cn/single/2026/04/13/2604131508252818905719111514160682210002.html",
+      "canonicalUrl": "https://ejob.dhu.edu.cn/single/2026/04/13/2604131508252818905719111514160682210002.html",
+      "originalUrl": "https://ejob.dhu.edu.cn/single/2026/04/13/2604131508252818905719111514160682210002.html",
+      "date": "2026-04-13（来源路径与检索标注）",
+      "summary": "报销票据、凭证归档、发票和税务辅助、财务系统数据录入、往来核对、基础透视表与资产盘点。",
+      "kind": "具体财务实习职位资料",
+      "population": "标题27届实习；统招本科及以上。未见具体专业要求段。",
+      "readingScope": "东华大学就业网站正文22-80行已读，web ref turn91view1；发布时间动态字段为空，2026-04-13来自搜索抓取与URL，分别标注。",
+      "limitations": "周出勤、最短实习时长和截止未公布，不补写。；需求2人仅是原公告。；不能以岗位职责中Excel工作推断其为硬性任职门槛。；原公告薪酬：180-200元/天；当前安排以招聘方确认为准。",
+      "expansionBatch": "content-round-20261110b"
     }
   },
   "targetProfiles": [
@@ -38535,6 +39158,292 @@
       "use_status": "单位官方入口或校方、雇主公告",
       "reading_scopes": [
         "全文；报道未公布MPAcc资格、申请入口或名额。学校主站同编号163076是同篇转载，不计独立来源"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-round-20261110b:U916",
+      "ids": [
+        "U916"
+      ],
+      "title": "他本科、硕士读南审，研究国家审计，还考上了上海财经大学的博士",
+      "date_display": "2018-08-13",
+      "url": "https://www.sohu.com/a/246821158_769713",
+      "canonical_url": "https://www.sohu.com/a/246821158_769713",
+      "summary": "梁思源回顾审计学硕阶段的学习：围绕讨论主题先查资料和读论文，再形成观点进行课堂汇报；参加研讨班、准备学术年会点评，并与合作教师反复讨论文章框架。",
+      "population": "梁思源，2018届审计学硕士毕业生；正文明确选择审计学硕，非MAud、非MPAcc",
+      "tips": [],
+      "comments": [],
+      "limits": "2018年的学硕个人历史经历，属于学校精选访谈。不能转写为MPAcc每门课的现行考核、统一研讨班安排或工作量承诺；郑石桥和马志娟不是据此添加到当前MPAcc导师名单。学生熬夜修改不作为健康学习建议。",
+      "topic": "学校官方账号发布的具名学生访谈",
+      "use_status": "学校官方账号发布的具名学生访谈",
+      "reading_scopes": [
+        "实际阅读全文L0—L119，重点核对L42学硕身份、L51课堂汇报、L55研讨班、L59—L71参会和论文修改；未读取图片内论文清单，不扩写研究成果。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-round-20261110b:U917",
+      "ids": [
+        "U917"
+      ],
+      "title": "会计学院走访江苏省研究生工作站和研究生实习基地——南通滨海投资发展有限公司",
+      "date_display": "2019-04-14",
+      "url": "https://account.nau.edu.cn/2019/0414/c809a50277/page.htm",
+      "canonical_url": "https://account.nau.edu.cn/2019/0414/c809a50277/page.htm",
+      "summary": "四位会计专业硕士在南通滨海投资发展有限公司实习约三个月后汇报工作和心得，并讨论学位论文选题的可行性，展示实习复盘与论文准备可以相互连接。",
+      "population": "四位会计专业硕士研究生，正文未公开姓名和年级",
+      "tips": [],
+      "comments": [],
+      "limits": "2019年历史MPAcc群体记录，不是学生逐人访谈、当前实习招聘、统一分配或现行时长要求。没有具体岗位任务，不补写核算、审计或报销内容；不把企业方论文指导归给校内导师，也不将此记录作为导师口碑。",
+      "topic": "官方实习走访报道，含四位MPAcc学生的汇总反馈",
+      "use_status": "官方实习走访报道，含四位MPAcc学生的汇总反馈",
+      "reading_scopes": [
+        "实际阅读全文L70—L83，核对页面日期、活动日期、四位MPAcc身份、三个月实习和论文讨论；不将配图识别为具名身份。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-round-20261110b:U918",
+      "ids": [
+        "U918"
+      ],
+      "title": "首届非全日制会计专硕学术报告交流会——学位论文经验分享",
+      "date_display": "2019-04-18",
+      "url": "https://account.nau.edu.cn/2019/0418/c809a50541/page.htm",
+      "canonical_url": "https://account.nau.edu.cn/2019/0418/c809a50541/page.htm",
+      "summary": "2017级非全日制会计专硕9名同学汇报论文进展、案例分析和社会经验；活动提醒下一届尽早准备开题，并带着已有成果与导师沟通选题。",
+      "population": "2017级非全日制会计专硕9名同学，未公开姓名；2018级同学为经验交流对象",
+      "tips": [],
+      "comments": [],
+      "limits": "2019年非全日制MPAcc历史交流记录，不能套用为全日制现行培养时点、论文流程或每位导师要求。原文没有逐人论文题目和学生原话，不生成个人评价或替9位学生推定专业方向。",
+      "topic": "官方非全日制MPAcc群体论文交流纪要",
+      "use_status": "官方非全日制MPAcc群体论文交流纪要",
+      "reading_scopes": [
+        "实际阅读全文L70—L89，核对非全身份、年级、人数、汇报范围和教师提醒。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-round-20261110b:U919",
+      "ids": [
+        "U919"
+      ],
+      "title": "我院本、硕团队在第六届中国MPAcc学生案例大赛中初尝胜果",
+      "date_display": "2019-04-17",
+      "url": "https://account.nau.edu.cn/2019/0417/c809a50391/page.htm",
+      "canonical_url": "https://account.nau.edu.cn/2019/0417/c809a50391/page.htm",
+      "summary": "2019年会计学院组织在外实习的2018级MPAcc学生组队参赛，团队在教师指导下分析讨论案例、按时间和格式提交报告；李琪等组成的‘那一’队进入第二阶段。",
+      "population": "李琪、胡婕、刘阳、虞惠钦等，2018级MPAcc‘那一’队；原文另一支‘誓不做假账’为本科生团队，不合并为MPAcc经历",
+      "tips": [],
+      "comments": [],
+      "limits": "2019年竞赛过程及阶段成绩，不是当前赛事规则、必修考核或毕业要求；公开报道没有给出学生对指导方式的评价，不据团队获奖推定导师口碑。与原文本科生队伍分开；不把第一阶段成绩写成最终全国奖项。",
+      "topic": "官方具名MPAcc团队案例竞赛过程报道，另含本科团队",
+      "use_status": "官方具名MPAcc团队案例竞赛过程报道，另含本科团队",
+      "reading_scopes": [
+        "实际阅读全文L71—L89，重点核对L82学段区分、L84实习和报告过程、L87具名MPAcc团队。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-round-20261110b:U920",
+      "ids": [
+        "U920"
+      ],
+      "title": "会计学院召开研究生期中教学检查座谈会（2026年5月）",
+      "date_display": "2026-05-14",
+      "url": "https://account.nau.edu.cn/2026/0514/c8917a157425/page.htm",
+      "canonical_url": "https://account.nau.edu.cn/2026/0514/c8917a157425/page.htm",
+      "summary": "2023—2025级会计学和会计专业研究生学委集中反馈教学、课程学分、开题答辩、研究生系统、住宿及施工等问题，可用于了解需要主动核实和协调的学习生活事项。",
+      "population": "2023—2025级会计学、会计专业研究生学委代表；混合学位类别且未逐人具名",
+      "tips": [],
+      "comments": [],
+      "limits": "官方群体反馈摘要，未公开学生个人诉求、逐项处理内容和最终效果。不能由列出施工或住宿推断具体故障、服务差评或问题已解决；不作为教师个人评价。和2025年10月、2026年10月座谈会是不同活动，不合并日期。",
+      "topic": "官方研究生学委学习生活反馈纪要，非个人帖",
+      "use_status": "官方研究生学委学习生活反馈纪要，非个人帖",
+      "reading_scopes": [
+        "实际阅读全文L74—L96；c9520目录链接一度读取失败后，通过同一文章编号c8917栏目页面核读全文。两个URL只计一个来源。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-round-20261110b:U921",
+      "ids": [
+        "U921"
+      ],
+      "title": "2017 优秀硕士毕业生特辑 · 殷正馨",
+      "date_display": "2017-07-04",
+      "url": "https://gs.nau.edu.cn/2017/1023/c4415a31456/page.htm",
+      "canonical_url": "https://gs.nau.edu.cn/2017/1023/c4415a31456/page.htm",
+      "summary": "殷正馨围绕精准扶贫绩效审计研究，借助访谈实务工作者和审计机关实习搜集案例，结合文献完善选题，并建议通过实习了解职业方向。",
+      "population": "殷正馨，2015级审计专硕MAud；非MPAcc",
+      "tips": [],
+      "comments": [],
+      "limits": "2017年MAud历史个案，学校精选自述。原文两年学制、学校安排的机关实习属于当时背景，不能作为现行MPAcc学制、分配或名额依据；不将该导师添入当前MPAcc名册。",
+      "topic": "学校发布的具名MAud学生自述",
+      "use_status": "学校发布的具名MAud学生自述",
+      "reading_scopes": [
+        "实际阅读全文L2—L18，核对2015级身份、正文署期、科研材料搜集及就业建议；未读取图片内容。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-round-20261110b:U922",
+      "ids": [
+        "U922"
+      ],
+      "title": "2017优秀毕业研究生&优秀硕士论文获奖者特辑 · 王楠楠",
+      "date_display": "2017-07-03",
+      "url": "https://gs.nau.edu.cn/2017/1023/c4415a31458/page.htm",
+      "canonical_url": "https://gs.nau.edu.cn/2017/1023/c4415a31458/page.htm",
+      "summary": "王楠楠工作两年后返校读审计专硕，分享文献阅读笔记、多方讨论和搭建文章框架的方法；她通过提前推进论文、划定时间节点，协调研究和实习。",
+      "population": "王楠楠，2015级审计专硕MAud；非MPAcc",
+      "tips": [],
+      "comments": [],
+      "limits": "2017年MAud历史自述，非MPAcc日常课程或现行实习制度。原文第二学年上学期不短于6个月实践、两年学制和浙商银行去向均为当时背景，不当作当前安排、在招岗位或所有学生体验。",
+      "topic": "学校发布的具名MAud学生访谈及本人论文写作分享",
+      "use_status": "学校发布的具名MAud学生访谈及本人论文写作分享",
+      "reading_scopes": [
+        "实际阅读全文L2—L30，核对2015级身份、署期、工作返校经历、论文方法及实习平衡建议。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-round-20261110b:U923",
+      "ids": [
+        "U923"
+      ],
+      "title": "2017 优秀硕士论文获奖者特辑 · 焦胜",
+      "date_display": "2017-06-25",
+      "url": "https://gs.nau.edu.cn/2017/1023/c4415a31464/page.htm",
+      "canonical_url": "https://gs.nau.edu.cn/2017/1023/c4415a31464/page.htm",
+      "summary": "焦胜从公共工程兴趣逐步聚焦PPP项目审计，回顾定期文献交流、旁听前届开题和论文多轮修改；生活方面提到加入研究生篮球队。",
+      "population": "焦胜，2015级审计专硕MAud；非MPAcc",
+      "tips": [],
+      "comments": [],
+      "limits": "2017年MAud学校精选历史访谈；每两周交流是该学生当年的经历，不是MPAcc固定组会频率。原文两年学制、中信银行去向及教师职务不作为现行制度或当前岗位；不据此将时现加入当前MPAcc导师列表。",
+      "topic": "学校发布的具名MAud学生访谈",
+      "use_status": "学校发布的具名MAud学生访谈",
+      "reading_scopes": [
+        "实际阅读全文L2—L44，核对2015级审计专硕、正文署期、研一文献交流、论文修改和研究生篮球队内容。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-round-20261110b:U924",
+      "ids": [
+        "U924"
+      ],
+      "title": "上海和记黄埔医药销售有限公司（和黄医药）｜财务部实习生｜上海浦东",
+      "date_display": "2026-09-17",
+      "url": "https://jy.scu.edu.cn/index/index/employjobdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh4Y5WKubbSyobddricp9CWi5qikaeWacSdqLqGfaK2w4iil5C4zNbGiL-E",
+      "canonical_url": "https://jy.scu.edu.cn/index/index/employjobdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh4Y5WKubbSyobddricp9CWi5qikaeWacSdqLqGfaK2w4iil5C4zNbGiL-E",
+      "summary": "财务票据和凭证整理归档、基础数据录入、台账与核对等财务内勤辅助。",
+      "population": "本科及以上在校学生，正文要求财会相关专业。表格专业栏写不限，与正文并存，采用正文更具体条件。",
+      "tips": [],
+      "comments": [],
+      "limits": "学校页面有效期不保证实时余缺。；不将医药研发企业背景推定为研发财务、管理会计或财务分析实习。；公告薪资栏为3000-4000，未注明结算周期，需向招聘方确认。",
+      "topic": "具体财务实习职位资料",
+      "use_status": "具体财务实习职位资料",
+      "reading_scopes": [
+        "四川大学就业指导中心职位全文已读；web refs turn72view0 / turn91search1；正文17-33行。未验证邮箱是否接收、未发送申请。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-round-20261110b:U925",
+      "ids": [
+        "U925"
+      ],
+      "title": "上海零动智卡汽车科技有限公司（零一汽车全资公司）｜财务实习生｜苏州太仓",
+      "date_display": "2026-09-08",
+      "url": "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=5AD1C40BF1B24985E0653A68DD0E9B18",
+      "canonical_url": "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=5AD1C40BF1B24985E0653A68DD0E9B18",
+      "summary": "银行存款日记账、回单、对账与财务资料整理，协助银行外勤。",
+      "population": "财务相关专业，硕士；表格硕士实习，不能自行扩大为全部本科在校生。",
+      "tips": [],
+      "comments": [],
+      "limits": "需求2人属于公告，实际余缺未核。；公告薪资栏为5000-6000，未注明结算周期，需向招聘方确认。",
+      "topic": "具体财务实习职位资料",
+      "use_status": "具体财务实习职位资料",
+      "reading_scopes": [
+        "主代理通过TinyFish直接读取浙江大学就业服务平台该职位全文，核对2026-09-08日期、苏州太仓、硕士、出勤偏好、半年偏好、2027-06-30及公开招聘邮箱；未登录或提交申请。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-round-20261110b:U926",
+      "ids": [
+        "U926"
+      ],
+      "title": "复星财务共享服务中心｜财务实习生｜上海杨浦（申请期未注明）",
+      "date_display": null,
+      "url": "https://bs-cdc.ecust.edu.cn/6109/",
+      "canonical_url": "https://bs-cdc.ecust.edu.cn/6109/",
+      "summary": "单据和档案、收支核对、费用初审、对账、结账报税、资金与费用检查及SOP。",
+      "population": "本科及以上，财税专业优先；公告未独立限定届别。",
+      "tips": [],
+      "comments": [],
+      "limits": "无日期与截止，当前余缺需核。；期满2个月可开证明不等于最短实习2个月，岗位要求仍是至少3个月。；优秀应届生可留用属于有条件机会。；不将另一个HR岗位可2天等信息混到该财务岗。",
+      "topic": "具体财务实习职位资料",
+      "use_status": "具体财务实习职位资料",
+      "reading_scopes": [
+        "华东理工大学商学院职业发展中心公告正文0-39行已读，web ref turn72view1；未直接检查企业招聘系统。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-round-20261110b:U927",
+      "ids": [
+        "U927"
+      ],
+      "title": "苏宁易购｜财务实习生｜南京（具体JD）",
+      "date_display": null,
+      "url": "https://campus.suning.cn/rps-campus/ftl/campus/campusPositionDetail.htm?poId=27745",
+      "canonical_url": "https://campus.suning.cn/rps-campus/ftl/campus/campusPositionDetail.htm?poId=27745",
+      "summary": "协助会计核算、财报与内控，及预算绩效、费用管控和业务财务支持。",
+      "population": "本科学历以上；财务管理、会计、审计、经济金融及数学统计等相关专业；未明示年级或毕业届别。",
+      "tips": [],
+      "comments": [],
+      "limits": "标题财务实习生且位于实习生招聘导航，系统工作性质字段显示全职，保留该冲突。；在校身份接受范围、周出勤、最短时长与日期均需另确认。；优秀者可直通1200管培生招录是有条件机会，不写保证转正。",
+      "topic": "具体财务实习职位资料",
+      "use_status": "具体财务实习职位资料",
+      "reading_scopes": [
+        "企业官方职位详情19-36行已读，web ref turn89view0；未点击申请、未登录。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-round-20261110b:U928",
+      "ids": [
+        "U928"
+      ],
+      "title": "上海陟明信息技术有限责任公司｜2027届财务实习生｜上海嘉定",
+      "date_display": "2026-04-13（来源路径与检索标注）",
+      "url": "https://ejob.dhu.edu.cn/single/2026/04/13/2604131508252818905719111514160682210002.html",
+      "canonical_url": "https://ejob.dhu.edu.cn/single/2026/04/13/2604131508252818905719111514160682210002.html",
+      "summary": "报销票据、凭证归档、发票和税务辅助、财务系统数据录入、往来核对、基础透视表与资产盘点。",
+      "population": "标题27届实习；统招本科及以上。未见具体专业要求段。",
+      "tips": [],
+      "comments": [],
+      "limits": "周出勤、最短实习时长和截止未公布，不补写。；需求2人仅是原公告。；不能以岗位职责中Excel工作推断其为硬性任职门槛。；原公告薪酬：180-200元/天；当前安排以招聘方确认为准。",
+      "topic": "具体财务实习职位资料",
+      "use_status": "具体财务实习职位资料",
+      "reading_scopes": [
+        "东华大学就业网站正文22-80行已读，web ref turn91view1；发布时间动态字段为空，2026-04-13来自搜索抓取与URL，分别标注。"
       ],
       "official": true,
       "screened_only": false
@@ -48038,6 +48947,342 @@
           "具体法人、工作城市和出差区域是什么？"
         ],
         "prep": []
+      },
+      {
+        "id": "hutchmed",
+        "name": "上海和记黄埔医药销售有限公司（和黄医药）",
+        "officialName": "上海和记黄埔医药销售有限公司（和黄医药）",
+        "group": "enterprise",
+        "summary": "根据具体职位核对学籍、可出勤时间与工作内容；不是南审专属名额。",
+        "officeRecords": [],
+        "entryLinks": [
+          {
+            "label": "职位原文与申请方式",
+            "url": "https://jy.scu.edu.cn/index/index/employjobdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh4Y5WKubbSyobddricp9CWi5qikaeWacSdqLqGfaK2w4iil5C4zNbGiL-E",
+            "kind": "internship",
+            "sourceIds": [
+              "U924"
+            ],
+            "note": "按职位原文核对当前是否仍接受申请。"
+          }
+        ],
+        "resources": [
+          {
+            "id": "hutchmed-finance-intern-shanghai-20260917",
+            "title": "财务部实习生｜上海浦东",
+            "kind": "job_listing",
+            "status": "listing_seen",
+            "statusLabel": "公告有效期内 · 余缺待核",
+            "statusDetail": "学校职位有效期至2026-11-29 23:59:59，截至核验日未到期；未核实际余缺。",
+            "cityTags": [
+              "上海"
+            ],
+            "searchCities": [],
+            "geographyNote": "上海市浦东新区；来自工作地址字段，未推定详细办公地址。",
+            "eligibility": "本科及以上在校生，正文要求财会相关专业（表格专业栏另写不限，投递前请核实）。",
+            "attendance": "每周稳定不少于3天；周二、周三需全天在岗。",
+            "duration": "连续实习6个月及以上优先。",
+            "applicationWindow": null,
+            "period": null,
+            "deadline": "2026-11-29（平台公告有效期）",
+            "deadlineDate": "2026-11-29",
+            "postedDate": "2026-09-17",
+            "url": "https://jy.scu.edu.cn/index/index/employjobdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh4Y5WKubbSyobddricp9CWi5qikaeWacSdqLqGfaK2w4iil5C4zNbGiL-E",
+            "summary": "财务票据和凭证整理归档、基础数据录入、台账与核对等财务内勤辅助。",
+            "requirements": [
+              "Office与Excel基础函数、表格整理",
+              "细心、责任心与沟通能力"
+            ],
+            "steps": [
+              "先核对公告有效期、当前余缺和实际项目地点。",
+              "原文招聘邮箱：xianmingh@hutch-med.com",
+              "简历命名为应聘岗位、姓名、来源，发招聘邮箱。"
+            ],
+            "roleDirections": [
+              "企业财务"
+            ],
+            "limits": [
+              "学校页面有效期不保证实际余缺；到岗及证明安排以招聘方确认为准。",
+              "公告薪资栏为3000-4000，未注明结算周期，需向招聘方确认。"
+            ],
+            "sourceIds": [
+              "U924"
+            ]
+          }
+        ],
+        "questions": [
+          "目前是否仍招募，是否接受自己的年级与预计毕业时间？",
+          "实际到岗地点、周出勤、连续时长与课程及论文安排能否协调？"
+        ],
+        "prep": []
+      },
+      {
+        "id": "zeron",
+        "name": "上海零动智卡汽车科技有限公司（零一汽车全资公司）",
+        "officialName": "上海零动智卡汽车科技有限公司（零一汽车全资公司）",
+        "group": "enterprise",
+        "summary": "根据具体职位核对学籍、可出勤时间与工作内容；不是南审专属名额。",
+        "officeRecords": [],
+        "entryLinks": [
+          {
+            "label": "职位原文与申请方式",
+            "url": "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=5AD1C40BF1B24985E0653A68DD0E9B18",
+            "kind": "internship",
+            "sourceIds": [
+              "U925"
+            ],
+            "note": "按职位原文核对当前是否仍接受申请。"
+          }
+        ],
+        "resources": [
+          {
+            "id": "zeron-finance-intern-taicang-20260908",
+            "title": "财务实习生｜苏州太仓",
+            "kind": "job_listing",
+            "status": "listing_seen",
+            "statusLabel": "公告有效期内 · 余缺待核",
+            "statusDetail": "学校页面有效期至2027-06-30；当前实际余缺、到岗与材料要求请向招聘方核对。",
+            "cityTags": [
+              "苏州"
+            ],
+            "searchCities": [],
+            "geographyNote": "江苏省苏州市太仓市；公司的上海闵行地址并非该职位城市。",
+            "eligibility": "财务相关专业硕士在校生。",
+            "attendance": "每周出勤3天以上优先。",
+            "duration": "持续半年以上优先。",
+            "applicationWindow": null,
+            "period": null,
+            "deadline": "2027-06-30（平台公告有效期）",
+            "deadlineDate": "2027-06-30",
+            "postedDate": "2026-09-08",
+            "url": "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=5AD1C40BF1B24985E0653A68DD0E9B18",
+            "summary": "银行存款日记账、回单、对账与财务资料整理，协助银行外勤。",
+            "requirements": [
+              "文字组织与表达",
+              "细致、责任心、主动沟通"
+            ],
+            "steps": [
+              "先核对公告有效期、当前余缺和实际项目地点。",
+              "原文招聘邮箱：hr@zeron.ai"
+            ],
+            "roleDirections": [
+              "企业财务"
+            ],
+            "limits": [
+              "招聘人数为原公告需求，当前余缺需向招聘方确认。",
+              "公告薪资栏为5000-6000，未注明结算周期，需向招聘方确认。"
+            ],
+            "sourceIds": [
+              "U925"
+            ]
+          }
+        ],
+        "questions": [
+          "目前是否仍招募，是否接受自己的年级与预计毕业时间？",
+          "实际到岗地点、周出勤、连续时长与课程及论文安排能否协调？"
+        ],
+        "prep": []
+      },
+      {
+        "id": "fosun-fssc",
+        "name": "复星财务共享服务中心",
+        "officialName": "复星财务共享服务中心",
+        "group": "enterprise",
+        "summary": "根据具体职位核对学籍、可出勤时间与工作内容；不是南审专属名额。",
+        "officeRecords": [],
+        "entryLinks": [
+          {
+            "label": "职位原文与申请方式",
+            "url": "https://bs-cdc.ecust.edu.cn/6109/",
+            "kind": "internship",
+            "sourceIds": [
+              "U926"
+            ],
+            "note": "按职位原文核对当前是否仍接受申请。"
+          }
+        ],
+        "resources": [
+          {
+            "id": "fosun-fssc-finance-intern-yangpu",
+            "title": "财务实习生｜上海杨浦（申请期未注明）",
+            "kind": "job_listing",
+            "status": "listing_seen",
+            "statusLabel": "岗位资料 · 时效待核",
+            "statusDetail": "页面未列发布日期或申请截止，当前余缺和适用届别需向招聘方确认。",
+            "cityTags": [
+              "上海"
+            ],
+            "searchCities": [],
+            "geographyNote": "上海市杨浦区黄兴路221号互联宝地C3幢3楼，来自岗位工作地点。",
+            "eligibility": "本科及以上，财税专业优先；公告未独立限定届别。",
+            "attendance": "每周至少3天。",
+            "duration": "至少3个月；希望尽快到岗。",
+            "applicationWindow": null,
+            "period": null,
+            "deadline": null,
+            "deadlineDate": null,
+            "postedDate": null,
+            "url": "https://bs-cdc.ecust.edu.cn/6109/",
+            "summary": "单据和档案、收支核对、费用初审、对账、结账报税、资金与费用检查及SOP。",
+            "requirements": [
+              "Excel、Word、PPT",
+              "有财务实习经历优先"
+            ],
+            "steps": [
+              "先核对公告有效期、当前余缺和实际项目地点。",
+              "原文招聘邮箱：fsschr@fosun.com",
+              "主题和简历命名列应聘岗位、留用意向、姓名、入职日、每周天数、总时长、学校、专业、年级，添加简历附件。"
+            ],
+            "roleDirections": [
+              "企业财务"
+            ],
+            "limits": [
+              "岗位要求至少3个月；满2个月可开证明不等于最短只需实习2个月。",
+              "留用机会以应届身份和用人部门考核为条件。"
+            ],
+            "sourceIds": [
+              "U926"
+            ]
+          }
+        ],
+        "questions": [
+          "目前是否仍招募，是否接受自己的年级与预计毕业时间？",
+          "实际到岗地点、周出勤、连续时长与课程及论文安排能否协调？"
+        ],
+        "prep": []
+      },
+      {
+        "id": "suning",
+        "name": "苏宁易购",
+        "officialName": "苏宁易购",
+        "group": "enterprise",
+        "summary": "根据具体职位核对学籍、可出勤时间与工作内容；不是南审专属名额。",
+        "officeRecords": [],
+        "entryLinks": [
+          {
+            "label": "职位原文与申请方式",
+            "url": "https://campus.suning.cn/rps-campus/ftl/campus/campusPositionDetail.htm?poId=27745",
+            "kind": "internship",
+            "sourceIds": [
+              "U927"
+            ],
+            "note": "按职位原文核对当前是否仍接受申请。"
+          }
+        ],
+        "resources": [
+          {
+            "id": "suning-finance-intern-nanjing-27745",
+            "title": "财务实习生｜南京（具体JD）",
+            "kind": "job_listing",
+            "status": "listing_seen",
+            "statusLabel": "岗位资料 · 时效待核",
+            "statusDetail": "页面未列发布日期或申请截止，当前余缺和适用届别需向招聘方确认。",
+            "cityTags": [
+              "南京"
+            ],
+            "searchCities": [],
+            "geographyNote": "南京市，来自职位工作地点。",
+            "eligibility": "本科学历以上；财务管理、会计、审计、经济金融及数学统计等相关专业；未明示年级或毕业届别。",
+            "attendance": null,
+            "duration": null,
+            "applicationWindow": null,
+            "period": null,
+            "deadline": null,
+            "deadlineDate": null,
+            "postedDate": null,
+            "url": "https://campus.suning.cn/rps-campus/ftl/campus/campusPositionDetail.htm?poId=27745",
+            "summary": "协助会计核算、财报与内控，及预算绩效、费用管控和业务财务支持。",
+            "requirements": [
+              "专业知识",
+              "沟通协作",
+              "相关财务证书优先"
+            ],
+            "steps": [
+              "先核对公告有效期、当前余缺和实际项目地点。",
+              "从官方详情页的“我要申请”进入；页面提示最多申请1个职位，请先核对岗位。"
+            ],
+            "roleDirections": [
+              "企业财务"
+            ],
+            "limits": [
+              "职位标题及导航属于实习，系统工作性质字段显示全职；在校生接受范围及周出勤须另核。",
+              "优秀者直通管培生招录属于有条件机会，不保证转正。"
+            ],
+            "sourceIds": [
+              "U927"
+            ]
+          }
+        ],
+        "questions": [
+          "目前是否仍招募，是否接受自己的年级与预计毕业时间？",
+          "实际到岗地点、周出勤、连续时长与课程及论文安排能否协调？"
+        ],
+        "prep": []
+      },
+      {
+        "id": "shzhiming",
+        "name": "上海陟明信息技术有限责任公司",
+        "officialName": "上海陟明信息技术有限责任公司",
+        "group": "enterprise",
+        "summary": "根据具体职位核对学籍、可出勤时间与工作内容；不是南审专属名额。",
+        "officeRecords": [],
+        "entryLinks": [
+          {
+            "label": "职位原文与申请方式",
+            "url": "https://ejob.dhu.edu.cn/single/2026/04/13/2604131508252818905719111514160682210002.html",
+            "kind": "internship",
+            "sourceIds": [
+              "U928"
+            ],
+            "note": "按职位原文核对当前是否仍接受申请。"
+          }
+        ],
+        "resources": [
+          {
+            "id": "shzhiming-finance-intern-2027-jiding",
+            "title": "2027届财务实习生｜上海嘉定",
+            "kind": "job_listing",
+            "status": "listing_seen",
+            "statusLabel": "岗位资料 · 时效待核",
+            "statusDetail": "2026年4月发布的2027届实习公告，未给申请截止或当前余缺；不作为11月新开职位。",
+            "cityTags": [
+              "上海"
+            ],
+            "searchCities": [],
+            "geographyNote": "上海市嘉定区曹安公路1515号3131曹安商务园1号楼A座，来自公告工作地点。",
+            "eligibility": "标题27届实习；统招本科及以上。未见具体专业要求段。",
+            "attendance": null,
+            "duration": null,
+            "applicationWindow": null,
+            "period": null,
+            "deadline": null,
+            "deadlineDate": null,
+            "postedDate": "2026-04-13（来源路径与检索标注）",
+            "url": "https://ejob.dhu.edu.cn/single/2026/04/13/2604131508252818905719111514160682210002.html",
+            "summary": "报销票据、凭证归档、发票和税务辅助、财务系统数据录入、往来核对、基础透视表与资产盘点。",
+            "requirements": [],
+            "steps": [
+              "先核对公告有效期、当前余缺和实际项目地点。",
+              "原文招聘邮箱：changningning@shzhiming.cn"
+            ],
+            "roleDirections": [
+              "企业财务"
+            ],
+            "limits": [
+              "周出勤、最短时长和申请截止未注明。",
+              "原公告人数不等于当前余缺。",
+              "原公告薪酬：180-200元/天；当前安排以招聘方确认为准。"
+            ],
+            "sourceIds": [
+              "U928"
+            ]
+          }
+        ],
+        "questions": [
+          "目前是否仍招募，是否接受自己的年级与预计毕业时间？",
+          "实际到岗地点、周出勤、连续时长与课程及论文安排能否协调？"
+        ],
+        "prep": []
       }
     ],
     "commuteZones": [
@@ -48567,11 +49812,11 @@
     },
     "counts": {
       "batch": "internship-resources-104",
-      "firmCount": 18,
+      "firmCount": 23,
       "bigFourCount": 4,
       "domesticFirmCount": 12,
-      "resourceCount": 48,
-      "internshipResourceCount": 45,
+      "resourceCount": 53,
+      "internshipResourceCount": 50,
       "resourceStatusCounts": {
         "program_open": 4,
         "closed": 2,
@@ -48579,16 +49824,16 @@
         "upcoming": 1,
         "program_announced": 5,
         "historical": 11,
-        "listing_seen": 3
+        "listing_seen": 8
       },
       "officeRecordCount": 30,
       "officeRecordCountMeaning": "不同机构的办公地址组，不是不同城市数或实习岗位数。",
       "newOfficialSources": 65,
-      "usedSourceCount": 79,
-      "socialTotal": 130,
-      "officialTotal": 201,
+      "usedSourceCount": 84,
+      "socialTotal": 143,
+      "officialTotal": 214,
       "resourceCountNote": "同一公告可能含多个项目；资源条目不是独立岗位、空缺人数或录取机会。",
-      "enterpriseCount": 2
+      "enterpriseCount": 7
     }
   },
   "musicPlaylist": {

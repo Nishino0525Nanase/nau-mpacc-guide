@@ -441,16 +441,21 @@
     const today = new Date(Date.now() + 8 * 3600000).toISOString().slice(0, 10);
     return /^\d{4}-\d{2}-\d{2}$/.test(resource.deadlineDate || '') && resource.deadlineDate < today ? 'closed' : resource.status;
   };
+  const internIsChannel = (resource, status = internStatusOf(resource)) => !['organization_reference','historical','graduate_recruitment','preparation_program'].includes(resource.kind) && !['closed','historical','upcoming'].includes(status) && (resource.kind === 'channel' || status === 'entry_only');
+  const internOriginalUrl = resource => array(resource.sourceIds).flatMap(code => {
+    const record = source(code);
+    return record ? [record.originalUrl,record.url,record.canonicalUrl] : [];
+  }).map(internWebUrl).find(Boolean) || '';
 
   function internResourceMatches(resource) {
     const status = internStatusOf(resource);
-    if (state.internStatus === 'current' && (['closed','historical'].includes(status) || ['historical','graduate_recruitment','preparation_program'].includes(resource.kind))) return false;
+    if (state.internStatus === 'current' && (['closed','historical'].includes(status) || ['organization_reference','historical','graduate_recruitment','preparation_program'].includes(resource.kind))) return false;
     if (state.internCity === '__channels__') {
-      if (resource.kind !== 'channel' && resource.status !== 'entry_only') return false;
+      if (!internIsChannel(resource,status)) return false;
     } else if (state.internCity && !array(resource.cityTags).includes(state.internCity)) return false;
     if (state.internStatus === 'programs') return ['program_open','program_announced'].includes(status) && ['internship_program','job_listing'].includes(resource.kind);
     if (state.internStatus === 'listings') return status === 'listing_seen';
-    if (state.internStatus === 'channels') return resource.kind === 'channel' || status === 'entry_only';
+    if (state.internStatus === 'channels') return internIsChannel(resource,status);
     if (state.internStatus === 'past') return ['closed','historical'].includes(status) || resource.kind === 'historical';
     if (state.internStatus === 'upcoming') return status === 'upcoming';
     return true;
@@ -466,14 +471,15 @@
       ['项目实施期',resource.period],['网申窗口／开始',resource.applicationWindow],['投递截止',resource.deadline]
     ];
     const past = ['closed','historical'].includes(statusCode) || resource.kind === 'historical';
-    const action = resource.kind === 'organization_reference' ? '查看企业官方资料' : past ? '查看历史公告' : resource.kind === 'graduate_recruitment' ? '查看正式校招原文' : statusCode === 'listing_seen' ? '打开列表核实岗位状态' : statusCode === 'upcoming' ? '查看项目安排' : resource.kind === 'channel' || statusCode === 'entry_only' ? '进入官方招聘渠道' : '核对项目与申请入口';
-    return `<details class="intern-resource" data-intern-resource="${esc(resource.id || '')}"><summary><span><strong>${esc(resource.title || '招聘资源')}</strong><small>${esc(kind)} · ${esc(cities.join('、') || '原文未明确岗位城市')}</small></span><span class="intern-status ${past ? 'past' : statusCode === 'program_open' ? 'published' : ''}">${esc(status)}</span></summary><div class="intern-resource-body">${resource.summary ? `<p>${inline(resource.summary)}</p>` : ''}${resource.geographyNote ? `<p class="intern-geography">${inline(resource.geographyNote)}</p>` : ''}<dl class="intern-fields">${fields.map(([label,value])=>`<div><dt>${esc(label)}</dt><dd>${value ? inline(internText(value)) : '原文未公布，申请前核对'}</dd></div>`).join('')}</dl>${array(resource.requirements).length ? `<h5>原文列出的要求</h5>${internList(resource.requirements)}` : ''}${array(resource.steps).length ? `<h5>怎样查看与申请</h5>${internList(resource.steps)}` : ''}${array(resource.limits).length ? `<div class="intern-limit">${internList(resource.limits)}</div>` : ''}${screenshotsHtml(resource.screenshots, resource.url)}<div class="intern-resource-actions">${internLink(resource.url,action,'button secondary')}${internCitations(resource.sourceIds)}</div>${resource.postedDate ? `<p class="intern-source-date">公告日期：${esc(resource.postedDate)}</p>` : ''}</div></details>`;
+    const actionUrl = past ? internOriginalUrl(resource) || resource.url : resource.url;
+    const action = resource.kind === 'organization_reference' ? '查看企业官方资料' : past ? '查看历史公告' : resource.kind === 'graduate_recruitment' ? '查看正式校招原文' : statusCode === 'listing_seen' ? '核对岗位原文与状态' : statusCode === 'upcoming' ? '查看项目安排' : resource.kind === 'channel' || statusCode === 'entry_only' ? '进入官方招聘渠道' : '核对项目与申请入口';
+    return `<details class="intern-resource" data-intern-resource="${esc(resource.id || '')}"><summary><span><strong>${esc(resource.title || '招聘资源')}</strong><small>${esc(kind)} · ${esc(cities.join('、') || '原文未明确岗位城市')}</small></span><span class="intern-status ${past ? 'past' : statusCode === 'program_open' ? 'published' : ''}">${esc(status)}</span></summary><div class="intern-resource-body">${resource.summary ? `<p>${inline(resource.summary)}</p>` : ''}${resource.statusDetail ? `<p class="intern-small"><strong>状态说明：</strong>${inline(internText(resource.statusDetail))}</p>` : ''}${resource.geographyNote ? `<p class="intern-geography">${inline(resource.geographyNote)}</p>` : ''}<dl class="intern-fields">${fields.map(([label,value])=>`<div><dt>${esc(label)}</dt><dd>${value ? inline(internText(value)) : '原文未公布，申请前核对'}</dd></div>`).join('')}</dl>${array(resource.roleDirections).length ? `<h5>原文列出的业务方向</h5>${internList(resource.roleDirections)}` : ''}${array(resource.requirements).length ? `<h5>原文列出的要求</h5>${internList(resource.requirements)}` : ''}${array(resource.steps).length ? `<h5>怎样查看与申请</h5>${internList(resource.steps)}` : ''}${array(resource.limits).length ? `<div class="intern-limit">${internList(resource.limits)}</div>` : ''}${screenshotsHtml(resource.screenshots, resource.url)}<div class="intern-resource-actions">${internLink(actionUrl,action,'button secondary')}${internCitations(resource.sourceIds)}</div>${resource.postedDate ? `<p class="intern-source-date">公告日期：${esc(resource.postedDate)}</p>` : ''}</div></details>`;
   }
 
   function internFirmHtml(firm, resources) {
     const offices = array(firm.officeRecords);
-    const entries = array(firm.entryLinks);
-    return `<section class="intern-firm" data-intern-firm="${esc(firm.id)}"><div class="intern-firm-heading"><div><span class="intern-group-label">${({big_four:'四大',domestic:'国内所',enterprise:'企业财务与内审'}[firm.group] || '其他机构')}</span><h4>${esc(firm.name)}</h4></div><span>${resources.length} 条匹配资源</span></div>${firm.summary ? `<p class="intern-firm-summary">${inline(firm.summary)}</p>` : ''}${entries.length ? `<div class="intern-entry-links">${entries.map(entry=>internLink(entry.url,entry.label || '官方招聘入口')).filter(Boolean).join('')}</div>` : ''}${resources.map(internResourceHtml).join('')}${offices.length ? `<details class="intern-firm-notes"><summary>办公室与申请前要问的问题</summary><p class="intern-office-note">办公地址用于了解机构所在地；实习项目可能驻客户现场或出差，须另外核实。</p>${offices.map(office=>`<p class="intern-office"><strong>${esc(office.city || '所在地未公布')}${office.branch ? ' · ' + esc(office.branch) : ''}</strong> ${inline(office.address || '地址待核')}${internCitations(office.sourceIds)}${array(office.limits).length ? `<small>${inline(internText(office.limits))}</small>` : ''}</p>`).join('')}${array(firm.questions).length ? `<h5>沟通前记下这些问题</h5>${internList(firm.questions)}` : ''}${array(firm.prep).length ? `<h5>准备方向</h5>${internList(firm.prep)}` : ''}</details>` : (array(firm.questions).length ? `<details class="intern-firm-notes"><summary>申请前要问的问题</summary>${internList(firm.questions)}</details>` : '')}</section>`;
+    const entries = array(firm.entryLinks).filter(entry=>internWebUrl(entry.url));
+    return `<section class="intern-firm" data-intern-firm="${esc(firm.id)}"><div class="intern-firm-heading"><div><span class="intern-group-label">${({big_four:'四大',domestic:'国内所',enterprise:'企业财务与内审'}[firm.group] || '其他机构')}</span><h4>${esc(firm.name)}</h4></div><span>${resources.length} 条匹配资源</span></div>${firm.summary ? `<p class="intern-firm-summary">${inline(firm.summary)}</p>` : ''}${entries.length ? `<div class="intern-entry-links">${entries.map(entry=>`<div>${internLink(entry.url,entry.label || '官方招聘入口')}${internCitations(entry.sourceIds)}${entry.note ? `<p class="intern-small">${inline(internText(entry.note))}</p>` : ''}</div>`).join('')}</div>` : ''}${resources.map(internResourceHtml).join('')}${offices.length ? `<details class="intern-firm-notes"><summary>办公室与申请前要问的问题</summary><p class="intern-office-note">办公地址用于了解机构所在地；实习项目可能驻客户现场或出差，须另外核实。</p>${offices.map(office=>`<p class="intern-office"><strong>${esc(office.city || '所在地未公布')}${office.branch ? ' · ' + esc(office.branch) : ''}</strong> ${inline(office.address || '地址待核')}${internCitations(office.sourceIds)}${array(office.limits).length ? `<small>${inline(internText(office.limits))}</small>` : ''}</p>`).join('')}${array(firm.questions).length ? `<h5>沟通前记下这些问题</h5>${internList(firm.questions)}` : ''}${array(firm.prep).length ? `<h5>准备方向</h5>${internList(firm.prep)}` : ''}</details>` : (array(firm.questions).length ? `<details class="intern-firm-notes"><summary>申请前要问的问题</summary>${internList(firm.questions)}</details>` : '')}</section>`;
   }
 
   function renderInternshipResults() {
@@ -529,9 +535,29 @@
     return state.data.socialPosts.filter(post => !post.screenedOnly && !String(post.category || '').includes('排除') && post.category !== '仅筛选记录');
   }
 
+  function postCommentParts(comment) {
+    const list = values => [...new Set(values.flatMap(array).map(textOf).filter(Boolean))];
+    if (typeof comment === 'string') return {body:comment, identity:[], limits:[]};
+    return {
+      author: comment.author || comment.user || '评论者未记录',
+      date: comment.date_display || comment.date || '',
+      body: textOf(comment.text || comment.summary || comment.content || ''),
+      identity: list([comment.identity, comment.stage, comment.relationship]),
+      limits: list([comment.assessment, comment.limitation, comment.limitations, comment.limits])
+    };
+  }
+
+  function postSearchText(post) {
+    const comments = array(post.comments).flatMap(comment => {
+      const parts = postCommentParts(comment);
+      return [parts.author, parts.date, parts.body, ...parts.identity, ...parts.limits];
+    });
+    return normalize([post.title,post.author,post.summary,post.platform,post.topic,post.category,post.population,post.campus,post.date,post.verificationStatus,post.promotion,post.reviewReason,post.limitations,...array(post.tips).map(textOf),...array(post.readingScopes).map(textOf),...(state.postCodes[post.id] || []),...comments].join(' '));
+  }
+
   function filteredPosts() {
     const q = normalize(state.postQuery);
-    return publicPosts().filter(p => (!state.postTopic || p.topic === state.postTopic) && (!state.postCategory || p.category === state.postCategory) && (!q || (/^[a-z]\d{2,3}$/.test(q) ? (state.postCodes[p.id] || []).some(code=>normalize(code)===q) : normalize([p.title,p.author,p.summary,p.population,p.campus,p.date,p.verificationStatus,...(state.postCodes[p.id] || []),...array(p.comments).map(c => textOf(c))].join(' ')).includes(q))));
+    return publicPosts().filter(p => (!state.postTopic || p.topic === state.postTopic) && (!state.postCategory || p.category === state.postCategory) && (!q || (/^[a-z]\d{2,3}$/.test(q) ? (state.postCodes[p.id] || []).some(code=>normalize(code)===q) : postSearchText(p).includes(q))));
   }
 
   function postCard(p) {
@@ -553,6 +579,12 @@
     renderPostResults();
   }
 
+  function postCommentHtml(comment, renderScreenshots) {
+    const parts = postCommentParts(comment);
+    if (typeof comment === 'string') return `<div class="comment-block"><p>${inline(parts.body)}</p></div>`;
+    return `<div class="comment-block"><small>${esc(parts.author)}${parts.date ? ' · ' + esc(parts.date) : ''}</small>${parts.identity.length ? `<small> · ${esc(parts.identity.join(' / '))}</small>` : ''}<p>${inline(parts.body)}</p>${parts.limits.length ? `<p class="evidence-limit">${parts.limits.map(inline).join('；')}</p>` : ''}${renderScreenshots(comment.screenshots)}</div>`;
+  }
+
   function openPost(id) {
     const p = state.data.socialPosts.find(p => p.id === id);
     if (!p) return;
@@ -563,7 +595,7 @@
       shownScreenshots.add(item.src);
       return true;
     }), p.url || p.canonicalUrl);
-    openDialog('原帖摘记 / ' + socialCodes(p), `<div class="dialog-heading"><div><h2 id="dialog-title">${esc(p.title)}</h2><div class="dialog-subtitle">${esc(p.platform)} · ${esc(p.author || '作者未记录')} · ${esc(p.date || '日期未显示')}</div></div></div><div class="tags"><span class="tag warm">${esc(p.category)}</span><span class="tag secondary">${esc(p.topic)}</span></div><dl class="profile-fields"><div class="profile-row"><dt>接触身份</dt><dd>${esc(p.population || '未说明')}</dd></div><div class="profile-row"><dt>适用校区</dt><dd>${esc(p.campus || '未说明')}</dd></div><div class="profile-row"><dt>核实状态</dt><dd>${esc(p.verificationStatus || '见采用边界')}</dd></div>${p.promotion ? `<div class="profile-row"><dt>商业或导流线索</dt><dd>${esc(p.promotion)}</dd></div>` : ''}</dl><section class="dialog-section"><h3>内容要点</h3><p class="dialog-content-intro">${inline(p.summary || '本条只保留筛选范围，未形成可采用的具体内容。')}</p>${array(p.tips).length ? `<ul class="tip-list">${array(p.tips).map(t => `<li>${inline(t)}</li>`).join('')}</ul>` : ''}</section>${comments.length ? `<section class="dialog-section"><h3>可见评论与回复摘记</h3>${comments.map(c => typeof c === 'string' ? `<div class="comment-block"><p>${inline(c)}</p></div>` : `<div class="comment-block"><small>${esc(c.author || c.user || '评论者未记录')}${c.date_display || c.date ? ' · ' + esc(c.date_display || c.date) : ''}</small>${c.identity || c.stage ? `<small> · ${esc([c.identity,c.stage].filter(Boolean).join(' / '))}</small>` : ''}<p>${inline(c.text || c.summary || c.content || c)}</p>${c.assessment || c.limitation || c.limitations ? `<p class="evidence-limit">${inline(c.assessment || c.limitation || c.limitations)}</p>` : ''}${uniqueScreenshotsHtml(c.screenshots)}</div>`).join('')}</section>` : ''}${uniqueScreenshotsHtml(postScreenshots(p))}<section class="dialog-section"><h3>适用范围</h3><div class="evidence-note">${inline(p.reviewReason || '')}${p.limitations ? `<p>${inline(p.limitations)}</p>` : ''}</div>${array(p.readingScopes).length ? `<ul class="tip-list">${array(p.readingScopes).map(scope => `<li>${inline(scope)}</li>`).join('')}</ul>` : ''}</section><div class="source-actions">${external(p.url || p.canonicalUrl, '打开原帖 ↗', 'button secondary')}</div>`);
+    openDialog('原帖摘记 / ' + socialCodes(p), `<div class="dialog-heading"><div><h2 id="dialog-title">${esc(p.title)}</h2><div class="dialog-subtitle">${esc(p.platform)} · ${esc(p.author || '作者未记录')} · ${esc(p.date || '日期未显示')}</div></div></div><div class="tags"><span class="tag warm">${esc(p.category)}</span><span class="tag secondary">${esc(p.topic)}</span></div><dl class="profile-fields"><div class="profile-row"><dt>接触身份</dt><dd>${esc(p.population || '未说明')}</dd></div><div class="profile-row"><dt>适用校区</dt><dd>${esc(p.campus || '未说明')}</dd></div><div class="profile-row"><dt>核实状态</dt><dd>${esc(p.verificationStatus || '见采用边界')}</dd></div>${p.promotion ? `<div class="profile-row"><dt>商业或导流线索</dt><dd>${esc(p.promotion)}</dd></div>` : ''}</dl><section class="dialog-section"><h3>内容要点</h3><p class="dialog-content-intro">${inline(p.summary || '本条只保留筛选范围，未形成可采用的具体内容。')}</p>${array(p.tips).length ? `<ul class="tip-list">${array(p.tips).map(t => `<li>${inline(t)}</li>`).join('')}</ul>` : ''}</section>${comments.length ? `<section class="dialog-section"><h3>可见评论与回复摘记</h3>${comments.map(c => postCommentHtml(c, uniqueScreenshotsHtml)).join('')}</section>` : ''}${uniqueScreenshotsHtml(postScreenshots(p))}<section class="dialog-section"><h3>适用范围</h3><div class="evidence-note">${inline(p.reviewReason || '')}${p.limitations ? `<p>${inline(p.limitations)}</p>` : ''}</div>${array(p.readingScopes).length ? `<ul class="tip-list">${array(p.readingScopes).map(scope => `<li>${inline(scope)}</li>`).join('')}</ul>` : ''}</section><div class="source-actions">${external(p.url || p.canonicalUrl, '打开原帖 ↗', 'button secondary')}</div>`);
     emit('post_open', {id});
   }
 
@@ -696,6 +728,13 @@
 
   document.addEventListener('click', event => {
     const currentLink = event.target.closest('a[href]');
+    if (currentLink?.classList?.contains('skip-link')) {
+      event.preventDefault();
+      const main = $('#main');
+      main?.focus({preventScroll:true});
+      main?.scrollIntoView({behavior:'auto',block:'start'});
+      return;
+    }
     if (currentLink?.closest('.life-photo-chapters')) closeDialog();
     if(currentLink && currentLink.getAttribute('href') === location.hash && /^#(?:mentors|life|posts|downloads|music)(?:\/.*)?$/.test(location.hash)){
       event.preventDefault();
