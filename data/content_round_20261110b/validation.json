@@ -1,0 +1,43 @@
+{
+  "tests": {
+    "passed": 84,
+    "failed": 0,
+    "command": "node --test tests/*.test.mjs"
+  },
+  "mergeIdempotent": true,
+  "browserChecks": [
+    "source-body-search",
+    "skip-link-route-and-focus",
+    "enterprise-and-published-city-filter",
+    "job-conditions"
+  ],
+  "sourceCounts": {
+    "visibleSources": 121,
+    "firms": 23,
+    "resources": 53,
+    "sourceRegistry": 427,
+    "officialEvidence": 214
+  },
+  "newPostIds": [
+    "nau-accounting-student-feedback-157425",
+    "job-hutchmed-finance-intern-shanghai-20260917",
+    "job-zeron-finance-intern-taicang-20260908",
+    "job-fosun-fssc-finance-intern-yangpu",
+    "job-suning-finance-intern-nanjing-27745",
+    "job-shzhiming-finance-intern-2027-jiding",
+    "nau-liang-siyuan-study-246821158",
+    "nau-mpacc-nantong-practice-50277",
+    "nau-parttime-mpacc-thesis-sharing-50541",
+    "nau-mpacc-case-team-50391",
+    "nau-yin-zhengxin-research-31456",
+    "nau-wang-nannan-thesis-31458",
+    "nau-jiao-sheng-thesis-life-31464"
+  ],
+  "publicationStatus": "ready",
+  "runtimeChanges": [
+    "app.js",
+    "index.html",
+    "sw.js",
+    "data/site-data.json"
+  ]
+}

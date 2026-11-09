@@ -127,6 +127,58 @@ test('enterprise finance and internal-audit resources have their own group and f
   assert.doesNotMatch(a.get('#internship-results').innerHTML,/样例企业/);
 });
 
+test('organization profiles and expired entrances do not become active application channels',async()=>{
+  const data=fixture();
+  data.internships.firms.push({id:'reference-company',name:'仅有官网资料的企业',group:'enterprise',resources:[
+    {id:'company-profile',title:'企业官方资料',kind:'organization_reference',status:'entry_only',url:'https://example.org/company',sourceIds:['TEST_INTERN']},
+    {id:'expired-channel',title:'已经截止的投递入口',kind:'channel',status:'entry_only',deadlineDate:'2000-01-01',url:'https://example.org/old-channel',sourceIds:['TEST_INTERN']}
+  ],entryLinks:[],officeRecords:[]});
+  const a=await app(data);a.route('#life/life-09');
+  assert.doesNotMatch(a.get('#internship-results').innerHTML,/company-profile|expired-channel/);
+  a.change('intern-status','channels');
+  let html=a.get('#internship-results').innerHTML;
+  assert.match(html,/national-channel/);
+  assert.doesNotMatch(html,/company-profile|expired-channel/);
+  a.change('intern-status','');a.change('intern-city','__channels__');
+  html=a.get('#internship-results').innerHTML;
+  assert.match(html,/national-channel/);
+  assert.doesNotMatch(html,/company-profile|expired-channel/,'both channel controls use the same effective status and resource type');
+  a.change('intern-city','');
+  html=a.get('#internship-results').innerHTML;
+  assert.match(html,/company-profile|expired-channel/,'all records still retain profiles and ended entrances for reference');
+  assert.match(html,/查看企业官方资料/);
+});
+
+test('internship details preserve recorded status, business directions and entrance limitations',async()=>{
+  const data=fixture();
+  const firm=data.internships.firms[0];
+  Object.assign(firm.resources[0],{statusDetail:'需已获全职Offer后按业务需要邀请 <核对>',roleDirections:['审计交付支持',{text:'数据分析 <技术条件>'}]});
+  firm.entryLinks[0].note='先核实岗位类别，正式Associate不是在校实习 <原文边界>';
+  firm.entryLinks[0].sourceIds=['TEST_INTERN'];
+  const a=await app(data);a.route('#life/life-09');
+  const html=a.get('#internship-results').innerHTML;
+  assert.match(html,/状态说明：/);
+  assert.match(html,/需已获全职Offer后按业务需要邀请 &lt;核对&gt;/);
+  assert.match(html,/原文列出的业务方向/);
+  assert.match(html,/审计交付支持/);
+  assert.match(html,/数据分析 &lt;技术条件&gt;/);
+  assert.match(html,/正式Associate不是在校实习 &lt;原文边界&gt;/);
+  assert.match(html,/intern-entry-links[\s\S]*?class="citation"/);
+  assert.doesNotMatch(html,/<核对>|<技术条件>|<原文边界>|\[object Object\]/);
+});
+
+test('history actions open registered original announcements instead of the current recruitment system',async()=>{
+  const data=fixture();
+  data.sourceRegistry.TEST_ARCHIVE={title:'已结束批次的原始公告',originalUrl:'javascript:alert(1)',url:'https://example.org/announcement-archive'};
+  const resource=data.internships.firms[0].resources.find(item=>item.id==='closed-shanghai');
+  resource.url='https://example.org/current-recruiting';
+  resource.sourceIds=['TEST_BAD_INTERN','TEST_ARCHIVE'];
+  const a=await app(data);a.route('#life/life-09');a.change('intern-status','past');
+  const html=a.get('#internship-results').innerHTML;
+  assert.match(html,/<a href="https:\/\/example\.org\/announcement-archive"[^>]*class="button secondary">查看历史公告<\/a>/);
+  assert.doesNotMatch(html,/current-recruiting|href="javascript:/);
+});
+
 test('official source screenshots render in resources and chapters and reject unsafe locations',async()=>{
   const data=fixture();
   const captures=[{src:'./evidence/refresh-20261110/recruitment-01.png',caption:'招聘信息 <原文>',scope:'只截取标题与岗位要求。',sourceUrl:'https://example.org/recruitment',width:1280,height:900},

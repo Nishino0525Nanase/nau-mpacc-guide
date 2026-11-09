@@ -1,0 +1,48 @@
+{
+  "baseline": {
+    "visibleSources": 108,
+    "firms": 18,
+    "resources": 48,
+    "sourceRegistry": 414,
+    "officialEvidence": 201
+  },
+  "after": {
+    "visibleSources": 121,
+    "firms": 23,
+    "resources": 53,
+    "sourceRegistry": 427,
+    "officialEvidence": 214
+  },
+  "sourceMap": {
+    "nau-liang-siyuan-study-246821158": "U916",
+    "nau-mpacc-nantong-practice-50277": "U917",
+    "nau-parttime-mpacc-thesis-sharing-50541": "U918",
+    "nau-mpacc-case-team-50391": "U919",
+    "nau-accounting-student-feedback-157425": "U920",
+    "nau-yin-zhengxin-research-31456": "U921",
+    "nau-wang-nannan-thesis-31458": "U922",
+    "nau-jiao-sheng-thesis-life-31464": "U923",
+    "hutchmed-finance-intern-shanghai-20260917": "U924",
+    "zeron-finance-intern-taicang-20260908": "U925",
+    "fosun-fssc-finance-intern-yangpu": "U926",
+    "suning-finance-intern-nanjing-27745": "U927",
+    "shzhiming-finance-intern-2027-jiding": "U928"
+  },
+  "addedPosts": [
+    "nau-accounting-student-feedback-157425",
+    "job-hutchmed-finance-intern-shanghai-20260917",
+    "job-zeron-finance-intern-taicang-20260908",
+    "job-fosun-fssc-finance-intern-yangpu",
+    "job-suning-finance-intern-nanjing-27745",
+    "job-shzhiming-finance-intern-2027-jiding",
+    "nau-liang-siyuan-study-246821158",
+    "nau-mpacc-nantong-practice-50277",
+    "nau-parttime-mpacc-thesis-sharing-50541",
+    "nau-mpacc-case-team-50391",
+    "nau-yin-zhengxin-research-31456",
+    "nau-wang-nannan-thesis-31458",
+    "nau-jiao-sheng-thesis-life-31464"
+  ],
+  "historicalSourcesKeepDatesAndDegrees": true,
+  "currentJobVacanciesNotGuaranteed": true
+}

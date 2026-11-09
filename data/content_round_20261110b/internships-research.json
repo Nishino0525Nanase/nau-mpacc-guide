@@ -1,0 +1,241 @@
+{
+  "researched_at": "2026-11-10",
+  "scope": "南京、苏州、上海财会类在校实习；仅研究，不提交申请。已与dist/data/site-data.json internships及sourceRegistry去重。",
+  "priority_note": "优先和黄医药；零动智卡具有明确岗位与有效期但本次仅读到检索引擎抓取正文，建议复核后集成。其余具体JD未提供当前余缺或截止，不能标为正在招聘。",
+  "resources": [
+    {
+      "suggested_action": "add_firm_and_resource",
+      "firm_id": "hutchmed",
+      "firm_name": "上海和记黄埔医药销售有限公司（和黄医药）",
+      "resource_id": "hutchmed-finance-intern-shanghai-20260917",
+      "title": "财务部实习生｜上海浦东",
+      "source_urls": [
+        "https://jy.scu.edu.cn/index/index/employjobdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh4Y5WKubbSyobddricp9CWi5qikaeWacSdqLqGfaK2w4iil5C4zNbGiL-E"
+      ],
+      "source_type": "university_employer_job_posting",
+      "read_scope": "四川大学就业指导中心职位全文已读；web refs turn72view0 / turn91search1；正文17-33行。未验证邮箱是否接收、未发送申请。",
+      "date": "2026-09-17",
+      "deadline": "2026-11-29",
+      "real_application_url": "mailto:xianmingh@hutch-med.com",
+      "application_instructions": "简历命名为应聘岗位、姓名、来源，发招聘邮箱。",
+      "status": "published_with_future_validity",
+      "status_detail": "学校职位有效期至2026-11-29 23:59:59，截至核验日未到期；未核实际余缺。",
+      "job_type": "student_internship",
+      "city_tags": [
+        "上海"
+      ],
+      "actual_location": "上海市浦东新区；来自工作地址字段，未推定详细办公地址。",
+      "conditions": {
+        "eligibility": "本科及以上在校学生，正文要求财会相关专业。表格专业栏写不限，与正文并存，采用正文更具体条件。",
+        "attendance": "每周稳定不少于3天；周二、周三需全天在岗。",
+        "duration": "连续实习6个月及以上优先，不能改写为硬性至少6个月。",
+        "skills": [
+          "Office与Excel基础函数、表格整理",
+          "细心、责任心与沟通能力"
+        ],
+        "salary_raw": "3000-4000",
+        "salary_period": null
+      },
+      "duties_summary": "财务票据和凭证整理归档、基础数据录入、台账与核对等财务内勤辅助。",
+      "limits": [
+        "薪资栏未标周期，不补写月薪。",
+        "学校页面有效期不保证实时余缺。",
+        "不将医药研发企业背景推定为研发财务、管理会计或财务分析实习。"
+      ]
+    },
+    {
+      "suggested_action": "add_firm_and_resource",
+      "firm_id": "zeron",
+      "firm_name": "上海零动智卡汽车科技有限公司（零一汽车全资公司）",
+      "resource_id": "zeron-finance-intern-taicang-20260908",
+      "title": "财务实习生｜苏州太仓",
+      "source_urls": [
+        "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=5AD1C40BF1B24985E0653A68DD0E9B18"
+      ],
+      "source_type": "university_employer_job_posting",
+      "read_scope": "主代理通过TinyFish直接读取浙江大学就业服务平台该职位全文，核对2026-09-08日期、苏州太仓、硕士、出勤偏好、半年偏好、2027-06-30及公开招聘邮箱；未登录或提交申请。",
+      "date": "2026-09-08",
+      "deadline": "2027-06-30",
+      "real_application_url": "mailto:hr@zeron.ai",
+      "application_instructions": "检索抓取的联系方式列电子邮箱hr@zeron.ai；未见专门简历命名说明。",
+      "status": "published_with_future_validity",
+      "status_detail": "学校页面有效期至2027-06-30；当前实际余缺、到岗与材料要求请向招聘方核对。",
+      "job_type": "internship",
+      "city_tags": [
+        "苏州"
+      ],
+      "actual_location": "江苏省苏州市太仓市；公司的上海闵行地址并非该职位城市。",
+      "conditions": {
+        "eligibility": "财务相关专业，硕士；表格硕士实习，不能自行扩大为全部本科在校生。",
+        "attendance": "最好一周出勤3天以上。",
+        "duration": "最好任职持续半年以上；保留最好措辞，不能改写硬性门槛。",
+        "skills": [
+          "文字组织与表达",
+          "细致、责任心、主动沟通"
+        ],
+        "salary_raw": "5000-6000",
+        "salary_period": null
+      },
+      "duties_summary": "银行存款日记账、回单、对账与财务资料整理，协助银行外勤。",
+      "limits": [
+        "薪资周期没有写明，不补月薪。",
+        "需求2人属于公告，实际余缺未核。"
+      ],
+      "body_rechecked": true
+    },
+    {
+      "suggested_action": "add_firm_and_resource_with_unknown_current_status",
+      "firm_id": "fosun-fssc",
+      "firm_name": "复星财务共享服务中心",
+      "resource_id": "fosun-fssc-finance-intern-yangpu",
+      "title": "财务实习生｜上海杨浦（申请期未注明）",
+      "source_urls": [
+        "https://bs-cdc.ecust.edu.cn/6109/"
+      ],
+      "source_type": "university_employer_notice",
+      "read_scope": "华东理工大学商学院职业发展中心公告正文0-39行已读，web ref turn72view1；未直接检查企业招聘系统。",
+      "date": null,
+      "deadline": null,
+      "real_application_url": "mailto:fsschr@fosun.com",
+      "application_instructions": "主题和简历命名列应聘岗位、留用意向、姓名、入职日、每周天数、总时长、学校、专业、年级，添加简历附件。",
+      "status": "specific_role_date_unknown",
+      "status_detail": "学校保留具体岗位正文，但未显示发文日期或申请截止；不得标近期新开或确认开放。",
+      "job_type": "internship",
+      "city_tags": [
+        "上海"
+      ],
+      "actual_location": "上海市杨浦区黄兴路221号互联宝地C3幢3楼，来自岗位工作地点。",
+      "conditions": {
+        "eligibility": "本科及以上，财税专业优先；公告未独立限定届别。",
+        "attendance": "每周至少3天。",
+        "duration": "至少3个月；希望尽快到岗。",
+        "skills": [
+          "Excel、Word、PPT",
+          "有财务实习经历优先"
+        ],
+        "salary_raw": null,
+        "salary_period": null
+      },
+      "duties_summary": "单据和档案、收支核对、费用初审、对账、结账报税、资金与费用检查及SOP。",
+      "limits": [
+        "无日期与截止，当前余缺需核。",
+        "期满2个月可开证明不等于最短实习2个月，岗位要求仍是至少3个月。",
+        "优秀应届生可留用属于有条件机会。",
+        "不将另一个HR岗位可2天等信息混到该财务岗。"
+      ]
+    },
+    {
+      "suggested_action": "add_firm_and_resource_with_unknown_current_status",
+      "firm_id": "suning",
+      "firm_name": "苏宁易购",
+      "resource_id": "suning-finance-intern-nanjing-27745",
+      "title": "财务实习生｜南京（具体JD）",
+      "source_urls": [
+        "https://campus.suning.cn/rps-campus/ftl/campus/campusPositionDetail.htm?poId=27745"
+      ],
+      "source_type": "official_company_job_detail",
+      "read_scope": "企业官方职位详情19-36行已读，web ref turn89view0；未点击申请、未登录。",
+      "date": null,
+      "deadline": null,
+      "real_application_url": "https://campus.suning.cn/rps-campus/ftl/campus/campusPositionDetail.htm?poId=27745",
+      "application_instructions": "官方详情页显示我要申请；职位申请上限提示为1个。未提交。",
+      "status": "specific_role_date_unknown",
+      "status_detail": "官网具体JD仍可读取，但未给发布时间与截止，不能断定本轮开放或2027届专属。",
+      "job_type": "internship_title_full_time_field",
+      "city_tags": [
+        "南京"
+      ],
+      "actual_location": "南京市，来自职位工作地点。",
+      "conditions": {
+        "eligibility": "本科学历以上；财务管理、会计、审计、经济金融及数学统计等相关专业；未明示年级或毕业届别。",
+        "attendance": null,
+        "duration": null,
+        "skills": [
+          "专业知识",
+          "沟通协作",
+          "相关财务证书优先"
+        ],
+        "salary_raw": null,
+        "salary_period": null
+      },
+      "duties_summary": "协助会计核算、财报与内控，及预算绩效、费用管控和业务财务支持。",
+      "limits": [
+        "标题财务实习生且位于实习生招聘导航，系统工作性质字段显示全职，保留该冲突。",
+        "在校身份接受范围、周出勤、最短时长与日期均需另确认。",
+        "优秀者可直通1200管培生招录是有条件机会，不写保证转正。"
+      ]
+    },
+    {
+      "suggested_action": "add_firm_and_resource_with_unknown_current_status",
+      "firm_id": "shzhiming",
+      "firm_name": "上海陟明信息技术有限责任公司",
+      "resource_id": "shzhiming-finance-intern-2027-jiding",
+      "title": "2027届财务实习生｜上海嘉定",
+      "source_urls": [
+        "https://ejob.dhu.edu.cn/single/2026/04/13/2604131508252818905719111514160682210002.html"
+      ],
+      "source_type": "university_employer_notice",
+      "read_scope": "东华大学就业网站正文22-80行已读，web ref turn91view1；发布时间动态字段为空，2026-04-13来自搜索抓取与URL，分别标注。",
+      "date": "2026-04-13",
+      "date_evidence": "URL和检索引擎抓取；正文日期字段为空，非直接正文读到的日期。",
+      "deadline": null,
+      "real_application_url": "mailto:changningning@shzhiming.cn",
+      "application_instructions": "公告列该招聘邮箱，未给专门简历命名要求。",
+      "status": "specific_role_no_deadline",
+      "status_detail": "2026年4月发布的2027届实习公告，未给申请截止或当前余缺；不作为11月新开职位。",
+      "job_type": "internship",
+      "city_tags": [
+        "上海"
+      ],
+      "actual_location": "上海市嘉定区曹安公路1515号3131曹安商务园1号楼A座，来自公告工作地点。",
+      "conditions": {
+        "eligibility": "标题27届实习；统招本科及以上。未见具体专业要求段。",
+        "attendance": null,
+        "duration": null,
+        "skills": [],
+        "salary_raw": "180-200元/天",
+        "salary_period": "day"
+      },
+      "duties_summary": "报销票据、凭证归档、发票和税务辅助、财务系统数据录入、往来核对、基础透视表与资产盘点。",
+      "limits": [
+        "周出勤、最短实习时长和截止未公布，不补写。",
+        "需求2人仅是原公告。",
+        "不能以岗位职责中Excel工作推断其为硬性任职门槛。"
+      ]
+    }
+  ],
+  "excluded_or_hold": [
+    {
+      "title": "容诚2026年11月至2027年5月实习生计划",
+      "url": "https://jobcareer.sdu.edu.cn/eweb/jygl/index.so?id=87cRceoeYuxj4f83X3DVAs&modcode=jygl_zpxxck&subsyscode=zpfw&type=ssoViewZpxx",
+      "reason": "已在sourceRegistry I844且现有rsm资源覆盖，不能算新增。发布日期2003-01-01异常，整个校招截止不能替代实习截止。"
+    },
+    {
+      "title": "中国燃气财务信息系统运维实习",
+      "url": "https://scs.nuist.edu.cn/2025/1230/c5905a293953/page.htm",
+      "read_scope": "南京信息工程大学正文已读，turn80view2",
+      "reason": "正文日期2025-06-20，URL又为2025-12-30，无截止；不是近期岗位，暂不新增。确有南京六合、4天/周、1个月可延长、120元/天和免费临时宿舍等历史证据。"
+    },
+    {
+      "title": "江苏金租2026储备实习生",
+      "url": "https://career.hebut.edu.cn/correcruit/content/id/78716.html",
+      "read_scope": "河北工业大学就业公告全文已读，turn80view0",
+      "reason": "2026-05-22公告，流程6月下旬到岗，11月余缺不明；网申链接仅图片二维码，未读出真实申请URL，不用学校投递按钮替代。"
+    },
+    {
+      "title": "东山精密财务专员",
+      "url": "https://jy.scu.edu.cn/index/index/employjobdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh4Y9-KutS2yobddricp9CWi5qikaeWacSdqLqGfaK2w4iil5C4zNbGiL-E",
+      "read_scope": "川大就业正文已读，turn80view1",
+      "reason": "实际性质全职，财务实习仅为经验优先条件；不列在校实习。"
+    },
+    {
+      "title": "典驱科技、上海生通、瑞丰国际财会实习",
+      "url": "https://career.ecnu.edu.cn/career/index",
+      "reason": "仅取得学校首页标题与日期；没有具体正文、地点和投递链接，不用作新正式资源。"
+    },
+    {
+      "title": "传奇生物、SHEIN、法雷奥、代尔塔等近期财务实习",
+      "reason": "实习僧雇主页有详细城市出勤和截止，但本轮未取得企业官网或大学正文交叉证据，保留为可后续验证线索，不计官方新增。"
+    }
+  ]
+}
