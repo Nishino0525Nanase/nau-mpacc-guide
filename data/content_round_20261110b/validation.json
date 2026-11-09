@@ -33,11 +33,26 @@
     "nau-wang-nannan-thesis-31458",
     "nau-jiao-sheng-thesis-life-31464"
   ],
-  "publicationStatus": "ready",
+  "publicationStatus": "published_verified",
   "runtimeChanges": [
     "app.js",
     "index.html",
     "sw.js",
     "data/site-data.json"
-  ]
+  ],
+  "publishedCommit": "3b7aca229f9d300a359f39dee5e5a739c878b727",
+  "contentSourceCommit": "658821e068222a9b006909012a41a0e9fa361f82",
+  "verifiedAtUtc": "2026-11-09T17:50:42.814459+00:00",
+  "publicFileHashesMatched": 4,
+  "liveBrowserChecks": [
+    "body-search-returns-correct-source",
+    "skip-link-preserves-posts-route-and-focus",
+    "enterprise-suzhou-filter-returns-taicang-role"
+  ],
+  "qaScreenshot": {
+    "path": "qa/mpacc-live-verification-1794246606975.jpg",
+    "bytes": 90015,
+    "sha256": "50185fa562c6d7edec31b0ed037e6a0879b2d6dd7dbcd3b6f49ac252d26b7931"
+  },
+  "testBrowserVisitsExcluded": true
 }
