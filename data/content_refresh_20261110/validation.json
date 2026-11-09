@@ -14,5 +14,16 @@
   "resourceCount": 48,
   "originalMentorsAndDownloadsPreserved": true,
   "publishedBaselineMatchesSource": true,
-  "publishStatus": "blocked_github_contents_write_403"
+  "publishStatus": "published_verified",
+  "release": {
+    "website": "https://nishino0525nanase.github.io/nau-mpacc-guide/",
+    "contentSourceCommit": "b0a1f96df89381d80d6c4e4b3281774a187e569c",
+    "publishedCommit": "b51a8c6b4e93d3745321abd7d5997a1fa0c153a0",
+    "verifiedAtUtc": "2026-11-09T17:26:19.400909+00:00",
+    "onlineFilesMatched": 8,
+    "screenshotFilesMatched": 5,
+    "visibleSources": 108,
+    "institutions": 18,
+    "resourceRecords": 48
+  }
 }
