@@ -1,0 +1,723 @@
+{
+  "checkedDate": "2026-11-10",
+  "sourceReferenceConvention": "sourceIds当前值为local_source_key，合并前由主代理统一映射正式来源编号；existingSourceId已按当前数据校验。",
+  "newFirmCount": 6,
+  "newExpansionCount": 1,
+  "sources": {
+    "daxin-campus": {
+      "title": "大信官方校园招聘及问答",
+      "url": "https://daxincpa.zhiye.com/campus",
+      "date": null,
+      "readScope": "官方域搜索索引问答可读；页面正文抽取为JS壳，未核具体城市岗位",
+      "new": true
+    },
+    "zhonghui-campus": {
+      "title": "中汇官方校园招聘介绍",
+      "url": "https://www.zhcpa.cn/join/campus.html",
+      "date": null,
+      "readScope": "官网全文，明确区分应届生/实习生入口",
+      "new": true
+    },
+    "zhonghui-intern": {
+      "title": "中汇官方实习生列表",
+      "url": "https://zhcpa.zhiye.com/intern/jobs",
+      "date": null,
+      "readScope": "由官网直接链接核对，列表为JS壳；没有据此宣称当前有岗",
+      "new": true
+    },
+    "nau-fair-preview": {
+      "title": "10.14事务所招聘会预告",
+      "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+      "date": "2026-10-13",
+      "readScope": "全文；正文发布日期与URL路径日期不一致，以正文为准",
+      "new": false,
+      "existingSourceId": "I861"
+    },
+    "nau-fair-review": {
+      "title": "南审2027届毕业生事务所招聘会回顾",
+      "url": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm",
+      "date": "2026-10-18",
+      "readScope": "全文；10-14已举办，会计学院联合主办；含中名国成现场实习选拔",
+      "new": false,
+      "existingSourceId": "I860"
+    },
+    "tianheng-jobs": {
+      "title": "天衡官方诚聘英才",
+      "url": "https://www.jscpa.com.cn/join-us/",
+      "date": null,
+      "readScope": "全文可读内容仍为2025应届岗位；不当2026在招",
+      "new": false,
+      "existingSourceId": "I865"
+    },
+    "tianheng-official": {
+      "title": "天衡官网",
+      "url": "https://www.jscpa.com.cn/",
+      "date": null,
+      "readScope": "官方机构与联系地址",
+      "new": false,
+      "existingSourceId": "I864"
+    },
+    "nau-base-list": {
+      "title": "会计学院实习基地表",
+      "url": "https://account.nau.edu.cn/sxjd/list.htm",
+      "date": "2022-06-27",
+      "readScope": "历史基地名单；既有I859采用mpacc旧入口指向相同名单，不再新增来源计数",
+      "new": false,
+      "existingSourceId": "I859"
+    },
+    "zmgc-nankai-intern": {
+      "title": "中名国成审计实习生（南开就业网雇主公告）",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/115310.html",
+      "date": "2026-11-03",
+      "readScope": "全文与TinyFish正文一致；近期实习公告，未公布截止/周出勤/最低周期；薪资数字未说明结算周期",
+      "new": true
+    },
+    "getein-official": {
+      "title": "基蛋生物官网",
+      "url": "https://www.getein.com.cn/",
+      "date": null,
+      "readScope": "官网全文，机构与南京地址；无可核财务实习职位",
+      "new": true
+    },
+    "tbea-talent": {
+      "title": "特变电工官方人才发展",
+      "url": "https://www.tbea.com/join.html",
+      "date": null,
+      "readScope": "全文及点击官方校园招聘链接；不把正式校招当实习",
+      "new": true
+    },
+    "tbea-campus": {
+      "title": "特变电工官方校园招聘入口",
+      "url": "https://wecruit.hotjob.cn/SU612f55eebef57c0616450aa2/pb/school.html",
+      "date": null,
+      "readScope": "从企业官网跳转验证，职位正文为JS壳；仅长期入口",
+      "new": true
+    },
+    "nau-railway-base": {
+      "title": "三方共建省铁路集团产教融合型实习实践基地",
+      "url": "https://news.nau.edu.cn/2026/1023/c5796a163076/page.htm",
+      "date": "2026-10-23",
+      "eventDate": "2026-10-21",
+      "readScope": "全文；报道未公布MPAcc资格、申请入口或名额。学校主站同编号163076是同篇转载，不计独立来源",
+      "new": true
+    }
+  },
+  "firms": [
+    {
+      "id": "daxin",
+      "name": "大信",
+      "officialName": "大信会计师事务所",
+      "group": "domestic",
+      "summary": "校内事务所招聘会曾列审计与咨询方向；普通在校生先按实习类别核对实际城市。",
+      "officeRecords": [],
+      "entryLinks": [
+        {
+          "label": "官方校园招聘与问答",
+          "url": "https://daxincpa.zhiye.com/campus",
+          "kind": "campus",
+          "sourceIds": [
+            "daxin-campus"
+          ],
+          "note": null
+        }
+      ],
+      "resources": [
+        {
+          "id": "db-daxin-entry",
+          "title": "大信官方校园招聘入口",
+          "kind": "channel",
+          "status": "entry_only",
+          "statusLabel": "官方长期入口",
+          "statusDetail": null,
+          "cityTags": [],
+          "searchCities": [
+            "南京",
+            "苏州",
+            "上海"
+          ],
+          "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+          "eligibility": "官方校园问答接受非应届在校生；已毕业往届不适用实习。",
+          "attendance": null,
+          "duration": null,
+          "applicationWindow": null,
+          "period": null,
+          "deadline": null,
+          "postedDate": null,
+          "url": "https://daxincpa.zhiye.com/campus",
+          "summary": "从官方入口区分实习与毕业生校招，核对具体业务线和项目驻地。",
+          "requirements": [],
+          "steps": [],
+          "roleDirections": [],
+          "limits": [
+            "官方入口不证明南京或上海持续有在招实习岗位。"
+          ],
+          "sourceIds": [
+            "daxin-campus"
+          ]
+        },
+        {
+          "id": "db-daxin-nau-fair",
+          "title": "2026年10月南审招聘会：审计与咨询方向",
+          "kind": "historical",
+          "status": "historical",
+          "statusLabel": "已举办校内活动",
+          "statusDetail": null,
+          "cityTags": [
+            "南京"
+          ],
+          "searchCities": [],
+          "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+          "eligibility": null,
+          "attendance": null,
+          "duration": null,
+          "applicationWindow": null,
+          "period": "2026年10月14日招聘会（已举行）",
+          "deadline": null,
+          "postedDate": "2026-10-13",
+          "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+          "summary": "校内公告列审计、管理咨询、金融审计与IT审计助理方向。",
+          "requirements": [],
+          "steps": [],
+          "roleDirections": [
+            "审计助理",
+            "管理咨询助理",
+            "金融审计助理",
+            "IT审计助理"
+          ],
+          "limits": [
+            "参会不代表当前余量或MPAcc专属岗位。"
+          ],
+          "sourceIds": [
+            "nau-fair-preview",
+            "nau-fair-review"
+          ]
+        }
+      ],
+      "questions": [
+        "是否接受本学期年级的在校生，实习与毕业生岗位如何区分？",
+        "具体业务线、实际驻地和出差如何安排？"
+      ],
+      "prep": []
+    },
+    {
+      "id": "zhonghui",
+      "name": "中汇",
+      "officialName": "中汇会计师事务所（特殊普通合伙）",
+      "group": "domestic",
+      "summary": "官网有独立实习入口；与毕业生全职岗位分开查看。",
+      "officeRecords": [],
+      "entryLinks": [
+        {
+          "label": "官方校园项目说明",
+          "url": "https://www.zhcpa.cn/join/campus.html",
+          "kind": "campus",
+          "sourceIds": [
+            "zhonghui-campus"
+          ],
+          "note": null
+        },
+        {
+          "label": "官方实习生招聘列表",
+          "url": "https://zhcpa.zhiye.com/intern/jobs",
+          "kind": "internship",
+          "sourceIds": [
+            "zhonghui-intern"
+          ],
+          "note": null
+        }
+      ],
+      "resources": [
+        {
+          "id": "db-zhonghui-entry",
+          "title": "中汇官方实习生入口",
+          "kind": "channel",
+          "status": "entry_only",
+          "statusLabel": "官方长期入口",
+          "statusDetail": null,
+          "cityTags": [],
+          "searchCities": [
+            "南京",
+            "苏州",
+            "上海"
+          ],
+          "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+          "eligibility": null,
+          "attendance": null,
+          "duration": null,
+          "applicationWindow": null,
+          "period": null,
+          "deadline": null,
+          "postedDate": null,
+          "url": "https://zhcpa.zhiye.com/intern/jobs",
+          "summary": "在官网独立实习列表筛选城市、岗位及在校生要求；全职秋招岗位不适用普通实习。",
+          "requirements": [],
+          "steps": [],
+          "roleDirections": [],
+          "limits": [
+            "官网主页面可确认入口；未核实各城市实时名额与出勤。"
+          ],
+          "sourceIds": [
+            "zhonghui-campus",
+            "zhonghui-intern"
+          ]
+        },
+        {
+          "id": "db-zhonghui-nau-fair",
+          "title": "2026年10月南审招聘会：中汇江苏审计方向",
+          "kind": "historical",
+          "status": "historical",
+          "statusLabel": "已举办校内活动",
+          "statusDetail": null,
+          "cityTags": [
+            "南京"
+          ],
+          "searchCities": [],
+          "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+          "eligibility": null,
+          "attendance": null,
+          "duration": null,
+          "applicationWindow": null,
+          "period": "2026年10月14日招聘会（已举行）",
+          "deadline": null,
+          "postedDate": "2026-10-13",
+          "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+          "summary": "南审活动名单列江苏分所审计相关岗位。",
+          "requirements": [],
+          "steps": [],
+          "roleDirections": [
+            "审计相关"
+          ],
+          "limits": [
+            "不能把活动名单或2027全职岗位改成当前实习开放。"
+          ],
+          "sourceIds": [
+            "nau-fair-preview"
+          ]
+        }
+      ],
+      "questions": [
+        "应进入实习生招聘还是应届生招聘？",
+        "江苏分所岗位实际驻地在南京、苏州还是客户现场？"
+      ],
+      "prep": []
+    },
+    {
+      "id": "tianheng",
+      "name": "天衡",
+      "officialName": "天衡会计师事务所（特殊普通合伙）",
+      "group": "domestic",
+      "summary": "南京本地事务所；有会计学院研究生工作站历史记录，当前实习需另核。",
+      "officeRecords": [
+        {
+          "city": "南京",
+          "district": "建邺区",
+          "branch": null,
+          "address": "南京市建邺区江东中路106号万达广场商务楼B座19—20楼",
+          "sourceIds": [
+            "tianheng-official",
+            "tianheng-jobs"
+          ],
+          "limits": [
+            "机构地址不等于客户项目驻地或每日到岗地址。"
+          ],
+          "exactMinutes": null
+        }
+      ],
+      "entryLinks": [
+        {
+          "label": "官方诚聘英才",
+          "url": "https://www.jscpa.com.cn/join-us/",
+          "kind": "campus",
+          "sourceIds": [
+            "tianheng-jobs"
+          ],
+          "note": null
+        }
+      ],
+      "resources": [
+        {
+          "id": "db-tianheng-entry",
+          "title": "天衡官方招聘入口",
+          "kind": "channel",
+          "status": "entry_only",
+          "statusLabel": "官方长期入口",
+          "statusDetail": null,
+          "cityTags": [],
+          "searchCities": [
+            "南京"
+          ],
+          "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+          "eligibility": null,
+          "attendance": null,
+          "duration": null,
+          "applicationWindow": null,
+          "period": null,
+          "deadline": null,
+          "postedDate": null,
+          "url": "https://www.jscpa.com.cn/join-us/",
+          "summary": "官方招聘和联系入口可保留；页面目前读到的2025应届内容只作历史参考。",
+          "requirements": [],
+          "steps": [],
+          "roleDirections": [],
+          "limits": [
+            "未确认2026当前在校生实习名额；不沿用2025岗位人数或要求。"
+          ],
+          "sourceIds": [
+            "tianheng-jobs"
+          ]
+        },
+        {
+          "id": "db-tianheng-nau-fair",
+          "title": "2026年10月南审招聘会：天衡审计方向",
+          "kind": "historical",
+          "status": "historical",
+          "statusLabel": "已举办校内活动",
+          "statusDetail": null,
+          "cityTags": [
+            "南京"
+          ],
+          "searchCities": [],
+          "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+          "eligibility": null,
+          "attendance": null,
+          "duration": null,
+          "applicationWindow": null,
+          "period": "2026年10月14日招聘会（已举行）",
+          "deadline": null,
+          "postedDate": "2026-10-13",
+          "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+          "summary": "活动列年报审计、专项审计、财务核查方向。",
+          "requirements": [],
+          "steps": [],
+          "roleDirections": [
+            "年报审计",
+            "专项审计",
+            "财务核查"
+          ],
+          "limits": [
+            "招聘会已举行；当前名额、到岗期和资格须另核。"
+          ],
+          "sourceIds": [
+            "nau-fair-preview"
+          ]
+        }
+      ],
+      "questions": [
+        "学院本级是否有选派或个人投递通道？",
+        "年审项目的出差、最低周期与课程安排如何协调？"
+      ],
+      "prep": []
+    },
+    {
+      "id": "zhongming-guocheng",
+      "name": "中名国成",
+      "officialName": "北京中名国成会计师事务所（特殊普通合伙）",
+      "group": "domestic",
+      "summary": "11月高校雇主公告有审计实习；南审10月也有现场实习选拔记录。",
+      "officeRecords": [],
+      "entryLinks": [
+        {
+          "label": "近期审计实习雇主公告",
+          "url": "https://career.nankai.edu.cn/correcruit/content/id/115310.html",
+          "kind": "internship",
+          "sourceIds": [
+            "zmgc-nankai-intern"
+          ],
+          "note": null
+        }
+      ],
+      "resources": [
+        {
+          "id": "db-zmgc-audit-20261103",
+          "title": "审计实习生：上海等地近期公告",
+          "kind": "job_listing",
+          "status": "listing_seen",
+          "statusLabel": "近期实习公告",
+          "statusDetail": "2026-11-03高校雇主公告；当前剩余名额及申请截止未公布。",
+          "cityTags": [
+            "上海",
+            "北京",
+            "天津",
+            "重庆",
+            "河北"
+          ],
+          "searchCities": [],
+          "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+          "eligibility": "公告学历栏列本科；未单列硕士资格，请向招聘方确认。",
+          "attendance": null,
+          "duration": null,
+          "applicationWindow": null,
+          "period": null,
+          "deadline": null,
+          "postedDate": "2026-11-03",
+          "url": "https://career.nankai.edu.cn/correcruit/content/id/115310.html",
+          "summary": "高校就业网发布审计实习岗位，工作地域含上海；人数栏为10人。",
+          "requirements": [],
+          "steps": [],
+          "roleDirections": [],
+          "limits": [
+            "工资区间3000—4500元未说明结算周期，不写成月薪或日薪。",
+            "未公布周出勤、最低时长或到岗日，不能套用其他岗位条件。",
+            "实际驻地、出差、当前名额及硕士是否可报需确认。"
+          ],
+          "sourceIds": [
+            "zmgc-nankai-intern"
+          ]
+        },
+        {
+          "id": "db-zmgc-nau-selection",
+          "title": "南审2026年10月现场实习项目选拔",
+          "kind": "historical",
+          "status": "historical",
+          "statusLabel": "已举办校内活动",
+          "statusDetail": null,
+          "cityTags": [
+            "南京"
+          ],
+          "searchCities": [],
+          "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+          "eligibility": null,
+          "attendance": null,
+          "duration": null,
+          "applicationWindow": null,
+          "period": "2026年10月14日招聘会（已举行）",
+          "deadline": null,
+          "postedDate": "2026-10-18",
+          "url": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm",
+          "summary": "学校回顾记载中名国成在学院A203安排笔试、面试并选拔实习项目。",
+          "requirements": [],
+          "steps": [],
+          "roleDirections": [],
+          "limits": [
+            "现场选拔记录不是目前报名入口，也不代表MPAcc专属名额。"
+          ],
+          "sourceIds": [
+            "nau-fair-review"
+          ]
+        }
+      ],
+      "questions": [
+        "公告的本科栏是否也接受MPAcc研究生？",
+        "上海实习的具体项目、起止日期和薪资结算周期是什么？"
+      ],
+      "prep": []
+    },
+    {
+      "id": "getein",
+      "name": "基蛋生物",
+      "officialName": "基蛋生物科技股份有限公司",
+      "group": "enterprise",
+      "summary": "南京企业财务核算与内部审计的关注对象；当前学生岗位尚未确认。",
+      "officeRecords": [],
+      "entryLinks": [
+        {
+          "label": "企业官网",
+          "url": "https://www.getein.com.cn/",
+          "kind": "official",
+          "sourceIds": [
+            "getein-official"
+          ],
+          "note": "用于查找企业公开招聘渠道；不是已核实的实习申请页。"
+        }
+      ],
+      "resources": [
+        {
+          "id": "db-getein-official",
+          "title": "基蛋生物官方信息入口",
+          "kind": "channel",
+          "status": "entry_only",
+          "statusLabel": "企业官方入口",
+          "statusDetail": null,
+          "cityTags": [],
+          "searchCities": [
+            "南京"
+          ],
+          "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+          "eligibility": null,
+          "attendance": null,
+          "duration": null,
+          "applicationWindow": null,
+          "period": null,
+          "deadline": null,
+          "postedDate": null,
+          "url": "https://www.getein.com.cn/",
+          "summary": "从企业公开渠道核对财务、内部审计及在校生实习公告。",
+          "requirements": [],
+          "steps": [],
+          "roleDirections": [],
+          "limits": [
+            "未核实到可投的官方财务实习职位、出勤或名额。"
+          ],
+          "sourceIds": [
+            "getein-official"
+          ]
+        },
+        {
+          "id": "db-getein-nau-fair",
+          "title": "南审2026年10月招聘会：财务核算与内审方向",
+          "kind": "historical",
+          "status": "historical",
+          "statusLabel": "已举办校内活动",
+          "statusDetail": null,
+          "cityTags": [
+            "南京"
+          ],
+          "searchCities": [],
+          "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+          "eligibility": null,
+          "attendance": null,
+          "duration": null,
+          "applicationWindow": null,
+          "period": "2026年10月14日招聘会（已举行）",
+          "deadline": null,
+          "postedDate": "2026-10-13",
+          "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+          "summary": "南审活动预告列财务核算、内部审计方向，可用于事务所以外的职业比较。",
+          "requirements": [],
+          "steps": [],
+          "roleDirections": [
+            "财务核算",
+            "内部审计"
+          ],
+          "limits": [
+            "未说明上述岗位是否实习；不能推定当前开放或MPAcc录用。"
+          ],
+          "sourceIds": [
+            "nau-fair-preview"
+          ]
+        }
+      ],
+      "questions": [
+        "是否招普通在校生实习，财务核算与内部审计分别做什么？",
+        "工位、出勤、最低周期及证明流程如何安排？"
+      ],
+      "prep": []
+    },
+    {
+      "id": "tbea",
+      "name": "特变电工",
+      "officialName": "特变电工股份有限公司",
+      "group": "enterprise",
+      "summary": "可了解企业财务、内控和资金管理，先确认岗位类别与实际驻地。",
+      "officeRecords": [],
+      "entryLinks": [
+        {
+          "label": "官方人才发展",
+          "url": "https://www.tbea.com/join.html",
+          "kind": "official",
+          "sourceIds": [
+            "tbea-talent"
+          ],
+          "note": null
+        },
+        {
+          "label": "官方校园招聘通道",
+          "url": "https://wecruit.hotjob.cn/SU612f55eebef57c0616450aa2/pb/school.html",
+          "kind": "campus",
+          "sourceIds": [
+            "tbea-campus"
+          ],
+          "note": "正式校招与普通在校生实习分开。"
+        }
+      ],
+      "resources": [
+        {
+          "id": "db-tbea-entry",
+          "title": "特变电工官方招聘入口",
+          "kind": "channel",
+          "status": "entry_only",
+          "statusLabel": "官方长期入口",
+          "statusDetail": null,
+          "cityTags": [],
+          "searchCities": [
+            "江苏",
+            "上海"
+          ],
+          "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+          "eligibility": null,
+          "attendance": null,
+          "duration": null,
+          "applicationWindow": null,
+          "period": null,
+          "deadline": null,
+          "postedDate": null,
+          "url": "https://www.tbea.com/join.html",
+          "summary": "从官网跳转校园招聘系统查找实际岗位，区分毕业生与实习类别。",
+          "requirements": [],
+          "steps": [],
+          "roleDirections": [],
+          "limits": [
+            "未核实普通在校生财务实习职位；全国招聘不等于南京近校岗位。"
+          ],
+          "sourceIds": [
+            "tbea-talent",
+            "tbea-campus"
+          ]
+        },
+        {
+          "id": "db-tbea-nau-fair",
+          "title": "南审2026年10月招聘会：财务、内控与资金方向",
+          "kind": "historical",
+          "status": "historical",
+          "statusLabel": "已举办校内活动",
+          "statusDetail": null,
+          "cityTags": [],
+          "searchCities": [],
+          "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+          "eligibility": null,
+          "attendance": null,
+          "duration": null,
+          "applicationWindow": null,
+          "period": "2026年10月14日招聘会（已举行）",
+          "deadline": null,
+          "postedDate": "2026-10-13",
+          "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+          "summary": "校内预告列财务、内控和资金管理方向；具体单位、驻地与实习性质需另核。",
+          "requirements": [],
+          "steps": [],
+          "roleDirections": [
+            "财务",
+            "内控",
+            "资金管理"
+          ],
+          "limits": [
+            "未公开证明上述是学生实习岗位，不套用正式校招待遇和要求。"
+          ],
+          "sourceIds": [
+            "nau-fair-preview"
+          ]
+        }
+      ],
+      "questions": [
+        "这是普通在校生实习还是毕业生全职岗位？",
+        "具体法人、工作城市和出差区域是什么？"
+      ],
+      "prep": []
+    }
+  ],
+  "expansionInstitutions": [
+    {
+      "id": "local-jiangsu-railway",
+      "name": "江苏省铁路集团",
+      "summary": "三方审计人才实践基地已揭牌，可通过学院核对企业内审实践安排。",
+      "url": "https://news.nau.edu.cn/2026/1023/c5796a163076/page.htm",
+      "officeAddress": null,
+      "status": "practice_base",
+      "statusDetail": "2026年10月三方共建基地；未公布学生申请批次与名额",
+      "sourceIds": [
+        "nau-railway-base"
+      ],
+      "limits": [
+        "省审计厅、南审、省铁路集团合作；未明确限定MPAcc资格。",
+        "揭牌报道没有公开学生报名入口、实习周期或当前名额，不能标为在招。",
+        "主站与新闻网同编号文章属同一来源，不重复计数。"
+      ]
+    }
+  ],
+  "integrationNotes": [
+    "天衡从expansionInstitutions移至firms以免重复；原I859/I864/I865关系应保留。",
+    "enterprise是新增公司分组，主代理需同步筛选标签，不能仍以国内所显示企业。",
+    "listing_seen只说明近期公告已见，不保证当前名额。",
+    "这些草稿仅修改独立JSON，不改主数据、README、样式或脚本。"
+  ]
+}

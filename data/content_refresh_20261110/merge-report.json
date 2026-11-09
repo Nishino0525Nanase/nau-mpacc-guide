@@ -1,0 +1,51 @@
+{
+  "baseline": {
+    "socialPosts": 120,
+    "officialEvidence": 186,
+    "sourceRegistry": 399,
+    "firms": 12,
+    "resources": 36
+  },
+  "after": {
+    "socialPosts": 130,
+    "officialEvidence": 201,
+    "sourceRegistry": 414
+  },
+  "newPostIds": [
+    "nau-social-audit-enterprise-156017",
+    "nau-engineering-audit-practice-156266",
+    "nau-internal-audit-midterm-148519",
+    "nau-sohu-audit-internship-769692085",
+    "nau-sga-2026-student-practice-directory",
+    "nau-practice-seminar-163066",
+    "nau-practice-seminar-158780",
+    "zmgc-audit-internship-20261103",
+    "nau-jiangsu-railway-base-163076",
+    "nau-accounting-employer-fair-162709"
+  ],
+  "sourceMap": {
+    "nau-social-audit-enterprise-156017": "U901",
+    "nau-engineering-audit-practice-156266": "U902",
+    "nau-internal-audit-midterm-148519": "U903",
+    "nau-sohu-audit-internship-769692085": "U904",
+    "directory": "U905",
+    "daxin-campus": "U908",
+    "zhonghui-campus": "U909",
+    "zhonghui-intern": "U910",
+    "nau-fair-preview": "I861",
+    "nau-fair-review": "I860",
+    "tianheng-jobs": "I865",
+    "tianheng-official": "I864",
+    "nau-base-list": "I859",
+    "zmgc-nankai-intern": "U911",
+    "getein-official": "U912",
+    "tbea-talent": "U913",
+    "tbea-campus": "U914",
+    "nau-railway-base": "U915"
+  },
+  "firms": 18,
+  "resources": 48,
+  "newScreenshots": 5,
+  "visibleSources": 108,
+  "protectedSectionsUnchanged": true
+}

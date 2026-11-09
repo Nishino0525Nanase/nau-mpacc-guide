@@ -1,0 +1,120 @@
+{
+  "checked_date": "2026-11-10",
+  "scope": "公开可读的南审学习、实习经历与官方经验目录；不登录、不跨越验证墙",
+  "deduplication": "按当前dist/data/site-data.json全文检索文章编号和原始URL；以下adopted四条未命中。镜像不算新源。",
+  "adopted": [
+    {
+      "id": "nau-social-audit-enterprise-156017",
+      "title": "社会审计学院2024级审计专硕实习实践专访：企业篇",
+      "url": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm",
+      "published_date": "2026-04-11",
+      "date_evidence": "正文明确发布时间2026-04-11，不按URL中0412推定",
+      "source": "南京审计大学社会审计学院",
+      "source_type": "官方发布的具名学生实习专访",
+      "theme": "企业财务共享、报销审核、审计整改与Excel",
+      "summary": "两位2024级社会审计专硕学生分享在南钢与浦口城乡建设集团的实习：财务共享、报销审核、整改跟踪及项目账务分类，便于了解企业岗位的具体任务。",
+      "identities": ["陈彦冰，2024级社会审计专硕班", "陈紫蘅，2024级社会审计专硕班"],
+      "evidence": [
+        "陈彦冰在南京钢铁股份有限公司财务部实习，先后在财务共享中心和审计部轮岗；审核报销附件与费用标准、整理差旅对比并跟进整改。",
+        "陈紫蘅在南京浦口城乡建设集团有限公司实习，按市政工程项目整理2024—2025年度序时账并编制项目收支表，提到Excel实操收获。"
+      ],
+      "reader_use": ["准备Excel分类汇总和差异比对", "练习凭证附件与费用制度核对", "面试时用真实任务说明岗位理解"],
+      "limits": "MAud学生个案，非MPAcc统一实习安排；不是当前招聘、待遇或名额承诺。单位名称仅为历史经历，不自动增加当前在招岗位。",
+      "reading_scope": "全文实际读取，含两位学生姓名、年级、单位、实习内容与心得",
+      "screenshot_available": true,
+      "web_ref": "turn65view0"
+    },
+    {
+      "id": "nau-engineering-audit-practice-156266",
+      "title": "在国家工程一线“最先一公里”与“最后一公里”之间——工程审计学院研究生实习成长记",
+      "original_title": "在国家工程一线“最先一公里”与“最后一公里”之间——工程审计学院研究生服务“两重””两新”重大部署实习成长记",
+      "url": "https://news.nau.edu.cn/2026/0420/c5799a156266/page.htm",
+      "published_date": "2026-04-20",
+      "date_evidence": "正文日期2026.04.20",
+      "source": "南京审计大学新闻网；素材来源工程审计学院",
+      "source_type": "官方发布的具名学生自述合集",
+      "theme": "数智审计、合同审查、工程现场取证",
+      "summary": "工程审计专硕学生记录在南水北调、科研平台与审计机关的实践，涉及数据标准化、模型筛查、合同审查和现场核验，可补充对数智及工程审计工作的认识。",
+      "identities": ["刘延赫，2024级工程审计专硕班", "陈思润、薛思源，2024级工程审计专硕班", "陶柯燊，2024级工程审计专硕班", "陈钰婕，2024级工程审计专硕班"],
+      "evidence": [
+        "刘延赫在中国南水北调集团水网智慧科技公司开展6个月实习，协助数据治理与模型建设，并参与凭证、图纸、工程量核验。",
+        "陶柯燊自述2025年10月进入苏州国家实验室重大科技基础设施平台，学习方案编制、合同审查和内控制度梳理。",
+        "陈钰婕自述2025年7—12月在宜春市审计局实习，参与工程、财务收支和专项资金项目，结合纸面数据与实地查证。"
+      ],
+      "reader_use": ["区分数据分析与人工证据核查", "了解工程审计需要的跨学科知识", "将实习任务、方法与问题整理为案例"],
+      "limits": "工程MAud历史实践个案，不是MPAcc课程或实习分配方案；未公开的单位不补全。不能据此推断当前岗位、名额与统一实习时长。",
+      "reading_scope": "全文实际读取，保留专业及学生身份",
+      "screenshot_available": true,
+      "web_ref": "turn65view1"
+    },
+    {
+      "id": "nau-internal-audit-midterm-148519",
+      "title": "内部审计学院召开2024级内部审计专硕班实习中期汇报会",
+      "url": "https://news.nau.edu.cn/_t231/2025/1017/c5799a148519/page.psp",
+      "published_date": "2025-10-17",
+      "event_date": "2025-10-11",
+      "source": "南京审计大学新闻网；内部审计学院报道",
+      "source_type": "官方小组汇报纪要，不是个人评价",
+      "theme": "内审、风险管理与审计信息系统",
+      "summary": "内部审计专硕的小组汇报涵盖机关审计与企业内审，企业端任务包括合同风险识别、制度流程梳理和审计系统建设，提示实习不只有凭证整理一种工作。",
+      "identities": ["2024级内部审计专硕实习小组；未逐人具名"],
+      "evidence": ["报道明确区分审计机关与能源、制造、交通等企业实践。", "企业任务涉及数据分析协助合同审查、内控优化、流程再造和审计系统建设。", "指导提醒包括经验总结、案例提炼，以及人身、心理、信息和职业安全。"],
+      "limits": "2025年历史小组汇报，不是具体招聘公告；不把未具名的企业或学生补为实名，不将小组工作分配给任何MPAcc导师。",
+      "reading_scope": "全文实际读取",
+      "screenshot_available": true,
+      "web_ref": "turn64view0"
+    },
+    {
+      "id": "nau-sohu-audit-internship-769692085",
+      "title": "走，去审计局实习！",
+      "url": "https://www.sohu.com/a/769692085_769713",
+      "published_date": "2024-04-07",
+      "source": "南京审计大学搜狐官方账号",
+      "source_type": "官方账号发布的具名学生实习经历合集",
+      "theme": "政府审计任务与技能准备",
+      "summary": "2022级审计专硕学生记录在多地审计机关的具体任务，涉及底稿、资源环境项目、数据核对与整改。可用于理解政府审计实践，需保留2024年的历史背景。",
+      "identities": ["纪昊师、靖萱、张潇月、孙荣荣、王媛、邢星怡、包辰、胡欣怡、邱一翔等；均为2022级审计专硕"],
+      "evidence": ["孙荣荣讲到使用学校学习的ArcMap筛选整理地块图斑。", "邱一翔讲到分析市民热线数据以确定审计关注内容。", "胡欣怡讲到参与整改统计与到被审计单位沟通的实践。"],
+      "limits": "历史MAud个案，不是MPAcc统一实习去向、现行制度或当前岗位；多位学生同一合集只计一篇来源。",
+      "reading_scope": "正文实际读取到具名学生各段，不扩写没有读取的折叠或评论",
+      "screenshot_available": true,
+      "web_ref": "turn52view0"
+    }
+  ],
+  "directory": {
+    "id": "nau-sga-2026-student-practice-directory",
+    "title": "国家审计学院2026年学生实习经验目录",
+    "url": "https://sga.nau.edu.cn/2044/list.htm",
+    "secondary_url": "https://sga.nau.edu.cn/2044/list2.htm",
+    "published_date": null,
+    "source": "南京审计大学国家审计学院",
+    "source_type": "官方目录",
+    "summary": "目录列有2026年安徽、无锡、云南、扬州、衢州等地的审计专硕实践文章，可按地区选择原文。目录日期和标题可核对，未将未读正文归纳为学生心得。",
+    "reading_scope": "两页官方目录全文与外链列表实际读取；文章正文尚未核准",
+    "limits": "审计专硕MAud背景；目录收录不等于当前岗位或MPAcc可申请机会。各原文不另计已读独立来源。",
+    "screenshot_available": true,
+    "entries": [
+      {"title": "深耕审计，笃行砺能—安徽地市审计实习心得", "directory_date": "2026-04-02", "directory_url": "https://sga.nau.edu.cn/2044/list.htm", "original_url_candidate": "https://mp.weixin.qq.com/s/fdZTSSftVntMREUmCsXbqQ", "anchor_mapping_status": "需浏览器核对标题和href；抽取返回两组顺序列表", "body_status": "实际返回环境异常验证页，未读正文"},
+      {"title": "锡城铸审心，实践绽芳华 ——2024级审计专硕无锡市审计局实习心得", "directory_date": "2026-03-11", "directory_url": "https://sga.nau.edu.cn/2044/list.htm", "original_url_candidate": "https://mp.weixin.qq.com/s/J4oRWGyxFUcMNbSbGTlDPA", "anchor_mapping_status": "需浏览器核对标题和href；抽取返回两组顺序列表", "body_status": "实际返回环境异常验证页，未读正文"},
+      {"title": "践审计之行，悟治理之道——云南省审计厅实习纪实", "directory_date": "2026-02-06", "directory_url": "https://sga.nau.edu.cn/2044/list2.htm", "original_url_candidate": "https://mp.weixin.qq.com/s/FNXoL7qp-eW0PeNJC638sA", "anchor_mapping_status": "需浏览器核对标题和href；抽取返回两组顺序列表", "body_status": "未访问正文"},
+      {"title": "青春赴审 实践砺能——扬州市审计局实习生实习纪实", "directory_date": "2026-02-02", "directory_url": "https://sga.nau.edu.cn/2044/list2.htm", "original_url_candidate": "https://mp.weixin.qq.com/s/N0ks1P_tEpQsMe3dwP1Qsw", "anchor_mapping_status": "需浏览器核对标题和href；抽取返回两组顺序列表", "body_status": "未访问正文"},
+      {"title": "青春实践路，审计伴成长 ——衢州市审计局举办实习学生座谈会", "directory_date": "2026-02-02", "directory_url": "https://sga.nau.edu.cn/2044/list2.htm", "original_url_candidate": "https://mp.weixin.qq.com/s/dl5rXU_BJ4NJknHWPcrOCA", "anchor_mapping_status": "需浏览器核对标题和href；抽取返回两组顺序列表", "body_status": "未访问正文"},
+      {"title": "审计实践砺初心，实干笃行悟担当 ——2024级审计专硕南京市审计局实习心得", "directory_date": "2026-02-02", "directory_url": "https://sga.nau.edu.cn/2044/list2.htm", "original_url_candidate": "https://mp.weixin.qq.com/s/wsHebcWzBCf-EqW8Bd2zug", "anchor_mapping_status": "需浏览器核对标题和href；抽取返回两组顺序列表", "body_status": "未访问正文"},
+      {"title": "审计一线淬锋芒 浦东实践砺初心 ——上海市浦东新区审计局实习生实习纪实", "directory_date": "2026-01-22", "directory_url": "https://sga.nau.edu.cn/2044/list2.htm", "original_url_candidate": "https://mp.weixin.qq.com/s/vQcsW0Tdi99zeQ_Z4-hbLw", "anchor_mapping_status": "需浏览器核对标题和href；抽取返回两组顺序列表", "body_status": "未访问正文"},
+      {"title": "双向赋能促成长 审计实践育新人 ——苏州市审计局实习小组参与实习生工作实践座谈会", "directory_date": "2026-01-22", "directory_url": "https://sga.nau.edu.cn/2044/list2.htm", "original_url_candidate": "https://mp.weixin.qq.com/s/_G0OklIMGUUYsLV35n2NvQ", "anchor_mapping_status": "需浏览器核对标题和href；抽取返回两组顺序列表", "body_status": "未访问正文"}
+    ]
+  },
+  "secondary_optional": [
+    {"title": "从审计到私募股权投资，叩开头部国资PE大门", "url": "https://www.sohu.com/a/1024368351_121124787", "published_date": "2026-05-18", "source": "搜狐账号大珠小珠落玉盘，转载Go Fly生涯访谈", "identity": "赵芮弘，南审财务管理专业；未确认MPAcc", "summary": "转载访谈强调用早期实习验证岗位适配，按岗位要求整理经历，并理解任务在业务链中的作用。", "reading_scope": "正文实际读到", "limits": "非原发布者，未取得Go Fly原文和本人确认，建议暂不当学生原帖计数；不把孚腾等历史经历自动列为现招岗位", "screenshot_available": true}
+  ],
+  "excluded_or_duplicate": [
+    {"url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm", "reason": "已收录的毕业生经验分享，不重复计来源；仍可补真实截图"},
+    {"url": "https://account.nau.edu.cn/2026/1030/c9520a163355/page.htm", "reason": "研究生期中座谈已收录"},
+    {"url": "https://news.nau.edu.cn/2025/0820/c5799a146844/page.htm", "reason": "孙昊晨访谈已通过另一官方镜像收录，同文不新增"},
+    {"url": "https://b.460.net.cn/a/582270.html", "reason": "转载录取分析同文出现235与232复试线冲突，未采纳"},
+    {"url": "https://www.bilibili.com/video/BV1CvmMB7EH3/", "reason": "培训账号复试解析，未观看视频；不当个人就读体验或新政策"},
+    {"url": "https://sxy.nau.edu.cn/_t827/2026/0622/c2671a159582/page.htm", "reason": "工商管理本科分享，虽可读但与MPAcc日常关系弱，未为充数采用"},
+    {"url": "https://www.naujsc.edu.cn/2026/0518/c90a23630/page.htm", "reason": "金审学院本科经验，非南审MPAcc在读，不采用"}
+  ],
+  "search_notes": "先核当前114条socialPosts及全部sourceRegistry/生活正文，不把既有经验重复计数。以南审MPAcc、研究生实习、会计专硕日常、B站、小红书、知乎等多组公开查询交叉检索；本轮没有获得可新增的公开可读小红书原帖。微信实际遇验证后停止，不绕过。维护说明只入README/研究记录，不放网站工作进度。"
+}

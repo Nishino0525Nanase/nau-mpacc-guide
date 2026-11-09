@@ -71,10 +71,10 @@ const reviewFixture=()=>{
 
 test('missing personal evidence cannot create praise, concerns or named abbreviation allegations',async()=>{
  const a=await app({data:reviewFixture()});
- assert.match(a.get('#app').innerHTML,/34 位导师逐人核对/);
+ assert.match(a.get('#app').innerHTML,/先看谁说了什么，再看推荐与提醒/);
  assert.match(a.get('#app').innerHTML,/LH、WY/);
  assert.doesNotMatch(a.get('#app').innerHTML,/UNRESOLVED_GLOBAL_ALLEGATION|DO_NOT_ASSIGN/);
- const aliases=a.get('#app').innerHTML.match(/已核对的缩写与归属线索：([^<]+?)。/)?.[1];
+ const aliases=a.get('#app').innerHTML.match(/缩写线索：([^<]+?)。/)?.[1];
  assert.equal(aliases,'LH、WY、XW、WJY、DBR、QZ','combined aliases normalize, de-duplicate and omit search-only or partial non-Latin names');
  assert.doesNotMatch(a.get('#app').innerHTML,/本轮仍需核实的缩写/,'potential collisions must not be described as observed comments');
  a.click('mentor','mentor-01');const html=a.get('#dialog-content').innerHTML;
@@ -87,7 +87,7 @@ test('missing personal evidence cannot create praise, concerns or named abbrevia
 
 test('student experience records expose identity, attribution, specific process and limits with safe sources',async()=>{
  const a=await app({data:reviewFixture()});a.click('mentor','mentor-02');const html=a.get('#dialog-content').innerHTML;
- for(const text of ['本科课程经历','本人经历自述','本科会计学','2024级','只上过本科课程','作业反馈有具体步骤','课程作业反馈较密','原帖写法','评论原文写出完整姓名','实际阅读范围','不能据此判断专硕指导','MPAcc论文反馈频率','本人亲历范围','本人只上过本科课程。；本人没有参与论文指导。','转述／朋友经历的部分','朋友的论文体验属于转述。','已读原帖正文。；已读完整评论。'])assert(html.includes(text),text);
+ for(const text of ['本科课程经历','本人经历自述','本科会计学','2024级','只上过本科课程','作业反馈有具体步骤','课程作业反馈较密','原帖写法','评论原文写出完整姓名','材料范围','不能据此判断专硕指导','MPAcc论文反馈频率','本人亲历范围','本人只上过本科课程。；本人没有参与论文指导。','转述／朋友经历的部分','朋友的论文体验属于转述。','已读原帖正文。；已读完整评论。'])assert(html.includes(text),text);
  assert.match(html,/&lt;script&gt;alert\(4\)&lt;\/script&gt;/);
  assert.match(html,/&lt;img src=x onerror=alert\(3\)&gt;/);
  assert.match(html,/href="https:\/\/example.org\/student-story"/);
@@ -146,7 +146,7 @@ test('post details expose registered captures and explicit comment captures whil
  assert.match(html,/只记录这一条跟评/);
  assert.match(html,/查看原图 ↗/);
  a.click('mentor','mentor-01');html=a.get('#dialog-content').innerHTML;
- assert.doesNotMatch(html,/原帖与评论截图|截图未提供|post-overview|comment-01/);
+ assert.doesNotMatch(html,/来源页面与评论截图|截图未提供|post-overview|comment-01/);
 });
 
 test('post dialog keeps a shared capture under its explicit comment and shows each image once',async()=>{
@@ -167,25 +167,20 @@ test('post dialog keeps a shared capture under its explicit comment and shows ea
  assert(html.indexOf('ANOTHER_COMMENT')<html.indexOf('shared-post-top.jpg'));
 });
 
-test('latest review summary reports self-reports and rereads without recycling older batch additions',async()=>{
+test('source and review maintenance counters stay outside the public page',async()=>{
  const data=reviewFixture();
  delete data.meta.reviewContextAudit;
  data.meta.research102={newOfficialSources:987,updatedSocialPosts:988};
  data.meta.studentReviewResearch.round8={newTeacherSelfReports:1,authenticatedXhsSourcesReread:2,screenshotsCaptured:5,newStudentExperiences:0,newXhsSources:0};
  const a=await app({data});a.route('#posts');
- const html=a.get('#app').innerHTML;
- assert.match(html,/新增 <strong>1<\/strong> 份教师本人自述（非学生评价）/);
- assert.match(html,/补读 <strong>2<\/strong> 篇既有小红书/);
- assert.match(html,/补入 <strong>5<\/strong> 张真实截图/);
- assert.match(html,/本轮未新增学生指导评价或小红书帖子/);
- assert.doesNotMatch(html,/<strong>987<\/strong>|<strong>988<\/strong>/);
+ assert.match(a.get('#app').innerHTML,/建议的背后，是这些原始来源/);
+ assert.doesNotMatch(a.get('#app').innerHTML,/新增 <strong>|补读 <strong>|补入 <strong>|本轮|<strong>987<\/strong>|<strong>988<\/strong>/);
  delete data.meta.studentReviewResearch.round8;
  const older=await app({data});older.route('#posts');
- assert.match(older.get('#app').innerHTML,/<strong>987<\/strong> 条官方来源/);
- assert.match(older.get('#app').innerHTML,/<strong>988<\/strong> 篇旧帖/);
+ assert.doesNotMatch(older.get('#app').innerHTML,/新增 <strong>|补读 <strong>|补入 <strong>|本轮|<strong>987<\/strong>|<strong>988<\/strong>/);
 });
 
-test('ambiguous endorsements stay neutral and source breadth counts unique note IDs across host aliases',async()=>{
+test('ambiguous endorsements stay neutral without exposing maintenance summaries',async()=>{
  const data=reviewFixture();
  data.socialPosts=data.socialPosts.slice(0,7);
  data.meta.reviewContextAudit={reclassifiedReviewRecords:3,reclassifiedSocialContexts:1};
@@ -196,16 +191,12 @@ test('ambiguous endorsements stay neutral and source breadth counts unique note 
   mentor.studentReviews={...emptyDossier(),coverageStatus:'weak_mentions',reviews:[{id,sourceIds:[i<2?'X01':'X02'],canonicalUrl:urls[i],sourceUrl:urls[i],experienceType:'general',firsthand:null,polarity:['positive','mixed','negative'][i],attribution:{status:'confirmed',reason:'全名仅确认讨论对象。'},text:'只有笼统提名，没有本人接触过程。',contextAssessment:{displayLabel:'仅提名／语气与身份待核',eligibleForRecommendation:false,eligibleForConcern:false}}],recommendationPoints:[{text:'JOKE_SUPPORT_MUST_NOT_RENDER',reviewIds:[id]}],concerns:[{text:'AMBIGUOUS_CONCERN_MUST_NOT_RENDER',reviewIds:[id]}]};
  }
  const a=await app({data}), overview=a.get('#app').innerHTML;
- assert.match(overview,/小红书相关记录 <strong>3<\/strong> 条，按帖子编号去重来自 <strong>2<\/strong> 篇原帖/);
- assert.match(overview,/两帖（X01、X02）合计 <strong>3<\/strong> 条/);
- assert.match(overview,/全站 <strong>7<\/strong> 条社交索引还包含生活、背景与排除线索/);
+ assert.match(overview,/课程印象、转述、弱提名与指导亲历分别标注/);
  for(let i=0;i<3;i++) {
   a.click('mentor',data.mentors[i].id);const html=a.get('#dialog-content').innerHTML;
   assert.match(html,/仅提名／语气与身份待核/);
   assert.doesNotMatch(html,/正面体验|体验有利弊|需重视的具体体验|JOKE_SUPPORT_MUST_NOT_RENDER|AMBIGUOUS_CONCERN_MUST_NOT_RENDER/);
  }
  a.route('#posts');const latest=a.get('#app').innerHTML;
- assert.match(latest,/本轮修正 <strong>3<\/strong> 条弱提名和 <strong>1<\/strong> 条口号式评论/);
- assert.match(latest,/本轮未新增独立学生评价、小红书帖子或截图/);
- assert.doesNotMatch(latest,/新增 <strong>1<\/strong> 份教师本人自述|补入 <strong>5<\/strong> 张真实截图/);
+ assert.doesNotMatch(latest,/本轮修正|本轮未新增|新增 <strong>1<\/strong> 份教师本人自述|补入 <strong>5<\/strong> 张真实截图/);
 });

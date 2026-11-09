@@ -6,8 +6,8 @@
       "mentors": 34,
       "detailedMentorCards": 17,
       "lifeChapters": 12,
-      "socialPosts": 114,
-      "officialEvidence": 185,
+      "socialPosts": 130,
+      "officialEvidence": 201,
       "feedbackRecords": 21,
       "screenedSources": 15,
       "unreadLeads": 6,
@@ -15,10 +15,15 @@
       "mentorsWithStudentReviews": 20
     },
     "socialPostCategories": {
+      "可用生活学习线索": 64,
+      "实务学习资料": 2,
+      "实习申请资料": 1,
+      "校内合作资料": 1,
+      "历史职业参考": 1,
+      "历史生活影像": 2,
       "背景或待核实材料": 33,
-      "可用生活学习线索": 55,
       "排除主要攻略选导依据": 20,
-      "有边界的导师课程反馈": 3,
+      "有边界的导师课程反馈": 4,
       "仅筛选记录": 2
     },
     "rosterSource": {
@@ -11357,6 +11362,89 @@
           "expansionId": "internship-resources-104-chapter8-link",
           "expansionBatch": "internship-resources-104",
           "sourceCodes": []
+        },
+        {
+          "type": "heading",
+          "text": "从具体任务理解实习"
+        },
+        {
+          "type": "p",
+          "text": "单位名称之外，更值得提前了解的是实际任务。下面材料来自其他审计专硕的具名经历或小组汇报，可用于认识工作内容；MPAcc的派出安排、认定手续与学分仍按本级要求。"
+        },
+        {
+          "type": "table",
+          "headers": [
+            "实践场景",
+            "原文中的具体任务",
+            "可以怎样准备"
+          ],
+          "rows": [
+            [
+              "企业财务共享与审计轮岗",
+              "南钢报销审核、费用标准核对、差旅对比和整改跟踪。[U901]",
+              "熟悉凭证附件检查，练习Excel分类汇总和差异比对。"
+            ],
+            [
+              "城建项目账务",
+              "浦口城乡建设集团按项目梳理序时账与项目收支。[U901]",
+              "练习把账务记录转成项目表，保留分类口径与勾稽关系。"
+            ],
+            [
+              "工程与数智审计",
+              "数据治理、模型筛查、合同审查与现场核验。[U902]",
+              "把数据分析结果与原始证据核对，了解业务后再解释异常。"
+            ],
+            [
+              "企业内部审计",
+              "内控优化、风险识别与审计信息系统建设。[U903]",
+              "梳理业务流程、控制点与证据链，用具体任务说明能力。"
+            ]
+          ],
+          "sourceCodes": [
+            "U901",
+            "U902",
+            "U903"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "准备企业财务岗位时，可同时了解行政事业单位核算、预决算和绩效管理，以及国企数字化财务的业务场景。讲座资料用于补充岗位认识，不代表讲者所在单位正在招收实习生。[U906][U907]",
+          "sourceCodes": [
+            "U906",
+            "U907"
+          ]
+        },
+        {
+          "type": "screenshots",
+          "items": [
+            {
+              "src": "./evidence/refresh-20261110/maud-enterprise-practice-20260411.jpg",
+              "file": "dist/evidence/refresh-20261110/maud-enterprise-practice-20260411.jpg",
+              "source_url": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm",
+              "sourceUrl": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm",
+              "caption": "审计专硕企业实习专访：标题与导言",
+              "alt": "审计专硕企业实习专访：标题与导言",
+              "scope": [
+                "官方页面标题、2026-04-11署期及介绍南钢、浦口城乡建设集团的导言；仅为审计专硕个案，不代表MPAcc统一安排；此图不含后续详细经验段落。"
+              ],
+              "width": 1363,
+              "height": 410,
+              "bytes": 150580,
+              "sha256": "4315f166fb489fd0769c33d29f98f278758009ee1299d3b7fd88f2f62354af8d",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false,
+              "captured_at": "2026-11-09T16:55:04.024879+00:00",
+              "pixelCrop": [
+                0,
+                0,
+                1363,
+                410
+              ],
+              "originalScreenshotSha256": "4cad950d17dc8ebcd80bf962d6d80a31740e84d4212a6d5f5499b2455c3f0720",
+              "cropReason": "仅保留标题与导言，排除无关个人肖像；未重排或修改文字。"
+            }
+          ],
+          "sourceUrl": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm"
         }
       ],
       "sourceCodes": [
@@ -11421,13 +11509,18 @@
         "D604",
         "10",
         "X01",
-        "R802"
+        "R802",
+        "U901",
+        "U902",
+        "U903",
+        "U906",
+        "U907"
       ]
     },
     {
       "id": "life-09",
       "number": 9,
-      "title": "第九章 四大八大实习与职业准备",
+      "title": "第九章 事务所与企业实习准备",
       "blocks": [
         {
           "type": "p",
@@ -13932,6 +14025,11 @@
           "sourceCodes": [
             "R802"
           ]
+        },
+        {
+          "type": "source",
+          "text": "按地区浏览国家审计学院学生实习经验目录（MAud历史经历）",
+          "url": "https://sga.nau.edu.cn/2044/list.htm"
         }
       ],
       "sourceCodes": [
@@ -16392,6 +16490,429 @@
     }
   ],
   "socialPosts": [
+    {
+      "id": "nau-social-audit-enterprise-156017",
+      "key": "南京审计大学社会审计学院:nau-social-audit-enterprise-156017",
+      "sourceIds": [
+        "U901"
+      ],
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm",
+      "url": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm",
+      "title": "社会审计学院2024级审计专硕实习实践专访：企业篇",
+      "author": "南京审计大学社会审计学院",
+      "date": "2026-04-11",
+      "platform": "南京审计大学社会审计学院",
+      "topic": "就业与实习",
+      "campus": "按原文具体项目所在地",
+      "population": "陈彦冰，2024级社会审计专硕班；陈紫蘅，2024级社会审计专硕班",
+      "summary": "两位2024级社会审计专硕学生分享在南钢与浦口城乡建设集团的实习：财务共享、报销审核、整改跟踪及项目账务分类，便于了解企业岗位的具体任务。",
+      "tips": [
+        "陈彦冰在南京钢铁股份有限公司财务部实习，先后在财务共享中心和审计部轮岗；审核报销附件与费用标准、整理差旅对比并跟进整改。",
+        "陈紫蘅在南京浦口城乡建设集团有限公司实习，按市政工程项目整理2024—2025年度序时账并编制项目收支表，提到Excel实操收获。"
+      ],
+      "comments": [],
+      "limitations": "MAud学生个案，非MPAcc统一实习安排；不是当前招聘、待遇或名额承诺。单位名称仅为历史经历，不自动增加当前在招岗位。",
+      "category": "可用生活学习线索",
+      "reviewReason": "用于理解具体任务和准备方向，不作为导师口碑或在招名额依据。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [],
+      "expansionBatch": "web-content-20261110",
+      "screenshots": [
+        {
+          "src": "./evidence/refresh-20261110/maud-enterprise-practice-20260411.jpg",
+          "file": "dist/evidence/refresh-20261110/maud-enterprise-practice-20260411.jpg",
+          "source_url": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm",
+          "sourceUrl": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm",
+          "caption": "审计专硕企业实习专访：标题与导言",
+          "alt": "审计专硕企业实习专访：标题与导言",
+          "scope": [
+            "官方页面标题、2026-04-11署期及介绍南钢、浦口城乡建设集团的导言；仅为审计专硕个案，不代表MPAcc统一安排；此图不含后续详细经验段落。"
+          ],
+          "width": 1363,
+          "height": 410,
+          "bytes": 150580,
+          "sha256": "4315f166fb489fd0769c33d29f98f278758009ee1299d3b7fd88f2f62354af8d",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "captured_at": "2026-11-09T16:55:04.024879+00:00",
+          "pixelCrop": [
+            0,
+            0,
+            1363,
+            410
+          ],
+          "originalScreenshotSha256": "4cad950d17dc8ebcd80bf962d6d80a31740e84d4212a6d5f5499b2455c3f0720",
+          "cropReason": "仅保留标题与导言，排除无关个人肖像；未重排或修改文字。"
+        }
+      ]
+    },
+    {
+      "id": "nau-engineering-audit-practice-156266",
+      "key": "南京审计大学新闻网；素材来源工程审计学院:nau-engineering-audit-practice-156266",
+      "sourceIds": [
+        "U902"
+      ],
+      "canonicalUrl": "https://news.nau.edu.cn/2026/0420/c5799a156266/page.htm",
+      "url": "https://news.nau.edu.cn/2026/0420/c5799a156266/page.htm",
+      "title": "在国家工程一线“最先一公里”与“最后一公里”之间——工程审计学院研究生实习成长记",
+      "author": "南京审计大学新闻网；素材来源工程审计学院",
+      "date": "2026-04-20",
+      "platform": "南京审计大学新闻网；素材来源工程审计学院",
+      "topic": "就业与实习",
+      "campus": "按原文具体项目所在地",
+      "population": "刘延赫，2024级工程审计专硕班；陈思润、薛思源，2024级工程审计专硕班；陶柯燊，2024级工程审计专硕班；陈钰婕，2024级工程审计专硕班",
+      "summary": "工程审计专硕学生记录在南水北调、科研平台与审计机关的实践，涉及数据标准化、模型筛查、合同审查和现场核验，可补充对数智及工程审计工作的认识。",
+      "tips": [
+        "刘延赫在中国南水北调集团水网智慧科技公司开展6个月实习，协助数据治理与模型建设，并参与凭证、图纸、工程量核验。",
+        "陶柯燊自述2025年10月进入苏州国家实验室重大科技基础设施平台，学习方案编制、合同审查和内控制度梳理。",
+        "陈钰婕自述2025年7—12月在宜春市审计局实习，参与工程、财务收支和专项资金项目，结合纸面数据与实地查证。"
+      ],
+      "comments": [],
+      "limitations": "工程MAud历史实践个案，不是MPAcc课程或实习分配方案；未公开的单位不补全。不能据此推断当前岗位、名额与统一实习时长。",
+      "category": "可用生活学习线索",
+      "reviewReason": "用于理解具体任务和准备方向，不作为导师口碑或在招名额依据。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [],
+      "expansionBatch": "web-content-20261110"
+    },
+    {
+      "id": "nau-internal-audit-midterm-148519",
+      "key": "南京审计大学新闻网；内部审计学院报道:nau-internal-audit-midterm-148519",
+      "sourceIds": [
+        "U903"
+      ],
+      "canonicalUrl": "https://news.nau.edu.cn/_t231/2025/1017/c5799a148519/page.psp",
+      "url": "https://news.nau.edu.cn/_t231/2025/1017/c5799a148519/page.psp",
+      "title": "内部审计学院召开2024级内部审计专硕班实习中期汇报会",
+      "author": "南京审计大学新闻网；内部审计学院报道",
+      "date": "2025-10-17",
+      "platform": "南京审计大学新闻网；内部审计学院报道",
+      "topic": "就业与实习",
+      "campus": "按原文具体项目所在地",
+      "population": "2024级内部审计专硕实习小组；未逐人具名",
+      "summary": "内部审计专硕的小组汇报涵盖机关审计与企业内审，企业端任务包括合同风险识别、制度流程梳理和审计系统建设，提示实习不只有凭证整理一种工作。",
+      "tips": [
+        "报道明确区分审计机关与能源、制造、交通等企业实践。",
+        "企业任务涉及数据分析协助合同审查、内控优化、流程再造和审计系统建设。",
+        "指导提醒包括经验总结、案例提炼，以及人身、心理、信息和职业安全。"
+      ],
+      "comments": [],
+      "limitations": "2025年历史小组汇报，不是具体招聘公告；不把未具名的企业或学生补为实名，不将小组工作分配给任何MPAcc导师。",
+      "category": "可用生活学习线索",
+      "reviewReason": "用于理解具体任务和准备方向，不作为导师口碑或在招名额依据。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [],
+      "expansionBatch": "web-content-20261110"
+    },
+    {
+      "id": "nau-sohu-audit-internship-769692085",
+      "key": "南京审计大学搜狐官方账号:nau-sohu-audit-internship-769692085",
+      "sourceIds": [
+        "U904"
+      ],
+      "canonicalUrl": "https://www.sohu.com/a/769692085_769713",
+      "url": "https://www.sohu.com/a/769692085_769713",
+      "title": "走，去审计局实习！",
+      "author": "南京审计大学搜狐官方账号",
+      "date": "2024-04-07",
+      "platform": "南京审计大学搜狐官方账号",
+      "topic": "就业与实习",
+      "campus": "按原文具体项目所在地",
+      "population": "纪昊师、靖萱、张潇月、孙荣荣、王媛、邢星怡、包辰、胡欣怡、邱一翔等；均为2022级审计专硕",
+      "summary": "2022级审计专硕学生记录在多地审计机关的具体任务，涉及底稿、资源环境项目、数据核对与整改。可用于理解政府审计实践，需保留2024年的历史背景。",
+      "tips": [
+        "孙荣荣讲到使用学校学习的ArcMap筛选整理地块图斑。",
+        "邱一翔讲到分析市民热线数据以确定审计关注内容。",
+        "胡欣怡讲到参与整改统计与到被审计单位沟通的实践。"
+      ],
+      "comments": [],
+      "limitations": "历史MAud个案，不是MPAcc统一实习去向、现行制度或当前岗位；多位学生同一合集只计一篇来源。",
+      "category": "可用生活学习线索",
+      "reviewReason": "用于理解具体任务和准备方向，不作为导师口碑或在招名额依据。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [],
+      "expansionBatch": "web-content-20261110"
+    },
+    {
+      "id": "nau-sga-2026-student-practice-directory",
+      "key": "南京审计大学国家审计学院:nau-sga-2026-student-practice-directory",
+      "sourceIds": [
+        "U905"
+      ],
+      "canonicalUrl": "https://sga.nau.edu.cn/2044/list.htm",
+      "url": "https://sga.nau.edu.cn/2044/list.htm",
+      "title": "国家审计学院2026年学生实习经验目录",
+      "author": "南京审计大学国家审计学院",
+      "date": null,
+      "platform": "南京审计大学国家审计学院",
+      "topic": "就业与实习",
+      "campus": "按原文具体项目所在地",
+      "population": "审计专业硕士MAud的历史实践目录",
+      "summary": "按地区浏览国家审计学院发布的2026年审计专硕实习文章，含安徽、无锡、云南、扬州、南京、上海等地。目录用于寻找原文，历史经历不等于当前招聘。",
+      "tips": [
+        "2026-04-02｜深耕审计，笃行砺能—安徽地市审计实习心得",
+        "2026-03-11｜锡城铸审心，实践绽芳华 ——2024级审计专硕无锡市审计局实习心得",
+        "2026-02-06｜践审计之行，悟治理之道——云南省审计厅实习纪实",
+        "2026-02-02｜青春赴审 实践砺能——扬州市审计局实习生实习纪实",
+        "2026-02-02｜青春实践路，审计伴成长 ——衢州市审计局举办实习学生座谈会",
+        "2026-02-02｜审计实践砺初心，实干笃行悟担当 ——2024级审计专硕南京市审计局实习心得",
+        "2026-01-22｜审计一线淬锋芒 浦东实践砺初心 ——上海市浦东新区审计局实习生实习纪实",
+        "2026-01-22｜双向赋能促成长 审计实践育新人 ——苏州市审计局实习小组参与实习生工作实践座谈会"
+      ],
+      "comments": [],
+      "limitations": "MAud经验目录，非MPAcc统一实习安排。这里只整理目录标题与日期，不对各篇未核读正文归纳结论。",
+      "category": "可用生活学习线索",
+      "reviewReason": "用于理解具体任务和准备方向，不作为导师口碑或在招名额依据。",
+      "verificationStatus": "官方目录；各篇正文需另行核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [],
+      "expansionBatch": "web-content-20261110",
+      "screenshots": [
+        {
+          "src": "./evidence/refresh-20261110/national-audit-practice-directory-page2-20261110.jpg",
+          "file": "dist/evidence/refresh-20261110/national-audit-practice-directory-page2-20261110.jpg",
+          "source_url": "https://sga.nau.edu.cn/2044/list2.htm",
+          "sourceUrl": "https://sga.nau.edu.cn/2044/list2.htm",
+          "caption": "国家审计学院实习心得目录：2026年初的地区案例",
+          "alt": "国家审计学院实习心得目录：2026年初的地区案例",
+          "scope": [
+            "学院研究生教育目录第2页可见标题与日期，包括云南、扬州、衢州、南京、上海浦东、苏州；未展示微信正文，不能视为正文截图。"
+          ],
+          "width": 1363,
+          "height": 936,
+          "bytes": 186137,
+          "sha256": "fe9ad964468d151a1c570e916f782b2053f9cf478fe830c3c1976f719f531b78",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "captured_at": "2026-11-09T16:53:51.463246+00:00"
+        }
+      ]
+    },
+    {
+      "id": "nau-practice-seminar-163066",
+      "key": "南京审计大学MPAcc教育中心:nau-practice-seminar-163066",
+      "sourceIds": [
+        "U906"
+      ],
+      "canonicalUrl": "https://mpacc.nau.edu.cn/2026/1023/c11508a163066/page.htm",
+      "url": "https://mpacc.nau.edu.cn/2026/1023/c11508a163066/page.htm",
+      "title": "行政事业单位财务工作实践与人才培养",
+      "author": "南京审计大学MPAcc教育中心",
+      "date": "2026-10-23",
+      "platform": "南京审计大学MPAcc教育中心",
+      "topic": "财会实务与能力准备",
+      "campus": "按原文具体项目所在地",
+      "population": "会计学院研究生；行业专家分享，非学生个人评价",
+      "summary": "讲座结合江苏事业单位财务实务，梳理核算、预决算、资产和绩效管理等工作，提醒实习时主动学习、判断岗位适配度，重视职业判断与沟通能力。",
+      "tips": [],
+      "comments": [],
+      "limitations": "讲座为职业准备资料；不提供实习招募或名额，不代表MPAcc学生统一分配到该单位。",
+      "category": "实务学习资料",
+      "reviewReason": "用于理解具体任务和准备方向，不作为导师口碑或在招名额依据。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [],
+      "expansionBatch": "web-content-20261110"
+    },
+    {
+      "id": "nau-practice-seminar-158780",
+      "key": "南京审计大学会计学院:nau-practice-seminar-158780",
+      "sourceIds": [
+        "U907"
+      ],
+      "canonicalUrl": "https://account.nau.edu.cn/2026/0611/c8919a158780/page.htm",
+      "url": "https://account.nau.edu.cn/2026/0611/c8919a158780/page.htm",
+      "title": "国有企业财务数字化转型",
+      "author": "南京审计大学会计学院",
+      "date": "2026-06-11",
+      "platform": "南京审计大学会计学院",
+      "topic": "财会实务与能力准备",
+      "campus": "按原文具体项目所在地",
+      "population": "会计学院研究生；行业专家分享，非学生个人评价",
+      "summary": "天衡副总经理钱红介绍国企财务数字化转型，交流战略、组织、人才、技术与数据层面的挑战；可作为准备财务数智化实习和案例选题的方向参考。",
+      "tips": [],
+      "comments": [],
+      "limitations": "是校内讲座报道，不是天衡在招岗位公告，也不据此评价导师日常指导风格。",
+      "category": "实务学习资料",
+      "reviewReason": "用于理解具体任务和准备方向，不作为导师口碑或在招名额依据。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [],
+      "expansionBatch": "web-content-20261110"
+    },
+    {
+      "id": "zmgc-audit-internship-20261103",
+      "key": "南开大学就业网（雇主发布）:zmgc-audit-internship-20261103",
+      "sourceIds": [
+        "U911"
+      ],
+      "canonicalUrl": "https://career.nankai.edu.cn/correcruit/content/id/115310.html",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/115310.html",
+      "title": "中名国成审计实习生：上海等地雇主公告",
+      "author": "南开大学就业网（雇主发布）",
+      "date": "2026-11-03",
+      "platform": "南开大学就业网（雇主发布）",
+      "topic": "就业与实习",
+      "campus": "按原文具体项目所在地",
+      "population": "公告学历栏列本科；MPAcc研究生是否可报需向招聘方确认",
+      "summary": "11月发布的审计实习公告，工作地域含上海。页面列10人，尚未公布申请截止、周出勤与最低周期，申请前应核对项目实际驻地和剩余名额。",
+      "tips": [
+        "工作地域：上海、北京、天津、重庆、河北。",
+        "薪资数字未标明结算周期，不能直接理解为月薪或日薪。"
+      ],
+      "comments": [],
+      "limitations": "是近期雇主公告，不保证当前仍有空缺；不把本科栏自动改成硕士均可申请。",
+      "category": "实习申请资料",
+      "reviewReason": "用于理解具体任务和准备方向，不作为导师口碑或在招名额依据。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [],
+      "expansionBatch": "web-content-20261110"
+    },
+    {
+      "id": "nau-jiangsu-railway-base-163076",
+      "key": "南京审计大学新闻网:nau-jiangsu-railway-base-163076",
+      "sourceIds": [
+        "U915"
+      ],
+      "canonicalUrl": "https://news.nau.edu.cn/2026/1023/c5796a163076/page.htm",
+      "url": "https://news.nau.edu.cn/2026/1023/c5796a163076/page.htm",
+      "title": "江苏省铁路集团审计实践基地：合作范围与申请边界",
+      "author": "南京审计大学新闻网",
+      "date": "2026-10-23",
+      "platform": "南京审计大学新闻网",
+      "topic": "就业与实习",
+      "campus": "按原文具体项目所在地",
+      "population": "校级产教合作；未限定MPAcc或公布学生名额",
+      "summary": "省审计厅、南审与省铁路集团共建实践基地，提供企业内审、国资监管及风险防控的实践与研究场景。学生批次与申请安排需由学院确认。",
+      "tips": [
+        "合作活动发生于2026年10月21日，官方报道发布于10月23日。"
+      ],
+      "comments": [],
+      "limitations": "基地揭牌不是实习招聘公告；没有公开学生报名入口、实习周期或当前名额。",
+      "category": "校内合作资料",
+      "reviewReason": "用于理解具体任务和准备方向，不作为导师口碑或在招名额依据。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [],
+      "expansionBatch": "web-content-20261110"
+    },
+    {
+      "id": "nau-accounting-employer-fair-162709",
+      "key": "南京审计大学社会审计学院:nau-accounting-employer-fair-162709",
+      "sourceIds": [
+        "I861",
+        "I860"
+      ],
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+      "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+      "title": "南审招聘会中的事务所、企业财务与内审方向",
+      "author": "南京审计大学社会审计学院",
+      "date": "2026-10-13",
+      "platform": "南京审计大学社会审计学院",
+      "topic": "就业与实习",
+      "campus": "按原文具体项目所在地",
+      "population": "2027届毕业生招聘活动；实习和正式校招须逐项区分",
+      "summary": "招聘会名单可帮助比较事务所审计、咨询和企业财务、内审方向。回顾记载中名国成安排了实习项目选拔；其他岗位是否属于实习要分别确认。",
+      "tips": [
+        "大信、中汇、天衡列有审计或咨询方向。",
+        "基蛋生物列财务核算与内部审计，特变电工列财务、内控与资金管理方向。"
+      ],
+      "comments": [],
+      "limitations": "2026年10月14日活动已举行，不是当前报名页，也不代表全部岗位面向普通在校生。",
+      "category": "历史职业参考",
+      "reviewReason": "用于理解具体任务和准备方向，不作为导师口碑或在招名额依据。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [],
+      "expansionBatch": "web-content-20261110",
+      "screenshots": [
+        {
+          "src": "./evidence/refresh-20261110/nau-recruitment-20261014-title.jpg",
+          "file": "dist/evidence/refresh-20261110/nau-recruitment-20261014-title.jpg",
+          "source_url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+          "sourceUrl": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+          "caption": "2026年事务所专场招聘会预告：标题、日期与活动安排",
+          "alt": "2026年事务所专场招聘会预告：标题、日期与活动安排",
+          "scope": [
+            "官方预告标题、2026-10-13署期、正文开头与活动海报；这是已举行活动的历史资料。"
+          ],
+          "width": 1348,
+          "height": 926,
+          "bytes": 156269,
+          "sha256": "dba86342626ae87f5ead7e06f797bbaed2a6ffa8fd6f1e9a359052d266e84c6b",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "captured_at": "2026-11-09T16:48:37.107099+00:00"
+        },
+        {
+          "src": "./evidence/refresh-20261110/nau-recruitment-20261014-companies.jpg",
+          "file": "dist/evidence/refresh-20261110/nau-recruitment-20261014-companies.jpg",
+          "source_url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+          "sourceUrl": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+          "caption": "事务所专场招聘会的单位与岗位方向",
+          "alt": "事务所专场招聘会的单位与岗位方向",
+          "scope": [
+            "同一官方预告中的活动信息、到会企业名录及岗位方向；不据此判定目前有空缺。"
+          ],
+          "width": 1363,
+          "height": 936,
+          "bytes": 121466,
+          "sha256": "9db50932918cae2ca7859a933e9de3ff005655297fdc29d59c2e9022201c46ad",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "captured_at": "2026-11-09T16:48:37.343105+00:00"
+        },
+        {
+          "src": "./evidence/refresh-20261110/nau-recruitment-20261014-recap-title.jpg",
+          "file": "dist/evidence/refresh-20261110/nau-recruitment-20261014-recap-title.jpg",
+          "source_url": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm",
+          "sourceUrl": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm",
+          "caption": "事务所招聘会回顾：联合主办单位与活动日期",
+          "alt": "事务所招聘会回顾：联合主办单位与活动日期",
+          "scope": [
+            "官方回顾标题、正文署期2026-10-18与联合主办单位；网页路径日期不作为发布日期。"
+          ],
+          "width": 1334,
+          "height": 470,
+          "bytes": 91413,
+          "sha256": "6701ca47751e66da4f67d663300cf5fbda33a22e792768aa2f777b62521c7330",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "captured_at": "2026-11-09T16:49:19.440210+00:00",
+          "pixelCrop": [
+            0,
+            0,
+            1334,
+            470
+          ]
+        }
+      ]
+    },
     {
       "id": "colleges-nau-pukou-A34252",
       "key": "大学生活质量指北（匿名问卷）:colleges-nau-pukou-A34252",
@@ -31017,6 +31538,32 @@
             "活动已结束；到场或合作不等于现在仍有名额，不保证任何学生获得实习。"
           ]
         }
+      ],
+      "screenshots": [
+        {
+          "src": "./evidence/refresh-20261110/nau-recruitment-20261014-recap-title.jpg",
+          "file": "dist/evidence/refresh-20261110/nau-recruitment-20261014-recap-title.jpg",
+          "source_url": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm",
+          "sourceUrl": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm",
+          "caption": "事务所招聘会回顾：联合主办单位与活动日期",
+          "alt": "事务所招聘会回顾：联合主办单位与活动日期",
+          "scope": [
+            "官方回顾标题、正文署期2026-10-18与联合主办单位；网页路径日期不作为发布日期。"
+          ],
+          "width": 1334,
+          "height": 470,
+          "bytes": 91413,
+          "sha256": "6701ca47751e66da4f67d663300cf5fbda33a22e792768aa2f777b62521c7330",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "captured_at": "2026-11-09T16:49:19.440210+00:00",
+          "pixelCrop": [
+            0,
+            0,
+            1334,
+            470
+          ]
+        }
       ]
     },
     "I861": {
@@ -31051,6 +31598,44 @@
           "limits": [
             "这是历史宣讲/招聘会名单，不当作当前职位详情，也不能自动把社会审计学院专场条件扩大到全部MPAcc。"
           ]
+        }
+      ],
+      "screenshots": [
+        {
+          "src": "./evidence/refresh-20261110/nau-recruitment-20261014-title.jpg",
+          "file": "dist/evidence/refresh-20261110/nau-recruitment-20261014-title.jpg",
+          "source_url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+          "sourceUrl": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+          "caption": "2026年事务所专场招聘会预告：标题、日期与活动安排",
+          "alt": "2026年事务所专场招聘会预告：标题、日期与活动安排",
+          "scope": [
+            "官方预告标题、2026-10-13署期、正文开头与活动海报；这是已举行活动的历史资料。"
+          ],
+          "width": 1348,
+          "height": 926,
+          "bytes": 156269,
+          "sha256": "dba86342626ae87f5ead7e06f797bbaed2a6ffa8fd6f1e9a359052d266e84c6b",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "captured_at": "2026-11-09T16:48:37.107099+00:00"
+        },
+        {
+          "src": "./evidence/refresh-20261110/nau-recruitment-20261014-companies.jpg",
+          "file": "dist/evidence/refresh-20261110/nau-recruitment-20261014-companies.jpg",
+          "source_url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+          "sourceUrl": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+          "caption": "事务所专场招聘会的单位与岗位方向",
+          "alt": "事务所专场招聘会的单位与岗位方向",
+          "scope": [
+            "同一官方预告中的活动信息、到会企业名录及岗位方向；不据此判定目前有空缺。"
+          ],
+          "width": 1363,
+          "height": 936,
+          "bytes": 121466,
+          "sha256": "9db50932918cae2ca7859a933e9de3ff005655297fdc29d59c2e9022201c46ad",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "captured_at": "2026-11-09T16:48:37.343105+00:00"
         }
       ]
     },
@@ -31379,6 +31964,294 @@
       "readingScope": "视频页标题、作者、发布日期元数据与作者文字简介中的5个饮食地点已读。；未观看视频；未查看弹幕和评论；不把未观看的画面写成实读体验。",
       "limitations": "只读到作者列出的地点清单；视频未播放，未确认菜品、口味、价格、路线距离和当前营业情况。平台公开页检索时间与元数据时刻不一致，因此仅记录2023-05-23，不保存具体时分。",
       "expansionBatch": "public-life-20261106"
+    },
+    "U901": {
+      "code": "U901",
+      "title": "社会审计学院2024级审计专硕实习实践专访：企业篇",
+      "label": "社会审计学院2024级审计专硕实习实践专访：企业篇",
+      "url": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm",
+      "originalUrl": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm",
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm",
+      "date": "2026-04-11",
+      "platform": "官方原始发布",
+      "kind": "官方发布的具名学生实习专访",
+      "population": "陈彦冰，2024级社会审计专硕班；陈紫蘅，2024级社会审计专硕班",
+      "summary": "两位2024级社会审计专硕学生分享在南钢与浦口城乡建设集团的实习：财务共享、报销审核、整改跟踪及项目账务分类，便于了解企业岗位的具体任务。",
+      "readingScope": "全文实际读取，含两位学生姓名、年级、单位、实习内容与心得",
+      "limitations": "MAud学生个案，非MPAcc统一实习安排；不是当前招聘、待遇或名额承诺。单位名称仅为历史经历，不自动增加当前在招岗位。",
+      "expansionBatch": "web-content-20261110",
+      "screenshots": [
+        {
+          "src": "./evidence/refresh-20261110/maud-enterprise-practice-20260411.jpg",
+          "file": "dist/evidence/refresh-20261110/maud-enterprise-practice-20260411.jpg",
+          "source_url": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm",
+          "sourceUrl": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm",
+          "caption": "审计专硕企业实习专访：标题与导言",
+          "alt": "审计专硕企业实习专访：标题与导言",
+          "scope": [
+            "官方页面标题、2026-04-11署期及介绍南钢、浦口城乡建设集团的导言；仅为审计专硕个案，不代表MPAcc统一安排；此图不含后续详细经验段落。"
+          ],
+          "width": 1363,
+          "height": 410,
+          "bytes": 150580,
+          "sha256": "4315f166fb489fd0769c33d29f98f278758009ee1299d3b7fd88f2f62354af8d",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "captured_at": "2026-11-09T16:55:04.024879+00:00",
+          "pixelCrop": [
+            0,
+            0,
+            1363,
+            410
+          ],
+          "originalScreenshotSha256": "4cad950d17dc8ebcd80bf962d6d80a31740e84d4212a6d5f5499b2455c3f0720",
+          "cropReason": "仅保留标题与导言，排除无关个人肖像；未重排或修改文字。"
+        }
+      ]
+    },
+    "U902": {
+      "code": "U902",
+      "title": "在国家工程一线“最先一公里”与“最后一公里”之间——工程审计学院研究生实习成长记",
+      "label": "在国家工程一线“最先一公里”与“最后一公里”之间——工程审计学院研究生实习成长记",
+      "url": "https://news.nau.edu.cn/2026/0420/c5799a156266/page.htm",
+      "originalUrl": "https://news.nau.edu.cn/2026/0420/c5799a156266/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2026/0420/c5799a156266/page.htm",
+      "date": "2026-04-20",
+      "platform": "官方原始发布",
+      "kind": "官方发布的具名学生自述合集",
+      "population": "刘延赫，2024级工程审计专硕班；陈思润、薛思源，2024级工程审计专硕班；陶柯燊，2024级工程审计专硕班；陈钰婕，2024级工程审计专硕班",
+      "summary": "工程审计专硕学生记录在南水北调、科研平台与审计机关的实践，涉及数据标准化、模型筛查、合同审查和现场核验，可补充对数智及工程审计工作的认识。",
+      "readingScope": "全文实际读取，保留专业及学生身份",
+      "limitations": "工程MAud历史实践个案，不是MPAcc课程或实习分配方案；未公开的单位不补全。不能据此推断当前岗位、名额与统一实习时长。",
+      "expansionBatch": "web-content-20261110"
+    },
+    "U903": {
+      "code": "U903",
+      "title": "内部审计学院召开2024级内部审计专硕班实习中期汇报会",
+      "label": "内部审计学院召开2024级内部审计专硕班实习中期汇报会",
+      "url": "https://news.nau.edu.cn/_t231/2025/1017/c5799a148519/page.psp",
+      "originalUrl": "https://news.nau.edu.cn/_t231/2025/1017/c5799a148519/page.psp",
+      "canonicalUrl": "https://news.nau.edu.cn/_t231/2025/1017/c5799a148519/page.psp",
+      "date": "2025-10-17",
+      "platform": "官方原始发布",
+      "kind": "官方小组汇报纪要，不是个人评价",
+      "population": "2024级内部审计专硕实习小组；未逐人具名",
+      "summary": "内部审计专硕的小组汇报涵盖机关审计与企业内审，企业端任务包括合同风险识别、制度流程梳理和审计系统建设，提示实习不只有凭证整理一种工作。",
+      "readingScope": "全文实际读取",
+      "limitations": "2025年历史小组汇报，不是具体招聘公告；不把未具名的企业或学生补为实名，不将小组工作分配给任何MPAcc导师。",
+      "expansionBatch": "web-content-20261110"
+    },
+    "U904": {
+      "code": "U904",
+      "title": "走，去审计局实习！",
+      "label": "走，去审计局实习！",
+      "url": "https://www.sohu.com/a/769692085_769713",
+      "originalUrl": "https://www.sohu.com/a/769692085_769713",
+      "canonicalUrl": "https://www.sohu.com/a/769692085_769713",
+      "date": "2024-04-07",
+      "platform": "官方原始发布",
+      "kind": "官方账号发布的具名学生实习经历合集",
+      "population": "纪昊师、靖萱、张潇月、孙荣荣、王媛、邢星怡、包辰、胡欣怡、邱一翔等；均为2022级审计专硕",
+      "summary": "2022级审计专硕学生记录在多地审计机关的具体任务，涉及底稿、资源环境项目、数据核对与整改。可用于理解政府审计实践，需保留2024年的历史背景。",
+      "readingScope": "正文实际读取到具名学生各段，不扩写没有读取的折叠或评论",
+      "limitations": "历史MAud个案，不是MPAcc统一实习去向、现行制度或当前岗位；多位学生同一合集只计一篇来源。",
+      "expansionBatch": "web-content-20261110"
+    },
+    "U905": {
+      "code": "U905",
+      "title": "国家审计学院2026年学生实习经验目录",
+      "label": "国家审计学院2026年学生实习经验目录",
+      "url": "https://sga.nau.edu.cn/2044/list.htm",
+      "originalUrl": "https://sga.nau.edu.cn/2044/list.htm",
+      "canonicalUrl": "https://sga.nau.edu.cn/2044/list.htm",
+      "date": null,
+      "platform": "官方原始发布",
+      "kind": "官方学生实践目录",
+      "population": "审计专业硕士；不能直接套用MPAcc",
+      "summary": "按地区浏览国家审计学院发布的2026年审计专硕实习文章，含安徽、无锡、云南、扬州、南京、上海等地。目录用于寻找原文，历史经历不等于当前招聘。",
+      "readingScope": "官网两页目录标题与日期",
+      "limitations": "MAud经验目录，非MPAcc统一实习安排。这里只整理目录标题与日期，不对各篇未核读正文归纳结论。",
+      "expansionBatch": "web-content-20261110",
+      "screenshots": [
+        {
+          "src": "./evidence/refresh-20261110/national-audit-practice-directory-page2-20261110.jpg",
+          "file": "dist/evidence/refresh-20261110/national-audit-practice-directory-page2-20261110.jpg",
+          "source_url": "https://sga.nau.edu.cn/2044/list2.htm",
+          "sourceUrl": "https://sga.nau.edu.cn/2044/list2.htm",
+          "caption": "国家审计学院实习心得目录：2026年初的地区案例",
+          "alt": "国家审计学院实习心得目录：2026年初的地区案例",
+          "scope": [
+            "学院研究生教育目录第2页可见标题与日期，包括云南、扬州、衢州、南京、上海浦东、苏州；未展示微信正文，不能视为正文截图。"
+          ],
+          "width": 1363,
+          "height": 936,
+          "bytes": 186137,
+          "sha256": "fe9ad964468d151a1c570e916f782b2053f9cf478fe830c3c1976f719f531b78",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "captured_at": "2026-11-09T16:53:51.463246+00:00"
+        }
+      ]
+    },
+    "U906": {
+      "code": "U906",
+      "title": "行政事业单位财务工作实践与人才培养",
+      "label": "行政事业单位财务工作实践与人才培养",
+      "url": "https://mpacc.nau.edu.cn/2026/1023/c11508a163066/page.htm",
+      "originalUrl": "https://mpacc.nau.edu.cn/2026/1023/c11508a163066/page.htm",
+      "canonicalUrl": "https://mpacc.nau.edu.cn/2026/1023/c11508a163066/page.htm",
+      "date": "2026-10-23",
+      "platform": "官方原始发布",
+      "kind": "行业实务讲座报道",
+      "population": "会计学院研究生及相关师生；不等于学生实习经历",
+      "summary": "讲座结合江苏事业单位财务实务，梳理核算、预决算、资产和绩效管理等工作，提醒实习时主动学习、判断岗位适配度，重视职业判断与沟通能力。",
+      "readingScope": "官方页面标题、发布日期与全部正文；没有把配图当作学生评价。",
+      "limitations": "讲座为职业准备资料；不提供实习招募或名额，不代表MPAcc学生统一分配到该单位。",
+      "expansionBatch": "web-content-20261110"
+    },
+    "U907": {
+      "code": "U907",
+      "title": "国有企业财务数字化转型",
+      "label": "国有企业财务数字化转型",
+      "url": "https://account.nau.edu.cn/2026/0611/c8919a158780/page.htm",
+      "originalUrl": "https://account.nau.edu.cn/2026/0611/c8919a158780/page.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/2026/0611/c8919a158780/page.htm",
+      "date": "2026-06-11",
+      "platform": "官方原始发布",
+      "kind": "行业实务讲座报道",
+      "population": "会计学院研究生及相关师生；不等于学生实习经历",
+      "summary": "天衡副总经理钱红介绍国企财务数字化转型，交流战略、组织、人才、技术与数据层面的挑战；可作为准备财务数智化实习和案例选题的方向参考。",
+      "readingScope": "官方页面标题、发布日期与全部正文。",
+      "limitations": "是校内讲座报道，不是天衡在招岗位公告，也不据此评价导师日常指导风格。",
+      "expansionBatch": "web-content-20261110"
+    },
+    "U908": {
+      "code": "U908",
+      "title": "大信官方校园招聘及问答",
+      "label": "大信官方校园招聘及问答",
+      "url": "https://daxincpa.zhiye.com/campus",
+      "originalUrl": "https://daxincpa.zhiye.com/campus",
+      "canonicalUrl": "https://daxincpa.zhiye.com/campus",
+      "date": null,
+      "platform": "官方原始发布",
+      "kind": "单位官方入口或校方、雇主公告",
+      "population": "",
+      "summary": "",
+      "readingScope": "官方域搜索索引问答可读；页面正文抽取为JS壳，未核具体城市岗位",
+      "limitations": "单位入口和历史活动不等于当前在招实习岗位；资格及名额以具体公告为准。",
+      "expansionBatch": "web-content-20261110"
+    },
+    "U909": {
+      "code": "U909",
+      "title": "中汇官方校园招聘介绍",
+      "label": "中汇官方校园招聘介绍",
+      "url": "https://www.zhcpa.cn/join/campus.html",
+      "originalUrl": "https://www.zhcpa.cn/join/campus.html",
+      "canonicalUrl": "https://www.zhcpa.cn/join/campus.html",
+      "date": null,
+      "platform": "官方原始发布",
+      "kind": "单位官方入口或校方、雇主公告",
+      "population": "",
+      "summary": "",
+      "readingScope": "官网全文，明确区分应届生/实习生入口",
+      "limitations": "单位入口和历史活动不等于当前在招实习岗位；资格及名额以具体公告为准。",
+      "expansionBatch": "web-content-20261110"
+    },
+    "U910": {
+      "code": "U910",
+      "title": "中汇官方实习生列表",
+      "label": "中汇官方实习生列表",
+      "url": "https://zhcpa.zhiye.com/intern/jobs",
+      "originalUrl": "https://zhcpa.zhiye.com/intern/jobs",
+      "canonicalUrl": "https://zhcpa.zhiye.com/intern/jobs",
+      "date": null,
+      "platform": "官方原始发布",
+      "kind": "单位官方入口或校方、雇主公告",
+      "population": "",
+      "summary": "",
+      "readingScope": "由官网直接链接核对，列表为JS壳；没有据此宣称当前有岗",
+      "limitations": "单位入口和历史活动不等于当前在招实习岗位；资格及名额以具体公告为准。",
+      "expansionBatch": "web-content-20261110"
+    },
+    "U911": {
+      "code": "U911",
+      "title": "中名国成审计实习生（南开就业网雇主公告）",
+      "label": "中名国成审计实习生（南开就业网雇主公告）",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/115310.html",
+      "originalUrl": "https://career.nankai.edu.cn/correcruit/content/id/115310.html",
+      "canonicalUrl": "https://career.nankai.edu.cn/correcruit/content/id/115310.html",
+      "date": "2026-11-03",
+      "platform": "官方原始发布",
+      "kind": "单位官方入口或校方、雇主公告",
+      "population": "",
+      "summary": "",
+      "readingScope": "全文与TinyFish正文一致；近期实习公告，未公布截止/周出勤/最低周期；薪资数字未说明结算周期",
+      "limitations": "单位入口和历史活动不等于当前在招实习岗位；资格及名额以具体公告为准。",
+      "expansionBatch": "web-content-20261110"
+    },
+    "U912": {
+      "code": "U912",
+      "title": "基蛋生物官网",
+      "label": "基蛋生物官网",
+      "url": "https://www.getein.com.cn/",
+      "originalUrl": "https://www.getein.com.cn/",
+      "canonicalUrl": "https://www.getein.com.cn/",
+      "date": null,
+      "platform": "官方原始发布",
+      "kind": "单位官方入口或校方、雇主公告",
+      "population": "",
+      "summary": "",
+      "readingScope": "官网全文，机构与南京地址；无可核财务实习职位",
+      "limitations": "单位入口和历史活动不等于当前在招实习岗位；资格及名额以具体公告为准。",
+      "expansionBatch": "web-content-20261110"
+    },
+    "U913": {
+      "code": "U913",
+      "title": "特变电工官方人才发展",
+      "label": "特变电工官方人才发展",
+      "url": "https://www.tbea.com/join.html",
+      "originalUrl": "https://www.tbea.com/join.html",
+      "canonicalUrl": "https://www.tbea.com/join.html",
+      "date": null,
+      "platform": "官方原始发布",
+      "kind": "单位官方入口或校方、雇主公告",
+      "population": "",
+      "summary": "",
+      "readingScope": "全文及点击官方校园招聘链接；不把正式校招当实习",
+      "limitations": "单位入口和历史活动不等于当前在招实习岗位；资格及名额以具体公告为准。",
+      "expansionBatch": "web-content-20261110"
+    },
+    "U914": {
+      "code": "U914",
+      "title": "特变电工官方校园招聘入口",
+      "label": "特变电工官方校园招聘入口",
+      "url": "https://wecruit.hotjob.cn/SU612f55eebef57c0616450aa2/pb/school.html",
+      "originalUrl": "https://wecruit.hotjob.cn/SU612f55eebef57c0616450aa2/pb/school.html",
+      "canonicalUrl": "https://wecruit.hotjob.cn/SU612f55eebef57c0616450aa2/pb/school.html",
+      "date": null,
+      "platform": "官方原始发布",
+      "kind": "单位官方入口或校方、雇主公告",
+      "population": "",
+      "summary": "",
+      "readingScope": "从企业官网跳转验证，职位正文为JS壳；仅长期入口",
+      "limitations": "单位入口和历史活动不等于当前在招实习岗位；资格及名额以具体公告为准。",
+      "expansionBatch": "web-content-20261110"
+    },
+    "U915": {
+      "code": "U915",
+      "title": "三方共建省铁路集团产教融合型实习实践基地",
+      "label": "三方共建省铁路集团产教融合型实习实践基地",
+      "url": "https://news.nau.edu.cn/2026/1023/c5796a163076/page.htm",
+      "originalUrl": "https://news.nau.edu.cn/2026/1023/c5796a163076/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2026/1023/c5796a163076/page.htm",
+      "date": "2026-10-23",
+      "platform": "官方原始发布",
+      "kind": "单位官方入口或校方、雇主公告",
+      "population": "",
+      "summary": "",
+      "readingScope": "全文；报道未公布MPAcc资格、申请入口或名额。学校主站同编号163076是同篇转载，不计独立来源",
+      "limitations": "单位入口和历史活动不等于当前在招实习岗位；资格及名额以具体公告为准。",
+      "expansionBatch": "web-content-20261110"
     }
   },
   "targetProfiles": [
@@ -37302,6 +38175,366 @@
       "use_status": "官方岗位入口；以申请页面状态为准",
       "reading_scopes": [
         "2026-11-06通过公开动态列表与职位详情阅读；无需登录；未提交申请。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-refresh:U901",
+      "ids": [
+        "U901"
+      ],
+      "title": "社会审计学院2024级审计专硕实习实践专访：企业篇",
+      "author": null,
+      "date_display": "2026-04-11",
+      "url": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm",
+      "canonical_url": "https://shsjxy.nau.edu.cn/2026/0412/c7575a156017/page.htm",
+      "population": "陈彦冰，2024级社会审计专硕班；陈紫蘅，2024级社会审计专硕班",
+      "summary": "两位2024级社会审计专硕学生分享在南钢与浦口城乡建设集团的实习：财务共享、报销审核、整改跟踪及项目账务分类，便于了解企业岗位的具体任务。",
+      "tips": [
+        "陈彦冰在南京钢铁股份有限公司财务部实习，先后在财务共享中心和审计部轮岗；审核报销附件与费用标准、整理差旅对比并跟进整改。",
+        "陈紫蘅在南京浦口城乡建设集团有限公司实习，按市政工程项目整理2024—2025年度序时账并编制项目收支表，提到Excel实操收获。"
+      ],
+      "comments": [],
+      "limits": "MAud学生个案，非MPAcc统一实习安排；不是当前招聘、待遇或名额承诺。单位名称仅为历史经历，不自动增加当前在招岗位。",
+      "topic": "学生实习任务与能力准备",
+      "use_status": "官方发布的具名学生实习专访",
+      "reading_scopes": [
+        "全文实际读取，含两位学生姓名、年级、单位、实习内容与心得"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-refresh:U902",
+      "ids": [
+        "U902"
+      ],
+      "title": "在国家工程一线“最先一公里”与“最后一公里”之间——工程审计学院研究生实习成长记",
+      "author": null,
+      "date_display": "2026-04-20",
+      "url": "https://news.nau.edu.cn/2026/0420/c5799a156266/page.htm",
+      "canonical_url": "https://news.nau.edu.cn/2026/0420/c5799a156266/page.htm",
+      "population": "刘延赫，2024级工程审计专硕班；陈思润、薛思源，2024级工程审计专硕班；陶柯燊，2024级工程审计专硕班；陈钰婕，2024级工程审计专硕班",
+      "summary": "工程审计专硕学生记录在南水北调、科研平台与审计机关的实践，涉及数据标准化、模型筛查、合同审查和现场核验，可补充对数智及工程审计工作的认识。",
+      "tips": [
+        "刘延赫在中国南水北调集团水网智慧科技公司开展6个月实习，协助数据治理与模型建设，并参与凭证、图纸、工程量核验。",
+        "陶柯燊自述2025年10月进入苏州国家实验室重大科技基础设施平台，学习方案编制、合同审查和内控制度梳理。",
+        "陈钰婕自述2025年7—12月在宜春市审计局实习，参与工程、财务收支和专项资金项目，结合纸面数据与实地查证。"
+      ],
+      "comments": [],
+      "limits": "工程MAud历史实践个案，不是MPAcc课程或实习分配方案；未公开的单位不补全。不能据此推断当前岗位、名额与统一实习时长。",
+      "topic": "学生实习任务与能力准备",
+      "use_status": "官方发布的具名学生自述合集",
+      "reading_scopes": [
+        "全文实际读取，保留专业及学生身份"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-refresh:U903",
+      "ids": [
+        "U903"
+      ],
+      "title": "内部审计学院召开2024级内部审计专硕班实习中期汇报会",
+      "author": null,
+      "date_display": "2025-10-17",
+      "url": "https://news.nau.edu.cn/_t231/2025/1017/c5799a148519/page.psp",
+      "canonical_url": "https://news.nau.edu.cn/_t231/2025/1017/c5799a148519/page.psp",
+      "population": "2024级内部审计专硕实习小组；未逐人具名",
+      "summary": "内部审计专硕的小组汇报涵盖机关审计与企业内审，企业端任务包括合同风险识别、制度流程梳理和审计系统建设，提示实习不只有凭证整理一种工作。",
+      "tips": [
+        "报道明确区分审计机关与能源、制造、交通等企业实践。",
+        "企业任务涉及数据分析协助合同审查、内控优化、流程再造和审计系统建设。",
+        "指导提醒包括经验总结、案例提炼，以及人身、心理、信息和职业安全。"
+      ],
+      "comments": [],
+      "limits": "2025年历史小组汇报，不是具体招聘公告；不把未具名的企业或学生补为实名，不将小组工作分配给任何MPAcc导师。",
+      "topic": "学生实习任务与能力准备",
+      "use_status": "官方小组汇报纪要，不是个人评价",
+      "reading_scopes": [
+        "全文实际读取"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-refresh:U904",
+      "ids": [
+        "U904"
+      ],
+      "title": "走，去审计局实习！",
+      "author": null,
+      "date_display": "2024-04-07",
+      "url": "https://www.sohu.com/a/769692085_769713",
+      "canonical_url": "https://www.sohu.com/a/769692085_769713",
+      "population": "纪昊师、靖萱、张潇月、孙荣荣、王媛、邢星怡、包辰、胡欣怡、邱一翔等；均为2022级审计专硕",
+      "summary": "2022级审计专硕学生记录在多地审计机关的具体任务，涉及底稿、资源环境项目、数据核对与整改。可用于理解政府审计实践，需保留2024年的历史背景。",
+      "tips": [
+        "孙荣荣讲到使用学校学习的ArcMap筛选整理地块图斑。",
+        "邱一翔讲到分析市民热线数据以确定审计关注内容。",
+        "胡欣怡讲到参与整改统计与到被审计单位沟通的实践。"
+      ],
+      "comments": [],
+      "limits": "历史MAud个案，不是MPAcc统一实习去向、现行制度或当前岗位；多位学生同一合集只计一篇来源。",
+      "topic": "学生实习任务与能力准备",
+      "use_status": "官方账号发布的具名学生实习经历合集",
+      "reading_scopes": [
+        "正文实际读取到具名学生各段，不扩写没有读取的折叠或评论"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-refresh:U905",
+      "ids": [
+        "U905"
+      ],
+      "title": "国家审计学院2026年学生实习经验目录",
+      "author": null,
+      "date_display": null,
+      "url": "https://sga.nau.edu.cn/2044/list.htm",
+      "canonical_url": "https://sga.nau.edu.cn/2044/list.htm",
+      "population": "审计专业硕士MAud",
+      "summary": "按地区浏览国家审计学院发布的2026年审计专硕实习文章，含安徽、无锡、云南、扬州、南京、上海等地。目录用于寻找原文，历史经历不等于当前招聘。",
+      "tips": [],
+      "comments": [],
+      "limits": "MAud经验目录，非MPAcc统一实习安排。这里只整理目录标题与日期，不对各篇未核读正文归纳结论。",
+      "topic": "官方学生实践目录",
+      "use_status": "官方学生实践目录",
+      "reading_scopes": [
+        "官网两页目录标题与日期"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-refresh:U906",
+      "ids": [
+        "U906"
+      ],
+      "title": "行政事业单位财务工作实践与人才培养",
+      "author": null,
+      "date_display": "2026-10-23",
+      "url": "https://mpacc.nau.edu.cn/2026/1023/c11508a163066/page.htm",
+      "canonical_url": "https://mpacc.nau.edu.cn/2026/1023/c11508a163066/page.htm",
+      "population": "",
+      "summary": "讲座结合江苏事业单位财务实务，梳理核算、预决算、资产和绩效管理等工作，提醒实习时主动学习、判断岗位适配度，重视职业判断与沟通能力。",
+      "tips": [],
+      "comments": [],
+      "limits": "讲座为职业准备资料；不提供实习招募或名额，不代表MPAcc学生统一分配到该单位。",
+      "topic": "财会实务与能力准备",
+      "use_status": "行业实务讲座报道",
+      "reading_scopes": [
+        "官方页面标题、发布日期与全部正文；没有把配图当作学生评价。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-refresh:U907",
+      "ids": [
+        "U907"
+      ],
+      "title": "国有企业财务数字化转型",
+      "author": null,
+      "date_display": "2026-06-11",
+      "url": "https://account.nau.edu.cn/2026/0611/c8919a158780/page.htm",
+      "canonical_url": "https://account.nau.edu.cn/2026/0611/c8919a158780/page.htm",
+      "population": "",
+      "summary": "天衡副总经理钱红介绍国企财务数字化转型，交流战略、组织、人才、技术与数据层面的挑战；可作为准备财务数智化实习和案例选题的方向参考。",
+      "tips": [],
+      "comments": [],
+      "limits": "是校内讲座报道，不是天衡在招岗位公告，也不据此评价导师日常指导风格。",
+      "topic": "财会实务与能力准备",
+      "use_status": "行业实务讲座报道",
+      "reading_scopes": [
+        "官方页面标题、发布日期与全部正文。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-refresh:U908",
+      "ids": [
+        "U908"
+      ],
+      "title": "大信官方校园招聘及问答",
+      "author": null,
+      "date_display": null,
+      "url": "https://daxincpa.zhiye.com/campus",
+      "canonical_url": "https://daxincpa.zhiye.com/campus",
+      "population": "",
+      "summary": "大信官方校园招聘及问答",
+      "tips": [],
+      "comments": [],
+      "limits": "具体岗位、期限、资格和余量须按原文核对。",
+      "topic": "实习单位与申请渠道",
+      "use_status": "单位官方入口或校方、雇主公告",
+      "reading_scopes": [
+        "官方域搜索索引问答可读；页面正文抽取为JS壳，未核具体城市岗位"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-refresh:U909",
+      "ids": [
+        "U909"
+      ],
+      "title": "中汇官方校园招聘介绍",
+      "author": null,
+      "date_display": null,
+      "url": "https://www.zhcpa.cn/join/campus.html",
+      "canonical_url": "https://www.zhcpa.cn/join/campus.html",
+      "population": "",
+      "summary": "中汇官方校园招聘介绍",
+      "tips": [],
+      "comments": [],
+      "limits": "具体岗位、期限、资格和余量须按原文核对。",
+      "topic": "实习单位与申请渠道",
+      "use_status": "单位官方入口或校方、雇主公告",
+      "reading_scopes": [
+        "官网全文，明确区分应届生/实习生入口"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-refresh:U910",
+      "ids": [
+        "U910"
+      ],
+      "title": "中汇官方实习生列表",
+      "author": null,
+      "date_display": null,
+      "url": "https://zhcpa.zhiye.com/intern/jobs",
+      "canonical_url": "https://zhcpa.zhiye.com/intern/jobs",
+      "population": "",
+      "summary": "中汇官方实习生列表",
+      "tips": [],
+      "comments": [],
+      "limits": "具体岗位、期限、资格和余量须按原文核对。",
+      "topic": "实习单位与申请渠道",
+      "use_status": "单位官方入口或校方、雇主公告",
+      "reading_scopes": [
+        "由官网直接链接核对，列表为JS壳；没有据此宣称当前有岗"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-refresh:U911",
+      "ids": [
+        "U911"
+      ],
+      "title": "中名国成审计实习生（南开就业网雇主公告）",
+      "author": null,
+      "date_display": "2026-11-03",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/115310.html",
+      "canonical_url": "https://career.nankai.edu.cn/correcruit/content/id/115310.html",
+      "population": "",
+      "summary": "中名国成审计实习生（南开就业网雇主公告）",
+      "tips": [],
+      "comments": [],
+      "limits": "具体岗位、期限、资格和余量须按原文核对。",
+      "topic": "实习单位与申请渠道",
+      "use_status": "单位官方入口或校方、雇主公告",
+      "reading_scopes": [
+        "全文与TinyFish正文一致；近期实习公告，未公布截止/周出勤/最低周期；薪资数字未说明结算周期"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-refresh:U912",
+      "ids": [
+        "U912"
+      ],
+      "title": "基蛋生物官网",
+      "author": null,
+      "date_display": null,
+      "url": "https://www.getein.com.cn/",
+      "canonical_url": "https://www.getein.com.cn/",
+      "population": "",
+      "summary": "基蛋生物官网",
+      "tips": [],
+      "comments": [],
+      "limits": "具体岗位、期限、资格和余量须按原文核对。",
+      "topic": "实习单位与申请渠道",
+      "use_status": "单位官方入口或校方、雇主公告",
+      "reading_scopes": [
+        "官网全文，机构与南京地址；无可核财务实习职位"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-refresh:U913",
+      "ids": [
+        "U913"
+      ],
+      "title": "特变电工官方人才发展",
+      "author": null,
+      "date_display": null,
+      "url": "https://www.tbea.com/join.html",
+      "canonical_url": "https://www.tbea.com/join.html",
+      "population": "",
+      "summary": "特变电工官方人才发展",
+      "tips": [],
+      "comments": [],
+      "limits": "具体岗位、期限、资格和余量须按原文核对。",
+      "topic": "实习单位与申请渠道",
+      "use_status": "单位官方入口或校方、雇主公告",
+      "reading_scopes": [
+        "全文及点击官方校园招聘链接；不把正式校招当实习"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-refresh:U914",
+      "ids": [
+        "U914"
+      ],
+      "title": "特变电工官方校园招聘入口",
+      "author": null,
+      "date_display": null,
+      "url": "https://wecruit.hotjob.cn/SU612f55eebef57c0616450aa2/pb/school.html",
+      "canonical_url": "https://wecruit.hotjob.cn/SU612f55eebef57c0616450aa2/pb/school.html",
+      "population": "",
+      "summary": "特变电工官方校园招聘入口",
+      "tips": [],
+      "comments": [],
+      "limits": "具体岗位、期限、资格和余量须按原文核对。",
+      "topic": "实习单位与申请渠道",
+      "use_status": "单位官方入口或校方、雇主公告",
+      "reading_scopes": [
+        "从企业官网跳转验证，职位正文为JS壳；仅长期入口"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-refresh:U915",
+      "ids": [
+        "U915"
+      ],
+      "title": "三方共建省铁路集团产教融合型实习实践基地",
+      "author": null,
+      "date_display": "2026-10-23",
+      "url": "https://news.nau.edu.cn/2026/1023/c5796a163076/page.htm",
+      "canonical_url": "https://news.nau.edu.cn/2026/1023/c5796a163076/page.htm",
+      "population": "",
+      "summary": "三方共建省铁路集团产教融合型实习实践基地",
+      "tips": [],
+      "comments": [],
+      "limits": "具体岗位、期限、资格和余量须按原文核对。",
+      "topic": "实习单位与申请渠道",
+      "use_status": "单位官方入口或校方、雇主公告",
+      "reading_scopes": [
+        "全文；报道未公布MPAcc资格、申请入口或名额。学校主站同编号163076是同篇转载，不计独立来源"
       ],
       "official": true,
       "screened_only": false
@@ -43904,7 +45137,7 @@
   "internships": {
     "intro": "先看官方长期入口，再按毕业届别、可到岗时间和城市筛选；当期项目与历史记录分开查看。",
     "scopeNote": "以浦口校区为出发点，南京优先；苏州、上海、杭州等跨城机会，先确认实际项目地点，再评估阶段住宿、课程和返校安排。",
-    "firmGroupNote": "四大与国内所分组方便查找；“八大”并非官方统一名单或本页排名。",
+    "firmGroupNote": "按四大、国内所和企业财务与内审分组查找；“八大”不是官方统一名单或本页排名。",
     "sourceNote": "具体岗位以官方职位页面为准；公告申请期、实习项目期和毕业届别分别核对。",
     "firms": [
       {
@@ -46160,6 +47393,651 @@
             "origin": "editorial"
           }
         ]
+      },
+      {
+        "id": "daxin",
+        "name": "大信",
+        "officialName": "大信会计师事务所",
+        "group": "domestic",
+        "summary": "校内事务所招聘会曾列审计与咨询方向；普通在校生先按实习类别核对实际城市。",
+        "officeRecords": [],
+        "entryLinks": [
+          {
+            "label": "官方校园招聘与问答",
+            "url": "https://daxincpa.zhiye.com/campus",
+            "kind": "campus",
+            "sourceIds": [
+              "U908"
+            ],
+            "note": null
+          }
+        ],
+        "resources": [
+          {
+            "id": "db-daxin-entry",
+            "title": "大信官方校园招聘入口",
+            "kind": "channel",
+            "status": "entry_only",
+            "statusLabel": "官方长期入口",
+            "statusDetail": null,
+            "cityTags": [],
+            "searchCities": [
+              "南京",
+              "苏州",
+              "上海"
+            ],
+            "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+            "eligibility": "官方校园问答接受非应届在校生；已毕业往届不适用实习。",
+            "attendance": null,
+            "duration": null,
+            "applicationWindow": null,
+            "period": null,
+            "deadline": null,
+            "postedDate": null,
+            "url": "https://daxincpa.zhiye.com/campus",
+            "summary": "从官方入口区分实习与毕业生校招，核对具体业务线和项目驻地。",
+            "requirements": [],
+            "steps": [],
+            "roleDirections": [],
+            "limits": [
+              "官方入口不证明南京或上海持续有在招实习岗位。"
+            ],
+            "sourceIds": [
+              "U908"
+            ]
+          },
+          {
+            "id": "db-daxin-nau-fair",
+            "title": "2026年10月南审招聘会：审计与咨询方向",
+            "kind": "historical",
+            "status": "historical",
+            "statusLabel": "已举办校内活动",
+            "statusDetail": null,
+            "cityTags": [],
+            "searchCities": [],
+            "geographyNote": "南京是招聘会举办地，不能据此确认岗位城市；实际项目与驻地须单独核对。",
+            "eligibility": null,
+            "attendance": null,
+            "duration": null,
+            "applicationWindow": null,
+            "period": "2026年10月14日招聘会（已举行）",
+            "deadline": null,
+            "postedDate": "2026-10-13",
+            "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+            "summary": "校内公告列审计、管理咨询、金融审计与IT审计助理方向。",
+            "requirements": [],
+            "steps": [],
+            "roleDirections": [
+              "审计助理",
+              "管理咨询助理",
+              "金融审计助理",
+              "IT审计助理"
+            ],
+            "limits": [
+              "参会不代表当前余量或MPAcc专属岗位。"
+            ],
+            "sourceIds": [
+              "I861",
+              "I860"
+            ],
+            "screenshots": [
+              {
+                "src": "./evidence/refresh-20261110/nau-recruitment-20261014-title.jpg",
+                "file": "dist/evidence/refresh-20261110/nau-recruitment-20261014-title.jpg",
+                "source_url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+                "sourceUrl": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+                "caption": "2026年事务所专场招聘会预告：标题、日期与活动安排",
+                "alt": "2026年事务所专场招聘会预告：标题、日期与活动安排",
+                "scope": [
+                  "官方预告标题、2026-10-13署期、正文开头与活动海报；这是已举行活动的历史资料。"
+                ],
+                "width": 1348,
+                "height": 926,
+                "bytes": 156269,
+                "sha256": "dba86342626ae87f5ead7e06f797bbaed2a6ffa8fd6f1e9a359052d266e84c6b",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "captured_at": "2026-11-09T16:48:37.107099+00:00"
+              },
+              {
+                "src": "./evidence/refresh-20261110/nau-recruitment-20261014-companies.jpg",
+                "file": "dist/evidence/refresh-20261110/nau-recruitment-20261014-companies.jpg",
+                "source_url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+                "sourceUrl": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+                "caption": "事务所专场招聘会的单位与岗位方向",
+                "alt": "事务所专场招聘会的单位与岗位方向",
+                "scope": [
+                  "同一官方预告中的活动信息、到会企业名录及岗位方向；不据此判定目前有空缺。"
+                ],
+                "width": 1363,
+                "height": 936,
+                "bytes": 121466,
+                "sha256": "9db50932918cae2ca7859a933e9de3ff005655297fdc29d59c2e9022201c46ad",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "captured_at": "2026-11-09T16:48:37.343105+00:00"
+              }
+            ]
+          }
+        ],
+        "questions": [
+          "是否接受本学期年级的在校生，实习与毕业生岗位如何区分？",
+          "具体业务线、实际驻地和出差如何安排？"
+        ],
+        "prep": []
+      },
+      {
+        "id": "zhonghui",
+        "name": "中汇",
+        "officialName": "中汇会计师事务所（特殊普通合伙）",
+        "group": "domestic",
+        "summary": "官网有独立实习入口；与毕业生全职岗位分开查看。",
+        "officeRecords": [],
+        "entryLinks": [
+          {
+            "label": "官方校园项目说明",
+            "url": "https://www.zhcpa.cn/join/campus.html",
+            "kind": "campus",
+            "sourceIds": [
+              "U909"
+            ],
+            "note": null
+          },
+          {
+            "label": "官方实习生招聘列表",
+            "url": "https://zhcpa.zhiye.com/intern/jobs",
+            "kind": "internship",
+            "sourceIds": [
+              "U910"
+            ],
+            "note": null
+          }
+        ],
+        "resources": [
+          {
+            "id": "db-zhonghui-entry",
+            "title": "中汇官方实习生入口",
+            "kind": "channel",
+            "status": "entry_only",
+            "statusLabel": "官方长期入口",
+            "statusDetail": null,
+            "cityTags": [],
+            "searchCities": [
+              "南京",
+              "苏州",
+              "上海"
+            ],
+            "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+            "eligibility": null,
+            "attendance": null,
+            "duration": null,
+            "applicationWindow": null,
+            "period": null,
+            "deadline": null,
+            "postedDate": null,
+            "url": "https://zhcpa.zhiye.com/intern/jobs",
+            "summary": "在官网独立实习列表筛选城市、岗位及在校生要求；全职秋招岗位不适用普通实习。",
+            "requirements": [],
+            "steps": [],
+            "roleDirections": [],
+            "limits": [
+              "官网主页面可确认入口；未核实各城市实时名额与出勤。"
+            ],
+            "sourceIds": [
+              "U909",
+              "U910"
+            ]
+          },
+          {
+            "id": "db-zhonghui-nau-fair",
+            "title": "2026年10月南审招聘会：中汇江苏审计方向",
+            "kind": "historical",
+            "status": "historical",
+            "statusLabel": "已举办校内活动",
+            "statusDetail": null,
+            "cityTags": [],
+            "searchCities": [],
+            "geographyNote": "南京是招聘会举办地，不能据此确认岗位城市；实际项目与驻地须单独核对。",
+            "eligibility": null,
+            "attendance": null,
+            "duration": null,
+            "applicationWindow": null,
+            "period": "2026年10月14日招聘会（已举行）",
+            "deadline": null,
+            "postedDate": "2026-10-13",
+            "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+            "summary": "南审活动名单列江苏分所审计相关岗位。",
+            "requirements": [],
+            "steps": [],
+            "roleDirections": [
+              "审计相关"
+            ],
+            "limits": [
+              "不能把活动名单或2027全职岗位改成当前实习开放。"
+            ],
+            "sourceIds": [
+              "I861"
+            ]
+          }
+        ],
+        "questions": [
+          "应进入实习生招聘还是应届生招聘？",
+          "江苏分所岗位实际驻地在南京、苏州还是客户现场？"
+        ],
+        "prep": []
+      },
+      {
+        "id": "tianheng",
+        "name": "天衡",
+        "officialName": "天衡会计师事务所（特殊普通合伙）",
+        "group": "domestic",
+        "summary": "南京本地事务所；有会计学院研究生工作站历史记录，当前实习需另核。 [I859]",
+        "officeRecords": [
+          {
+            "city": "南京",
+            "district": "建邺区",
+            "branch": null,
+            "address": "南京市建邺区江东中路106号万达广场商务楼B座19—20楼",
+            "sourceIds": [
+              "I864",
+              "I865"
+            ],
+            "limits": [
+              "机构地址不等于客户项目驻地或每日到岗地址。"
+            ],
+            "exactMinutes": null
+          }
+        ],
+        "entryLinks": [
+          {
+            "label": "官方诚聘英才",
+            "url": "https://www.jscpa.com.cn/join-us/",
+            "kind": "campus",
+            "sourceIds": [
+              "I865"
+            ],
+            "note": null
+          }
+        ],
+        "resources": [
+          {
+            "id": "db-tianheng-entry",
+            "title": "天衡官方招聘入口",
+            "kind": "channel",
+            "status": "entry_only",
+            "statusLabel": "官方长期入口",
+            "statusDetail": null,
+            "cityTags": [],
+            "searchCities": [
+              "南京"
+            ],
+            "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+            "eligibility": null,
+            "attendance": null,
+            "duration": null,
+            "applicationWindow": null,
+            "period": null,
+            "deadline": null,
+            "postedDate": null,
+            "url": "https://www.jscpa.com.cn/join-us/",
+            "summary": "官方招聘和联系入口可保留；页面目前读到的2025应届内容只作历史参考。",
+            "requirements": [],
+            "steps": [],
+            "roleDirections": [],
+            "limits": [
+              "未确认2026当前在校生实习名额；不沿用2025岗位人数或要求。"
+            ],
+            "sourceIds": [
+              "I865"
+            ]
+          },
+          {
+            "id": "db-tianheng-nau-fair",
+            "title": "2026年10月南审招聘会：天衡审计方向",
+            "kind": "historical",
+            "status": "historical",
+            "statusLabel": "已举办校内活动",
+            "statusDetail": null,
+            "cityTags": [],
+            "searchCities": [],
+            "geographyNote": "南京是招聘会举办地，不能据此确认岗位城市；实际项目与驻地须单独核对。",
+            "eligibility": null,
+            "attendance": null,
+            "duration": null,
+            "applicationWindow": null,
+            "period": "2026年10月14日招聘会（已举行）",
+            "deadline": null,
+            "postedDate": "2026-10-13",
+            "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+            "summary": "活动列年报审计、专项审计、财务核查方向。",
+            "requirements": [],
+            "steps": [],
+            "roleDirections": [
+              "年报审计",
+              "专项审计",
+              "财务核查"
+            ],
+            "limits": [
+              "招聘会已举行；当前名额、到岗期和资格须另核。"
+            ],
+            "sourceIds": [
+              "I861"
+            ]
+          }
+        ],
+        "questions": [
+          "学院本级是否有选派或个人投递通道？",
+          "年审项目的出差、最低周期与课程安排如何协调？"
+        ],
+        "prep": []
+      },
+      {
+        "id": "zhongming-guocheng",
+        "name": "中名国成",
+        "officialName": "北京中名国成会计师事务所（特殊普通合伙）",
+        "group": "domestic",
+        "summary": "11月高校雇主公告有审计实习；南审10月也有现场实习选拔记录。",
+        "officeRecords": [],
+        "entryLinks": [
+          {
+            "label": "近期审计实习雇主公告",
+            "url": "https://career.nankai.edu.cn/correcruit/content/id/115310.html",
+            "kind": "internship",
+            "sourceIds": [
+              "U911"
+            ],
+            "note": null
+          }
+        ],
+        "resources": [
+          {
+            "id": "db-zmgc-audit-20261103",
+            "title": "审计实习生：上海等地近期公告",
+            "kind": "job_listing",
+            "status": "listing_seen",
+            "statusLabel": "近期实习公告",
+            "statusDetail": "2026-11-03高校雇主公告；当前剩余名额及申请截止未公布。",
+            "cityTags": [
+              "上海",
+              "北京",
+              "天津",
+              "重庆",
+              "河北"
+            ],
+            "searchCities": [],
+            "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+            "eligibility": "公告学历栏列本科；未单列硕士资格，请向招聘方确认。",
+            "attendance": null,
+            "duration": null,
+            "applicationWindow": null,
+            "period": null,
+            "deadline": null,
+            "postedDate": "2026-11-03",
+            "url": "https://career.nankai.edu.cn/correcruit/content/id/115310.html",
+            "summary": "高校就业网发布审计实习岗位，工作地域含上海；人数栏为10人。",
+            "requirements": [],
+            "steps": [],
+            "roleDirections": [],
+            "limits": [
+              "工资区间3000—4500元未说明结算周期，不写成月薪或日薪。",
+              "未公布周出勤、最低时长或到岗日，不能套用其他岗位条件。",
+              "实际驻地、出差、当前名额及硕士是否可报需确认。"
+            ],
+            "sourceIds": [
+              "U911"
+            ]
+          },
+          {
+            "id": "db-zmgc-nau-selection",
+            "title": "南审2026年10月现场实习项目选拔",
+            "kind": "historical",
+            "status": "historical",
+            "statusLabel": "已举办校内活动",
+            "statusDetail": null,
+            "cityTags": [],
+            "searchCities": [],
+            "geographyNote": "南京是招聘会举办地，不能据此确认岗位城市；实际项目与驻地须单独核对。",
+            "eligibility": null,
+            "attendance": null,
+            "duration": null,
+            "applicationWindow": null,
+            "period": "2026年10月14日招聘会（已举行）",
+            "deadline": null,
+            "postedDate": "2026-10-18",
+            "url": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm",
+            "summary": "学校回顾记载中名国成在学院A203安排笔试、面试并选拔实习项目。",
+            "requirements": [],
+            "steps": [],
+            "roleDirections": [],
+            "limits": [
+              "现场选拔记录不是目前报名入口，也不代表MPAcc专属名额。"
+            ],
+            "sourceIds": [
+              "I860"
+            ],
+            "screenshots": [
+              {
+                "src": "./evidence/refresh-20261110/nau-recruitment-20261014-recap-title.jpg",
+                "file": "dist/evidence/refresh-20261110/nau-recruitment-20261014-recap-title.jpg",
+                "source_url": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm",
+                "sourceUrl": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm",
+                "caption": "事务所招聘会回顾：联合主办单位与活动日期",
+                "alt": "事务所招聘会回顾：联合主办单位与活动日期",
+                "scope": [
+                  "官方回顾标题、正文署期2026-10-18与联合主办单位；网页路径日期不作为发布日期。"
+                ],
+                "width": 1334,
+                "height": 470,
+                "bytes": 91413,
+                "sha256": "6701ca47751e66da4f67d663300cf5fbda33a22e792768aa2f777b62521c7330",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "captured_at": "2026-11-09T16:49:19.440210+00:00",
+                "pixelCrop": [
+                  0,
+                  0,
+                  1334,
+                  470
+                ]
+              }
+            ]
+          }
+        ],
+        "questions": [
+          "公告的本科栏是否也接受MPAcc研究生？",
+          "上海实习的具体项目、起止日期和薪资结算周期是什么？"
+        ],
+        "prep": []
+      },
+      {
+        "id": "getein",
+        "name": "基蛋生物",
+        "officialName": "基蛋生物科技股份有限公司",
+        "group": "enterprise",
+        "summary": "南京企业财务核算与内部审计的关注对象；当前学生岗位尚未确认。",
+        "officeRecords": [],
+        "entryLinks": [
+          {
+            "label": "企业官网",
+            "url": "https://www.getein.com.cn/",
+            "kind": "official",
+            "sourceIds": [
+              "U912"
+            ],
+            "note": "用于查找企业公开招聘渠道；不是已核实的实习申请页。"
+          }
+        ],
+        "resources": [
+          {
+            "id": "db-getein-official",
+            "title": "基蛋生物官方信息入口",
+            "kind": "organization_reference",
+            "status": "entry_only",
+            "statusLabel": "企业资料 · 非招聘公告",
+            "statusDetail": null,
+            "cityTags": [],
+            "searchCities": [
+              "南京"
+            ],
+            "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+            "eligibility": null,
+            "attendance": null,
+            "duration": null,
+            "applicationWindow": null,
+            "period": null,
+            "deadline": null,
+            "postedDate": null,
+            "url": "https://www.getein.com.cn/",
+            "summary": "从企业公开渠道核对财务、内部审计及在校生实习公告。",
+            "requirements": [],
+            "steps": [],
+            "roleDirections": [],
+            "limits": [
+              "未核实到可投的官方财务实习职位、出勤或名额。"
+            ],
+            "sourceIds": [
+              "U912"
+            ]
+          },
+          {
+            "id": "db-getein-nau-fair",
+            "title": "南审2026年10月招聘会：财务核算与内审方向",
+            "kind": "historical",
+            "status": "historical",
+            "statusLabel": "已举办校内活动",
+            "statusDetail": null,
+            "cityTags": [],
+            "searchCities": [],
+            "geographyNote": "南京是招聘会举办地，不能据此确认岗位城市；实际项目与驻地须单独核对。",
+            "eligibility": null,
+            "attendance": null,
+            "duration": null,
+            "applicationWindow": null,
+            "period": "2026年10月14日招聘会（已举行）",
+            "deadline": null,
+            "postedDate": "2026-10-13",
+            "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+            "summary": "南审活动预告列财务核算、内部审计方向，可用于事务所以外的职业比较。",
+            "requirements": [],
+            "steps": [],
+            "roleDirections": [
+              "财务核算",
+              "内部审计"
+            ],
+            "limits": [
+              "未说明上述岗位是否实习；不能推定当前开放或MPAcc录用。"
+            ],
+            "sourceIds": [
+              "I861"
+            ]
+          }
+        ],
+        "questions": [
+          "是否招普通在校生实习，财务核算与内部审计分别做什么？",
+          "工位、出勤、最低周期及证明流程如何安排？"
+        ],
+        "prep": []
+      },
+      {
+        "id": "tbea",
+        "name": "特变电工",
+        "officialName": "特变电工股份有限公司",
+        "group": "enterprise",
+        "summary": "可了解企业财务、内控和资金管理，先确认岗位类别与实际驻地。",
+        "officeRecords": [],
+        "entryLinks": [
+          {
+            "label": "官方人才发展",
+            "url": "https://www.tbea.com/join.html",
+            "kind": "official",
+            "sourceIds": [
+              "U913"
+            ],
+            "note": null
+          },
+          {
+            "label": "官方校园招聘通道",
+            "url": "https://wecruit.hotjob.cn/SU612f55eebef57c0616450aa2/pb/school.html",
+            "kind": "campus",
+            "sourceIds": [
+              "U914"
+            ],
+            "note": "正式校招与普通在校生实习分开。"
+          }
+        ],
+        "resources": [
+          {
+            "id": "db-tbea-entry",
+            "title": "特变电工官方招聘入口",
+            "kind": "channel",
+            "status": "entry_only",
+            "statusLabel": "官方长期入口",
+            "statusDetail": null,
+            "cityTags": [],
+            "searchCities": [
+              "江苏",
+              "上海"
+            ],
+            "geographyNote": "具体岗位与实际项目驻地需单独核对。",
+            "eligibility": null,
+            "attendance": null,
+            "duration": null,
+            "applicationWindow": null,
+            "period": null,
+            "deadline": null,
+            "postedDate": null,
+            "url": "https://www.tbea.com/join.html",
+            "summary": "从官网跳转校园招聘系统查找实际岗位，区分毕业生与实习类别。",
+            "requirements": [],
+            "steps": [],
+            "roleDirections": [],
+            "limits": [
+              "未核实普通在校生财务实习职位；全国招聘不等于南京近校岗位。"
+            ],
+            "sourceIds": [
+              "U913",
+              "U914"
+            ]
+          },
+          {
+            "id": "db-tbea-nau-fair",
+            "title": "南审2026年10月招聘会：财务、内控与资金方向",
+            "kind": "historical",
+            "status": "historical",
+            "statusLabel": "已举办校内活动",
+            "statusDetail": null,
+            "cityTags": [],
+            "searchCities": [],
+            "geographyNote": "南京是招聘会举办地，不能据此确认岗位城市；实际项目与驻地须单独核对。",
+            "eligibility": null,
+            "attendance": null,
+            "duration": null,
+            "applicationWindow": null,
+            "period": "2026年10月14日招聘会（已举行）",
+            "deadline": null,
+            "postedDate": "2026-10-13",
+            "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm",
+            "summary": "校内预告列财务、内控和资金管理方向；具体单位、驻地与实习性质需另核。",
+            "requirements": [],
+            "steps": [],
+            "roleDirections": [
+              "财务",
+              "内控",
+              "资金管理"
+            ],
+            "limits": [
+              "未公开证明上述是学生实习岗位，不套用正式校招待遇和要求。"
+            ],
+            "sourceIds": [
+              "I861"
+            ]
+          }
+        ],
+        "questions": [
+          "这是普通在校生实习还是毕业生全职岗位？",
+          "具体法人、工作城市和出差区域是什么？"
+        ],
+        "prep": []
       }
     ],
     "commuteZones": [
@@ -46513,23 +48391,6 @@
     ],
     "expansionInstitutions": [
       {
-        "id": "local-tianheng",
-        "name": "天衡会计师事务所（特殊普通合伙）",
-        "summary": "可继续查审计实习、数字化审计等当期公告。",
-        "url": "https://www.jscpa.com.cn/join-us/",
-        "officeAddress": "南京市建邺区江东中路106号万达广场商务楼B座19-20楼",
-        "status": "practice_base",
-        "statusDetail": "校内基地与官方招聘长期入口；当前实习开放未确认",
-        "sourceIds": [
-          "I859",
-          "I864",
-          "I865"
-        ],
-        "limits": [
-          "官网招聘抽取仍见2025应届岗位，不称在招；实际工作地点以项目组为准。"
-        ]
-      },
-      {
         "id": "local-suyajincheng",
         "name": "苏亚金诚会计师事务所",
         "summary": "在校内就业网与机构当期公告中检索会计、审计实习；核对招聘实体名称。",
@@ -46618,6 +48479,23 @@
         "limits": [
           "不得按‘周边’写成每天从浦口往返方便，也没有当前开放名额证据。"
         ]
+      },
+      {
+        "id": "local-jiangsu-railway",
+        "name": "江苏省铁路集团",
+        "summary": "三方审计人才实践基地已揭牌，可通过学院核对企业内审实践安排。",
+        "url": "https://news.nau.edu.cn/2026/1023/c5796a163076/page.htm",
+        "officeAddress": null,
+        "status": "practice_base",
+        "statusDetail": "2026年10月三方共建基地；未公布学生申请批次与名额",
+        "sourceIds": [
+          "U915"
+        ],
+        "limits": [
+          "省审计厅、南审、省铁路集团合作；未明确限定MPAcc资格。",
+          "揭牌报道没有公开学生报名入口、实习周期或当前名额，不能标为在招。",
+          "主站与新闻网同编号文章属同一来源，不重复计数。"
+        ]
       }
     ],
     "rules": [
@@ -46689,27 +48567,28 @@
     },
     "counts": {
       "batch": "internship-resources-104",
-      "firmCount": 12,
+      "firmCount": 18,
       "bigFourCount": 4,
-      "domesticFirmCount": 8,
-      "resourceCount": 36,
-      "internshipResourceCount": 34,
+      "domesticFirmCount": 12,
+      "resourceCount": 48,
+      "internshipResourceCount": 45,
       "resourceStatusCounts": {
         "program_open": 4,
         "closed": 2,
-        "entry_only": 17,
+        "entry_only": 22,
         "upcoming": 1,
         "program_announced": 5,
-        "historical": 5,
-        "listing_seen": 2
+        "historical": 11,
+        "listing_seen": 3
       },
-      "officeRecordCount": 29,
+      "officeRecordCount": 30,
       "officeRecordCountMeaning": "不同机构的办公地址组，不是不同城市数或实习岗位数。",
       "newOfficialSources": 65,
-      "usedSourceCount": 71,
-      "socialTotal": 120,
-      "officialTotal": 186,
-      "resourceCountNote": "同一公告可能含多个项目；资源条目不是独立岗位、空缺人数或录取机会。"
+      "usedSourceCount": 79,
+      "socialTotal": 130,
+      "officialTotal": 201,
+      "resourceCountNote": "同一公告可能含多个项目；资源条目不是独立岗位、空缺人数或录取机会。",
+      "enterpriseCount": 2
     }
   },
   "musicPlaylist": {

@@ -55,10 +55,11 @@ function fixture() {
 test('internship filters use published project cities and keep channels and formal recruitment distinct',async()=>{
   const a=await app(fixture());
   a.route('#life/life-09');
-  assert.match(a.get('#app').innerHTML,/四大八大实习资源/);
+  assert.match(a.get('#app').innerHTML,/事务所与企业实习资源/);
   assert.match(a.get('#app').innerHTML,/奖助、预算与原职业准备资料/);
   assert.match(a.get('#internship-results').innerHTML,/open-nanjing|national-channel/);
-  assert.match(a.get('#internship-result-count').textContent,/2 家机构 · 7 条匹配资源/);
+  assert.match(a.get('#internship-result-count').textContent,/2 家机构 · 4 条匹配资源/);
+  assert.doesNotMatch(a.get('#internship-results').innerHTML,/closed-shanghai|formal-graduate|preparation-club/,'default view excludes historical and non-internship records');
   a.change('intern-city','南京');
   let html=a.get('#internship-results').innerHTML;
   assert.match(html,/open-nanjing|announced-nanjing/);
@@ -83,7 +84,7 @@ test('internship filters use published project cities and keep channels and form
 });
 
 test('resource details show uncertainty, separate windows from periods, and safely render source content',async()=>{
-  const a=await app(fixture());a.route('#life/life-09');
+  const a=await app(fixture());a.route('#life/life-09');a.change('intern-status','');
   const html=a.get('#internship-results').innerHTML;
   assert.match(html,/时长／周期要求/);assert.doesNotMatch(html,/最短周期<\/dt>/);
   assert.match(html,/通常2–4个月/);assert.match(html,/项目实施期/);assert.match(html,/网申窗口/);assert.match(html,/投递截止/);
@@ -97,7 +98,7 @@ test('resource details show uncertainty, separate windows from periods, and safe
   assert.match(html,/rel="noopener noreferrer"/);
   assert.match(html,/南京 · KDI技术研发和交付中心 &lt;附属类别&gt;/);
   assert.match(html,/class="intern-resource"[^>]*><summary>/,'details remain folded by default');
-  assert.match(a.get('#app').innerHTML,/整理建议，具体门槛以岗位原文为准/);
+  assert.match(a.get('#app').innerHTML,/具体门槛以岗位原文为准/);
   assert.match(a.get('#app').innerHTML,/不是当前名额保证/);
 });
 
@@ -107,4 +108,40 @@ test('legacy data without internships keeps the original life chapter usable',as
   assert.doesNotMatch(a.get('#app').innerHTML,/internship-hub|intern-life-shortcut/);
   assert.match(a.get('#app').innerHTML,/chapter-pagination/);
   assert.doesNotMatch(a.get('#app').innerHTML,/资料格式不完整|暂时未能载入/);
+});
+
+
+test('enterprise finance and internal-audit resources have their own group and filter',async()=>{
+  const data=fixture();
+  data.internships.firms.push({id:'fixture-enterprise',name:'样例企业',group:'enterprise',resources:[{id:'finance-intern',title:'财务与内部审计实习',kind:'channel',status:'entry_only',url:'https://example.org/company/careers',sourceIds:['TEST_INTERN']}],entryLinks:[],officeRecords:[],questions:[]});
+  const a=await app(data);a.route('#life/life-09');
+  assert.match(a.get('#app').innerHTML,/<option value="enterprise">企业财务／内审<\/option>/);
+  a.change('intern-group','enterprise');
+  const html=a.get('#internship-results').innerHTML;
+  assert.match(html,/样例企业|财务与内部审计实习/);
+  assert.match(html,/<span class="intern-group-label">企业财务与内审<\/span>/);
+  assert.doesNotMatch(html,/样例四大|样例国内所|intern-group-label">国内所/);
+  assert.match(a.get('#internship-result-count').textContent,/1 家机构 · 1 条匹配资源/);
+  a.change('intern-group','domestic');
+  assert.match(a.get('#internship-results').innerHTML,/样例国内所/);
+  assert.doesNotMatch(a.get('#internship-results').innerHTML,/样例企业/);
+});
+
+test('official source screenshots render in resources and chapters and reject unsafe locations',async()=>{
+  const data=fixture();
+  const captures=[{src:'./evidence/refresh-20261110/recruitment-01.png',caption:'招聘信息 <原文>',scope:'只截取标题与岗位要求。',sourceUrl:'https://example.org/recruitment',width:1280,height:900},
+    ...['./evidence/refresh-20261110/../private.png','./evidence/not-allowed/a.png','./evidence/refresh-20261110/a.png?token=hidden','./evidence/refresh-20261110/a%2fb.png','https://evil.example/a.png','javascript:alert(1)'].map(src=>({src,caption:'UNSAFE_OFFICIAL_CAPTURE'}))];
+  data.internships.firms[0].resources[0].screenshots=captures;
+  const chapter=data.lifeChapters.find(item=>item.id==='life-08');
+  chapter.blocks=[{type:'screenshots',items:captures,sourceUrl:'https://example.org/recruitment'}];
+  const a=await app(data);a.route('#life/life-09');
+  const resource=a.get('#internship-results').innerHTML;
+  assert.match(resource,/src="\.\/evidence\/refresh-20261110\/recruitment-01\.png"/);
+  assert.match(resource,/来源页面与评论截图|招聘信息 &lt;原文&gt;/);
+  assert.doesNotMatch(resource,/UNSAFE_OFFICIAL_CAPTURE|href="javascript:|src="https:\/\/evil/);
+  a.route('#life/life-08');
+  const html=a.get('#app').innerHTML;
+  assert.match(html,/src="\.\/evidence\/refresh-20261110\/recruitment-01\.png"/);
+  assert.match(html,/只截取标题与岗位要求/);
+  assert.doesNotMatch(html,/UNSAFE_OFFICIAL_CAPTURE/);
 });

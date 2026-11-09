@@ -1,0 +1,18 @@
+{
+  "clientDate": "2026-11-10",
+  "tests": {
+    "command": "node --test tests/*.test.mjs",
+    "passed": 74,
+    "failed": 0
+  },
+  "mergeIdempotent": true,
+  "newScreenshotCount": 5,
+  "screenshotHashesAndDimensionsVerified": true,
+  "newVisibleIndexItems": 10,
+  "visibleIndexItems": 108,
+  "firmCount": 18,
+  "resourceCount": 48,
+  "originalMentorsAndDownloadsPreserved": true,
+  "publishedBaselineMatchesSource": true,
+  "publishStatus": "blocked_github_contents_write_403"
+}
