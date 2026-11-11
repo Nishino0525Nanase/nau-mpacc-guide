@@ -1,4 +1,4 @@
-/* Page-open counts with coarse device categories. No cookies, visitor ID, SDK or replay.
+/* Page-open counts and approximate foreground-visible duration. No cookies, visitor ID, SDK or replay.
  * Each page load gets an ephemeral random event ID; never interpret it as UV.
  * Owner exclusion uses a local preference, processed before any capture.
  * Device categories are estimates, not a hardware model or persistent identity.
@@ -11,6 +11,8 @@
   var OLD_CHOICE = 'nau_privacy_consent_v1';
   var disabled = false;
   var attempted = false;
+  var stopDwell = function () {};
+  var DWELL_VERSION = 'visible_v1';
   function storage() {
     try { return window.localStorage; } catch (_) { return null; }
   }
@@ -36,6 +38,7 @@
   }
   function disable() {
     disabled = true;
+    stopDwell();
     clearOldIdentity();
     try {
       var s = storage();
@@ -115,6 +118,129 @@
     } catch (_) {}
     return out;
   }
+  function send(c, payload) {
+    try {
+      var request = window.fetch(c.apiHost + '/i/v0/e/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+        credentials: 'omit',
+        referrerPolicy: 'no-referrer',
+        cache: 'no-store',
+        keepalive: true,
+        mode: 'cors'
+      });
+      if (request && typeof request.catch === 'function') request.catch(function () {});
+    } catch (_) {}
+  }
+  function startDwell(c, pageview) {
+    var doc = window.document;
+    if (!doc || typeof doc.addEventListener !== 'function' || typeof doc.removeEventListener !== 'function' ||
+        typeof window.addEventListener !== 'function' || typeof window.removeEventListener !== 'function' ||
+        typeof window.setTimeout !== 'function' || typeof window.clearTimeout !== 'function' ||
+        !window.performance || typeof window.performance.now !== 'function') return;
+    var timer = null;
+    var stopped = false;
+    var suspended = false;
+    var active = doc.visibilityState === 'visible';
+    var visibleMs = 0;
+    var lastSentMs = 0;
+    var sequence = 0;
+    function now() {
+      try {
+        var value = window.performance.now();
+        return typeof value === 'number' && Number.isFinite(value) ? value : null;
+      } catch (_) { return null; }
+    }
+    var lastSample = now();
+    if (lastSample === null) return;
+    function clearTimer() {
+      if (timer !== null) window.clearTimeout(timer);
+      timer = null;
+    }
+    function stop() {
+      if (stopped) return;
+      stopped = true;
+      active = false;
+      clearTimer();
+      doc.removeEventListener('visibilitychange', visibility);
+      window.removeEventListener('pagehide', pagehide);
+      window.removeEventListener('pageshow', pageshow);
+      window.removeEventListener('storage', storageChange);
+    }
+    function account() {
+      var value = now();
+      if (value === null) { lastSample = null; return; }
+      // Bound a delayed sample so a frozen browser or sleeping device cannot add hours.
+      // Visibility estimates foreground display, not attention or continuous reading.
+      if (active && lastSample !== null) visibleMs += Math.min(20000, Math.max(0, value - lastSample));
+      lastSample = value;
+    }
+    function report(reason) {
+      if (stopped) return;
+      if (isOptedOut()) { stop(); return; }
+      account();
+      var total = Math.floor(visibleMs);
+      if (total <= lastSentMs) return;
+      lastSentMs = total;
+      sequence += 1;
+      var properties = Object.assign({}, pageview.properties, {
+        dwell_visible_ms: total,
+        dwell_sequence: sequence,
+        dwell_reason: reason
+      });
+      send(c, { api_key: c.token, event: 'nau_page_dwell', distinct_id: pageview.distinct_id, properties: properties });
+    }
+    function schedule() {
+      if (!stopped && active && timer === null) timer = window.setTimeout(heartbeat, 15000);
+    }
+    function heartbeat() {
+      timer = null;
+      if (doc.visibilityState !== 'visible') {
+        active = false;
+        report('hidden');
+        return;
+      }
+      report('heartbeat');
+      schedule();
+    }
+    function visibility() {
+      if (stopped) return;
+      if (doc.visibilityState !== 'visible') {
+        report('hidden');
+        active = false;
+        clearTimer();
+      } else {
+        if (isOptedOut()) { stop(); return; }
+        active = !suspended;
+        lastSample = now();
+        schedule();
+      }
+    }
+    function pagehide() {
+      report('pagehide');
+      suspended = true;
+      active = false;
+      clearTimer();
+    }
+    function pageshow(event) {
+      if (stopped || !event.persisted) return;
+      if (isOptedOut()) { stop(); return; }
+      suspended = false;
+      active = doc.visibilityState === 'visible';
+      lastSample = now();
+      schedule();
+    }
+    function storageChange(event) {
+      if ((!event.key || event.key === OPT_OUT || event.key === OLD_CHOICE) && isOptedOut()) stop();
+    }
+    stopDwell = stop;
+    doc.addEventListener('visibilitychange', visibility);
+    window.addEventListener('pagehide', pagehide);
+    window.addEventListener('pageshow', pageshow);
+    window.addEventListener('storage', storageChange);
+    schedule();
+  }
   clearOldIdentity();
   window.NAUAnalytics = Object.freeze({ disable: disable, isOptedOut: isOptedOut });
   try {
@@ -144,6 +270,8 @@
       properties: {
         source: 'nau-mpacc-guide',
         analytics_mode: 'aggregate_v3_devices',
+        pageview_id: id,
+        dwell_tracking_version: DWELL_VERSION,
         device_type: device.type,
         device_os: device.os,
         device_browser: device.browser,
@@ -157,19 +285,8 @@
       }
     };
     attempted = true;
-    try {
-      var request = window.fetch(c.apiHost + '/i/v0/e/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-        credentials: 'omit',
-        referrerPolicy: 'no-referrer',
-        cache: 'no-store',
-        keepalive: true,
-        mode: 'cors'
-      });
-      if (request && typeof request.catch === 'function') request.catch(function () {});
-    } catch (_) {}
+    send(c, payload);
+    try { startDwell(c, payload); } catch (_) { stopDwell(); }
   }
   capture();
 }());
