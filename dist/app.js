@@ -323,7 +323,71 @@
     return `<li><p>${inline(point.text)}${codes.length ? ` ${inline('[' + codes.join('、') + ']')}` : ''}</p>${point.scope ? `<small>${inline(point.scope)}</small>` : ''}</li>`;
   }
 
-  function studentReviewRecord(item, compact = false) {
+  function reviewSourceEntries(item) {
+    return array(item.sourceIds).filter(code => typeof code === 'string' && source(code)).map(code => source(code));
+  }
+
+  function reviewSourceUrls(item) {
+    return [...new Set([item.sourceUrl, item.canonicalUrl, ...reviewSourceEntries(item).flatMap(entry => [entry.url, entry.canonicalUrl, entry.originalUrl])].map(screenshotSource).filter(Boolean))];
+  }
+
+  function reviewSourcePlatform(item) {
+    for (const value of reviewSourceUrls(item)) {
+      const host = new URL(value).hostname.toLowerCase().replace(/^www\./, '');
+      if (['xiaohongshu.com','rednote.com'].includes(host)) return '小红书';
+      if (host === 'nau.edu.cn' || host.endsWith('.nau.edu.cn')) return item.experienceType === 'interview' ? '校方访谈' : '校方来源';
+      if (host === 'paccesc.ruc.edu.cn') return '教指委访谈';
+      if (host === 'xyh.univs.cn') return '校园号访谈';
+      if (host === 'sohu.com' || host.endsWith('.sohu.com')) return '搜狐';
+      if (host === 'zhihu.com' || host.endsWith('.zhihu.com')) return '知乎';
+      if (host === 'bilibili.com' || host.endsWith('.bilibili.com')) return '哔哩哔哩';
+    }
+    return reviewSourceUrls(item).length ? '公开来源' : '';
+  }
+
+  function reviewSourceKey(value) {
+    const safe = screenshotSource(value);
+    if (!safe) return '';
+    const url = new URL(safe), host = url.hostname.toLowerCase().replace(/^www\./, '');
+    if (['xiaohongshu.com','rednote.com'].includes(host)) {
+      const post = url.pathname.match(/^\/(?:explore|discovery\/item)\/([a-f0-9]{24})(?:\/|$)/i);
+      if (post) return 'xhs:' + post[1].toLowerCase();
+    }
+    return host + url.pathname.replace(/\/$/, '');
+  }
+
+  function reviewInternalPost(item) {
+    const keys = new Set(reviewSourceUrls(item).map(reviewSourceKey).filter(Boolean));
+    const posts = publicPosts().filter(post => post && typeof post.id === 'string' && post.id);
+    const byUrl = posts.find(post => [post.canonicalUrl,post.url].some(value => keys.has(reviewSourceKey(value))));
+    if (byUrl) return byUrl;
+    const codes = new Set(array(item.sourceIds).filter(code => typeof code === 'string' && source(code)));
+    const byCode = posts.filter(post => [...array(post.sourceIds),...array(state.postCodes[post.id])].some(code => codes.has(code)));
+    return byCode.length === 1 ? byCode[0] : null;
+  }
+
+  function reviewSourceBadge(item) {
+    const label = reviewSourcePlatform(item);
+    return label ? `<b class="review-source-platform">${esc(label)}</b>` : '';
+  }
+
+  function reviewContextNotesHtml(item) {
+    const notes = item.contextNotes;
+    if (!notes || typeof notes !== 'object' || Array.isArray(notes)) return '';
+    const excerpt = notes.excerpt;
+    const excerptText = typeof excerpt?.text === 'string' ? excerpt.text.trim() : '';
+    const quote = ['visible_quote','recorded_quote'].includes(excerpt?.kind);
+    const context = array(notes.context).filter(value => typeof value === 'string' && value.trim());
+    const interpretation = typeof notes.interpretation?.text === 'string' ? notes.interpretation.text.trim() : '';
+    const alternative = array(notes.interpretation?.alternative).filter(value => typeof value === 'string' && value.trim());
+    const limits = array(notes.limits).filter(value => typeof value === 'string' && value.trim() && !array(item.limits).includes(value));
+    if (!excerptText && !context.length && !interpretation && !limits.length) return '';
+    const codes = [...new Set([...array(excerpt?.sourceIds),...array(notes.sourceIds)].filter(code => typeof code === 'string' && source(code)))];
+    const label = quote ? `原话片段 · ${excerpt.kind === 'visible_quote' ? '截图可见' : '此前摘记'}` : '已存摘要';
+    return `<section class="review-context-notes" aria-label="评价原话、上下文与解读">${excerptText ? `<div class="review-context-section"><h5>${label}</h5>${quote ? `<blockquote>${inline(excerptText)}</blockquote>` : `<p class="review-context-summary">${inline(excerptText)}</p>`}${typeof excerpt.scope === 'string' && excerpt.scope ? `<p class="review-context-scope">${inline(excerpt.scope)}</p>` : ''}</div>` : ''}${context.length ? `<div class="review-context-section"><h5>上下文</h5><ul>${context.map(value => `<li>${inline(value)}</li>`).join('')}</ul></div>` : ''}${interpretation ? `<div class="review-context-interpretation"><h5>可能的意思 <small>解读，未作事实确认</small></h5><p>${inline(interpretation)}</p>${alternative.length ? `<p class="review-context-alternative"><strong>其他读法：</strong>${alternative.map(inline).join('；')}</p>` : ''}</div>` : ''}${limits.length ? `<p class="review-context-limits">${limits.map(inline).join('；')}</p>` : ''}${codes.length ? `<div class="review-context-sources">${inline('[' + codes.join('、') + ']')}</div>` : ''}</section>`;
+  }
+
+  function studentReviewRecord(item, compact = false, mentorId = '') {
     const experience = {guidance:'具体指导经历',course:'课程接触',general:'笼统提名或印象',interview:'学生访谈中的经历'}[item.experienceType] || '学生经历记录';
     const limits = array(item.limits).map(textOf).filter(Boolean).join('；');
     const readingScope = array(item.readingScope).map(textOf).filter(Boolean).join('；');
@@ -335,7 +399,16 @@
       : ({positive:'正面体验',negative:'需重视的具体体验',mixed:'体验有利弊',neutral:'经历描述'}[item.polarity] || '经历描述');
     const identity = [item.degree || '专业／学位未说明',item.year ? `年级／经历年份：${textOf(item.year)}` : '年级／经历年份未说明',item.relationship || '与老师的接触关系未说明'];
     const codes = array(item.sourceIds).filter(code => typeof code === 'string' && source(code));
-    return `<details class="student-review-record${compact ? ' compact' : ''}"><summary><span>${esc(experience)} · ${esc(tone)}</span><small>${esc(item.narrator || '评论者未记录')} · ${esc(item.date || '日期未显示')}</small></summary><div class="student-review-meta"><span>${esc(voice)}</span><p>${identity.map(esc).join(' · ')}</p>${firsthandScope ? `<p class="review-experience-scope"><strong>本人亲历范围：</strong>${inline(firsthandScope)}</p>` : ''}${hearsayParts ? `<p class="review-experience-scope"><strong>转述／朋友经历的部分：</strong>${inline(hearsayParts)}</p>` : ''}</div><p>${inline(item.text || item.summary || '')}</p>${array(item.specifics).length ? `<ul class="tip-list">${array(item.specifics).map(value => `<li>${inline(value)}</li>`).join('')}</ul>` : ''}<p class="review-attribution"><strong>归属依据：</strong>${item.attribution?.alias ? `原帖写法 ${esc(item.attribution.alias)}；` : ''}${inline(item.attribution?.reason || '原始材料明确指向这位老师。')}</p><p class="evidence-limit"><strong>适用边界：</strong>${inline(limits || '仅限记录中的具体身份、时间与经历，其他情况需另行核实。')}</p>${readingScope ? `<details class="review-reading-scope"><summary>材料范围</summary><p>${inline(readingScope)}</p></details>` : ''}${screenshotsHtml(item.screenshots, item.sourceUrl)}<div class="source-actions">${item.sourceUrl ? external(item.sourceUrl, esc(item.sourceTitle || '打开评价原始来源') + ' ↗') : ''}${codes.length ? inline('[' + codes.join('、') + ']') : ''}</div></details>`;
+    const platform = reviewSourcePlatform(item);
+    const post = reviewInternalPost(item);
+    const contextNotes = reviewContextNotesHtml(item);
+    const firstSource = reviewSourceEntries(item)[0];
+    const title = item.sourceTitle || post?.title || firstSource?.title || '';
+    const author = item.postAuthor || post?.author || '';
+    const postDate = item.postDate || post?.date || '';
+    const primaryUrl = reviewSourceUrls(item)[0] || '';
+    const archive = `<p>${inline(item.text || item.summary || '')}</p>${array(item.specifics).length ? `<ul class="tip-list">${array(item.specifics).map(value => `<li>${inline(value)}</li>`).join('')}</ul>` : ''}<p class="review-attribution"><strong>归属依据：</strong>${item.attribution?.alias ? `原帖写法 ${esc(item.attribution.alias)}；` : ''}${inline(item.attribution?.reason || '原始材料明确指向这位老师。')}</p><p class="evidence-limit"><strong>适用边界：</strong>${inline(limits || '仅限记录中的具体身份、时间与经历，其他情况需另行核实。')}</p>${readingScope ? `<details class="review-reading-scope"><summary>材料范围</summary><p>${inline(readingScope)}</p></details>` : ''}`;
+    return `<details class="student-review-record${compact ? ' compact' : ''}"><summary><span>${reviewSourceBadge(item)}${platform ? ' · ' : ''}${esc(experience)} · ${esc(tone)}${contextNotes ? '<em class="review-context-hint">语境解读</em>' : ''}</span><small>${esc(item.narrator || '评论者未记录')} · ${esc(item.date || '日期未显示')}</small></summary><div class="student-review-meta"><span>${esc(voice)}</span>${title ? `<p class="review-source-caption"><strong>帖子／文章：</strong>${esc(title)}${author ? ` · ${esc(author)}` : ''}${postDate ? ` · ${esc(postDate)}` : ''}</p>` : ''}<p>${identity.map(esc).join(' · ')}</p>${firsthandScope ? `<p class="review-experience-scope"><strong>本人亲历范围：</strong>${inline(firsthandScope)}</p>` : ''}${hearsayParts ? `<p class="review-experience-scope"><strong>转述／朋友经历的部分：</strong>${inline(hearsayParts)}</p>` : ''}</div>${contextNotes ? contextNotes + `<details class="review-context-archive"><summary>其他摘记与边界</summary>${archive}</details>` : archive}${screenshotsHtml(item.screenshots, primaryUrl)}<div class="source-actions">${primaryUrl ? external(primaryUrl, esc(platform === '小红书' ? '打开小红书原帖／上下文 ↗' : '打开原文／上下文 ↗') + `<span class="sr-only">：${esc(item.sourceTitle || '')}</span>`) : ''}${post ? `<button type="button" class="text-button" data-action="post" data-id="${esc(post.id)}"${mentorId ? ` data-mentor-id="${esc(mentorId)}"` : ''}>查看本站帖子记录</button>` : ''}${codes.length ? inline('[' + codes.join('、') + ']') : ''}</div></details>`;
   }
 
   function studentReviewSection(mentor, compact = false) {
@@ -349,8 +422,8 @@
     const concerns = supportedReviewPoints(mentor, 'concerns');
     const questions = array(dossier.verificationQuestions).filter(Boolean);
     const gaps = array(dossier.gaps).filter(Boolean);
-    if (compact) return `<div class="compare-student-reviews"><p class="review-coverage-badge">${esc(reviewCoverageLabel(mentor))}</p>${dossier.summary ? `<p>${inline(dossier.summary)}</p>` : ''}${positive.length ? `<h4>被推荐的具体理由</h4><ul class="review-point-list">${positive.map(reviewPointHtml).join('')}</ul>` : ''}${concerns.length ? `<h4>避雷与适配提醒</h4><ul class="review-point-list">${concerns.map(reviewPointHtml).join('')}</ul>` : ''}${reviews.length ? reviews.slice(0,2).map(item => studentReviewRecord(item,true)).join('') : '<p class="compare-empty">暂无可归属的学生个人评价，不能据此作口碑推荐或排除。</p>'}${reviews.length > 2 ? `<p class="compare-empty">另有 ${reviews.length-2} 条经历，见完整资料。</p>` : ''}${questions.length ? `<details class="review-questions"><summary>联系时需要核实的问题</summary><ul class="tip-list">${questions.map(item => `<li>${inline(item)}</li>`).join('')}</ul></details>` : ''}</div>`;
-    return `<section class="dialog-section student-review-section" aria-label="学生个人评价"><h3><span class="section-number">01</span>学生个人评价</h3><p class="review-coverage-badge">${esc(reviewCoverageLabel(mentor))} · ${reviews.length} 条可归属记录</p>${dossier.summary ? `<details class="review-reading-scope"><summary>评价概况与适用范围</summary><p>${inline(dossier.summary)}</p></details>` : ''}${positive.length ? `<section class="review-assessment"><h4>被推荐的具体理由</h4><ul class="review-point-list">${positive.map(reviewPointHtml).join('')}</ul></section>` : '<p class="review-gap">现有个人体验材料不足以形成具体推荐理由，联系前可继续补证。</p>'}${concerns.length ? `<section class="review-assessment concerns"><h4>避雷与适配提醒 · 限定具体经历</h4><ul class="review-point-list">${concerns.map(reviewPointHtml).join('')}</ul></section>` : ''}${reviews.length ? `<div class="student-review-records"><h4>原文与评论 · 逐条看身份与过程</h4>${reviews.map(item => studentReviewRecord(item)).join('')}</div>` : '<p class="review-gap">暂无可归属的公开学生体验。官方论文、案例和课程记录在下方单独呈现。</p>'}${questions.length ? `<details class="review-questions"><summary>联系前向直系学生核实</summary><ul class="tip-list">${questions.map(item => `<li>${inline(item)}</li>`).join('')}</ul></details>` : ''}${gaps.length ? `<details class="review-gaps"><summary>还需核实的信息</summary><ul class="tip-list">${gaps.map(item => `<li>${inline(item)}</li>`).join('')}</ul></details>` : ''}</section>`;
+    if (compact) return `<div class="compare-student-reviews"><p class="review-coverage-badge">${esc(reviewCoverageLabel(mentor))}</p>${dossier.summary ? `<p>${inline(dossier.summary)}</p>` : ''}${positive.length ? `<h4>被推荐的具体理由</h4><ul class="review-point-list">${positive.map(reviewPointHtml).join('')}</ul>` : ''}${concerns.length ? `<h4>避雷与适配提醒</h4><ul class="review-point-list">${concerns.map(reviewPointHtml).join('')}</ul>` : ''}${reviews.length ? reviews.slice(0,2).map(item => studentReviewRecord(item,true,mentor.id)).join('') : '<p class="compare-empty">暂无可归属的学生个人评价，不能据此作口碑推荐或排除。</p>'}${reviews.length > 2 ? `<p class="compare-empty">另有 ${reviews.length-2} 条经历，见完整资料。</p>` : ''}${questions.length ? `<details class="review-questions"><summary>联系时需要核实的问题</summary><ul class="tip-list">${questions.map(item => `<li>${inline(item)}</li>`).join('')}</ul></details>` : ''}</div>`;
+    return `<section class="dialog-section student-review-section" aria-label="学生个人评价"><h3><span class="section-number">01</span>学生个人评价</h3><p class="review-coverage-badge">${esc(reviewCoverageLabel(mentor))} · ${reviews.length} 条可归属记录</p>${dossier.summary ? `<details class="review-reading-scope"><summary>评价概况与适用范围</summary><p>${inline(dossier.summary)}</p></details>` : ''}${positive.length ? `<section class="review-assessment"><h4>被推荐的具体理由</h4><ul class="review-point-list">${positive.map(reviewPointHtml).join('')}</ul></section>` : '<p class="review-gap">现有个人体验材料不足以形成具体推荐理由，联系前可继续补证。</p>'}${concerns.length ? `<section class="review-assessment concerns"><h4>避雷与适配提醒 · 限定具体经历</h4><ul class="review-point-list">${concerns.map(reviewPointHtml).join('')}</ul></section>` : ''}${reviews.length ? `<div class="student-review-records"><h4>原文与评论 · 逐条看身份与过程</h4>${reviews.map(item => studentReviewRecord(item,false,mentor.id)).join('')}</div>` : '<p class="review-gap">暂无可归属的公开学生体验。官方论文、案例和课程记录在下方单独呈现。</p>'}${questions.length ? `<details class="review-questions"><summary>联系前向直系学生核实</summary><ul class="tip-list">${questions.map(item => `<li>${inline(item)}</li>`).join('')}</ul></details>` : ''}${gaps.length ? `<details class="review-gaps"><summary>还需核实的信息</summary><ul class="tip-list">${gaps.map(item => `<li>${inline(item)}</li>`).join('')}</ul></details>` : ''}</section>`;
   }
 
   const outcomeDegreeLabels = {MPAcc:'MPAcc', MAud:'MAud', academic_master:'学术型硕士', master_unspecified:'硕士 · 类型未注明', undergraduate:'本科', unspecified:'学位未注明'};
@@ -538,14 +611,14 @@
     const aliasLead = mentorAliasQueryReview(mentor);
     if (aliasLead) {
       const codes = [...new Set([...array(aliasLead.review.sourceIds), ...array(aliasLead.alias.sourceIds)].filter(code => typeof code === 'string' && source(code)))];
-      return `<span class="mentor-review-scope mentor-alias-review-scope">原帖提名／选择态度 · 未说明经历${codes.length ? ' ' + inline('[' + codes.join('、') + ']') : ''}</span><p class="mentor-review-excerpt">${inline(aliasLead.review.text)}</p>`;
+      return `<span class="mentor-review-scope mentor-alias-review-scope">${reviewSourceBadge(aliasLead.review)}${reviewSourcePlatform(aliasLead.review) ? ' · ' : ''}原帖提名／选择态度 · 未说明经历${codes.length ? ' ' + inline('[' + codes.join('、') + ']') : ''}</span><p class="mentor-review-excerpt">${inline(aliasLead.review.text)}</p>`;
     }
     const review = mentorPreviewReview(mentor);
     if (!review) return '<span class="record-empty" aria-label="暂无具体个人经历摘要">—</span>';
     const stage = reviewHasExplicitMpaccIdentity(review) ? 'MPAcc' : /本科/.test(review.degree || '') ? '本科' : /硕士/.test(review.degree || '') ? '硕士·类型未明' : '阶段未明';
     const relation = review.experienceType === 'course' ? '课程' : ['guidance','interview'].includes(review.experienceType) ? '指导' : '接触';
     const codes = array(review.sourceIds).filter(code => typeof code === 'string' && source(code));
-    return `<span class="mentor-review-scope">${esc(stage)}${stage === '阶段未明' ? ' · ' : ''}${esc(relation)}${codes.length ? ' ' + inline('[' + codes.join('、') + ']') : ''}</span><p class="mentor-review-excerpt">${inline(review.text || '')}</p>`;
+    return `<span class="mentor-review-scope">${reviewSourceBadge(review)}${reviewSourcePlatform(review) ? ' · ' : ''}${esc(stage)}${stage === '阶段未明' ? ' · ' : ''}${esc(relation)}${codes.length ? ' ' + inline('[' + codes.join('、') + ']') : ''}</span><p class="mentor-review-excerpt">${inline(review.text || '')}</p>`;
   }
 
   function mentorCard(mentor) {
@@ -839,9 +912,10 @@
     return `<div class="comment-block"><small>${esc(parts.author)}${parts.date ? ' · ' + esc(parts.date) : ''}</small>${parts.identity.length ? `<small> · ${esc(parts.identity.join(' / '))}</small>` : ''}<p>${inline(parts.body)}</p>${parts.limits.length ? `<p class="evidence-limit">${parts.limits.map(inline).join('；')}</p>` : ''}${renderScreenshots(comment.screenshots)}</div>`;
   }
 
-  function openPost(id) {
+  function openPost(id, returnMentorId = '') {
     const p = state.data.socialPosts.find(p => p.id === id);
     if (!p) return;
+    const returnMentor = state.data.mentors.find(mentor => mentor.id === returnMentorId);
     const comments = array(p.comments);
     const shownScreenshots = new Set();
     const uniqueScreenshotsHtml = items => screenshotsHtml(screenshotItems(items, p.url || p.canonicalUrl).filter(item => {
@@ -849,7 +923,7 @@
       shownScreenshots.add(item.src);
       return true;
     }), p.url || p.canonicalUrl);
-    openDialog('原帖摘记 / ' + socialCodes(p), `<div class="dialog-heading"><div><h2 id="dialog-title">${esc(p.title)}</h2><div class="dialog-subtitle">${esc(p.platform)} · ${esc(p.author || '作者未记录')} · ${esc(p.date || '日期未显示')}</div></div></div><div class="tags"><span class="tag warm">${esc(p.category)}</span><span class="tag secondary">${esc(p.topic)}</span></div><dl class="profile-fields"><div class="profile-row"><dt>接触身份</dt><dd>${esc(p.population || '未说明')}</dd></div><div class="profile-row"><dt>适用校区</dt><dd>${esc(p.campus || '未说明')}</dd></div><div class="profile-row"><dt>核实状态</dt><dd>${esc(p.verificationStatus || '见采用边界')}</dd></div>${p.promotion ? `<div class="profile-row"><dt>商业或导流线索</dt><dd>${esc(p.promotion)}</dd></div>` : ''}</dl><section class="dialog-section"><h3>内容要点</h3><p class="dialog-content-intro">${inline(p.summary || '本条只保留筛选范围，未形成可采用的具体内容。')}</p>${array(p.tips).length ? `<ul class="tip-list">${array(p.tips).map(t => `<li>${inline(t)}</li>`).join('')}</ul>` : ''}</section>${comments.length ? `<section class="dialog-section"><h3>可见评论与回复摘记</h3>${comments.map(c => postCommentHtml(c, uniqueScreenshotsHtml)).join('')}</section>` : ''}${uniqueScreenshotsHtml(postScreenshots(p))}<section class="dialog-section"><h3>适用范围</h3><div class="evidence-note">${inline(p.reviewReason || '')}${p.limitations ? `<p>${inline(p.limitations)}</p>` : ''}</div>${array(p.readingScopes).length ? `<ul class="tip-list">${array(p.readingScopes).map(scope => `<li>${inline(scope)}</li>`).join('')}</ul>` : ''}</section><div class="source-actions">${external(p.url || p.canonicalUrl, '打开原帖 ↗', 'button secondary')}</div>`);
+    openDialog('原帖摘记 / ' + socialCodes(p), `${returnMentor ? `<div class="review-post-return"><button type="button" class="text-button" data-action="mentor" data-id="${esc(returnMentor.id)}">← 返回${esc(returnMentor.name)}导师资料</button></div>` : ''}<div class="dialog-heading"><div><h2 id="dialog-title">${esc(p.title)}</h2><div class="dialog-subtitle">${esc(p.platform)} · ${esc(p.author || '作者未记录')} · ${esc(p.date || '日期未显示')}</div></div></div><div class="tags"><span class="tag warm">${esc(p.category)}</span><span class="tag secondary">${esc(p.topic)}</span></div><dl class="profile-fields"><div class="profile-row"><dt>接触身份</dt><dd>${esc(p.population || '未说明')}</dd></div><div class="profile-row"><dt>适用校区</dt><dd>${esc(p.campus || '未说明')}</dd></div><div class="profile-row"><dt>核实状态</dt><dd>${esc(p.verificationStatus || '见采用边界')}</dd></div>${p.promotion ? `<div class="profile-row"><dt>商业或导流线索</dt><dd>${esc(p.promotion)}</dd></div>` : ''}</dl><section class="dialog-section"><h3>内容要点</h3><p class="dialog-content-intro">${inline(p.summary || '本条只保留筛选范围，未形成可采用的具体内容。')}</p>${array(p.tips).length ? `<ul class="tip-list">${array(p.tips).map(t => `<li>${inline(t)}</li>`).join('')}</ul>` : ''}</section>${comments.length ? `<section class="dialog-section"><h3>可见评论与回复摘记</h3>${comments.map(c => postCommentHtml(c, uniqueScreenshotsHtml)).join('')}</section>` : ''}${uniqueScreenshotsHtml(postScreenshots(p))}<section class="dialog-section"><h3>适用范围</h3><div class="evidence-note">${inline(p.reviewReason || '')}${p.limitations ? `<p>${inline(p.limitations)}</p>` : ''}</div>${array(p.readingScopes).length ? `<ul class="tip-list">${array(p.readingScopes).map(scope => `<li>${inline(scope)}</li>`).join('')}</ul>` : ''}</section><div class="source-actions">${external(p.url || p.canonicalUrl, '打开原帖 ↗', 'button secondary')}</div>`);
     emit('post_open', {id});
   }
 
@@ -1011,7 +1085,7 @@
         case 'contact-mode': openContactPreparation(state.contactMentorId, action.dataset.mode); break;
         case 'copy-contact': copyContactPreparation(); break;
         case 'mentor': openMentor(id); break;
-        case 'post': openPost(id); break;
+        case 'post': openPost(id, action.dataset.mentorId || ''); break;
         case 'save': toggleSaved(id); break;
         case 'guide': openGuide(action.dataset.section); break;
         case 'direction': state.direction=id; $$('[data-action="direction"]').forEach(b=>b.setAttribute('aria-pressed', String(b.dataset.id===id))); {const note=$('.direction-note');if(note){note.hidden=!id;note.textContent=id?`${id} · ${directionName(id)}；交叉归类不等同招生分组。`:'';}} renderMentorResults(); emit('direction_filter',{id}); break;

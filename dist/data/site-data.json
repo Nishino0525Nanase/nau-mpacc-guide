@@ -815,6 +815,24 @@
       "namedGeneralRecords": 3,
       "newFirsthandRecords": 0,
       "newXhsPosts": 0
+    },
+    "reviewContextDisplay": {
+      "date": "2026-11-13",
+      "reviewIds": [
+        "sr-e63702f4d750b2",
+        "sr-56c2d22b39f07a",
+        "sr-69b5e3bc556593",
+        "sr-6eb60f59829dc8",
+        "sr-c8216c4fc1a3f7",
+        "sr-alias-20261113-yby"
+      ],
+      "sourceIds": [
+        "X01",
+        "X02"
+      ],
+      "newReviewRecords": 0,
+      "newIndependentSources": 0,
+      "rule": "截图可见片段、此前记录的用词、摘要与可能读法分开显示；解读不改变亲历或推荐等级。"
     }
   },
   "directions": [
@@ -1479,6 +1497,32 @@
               "reason": "玩笑化／夸张措辞明显；不能确认是否反讽，也未核实亲历身份",
               "scope": "复核既有摘记，未新增原帖或学生经历；不武断确认反讽。",
               "batch": "review-context-audit-round10"
+            },
+            "contextNotes": {
+              "excerpt": {
+                "text": "首评以自行安排、躺平取向提名；跟评把它理解成老师不主动干预，并追问是否容易毕业。",
+                "kind": "summary",
+                "sourceIds": [
+                  "X01"
+                ],
+                "scope": "据既有评论摘记概括，未取得完整逐字原话，不作为直接引文。"
+              },
+              "context": [
+                "现存摘记涉及首评、追问和附和，不是同一人完整讲述指导经历。",
+                "关于任务轻、好毕业、不卡毕业的内容是提问或理解，未留存具体毕业过程或答复承诺。"
+              ],
+              "interpretation": {
+                "text": "可能是在谈自主安排较多、主动督促较少；对希望老师盯进度的人，这是需要核实的沟通点。",
+                "confidence": "limited",
+                "alternative": "也可能含玩笑、夸张或反讽，现有摘要不能确定真正的推荐方向。"
+              },
+              "limits": [
+                "未说明评论者学位或直系关系。",
+                "不能由这段讨论断言放养、不负责、容易毕业或允许长期实习。"
+              ],
+              "sourceIds": [
+                "X01"
+              ]
             }
           }
         ],
@@ -2582,7 +2626,34 @@
                 "textAltered": false
               }
             ],
-            "priorReadingScope": "本轮读到首评及作者已显示跟评；该楼另1条折叠回复未重读。"
+            "priorReadingScope": "本轮读到首评及作者已显示跟评；该楼另1条折叠回复未重读。",
+            "contextNotes": {
+              "excerpt": {
+                "text": "“要求高”／“很愿意帮助学生”",
+                "kind": "visible_quote",
+                "sourceIds": [
+                  "X02"
+                ],
+                "scope": "主评和同一账号跟评各取一个短语，斜杠分隔两处原话；评论日期03-31，年份未显示。",
+                "screenshotSrc": "./evidence/xhs/x02-cuixiumei.jpg"
+              },
+              "context": [
+                "旺妮大李包在首评说要求较高，又在同人跟评补充愿意帮助学生。",
+                "下方另2条折叠回复未展开，评论者学位和指导关系未说明。"
+              ],
+              "interpretation": {
+                "text": "两句一起看，较像在表达要求与支持并存的主观印象；只截前一句或后一句都会失真。",
+                "confidence": "contextual",
+                "alternative": "不能据此量化任务强度，也不能推定每位学生都获得同样的帮助。"
+              },
+              "limits": [
+                "这是相处印象，不是已核实的直系身份或改稿机制。",
+                "不从要求高直接推出负面结论，也不从愿帮助推出低负担。"
+              ],
+              "sourceIds": [
+                "X02"
+              ]
+            }
           }
         ],
         "recommendationPoints": [
@@ -4231,7 +4302,34 @@
                 "kind": "actual-browser-screenshot",
                 "textAltered": false
               }
-            ]
+            ],
+            "contextNotes": {
+              "excerpt": {
+                "text": "答应我千万不要选yby...",
+                "kind": "visible_quote",
+                "sourceIds": [
+                  "X01"
+                ],
+                "scope": "粥Zhou于2025-04-02的评论片段；截图中末尾截断。",
+                "screenshotSrc": "./evidence/xhs/x01-post-top.jpg"
+              },
+              "context": [
+                "下层另一账号于2025-04-08回复“那你很有生活了”，并带emoji。",
+                "画面另有2条回复折叠，未读到完整原因或本人接触关系。"
+              ],
+              "interpretation": {
+                "text": "首评明确表达不建议选择的态度；跟评可能是附和或调侃，但仍不能补出具体遭遇。",
+                "confidence": "limited",
+                "alternative": "语气可能含夸张；没有具体事例，不能确认到底在提醒什么。"
+              },
+              "limits": [
+                "姓名缩写已对应，不等于评论者的学位、直系关系或指控事实得到确认。",
+                "仅保留选择态度，不生成具体避雷理由。"
+              ],
+              "sourceIds": [
+                "X01"
+              ]
+            }
           }
         ],
         "recommendationPoints": [
@@ -5256,7 +5354,34 @@
                 "textAltered": false
               }
             ],
-            "priorReadingScope": "本轮原帖顶层读取至THE END；对应木渎3条追加回复及🐶🐶1条追加回复均展开；XW1条追加回复已展开；无名玩笑楼及不属于本组的部分分支未重开。"
+            "priorReadingScope": "本轮原帖顶层读取至THE END；对应木渎3条追加回复及🐶🐶1条追加回复均展开；XW1条追加回复已展开；无名玩笑楼及不属于本组的部分分支未重开。",
+            "contextNotes": {
+              "excerpt": {
+                "text": "听研究生学姐说老师会push",
+                "kind": "visible_quote",
+                "sourceIds": [
+                  "X02"
+                ],
+                "scope": "木渎主评中的可见片段；评论日期03-31，年份未显示。",
+                "screenshotSrc": "./evidence/xhs/x02-chengbo.jpg"
+              },
+              "context": [
+                "同一主评先明确程博教过自己的中财课。",
+                "研究生push部分明确来自学姐，与本人本科课程接触分开；截图不含折叠回复。"
+              ],
+              "interpretation": {
+                "text": "这里的push可理解为会催进度或给训练要求的转述，值得继续问具体任务与频次。",
+                "confidence": "contextual",
+                "alternative": "push也可能只是正常督促；没有具体行为，不能直接理解为压榨或高压。"
+              },
+              "limits": [
+                "研究生部分是二手信息，未明示学硕或MPAcc。",
+                "本科课堂好感不等于已经体验过研究生论文指导。"
+              ],
+              "sourceIds": [
+                "X02"
+              ]
+            }
           },
           {
             "id": "sr-685b44c44b5c9f",
@@ -6096,6 +6221,32 @@
               "reason": "语气无法确认；目前存档仅有摘要，不足以判断真心推荐或反串",
               "scope": "复核既有摘记，未新增原帖或学生经历；不武断确认反讽。",
               "batch": "review-context-audit-round10"
+            },
+            "contextNotes": {
+              "excerpt": {
+                "text": "全名提名并形容过得轻松，没有具体行为例子。",
+                "kind": "summary",
+                "sourceIds": [
+                  "X02"
+                ],
+                "scope": "此前摘记的内容概括；没有保留足够逐字原话和相关回复。"
+              },
+              "context": [
+                "评论者未交代学位、年级、本人指导关系。",
+                "完整语气未保留，不能用另一处缩写评论反推本条一定是反话。"
+              ],
+              "interpretation": {
+                "text": "字面上是对轻松感受的提名，但轻松不直接回答是否及时改稿、有没有训练或是否支持实习。",
+                "confidence": "limited",
+                "alternative": "可能是真心推荐，也可能是夸张或反话；现有材料不足以选定一种。"
+              },
+              "limits": [
+                "不将表面正向词写成已经核实的指导体验。",
+                "目前没有具体任务、反馈、组会或实习事例。"
+              ],
+              "sourceIds": [
+                "X02"
+              ]
             }
           }
         ],
@@ -6382,7 +6533,33 @@
             ],
             "readingScope": "该条顶层评论、小饭的追问及原作者2025-04-04跟评。",
             "readThisRound": true,
-            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。",
+            "contextNotes": {
+              "excerpt": {
+                "text": "不push",
+                "kind": "recorded_quote",
+                "sourceIds": [
+                  "X01"
+                ],
+                "scope": "此前评论摘记保留的用词；同一人在小饭追问后于2025-04-04跟评。"
+              },
+              "context": [
+                "主评自称论文指导关系，描述初稿不佳时老师解释修改办法，而非只给一句态度词。",
+                "不push为同一人的后续主观补充，两条不算两个独立口碑样本。"
+              ],
+              "interpretation": {
+                "text": "可读作这名学生感受到的督促较少或交流压力较小；前文仍有实际修改帮助，不能把不push简单等同不指导。",
+                "confidence": "contextual",
+                "alternative": "只说明这一次相处感受，不保证所有年级、任务和毕业节点都轻松。"
+              },
+              "limits": [
+                "自述身份未独立核验，未说明本科、学硕或MPAcc。",
+                "未给反馈周期、组会频率或实习安排。"
+              ],
+              "sourceIds": [
+                "X01"
+              ]
+            }
           },
           {
             "id": "sr-cc151a6d666e87",

@@ -1,0 +1,21 @@
+{
+  "contextNotes": 6,
+  "reviewIds": [
+    "sr-e63702f4d750b2",
+    "sr-56c2d22b39f07a",
+    "sr-69b5e3bc556593",
+    "sr-6eb60f59829dc8",
+    "sr-c8216c4fc1a3f7",
+    "sr-alias-20261113-yby"
+  ],
+  "studentReviewRecords": 44,
+  "sourceRegistryCount": 491,
+  "newReviewRecords": 0,
+  "newIndependentSources": 0,
+  "newScreenshots": 0,
+  "excerptKinds": {
+    "summary": 2,
+    "visible_quote": 3,
+    "recorded_quote": 1
+  }
+}
