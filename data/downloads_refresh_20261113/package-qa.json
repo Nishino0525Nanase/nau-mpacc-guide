@@ -1,9 +1,9 @@
 [
   {
     "filename": "mentor-guide.docx",
-    "externalRelationships": 115,
+    "externalRelationships": 124,
     "formulaErrors": [],
-    "textCharacters": 19733,
+    "textCharacters": 22407,
     "mentorNamesPresent": 34
   },
   {
@@ -14,7 +14,7 @@
   },
   {
     "filename": "evidence-index.xlsx",
-    "externalRelationships": 240,
+    "externalRelationships": 12,
     "formulaErrors": [],
     "sheets": [
       "完整来源目录",
