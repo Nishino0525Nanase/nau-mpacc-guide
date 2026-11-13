@@ -37,7 +37,7 @@ async function app(hash) {
   }};
 }
 
-for(const [route,heading] of [['#posts','建议的背后，是这些原始来源'],['#life/life-09','在南审，慢慢把生活安顿好']]) {
+for(const [route,heading] of [['#posts','建议的背后，是这些原始来源'],['#life/life-09','南审生活指南']]) {
   test('skip to content preserves current guide route '+route,async()=>{
     const a=await app(route);
     assert.match(a.get('#app').innerHTML,new RegExp(heading));

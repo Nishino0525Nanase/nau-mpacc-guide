@@ -1,0 +1,108 @@
+{
+  "batch": "plain-copy-20261113",
+  "chapters": [
+    {
+      "id": "life-01",
+      "before": 893,
+      "after": 246,
+      "retainedOriginalBlocks": 6
+    },
+    {
+      "id": "life-02",
+      "before": 1328,
+      "after": 276,
+      "retainedOriginalBlocks": 13
+    },
+    {
+      "id": "life-03",
+      "before": 3956,
+      "after": 261,
+      "retainedOriginalBlocks": 35
+    },
+    {
+      "id": "life-04",
+      "before": 1625,
+      "after": 304,
+      "retainedOriginalBlocks": 17
+    },
+    {
+      "id": "life-05",
+      "before": 2439,
+      "after": 264,
+      "retainedOriginalBlocks": 22
+    },
+    {
+      "id": "life-06",
+      "before": 1530,
+      "after": 283,
+      "retainedOriginalBlocks": 16
+    },
+    {
+      "id": "life-07",
+      "before": 1858,
+      "after": 228,
+      "retainedOriginalBlocks": 20
+    },
+    {
+      "id": "life-08",
+      "before": 7923,
+      "after": 229,
+      "retainedOriginalBlocks": 69
+    },
+    {
+      "id": "life-09",
+      "before": 376,
+      "after": 196,
+      "retainedOriginalBlocks": 21
+    },
+    {
+      "id": "life-10",
+      "before": 1240,
+      "after": 290,
+      "retainedOriginalBlocks": 11
+    },
+    {
+      "id": "life-11",
+      "before": 989,
+      "after": 423,
+      "retainedOriginalBlocks": 5
+    },
+    {
+      "id": "life-13",
+      "before": 1531,
+      "after": 346,
+      "retainedOriginalBlocks": 10
+    },
+    {
+      "id": "life-14",
+      "before": 1271,
+      "after": 270,
+      "retainedOriginalBlocks": 11
+    },
+    {
+      "id": "life-15",
+      "before": 1406,
+      "after": 215,
+      "retainedOriginalBlocks": 12
+    },
+    {
+      "id": "life-16",
+      "before": 1377,
+      "after": 266,
+      "retainedOriginalBlocks": 15
+    },
+    {
+      "id": "life-12",
+      "before": 8088,
+      "after": 85,
+      "retainedOriginalBlocks": 283
+    }
+  ],
+  "measurement": "Default chapter text only; excludes images, navigation, internship hub and source directory.",
+  "before": 29742,
+  "after": 4097,
+  "sourceRegistryChanged": false,
+  "originalImagesChanged": false,
+  "originalChapterTextRetained": true,
+  "reductionPercent": 86
+}

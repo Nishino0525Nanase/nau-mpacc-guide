@@ -23,7 +23,7 @@ function fixture(){
   return data;
 }
 
-async function app(data=fixture(),hash='#life/life-01'){
+async function app(data=fixture(),hash='#life/life-01',chapterImages=''){
   const elements=new Map(),handlers=new Map(),winHandlers=new Map(),writes=[],events=[];
   let document,phaseButtons=[],appWrites=0,fetches=0;
   class Element{
@@ -55,7 +55,7 @@ async function app(data=fixture(),hash='#life/life-01'){
   const get=selector=>{if(!elements.has(selector))elements.set(selector,new Element(selector));return elements.get(selector);};
   document={querySelector:get,querySelectorAll:selector=>selector==='[data-action="student-phase"]'?phaseButtons:[],documentElement:{style:{setProperty(){}}},body:{style:{}},activeElement:get('initial'),title:'',addEventListener:(name,fn)=>handlers.set(name,fn)};
   const location={href:'https://example.github.io/nau-mpacc-guide/'+hash,hash};
-  const window={location,matchMedia:()=>({matches:false}),addEventListener:(name,fn)=>winHandlers.set(name,fn),dispatchEvent:event=>events.push(event.type),scrollTo(){},scrollY:0};
+  const window={location,matchMedia:()=>({matches:false}),addEventListener:(name,fn)=>winHandlers.set(name,fn),dispatchEvent:event=>events.push(event.type),scrollTo(){},scrollY:0,NAULifeImages:{renderChapter:()=>chapterImages}};
   vm.runInNewContext(script,{document,window,location,navigator:{},URL,console,CSS:{escape:x=>x},CustomEvent:class{constructor(type,options){this.type=type;this.detail=options?.detail;}},Event:class{},fetch:async()=>{fetches++;return {ok:true,json:async()=>structuredClone(data),headers:{get:()=>null}};},localStorage:{getItem:()=>null,setItem:(key,value)=>writes.push([key,value])},requestAnimationFrame:fn=>fn(),setTimeout:()=>1,clearTimeout(){}});
   for(let i=0;i<12;i++)await Promise.resolve();
   return {get,writes,events,location,get appWrites(){return appWrites;},get fetches(){return fetches;},get phases(){return phaseButtons;},
@@ -67,7 +67,10 @@ async function app(data=fixture(),hash='#life/life-01'){
 
 test('new-student stages switch only their panel without routing, persistence or extra capture',async()=>{
   const a=await app();
-  assert.match(a.get('#app').innerHTML,/<details class="student-start" id="student-start" open>/);
+  const initial=a.get('#app').innerHTML;
+  assert.match(initial,/<details class="student-start" id="student-start">/);
+  assert.doesNotMatch(initial,/<details class="student-start" id="student-start" open>/);
+  assert.ok(initial.indexOf('<nav class="student-start-links"')<initial.indexOf('<details class="student-start"'),'topic links stay visible outside the optional stage checklist');
   assert.match(a.get('#student-start-content').innerHTML,/材料随身带/);
   assert.doesNotMatch(a.get('#student-start-content').innerHTML,/确认入住|路线试走|保存本级安排/);
   const writes=a.appWrites,events=a.events.length;
@@ -84,7 +87,7 @@ test('new-student stages switch only their panel without routing, persistence or
   assert.equal(a.events.length,events);assert.deepEqual(a.writes,[]);assert.equal(a.fetches,1);
 });
 
-test('starting points are collapsed outside chapter one and new chapter labels lose their numbering',async()=>{
+test('starting points are collapsed on every chapter and new chapter labels lose their numbering',async()=>{
   const a=await app(fixture(),'#life/life-14');
   const html=a.get('#app').innerHTML;
   assert.match(html,/<details class="student-start" id="student-start">/);
@@ -133,22 +136,47 @@ test('older data without the entry remains usable and internships and routes sti
   a.phase('before');assert.deepEqual(a.writes,[]);
   a.route('#life/life-09');
   assert.match(a.get('#app').innerHTML,/事务所与企业实习资源/);
-  assert.match(a.get('#app').innerHTML,/奖助、预算与原职业准备资料/);
+  assert.match(a.get('#app').innerHTML,/class="intern-legacy-chapter"/);
   a.route('#life/life-13');assert.match(a.get('#app').innerHTML,/第十三章 预算与奖助/);
 });
 
-test('the published internship checklist appears once before the hub and outside the legacy fold',async()=>{
-  const chapter=dataset.lifeChapters.find(chapter=>chapter.id==='life-09');
-  const checklist=chapter.blocks.find(block=>block.type==='checklist'&&block.placement==='before-internships');
-  assert.ok(checklist,'the published life-09 checklist must opt into the visible placement');
-  const a=await app(dataset,'#life/life-09'),html=a.get('#app').innerHTML;
+test('internship preparation appears once before the hub and stays visible without a hub',async()=>{
+  const data=fixture(),chapter=data.lifeChapters.find(chapter=>chapter.id==='life-09');
+  const checklist={type:'checklist',title:'投递前核对',items:['确认出勤和地点'],placement:'before-internships'};
+  chapter.concise=false;
+  chapter.blocks=[checklist,{type:'p',text:'旧版奖助资料'}];
+  const a=await app(data,'#life/life-09'),html=a.get('#app').innerHTML;
   const marker='<h4>'+checklist.title+'</h4>';
   assert.equal(html.split(marker).length-1,1,'the checklist must not be duplicated');
   assert.ok(html.indexOf(marker)<html.indexOf('<section class="internship-hub"'));
   const legacy=html.slice(html.indexOf('<details class="intern-legacy-chapter"'));
   assert.ok(!legacy.includes(marker),'the action checklist must not sit in the collapsed budget material');
-  assert.match(legacy,/奖助金额和执行年份/);
-  const old=structuredClone(dataset);delete old.internships;
+  assert.match(legacy,/旧版奖助资料/);
+  const old=structuredClone(data);delete old.internships;
   const fallback=await app(old,'#life/life-09');
   assert.equal(fallback.get('#app').innerHTML.split(marker).length-1,1,'placement must remain visible without an internship hub');
+});
+
+test('concise chapters show the answer before optional photos and archived detail',async()=>{
+  const data=fixture(),chapter=data.lifeChapters.find(chapter=>chapter.id==='life-03');
+  chapter.concise=true;
+  chapter.blocks=[{type:'p',text:'先看床桌和卫浴情况。'},{type:'details',readingArchive:true,text:'详细资料与原文',blocks:[{type:'p',text:'这里是较长的原始资料。'}]}];
+  const a=await app(data,'#life/life-03','<section class="test-photos">照片和图注</section>'),html=a.get('#app').innerHTML;
+  const brief=html.indexOf('先看床桌和卫浴情况。'),photos=html.indexOf('<details class="life-photos-disclosure">'),archive=html.indexOf('<details class="source-disclosure reading-archive">');
+  assert.ok(brief>=0&&brief<photos&&photos<archive,'the short answer must precede both optional sections');
+  assert.equal((html.match(/test-photos/g)||[]).length,1);
+  assert.match(html,/<summary><span>宿舍照片<\/span><small>点开查看<\/small><\/summary>/);
+  assert.doesNotMatch(html,/<details class="(?:life-photos-disclosure|source-disclosure reading-archive)" open/);
+  assert.equal(a.fetches,1);assert.deepEqual(a.writes,[]);
+});
+
+test('concise internship pages unwrap the archive into a single legacy fold',async()=>{
+  const data=fixture(),chapter=data.lifeChapters.find(chapter=>chapter.id==='life-09');
+  chapter.concise=true;
+  chapter.blocks=[{type:'p',text:'先看工作地点和出勤。',placement:'before-internships'},{type:'details',readingArchive:true,text:'详细资料与原文',blocks:[{type:'p',text:'完整旧资料仅出现一次。'}]}];
+  const a=await app(data,'#life/life-09'),html=a.get('#app').innerHTML;
+  assert.ok(html.indexOf('先看工作地点和出勤。')<html.indexOf('<section class="internship-hub"'));
+  assert.equal((html.match(/class="intern-legacy-chapter"/g)||[]).length,1);
+  assert.equal((html.match(/完整旧资料仅出现一次。/g)||[]).length,1);
+  assert.doesNotMatch(html,/source-disclosure reading-archive/,'the original archive must not be nested inside another fold');
 });

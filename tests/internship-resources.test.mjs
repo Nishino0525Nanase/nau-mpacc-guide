@@ -56,7 +56,7 @@ test('internship filters use published project cities and keep channels and form
   const a=await app(fixture());
   a.route('#life/life-09');
   assert.match(a.get('#app').innerHTML,/事务所与企业实习资源/);
-  assert.match(a.get('#app').innerHTML,/奖助、预算与原职业准备资料/);
+  assert.match(a.get('#app').innerHTML,/<details class="intern-legacy-chapter"><summary>/);
   assert.match(a.get('#internship-results').innerHTML,/open-nanjing|national-channel/);
   assert.match(a.get('#internship-result-count').textContent,/2 家机构 · 4 条匹配资源/);
   assert.doesNotMatch(a.get('#internship-results').innerHTML,/closed-shanghai|formal-graduate|preparation-club/,'default view excludes historical and non-internship records');
