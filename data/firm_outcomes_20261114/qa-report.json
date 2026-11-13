@@ -35,7 +35,18 @@
     "statisticsUnits": "人/%",
     "registeredYearSuffixSourceLinks": "fixed and regression-tested",
     "mobileViewportVisualQA": false,
-    "mobileDeviceQA": false
+    "mobileDeviceQA": false,
+    "productionUrl": "https://nishino0525nanase.github.io/nau-mpacc-guide/#outcomes",
+    "productionStudents": [
+      "李皓妍",
+      "林洛妤",
+      "谢晓俊"
+    ],
+    "productionScreenshot": "qa/firm-outcomes-20261114.jpg",
+    "productionImageSize": [
+      995,
+      66
+    ]
   },
   "officeFiles": {
     "mentor-guide.docx": {
@@ -60,5 +71,65 @@
   "verificationLimits": [
     "公开资料无法提供具名八大与导师完整对应；0表示未核实的公开样本，不表示实际人数。",
     "没有从本科就业表、实习、仅获offer、项目或论文共著补造就业或导师。"
-  ]
+  ],
+  "productionVerification": {
+    "sourceCommit": "b735c60c7b8de59fa18ea559d5b68a8c4f9f3460",
+    "pagesCommit": "72a05e55f7b25a9426190d6a2903c85be318dfa4",
+    "publicChecks": [
+      {
+        "asset": "app.js",
+        "bytes": 148011,
+        "sha256": "eb3dc2fa26346440a93cef2497828d5fce6cdc2c7bdc2f515c4f408ee7ec353b",
+        "matches": true
+      },
+      {
+        "asset": "index.html",
+        "bytes": 12334,
+        "sha256": "03f7f6f9e1af043b84859c5b6b21db8a7d3690960b70e66cfb8a3340c0f7439d",
+        "matches": true
+      },
+      {
+        "asset": "style.css",
+        "bytes": 129690,
+        "sha256": "03d000ec80c4a3baba83c0411d15cf2702d10f22dfcaed6fb1b488651f4d45ef",
+        "matches": true
+      },
+      {
+        "asset": "sw.js",
+        "bytes": 5180,
+        "sha256": "aaf49708c7a68c457909c97278ebd2b50ffcf708f36a7d6f87ba7dfcd817c0d6",
+        "matches": true
+      },
+      {
+        "asset": "data/site-data.json",
+        "bytes": 3275049,
+        "sha256": "8cab6c5b6aa2a4887a391fe234004ebb6396c379605dcc6aefb7233d531912c4",
+        "matches": true
+      },
+      {
+        "asset": "downloads/mentor-guide.docx",
+        "bytes": 76744,
+        "sha256": "561a5c587e1b21a47b690a7c96ae47964785d712c479fa4a5f3cf2443cf9df75",
+        "matches": true
+      },
+      {
+        "asset": "downloads/evidence-index.xlsx",
+        "bytes": 559145,
+        "sha256": "9792c2c672f8f117bb29481c405c41a24bd197ea7a6e3055886139b76be07e7f",
+        "matches": true
+      },
+      {
+        "asset": "evidence/firm-outcomes-20261114/xiexiaojun-jit-20261114.jpg",
+        "bytes": 22870,
+        "sha256": "d02b83e012e2213baf1248333af6803e65834d23b884decfd7d7672ea3ae81cf",
+        "matches": true
+      }
+    ],
+    "allAssetsMatch": true,
+    "pagesBuild": {
+      "status": "built",
+      "commit": "72a05e55f7b25a9426190d6a2903c85be318dfa4",
+      "matchesCommit": true
+    }
+  }
 }
