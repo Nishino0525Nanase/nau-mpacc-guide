@@ -6,6 +6,16 @@
 
 网页包含导师导览、学习生活、社交原帖与官方资料索引、Word / Excel 资料下载，以及独立的“音乐小憩”歌单。官方事实与社交平台个人反馈分开标记；当年双选名额以学院通知和导师回复为准。网页不显示资料生成时间，保留原帖日期和政策年份供判断适用范围。
 
+## 2026-11-13 设备信息与时长显示
+
+保留设备大类、系统和浏览器家族，新增浏览器或内置应用的数字主版本、浏览环境、分类依据、推断或歧义状态，协议`device_info_version=coarse_v4`。识别QQ、UC、百度App、钉钉、企业微信、旧版Edge等明确标记，避免把它们一概记作Chrome或通用WebView；Safari使用Version主版本，WebView使用底层Chrome主版本，内置应用使用其自身主版本，不混用引擎版本。
+
+每个公开低熵属性单独安全读取，可选Client Hints字段受限不再使原本可识别的Windows/Chrome全部退回未知。Android无Mobile标记时，桌面模式与平板保持有歧义；不凭Windows NT10.0猜Windows10/11，不把浏览器固定的Android10K等占位当作实际版本。未增加原始UA存储、高熵Client Hints请求、硬件型号、屏幕或图形指纹、跨访问身份。Windows版本边界参考[Microsoft文档](https://learn.microsoft.com/en-us/microsoft-edge/web-platform/how-to-detect-win11)，UA占位参考[Chromium说明](https://www.chromium.org/updates/ua-reduction/)。
+
+原后台明细和设备概况增加版本、环境与识别状态；旧记录未采集的信息保留缺失。明细加宽，设备概况单列展示，原有曲线和访问计数保留。修正真实停留8029毫秒仅显示“秒”的问题：旧整数转换对带小数的秒值返回空，现在先floor取整，显示8秒，平均和最长时长同步修正。
+
+验证：全套111项通过，其中62项为采集、分类、退出和停留检查；报表按真实9条访问预览，最新电脑访问的停留显示8秒。未写入合成访问。改动与维护记录不进入指南正文。
+
 ## 2026-11-12 省级IP核验
 
 省级属地增加IPv6交叉核验，原IPv4的34省级标签查找继续保留。本轮交叉候选来自`qqwry.ipdb@2026.11.11`转换的纯真CZ88社区数据，原库构建于2026-11-11T16:13:14Z。数据由[纯真CZ88](https://www.cz88.net/geo-public)提供支持，使用CC BY-SA 4.0；经[metowolf/qqwry.ipdb](https://github.com/metowolf/qqwry.ipdb)转换后抽取、合并省级范围，不使用npm包MIT声明替代数据许可。生成的省级范围沿用CC BY-SA 4.0。库的日期新，不等于其中省份结论更准确。

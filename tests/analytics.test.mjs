@@ -124,7 +124,7 @@ for (const [label, navigator, expected] of [
   assert.deepEqual(env.writes,[]);
   assert.equal(env.map.size,0);
 });
-test('device categories never add raw UA, model, versions, or high entropy requests', () => {
+test('device fields allow only browser major version and never raw UA, model, full versions or high entropy requests', () => {
   let highEntropyCalls=0;
   const ua='Mozilla/5.0 (Linux; Android 14; PRIVATE_MODEL_22122RK93C Build/PRIVATE_BUILD) AppleWebKit/537.36 Chrome/156.1.2.3 Mobile Safari/537.36';
   const env=boot({navigator:{userAgent:ua,userAgentData:{mobile:true,platform:'Android',brands:[{brand:'Google Chrome',version:'PRIVATE_VERSION'}],getHighEntropyValues:()=>{highEntropyCalls++;throw Error('must not be called');}}}});
@@ -132,9 +132,95 @@ test('device categories never add raw UA, model, versions, or high entropy reque
   assert.equal(env.requests.length,1);
   assert.deepEqual(Object.keys(env.requests[0].payload.properties).sort(),[
     '$current_url','$geoip_disable','$host','$ip','$pathname','$process_person_profile',
-    'analytics_mode','device_browser','device_os','device_type','referrer_host','source','pageview_id','dwell_tracking_version'
+    'analytics_mode','device_browser','device_browser_major','device_browser_context','device_detection_basis',
+    'device_detection_status','device_info_version','device_os','device_type','referrer_host','source','pageview_id','dwell_tracking_version'
   ].sort());
   assert.doesNotMatch(env.requests[0].init.body,/PRIVATE_|156\.1\.2\.3|userAgent|model|platformVersion|device_id/);
+  assert.equal(env.requests[0].payload.properties.device_browser_major, '156');
+  assert.equal(env.requests[0].payload.properties.device_info_version, 'coarse_v4');
+});
+for (const [label, userAgent, browser, browserMajor, browserContext] of [
+  ['QQ in-app uses QQ version rather than engine version', 'Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 Chrome/124.0.0.0 Mobile Safari/537.36 MQQBrowser/6.2 QQ/9.0.0.0', 'QQ内置浏览器', '9', 'QQ内置浏览器'],
+  ['standalone QQ browser', 'Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 Chrome/124.0.0.0 Mobile Safari/537.36 MQQBrowser/6.2', 'QQ浏览器', '6', '普通浏览器'],
+  ['UC browser', 'Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/100.0.4896.127 UCBrowser/16.3.0.1315 Mobile Safari/537.36', 'UC浏览器', '16', '普通浏览器'],
+  ['Baidu app is not generic WebView', 'Mozilla/5.0 (Linux; Android 12; K; wv) AppleWebKit/537.36 Version/4.0 Chrome/120.0.6099.230 Mobile Safari/537.36 baiduboxapp/13.60.0.10', '百度App内置浏览器', '13', '百度App内置浏览器'],
+  ['desktop DingTalk is not ordinary Chrome', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0.0.0 Safari/537.36 DingTalk/7.6.40', '钉钉内置浏览器', '7', '钉钉内置浏览器'],
+  ['DingTalk parenthesized token', 'Mozilla/5.0 (Linux; Android 14; K; wv) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36 DingTalk(7.6.40)', '钉钉内置浏览器', '7', '钉钉内置浏览器'],
+  ['enterprise WeChat wins over WeChat marker', 'Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 Chrome/124.0.0.0 Mobile Safari/537.36 MicroMessenger/8.0.54 wxwork/4.1.39', '企业微信内置浏览器', '4', '企业微信内置浏览器'],
+  ['WeChat version is not underlying Chrome version', 'Mozilla/5.0 (Linux; Android 14; K) AppleWebKit/537.36 Chrome/124.0.0.0 Mobile Safari/537.36 MicroMessenger/8.0.54', '微信内置浏览器', '8', '微信内置浏览器'],
+  ['legacy desktop Edge', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/70.0.3538.102 Safari/537.36 Edge/18.19045', 'Edge', '18', '普通浏览器'],
+  ['Safari uses Version rather than WebKit build', 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 Version/26.0 Mobile/15E148 Safari/604.1', 'Safari', '26', '普通浏览器'],
+  ['iOS Chrome has its own browser major', 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 CriOS/156.1.2.3 Mobile/15E148 Safari/604.1', 'Chrome', '156', '普通浏览器'],
+  ['generic WebView reports Chrome major', 'Mozilla/5.0 (Linux; Android 14; K; wv) AppleWebKit/537.36 Version/4.0 Chrome/120.0.6099.230 Mobile Safari/537.36', 'Android WebView', '120', 'Android WebView']
+]) test('browser context and major: '+label, () => {
+  const env = boot({navigator:{userAgent}});
+  const p = env.requests[0].payload.properties;
+  assert.equal(p.device_browser, browser);
+  assert.equal(p.device_browser_major, browserMajor);
+  assert.equal(p.device_browser_context, browserContext);
+  assert.equal(p.device_info_version, 'coarse_v4');
+  assert.equal(p.device_detection_status, '推断');
+  assert.match(p.device_detection_basis, /^设备：.+；浏览器：UA浏览器或应用标记$/);
+  assert.doesNotMatch(env.requests[0].init.body, /userAgent|model|platformVersion/);
+});
+test('allowed low-entropy brands expose only known family and integer major', () => {
+  let calls = 0;
+  const env = boot({navigator:{userAgentData:{
+    platform:'Windows', mobile:false,
+    brands:[{brand:'PRIVATE_BRAND',version:'PRIVATE_VERSION'},{brand:'Chromium',version:'156'},{brand:'Microsoft Edge',version:'156.1.2.3'}],
+    getHighEntropyValues(){calls++;throw Error('not permitted');}
+  }}});
+  const p = env.requests[0].payload.properties;
+  assert.equal(p.device_browser, 'Edge');
+  assert.equal(p.device_browser_major, '156');
+  assert.equal(p.device_os, 'Windows');
+  assert.equal(p.device_browser_context, '普通浏览器');
+  assert.match(p.device_detection_basis, /UA-CH桌面平台标记.*低熵品牌标记/);
+  assert.equal(calls, 0);
+  assert.doesNotMatch(env.requests[0].init.body, /PRIVATE_|156\.1\.2\.3|Windows 1[01]|platformVersion/);
+});
+test('an unknown brand or malformed known-brand version is not echoed', () => {
+  for (const brands of [
+    [{brand:'PRIVATE_BRAND',version:'PRIVATE_VERSION'}],
+    [{brand:'Google Chrome',version:'PRIVATE_VERSION'}]
+  ]) {
+    const env = boot({navigator:{userAgentData:{platform:'Windows',mobile:false,brands}}});
+    const p = env.requests[0].payload.properties;
+    assert.equal(p.device_browser_major, '未提供');
+    assert.doesNotMatch(env.requests[0].init.body, /PRIVATE_|platformVersion/);
+  }
+});
+test('ambiguous Android desktop mode remains uncertain and frozen OS tokens are not reported as versions', () => {
+  const env = boot({navigator:{
+    userAgent:'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 Chrome/156.0.0.0 Safari/537.36',
+    userAgentData:{platform:'Android',mobile:false}
+  }});
+  const p = env.requests[0].payload.properties;
+  assert.equal(p.device_type, '其他');
+  assert.equal(p.device_os, 'Android');
+  assert.equal(p.device_detection_status, '有歧义');
+  assert.match(p.device_detection_basis, /Android桌面模式或平板未区分/);
+  assert.doesNotMatch(env.requests[0].init.body, /Android 10|device_model|os_version|platformVersion/);
+});
+test('a blocked optional getter cannot discard a usable desktop UA', () => {
+  const navigator = {
+    userAgent:'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/156.0.0.0 Safari/537.36',
+    platform:'Win32'
+  };
+  Object.defineProperty(navigator, 'userAgentData', {get(){throw Error('blocked');}});
+  const env = boot({navigator});
+  const p = env.requests[0].payload.properties;
+  assert.deepEqual([p.device_type,p.device_os,p.device_browser,p.device_browser_major], ['电脑','Windows','Chrome','156']);
+  assert.equal(p.device_detection_status, '推断');
+  assert.doesNotMatch(env.requests[0].init.body, /Windows 1[01]/);
+});
+test('a blocked UA getter still permits low-entropy platform and browser hints', () => {
+  const navigator = {userAgentData:{platform:'Windows',mobile:false,brands:[{brand:'Microsoft Edge',version:'156'}]}};
+  Object.defineProperty(navigator, 'userAgent', {get(){throw Error('blocked');}});
+  const env = boot({navigator});
+  const p = env.requests[0].payload.properties;
+  assert.deepEqual([p.device_type,p.device_os,p.device_browser,p.device_browser_major], ['电脑','Windows','Edge','156']);
+  assert.match(p.device_detection_basis, /低熵品牌标记/);
 });
 test('restricted device getters fail safely without breaking the one-count behavior', () => {
   const navigator=Object.defineProperty({},'userAgent',{get(){throw Error('restricted');}});
