@@ -13,11 +13,11 @@
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="apple-touch-icon" href="./icons/app-192.png">
   <link rel="icon" href="./favicon.svg?v=edition1" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css?v=context1">
+  <link rel="stylesheet" href="./style.css?v=reviewimages1">
   <script src="./install.js?v=edition1" defer></script>
   <script src="./music.js?v=edition1" defer></script>
   <script src="./life-images.js?v=campus1" defer></script>
-  <script src="./app.js?v=context1" defer></script>
+  <script src="./app.js?v=reviewimages1" defer></script>
   <script src="./analytics-config.js?v=round3" defer></script>
   <script src="./analytics.js?v=device4" defer></script>
 </head>
@@ -81,6 +81,10 @@
   <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="dialog-title">
     <div class="dialog-top"><span id="dialog-eyebrow">详细资料</span><button type="button" class="icon-button" id="dialog-close" aria-label="关闭详情">×</button></div>
     <div id="dialog-content"></div>
+  </dialog>
+  <dialog id="review-image-dialog" class="review-image-dialog" aria-labelledby="review-image-title">
+    <div class="review-image-top"><h2 id="review-image-title">来源截图</h2><button type="button" class="icon-button" id="review-image-close" data-action="review-image-close" aria-label="关闭图片">×</button></div>
+    <div id="review-image-content" data-mode="fit"></div>
   </dialog>
   <template id="short-letter-template">
     <div class="personal-letter-copy">
