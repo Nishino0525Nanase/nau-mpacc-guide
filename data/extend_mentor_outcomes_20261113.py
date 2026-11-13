@@ -58,7 +58,7 @@ def main():
         return ids((obj or {}).get('source_ids') or (obj or {}).get('sourceIds'))
 
     def record(raw):
-        label = raw.get('degree') or '硕士类型未注明'
+        label = raw.get('degree') or '学位类型未注明'
         degree = ('MPAcc' if 'MPAcc' in label else 'MAud' if 'MAud' in label or '审计专' in label
                   else 'academic_master' if '学术型' in label or '学硕' in label and '未' not in label
                   else 'undergraduate' if '本科' in label
