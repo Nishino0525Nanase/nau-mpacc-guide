@@ -1,0 +1,29 @@
+{
+  "batch": "food-climate-20261113",
+  "sourceMap": {
+    "CL01": "U959",
+    "CL02": "U960",
+    "CL03": "U961",
+    "CL04": "U962",
+    "CL05": "U963",
+    "HNF01": "U964",
+    "HNF02": "U965",
+    "HNF03": "U966",
+    "HNF04": "U967",
+    "HNF05": "U968",
+    "HNF06": "U969",
+    "HNF07": "U970",
+    "FD01": "U971",
+    "FD02": "U972",
+    "FD03": "U973"
+  },
+  "reviewedSources": 15,
+  "newSources": 15,
+  "lifeChapters": 15,
+  "sourceRegistry": 472,
+  "restaurantCandidates": 5,
+  "limits": [
+    "三家湘味、两家换口味备选，不假定当天营业和价格。",
+    "Word、Excel和APK附件未重建。"
+  ]
+}

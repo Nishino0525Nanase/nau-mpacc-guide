@@ -5,9 +5,9 @@
     "counts": {
       "mentors": 34,
       "detailedMentorCards": 17,
-      "lifeChapters": 14,
+      "lifeChapters": 15,
       "socialPosts": 149,
-      "officialEvidence": 244,
+      "officialEvidence": 259,
       "feedbackRecords": 21,
       "screenedSources": 15,
       "unreadLeads": 6,
@@ -10096,6 +10096,18 @@
       "title": "第三章 住宿用品和室友生活",
       "blocks": [
         {
+          "type": "callout",
+          "title": "衣服和被褥，按学期分批准备",
+          "text": "9月来校时仍留夏装和薄外套；秋冬厚衣可按降温与自己的取件安排分批补。梅雨晾晒、冬季体感和强天气出行，放在第十五章“南京四季、穿衣与晾晒”集中看。本楼的空调、供暖和烘干条件仍要现场问，不凭城市气候推定。[U959][U960]",
+          "tone": "note",
+          "label": "生活提示",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U959",
+            "U960"
+          ]
+        },
+        {
           "type": "heading",
           "text": "住进自己的那一间，再决定买什么",
           "level": 2,
@@ -10393,6 +10405,8 @@
         }
       ],
       "sourceCodes": [
+        "U959",
+        "U960",
         "F12",
         "U932",
         "U934",
@@ -10592,6 +10606,133 @@
       "blocks": [
         {
           "type": "heading",
+          "level": 2,
+          "text": "想吃一点湖南味，可以先从这三家试起",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "callout",
+          "title": "先说清喜欢哪种辣，比只说“湖南口味”更有用",
+          "text": "如果你想吃鲜辣、剁椒、酸辣或下饭小炒，下面三家可以作为尝试清单。点餐时可以问“想要鲜辣、少花椒、少糖，能调整吗？”湖南不同地方、不同人的口味也不一样，最终按自己喜欢的来。店铺按公开分店资料与菜单线索整理，可先选一两家试试。",
+          "tone": "note",
+          "label": "按口味选一顿饭",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "table",
+          "headers": [
+            "湘味候选",
+            "具体分店位置",
+            "先看什么菜／适合怎样吃"
+          ],
+          "rows": [
+            [
+              "桃花源记·山野湖南菜（浦口虹悦城店）",
+              "龙华路1号江北虹悦城4F17号；平台也使用“桃花源记（江北虹悦城店）”名称。[U964][U965]",
+              "可约同学分着点。平台菜品有小炒黄牛肉、湖南小炒肉、长沙臭豆腐；先核当天菜单和能否调整辣度。[U965]"
+            ],
+            [
+              "费大厨辣椒炒肉（江北虹悦城店）",
+              "龙华路1号江北虹悦城5楼。按具体分店查询。[U966][U967][U968]",
+              "特别想吃辣椒炒肉时可优先看这家。报道还提到皮蛋青椒擂茄子、香芋蒸排骨，可对照当日菜单搭配蔬菜与米饭。[U967]"
+            ],
+            [
+              "霸碗盖码饭（南京龙湖雨山天街店）",
+              "光明路59号雨山龙湖天街4幢123室，按官网地址找；“4幢”不是“4楼”。目前依据品牌门店目录，出发前再确认。[U969]",
+              "适合一个人想吃湘味盖饭时作备选。品牌菜单有坛子辣椒炒肉、柴火香干腊肉、外婆菜炒鸡蛋盖码饭；具体到本店先问当天供应。[U970]"
+            ]
+          ],
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U964",
+            "U965",
+            "U966",
+            "U967",
+            "U968",
+            "U969",
+            "U970"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "这些是出校去江浦商圈吃饭的选择，不写成校门口几步即到。口味与辣度有个人差异；出发前看分店当日营业、排号与现菜单，点菜时确认米饭、茶位、打包等实际收费。平台旧人均不作为本次预算，品牌菜单也需对照本店可售菜。[U964][U965][U967][U969]",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U964",
+            "U965",
+            "U967",
+            "U969"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "偶尔想换个口味，也留两个备选",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "table",
+          "headers": [
+            "换口味的店",
+            "位置依据",
+            "怎么选更方便（编辑建议）"
+          ],
+          "rows": [
+            [
+              "小菜园南京浦口雨山龙湖店",
+              "光明路59号南京雨山天街A-5F-26号，品牌官网门店目录可检索。[U971]",
+              "和同学约家常菜时可作备选；先看实际菜品与辣度，不默认所有菜清淡。"
+            ],
+            [
+              "米村拌饭（龙湖雨山天街店）",
+              "龙湖雨山天街负一楼A-B1-25号，地图条目标注近商场6号门。[U972]",
+              "已在商场、想一人吃份饭时可看；旧评价提到的菜品和续饭不当作当前菜单与权益。"
+            ]
+          ],
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U971",
+            "U972"
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "今天想怎样吃",
+            "可以先这样安排"
+          ],
+          "rows": [
+            [
+              "一个人想吃湘味",
+              "先查霸碗本店可售盖码饭；不用为了尝一顿饭等大家都有空。"
+            ],
+            [
+              "两三个人想吃小炒",
+              "可比较江北虹悦城的桃花源记与费大厨当日菜单和排号。按人数先少量点，想吃的主菜搭配蔬菜即可。"
+            ],
+            [
+              "天气差、赶课或只想省心",
+              "先选自己常走路线上的食堂，湘味可以留到天气和时间合适时再试。"
+            ]
+          ],
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "p",
+          "text": "导航要分清商圈：江北虹悦城在龙华路1号，龙湖南京雨山天街在光明路59号；后者地图标注雨山路站6号口。它们都不是别处同名“虹悦城／天街”。从本人实际能通行的校门查当日完整路线，不沿用旧“613外环”或固定车程。[U968][U973][U945]",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U968",
+            "U973",
+            "U945"
+          ]
+        },
+        {
+          "type": "heading",
           "text": "先找到能经常吃的一顿饭",
           "level": 2,
           "studentLifeBatch": "student-life-20261113",
@@ -10744,6 +10885,17 @@
         }
       ],
       "sourceCodes": [
+        "U964",
+        "U965",
+        "U966",
+        "U967",
+        "U968",
+        "U969",
+        "U970",
+        "U971",
+        "U972",
+        "U973",
+        "U945",
         "U953",
         "U930",
         "L08",
@@ -12563,6 +12715,154 @@
       "number": 12,
       "title": "第十二章 来源与进一步阅读",
       "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "气候与周边餐饮来源",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "p",
+          "text": "气候资料为城市背景，历史强天气提醒只取一般出行建议；餐饮条目依据品牌目录、地图与餐饮平台资料整理。商户介绍、全国品牌菜单、旧点评与当前可售菜分别使用，营业与价格请在出发前核对。",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "source",
+          "text": "[U959] 南京自然状况（2026年更新，含2025年天气气候回顾）",
+          "url": "https://www.nanjing.gov.cn/zzb/njgl/csgk/zrzk_72671/202609/t20260930_5920367.html",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U959"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U960] 南京城市介绍与气候背景分析",
+          "url": "https://www.weather.com.cn/cityintro/101190101.shtml",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U960"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U961] 湿闷梅雨季，化解“梅”烦恼",
+          "url": "https://wjw.nanjing.gov.cn/gzdt/202606/t20260623_5864335.html",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U961"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U962] 旅游提醒：台风影响期间出行避险提示（2025年历史提醒）",
+          "url": "https://zschina.nanjing.gov.cn/lyzx/202507/t20250730_5618705.html",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U962"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U963] 干冷VS湿冷 哪种冷更能冻哭你？",
+          "url": "https://news.weather.com.cn/2021/10/3498607.shtml",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U963"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U964] 高德地图：南京市热门湘菜馆——桃花源记（江北虹悦城店）",
+          "url": "https://ranks.amap.com/recommend/hunan_restaurant-Nanjing-white_collar",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U964"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U965] 携程美食：桃花源记·山野湖南菜（浦口虹悦城店）",
+          "url": "https://you.ctrip.com/food/nanjing9/133459044.html",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U965"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U966] 费大厨官方微博：南京二店试营业，江北虹悦城5楼",
+          "url": "https://www.sina.cn/news/detail/5245618890998804.html",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U966"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U967] 从开业爆满到日常满座！江浦的费大厨太火了~",
+          "url": "https://www.csjcs.com/news/show/45467ffae8baf143.html",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U967"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U968] 高德地图：江北虹悦城",
+          "url": "https://ditu.amap.com/place/B0FFITUTMH",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U968"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U969] 霸碗盖码饭官方门店查询：南京龙湖雨山天街店",
+          "url": "https://bawan.dexinmiaosheng.cn/official/store.html",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U969"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U970] 霸碗盖码饭官方产品：盖码饭系列与湘菜小炒",
+          "url": "https://bawan.dexinmiaosheng.cn/official/products.html",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U970"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U971] 小菜园品牌官网门店目录：南京浦口雨山龙湖店",
+          "url": "https://www.xiaocaiyuan.com/cn/stores/nationwide-network/",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U971"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U972] 高德地图：米村拌饭（龙湖雨山天街店）",
+          "url": "https://www.amap.com/place/B0KR5RW2MA",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U972"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U973] 高德地图：龙湖南京雨山天街",
+          "url": "https://www.amap.com/place/B0H32R4VGK",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U973"
+          ]
+        },
         {
           "type": "callout",
           "label": "怎样使用经历",
@@ -14856,6 +15156,21 @@
         }
       ],
       "sourceCodes": [
+        "U959",
+        "U960",
+        "U961",
+        "U962",
+        "U963",
+        "U964",
+        "U965",
+        "U966",
+        "U967",
+        "U968",
+        "U969",
+        "U970",
+        "U971",
+        "U972",
+        "U973",
         "U929",
         "U930",
         "U931",
@@ -15453,6 +15768,176 @@
         "U954",
         "U958",
         "V04"
+      ]
+    },
+    {
+      "id": "life-15",
+      "number": 15,
+      "title": "第十五章 南京四季、穿衣与晾晒",
+      "blocks": [
+        {
+          "type": "callout",
+          "title": "不用一次把一年四季塞进行李箱",
+          "text": "南京属北亚热带湿润气候，冬夏差别明显，春秋相对较短。气候资料帮助准备大方向，临出发仍看短期预报：9月未必已经凉快，也不能用某年的入秋、入梅日期推算下一届开学。下面的衣物和行李安排是编辑建议。[U959][U960]",
+          "tone": "note",
+          "label": "从开学行李开始",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U959",
+            "U960"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "按一个学年的生活来准备",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "table",
+          "headers": [
+            "阶段",
+            "可能遇到的情况",
+            "衣物与生活安排（编辑建议）"
+          ],
+          "rows": [
+            [
+              "9月报到",
+              "仍可能偏热，年份转换差异大。[U959]",
+              "夏装和透气换洗衣物继续带，另留薄外套；证件与电脑防雨。别只带秋冬衣，也不为一次迎新把全部厚被褥背来。"
+            ],
+            [
+              "秋季到初冬",
+              "天气转换时冷暖变化，需要结合当天温度、风和降雨判断。[U959][U963]",
+              "用短袖／长袖、薄针织或卫衣、外套分层，早晚和室内外方便增减。备一双适合校园步行、雨后不易打滑的鞋。"
+            ],
+            [
+              "冬季",
+              "冬冷，通常比夏季少雨；阴雨和风会改变体感，不等于整个冬季每天都湿冷。[U960][U963]",
+              "准备自己的保暖外套、长裤、袜子与合适被褥；围巾、手套按实际需要选。本楼供暖或空调方式、费用与报修先问清，厚床品按床宽与收纳空间购买。"
+            ],
+            [
+              "春季",
+              "春秋相对较短，不宜只按日历换季。[U959]",
+              "保留可叠穿的衣服和雨具；看近几天预报再寄走厚衣。外出聚餐或活动留一个下雨时的替代安排。"
+            ],
+            [
+              "初夏梅雨",
+              "锋面雨带影响时降水增多，闷热潮湿；入梅和出梅每年变化。[U960][U961]",
+              "多留一套能轮换的贴身和外穿衣物，洗衣错开连续阴雨；湿衣不要马上塞柜子，食品和收纳物品注意防潮。"
+            ],
+            [
+              "盛夏或暑期留校",
+              "梅雨后可能进入晴热时段，也需留意暴雨、强对流等天气。[U960]",
+              "带轻便换洗衣物，出门准备饮水、遮阳与雨具；把长距离步行、采购和聚餐安排到更合适的天气和时间。暑期住宿权限另看通知。"
+            ]
+          ],
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U959",
+            "U963",
+            "U960",
+            "U961"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "梅雨天，最容易影响的是洗衣和收纳",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "checklist",
+          "title": "雨季寝室小清单",
+          "items": [
+            "天气允许再集中洗大件；衣物充分干透后收进柜子，被褥也确认干燥再装袋。不要把湿衣堆在床边、行李箱或密闭柜里。",
+            "先看本楼有没有可用烘干设施、收费和衣物洗标；没有时减少一次洗衣量，给衣物留开间距，不把晾衣架和挂钩买得超过房间空间。",
+            "是否开窗结合外面下雨、湿度和本楼通风条件；不要把通风理解成阴雨天也一直开窗。空调滤网或设备有问题先问物业处理，不自行拆装。[U961]",
+            "除湿盒等按产品说明稳妥摆放并及时更换，避免液体接触衣物和电子设备；不要把它们当成必然解决所有返潮的办法。",
+            "湿伞先沥水，鞋子尽量轮换；雨具、洗衣袋和晾衣夹先买够用的小量，不挤占通道。"
+          ],
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U961"
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "保暖和烘衣，也要按公寓规则",
+          "text": "电热毯、电吹风、暖手宝、烘鞋器等已在公寓禁用列表中，不能因为天冷或衣服没干就作为“神器”带进寝室。购买或使用其他电器前按本楼规定核对；需要公共设施或身体状况有特殊需求时向宿管、辅导员说明。[F12]",
+          "tone": "confirm",
+          "label": "购买前核对",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "F12"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "大雨、大风和强对流时，先调整行程",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "p",
+          "text": "南京气候背景包含暴雨、台风影响、强对流、高温和寒潮等天气。出发前看南京气象及官方预警，学校停课、出入与活动安排按当次通知，不把历史台风提醒当作当前预警。[U960][U962]",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U960",
+            "U962"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "官方既往避险提示建议强风强雨时减少外出，远离大树、广告牌及高空构筑物，不在低洼地下通道、涵洞等位置躲雨，不冒险涉积水。对学生来说，可提前取回必要物品、调整聚餐或到站时间；不因外卖仍能下单，就判断路上适合出门。[U962]",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": [
+            "U962"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "一份够用的开学天气包",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "table",
+          "headers": [
+            "先随身或首批带",
+            "确认后再补"
+          ],
+          "rows": [
+            [
+              "夏装、薄外套、换洗衣物、便于行走的鞋、雨具、电脑证件防水袋。",
+              "冬季厚衣与被褥按降温、床位尺寸、收纳和本人取件能力分批寄。"
+            ],
+            [
+              "够第一晚使用的床品与洗漱用品。",
+              "本楼烘干、空调或供暖方式、费用和故障入口；不预先充值未知设备应用。"
+            ]
+          ],
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "p",
+          "text": "气候资料不等于个人体感，也不说明具体寝室有没有暖气、是否朝阳或一定会返潮。刚来的一周，记录自己的房间与上课路线，再调整衣物和洗衣节奏即可。",
+          "foodClimateBatch": "food-climate-20261113",
+          "sourceCodes": []
+        }
+      ],
+      "sourceCodes": [
+        "U959",
+        "U960",
+        "U963",
+        "U961",
+        "F12",
+        "U962"
       ]
     }
   ],
@@ -34733,6 +35218,231 @@
       "readingScope": "已公开核读全文；采用参与尝试、反馈和表达困扰的内容；未延伸查询个人社交账户。",
       "limitations": "本科新生个案，组织招募、课程和活动节奏不等于研究生安排。；校方选取的成长叙事不能证明外向或多参加活动是更好的性格。；心理剧体验不作为专业心理支持的替代，也不能据此推断受访者心理健康状况。",
       "expansionBatch": "student-life-20261113"
+    },
+    "U959": {
+      "code": "U959",
+      "title": "南京自然状况（2026年更新，含2025年天气气候回顾）",
+      "label": "南京自然状况（2026年更新，含2025年天气气候回顾）",
+      "url": "https://www.nanjing.gov.cn/zzb/njgl/csgk/zrzk_72671/202609/t20260930_5920367.html",
+      "canonicalUrl": "https://www.nanjing.gov.cn/zzb/njgl/csgk/zrzk_72671/202609/t20260930_5920367.html",
+      "originalUrl": "https://www.nanjing.gov.cn/zzb/njgl/csgk/zrzk_72671/202609/t20260930_5920367.html",
+      "date": "2026-09-30",
+      "summary": "南京属北亚热带湿润气候，四季分明，春秋较短、冬夏较长，冬夏温差较大。；页面回顾的2025年入秋明显偏晚，并记录夏季及秋季受到台风或外围环流影响；这些是历史个案，用于说明年份差异，不能当作下一年的固定时间表。",
+      "kind": "南京气候与生活官方资料",
+      "population": "南京市公众；城市尺度资料",
+      "readingScope": "已读正文20—24行，核对发布日期、气候概述与2025年回顾的时间边界。",
+      "limitations": "不是2026年或2027年的气候预测，不将2025年的高温日、入秋日、梅雨日照搬为每年安排。；没有宿舍楼层朝向、室温、空调费、供暖和晾晒条件，不推断校园微气候。；不将单个城市测站的月平均气温当作学生每日需要穿衣的温度。",
+      "expansionBatch": "food-climate-20261113"
+    },
+    "U960": {
+      "code": "U960",
+      "title": "南京城市介绍与气候背景分析",
+      "label": "南京城市介绍与气候背景分析",
+      "url": "https://www.weather.com.cn/cityintro/101190101.shtml",
+      "canonicalUrl": "https://www.weather.com.cn/cityintro/101190101.shtml",
+      "originalUrl": "https://www.weather.com.cn/cityintro/101190101.shtml",
+      "date": null,
+      "summary": "南京冬冷夏热、雨量充沛、雨热同季。；初夏受锋面雨带影响进入梅雨期，降水增多；梅雨后常进入晴热的盛夏。；暴雨、连阴雨、台风、高温、强对流、寒潮等天气在南京均有发生。",
+      "kind": "南京气候与生活官方资料",
+      "population": "南京城市尺度气候背景；非特定新生年级",
+      "readingScope": "已读气候背景分析正文85—89行；页面未可靠显示资料更新日期，date保留为空。",
+      "limitations": "这是气候背景页，不提供当天预警、未来某日天气或固定入梅出梅日期。；冬季总体较夏季干燥与阴雨日可能有湿冷体感并不矛盾，不写成南京整个冬季都潮湿阴雨。；正文早期旅游描述不作为近期温度比较或南京是否已不炎热的证据。",
+      "expansionBatch": "food-climate-20261113"
+    },
+    "U961": {
+      "code": "U961",
+      "title": "湿闷梅雨季，化解“梅”烦恼",
+      "label": "湿闷梅雨季，化解“梅”烦恼",
+      "url": "https://wjw.nanjing.gov.cn/gzdt/202606/t20260623_5864335.html",
+      "canonicalUrl": "https://wjw.nanjing.gov.cn/gzdt/202606/t20260623_5864335.html",
+      "originalUrl": "https://wjw.nanjing.gov.cn/gzdt/202606/t20260623_5864335.html",
+      "date": "2026-06-23",
+      "summary": "该文提醒梅雨时段闷热、潮湿，食品和物品防霉需留意。；该文提醒注意空调过滤网清洁；对于学生宿舍，共用设备的清理方式仍应问物业，不要求学生自行拆装。",
+      "kind": "南京气候与生活官方资料",
+      "population": "南京居民一般生活提示；并非南审宿舍设备使用说明",
+      "readingScope": "已读2026-06-23正文39—61行，仅采用生活防潮与清洁提醒，不采纳医疗处置、饮食祛湿或治疗性说法。",
+      "limitations": "不搬入皮肤病用药、盐水浸泡、祛湿食物、疾病诊断等内容。；不据其建议推定所有学生每周自行拆洗空调，也不承诺南审提供某款除湿或烘干设备。；通风、晾晒安排需结合室外湿度、是否下雨、窗户和楼栋规则；不写成阴雨天始终开窗。",
+      "expansionBatch": "food-climate-20261113"
+    },
+    "U962": {
+      "code": "U962",
+      "title": "旅游提醒：台风影响期间出行避险提示（2025年历史提醒）",
+      "label": "旅游提醒：台风影响期间出行避险提示（2025年历史提醒）",
+      "url": "https://zschina.nanjing.gov.cn/lyzx/202507/t20250730_5618705.html",
+      "canonicalUrl": "https://zschina.nanjing.gov.cn/lyzx/202507/t20250730_5618705.html",
+      "originalUrl": "https://zschina.nanjing.gov.cn/lyzx/202507/t20250730_5618705.html",
+      "date": "2025-07-30",
+      "summary": "当次市防办提醒大风强雨时尽量减少出行，远离广告牌、大树及高空构筑物。；提醒不要在涵洞、立交桥低洼处、地下通道等地势较低位置避险，不冒险穿过积水。",
+      "kind": "南京气候与生活官方资料",
+      "population": "南京居民与游客；采用一般避险提示，不作为当前灾害状态",
+      "readingScope": "已读2025-07-30通知30—49行，采用市防办一般避险段；原文预警、响应级别和景区关闭均仅为当次事件。",
+      "limitations": "不将2025预警或关闭通知写成2026、2027当前状态。；不据此保证校园任一避雨点、安全路线、校门开放或景区开放。；台风天不以一把伞或外卖配送正常推定可以放心出门。",
+      "expansionBatch": "food-climate-20261113"
+    },
+    "U963": {
+      "code": "U963",
+      "title": "干冷VS湿冷 哪种冷更能冻哭你？",
+      "label": "干冷VS湿冷 哪种冷更能冻哭你？",
+      "url": "https://news.weather.com.cn/2021/10/3498607.shtml",
+      "canonicalUrl": "https://news.weather.com.cn/2021/10/3498607.shtml",
+      "originalUrl": "https://news.weather.com.cn/2021/10/3498607.shtml",
+      "date": "2021-10-10",
+      "summary": "人体冷暖感受并非只由空气温度决定，风力与相对湿度也会影响体感。",
+      "kind": "南京气候与生活官方资料",
+      "population": "一般气象科普；非南京宿舍室温调查",
+      "readingScope": "已读正文47—63行日期与气象分析师解释；仅采用体感受多因素影响，不搬入后文家用电热设备建议。",
+      "limitations": "不推导固定体感温差，不声称南京一定比湖南、海南更冷或某件衣服适合所有人。；家居科普不是校园用电授权，南审公寓禁用物品仍按现行规定。；不将湿冷描述为整个南京冬季的恒定气候，也不推断宿舍有无集中供暖。",
+      "expansionBatch": "food-climate-20261113"
+    },
+    "U964": {
+      "code": "U964",
+      "title": "高德地图：南京市热门湘菜馆——桃花源记（江北虹悦城店）",
+      "label": "高德地图：南京市热门湘菜馆——桃花源记（江北虹悦城店）",
+      "url": "https://ranks.amap.com/recommend/hunan_restaurant-Nanjing-white_collar",
+      "canonicalUrl": "https://ranks.amap.com/recommend/hunan_restaurant-Nanjing-white_collar",
+      "originalUrl": "https://ranks.amap.com/recommend/hunan_restaurant-Nanjing-white_collar",
+      "date": null,
+      "summary": "页面收录桃花源记（江北虹悦城店），菜系标湘菜，地址龙华路1号江北虹悦城4F17号。；该条显示的人均60元为平台用户消费信息；所读评价日期为2024年，涉及小炒肉等个人用餐感受。",
+      "kind": "地图平台商户列表与历史用户评价",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "readingScope": "正文第411—457行，商户名、地址、菜系和3条历史评价已读。web refs turn185view3、turn187view1。",
+      "limitations": "列表仍可见不等于当天营业已获商家确认。；评价是2024年个案，不作为2026新评或客观口味结论。；评分与人均不当作稳定现价，也不以榜单次序作推荐排名。",
+      "expansionBatch": "food-climate-20261113"
+    },
+    "U965": {
+      "code": "U965",
+      "title": "携程美食：桃花源记·山野湖南菜（浦口虹悦城店）",
+      "label": "携程美食：桃花源记·山野湖南菜（浦口虹悦城店）",
+      "url": "https://you.ctrip.com/food/nanjing9/133459044.html",
+      "canonicalUrl": "https://you.ctrip.com/food/nanjing9/133459044.html",
+      "originalUrl": "https://you.ctrip.com/food/nanjing9/133459044.html",
+      "date": null,
+      "summary": "页面标题为桃花源记·山野湖南菜（浦口虹悦城店）；历史点评还使用桃花源记·秋华名称，并写龙华路1号江北虹悦城4F-17。；特色菜栏目可读小炒黄牛肉、长沙臭豆腐、桂花酒酿元宵等。；搜索及摘要页列人均67元（用户反馈），与高德60元不同，故不输出为固定人均。",
+      "kind": "餐饮平台商户介绍与历史点评",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "readingScope": "正文标题、特色菜与前段历史点评已读；日期2022-10-14的点评在正文明确显示，不当作近期营业证明。web refs turn185view4、turn176search0。",
+      "limitations": "名称存在山野湖南菜、秋华等展示差异；按分店地址合并同一候选，不拆为多家。；菜单是平台收录，分店当日是否供应及价格到店前确认。；未根据营销式点评写必吃、正宗保证或性别化推荐。",
+      "expansionBatch": "food-climate-20261113"
+    },
+    "U966": {
+      "code": "U966",
+      "title": "费大厨官方微博：南京二店试营业，江北虹悦城5楼",
+      "label": "费大厨官方微博：南京二店试营业，江北虹悦城5楼",
+      "url": "https://www.sina.cn/news/detail/5245618890998804.html",
+      "canonicalUrl": "https://www.sina.cn/news/detail/5245618890998804.html",
+      "originalUrl": "https://www.sina.cn/news/detail/5245618890998804.html",
+      "date": "2025-12-19",
+      "summary": "认证为费大厨辣椒炒肉官方微博的页面发布南京二店试营业信息，门店位置为南京江北虹悦城5楼。",
+      "kind": "品牌自行发布的分店信息",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "readingScope": "27行短正文全文已读，日期、认证标记与楼层在第6—12行。web ref turn185view2。",
+      "limitations": "2025试营业消息本身不证明2026当天营业，须结合2026街道供稿跟进。；未公布当前价格、开餐收餐或排号截止，不据此写死。",
+      "expansionBatch": "food-climate-20261113"
+    },
+    "U967": {
+      "code": "U967",
+      "title": "从开业爆满到日常满座！江浦的费大厨太火了~",
+      "label": "从开业爆满到日常满座！江浦的费大厨太火了~",
+      "url": "https://www.csjcs.com/news/show/45467ffae8baf143.html",
+      "canonicalUrl": "https://www.csjcs.com/news/show/45467ffae8baf143.html",
+      "originalUrl": "https://www.csjcs.com/news/show/45467ffae8baf143.html",
+      "date": null,
+      "summary": "正文明确叙述2026年10月1日江北虹悦城费大厨店内用餐场景，提供较试营业更近的存在与经营线索。；正文提及招牌辣椒炒肉，以及皮蛋青椒擂茄子、香芋蒸排骨和手撕鸡等菜名。",
+      "kind": "街道供稿的商业宣传跟进",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "readingScope": "第34—118行已读，尤其45—47行事件日期、88—95行菜品、116行来源。web refs turn185view0、turn190view0。",
+      "limitations": "页面没有可靠单独发布日期，date留空，不把热门资讯的2026-11-11等邻栏日期移给文章。；街道供稿有明显推广性质，不将满座、排队、口碑和品质形容词当独立测评。；2026-10-01是活动/用餐观察日，不是本轮核查日，也不是保证此后每日满座或还需同样排队。；正文未提供当前单价，不编人均、优惠和等位时长。",
+      "expansionBatch": "food-climate-20261113"
+    },
+    "U968": {
+      "code": "U968",
+      "title": "高德地图：江北虹悦城",
+      "label": "高德地图：江北虹悦城",
+      "url": "https://ditu.amap.com/place/B0FFITUTMH",
+      "canonicalUrl": "https://ditu.amap.com/place/B0FFITUTMH",
+      "originalUrl": "https://ditu.amap.com/place/B0FFITUTMH",
+      "date": null,
+      "summary": "江北虹悦城地址为南京市浦口区龙华路1号。",
+      "kind": "地图POI",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "readingScope": "商场名称与地址正文已读，第18—20行。web ref turn190view1。",
+      "limitations": "仅核商场地址；商场POI不是每家店的营业证明。；不与赛虹桥的虹悦城、河西或桥北其他商场混淆。",
+      "expansionBatch": "food-climate-20261113"
+    },
+    "U969": {
+      "code": "U969",
+      "title": "霸碗盖码饭官方门店查询：南京龙湖雨山天街店",
+      "label": "霸碗盖码饭官方门店查询：南京龙湖雨山天街店",
+      "url": "https://bawan.dexinmiaosheng.cn/official/store.html",
+      "canonicalUrl": "https://bawan.dexinmiaosheng.cn/official/store.html",
+      "originalUrl": "https://bawan.dexinmiaosheng.cn/official/store.html",
+      "date": null,
+      "summary": "品牌官方门店查询收录南京龙湖雨山天街店。；该分店目录地址为南京市浦口区光明路59号雨山龙湖天街4幢123室。",
+      "kind": "品牌官方门店目录",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "readingScope": "官方目录第3078—3082行的分店名与地址已读；页脚为湖南霸王餐饮管理有限公司。web refs turn185view1、turn187view0。",
+      "limitations": "这是官方目录当前可读的收录，不是现场确认；未找到独立的该分店当日营业信息。；地址“4幢123室”不改写成商场4楼；不将门店信息与南京江核金茂悦、明发国际等其他分店混合。；页面没有明确更新日期、营业时段、分店价格与当天可售菜单。",
+      "expansionBatch": "food-climate-20261113"
+    },
+    "U970": {
+      "code": "U970",
+      "title": "霸碗盖码饭官方产品：盖码饭系列与湘菜小炒",
+      "label": "霸碗盖码饭官方产品：盖码饭系列与湘菜小炒",
+      "url": "https://bawan.dexinmiaosheng.cn/official/products.html",
+      "canonicalUrl": "https://bawan.dexinmiaosheng.cn/official/products.html",
+      "originalUrl": "https://bawan.dexinmiaosheng.cn/official/products.html",
+      "date": null,
+      "summary": "品牌产品页列花石香干炒肉、柴火香干腊肉、坛子辣椒炒肉、外婆菜炒鸡蛋等盖码饭。；小炒类别列辣椒炒肉、农家一碗香、包菜等品类。",
+      "kind": "品牌官方菜单类别页（非分店实时菜单）",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "readingScope": "第28—97行盖码饭与湘菜小炒栏目已读；两导航链接同指该页面，只登记一次。web refs turn190view2、turn190view3。",
+      "limitations": "全国品牌菜单不等于南京雨山天街店当日全部供应，不保证配料、分量、辣度与价格。；不将品牌“好吃不贵”等推广语写成编辑实测结论。",
+      "expansionBatch": "food-climate-20261113"
+    },
+    "U971": {
+      "code": "U971",
+      "title": "小菜园品牌官网门店目录：南京浦口雨山龙湖店",
+      "label": "小菜园品牌官网门店目录：南京浦口雨山龙湖店",
+      "url": "https://www.xiaocaiyuan.com/cn/stores/nationwide-network/",
+      "canonicalUrl": "https://www.xiaocaiyuan.com/cn/stores/nationwide-network/",
+      "originalUrl": "https://www.xiaocaiyuan.com/cn/stores/nationwide-network/",
+      "date": null,
+      "summary": "官网可检索条目为小菜园南京浦口雨山龙湖店，地址南京市浦口区光明路59号南京雨山天街A-5F-26号。",
+      "kind": "品牌官方门店资料",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "readingScope": "官网门店检索的索引条目已核店名与地址（web turn192search0）；直接网页抓取未展开动态门店表，不声称已读该店实时菜单或营业安排。",
+      "limitations": "未确认当前菜单、价位或营业时段。；不是湘菜专项推荐，不保证所有菜清淡或不辣。",
+      "expansionBatch": "food-climate-20261113"
+    },
+    "U972": {
+      "code": "U972",
+      "title": "高德地图：米村拌饭（龙湖雨山天街店）",
+      "label": "高德地图：米村拌饭（龙湖雨山天街店）",
+      "url": "https://www.amap.com/place/B0KR5RW2MA",
+      "canonicalUrl": "https://www.amap.com/place/B0KR5RW2MA",
+      "originalUrl": "https://www.amap.com/place/B0KR5RW2MA",
+      "date": null,
+      "summary": "地图条目标注龙湖雨山天街负一楼A-B1-25号，近商场6号门。；可读用户评价日期2024-07-31，提及烤牛肉拌饭、金枪鱼拌饭；只作历史个人体验。",
+      "kind": "地图POI与历史评价",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "readingScope": "地图正文18—26行店名地址与一条2024历史评论已读，web turn189view1。",
+      "limitations": "公开地图条目不等于当天营业已确认。；旧评论中的续饭、价格感受及菜品不升级为当前权益和全店菜单。",
+      "expansionBatch": "food-climate-20261113"
+    },
+    "U973": {
+      "code": "U973",
+      "title": "高德地图：龙湖南京雨山天街",
+      "label": "高德地图：龙湖南京雨山天街",
+      "url": "https://www.amap.com/place/B0H32R4VGK",
+      "canonicalUrl": "https://www.amap.com/place/B0H32R4VGK",
+      "originalUrl": "https://www.amap.com/place/B0H32R4VGK",
+      "date": null,
+      "summary": "地图商场地址为南京市浦口区光明路59号，条目标注雨山路地铁站6号口直达。",
+      "kind": "地图商场POI",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "readingScope": "地图POI搜索正文店名、地址与地铁出口说明已读，web turn192search2。",
+      "limitations": "只核商场位置，非其中每家商户营业证明。；地铁线路、出口与校门临时变化出发当天查询，不计算固定到店车程。",
+      "expansionBatch": "food-climate-20261113"
     }
   },
   "targetProfiles": [
@@ -42073,6 +42783,378 @@
         "已公开核读全文；采用参与尝试、反馈和表达困扰的内容；未延伸查询个人社交账户。"
       ],
       "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:food-climate-20261113:U959",
+      "ids": [
+        "U959"
+      ],
+      "title": "南京自然状况（2026年更新，含2025年天气气候回顾）",
+      "date_display": "2026-09-30",
+      "url": "https://www.nanjing.gov.cn/zzb/njgl/csgk/zrzk_72671/202609/t20260930_5920367.html",
+      "canonical_url": "https://www.nanjing.gov.cn/zzb/njgl/csgk/zrzk_72671/202609/t20260930_5920367.html",
+      "summary": "南京属北亚热带湿润气候，四季分明，春秋较短、冬夏较长，冬夏温差较大。；页面回顾的2025年入秋明显偏晚，并记录夏季及秋季受到台风或外围环流影响；这些是历史个案，用于说明年份差异，不能当作下一年的固定时间表。",
+      "population": "南京市公众；城市尺度资料",
+      "tips": [
+        "南京属北亚热带湿润气候，四季分明，春秋较短、冬夏较长，冬夏温差较大。",
+        "页面回顾的2025年入秋明显偏晚，并记录夏季及秋季受到台风或外围环流影响；这些是历史个案，用于说明年份差异，不能当作下一年的固定时间表。"
+      ],
+      "comments": [],
+      "limits": "不是2026年或2027年的气候预测，不将2025年的高温日、入秋日、梅雨日照搬为每年安排。；没有宿舍楼层朝向、室温、空调费、供暖和晾晒条件，不推断校园微气候。；不将单个城市测站的月平均气温当作学生每日需要穿衣的温度。",
+      "topic": "南京气候与生活官方资料",
+      "use_status": "南京气候与生活官方资料",
+      "reading_scopes": [
+        "已读正文20—24行，核对发布日期、气候概述与2025年回顾的时间边界。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:food-climate-20261113:U960",
+      "ids": [
+        "U960"
+      ],
+      "title": "南京城市介绍与气候背景分析",
+      "date_display": null,
+      "url": "https://www.weather.com.cn/cityintro/101190101.shtml",
+      "canonical_url": "https://www.weather.com.cn/cityintro/101190101.shtml",
+      "summary": "南京冬冷夏热、雨量充沛、雨热同季。；初夏受锋面雨带影响进入梅雨期，降水增多；梅雨后常进入晴热的盛夏。；暴雨、连阴雨、台风、高温、强对流、寒潮等天气在南京均有发生。",
+      "population": "南京城市尺度气候背景；非特定新生年级",
+      "tips": [
+        "南京冬冷夏热、雨量充沛、雨热同季。",
+        "初夏受锋面雨带影响进入梅雨期，降水增多；梅雨后常进入晴热的盛夏。",
+        "暴雨、连阴雨、台风、高温、强对流、寒潮等天气在南京均有发生。"
+      ],
+      "comments": [],
+      "limits": "这是气候背景页，不提供当天预警、未来某日天气或固定入梅出梅日期。；冬季总体较夏季干燥与阴雨日可能有湿冷体感并不矛盾，不写成南京整个冬季都潮湿阴雨。；正文早期旅游描述不作为近期温度比较或南京是否已不炎热的证据。",
+      "topic": "南京气候与生活官方资料",
+      "use_status": "南京气候与生活官方资料",
+      "reading_scopes": [
+        "已读气候背景分析正文85—89行；页面未可靠显示资料更新日期，date保留为空。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:food-climate-20261113:U961",
+      "ids": [
+        "U961"
+      ],
+      "title": "湿闷梅雨季，化解“梅”烦恼",
+      "date_display": "2026-06-23",
+      "url": "https://wjw.nanjing.gov.cn/gzdt/202606/t20260623_5864335.html",
+      "canonical_url": "https://wjw.nanjing.gov.cn/gzdt/202606/t20260623_5864335.html",
+      "summary": "该文提醒梅雨时段闷热、潮湿，食品和物品防霉需留意。；该文提醒注意空调过滤网清洁；对于学生宿舍，共用设备的清理方式仍应问物业，不要求学生自行拆装。",
+      "population": "南京居民一般生活提示；并非南审宿舍设备使用说明",
+      "tips": [
+        "该文提醒梅雨时段闷热、潮湿，食品和物品防霉需留意。",
+        "该文提醒注意空调过滤网清洁；对于学生宿舍，共用设备的清理方式仍应问物业，不要求学生自行拆装。"
+      ],
+      "comments": [],
+      "limits": "不搬入皮肤病用药、盐水浸泡、祛湿食物、疾病诊断等内容。；不据其建议推定所有学生每周自行拆洗空调，也不承诺南审提供某款除湿或烘干设备。；通风、晾晒安排需结合室外湿度、是否下雨、窗户和楼栋规则；不写成阴雨天始终开窗。",
+      "topic": "南京气候与生活官方资料",
+      "use_status": "南京气候与生活官方资料",
+      "reading_scopes": [
+        "已读2026-06-23正文39—61行，仅采用生活防潮与清洁提醒，不采纳医疗处置、饮食祛湿或治疗性说法。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:food-climate-20261113:U962",
+      "ids": [
+        "U962"
+      ],
+      "title": "旅游提醒：台风影响期间出行避险提示（2025年历史提醒）",
+      "date_display": "2025-07-30",
+      "url": "https://zschina.nanjing.gov.cn/lyzx/202507/t20250730_5618705.html",
+      "canonical_url": "https://zschina.nanjing.gov.cn/lyzx/202507/t20250730_5618705.html",
+      "summary": "当次市防办提醒大风强雨时尽量减少出行，远离广告牌、大树及高空构筑物。；提醒不要在涵洞、立交桥低洼处、地下通道等地势较低位置避险，不冒险穿过积水。",
+      "population": "南京居民与游客；采用一般避险提示，不作为当前灾害状态",
+      "tips": [
+        "当次市防办提醒大风强雨时尽量减少出行，远离广告牌、大树及高空构筑物。",
+        "提醒不要在涵洞、立交桥低洼处、地下通道等地势较低位置避险，不冒险穿过积水。"
+      ],
+      "comments": [],
+      "limits": "不将2025预警或关闭通知写成2026、2027当前状态。；不据此保证校园任一避雨点、安全路线、校门开放或景区开放。；台风天不以一把伞或外卖配送正常推定可以放心出门。",
+      "topic": "南京气候与生活官方资料",
+      "use_status": "南京气候与生活官方资料",
+      "reading_scopes": [
+        "已读2025-07-30通知30—49行，采用市防办一般避险段；原文预警、响应级别和景区关闭均仅为当次事件。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:food-climate-20261113:U963",
+      "ids": [
+        "U963"
+      ],
+      "title": "干冷VS湿冷 哪种冷更能冻哭你？",
+      "date_display": "2021-10-10",
+      "url": "https://news.weather.com.cn/2021/10/3498607.shtml",
+      "canonical_url": "https://news.weather.com.cn/2021/10/3498607.shtml",
+      "summary": "人体冷暖感受并非只由空气温度决定，风力与相对湿度也会影响体感。",
+      "population": "一般气象科普；非南京宿舍室温调查",
+      "tips": [
+        "人体冷暖感受并非只由空气温度决定，风力与相对湿度也会影响体感。"
+      ],
+      "comments": [],
+      "limits": "不推导固定体感温差，不声称南京一定比湖南、海南更冷或某件衣服适合所有人。；家居科普不是校园用电授权，南审公寓禁用物品仍按现行规定。；不将湿冷描述为整个南京冬季的恒定气候，也不推断宿舍有无集中供暖。",
+      "topic": "南京气候与生活官方资料",
+      "use_status": "南京气候与生活官方资料",
+      "reading_scopes": [
+        "已读正文47—63行日期与气象分析师解释；仅采用体感受多因素影响，不搬入后文家用电热设备建议。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:food-climate-20261113:U964",
+      "ids": [
+        "U964"
+      ],
+      "title": "高德地图：南京市热门湘菜馆——桃花源记（江北虹悦城店）",
+      "date_display": null,
+      "url": "https://ranks.amap.com/recommend/hunan_restaurant-Nanjing-white_collar",
+      "canonical_url": "https://ranks.amap.com/recommend/hunan_restaurant-Nanjing-white_collar",
+      "summary": "页面收录桃花源记（江北虹悦城店），菜系标湘菜，地址龙华路1号江北虹悦城4F17号。；该条显示的人均60元为平台用户消费信息；所读评价日期为2024年，涉及小炒肉等个人用餐感受。",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "tips": [
+        "页面收录桃花源记（江北虹悦城店），菜系标湘菜，地址龙华路1号江北虹悦城4F17号。",
+        "该条显示的人均60元为平台用户消费信息；所读评价日期为2024年，涉及小炒肉等个人用餐感受。"
+      ],
+      "comments": [],
+      "limits": "列表仍可见不等于当天营业已获商家确认。；评价是2024年个案，不作为2026新评或客观口味结论。；评分与人均不当作稳定现价，也不以榜单次序作推荐排名。",
+      "topic": "地图平台商户列表与历史用户评价",
+      "use_status": "地图平台商户列表与历史用户评价",
+      "reading_scopes": [
+        "正文第411—457行，商户名、地址、菜系和3条历史评价已读。web refs turn185view3、turn187view1。"
+      ],
+      "official": false,
+      "screened_only": false
+    },
+    {
+      "key": "official:food-climate-20261113:U965",
+      "ids": [
+        "U965"
+      ],
+      "title": "携程美食：桃花源记·山野湖南菜（浦口虹悦城店）",
+      "date_display": null,
+      "url": "https://you.ctrip.com/food/nanjing9/133459044.html",
+      "canonical_url": "https://you.ctrip.com/food/nanjing9/133459044.html",
+      "summary": "页面标题为桃花源记·山野湖南菜（浦口虹悦城店）；历史点评还使用桃花源记·秋华名称，并写龙华路1号江北虹悦城4F-17。；特色菜栏目可读小炒黄牛肉、长沙臭豆腐、桂花酒酿元宵等。；搜索及摘要页列人均67元（用户反馈），与高德60元不同，故不输出为固定人均。",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "tips": [
+        "页面标题为桃花源记·山野湖南菜（浦口虹悦城店）；历史点评还使用桃花源记·秋华名称，并写龙华路1号江北虹悦城4F-17。",
+        "特色菜栏目可读小炒黄牛肉、长沙臭豆腐、桂花酒酿元宵等。",
+        "搜索及摘要页列人均67元（用户反馈），与高德60元不同，故不输出为固定人均。"
+      ],
+      "comments": [],
+      "limits": "名称存在山野湖南菜、秋华等展示差异；按分店地址合并同一候选，不拆为多家。；菜单是平台收录，分店当日是否供应及价格到店前确认。；未根据营销式点评写必吃、正宗保证或性别化推荐。",
+      "topic": "餐饮平台商户介绍与历史点评",
+      "use_status": "餐饮平台商户介绍与历史点评",
+      "reading_scopes": [
+        "正文标题、特色菜与前段历史点评已读；日期2022-10-14的点评在正文明确显示，不当作近期营业证明。web refs turn185view4、turn176search0。"
+      ],
+      "official": false,
+      "screened_only": false
+    },
+    {
+      "key": "official:food-climate-20261113:U966",
+      "ids": [
+        "U966"
+      ],
+      "title": "费大厨官方微博：南京二店试营业，江北虹悦城5楼",
+      "date_display": "2025-12-19",
+      "url": "https://www.sina.cn/news/detail/5245618890998804.html",
+      "canonical_url": "https://www.sina.cn/news/detail/5245618890998804.html",
+      "summary": "认证为费大厨辣椒炒肉官方微博的页面发布南京二店试营业信息，门店位置为南京江北虹悦城5楼。",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "tips": [
+        "认证为费大厨辣椒炒肉官方微博的页面发布南京二店试营业信息，门店位置为南京江北虹悦城5楼。"
+      ],
+      "comments": [],
+      "limits": "2025试营业消息本身不证明2026当天营业，须结合2026街道供稿跟进。；未公布当前价格、开餐收餐或排号截止，不据此写死。",
+      "topic": "品牌自行发布的分店信息",
+      "use_status": "品牌自行发布的分店信息",
+      "reading_scopes": [
+        "27行短正文全文已读，日期、认证标记与楼层在第6—12行。web ref turn185view2。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:food-climate-20261113:U967",
+      "ids": [
+        "U967"
+      ],
+      "title": "从开业爆满到日常满座！江浦的费大厨太火了~",
+      "date_display": null,
+      "url": "https://www.csjcs.com/news/show/45467ffae8baf143.html",
+      "canonical_url": "https://www.csjcs.com/news/show/45467ffae8baf143.html",
+      "summary": "正文明确叙述2026年10月1日江北虹悦城费大厨店内用餐场景，提供较试营业更近的存在与经营线索。；正文提及招牌辣椒炒肉，以及皮蛋青椒擂茄子、香芋蒸排骨和手撕鸡等菜名。",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "tips": [
+        "正文明确叙述2026年10月1日江北虹悦城费大厨店内用餐场景，提供较试营业更近的存在与经营线索。",
+        "正文提及招牌辣椒炒肉，以及皮蛋青椒擂茄子、香芋蒸排骨和手撕鸡等菜名。"
+      ],
+      "comments": [],
+      "limits": "页面没有可靠单独发布日期，date留空，不把热门资讯的2026-11-11等邻栏日期移给文章。；街道供稿有明显推广性质，不将满座、排队、口碑和品质形容词当独立测评。；2026-10-01是活动/用餐观察日，不是本轮核查日，也不是保证此后每日满座或还需同样排队。；正文未提供当前单价，不编人均、优惠和等位时长。",
+      "topic": "街道供稿的商业宣传跟进",
+      "use_status": "街道供稿的商业宣传跟进",
+      "reading_scopes": [
+        "第34—118行已读，尤其45—47行事件日期、88—95行菜品、116行来源。web refs turn185view0、turn190view0。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:food-climate-20261113:U968",
+      "ids": [
+        "U968"
+      ],
+      "title": "高德地图：江北虹悦城",
+      "date_display": null,
+      "url": "https://ditu.amap.com/place/B0FFITUTMH",
+      "canonical_url": "https://ditu.amap.com/place/B0FFITUTMH",
+      "summary": "江北虹悦城地址为南京市浦口区龙华路1号。",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "tips": [
+        "江北虹悦城地址为南京市浦口区龙华路1号。"
+      ],
+      "comments": [],
+      "limits": "仅核商场地址；商场POI不是每家店的营业证明。；不与赛虹桥的虹悦城、河西或桥北其他商场混淆。",
+      "topic": "地图POI",
+      "use_status": "地图POI",
+      "reading_scopes": [
+        "商场名称与地址正文已读，第18—20行。web ref turn190view1。"
+      ],
+      "official": false,
+      "screened_only": false
+    },
+    {
+      "key": "official:food-climate-20261113:U969",
+      "ids": [
+        "U969"
+      ],
+      "title": "霸碗盖码饭官方门店查询：南京龙湖雨山天街店",
+      "date_display": null,
+      "url": "https://bawan.dexinmiaosheng.cn/official/store.html",
+      "canonical_url": "https://bawan.dexinmiaosheng.cn/official/store.html",
+      "summary": "品牌官方门店查询收录南京龙湖雨山天街店。；该分店目录地址为南京市浦口区光明路59号雨山龙湖天街4幢123室。",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "tips": [
+        "品牌官方门店查询收录南京龙湖雨山天街店。",
+        "该分店目录地址为南京市浦口区光明路59号雨山龙湖天街4幢123室。"
+      ],
+      "comments": [],
+      "limits": "这是官方目录当前可读的收录，不是现场确认；未找到独立的该分店当日营业信息。；地址“4幢123室”不改写成商场4楼；不将门店信息与南京江核金茂悦、明发国际等其他分店混合。；页面没有明确更新日期、营业时段、分店价格与当天可售菜单。",
+      "topic": "品牌官方门店目录",
+      "use_status": "品牌官方门店目录",
+      "reading_scopes": [
+        "官方目录第3078—3082行的分店名与地址已读；页脚为湖南霸王餐饮管理有限公司。web refs turn185view1、turn187view0。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:food-climate-20261113:U970",
+      "ids": [
+        "U970"
+      ],
+      "title": "霸碗盖码饭官方产品：盖码饭系列与湘菜小炒",
+      "date_display": null,
+      "url": "https://bawan.dexinmiaosheng.cn/official/products.html",
+      "canonical_url": "https://bawan.dexinmiaosheng.cn/official/products.html",
+      "summary": "品牌产品页列花石香干炒肉、柴火香干腊肉、坛子辣椒炒肉、外婆菜炒鸡蛋等盖码饭。；小炒类别列辣椒炒肉、农家一碗香、包菜等品类。",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "tips": [
+        "品牌产品页列花石香干炒肉、柴火香干腊肉、坛子辣椒炒肉、外婆菜炒鸡蛋等盖码饭。",
+        "小炒类别列辣椒炒肉、农家一碗香、包菜等品类。"
+      ],
+      "comments": [],
+      "limits": "全国品牌菜单不等于南京雨山天街店当日全部供应，不保证配料、分量、辣度与价格。；不将品牌“好吃不贵”等推广语写成编辑实测结论。",
+      "topic": "品牌官方菜单类别页（非分店实时菜单）",
+      "use_status": "品牌官方菜单类别页（非分店实时菜单）",
+      "reading_scopes": [
+        "第28—97行盖码饭与湘菜小炒栏目已读；两导航链接同指该页面，只登记一次。web refs turn190view2、turn190view3。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:food-climate-20261113:U971",
+      "ids": [
+        "U971"
+      ],
+      "title": "小菜园品牌官网门店目录：南京浦口雨山龙湖店",
+      "date_display": null,
+      "url": "https://www.xiaocaiyuan.com/cn/stores/nationwide-network/",
+      "canonical_url": "https://www.xiaocaiyuan.com/cn/stores/nationwide-network/",
+      "summary": "官网可检索条目为小菜园南京浦口雨山龙湖店，地址南京市浦口区光明路59号南京雨山天街A-5F-26号。",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "tips": [
+        "官网可检索条目为小菜园南京浦口雨山龙湖店，地址南京市浦口区光明路59号南京雨山天街A-5F-26号。"
+      ],
+      "comments": [],
+      "limits": "未确认当前菜单、价位或营业时段。；不是湘菜专项推荐，不保证所有菜清淡或不辣。",
+      "topic": "品牌官方门店资料",
+      "use_status": "品牌官方门店资料",
+      "reading_scopes": [
+        "官网门店检索的索引条目已核店名与地址（web turn192search0）；直接网页抓取未展开动态门店表，不声称已读该店实时菜单或营业安排。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:food-climate-20261113:U972",
+      "ids": [
+        "U972"
+      ],
+      "title": "高德地图：米村拌饭（龙湖雨山天街店）",
+      "date_display": null,
+      "url": "https://www.amap.com/place/B0KR5RW2MA",
+      "canonical_url": "https://www.amap.com/place/B0KR5RW2MA",
+      "summary": "地图条目标注龙湖雨山天街负一楼A-B1-25号，近商场6号门。；可读用户评价日期2024-07-31，提及烤牛肉拌饭、金枪鱼拌饭；只作历史个人体验。",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "tips": [
+        "地图条目标注龙湖雨山天街负一楼A-B1-25号，近商场6号门。",
+        "可读用户评价日期2024-07-31，提及烤牛肉拌饭、金枪鱼拌饭；只作历史个人体验。"
+      ],
+      "comments": [],
+      "limits": "公开地图条目不等于当天营业已确认。；旧评论中的续饭、价格感受及菜品不升级为当前权益和全店菜单。",
+      "topic": "地图POI与历史评价",
+      "use_status": "地图POI与历史评价",
+      "reading_scopes": [
+        "地图正文18—26行店名地址与一条2024历史评论已读，web turn189view1。"
+      ],
+      "official": false,
+      "screened_only": false
+    },
+    {
+      "key": "official:food-climate-20261113:U973",
+      "ids": [
+        "U973"
+      ],
+      "title": "高德地图：龙湖南京雨山天街",
+      "date_display": null,
+      "url": "https://www.amap.com/place/B0H32R4VGK",
+      "canonical_url": "https://www.amap.com/place/B0H32R4VGK",
+      "summary": "地图商场地址为南京市浦口区光明路59号，条目标注雨山路地铁站6号口直达。",
+      "population": "面向南审浦口校区学生的江浦商圈餐饮参考；非在读经历",
+      "tips": [
+        "地图商场地址为南京市浦口区光明路59号，条目标注雨山路地铁站6号口直达。"
+      ],
+      "comments": [],
+      "limits": "只核商场位置，非其中每家商户营业证明。；地铁线路、出口与校门临时变化出发当天查询，不计算固定到店车程。",
+      "topic": "地图商场POI",
+      "use_status": "地图商场POI",
+      "reading_scopes": [
+        "地图POI搜索正文店名、地址与地铁出口说明已读，web turn192search2。"
+      ],
+      "official": false,
       "screened_only": false
     }
   ],
@@ -53665,6 +54747,14 @@
       {
         "label": "常用联系人",
         "chapterId": "life-11"
+      },
+      {
+        "label": "湘味与周边吃饭",
+        "chapterId": "life-05"
+      },
+      {
+        "label": "南京四季与晾晒",
+        "chapterId": "life-15"
       }
     ]
   }

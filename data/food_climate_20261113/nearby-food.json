@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-13",
+  "sources": [
+    {
+      "id": "FD01",
+      "title": "小菜园品牌官网门店目录：南京浦口雨山龙湖店",
+      "url": "https://www.xiaocaiyuan.com/cn/stores/nationwide-network/",
+      "date": null,
+      "publisher": "小菜园品牌官网",
+      "sourceType": "品牌官方门店资料",
+      "facts": [
+        "官网可检索条目为小菜园南京浦口雨山龙湖店，地址南京市浦口区光明路59号南京雨山天街A-5F-26号。"
+      ],
+      "reading_scope": "官网门店检索的索引条目已核店名与地址（web turn192search0）；直接网页抓取未展开动态门店表，不声称已读该店实时菜单或营业安排。",
+      "limits": [
+        "未确认当前菜单、价位或营业时段。",
+        "不是湘菜专项推荐，不保证所有菜清淡或不辣。"
+      ]
+    },
+    {
+      "id": "FD02",
+      "title": "高德地图：米村拌饭（龙湖雨山天街店）",
+      "url": "https://www.amap.com/place/B0KR5RW2MA",
+      "date": null,
+      "publisher": "高德地图",
+      "sourceType": "地图POI与历史评价",
+      "facts": [
+        "地图条目标注龙湖雨山天街负一楼A-B1-25号，近商场6号门。",
+        "可读用户评价日期2024-07-31，提及烤牛肉拌饭、金枪鱼拌饭；只作历史个人体验。"
+      ],
+      "reading_scope": "地图正文18—26行店名地址与一条2024历史评论已读，web turn189view1。",
+      "limits": [
+        "公开地图条目不等于当天营业已确认。",
+        "旧评论中的续饭、价格感受及菜品不升级为当前权益和全店菜单。"
+      ]
+    },
+    {
+      "id": "FD03",
+      "title": "高德地图：龙湖南京雨山天街",
+      "url": "https://www.amap.com/place/B0H32R4VGK",
+      "date": null,
+      "publisher": "高德地图",
+      "sourceType": "地图商场POI",
+      "facts": [
+        "地图商场地址为南京市浦口区光明路59号，条目标注雨山路地铁站6号口直达。"
+      ],
+      "reading_scope": "地图POI搜索正文店名、地址与地铁出口说明已读，web turn192search2。",
+      "limits": [
+        "只核商场位置，非其中每家商户营业证明。",
+        "地铁线路、出口与校门临时变化出发当天查询，不计算固定到店车程。"
+      ]
+    }
+  ]
+}
