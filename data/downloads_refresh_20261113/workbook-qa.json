@@ -1,0 +1,149 @@
+{
+  "sheets": 16,
+  "tables": 17,
+  "formulas": 1701,
+  "formulaErrors": [],
+  "rows": {
+    "完整来源目录": 495,
+    "正文未读线索": 10,
+    "生活学习要点": 454,
+    "导师反馈": 50,
+    "官方核实": 275,
+    "帖子索引": 155,
+    "检索覆盖": 74,
+    "补充证据": 23,
+    "应用版补充": 14,
+    "延伸核验": 10,
+    "继续补读": 11,
+    "学生评价总览": 38,
+    "实习资源": 64,
+    "姓名缩写对照": 43,
+    "学生公开去向": 38,
+    "校园生活图片": 28
+  },
+  "sourceSha256": "3d45c51b94d7729613b0bd7ada4ed4b3d7c31d3c55cc11b097ec031433cdbd4a",
+  "outputSha256": "bd48ceb4a14653ee032802d4ef5cb69bd736c1df9813f85267cbecd6d867550a",
+  "outputBytes": 554580,
+  "renderFiles": [
+    "after-完整来源目录.png",
+    "after-正文未读线索.png",
+    "after-生活学习要点.png",
+    "after-导师反馈.png",
+    "after-官方核实.png",
+    "after-帖子索引.png",
+    "after-检索覆盖.png",
+    "after-补充证据.png",
+    "after-应用版补充.png",
+    "after-延伸核验.png",
+    "after-继续补读.png",
+    "after-学生评价总览.png",
+    "after-实习资源.png",
+    "after-姓名缩写对照.png",
+    "after-学生公开去向.png",
+    "after-校园生活图片.png",
+    "after-detail-导师反馈.png",
+    "after-detail-学生公开去向.png",
+    "after-detail-校园生活图片.png",
+    "after-detail-姓名缩写对照.png",
+    "context-wangye.png",
+    "context-cuixiumei.png"
+  ],
+  "datasets": [
+    {
+      "name": "完整来源目录",
+      "rows": 491,
+      "columns": 12,
+      "links": 491,
+      "maxRowHeight": 118,
+      "tableName": "DownloadSourceRegistry20261113"
+    },
+    {
+      "name": "帖子索引",
+      "rows": 149,
+      "columns": 16,
+      "links": 149,
+      "maxRowHeight": 172,
+      "tableName": "NauTable4"
+    },
+    {
+      "name": "官方核实",
+      "rows": 269,
+      "columns": 13,
+      "links": 269,
+      "maxRowHeight": 199,
+      "tableName": "NauTable3"
+    },
+    {
+      "name": "生活学习要点",
+      "rows": 448,
+      "columns": 12,
+      "links": 428,
+      "maxRowHeight": 131.5,
+      "tableName": "NauTable1"
+    },
+    {
+      "name": "导师反馈",
+      "rows": 44,
+      "columns": 19,
+      "links": 48,
+      "maxRowHeight": 118,
+      "tableName": "NauTable2"
+    },
+    {
+      "name": "学生评价总览",
+      "rows": 34,
+      "columns": 11,
+      "links": 33,
+      "maxRowHeight": 158.5,
+      "tableName": "StudentReviews103"
+    },
+    {
+      "name": "实习资源",
+      "rows": 60,
+      "columns": 20,
+      "links": 135,
+      "maxRowHeight": 118,
+      "tableName": "InternshipResources104"
+    },
+    {
+      "name": "姓名缩写对照",
+      "rows": 39,
+      "columns": 9,
+      "links": 36,
+      "maxRowHeight": 50.5,
+      "tableName": "MentorAliases113"
+    },
+    {
+      "name": "学生公开去向",
+      "rows": 28,
+      "columns": 16,
+      "links": 28,
+      "maxRowHeight": 64,
+      "tableName": "StudentOutcomes113"
+    },
+    {
+      "name": "校园生活图片",
+      "rows": 24,
+      "columns": 13,
+      "links": 67,
+      "maxRowHeight": 64,
+      "tableName": "LifeImages113"
+    }
+  ],
+  "checkedModelRows": {
+    "完整来源目录": 491,
+    "帖子索引": 149,
+    "官方核实": 269,
+    "生活学习要点": 448,
+    "导师反馈": 44,
+    "学生评价总览": 34,
+    "实习资源": 60,
+    "姓名缩写对照": 39,
+    "学生公开去向": 28,
+    "校园生活图片": 24
+  },
+  "checkedSourceLinks": 1684,
+  "allSourceLinksAndLabelsMatch": true,
+  "allModelCellValuesMatch": true,
+  "visualQa": "16 sheet openings and detail ranges reviewed; added actual context note rows for Wang Ye and Cui Xiumei."
+}

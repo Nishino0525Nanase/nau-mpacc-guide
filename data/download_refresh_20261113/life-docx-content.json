@@ -1,0 +1,1146 @@
+{
+  "file": "dist/downloads/life-guide.docx",
+  "chapterCount": 16,
+  "firmCount": 23,
+  "resourceCount": 53,
+  "hyperlinkOccurrences": 241,
+  "uniqueHyperlinks": 125,
+  "sourceCodes": [
+    "E006",
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F05",
+    "F06",
+    "F07",
+    "F08",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F18",
+    "F19",
+    "F20",
+    "F21",
+    "F22",
+    "F24",
+    "F25",
+    "F28",
+    "F30",
+    "F31",
+    "F33",
+    "F34",
+    "F35",
+    "F38",
+    "F39",
+    "F40",
+    "I801",
+    "I805",
+    "I806",
+    "I809",
+    "I815",
+    "I816",
+    "I817",
+    "I818",
+    "I819",
+    "I820",
+    "I821",
+    "I823",
+    "I824",
+    "I828",
+    "I831",
+    "I832",
+    "I835",
+    "I836",
+    "I837",
+    "I838",
+    "I839",
+    "I841",
+    "I842",
+    "I843",
+    "I844",
+    "I845",
+    "I847",
+    "I848",
+    "I849",
+    "I860",
+    "I861",
+    "I865",
+    "I866",
+    "L01",
+    "L02",
+    "L04",
+    "L05",
+    "L08",
+    "L09",
+    "L101",
+    "L103",
+    "P01",
+    "P05",
+    "P09",
+    "P10",
+    "R311",
+    "U908",
+    "U909",
+    "U910",
+    "U911",
+    "U912",
+    "U913",
+    "U914",
+    "U924",
+    "U925",
+    "U926",
+    "U927",
+    "U928",
+    "U929",
+    "U930",
+    "U934",
+    "U937",
+    "U941",
+    "U942",
+    "U943",
+    "U945",
+    "U946",
+    "U947",
+    "U948",
+    "U949",
+    "U950",
+    "U952",
+    "U959",
+    "U960",
+    "U961",
+    "U962",
+    "U964",
+    "U965",
+    "U966",
+    "U967",
+    "U968",
+    "U969",
+    "U970",
+    "U971",
+    "U972",
+    "U974",
+    "U978",
+    "U979",
+    "U980",
+    "U983",
+    "V01",
+    "V03",
+    "V04",
+    "V05",
+    "V06",
+    "V07"
+  ],
+  "bytes": 63367,
+  "sha256": "1861d3b0184e077d123accf3e6ea63ed50420c9e09a732e816400ca1832c9f25",
+  "links": [
+    {
+      "label": "打开网页版指南",
+      "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/#life"
+    },
+    {
+      "label": "查看原帖与访谈索引",
+      "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/#posts"
+    },
+    {
+      "label": "[F06]",
+      "url": "https://gs.nau.edu.cn/2026/0702/c4396a160293/page.htm"
+    },
+    {
+      "label": "[F10]",
+      "url": "https://gs.nau.edu.cn/2026/0702/c4396a160293/page.htm"
+    },
+    {
+      "label": "[F01]",
+      "url": "https://gs.nau.edu.cn/2026/0920/c4394a161925/page.htm"
+    },
+    {
+      "label": "[F02]",
+      "url": "https://mpacc.nau.edu.cn/11517/list.htm"
+    },
+    {
+      "label": "[F04]",
+      "url": "https://gs.nau.edu.cn/2026/0702/c4396a160293/page.htm"
+    },
+    {
+      "label": "[F07]",
+      "url": "https://gs.nau.edu.cn/2026/0702/c4396a160293/page.htm"
+    },
+    {
+      "label": "[F07]",
+      "url": "https://gs.nau.edu.cn/2026/0702/c4396a160293/page.htm"
+    },
+    {
+      "label": "[F10]",
+      "url": "https://gs.nau.edu.cn/2026/0702/c4396a160293/page.htm"
+    },
+    {
+      "label": "[F04]",
+      "url": "https://gs.nau.edu.cn/2026/0702/c4396a160293/page.htm"
+    },
+    {
+      "label": "[F05]",
+      "url": "https://gs.nau.edu.cn/2026/0702/c4396a160293/page.htm"
+    },
+    {
+      "label": "[F12]",
+      "url": "https://gs.nau.edu.cn/2026/0916/c4413a161746/page.htm"
+    },
+    {
+      "label": "[L01]",
+      "url": "https://www.xiaohongshu.com/explore/6a8827f80000000028027a78?xsec_token=ABYyu-HJJQEeTaqyrvypLDSjlNDF-vwnq9G8nltx6m38U=&xsec_source=pc_search&source=web_explore_feed"
+    },
+    {
+      "label": "[U978]",
+      "url": "https://cysy.nau.edu.cn/2024/0927/c4939a135882/page.htm"
+    },
+    {
+      "label": "[L02]",
+      "url": "https://www.xiaohongshu.com/explore/6a51e249000000002102347f?xsec_token=AB9Dwe1xDXqSUigiNXECsEXwBYyyDu42Zf3lg659S62Ss=&xsec_source=pc_search&source=web_explore_feed"
+    },
+    {
+      "label": "[L101]",
+      "url": "https://cf-pages.colleges.chat/universities/nan-jing-shen-ji-da-xue-pu-kou-qu/"
+    },
+    {
+      "label": "[U974]",
+      "url": "https://news.nau.edu.cn/2026/0417/c5797a156234/page.htm"
+    },
+    {
+      "label": "[F12]",
+      "url": "https://gs.nau.edu.cn/2026/0916/c4413a161746/page.htm"
+    },
+    {
+      "label": "[U934]",
+      "url": "https://zwwyh.nau.edu.cn/_t205/3533/list.psp"
+    },
+    {
+      "label": "查看本章照片与原始来源",
+      "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/#life/life-03"
+    },
+    {
+      "label": "[F20]",
+      "url": "https://nau.edu.cn/5821/list.htm"
+    },
+    {
+      "label": "[F21]",
+      "url": "https://zhc.nau.edu.cn/xyVPN/list.htm"
+    },
+    {
+      "label": "[L04]",
+      "url": "https://www.xiaohongshu.com/explore/6a7424b50000000026034cac?xsec_token=ABmm9sShEGtL4olWXv8ATWH8Z_QFlPTS5J1WtjmwXP61E=&xsec_source=pc_search&source=web_explore_feed"
+    },
+    {
+      "label": "[L05]",
+      "url": "https://www.xiaohongshu.com/explore/6a745d240000000035017ee3?xsec_token=ABmm9sShEGtL4olWXv8ATWH8DmRHRahvsCkRblBfXiGx0=&xsec_source=pc_search&source=web_explore_feed"
+    },
+    {
+      "label": "[U929]",
+      "url": "https://zc.nau.edu.cn/2026/0331/c11279a155531/page.htm"
+    },
+    {
+      "label": "[L09]",
+      "url": "https://www.xiaohongshu.com/explore/6a5dbcd00000000011005411?xsec_token=ABIxF0-44wVw1gZblm6ctPAVYDkHlbUXvw6cxlcleDAGw=&xsec_source=pc_search&source=web_explore_feed"
+    },
+    {
+      "label": "[L101]",
+      "url": "https://cf-pages.colleges.chat/universities/nan-jing-shen-ji-da-xue-pu-kou-qu/"
+    },
+    {
+      "label": "[U930]",
+      "url": "https://zc.nau.edu.cn/2026/0908/c2718a161425/page.htm"
+    },
+    {
+      "label": "[E006]",
+      "url": "https://www.xiaohongshu.com/explore/6ae82278000000001802ead9?xsec_token=ABuzNf4DrU0tuTSwZCSf290naDiX7x2HCiXAPh1nMfw6g=&xsec_source=pc_search&source=web_search_result_notes"
+    },
+    {
+      "label": "[U964]",
+      "url": "https://ranks.amap.com/recommend/hunan_restaurant-Nanjing-white_collar"
+    },
+    {
+      "label": "[U965]",
+      "url": "https://you.ctrip.com/food/nanjing9/133459044.html"
+    },
+    {
+      "label": "[U966]",
+      "url": "https://www.sina.cn/news/detail/5245618890998804.html"
+    },
+    {
+      "label": "[U968]",
+      "url": "https://ditu.amap.com/place/B0FFITUTMH"
+    },
+    {
+      "label": "[U967]",
+      "url": "https://www.csjcs.com/news/show/45467ffae8baf143.html"
+    },
+    {
+      "label": "[U969]",
+      "url": "https://bawan.dexinmiaosheng.cn/official/store.html"
+    },
+    {
+      "label": "[U970]",
+      "url": "https://bawan.dexinmiaosheng.cn/official/products.html"
+    },
+    {
+      "label": "[U971]",
+      "url": "https://www.xiaocaiyuan.com/cn/stores/nationwide-network/"
+    },
+    {
+      "label": "[U972]",
+      "url": "https://www.amap.com/place/B0KR5RW2MA"
+    },
+    {
+      "label": "[L08]",
+      "url": "https://www.xiaohongshu.com/explore/6ad47e9b000000002803b18a?xsec_token=ABXdU210w4FXgYL1xmRAeio7hhlnA8vKsnyKfr7EU0ekY=&xsec_source=pc_search&source=web_explore_feed"
+    },
+    {
+      "label": "[U945]",
+      "url": "https://jtj.nanjing.gov.cn/njsjtysj/202601/t20260109_5761091.html"
+    },
+    {
+      "label": "[U946]",
+      "url": "https://www.nanjing.gov.cn/msxx/202609/t20260929_5919052.html"
+    },
+    {
+      "label": "[F15]",
+      "url": "https://mgh.nau.edu.cn/2024/0508/c11291a129317/page.htm"
+    },
+    {
+      "label": "[F16]",
+      "url": "https://mgh.nau.edu.cn/2024/0508/c11291a129317/page.htm"
+    },
+    {
+      "label": "[F13]",
+      "url": "https://gs.nau.edu.cn/2026/0702/c4396a160293/page.htm"
+    },
+    {
+      "label": "[F14]",
+      "url": "https://gs.nau.edu.cn/2026/0901/c4414a161162/page.htm"
+    },
+    {
+      "label": "[U980]",
+      "url": "https://lib.nau.edu.cn/zyfb/list.htm"
+    },
+    {
+      "label": "[F18]",
+      "url": "https://lib.nau.edu.cn/7018/list.htm"
+    },
+    {
+      "label": "[F18]",
+      "url": "https://lib.nau.edu.cn/7018/list.htm"
+    },
+    {
+      "label": "[F19]",
+      "url": "https://lib.nau.edu.cn/7017/list.htm"
+    },
+    {
+      "label": "[U952]",
+      "url": "https://jwc.nau.edu.cn/RoomUseInfoSearch.aspx"
+    },
+    {
+      "label": "[L103]",
+      "url": "https://news.nau.edu.cn/2026/0323/c5799a155199/page.htm"
+    },
+    {
+      "label": "[P01]",
+      "url": "https://www.xiaohongshu.com/explore/6a027b6a0000000035038457?xsec_token=ABuqKYHI8THOG-CdQvkdNq3bkF9s8Wb56AR3rUpkh7yYE=&xsec_source=pc_search&source=web_explore_feed"
+    },
+    {
+      "label": "[P05]",
+      "url": "https://www.xiaohongshu.com/explore/6ae09da6000000002400673d?xsec_token=ABZDZGQ5loVIMxRKsc-42pBG9b_aJLcbyS-eR_lNmVQag=&xsec_source=pc_search&source=web_explore_feed"
+    },
+    {
+      "label": "[P09]",
+      "url": "https://www.xiaohongshu.com/explore/68773318000000002400acc8?xsec_token=AB5HMbOdOVsihC6jfzNbXpseSrs2yHoVqdIGOuOn7uTCA=&xsec_source=pc_search&source=web_explore_feed"
+    },
+    {
+      "label": "[P10]",
+      "url": "https://www.xiaohongshu.com/explore/6a1a81f3000000000702daa8?xsec_token=ABw-Ky1aapfovWkvT7pEqzxtsDyW0XulFTCYd9_Cu-sPo=&xsec_source=pc_search&source=web_explore_feed"
+    },
+    {
+      "label": "[F28]",
+      "url": "https://mpacc.nau.edu.cn/11517/list.htm"
+    },
+    {
+      "label": "[U942]",
+      "url": "https://gs.nau.edu.cn/2026/0820/c10680a160957/page.htm"
+    },
+    {
+      "label": "[U937]",
+      "url": "https://account.nau.edu.cn/2026/0917/c8917a161856/page.htm"
+    },
+    {
+      "label": "[F30]",
+      "url": "https://mpacc.nau.edu.cn/11517/list.htm"
+    },
+    {
+      "label": "[F34]",
+      "url": "https://mpacc.nau.edu.cn/11517/list.htm"
+    },
+    {
+      "label": "[F35]",
+      "url": "https://mpacc.nau.edu.cn/11517/list.htm"
+    },
+    {
+      "label": "[F31]",
+      "url": "https://mpacc.nau.edu.cn/11517/list.htm"
+    },
+    {
+      "label": "[F33]",
+      "url": "https://mpacc.nau.edu.cn/11517/list.htm"
+    },
+    {
+      "label": "[U941]",
+      "url": "https://account.nau.edu.cn/2026/1112/c8917a163845/page.htm"
+    },
+    {
+      "label": "[F14]",
+      "url": "https://gs.nau.edu.cn/2026/0901/c4414a161162/page.htm"
+    },
+    {
+      "label": "[V01]",
+      "url": "https://zwwyh.nau.edu.cn/lxwm/"
+    },
+    {
+      "label": "[V03]",
+      "url": "https://cwc.nau.edu.cn/2023/1229/c3000a123816/page.htm"
+    },
+    {
+      "label": "[V04]",
+      "url": "https://xljxb.nau.edu.cn/yyfs/list.htm"
+    },
+    {
+      "label": "[U950]",
+      "url": "https://www.njspkrmyy.com/ylgz/ylgz-detail.aspx?mtt=16"
+    },
+    {
+      "label": "[U948]",
+      "url": "https://ybj.nanjing.gov.cn/gkml/202611/t20261105_6033343.html"
+    },
+    {
+      "label": "[U947]",
+      "url": "https://gs.nau.edu.cn/2026/0521/c4414a157738/page.htm"
+    },
+    {
+      "label": "[U949]",
+      "url": "https://ybj.nanjing.gov.cn/ztzl/jbfw/202504/P020250427635580497450.pdf"
+    },
+    {
+      "label": "[V03]",
+      "url": "https://cwc.nau.edu.cn/2023/1229/c3000a123816/page.htm"
+    },
+    {
+      "label": "[F39]",
+      "url": "https://account.nau.edu.cn/lxwm/list.htm"
+    },
+    {
+      "label": "[F40]",
+      "url": "https://gs.nau.edu.cn/"
+    },
+    {
+      "label": "[F40]",
+      "url": "https://gs.nau.edu.cn/"
+    },
+    {
+      "label": "[F38]",
+      "url": "https://zsjyc.nau.edu.cn/"
+    },
+    {
+      "label": "[V01]",
+      "url": "https://zwwyh.nau.edu.cn/lxwm/"
+    },
+    {
+      "label": "[V03]",
+      "url": "https://cwc.nau.edu.cn/2023/1229/c3000a123816/page.htm"
+    },
+    {
+      "label": "[V04]",
+      "url": "https://xljxb.nau.edu.cn/yyfs/list.htm"
+    },
+    {
+      "label": "[V05]",
+      "url": "https://zwwyh.nau.edu.cn/fwzn/"
+    },
+    {
+      "label": "[V06]",
+      "url": "https://bwb.nau.edu.cn/2026/0514/c9836a157445/page.htm"
+    },
+    {
+      "label": "[V07]",
+      "url": "https://bwb.nau.edu.cn/swzl/list.htm"
+    },
+    {
+      "label": "原帖与访谈索引",
+      "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/#posts"
+    },
+    {
+      "label": "宿舍与用品照片",
+      "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/#life/life-03"
+    },
+    {
+      "label": "校园与地图资料",
+      "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/#life/life-16"
+    },
+    {
+      "label": "资料下载",
+      "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/#downloads"
+    },
+    {
+      "label": "[F03]",
+      "url": "https://gs.nau.edu.cn/2026/0930/c4394a162271/page.htm"
+    },
+    {
+      "label": "[F11]",
+      "url": "https://xxgk.nau.edu.cn/2026/0827/c5225a161011/page.htm"
+    },
+    {
+      "label": "[F11]",
+      "url": "https://xxgk.nau.edu.cn/2026/0827/c5225a161011/page.htm"
+    },
+    {
+      "label": "[F04]",
+      "url": "https://gs.nau.edu.cn/2026/0702/c4396a160293/page.htm"
+    },
+    {
+      "label": "[F08]",
+      "url": "https://gs.nau.edu.cn/2026/0702/c4396a160293/page.htm"
+    },
+    {
+      "label": "[U948]",
+      "url": "https://ybj.nanjing.gov.cn/gkml/202611/t20261105_6033343.html"
+    },
+    {
+      "label": "[F22]",
+      "url": "https://gs.nau.edu.cn/2026/0909/c4413a161691/page.htm"
+    },
+    {
+      "label": "[F24]",
+      "url": "https://gs.nau.edu.cn/2026/0909/c4413a161694/page.htm"
+    },
+    {
+      "label": "[F05]",
+      "url": "https://gs.nau.edu.cn/2026/0702/c4396a160293/page.htm"
+    },
+    {
+      "label": "[F25]",
+      "url": "https://gs.nau.edu.cn/2026/0909/c4413a161693/page.htm"
+    },
+    {
+      "label": "[U943]",
+      "url": "https://gs.nau.edu.cn/2026/0905/c4414a161364/page.htm"
+    },
+    {
+      "label": "[U950]",
+      "url": "https://www.njspkrmyy.com/ylgz/ylgz-detail.aspx?mtt=16"
+    },
+    {
+      "label": "[F14]",
+      "url": "https://gs.nau.edu.cn/2026/0901/c4414a161162/page.htm"
+    },
+    {
+      "label": "[V03]",
+      "url": "https://cwc.nau.edu.cn/2023/1229/c3000a123816/page.htm"
+    },
+    {
+      "label": "[V04]",
+      "url": "https://xljxb.nau.edu.cn/yyfs/list.htm"
+    },
+    {
+      "label": "[V06]",
+      "url": "https://bwb.nau.edu.cn/2026/0514/c9836a157445/page.htm"
+    },
+    {
+      "label": "[U959]",
+      "url": "https://www.nanjing.gov.cn/zzb/njgl/csgk/zrzk_72671/202609/t20260930_5920367.html"
+    },
+    {
+      "label": "[U960]",
+      "url": "https://www.weather.com.cn/cityintro/101190101.shtml"
+    },
+    {
+      "label": "[U961]",
+      "url": "https://wjw.nanjing.gov.cn/gzdt/202606/t20260623_5864335.html"
+    },
+    {
+      "label": "[U962]",
+      "url": "https://zschina.nanjing.gov.cn/lyzx/202507/t20250730_5618705.html"
+    },
+    {
+      "label": "[F12]",
+      "url": "https://gs.nau.edu.cn/2026/0916/c4413a161746/page.htm"
+    },
+    {
+      "label": "[U979]",
+      "url": "https://nau.edu.cn/18/list.htm"
+    },
+    {
+      "label": "[F06]",
+      "url": "https://gs.nau.edu.cn/2026/0702/c4396a160293/page.htm"
+    },
+    {
+      "label": "[F39]",
+      "url": "https://account.nau.edu.cn/lxwm/list.htm"
+    },
+    {
+      "label": "[F40]",
+      "url": "https://gs.nau.edu.cn/"
+    },
+    {
+      "label": "[U980]",
+      "url": "https://lib.nau.edu.cn/zyfb/list.htm"
+    },
+    {
+      "label": "[U983]",
+      "url": "https://cysy.nau.edu.cn/2023/0506/c4939a113711/page.htm"
+    },
+    {
+      "label": "[U974]",
+      "url": "https://news.nau.edu.cn/2026/0417/c5797a156234/page.htm"
+    },
+    {
+      "label": "[L01]",
+      "url": "https://www.xiaohongshu.com/explore/6a8827f80000000028027a78?xsec_token=ABYyu-HJJQEeTaqyrvypLDSjlNDF-vwnq9G8nltx6m38U=&xsec_source=pc_search&source=web_explore_feed"
+    },
+    {
+      "label": "[U978]",
+      "url": "https://cysy.nau.edu.cn/2024/0927/c4939a135882/page.htm"
+    },
+    {
+      "label": "查看本章照片与原始来源",
+      "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/#life/life-16"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://www.pwccn.com/zh/careers/students.html"
+    },
+    {
+      "label": "[I801]",
+      "url": "https://www.pwccn.com/zh/careers/students.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://www.pwccn.com/zh/careers/students.html"
+    },
+    {
+      "label": "[I801]",
+      "url": "https://www.pwccn.com/zh/careers/students.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://careers.ey.com.cn"
+    },
+    {
+      "label": "[I805]",
+      "url": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20268"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://www.ey.com/en_cn/careers/student-programs-in-chinese-mainland"
+    },
+    {
+      "label": "[I806]",
+      "url": "https://www.ey.com/en_cn/careers/student-programs-in-chinese-mainland"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://www.ey.com/en_cn/careers/student-programs-in-chinese-mainland"
+    },
+    {
+      "label": "[I806]",
+      "url": "https://www.ey.com/en_cn/careers/student-programs-in-chinese-mainland"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-program.html"
+    },
+    {
+      "label": "[I809]",
+      "url": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-program.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-program.html"
+    },
+    {
+      "label": "[I809]",
+      "url": "https://www.deloitte.com/cn/zh/careers/explore-your-fit/students/internship-program.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html"
+    },
+    {
+      "label": "[I815]",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html"
+    },
+    {
+      "label": "[I816]",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html"
+    },
+    {
+      "label": "[I815]",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html"
+    },
+    {
+      "label": "[I816]",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html"
+    },
+    {
+      "label": "[I815]",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html"
+    },
+    {
+      "label": "[I816]",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html"
+    },
+    {
+      "label": "[I815]",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/audit-and-assurance.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/tax.html"
+    },
+    {
+      "label": "[I817]",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/tax.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/advisory.html"
+    },
+    {
+      "label": "[I818]",
+      "url": "https://kpmg.com/cn/zh/careers/campus/basecamp/advisory.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdc.html"
+    },
+    {
+      "label": "[I819]",
+      "url": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdc.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdi.html"
+    },
+    {
+      "label": "[I820]",
+      "url": "https://kpmg.com/cn/zh/careers/delivery-centre-hires/kdi.html"
+    },
+    {
+      "label": "[I821]",
+      "url": "https://kpmg.com/cn/zh/about/office-locations/kpmg-digital-ignition-centre.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://bdochina.zhiye.com/intern/jobs"
+    },
+    {
+      "label": "[I823]",
+      "url": "https://bdochina.zhiye.com/intern/jobs"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://bdochina.zhiye.com/intern/detail?jobAdId=bcb96a34-f2cf-4a1d-95aa-470e54b59b44"
+    },
+    {
+      "label": "[I824]",
+      "url": "https://bdochina.zhiye.com/intern/detail?jobAdId=bcb96a34-f2cf-4a1d-95aa-470e54b59b44"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://zhaopin.pccpa.cn/hr/recruit/internship"
+    },
+    {
+      "label": "[I828]",
+      "url": "https://zhaopin.pccpa.cn/hr/recruit/internship"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://www.grantthornton.cn/Internship-recruitment/"
+    },
+    {
+      "label": "[I831]",
+      "url": "https://www.grantthornton.cn/Internship-recruitment/"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20236"
+    },
+    {
+      "label": "[I832]",
+      "url": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20236"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20236"
+    },
+    {
+      "label": "[I832]",
+      "url": "https://www.gdicpa.org.cn/gzfw/zppt/zxzx1/content_20236"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://job.shinewing.com/"
+    },
+    {
+      "label": "[I835]",
+      "url": "https://www.shinewing.com/about/branch/"
+    },
+    {
+      "label": "[I836]",
+      "url": "https://job.shinewing.com/"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://career.hebut.edu.cn/correcruit/content/id/82058.html"
+    },
+    {
+      "label": "[I837]",
+      "url": "https://career.hebut.edu.cn/correcruit/content/id/82058.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://tzcpa.zhiye.com/intern/jobs"
+    },
+    {
+      "label": "[I838]",
+      "url": "https://jobs.blcu.edu.cn/front/zpxx.jspa?tid=2095349926408658945"
+    },
+    {
+      "label": "[I839]",
+      "url": "https://tzcpa.zhiye.com/intern/jobs"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://tzcpa.zhiye.com/intern/jobs"
+    },
+    {
+      "label": "[I839]",
+      "url": "https://tzcpa.zhiye.com/intern/jobs"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://tzcpa.zhiye.com/campus"
+    },
+    {
+      "label": "[I838]",
+      "url": "https://jobs.blcu.edu.cn/front/zpxx.jspa?tid=2095349926408658945"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://tzcpa.zhiye.com/intern/jobs"
+    },
+    {
+      "label": "[I866]",
+      "url": "https://tzcpa.zhiye.com/intern/jobs"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://job.dahua-cpa.com/"
+    },
+    {
+      "label": "[I841]",
+      "url": "https://www.dahua-cpa.com/"
+    },
+    {
+      "label": "[I842]",
+      "url": "https://www.dahua-cpa.com/map/index.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://zhaopin.dahua-cpa.com/jobs"
+    },
+    {
+      "label": "[I843]",
+      "url": "https://zhaopin.dahua-cpa.com/jobs"
+    },
+    {
+      "label": "[I841]",
+      "url": "https://www.dahua-cpa.com/"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://careers.rccpa.com.cn"
+    },
+    {
+      "label": "[I844]",
+      "url": "https://jobcareer.sdu.edu.cn/eweb/jygl/index.so?id=87cRceoeYuxj4f83X3DVAs&modcode=jygl_zpxxck&subsyscode=zpfw&type=ssoViewZpxx"
+    },
+    {
+      "label": "[I845]",
+      "url": "https://career.csu.edu.cn/job/view/id/1199995"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://careers.rccpa.com.cn"
+    },
+    {
+      "label": "[I845]",
+      "url": "https://career.csu.edu.cn/job/view/id/1199995"
+    },
+    {
+      "label": "[I844]",
+      "url": "https://jobcareer.sdu.edu.cn/eweb/jygl/index.so?id=87cRceoeYuxj4f83X3DVAs&modcode=jygl_zpxxck&subsyscode=zpfw&type=ssoViewZpxx"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://job.zszhcpa.cn/campus"
+    },
+    {
+      "label": "[I847]",
+      "url": "https://www.zszhcpa.cn/"
+    },
+    {
+      "label": "[I848]",
+      "url": "https://jyw.gpnu.edu.cn/info/1148/12387.htm"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://job.zszhcpa.cn/campus"
+    },
+    {
+      "label": "[I848]",
+      "url": "https://jyw.gpnu.edu.cn/info/1148/12387.htm"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://job.zszhcpa.cn/campus"
+    },
+    {
+      "label": "[I848]",
+      "url": "https://jyw.gpnu.edu.cn/info/1148/12387.htm"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://zszhcpa.zhiye.com/jobs"
+    },
+    {
+      "label": "[I849]",
+      "url": "https://zszhcpa.zhiye.com/jobs"
+    },
+    {
+      "label": "[I847]",
+      "url": "https://www.zszhcpa.cn/"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://gs.nau.edu.cn/2025/0916/c10680a147636/page.htm"
+    },
+    {
+      "label": "[R311]",
+      "url": "https://gs.nau.edu.cn/2025/0916/c10680a147636/page.htm"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://daxincpa.zhiye.com/campus"
+    },
+    {
+      "label": "[U908]",
+      "url": "https://daxincpa.zhiye.com/campus"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm"
+    },
+    {
+      "label": "[I861]",
+      "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm"
+    },
+    {
+      "label": "[I860]",
+      "url": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://zhcpa.zhiye.com/intern/jobs"
+    },
+    {
+      "label": "[U909]",
+      "url": "https://www.zhcpa.cn/join/campus.html"
+    },
+    {
+      "label": "[U910]",
+      "url": "https://zhcpa.zhiye.com/intern/jobs"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm"
+    },
+    {
+      "label": "[I861]",
+      "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://www.jscpa.com.cn/join-us/"
+    },
+    {
+      "label": "[I865]",
+      "url": "https://www.jscpa.com.cn/join-us/"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm"
+    },
+    {
+      "label": "[I861]",
+      "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/115310.html"
+    },
+    {
+      "label": "[U911]",
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/115310.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm"
+    },
+    {
+      "label": "[I860]",
+      "url": "https://shsjxy.nau.edu.cn/2026/1026/c7575a163158/page.htm"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://www.getein.com.cn/"
+    },
+    {
+      "label": "[U912]",
+      "url": "https://www.getein.com.cn/"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm"
+    },
+    {
+      "label": "[I861]",
+      "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://www.tbea.com/join.html"
+    },
+    {
+      "label": "[U913]",
+      "url": "https://www.tbea.com/join.html"
+    },
+    {
+      "label": "[U914]",
+      "url": "https://wecruit.hotjob.cn/SU612f55eebef57c0616450aa2/pb/school.html"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm"
+    },
+    {
+      "label": "[I861]",
+      "url": "https://shsjxy.nau.edu.cn/2026/1018/c7575a162709/page.htm"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://jy.scu.edu.cn/index/index/employjobdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh4Y5WKubbSyobddricp9CWi5qikaeWacSdqLqGfaK2w4iil5C4zNbGiL-E"
+    },
+    {
+      "label": "[U924]",
+      "url": "https://jy.scu.edu.cn/index/index/employjobdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh4Y5WKubbSyobddricp9CWi5qikaeWacSdqLqGfaK2w4iil5C4zNbGiL-E"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=5AD1C40BF1B24985E0653A68DD0E9B18"
+    },
+    {
+      "label": "[U925]",
+      "url": "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=5AD1C40BF1B24985E0653A68DD0E9B18"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://bs-cdc.ecust.edu.cn/6109/"
+    },
+    {
+      "label": "[U926]",
+      "url": "https://bs-cdc.ecust.edu.cn/6109/"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://campus.suning.cn/rps-campus/ftl/campus/campusPositionDetail.htm?poId=27745"
+    },
+    {
+      "label": "[U927]",
+      "url": "https://campus.suning.cn/rps-campus/ftl/campus/campusPositionDetail.htm?poId=27745"
+    },
+    {
+      "label": "查看原文或官方入口",
+      "url": "https://ejob.dhu.edu.cn/single/2026/04/13/2604131508252818905719111514160682210002.html"
+    },
+    {
+      "label": "[U928]",
+      "url": "https://ejob.dhu.edu.cn/single/2026/04/13/2604131508252818905719111514160682210002.html"
+    },
+    {
+      "label": "继续查看网页实习筛选",
+      "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/#life/life-09"
+    }
+  ],
+  "rendered": true,
+  "renderOutput": "/tmp/nau-life-docx-final-20261113",
+  "pageCount": 20,
+  "visualReview": {
+    "pagesReviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "reviewMethod": "All full-page PNGs inspected",
+    "clipping": false,
+    "overflow": false,
+    "missingGlyphs": false,
+    "orphanSourceLinks": false,
+    "tableRowsSplit": false
+  },
+  "idempotentBuild": true,
+  "documentLinks": {
+    "occurrences": 241,
+    "uniqueExternalUrls": 125,
+    "unsafeUrls": 0
+  },
+  "sourceImagePolicy": "正文提供真实网站照片与原帖入口，本附件未嵌入新的来源图片。"
+}

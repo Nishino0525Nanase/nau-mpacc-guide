@@ -37727,32 +37727,32 @@
     {
       "id": "mentor-guide",
       "title": "导师选择参考",
-      "url": "./downloads/mentor-guide.docx",
+      "url": "./downloads/mentor-guide.docx?v=ff998093e618",
       "format": "docx",
-      "description": "34名导师框架 17张详细卡片与个人匹配建议",
+      "description": "34位导师，含学生评价、缩写对照与公开学生去向，保留来源链接",
       "filename": "mentor-guide.docx",
-      "bytes": 68020,
-      "sha256": "4779ac40bf414ab397567492adac80a10e430effffb69dc17c65a7c2c99178e5"
+      "bytes": 71177,
+      "sha256": "ff998093e618c0945f0b772d219667d2ec4bbeb8e7e729691a24bb8b816059af"
     },
     {
       "id": "life-guide",
       "title": "学习生活攻略",
-      "url": "./downloads/life-guide.docx",
+      "url": "./downloads/life-guide.docx?v=1861d3b0184e",
       "format": "docx",
-      "description": "12章学习生活指南，附四大、国内所与南京周边实习补充，含投递、通勤及申请准备核对",
+      "description": "16章生活资料，含校园宿舍、南京气候、湘味餐饮与实习资源",
       "filename": "life-guide.docx",
-      "bytes": 77514,
-      "sha256": "fb02cc0734cf5804867386b6ef05349ca27128eb217dc15717f67b935d26384f"
+      "bytes": 63367,
+      "sha256": "1861d3b0184e077d123accf3e6ea63ed50420c9e09a732e816400ca1832c9f25"
     },
     {
       "id": "evidence-index",
       "title": "原帖与官方证据索引",
-      "url": "./downloads/evidence-index.xlsx",
+      "url": "./downloads/evidence-index.xlsx?v=bd48ceb4a146",
       "format": "xlsx",
-      "description": "原帖、官方资料与学生评价索引；实习资源分列项目期、申请窗口和状态，保留历史参考及原始链接",
+      "description": "来源、导师评价、缩写、学生去向和实习索引，可筛选并点击原始链接",
       "filename": "evidence-index.xlsx",
-      "bytes": 287164,
-      "sha256": "3d45c51b94d7729613b0bd7ada4ed4b3d7c31d3c55cc11b097ec031433cdbd4a"
+      "bytes": 554580,
+      "sha256": "bd48ceb4a14653ee032802d4ef5cb69bd736c1df9813f85267cbecd6d867550a"
     }
   ],
   "officialEvidence": [

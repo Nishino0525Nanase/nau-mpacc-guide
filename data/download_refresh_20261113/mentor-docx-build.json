@@ -1,0 +1,28 @@
+{
+  "file": "dist/downloads/mentor-guide.docx",
+  "bytes": 71177,
+  "sha256": "ff998093e618c0945f0b772d219667d2ec4bbeb8e7e729691a24bb8b816059af",
+  "mentors": 34,
+  "detailedCards": 17,
+  "reviewRecords": 44,
+  "contextNotes": 6,
+  "outcomeTimepointRecords": 28,
+  "outcomePeople": 27,
+  "observedOrAmbiguousAliases": 17,
+  "hyperlinkElements": 210,
+  "referencedSourceCodes": 29,
+  "datasetSha256": "9def99f3b72f4e6b1d0bb8af6a37c1d1262e0c03de692bce66589d6563b246a0",
+  "pages": 24,
+  "uniqueClickableUrls": 73,
+  "renderDirectory": "/workspace/scratch/c08135c62de4/nau-docx-qa/mentor-delivery",
+  "idempotentBuild": true,
+  "visualInspection": {
+    "pages1to12": "all inspected individually; final PNGs byte-identical to inspected render",
+    "pages13to24": "all final page PNGs individually inspected",
+    "clippingOrOverlap": false,
+    "missingGlyphs": false,
+    "orphanSourceLine": false,
+    "minorPagination": "Some mentor names and their complete matching reasons precede the continued information table."
+  },
+  "postPackagingRenderIdenticalToInspectedPngs": true
+}

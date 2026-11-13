@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-11-13",
+  "tests": {
+    "passed": 148,
+    "failed": 0
+  },
+  "documentVisualQa": {
+    "mentorPages": 24,
+    "lifePages": 20,
+    "allPagesInspected": true
+  },
+  "workbookVisualQa": {
+    "sheets": 16,
+    "nativeTables": 17,
+    "formulas": 1701,
+    "formulaErrors": 0,
+    "renderRangesInspected": 22
+  },
+  "browser": {
+    "downloadCards": 3,
+    "hashVersionLinks": 3,
+    "actualExcelDownloadBytes": 554580,
+    "actualExcelDownloadSha256": "bd48ceb4a14653ee032802d4ef5cb69bd736c1df9813f85267cbecd6d867550a",
+    "actualDownloadMatches": true
+  },
+  "otherSiteCollectionsPreserved": true,
+  "mobileVisualCheck": false,
+  "screenshot": "qa/downloads-refresh-20261113.jpg"
+}
