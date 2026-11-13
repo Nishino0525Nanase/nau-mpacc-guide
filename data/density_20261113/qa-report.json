@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-13",
+  "scope": "Public website layout and evidence summaries only",
+  "defaultMentors": 13,
+  "completeRoster": 34,
+  "heroHeightPx": 115.25,
+  "outcomeRowHeightPx": 86.78,
+  "defaultMpaccOutcomeRows": 7,
+  "desktopViewport": 1363,
+  "documentWidth": 1348,
+  "searchAcrossFullRosterVerified": true,
+  "expandedOutcomeProvenanceVerified": true,
+  "siteDataUnchanged": true,
+  "narrowViewportBrowserTest": false,
+  "automatedTests": 132,
+  "screenshot": "qa/compact-mentor-guide-20261113.jpg",
+  "sampleMentorRowHeightPx": 94,
+  "mobileMentorExperiencePx": 14,
+  "mobileMentorResearchPx": 14,
+  "mobileOutcomeDestinationPx": 14
+}

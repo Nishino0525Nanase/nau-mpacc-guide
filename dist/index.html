@@ -13,11 +13,11 @@
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="apple-touch-icon" href="./icons/app-192.png">
   <link rel="icon" href="./favicon.svg?v=edition1" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css?v=outcomes1">
+  <link rel="stylesheet" href="./style.css?v=dense1">
   <script src="./install.js?v=edition1" defer></script>
   <script src="./music.js?v=edition1" defer></script>
   <script src="./life-images.js?v=campus1" defer></script>
-  <script src="./app.js?v=outcomes1" defer></script>
+  <script src="./app.js?v=dense1" defer></script>
   <script src="./analytics-config.js?v=round3" defer></script>
   <script src="./analytics.js?v=device4" defer></script>
 </head>
@@ -41,33 +41,18 @@
   </header>
 
   <main id="main" tabindex="-1">
-    <section class="hero" id="hero" aria-labelledby="site-title">
+    <section class="hero hero-compact" id="hero" aria-labelledby="site-title">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-line"></span>从公开资料，到自己的选择</div>
-        <h1 id="site-title">雨诺的南审手记<br><span>MPAcc选导与生活指南</span></h1>
-        <p class="hero-lead">把方向选清楚，<br class="mobile-break">把研究生生活安排好。</p>
-        <p class="hero-description">导师评价、学生去向与校园日常，放在一起看。<br class="desktop-break">给准备报考和刚入学的你，一份可以逐条查证的参考。</p>
+        <h1 id="site-title">雨诺的南审手记 <span>南审 MPAcc 选导与生活指南</span></h1>
         <div class="author-signature" aria-label="策划与设计者介绍">
-          <span class="author-monogram" aria-hidden="true">雨诺</span>
-          <div class="author-details">
-            <p class="author-credit">策划与设计 <strong>胡雨诺</strong></p>
-            <p class="author-journey"><span>西南林业大学</span><span class="journey-arrow" aria-hidden="true">→</span><span>南京审计大学 MPAcc</span></p>
-          </div>
+          <div class="author-details"><p class="author-credit">策划与设计 <strong>胡雨诺</strong></p><p class="author-journey"><span>西南林业大学</span><span class="journey-arrow" aria-hidden="true">→</span><span>南京审计大学 MPAcc</span></p></div>
         </div>
-        <div class="hero-meta"><span class="status-dot"></span><span>独立整理 · 非学校官方网站</span></div>
       </div>
-      <aside class="hero-panel" aria-label="指南内容概览">
-        <div class="panel-caption">YU NUO’S GUIDE TO NAU <span aria-hidden="true">↗</span></div>
-        <div class="guide-lines"><span>方向</span><i></i><span>导师</span><i></i><span>生活</span></div>
-        <p>选方向 + 选人 + 名额可行性</p>
-        <div class="hero-stats" id="hero-stats">
-          <div><strong>34</strong><span>位导师名录</span></div>
-          <div><strong>17</strong><span>张核心资料卡</span></div>
-          <div><strong>16</strong><span>章学习生活</span></div>
-          <div><strong>127</strong><span>条原帖与访谈</span></div>
-        </div>
-        <div class="panel-footnote"><span class="mini-cross" aria-hidden="true">+</span>官方事实与个人反馈，分开呈现</div>
-      </aside>
+      <details class="hero-panel" aria-label="指南内容概览">
+        <summary>独立整理 · 非学校官方网站 <span>指南概况</span></summary>
+        <div class="hero-stats" id="hero-stats"><div><strong>34</strong><span>位导师名录</span></div><div><strong>17</strong><span>张核心资料卡</span></div><div><strong>16</strong><span>章学习生活</span></div><div><strong>127</strong><span>条原帖与访谈</span></div></div>
+        <div class="panel-footnote">官方事实与个人反馈分开呈现</div>
+      </details>
     </section>
 
     <div id="app" class="app-shell" aria-live="off">
