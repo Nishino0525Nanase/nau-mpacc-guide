@@ -1,0 +1,100 @@
+{
+  "sheets": 16,
+  "tables": 17,
+  "formulas": 1734,
+  "formulaErrors": [],
+  "rows": {
+    "完整来源目录": 495,
+    "正文未读线索": 10,
+    "生活学习要点": 454,
+    "导师反馈": 61,
+    "官方核实": 275,
+    "帖子索引": 155,
+    "检索覆盖": 74,
+    "补充证据": 23,
+    "应用版补充": 14,
+    "延伸核验": 10,
+    "继续补读": 11,
+    "学生评价总览": 38,
+    "实习资源": 64,
+    "姓名缩写对照": 45,
+    "学生公开去向": 38,
+    "校园生活图片": 28
+  },
+  "sourceSha256": "bd48ceb4a14653ee032802d4ef5cb69bd736c1df9813f85267cbecd6d867550a",
+  "outputSha256": "67cdebcee624dea5cfa233183b455a7a4590646f386c937e20a4847609167d83",
+  "outputBytes": 551812,
+  "renderFiles": [
+    "after-导师反馈.png",
+    "after-学生评价总览.png",
+    "after-姓名缩写对照.png",
+    "after-detail-导师反馈.png",
+    "after-detail-姓名缩写对照.png",
+    "after-sr-alias-comments-20261113-xw-identity.png",
+    "after-sr-alias-comments-20261113-xw-context.png",
+    "after-sr-alias-comments-20261113-cxj-identity.png",
+    "after-sr-alias-comments-20261113-cxj-context.png",
+    "after-sr-alias-comments-20261113-tzd-identity.png",
+    "after-sr-alias-comments-20261113-tzd-context.png",
+    "after-alias-tail.png",
+    "after-zxl-attitudes.png"
+  ],
+  "datasets": [
+    {
+      "name": "导师反馈",
+      "rows": 55,
+      "columns": 19,
+      "links": 73,
+      "maxRowHeight": 118,
+      "tableName": "NauTable2"
+    },
+    {
+      "name": "学生评价总览",
+      "rows": 34,
+      "columns": 11,
+      "links": 39,
+      "maxRowHeight": 199,
+      "tableName": "StudentReviews103"
+    },
+    {
+      "name": "姓名缩写对照",
+      "rows": 41,
+      "columns": 9,
+      "links": 38,
+      "maxRowHeight": 50.5,
+      "tableName": "MentorAliases113"
+    }
+  ],
+  "checkedModelRows": {
+    "导师反馈": 55,
+    "学生评价总览": 34,
+    "姓名缩写对照": 41
+  },
+  "checkedSourceLinks": 150,
+  "allModelCellValuesMatch": true,
+  "allSourceLinksAndLabelsMatch": true,
+  "unchangedSheetsWithPreservedCellsAndLayout": [
+    "完整来源目录",
+    "正文未读线索",
+    "生活学习要点",
+    "官方核实",
+    "帖子索引",
+    "检索覆盖",
+    "补充证据",
+    "应用版补充",
+    "延伸核验",
+    "继续补读",
+    "实习资源",
+    "学生公开去向",
+    "校园生活图片"
+  ],
+  "visualQA": {
+    "affectedSheets": 3,
+    "rangesInspected": 13,
+    "result": "passed",
+    "notes": [
+      "Original workbook layout retained; new review context and quote columns remain readable.",
+      "Single surname candidates display candidate unconfirmed; multiple-name initials remain multiple candidates."
+    ]
+  }
+}

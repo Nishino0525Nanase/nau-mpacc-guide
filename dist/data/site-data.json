@@ -11,8 +11,8 @@
       "feedbackRecords": 21,
       "screenedSources": 15,
       "unreadLeads": 6,
-      "studentReviewRecords": 44,
-      "mentorsWithStudentReviews": 22,
+      "studentReviewRecords": 55,
+      "mentorsWithStudentReviews": 24,
       "studentOutcomes": 28
     },
     "socialPostCategories": {
@@ -833,6 +833,18 @@
       "newReviewRecords": 0,
       "newIndependentSources": 0,
       "rule": "截图可见片段、此前记录的用词、摘要与可能读法分开显示；解读不改变亲历或推荐等级。"
+    },
+    "aliasCommentResearch": {
+      "batch": "alias-comments-20261113",
+      "newReviewRecords": 11,
+      "distinctNewComments": 10,
+      "newTopLevelComments": 9,
+      "newReplies": 1,
+      "newPosts": 0,
+      "newIndependentSources": 0,
+      "newScreenshots": 9,
+      "reviewRecords": 55,
+      "scope": "核对两帖相关可见评论及回复，不声称全量；同一评论提名两位导师仍计一个原评论。"
     }
   },
   "directions": [
@@ -977,23 +989,23 @@
       "sourceCodes": [],
       "studentReviews": {
         "coverageStatus": "weak_mentions",
-        "coverageLabel": "原帖提名 · 暂缺具体经历",
-        "summary": "DBR已对应董必荣；现有评论是提名，尚缺具体指导经历。",
+        "coverageLabel": "选导态度 · 未说明具体经历",
+        "summary": "DBR问句与“董”反讽支线分别保留；未说明具体指导经历。",
         "reviews": [
           {
             "sourceIds": [
               "X01"
             ],
             "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
-            "narrator": "评论者（昵称未留存）",
-            "date": null,
+            "narrator": "涂卡图🐰",
+            "date": "2025-04-02",
             "postDate": "2025-04-02",
             "degree": "未说明",
             "relationship": "未说明本人接触关系",
             "experienceType": "general",
             "firsthand": null,
             "polarity": "neutral",
-            "text": "选导求助帖的评论出现“d b r”提名，未说明本人接触关系或具体指导过程。",
+            "text": "评论者写“敢不敢选d b r”；没有说明具体经历，问句语气不足以直接判为推荐或劝退。",
             "attribution": {
               "status": "confirmed",
               "alias": "d b r",
@@ -1012,13 +1024,162 @@
             "year": null,
             "specifics": [],
             "limits": [
-              "这是既有阅读摘要，不是完整评论逐字引文。",
-              "评论作者、日期及接触身份未保留；不能据此推断指导风格或推荐强度。"
+              "未说明学位、接触关系或具体事件；不从问句补造评价理由。"
             ],
             "readingScope": [
-              "复核此前已读评论摘要；本次未重新取得该层评论逐字稿。"
+              "实际查看原网页对应评论及可见回复；未声称读完全部评论或折叠回复。"
             ],
-            "readThisRound": false
+            "readThisRound": true,
+            "sourceCommentKey": "X01:涂卡图🐰:2025-04-02:dbr",
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "敢不敢选d b r",
+                "sourceIds": [
+                  "X01"
+                ],
+                "screenshotSrc": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+                "scope": "原网页截图可见；同图保留评论者、日期与上下文。"
+              },
+              "context": [
+                "同帖名单含董必荣；此条与momo单姓“董”的楼层分开。"
+              ],
+              "interpretation": {
+                "text": "可能是提醒或调侃，未给出具体原因，不定为强烈推荐或劝退。",
+                "confidence": "uncertain"
+              },
+              "sourceIds": [
+                "X01"
+              ]
+            },
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+                "caption": "TZD与ZL同条推荐、DBR原句及教师名单",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 89529,
+                "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
+                "scope": [
+                  "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ],
+            "researchProvenance": {
+              "screenshotAvailableThisRound": true
+            }
+          },
+          {
+            "id": "sr-alias-comments-20261113-dong-thread",
+            "sourceIds": [
+              "X01"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "sourceTitle": "南审mpacc导师求推荐",
+            "postAuthor": "银河落九天",
+            "postDate": "2025-04-02",
+            "narrator": "momo（主评）及J.、404notfound、老婆我来了（跟评）",
+            "date": "2025-04-02",
+            "year": "2025",
+            "degree": "未说明",
+            "identity": "未说明评论者学位及与老师的接触关系",
+            "relationship": "未说明本人接触关系",
+            "experienceType": "general",
+            "experienceLabel": "单姓提名与跟评 · 反讽存疑",
+            "firsthand": null,
+            "polarity": "neutral",
+            "text": "主评只写“董”。跟评出现两条“这世上还是坏人多”及一条学长关系转述；可能反讽或调侃，语气与具体原因均未说明。",
+            "specifics": [],
+            "attribution": {
+              "status": "confirmed",
+              "alias": "董",
+              "reason": "本帖原图列出31人教师姓名，董必荣为其中唯一董姓；该支线提“他没当书记的时候”，同帖全名评论也说“董必荣老师现在是校党委书记”。按本帖姓名表与当时职务指代对应，未仅凭当前名录唯一姓氏。"
+            },
+            "contextAssessment": {
+              "status": "alias_attitude_without_experience",
+              "displayLabel": "单姓提名与跟评 · 反讽存疑",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "没有具体亲历或明确解释；学长关系是转述，反讽对象及含义不确定。",
+              "batch": "alias-comments-20261113"
+            },
+            "limits": [
+              "这是既有X01同一帖子中的评论，不增加独立帖子数量。",
+              "未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。",
+              "“书记”只作为当时评论的指代线索，不据此介绍当前职务；跟评不是独立亲历样本。"
+            ],
+            "readingScope": [
+              "实际查看原网页对应评论及可见回复；未声称读完全部评论或折叠回复。"
+            ],
+            "readThisRound": true,
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "董",
+                "sourceIds": [
+                  "X01"
+                ],
+                "scope": "原网页截图可见；同图保留评论者、日期与上下文。",
+                "screenshotSrc": "./evidence/xhs/x01-xw-dong-20261113.jpg"
+              },
+              "context": [
+                "J.回复：“这世上还是坏人多[棒R]”。",
+                "404notfound回复：“他没当书记的时候我真有学长是他导师”。",
+                "老婆我来了回复：“这世上还是坏人多啊”。",
+                "当前读取记录J.回复为2025-04-02；两条其他跟评日期未保留。不把主评日期套到全部跟评。",
+                "这条单姓楼与原DBR未留昵称提名是分开的评论，不合并为同一评论者或同一语气。"
+              ],
+              "interpretation": {
+                "text": "“坏人多”可能是对提名的反讽，也可能是楼内调侃；没有具体行为，保持中性和不确定性。",
+                "confidence": "uncertain",
+                "alternative": "主评是简短提名；跟评不能补出明确劝退理由或确认的负面遭遇。"
+              },
+              "limits": [
+                "不从简短态度词、应援或玩笑推定培养安排与结果。"
+              ],
+              "sourceIds": [
+                "X01"
+              ]
+            },
+            "researchProvenance": {
+              "file": "data/alias_comments_20261113/x01-reading.json",
+              "historicalRunIds": [
+                "ce8b9ad0-74d8-4934-93be-1af54d6f3bec",
+                "9f823864-a83d-4fe6-b91c-8dc3aa2eff29"
+              ],
+              "screenshotAvailableThisRound": true
+            },
+            "hearsayParts": [
+              "404notfound称“他没当书记的时候我真有学长是他导师”；是对学长关系的转述，没有学长本人的评价或具体经历。"
+            ],
+            "relatedReviewIds": [
+              "sr-alias-20261113-dbr"
+            ],
+            "sourceCommentKey": "X01:momo:2025-04-02:董-thread",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-xw-dong-20261113.jpg",
+                "caption": "董与XW评论、追问及本帖教师名单",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 96979,
+                "sha256": "62e9b6000515837900671ebd284725ad760de3720cf09a1ba48a8637fd621da5",
+                "scope": [
+                  "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
           }
         ],
         "recommendationPoints": [],
@@ -1740,6 +1901,106 @@
             ],
             "readingScope": "文字评论；未展开回复及图片名单不在此条材料范围内。",
             "readThisRound": true
+          },
+          {
+            "id": "sr-alias-comments-20261113-zl",
+            "sourceIds": [
+              "X01"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "sourceTitle": "南审mpacc导师求推荐 · 缩写评论",
+            "postAuthor": "银河落九天",
+            "postDate": "2025-04-02",
+            "narrator": "天天发癫",
+            "date": "2025-04-09",
+            "year": "2025",
+            "degree": "未说明",
+            "identity": "未说明评论者学位及与老师的接触关系",
+            "relationship": "未说明本人接触关系",
+            "experienceType": "general",
+            "experienceLabel": "缩写选导态度 · 未说明具体经历",
+            "firsthand": null,
+            "polarity": "positive",
+            "text": "天天发癫在同一条评论中提名TZD和ZL，称两者比较符合发帖人的要求；没有说明具体理由或本人接触关系。",
+            "specifics": [],
+            "attribution": {
+              "status": "confirmed",
+              "alias": "ZL",
+              "reason": "X01本帖选导图片列出教师姓名；结合本帖南审会计专硕语境及唯一完整姓名缩写，对应张力。姓名对应不代表已证实评论者身份或评价内容。"
+            },
+            "contextAssessment": {
+              "status": "alias_attitude_without_experience",
+              "displayLabel": "选择态度 · 未说明理由或经历",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+              "batch": "alias-comments-20261113"
+            },
+            "limits": [
+              "这是X01同一帖子中的评论，不增加独立帖子数量。",
+              "未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。",
+              "TZD和ZL记录共用同一条原评论，统计独立评论/来源时只计一次。"
+            ],
+            "readingScope": [
+              "实际查看原网页对应评论及可见回复；未声称读完全部评论或折叠回复。"
+            ],
+            "readThisRound": true,
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "那就tzd和zl，比较符合你的要求",
+                "sourceIds": [
+                  "X01"
+                ],
+                "scope": "原网页截图可见；同图保留评论者、日期与上下文。",
+                "screenshotSrc": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg"
+              },
+              "context": [
+                "原话同时提到TZD和ZL；两个导师档案引用的是同一评论者的同一条评论，不是两份独立推荐。",
+                "“比较符合你的要求”的具体判断依据未在这条评论中说明，不解释成普遍推荐或强烈推荐。"
+              ],
+              "interpretation": {
+                "text": "这条评论只表示其选导态度，不能补写为具体亲历。",
+                "confidence": "limited",
+                "alternative": "评论者未说明选择态度的原因及本人接触关系。"
+              },
+              "limits": [
+                "不从追问或简短态度词推定具体遭遇、指导投入或毕业结果。"
+              ],
+              "sourceIds": [
+                "X01"
+              ]
+            },
+            "researchProvenance": {
+              "file": "data/alias_comments_20261113/x01-reading.json",
+              "currentRunId": "4cb5487e-9979-4e57-a59e-b13ccad9697d",
+              "historicalRunIds": [],
+              "screenshotAvailableThisRound": true
+            },
+            "sharedCommentId": "x01-tiantian-20250409-tzd-zl",
+            "relatedReviewIds": [
+              "sr-alias-comments-20261113-tzd"
+            ],
+            "sourceCommentKey": "X01:天天发癫:2025-04-09:tzd-zl",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+                "caption": "TZD与ZL同条推荐、DBR原句及教师名单",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 89529,
+                "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
+                "scope": [
+                  "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
           }
         ],
         "recommendationPoints": [
@@ -3091,8 +3352,80 @@
             "limits": [
               "未说明学位和导师关系；不得写为产出保证。"
             ],
-            "readingScope": "首评及8条显示回复均实际读到；末尾zxl追问回复“不熟”不涉及高凤莲指导事实。",
-            "readThisRound": true
+            "readingScope": [
+              "实际查看原网页对应评论及可见回复；未声称读完全部评论或折叠回复。"
+            ],
+            "readThisRound": true,
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "那必须高凤莲",
+                "sourceIds": [
+                  "X02"
+                ],
+                "scope": "原网页截图可见；同图保留评论者、日期与上下文。",
+                "screenshotSrc": "./evidence/xhs/x02-gfl-20261113.jpg"
+              },
+              "context": [
+                "跟评中的“负责”及论文产出期待按已有记录保留；没有本人产出数据或指导过程。"
+              ],
+              "interpretation": {
+                "text": "“那必须”是明确推荐态度，不能当作当前MPAcc指导质量或论文产出的保证。",
+                "confidence": "limited",
+                "alternative": "评论者未说明学位与本人指导关系。"
+              },
+              "limits": [
+                "此处补入既有同一评论者原话，不新增评论或独立帖子。"
+              ],
+              "sourceIds": [
+                "X02"
+              ]
+            },
+            "selectionSignal": {
+              "direction": "recommend",
+              "intensity": "explicit",
+              "displayLabel": "原帖明确推荐",
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "那必须高凤莲"
+              },
+              "sourceIds": [
+                "X02"
+              ],
+              "scope": "明确推荐态度；未说明学位和本人指导关系，不作论文产出保证。"
+            },
+            "contextAssessment": {
+              "status": "general_attitude_without_experience",
+              "displayLabel": "明确推荐 · 未说明具体经历",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "只有推荐态度与主观印象，未提供本人指导关系、可核对的具体过程或产出数据。",
+              "batch": "alias-comments-20261113"
+            },
+            "researchProvenance": {
+              "file": "data/alias_comments_20261113/x02-reading.json",
+              "currentRunId": "e3a2997e-6104-4f92-96c6-03235c91ef6f",
+              "screenshotAvailableThisRound": true
+            },
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x02-gfl-20261113.jpg",
+                "caption": "高凤莲推荐、作者回复及本帖教师名单",
+                "sourceId": "X02",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 103616,
+                "sha256": "c50bc40fe957186a56983ef07c0fc4c001a0953e714cc06946f6364fd86b812a",
+                "scope": [
+                  "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ],
+            "sourceCommentKey": "X02:进击的杨某:03-31:高凤莲"
           },
           {
             "id": "sr-158538e20f5e0f",
@@ -3400,6 +3733,103 @@
             ],
             "priorReadingScope": "本轮由同组研究代理 reviews_group_a 实际重读X01顶层至THE END并核对本条及相关已显示回复；不是仅凭旧摘要采用。其他未展开分支不称全部读完。",
             "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
+          },
+          {
+            "id": "sr-alias-comments-20261113-lgc-qingjiao",
+            "sourceIds": [
+              "X01"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "sourceTitle": "南审mpacc导师求推荐",
+            "postAuthor": "银河落九天",
+            "postDate": "2025-04-02",
+            "narrator": "笨蛋青椒-",
+            "date": "2025-04-02",
+            "year": "2025",
+            "degree": "本科（大一上课语境）",
+            "identity": "未说明评论者学位及与老师的接触关系",
+            "relationship": "自称大一会计学课程授课老师",
+            "experienceType": "course",
+            "experienceLabel": "本科课程接触 · 一般印象",
+            "firsthand": true,
+            "polarity": "positive",
+            "text": "评论者自称大一上过刘国城的会计学课，并给出一般正面印象；没有讲述具体教学或研究生指导细节。",
+            "specifics": [],
+            "attribution": {
+              "status": "confirmed",
+              "alias": "刘国城",
+              "reason": "原话直接写出教师完整姓名；仅确认文本指代，不代表评论者身份、具体经历或其说法已独立认证。"
+            },
+            "contextAssessment": {
+              "status": "course_impression_without_specifics",
+              "displayLabel": "本科课程印象 · 非MPAcc指导评价",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "自述直接上课，但只有总体印象，没有可提取的具体教学或指导行为。",
+              "batch": "alias-comments-20261113"
+            },
+            "limits": [
+              "一般本科课程印象，不是MPAcc导师指导体验。",
+              "没有具体行为与过程，不推定论文反馈、组会或实习安排。",
+              "与同帖现有白昼岑星本科导师评论是不同昵称；同帖不增加独立帖子数量。",
+              "原话来自历史读取结果，本轮没有新增该条可下载截图。"
+            ],
+            "readingScope": [
+              "实际查看原网页对应评论及可见回复；未声称读完全部评论或折叠回复。"
+            ],
+            "readThisRound": true,
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "刘国城大一教我会计学，感觉是个很好的老师",
+                "sourceIds": [
+                  "X01"
+                ],
+                "scope": "原网页截图可见；同图保留评论者、日期与上下文。",
+                "screenshotSrc": "./evidence/xhs/x01-lgc-20261113.jpg"
+              },
+              "context": [
+                "这是笨蛋青椒-的课程评论；不同于现有白昼岑星自称本科导师的评论，不合并昵称或关系。"
+              ],
+              "interpretation": {
+                "text": "保留评论态度与可见语境，不扩写具体指导经历。",
+                "confidence": "limited",
+                "alternative": "未说明本人指导关系或具体原因。"
+              },
+              "limits": [
+                "不从简短态度词、应援或玩笑推定培养安排与结果。"
+              ],
+              "sourceIds": [
+                "X01"
+              ]
+            },
+            "researchProvenance": {
+              "file": "data/alias_comments_20261113/x01-reading.json",
+              "historicalRunIds": [
+                "ce8b9ad0-74d8-4934-93be-1af54d6f3bec"
+              ],
+              "screenshotAvailableThisRound": true
+            },
+            "sourceCommentKey": "X01:笨蛋青椒-:2025-04-02:刘国城",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-lgc-20261113.jpg",
+                "caption": "刘国城大一会计学课程评论与作者回复",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 94409,
+                "sha256": "8fe6d54e6c3b7692479906ea09328eebf8f77b8ec8b227760b502f4d87d031d0",
+                "scope": [
+                  "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
           }
         ],
         "recommendationPoints": [
@@ -3723,6 +4153,100 @@
               "scope": "2020届单一历史个案",
               "batch": "mentor-outcomes-20261113"
             }
+          },
+          {
+            "id": "sr-alias-comments-20261113-pj-linyu",
+            "sourceIds": [
+              "X01"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "sourceTitle": "南审mpacc导师求推荐",
+            "postAuthor": "银河落九天",
+            "postDate": "2025-04-02",
+            "narrator": "林瑜",
+            "date": "2025-04-02",
+            "year": "2025",
+            "degree": "未说明",
+            "identity": "未说明评论者学位及与老师的接触关系",
+            "relationship": "未说明本人接触关系",
+            "experienceType": "general",
+            "experienceLabel": "全名提名 · 玩笑语气可能",
+            "firsthand": null,
+            "polarity": "neutral",
+            "text": "评论者以“潘俊带你读博💋”提名；语气可能含玩笑，未交代本人接触关系或读博经历，不能理解为导师保证读博。",
+            "specifics": [],
+            "attribution": {
+              "status": "confirmed",
+              "alias": "潘俊",
+              "reason": "原话直接写出教师完整姓名；仅确认文本指代，不代表评论者身份、具体经历或其说法已独立认证。"
+            },
+            "contextAssessment": {
+              "status": "alias_attitude_without_experience",
+              "displayLabel": "选择态度 · 未说明理由或经历",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+              "batch": "alias-comments-20261113"
+            },
+            "limits": [
+              "这是既有X01同一帖子中的评论，不增加独立帖子数量。",
+              "未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。",
+              "不把读博提名移接现有官方学生故事，也不作保证读博或发表的推荐理由。"
+            ],
+            "readingScope": [
+              "实际查看原网页对应评论及可见回复；未声称读完全部评论或折叠回复。"
+            ],
+            "readThisRound": true,
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "潘俊带你读博💋",
+                "sourceIds": [
+                  "X01"
+                ],
+                "scope": "原网页截图可见；同图保留评论者、日期与上下文。",
+                "screenshotSrc": "./evidence/xhs/x01-pj-zxl-20261113.jpg"
+              },
+              "context": [],
+              "interpretation": {
+                "text": "保留带emoji的原句，只作为提名；不是个人读博结果或导师承诺。",
+                "confidence": "limited",
+                "alternative": "可能是应援或玩笑，未说明具体经历。"
+              },
+              "limits": [
+                "不从简短态度词、应援或玩笑推定培养安排与结果。"
+              ],
+              "sourceIds": [
+                "X01"
+              ]
+            },
+            "researchProvenance": {
+              "file": "data/alias_comments_20261113/x01-reading.json",
+              "historicalRunIds": [
+                "ce8b9ad0-74d8-4934-93be-1af54d6f3bec"
+              ],
+              "screenshotAvailableThisRound": true
+            },
+            "sourceCommentKey": "X01:林瑜:2025-04-02:潘俊",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-pj-zxl-20261113.jpg",
+                "caption": "潘俊提名、张兴亮应援及上层课程评论",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 93273,
+                "sha256": "34a51590467ea63993eada38d0a0b99c728fa20a948b121771c0596fe9d76b14",
+                "scope": [
+                  "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
           }
         ],
         "recommendationPoints": [
@@ -4079,6 +4603,298 @@
             "readingScope": "X01的已加载顶层评论及相关可见回复；未全面展开其他分支。",
             "readThisRound": true,
             "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
+          },
+          {
+            "id": "sr-alias-comments-20261113-zxl-qiuqiu",
+            "sourceIds": [
+              "X01"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "sourceTitle": "南审mpacc导师求推荐",
+            "postAuthor": "银河落九天",
+            "postDate": "2025-04-02",
+            "narrator": "你要不球球我",
+            "date": "2025-04-02",
+            "year": "2025",
+            "degree": "未说明",
+            "identity": "未说明评论者学位及与老师的接触关系",
+            "relationship": "未说明本人接触关系",
+            "experienceType": "general",
+            "experienceLabel": "全名提名与应援",
+            "firsthand": null,
+            "polarity": "positive",
+            "text": "评论者直接全名提名张兴亮，未说明接触关系、推荐原因或具体指导经历。",
+            "specifics": [],
+            "attribution": {
+              "status": "confirmed",
+              "alias": "张兴亮",
+              "reason": "原话直接写出教师完整姓名；仅确认文本指代，不代表评论者身份、具体经历或其说法已独立认证。"
+            },
+            "contextAssessment": {
+              "status": "alias_attitude_without_experience",
+              "displayLabel": "选择态度 · 未说明理由或经历",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+              "batch": "alias-comments-20261113"
+            },
+            "limits": [
+              "这是既有X01同一帖子中的评论，不增加独立帖子数量。",
+              "未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。"
+            ],
+            "readingScope": [
+              "实际查看原网页对应评论及可见回复；未声称读完全部评论或折叠回复。"
+            ],
+            "readThisRound": true,
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "张兴亮老师！！",
+                "sourceIds": [
+                  "X01"
+                ],
+                "scope": "原网页截图可见；同图保留评论者、日期与上下文。",
+                "screenshotSrc": "./evidence/xhs/x01-lzz-zxl-20261113.jpg"
+              },
+              "context": [
+                "这是不同昵称的独立顶层评论；均来自同一X01帖子，不增加独立帖子来源。"
+              ],
+              "interpretation": {
+                "text": "保留评论态度与可见语境，不扩写具体指导经历。",
+                "confidence": "limited",
+                "alternative": "未说明本人指导关系或具体原因。"
+              },
+              "limits": [
+                "不从简短态度词、应援或玩笑推定培养安排与结果。"
+              ],
+              "sourceIds": [
+                "X01"
+              ]
+            },
+            "researchProvenance": {
+              "file": "data/alias_comments_20261113/x01-reading.json",
+              "historicalRunIds": [
+                "ce8b9ad0-74d8-4934-93be-1af54d6f3bec"
+              ],
+              "screenshotAvailableThisRound": true
+            },
+            "sourceCommentKey": "X01:你要不球球我:2025-04-02:张兴亮",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+                "caption": "李仲泽推荐、张兴亮提名及教师名单",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 104838,
+                "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
+                "scope": [
+                  "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
+          },
+          {
+            "id": "sr-alias-comments-20261113-zxl-wm",
+            "sourceIds": [
+              "X01"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "sourceTitle": "南审mpacc导师求推荐",
+            "postAuthor": "银河落九天",
+            "postDate": "2025-04-02",
+            "narrator": "wm",
+            "date": "2025-04-03",
+            "year": "2025",
+            "degree": "未说明",
+            "identity": "未说明评论者学位及与老师的接触关系",
+            "relationship": "未说明本人接触关系",
+            "experienceType": "general",
+            "experienceLabel": "全名提名与应援",
+            "firsthand": null,
+            "polarity": "positive",
+            "text": "评论者为张兴亮应援，未说明接触关系或具体经历。",
+            "specifics": [],
+            "attribution": {
+              "status": "confirmed",
+              "alias": "张兴亮",
+              "reason": "原话直接写出教师完整姓名；仅确认文本指代，不代表评论者身份、具体经历或其说法已独立认证。"
+            },
+            "contextAssessment": {
+              "status": "alias_attitude_without_experience",
+              "displayLabel": "选择态度 · 未说明理由或经历",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+              "batch": "alias-comments-20261113"
+            },
+            "limits": [
+              "这是既有X01同一帖子中的评论，不增加独立帖子数量。",
+              "未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。"
+            ],
+            "readingScope": [
+              "实际查看原网页对应评论及可见回复；未声称读完全部评论或折叠回复。"
+            ],
+            "readThisRound": true,
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "为张兴亮老师打call哈哈哈",
+                "sourceIds": [
+                  "X01"
+                ],
+                "scope": "原网页截图可见；同图保留评论者、日期与上下文。",
+                "screenshotSrc": "./evidence/xhs/x01-pj-zxl-20261113.jpg"
+              },
+              "context": [
+                "这是不同昵称的独立顶层评论；均来自同一X01帖子，不增加独立帖子来源。"
+              ],
+              "interpretation": {
+                "text": "保留评论态度与可见语境，不扩写具体指导经历。",
+                "confidence": "limited",
+                "alternative": "未说明本人指导关系或具体原因。"
+              },
+              "limits": [
+                "不从简短态度词、应援或玩笑推定培养安排与结果。"
+              ],
+              "sourceIds": [
+                "X01"
+              ]
+            },
+            "researchProvenance": {
+              "file": "data/alias_comments_20261113/x01-reading.json",
+              "historicalRunIds": [
+                "ce8b9ad0-74d8-4934-93be-1af54d6f3bec"
+              ],
+              "screenshotAvailableThisRound": true
+            },
+            "sourceCommentKey": "X01:wm:2025-04-03:张兴亮",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-pj-zxl-20261113.jpg",
+                "caption": "潘俊提名、张兴亮应援及上层课程评论",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 93273,
+                "sha256": "34a51590467ea63993eada38d0a0b99c728fa20a948b121771c0596fe9d76b14",
+                "scope": [
+                  "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
+          },
+          {
+            "id": "sr-alias-comments-20261113-zxl-liangliang",
+            "sourceIds": [
+              "X02"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+            "sourceTitle": "nau会计专硕导师求推荐 · 回复称呼",
+            "postAuthor": "17元博物馆✨",
+            "postDate": "03-31（年份未显示）",
+            "narrator": "Y.",
+            "date": "03-31（年份未显示）",
+            "year": null,
+            "degree": "未说明",
+            "identity": "未说明评论者学位及与老师的接触关系",
+            "relationship": "未说明本人接触关系",
+            "experienceType": "general",
+            "experienceLabel": "回复中的明确推荐 · 未说明具体经历",
+            "firsthand": null,
+            "polarity": "positive",
+            "text": "Y.在楼主点名张兴亮、黄中生的评论下回复“亮亮老师很好，非常推荐”；未说明本人学位或接触关系。",
+            "specifics": [],
+            "attribution": {
+              "status": "confirmed",
+              "alias": "亮亮",
+              "reason": "直属上层评论点名张兴亮和黄中生，回复以“亮亮老师”指代；两者中只有张兴亮含“亮”。本帖教师名单、上层全名和回复同框确认，不跨帖推定。"
+            },
+            "contextAssessment": {
+              "status": "alias_attitude_without_experience",
+              "displayLabel": "选择态度 · 未说明理由或经历",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+              "batch": "alias-comments-20261113"
+            },
+            "limits": [
+              "该条是X02既有帖中的回复，不是新的独立帖子；没有具体指导过程。"
+            ],
+            "readingScope": [
+              "实际查看原网页对应评论及可见回复；未声称读完全部评论或折叠回复。"
+            ],
+            "readThisRound": true,
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "亮亮老师很好，非常推荐",
+                "sourceIds": [
+                  "X02"
+                ],
+                "screenshotSrc": "./evidence/xhs/x02-liangliang-20261113.jpg",
+                "scope": "原网页截图可见；同图保留评论者、日期与上下文。"
+              },
+              "context": [
+                "直属上层作者：研究方向的话，比较喜欢张兴亮和黄中生老师，有没有学姐学长可以分享一下呀。",
+                "Y.在该评论下回复，未说明具体指导过程。"
+              ],
+              "interpretation": {
+                "text": "这是明确推荐态度；没有具体指导经历。",
+                "confidence": "limited"
+              },
+              "sourceIds": [
+                "X02"
+              ]
+            },
+            "researchProvenance": {
+              "file": "data/alias_comments_20261113/x02-reading.json",
+              "method": "live-browser-parent-and-reply",
+              "screenshotAvailableThisRound": true
+            },
+            "selectionSignal": {
+              "direction": "recommend",
+              "intensity": "strong",
+              "alias": "亮亮",
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "亮亮老师很好，非常推荐"
+              },
+              "sourceIds": [
+                "X02"
+              ],
+              "scope": "同楼上层姓名可对应张兴亮；评论者学位、接触关系和推荐理由未说明。"
+            },
+            "sourceCommentKey": "X02:Y.:03-31:亮亮",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x02-liangliang-20261113.jpg",
+                "caption": "上层张兴亮和黄中生全名、Y.的亮亮推荐回复",
+                "sourceId": "X02",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 92852,
+                "sha256": "b01fe8f9f047d9566d283f22c1b4120cdc9e35fc6369f6aa94808ac4546f2261",
+                "scope": [
+                  "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
           }
         ],
         "recommendationPoints": [],
@@ -4940,10 +5756,233 @@
       "rosterSourceDate": "2026-01-08",
       "sourceCodes": [],
       "studentReviews": {
-        "coverageStatus": "not_found",
-        "coverageLabel": "未找到可归属的个人评价",
-        "summary": "已检索姓名及缩写；尚无可以确认归属的学生个人评价。",
-        "reviews": [],
+        "coverageStatus": "weak_mentions",
+        "coverageLabel": "选导态度 · 未说明具体经历",
+        "summary": "X01明确劝退；X02称要求高、有点严格。两条均未说明接触关系。",
+        "reviews": [
+          {
+            "id": "sr-alias-comments-20261113-xw",
+            "sourceIds": [
+              "X01"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "sourceTitle": "南审mpacc导师求推荐 · 缩写评论",
+            "postAuthor": "银河落九天",
+            "postDate": "2025-04-02",
+            "narrator": "芝麻连连看",
+            "date": "2025-04-06",
+            "year": "2025",
+            "degree": "未说明",
+            "identity": "未说明评论者学位及与老师的接触关系",
+            "relationship": "未说明本人接触关系",
+            "experienceType": "general",
+            "experienceLabel": "缩写选导态度 · 未说明具体经历",
+            "firsthand": null,
+            "polarity": "negative",
+            "text": "芝麻连连看明确、反复表达不要选择XW的态度；该条及可见追问未说明原因、学位或本人接触关系。",
+            "specifics": [],
+            "attribution": {
+              "status": "confirmed",
+              "alias": "XW",
+              "reason": "X01本帖选导图片列出教师姓名；结合本帖南审会计专硕语境及唯一完整姓名缩写，对应徐伟。姓名对应不代表已证实评论者身份或评价内容。"
+            },
+            "contextAssessment": {
+              "status": "alias_attitude_without_experience",
+              "displayLabel": "选择态度 · 未说明理由或经历",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+              "batch": "alias-comments-20261113"
+            },
+            "limits": [
+              "这是X01同一帖子中的评论，不增加独立帖子数量。",
+              "未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。"
+            ],
+            "readingScope": [
+              "实际查看原网页对应评论及可见回复；未声称读完全部评论或折叠回复。"
+            ],
+            "readThisRound": true,
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "不要xw，一定一定不要",
+                "sourceIds": [
+                  "X01"
+                ],
+                "scope": "原网页截图可见；同图保留评论者、日期与上下文。",
+                "screenshotSrc": "./evidence/xhs/x01-xw-dong-20261113.jpg"
+              },
+              "context": [
+                "缄默的烛台追问“能说说为什么吗”，没有读到进一步原因；回复仅显示03-06，不推定年份。"
+              ],
+              "interpretation": {
+                "text": "这条评论只表示其选导态度，不能补写为具体亲历。",
+                "confidence": "limited",
+                "alternative": "评论者未说明选择态度的原因及本人接触关系。"
+              },
+              "limits": [
+                "不从追问或简短态度词推定具体遭遇、指导投入或毕业结果。"
+              ],
+              "sourceIds": [
+                "X01"
+              ]
+            },
+            "researchProvenance": {
+              "file": "data/alias_comments_20261113/x01-reading.json",
+              "currentRunId": "4cb5487e-9979-4e57-a59e-b13ccad9697d",
+              "historicalRunIds": [
+                "ce8b9ad0-74d8-4934-93be-1af54d6f3bec",
+                "9f823864-a83d-4fe6-b91c-8dc3aa2eff29"
+              ],
+              "screenshotAvailableThisRound": true
+            },
+            "dateVariants": [
+              {
+                "date": "2025-04-06",
+                "runIds": [
+                  "4cb5487e-9979-4e57-a59e-b13ccad9697d",
+                  "9f823864-a83d-4fe6-b91c-8dc3aa2eff29"
+                ]
+              },
+              {
+                "date": "2025-04-05",
+                "runIds": [
+                  "ce8b9ad0-74d8-4934-93be-1af54d6f3bec"
+                ]
+              }
+            ],
+            "selectionSignal": {
+              "direction": "avoid",
+              "intensity": "strong",
+              "alias": "XW",
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "不要xw，一定一定不要"
+              },
+              "sourceIds": [
+                "X01"
+              ],
+              "scope": "反复强调不要选择；未说明原因、学位或接触关系。"
+            },
+            "sourceCommentKey": "X01:芝麻连连看:xw",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-xw-dong-20261113.jpg",
+                "caption": "董与XW评论、追问及本帖教师名单",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 96979,
+                "sha256": "62e9b6000515837900671ebd284725ad760de3720cf09a1ba48a8637fd621da5",
+                "scope": [
+                  "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ],
+            "dateResolution": "本轮网页截图明确为2025-04-06，纠正历史自动读取差异。"
+          },
+          {
+            "id": "sr-alias-comments-20261113-xw-x02",
+            "sourceIds": [
+              "X02"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+            "sourceTitle": "nau会计专硕导师求推荐",
+            "postAuthor": "17元博物馆✨",
+            "postDate": "03-31（年份未显示）",
+            "narrator": "小张要长高",
+            "date": "03-31（年份未显示）",
+            "year": "未说明",
+            "degree": "未说明",
+            "identity": "未说明评论者学位及与老师的接触关系",
+            "relationship": "未说明本人接触关系",
+            "experienceType": "general",
+            "experienceLabel": "要求与严格程度的主观印象",
+            "firsthand": null,
+            "polarity": "neutral",
+            "text": "小张要长高称XW老师要求很高、有点严格；未说明学位、本人接触关系或具体要求内容。",
+            "specifics": [],
+            "attribution": {
+              "status": "confirmed",
+              "alias": "XW",
+              "reason": "本帖南审会计专硕选导语境及现有完整姓名缩写对照对应徐伟；不把其他帖的态度移接为本条亲历。"
+            },
+            "contextAssessment": {
+              "status": "alias_attitude_without_experience",
+              "displayLabel": "主观印象 · 接触关系未说明",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+              "batch": "alias-comments-20261113"
+            },
+            "limits": [
+              "这是既有X02同一帖子中的评论，不增加独立帖子数量。",
+              "未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。",
+              "只显示03-31，没有年份；不根据帖子ID或抓取时间补定评论年份。"
+            ],
+            "readingScope": [
+              "实际查看原网页对应评论及可见回复；未声称读完全部评论或折叠回复。"
+            ],
+            "readThisRound": true,
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "xw老师要求很高，有点严格",
+                "sourceIds": [
+                  "X02"
+                ],
+                "scope": "原网页截图可见；同图保留评论者、日期与上下文。",
+                "screenshotSrc": "./evidence/xhs/x02-xw-20261113.jpg"
+              },
+              "context": [
+                "发帖人回复“收到！谢谢宝宝！”。这是致谢，未补充具体经历。",
+                "“要求很高、有点严格”不等于劝退，也不能解释成具体负面行为。"
+              ],
+              "interpretation": {
+                "text": "这是一条对要求程度的中性印象；不把严格直接等同于差评或劝退。",
+                "confidence": "limited",
+                "alternative": "未说明本人指导关系或具体原因。"
+              },
+              "limits": [
+                "不从简短态度词、应援或玩笑推定培养安排与结果。"
+              ],
+              "sourceIds": [
+                "X02"
+              ]
+            },
+            "researchProvenance": {
+              "file": "data/alias_comments_20261113/x02-reading.json",
+              "historicalRunIds": [],
+              "screenshotAvailableThisRound": true,
+              "currentRunId": "e3a2997e-6104-4f92-96c6-03235c91ef6f"
+            },
+            "sourceCommentKey": "X02:小张要长高:03-31:xw",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x02-xw-20261113.jpg",
+                "caption": "XW要求程度原句、作者回复及许汉y问句",
+                "sourceId": "X02",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 88800,
+                "sha256": "a4312ee26d5ac150b741748a46bf3a2024678040d3c0e3027a6fb00598dda17f",
+                "scope": [
+                  "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
+          }
+        ],
         "recommendationPoints": [],
         "concerns": [],
         "verificationQuestions": [
@@ -4951,8 +5990,6 @@
           "缺少具体任务频次、交付物、修改过程及当前MPAcc实习安排的亲历。"
         ],
         "gaps": [
-          "XW归名未解决",
-          "缺实名学生亲历",
           "缺MPAcc当前直系反馈",
           "尚缺近两届明确MPAcc直系学生的具体日常指导经历。"
         ],
@@ -4968,8 +6005,6 @@
           ],
           "readingScopes": [],
           "gaps": [
-            "XW归名未解决",
-            "缺实名学生亲历",
             "缺MPAcc当前直系反馈",
             "尚缺近两届明确MPAcc直系学生的具体日常指导经历。"
           ],
@@ -5867,10 +6902,111 @@
       "rosterSourceDate": "2026-01-08",
       "sourceCodes": [],
       "studentReviews": {
-        "coverageStatus": "not_found",
-        "coverageLabel": "未找到可归属的个人评价",
-        "summary": "已检索姓名及缩写；未发现可实名归属的学生个人评价。",
-        "reviews": [],
+        "coverageStatus": "weak_mentions",
+        "coverageLabel": "选导态度 · 未说明具体经历",
+        "summary": "TZD与ZL在同一条评论中被提名；未说明具体理由。",
+        "reviews": [
+          {
+            "id": "sr-alias-comments-20261113-tzd",
+            "sourceIds": [
+              "X01"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "sourceTitle": "南审mpacc导师求推荐 · 缩写评论",
+            "postAuthor": "银河落九天",
+            "postDate": "2025-04-02",
+            "narrator": "天天发癫",
+            "date": "2025-04-09",
+            "year": "2025",
+            "degree": "未说明",
+            "identity": "未说明评论者学位及与老师的接触关系",
+            "relationship": "未说明本人接触关系",
+            "experienceType": "general",
+            "experienceLabel": "缩写选导态度 · 未说明具体经历",
+            "firsthand": null,
+            "polarity": "positive",
+            "text": "天天发癫在同一条评论中提名TZD和ZL，称两者比较符合发帖人的要求；没有说明具体理由或本人接触关系。",
+            "specifics": [],
+            "attribution": {
+              "status": "confirmed",
+              "alias": "TZD",
+              "reason": "X01本帖选导图片列出教师姓名；结合本帖南审会计专硕语境及唯一完整姓名缩写，对应谭志东。姓名对应不代表已证实评论者身份或评价内容。"
+            },
+            "contextAssessment": {
+              "status": "alias_attitude_without_experience",
+              "displayLabel": "选择态度 · 未说明理由或经历",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+              "batch": "alias-comments-20261113"
+            },
+            "limits": [
+              "这是X01同一帖子中的评论，不增加独立帖子数量。",
+              "未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。",
+              "TZD和ZL记录共用同一条原评论，统计独立评论/来源时只计一次。"
+            ],
+            "readingScope": [
+              "实际查看原网页对应评论及可见回复；未声称读完全部评论或折叠回复。"
+            ],
+            "readThisRound": true,
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "那就tzd和zl，比较符合你的要求",
+                "sourceIds": [
+                  "X01"
+                ],
+                "scope": "原网页截图可见；同图保留评论者、日期与上下文。",
+                "screenshotSrc": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg"
+              },
+              "context": [
+                "原话同时提到TZD和ZL；两个导师档案引用的是同一评论者的同一条评论，不是两份独立推荐。",
+                "“比较符合你的要求”的具体判断依据未在这条评论中说明，不解释成普遍推荐或强烈推荐。"
+              ],
+              "interpretation": {
+                "text": "这条评论只表示其选导态度，不能补写为具体亲历。",
+                "confidence": "limited",
+                "alternative": "评论者未说明选择态度的原因及本人接触关系。"
+              },
+              "limits": [
+                "不从追问或简短态度词推定具体遭遇、指导投入或毕业结果。"
+              ],
+              "sourceIds": [
+                "X01"
+              ]
+            },
+            "researchProvenance": {
+              "file": "data/alias_comments_20261113/x01-reading.json",
+              "currentRunId": "4cb5487e-9979-4e57-a59e-b13ccad9697d",
+              "historicalRunIds": [],
+              "screenshotAvailableThisRound": true
+            },
+            "sharedCommentId": "x01-tiantian-20250409-tzd-zl",
+            "relatedReviewIds": [
+              "sr-alias-comments-20261113-zl"
+            ],
+            "sourceCommentKey": "X01:天天发癫:2025-04-09:tzd-zl",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+                "caption": "TZD与ZL同条推荐、DBR原句及教师名单",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 89529,
+                "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
+                "scope": [
+                  "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
+          }
+        ],
         "recommendationPoints": [],
         "concerns": [],
         "verificationQuestions": [
@@ -5878,7 +7014,6 @@
           "尚缺与本人接触过的MPAcc学生，核实论文选题、方法训练、反馈与实习兼顾。"
         ],
         "gaps": [
-          "无可归名学生个人评价",
           "缺MPAcc当前直系反馈",
           "尚缺近两届明确MPAcc直系学生的具体日常指导经历。"
         ],
@@ -5895,7 +7030,6 @@
           ],
           "readingScopes": [],
           "gaps": [
-            "无可归名学生个人评价",
             "缺MPAcc当前直系反馈",
             "尚缺近两届明确MPAcc直系学生的具体日常指导经历。"
           ],
@@ -6176,8 +7310,8 @@
       "sourceCodes": [],
       "studentReviews": {
         "coverageStatus": "weak_mentions",
-        "coverageLabel": "仅笼统提名或身份未明",
-        "summary": "全名简短提名的原话及语境不足，不能确认是真实推荐、玩笑或反讽。",
+        "coverageLabel": "选导态度 · 未说明具体经历",
+        "summary": "CXJ有直接劝退原句；另有全名简短提名，原句分别保留。",
         "reviews": [
           {
             "id": "sr-56c2d22b39f07a",
@@ -6261,6 +7395,117 @@
                 "X02"
               ]
             }
+          },
+          {
+            "id": "sr-alias-comments-20261113-cxj",
+            "sourceIds": [
+              "X01"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "sourceTitle": "南审mpacc导师求推荐 · 缩写评论",
+            "postAuthor": "银河落九天",
+            "postDate": "2025-04-02",
+            "narrator": "空白昵称",
+            "date": "2025-04-03",
+            "year": "2025",
+            "degree": "未说明",
+            "identity": "未说明评论者学位及与老师的接触关系",
+            "relationship": "未说明本人接触关系",
+            "experienceType": "general",
+            "experienceLabel": "缩写选导态度 · 未说明具体经历",
+            "firsthand": null,
+            "polarity": "negative",
+            "text": "昵称显示为空白字符的评论者直接写“避雷cxj”；回复有人追问细节，但恢复的内容没有说明具体原因或本人接触关系。",
+            "specifics": [],
+            "attribution": {
+              "status": "confirmed",
+              "alias": "CXJ",
+              "reason": "X01本帖选导图片列出教师姓名；结合本帖南审会计专硕语境及唯一完整姓名缩写，对应蔡显军。姓名对应不代表已证实评论者身份或评价内容。"
+            },
+            "contextAssessment": {
+              "status": "alias_attitude_without_experience",
+              "displayLabel": "选择态度 · 未说明理由或经历",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+              "batch": "alias-comments-20261113"
+            },
+            "limits": [
+              "这是X01同一帖子中的评论，不增加独立帖子数量。",
+              "未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。"
+            ],
+            "readingScope": [
+              "实际查看原网页对应评论及可见回复；未声称读完全部评论或折叠回复。"
+            ],
+            "readThisRound": true,
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "避雷cxj",
+                "sourceIds": [
+                  "X01"
+                ],
+                "scope": "原网页截图可见；同图保留评论者、日期与上下文。",
+                "screenshotSrc": "./evidence/xhs/x01-cxj-20261113.jpg"
+              },
+              "context": [
+                "。。追问“求细说”，画面日期07-06，年份未显示；未读到具体原因。"
+              ],
+              "interpretation": {
+                "text": "这条评论只表示其选导态度，不能补写为具体亲历。",
+                "confidence": "limited",
+                "alternative": "评论者未说明选择态度的原因及本人接触关系。"
+              },
+              "limits": [
+                "不从追问或简短态度词推定具体遭遇、指导投入或毕业结果。"
+              ],
+              "sourceIds": [
+                "X01"
+              ]
+            },
+            "researchProvenance": {
+              "file": "data/alias_comments_20261113/x01-reading.json",
+              "currentRunId": "4cb5487e-9979-4e57-a59e-b13ccad9697d",
+              "historicalRunIds": [
+                "ce8b9ad0-74d8-4934-93be-1af54d6f3bec",
+                "9f823864-a83d-4fe6-b91c-8dc3aa2eff29"
+              ],
+              "screenshotAvailableThisRound": true
+            },
+            "selectionSignal": {
+              "direction": "avoid",
+              "intensity": "explicit",
+              "displayLabel": "原帖明确劝退",
+              "alias": "CXJ",
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "避雷cxj"
+              },
+              "sourceIds": [
+                "X01"
+              ],
+              "scope": "明确劝退用语；原话没有“强烈”或反复强调，不扩写强度或理由。学位与接触关系未说明。"
+            },
+            "sourceCommentKey": "X01:ᅠᅠᅠ:cxj",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-cxj-20261113.jpg",
+                "caption": "CXJ劝退原句、追问及本帖教师名单",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 86317,
+                "sha256": "0e70d263283122f2779cd9b9392ddbef66a0a94ebc90d7fe9e1ebed007175162",
+                "scope": [
+                  "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
           }
         ],
         "recommendationPoints": [],
@@ -7113,20 +8358,60 @@
               "没有亲历关系、课程或论文阶段",
               "不能记作已发生的论文帮助，也不能承诺指导投入或成果"
             ],
-            "readingScope": "该条可见顶层评论；未覆盖全部折叠回复。",
+            "readingScope": [
+              "实际查看原网页对应评论及可见回复；未声称读完全部评论或折叠回复。"
+            ],
             "readThisRound": true,
             "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。",
             "selectionSignal": {
               "direction": "recommend",
               "intensity": "strong",
               "excerpt": {
-                "kind": "recorded_summary",
-                "text": "momo按全名强烈推荐李仲泽，称年轻、幽默、为学生考虑。"
+                "kind": "visible_quote",
+                "text": "李仲泽我强力推荐"
               },
               "sourceIds": [
                 "X01"
               ],
-              "scope": "已存评论摘要；论文帮助属于期待性判断，未说明实际指导过程。"
+              "scope": "原话明确推荐；关于论文帮助是“有种……感觉”的期待，未说明实际指导过程。"
+            },
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "李仲泽我强力推荐",
+                "sourceIds": [
+                  "X01"
+                ],
+                "screenshotSrc": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+                "scope": "原网页截图可见；同图保留评论者、日期与上下文。"
+              },
+              "context": [
+                "原评论称年轻、幽默、为学生考虑；论文帮助部分用“有种……感觉”表达，未陈述发生过的改稿过程。"
+              ],
+              "sourceIds": [
+                "X01"
+              ]
+            },
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+                "caption": "李仲泽推荐、张兴亮提名及教师名单",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 104838,
+                "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
+                "scope": [
+                  "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ],
+            "researchProvenance": {
+              "screenshotAvailableThisRound": true
             }
           },
           {
@@ -21187,7 +22472,7 @@
           "teacher": "潘俊",
           "text": "评论以口号式措辞提到潘俊和读博，没有说明本人经历或实际去向；语气未核实，仅保留讨论语境。",
           "limitations": "可能含玩笑或夸张，不当作导师安排、升学保证或学生指导事实；同帖提名不增加独立评价。",
-          "use_status": "玩笑化／口号式表达，未用于推荐或避雷",
+          "use_status": "选择态度 · 未说明理由或经历",
           "expansionBatch": "student-reviews-round8",
           "contextInterpretationBeforeRound10": {
             "text": "评论者对潘俊作笼统提名并提及读博，但没有交代本人学位、指导关系或具体经历。",
@@ -21195,20 +22480,47 @@
             "use_status": "新增可见评论语境，非学生指导评价"
           },
           "contextAssessment": {
-            "status": "slogan_or_hyperbole",
+            "status": "alias_attitude_without_experience",
+            "displayLabel": "选择态度 · 未说明理由或经历",
             "eligibleForRecommendation": false,
             "eligibleForConcern": false,
-            "reason": "没有本人指导关系、事件或实际去向。",
-            "batch": "review-context-audit-round10"
-          }
+            "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+            "batch": "alias-comments-20261113"
+          },
+          "relationship": "未说明本人接触关系",
+          "content": "评论者以“潘俊带你读博💋”提名；语气可能含玩笑，未交代本人接触关系或读博经历，不能理解为导师保证读博。",
+          "limits": "这是既有X01同一帖子中的评论，不增加独立帖子数量。；未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。；不把读博提名移接现有官方学生故事，也不作保证读博或发表的推荐理由。",
+          "aliasReviewId": "sr-alias-comments-20261113-pj-linyu",
+          "aliasReviewIds": [
+            "sr-alias-comments-20261113-pj-linyu"
+          ],
+          "sourceCommentKey": "X01:林瑜:2025-04-02:潘俊",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/x01-pj-zxl-20261113.jpg",
+              "caption": "潘俊提名、张兴亮应援及上层课程评论",
+              "sourceId": "X01",
+              "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false,
+              "width": 1363,
+              "height": 936,
+              "bytes": 93273,
+              "sha256": "34a51590467ea63993eada38d0a0b99c728fa20a948b121771c0596fe9d76b14",
+              "scope": [
+                "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+              ],
+              "capturedAt": "2026-11-13"
+            }
+          ]
         },
         {
           "teacher": "董必荣",
-          "author": "评论者（昵称未留存）",
-          "date_display": "日期未留存",
+          "author": "涂卡图🐰",
+          "date_display": "2025-04-02",
           "relationship": "未说明本人接触关系",
-          "content": "选导求助帖的评论出现“d b r”提名，未说明本人接触关系或具体指导过程。",
-          "limits": "这是既有阅读摘要，不是完整评论逐字引文。；评论作者、日期及接触身份未保留；不能据此推断指导风格或推荐强度。",
+          "content": "评论者写“敢不敢选d b r”；没有说明具体经历，问句语气不足以直接判为推荐或劝退。",
+          "limits": "未说明学位、接触关系或具体事件；不从问句补造评价理由。",
           "use_status": "原帖提名 · 未说明具体经历",
           "contextAssessment": {
             "eligibleForRecommendation": false,
@@ -21217,7 +22529,29 @@
             "status": "alias_attitude_without_experience",
             "batch": "mentor-aliases-20261113"
           },
-          "aliasReviewId": "sr-alias-20261113-dbr"
+          "aliasReviewId": "sr-alias-20261113-dbr",
+          "aliasReviewIds": [
+            "sr-alias-20261113-dbr"
+          ],
+          "sourceCommentKey": "X01:涂卡图🐰:2025-04-02:dbr",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+              "caption": "TZD与ZL同条推荐、DBR原句及教师名单",
+              "sourceId": "X01",
+              "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false,
+              "width": 1363,
+              "height": 936,
+              "bytes": 89529,
+              "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
+              "scope": [
+                "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+              ],
+              "capturedAt": "2026-11-13"
+            }
+          ]
         },
         {
           "teacher": "马德林",
@@ -21254,6 +22588,287 @@
             "batch": "mentor-aliases-20261113"
           },
           "aliasReviewId": "sr-alias-20261113-yby"
+        },
+        {
+          "teacher": "董必荣",
+          "author": "momo（主评）及J.、404notfound、老婆我来了（跟评）",
+          "date_display": "2025-04-02",
+          "relationship": "未说明本人接触关系",
+          "content": "主评只写“董”。跟评出现两条“这世上还是坏人多”及一条学长关系转述；可能反讽或调侃，语气与具体原因均未说明。",
+          "limits": "这是既有X01同一帖子中的评论，不增加独立帖子数量。；未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。；“书记”只作为当时评论的指代线索，不据此介绍当前职务；跟评不是独立亲历样本。",
+          "use_status": "单姓提名与跟评 · 反讽存疑",
+          "aliasReviewId": "sr-alias-comments-20261113-dong-thread",
+          "aliasReviewIds": [
+            "sr-alias-comments-20261113-dong-thread"
+          ],
+          "sourceCommentKey": "X01:momo:2025-04-02:董-thread",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/x01-xw-dong-20261113.jpg",
+              "caption": "董与XW评论、追问及本帖教师名单",
+              "sourceId": "X01",
+              "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false,
+              "width": 1363,
+              "height": 936,
+              "bytes": 96979,
+              "sha256": "62e9b6000515837900671ebd284725ad760de3720cf09a1ba48a8637fd621da5",
+              "scope": [
+                "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+              ],
+              "capturedAt": "2026-11-13"
+            }
+          ],
+          "contextAssessment": {
+            "status": "alias_attitude_without_experience",
+            "displayLabel": "单姓提名与跟评 · 反讽存疑",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "没有具体亲历或明确解释；学长关系是转述，反讽对象及含义不确定。",
+            "batch": "alias-comments-20261113"
+          }
+        },
+        {
+          "teacher": "张力、谭志东",
+          "author": "天天发癫",
+          "date_display": "2025-04-09",
+          "relationship": "未说明本人接触关系",
+          "content": "天天发癫在同一条评论中提名TZD和ZL，称两者比较符合发帖人的要求；没有说明具体理由或本人接触关系。",
+          "limits": "这是X01同一帖子中的评论，不增加独立帖子数量。；未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。；TZD和ZL记录共用同一条原评论，统计独立评论/来源时只计一次。",
+          "use_status": "选择态度 · 未说明理由或经历",
+          "aliasReviewId": "sr-alias-comments-20261113-zl",
+          "aliasReviewIds": [
+            "sr-alias-comments-20261113-zl",
+            "sr-alias-comments-20261113-tzd"
+          ],
+          "sourceCommentKey": "X01:天天发癫:2025-04-09:tzd-zl",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+              "caption": "TZD与ZL同条推荐、DBR原句及教师名单",
+              "sourceId": "X01",
+              "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false,
+              "width": 1363,
+              "height": 936,
+              "bytes": 89529,
+              "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
+              "scope": [
+                "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+              ],
+              "capturedAt": "2026-11-13"
+            }
+          ],
+          "contextAssessment": {
+            "status": "alias_attitude_without_experience",
+            "displayLabel": "选择态度 · 未说明理由或经历",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+            "batch": "alias-comments-20261113"
+          }
+        },
+        {
+          "teacher": "刘国城",
+          "author": "笨蛋青椒-",
+          "date_display": "2025-04-02",
+          "relationship": "自称大一会计学课程授课老师",
+          "content": "评论者自称大一上过刘国城的会计学课，并给出一般正面印象；没有讲述具体教学或研究生指导细节。",
+          "limits": "一般本科课程印象，不是MPAcc导师指导体验。；没有具体行为与过程，不推定论文反馈、组会或实习安排。；与同帖现有白昼岑星本科导师评论是不同昵称；同帖不增加独立帖子数量。；原话来自历史读取结果，本轮没有新增该条可下载截图。",
+          "use_status": "本科课程印象 · 非MPAcc指导评价",
+          "aliasReviewId": "sr-alias-comments-20261113-lgc-qingjiao",
+          "aliasReviewIds": [
+            "sr-alias-comments-20261113-lgc-qingjiao"
+          ],
+          "sourceCommentKey": "X01:笨蛋青椒-:2025-04-02:刘国城",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/x01-lgc-20261113.jpg",
+              "caption": "刘国城大一会计学课程评论与作者回复",
+              "sourceId": "X01",
+              "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false,
+              "width": 1363,
+              "height": 936,
+              "bytes": 94409,
+              "sha256": "8fe6d54e6c3b7692479906ea09328eebf8f77b8ec8b227760b502f4d87d031d0",
+              "scope": [
+                "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+              ],
+              "capturedAt": "2026-11-13"
+            }
+          ],
+          "contextAssessment": {
+            "status": "course_impression_without_specifics",
+            "displayLabel": "本科课程印象 · 非MPAcc指导评价",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "自述直接上课，但只有总体印象，没有可提取的具体教学或指导行为。",
+            "batch": "alias-comments-20261113"
+          }
+        },
+        {
+          "teacher": "张兴亮",
+          "author": "你要不球球我",
+          "date_display": "2025-04-02",
+          "relationship": "未说明本人接触关系",
+          "content": "评论者直接全名提名张兴亮，未说明接触关系、推荐原因或具体指导经历。",
+          "limits": "这是既有X01同一帖子中的评论，不增加独立帖子数量。；未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。",
+          "use_status": "选择态度 · 未说明理由或经历",
+          "aliasReviewId": "sr-alias-comments-20261113-zxl-qiuqiu",
+          "aliasReviewIds": [
+            "sr-alias-comments-20261113-zxl-qiuqiu"
+          ],
+          "sourceCommentKey": "X01:你要不球球我:2025-04-02:张兴亮",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+              "caption": "李仲泽推荐、张兴亮提名及教师名单",
+              "sourceId": "X01",
+              "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false,
+              "width": 1363,
+              "height": 936,
+              "bytes": 104838,
+              "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
+              "scope": [
+                "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+              ],
+              "capturedAt": "2026-11-13"
+            }
+          ],
+          "contextAssessment": {
+            "status": "alias_attitude_without_experience",
+            "displayLabel": "选择态度 · 未说明理由或经历",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+            "batch": "alias-comments-20261113"
+          }
+        },
+        {
+          "teacher": "张兴亮",
+          "author": "wm",
+          "date_display": "2025-04-03",
+          "relationship": "未说明本人接触关系",
+          "content": "评论者为张兴亮应援，未说明接触关系或具体经历。",
+          "limits": "这是既有X01同一帖子中的评论，不增加独立帖子数量。；未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。",
+          "use_status": "选择态度 · 未说明理由或经历",
+          "aliasReviewId": "sr-alias-comments-20261113-zxl-wm",
+          "aliasReviewIds": [
+            "sr-alias-comments-20261113-zxl-wm"
+          ],
+          "sourceCommentKey": "X01:wm:2025-04-03:张兴亮",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/x01-pj-zxl-20261113.jpg",
+              "caption": "潘俊提名、张兴亮应援及上层课程评论",
+              "sourceId": "X01",
+              "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false,
+              "width": 1363,
+              "height": 936,
+              "bytes": 93273,
+              "sha256": "34a51590467ea63993eada38d0a0b99c728fa20a948b121771c0596fe9d76b14",
+              "scope": [
+                "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+              ],
+              "capturedAt": "2026-11-13"
+            }
+          ],
+          "contextAssessment": {
+            "status": "alias_attitude_without_experience",
+            "displayLabel": "选择态度 · 未说明理由或经历",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+            "batch": "alias-comments-20261113"
+          }
+        },
+        {
+          "teacher": "徐伟",
+          "author": "芝麻连连看",
+          "date_display": "2025-04-06",
+          "relationship": "未说明本人接触关系",
+          "content": "芝麻连连看明确、反复表达不要选择XW的态度；该条及可见追问未说明原因、学位或本人接触关系。",
+          "limits": "这是X01同一帖子中的评论，不增加独立帖子数量。；未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。",
+          "use_status": "选择态度 · 未说明理由或经历",
+          "aliasReviewId": "sr-alias-comments-20261113-xw",
+          "aliasReviewIds": [
+            "sr-alias-comments-20261113-xw"
+          ],
+          "sourceCommentKey": "X01:芝麻连连看:xw",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/x01-xw-dong-20261113.jpg",
+              "caption": "董与XW评论、追问及本帖教师名单",
+              "sourceId": "X01",
+              "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false,
+              "width": 1363,
+              "height": 936,
+              "bytes": 96979,
+              "sha256": "62e9b6000515837900671ebd284725ad760de3720cf09a1ba48a8637fd621da5",
+              "scope": [
+                "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+              ],
+              "capturedAt": "2026-11-13"
+            }
+          ],
+          "contextAssessment": {
+            "status": "alias_attitude_without_experience",
+            "displayLabel": "选择态度 · 未说明理由或经历",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+            "batch": "alias-comments-20261113"
+          }
+        },
+        {
+          "teacher": "蔡显军",
+          "author": "空白昵称",
+          "date_display": "2025-04-03",
+          "relationship": "未说明本人接触关系",
+          "content": "昵称显示为空白字符的评论者直接写“避雷cxj”；回复有人追问细节，但恢复的内容没有说明具体原因或本人接触关系。",
+          "limits": "这是X01同一帖子中的评论，不增加独立帖子数量。；未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。",
+          "use_status": "选择态度 · 未说明理由或经历",
+          "aliasReviewId": "sr-alias-comments-20261113-cxj",
+          "aliasReviewIds": [
+            "sr-alias-comments-20261113-cxj"
+          ],
+          "sourceCommentKey": "X01:ᅠᅠᅠ:cxj",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/x01-cxj-20261113.jpg",
+              "caption": "CXJ劝退原句、追问及本帖教师名单",
+              "sourceId": "X01",
+              "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false,
+              "width": 1363,
+              "height": 936,
+              "bytes": 86317,
+              "sha256": "0e70d263283122f2779cd9b9392ddbef66a0a94ebc90d7fe9e1ebed007175162",
+              "scope": [
+                "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+              ],
+              "capturedAt": "2026-11-13"
+            }
+          ],
+          "contextAssessment": {
+            "status": "alias_attitude_without_experience",
+            "displayLabel": "选择态度 · 未说明理由或经历",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+            "batch": "alias-comments-20261113"
+          }
         }
       ],
       "limitations": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
@@ -22938,6 +24553,86 @@
             "reason": "语气无法确认；目前存档仅有摘要，不足以判断真心推荐或反串",
             "scope": "复核既有摘记，未新增原帖或学生经历；不武断确认反讽。",
             "batch": "review-context-audit-round10"
+          }
+        },
+        {
+          "teacher": "张兴亮",
+          "author": "Y.",
+          "date_display": "03-31（年份未显示）",
+          "relationship": "未说明本人接触关系",
+          "content": "Y.在楼主点名张兴亮、黄中生的评论下回复“亮亮老师很好，非常推荐”；未说明本人学位或接触关系。",
+          "limits": "该条是X02既有帖中的回复，不是新的独立帖子；没有具体指导过程。",
+          "use_status": "选择态度 · 未说明理由或经历",
+          "aliasReviewId": "sr-alias-comments-20261113-zxl-liangliang",
+          "aliasReviewIds": [
+            "sr-alias-comments-20261113-zxl-liangliang"
+          ],
+          "sourceCommentKey": "X02:Y.:03-31:亮亮",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/x02-liangliang-20261113.jpg",
+              "caption": "上层张兴亮和黄中生全名、Y.的亮亮推荐回复",
+              "sourceId": "X02",
+              "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false,
+              "width": 1363,
+              "height": 936,
+              "bytes": 92852,
+              "sha256": "b01fe8f9f047d9566d283f22c1b4120cdc9e35fc6369f6aa94808ac4546f2261",
+              "scope": [
+                "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+              ],
+              "capturedAt": "2026-11-13"
+            }
+          ],
+          "contextAssessment": {
+            "status": "alias_attitude_without_experience",
+            "displayLabel": "选择态度 · 未说明理由或经历",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+            "batch": "alias-comments-20261113"
+          }
+        },
+        {
+          "teacher": "徐伟",
+          "author": "小张要长高",
+          "date_display": "03-31（年份未显示）",
+          "relationship": "未说明本人接触关系",
+          "content": "小张要长高称XW老师要求很高、有点严格；未说明学位、本人接触关系或具体要求内容。",
+          "limits": "这是既有X02同一帖子中的评论，不增加独立帖子数量。；未说明学位、本人接触关系或具体原因；只呈现原评论态度，不能概括全部学生。；只显示03-31，没有年份；不根据帖子ID或抓取时间补定评论年份。",
+          "use_status": "主观印象 · 接触关系未说明",
+          "aliasReviewId": "sr-alias-comments-20261113-xw-x02",
+          "aliasReviewIds": [
+            "sr-alias-comments-20261113-xw-x02"
+          ],
+          "sourceCommentKey": "X02:小张要长高:03-31:xw",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/x02-xw-20261113.jpg",
+              "caption": "XW要求程度原句、作者回复及许汉y问句",
+              "sourceId": "X02",
+              "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false,
+              "width": 1363,
+              "height": 936,
+              "bytes": 88800,
+              "sha256": "a4312ee26d5ac150b741748a46bf3a2024678040d3c0e3027a6fb00598dda17f",
+              "scope": [
+                "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+              ],
+              "capturedAt": "2026-11-13"
+            }
+          ],
+          "contextAssessment": {
+            "status": "alias_attitude_without_experience",
+            "displayLabel": "主观印象 · 接触关系未说明",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
+            "batch": "alias-comments-20261113"
           }
         }
       ],
@@ -29435,6 +31130,102 @@
           "reviewId": "sr-129b0dd973f0d1",
           "kind": "actual-browser-screenshot",
           "textAltered": false
+        },
+        {
+          "src": "./evidence/xhs/x01-xw-dong-20261113.jpg",
+          "caption": "董与XW评论、追问及本帖教师名单",
+          "sourceId": "X01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "width": 1363,
+          "height": 936,
+          "bytes": 96979,
+          "sha256": "62e9b6000515837900671ebd284725ad760de3720cf09a1ba48a8637fd621da5",
+          "scope": [
+            "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+          ],
+          "capturedAt": "2026-11-13"
+        },
+        {
+          "src": "./evidence/xhs/x01-cxj-20261113.jpg",
+          "caption": "CXJ劝退原句、追问及本帖教师名单",
+          "sourceId": "X01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "width": 1363,
+          "height": 936,
+          "bytes": 86317,
+          "sha256": "0e70d263283122f2779cd9b9392ddbef66a0a94ebc90d7fe9e1ebed007175162",
+          "scope": [
+            "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+          ],
+          "capturedAt": "2026-11-13"
+        },
+        {
+          "src": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+          "caption": "TZD与ZL同条推荐、DBR原句及教师名单",
+          "sourceId": "X01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "width": 1363,
+          "height": 936,
+          "bytes": 89529,
+          "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
+          "scope": [
+            "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+          ],
+          "capturedAt": "2026-11-13"
+        },
+        {
+          "src": "./evidence/xhs/x01-pj-zxl-20261113.jpg",
+          "caption": "潘俊提名、张兴亮应援及上层课程评论",
+          "sourceId": "X01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "width": 1363,
+          "height": 936,
+          "bytes": 93273,
+          "sha256": "34a51590467ea63993eada38d0a0b99c728fa20a948b121771c0596fe9d76b14",
+          "scope": [
+            "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+          ],
+          "capturedAt": "2026-11-13"
+        },
+        {
+          "src": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+          "caption": "李仲泽推荐、张兴亮提名及教师名单",
+          "sourceId": "X01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "width": 1363,
+          "height": 936,
+          "bytes": 104838,
+          "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
+          "scope": [
+            "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+          ],
+          "capturedAt": "2026-11-13"
+        },
+        {
+          "src": "./evidence/xhs/x01-lgc-20261113.jpg",
+          "caption": "刘国城大一会计学课程评论与作者回复",
+          "sourceId": "X01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "width": 1363,
+          "height": 936,
+          "bytes": 94409,
+          "sha256": "8fe6d54e6c3b7692479906ea09328eebf8f77b8ec8b227760b502f4d87d031d0",
+          "scope": [
+            "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+          ],
+          "capturedAt": "2026-11-13"
         }
       ],
       "latestPublicReadingScope": "本次读到当前已加载的顶层评论与可见跟评；登录后全部评论和折叠支线未读。不称95条逐字全读。",
@@ -29458,6 +31249,10 @@
           "sr-6f547fefb6425f"
         ],
         "scope": "只修正既有弱提名的语气和用途，不算新来源；表面褒贬、口号和附和不能替代具体经历。"
+      },
+      "lastCommentReading": {
+        "date": "2026-11-13",
+        "scope": "实际核对相关可见评论和回复，并保存对应原网页截图；未声称读完全部评论。"
       }
     },
     "X02": {
@@ -29556,6 +31351,54 @@
           "reviewId": "sr-c8216c4fc1a3f7",
           "kind": "actual-browser-screenshot",
           "textAltered": false
+        },
+        {
+          "src": "./evidence/xhs/x02-gfl-20261113.jpg",
+          "caption": "高凤莲推荐、作者回复及本帖教师名单",
+          "sourceId": "X02",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "width": 1363,
+          "height": 936,
+          "bytes": 103616,
+          "sha256": "c50bc40fe957186a56983ef07c0fc4c001a0953e714cc06946f6364fd86b812a",
+          "scope": [
+            "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+          ],
+          "capturedAt": "2026-11-13"
+        },
+        {
+          "src": "./evidence/xhs/x02-xw-20261113.jpg",
+          "caption": "XW要求程度原句、作者回复及许汉y问句",
+          "sourceId": "X02",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "width": 1363,
+          "height": 936,
+          "bytes": 88800,
+          "sha256": "a4312ee26d5ac150b741748a46bf3a2024678040d3c0e3027a6fb00598dda17f",
+          "scope": [
+            "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+          ],
+          "capturedAt": "2026-11-13"
+        },
+        {
+          "src": "./evidence/xhs/x02-liangliang-20261113.jpg",
+          "caption": "上层张兴亮和黄中生全名、Y.的亮亮推荐回复",
+          "sourceId": "X02",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "width": 1363,
+          "height": 936,
+          "bytes": 92852,
+          "sha256": "b01fe8f9f047d9566d283f22c1b4120cdc9e35fc6369f6aa94808ac4546f2261",
+          "scope": [
+            "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+          ],
+          "capturedAt": "2026-11-13"
         }
       ],
       "latestPublicReadingScope": "本次读到当前已加载的顶层评论与可见跟评；登录后全部评论和折叠支线未读。不称52条逐字全读。",
@@ -29565,6 +31408,10 @@
           "sr-56c2d22b39f07a"
         ],
         "scope": "只修正既有弱提名的语气和用途，不算新来源；表面褒贬、口号和附和不能替代具体经历。"
+      },
+      "lastCommentReading": {
+        "date": "2026-11-13",
+        "scope": "实际核对相关可见评论和回复，并保存对应原网页截图；未声称读完全部评论。"
       }
     },
     "X03": {
@@ -37752,12 +39599,12 @@
     {
       "id": "mentor-guide",
       "title": "导师选择参考",
-      "url": "./downloads/mentor-guide.docx?v=ff998093e618",
+      "url": "./downloads/mentor-guide.docx?v=46f3acd1e168",
       "format": "docx",
       "description": "34位导师，含学生评价、缩写对照与公开学生去向，保留来源链接",
       "filename": "mentor-guide.docx",
-      "bytes": 71177,
-      "sha256": "ff998093e618c0945f0b772d219667d2ec4bbeb8e7e729691a24bb8b816059af"
+      "bytes": 74365,
+      "sha256": "46f3acd1e1689bd78ca6c3aab31a5778dd350e9bed2bd5ed97d8ba42b0bda92f"
     },
     {
       "id": "life-guide",
@@ -37772,12 +39619,12 @@
     {
       "id": "evidence-index",
       "title": "原帖与官方证据索引",
-      "url": "./downloads/evidence-index.xlsx?v=bd48ceb4a146",
+      "url": "./downloads/evidence-index.xlsx?v=67cdebcee624",
       "format": "xlsx",
       "description": "来源、导师评价、缩写、学生去向和实习索引，可筛选并点击原始链接",
       "filename": "evidence-index.xlsx",
-      "bytes": 554580,
-      "sha256": "bd48ceb4a14653ee032802d4ef5cb69bd736c1df9813f85267cbecd6d867550a"
+      "bytes": 551812,
+      "sha256": "67cdebcee624dea5cfa233183b455a7a4590646f386c937e20a4847609167d83"
     }
   ],
   "officialEvidence": [
@@ -52029,7 +53876,7 @@
       "label": "姓名已对应",
       "reason": "南审选导帖语境与当前名录姓名对应。",
       "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
-      "publishUnderNamedMentor": false,
+      "publishUnderNamedMentor": true,
       "mentorIds": [
         "mentor-04"
       ]
@@ -52039,8 +53886,8 @@
       "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
       "sourceCode": "X01",
       "status": "unresolved",
-      "label": "已见线索但归属未确认",
-      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
+      "label": "称呼候选，未确认全名",
+      "reason": "仅姓氏称呼，尚缺同楼全名确认。",
       "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
       "publishUnderNamedMentor": false
     },
@@ -52062,9 +53909,9 @@
       "alias": "崔老师",
       "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
       "sourceCode": "X01",
-      "status": "mapped_identity",
-      "label": "姓名已对应",
-      "reason": "当前名录中的姓氏对照；具体经历另看原文。",
+      "status": "unresolved",
+      "label": "称呼候选，未确认全名",
+      "reason": "仅姓氏称呼，尚缺同楼全名确认。",
       "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
       "publishUnderNamedMentor": false,
       "mentorIds": [
@@ -52092,7 +53939,7 @@
       "label": "姓名已对应",
       "reason": "南审选导帖语境与当前名录姓名对应。",
       "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
-      "publishUnderNamedMentor": false,
+      "publishUnderNamedMentor": true,
       "mentorIds": [
         "mentor-19"
       ]
@@ -52142,9 +53989,9 @@
       "alias": "高老师",
       "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
       "sourceCode": "X02",
-      "status": "mapped_identity",
-      "label": "姓名已对应",
-      "reason": "当前名录中的姓氏对照；不跨帖推定接触关系。",
+      "status": "unresolved",
+      "label": "称呼候选，未确认全名",
+      "reason": "仅姓氏称呼，尚缺同楼全名确认。",
       "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
       "publishUnderNamedMentor": false,
       "mentorIds": [
@@ -58400,11 +60247,13 @@
         "mentor-04"
       ],
       "status": "matched",
-      "basis": "南审选导帖语境与当前名录姓名对应。",
+      "basis": "本帖教师名单与对应评论语境核对；原句、回复和接触身份见导师资料。",
       "sourceIds": [
         "X01"
       ],
-      "reviewIds": [],
+      "reviewIds": [
+        "sr-alias-comments-20261113-zl"
+      ],
       "observedInComment": true
     },
     {
@@ -58663,12 +60512,15 @@
         "mentor-19"
       ],
       "status": "matched",
-      "basis": "南审选导帖语境与当前名录姓名对应。",
+      "basis": "本帖教师名单与对应评论语境核对；原句、回复和接触身份见导师资料。",
       "sourceIds": [
         "X01",
         "X02"
       ],
-      "reviewIds": [],
+      "reviewIds": [
+        "sr-alias-comments-20261113-xw",
+        "sr-alias-comments-20261113-xw-x02"
+      ],
       "observedInComment": true
     },
     {
@@ -58717,11 +60569,13 @@
         "mentor-23"
       ],
       "status": "matched",
-      "basis": "南审选导帖语境与当前名录姓名对应。",
+      "basis": "本帖教师名单与对应评论语境核对；原句、回复和接触身份见导师资料。",
       "sourceIds": [
         "X01"
       ],
-      "reviewIds": [],
+      "reviewIds": [
+        "sr-alias-comments-20261113-tzd"
+      ],
       "observedInComment": true
     },
     {
@@ -58752,11 +60606,13 @@
         "mentor-25"
       ],
       "status": "matched",
-      "basis": "南审选导帖语境与当前名录姓名对应。",
+      "basis": "本帖教师名单与对应评论语境核对；原句、回复和接触身份见导师资料。",
       "sourceIds": [
         "X01"
       ],
-      "reviewIds": [],
+      "reviewIds": [
+        "sr-alias-comments-20261113-cxj"
+      ],
       "observedInComment": true
     },
     {
@@ -58890,7 +60746,7 @@
         "mentor-08"
       ],
       "status": "matched",
-      "basis": "部分姓名对应；原帖这句是询问，不是评价。",
+      "basis": "不想说的半姓名问句可对应许汉友；跟评只提职务，没有个人评价。",
       "sourceIds": [
         "X02"
       ],
@@ -58905,8 +60761,8 @@
       "mentorIds": [
         "mentor-07"
       ],
-      "status": "matched",
-      "basis": "当前名录中的姓氏对照；具体经历另看原文。",
+      "status": "ambiguous",
+      "basis": "这里只出现姓氏称呼，尚缺同楼全名确认；列名录内候选，不把该称呼的评价直接归名。",
       "sourceIds": [
         "X01"
       ],
@@ -58921,8 +60777,8 @@
       "mentorIds": [
         "mentor-06"
       ],
-      "status": "matched",
-      "basis": "当前名录中的姓氏对照；具体经历另看原文。",
+      "status": "ambiguous",
+      "basis": "这里只出现姓氏称呼，尚缺同楼全名确认；列名录内候选，不把该称呼的评价直接归名。",
       "sourceIds": [
         "X01"
       ],
@@ -58988,11 +60844,13 @@
         "mentor-01"
       ],
       "status": "matched",
-      "basis": "当前名录中的姓氏对照；不跨帖推定接触关系。",
+      "basis": "本帖名单唯一董姓，结合该楼书记指代与同帖全名评论；单姓楼与DBR楼分开保留。",
       "sourceIds": [
         "X01"
       ],
-      "reviewIds": [],
+      "reviewIds": [
+        "sr-alias-comments-20261113-dong-thread"
+      ],
       "observedInComment": true
     },
     {
@@ -59001,10 +60859,44 @@
       "mentorIds": [
         "mentor-09"
       ],
-      "status": "matched",
-      "basis": "当前名录中的姓氏对照；不跨帖推定接触关系。",
+      "status": "ambiguous",
+      "basis": "这里只出现姓氏称呼，尚缺同楼全名确认；列名录内候选，不把该称呼的评价直接归名。",
       "sourceIds": [
         "X02"
+      ],
+      "reviewIds": [],
+      "observedInComment": true
+    },
+    {
+      "alias": "亮亮",
+      "variants": [
+        "亮亮"
+      ],
+      "mentorIds": [
+        "mentor-13"
+      ],
+      "status": "matched",
+      "basis": "直属上层点名张兴亮、黄中生；Y.回复“亮亮”，与张兴亮对应。同楼画面保留。",
+      "sourceIds": [
+        "X02"
+      ],
+      "reviewIds": [
+        "sr-alias-comments-20261113-zxl-liangliang"
+      ],
+      "observedInComment": true
+    },
+    {
+      "alias": "蔡老师",
+      "variants": [
+        "蔡老师"
+      ],
+      "mentorIds": [
+        "mentor-25"
+      ],
+      "status": "ambiguous",
+      "basis": "单姓“蔡老师好，无脑推”下有人追问是否认真；暂列蔡显军候选，不把语气歧义归为实名强烈推荐。",
+      "sourceIds": [
+        "X01"
       ],
       "reviewIds": [],
       "observedInComment": true

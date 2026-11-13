@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-13",
+  "scope": "新增公开帖子与缩写评价检索；不重读根代理负责的X01/X02核心帖。",
+  "queries": [
+    "南审 导师 yby",
+    "南京审计大学 导师 小红书 评价",
+    "南审 mpacc 导师 推荐 评论",
+    "南审 导师 MDL",
+    "南审 导师 推荐 site:xiaohongshu.com",
+    "南京审计大学 导师 避雷 site:tieba.baidu.com",
+    "南审 导师 XW/WJY/CXJ",
+    "南审 mpacc 选导师 小红书",
+    "南京审计大学 李仲泽 推荐 小红书",
+    "南京审计大学 导师评价 学生",
+    "南审 会计专硕 导师推荐 评论",
+    "南审 导师 TZD",
+    "南审 会计 选导师 推荐 贴吧 经验",
+    "南京审计大学 谭志东 导师 评价 学生",
+    "南京审计大学 徐伟 导师 评价 学生",
+    "南审 会计 专硕 导师 小红书 蔡显军"
+  ],
+  "tinyfishQueries": [
+    "南京审计大学 mpacc 导师 推荐 小红书",
+    "南审 导师 XW WJY TZD CXJ ZL 缩写"
+  ],
+  "excludedResults": [
+    {
+      "category": "官方资料",
+      "reason": "搜索主要返回官方简介、培养方案、导师制度和赛事报道；不是新增评论区个人评价。"
+    },
+    {
+      "category": "错校",
+      "url": "https://tsight.io/articles/14573209",
+      "title": "南信大会计专硕选导实战",
+      "reason": "对象为南京信息工程大学，不能归入南京审计大学。"
+    },
+    {
+      "category": "广告",
+      "reason": "留学中介SEO文章中的所谓小红书案例不属于南审导师评价。"
+    },
+    {
+      "category": "论坛目录",
+      "url": "https://waptieba.baidu.com/f?kw=%E5%8D%97%E4%BA%AC%E5%AE%A1%E8%AE%A1%E5%A4%A7%E5%AD%A6&mo_device=1",
+      "reason": "只返回吧目录和答疑帖入口，未取得具体导师评论。"
+    }
+  ],
+  "summary": "关键词搜索另发现匿名缩写站，但作者身份及姓名未能确认，没有把其中内容归入实名导师评价。新增可采用评论来自X01/X02相关楼层重读。",
+  "unassignedUrls": [
+    "https://www.ykakaoyan.cn/tutor/16083",
+    "https://www.ykakaoyan.cn/tutor/15263",
+    "https://www.ykakaoyan.cn/tutor/310704"
+  ],
+  "integration": "未归属内容不计入55条实名记录；不以名录猜测替代同楼或同帖语境。"
+}

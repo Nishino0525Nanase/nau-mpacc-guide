@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-13",
+  "tests": 161,
+  "browserChecks": [
+    "TZD exact search returns 谭志东 and its own shared nomination",
+    "CXJ exact search and detail show explicit avoidance before other material",
+    "亮亮 exact search returns 张兴亮 with same-thread parent names",
+    "avoid filter yields 3 teachers; recommendation filter yields 3",
+    "new comment thumbnails load and open the independent in-site viewer",
+    "closing image preserves mentor detail; full roster remains34 and priority range18",
+    "desktop viewport1363px, document width no larger thanviewport"
+  ],
+  "newSourceScreenshots": 9,
+  "mobileLimit": "未进行手机真机或移动视口视觉验收",
+  "screenshot": "qa/alias-comments-20261113.jpg",
+  "automatedTests": {
+    "passed": 161,
+    "failed": 0
+  },
+  "attachments": {
+    "mentorWordPages": 26,
+    "reviewRecords": 55,
+    "spreadsheetSheets": 16,
+    "tables": 17,
+    "formulas": 1734,
+    "formulaErrors": 0
+  },
+  "sourceCommentIndex": "X01/X02 comments synchronized with mentor records, same comments deduplicated"
+}

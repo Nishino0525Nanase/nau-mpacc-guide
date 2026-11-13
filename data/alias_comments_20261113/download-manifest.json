@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "filename": "mentor-guide.docx",
+      "bytes": 74365,
+      "sha256": "46f3acd1e1689bd78ca6c3aab31a5778dd350e9bed2bd5ed97d8ba42b0bda92f",
+      "url": "./downloads/mentor-guide.docx?v=46f3acd1e168"
+    },
+    {
+      "filename": "life-guide.docx",
+      "bytes": 63367,
+      "sha256": "1861d3b0184e077d123accf3e6ea63ed50420c9e09a732e816400ca1832c9f25",
+      "url": "./downloads/life-guide.docx?v=1861d3b0184e"
+    },
+    {
+      "filename": "evidence-index.xlsx",
+      "bytes": 551812,
+      "sha256": "67cdebcee624dea5cfa233183b455a7a4590646f386c937e20a4847609167d83",
+      "url": "./downloads/evidence-index.xlsx?v=67cdebcee624"
+    }
+  ]
+}

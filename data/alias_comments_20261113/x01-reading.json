@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-13",
+  "sourceId": "X01",
+  "currentRunId": "4cb5487e-9979-4e57-a59e-b13ccad9697d",
+  "historicalRunIds": [
+    "ce8b9ad0-74d8-4934-93be-1af54d6f3bec",
+    "9f823864-a83d-4fe6-b91c-8dc3aa2eff29"
+  ],
+  "method": "历史读取恢复，再按原网页实际可见楼层截图核对",
+  "images": "data/alias_comments_20261113/image-manifest.json",
+  "dateCorrections": {
+    "XW": "2025-04-06",
+    "TZD/ZL": "2025-04-09",
+    "张兴亮wm": "2025-04-03",
+    "CXJ追问": "07-06，年份未显示"
+  },
+  "newlyIdentifiedExistingComment": {
+    "id": "sr-alias-20261113-dbr",
+    "narrator": "涂卡图🐰",
+    "quote": "敢不敢选d b r",
+    "date": "2025-04-02"
+  },
+  "scope": "仅相关可见楼层与实际读取回复；未声称读完95评论和所有折叠回复。",
+  "finalRecords": "dist/data/site-data.json"
+}

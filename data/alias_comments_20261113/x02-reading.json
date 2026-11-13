@@ -1,0 +1,77 @@
+{
+  "runId": "e3a2997e-6104-4f92-96c6-03235c91ef6f",
+  "runUrl": "https://agent.tinyfish.ai/runs/e3a2997e-6104-4f92-96c6-03235c91ef6f",
+  "postId": "69cba3e80000000028008246",
+  "sourceId": "X02",
+  "postTitle": "nau会计专硕导师求推荐",
+  "postAuthor": "17元博物馆✨",
+  "date": "03-31（年份未显示）",
+  "observations": [
+    {
+      "author": "小张要长高",
+      "date": "03-31（年份未显示）",
+      "text": "xw老师要求很高，有点严格",
+      "alias": "xw",
+      "kind": "opinion",
+      "firsthand": null,
+      "reply": {
+        "author": "17元博物馆✨",
+        "text": "收到！谢谢宝宝！"
+      }
+    },
+    {
+      "author": "进击的杨某",
+      "date": "03-31（年份未显示）",
+      "text": "那必须高凤莲",
+      "kind": "recommendation",
+      "relationship": "未说明"
+    },
+    {
+      "author": "不想说",
+      "date": "03-31（年份未显示）",
+      "text": "想问一下许汉 y 老师怎么样呀，有没有了解的",
+      "alias": "许汉 y",
+      "kind": "question",
+      "reply": {
+        "author": "大晴",
+        "date": "03-31（年份未显示）",
+        "text": "内审学院的院长",
+        "kind": "historical_role_context"
+      }
+    },
+    {
+      "author": "Y.",
+      "date": "03-31（年份未显示）",
+      "text": "亮亮老师很好，非常推荐",
+      "alias": "亮亮",
+      "kind": "recommendation_unresolved",
+      "replies": "3条回复未完整展开，不能据昵称确认姓名"
+    },
+    {
+      "author": "小红薯64C310D3",
+      "date": "09-24（年份未显示）",
+      "text": "想问问，贺建刚老师怎么样啊",
+      "kind": "question"
+    }
+  ],
+  "limits": [
+    "公开可见主评及初段回复；展开其他回复触发登录弹窗，已停止，没有绕过。",
+    "WJY等未在本次可见范围出现，不代表整帖没有。",
+    "求助者的偏好不归到具体导师；严格不自动等同劝退。",
+    "未取得可导出的新评论截图。"
+  ],
+  "liveBrowserFollowup": {
+    "images": [
+      "x02-gfl-20261113.jpg",
+      "x02-xw-20261113.jpg",
+      "x02-liangliang-20261113.jpg"
+    ],
+    "resolvedNickname": {
+      "alias": "亮亮",
+      "mentor": "张兴亮",
+      "basis": "直属上层点名张兴亮、黄中生；Y.的回复与上层姓名同框。",
+      "quote": "亮亮老师很好，非常推荐"
+    },
+    "scope": "可见相关评论与回复，不宣称全部52条完整展开。"
+  }
+}

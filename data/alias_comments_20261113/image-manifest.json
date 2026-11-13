@@ -1,0 +1,146 @@
+[
+  {
+    "src": "./evidence/xhs/x01-xw-dong-20261113.jpg",
+    "caption": "董与XW评论、追问及本帖教师名单",
+    "sourceId": "X01",
+    "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+    "kind": "actual-browser-screenshot",
+    "textAltered": false,
+    "width": 1363,
+    "height": 936,
+    "bytes": 96979,
+    "sha256": "62e9b6000515837900671ebd284725ad760de3720cf09a1ba48a8637fd621da5",
+    "scope": [
+      "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+    ],
+    "capturedAt": "2026-11-13"
+  },
+  {
+    "src": "./evidence/xhs/x01-cxj-20261113.jpg",
+    "caption": "CXJ劝退原句、追问及本帖教师名单",
+    "sourceId": "X01",
+    "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+    "kind": "actual-browser-screenshot",
+    "textAltered": false,
+    "width": 1363,
+    "height": 936,
+    "bytes": 86317,
+    "sha256": "0e70d263283122f2779cd9b9392ddbef66a0a94ebc90d7fe9e1ebed007175162",
+    "scope": [
+      "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+    ],
+    "capturedAt": "2026-11-13"
+  },
+  {
+    "src": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+    "caption": "TZD与ZL同条推荐、DBR原句及教师名单",
+    "sourceId": "X01",
+    "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+    "kind": "actual-browser-screenshot",
+    "textAltered": false,
+    "width": 1363,
+    "height": 936,
+    "bytes": 89529,
+    "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
+    "scope": [
+      "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+    ],
+    "capturedAt": "2026-11-13"
+  },
+  {
+    "src": "./evidence/xhs/x01-pj-zxl-20261113.jpg",
+    "caption": "潘俊提名、张兴亮应援及上层课程评论",
+    "sourceId": "X01",
+    "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+    "kind": "actual-browser-screenshot",
+    "textAltered": false,
+    "width": 1363,
+    "height": 936,
+    "bytes": 93273,
+    "sha256": "34a51590467ea63993eada38d0a0b99c728fa20a948b121771c0596fe9d76b14",
+    "scope": [
+      "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+    ],
+    "capturedAt": "2026-11-13"
+  },
+  {
+    "src": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+    "caption": "李仲泽推荐、张兴亮提名及教师名单",
+    "sourceId": "X01",
+    "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+    "kind": "actual-browser-screenshot",
+    "textAltered": false,
+    "width": 1363,
+    "height": 936,
+    "bytes": 104838,
+    "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
+    "scope": [
+      "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+    ],
+    "capturedAt": "2026-11-13"
+  },
+  {
+    "src": "./evidence/xhs/x01-lgc-20261113.jpg",
+    "caption": "刘国城大一会计学课程评论与作者回复",
+    "sourceId": "X01",
+    "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+    "kind": "actual-browser-screenshot",
+    "textAltered": false,
+    "width": 1363,
+    "height": 936,
+    "bytes": 94409,
+    "sha256": "8fe6d54e6c3b7692479906ea09328eebf8f77b8ec8b227760b502f4d87d031d0",
+    "scope": [
+      "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+    ],
+    "capturedAt": "2026-11-13"
+  },
+  {
+    "src": "./evidence/xhs/x02-gfl-20261113.jpg",
+    "caption": "高凤莲推荐、作者回复及本帖教师名单",
+    "sourceId": "X02",
+    "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+    "kind": "actual-browser-screenshot",
+    "textAltered": false,
+    "width": 1363,
+    "height": 936,
+    "bytes": 103616,
+    "sha256": "c50bc40fe957186a56983ef07c0fc4c001a0953e714cc06946f6364fd86b812a",
+    "scope": [
+      "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+    ],
+    "capturedAt": "2026-11-13"
+  },
+  {
+    "src": "./evidence/xhs/x02-xw-20261113.jpg",
+    "caption": "XW要求程度原句、作者回复及许汉y问句",
+    "sourceId": "X02",
+    "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+    "kind": "actual-browser-screenshot",
+    "textAltered": false,
+    "width": 1363,
+    "height": 936,
+    "bytes": 88800,
+    "sha256": "a4312ee26d5ac150b741748a46bf3a2024678040d3c0e3027a6fb00598dda17f",
+    "scope": [
+      "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+    ],
+    "capturedAt": "2026-11-13"
+  },
+  {
+    "src": "./evidence/xhs/x02-liangliang-20261113.jpg",
+    "caption": "上层张兴亮和黄中生全名、Y.的亮亮推荐回复",
+    "sourceId": "X02",
+    "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+    "kind": "actual-browser-screenshot",
+    "textAltered": false,
+    "width": 1363,
+    "height": 936,
+    "bytes": 92852,
+    "sha256": "b01fe8f9f047d9566d283f22c1b4120cdc9e35fc6369f6aa94808ac4546f2261",
+    "scope": [
+      "原网页可见评论与上下文；不代表全部折叠回复均已读取。"
+    ],
+    "capturedAt": "2026-11-13"
+  }
+]

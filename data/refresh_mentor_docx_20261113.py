@@ -46,6 +46,7 @@ def main():
     registry = data['sourceRegistry']
     mentors = data['mentors']
     by_id = {m['id']: m for m in mentors}
+    review_count = sum(len(m['studentReviews']['reviews']) for m in mentors)
     doc = Document(TARGET)
     for element in list(doc.element.body):
         if element.tag != qn('w:sectPr'):
@@ -225,7 +226,7 @@ def main():
         source_line(card.get('sourceCodes', []))
 
     heading('学生评价与原帖语境', page=True)
-    para('以下44条为可归属记录，包含笼统提名、课程接触、转述和指导自述，不是44名MPAcc直系学生。同一评论者的跟评合并；学校精选访谈有选择偏差。', size=10)
+    para(f'以下{review_count}条为可归属记录，包含笼统提名、课程接触、转述和指导自述，不能视作同等数量的MPAcc直系学生。同一评论的多个导师引用只算一条原评论；学校精选访谈有选择偏差。', size=10)
     for m in mentors:
         reviews = m['studentReviews']['reviews']
         if not reviews:
@@ -236,15 +237,27 @@ def main():
             relationship = clean(r.get('relationship') or '接触关系未说明')
             meta = ' · '.join(str(v) for v in [r.get('narrator') or '评论者未记录', r.get('date') or '评论日期未显示', r.get('degree') or '学位未说明', relationship] if v)
             para(meta, size=9, after=3, keep=True)
+            signal = r.get('selectionSignal')
+            signal_label = ''
+            if signal and signal.get('intensity') in ['strong', 'explicit'] and signal.get('direction') in ['avoid', 'recommend']:
+                strength = '强烈' if signal['intensity'] == 'strong' else '明确'
+                attitude = '劝退' if signal['direction'] == 'avoid' else '推荐'
+                signal_label = '原帖' + strength + attitude
             note = r.get('contextNotes')
             if note:
                 kind = note['excerpt']['kind']
                 label = '原话片段' if kind == 'visible_quote' else '此前摘记用词' if kind == 'recorded_quote' else '已存摘要'
-                para(label + '：' + note['excerpt']['text'], after=3)
-                para('上下文：' + clean(note['context']), size=10, after=3)
-                para('可能含义：' + note['interpretation']['text'] + ' ' + clean(note['interpretation'].get('alternative')), size=10, after=3)
-                para('边界：' + clean(note['limits']), size=9, after=4)
+                para((signal_label + '  ' if signal_label else '') + label + '：' + note['excerpt']['text'], bold=bool(signal_label), after=3)
+                if note.get('context'):
+                    para('上下文：' + clean(note['context']), size=10, after=3)
+                interpretation = note.get('interpretation') or {}
+                if interpretation.get('text'):
+                    para('可能含义：' + interpretation['text'] + ' ' + clean(interpretation.get('alternative')), size=10, after=3)
+                if note.get('limits'):
+                    para('边界：' + clean(note['limits']), size=9, after=4)
             else:
+                if signal_label:
+                    para(signal_label, size=10, bold=True, after=3)
                 para(r['text'], after=3)
                 if r['experienceType'] == 'general':
                     boundaries = ['此条只有提名或总体印象，不推定MPAcc日常指导方式、实习安排或毕业要求。']

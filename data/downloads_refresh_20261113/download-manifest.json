@@ -3,9 +3,9 @@
     {
       "id": "mentor-guide",
       "filename": "mentor-guide.docx",
-      "url": "./downloads/mentor-guide.docx?v=ff998093e618",
-      "bytes": 71177,
-      "sha256": "ff998093e618c0945f0b772d219667d2ec4bbeb8e7e729691a24bb8b816059af"
+      "url": "./downloads/mentor-guide.docx?v=46f3acd1e168",
+      "bytes": 74365,
+      "sha256": "46f3acd1e1689bd78ca6c3aab31a5778dd350e9bed2bd5ed97d8ba42b0bda92f"
     },
     {
       "id": "life-guide",
@@ -17,9 +17,9 @@
     {
       "id": "evidence-index",
       "filename": "evidence-index.xlsx",
-      "url": "./downloads/evidence-index.xlsx?v=bd48ceb4a146",
-      "bytes": 554580,
-      "sha256": "bd48ceb4a14653ee032802d4ef5cb69bd736c1df9813f85267cbecd6d867550a"
+      "url": "./downloads/evidence-index.xlsx?v=67cdebcee624",
+      "bytes": 551812,
+      "sha256": "67cdebcee624dea5cfa233183b455a7a4590646f386c937e20a4847609167d83"
     }
   ]
 }

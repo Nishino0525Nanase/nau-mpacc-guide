@@ -12,6 +12,13 @@ const outputDir=path.resolve(process.env.NAU_WORKBOOK_OUTPUT||path.join(repo,'..
 const source=path.join(repo,'dist/downloads/evidence-index.xlsx');
 const baseline=path.join(outputDir,'evidence-index.before.xlsx');
 const site=JSON.parse(await fs.readFile(path.join(repo,'dist/data/site-data.json'),'utf8'));
+const scopedAliasRefresh=process.argv.includes('--alias-comments');
+const affectedSheetNames=new Set(['导师反馈','学生评价总览','姓名缩写对照']);
+const allReviews=site.mentors.flatMap(m=>m.studentReviews.reviews);
+const reviewTotal=allReviews.length;
+const reviewedMentorTotal=site.mentors.filter(m=>m.studentReviews.reviews.length).length;
+const contextTotal=allReviews.filter(r=>r.contextNotes).length;
+const signalLabel=r=>r.attribution?.status==='confirmed'&&['explicit','strong'].includes(r.selectionSignal?.intensity)&&['avoid','recommend'].includes(r.selectionSignal?.direction)?'原帖'+(r.selectionSignal.intensity==='strong'?'强烈':'明确')+(r.selectionSignal.direction==='avoid'?'劝退':'推荐'):'';
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 const arr=v=>Array.isArray(v)?v:v==null?[]:[v];
 const text=v=>v==null?'':Array.isArray(v)?v.map(text).filter(Boolean).join('\n'):typeof v==='object'?(v.text||v.label||v.summary||v.name||''):String(v);
@@ -21,13 +28,14 @@ const col=i=>{let s='';for(i++;i>0;i=Math.floor((i-1)/26))s=String.fromCharCode(
 const sourceLinks=codes=>unique(arr(codes)).map(c=>({code:c,url:safe(site.sourceRegistry[c]?.url||site.sourceRegistry[c]?.canonicalUrl||site.sourceRegistry[c]?.originalUrl),label:c+' '+text(site.sourceRegistry[c]?.title||site.sourceRegistry[c]?.label)})).filter(x=>x.url);
 const publicUrl=p=>new URL(p.replace(/^\.\//,''),'https://nishino0525nanase.github.io/nau-mpacc-guide/').href;
 const names=ids=>arr(ids).map(id=>site.mentors.find(m=>m.id===id)?.name||id).join('、');
+const aliasStatusLabel=a=>a.status==='ambiguous'?(arr(a.mentorIds).length>1?'多位候选':'候选未确认'):({matched:'姓名已对应',search_only:'仅检索写法'}[a.status]||a.status);
 const datasets=[];
 await fs.mkdir(outputDir,{recursive:true});
 try{await fs.access(baseline);}catch{await fs.copyFile(source,baseline);}
 const sourceSha=sha(await fs.readFile(baseline));
 if(process.argv.includes('--finish')){await finish();process.exit(0);}
 const wb=await SpreadsheetFile.importXlsx(await FileBlob.load(baseline));
-const addSpec=s=>datasets.push({...s,headerRow:s.headerRow||6});
+const addSpec=s=>{if(!scopedAliasRefresh||affectedSheetNames.has(s.name))datasets.push({...s,headerRow:s.headerRow||6});};
 for(const s of sourceSheets(site))addSpec(s);
 
 // One row per attributable review, including the original identity boundary.
@@ -38,11 +46,12 @@ for(const mentor of site.mentors)for(const r of mentor.studentReviews.reviews){
  const url=safe(r.sourceUrl||r.canonicalUrl)||sourceLinks(r.sourceIds)[0]?.url||'';
  const shot=shots[0]?.src||(note?.excerpt?.kind==='visible_quote'?note.excerpt.screenshotSrc:'');
  const row=[mentor.name,text(r.text),[r.degree||'未说明',r.relationship||'未说明',typeNames[r.experienceType]||r.experienceType,r.firsthand===true?'本人经历自述':r.firsthand===false?'转述／非本人':'亲历情况未明确'].join('；'),text(r.limits),r.narrator||'未留存',r.date||'未显示',url,r.sourceTitle||'',r.postAuthor||'',r.postDate||'',r.contextAssessment?.displayLabel||mentor.studentReviews.coverageLabel,text(r.sourceIds),r.id,note?({summary:'已存摘要',recorded_quote:'此前摘记原话',visible_quote:'截图可见片段'}[note.excerpt.kind]||''):'',text(note?.excerpt?.text),text(note?.context),text(note?.interpretation?.text),[text(note?.interpretation?.alternative),text(note?.limits),text(note?.excerpt?.scope)].filter(Boolean).join('\n'),shot?publicUrl(shot):''];
+ const label=signalLabel(r);if(label)row[10]=[label,row[10]].filter(Boolean).join('；');
  const rowIndex=reviewRows.length;reviewRows.push(row);
  if(url)reviewLinks.push({rowIndex,colIndex:6,url,label:'打开原文'});
  if(shot)reviewLinks.push({rowIndex,colIndex:18,url:publicUrl(shot),label:'查看已存截图'});
 }
-addSpec({name:'导师反馈',title:'导师评价原文与语境',note:'44条记录涉及22位导师。原话、已存摘要与候选解读分别列示；提名、课程、转述和MPAcc指导经历不能互换。',headers:['教师全名','评价内容','接触关系与学位','适用边界','评论者','评论日期原样','原文链接','来源帖子','发帖者','发帖日期原样','评价性质','来源编号','评价编号','片段类型','原话或已存摘要','上下文','可能的意思','解读边界与截图范围','评论截图'],rows:reviewRows,links:reviewLinks,widths:[14,66,48,66,28,25,22,42,24,25,30,24,37,22,56,64,64,76,24],tableName:'NauTable2'});
+addSpec({name:'导师反馈',title:'导师评价原文与语境',note:`${reviewTotal}条档案记录涉及${reviewedMentorTotal}位导师。原话、摘要与解读分别列示；同条评论提到多位导师的引用不算独立样本。`,headers:['教师全名','评价内容','接触关系与学位','适用边界','评论者','评论日期原样','原文链接','来源帖子','发帖者','发帖日期原样','评价性质','来源编号','评价编号','片段类型','原话或已存摘要','上下文','可能的意思','解读边界与截图范围','评论截图'],rows:reviewRows,links:reviewLinks,widths:[14,66,48,66,28,25,22,42,24,25,30,24,37,22,56,64,64,76,24],tableName:'NauTable2'});
 
 // The teacher overview stays at the original 34-teacher grain.
 const teacherRows=[],teacherLinks=[];
@@ -51,7 +60,7 @@ for(const m of site.mentors){const d=m.studentReviews,reviews=d.reviews,links=un
  const row=[m.name,d.coverageLabel,reviews.length?reviews.map(r=>r.text+'\n'+r.id).join('\n\n'):d.summary,reviews.map(r=>[r.narrator,'学位：'+(r.degree||'未说明'),'关系：'+(r.relationship||'未说明'),r.firsthand===true?'本人经历自述':r.firsthand===false?'转述／非本人':'亲历未明确',r.date].filter(Boolean).join('；')).join('\n\n'),points(d.recommendationPoints),points(d.concerns),text(d.verificationQuestions),[text(d.gaps),d.sampleCountNote].filter(Boolean).join('\n'),...Array.from({length:3},(_,i)=>links[i]||'')];
  const rowIndex=teacherRows.length;teacherRows.push(row);links.slice(0,3).forEach((url,i)=>teacherLinks.push({rowIndex,colIndex:8+i,url,label:'查看原文 '+(i+1)}));
 }
-addSpec({name:'学生评价总览',title:'学生评价总览',note:'34位导师，44条可归属记录。缩写对应姓名不等于证明亲历身份；完整评论与6条语境说明见导师反馈。',headers:['导师','评价覆盖情况','原文内容与评价编号','评论者身份与接触年份','有经历支持的推荐理由','有经历支持的提醒','选导师前应核实的问题','资料缺口','原文来源1','原文来源2','原文来源3'],rows:teacherRows,links:teacherLinks,widths:[14,28,100,88,82,82,84,84,32,32,32],tableName:'StudentReviews103'});
+addSpec({name:'学生评价总览',title:'学生评价总览',note:`${site.mentors.length}位导师，${reviewTotal}条档案记录。缩写对应姓名与本人亲历分别核对；完整评论与${contextTotal}条语境说明见导师反馈。`,headers:['导师','评价覆盖情况','原文内容与评价编号','评论者身份与接触年份','有经历支持的推荐理由','有经历支持的提醒','选导师前应核实的问题','资料缺口','原文来源1','原文来源2','原文来源3'],rows:teacherRows,links:teacherLinks,widths:[14,28,100,88,82,82,84,84,32,32,32],tableName:'StudentReviews103'});
 
 const resources=[],resourceLinks=[];
 const kindNames={internship_program:'实习项目',job_listing:'岗位列表线索',channel:'长期投递入口',historical:'历史公告',graduate_recruitment:'毕业生正式招聘',preparation_program:'校园准备项目'};
@@ -65,8 +74,8 @@ for(const x of site.internships.expansionInstitutions||[]){const links=sourceLin
 addSpec({name:'实习资源',title:'事务所与企业实习资源',note:'23家机构的53条项目或渠道，另列7条校内合作线索。申请窗口、实施期及明确截止分别列示；办公室不等于实际到岗点。',headers:['机构','分组','项目或渠道名称','资源性质','状态与适用时间','岗位城市及范围','申请对象','申请窗口','实习实施期','明确截止日期','出勤与最短时长','具体内容与准备','适用边界','南京办公室参考','项目或投递入口','原文依据1','原文依据2','原文依据3','资源编号','来源编号'],rows:resources,links:resourceLinks,widths:[18,18,44,24,60,62,56,44,46,19,45,90,90,62,30,30,30,30,38,28],tableName:'InternshipResources104',dateCols:[9]});
 
 const aliases=[],aliasLinks=[];
-for(const a of site.mentorAliases){const links=sourceLinks(a.sourceIds),rowIndex=aliases.length;aliases.push([a.alias,names(a.mentorIds),({matched:'姓名已对应',ambiguous:'多位候选',search_only:'仅检索写法'}[a.status]||a.status),a.observedInComment===true?'原帖出现':'未作为原帖评价',text(a.variants),a.basis,text(a.reviewIds),text(a.sourceIds),links[0]?.url||'']);if(links[0])aliasLinks.push({rowIndex,colIndex:8,url:links[0].url,label:links[0].code+' 原文'});}
-addSpec({name:'姓名缩写对照',title:'导师姓名与缩写对照',note:'39项写法。WY、LH等多位候选并列；仅检索写法不代表原帖出现，也不构成学生评价。',headers:['原帖或检索写法','对应姓名或候选','对应情况','原帖出现情况','其他写法','对应依据','关联评价编号','来源编号','原文'],rows:aliases,links:aliasLinks,widths:[24,32,24,28,40,70,55,30,32],tableName:'MentorAliases113'});
+for(const a of site.mentorAliases){const links=sourceLinks(a.sourceIds),rowIndex=aliases.length;aliases.push([a.alias,names(a.mentorIds),aliasStatusLabel(a),a.observedInComment===true?'原帖出现':'未作为原帖评价',text(a.variants),a.basis,text(a.reviewIds),text(a.sourceIds),links[0]?.url||'']);if(links[0])aliasLinks.push({rowIndex,colIndex:8,url:links[0].url,label:links[0].code+' 原文'});}
+addSpec({name:'姓名缩写对照',title:'导师姓名与缩写对照',note:`${site.mentorAliases.length}项写法。WY、LH等多位候选并列；仅检索写法不代表原帖出现，也不构成学生评价。`,headers:['原帖或检索写法','对应姓名或候选','对应情况','原帖出现情况','其他写法','对应依据','关联评价编号','来源编号','原文'],rows:aliases,links:aliasLinks,widths:[24,32,24,28,40,70,55,30,32],tableName:'MentorAliases113'});
 
 const outcomes=[],outcomeLinks=[];
 for(const r of site.studentOutcomes.records){const links=sourceLinks(r.sourceIds),rowIndex=outcomes.length;outcomes.push([r.studentName,r.degreeLabel||r.degree,r.cohort||'',r.graduationYear??null,r.mentorName||'未公开',r.relationship?.text||'未公开',r.outcome.type==='phd'?'读博':r.outcome.type==='employment'?'就业':'其他升学',r.outcome.organization,r.outcome.program||'',r.outcome.year??null,r.outcome.statusLabel,r.outcome.asOf||'',text(r.limits),text(r.sourceIds),links[0]?.url||'',r.id]);if(links[0])outcomeLinks.push({rowIndex,colIndex:14,url:links[0].url,label:links[0].code+' 原文'});}
@@ -110,7 +119,7 @@ for(const spec of datasets){
 }
 
 // Statistics and thesis awards remain separate from employment/PhD records.
-{
+if(!scopedAliasRefresh){
  const sh=wb.worksheets.getItem('学生公开去向');
  const start=40;const stats=site.studentOutcomes.statistics;
  sh.getRange(`A${start}:F${start+stats.length}`).values=[['统计指标','人数','适用届别','学位点','适用边界','原文'],...stats.map(r=>[r.label,r.value,r.cohort,r.scope,text(r.limits),sourceLinks(r.sourceIds)[0]?.url||''])];
@@ -127,13 +136,13 @@ for(const spec of datasets){
 }
 
 // These pages are retained historical source selections, not current totals.
-for(const name of ['正文未读线索','检索覆盖','补充证据','应用版补充','延伸核验','继续补读']){
+for(const name of scopedAliasRefresh?[]:['正文未读线索','检索覆盖','补充证据','应用版补充','延伸核验','继续补读']){
  const sh=wb.worksheets.getItem(name);
  if(name==='正文未读线索')sh.getRange('A3').values=[['6条正文未读线索，不计入采用的127条原帖与访谈，也不用于推断导师风格或学校政策。']];
  else sh.getRange('A3').values=[['历史专题记录。当前资料逐项见完整来源目录、导师反馈、学生公开去向及实习资源。']];
 }
 wb.recalculate();
-for(const name of ['导师反馈','学生公开去向','姓名缩写对照','校园生活图片']){
+for(const name of scopedAliasRefresh?[...affectedSheetNames]:['导师反馈','学生公开去向','姓名缩写对照','校园生活图片']){
  const inspected=await wb.inspect({kind:'table',range:`'${name}'!A6:F9`,include:'values,formulas',tableMaxRows:4,tableMaxCols:6,tableMaxCellChars:120,maxChars:2500});
  await fs.writeFile(path.join(outputDir,'inspect-'+name+'.ndjson'),inspected.ndjson);
 }
@@ -147,13 +156,20 @@ async function finish(){
  const stage=path.join(outputDir,'artifact-authored.xlsx');
  const model=JSON.parse(await fs.readFile(path.join(outputDir,'workbook-model.json'),'utf8'));
  const layout=await SpreadsheetFile.importXlsx(await FileBlob.load(stage));
+ const aliasSpec=model.datasets.find(s=>s.name==='姓名缩写对照');
+ if(aliasSpec)for(let i=0;i<aliasSpec.rows.length;i++){
+  const a=site.mentorAliases.find(a=>a.alias===aliasSpec.rows[i][0]);if(!a)throw Error('Unknown alias');
+  aliasSpec.rows[i][2]=aliasStatusLabel(a);
+  layout.worksheets.getItem(aliasSpec.name).getRange(`C${aliasSpec.headerRow+1+i}`).values=[[aliasStatusLabel(a)]];
+ }
+ await fs.writeFile(path.join(outputDir,'workbook-model.json'),JSON.stringify(model,null,2)+'\n');
  for(const spec of model.datasets){
   const sh=layout.worksheets.getItem(spec.name),displayRows=spec.rows.map(r=>[...r]);for(const l of spec.links||[])displayRows[l.rowIndex][l.colIndex]=l.label||'原文';
   const heights=displayRows.map(row=>Math.max(28,...row.map((v,i)=>text(v).split('\n').reduce((n,line)=>n+Math.max(1,Math.ceil([...line].reduce((n,c)=>n+(/[\u0000-\u00ff]/.test(c)?1:2),0)/Math.max(10,spec.widths[i]-3))),0)*13.5+10)));
   for(let i=0;i<heights.length;){let j=i+1;while(j<heights.length&&heights[j]===heights[i])j++;sh.getRange(`A${spec.headerRow+1+i}:${col(spec.headers.length-1)}${spec.headerRow+j}`).format.rowHeight=heights[i];i=j;}
   model.rows.find(r=>r.name===spec.name).maxRowHeight=Math.max(...heights);
  }
- layout.worksheets.getItem('学生公开去向').getRange('A47:F48').format.rowHeight=270;
+ if(!scopedAliasRefresh)layout.worksheets.getItem('学生公开去向').getRange('A47:F48').format.rowHeight=270;
  layout.recalculate();
  const adjusted=path.join(outputDir,'artifact-layout.xlsx');await(await SpreadsheetFile.exportXlsx(layout)).save(adjusted);
  const cleaned=path.join(outputDir,'recalc-input.xlsx');
@@ -224,12 +240,23 @@ print(json.dumps({'sheets':len(am),'tables':len(tables),'formulas':count,'formul
  for(const spec of model.datasets){const sh=finalWb.worksheets.getItem(spec.name);for(const c of unique(spec.links.map(l=>l.colIndex))){const values=Array.from({length:spec.rows.length},()=>['']);for(const l of spec.links.filter(l=>l.colIndex===c))values[l.rowIndex]=[l.label||'原文'];sh.getRange(`${col(c)}${spec.headerRow+1}:${col(c)}${spec.headerRow+spec.rows.length}`).values=values;}}
  finalWb.recalculate();
  const renderFiles=[];
- for(const name of ['完整来源目录','正文未读线索','生活学习要点','导师反馈','官方核实','帖子索引','检索覆盖','补充证据','应用版补充','延伸核验','继续补读','学生评价总览','实习资源','姓名缩写对照','学生公开去向','校园生活图片']){
+ for(const name of scopedAliasRefresh?[...affectedSheetNames]:['完整来源目录','正文未读线索','生活学习要点','导师反馈','官方核实','帖子索引','检索覆盖','补充证据','应用版补充','延伸核验','继续补读','学生评价总览','实习资源','姓名缩写对照','学生公开去向','校园生活图片']){
   const blob=await finalWb.render({sheetName:name,range:'A2:F8',scale:1,format:'png'});
   const file='after-'+name+'.png';renderFiles.push(file);await fs.writeFile(path.join(outputDir,file),new Uint8Array(await blob.arrayBuffer()));
  }
- const extra=[['导师反馈','M6:S8'],['学生公开去向','A40:F48'],['校园生活图片','G6:M8'],['姓名缩写对照','E6:I9']];
+ const extra=scopedAliasRefresh?[['导师反馈','M6:S8'],['姓名缩写对照','E6:I9']]:[['导师反馈','M6:S8'],['学生公开去向','A40:F48'],['校园生活图片','G6:M8'],['姓名缩写对照','E6:I9']];
  for(const [name,range] of extra){const blob=await finalWb.render({sheetName:name,range,scale:1,format:'png'});const file='after-detail-'+name+'.png';renderFiles.push(file);await fs.writeFile(path.join(outputDir,file),new Uint8Array(await blob.arrayBuffer()));}
+ if(scopedAliasRefresh){
+  const spec=model.datasets.find(s=>s.name==='导师反馈');
+  for(const id of ['sr-alias-comments-20261113-xw','sr-alias-comments-20261113-cxj','sr-alias-comments-20261113-tzd']){
+   const i=spec.rows.findIndex(row=>row[12]===id);if(i<0)throw Error('Missing new comment '+id);
+   const row=spec.headerRow+1+i;
+   for(const [part,range] of [['identity',`A${row}:F${row}`],['context',`K${row}:S${row}`]]){
+    const blob=await finalWb.render({sheetName:'导师反馈',range,scale:1,format:'png'});
+    const file=`after-${id}-${part}.png`;renderFiles.push(file);await fs.writeFile(path.join(outputDir,file),new Uint8Array(await blob.arrayBuffer()));
+   }
+  }
+ }
  result.sourceSha256=model.sourceSha;result.outputSha256=sha(await fs.readFile(final));result.outputBytes=(await fs.stat(final)).size;result.renderFiles=renderFiles;result.datasets=model.rows;
  await fs.writeFile(path.join(outputDir,'verification.json'),JSON.stringify(result,null,2)+'\n');
  console.log(JSON.stringify(result,null,2));
