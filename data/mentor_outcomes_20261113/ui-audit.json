@@ -1,0 +1,211 @@
+{
+  "auditDate": "2026-11-13",
+  "scope": "只读审计；本文件不改变应用、样式、测试或发布内容。",
+  "userPriorities": [
+    "先看导师评价和具名学生去向。",
+    "文字短，直接看到人、专业、年份、去向和来源。",
+    "学校公开但未披露导师的个案也可以保留，必须另列。"
+  ],
+  "inventory": {
+    "dataset": "dist/data/site-data.json",
+    "mentorCount": 34,
+    "reviewRecordCount": 40,
+    "outcomeRootCurrentlyExists": false,
+    "studentReviewLocation": "mentors[].studentReviews",
+    "officialCaseLocations": ["mentors[].evidence", "officialEvidence", "sourceRegistry"],
+    "existingReviewCoverageStatuses": ["mpacc_guidance", "guidance_unspecified", "non_mpacc_guidance", "course_only", "weak_mentions", "not_found"],
+    "mentorSearchCurrentlyIncludes": ["name", "research", "title", "summary", "qualification", "directions", "profileFields[].value"],
+    "mentorSearchCurrentlyExcludes": ["studentReviews.reviews[].text", "学生姓名", "学生去向"]
+  },
+  "currentTouchpoints": [
+    {
+      "file": "dist/app.js",
+      "function": "dossierReviews",
+      "line": 201,
+      "behavior": "只接收 attribution.status === confirmed 的个人评价。",
+      "preserve": "去向和学生身份的归属应另作核验，不能绕过个人评价归属门槛。"
+    },
+    {
+      "file": "dist/app.js",
+      "function": "supportedReviewPoints",
+      "line": 276,
+      "behavior": "推荐点和提醒必须能连回符合资格的 confirmed 评价 ID。",
+      "preserve": "升学、就业或获奖个案本身不构成对导师性格、投入或就业帮助的好评。"
+    },
+    {
+      "file": "dist/app.js",
+      "function": "studentReviewRecord",
+      "line": 287,
+      "selectors": ["details.student-review-record", "details.student-review-record.compact"],
+      "behavior": "默认折叠，展开呈现身份、年份、亲历与转述、具体内容、归属说明和来源。",
+      "preserve": "复用原有 esc/inline/external 和截图路径校验；去向行不再复制整段评价。"
+    },
+    {
+      "file": "dist/app.js",
+      "function": "studentReviewSection",
+      "line": 302,
+      "behavior": "导师详情显示完整评价档案；对比仅显示前两条折叠记录。完整档案还显示核实问题和缺口。",
+      "risk": "这里已经较长；新去向不宜再加一段教育性说明、工作总结或长问答。"
+    },
+    {
+      "file": "dist/app.js",
+      "function": "openComparison",
+      "line": 323,
+      "selectors": [".mentor-compare-scroll", ".mentor-compare-table", "[data-action=compare-open]", "[data-action=compare-toggle]"],
+      "behavior": "最多三位；研究内容、官方记录、学生经历、名额、联系、下一步共六行。",
+      "minimalChange": "在学生经历后加学生毕业去向一行，每位最多两条短行，剩余数量链接到该导师的去向。"
+    },
+    {
+      "file": "dist/app.js",
+      "function": "currentContact",
+      "line": 317,
+      "selectors": ["#contact-status"],
+      "behavior": "只采用现行 email 和当前 profileFields 的联系方式；历史邮箱不提升为现行。",
+      "preserve": "去向不要自动混入联系模板，避免把某学生去向写成导师承诺。"
+    },
+    {
+      "file": "dist/app.js",
+      "function": "openContactPreparation",
+      "line": 349,
+      "selectors": ["#contact-mentor", "#contact-copy-text", "[data-action=contact-mode]", "#contact-copy-status"],
+      "behavior": "按导师及文本类型保留当前会话编辑，复制失败有手动选中路径。",
+      "preserve": "新去向筛选和弹窗不能重置 contactEdits、compareIds 或新增持久化记录。"
+    },
+    {
+      "file": "dist/app.js",
+      "function": "mentorCard",
+      "line": 375,
+      "selectors": [".mentor-card", ".mentor-name", ".mentor-feedback", "[data-action=mentor]"],
+      "minimalChange": "有可核实毕业去向时最多增加一行公开毕业去向 N 例；无记录不增加空行，不据数量排序。"
+    },
+    {
+      "file": "dist/app.js",
+      "function": "filteredMentors",
+      "line": 380,
+      "minimalChange": "如需要按学生或单位查导师，只加入已公开且已确认导师关系的 studentName 与 destination 文本，不把核验缺口、候选关系或内部备注纳入检索。"
+    },
+    {
+      "file": "dist/app.js",
+      "function": "renderMentorResults",
+      "line": 385,
+      "selectors": ["#mentor-result-count", "#mentor-result-order", "#mentor-results", "#saved-filter"],
+      "preserve": "保留官方名单顺序、不构成排名和已有方向/清单/评价筛选逻辑。"
+    },
+    {
+      "file": "dist/app.js",
+      "function": "renderMentors",
+      "line": 407,
+      "selectors": ["#mentor-tools", ".mentor-tools", "#mentor-search", "#review-coverage"],
+      "minimalChange": "在导师工具条加学生去向按钮，打开共享弹窗；不增加顶部大段说明或独立栏目。"
+    },
+    {
+      "file": "dist/app.js",
+      "function": "openMentor",
+      "line": 419,
+      "selectors": ["#dialog-content", ".dialog-section", ".mentor-detail-tools"],
+      "behavior": "目前个人评价先于公开信息、官方记录与具名个案。",
+      "minimalChange": "在个人评价后、公开信息前放具名学生毕业去向，每位先呈现最多三条；关系与来源折叠。编号需同步，避免两个 02。"
+    },
+    {
+      "file": "dist/app.js",
+      "function": "openDialog / closeDialog",
+      "line": 719,
+      "selectors": ["#dialog-content", "#dialog-title", "#dialog-close", "#dialog-eyebrow"],
+      "behavior": "共用原生 dialog；打开重置滚动并聚焦关闭按钮，关闭恢复列表触发项焦点。",
+      "preserve": "新的去向总览沿用这条路径；从去向开导师后仍能返回或关闭。"
+    },
+    {
+      "file": "dist/app.js",
+      "function": "route",
+      "line": 778,
+      "currentViews": ["mentors", "life", "posts", "downloads", "music"],
+      "minimalChange": "使用 data-action=student-outcomes 的弹窗可避免修改路由白名单、标题、导航和重复点击路由正则。",
+      "events": {"clickDispatch": "dist/app.js:811 附近", "changeDispatch": "dist/app.js:850 附近"}
+    }
+  ],
+  "minimalUi": {
+    "entry": "导师工具条：学生去向",
+    "dialogTitle": "公开学生去向",
+    "introMax": "只列公开可核实个案，不代表全体毕业生。",
+    "default": "已确认的研究生毕业去向；实习、在读期间交流和待入职不并入默认毕业去向。",
+    "degreeOptions": ["研究生毕业去向", "MPAcc", "会计学硕士", "MAud", "其他研究生", "本科"],
+    "defaultDegreeNote": "非 MPAcc 必须显示专业身份；不明学位用研究生（专业未明），不猜测。",
+    "groups": [
+      {"title": "已公开导师关系", "columns": ["学生／专业／届别", "去向／状态", "导师", "来源"]},
+      {"title": "学校公开个案 · 导师未公开", "columns": ["学生／专业／届别", "去向／状态", "来源"]}
+    ],
+    "detailRowPattern": "姓名 · 年份届专业 → 单位／学校（状态） [来源]",
+    "mentorDetailVisibleLimit": 3,
+    "compareVisibleLimit": 2,
+    "fallback": "未核到公开毕业去向",
+    "provenanceDisclosure": "每条用折叠详情容纳关系原文、去向原文、来源日期和限制，默认不展开。",
+    "doNotAdd": ["导师评分", "就业率或升学率推算", "按个案数量排序", "大段怎么理解资料的说明", "网站更新日志", "个人研究过程与缺口计数"]
+  },
+  "recommendedDataContract": {
+    "root": "studentOutcomes",
+    "reason": "一条学生去向只存一次；导师详情、对比和总览使用相同筛选函数，避免三处手工复制后不一致。",
+    "recordFields": {
+      "id": "稳定唯一 ID；同人同一去向的多来源合并，不按文章数量累计。",
+      "studentName": "公开具名姓名；不补充电话、私人账号、住址等与选导无关资料。",
+      "degreeType": "mpacc | academic_master | maud | other_graduate | graduate_unspecified | undergraduate | unknown",
+      "degreeLabel": "来源原有学位或专业表述；研究生不自动映射 MPAcc。",
+      "graduationYear": "明确毕业届别或毕业年；缺失时 null，不能拿发表日期代替。",
+      "cohort": "入学年级可选，与毕业届别分开。",
+      "mentorIds": "仅确认关系的导师 ID 数组；未公开导师则空数组。",
+      "relationship": {"status": "confirmed | unconfirmed | not_public", "kind": "master_supervisor | co_supervisor | undergraduate_supervisor | other | unknown", "text": "公开关系原文或忠实短摘", "sourceIds": "支撑关系的注册来源代码"},
+      "outcome": {"type": "employment | doctoral_study | further_study | internship | exchange | unknown", "organization": "学校或单位", "program": "项目、学院或岗位，缺失留空", "year": "去向发生年份，不等于发稿年", "status": "employed | enrolled | admitted | proposed_hire | offer_reported | internship | historical_position | unknown", "sourceIds": "支撑具体去向及状态的注册来源代码"},
+      "reviewIds": "可选：复用已有 studentReviews 的亲历评价 ID，不复制全文。",
+      "sourceIds": "本记录全部公开来源的 sourceRegistry 代码，保留去向与关系各自来源。",
+      "sourceDate": "来源发表日期，独立于毕业年和去向年。",
+      "verifiedAsOf": "核验日，仅在来源详情呈现。",
+      "limits": "短数组：学位未明、仅拟录用、导师关系未公开等事实边界。"
+    },
+    "optionalAggregateRecords": "如纳入学校就业报告，另存统计记录，必须有学校/学院/专业范围、届别、指标、值和分母。分母未知留空；不可与具名个案合算导师去向率。",
+    "compatibility": "缺少 studentOutcomes 或 records 时返回空数组，旧数据仍能完整渲染导师、对比和联系准备。"
+  },
+  "eligibilityRules": [
+    "默认毕业去向要求具名、具体单位或学校、可打开来源，且来源明确为毕业后就业或升学。",
+    "录取、在读、已入职、拟录用分别保留原始状态；公示可核实不等于实际入职已核实。",
+    "proposed_hire、offer_reported、internship、exchange、unknown 不计入默认已核毕业去向；可在单独筛选或折叠补充中呈现。",
+    "导师详情、卡片数量和对比只筛选 mentorIds 包含当前导师且 relationship.status 为 confirmed 的记录。",
+    "校方报道未写导师、只有论文共同作者、参赛共同指导、同名或缩写不构成学位导师关系。",
+    "同一学生的本科导师与研究生导师不能相互替代；同一导师的本科案例不能放进 MPAcc 个案。",
+    "有评价无去向仍保留在个人评价；有去向无评价不能生成推荐点。",
+    "文中原有历史职位只标历史去向，不能写成截至核验日仍任职。",
+    "学校公开但导师未公开的个案独立一组，不能算入任何导师的卡片或对比。"
+  ],
+  "existingTests": [
+    {"file": "tests/student-reviews.test.mjs", "line": 72, "name": "missing personal evidence cannot create praise, concerns or named abbreviation allegations", "preserve": "证据资格、匿名归属和个人评价优先顺序"},
+    {"file": "tests/student-reviews.test.mjs", "line": 88, "name": "student experience records expose identity, attribution, specific process and limits with safe sources", "preserve": "身份、年份、关系、XSS、URL和默认折叠"},
+    {"file": "tests/student-reviews.test.mjs", "line": 99, "name": "coverage filtering keeps MPAcc distinct from other guidance and keeps comparison and session drafts", "preserve": "专业分界、对比和会话草稿不丢失"},
+    {"file": "tests/student-reviews.test.mjs", "line": 120, "name": "review screenshots reject unsafe paths, escape captions, and never inherit another branch from the same post", "preserve": "截图与评论分支归属"},
+    {"file": "tests/student-reviews.test.mjs", "line": 170, "name": "source and review maintenance counters stay outside the public page", "preserve": "维护日志不进入页面"},
+    {"file": "tests/student-reviews.test.mjs", "line": 183, "name": "ambiguous endorsements stay neutral without exposing maintenance summaries", "preserve": "含混提名不变成好评"},
+    {"file": "tests/mentor-tools.test.mjs", "line": 46, "name": "comparison enforces three distinct valid teachers and survives filters and route changes", "preserve": "三人上限与跨筛选会话状态"},
+    {"file": "tests/mentor-tools.test.mjs", "line": 64, "name": "comparison retains source populations, limitations and direct links without assigning current quotas", "preserve": "学位、来源、适用范围、现行联系方式"},
+    {"file": "tests/mentor-tools.test.mjs", "line": 78, "name": "contact drafts target one teacher with truthful placeholders and can be copied securely", "preserve": "导师对象与真实占位符"},
+    {"file": "tests/mentor-tools.test.mjs", "line": 89, "name": "contact text remains selectable when clipboard is unavailable or denied", "preserve": "复制回退"},
+    {"file": "tests/mentor-tools.test.mjs", "line": 97, "name": "edited contact text follows its teacher and text type across switching and reopening", "preserve": "草稿编辑和无额外持久化"},
+    {"file": "tests/source-search.test.mjs", "line": 55, "name": "source search covers displayed scope but excludes internal and superseded metadata", "preserve": "新去向检索不得拉入内部备注"},
+    {"file": "tests/source-search.test.mjs", "line": 89, "name": "exact source numbers and combined filters survive the broader content search", "preserve": "精确来源代码与组合筛选"},
+    {"file": "tests/navigation.test.mjs", "line": 41, "name": "skip to content preserves current guide route + route", "preserve": "现有 posts/life 路由与焦点；若新增独立去向路由需扩大覆盖"}
+  ],
+  "recommendedMeaningfulTests": [
+    "同名学生、共同作者、参赛导师和未公开导师不串挂；学校公开组不出现在任何导师详情、卡片计数和对比中。",
+    "MPAcc、MAud、学硕、本科和未知学位保持标签与筛选分界；实习和拟录用不进入默认已核毕业去向。",
+    "录取、在读、入职、拟录用保留原状态；毕业年、去向年和文章发布日期不互相替代。",
+    "导师详情、总览、对比使用同一条记录且去重一致；空数据与旧版无 studentOutcomes 数据正常回退。",
+    "学生名、单位、来源标题与限制均转义；不安全 href 不生成可点击链接。",
+    "开关去向弹窗、筛选和跳转导师不重置三人对比或已编辑联系草稿，不新增 localStorage 写入。"
+  ],
+  "risks": [
+    {"severity": "high", "risk": "把发稿时学生身份或会计学硕士误写成 MPAcc", "control": "degreeType 明确枚举、原始学位标签常显，未知保持未知"},
+    {"severity": "high", "risk": "把团队共同指导、同名或论文作者推断为个人学位导师", "control": "独立关系来源和 confirmed 门槛，未公开导师单列"},
+    {"severity": "high", "risk": "把拟录用、实习或在读访问当毕业就业", "control": "outcome.type 与 status 分开，默认只取已确认毕业去向"},
+    {"severity": "medium", "risk": "官方成功个案被转写为学生好评或就业保障", "control": "保留 supportedReviewPoints 资格门槛，去向独立于推荐与提醒"},
+    {"severity": "medium", "risk": "新增栏目重复长解释，让最重要信息再被淹没", "control": "工具条入口、短行、前二至三条、来源详情折叠；不加更新内容"},
+    {"severity": "medium", "risk": "不同页面维护多份去向后不一致或按重复报道夸大数量", "control": "根级规范记录和共享查询函数，一人同去向去重"},
+    {"severity": "low", "risk": "给去向另设路由导致标题、导航、正则和焦点行为遗漏", "control": "此次采用共享 dialog，维持五个既有路由"}
+  ],
+  "verificationPerformed": "已核对现有数据顶层、34位导师与40条评价；阅读相关应用函数和Node VM回归用例。未运行浏览器、未修改产品文件、未发布。"
+}

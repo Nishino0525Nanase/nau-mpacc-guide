@@ -1,0 +1,394 @@
+{
+  "checked_at": "2026-11-13",
+  "sources": [
+    {
+      "id": "D601",
+      "title": "“薪火相传，职引未来”会计学院顺利举办研究生毕业生经验分享会",
+      "url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm",
+      "date": "2026-06-26",
+      "publisher": "南京审计大学会计学院",
+      "reading_scope": "已重读官方正文，核对2026年6月23日分享会与4位2026届研究生的专业、年级、毕业去向段；未审读照片。复用现有D601。",
+      "limits": "选取4位毕业生的新闻个案，非全班去向；其中蔡云霏为会计学硕。正文未列硕士导师，不据论文合著或方向反推；毕业去向为发表时记录，不代表当前在岗状态。"
+    },
+    {
+      "id": "R802",
+      "title": "【MPAcc教育20周年】MPAcc筑梦之路：从学子到教育者的成长与探索——记南京审计大学2020届MPAcc校友袁璐",
+      "url": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+      "date": "2025-04-14",
+      "publisher": "全国会计专业学位研究生教育指导委员会",
+      "reading_scope": "已重读人物介绍、2020—2024年厦门大学会计学博士经历与2024年返校任教段。复用现有R802。",
+      "limits": "2020届MPAcc精选校友个案，非同届整体结果；南审硕士双导师未具名。文中李建发是厦门大学博士阶段导师，不能关联为南审MPAcc导师。任教状态仅截至2025年4月文章。"
+    },
+    {
+      "id": "MO20261113-S2023",
+      "title": "南京审计大学会计硕士专业学位授权点质量建设年度报告（2023年）",
+      "url": "https://gs.nau.edu.cn/_upload/article/files/2b/76/9e8c6b23473eb26a5da0457c937f/a4c5a1b9-5d7b-46d5-b86d-b4c4362f2d67.pdf",
+      "date": "2024-03-25",
+      "publisher": "南京审计大学研究生院",
+      "landing_url": "https://gs.nau.edu.cn/2025/0319/c7079a141974/page.htm",
+      "reading_scope": "下载原始49页扫描PDF并渲染核读：封面落款2024年2月；印刷p2（PDF第4页）招生、毕业及就业表；印刷p44（PDF第46页）就业段及表13。发布日期按研究生院目录与正文。",
+      "limits": "仅MPAcc学位点2023年度/2023届历史资料。p2与p44就业率不同，p44表题年份也有冲突；只公开一致的毕业103人，不将不一致率与分类数据作统一就业概率。报告未说明统计截止日。"
+    },
+    {
+      "id": "MO20261113-S2024",
+      "title": "南京审计大学会计硕士专业学位授权点质量建设年度报告（2024年）",
+      "url": "https://gs.nau.edu.cn/_upload/article/files/e9/7c/54c3c22344a0b07612a026fd58dd/28e07c6a-a6ae-4ca0-9f3e-e26b78ca73fb.pdf",
+      "date": "2025-03-24",
+      "publisher": "南京审计大学研究生院",
+      "landing_url": "https://gs.nau.edu.cn/2025/0319/c7079a141979/page.htm",
+      "reading_scope": "下载原始38页扫描PDF并渲染核读：封面落款2025年2月；印刷p2（PDF第4页）学制调整、毕业人数表；印刷p34（PDF第36页）就业段。发布日期按研究生院正文。",
+      "limits": "2022级起学制由2年改3年，报告明确2024年无MPAcc应届毕业生；就业分类为0不能解释成就业率0。非2025、2026届就业结果。"
+    },
+    {
+      "id": "MO20261113-SAUDIT",
+      "title": "祝贺！这些同学将入职审计署",
+      "url": "https://news.nau.edu.cn/2026/0708/c11360a160510/page.htm",
+      "date": "2026-07-08",
+      "publisher": "南京审计大学新闻网",
+      "reading_scope": "已读正文6人专业、毕业届次、录取去向及经历段。核对潘良庆正文自述为国家审计学院审计专硕；袁思祺为2022届本科校友。未读取照片。",
+      "limits": "学校选取6名不同学院与学段毕业生，不能当成MPAcc就业结果或2026届统一样本；发布时称“将入职”，非后续在岗证明。全文未具名硕士导师；吴泽泰提到的周维培为选修课授课老师，不能写学位导师。"
+    }
+  ],
+  "records": [
+    {
+      "id": "SO20261113-01",
+      "studentName": "胡朝会",
+      "degree": "会计硕士（MPAcc）",
+      "cohort": "2023级",
+      "graduationYear": 2026,
+      "mentorName": null,
+      "relationship": null,
+      "review": null,
+      "outcome": {
+        "type": "博士深造",
+        "organization": "上海财经大学",
+        "program": null,
+        "year": 2026,
+        "status": "学校公布的2026届毕业去向",
+        "source_ids": [
+          "D601"
+        ]
+      },
+      "source_ids": [
+        "D601"
+      ],
+      "limits": "2026年6月官方毕业去向个案；未公布硕士导师、录用岗位或入职日，不推为同导师/同届普遍结果。博士专业未在该新闻说明。"
+    },
+    {
+      "id": "SO20261113-02",
+      "studentName": "陆欣昀",
+      "degree": "会计硕士（MPAcc）",
+      "cohort": "2023级",
+      "graduationYear": 2026,
+      "mentorName": null,
+      "relationship": null,
+      "review": null,
+      "outcome": {
+        "type": "就业",
+        "organization": "国网江苏省电力有限公司常州供电分公司",
+        "program": null,
+        "year": 2026,
+        "status": "学校公布的2026届毕业去向",
+        "source_ids": [
+          "D601"
+        ]
+      },
+      "source_ids": [
+        "D601"
+      ],
+      "limits": "2026年6月官方毕业去向个案；未公布硕士导师、录用岗位或入职日，不推为同导师/同届普遍结果。"
+    },
+    {
+      "id": "SO20261113-03",
+      "studentName": "林洛妤",
+      "degree": "会计硕士（MPAcc）",
+      "cohort": "2023级",
+      "graduationYear": 2026,
+      "mentorName": null,
+      "relationship": null,
+      "review": null,
+      "outcome": {
+        "type": "就业",
+        "organization": "安永华明会计师事务所（特殊普通合伙）上海分所",
+        "program": null,
+        "year": 2026,
+        "status": "学校公布的2026届毕业去向",
+        "source_ids": [
+          "D601"
+        ]
+      },
+      "source_ids": [
+        "D601"
+      ],
+      "limits": "2026年6月官方毕业去向个案；未公布硕士导师、录用岗位或入职日，不推为同导师/同届普遍结果。原文另有安永实习分享，毕业去向与实习分开记录。"
+    },
+    {
+      "id": "SO20261113-04",
+      "studentName": "蔡云霏",
+      "degree": "会计学学术型硕士",
+      "cohort": "2023级",
+      "graduationYear": 2026,
+      "mentorName": null,
+      "relationship": null,
+      "review": null,
+      "outcome": {
+        "type": "就业",
+        "organization": "国家税务总局南京市浦口区税务局",
+        "program": null,
+        "year": 2026,
+        "status": "学校公布的2026届毕业去向",
+        "source_ids": [
+          "D601"
+        ]
+      },
+      "source_ids": [
+        "D601"
+      ],
+      "limits": "会计学硕，非MPAcc。2026年6月官方毕业去向个案；未公布硕士导师、录用岗位或入职日，不推为同导师/同届普遍结果。"
+    },
+    {
+      "id": "SO20261113-05",
+      "studentName": "袁璐",
+      "degree": "会计硕士（MPAcc）",
+      "cohort": null,
+      "graduationYear": 2020,
+      "mentorName": null,
+      "relationship": null,
+      "review": null,
+      "outcome": {
+        "type": "博士深造",
+        "organization": "厦门大学",
+        "program": "会计学博士",
+        "year": 2020,
+        "status": "2025年校友访谈回溯：2020—2024年攻读博士",
+        "source_ids": [
+          "R802"
+        ]
+      },
+      "source_ids": [
+        "R802"
+      ],
+      "limits": "历史MPAcc校友个案；南审硕士导师未具名，厦大博士导师不可关联为南审硕士导师。"
+    },
+    {
+      "id": "SO20261113-06",
+      "studentName": "袁璐",
+      "degree": "会计硕士（MPAcc）",
+      "cohort": null,
+      "graduationYear": 2020,
+      "mentorName": null,
+      "relationship": null,
+      "review": null,
+      "outcome": {
+        "type": "博士毕业后高校任教",
+        "organization": "南京审计大学",
+        "program": null,
+        "year": 2024,
+        "status": "2025年校友访谈记载：2024年返校成为青年教师",
+        "source_ids": [
+          "R802"
+        ]
+      },
+      "source_ids": [
+        "R802"
+      ],
+      "limits": "这是2020届MPAcc毕业后再读博的后续去向，非2020年硕士直接就业；不据2025报道断言2026当前任职。"
+    }
+  ],
+  "stats": [
+    {
+      "id": "SO20261113-ST01",
+      "scope": "南京审计大学会计硕士专业学位授权点（MPAcc）",
+      "cohort": "2023届",
+      "metric": "毕业人数",
+      "value": 103,
+      "denominator": null,
+      "source_ids": [
+        "MO20261113-S2023"
+      ],
+      "limits": "印刷p2与p44一致；不是全校研究生或会计学硕人数。就业率和分类表存在文本冲突，未采纳为前台统计。"
+    },
+    {
+      "id": "SO20261113-ST02",
+      "scope": "南京审计大学会计硕士专业学位授权点（MPAcc）",
+      "cohort": "2024年",
+      "metric": "应届毕业人数",
+      "value": 0,
+      "denominator": null,
+      "source_ids": [
+        "MO20261113-S2024"
+      ],
+      "limits": "印刷p2、p34明确2022级起2年改3年，故2024年无应届毕业生；0不是就业率。"
+    }
+  ],
+  "research_notes": [
+    {
+      "source_id": "MO20261113-S2023",
+      "finding": "同一官方报告的就业数据内部不一致，保留核查记录，不选取有利数字。",
+      "details": {
+        "p2_employment_rate": "95.58%",
+        "p44_employment_rate": "95.15%",
+        "p2_table_year": 2023,
+        "p44_table13_title_year": 2022,
+        "employment_category_counts": {
+          "党政机关": 12,
+          "高等教育单位": 1,
+          "其他事业单位": 6,
+          "国有企业": 28,
+          "其他企业": 40,
+          "三资企业": 8,
+          "其他": 3
+        },
+        "category_sum": 98,
+        "graduate_count": 103
+      },
+      "limits": "98/103约95.15%只是算术核查，不构成替学校修订统计口径；无统计截止日，分类表未明确未就业或升学处理。"
+    }
+  ],
+  "school_records": [
+    {
+      "id": "SO20261113-SCHOOL01",
+      "studentName": "安昶旭",
+      "degree": "应用经济学硕士",
+      "cohort": null,
+      "graduationYear": 2026,
+      "mentorName": null,
+      "relationship": null,
+      "review": null,
+      "outcome": {
+        "type": "就业录取",
+        "organization": "审计署业务司局",
+        "program": null,
+        "year": 2026,
+        "status": "2026年7月学校报道：将入职",
+        "source_ids": [
+          "MO20261113-SAUDIT"
+        ]
+      },
+      "source_ids": [
+        "MO20261113-SAUDIT"
+      ],
+      "limits": "经济学院；非会计或审计学位。录取去向为报道时记录，不断言当前已入职；未公布硕士导师。"
+    },
+    {
+      "id": "SO20261113-SCHOOL02",
+      "studentName": "袁思祺",
+      "degree": "会计学本科",
+      "cohort": null,
+      "graduationYear": 2022,
+      "mentorName": null,
+      "relationship": null,
+      "review": null,
+      "outcome": {
+        "type": "就业录取",
+        "organization": "审计署业务司局",
+        "program": null,
+        "year": 2026,
+        "status": "2026年7月学校报道：将入职",
+        "source_ids": [
+          "MO20261113-SAUDIT"
+        ]
+      },
+      "source_ids": [
+        "MO20261113-SAUDIT"
+      ],
+      "limits": "2022届会计学院本科校友，曾在事务所工作；2026录用是本科毕业后的后续去向，非2026届应届或MPAcc结果。录取去向为报道时记录，不断言当前已入职；未公布硕士导师。"
+    },
+    {
+      "id": "SO20261113-SCHOOL03",
+      "studentName": "潘良庆",
+      "degree": "审计硕士（MAud）",
+      "cohort": null,
+      "graduationYear": 2026,
+      "mentorName": null,
+      "relationship": null,
+      "review": null,
+      "outcome": {
+        "type": "就业录取",
+        "organization": "审计署重庆特派办",
+        "program": null,
+        "year": 2026,
+        "status": "2026年7月学校报道：将入职",
+        "source_ids": [
+          "MO20261113-SAUDIT"
+        ]
+      },
+      "source_ids": [
+        "MO20261113-SAUDIT"
+      ],
+      "limits": "国家审计学院；正文明确自述攻读审计专硕，非MPAcc。录取去向为报道时记录，不断言当前已入职；未公布硕士导师。"
+    },
+    {
+      "id": "SO20261113-SCHOOL04",
+      "studentName": "赵娅岚",
+      "degree": "审计专业硕士研究生（原文未标学位类别）",
+      "cohort": null,
+      "graduationYear": 2026,
+      "mentorName": null,
+      "relationship": null,
+      "review": null,
+      "outcome": {
+        "type": "就业录取",
+        "organization": "审计署昆明特派办",
+        "program": null,
+        "year": 2026,
+        "status": "2026年7月学校报道：将入职",
+        "source_ids": [
+          "MO20261113-SAUDIT"
+        ]
+      },
+      "source_ids": [
+        "MO20261113-SAUDIT"
+      ],
+      "limits": "国家审计学院；新闻标为审计专业2026届硕士，未明确写专硕/学硕，不擅自补学位类别；非MPAcc。录取去向为报道时记录，不断言当前已入职；未公布硕士导师。"
+    },
+    {
+      "id": "SO20261113-SCHOOL05",
+      "studentName": "郝毅",
+      "degree": "审计学本科（IAEP方向）",
+      "cohort": null,
+      "graduationYear": 2026,
+      "mentorName": null,
+      "relationship": null,
+      "review": null,
+      "outcome": {
+        "type": "就业录取",
+        "organization": "审计署京津冀特派办",
+        "program": null,
+        "year": 2026,
+        "status": "2026年7月学校报道：将入职",
+        "source_ids": [
+          "MO20261113-SAUDIT"
+        ]
+      },
+      "source_ids": [
+        "MO20261113-SAUDIT"
+      ],
+      "limits": "内部审计学院本科，非硕士。录取去向为报道时记录，不断言当前已入职；未公布硕士导师。"
+    },
+    {
+      "id": "SO20261113-SCHOOL06",
+      "studentName": "吴泽泰",
+      "degree": "金融工程本科（金融审计方向）",
+      "cohort": null,
+      "graduationYear": 2026,
+      "mentorName": null,
+      "relationship": null,
+      "review": null,
+      "outcome": {
+        "type": "就业录取",
+        "organization": "审计署太原特派办",
+        "program": null,
+        "year": 2026,
+        "status": "2026年7月学校报道：将入职",
+        "source_ids": [
+          "MO20261113-SAUDIT"
+        ]
+      },
+      "source_ids": [
+        "MO20261113-SAUDIT"
+      ],
+      "limits": "国际学院本科，非硕士；周维培仅是文中提到的课程教师，非已证实导师。录取去向为报道时记录，不断言当前已入职；未公布硕士导师。"
+    }
+  ]
+}

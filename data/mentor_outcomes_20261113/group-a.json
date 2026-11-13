@@ -1,0 +1,907 @@
+{
+  "batch": "mentor-outcomes-2026-11-13-group-a",
+  "checked_at": "2026-11-13",
+  "mentor_names": [
+    "董必荣",
+    "温素彬",
+    "王烨",
+    "张力",
+    "马德林",
+    "黄中生",
+    "崔秀梅",
+    "许汉友",
+    "高凤莲",
+    "刘国城",
+    "潘俊"
+  ],
+  "summary": {
+    "records": 16,
+    "confirmed_mpacc_records": 3,
+    "other_or_unspecified_masters_records": 13,
+    "new_source_urls_used_in_records": 2,
+    "existing_source_urls_reread_for_outcomes": 5,
+    "note": "补提取5份既有具名材料中的去向，并完整收录学院13条导师—考博学校名单；李佳林、袁璐重合去重后共16条。孙昊晨、于昊平、袁璐可明确归为MPAcc。袁璐的硕士评价经学院名单交叉归属潘俊，但双导师共同训练不独归个人。旧访谈重读不算新采访。",
+    "official_doctoral_list_entries": 13
+  },
+  "sources": [
+    {
+      "id": "MOA01",
+      "title": "南审本硕毕业，读博的他立志做守护文物的会计学者",
+      "url": "https://nau.edu.cn/2025/0820/c11307a146844/page.htm",
+      "date": "2025-08-20",
+      "publisher": "南京审计大学官网／新闻网",
+      "reading_scope": "本轮web open实际读取正文，重点核读第77—109行：上海财经大学会计学博士、2025届会计专业硕士、潘俊师生关系、具名本人对指导方式的回忆；未逐张读图。",
+      "existing_source_codes": [
+        "18",
+        "O-PJ"
+      ],
+      "limits": [
+        "既有来源重读后提取去向，不算新访谈。",
+        "学校精选正面个案；只反映孙昊晨经历，不代表所有学生。",
+        "表述为考取博士，不自行改写为已入学或后续毕业。"
+      ]
+    },
+    {
+      "id": "MOA02",
+      "title": "他们起航！下一站，读博！",
+      "url": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "date": "2022-12-22",
+      "publisher": "南京审计大学·南审青年校园号／中国大学生在线",
+      "reading_scope": "本轮web open/find实际核读正文第19—32行及第102—112行李佳林本人段落、图注和文末署名；该段分别明确2019级会计学硕士、考取人大商学院会计学博士、导师潘俊。未逐张读取图片。",
+      "existing_source_codes": [
+        "R801"
+      ],
+      "limits": [
+        "既有来源重读后提取去向。",
+        "原文会计学硕士未明确学硕/专硕，不计入已确认MPAcc。",
+        "学校精选升学访谈；其他学生的单位和博士学校不能分配给李佳林。"
+      ]
+    },
+    {
+      "id": "MOA03",
+      "title": "喜讯！我院硕士毕业生于昊平荣获第12届杨纪琬奖学金优秀硕士学位论文奖",
+      "url": "https://mpacc.nau.edu.cn/2026/0615/c11506a158960/page.htm",
+      "date": "2026-06-15",
+      "publisher": "南京审计大学会计学院MPAcc项目官网",
+      "reading_scope": "本轮web open实际读取正文第46—53行；同一正文明确2025届MPAcc、学位论文指导教师潘俊、目前在东南大学攻读会计学博士。未逐张读图。",
+      "existing_source_codes": [
+        "12"
+      ],
+      "limits": [
+        "既有获奖来源重读后提取在读去向。",
+        "获奖喜讯不是学生本人评价；不能把学院赞誉写成学生口碑。",
+        "博士入学年份没有明示，年份留空。"
+      ]
+    },
+    {
+      "id": "MOA04",
+      "title": "6人签约华为，2022届南审人棒！",
+      "url": "https://www.sohu.com/a/500320907_769713",
+      "date": "2021-11-10",
+      "publisher": "南京审计大学署名搜狐账号",
+      "reading_scope": "本轮web open/find实际读取标题、日期、学校来源署名，重点核读第71—78行朱安琪段落；正文明确导师刘国城、定期组会和项目指导，以及签约华为账务管理岗位。未逐张读图。",
+      "existing_source_codes": [
+        "R701"
+      ],
+      "limits": [
+        "既有来源重读后提取签约去向，不算新学生评价。",
+        "正文写2022级会计学专业硕士毕业生，与标题2022届及2021年发布日期存在级/届冲突；不自行纠正为入学年份。",
+        "会计学专业硕士一词未明确MPAcc或1253，不计入已确认MPAcc。",
+        "仅确认当时签约；不能说目前仍在华为，更不能把过往实习或投递企业当就业。",
+        "学校精选正面就业故事，不代表一般就业水平。"
+      ]
+    },
+    {
+      "id": "MOA05",
+      "title": "培养成果",
+      "url": "https://account.nau.edu.cn/rcpy/list.htm",
+      "date": null,
+      "publisher": "南京审计大学会计学院",
+      "reading_scope": "本轮web open实际读取第76—124行，完整核读第99—124行13条考取博士学生名单。每条直接并列姓名、导师、考取学校；13条全部收录，未凭论文共著推断关系。",
+      "existing_source_codes": [],
+      "limits": [
+        "页面未给这些名单条目的硕士学位类型、年级、毕业年份、考博年份或博士专业。",
+        "列表只写考取学校，不代表已取得博士学位或当前仍在该校。",
+        "名单不是招生人数、毕业人数或就业率样本，不能据此比较导师升学成功率。"
+      ]
+    },
+    {
+      "id": "MOA06",
+      "title": "姜亚琳",
+      "url": "https://shsjxy.nau.edu.cn/2024/0702/c7697a133011/page.psp",
+      "date": "2021-07-07",
+      "publisher": "南京审计大学社会审计学院",
+      "reading_scope": "本轮web open实际读取个人简介第49—71行：页面显示发布日期2021-07-07，简历正文已更新至2022年及以后；2014.9—2017.3南京审计大学会计学硕士，2018.3—2022.9东南大学管理科学与工程博士，2022.12起南京审计大学社会审计学院讲师。这里只引用教育与任职经历，不采集联系方式。",
+      "existing_source_codes": [],
+      "limits": [
+        "显示发布日期早于简历中后续经历，属于旧页更新正文；不能说这些后续信息在2021年已公布。",
+        "会计学硕士未明确学位类型，不自动归为MPAcc。",
+        "导师关系由学院培养成果名单明示，不能由其与许汉友共著推断。"
+      ]
+    },
+    {
+      "id": "MOA07",
+      "title": "我与南审｜崔秀梅：是严师，也是赛场领航人",
+      "url": "https://news.nau.edu.cn/2026/1014/c11360a162564/page.psp",
+      "date": "2026-10-19",
+      "publisher": "南京审计大学新闻网",
+      "reading_scope": "本轮web open实际核读正文第25—96行：包昕梦、郁圳乐为2023级会计专硕、读研时选崔秀梅为导师；区分本科备赛与研究生论文指导。正文没有两人具体就业单位或博士录取学校。未逐张读图。",
+      "existing_source_codes": [
+        "17",
+        "O-CXM"
+      ],
+      "limits": [
+        "来源已收录；正文结尾出现工作、生活不足以确定单位或岗位。",
+        "本科备赛中的凌晨改稿、即时回复不能套成研究生日常承诺。"
+      ]
+    },
+    {
+      "id": "MOA08",
+      "title": "2017 优秀毕业生特辑 · 张蓓",
+      "url": "https://gs.nau.edu.cn/2017/1023/c4415a31467/page.htm",
+      "date": "2017-06-16",
+      "publisher": "南京审计大学研究生院",
+      "reading_scope": "本轮web find实际返回并核读正文第5—19行：2015级会计专硕、导师许汉友、每周固定见面，以及2016年下半年瑞华会计师事务所实习；未发现正式毕业就业单位。未逐张读图。",
+      "existing_source_codes": [
+        "19",
+        "O-XHY"
+      ],
+      "limits": [
+        "既有历史学生评价；瑞华只可标为实习，不可更新为毕业去向。",
+        "URL路径日期与正文发布日期不同，采用正文2017-06-16。"
+      ]
+    },
+    {
+      "id": "MOA09",
+      "title": "【MPAcc教育20周年】MPAcc筑梦之路：从学子到教育者的成长与探索——记南京审计大学2020届MPAcc校友袁璐",
+      "url": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+      "date": "2025-04-14",
+      "publisher": "全国会计专业学位研究生教育指导委员会官网",
+      "reading_scope": "本轮web open实际读取正文第1—27行：2020届南审MPAcc、2020—2024年厦门大学会计学博士、2024年回南审任教、硕士双导师共同指导；全文明确博士导师李建发，但未在本篇直接写硕士导师姓名。与学院名单中袁璐—潘俊—厦门大学交叉核对。未视觉审读配图。",
+      "existing_source_codes": [
+        "R802"
+      ],
+      "limits": [
+        "既有来源重读并通过新增的学院导师—考博学校名单交叉归属，不算新采访。",
+        "硕士两位导师共同指导的全过程不能拆成全由潘俊个人完成；校外导师未具名。",
+        "李建发授课及指导为厦门大学博士阶段，不属于潘俊或南审MPAcc经历。",
+        "官方精选2020届历史个案，不代表当前所有学生的组会、实习安排和研究训练。"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "MOA-PJ-SHC",
+      "studentName": "孙昊晨",
+      "degree": "MPAcc（会计专业硕士）",
+      "cohort": null,
+      "graduationYear": 2025,
+      "mentorName": "潘俊",
+      "relationship": {
+        "text": "官网明确硕士阶段成为潘俊教授的学生。",
+        "source_ids": [
+          "MOA01"
+        ]
+      },
+      "review": {
+        "text": "本人回忆：导师直接指出研究疏漏并解释背后的逻辑，也引导他进入文物资产会计研究。",
+        "kind": "具名学生访谈（学校精选）",
+        "source_ids": [
+          "MOA01"
+        ]
+      },
+      "outcome": {
+        "type": "doctoral_admission",
+        "organization": "上海财经大学",
+        "program": "会计学博士研究生",
+        "year": 2025,
+        "status": "考取；2025年8月校方报道",
+        "source_ids": [
+          "MOA01"
+        ]
+      },
+      "source_ids": [
+        "MOA01"
+      ],
+      "limits": [
+        "旧访谈补提取去向；本科毕业年份不当作硕士入学年份。",
+        "单一升学个案，不能推出导师有固定博士名额或所有学生均读博。"
+      ]
+    },
+    {
+      "id": "MOA-PJ-YHP",
+      "studentName": "于昊平",
+      "degree": "MPAcc（会计专业硕士）",
+      "cohort": null,
+      "graduationYear": 2025,
+      "mentorName": "潘俊",
+      "relationship": {
+        "text": "2025届MPAcc学位论文的指导教师明列潘俊。",
+        "source_ids": [
+          "MOA03"
+        ]
+      },
+      "review": {
+        "text": null,
+        "kind": null,
+        "source_ids": []
+      },
+      "outcome": {
+        "type": "doctoral_study",
+        "organization": "东南大学",
+        "program": "会计学博士",
+        "year": null,
+        "status": "2026年6月官方正文称目前在读",
+        "source_ids": [
+          "MOA03"
+        ]
+      },
+      "source_ids": [
+        "MOA03"
+      ],
+      "limits": [
+        "未公开本人对导师的评价，不把获奖报道的学院表述写成学生评价。",
+        "未明确博士入学年份。"
+      ]
+    },
+    {
+      "id": "MOA-PJ-LJL",
+      "studentName": "李佳林",
+      "degree": "会计学硕士（原文未区分学硕/专硕）",
+      "cohort": 2019,
+      "graduationYear": null,
+      "mentorName": "潘俊",
+      "relationship": {
+        "text": "本人段落及合照图注明确导师潘俊，学院考博名单亦有对应。",
+        "source_ids": [
+          "MOA02",
+          "MOA05"
+        ]
+      },
+      "review": {
+        "text": "本人回忆：在潘俊引导下接触政府会计，并逐渐找到感兴趣的研究领域。",
+        "kind": "具名学生访谈（学校精选）",
+        "source_ids": [
+          "MOA02"
+        ]
+      },
+      "outcome": {
+        "type": "doctoral_admission",
+        "organization": "中国人民大学商学院",
+        "program": "会计学博士研究生",
+        "year": 2022,
+        "status": "2022年校园号毕业季报道明确考取",
+        "source_ids": [
+          "MOA02",
+          "MOA05"
+        ]
+      },
+      "source_ids": [
+        "MOA02",
+        "MOA05"
+      ],
+      "limits": [
+        "不计入已确认MPAcc。",
+        "学院汇总名单没有年份；2022年去向来自具名访谈。",
+        "文章其他毕业生的就业单位不归给李佳林。"
+      ]
+    },
+    {
+      "id": "MOA-LGC-ZAQ",
+      "studentName": "朱安琪",
+      "degree": "会计学专业硕士（原文未明确学硕/专硕）",
+      "cohort": null,
+      "graduationYear": null,
+      "mentorName": "刘国城",
+      "relationship": {
+        "text": "本人叙述明确称刘国城教授为自己的导师。",
+        "source_ids": [
+          "MOA04"
+        ]
+      },
+      "review": {
+        "text": "跨专业受访者回忆：和同门一起做项目、定期开组会，在导师指导下补会计基础。",
+        "kind": "具名学生访谈（学校署名就业故事）",
+        "source_ids": [
+          "MOA04"
+        ]
+      },
+      "outcome": {
+        "type": "employment_contract",
+        "organization": "华为",
+        "program": "账务管理岗位",
+        "year": 2021,
+        "status": "签约；报道发布于2021年11月，面向2022届",
+        "source_ids": [
+          "MOA04"
+        ]
+      },
+      "source_ids": [
+        "MOA04"
+      ],
+      "limits": [
+        "正文2022级与标题2022届存在冲突，年级及毕业年份留空。",
+        "不计入已确认MPAcc。",
+        "只确认报道时签约，不写成已入职或当前在职。",
+        "学校精选单一个案，不能当导师就业保荐能力证据。"
+      ]
+    },
+    {
+      "id": "MOA-XHY-JYL",
+      "studentName": "姜亚琳",
+      "degree": "会计学硕士（原文未区分学硕/专硕）",
+      "cohort": 2014,
+      "graduationYear": 2017,
+      "mentorName": "许汉友",
+      "relationship": {
+        "text": "学院考取博士学生名单直接并列姜亚琳、导师许汉友、东南大学。",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "review": {
+        "text": null,
+        "kind": null,
+        "source_ids": []
+      },
+      "outcome": {
+        "type": "doctoral_study",
+        "organization": "东南大学",
+        "program": "管理科学与工程博士",
+        "year": 2018,
+        "status": "教师官方简历列2018年3月至2022年9月博士阶段；现为管理学博士",
+        "source_ids": [
+          "MOA05",
+          "MOA06"
+        ]
+      },
+      "source_ids": [
+        "MOA05",
+        "MOA06"
+      ],
+      "limits": [
+        "导师关系来自学院名单，不以论文共著推断。",
+        "不计入已确认MPAcc。",
+        "硕士与博士之间有工作经历，不写成毕业即读博。",
+        "教师简历另列2022年12月起任南京审计大学社会审计学院讲师；当前记录的主去向保留博士阶段。"
+      ]
+    },
+    {
+      "id": "MOA-DBR-ZTT",
+      "studentName": "赵婷婷",
+      "degree": null,
+      "cohort": null,
+      "graduationYear": null,
+      "mentorName": "董必荣",
+      "relationship": {
+        "text": "学院考取博士学生名单直接列赵婷婷的导师为董必荣。",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "review": {
+        "text": null,
+        "kind": null,
+        "source_ids": []
+      },
+      "outcome": {
+        "type": "doctoral_admission",
+        "organization": "中央财经大学",
+        "program": null,
+        "year": null,
+        "status": "学院公开名单记载考取，年份未披露",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "source_ids": [
+        "MOA05"
+      ],
+      "limits": [
+        "名单未给硕士类型、年级、毕业年份或博士专业；不能归为MPAcc。",
+        "不与同名教师资料拼接任职去向。",
+        "仅公开升学个案，不代表当前招生导师安排或升学概率。"
+      ]
+    },
+    {
+      "id": "MOA-DBR-LP",
+      "studentName": "李珮",
+      "degree": null,
+      "cohort": null,
+      "graduationYear": null,
+      "mentorName": "董必荣",
+      "relationship": {
+        "text": "学院考取博士学生名单直接列李珮的导师为董必荣。",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "review": {
+        "text": null,
+        "kind": null,
+        "source_ids": []
+      },
+      "outcome": {
+        "type": "doctoral_admission",
+        "organization": "厦门大学",
+        "program": null,
+        "year": null,
+        "status": "学院公开名单记载考取，年份未披露",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "source_ids": [
+        "MOA05"
+      ],
+      "limits": [
+        "名单未给硕士类型、年级、毕业年份或博士专业；不能归为MPAcc。",
+        "不与同名教师资料拼接任职去向。",
+        "不从同批其他人的专硕获奖记录推其学位类型。"
+      ]
+    },
+    {
+      "id": "MOA-CJ-XHJ",
+      "studentName": "徐捍军",
+      "degree": null,
+      "cohort": null,
+      "graduationYear": null,
+      "mentorName": "陈骏",
+      "relationship": {
+        "text": "学院考取博士学生名单直接列徐捍军的导师为陈骏。",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "review": {
+        "text": null,
+        "kind": null,
+        "source_ids": []
+      },
+      "outcome": {
+        "type": "doctoral_admission",
+        "organization": "上海财经大学",
+        "program": null,
+        "year": null,
+        "status": "学院公开名单记载考取，年份未披露",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "source_ids": [
+        "MOA05"
+      ],
+      "limits": [
+        "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+        "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。",
+        "为完整收录同一官方名单而纳入，超出本组原11位导师范围；主汇总须与其他组去重。"
+      ]
+    },
+    {
+      "id": "MOA-PJ-YL",
+      "studentName": "袁璐",
+      "degree": "MPAcc（会计专业硕士）",
+      "cohort": null,
+      "graduationYear": 2020,
+      "mentorName": "潘俊",
+      "relationship": {
+        "text": "学院名单直接列袁璐—导师潘俊—考取厦门大学；教指委校友访谈对应同名南审2020届MPAcc校友、2020年进入厦门大学会计学博士阶段，学校与去向一致。",
+        "source_ids": [
+          "MOA05",
+          "MOA09"
+        ]
+      },
+      "review": {
+        "text": "她回顾：校内导师耐心指点；在校内、校外双导师共同指导下，完成从文献梳理、理论框架到调研、写作的训练。",
+        "kind": "具名MPAcc校友访谈＋学院导师名单交叉核对",
+        "source_ids": [
+          "MOA05",
+          "MOA09"
+        ]
+      },
+      "outcome": {
+        "type": "doctoral_study",
+        "organization": "厦门大学",
+        "program": "会计学博士",
+        "year": 2020,
+        "status": "官方校友访谈列2020—2024年攻读博士；2024年回南审任教",
+        "source_ids": [
+          "MOA05",
+          "MOA09"
+        ]
+      },
+      "source_ids": [
+        "MOA05",
+        "MOA09"
+      ],
+      "limits": [
+        "通过姓名、南审硕士身份与厦门大学博士去向交叉归属；访谈本篇未直接点名潘俊。",
+        "只将校内导师角色及双导师共同训练归入这段历史经历，不把全部调研、写作训练独归潘俊。",
+        "访谈中李建发指导明确属于博士阶段，不能移植为潘俊评价。",
+        "2024年回南审任教为后续公开去向，不代表导师保证留校或就业。"
+      ]
+    },
+    {
+      "id": "MOA-PJ-YYP",
+      "studentName": "余一品",
+      "degree": null,
+      "cohort": null,
+      "graduationYear": null,
+      "mentorName": "潘俊",
+      "relationship": {
+        "text": "学院考取博士学生名单直接列余一品的导师为潘俊。",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "review": {
+        "text": null,
+        "kind": null,
+        "source_ids": []
+      },
+      "outcome": {
+        "type": "doctoral_admission",
+        "organization": "上海财经大学",
+        "program": null,
+        "year": null,
+        "status": "学院公开名单记载考取，年份未披露",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "source_ids": [
+        "MOA05"
+      ],
+      "limits": [
+        "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+        "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。"
+      ]
+    },
+    {
+      "id": "MOA-PJ-JXF",
+      "studentName": "景雪峰",
+      "degree": null,
+      "cohort": null,
+      "graduationYear": null,
+      "mentorName": "潘俊",
+      "relationship": {
+        "text": "学院考取博士学生名单直接列景雪峰的导师为潘俊。",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "review": {
+        "text": null,
+        "kind": null,
+        "source_ids": []
+      },
+      "outcome": {
+        "type": "doctoral_admission",
+        "organization": "中山大学",
+        "program": null,
+        "year": null,
+        "status": "学院公开名单记载考取，年份未披露",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "source_ids": [
+        "MOA05"
+      ],
+      "limits": [
+        "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+        "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。"
+      ]
+    },
+    {
+      "id": "MOA-DBR-KLP",
+      "studentName": "孔令鹏",
+      "degree": null,
+      "cohort": null,
+      "graduationYear": null,
+      "mentorName": "董必荣",
+      "relationship": {
+        "text": "学院考取博士学生名单直接列孔令鹏的导师为董必荣。",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "review": {
+        "text": null,
+        "kind": null,
+        "source_ids": []
+      },
+      "outcome": {
+        "type": "doctoral_admission",
+        "organization": "北京交通大学",
+        "program": null,
+        "year": null,
+        "status": "学院公开名单记载考取，年份未披露",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "source_ids": [
+        "MOA05"
+      ],
+      "limits": [
+        "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+        "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。"
+      ]
+    },
+    {
+      "id": "MOA-PJ-YJQ",
+      "studentName": "姚继晴",
+      "degree": null,
+      "cohort": null,
+      "graduationYear": null,
+      "mentorName": "潘俊",
+      "relationship": {
+        "text": "学院考取博士学生名单直接列姚继晴的导师为潘俊。",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "review": {
+        "text": null,
+        "kind": null,
+        "source_ids": []
+      },
+      "outcome": {
+        "type": "doctoral_admission",
+        "organization": "财政部财政科学研究院",
+        "program": null,
+        "year": null,
+        "status": "学院公开名单记载考取，年份未披露",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "source_ids": [
+        "MOA05"
+      ],
+      "limits": [
+        "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+        "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。",
+        "学校名称采用历史名单原文财政部财政科学研究院，不擅自改为当前机构名称。"
+      ]
+    },
+    {
+      "id": "MOA-PJ-ZHY",
+      "studentName": "周会洋",
+      "degree": null,
+      "cohort": null,
+      "graduationYear": null,
+      "mentorName": "潘俊",
+      "relationship": {
+        "text": "学院考取博士学生名单直接列周会洋的导师为潘俊。",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "review": {
+        "text": null,
+        "kind": null,
+        "source_ids": []
+      },
+      "outcome": {
+        "type": "doctoral_admission",
+        "organization": "南京大学",
+        "program": null,
+        "year": null,
+        "status": "学院公开名单记载考取，年份未披露",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "source_ids": [
+        "MOA05"
+      ],
+      "limits": [
+        "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+        "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。"
+      ]
+    },
+    {
+      "id": "MOA-PJ-WXH",
+      "studentName": "吴小涵",
+      "degree": null,
+      "cohort": null,
+      "graduationYear": null,
+      "mentorName": "潘俊",
+      "relationship": {
+        "text": "学院考取博士学生名单直接列吴小涵的导师为潘俊。",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "review": {
+        "text": null,
+        "kind": null,
+        "source_ids": []
+      },
+      "outcome": {
+        "type": "doctoral_admission",
+        "organization": "对外经济贸易大学",
+        "program": null,
+        "year": null,
+        "status": "学院公开名单记载考取，年份未披露",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "source_ids": [
+        "MOA05"
+      ],
+      "limits": [
+        "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+        "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。"
+      ]
+    },
+    {
+      "id": "MOA-DBR-LXW",
+      "studentName": "李新伟",
+      "degree": null,
+      "cohort": null,
+      "graduationYear": null,
+      "mentorName": "董必荣",
+      "relationship": {
+        "text": "学院考取博士学生名单直接列李新伟的导师为董必荣。",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "review": {
+        "text": null,
+        "kind": null,
+        "source_ids": []
+      },
+      "outcome": {
+        "type": "doctoral_admission",
+        "organization": "暨南大学",
+        "program": null,
+        "year": null,
+        "status": "学院公开名单记载考取，年份未披露",
+        "source_ids": [
+          "MOA05"
+        ]
+      },
+      "source_ids": [
+        "MOA05"
+      ],
+      "limits": [
+        "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+        "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。"
+      ]
+    }
+  ],
+  "screened": [
+    {
+      "mentorName": "董必荣",
+      "result": "学院考博名单直接证实赵婷婷、李珮、孔令鹏、李新伟4名导师—学生—考博学校对应；硕士类型与年份留空。另已有王一帆优秀专硕论文没有正式去向。",
+      "source_ids": [
+        "MOA05"
+      ]
+    },
+    {
+      "mentorName": "温素彬",
+      "result": "检索导师、读博、毕业生、签约等组合，仅找到导师简介、招生说明、案例团队指导；未找到可核新的具名学生去向与个人硕士导师关系闭环。",
+      "source_ids": []
+    },
+    {
+      "mentorName": "王烨",
+      "result": "现有匿名讨论及新增公开检索不能组成具名硕士导师关系与去向闭环；未用博士招生资格代替学生培养去向。",
+      "source_ids": []
+    },
+    {
+      "mentorName": "张力",
+      "result": "本科课程评价及培养新闻未提供可核的硕士个人去向；未把开题/中期考核分组教师认成学生导师。",
+      "source_ids": []
+    },
+    {
+      "mentorName": "马德林",
+      "result": "检索结果多为主持就业讲座、访企拓岗和新生教育；主持活动不等于受访学生的个人导师。",
+      "source_ids": []
+    },
+    {
+      "mentorName": "黄中生",
+      "result": "检索到学院培养/合作活动，无可核的具名硕士导师关系与去向闭环。",
+      "source_ids": []
+    },
+    {
+      "mentorName": "崔秀梅",
+      "result": "既有具名2023级MPAcc包昕梦、郁圳乐访谈关系可靠，但正文未给具体就业单位或博士学校。",
+      "source_ids": [
+        "MOA07"
+      ]
+    },
+    {
+      "mentorName": "许汉友",
+      "result": "姜亚琳有直接考博名单和官方教育经历；张蓓既有采访只确认瑞华实习，不能补为正式去向；陈茜优秀MPAcc论文也不能推成用人单位。",
+      "source_ids": [
+        "MOA05",
+        "MOA06",
+        "MOA08"
+      ]
+    },
+    {
+      "mentorName": "高凤莲",
+      "result": "简介与课程/匿名评价未形成新具名硕士导师关系与去向闭环。",
+      "source_ids": []
+    },
+    {
+      "mentorName": "刘国城",
+      "result": "朱安琪学校署名访谈直接证实导师与华为签约；原文级/届及硕士类型缺口保留。",
+      "source_ids": [
+        "MOA04"
+      ]
+    },
+    {
+      "mentorName": "潘俊",
+      "result": "孙昊晨、于昊平、袁璐3条确认MPAcc。袁璐既有教指委访谈与学院导师—厦门大学名单交叉补齐关系，可新增限定范围的历史硕士指导回忆；李佳林仍不确认MPAcc。学院名单其余6名也全部收录，类型及年份留空。",
+      "source_ids": [
+        "MOA01",
+        "MOA02",
+        "MOA03",
+        "MOA05",
+        "MOA09"
+      ]
+    },
+    {
+      "mentorName": "陈骏",
+      "result": "同一官方考博名单的徐捍军—陈骏—上海财经大学也完整收录；超出本组原范围，主汇总与其他组去重。",
+      "source_ids": [
+        "MOA05"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "candidate": "张蓓—瑞华会计师事务所",
+      "reason": "正文只写2016年下半年实习，不当正式就业。",
+      "source_ids": [
+        "MOA08"
+      ]
+    },
+    {
+      "candidate": "包昕梦、郁圳乐具体就业单位",
+      "reason": "原文没有单位；出现工作、生活一词不足以确定去向。",
+      "source_ids": [
+        "MOA07"
+      ]
+    },
+    {
+      "candidate": "学院考博名单全部按MPAcc呈现",
+      "reason": "名单未分学硕/专硕，不批量标MPAcc，也不计算导师升学率。",
+      "source_ids": [
+        "MOA05"
+      ]
+    },
+    {
+      "candidate": "同名教师任职资料与赵婷婷/李珮学生记录拼接",
+      "reason": "本轮没有足够原始身份闭环，不新增后续任职。",
+      "source_ids": [
+        "MOA05"
+      ]
+    },
+    {
+      "candidate": "胡朝会与程博合著即为导师关系",
+      "reason": "期刊共著可核研究成果及博士在读，但不自动证明硕士导师；不作导师归属。",
+      "source_ids": []
+    },
+    {
+      "candidate": "官方开题或中期考核分组教师即为个人导师",
+      "reason": "组长/评审组身份不等于师生指导关系。",
+      "source_ids": []
+    }
+  ],
+  "gaps": [
+    "温素彬、王烨、张力、马德林、黄中生、高凤莲：本轮未找到新增具名且导师关系与正式去向均明示的记录；不据此推断其培养质量。",
+    "董必荣：可靠学院考博名单没有类型、届别和年份；公开展示时应单列为硕士类型未公开，不能与MPAcc合并。",
+    "崔秀梅：已有较细具名指导评价，但两位2023级MPAcc的单位、岗位或博士录取学校仍未公开。",
+    "许汉友：张蓓、陈茜的MPAcc身份可靠，但正式毕业去向未在所读正文找到；姜亚琳硕士类型仍未明确。",
+    "刘国城：朱安琪文章存在级/届冲突，且会计学专业硕士未明确学位类型；只收报道时的签约状态。",
+    "学校公开故事集中于获奖或升学的正面个案；不足以评价导师总体口碑、学生压力、实习自主度或平均就业结果。",
+    "袁璐：硕士导师姓名通过学院考博名单补齐；访谈中的双导师共同指导不能全归潘俊，博士导师李建发经历应分开。"
+  ]
+}

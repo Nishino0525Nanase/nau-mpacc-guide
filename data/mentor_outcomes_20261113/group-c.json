@@ -1,0 +1,112 @@
+{
+  "batch": "mentor-outcomes-20261113-group-c",
+  "researchedAt": "2026-11-13",
+  "mentorNames": ["谭志东", "王菁华", "蔡显军", "傅祥斐", "王永妍", "李仲泽", "王永青", "贺建刚", "王禹", "李慧", "陈冬华", "单文涛"],
+  "summary": {
+    "newNamedStudentRecords": 0,
+    "newVerifiedMentorLinkedDestinations": 0,
+    "newAggregateStudentFeedback": 1,
+    "note": "本组没有找到新增的具名学生评价，或能同时证明导师关系和毕业去向的个案。全校学生投票荣誉单列，不充当MPAcc直系学生评价。"
+  },
+  "sources": [
+    {
+      "id": "MC20261113-LZZ-VOTE",
+      "title": "关于表彰2023-2024年“吾爱吾师——我最喜爱的老师”的决定",
+      "url": "https://tw.nau.edu.cn/_t177/2024/0909/c3364a135121/page.psp",
+      "date": "2024-09-09",
+      "publisher": "南京审计大学学生会／共青团南京审计大学委员会官网",
+      "reading_scope": "已打开官方正文；阅读评选程序、提名奖名单及落款；system1复核。",
+      "limits": ["全校学生两轮投票的汇总结果，未按本科、学硕、MPAcc或直系学生分组。", "没有学生个人评论、组会安排、改稿时效或毕业去向。", "本地sourceRegistry未检出同一文章135121或公示134797；公示与决定是同一评选事件，不计两个独立样本。"]
+    },
+    {
+      "id": "MC20261113-WY-PROFILE",
+      "title": "王禹（官方教师页）",
+      "url": "https://account.nau.edu.cn/2023/1009/c8881a119294/page.htm",
+      "date": "2023-08-12",
+      "publisher": "南京审计大学会计学院",
+      "reading_scope": "已打开全文，阅读主要论文及指导学生获奖段；system1复核。页面发布时间为2023-08-12，正文已含2026项目，不能把发布时间当作每项事实发生时间。",
+      "limits": ["指导研究生获得2023年论坛特等奖、2024年论坛一等奖的段落没有列学生姓名、学位类型或毕业去向。", "主要论文中的于昊平、李佳林、周会洋、袁璐等共著姓名不能用来推定论文导师关系。", "教师页已在现有导师卡使用；本轮重读不是新增独立来源。"]
+    },
+    {
+      "id": "MC20261113-TRAINING",
+      "title": "培养成果",
+      "url": "https://account.nau.edu.cn/rcpy/list.htm",
+      "date": null,
+      "publisher": "南京审计大学会计学院",
+      "reading_scope": "已打开全文，阅读优秀学位论文及13名考取博士学生的姓名、导师、学校条目。",
+      "limits": ["名单所列导师没有本组12位。", "博士去向列表未逐人标注原硕士学位类型和毕业年份；不能仅凭研究生教育栏目断定均为MPAcc。", "栏目没有显示统一发布日期。"]
+    },
+    {
+      "id": "MC20261113-WYY-CXM-INTERVIEW",
+      "title": "我与南审｜崔秀梅：是严师，也是赛场领航人",
+      "url": "https://news.nau.edu.cn/2026/1014/c11360a162564/page.psp",
+      "date": "2026-10-19",
+      "publisher": "南京审计大学新闻网",
+      "reading_scope": "已打开全文；核查包昕梦、郁圳乐的本科备赛、MPAcc导师选择与论文修改段落。",
+      "limits": ["与现有17、O-CXM为同一来源。", "王永妍只在本科案例赛共同指导的段落出现；论文修改及导师选择均明确指向崔秀梅，不能移给王永妍。", "没有公布二人的毕业单位、升学学校或就业岗位。"]
+    },
+    {
+      "id": "MC20261113-SWT-CASE",
+      "title": "会计学院MPACC团队荣获第21届长三角MPAcc智能财会案例研究论坛特等奖",
+      "url": "https://account.nau.edu.cn/2024/0603/c8917a131562/page.htm",
+      "date": "2024-06-03",
+      "publisher": "南京审计大学会计学院",
+      "reading_scope": "已打开官方正文；阅读具名MPAcc团队、竞赛指导老师和赛事范围。",
+      "limits": ["与现有11为同一来源。", "周家钰、王欢、薛晓、徐天与单文涛的关系是当次竞赛指导，未声明各自学位论文导师。", "没有学生个人评价或毕业去向；区域论坛赛事不能改写为全国案例赛特等奖。"]
+    }
+  ],
+  "records": [],
+  "aggregateReviews": [
+    {
+      "id": "MC20261113-LZZ-AGGREGATE",
+      "studentName": null,
+      "degree": null,
+      "cohort": null,
+      "graduationYear": null,
+      "mentorName": "李仲泽",
+      "relationship": {"text": null, "source_ids": []},
+      "review": {
+        "text": "2024年获校“吾爱吾师——我最喜爱的老师”提名奖；官方说明评选经全校学生两轮投票。",
+        "kind": "全校学生投票汇总荣誉",
+        "source_ids": ["MC20261113-LZZ-VOTE"]
+      },
+      "outcome": {"type": null, "organization": null, "program": null, "year": null, "status": null, "source_ids": []},
+      "source_ids": ["MC20261113-LZZ-VOTE"],
+      "limits": ["不是具名MPAcc学生评价，不增加个人评价样本数。", "不能据此推断日常指导强度、实习安排、回复速度或学生就业质量。"],
+      "suggestedPlacement": "导师卡的官方汇总反馈；与个人经历、毕业去向分开"
+    }
+  ],
+  "screened": [
+    {"mentorName": "谭志东", "localBaseline": "官方资料；没有可归属的个人评价。", "searches": ["南京审计大学 谭志东 学生 毕业", "南京审计大学 谭志东 导师 就业", "site:nau.edu.cn 谭志东 毕业 学生"], "result": "检出个人简介、班主任就业考研动员等，未见具名直系研究生评价或有导师明示的毕业去向。"},
+    {"mentorName": "王菁华", "localBaseline": "已有匿名本科成本管理会计课堂印象；无MPAcc指导体验。", "searches": ["南京审计大学 王菁华 研究生 指导"], "result": "检出教师页、暑期学校讲座和教学案例名单；案例共著或同场汇报不证明学位导师关系。"},
+    {"mentorName": "蔡显军", "localBaseline": "已有单一匿名名字提及，语境和培养阶段不清。", "searches": ["site:nau.edu.cn 蔡显军 学生 导师 毕业"], "result": "检出课程、学术会议和班主任活动，没有可新增的具名学生评价或毕业去向。"},
+    {"mentorName": "傅祥斐", "localBaseline": "已有匿名本人论文指导评论，培养阶段不清；R901为教师自述。", "searches": ["南京审计大学 傅祥斐 学生 毕业", "site:nau.edu.cn 傅祥斐 毕业生"], "result": "检出教师页、青年荣誉、讲座及教师自述；没有新的学生个人评价正文或名下毕业去向。"},
+    {"mentorName": "王永妍", "localBaseline": "2021级MPAcc案例团队R301、2024级团队09及本科共同指导17均已登记。", "searches": ["site:nau.edu.cn 王永妍 导师 毕业", "南京审计大学 王永妍 学生 就业"], "source_ids": ["MC20261113-WYY-CXM-INTERVIEW"], "result": "新检索命中仍是既有案例事件；没有可独立新增的毕业去向，不能将崔秀梅论文指导细节移给王永妍。"},
+    {"mentorName": "李仲泽", "localBaseline": "已有一手课堂评论和朋友论文体验转述；无具名直系毕业去向。", "searches": ["南京审计大学 李仲泽 学生 导师", "site:nau.edu.cn 李仲泽 吾爱吾师 2024"], "source_ids": ["MC20261113-LZZ-VOTE"], "result": "新增一项可验证的全校学生投票提名奖，单列aggregateReviews；没有新增具名个人体验或名下就业去向。"},
+    {"mentorName": "王永青", "localBaseline": "没有可归属的个人评价。", "searches": ["南京审计大学 王永青 学生 研究生", "site:nau.edu.cn 王永青 研究生 指导 毕业"], "result": "检出个人学术履历与论文讲座；没有具名指导体验或名下毕业去向。"},
+    {"mentorName": "贺建刚", "localBaseline": "没有可归属的个人评价；导师称号或奖项不能替代学生体验。", "searches": ["南京审计大学 贺建刚 学生 毕业 去向", "贺建刚 导师 考取"], "result": "检出个人履历、科研诚信讲座及论坛活动；没有新增具名直系学生评价或毕业去向。"},
+    {"mentorName": "王禹", "localBaseline": "已有同一匿名评论者的课堂评价，没有具名直系学生体验。", "searches": ["南京审计大学 王禹 学生 指导", "site:nau.edu.cn 王禹 论坛 一等奖", "2024 江苏省研究生 财经 创新论坛 王禹", "site:nau.edu.cn 王禹 指导 研究生"], "source_ids": ["MC20261113-WY-PROFILE"], "result": "官方简介列研究生论坛奖项但未列学生；另有本科创业竞赛指导，不作为学位导师或就业个案。"},
+    {"mentorName": "李慧", "localBaseline": "已有同一匿名课堂评论，无具名直系学生体验。", "searches": ["site:nau.edu.cn 李慧 学生 导师 毕业"], "result": "检出教师讲座、课程与教学案例开发活动；没有新增具名学生评价或毕业去向。"},
+    {"mentorName": "陈冬华", "localBaseline": "没有当前南审MPAcc个人评价；跨校跨学位资料不能替代。", "searches": ["陈冬华 导师 学生 博士 南京", "南京审计大学 陈冬华 导师 学生"], "result": "检出学校活动、毕业典礼出席及外校答辩委员会主席信息；不据此推定学生属于其指导。"},
+    {"mentorName": "单文涛", "localBaseline": "已有区域案例论坛11及官方评教／喜爱教师汇总荣誉；没有个人体验正文。", "searches": ["南京审计大学 单文涛 毕业生", "site:nau.edu.cn 单文涛 学生 毕业", "site:nau.edu.cn 上春山 单文涛"], "source_ids": ["MC20261113-SWT-CASE"], "result": "再次核实四名具名MPAcc学生的案例竞赛指导，属既有事件，没有论文导师或毕业去向明示。"}
+  ],
+  "excluded": [
+    {"item": "王禹共著列表中的于昊平、李佳林、周会洋、袁璐等", "reason": "共著／通讯作者不等于学位导师，不能与其他页面去向拼接成名下学生。", "source_ids": ["MC20261113-WY-PROFILE"]},
+    {"item": "王禹指导研究生获2023、2024论坛奖项", "reason": "没有学生姓名和学位类型，不建立具名学生记录。", "source_ids": ["MC20261113-WY-PROFILE"]},
+    {"item": "王禹与左艺“智链安途”创业计划项目", "url": "https://sdrhxy.nau.edu.cn/2025/1224/c10995a152706/page.htm", "reason": "搜索命中为中审学院竞赛第一指导教师，非学位导师或毕业去向；本轮未依附件扩展个人信息。"},
+    {"item": "包昕梦、郁圳乐对崔秀梅的MPAcc论文指导评价", "reason": "已登记17／O-CXM；王永妍只明确参与本科竞赛共同指导，不归入王永妍的论文指导评价。", "source_ids": ["MC20261113-WYY-CXM-INTERVIEW"]},
+    {"item": "周家钰、王欢、薛晓、徐天的“上春山”案例赛", "reason": "已登记11，只能确认单文涛竞赛指导；不重复计数、不推论文导师、不补写就业单位。", "source_ids": ["MC20261113-SWT-CASE"]},
+    {"item": "傅祥斐2023财会审青年风采自述", "url": "https://www.zgcznet.com/zdct/202307/20230721/j_2023072108461800016899005117157198.html", "reason": "已登记R901，教师本人叙述不是新增学生独立评价。"},
+    {"item": "培养成果栏目13名博士去向", "reason": "逐条列出的导师均不属于本组12位，转交相应导师组，避免跨导师重复归属。", "source_ids": ["MC20261113-TRAINING"]},
+    {"item": "胡朝会、陆欣昀、林洛妤2026届MPAcc去向", "url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm", "reason": "本地已登记D601，学校研究组也已核实；毕业经验新闻没有导师，未找到本组导师关系明证，不能附到具体导师名下。"},
+    {"item": "陈冬华出席外校答辩或毕业典礼", "reason": "答辩委员会主席或典礼嘉宾不是学生导师。"},
+    {"item": "jnsport.net、jucaitang.net、zucaitz.com等非nau镜像及聚合页", "reason": "非学校原站且有网站名称替换，未作为证据或独立来源。"}
+  ],
+  "gaps": [
+    "本组12位均缺新增的、能明确对应近两届MPAcc直系学生的具名日常指导评价。",
+    "没有新增能同时明示具体导师关系与毕业就业／博士升学单位的记录。",
+    "王禹研究生论坛奖项没有列学生姓名；没有在已读正文中找到可补齐的获奖学生—导师表。",
+    "李仲泽投票奖只能作为全校汇总反馈，不知道MPAcc参与人数和各年级意见。",
+    "检索和阅读只覆盖本文件列出的公开来源及本地既有数据，不声称覆盖全网或登录后平台内容。"
+  ]
+}

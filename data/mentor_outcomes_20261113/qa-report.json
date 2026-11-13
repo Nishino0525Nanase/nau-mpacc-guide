@@ -1,0 +1,36 @@
+{
+  "asOf": "2026-11-13",
+  "studentOutcomeRecords": 28,
+  "distinctStudents": 27,
+  "recordsLinkedToRosterMentors": 16,
+  "linkedRosterMentors": 4,
+  "mpaccRecords": 7,
+  "mpaccStudents": 6,
+  "studentReviewRecords": 41,
+  "sourceRegistryBefore": 482,
+  "sourceRegistryAfter": 490,
+  "automatedTests": 126,
+  "automatedTestsPassed": 126,
+  "checks": [
+    "all existing life chapters, images, internships, social posts, music and downloads preserved",
+    "all 40 existing student reviews preserved",
+    "idempotent merge produces identical site-data bytes",
+    "all destination and relationship references exist",
+    "safe links and escaped text",
+    "MPAcc default and degree/relationship/type/search filters",
+    "unknown and external mentor records excluded from roster cards",
+    "current revision assets eligible for offline shell cache"
+  ],
+  "browser": {
+    "desktopViewport": 1363,
+    "documentWidth": 1348,
+    "mpaccRows": 7,
+    "mentorSearchDongBirongRows": 4,
+    "mentorDetailReviewBeforeOutcomes": true,
+    "unknownDegreeVisible": true,
+    "datedSourceVisible": true,
+    "mobileCssPrepared": true,
+    "narrowViewportBrowserTest": false
+  },
+  "scope": "Web edition only; Word, Excel and APK attachments were not regenerated."
+}

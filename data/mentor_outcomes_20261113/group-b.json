@@ -1,0 +1,159 @@
+{
+  "researched_at": "2026-11-13",
+  "group": "b",
+  "mentor_names": ["章之旺", "张兴亮", "叶邦银", "罗琰", "吴青川", "刘静", "李华", "徐伟", "王敬勇", "程博", "凌华"],
+  "summary": {
+    "new_named_mentor_relationship_cases": 1,
+    "new_firsthand_mentor_review_cases": 0,
+    "new_actual_destinations_with_explicit_mentor": 0,
+    "new_school_public_career_cases_without_mentor": 1,
+    "note": "只新增张媛媛—凌华的MPAcc学位论文指导明证。论文奖单列为培养成果，未当作学生对导师的评价或毕业去向。华雨倩—王敬勇为既有材料复核，不计新增。"
+  },
+  "sources": [
+    {
+      "id": "MOB01",
+      "title": "2025年会计硕士专业学位优秀学位论文评选结果",
+      "url": "https://paccesc.ruc.edu.cn/info/1126/3640.htm",
+      "date": "2026-05-15",
+      "publisher": "全国会计专业学位研究生教育指导委员会",
+      "reading_scope": "全文核读；获奖名单第8项明确南京审计大学、作者张媛媛、指导老师凌华及论文题目。",
+      "limits": "评选年度为2025年，网页发布日期为2026年；没有公开学生入学届、毕业届、升学或就业单位，也没有学生对导师的评价。"
+    },
+    {
+      "id": "MOB02",
+      "title": "【喜讯】我院研究生荣获2023年全国MPAcc优秀学位论文奖",
+      "url": "https://account.nau.edu.cn/2024/0509/c9005a129421/page.htm",
+      "date": "2024-05-09",
+      "publisher": "南京审计大学会计学院",
+      "reading_scope": "正文全文核读；明确华雨倩的MPAcc优秀学位论文及指导教师王敬勇。",
+      "limits": "已在原sourceRegistry的A403及王敬勇evidence中使用，本次不计新增；未载明毕业去向和日常指导体验。"
+    },
+    {
+      "id": "MOB03",
+      "title": "访企拓岗促就业，校企合作共育人——社会审计学院走访德勤南京分所",
+      "url": "https://shsjxy.nau.edu.cn/2023/0726/c7575a117308/page.htm",
+      "date": "2023-07-23",
+      "publisher": "南京审计大学社会审计学院",
+      "reading_scope": "正文全文核读；首段列李皓妍为德勤税务咨询业务线高级顾问，后段列为17级审计专硕校友。",
+      "limits": "属于MAud而非MPAcc；可确认报道时任职情况，不能确认毕业首份工作、入职时间或硕士导师。吴青川参加走访不能证明是其导师。网页发布时间为7月23日，URL中的0726不作为发布日期。"
+    },
+    {
+      "id": "MOB04",
+      "title": "培养成果",
+      "url": "https://account.nau.edu.cn/rcpy/list.htm",
+      "date": null,
+      "publisher": "南京审计大学会计学院",
+      "reading_scope": "全文核读；查看全国MPAcc、省优论文、杨纪琬奖和13名考博学生的导师与去向对应。",
+      "limits": "该页没有本组11名导师的考博对应案例；页面未给这些考博学生的具体学位类别、毕业届和博士录取年份，不能用来补推本组学生。"
+    }
+  ],
+  "records": [
+    {
+      "id": "MOB-zhangyuanyuan-linghua",
+      "studentName": "张媛媛",
+      "degree": "会计专业硕士（MPAcc）",
+      "cohort": null,
+      "graduationYear": null,
+      "mentorName": "凌华",
+      "relationship": {
+        "text": "全国MPAcc优秀学位论文正式名单列明指导老师为凌华。",
+        "source_ids": ["MOB01"]
+      },
+      "review": {
+        "text": null,
+        "kind": null,
+        "source_ids": []
+      },
+      "outcome": {
+        "type": null,
+        "organization": null,
+        "program": null,
+        "year": null,
+        "status": "未找到公开可核实的升学或就业去向",
+        "source_ids": []
+      },
+      "academicAchievement": {
+        "text": "《电商企业与个人IP共生商业模式对企业价值的影响研究——以东方甄选为例》获2025年MPAcc优秀学位论文奖。",
+        "award_year": 2025,
+        "publication_year": 2026,
+        "source_ids": ["MOB01"]
+      },
+      "source_ids": ["MOB01"],
+      "limits": ["论文奖可证明该名学生的论文成果及指导对应，不能据此评价导师日常相处、放实习或求职资源。", "不把同名的统计学研究生、其他学院学生活动和录取考试名单与本案合并。", "毕业年、就业单位和读博信息留空。"],
+      "novelty": "本轮新增；原站数据和研究JSON未检出张媛媛、此论文题名或该结果页"
+    }
+  ],
+  "reviewed_existing_records": [
+    {
+      "id": "MOB-huayuqian-wangjingyong-existing",
+      "studentName": "华雨倩",
+      "degree": "会计专业硕士（MPAcc）",
+      "cohort": null,
+      "graduationYear": null,
+      "mentorName": "王敬勇",
+      "relationship": {
+        "text": "会计学院获奖报道明确硕士学位论文指导教师为王敬勇。",
+        "source_ids": ["MOB02"]
+      },
+      "review": {"text": null, "kind": null, "source_ids": []},
+      "outcome": {"type": null, "organization": null, "program": null, "year": null, "status": "本轮未找到新增的公开升学或就业去向", "source_ids": []},
+      "academicAchievement": {"text": "《交易所问询函对企业数据合规的影响及其经济后果研究——以华大基因为例》获2023年全国MPAcc优秀学位论文奖。", "award_year": 2023, "publication_year": 2024, "source_ids": ["MOB02"]},
+      "source_ids": ["MOB02"],
+      "limits": ["既有A403事实复核，不计新增评价或去向。", "研究生院、发展办、新闻网、学校主站镜像属于同一新闻，不累计为独立证据。", "未使用含政治身份、年龄、学号、考试成绩的名单补充个人画像。"],
+      "novelty": "existing"
+    }
+  ],
+  "supplementary_school_records": [
+    {
+      "id": "MOB-lihaoyan-deloitte",
+      "studentName": "李皓妍",
+      "degree": "审计专业硕士（MAud）",
+      "cohort": 2017,
+      "graduationYear": null,
+      "mentorName": null,
+      "relationship": {"text": null, "source_ids": []},
+      "review": {"text": null, "kind": null, "source_ids": []},
+      "outcome": {
+        "type": "employment",
+        "organization": "德勤华永会计师事务所南京分所",
+        "program": null,
+        "role": "税务咨询业务线高级顾问",
+        "year": 2023,
+        "status": "学校报道确认的当时任职；不是毕业首职统计",
+        "source_ids": ["MOB03"]
+      },
+      "source_ids": ["MOB03"],
+      "limits": ["与吴青川的导师关系没有明证，不挂在吴青川名下。", "不是MPAcc案例；不将其计入MPAcc就业样本或毕业就业率。", "只能确认报道时单位和职位，不能补写入职年份与薪酬。"],
+      "novelty": "学校公开校友去向线索，供学校整体去向板块去重后使用"
+    }
+  ],
+  "gaps": [
+    {"mentorName": "章之旺", "result": "未发现新增可用的实名学生日常指导评价或毕业去向。", "reason": "检出教师履历、访企拓岗、预答辩委员会与MAud案例奖；委员会参与、校企合作和共同案例署名均不足以确认个人硕士指导关系。"},
+    {"mentorName": "张兴亮", "result": "未发现新增可用的实名硕士指导评价或名下学生毕业去向。", "reason": "已有评论中含本科授课接触；本轮主要检出个人简介、课程团队、期中检查会和教师学术文章，未作师门推断。"},
+    {"mentorName": "叶邦银", "result": "未发现新增MPAcc学生评价或毕业去向。", "reason": "已有浦军个案为2024级CPA本科项目辅导，并非MPAcc学位导师；2025中审学院整体去向与2026主题案例结项均不能分配到个人名下。"},
+    {"mentorName": "罗琰", "result": "未发现新增可核的实名MPAcc指导评价与毕业去向。", "reason": "检出金融硕士案例、保险专硕培养介绍、预答辩委员与招生宣讲；不能把金融或保险专业成绩混写为MPAcc指导成果。"},
+    {"mentorName": "吴青川", "result": "未发现新增可核的实名硕士指导评价与名下学生毕业去向。", "reason": "本科导师制部署和访德勤会议能证明行政及教学参与，不能证明李皓妍等出席校友是其硕士学生。"},
+    {"mentorName": "刘静", "result": "未发现新增可核的实名硕士指导评价与名下学生毕业去向。", "reason": "检出履历、学生评教奖、国际班教学和实习动员；匿名整体评教荣誉不是特定MPAcc学生的指导体验。"},
+    {"mentorName": "李华", "result": "未发现新增可核的实名硕士指导评价与名下学生毕业去向。", "reason": "常见姓名检出苏州大学路建美材料化学博士学生李华，与本校会计导师李华无关；预答辩委员和教师讲座也不作为学生指导关系。"},
+    {"mentorName": "徐伟", "result": "未发现新增可核的实名硕士指导评价与名下学生毕业去向。", "reason": "检出教师简介、校友座谈与学科竞赛指导；南京钢铁员工徐伟冲、计算机方向学生徐伟浩等姓名近似资料未合并。"},
+    {"mentorName": "王敬勇", "result": "复核华雨倩MPAcc论文关系，未补到其后续升学或就业。", "reason": "既有X01竞赛指导自述和A403学位论文奖均已在原数据中，本轮镜像转载不算新增案例。"},
+    {"mentorName": "程博", "result": "未发现新增能确认导师关系的实名MPAcc学生评价或毕业去向。", "reason": "胡朝会、蔡云霏有学校公开毕业去向，也与程博共同发文，但未检出明确硕士导师对应；论文通讯作者与共著不能代替导师明证。"},
+    {"mentorName": "凌华", "result": "新增张媛媛MPAcc优秀学位论文指导关系；没有公开日常指导评价或其毕业去向。", "reason": "2025级MPAcc南钢现场教学、2026级师生见面会和期中教学检查会是集体教学活动，不能把全体参与学生归入其师门。"}
+  ],
+  "screened_exclusions": [
+    {"subject": "胡朝会、蔡云霏—程博", "url": "https://xb.gdufe.edu.cn/cn/article/id/140b15a0-556f-4187-a6b3-c3ff68c23f9e", "reason": "期刊作者信息可证明共同研究与就读单位，未明确硕士指导关系；不与2026届就业分享会强行拼接。"},
+    {"subject": "学校2026届毕业经验分享会", "url": "https://account.nau.edu.cn/2026/0626/c8917a160093/page.htm", "reason": "胡朝会、陆欣昀、林洛妤的MPAcc去向和蔡云霏会计学硕去向已由学校去向研究组收录；本组没有找到对应导师明证。"},
+    {"subject": "本科生导师制部署", "url": "https://nau.edu.cn/2022/0831/c10386a103609/page.htm", "reason": "吴青川主持行政部署，不包含具体学生与个人指导对应。"},
+    {"subject": "2020硕士预答辩名单", "url": "https://account.nau.edu.cn/2020/0422/c8942a100771/page.htm", "reason": "章之旺、叶邦银、李华、罗琰等为预答辩委员；答辩委员不能自动等同指导教师。"},
+    {"subject": "中审学院2025届整体去向", "url": "https://sdrhxy.nau.edu.cn/2025/0701/c10977a146097/page.htm", "reason": "叶邦银介绍的是学院本科总体培养与就业数据，未公开可归到其名下的MPAcc学生去向。"},
+    {"subject": "路建美导师推选报道中的李华", "url": "https://gs.nau.edu.cn/2018/0927/c4414a43892/page.htm", "reason": "实际为苏州大学材料化学师生，不是南审会计导师李华。"},
+    {"subject": "教师寄语、迎新、访企、实习动员与同场师生", "reason": "这些材料不能提供具体学生对个人导师的评价，也不能证明个人师门关系或毕业就业结果。"},
+    {"subject": "含学生编号、成绩、政治信息等名单", "reason": "与导师评价和公开职业去向无关，未采集、未转写到个案中。"},
+    {"subject": "博彩站镜像院系页面", "reason": "搜索结果含jucaitang/zucaitz等伪院系镜像；只采用nau.edu.cn、教指委等原始权威域名。"}
+  ],
+  "search_coverage": {
+    "sources_checked": ["既有dist/data/site-data.json的导师studentReviews、evidence与sourceRegistry", "会计学院培养成果页", "学校、研究生院、社会审计学院与MPAcc中心公开报道", "全国MPAcc教指委最新优秀学位论文正式名单", "官方期刊作者信息（仅用于筛除无导师明证的共著推断）"],
+    "query_patterns": ["导师姓名+南京审计大学+学生/毕业/博士/就业", "导师姓名+指导教师/优秀硕士/优秀学位论文", "导师姓名+感谢/致谢", "胡朝会/陆欣昀/林洛妤/华雨倩/张媛媛+导师/毕业/去向"],
+    "note": "未检出不代表不存在，也不构成对导师培养能力的负面结论。没有以数量目标替代事实标准。"
+  }
+}

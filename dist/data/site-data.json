@@ -11,8 +11,9 @@
       "feedbackRecords": 21,
       "screenedSources": 15,
       "unreadLeads": 6,
-      "studentReviewRecords": 40,
-      "mentorsWithStudentReviews": 20
+      "studentReviewRecords": 41,
+      "mentorsWithStudentReviews": 20,
+      "studentOutcomes": 28
     },
     "socialPostCategories": {
       "学习生活资料": 1,
@@ -669,7 +670,7 @@
         "guidance_unspecified": 4,
         "non_mpacc_guidance": 1
       },
-      "reviewRecords": 40,
+      "reviewRecords": 41,
       "newSourceCodes": [
         "R701",
         "R702",
@@ -800,6 +801,12 @@
         "X01",
         "X02"
       ]
+    },
+    "mentorOutcomes": {
+      "asOf": "2026-11-13",
+      "records": 28,
+      "linkedMentorRecords": 16,
+      "distinctStudents": 27
     }
   },
   "directions": [
@@ -3433,7 +3440,7 @@
       "studentReviews": {
         "coverageStatus": "mpacc_guidance",
         "coverageLabel": "明确MPAcc指导经历",
-        "summary": "有孙昊晨的明确MPAcc指导经历，另有李佳林的具名硕士研究入门经历（未确认MPAcc）；两者均为学校精选历史访谈。",
+        "summary": "孙昊晨、袁璐有明确MPAcc身份的历史指导经历；李佳林为具名硕士研究入门经历，未确认MPAcc。均为学校或教指委精选访谈，袁璐的导师关系由学院名单交叉核对。",
         "reviews": [
           {
             "id": "sr-fc7bcc49c9bde1",
@@ -3515,6 +3522,56 @@
             "readingScope": "web open实际读取网页全部文字L0—193，重点李佳林L103—113及署名L123—133；未逐张查看或下载图片；页面评论计数为0。",
             "readThisRound": true,
             "expansionBatch": "student-reviews-round7"
+          },
+          {
+            "id": "sr-outcomes-20261113-yuanlu",
+            "sourceIds": [
+              "MOA05",
+              "R802"
+            ],
+            "sourceUrl": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+            "canonicalUrl": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+            "sourceTitle": "【MPAcc教育20周年】MPAcc筑梦之路：从学子到教育者的成长与探索——记南京审计大学2020届MPAcc校友袁璐",
+            "postAuthor": "全国MPAcc教指委校友访谈",
+            "postDate": "2025-04-14",
+            "narrator": "袁璐",
+            "identity": "南审2020届MPAcc校友",
+            "date": "2025-04-14",
+            "degree": "MPAcc",
+            "year": "2020届",
+            "relationship": "校内学位导师；由学院名单与同名同路径校友访谈交叉核对",
+            "experienceType": "interview",
+            "experienceLabel": "历史MPAcc校友访谈",
+            "firsthand": true,
+            "polarity": "positive",
+            "attribution": {
+              "status": "confirmed",
+              "alias": "潘俊",
+              "reason": "学院名单直接列袁璐—导师潘俊—考取厦门大学；教指委校友访谈对应同名南审2020届MPAcc校友、2020年进入厦门大学会计学博士阶段，学校与去向一致。"
+            },
+            "text": "她回顾：校内导师耐心指点；在校内、校外双导师共同指导下，完成从文献梳理、理论框架到调研、写作的训练。",
+            "specifics": [
+              "文献梳理、理论框架、调研与写作属于校内和校外双导师共同训练。"
+            ],
+            "limits": [
+              "通过姓名、南审硕士身份与厦门大学博士去向交叉归属；访谈本篇未直接点名潘俊。",
+              "只将校内导师角色及双导师共同训练归入这段历史经历，不把全部调研、写作训练独归潘俊。",
+              "访谈中李建发指导明确属于博士阶段，不能移植为潘俊评价。",
+              "2024年回南审任教为后续公开去向，不代表导师保证留校或就业。"
+            ],
+            "readingScope": [
+              "教指委访谈全文、学院考博名单中袁璐行；未使用博士导师经历评价南审导师。"
+            ],
+            "readThisRound": true,
+            "contextAssessment": {
+              "status": "attributed_cross_source",
+              "displayLabel": "具名MPAcc校友回顾",
+              "eligibleForRecommendation": true,
+              "eligibleForConcern": false,
+              "reason": "学院具名导师名单与校友访谈交叉对应；保留双导师边界。",
+              "scope": "2020届单一历史个案",
+              "batch": "mentor-outcomes-20261113"
+            }
           }
         ],
         "recommendationPoints": [
@@ -5327,6 +5384,20 @@
             "A401"
           ],
           "expansionBatch": "app-research"
+        },
+        {
+          "id": "MOB-zhangyuanyuan-linghua",
+          "kind": "official",
+          "category": "具名学位论文成果",
+          "statusLabel": "学位论文成果 · 非学生评价",
+          "population": "会计专业硕士（MPAcc）",
+          "date": "2026-05-15",
+          "text": "张媛媛：《电商企业与个人IP共生商业模式对企业价值的影响研究——以东方甄选为例》获2025年MPAcc优秀学位论文奖。",
+          "url": "https://paccesc.ruc.edu.cn/info/1126/3640.htm",
+          "limitations": "论文奖可证明该名学生的论文成果及指导对应，不能据此评价导师日常相处、放实习或求职资源。；不把同名的统计学研究生、其他学院学生活动和录取考试名单与本案合并。；毕业年、就业单位和读博信息留空。",
+          "sourceIds": [
+            "MOB01"
+          ]
         }
       ],
       "links": [
@@ -6593,6 +6664,20 @@
             "69cba3e80000000028008246"
           ],
           "postId": "69cba3e80000000028008246"
+        },
+        {
+          "id": "MC20261113-LZZ-AGGREGATE",
+          "kind": "official",
+          "category": "全校学生投票汇总",
+          "statusLabel": "学生投票荣誉 · 非MPAcc个人评价",
+          "population": "全校学生；学位类型未分组",
+          "date": "2024-09-09",
+          "text": "2024年获校“吾爱吾师——我最喜爱的老师”提名奖；官方说明评选经全校学生两轮投票。",
+          "url": "https://tw.nau.edu.cn/_t177/2024/0909/c3364a135121/page.psp",
+          "limitations": "不是具名MPAcc学生评价，不增加个人评价样本数。；不能据此推断日常指导强度、实习安排、回复速度或学生就业质量。",
+          "sourceIds": [
+            "MC20261113-LZZ-VOTE"
+          ]
         }
       ],
       "links": [
@@ -28686,7 +28771,7 @@
       "url": "https://account.nau.edu.cn/2024/0603/c8917a131562/page.htm",
       "originalUrl": "https://account.nau.edu.cn/2024/0603/c8917a131562/page.htm",
       "kind": "导师手册来源",
-      "date": "",
+      "date": "2024-06-03",
       "canonicalUrl": "https://account.nau.edu.cn/2024/0603/c8917a131562/page.htm"
     },
     "12": {
@@ -28696,7 +28781,7 @@
       "url": "https://mpacc.nau.edu.cn/2026/0615/c11506a158960/page.htm",
       "originalUrl": "https://mpacc.nau.edu.cn/2026/0615/c11506a158960/page.htm",
       "kind": "导师手册来源",
-      "date": "",
+      "date": "2026-06-15",
       "canonicalUrl": "https://mpacc.nau.edu.cn/2026/0615/c11506a158960/page.htm"
     },
     "13": {
@@ -36944,6 +37029,118 @@
       "readingScope": "2023图文33—234行已读，澄典书屋原图已下载直接查看（web turn201view3/turn210view0）；本次只选无人物书屋入口图，不复用原文宿舍布置图。",
       "limitations": "2023年介绍是历史空间样貌，不保证当前全部设施、开放时间、预约流程或研究生准入。；不把本科书院服务模式直接转为MPAcc研究生管理规则，也不由配图推断分楼、房型或寝室允许布置。；原文部分宿舍图出现床帘等旧布置，现行2026公寓F12规则优先；本次不选相关图。",
       "expansionBatch": "campus-housing-20261113"
+    },
+    "MOA05": {
+      "code": "MOA05",
+      "kind": "official",
+      "title": "培养成果",
+      "label": "培养成果",
+      "url": "https://account.nau.edu.cn/rcpy/list.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/rcpy/list.htm",
+      "originalUrl": "https://account.nau.edu.cn/rcpy/list.htm",
+      "date": null,
+      "platform": "南京审计大学会计学院",
+      "readingScope": "本轮web open实际读取第76—124行，完整核读第99—124行13条考取博士学生名单。每条直接并列姓名、导师、考取学校；13条全部收录，未凭论文共著推断关系。",
+      "limitations": "页面未给这些名单条目的硕士学位类型、年级、毕业年份、考博年份或博士专业。；列表只写考取学校，不代表已取得博士学位或当前仍在该校。；名单不是招生人数、毕业人数或就业率样本，不能据此比较导师升学成功率。",
+      "expansionBatch": "mentor-outcomes-20261113"
+    },
+    "MOA06": {
+      "code": "MOA06",
+      "kind": "official",
+      "title": "姜亚琳",
+      "label": "姜亚琳",
+      "url": "https://shsjxy.nau.edu.cn/2024/0702/c7697a133011/page.psp",
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2024/0702/c7697a133011/page.psp",
+      "originalUrl": "https://shsjxy.nau.edu.cn/2024/0702/c7697a133011/page.psp",
+      "date": "2021-07-07",
+      "platform": "南京审计大学社会审计学院",
+      "readingScope": "本轮web open实际读取个人简介第49—71行：页面显示发布日期2021-07-07，简历正文已更新至2022年及以后；2014.9—2017.3南京审计大学会计学硕士，2018.3—2022.9东南大学管理科学与工程博士，2022.12起南京审计大学社会审计学院讲师。这里只引用教育与任职经历，不采集联系方式。",
+      "limitations": "显示发布日期早于简历中后续经历，属于旧页更新正文；不能说这些后续信息在2021年已公布。；会计学硕士未明确学位类型，不自动归为MPAcc。；导师关系由学院培养成果名单明示，不能由其与许汉友共著推断。",
+      "expansionBatch": "mentor-outcomes-20261113"
+    },
+    "MOB01": {
+      "code": "MOB01",
+      "kind": "official",
+      "title": "2025年会计硕士专业学位优秀学位论文评选结果",
+      "label": "2025年会计硕士专业学位优秀学位论文评选结果",
+      "url": "https://paccesc.ruc.edu.cn/info/1126/3640.htm",
+      "canonicalUrl": "https://paccesc.ruc.edu.cn/info/1126/3640.htm",
+      "originalUrl": "https://paccesc.ruc.edu.cn/info/1126/3640.htm",
+      "date": "2026-05-15",
+      "platform": "全国会计专业学位研究生教育指导委员会",
+      "readingScope": "全文核读；获奖名单第8项明确南京审计大学、作者张媛媛、指导老师凌华及论文题目。",
+      "limitations": "评选年度为2025年，网页发布日期为2026年；没有公开学生入学届、毕业届、升学或就业单位，也没有学生对导师的评价。",
+      "expansionBatch": "mentor-outcomes-20261113"
+    },
+    "MOB03": {
+      "code": "MOB03",
+      "kind": "official",
+      "title": "访企拓岗促就业，校企合作共育人——社会审计学院走访德勤南京分所",
+      "label": "访企拓岗促就业，校企合作共育人——社会审计学院走访德勤南京分所",
+      "url": "https://shsjxy.nau.edu.cn/2023/0726/c7575a117308/page.htm",
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2023/0726/c7575a117308/page.htm",
+      "originalUrl": "https://shsjxy.nau.edu.cn/2023/0726/c7575a117308/page.htm",
+      "date": "2023-07-23",
+      "platform": "南京审计大学社会审计学院",
+      "readingScope": "正文全文核读；首段列李皓妍为德勤税务咨询业务线高级顾问，后段列为17级审计专硕校友。",
+      "limitations": "属于MAud而非MPAcc；可确认报道时任职情况，不能确认毕业首份工作、入职时间或硕士导师。吴青川参加走访不能证明是其导师。网页发布时间为7月23日，URL中的0726不作为发布日期。",
+      "expansionBatch": "mentor-outcomes-20261113"
+    },
+    "MC20261113-LZZ-VOTE": {
+      "code": "MC20261113-LZZ-VOTE",
+      "kind": "official",
+      "title": "关于表彰2023-2024年“吾爱吾师——我最喜爱的老师”的决定",
+      "label": "关于表彰2023-2024年“吾爱吾师——我最喜爱的老师”的决定",
+      "url": "https://tw.nau.edu.cn/_t177/2024/0909/c3364a135121/page.psp",
+      "canonicalUrl": "https://tw.nau.edu.cn/_t177/2024/0909/c3364a135121/page.psp",
+      "originalUrl": "https://tw.nau.edu.cn/_t177/2024/0909/c3364a135121/page.psp",
+      "date": "2024-09-09",
+      "platform": "南京审计大学学生会／共青团南京审计大学委员会官网",
+      "readingScope": "已打开官方正文；阅读评选程序、提名奖名单及落款；system1复核。",
+      "limitations": "全校学生两轮投票的汇总结果，未按本科、学硕、MPAcc或直系学生分组。；没有学生个人评论、组会安排、改稿时效或毕业去向。；本地sourceRegistry未检出同一文章135121或公示134797；公示与决定是同一评选事件，不计两个独立样本。",
+      "expansionBatch": "mentor-outcomes-20261113"
+    },
+    "MO20261113-S2023": {
+      "code": "MO20261113-S2023",
+      "kind": "official",
+      "title": "南京审计大学会计硕士专业学位授权点质量建设年度报告（2023年）",
+      "label": "南京审计大学会计硕士专业学位授权点质量建设年度报告（2023年）",
+      "url": "https://gs.nau.edu.cn/_upload/article/files/2b/76/9e8c6b23473eb26a5da0457c937f/a4c5a1b9-5d7b-46d5-b86d-b4c4362f2d67.pdf",
+      "canonicalUrl": "https://gs.nau.edu.cn/_upload/article/files/2b/76/9e8c6b23473eb26a5da0457c937f/a4c5a1b9-5d7b-46d5-b86d-b4c4362f2d67.pdf",
+      "originalUrl": "https://gs.nau.edu.cn/_upload/article/files/2b/76/9e8c6b23473eb26a5da0457c937f/a4c5a1b9-5d7b-46d5-b86d-b4c4362f2d67.pdf",
+      "date": "2024-03-25",
+      "platform": "南京审计大学研究生院",
+      "readingScope": "下载原始49页扫描PDF并渲染核读：封面落款2024年2月；印刷p2（PDF第4页）招生、毕业及就业表；印刷p44（PDF第46页）就业段及表13。发布日期按研究生院目录与正文。",
+      "limitations": "仅MPAcc学位点2023年度/2023届历史资料。p2与p44就业率不同，p44表题年份也有冲突；只公开一致的毕业103人，不将不一致率与分类数据作统一就业概率。报告未说明统计截止日。",
+      "expansionBatch": "mentor-outcomes-20261113"
+    },
+    "MO20261113-S2024": {
+      "code": "MO20261113-S2024",
+      "kind": "official",
+      "title": "南京审计大学会计硕士专业学位授权点质量建设年度报告（2024年）",
+      "label": "南京审计大学会计硕士专业学位授权点质量建设年度报告（2024年）",
+      "url": "https://gs.nau.edu.cn/_upload/article/files/e9/7c/54c3c22344a0b07612a026fd58dd/28e07c6a-a6ae-4ca0-9f3e-e26b78ca73fb.pdf",
+      "canonicalUrl": "https://gs.nau.edu.cn/_upload/article/files/e9/7c/54c3c22344a0b07612a026fd58dd/28e07c6a-a6ae-4ca0-9f3e-e26b78ca73fb.pdf",
+      "originalUrl": "https://gs.nau.edu.cn/_upload/article/files/e9/7c/54c3c22344a0b07612a026fd58dd/28e07c6a-a6ae-4ca0-9f3e-e26b78ca73fb.pdf",
+      "date": "2025-03-24",
+      "platform": "南京审计大学研究生院",
+      "readingScope": "下载原始38页扫描PDF并渲染核读：封面落款2025年2月；印刷p2（PDF第4页）学制调整、毕业人数表；印刷p34（PDF第36页）就业段。发布日期按研究生院正文。",
+      "limitations": "2022级起学制由2年改3年，报告明确2024年无MPAcc应届毕业生；就业分类为0不能解释成就业率0。非2025、2026届就业结果。",
+      "expansionBatch": "mentor-outcomes-20261113"
+    },
+    "MO20261113-SAUDIT": {
+      "code": "MO20261113-SAUDIT",
+      "kind": "official",
+      "title": "祝贺！这些同学将入职审计署",
+      "label": "祝贺！这些同学将入职审计署",
+      "url": "https://news.nau.edu.cn/2026/0708/c11360a160510/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2026/0708/c11360a160510/page.htm",
+      "originalUrl": "https://news.nau.edu.cn/2026/0708/c11360a160510/page.htm",
+      "date": "2026-07-08",
+      "platform": "南京审计大学新闻网",
+      "readingScope": "已读正文6人专业、毕业届次、录取去向及经历段。核对潘良庆正文自述为国家审计学院审计专硕；袁思祺为2022届本科校友。未读取照片。",
+      "limitations": "学校选取6名不同学院与学段毕业生，不能当成MPAcc就业结果或2026届统一样本；发布时称“将入职”，非后续在岗证明。全文未具名硕士导师；吴泽泰提到的周维培为选修课授课老师，不能写学位导师。",
+      "expansionBatch": "mentor-outcomes-20261113"
     }
   },
   "targetProfiles": [
@@ -56650,6 +56847,1041 @@
       {
         "label": "学校",
         "chapterId": "life-16"
+      }
+    ]
+  },
+  "studentOutcomes": {
+    "asOf": "2026-11-13",
+    "records": [
+      {
+        "id": "MOA-PJ-SHC",
+        "studentName": "孙昊晨",
+        "degree": "MPAcc",
+        "degreeLabel": "MPAcc（会计专业硕士）",
+        "cohort": null,
+        "graduationYear": 2025,
+        "mentorId": "mentor-11",
+        "mentorName": "潘俊",
+        "relationship": {
+          "text": "官网明确硕士阶段成为潘俊教授的学生。",
+          "sourceIds": [
+            "O-PJ"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "phd",
+          "organization": "上海财经大学",
+          "program": "会计学博士研究生",
+          "year": 2025,
+          "statusLabel": "考取；2025年8月校方报道",
+          "asOf": "2025-08-20",
+          "sourceIds": [
+            "O-PJ"
+          ]
+        },
+        "sourceIds": [
+          "O-PJ"
+        ],
+        "limits": [
+          "旧访谈补提取去向；本科毕业年份不当作硕士入学年份。",
+          "单一升学个案，不能推出导师有固定博士名额或所有学生均读博。"
+        ]
+      },
+      {
+        "id": "MOA-PJ-YHP",
+        "studentName": "于昊平",
+        "degree": "MPAcc",
+        "degreeLabel": "MPAcc（会计专业硕士）",
+        "cohort": null,
+        "graduationYear": 2025,
+        "mentorId": "mentor-11",
+        "mentorName": "潘俊",
+        "relationship": {
+          "text": "2025届MPAcc学位论文的指导教师明列潘俊。",
+          "sourceIds": [
+            "12"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "phd",
+          "organization": "东南大学",
+          "program": "会计学博士",
+          "year": null,
+          "statusLabel": "2026年6月官方正文称目前在读",
+          "asOf": "2026-06-15",
+          "sourceIds": [
+            "12"
+          ]
+        },
+        "sourceIds": [
+          "12"
+        ],
+        "limits": [
+          "未公开本人对导师的评价，不把获奖报道的学院表述写成学生评价。",
+          "未明确博士入学年份。"
+        ]
+      },
+      {
+        "id": "MOA-PJ-LJL",
+        "studentName": "李佳林",
+        "degree": "master_unspecified",
+        "degreeLabel": "会计学硕士（原文未区分学硕/专硕）",
+        "cohort": "2019",
+        "graduationYear": null,
+        "mentorId": "mentor-11",
+        "mentorName": "潘俊",
+        "relationship": {
+          "text": "本人段落及合照图注明确导师潘俊，学院考博名单亦有对应。",
+          "sourceIds": [
+            "R801",
+            "MOA05"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "phd",
+          "organization": "中国人民大学商学院",
+          "program": "会计学博士研究生",
+          "year": 2022,
+          "statusLabel": "2022年校园号毕业季报道明确考取",
+          "asOf": "2022-12-22",
+          "sourceIds": [
+            "R801",
+            "MOA05"
+          ]
+        },
+        "sourceIds": [
+          "R801",
+          "MOA05"
+        ],
+        "limits": [
+          "不计入已确认MPAcc。",
+          "学院汇总名单没有年份；2022年去向来自具名访谈。",
+          "文章其他毕业生的就业单位不归给李佳林。"
+        ]
+      },
+      {
+        "id": "MOA-LGC-ZAQ",
+        "studentName": "朱安琪",
+        "degree": "master_unspecified",
+        "degreeLabel": "会计学专业硕士（原文未明确学硕/专硕）",
+        "cohort": null,
+        "graduationYear": null,
+        "mentorId": "mentor-10",
+        "mentorName": "刘国城",
+        "relationship": {
+          "text": "本人叙述明确称刘国城教授为自己的导师。",
+          "sourceIds": [
+            "R701"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "employment",
+          "organization": "华为",
+          "program": "账务管理岗位",
+          "year": 2021,
+          "statusLabel": "签约；报道发布于2021年11月，面向2022届",
+          "asOf": "2021-11-10 17:42",
+          "sourceIds": [
+            "R701"
+          ]
+        },
+        "sourceIds": [
+          "R701"
+        ],
+        "limits": [
+          "正文2022级与标题2022届存在冲突，年级及毕业年份留空。",
+          "不计入已确认MPAcc。",
+          "只确认报道时签约，不写成已入职或当前在职。",
+          "学校精选单一个案，不能当导师就业保荐能力证据。"
+        ]
+      },
+      {
+        "id": "MOA-XHY-JYL",
+        "studentName": "姜亚琳",
+        "degree": "master_unspecified",
+        "degreeLabel": "会计学硕士（原文未区分学硕/专硕）",
+        "cohort": "2014",
+        "graduationYear": 2017,
+        "mentorId": "mentor-08",
+        "mentorName": "许汉友",
+        "relationship": {
+          "text": "学院考取博士学生名单直接并列姜亚琳、导师许汉友、东南大学。",
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "phd",
+          "organization": "东南大学",
+          "program": "管理科学与工程博士",
+          "year": 2018,
+          "statusLabel": "教师官方简历列2018年3月至2022年9月博士阶段；现为管理学博士",
+          "asOf": "2021-07-07",
+          "sourceIds": [
+            "MOA05",
+            "MOA06"
+          ]
+        },
+        "sourceIds": [
+          "MOA05",
+          "MOA06"
+        ],
+        "limits": [
+          "导师关系来自学院名单，不以论文共著推断。",
+          "不计入已确认MPAcc。",
+          "硕士与博士之间有工作经历，不写成毕业即读博。",
+          "教师简历另列2022年12月起任南京审计大学社会审计学院讲师；当前记录的主去向保留博士阶段。"
+        ]
+      },
+      {
+        "id": "MOA-DBR-ZTT",
+        "studentName": "赵婷婷",
+        "degree": "master_unspecified",
+        "degreeLabel": "硕士类型未注明",
+        "cohort": null,
+        "graduationYear": null,
+        "mentorId": "mentor-01",
+        "mentorName": "董必荣",
+        "relationship": {
+          "text": "学院考取博士学生名单直接列赵婷婷的导师为董必荣。",
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "phd",
+          "organization": "中央财经大学",
+          "program": null,
+          "year": null,
+          "statusLabel": "学院公开名单记载考取，年份未披露",
+          "asOf": null,
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "sourceIds": [
+          "MOA05"
+        ],
+        "limits": [
+          "名单未给硕士类型、年级、毕业年份或博士专业；不能归为MPAcc。",
+          "不与同名教师资料拼接任职去向。",
+          "仅公开升学个案，不代表当前招生导师安排或升学概率。"
+        ]
+      },
+      {
+        "id": "MOA-DBR-LP",
+        "studentName": "李珮",
+        "degree": "master_unspecified",
+        "degreeLabel": "硕士类型未注明",
+        "cohort": null,
+        "graduationYear": null,
+        "mentorId": "mentor-01",
+        "mentorName": "董必荣",
+        "relationship": {
+          "text": "学院考取博士学生名单直接列李珮的导师为董必荣。",
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "phd",
+          "organization": "厦门大学",
+          "program": null,
+          "year": null,
+          "statusLabel": "学院公开名单记载考取，年份未披露",
+          "asOf": null,
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "sourceIds": [
+          "MOA05"
+        ],
+        "limits": [
+          "名单未给硕士类型、年级、毕业年份或博士专业；不能归为MPAcc。",
+          "不与同名教师资料拼接任职去向。",
+          "不从同批其他人的专硕获奖记录推其学位类型。"
+        ]
+      },
+      {
+        "id": "MOA-CJ-XHJ",
+        "studentName": "徐捍军",
+        "degree": "master_unspecified",
+        "degreeLabel": "硕士类型未注明",
+        "cohort": null,
+        "graduationYear": null,
+        "mentorId": null,
+        "mentorName": "陈骏",
+        "relationship": {
+          "text": "学院考取博士学生名单直接列徐捍军的导师为陈骏。",
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "relationshipStatus": "confirmed_external",
+        "outcome": {
+          "type": "phd",
+          "organization": "上海财经大学",
+          "program": null,
+          "year": null,
+          "statusLabel": "学院公开名单记载考取，年份未披露",
+          "asOf": null,
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "sourceIds": [
+          "MOA05"
+        ],
+        "limits": [
+          "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+          "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。",
+          "为完整收录同一官方名单而纳入，超出本组原11位导师范围；主汇总须与其他组去重。"
+        ]
+      },
+      {
+        "id": "MOA-PJ-YL",
+        "studentName": "袁璐",
+        "degree": "MPAcc",
+        "degreeLabel": "MPAcc（会计专业硕士）",
+        "cohort": null,
+        "graduationYear": 2020,
+        "mentorId": "mentor-11",
+        "mentorName": "潘俊",
+        "relationship": {
+          "text": "学院名单直接列袁璐—导师潘俊—考取厦门大学；教指委校友访谈对应同名南审2020届MPAcc校友、2020年进入厦门大学会计学博士阶段，学校与去向一致。",
+          "sourceIds": [
+            "MOA05",
+            "R802"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "phd",
+          "organization": "厦门大学",
+          "program": "会计学博士",
+          "year": 2020,
+          "statusLabel": "官方校友访谈列2020—2024年攻读博士；2024年回南审任教",
+          "asOf": "2025-04-14",
+          "sourceIds": [
+            "MOA05",
+            "R802"
+          ]
+        },
+        "sourceIds": [
+          "MOA05",
+          "R802"
+        ],
+        "limits": [
+          "通过姓名、南审硕士身份与厦门大学博士去向交叉归属；访谈本篇未直接点名潘俊。",
+          "只将校内导师角色及双导师共同训练归入这段历史经历，不把全部调研、写作训练独归潘俊。",
+          "访谈中李建发指导明确属于博士阶段，不能移植为潘俊评价。",
+          "2024年回南审任教为后续公开去向，不代表导师保证留校或就业。"
+        ]
+      },
+      {
+        "id": "MOA-PJ-YYP",
+        "studentName": "余一品",
+        "degree": "master_unspecified",
+        "degreeLabel": "硕士类型未注明",
+        "cohort": null,
+        "graduationYear": null,
+        "mentorId": "mentor-11",
+        "mentorName": "潘俊",
+        "relationship": {
+          "text": "学院考取博士学生名单直接列余一品的导师为潘俊。",
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "phd",
+          "organization": "上海财经大学",
+          "program": null,
+          "year": null,
+          "statusLabel": "学院公开名单记载考取，年份未披露",
+          "asOf": null,
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "sourceIds": [
+          "MOA05"
+        ],
+        "limits": [
+          "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+          "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。"
+        ]
+      },
+      {
+        "id": "MOA-PJ-JXF",
+        "studentName": "景雪峰",
+        "degree": "master_unspecified",
+        "degreeLabel": "硕士类型未注明",
+        "cohort": null,
+        "graduationYear": null,
+        "mentorId": "mentor-11",
+        "mentorName": "潘俊",
+        "relationship": {
+          "text": "学院考取博士学生名单直接列景雪峰的导师为潘俊。",
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "phd",
+          "organization": "中山大学",
+          "program": null,
+          "year": null,
+          "statusLabel": "学院公开名单记载考取，年份未披露",
+          "asOf": null,
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "sourceIds": [
+          "MOA05"
+        ],
+        "limits": [
+          "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+          "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。"
+        ]
+      },
+      {
+        "id": "MOA-DBR-KLP",
+        "studentName": "孔令鹏",
+        "degree": "master_unspecified",
+        "degreeLabel": "硕士类型未注明",
+        "cohort": null,
+        "graduationYear": null,
+        "mentorId": "mentor-01",
+        "mentorName": "董必荣",
+        "relationship": {
+          "text": "学院考取博士学生名单直接列孔令鹏的导师为董必荣。",
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "phd",
+          "organization": "北京交通大学",
+          "program": null,
+          "year": null,
+          "statusLabel": "学院公开名单记载考取，年份未披露",
+          "asOf": null,
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "sourceIds": [
+          "MOA05"
+        ],
+        "limits": [
+          "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+          "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。"
+        ]
+      },
+      {
+        "id": "MOA-PJ-YJQ",
+        "studentName": "姚继晴",
+        "degree": "master_unspecified",
+        "degreeLabel": "硕士类型未注明",
+        "cohort": null,
+        "graduationYear": null,
+        "mentorId": "mentor-11",
+        "mentorName": "潘俊",
+        "relationship": {
+          "text": "学院考取博士学生名单直接列姚继晴的导师为潘俊。",
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "phd",
+          "organization": "财政部财政科学研究院",
+          "program": null,
+          "year": null,
+          "statusLabel": "学院公开名单记载考取，年份未披露",
+          "asOf": null,
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "sourceIds": [
+          "MOA05"
+        ],
+        "limits": [
+          "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+          "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。",
+          "学校名称采用历史名单原文财政部财政科学研究院，不擅自改为当前机构名称。"
+        ]
+      },
+      {
+        "id": "MOA-PJ-ZHY",
+        "studentName": "周会洋",
+        "degree": "master_unspecified",
+        "degreeLabel": "硕士类型未注明",
+        "cohort": null,
+        "graduationYear": null,
+        "mentorId": "mentor-11",
+        "mentorName": "潘俊",
+        "relationship": {
+          "text": "学院考取博士学生名单直接列周会洋的导师为潘俊。",
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "phd",
+          "organization": "南京大学",
+          "program": null,
+          "year": null,
+          "statusLabel": "学院公开名单记载考取，年份未披露",
+          "asOf": null,
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "sourceIds": [
+          "MOA05"
+        ],
+        "limits": [
+          "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+          "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。"
+        ]
+      },
+      {
+        "id": "MOA-PJ-WXH",
+        "studentName": "吴小涵",
+        "degree": "master_unspecified",
+        "degreeLabel": "硕士类型未注明",
+        "cohort": null,
+        "graduationYear": null,
+        "mentorId": "mentor-11",
+        "mentorName": "潘俊",
+        "relationship": {
+          "text": "学院考取博士学生名单直接列吴小涵的导师为潘俊。",
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "phd",
+          "organization": "对外经济贸易大学",
+          "program": null,
+          "year": null,
+          "statusLabel": "学院公开名单记载考取，年份未披露",
+          "asOf": null,
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "sourceIds": [
+          "MOA05"
+        ],
+        "limits": [
+          "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+          "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。"
+        ]
+      },
+      {
+        "id": "MOA-DBR-LXW",
+        "studentName": "李新伟",
+        "degree": "master_unspecified",
+        "degreeLabel": "硕士类型未注明",
+        "cohort": null,
+        "graduationYear": null,
+        "mentorId": "mentor-01",
+        "mentorName": "董必荣",
+        "relationship": {
+          "text": "学院考取博士学生名单直接列李新伟的导师为董必荣。",
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "phd",
+          "organization": "暨南大学",
+          "program": null,
+          "year": null,
+          "statusLabel": "学院公开名单记载考取，年份未披露",
+          "asOf": null,
+          "sourceIds": [
+            "MOA05"
+          ]
+        },
+        "sourceIds": [
+          "MOA05"
+        ],
+        "limits": [
+          "名单未给硕士学位类型、年级、毕业年份、考博年份或博士专业；不计入已确认MPAcc。",
+          "只记录学院公开的考取状态，不改写为已毕业、当前在读或就业去向。"
+        ]
+      },
+      {
+        "id": "MOB-lihaoyan-deloitte",
+        "studentName": "李皓妍",
+        "degree": "MAud",
+        "degreeLabel": "审计专业硕士（MAud）",
+        "cohort": "2017",
+        "graduationYear": null,
+        "mentorId": null,
+        "mentorName": null,
+        "relationship": null,
+        "relationshipStatus": "not_public",
+        "outcome": {
+          "type": "employment",
+          "organization": "德勤华永会计师事务所南京分所",
+          "program": "税务咨询业务线高级顾问",
+          "year": 2023,
+          "statusLabel": "学校报道确认的当时任职；不是毕业首职统计",
+          "asOf": "2023-07-23",
+          "sourceIds": [
+            "MOB03"
+          ]
+        },
+        "sourceIds": [
+          "MOB03"
+        ],
+        "limits": [
+          "与吴青川的导师关系没有明证，不挂在吴青川名下。",
+          "不是MPAcc案例；不将其计入MPAcc就业样本或毕业就业率。",
+          "只能确认报道时单位和职位，不能补写入职年份与薪酬。"
+        ]
+      },
+      {
+        "id": "SO20261113-01",
+        "studentName": "胡朝会",
+        "degree": "MPAcc",
+        "degreeLabel": "会计硕士（MPAcc）",
+        "cohort": "2023级",
+        "graduationYear": 2026,
+        "mentorId": null,
+        "mentorName": null,
+        "relationship": null,
+        "relationshipStatus": "not_public",
+        "outcome": {
+          "type": "phd",
+          "organization": "上海财经大学",
+          "program": null,
+          "year": 2026,
+          "statusLabel": "学校公布的2026届毕业去向",
+          "asOf": "2026-06-26",
+          "sourceIds": [
+            "D601"
+          ]
+        },
+        "sourceIds": [
+          "D601"
+        ],
+        "limits": [
+          "2026年6月官方毕业去向个案；未公布硕士导师、录用岗位或入职日，不推为同导师/同届普遍结果。博士专业未在该新闻说明。"
+        ]
+      },
+      {
+        "id": "SO20261113-02",
+        "studentName": "陆欣昀",
+        "degree": "MPAcc",
+        "degreeLabel": "会计硕士（MPAcc）",
+        "cohort": "2023级",
+        "graduationYear": 2026,
+        "mentorId": null,
+        "mentorName": null,
+        "relationship": null,
+        "relationshipStatus": "not_public",
+        "outcome": {
+          "type": "employment",
+          "organization": "国网江苏省电力有限公司常州供电分公司",
+          "program": null,
+          "year": 2026,
+          "statusLabel": "学校公布的2026届毕业去向",
+          "asOf": "2026-06-26",
+          "sourceIds": [
+            "D601"
+          ]
+        },
+        "sourceIds": [
+          "D601"
+        ],
+        "limits": [
+          "2026年6月官方毕业去向个案；未公布硕士导师、录用岗位或入职日，不推为同导师/同届普遍结果。"
+        ]
+      },
+      {
+        "id": "SO20261113-03",
+        "studentName": "林洛妤",
+        "degree": "MPAcc",
+        "degreeLabel": "会计硕士（MPAcc）",
+        "cohort": "2023级",
+        "graduationYear": 2026,
+        "mentorId": null,
+        "mentorName": null,
+        "relationship": null,
+        "relationshipStatus": "not_public",
+        "outcome": {
+          "type": "employment",
+          "organization": "安永华明会计师事务所（特殊普通合伙）上海分所",
+          "program": null,
+          "year": 2026,
+          "statusLabel": "学校公布的2026届毕业去向",
+          "asOf": "2026-06-26",
+          "sourceIds": [
+            "D601"
+          ]
+        },
+        "sourceIds": [
+          "D601"
+        ],
+        "limits": [
+          "2026年6月官方毕业去向个案；未公布硕士导师、录用岗位或入职日，不推为同导师/同届普遍结果。原文另有安永实习分享，毕业去向与实习分开记录。"
+        ]
+      },
+      {
+        "id": "SO20261113-04",
+        "studentName": "蔡云霏",
+        "degree": "academic_master",
+        "degreeLabel": "会计学学术型硕士",
+        "cohort": "2023级",
+        "graduationYear": 2026,
+        "mentorId": null,
+        "mentorName": null,
+        "relationship": null,
+        "relationshipStatus": "not_public",
+        "outcome": {
+          "type": "employment",
+          "organization": "国家税务总局南京市浦口区税务局",
+          "program": null,
+          "year": 2026,
+          "statusLabel": "学校公布的2026届毕业去向",
+          "asOf": "2026-06-26",
+          "sourceIds": [
+            "D601"
+          ]
+        },
+        "sourceIds": [
+          "D601"
+        ],
+        "limits": [
+          "会计学硕，非MPAcc。2026年6月官方毕业去向个案；未公布硕士导师、录用岗位或入职日，不推为同导师/同届普遍结果。"
+        ]
+      },
+      {
+        "id": "SO20261113-06",
+        "studentName": "袁璐",
+        "degree": "MPAcc",
+        "degreeLabel": "会计硕士（MPAcc）",
+        "cohort": null,
+        "graduationYear": 2020,
+        "mentorId": "mentor-11",
+        "mentorName": "潘俊",
+        "relationship": {
+          "text": "学院名单直接列袁璐—导师潘俊—考取厦门大学；教指委校友访谈对应同名南审2020届MPAcc校友、2020年进入厦门大学会计学博士阶段，学校与去向一致。",
+          "sourceIds": [
+            "MOA05",
+            "R802"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": {
+          "type": "employment",
+          "organization": "南京审计大学",
+          "program": null,
+          "year": 2024,
+          "statusLabel": "2025年校友访谈记载：2024年返校成为青年教师",
+          "asOf": "2025-04-14",
+          "sourceIds": [
+            "R802"
+          ]
+        },
+        "sourceIds": [
+          "R802",
+          "MOA05"
+        ],
+        "limits": [
+          "这是2020届MPAcc毕业后再读博的后续去向，非2020年硕士直接就业；不据2025报道断言2026当前任职。"
+        ]
+      },
+      {
+        "id": "SO20261113-SCHOOL01",
+        "studentName": "安昶旭",
+        "degree": "academic_master",
+        "degreeLabel": "应用经济学硕士",
+        "cohort": null,
+        "graduationYear": 2026,
+        "mentorId": null,
+        "mentorName": null,
+        "relationship": null,
+        "relationshipStatus": "not_public",
+        "outcome": {
+          "type": "employment",
+          "organization": "审计署业务司局",
+          "program": null,
+          "year": 2026,
+          "statusLabel": "2026年7月学校报道：将入职",
+          "asOf": "2026-07-08",
+          "sourceIds": [
+            "MO20261113-SAUDIT"
+          ]
+        },
+        "sourceIds": [
+          "MO20261113-SAUDIT"
+        ],
+        "limits": [
+          "经济学院；非会计或审计学位。录取去向为报道时记录，不断言当前已入职；未公布硕士导师。"
+        ]
+      },
+      {
+        "id": "SO20261113-SCHOOL02",
+        "studentName": "袁思祺",
+        "degree": "undergraduate",
+        "degreeLabel": "会计学本科",
+        "cohort": null,
+        "graduationYear": 2022,
+        "mentorId": null,
+        "mentorName": null,
+        "relationship": null,
+        "relationshipStatus": "not_public",
+        "outcome": {
+          "type": "employment",
+          "organization": "审计署业务司局",
+          "program": null,
+          "year": 2026,
+          "statusLabel": "2026年7月学校报道：将入职",
+          "asOf": "2026-07-08",
+          "sourceIds": [
+            "MO20261113-SAUDIT"
+          ]
+        },
+        "sourceIds": [
+          "MO20261113-SAUDIT"
+        ],
+        "limits": [
+          "2022届会计学院本科校友，曾在事务所工作；2026录用是本科毕业后的后续去向，非2026届应届或MPAcc结果。录取去向为报道时记录，不断言当前已入职；未公布硕士导师。"
+        ]
+      },
+      {
+        "id": "SO20261113-SCHOOL03",
+        "studentName": "潘良庆",
+        "degree": "MAud",
+        "degreeLabel": "审计硕士（MAud）",
+        "cohort": null,
+        "graduationYear": 2026,
+        "mentorId": null,
+        "mentorName": null,
+        "relationship": null,
+        "relationshipStatus": "not_public",
+        "outcome": {
+          "type": "employment",
+          "organization": "审计署重庆特派办",
+          "program": null,
+          "year": 2026,
+          "statusLabel": "2026年7月学校报道：将入职",
+          "asOf": "2026-07-08",
+          "sourceIds": [
+            "MO20261113-SAUDIT"
+          ]
+        },
+        "sourceIds": [
+          "MO20261113-SAUDIT"
+        ],
+        "limits": [
+          "国家审计学院；正文明确自述攻读审计专硕，非MPAcc。录取去向为报道时记录，不断言当前已入职；未公布硕士导师。"
+        ]
+      },
+      {
+        "id": "SO20261113-SCHOOL04",
+        "studentName": "赵娅岚",
+        "degree": "MAud",
+        "degreeLabel": "审计专业硕士研究生（原文未标学位类别）",
+        "cohort": null,
+        "graduationYear": 2026,
+        "mentorId": null,
+        "mentorName": null,
+        "relationship": null,
+        "relationshipStatus": "not_public",
+        "outcome": {
+          "type": "employment",
+          "organization": "审计署昆明特派办",
+          "program": null,
+          "year": 2026,
+          "statusLabel": "2026年7月学校报道：将入职",
+          "asOf": "2026-07-08",
+          "sourceIds": [
+            "MO20261113-SAUDIT"
+          ]
+        },
+        "sourceIds": [
+          "MO20261113-SAUDIT"
+        ],
+        "limits": [
+          "国家审计学院；新闻标为审计专业2026届硕士，未明确写专硕/学硕，不擅自补学位类别；非MPAcc。录取去向为报道时记录，不断言当前已入职；未公布硕士导师。"
+        ]
+      },
+      {
+        "id": "SO20261113-SCHOOL05",
+        "studentName": "郝毅",
+        "degree": "undergraduate",
+        "degreeLabel": "审计学本科（IAEP方向）",
+        "cohort": null,
+        "graduationYear": 2026,
+        "mentorId": null,
+        "mentorName": null,
+        "relationship": null,
+        "relationshipStatus": "not_public",
+        "outcome": {
+          "type": "employment",
+          "organization": "审计署京津冀特派办",
+          "program": null,
+          "year": 2026,
+          "statusLabel": "2026年7月学校报道：将入职",
+          "asOf": "2026-07-08",
+          "sourceIds": [
+            "MO20261113-SAUDIT"
+          ]
+        },
+        "sourceIds": [
+          "MO20261113-SAUDIT"
+        ],
+        "limits": [
+          "内部审计学院本科，非硕士。录取去向为报道时记录，不断言当前已入职；未公布硕士导师。"
+        ]
+      },
+      {
+        "id": "SO20261113-SCHOOL06",
+        "studentName": "吴泽泰",
+        "degree": "undergraduate",
+        "degreeLabel": "金融工程本科（金融审计方向）",
+        "cohort": null,
+        "graduationYear": 2026,
+        "mentorId": null,
+        "mentorName": null,
+        "relationship": null,
+        "relationshipStatus": "not_public",
+        "outcome": {
+          "type": "employment",
+          "organization": "审计署太原特派办",
+          "program": null,
+          "year": 2026,
+          "statusLabel": "2026年7月学校报道：将入职",
+          "asOf": "2026-07-08",
+          "sourceIds": [
+            "MO20261113-SAUDIT"
+          ]
+        },
+        "sourceIds": [
+          "MO20261113-SAUDIT"
+        ],
+        "limits": [
+          "国际学院本科，非硕士；周维培仅是文中提到的课程教师，非已证实导师。录取去向为报道时记录，不断言当前已入职；未公布硕士导师。"
+        ]
+      }
+    ],
+    "statistics": [
+      {
+        "id": "SO20261113-ST01",
+        "label": "毕业人数",
+        "value": 103,
+        "scope": "南京审计大学会计硕士专业学位授权点（MPAcc）",
+        "cohort": "2023届",
+        "sourceIds": [
+          "MO20261113-S2023"
+        ],
+        "limits": [
+          "印刷p2与p44一致；不是全校研究生或会计学硕人数。就业率和分类表存在文本冲突，未采纳为前台统计。"
+        ]
+      },
+      {
+        "id": "SO20261113-ST02",
+        "label": "应届毕业人数",
+        "value": 0,
+        "scope": "南京审计大学会计硕士专业学位授权点（MPAcc）",
+        "cohort": "2024年",
+        "sourceIds": [
+          "MO20261113-S2024"
+        ],
+        "limits": [
+          "印刷p2、p34明确2022级起2年改3年，故2024年无应届毕业生；0不是就业率。"
+        ]
+      }
+    ],
+    "achievements": [
+      {
+        "id": "MOB-zhangyuanyuan-linghua",
+        "studentName": "张媛媛",
+        "degree": "MPAcc",
+        "degreeLabel": "会计专业硕士（MPAcc）",
+        "cohort": null,
+        "graduationYear": null,
+        "mentorId": "mentor-22",
+        "mentorName": "凌华",
+        "relationship": {
+          "text": "全国MPAcc优秀学位论文正式名单列明指导老师为凌华。",
+          "sourceIds": [
+            "MOB01"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": null,
+        "sourceIds": [
+          "MOB01"
+        ],
+        "limits": [
+          "论文奖可证明该名学生的论文成果及指导对应，不能据此评价导师日常相处、放实习或求职资源。",
+          "不把同名的统计学研究生、其他学院学生活动和录取考试名单与本案合并。",
+          "毕业年、就业单位和读博信息留空。"
+        ],
+        "achievement": {
+          "text": "《电商企业与个人IP共生商业模式对企业价值的影响研究——以东方甄选为例》获2025年MPAcc优秀学位论文奖。",
+          "sourceIds": [
+            "MOB01"
+          ]
+        }
+      },
+      {
+        "id": "MOB-huayuqian-wangjingyong-existing",
+        "studentName": "华雨倩",
+        "degree": "MPAcc",
+        "degreeLabel": "会计专业硕士（MPAcc）",
+        "cohort": null,
+        "graduationYear": null,
+        "mentorId": "mentor-20",
+        "mentorName": "王敬勇",
+        "relationship": {
+          "text": "会计学院获奖报道明确硕士学位论文指导教师为王敬勇。",
+          "sourceIds": [
+            "A403"
+          ]
+        },
+        "relationshipStatus": "confirmed",
+        "outcome": null,
+        "sourceIds": [
+          "A403"
+        ],
+        "limits": [
+          "既有A403事实复核，不计新增评价或去向。",
+          "研究生院、发展办、新闻网、学校主站镜像属于同一新闻，不累计为独立证据。",
+          "未使用含政治身份、年龄、学号、考试成绩的名单补充个人画像。"
+        ],
+        "achievement": {
+          "text": "《交易所问询函对企业数据合规的影响及其经济后果研究——以华大基因为例》获2023年全国MPAcc优秀学位论文奖。",
+          "sourceIds": [
+            "A403"
+          ]
+        }
       }
     ]
   }
