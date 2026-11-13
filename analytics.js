@@ -77,45 +77,108 @@
     if (target.classList) target.classList.add('visible');
   }
   function coarseDevice(n) {
-    var out = { type: '其他', os: '未知', browser: '未知' };
-    try {
-      n = n || {};
-      var ua = String(n.userAgent || '');
-      var platform = String(n.platform || '');
-      var hints = n.userAgentData || {};
-      var hintPlatform = String(hints.platform || '');
-      var mobile = typeof hints.mobile === 'boolean' ? hints.mobile : null;
-      var brands = Array.isArray(hints.brands) ? hints.brands : [];
-      function brand(name) {
-        return brands.some(function (item) { return item && item.brand === name; });
+    var out = {
+      type: '其他', os: '未知', browser: '未知', browserMajor: '未提供',
+      context: '未识别', basis: '未提供可用分类信息', status: '未识别'
+    };
+    function read(target, key) {
+      try { return target == null ? undefined : target[key]; } catch (_) { return undefined; }
+    }
+    function text(target, key) {
+      var value = read(target, key);
+      return typeof value === 'string' ? value : '';
+    }
+    function major(value) {
+      if (typeof value !== 'string') return '未提供';
+      var found = /^(\d{1,4})(?:\.\d+)*$/.exec(value);
+      return found && Number(found[1]) > 0 ? String(Number(found[1])) : '未提供';
+    }
+    function uaMajor(pattern) {
+      var found = pattern.exec(ua);
+      return found ? major(found[1]) : '未提供';
+    }
+    n = n || {};
+    var ua = text(n, 'userAgent');
+    var platform = text(n, 'platform');
+    var hints = read(n, 'userAgentData');
+    var hintPlatform = text(hints, 'platform');
+    var mobileValue = read(hints, 'mobile');
+    var mobile = typeof mobileValue === 'boolean' ? mobileValue : null;
+    var touch = read(n, 'maxTouchPoints');
+    var brands = read(hints, 'brands');
+    try { if (!Array.isArray(brands)) brands = []; } catch (_) { brands = []; }
+    function brand(name) {
+      var length = read(brands, 'length');
+      if (typeof length !== 'number') return null;
+      for (var i = 0; i < Math.min(length, 16); i += 1) {
+        var item = read(brands, i);
+        if (text(item, 'brand') === name) return { version: major(text(item, 'version')) };
       }
-      var tablet = /iPad/i.test(ua) || (platform === 'MacIntel' && Number(n.maxTouchPoints) > 1);
-      var iosPhone = /iPhone|iPod/i.test(ua);
-      var android = hintPlatform === 'Android' || /Android/i.test(ua);
-      if (tablet || /Tablet|PlayBook/i.test(ua)) out.type = '平板';
-      else if (iosPhone || /Windows Phone/i.test(ua) || mobile === true || (android && /Mobile/i.test(ua))) out.type = '手机';
-      // An Android UA without Mobile may be a tablet or a phone in desktop mode.
-      else if (!android && (/Windows|macOS|Chrome OS|Linux/i.test(hintPlatform) || /Win|Mac|Linux|CrOS|X11/i.test(platform + ' ' + ua))) out.type = '电脑';
+      return null;
+    }
+    var edge = brand('Microsoft Edge');
+    var opera = brand('Opera');
+    var chrome = brand('Google Chrome');
+    var chromium = brand('Chromium');
+    var ipad = /iPad/i.test(ua);
+    var ipadDesktop = platform === 'MacIntel' && typeof touch === 'number' && touch > 1;
+    var tablet = ipad || ipadDesktop || /Tablet|PlayBook/i.test(ua);
+    var iosPhone = /iPhone|iPod/i.test(ua);
+    var android = hintPlatform === 'Android' || /Android/i.test(ua);
+    var typeBasis = '未提供设备类别标记';
+    if (tablet) {
+      out.type = '平板';
+      typeBasis = ipadDesktop && !ipad ? 'iPad桌面模式线索' : '平板标记';
+    } else if (iosPhone || /Windows Phone/i.test(ua) || mobile === true || (android && /Mobile/i.test(ua))) {
+      out.type = '手机';
+      typeBasis = iosPhone ? 'iPhone或iPod标记' : mobile === true ? 'UA-CH移动标记' : '移动设备标记';
+    } else if (!android && (/Windows|macOS|Chrome OS|Linux/i.test(hintPlatform) || /Win|Mac|Linux|CrOS|X11/i.test(platform + ' ' + ua))) {
+      out.type = '电脑';
+      typeBasis = /^(Windows|macOS|Chrome OS|Linux)$/.test(hintPlatform) ? 'UA-CH桌面平台标记' : '桌面平台标记';
+    } else if (android) {
+      typeBasis = 'Android桌面模式或平板未区分';
+    }
 
-      if (tablet) out.os = 'iPadOS';
-      else if (iosPhone) out.os = 'iOS';
-      else if (/Windows Phone/i.test(ua)) out.os = 'Windows Phone';
-      else if (android) out.os = 'Android';
-      else if (hintPlatform === 'Windows' || /Windows NT|Win32|Win64/i.test(ua + ' ' + platform)) out.os = 'Windows';
-      else if (hintPlatform === 'Chrome OS' || /CrOS/i.test(ua)) out.os = 'Chrome OS';
-      else if (hintPlatform === 'macOS' || /Macintosh|MacIntel|MacPPC|Mac OS X/i.test(ua + ' ' + platform)) out.os = 'macOS';
-      else if (hintPlatform === 'Linux' || /Linux|X11/i.test(ua + ' ' + platform)) out.os = 'Linux';
+    if (ipad || ipadDesktop) out.os = 'iPadOS';
+    else if (iosPhone) out.os = 'iOS';
+    else if (/Windows Phone/i.test(ua)) out.os = 'Windows Phone';
+    else if (android) out.os = 'Android';
+    else if (hintPlatform === 'Windows' || /Windows NT|Win32|Win64/i.test(ua + ' ' + platform)) out.os = 'Windows';
+    else if (hintPlatform === 'Chrome OS' || /CrOS/i.test(ua)) out.os = 'Chrome OS';
+    else if (hintPlatform === 'macOS' || /Macintosh|MacIntel|MacPPC|Mac OS X/i.test(ua + ' ' + platform)) out.os = 'macOS';
+    else if (hintPlatform === 'Linux' || /Linux|X11/i.test(ua + ' ' + platform)) out.os = 'Linux';
 
-      if (/MicroMessenger/i.test(ua)) out.browser = '微信内置浏览器';
-      else if (/Edg(?:A|iOS)?\//i.test(ua) || brand('Microsoft Edge')) out.browser = 'Edge';
-      else if (/OPR\/|OPiOS\/|OPT\//i.test(ua) || brand('Opera')) out.browser = 'Opera';
-      else if (/SamsungBrowser\//i.test(ua)) out.browser = '三星浏览器';
-      else if (/Firefox\/|FxiOS\//i.test(ua)) out.browser = 'Firefox';
-      else if (/;\s*wv\)/i.test(ua)) out.browser = 'Android WebView';
-      else if (/Chrome\/|CriOS\//i.test(ua) || brand('Google Chrome')) out.browser = 'Chrome';
-      else if (/Version\/.+Safari\//i.test(ua)) out.browser = 'Safari';
-      else if (brand('Chromium')) out.browser = 'Chromium系浏览器';
-    } catch (_) {}
+    var browserBasis = '未提供浏览器标记';
+    function identify(name, context, pattern, knownBrand) {
+      out.browser = name;
+      out.context = context;
+      var byUa = pattern ? uaMajor(pattern) : '未提供';
+      out.browserMajor = byUa !== '未提供' ? byUa : knownBrand ? knownBrand.version : '未提供';
+      browserBasis = pattern && pattern.test(ua) ? 'UA浏览器或应用标记' : '低熵品牌标记';
+    }
+    if (/wxwork\//i.test(ua)) identify('企业微信内置浏览器', '企业微信内置浏览器', /wxwork\/(\d+(?:\.\d+)*)/i);
+    else if (/MicroMessenger/i.test(ua)) identify('微信内置浏览器', '微信内置浏览器', /MicroMessenger\/(\d+(?:\.\d+)*)/i);
+    else if (/DingTalk(?:[\/( ]|$)/i.test(ua)) identify('钉钉内置浏览器', '钉钉内置浏览器', /DingTalk[\/( ](\d+(?:\.\d+)*)/i);
+    else if (/baiduboxapp\//i.test(ua)) identify('百度App内置浏览器', '百度App内置浏览器', /baiduboxapp\/(\d+(?:\.\d+)*)/i);
+    else if (/(?:^|[ ;])QQ\//i.test(ua)) identify('QQ内置浏览器', 'QQ内置浏览器', /(?:^|[ ;])QQ\/(\d+(?:\.\d+)*)/i);
+    else if (/Edg(?:A|iOS)?\/|Edge\//i.test(ua) || edge) identify('Edge', '普通浏览器', /(?:Edg(?:A|iOS)?|Edge)\/(\d+(?:\.\d+)*)/i, edge);
+    else if (/OPR\/|OPiOS\/|OPT\//i.test(ua) || opera) identify('Opera', '普通浏览器', /(?:OPR|OPiOS|OPT)\/(\d+(?:\.\d+)*)/i, opera);
+    else if (/SamsungBrowser\//i.test(ua)) identify('三星浏览器', '普通浏览器', /SamsungBrowser\/(\d+(?:\.\d+)*)/i);
+    else if (/UCBrowser\//i.test(ua)) identify('UC浏览器', '普通浏览器', /UCBrowser\/(\d+(?:\.\d+)*)/i);
+    else if (/MQQBrowser\//i.test(ua)) identify('QQ浏览器', '普通浏览器', /MQQBrowser\/(\d+(?:\.\d+)*)/i);
+    else if (/BaiduBrowser\//i.test(ua)) identify('百度浏览器', '普通浏览器', /BaiduBrowser\/(\d+(?:\.\d+)*)/i);
+    else if (/Firefox\/|FxiOS\//i.test(ua)) identify('Firefox', '普通浏览器', /(?:Firefox|FxiOS)\/(\d+(?:\.\d+)*)/i);
+    else if (/;\s*wv\)/i.test(ua)) identify('Android WebView', 'Android WebView', /Chrome\/(\d+(?:\.\d+)*)/i);
+    else if (/Chrome\/|CriOS\//i.test(ua) || chrome) identify('Chrome', '普通浏览器', /(?:Chrome|CriOS)\/(\d+(?:\.\d+)*)/i, chrome);
+    else if (/Version\/.+Safari\//i.test(ua)) identify('Safari', '普通浏览器', /Version\/(\d+(?:\.\d+)*)/i);
+    else if (chromium) identify('Chromium系浏览器', '普通浏览器', null, chromium);
+
+    out.basis = '设备：' + typeBasis + '；浏览器：' + browserBasis;
+    if (android && out.type === '其他') out.status = '有歧义';
+    else if (out.type !== '其他' || out.os !== '未知' || out.browser !== '未知') out.status = '推断';
+    if (hintPlatform && ((android && hintPlatform !== 'Android') ||
+        (iosPhone && !/^(iOS|iPadOS)$/.test(hintPlatform)) ||
+        (hintPlatform === 'Android' && /Windows NT/i.test(ua)))) out.status = '有歧义';
     return out;
   }
   function send(c, payload) {
@@ -275,6 +338,11 @@
         device_type: device.type,
         device_os: device.os,
         device_browser: device.browser,
+        device_browser_major: device.browserMajor,
+        device_browser_context: device.context,
+        device_detection_basis: device.basis,
+        device_detection_status: device.status,
+        device_info_version: 'coarse_v4',
         $process_person_profile: false,
         $current_url: p.origin + p.pathname,
         $pathname: p.pathname,
