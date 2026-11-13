@@ -10,6 +10,8 @@
   if ('ResizeObserver' in window) new ResizeObserver(updateHeaderOffset).observe(header);
   else window.addEventListener('resize', updateHeaderOffset, {passive:true});
   const dialog = $('#detail-dialog');
+  const reviewImageDialog = $('#review-image-dialog');
+  const reviewImageState = {items:[], index:0, mode:'fit', trigger:null, priorOverflow:''};
   const state = { data: null, view: 'mentors', query: '', direction: '', savedOnly: false, reviewCoverage: '', mentorScope: 'useful', outcomeQuery: '', outcomeDegree: 'MPAcc', outcomeRelationship: '', outcomeType: '', internGroup: '', internCity: '', internStatus: 'current', postQuery: '', postTopic: '', postCategory: '', postLimit: 20, chapter: 'life-01', studentPhase: '', saved: {}, compareIds: [], dialogType: '', contactMentorId: '', contactMode: 'outline', contactEdits: {}, postCodes: {}, lastFocus: null, lastFocusId: null };
   const icons = {
     search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.6" cy="10.6" r="6.8"/><path d="m16 16 5 5"/></svg>',
@@ -56,6 +58,13 @@
 
   document.addEventListener('error', event => {
     const image = event.target;
+    if (image?.matches?.('img[data-review-thumb], img[data-review-image]')) {
+      const media = image.closest('[data-review-image-media]');
+      image.hidden = true;
+      const fallback = media?.querySelector('.review-image-fallback');
+      if (fallback) fallback.hidden = false;
+      return;
+    }
     if (image?.matches?.('img[data-life-image]')) {
       const media = image.closest('.life-photo-media');
       const link = media?.querySelector('.life-photo-open');
@@ -371,6 +380,85 @@
     return label ? `<b class="review-source-platform">${esc(label)}</b>` : '';
   }
 
+  function reviewImages(item) {
+    const primaryUrl = reviewSourceUrls(item)[0] || '';
+    const direct = screenshotItems(item.screenshots, primaryUrl);
+    if (direct.length) return direct.map(shot => ({...shot, overview:false}));
+    const post = reviewInternalPost(item);
+    if (!post) return [];
+    // Only these two saved post overviews have been checked for this use.
+    // A source's other screenshots can belong to a different teacher's branch.
+    const overviews = {
+      'xhs:67ecb72b000000001e0042af':'./evidence/xhs/x01-post-top.jpg',
+      'xhs:69cba3e80000000028008246':'./evidence/xhs/x02-post-top.jpg'
+    };
+    const key = [post.canonicalUrl,post.url].map(reviewSourceKey).find(value => overviews[value]);
+    const expected = overviews[key];
+    if (!expected) return [];
+    const shot = postScreenshots(post).find(value => value.src === expected && !value.mentorId && !value.reviewId);
+    return shot ? [{...shot, overview:true}] : [];
+  }
+
+  function reviewImageThumbnail(item, mentorId, shots) {
+    if (!shots.length || !item.id || !mentorId) return '';
+    const shot = shots[0];
+    const label = shot.overview ? '原帖概览，非本条评论截图' : '查看完整图';
+    const dimension = (value, fallback) => Number.isInteger(value) && value >= 1 && value <= 16000 ? value : fallback;
+    return `<figure class="review-shot-preview"><a class="review-shot-open" href="${esc(shot.src)}" target="_blank" rel="noopener noreferrer" data-action="review-image" data-review-id="${esc(item.id)}" data-mentor-id="${esc(mentorId)}" data-index="0" aria-label="${esc(label + '：' + textOf(shot.caption || '来源截图'))}"><span class="review-shot-media" data-review-image-media><img class="review-shot-thumb" src="${esc(shot.src)}" alt="${esc(shot.alt || shot.caption || '来源截图')}" width="${dimension(shot.width, 1200)}" height="${dimension(shot.height, 900)}" loading="lazy" decoding="async" data-review-thumb><span class="review-image-fallback" hidden>图片未载入<br>点此查看原图</span></span></a><figcaption>${esc(label)}${shots.length > 1 ? `<span> · ${shots.length} 张</span>` : ''}</figcaption></figure>`;
+  }
+
+  function renderReviewImage(focusAction = '') {
+    const shot = reviewImageState.items[reviewImageState.index];
+    if (!shot) return;
+    const multiple = reviewImageState.items.length > 1;
+    const caption = textOf(shot.caption || '来源截图');
+    const scope = array(shot.scope).map(textOf).filter(Boolean).join('；') || '仅展示已保存画面，未展示内容需打开原帖核对。';
+    const content = $('#review-image-content');
+    content.dataset.mode = reviewImageState.mode;
+    content.innerHTML = `<div class="review-image-toolbar"><div class="review-image-modes" aria-label="图片显示方式"><button type="button" data-action="review-image-mode" data-mode="fit" aria-pressed="${reviewImageState.mode === 'fit'}">适合窗口</button><button type="button" data-action="review-image-mode" data-mode="original" aria-pressed="${reviewImageState.mode === 'original'}">原尺寸</button></div>${multiple ? `<div class="review-image-paging"><button type="button" data-action="review-image-prev" aria-label="上一张图"${reviewImageState.index === 0 ? ' disabled' : ''}>←</button><span aria-live="polite">${reviewImageState.index + 1} / ${reviewImageState.items.length}</span><button type="button" data-action="review-image-next" aria-label="下一张图"${reviewImageState.index === reviewImageState.items.length - 1 ? ' disabled' : ''}>→</button></div>` : ''}</div><div class="review-image-stage" tabindex="0" aria-label="${esc(reviewImageState.mode === 'original' ? '原尺寸图片，可滚动查看' : '适合窗口的图片')}" data-review-image-media><img src="${esc(shot.src)}" alt="${esc(shot.alt || caption)}" decoding="async" data-review-image><p class="review-image-fallback" hidden>图片暂时无法载入，可用下方“原图”链接查看。</p></div><div class="review-image-caption">${shot.overview ? '<p class="review-image-overview">原帖概览，非本条评论截图</p>' : ''}<strong>${esc(caption)}</strong><p><span>截图范围：</span>${esc(scope)}</p><div class="review-image-links"><a href="${esc(shot.src)}" target="_blank" rel="noopener noreferrer">原图 ↗</a>${shot.sourceUrl ? external(shot.sourceUrl, '打开原帖 ↗') : ''}</div></div>`;
+    if (focusAction) $(`[data-action="${focusAction}"]${focusAction === 'review-image-mode' ? `[data-mode="${reviewImageState.mode}"]` : ''}`, content)?.focus({preventScroll:true});
+  }
+
+  function openReviewImage(mentorId, reviewId, index, trigger) {
+    if (!reviewImageDialog || typeof reviewImageDialog.showModal !== 'function') return false;
+    const mentor = state.data.mentors.find(value => value.id === mentorId);
+    const review = mentor && dossierReviews(mentor).find(value => value.id === reviewId);
+    const shots = review ? reviewImages(review) : [];
+    if (!shots.length) return false;
+    if (!reviewImageDialog.open) {
+      reviewImageState.trigger = trigger || document.activeElement;
+      reviewImageState.priorOverflow = document.body.style.overflow;
+    }
+    reviewImageState.items = shots;
+    reviewImageState.index = Number.isInteger(Number(index)) ? Math.max(0, Math.min(shots.length - 1, Number(index))) : 0;
+    reviewImageState.mode = 'fit';
+    $('#review-image-title').textContent = `${mentor.name} · 来源截图`;
+    renderReviewImage();
+    if (!reviewImageDialog.open) reviewImageDialog.showModal();
+    document.body.style.overflow = 'hidden';
+    $('#review-image-close').focus({preventScroll:true});
+    return true;
+  }
+
+  function closeReviewImage() {
+    if (!reviewImageDialog?.open && !reviewImageState.items.length) return;
+    if (reviewImageDialog?.open) reviewImageDialog.close();
+    document.body.style.overflow = dialog.open ? 'hidden' : reviewImageState.priorOverflow;
+    const trigger = reviewImageState.trigger;
+    reviewImageState.items = [];
+    reviewImageState.trigger = null;
+    $('#review-image-content').innerHTML = '';
+    if (trigger?.isConnected) trigger.focus({preventScroll:true});
+  }
+
+  function stepReviewImage(offset) {
+    if (!reviewImageDialog?.open) return;
+    const next = reviewImageState.index + offset;
+    if (next < 0 || next >= reviewImageState.items.length) return;
+    reviewImageState.index = next;
+    renderReviewImage(offset < 0 ? 'review-image-prev' : 'review-image-next');
+  }
+
   function reviewContextNotesHtml(item) {
     const notes = item.contextNotes;
     if (!notes || typeof notes !== 'object' || Array.isArray(notes)) return '';
@@ -407,8 +495,10 @@
     const author = item.postAuthor || post?.author || '';
     const postDate = item.postDate || post?.date || '';
     const primaryUrl = reviewSourceUrls(item)[0] || '';
+    const shots = reviewImages(item);
+    const preview = reviewImageThumbnail(item, mentorId, shots);
     const archive = `<p>${inline(item.text || item.summary || '')}</p>${array(item.specifics).length ? `<ul class="tip-list">${array(item.specifics).map(value => `<li>${inline(value)}</li>`).join('')}</ul>` : ''}<p class="review-attribution"><strong>归属依据：</strong>${item.attribution?.alias ? `原帖写法 ${esc(item.attribution.alias)}；` : ''}${inline(item.attribution?.reason || '原始材料明确指向这位老师。')}</p><p class="evidence-limit"><strong>适用边界：</strong>${inline(limits || '仅限记录中的具体身份、时间与经历，其他情况需另行核实。')}</p>${readingScope ? `<details class="review-reading-scope"><summary>材料范围</summary><p>${inline(readingScope)}</p></details>` : ''}`;
-    return `<details class="student-review-record${compact ? ' compact' : ''}"><summary><span>${reviewSourceBadge(item)}${platform ? ' · ' : ''}${esc(experience)} · ${esc(tone)}${contextNotes ? '<em class="review-context-hint">语境解读</em>' : ''}</span><small>${esc(item.narrator || '评论者未记录')} · ${esc(item.date || '日期未显示')}</small></summary><div class="student-review-meta"><span>${esc(voice)}</span>${title ? `<p class="review-source-caption"><strong>帖子／文章：</strong>${esc(title)}${author ? ` · ${esc(author)}` : ''}${postDate ? ` · ${esc(postDate)}` : ''}</p>` : ''}<p>${identity.map(esc).join(' · ')}</p>${firsthandScope ? `<p class="review-experience-scope"><strong>本人亲历范围：</strong>${inline(firsthandScope)}</p>` : ''}${hearsayParts ? `<p class="review-experience-scope"><strong>转述／朋友经历的部分：</strong>${inline(hearsayParts)}</p>` : ''}</div>${contextNotes ? contextNotes + `<details class="review-context-archive"><summary>其他摘记与边界</summary>${archive}</details>` : archive}${screenshotsHtml(item.screenshots, primaryUrl)}<div class="source-actions">${primaryUrl ? external(primaryUrl, esc(platform === '小红书' ? '打开小红书原帖／上下文 ↗' : '打开原文／上下文 ↗') + `<span class="sr-only">：${esc(item.sourceTitle || '')}</span>`) : ''}${post ? `<button type="button" class="text-button" data-action="post" data-id="${esc(post.id)}"${mentorId ? ` data-mentor-id="${esc(mentorId)}"` : ''}>查看本站帖子记录</button>` : ''}${codes.length ? inline('[' + codes.join('、') + ']') : ''}</div></details>`;
+    return `<div class="review-entry${preview ? ' has-image' : ''}${compact ? ' compact' : ''}"><details class="student-review-record${compact ? ' compact' : ''}"><summary><span>${reviewSourceBadge(item)}${platform ? ' · ' : ''}${esc(experience)} · ${esc(tone)}${contextNotes ? '<em class="review-context-hint">语境解读</em>' : ''}</span><small>${esc(item.narrator || '评论者未记录')} · ${esc(item.date || '日期未显示')}</small></summary><div class="student-review-meta"><span>${esc(voice)}</span>${title ? `<p class="review-source-caption"><strong>帖子／文章：</strong>${esc(title)}${author ? ` · ${esc(author)}` : ''}${postDate ? ` · ${esc(postDate)}` : ''}</p>` : ''}<p>${identity.map(esc).join(' · ')}</p>${firsthandScope ? `<p class="review-experience-scope"><strong>本人亲历范围：</strong>${inline(firsthandScope)}</p>` : ''}${hearsayParts ? `<p class="review-experience-scope"><strong>转述／朋友经历的部分：</strong>${inline(hearsayParts)}</p>` : ''}</div>${contextNotes ? contextNotes + `<details class="review-context-archive"><summary>其他摘记与边界</summary>${archive}</details>` : archive}<div class="source-actions">${primaryUrl ? external(primaryUrl, esc(platform === '小红书' ? '打开小红书原帖／上下文 ↗' : '打开原文／上下文 ↗') + `<span class="sr-only">：${esc(item.sourceTitle || '')}</span>`) : ''}${post ? `<button type="button" class="text-button" data-action="post" data-id="${esc(post.id)}"${mentorId ? ` data-mentor-id="${esc(mentorId)}"` : ''}>查看本站帖子记录</button>` : ''}${codes.length ? inline('[' + codes.join('、') + ']') : ''}</div></details>${preview}</div>`;
   }
 
   function studentReviewSection(mentor, compact = false) {
@@ -995,6 +1085,7 @@
   }
 
   function closeDialog() {
+    closeReviewImage();
     state.dialogType = '';
     if (dialog.open) dialog.close();
     document.body.style.overflow = '';
@@ -1086,6 +1177,11 @@
         case 'copy-contact': copyContactPreparation(); break;
         case 'mentor': openMentor(id); break;
         case 'post': openPost(id, action.dataset.mentorId || ''); break;
+        case 'review-image': if (!event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey && (event.button == null || event.button === 0) && openReviewImage(action.dataset.mentorId, action.dataset.reviewId, action.dataset.index, action)) event.preventDefault(); break;
+        case 'review-image-close': closeReviewImage(); break;
+        case 'review-image-prev': stepReviewImage(-1); break;
+        case 'review-image-next': stepReviewImage(1); break;
+        case 'review-image-mode': if (reviewImageDialog?.open && ['fit','original'].includes(action.dataset.mode)) { reviewImageState.mode = action.dataset.mode; renderReviewImage('review-image-mode'); } break;
         case 'save': toggleSaved(id); break;
         case 'guide': openGuide(action.dataset.section); break;
         case 'direction': state.direction=id; $$('[data-action="direction"]').forEach(b=>b.setAttribute('aria-pressed', String(b.dataset.id===id))); {const note=$('.direction-note');if(note){note.hidden=!id;note.textContent=id?`${id} · ${directionName(id)}；交叉归类不等同招生分组。`:'';}} renderMentorResults(); emit('direction_filter',{id}); break;
@@ -1132,6 +1228,15 @@
     else if(event.target.id==='contact-status'){state.saved[event.target.dataset.id]=event.target.value;persistSaved();if(state.view==='mentors')renderMentorResults();notify('已更新联系顺位');}
   });
   $('#dialog-close').addEventListener('click',closeDialog);
+  reviewImageDialog?.addEventListener('cancel', event => { event.preventDefault(); closeReviewImage(); });
+  reviewImageDialog?.addEventListener('keydown', event => {
+    if (reviewImageState.mode === 'fit' && reviewImageState.items.length > 1 && (event.key === 'ArrowLeft' || event.key === 'ArrowRight')) { event.preventDefault(); stepReviewImage(event.key === 'ArrowLeft' ? -1 : 1); }
+  });
+  reviewImageDialog?.addEventListener('click', event => {
+    if (event.target !== reviewImageDialog) return;
+    const rect = reviewImageDialog.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) closeReviewImage();
+  });
   dialog.addEventListener('cancel',event=>{event.preventDefault();closeDialog();});
   dialog.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)closeDialog();}});
   $('#back-top').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));

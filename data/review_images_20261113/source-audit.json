@@ -1,0 +1,39 @@
+{
+  "reviewCount": 44,
+  "directImageRecords": [
+    {
+      "mentor": "崔秀梅",
+      "reviewId": "sr-c8216c4fc1a3f7",
+      "src": "./evidence/xhs/x02-cuixiumei.jpg",
+      "sha256": "9fe85c6ef4c84460bc50050054e7137034e5cf8151760f7e16bafaff4a73c01c",
+      "scope": "主评和同一评论者的正面跟评完整保留；下方另2条折叠回复未展开，接触关系与学位阶段未明。"
+    },
+    {
+      "mentor": "刘国城",
+      "reviewId": "sr-129b0dd973f0d1",
+      "src": "./evidence/xhs/x01-liuguocheng.jpg",
+      "sha256": "fc5e89cedb34cfedef8a5819a079e85a71970a197c088f9514dfa1b8e95652b6",
+      "scope": "仅该条主评，显示昵称和日期；未截全部跟评，不属于MPAcc指导评价。"
+    },
+    {
+      "mentor": "叶邦银",
+      "reviewId": "sr-alias-20261113-yby",
+      "src": "./evidence/xhs/x01-post-top.jpg",
+      "sha256": "77bf288c3f704755f9c1f94b0adcf02a9b144f629e9a478cb9145d4cc1c54bf6",
+      "scope": "可见作者、标题、日期及首段缩写讨论；缩写按姓名对照展示；截图不确认评论者学位或指导关系。"
+    },
+    {
+      "mentor": "程博",
+      "reviewId": "sr-69b5e3bc556593",
+      "src": "./evidence/xhs/x02-chengbo.jpg",
+      "sha256": "278ab11baebbf94a023e550b24d9246c23ce31a8203d5746b45810d815ea69ee",
+      "scope": "木渎主评同时说明授课接触和听学姐转述；本图不含折叠回复，不把转述当MPAcc亲历。"
+    }
+  ],
+  "directReviewCount": 4,
+  "overviewOnlyReviewCount": 31,
+  "noExistingImageReviewCount": 9,
+  "overviewRule": "仅使用相同帖子已保存的post-top概览；标注非本条评论截图，不借用其他导师专属图。",
+  "excludedCrossPostMapping": "R317的图片不转归R318",
+  "newSourceImages": 0
+}

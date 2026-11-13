@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-11-13",
+  "tests": {
+    "passed": 146,
+    "failed": 0
+  },
+  "desktop": {
+    "viewportWidth": 1363,
+    "documentScrollWidth": 1363,
+    "thumbnailWidth": 110,
+    "thumbnailMediaHeight": 68,
+    "checks": [
+      "visibleWhileReviewCollapsed",
+      "directCommentImageLoads",
+      "matchedPostOverviewWithScopeLabel",
+      "inPageViewer",
+      "originalSizeMode",
+      "closeButtonAndEscape",
+      "mentorDialogAndScrollPreserved",
+      "focusRestoredToThumbnail",
+      "validFigureCaptionMarkup",
+      "noHorizontalOverflow"
+    ]
+  },
+  "mobileVisualCheck": false,
+  "mobileStyles": {
+    "thumbnailWidth": 76,
+    "thumbnailMediaHeight": 76
+  },
+  "sourceImagesAdded": 0,
+  "dataChanged": false,
+  "screenshots": [
+    "qa/review-images-20261113.jpg",
+    "qa/review-image-viewer-20261113.jpg"
+  ]
+}

@@ -39,7 +39,7 @@ async function app({secure=true,clipboard=true,denied=false,data=dataset}={}) {
   const navigator=clipboard?{clipboard:{writeText:async text=>{if(denied)throw new Error("NotAllowedError");copies.push(text);}}}:{};
   vm.runInNewContext(script,{document,window,location,navigator,URL,console,CSS:{escape:x=>x},CustomEvent:class{constructor(name,options){this.type=name;this.detail=options?.detail;}},Event:class{},fetch:async()=>({ok:true,json:async()=>structuredClone(data),headers:{get:()=>null}}),localStorage:{getItem:()=>null,setItem:(key,value)=>writes.push([key,value])},requestAnimationFrame:fn=>fn(),setTimeout:()=>1,clearTimeout(){}});
   for(let i=0;i<12;i++)await Promise.resolve();
-  const click=(action,id,extra={})=>handlers.get('click')({target:{closest:selector=>selector==='[data-action]'?{dataset:{action,id,...extra}}:null}});
+  const click=(action,id,extra={})=>handlers.get('click')({target:{closest:selector=>selector==='[data-action]'?{dataset:{action,id,...extra}}:null},preventDefault(){}});
   return {get,copies,writes,click,location,window,changeReview(value){handlers.get('change')({target:{id:'review-coverage',value}});},editContact(text){get('#contact-copy-text').value=text;handlers.get('input')({target:{id:'contact-copy-text',value:text}});},async changeMentor(id){handlers.get('change')({target:{id:'contact-mentor',value:id}});await Promise.resolve();},route(hash){location.hash=hash;winHandlers.get('hashchange')();},async flush(){for(let i=0;i<6;i++)await Promise.resolve();}};
 }
 
@@ -124,7 +124,11 @@ test('review screenshots reject unsafe paths, escape captions, and never inherit
  data.sourceRegistry.TEST_GOOD.screenshots=[{src:'./evidence/xhs/other-mentor-branch.png',caption:'OTHER_TEACHER_BRANCH'}];
  review.screenshots=[{src:'./evidence/xhs/review-safe-01.png',caption:'<img src=x onerror=alert(8)>',alt:'评论" onload="alert(9)',scope:'只截<一条>回复，不包含后续讨论。',sourceUrl:'javascript:alert(6)',width:1360,height:900},
   ...['https://evil.example/evidence.png','javascript:alert(7)','./evidence/xhs/../secret.png','./evidence/xhs/a.png?token=private','./evidence/xhs/a%2fb.png','data:image/png;base64,bad'].map(src=>({src,caption:'UNSAFE_CAPTURE'}))];
- const a=await app({data});a.click('mentor','mentor-02');const html=a.get('#dialog-content').innerHTML;
+ const a=await app({data});a.click('mentor','mentor-02');let html=a.get('#dialog-content').innerHTML;
+ assert.doesNotMatch(html,/class="evidence-screenshots"/,'review evidence is a compact adjacent image');
+ a.click('review-image',null,{mentorId:'mentor-02',reviewId:'course-confirmed',index:'0'});
+ assert.equal(a.get('#review-image-dialog').open,true);
+ html+=a.get('#review-image-content').innerHTML;
  assert.match(html,/src="\.\/evidence\/xhs\/review-safe-01\.png"/);
  assert.match(html,/width="1360" height="900" loading="lazy" decoding="async"/);
  assert.match(html,/&lt;img src=x onerror=alert\(8\)&gt;/);
