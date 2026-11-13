@@ -6,14 +6,14 @@
       "mentors": 34,
       "detailedMentorCards": 17,
       "lifeChapters": 16,
-      "socialPosts": 149,
-      "officialEvidence": 269,
+      "socialPosts": 150,
+      "officialEvidence": 274,
       "feedbackRecords": 21,
       "screenedSources": 15,
       "unreadLeads": 6,
       "studentReviewRecords": 55,
       "mentorsWithStudentReviews": 24,
-      "studentOutcomes": 28
+      "studentOutcomes": 29
     },
     "socialPostCategories": {
       "学习生活资料": 1,
@@ -28,7 +28,8 @@
       "有边界的导师课程反馈": 4,
       "仅筛选记录": 2,
       "历史学习经验": 7,
-      "校园人物访谈": 6
+      "校园人物访谈": 6,
+      "就业与校友资料": 1
     },
     "rosterSource": {
       "title": "十、会计（125300）专业学位硕士研究生导师",
@@ -845,6 +846,23 @@
       "newScreenshots": 9,
       "reviewRecords": 55,
       "scope": "核对两帖相关可见评论及回复，不声称全量；同一评论提名两位导师仍计一个原评论。"
+    },
+    "firmOutcomeResearch": {
+      "batch": "firm-outcomes-20261114",
+      "recordCount": 29,
+      "people": 28,
+      "mpaccRecords": 8,
+      "mpaccPeople": 7,
+      "targetFirmPeople": 3,
+      "mpaccTargetFirmPeople": 2,
+      "namedTargetFirmPeopleWithMentor": 0,
+      "qualitativeMentorStatements": 1,
+      "employerSummaries": 2,
+      "sourceRegistryEntries": 496,
+      "newRecordIds": [
+        "FO20261114-XIE-KPMG"
+      ],
+      "scope": "具名就业、整体历史就业统计、导师未具名描述、学校雇主举例分别保留；不从共著、实习、offer或合作单位推导师就业人数。"
     }
   },
   "directions": [
@@ -29157,6 +29175,56 @@
         "已公开核读全文；采用参与尝试、反馈和表达困扰的内容；未延伸查询个人社交账户。"
       ],
       "expansionBatch": "student-life-20261113"
+    },
+    {
+      "id": "FO20261114-XIE-POST",
+      "key": "official:FO20261114-XIE-POST",
+      "sourceIds": [
+        "FO20261114-XIE",
+        "FO20261114-2021",
+        "FO20261114-2022"
+      ],
+      "url": "https://business.jit.edu.cn/info/1036/12096.htm",
+      "canonicalUrl": "https://business.jit.edu.cn/info/1036/12096.htm",
+      "title": "校友风采之20届会计专业谢晓俊",
+      "author": "金陵科技学院商学院；编辑郑文杰",
+      "date": "2023-12-07",
+      "platform": "金陵科技学院商学院官网",
+      "category": "就业与校友资料",
+      "topic": "MPAcc毕业后的四大就业",
+      "population": "金陵科技学院2020届会计学本科、后获南京审计大学会计硕士；MPAcc类型经南审两份专业学位点年报交叉核对。",
+      "summary": "谢晓俊在2023年校友介绍中任职毕马威华振南京分所，从事金融企业审计、鉴证及咨询。",
+      "tips": [
+        "金融企业审计、鉴证及咨询，涉及上市银行和金融租赁公司。",
+        "南审两份专业学位点年报交叉核实MPAcc身份；本科2020届不当硕士届别。"
+      ],
+      "comments": [],
+      "limitations": "2020届为本科，硕士届别未公开。仅确认2023年报道时在职，未核当前雇主及首次入职年份；没有原文明示学位导师。",
+      "reviewReason": "官方具名硕士就业记录，不是导师口碑。",
+      "verificationStatus": "原文实际核读，学位类型交叉核实；导师未公开。",
+      "readingScopes": [
+        "浏览器实际读取正文、发布日期和院校名称；网页提取工具仅抽出导航，未将导航当全文。南审2021年报表5与2022年报表6另核MPAcc身份。"
+      ],
+      "screenshots": [
+        {
+          "src": "./evidence/firm-outcomes-20261114/xiexiaojun-jit-20261114.jpg",
+          "caption": "金陵科技学院官方校友简介：毕马威南京任职与业务段局部",
+          "sourceId": "FO20261114-XIE",
+          "sourceUrl": "https://business.jit.edu.cn/info/1036/12096.htm",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "width": 995,
+          "height": 66,
+          "bytes": 22870,
+          "sha256": "d02b83e012e2213baf1248333af6803e65834d23b884decfd7d7672ea3ae81cf",
+          "scope": [
+            "原网页任职与业务段的局部截图；标题、日期和学位身份由原网页及学位点年报另核，不包含完整个人简介。"
+          ],
+          "capturedAt": "2026-11-14"
+        }
+      ],
+      "screenedOnly": false,
+      "needsVerification": false
     }
   ],
   "sourceRegistry": {
@@ -39398,6 +39466,103 @@
       "readingScope": "中英文作者、单位、作者简介及出版日期，L4—25；学校单文涛个人页L145列同篇，身份对应。",
       "limitations": "仅核对中英文姓名与学校单位，不作为学生评价或毕业去向。",
       "expansionBatch": "mentor-aliases-20261113"
+    },
+    "FO20261114-2021": {
+      "code": "FO20261114-2021",
+      "kind": "official",
+      "title": "南京审计大学会计硕士专业学位授权点质量建设年度报告（2021年）",
+      "url": "https://gs.nau.edu.cn/_upload/article/files/e4/a2/9494b653442281d0d253fae0fbcc/4dc36d95-90df-4727-8bd6-b7bad6c9ab1c.pdf",
+      "canonicalUrl": "https://gs.nau.edu.cn/_upload/article/files/e4/a2/9494b653442281d0d253fae0fbcc/4dc36d95-90df-4727-8bd6-b7bad6c9ab1c.pdf",
+      "originalUrl": "https://gs.nau.edu.cn/_upload/article/files/e4/a2/9494b653442281d0d253fae0fbcc/4dc36d95-90df-4727-8bd6-b7bad6c9ab1c.pdf",
+      "additionalUrls": [
+        "https://gs.nau.edu.cn/2022/0304/c7079a93825/page.htm"
+      ],
+      "platform": "南京审计大学研究生院",
+      "date": "2022-03-04",
+      "population": "MPAcc专业学位点；2021届及在读项目名单",
+      "summary": "MPAcc毕业72人；项目名单有谢晓俊但无指导教师列。",
+      "readingScope": "全文提取搜索谢晓俊、项目号及就业；实际渲染核读PDF第13页项目表全部列；PDF第2—3页表1和第23页就业段明确MPAcc毕业统计。没有把共著当指导关系。",
+      "limits": "年度毕业人数、整体就业率及雇主举例按原口径分别保存；没有公开的分所人数、个人导师与学位届别不补推。"
+    },
+    "FO20261114-2022": {
+      "code": "FO20261114-2022",
+      "kind": "official",
+      "title": "南京审计大学会计硕士专业学位授权点质量建设年度报告（2022年）",
+      "url": "https://gs.nau.edu.cn/_upload/article/files/ba/d6/23a925644c4986b623c5c1c91e5a/378e41eb-07d7-45ce-88ca-f425ec59ba00.pdf",
+      "canonicalUrl": "https://gs.nau.edu.cn/_upload/article/files/ba/d6/23a925644c4986b623c5c1c91e5a/378e41eb-07d7-45ce-88ca-f425ec59ba00.pdf",
+      "originalUrl": "https://gs.nau.edu.cn/_upload/article/files/ba/d6/23a925644c4986b623c5c1c91e5a/378e41eb-07d7-45ce-88ca-f425ec59ba00.pdf",
+      "additionalUrls": [
+        "https://gs.nau.edu.cn/2023/0323/c7079a110728/page.htm"
+      ],
+      "platform": "南京审计大学研究生院",
+      "date": "2023-03-23",
+      "population": "MPAcc专业学位点；2022届及项目结项名单",
+      "summary": "表1为MPAcc；表13为2022年单位性质分类。",
+      "readingScope": "全文提取检索就业、去向、录用、毕业生及事务所；核对目录、全部13张表标题以及表1、表11、表13和就业正文。PDF第4页为表1，第40页为就业正文，第41页为表13。未发现具名毕业生—工作单位去向附表。",
+      "limits": "年度毕业人数、整体就业率及雇主举例按原口径分别保存；没有公开的分所人数、个人导师与学位届别不补推。"
+    },
+    "FO20261114-2019": {
+      "code": "FO20261114-2019",
+      "kind": "official",
+      "title": "欢迎报考南京审计大学会计学院研究生",
+      "url": "https://account.nau.edu.cn/2019/1024/c809a59623/page.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/2019/1024/c809a59623/page.htm",
+      "originalUrl": "https://account.nau.edu.cn/2019/1024/c809a59623/page.htm",
+      "additionalUrls": [],
+      "platform": "南京审计大学会计学院",
+      "date": "2019-10-24",
+      "population": "会计学院研究生；学硕与MPAcc未拆分",
+      "summary": "学院毕业生就业概述包含国际四大及多家内资所。",
+      "readingScope": "核读培养项目及毕业生就业概述；学院同时介绍会计学硕和会计专硕，未把雇主逐一对应到具体项目或毕业届别。",
+      "limits": "年度毕业人数、整体就业率及雇主举例按原口径分别保存；没有公开的分所人数、个人导师与学位届别不补推。"
+    },
+    "FO20261114-2025": {
+      "code": "FO20261114-2025",
+      "kind": "official",
+      "title": "立德树人，数智赋能，产教融合，协同育人",
+      "url": "https://account.nau.edu.cn/2025/1021/c9538a148688/page.htm",
+      "canonicalUrl": "https://account.nau.edu.cn/2025/1021/c9538a148688/page.htm",
+      "originalUrl": "https://account.nau.edu.cn/2025/1021/c9538a148688/page.htm",
+      "additionalUrls": [],
+      "platform": "南京审计大学会计学院",
+      "date": "2025-10-21",
+      "population": "MPAcc多年培养成效；没有逐届名单",
+      "summary": "MPAcc成效段提及毕马威、安永、德勤。",
+      "readingScope": "核读MPAcc培养成效段和实践基地段；去向为多年培养成果概述，未给毕业届别、分所、人数和个人姓名。",
+      "limits": "年度毕业人数、整体就业率及雇主举例按原口径分别保存；没有公开的分所人数、个人导师与学位届别不补推。"
+    },
+    "FO20261114-XIE": {
+      "code": "FO20261114-XIE",
+      "kind": "official",
+      "title": "校友风采之20届会计专业谢晓俊",
+      "url": "https://business.jit.edu.cn/info/1036/12096.htm",
+      "canonicalUrl": "https://business.jit.edu.cn/info/1036/12096.htm",
+      "originalUrl": "https://business.jit.edu.cn/info/1036/12096.htm",
+      "platform": "金陵科技学院商学院官网",
+      "date": "2023-12-07",
+      "population": "金陵科技学院2020届会计学本科、后获南京审计大学会计硕士；MPAcc类型经南审两份专业学位点年报交叉核对。",
+      "summary": "谢晓俊在2023年校友介绍中任职毕马威华振南京分所，从事金融企业审计、鉴证及咨询。",
+      "readingScope": "浏览器实际读取正文、发布日期和院校名称；网页提取工具仅抽出导航，未将导航当全文。南审2021年报表5与2022年报表6另核MPAcc身份。",
+      "limits": "2020届为本科，硕士届别未公开。仅确认2023年报道时在职，未核当前雇主及首次入职年份；没有原文明示学位导师。",
+      "postId": "FO20261114-XIE-POST",
+      "screenshots": [
+        {
+          "src": "./evidence/firm-outcomes-20261114/xiexiaojun-jit-20261114.jpg",
+          "caption": "金陵科技学院官方校友简介：毕马威南京任职与业务段局部",
+          "sourceId": "FO20261114-XIE",
+          "sourceUrl": "https://business.jit.edu.cn/info/1036/12096.htm",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "width": 995,
+          "height": 66,
+          "bytes": 22870,
+          "sha256": "d02b83e012e2213baf1248333af6803e65834d23b884decfd7d7672ea3ae81cf",
+          "scope": [
+            "原网页任职与业务段的局部截图；标题、日期和学位身份由原网页及学位点年报另核，不包含完整个人简介。"
+          ],
+          "capturedAt": "2026-11-14"
+        }
+      ]
     }
   },
   "targetProfiles": [
@@ -39599,12 +39764,12 @@
     {
       "id": "mentor-guide",
       "title": "导师选择参考",
-      "url": "./downloads/mentor-guide.docx?v=46f3acd1e168",
+      "url": "./downloads/mentor-guide.docx?v=561a5c587e1b",
       "format": "docx",
       "description": "34位导师，含学生评价、缩写对照与公开学生去向，保留来源链接",
       "filename": "mentor-guide.docx",
-      "bytes": 74365,
-      "sha256": "46f3acd1e1689bd78ca6c3aab31a5778dd350e9bed2bd5ed97d8ba42b0bda92f"
+      "bytes": 76744,
+      "sha256": "561a5c587e1b21a47b690a7c96ae47964785d712c479fa4a5f3cf2443cf9df75"
     },
     {
       "id": "life-guide",
@@ -39619,12 +39784,12 @@
     {
       "id": "evidence-index",
       "title": "原帖与官方证据索引",
-      "url": "./downloads/evidence-index.xlsx?v=67cdebcee624",
+      "url": "./downloads/evidence-index.xlsx?v=9792c2c672f8",
       "format": "xlsx",
       "description": "来源、导师评价、缩写、学生去向和实习索引，可筛选并点击原始链接",
       "filename": "evidence-index.xlsx",
-      "bytes": 551812,
-      "sha256": "67cdebcee624dea5cfa233183b455a7a4590646f386c937e20a4847609167d83"
+      "bytes": 559145,
+      "sha256": "9792c2c672f8f117bb29481c405c41a24bd197ea7a6e3055886139b76be07e7f"
     }
   ],
   "officialEvidence": [
@@ -47361,6 +47526,126 @@
       "use_status": "校园与住宿官方资料",
       "reading_scopes": [
         "2023图文33—234行已读，澄典书屋原图已下载直接查看（web turn201view3/turn210view0）；本次只选无人物书屋入口图，不复用原文宿舍布置图。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:firm-outcomes-20261114:FO20261114-2021",
+      "ids": [
+        "FO20261114-2021"
+      ],
+      "title": "南京审计大学会计硕士专业学位授权点质量建设年度报告（2021年）",
+      "date_display": "2022-03-04",
+      "url": "https://gs.nau.edu.cn/_upload/article/files/e4/a2/9494b653442281d0d253fae0fbcc/4dc36d95-90df-4727-8bd6-b7bad6c9ab1c.pdf",
+      "canonical_url": "https://gs.nau.edu.cn/_upload/article/files/e4/a2/9494b653442281d0d253fae0fbcc/4dc36d95-90df-4727-8bd6-b7bad6c9ab1c.pdf",
+      "summary": "MPAcc毕业72人；项目名单有谢晓俊但无指导教师列。",
+      "population": "MPAcc专业学位点；2021届及在读项目名单",
+      "tips": [
+        "MPAcc毕业72人；项目名单有谢晓俊但无指导教师列。"
+      ],
+      "comments": [],
+      "limits": "年度毕业人数、整体就业率及雇主举例按原口径分别保存；没有公开的分所人数、个人导师与学位届别不补推。",
+      "topic": "学生就业与事务所公开资料",
+      "use_status": "有范围的官方资料",
+      "reading_scopes": [
+        "全文提取搜索谢晓俊、项目号及就业；实际渲染核读PDF第13页项目表全部列；PDF第2—3页表1和第23页就业段明确MPAcc毕业统计。没有把共著当指导关系。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:firm-outcomes-20261114:FO20261114-2022",
+      "ids": [
+        "FO20261114-2022"
+      ],
+      "title": "南京审计大学会计硕士专业学位授权点质量建设年度报告（2022年）",
+      "date_display": "2023-03-23",
+      "url": "https://gs.nau.edu.cn/_upload/article/files/ba/d6/23a925644c4986b623c5c1c91e5a/378e41eb-07d7-45ce-88ca-f425ec59ba00.pdf",
+      "canonical_url": "https://gs.nau.edu.cn/_upload/article/files/ba/d6/23a925644c4986b623c5c1c91e5a/378e41eb-07d7-45ce-88ca-f425ec59ba00.pdf",
+      "summary": "表1为MPAcc；表13为2022年单位性质分类。",
+      "population": "MPAcc专业学位点；2022届及项目结项名单",
+      "tips": [
+        "表1为MPAcc；表13为2022年单位性质分类。"
+      ],
+      "comments": [],
+      "limits": "年度毕业人数、整体就业率及雇主举例按原口径分别保存；没有公开的分所人数、个人导师与学位届别不补推。",
+      "topic": "学生就业与事务所公开资料",
+      "use_status": "有范围的官方资料",
+      "reading_scopes": [
+        "全文提取检索就业、去向、录用、毕业生及事务所；核对目录、全部13张表标题以及表1、表11、表13和就业正文。PDF第4页为表1，第40页为就业正文，第41页为表13。未发现具名毕业生—工作单位去向附表。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:firm-outcomes-20261114:FO20261114-2019",
+      "ids": [
+        "FO20261114-2019"
+      ],
+      "title": "欢迎报考南京审计大学会计学院研究生",
+      "date_display": "2019-10-24",
+      "url": "https://account.nau.edu.cn/2019/1024/c809a59623/page.htm",
+      "canonical_url": "https://account.nau.edu.cn/2019/1024/c809a59623/page.htm",
+      "summary": "学院毕业生就业概述包含国际四大及多家内资所。",
+      "population": "会计学院研究生；学硕与MPAcc未拆分",
+      "tips": [
+        "学院毕业生就业概述包含国际四大及多家内资所。"
+      ],
+      "comments": [],
+      "limits": "年度毕业人数、整体就业率及雇主举例按原口径分别保存；没有公开的分所人数、个人导师与学位届别不补推。",
+      "topic": "学生就业与事务所公开资料",
+      "use_status": "有范围的官方资料",
+      "reading_scopes": [
+        "核读培养项目及毕业生就业概述；学院同时介绍会计学硕和会计专硕，未把雇主逐一对应到具体项目或毕业届别。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:firm-outcomes-20261114:FO20261114-2025",
+      "ids": [
+        "FO20261114-2025"
+      ],
+      "title": "立德树人，数智赋能，产教融合，协同育人",
+      "date_display": "2025-10-21",
+      "url": "https://account.nau.edu.cn/2025/1021/c9538a148688/page.htm",
+      "canonical_url": "https://account.nau.edu.cn/2025/1021/c9538a148688/page.htm",
+      "summary": "MPAcc成效段提及毕马威、安永、德勤。",
+      "population": "MPAcc多年培养成效；没有逐届名单",
+      "tips": [
+        "MPAcc成效段提及毕马威、安永、德勤。"
+      ],
+      "comments": [],
+      "limits": "年度毕业人数、整体就业率及雇主举例按原口径分别保存；没有公开的分所人数、个人导师与学位届别不补推。",
+      "topic": "学生就业与事务所公开资料",
+      "use_status": "有范围的官方资料",
+      "reading_scopes": [
+        "核读MPAcc培养成效段和实践基地段；去向为多年培养成果概述，未给毕业届别、分所、人数和个人姓名。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:firm-outcomes-20261114:FO20261114-XIE",
+      "ids": [
+        "FO20261114-XIE"
+      ],
+      "title": "校友风采之20届会计专业谢晓俊",
+      "date_display": "2023-12-07",
+      "url": "https://business.jit.edu.cn/info/1036/12096.htm",
+      "canonical_url": "https://business.jit.edu.cn/info/1036/12096.htm",
+      "summary": "谢晓俊在2023年校友介绍中任职毕马威华振南京分所，从事金融企业审计、鉴证及咨询。",
+      "population": "金陵科技学院2020届会计学本科、后获南京审计大学会计硕士；MPAcc类型经南审两份专业学位点年报交叉核对。",
+      "tips": [
+        "谢晓俊在2023年校友介绍中任职毕马威华振南京分所，从事金融企业审计、鉴证及咨询。"
+      ],
+      "comments": [],
+      "limits": "2020届为本科，硕士届别未公开。仅确认2023年报道时在职，未核当前雇主及首次入职年份；没有原文明示学位导师。",
+      "topic": "学生就业与事务所公开资料",
+      "use_status": "有范围的官方资料",
+      "reading_scopes": [
+        "浏览器实际读取正文、发布日期和院校名称；网页提取工具仅抽出导航，未将导航当全文。南审2021年报表5与2022年报表6另核MPAcc身份。"
       ],
       "official": true,
       "screened_only": false
@@ -59147,7 +59432,7 @@
     ]
   },
   "studentOutcomes": {
-    "asOf": "2026-11-13",
+    "asOf": "2026-11-14",
     "records": [
       {
         "id": "MOA-PJ-SHC",
@@ -59748,7 +60033,9 @@
           "asOf": "2023-07-23",
           "sourceIds": [
             "MOB03"
-          ]
+          ],
+          "firmName": "德勤",
+          "firmGroup": "big4"
         },
         "sourceIds": [
           "MOB03"
@@ -59837,7 +60124,9 @@
           "asOf": "2026-06-26",
           "sourceIds": [
             "D601"
-          ]
+          ],
+          "firmName": "安永",
+          "firmGroup": "big4"
         },
         "sourceIds": [
           "D601"
@@ -60001,8 +60290,8 @@
       {
         "id": "SO20261113-SCHOOL04",
         "studentName": "赵娅岚",
-        "degree": "MAud",
-        "degreeLabel": "审计专业硕士研究生（原文未标学位类别）",
+        "degree": "master_unspecified",
+        "degreeLabel": "审计专业的硕士（学硕或专硕未注明）",
         "cohort": null,
         "graduationYear": 2026,
         "mentorId": null,
@@ -60084,9 +60373,123 @@
         "limits": [
           "国际学院本科，非硕士；周维培仅是文中提到的课程教师，非已证实导师。录取去向为报道时记录，不断言当前已入职；未公布硕士导师。"
         ]
+      },
+      {
+        "id": "FO20261114-XIE-KPMG",
+        "personId": "person-xie-xiaojun-nau-mpacc",
+        "studentName": "谢晓俊",
+        "degree": "MPAcc",
+        "degreeLabel": "会计专业硕士（MPAcc；由学位点年报交叉确认）",
+        "cohort": null,
+        "graduationYear": null,
+        "mentorId": null,
+        "mentorName": null,
+        "relationship": null,
+        "relationshipStatus": "not_public",
+        "outcome": {
+          "type": "employment",
+          "organization": "毕马威华振会计师事务所（特殊普通合伙）南京分所",
+          "program": "金融企业审计、鉴证及咨询（上市银行、金融租赁等）",
+          "year": 2023,
+          "statusLabel": "2023年12月校友简介确认的当时任职；毕业首职与入职日期未披露",
+          "stage": "reported_working",
+          "asOf": "2023-12-07",
+          "firmGroup": "big4",
+          "firmName": "毕马威",
+          "sourceIds": [
+            "FO20261114-XIE"
+          ]
+        },
+        "sourceIds": [
+          "FO20261114-XIE",
+          "FO20261114-2021",
+          "FO20261114-2022"
+        ],
+        "screenshots": [
+          {
+            "src": "./evidence/firm-outcomes-20261114/xiexiaojun-jit-20261114.jpg",
+            "caption": "金陵科技学院官方校友简介：毕马威南京任职与业务段局部",
+            "sourceId": "FO20261114-XIE",
+            "sourceUrl": "https://business.jit.edu.cn/info/1036/12096.htm",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false,
+            "width": 995,
+            "height": 66,
+            "bytes": 22870,
+            "sha256": "d02b83e012e2213baf1248333af6803e65834d23b884decfd7d7672ea3ae81cf",
+            "scope": [
+              "原网页任职与业务段的局部截图；标题、日期和学位身份由原网页及学位点年报另核，不包含完整个人简介。"
+            ],
+            "capturedAt": "2026-11-14"
+          }
+        ],
+        "limits": [
+          "原文标题20届指金陵科技学院2020年本科毕业，不能当南审硕士届别。",
+          "南审2021年报表5及2022年报表6用同一SJCX21_0860实践创新项目确认其MPAcc身份；项目年份不当毕业年份。",
+          "两份年报项目表均无指导教师列；与许汉友共著的论文不构成导师关系证明。",
+          "仅确认2023年报道时任职，不据此断言2026年当前任职或首次就业单位。"
+        ]
       }
     ],
     "statistics": [
+      {
+        "scope": "南京审计大学会计硕士专业学位授权点（MPAcc）",
+        "cohort": "2021届",
+        "sourceIds": [
+          "FO20261114-2021"
+        ],
+        "id": "FO20261114-ST-2021-GRAD",
+        "label": "毕业人数",
+        "value": 72,
+        "unit": "人",
+        "limits": [
+          "专业学位点年度报告中的MPAcc口径，不是全校或导师个人毕业人数。"
+        ]
+      },
+      {
+        "scope": "南京审计大学会计硕士专业学位授权点（MPAcc）",
+        "cohort": "2021届",
+        "sourceIds": [
+          "FO20261114-2021"
+        ],
+        "id": "FO20261114-ST-2021-RATE",
+        "label": "年终就业率",
+        "value": 96,
+        "unit": "%",
+        "limits": [
+          "全部MPAcc毕业生的报告口径，不是四大/八大就业率；未公开各事务所录用人数与各导师分母。",
+          "不同年份的统计截止与计算细则未完整披露，不作导师或分所就业概率比较。"
+        ]
+      },
+      {
+        "scope": "南京审计大学会计硕士专业学位授权点（MPAcc）",
+        "cohort": "2022届",
+        "sourceIds": [
+          "FO20261114-2022"
+        ],
+        "id": "FO20261114-ST-2022-GRAD",
+        "label": "毕业人数",
+        "value": 84,
+        "unit": "人",
+        "limits": [
+          "专业学位点年度报告中的MPAcc口径，不是全校或导师个人毕业人数。"
+        ]
+      },
+      {
+        "scope": "南京审计大学会计硕士专业学位授权点（MPAcc）",
+        "cohort": "2022届",
+        "sourceIds": [
+          "FO20261114-2022"
+        ],
+        "id": "FO20261114-ST-2022-RATE",
+        "label": "报告公布就业率",
+        "value": 92,
+        "unit": "%",
+        "limits": [
+          "全部MPAcc毕业生的报告口径，不是四大/八大就业率；未公开各事务所录用人数与各导师分母。",
+          "不同年份的统计截止与计算细则未完整披露，不作导师或分所就业概率比较。"
+        ]
+      },
       {
         "id": "SO20261113-ST01",
         "label": "毕业人数",
@@ -60179,7 +60582,71 @@
           ]
         }
       }
-    ]
+    ],
+    "mentorCareerStatements": [
+      {
+        "id": "FO20261114-XHY-CAREER",
+        "mentorId": "mentor-08",
+        "mentorName": "许汉友",
+        "text": "2020年校方事迹记载，其部分毕业硕士进入国际四大或知名金融机构；未列学生姓名、具体事务所和分组人数。",
+        "statement": "2020年校方事迹记载，其部分毕业硕士进入国际四大或知名金融机构；未列学生姓名、具体事务所和分组人数。",
+        "date": "2020-07-11",
+        "year": 2020,
+        "degreeScope": "硕士；学硕与MPAcc未逐人区分",
+        "graduateDegreeLabel": "硕士；学硕与MPAcc未逐人区分",
+        "sourceIds": [
+          "R305"
+        ],
+        "countTowardNamedOutcomes": false,
+        "limits": [
+          "属于历史培养描述；不能把同段歌手或舞蹈经历人数算作四大人数，也不推算2026年就业率。"
+        ]
+      }
+    ],
+    "employerSummaries": [
+      {
+        "id": "FO20261114-EMPLOYERS-2019",
+        "label": "2019年 · 会计学院研究生雇主举例",
+        "text": "四大：普华永道、德勤税务、毕马威、安永。内资所：瑞华、天衡、立信、立信中联、致同。",
+        "scope": "学硕与MPAcc未拆分；未给个人、届别、分所和人数。保留当年瑞华名称；立信中联不并作立信。",
+        "date": "2019-10-24",
+        "sourceIds": [
+          "FO20261114-2019"
+        ]
+      },
+      {
+        "id": "FO20261114-EMPLOYERS-2025",
+        "label": "2025年 · MPAcc培养成效中的事务所",
+        "text": "官方举例毕马威、安永、德勤录用MPAcc毕业生。",
+        "scope": "多年培养成效概述，未列毕业届别、具名学生、分所或各所人数。",
+        "date": "2025-10-21",
+        "sourceIds": [
+          "FO20261114-2025"
+        ]
+      }
+    ],
+    "firmScope": {
+      "big4": [
+        "普华永道",
+        "德勤",
+        "安永",
+        "毕马威"
+      ],
+      "domestic8": [
+        "立信",
+        "天健",
+        "致同",
+        "容诚",
+        "天职国际",
+        "信永中和",
+        "大华",
+        "大信"
+      ],
+      "historicalOther": [
+        "瑞华"
+      ],
+      "note": "按列示事务所归组，不作为官方排名；统计只纳具名就业、签约或公布的毕业去向，实习与仅获offer不算就业。"
+    }
   },
   "mentorAliases": [
     {
