@@ -283,7 +283,7 @@
   function mentorAliasLookupHtml() {
     const records = mentorAliasRecords();
     if (!records.length) return '';
-    return `<details class="mentor-alias-lookup"><summary>缩写对照 <span>${records.length} 项</span></summary><p class="alias-scope-note">姓名对照与评价身份分开看：课程、转述和指导亲历均按原文标注。</p><div class="mentor-alias-table-wrap"><table class="mentor-alias-table"><thead><tr><th scope="col">缩写／写法</th><th scope="col">对应老师</th><th scope="col">原帖</th></tr></thead><tbody>${records.map(item => `<tr><th scope="row">${esc(item.alias)}</th><td><div class="alias-name-links">${aliasNameButtons(item)}${aliasIsAmbiguous(item) ? '<span class="alias-ambiguous">多位候选</span>' : ''}</div>${item.basis ? `<small>${esc(item.basis)}</small>` : ''}</td><td>${aliasSources(item) || '<span class="record-empty">—</span>'}</td></tr>`).join('')}</tbody></table></div></details>`;
+    return `<details class="mentor-alias-lookup"><summary>缩写对照 <span>${records.length} 项</span></summary><p class="alias-scope-note">姓名对照与评价身份分开看：课程、转述和指导亲历均按原文标注。</p><div class="mentor-alias-table-wrap"><table class="mentor-alias-table"><thead><tr><th scope="col">缩写／写法</th><th scope="col">对应老师</th><th scope="col">原帖</th></tr></thead><tbody>${records.map(item => `<tr><th scope="row">${esc(item.alias)}</th><td><div class="alias-name-links">${aliasNameButtons(item)}${aliasIsAmbiguous(item) ? `<span class="alias-ambiguous">${item.mentorIds.length > 1 ? '多位候选' : '称呼候选，未确认'}</span>` : ''}</div>${item.basis ? `<small>${esc(item.basis)}</small>` : ''}</td><td>${aliasSources(item) || '<span class="record-empty">—</span>'}</td></tr>`).join('')}</tbody></table></div></details>`;
   }
 
   function mentorAliasDetail(mentor) {
@@ -297,7 +297,7 @@
     if (!target) return;
     const records = matchingAliasRecords();
     target.hidden = !records.length;
-    target.innerHTML = records.map(item => `<p><strong>${esc(item.alias)}</strong> → ${aliasNameButtons(item)}${item.status === 'search_only' ? '<span class="alias-search-only">仅姓名检索，尚未取得该缩写评价</span>' : aliasIsAmbiguous(item) ? '<span class="alias-ambiguous">多位候选，结合原帖语境查看</span>' : '<span class="alias-matched">姓名已对应</span>'} ${aliasSources(item)}</p>`).join('');
+    target.innerHTML = records.map(item => `<p><strong>${esc(item.alias)}</strong> → ${aliasNameButtons(item)}${item.status === 'search_only' ? '<span class="alias-search-only">仅姓名检索，尚未取得该缩写评价</span>' : aliasIsAmbiguous(item) ? `<span class="alias-ambiguous">${item.mentorIds.length > 1 ? '多位候选' : '称呼候选，未确认'}，结合原帖语境查看</span>` : '<span class="alias-matched">姓名已对应</span>'} ${aliasSources(item)}</p>`).join('');
   }
 
   function reviewCoverageHtml() {
@@ -319,7 +319,7 @@
 
   function reviewFilterHtml() {
     if (!state.data.mentors.some(m => m.studentReviews)) return '';
-    const options = [['','全部评价覆盖'],['strong_avoid','有强烈劝退评论'],['strong_recommend','有强烈推荐评论'],['has_records','有可归属记录'],['mpacc_guidance','明确MPAcc指导亲历'],['other_guidance','其他指导经历'],['course_only','课程接触或二手线索'],['weak_mentions','笼统提名／弱线索'],['not_found','暂无可归属评价']];
+    const options = [['','全部评价覆盖'],['strong_avoid','有明确劝退评论'],['strong_recommend','有明确推荐评论'],['has_records','有可归属记录'],['mpacc_guidance','明确MPAcc指导亲历'],['other_guidance','其他指导经历'],['course_only','课程接触或二手线索'],['weak_mentions','笼统提名／弱线索'],['not_found','暂无可归属评价']];
     return `<div class="review-filter"><label for="review-coverage">按学生评价筛选</label><select id="review-coverage">${options.map(([value,label]) => `<option value="${value}"${state.reviewCoverage === value ? ' selected' : ''}>${label}</option>`).join('')}</select><span>筛选的是证据类型，不是老师评分。</span></div>`;
   }
 
@@ -384,7 +384,7 @@
 
   function selectionSignalFor(review) {
     const signal = review?.selectionSignal;
-    if (review?.attribution?.status !== 'confirmed' || !signal || signal.intensity !== 'strong' || !['avoid','recommend'].includes(signal.direction)) return null;
+    if (review?.attribution?.status !== 'confirmed' || !signal || !['strong','explicit'].includes(signal.intensity) || !['avoid','recommend'].includes(signal.direction)) return null;
     if (!['visible_quote','recorded_quote','recorded_summary'].includes(signal.excerpt?.kind) || typeof signal.excerpt.text !== 'string' || !signal.excerpt.text.trim()) return null;
     const codes = array(signal.sourceIds).filter(code => array(review.sourceIds).includes(code) && source(code) && [source(code).url,source(code).canonicalUrl,source(code).originalUrl].some(screenshotSource));
     return codes.length ? {...signal, sourceIds:codes} : null;
@@ -396,7 +396,10 @@
 
   function selectionSignalBadge(review) {
     const signal = selectionSignalFor(review);
-    return signal ? `<strong class="selection-signal-badge ${signal.direction}">${signal.direction === 'avoid' ? '原帖强烈劝退' : '原帖强烈推荐'}</strong>` : '';
+    if (!signal) return '';
+    const intensity = signal.intensity === 'strong' ? '强烈' : '明确';
+    const direction = signal.direction === 'avoid' ? '劝退' : '推荐';
+    return `<strong class="selection-signal-badge ${signal.direction}">原帖${intensity}${direction}</strong>`;
   }
 
   function selectionSignalHtml(review, compact = false) {
@@ -416,7 +419,7 @@
     if (!panel) return;
     const entries = mentors.flatMap(mentor => mentorSelectionSignals(mentor).map(item => ({mentor,...item}))).sort((a,b) => a.signal.direction === b.signal.direction ? 0 : a.signal.direction === 'avoid' ? -1 : 1);
     panel.hidden = !entries.length;
-    panel.innerHTML = entries.length ? `<div class="selection-panel-heading"><h3>强烈推荐与劝退</h3><span>原评论的明确选导态度 · 优先查看</span></div><div class="selection-panel-grid">${entries.map(({mentor,review,signal}) => `<article class="selection-panel-card ${signal.direction}"><div class="selection-panel-copy"><button type="button" class="text-button selection-mentor-link" data-action="mentor" data-id="${esc(mentor.id)}">${esc(mentor.name)}${signal.alias ? ' · ' + esc(signal.alias) : ''} ↗</button>${selectionSignalHtml(review,true)}</div>${reviewImageThumbnail(review,mentor.id,reviewImages(review))}</article>`).join('')}</div>` : '';
+    panel.innerHTML = entries.length ? `<div class="selection-panel-heading"><h3>选导评论重点</h3><span>原评论的明确选导态度 · 优先查看</span></div><div class="selection-panel-grid">${entries.map(({mentor,review,signal}) => `<article class="selection-panel-card ${signal.direction}"><div class="selection-panel-copy"><button type="button" class="text-button selection-mentor-link" data-action="mentor" data-id="${esc(mentor.id)}">${esc(mentor.name)}${signal.alias ? ' · ' + esc(signal.alias) : ''} ↗</button>${selectionSignalHtml(review,true)}</div>${reviewImageThumbnail(review,mentor.id,reviewImages(review))}</article>`).join('')}</div>` : '';
   }
 
   function reviewImages(item) {
@@ -776,7 +779,7 @@
     $('#mentor-result-count').innerHTML = `找到 <strong>${mentors.length}</strong> 位导师${state.savedOnly ? ' · 我的联系清单' : ''}`;
     $('#mentor-result-order').textContent = '按官方名单原序 · 不构成排名';
     const scopeNote = $('#mentor-scope-note');
-    if (scopeNote) scopeNote.textContent = mentorScopeBypassed() ? `${state.query ? '搜索' : state.savedOnly ? '收藏' : '评价筛选'}覆盖完整名录，其他筛选仍生效。` : state.mentorScope === 'useful' ? '优先列有强烈选导态度、具体经历或公开去向的老师。' : '完整名录保留全部老师；空白表示暂无可核对资料。';
+    if (scopeNote) scopeNote.textContent = mentorScopeBypassed() ? `${state.query ? '搜索' : state.savedOnly ? '收藏' : '评价筛选'}覆盖完整名录，其他筛选仍生效。` : state.mentorScope === 'useful' ? '优先列有明确选导态度、具体经历或公开去向的老师。' : '完整名录保留全部老师；空白表示暂无可核对资料。';
     $$('[data-action="mentor-scope"]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.id === state.mentorScope)));
     $$('[data-action="direction"]').forEach(button => {
       const count = button.querySelector('small');
@@ -801,8 +804,8 @@
   }
 
   function renderMentors() {
-    app.innerHTML = heading('01 / MENTOR DIRECTORY', '导师速查', '强烈劝退与推荐优先标明；具体经历与学生去向放在同一行。', `<strong>${state.data.mentors.length}</strong> 位导师 <a class="text-button" href="#outcomes">查学生去向 ↗</a>`) +
-      `<section id="mentor-selection-signals" class="mentor-selection-signals" aria-label="强烈推荐与劝退" hidden></section><div class="mentor-scope-switch" role="group" aria-label="导师显示范围"><button type="button" data-action="mentor-scope" data-id="useful" aria-pressed="${state.mentorScope === 'useful'}">有经历、去向或强烈态度 <strong>${state.data.mentors.filter(mentorHasPriorityInfo).length}</strong></button><button type="button" data-action="mentor-scope" data-id="all" aria-pressed="${state.mentorScope === 'all'}">完整名录 <strong>${state.data.mentors.length}</strong></button><span id="mentor-scope-note"></span></div><div class="mentor-query-row"><div class="toolbar">${searchField('mentor-search', '搜索导师姓名、研究方向或关键词', state.query)}<button id="saved-filter" type="button" class="save-filter" data-action="saved-only" aria-pressed="${state.savedOnly}">${icons.bookmark}我的清单</button></div>${reviewFilterHtml()}</div>${mentorAliasLookupHtml()}<div id="mentor-alias-search-note" class="mentor-alias-search-note" role="status" aria-live="polite" hidden></div><div class="filter-groups"><div class="filter-line" role="group" aria-label="按研究方向筛选"><button class="filter-chip direction-chip" type="button" data-action="direction" data-id="" aria-pressed="${!state.direction}">全部方向<small>${state.data.mentors.length}</small></button>${state.data.directions.map(d => `<button class="filter-chip direction-chip" type="button" data-action="direction" data-id="${esc(d.id)}" aria-pressed="${state.direction === d.id}">${esc(shortDirection(d.id))}<small>${state.data.mentors.filter(m => m.directions.includes(d.id)).length}</small></button>`).join('')}</div><div class="direction-note"${state.direction ? '' : ' hidden'}>${state.direction ? `${esc(state.direction)} · ${esc(directionName(state.direction))}；交叉归类不等同招生分组。` : ''}</div></div><section class="mentor-tools" id="mentor-tools" aria-label="导师对比与联系准备"></section><div class="results-bar"><span id="mentor-result-count" role="status" aria-live="polite"></span><span id="mentor-result-order"></span></div><div class="mentor-grid" id="mentor-results"></div><div class="mentor-reading-help">${reviewCoverageHtml()}${researchHighlightsHtml()}<details class="mentor-selection-notes"><summary>双选、名额与方向说明</summary><p>${esc(state.data.meta.directionNote)}</p><button type="button" class="text-button" data-action="guide" data-section="0">读懂方向与报名的关系 ↗</button></details></div><section class="goal-section" aria-labelledby="goal-title"><h3 id="goal-title">按个人目标继续了解</h3><div class="goal-grid">${state.data.targetProfiles.map(p => `<details class="goal-card"><summary>${esc(p.title.replace(/^希望/, ''))}</summary><div class="goal-content article-body">${array(p.blocks).map(blockHtml).join('') || `<p>${inline(p.summary)}</p>`}</div><div class="source-actions">${p.mentorIds.map(id => {const m = state.data.mentors.find(m => m.id === id); return m ? `<button class="text-button" type="button" data-action="mentor" data-id="${esc(id)}">${esc(m.name)} ↗</button>` : '';}).join('')}</div></details>`).join('')}</div><div class="guide-action-row"><button type="button" class="text-button" data-action="guide" data-section="3">名额、双选与备选方案 ↗</button><button type="button" class="text-button" data-action="guide" data-section="4">联系邮件准备 ↗</button></div></section>`;
+    app.innerHTML = heading('01 / MENTOR DIRECTORY', '导师速查', '明确劝退与推荐优先标明；具体经历与学生去向放在同一行。', `<strong>${state.data.mentors.length}</strong> 位导师 <a class="text-button" href="#outcomes">查学生去向 ↗</a>`) +
+      `<section id="mentor-selection-signals" class="mentor-selection-signals" aria-label="选导评论重点" hidden></section><div class="mentor-scope-switch" role="group" aria-label="导师显示范围"><button type="button" data-action="mentor-scope" data-id="useful" aria-pressed="${state.mentorScope === 'useful'}">有经历、去向或明确态度 <strong>${state.data.mentors.filter(mentorHasPriorityInfo).length}</strong></button><button type="button" data-action="mentor-scope" data-id="all" aria-pressed="${state.mentorScope === 'all'}">完整名录 <strong>${state.data.mentors.length}</strong></button><span id="mentor-scope-note"></span></div><div class="mentor-query-row"><div class="toolbar">${searchField('mentor-search', '搜索导师姓名、研究方向或关键词', state.query)}<button id="saved-filter" type="button" class="save-filter" data-action="saved-only" aria-pressed="${state.savedOnly}">${icons.bookmark}我的清单</button></div>${reviewFilterHtml()}</div>${mentorAliasLookupHtml()}<div id="mentor-alias-search-note" class="mentor-alias-search-note" role="status" aria-live="polite" hidden></div><div class="filter-groups"><div class="filter-line" role="group" aria-label="按研究方向筛选"><button class="filter-chip direction-chip" type="button" data-action="direction" data-id="" aria-pressed="${!state.direction}">全部方向<small>${state.data.mentors.length}</small></button>${state.data.directions.map(d => `<button class="filter-chip direction-chip" type="button" data-action="direction" data-id="${esc(d.id)}" aria-pressed="${state.direction === d.id}">${esc(shortDirection(d.id))}<small>${state.data.mentors.filter(m => m.directions.includes(d.id)).length}</small></button>`).join('')}</div><div class="direction-note"${state.direction ? '' : ' hidden'}>${state.direction ? `${esc(state.direction)} · ${esc(directionName(state.direction))}；交叉归类不等同招生分组。` : ''}</div></div><section class="mentor-tools" id="mentor-tools" aria-label="导师对比与联系准备"></section><div class="results-bar"><span id="mentor-result-count" role="status" aria-live="polite"></span><span id="mentor-result-order"></span></div><div class="mentor-grid" id="mentor-results"></div><div class="mentor-reading-help">${reviewCoverageHtml()}${researchHighlightsHtml()}<details class="mentor-selection-notes"><summary>双选、名额与方向说明</summary><p>${esc(state.data.meta.directionNote)}</p><button type="button" class="text-button" data-action="guide" data-section="0">读懂方向与报名的关系 ↗</button></details></div><section class="goal-section" aria-labelledby="goal-title"><h3 id="goal-title">按个人目标继续了解</h3><div class="goal-grid">${state.data.targetProfiles.map(p => `<details class="goal-card"><summary>${esc(p.title.replace(/^希望/, ''))}</summary><div class="goal-content article-body">${array(p.blocks).map(blockHtml).join('') || `<p>${inline(p.summary)}</p>`}</div><div class="source-actions">${p.mentorIds.map(id => {const m = state.data.mentors.find(m => m.id === id); return m ? `<button class="text-button" type="button" data-action="mentor" data-id="${esc(id)}">${esc(m.name)} ↗</button>` : '';}).join('')}</div></details>`).join('')}</div><div class="guide-action-row"><button type="button" class="text-button" data-action="guide" data-section="3">名额、双选与备选方案 ↗</button><button type="button" class="text-button" data-action="guide" data-section="4">联系邮件准备 ↗</button></div></section>`;
     renderMentorResults();
   }
 
