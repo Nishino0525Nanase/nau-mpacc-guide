@@ -4329,6 +4329,19 @@
               "sourceIds": [
                 "X01"
               ]
+            },
+            "selectionSignal": {
+              "direction": "avoid",
+              "intensity": "strong",
+              "alias": "YBY",
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "答应我千万不要选yby..."
+              },
+              "sourceIds": [
+                "X01"
+              ],
+              "scope": "明确劝退态度；截图末尾截断，原因、学位和接触关系未说明。"
             }
           }
         ],
@@ -7102,7 +7115,19 @@
             ],
             "readingScope": "该条可见顶层评论；未覆盖全部折叠回复。",
             "readThisRound": true,
-            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。",
+            "selectionSignal": {
+              "direction": "recommend",
+              "intensity": "strong",
+              "excerpt": {
+                "kind": "recorded_summary",
+                "text": "momo按全名强烈推荐李仲泽，称年轻、幽默、为学生考虑。"
+              },
+              "sourceIds": [
+                "X01"
+              ],
+              "scope": "已存评论摘要；论文帮助属于期待性判断，未说明实际指导过程。"
+            }
           },
           {
             "id": "sr-421ff5269383ef",
