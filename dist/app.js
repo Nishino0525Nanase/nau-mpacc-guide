@@ -12,7 +12,7 @@
   const dialog = $('#detail-dialog');
   const reviewImageDialog = $('#review-image-dialog');
   const reviewImageState = {items:[], index:0, mode:'fit', trigger:null, priorOverflow:''};
-  const state = { data: null, view: 'mentors', query: '', direction: '', savedOnly: false, reviewCoverage: '', mentorScope: 'useful', outcomeQuery: '', outcomeDegree: 'MPAcc', outcomeRelationship: '', outcomeType: '', internGroup: '', internCity: '', internStatus: 'current', postQuery: '', postTopic: '', postCategory: '', postLimit: 20, chapter: 'life-01', studentPhase: '', saved: {}, compareIds: [], dialogType: '', contactMentorId: '', contactMode: 'outline', contactEdits: {}, postCodes: {}, lastFocus: null, lastFocusId: null };
+  const state = { data: null, view: 'mentors', query: '', direction: '', savedOnly: false, reviewCoverage: '', mentorScope: 'useful', outcomeQuery: '', outcomeDegree: 'MPAcc', outcomeRelationship: '', outcomeType: '', outcomeFirm: '', internGroup: '', internCity: '', internStatus: 'current', postQuery: '', postTopic: '', postCategory: '', postLimit: 20, chapter: 'life-01', studentPhase: '', saved: {}, compareIds: [], dialogType: '', contactMentorId: '', contactMode: 'outline', contactEdits: {}, postCodes: {}, lastFocus: null, lastFocusId: null };
   const icons = {
     search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.6" cy="10.6" r="6.8"/><path d="m16 16 5 5"/></svg>',
     bookmark: '<svg viewBox="0 0 18 22" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 2h12v18l-6-4-6 4z"/></svg>'
@@ -25,7 +25,7 @@
   const validUrl = value => { try { const url = new URL(value, window.location.href); return ['http:', 'https:', 'mailto:', 'tel:'].includes(url.protocol) ? url.href : ''; } catch { return ''; } };
   const external = (url, label, className = '') => { const safe = validUrl(url); return safe ? `<a href="${esc(safe)}" target="_blank" rel="noopener noreferrer"${className ? ` class="${className}"` : ''}>${label}</a>` : label; };
   const source = code => state.data.sourceRegistry?.[code];
-  const screenshotPath = value => typeof value === 'string' && /^\.\/evidence\/(?:xhs|refresh-20261110)\/[A-Za-z0-9][A-Za-z0-9_-]{0,160}\.(?:png|jpe?g|webp)$/i.test(value) ? value : '';
+  const screenshotPath = value => typeof value === 'string' && /^\.\/evidence\/(?:xhs|refresh-20261110|firm-outcomes-20261114)\/[A-Za-z0-9][A-Za-z0-9_-]{0,160}\.(?:png|jpe?g|webp)$/i.test(value) ? value : '';
   const screenshotSource = value => {
     if (typeof value !== 'string' || !/^https?:\/\//i.test(value)) return '';
     try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol) && !url.username && !url.password ? url.href : ''; } catch { return ''; }
@@ -93,8 +93,9 @@
       const codes = inner.split(/[\s、,，;；]+/).filter(Boolean);
       const expanded = [];
       for (const code of codes) {
+        if (source(code)) { expanded.push(code); continue; }
         const range = code.match(/^([A-Z]*)(\d+)[—–-]([A-Z]*)(\d+)$/);
-        if (range && (range[1] === range[3] || !range[3]) && +range[4] - +range[2] < 15) {
+        if (range && (range[1] === range[3] || !range[3]) && +range[4] >= +range[2] && +range[4] - +range[2] < 15) {
           for (let i = +range[2]; i <= +range[4]; i++) expanded.push(range[1] + String(i).padStart(range[2].length, '0'));
         } else expanded.push(code);
       }
@@ -462,10 +463,14 @@
   }
 
   function openReviewImage(mentorId, reviewId, index, trigger) {
-    if (!reviewImageDialog || typeof reviewImageDialog.showModal !== 'function') return false;
     const mentor = state.data.mentors.find(value => value.id === mentorId);
     const review = mentor && dossierReviews(mentor).find(value => value.id === reviewId);
     const shots = review ? reviewImages(review) : [];
+    return openSourceImage(shots, `${mentor?.name || ''} · 来源截图`, index, trigger);
+  }
+
+  function openSourceImage(shots, title, index, trigger) {
+    if (!reviewImageDialog || typeof reviewImageDialog.showModal !== 'function') return false;
     if (!shots.length) return false;
     if (!reviewImageDialog.open) {
       reviewImageState.trigger = trigger || document.activeElement;
@@ -474,7 +479,7 @@
     reviewImageState.items = shots;
     reviewImageState.index = Number.isInteger(Number(index)) ? Math.max(0, Math.min(shots.length - 1, Number(index))) : 0;
     reviewImageState.mode = 'fit';
-    $('#review-image-title').textContent = `${mentor.name} · 来源截图`;
+    $('#review-image-title').textContent = title;
     renderReviewImage();
     if (!reviewImageDialog.open) reviewImageDialog.showModal();
     document.body.style.overflow = 'hidden';
@@ -561,19 +566,44 @@
 
   const outcomeDegreeLabels = {MPAcc:'MPAcc', MAud:'MAud', academic_master:'学术型硕士', master_unspecified:'硕士 · 类型未注明', undergraduate:'本科', unspecified:'学位未注明'};
   const outcomeTypeLabels = {phd:'读博', employment:'就业', further_study:'其他升学'};
+  const outcomeFirms = [
+    ['普华永道','big4',/普华永道|pricewaterhousecoopers|\bpwc\b/i],
+    ['德勤','big4',/德勤|deloitte/i], ['安永','big4',/安永|ernst\s*&?\s*young|^ey$/i], ['毕马威','big4',/毕马威|kpmg/i],
+    ...['立信','天健','致同','容诚','天职国际','信永中和','大华','大信'].map(name => [name,'domestic8',new RegExp(`^${name}$|${name}(?:会计师|税务师|事务所)`)]),
+    ['瑞华','historical_other',/瑞华(?:会计师|事务所)|^瑞华$/]
+  ];
+  function outcomeFirm(record) {
+    const item = record?.outcome;
+    if (item?.type !== 'employment' || /实习|internship|\bintern\b|offer_only/i.test([item.stage,item.statusLabel,item.program].filter(Boolean).join(' '))) return null;
+    const firm = outcomeFirms.find(([, , pattern]) => pattern.test(item.organization || ''));
+    return firm ? {name:firm[0], group:firm[1]} : null;
+  }
+  const targetFirmOutcome = record => ['big4','domestic8'].includes(outcomeFirm(record)?.group);
+  const outcomePersonKey = record => record.personId || normalize([record.studentName,record.degree,record.graduationYear || record.cohort || ''].join(':'));
+  const outcomePeople = records => new Set(records.map(outcomePersonKey)).size;
+  const firmBadge = record => {
+    const firm = outcomeFirm(record);
+    return firm ? `<span class="outcome-firm-badge ${firm.group}">${esc(({big4:'四大',domestic8:'八大',historical_other:'历史事务所'}[firm.group]))} · ${esc(firm.name)}</span>` : '';
+  };
 
   function outcomeRecords() {
     return array(state.data.studentOutcomes?.records).filter(record => record && record.studentName && record.outcome?.organization && Object.prototype.hasOwnProperty.call(outcomeTypeLabels, record.outcome.type));
   }
 
   function outcomeMentor(record) {
-    if (!record?.mentorId || !record.relationship || !array(record.relationship.sourceIds).length) return null;
+    if (!record?.mentorId || !confirmedOutcomeRelationship(record)) return null;
     const mentor = state.data.mentors.find(item => item.id === record.mentorId);
     return mentor && (!record.mentorName || normalize(record.mentorName) === normalize(mentor.name)) ? mentor : null;
   }
 
-  const outcomeMentorName = record => outcomeMentor(record)?.name || (!record.mentorId && record.mentorName && record.relationship && array(record.relationship.sourceIds).length ? record.mentorName : '');
-  const mentorOutcomes = mentor => outcomeRecords().filter(record => outcomeMentor(record)?.id === mentor.id);
+  function confirmedOutcomeRelationship(record) {
+    return Boolean(record?.relationship?.text && (!record.relationshipStatus || ['confirmed','confirmed_external'].includes(record.relationshipStatus)) && array(record.relationship.sourceIds).some(code => {
+      const entry = source(code);
+      return entry && [entry.url,entry.originalUrl,entry.canonicalUrl].some(screenshotSource);
+    }));
+  }
+  const outcomeMentorName = record => outcomeMentor(record)?.name || (!record.mentorId && record.mentorName && confirmedOutcomeRelationship(record) ? record.mentorName : '');
+  const mentorOutcomes = mentor => outcomeRecords().filter(record => outcomeMentor(record)?.id === mentor.id).sort((a,b) => Number(targetFirmOutcome(b))-Number(targetFirmOutcome(a)));
   const outcomeDegree = record => record.degreeLabel || outcomeDegreeLabels[record.degree] || outcomeDegreeLabels.unspecified;
   const outcomeShortDegree = record => ({MPAcc:'MPAcc',MAud:'MAud',undergraduate:'本科',master_unspecified:'硕士·类型未明',unspecified:'学位未注明'}[record.degree] || outcomeDegree(record));
   const outcomeIdentity = record => [record.graduationYear ? `${record.graduationYear}届` : '', outcomeShortDegree(record)].filter(Boolean).join(' · ');
@@ -620,6 +650,7 @@
       return (!state.outcomeDegree || record.degree === state.outcomeDegree) &&
         (!state.outcomeRelationship || (state.outcomeRelationship === 'linked' ? Boolean(mentorName) : !mentorName)) &&
         (!state.outcomeType || record.outcome.type === state.outcomeType) &&
+        (!state.outcomeFirm || (state.outcomeFirm === 'target' ? targetFirmOutcome(record) : outcomeFirm(record)?.group === state.outcomeFirm)) &&
         (!query || normalize([record.studentName, mentorName, outcomeDegree(record), record.outcome.organization, record.outcome.program].filter(Boolean).join(' ')).includes(query));
     });
   }
@@ -628,7 +659,42 @@
     const mentor = outcomeMentor(record);
     const mentorName = outcomeMentorName(record);
     const outcome = record.outcome;
-    return `<article class="outcome-record"><div class="outcome-person"><h4>${esc(record.studentName)}</h4><p>${esc(outcomeIdentity(record))}</p></div><div class="outcome-result"><p class="outcome-destination">${esc(outcome.organization)}</p>${outcome.program ? `<p class="outcome-program">${esc(outcome.program)}</p>` : ''}<p class="outcome-status">${esc(outcomeBriefState(record))}${outcome.year ? ` · ${esc(outcome.year)}` : ''}</p></div><div class="outcome-mentor">${mentor ? `<button type="button" class="text-button" data-action="mentor" data-id="${esc(mentor.id)}">${esc(mentor.name)} ↗</button>` : mentorName ? `<span>${esc(mentorName)}（名录外）</span>` : '<span class="record-empty" aria-label="未公开导师">—</span>'}</div><div class="outcome-time">${outcome.asOf ? `<time datetime="${esc(outcome.asOf)}">${esc(outcome.asOf)}</time>` : '<span class="record-empty" aria-label="资料日期未注明">—</span>'}</div><div class="outcome-evidence">${outcomeSources([...array(outcome.sourceIds), ...array(record.sourceIds)])}${outcomeProvenance(record)}</div></article>`;
+    return `<article class="outcome-record"><div class="outcome-person"><h4>${esc(record.studentName)}</h4><p>${esc(outcomeIdentity(record))}</p></div><div class="outcome-result">${firmBadge(record)}<p class="outcome-destination">${esc(outcome.organization)}</p>${outcome.program ? `<p class="outcome-program">${esc(outcome.program)}</p>` : ''}<p class="outcome-status">${esc(outcomeBriefState(record))}${outcome.year ? ` · ${esc(outcome.year)}` : ''}</p></div><div class="outcome-mentor">${mentor ? `<button type="button" class="text-button" data-action="mentor" data-id="${esc(mentor.id)}">${esc(mentor.name)} ↗</button>` : mentorName ? `<span>${esc(mentorName)}（名录外）</span>` : '<span class="outcome-mentor-unknown">导师未公开</span>'}</div><div class="outcome-time">${outcome.asOf ? `<time datetime="${esc(outcome.asOf)}">${esc(outcome.asOf)}</time>` : '<span class="record-empty" aria-label="资料日期未注明">—</span>'}</div><div class="outcome-evidence">${outcomeSources([...array(outcome.sourceIds), ...array(record.sourceIds)])}${outcomeSourcePreview(record)}${outcomeProvenance(record)}</div></article>`;
+  }
+
+  const outcomeImages = record => screenshotItems(record.screenshots, array(record.sourceIds).map(code => source(code)?.url).find(Boolean));
+  function outcomeSourcePreview(record) {
+    const shot = outcomeImages(record)[0];
+    return shot ? `<figure class="review-shot-preview outcome-shot-preview"><a class="review-shot-open" href="${esc(shot.src)}" target="_blank" rel="noopener noreferrer" data-action="outcome-image" data-id="${esc(record.id)}" aria-label="${esc(record.studentName)}：查看去向原文截图"><span class="review-shot-media" data-review-image-media><img class="review-shot-thumb" src="${esc(shot.src)}" alt="${esc(shot.caption || '去向原文截图')}" width="${Number(shot.width) || 1363}" height="${Number(shot.height) || 936}" loading="lazy" decoding="async" data-review-thumb><span class="review-image-fallback" hidden>点此查看原图</span></span></a><figcaption>去向原文</figcaption></figure>` : '';
+  }
+
+  function outcomeEmployerSummaries() {
+    const items = array(state.data.studentOutcomes?.employerSummaries).filter(item => item.text && array(item.sourceIds).some(code => source(code)));
+    if (!items.length) return '';
+    return `<details class="outcome-supplement"><summary>学校公开的事务所范围 · 未公布分所人数</summary>${items.map(item => `<article class="mentor-career-statement"><h4>${esc(item.label)}</h4><p>${inline(item.text)} ${outcomeSources(item.sourceIds)}</p><p class="outcome-section-note">${esc(item.scope)} · ${esc(item.date || '')}</p></article>`).join('')}</details>`;
+  }
+
+  function firmOutcomeSummary(records) {
+    const targets = records.filter(targetFirmOutcome);
+    if (!targets.length) return '';
+    const linked = targets.filter(record => outcomeMentorName(record));
+    const groups = new Map();
+    for (const record of linked) {
+      const name = outcomeMentorName(record);
+      if (!groups.has(name)) groups.set(name, []);
+      groups.get(name).push(record);
+    }
+    const rows = [...groups].map(([name,items]) => `<tr><th scope="row">${outcomeMentor(items[0]) ? `<button type="button" class="text-button" data-action="mentor" data-id="${esc(items[0].mentorId)}">${esc(name)} ↗</button>` : esc(name)+'（名录外）'}</th><td>${outcomePeople(items)}人</td><td>${[...new Set(items.map(record=>`${record.studentName}（${outcomeShortDegree(record)}）→${outcomeFirm(record).name}`))].map(esc).join('；')}</td></tr>`).join('');
+    return `<section class="firm-outcome-summary" aria-label="四大八大公开学生去向"><div class="firm-outcome-numbers"><span>四大 <strong>${outcomePeople(targets.filter(record=>outcomeFirm(record).group==='big4'))}</strong>人</span><span>八大 <strong>${outcomePeople(targets.filter(record=>outcomeFirm(record).group==='domestic8'))}</strong>人</span><span>导师已确认 <strong>${outcomePeople(linked)}</strong>人</span><span>导师未公开 <strong>${outcomePeople(targets.filter(record=>!outcomeMentorName(record)))}</strong>人</span></div><p class="outcome-section-note">当前筛选内的具名个案；同人多时点去重，签约、毕业去向与报道时任职逐条标明。</p>${rows ? `<div class="firm-mentor-table"><table><caption>导师 → 学生 → 事务所</caption><thead><tr><th>导师</th><th>公开人数</th><th>学生与单位</th></tr></thead><tbody>${rows}</tbody></table></div>` : ''}</section>`;
+  }
+
+  function mentorCareerStatements() {
+    const items = array(state.data.studentOutcomes?.mentorCareerStatements).filter(item => item.mentorId && item.text && array(item.sourceIds).some(code => source(code)));
+    if (!items.length) return '';
+    return `<details class="outcome-supplement"><summary>导师公开培养去向 · 未具名，不计人数</summary>${items.map(item => {
+      const mentor = state.data.mentors.find(value=>value.id===item.mentorId);
+      return mentor ? `<article class="mentor-career-statement"><h4><button type="button" class="text-button" data-action="mentor" data-id="${esc(mentor.id)}">${esc(mentor.name)} ↗</button></h4><p>${inline(item.text)} ${outcomeSources(item.sourceIds)}</p><p class="outcome-section-note">${esc([item.date,item.degreeScope].filter(Boolean).join(' · '))}</p></article>` : '';
+    }).join('')}</details>`;
   }
 
   function outcomeGroup(title, records) {
@@ -640,19 +706,19 @@
     const target = $('#outcome-results');
     if (!target) return;
     const records = filteredOutcomes();
-    $('#outcome-result-count').innerHTML = `找到 <strong>${records.length}</strong> 条去向记录${state.outcomeDegree ? ` · ${esc(outcomeDegreeLabels[state.outcomeDegree] || state.outcomeDegree)}` : ''}`;
-    target.innerHTML = records.length ? outcomeGroup('已公开导师关系', records.filter(record => outcomeMentor(record))) + outcomeGroup('学校公开与名录外导师', records.filter(record => !outcomeMentor(record))) : emptyState('暂无匹配的公开去向', '可切换专业或放宽筛选。没有公开个案不代表没有毕业去向。', '<button type="button" class="button secondary" data-action="reset-outcomes">查看全部专业</button>');
+    $('#outcome-result-count').innerHTML = `找到 <strong>${outcomePeople(records)}</strong> 人 · ${records.length} 条去向记录${state.outcomeDegree ? ` · ${esc(outcomeDegreeLabels[state.outcomeDegree] || state.outcomeDegree)}` : ''}`;
+    target.innerHTML = records.length ? firmOutcomeSummary(records) + outcomeGroup('四大／八大 · 导师已确认', records.filter(record => targetFirmOutcome(record) && outcomeMentorName(record))) + outcomeGroup('四大／八大 · 导师未公开', records.filter(record => targetFirmOutcome(record) && !outcomeMentorName(record))) + outcomeGroup('其他去向 · 已公开导师关系', records.filter(record => !targetFirmOutcome(record) && outcomeMentor(record))) + outcomeGroup('其他去向 · 学校公开与名录外导师', records.filter(record => !targetFirmOutcome(record) && !outcomeMentor(record))) : emptyState('暂无匹配的公开去向', '可切换专业或放宽筛选。没有公开个案不代表没有毕业去向。', '<button type="button" class="button secondary" data-action="reset-outcomes">查看全部专业</button>');
   }
 
   function outcomeSupplements() {
     const statistics = array(state.data.studentOutcomes?.statistics).filter(item => item?.label && item.value != null);
     const achievements = array(state.data.studentOutcomes?.achievements).filter(item => item?.studentName && item.achievement?.text);
-    return `${statistics.length ? `<details class="outcome-supplement"><summary>学校公开统计</summary><div class="outcome-statistics">${statistics.map(item => `<article><h4>${inline(item.label)} <strong>${inline(textOf(item.value))}</strong></h4><p>${[item.scope, item.cohort].filter(Boolean).map(esc).join(' · ')} ${outcomeSources(item.sourceIds)}</p>${array(item.limits).length ? `<p class="outcome-section-note">${array(item.limits).map(inline).join('；')}</p>` : ''}</article>`).join('')}</div></details>` : ''}${achievements.length ? `<details class="outcome-supplement"><summary>培养成果 · 不计入毕业去向</summary>${achievements.map(item => `<article class="outcome-achievement"><h4>${esc(item.studentName)}<span class="outcome-identity">${esc(outcomeIdentity(item))}</span></h4><p>${inline(item.achievement.text)} ${outcomeSources(item.achievement.sourceIds)}</p>${outcomeMentor(item) ? `<p class="outcome-status">导师：${esc(outcomeMentor(item).name)}</p>` : ''}${outcomeProvenance(item)}</article>`).join('')}</details>` : ''}`;
+    return `${statistics.length ? `<details class="outcome-supplement"><summary>学校公开统计</summary><div class="outcome-statistics">${statistics.map(item => `<article><h4>${inline(item.label)} <strong>${inline(textOf(item.value))}${esc(item.unit || (typeof item.value === 'number' ? '人' : ''))}</strong></h4><p>${[item.scope, item.cohort].filter(Boolean).map(esc).join(' · ')} ${outcomeSources(item.sourceIds)}</p>${array(item.limits).length ? `<p class="outcome-section-note">${array(item.limits).map(inline).join('；')}</p>` : ''}</article>`).join('')}</div></details>` : ''}${achievements.length ? `<details class="outcome-supplement"><summary>培养成果 · 不计入毕业去向</summary>${achievements.map(item => `<article class="outcome-achievement"><h4>${esc(item.studentName)}<span class="outcome-identity">${esc(outcomeIdentity(item))}</span></h4><p>${inline(item.achievement.text)} ${outcomeSources(item.achievement.sourceIds)}</p>${outcomeMentor(item) ? `<p class="outcome-status">导师：${esc(outcomeMentor(item).name)}</p>` : ''}${outcomeProvenance(item)}</article>`).join('')}</details>` : ''}`;
   }
 
   function renderOutcomes() {
     const select = (id, label, options, value) => `<div><label for="${id}">${label}</label><select id="${id}">${options.map(([key,text]) => `<option value="${esc(key)}"${key === value ? ' selected' : ''}>${esc(text)}</option>`).join('')}</select></div>`;
-    app.innerHTML = heading('02 / STUDENT OUTCOMES', '学生毕业后去了哪里', '默认看MPAcc；空白为未公开，完整状态见说明。公开个案不代表全体毕业生。') + `<div class="outcome-control-row"><div class="toolbar outcome-toolbar">${searchField('outcome-search','搜索学生、导师、学校或单位',state.outcomeQuery)}</div><div class="outcome-filters">${select('outcome-degree','专业／学位',[['','全部专业'],...Object.entries(outcomeDegreeLabels)],state.outcomeDegree)}${select('outcome-relationship','导师关系',[['','全部'],['linked','有明确导师'],['school','学校公开 · 导师未公开']],state.outcomeRelationship)}${select('outcome-type','去向类型',[['','全部去向'],...Object.entries(outcomeTypeLabels)],state.outcomeType)}</div></div><div class="results-bar"><span id="outcome-result-count" role="status" aria-live="polite"></span><span>按公开个案整理 · 不作排名</span></div><div id="outcome-results"></div>${outcomeSupplements()}`;
+    app.innerHTML = heading('02 / STUDENT OUTCOMES', '学生毕业后去了哪里', '四大、八大去向优先；默认MPAcc，可切换学位。导师关系逐条核对。') + `<div class="outcome-control-row"><div class="toolbar outcome-toolbar">${searchField('outcome-search','搜索学生、导师、学校或单位',state.outcomeQuery)}</div><div class="outcome-filters">${select('outcome-degree','专业／学位',[['','全部专业'],...Object.entries(outcomeDegreeLabels)],state.outcomeDegree)}${select('outcome-relationship','导师关系',[['','全部'],['linked','有明确导师'],['school','学校公开 · 导师未公开']],state.outcomeRelationship)}${select('outcome-type','去向类型',[['','全部去向'],...Object.entries(outcomeTypeLabels)],state.outcomeType)}${select('outcome-firm','事务所范围',[['','全部单位'],['target','四大／八大'],['big4','四大'],['domestic8','八大'],['historical_other','其他历史事务所']],state.outcomeFirm)}</div></div><details class="outcome-firm-scope"><summary>四大／八大统计范围</summary><p>四大：普华永道、德勤、安永、毕马威。八大：立信、天健、致同、容诚、天职国际、信永中和、大华、大信。瑞华历史去向单列。按本页列示范围归组，不表示官方排名；实习与仅获offer未计为就业去向。</p></details><div class="results-bar"><span id="outcome-result-count" role="status" aria-live="polite"></span><span>公开个案 · 无导师就业率</span></div><div id="outcome-results"></div>${mentorCareerStatements()}${outcomeEmployerSummaries()}${outcomeSupplements()}`;
     renderOutcomeResults();
   }
 
@@ -1222,6 +1288,11 @@
         case 'mentor': openMentor(id); break;
         case 'post': openPost(id, action.dataset.mentorId || ''); break;
         case 'review-image': if (!event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey && (event.button == null || event.button === 0) && openReviewImage(action.dataset.mentorId, action.dataset.reviewId, action.dataset.index, action)) event.preventDefault(); break;
+        case 'outcome-image': {
+          const record = outcomeRecords().find(item=>item.id===id);
+          if (record && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey && (event.button == null || event.button === 0) && openSourceImage(outcomeImages(record),`${record.studentName} · 去向原文`,0,action)) event.preventDefault();
+          break;
+        }
         case 'review-image-close': closeReviewImage(); break;
         case 'review-image-prev': stepReviewImage(-1); break;
         case 'review-image-next': stepReviewImage(1); break;
@@ -1232,7 +1303,7 @@
         case 'mentor-scope': state.mentorScope=id==='all'?'all':'useful';renderMentorResults();break;
         case 'saved-only': state.savedOnly=!state.savedOnly;action.setAttribute('aria-pressed',String(state.savedOnly));renderMentorResults();break;
         case 'reset-mentors': state.query='';state.direction='';state.savedOnly=false;state.reviewCoverage='';state.mentorScope='all';renderMentors();break;
-        case 'reset-outcomes': state.outcomeQuery='';state.outcomeDegree='';state.outcomeRelationship='';state.outcomeType='';renderOutcomes();break;
+        case 'reset-outcomes': state.outcomeQuery='';state.outcomeDegree='';state.outcomeRelationship='';state.outcomeType='';state.outcomeFirm='';renderOutcomes();break;
         case 'reset-posts': state.postQuery='';state.postTopic='';state.postCategory='';state.postLimit=20;renderPosts();break;
         case 'reset-internships': state.internGroup='';state.internCity='';state.internStatus='current';renderLife();break;
         case 'more-posts': {const prior=state.postLimit;state.postLimit+=20;renderPostResults();const first=$$('.post-card')[prior];if(first){first.setAttribute('tabindex','-1');first.focus({preventScroll:true});first.scrollIntoView({behavior:'smooth',block:'nearest'});}break;}
@@ -1260,8 +1331,8 @@
       state[{ 'intern-group':'internGroup','intern-city':'internCity','intern-status':'internStatus' }[event.target.id]]=event.target.value;
       renderInternshipResults();
     }
-    else if(['outcome-degree','outcome-relationship','outcome-type'].includes(event.target.id)){
-      state[{'outcome-degree':'outcomeDegree','outcome-relationship':'outcomeRelationship','outcome-type':'outcomeType'}[event.target.id]]=event.target.value;
+    else if(['outcome-degree','outcome-relationship','outcome-type','outcome-firm'].includes(event.target.id)){
+      state[{'outcome-degree':'outcomeDegree','outcome-relationship':'outcomeRelationship','outcome-type':'outcomeType','outcome-firm':'outcomeFirm'}[event.target.id]]=event.target.value;
       renderOutcomeResults();
     }
     else if(event.target.id==='review-coverage'){state.reviewCoverage=event.target.value;renderMentorResults();}

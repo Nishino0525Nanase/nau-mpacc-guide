@@ -1,0 +1,305 @@
+{
+  "checkedAt": "2026-11-14",
+  "status": "passed",
+  "deliverable": "dist/downloads/mentor-guide.docx",
+  "sha256": "561a5c587e1b21a47b690a7c96ae47964785d712c479fa4a5f3cf2443cf9df75",
+  "bytes": 76744,
+  "pageCount": 27,
+  "build": {
+    "file": "dist/downloads/mentor-guide.docx",
+    "bytes": 76744,
+    "sha256": "561a5c587e1b21a47b690a7c96ae47964785d712c479fa4a5f3cf2443cf9df75",
+    "mentors": 34,
+    "detailedCards": 17,
+    "reviewRecords": 55,
+    "contextNotes": 20,
+    "outcomeTimepointRecords": 29,
+    "outcomePeople": 28,
+    "mpaccOutcomePeople": 7,
+    "mpaccOutcomeTimepointRecords": 8,
+    "firmOutcomePeople": 3,
+    "firmMentorConfirmedPeople": 0,
+    "firmGroupPeople": {
+      "四大": 3,
+      "八大": 0,
+      "其他事务所": 0
+    },
+    "mentorCareerStatements": 1,
+    "careerStatementsCountedAsPeople": 0,
+    "employerSummaries": 2,
+    "employerSummariesCountedAsPeople": 0,
+    "historicalStatistics": 6,
+    "observedOrAmbiguousAliases": 19,
+    "hyperlinkElements": 253,
+    "referencedSourceCodes": 35,
+    "datasetSha256": "385afb3cb6951b094854f361054c262280167f8201f11f8328b1f02401818f11"
+  },
+  "contentChecks": {
+    "allMentorNamesPresent": true,
+    "allStudentNamesPresent": true,
+    "actualReviewParagraphs55": true,
+    "actualAliasTableRows19": true,
+    "dynamic29Timepoints": true,
+    "dynamic28People": true,
+    "mpacc7People8Timepoints": true,
+    "firm3People": true,
+    "domestic8ZeroNamedPeople": true,
+    "firmMentorsRemainUnconfirmed": true,
+    "noOldHardcodedCounts": true,
+    "rate96Percent": true,
+    "rate92Percent": true,
+    "xieHasMPAccEvidenceLabel": true,
+    "xieEmploymentIs2023Snapshot": true,
+    "qualitativeStatementsExcludedFromPeople": true,
+    "employerSummariesExcludedFromPeople": true,
+    "historyRatesAreWholeMPAcc": true,
+    "noPrivateBackendDescription": true,
+    "allTablesHaveRepeatingHeaders": true,
+    "hyperlinkCountMatches": true,
+    "docxHashMatchesBuild": true
+  },
+  "actualDocxCounts": {
+    "reviewParagraphs": 55,
+    "aliasTableRows": 19
+  },
+  "render": {
+    "renderer": "/home/agent/.codex/skills/builtins/documents/render_docx.py",
+    "directory": "/workspace/scratch/c08135c62de4/mentor-docx-render-20261114-final-v3",
+    "pngCount": 27,
+    "everyPageVisuallyReviewed": true,
+    "allChecksPassed": true,
+    "iterations": 3,
+    "finalChange": "仅调整引用表编号列宽，去掉末尾仅两行引用占一页；最终为27页。",
+    "unchangedPageVerification": "最终1至25页PNG与已逐页检查的上一版逐文件SHA-256一致；26、27页重新打开检查。"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance/firm_named_reverse",
+      "imageSha256": "d8f2dc0a86267150dcaf5b0ce0a9d8aaba5054ffa0b15d791186023ff9743290",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 2,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance/firm_named_reverse",
+      "imageSha256": "1ceb68dd146049068f717e020018fe74ad3c0b3003a62bf7da7522a93a37ce4e",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 3,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance/firm_named_reverse",
+      "imageSha256": "bd9a0755b7cecd9365c7f96dbd508a2ae2754cd9e2a1d1992a3d8ebceb5d188e",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 4,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance/firm_named_reverse",
+      "imageSha256": "aee8a639da8832b912939f21fe18c766c66685c1244aadba677dc1d7fc2b58ff",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 5,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance/firm_named_reverse",
+      "imageSha256": "51facf67d2c20400fc53701c953c8ada9f74257714bc4f390ad7f4f176e7150b",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 6,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance/firm_named_reverse",
+      "imageSha256": "680026503d2df59f5088d201085102eacc32b2bc15a960a7f5f4097b524b26a5",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 7,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance/firm_named_reverse",
+      "imageSha256": "af1175dd1bbbe67e008b907f1754e6d73c2754c212357a52d742ed66e0b6f93f",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 8,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance/firm_named_reverse",
+      "imageSha256": "f7e16dd3a72aceef7e841ae6dad8c63834199f81a573a9ba6c26b0532f7a6182",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 9,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance/firm_named_reverse",
+      "imageSha256": "fbddd2497f875dc5cd405f8c3295d1601da545dd98b249035d4fcb6d5075948a",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 10,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance/firm_named_reverse",
+      "imageSha256": "4f09f2b7de701385303fa1689b40f7c445923b948206dbfc5a6a99810922db75",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 11,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance/firm_named_reverse",
+      "imageSha256": "8bc0ebe2dcd4719eaa7e2614f9d9d344bc5747427de0673a2cfca5f4c2d949f7",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 12,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance/firm_named_reverse",
+      "imageSha256": "1689c57b5d4284d3ad362fd82d2847ed10fe65904a7c00c74fb39f29ed317a8b",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 13,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance/firm_named_reverse",
+      "imageSha256": "19222cdffa6f74b5a6a8010d6c38554db030ab672229db6a0464e5532cf2c781",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 14,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance/firm_named_reverse",
+      "imageSha256": "8fa2f3a0b7b440a62aed11ba0cf897c846a9f83cd209e313e200bc89452e5fbe",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 15,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance",
+      "imageSha256": "c85e85906fb471b77f1d9ff19eb02a9678612843522f742aa7c16f9b2fa82ec3",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 16,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance",
+      "imageSha256": "6edccd7c621ebc18e35b042a494ab98c5a17e01f7cf2986f318b12565ecceab3",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 17,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance",
+      "imageSha256": "142b1176bc06c9bca31d421e19ea04a138e41d944a5fad358dd3d98577b1a20f",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 18,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance",
+      "imageSha256": "651c3931dce1dca6735e11143e156ce9050d5e4c23eff0d17e9f24c99825548c",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 19,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance",
+      "imageSha256": "b52b4b0401c4fedfbde059d04ae72783f13c4fb2ec801b91128126d81bb0e235",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 20,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance",
+      "imageSha256": "cf4f31884d4da3e2c9390482e168a67e3aeb72b11767eb6f0a32a98b0998551a",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 21,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance",
+      "imageSha256": "cf9b65a8ef35ab530cda3c1932ed20ae89d2d6b7ec68f136cb6d9287e82f0f8e",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 22,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance",
+      "imageSha256": "bc9960ca3b7d08bc8c19634ab08c667b44abed7e2200a25c74167a73574e8cd0",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 23,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance",
+      "imageSha256": "ad8dfc976d92183bd690d3b556d7bff299ff9a0a28fced83ed589b277974af14",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 24,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance",
+      "imageSha256": "466669d908901e841f8ad5f43500cea4d326bef5d7372aca3256360c8cca6448",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 25,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance",
+      "imageSha256": "40e3c997886ddba0b0368821ee75811e7eae8291ec396eb71483b7ef5de364da",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": true
+    },
+    {
+      "page": 26,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance",
+      "imageSha256": "52de39caa302a9752a5a709128c4df7fd067e072342a7424b57c23c07975c6b3",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": false
+    },
+    {
+      "page": 27,
+      "status": "pass",
+      "reviewer": "/root/breadth_xhs_guidance",
+      "imageSha256": "75522c7ad4c36f687b9a1bba46aa7a4137c909978e1a209af290eef7b8d5e080",
+      "visualCheck": "完整页PNG已实际打开检查；字形、表格、边界、页脚与分页正常。",
+      "identicalToReviewedPriorRender": false
+    }
+  ],
+  "fixedLayoutIssues": [
+    "导师详细卡的姓名、导语、表头与首条数据保持相邻。",
+    "学生评价标题、导语与首条评价保持相邻。",
+    "去除与2023年统计局限重复的独立提示段，避免提示单独占下一页首行。",
+    "加宽来源编号列，保留字号并减少折行，取消只有两行来源的末页。"
+  ],
+  "scopeNotes": [
+    "仅修改导师Word生成脚本、导师Word与本任务QA；未修改生活Word。",
+    "事务所仅按具名就业去向分组，实习未纳入就业人数。",
+    "导师培养定性描述1条及学校雇主举例2条均独立展示、不计学生人数。",
+    "28名具名学生覆盖29个时间点；明确MPAcc为7人8条，四大3人中含MPAcc2人；八大无具名个案，事务所三人均无已公开导师。"
+  ]
+}

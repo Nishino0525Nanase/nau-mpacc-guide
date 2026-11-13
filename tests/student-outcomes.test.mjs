@@ -37,7 +37,7 @@ async function app(data=dataset) {
   for(let i=0;i<16;i++)await Promise.resolve();
   const change=(id,value)=>{const target=get('#'+id);target.value=value;handlers.get('change')({target});};
   const input=(id,value)=>{const target=get('#'+id);target.value=value;handlers.get('input')({target});};
-  const click=(action,id,extra={})=>handlers.get('click')({target:{closest:selector=>selector==='[data-action]'?{dataset:{action,id,...extra},setAttribute(){}}:null}});
+  const click=(action,id,extra={})=>handlers.get('click')({target:{closest:selector=>selector==='[data-action]'?{dataset:{action,id,...extra},setAttribute(){}}:null},preventDefault(){}});
   return {get,change,input,click,writes,errors,route(hash){location.hash=hash;winHandlers.get('hashchange')();},html(){return get('#outcome-results').innerHTML;}};
 }
 
@@ -65,6 +65,40 @@ function outcomeFixture() {
   };
   return data;
 }
+
+function firmFixture() {
+  const data=outcomeFixture(),[mentor,other]=data.mentors;
+  const base=data.studentOutcomes.records[0];
+  const record=(id,studentName,organization,extra={},outcome={})=>({
+    ...structuredClone(base),id,studentName,personId:id,mentorId:null,mentorName:null,relationship:null,...extra,
+    outcome:{...structuredClone(base.outcome),organization,...outcome}
+  });
+  const linked=(mentor)=>({mentorId:mentor.id,mentorName:mentor.name,relationship:{text:'官方明确硕士学位导师',sourceIds:['OUTCOME_TEST']}});
+  const first=record('firm-linked','FIRM_LINKED_STUDENT','普华永道中天会计师事务所',linked(mentor),{stage:'signed',statusLabel:'正式签约'});
+  data.studentOutcomes.records=[
+    first,
+    {...structuredClone(first),id:'firm-linked-later',outcome:{...first.outcome,stage:'employed',statusLabel:'报道时任职',asOf:'2026-10-01'}},
+    record('firm-unknown','FIRM_UNKNOWN_STUDENT','安永华明会计师事务所上海分所'),
+    record('domestic-linked','DOMESTIC_LINKED_STUDENT','立信会计师事务所江苏分所',linked(other)),
+    record('firm-unsupported','FIRM_UNSUPPORTED_MENTOR_STUDENT','致同会计师事务所',{mentorId:mentor.id,mentorName:mentor.name,relationship:null}),
+    record('historical','HISTORY_STUDENT','瑞华会计师事务所'),
+    record('academic-firm','FIRM_ACADEMIC_STUDENT','毕马威华振会计师事务所',{degree:'academic_master',degreeLabel:'会计学硕'}),
+    record('college','SCHOOL_NAME_STUDENT','上海立信会计金融学院'),
+    record('internship','FIRM_INTERNSHIP_STUDENT','德勤华永会计师事务所',{}, {stage:'internship',statusLabel:'审计实习'}),
+    record('offer','FIRM_OFFER_STUDENT','毕马威华振会计师事务所',{}, {stage:'offer_only',statusLabel:'仅获offer，未确认接受'}),
+    record('not-employment','FIRM_STUDY_STUDENT','大华会计师事务所',{}, {type:'further_study',statusLabel:'学习交流'})
+  ];
+  data.studentOutcomes.mentorCareerStatements=[
+    {mentorId:mentor.id,text:'MENTOR_UNNAMED_CAREER_STATEMENT',sourceIds:['OUTCOME_TEST'],date:'2025-05-01',degreeScope:'硕士类型未明'},
+    {mentorId:other.id,text:'UNSOURCED_CAREER_STATEMENT',sourceIds:['MISSING_CAREER_SOURCE']},
+    {mentorId:'missing-mentor',text:'UNKNOWN_MENTOR_CAREER_STATEMENT',sourceIds:['OUTCOME_TEST']}
+  ];
+  return data;
+}
+
+const firmSummary=html=>html.match(/<section class="firm-outcome-summary"[\s\S]*?<\/section>/)?.[0]||'';
+const firmTable=html=>html.match(/<div class="firm-mentor-table">[\s\S]*?<\/div>/)?.[0]||'';
+const outcomeArticle=(html,name)=>(html.match(/<article class="outcome-record">[\s\S]*?<\/article>/g)||[]).find(item=>item.includes(`<h4>${name}</h4>`))||'';
 
 test('public destination data keeps degrees, sources and mentor relationships explicit',()=>{
   const hub=dataset.studentOutcomes;
@@ -123,7 +157,7 @@ test('known school public cases preserve MPAcc versus academic master and never 
 test('outcomes opens with MPAcc only and each other degree remains separately selectable',async()=>{
   const a=await app(outcomeFixture());a.route('#outcomes');
   assert.match(a.get('#app').innerHTML,/id="outcome-search"/);
-  for(const id of ['outcome-degree','outcome-relationship','outcome-type'])assert(a.get('#app').innerHTML.includes(`id="${id}"`),id);
+  for(const id of ['outcome-degree','outcome-relationship','outcome-type','outcome-firm'])assert(a.get('#app').innerHTML.includes(`id="${id}"`),id);
   assert.match(a.html(),/DIRECT_MPACC_STUDENT/);assert.match(a.html(),/SCHOOL_UNLINKED_STUDENT/);
   assert.doesNotMatch(a.html(),/MAUD_STUDENT|ACADEMIC_MASTER_STUDENT|MASTER_UNSPECIFIED_STUDENT|UNDERGRAD_STUDENT|UNSPECIFIED_STUDENT/);
   for(const [degree,name] of [['MAud','MAUD_STUDENT'],['academic_master','ACADEMIC_MASTER_STUDENT'],['master_unspecified','MASTER_UNSPECIFIED_STUDENT'],['undergraduate','UNDERGRAD_STUDENT'],['unspecified','UNSPECIFIED_STUDENT']]){
@@ -197,4 +231,175 @@ test('old or empty data keeps outcomes and mentor views usable without inventing
     assert.doesNotMatch(a.get('#dialog-content').innerHTML,/DIRECT_MPACC_STUDENT|SCHOOL_UNLINKED_STUDENT/);
     assert.deepEqual(a.errors,[]);
   }
+});
+
+test('firm filters compose with the selected degree, mentor relationship and destination type',async()=>{
+  const a=await app(firmFixture());a.route('#outcomes');
+  assert.match(a.get('#app').innerHTML,/<option value="MPAcc" selected>/,'MPAcc remains the default degree');
+  a.change('outcome-firm','target');
+  assert.match(a.html(),/FIRM_LINKED_STUDENT|FIRM_UNKNOWN_STUDENT|DOMESTIC_LINKED_STUDENT/);
+  assert.doesNotMatch(a.html(),/FIRM_ACADEMIC_STUDENT|HISTORY_STUDENT|SCHOOL_NAME_STUDENT/);
+  a.input('outcome-search','FIRM_ACADEMIC_STUDENT');
+  assert.doesNotMatch(a.html(),/FIRM_ACADEMIC_STUDENT/,'firm search does not broaden the degree scope');
+  a.change('outcome-degree','academic_master');
+  assert.match(a.html(),/FIRM_ACADEMIC_STUDENT/);assert.doesNotMatch(a.html(),/FIRM_LINKED_STUDENT/);
+  a.input('outcome-search','');a.change('outcome-degree','MPAcc');a.change('outcome-firm','big4');
+  a.change('outcome-relationship','linked');
+  assert.match(a.html(),/FIRM_LINKED_STUDENT/);assert.doesNotMatch(a.html(),/FIRM_UNKNOWN_STUDENT|DOMESTIC_LINKED_STUDENT/);
+  a.change('outcome-relationship','school');
+  assert.match(a.html(),/FIRM_UNKNOWN_STUDENT/);assert.doesNotMatch(a.html(),/FIRM_LINKED_STUDENT/);
+  a.change('outcome-type','phd');assert.match(a.html(),/暂无匹配/);
+  a.change('outcome-type','employment');assert.match(a.html(),/FIRM_UNKNOWN_STUDENT/);
+  a.change('outcome-relationship','');a.change('outcome-firm','domestic8');
+  assert.match(a.html(),/DOMESTIC_LINKED_STUDENT/);assert.doesNotMatch(a.html(),/FIRM_LINKED_STUDENT|FIRM_UNKNOWN_STUDENT|HISTORY_STUDENT/);
+  a.route('#mentors');a.route('#outcomes');
+  assert.match(a.html(),/DOMESTIC_LINKED_STUDENT/,'firm scope survives navigation in the same session');
+  assert.deepEqual(a.errors,[]);assert.deepEqual(a.writes,[]);
+});
+
+test('a similarly named college, internships, offer-only records and nonemployment never become firm employment',async()=>{
+  const a=await app(firmFixture());a.route('#outcomes');
+  const excluded=['SCHOOL_NAME_STUDENT','FIRM_INTERNSHIP_STUDENT','FIRM_OFFER_STUDENT','FIRM_STUDY_STUDENT'];
+  for(const name of excluded){
+    const article=outcomeArticle(a.html(),name);
+    assert(article,`retain the source record in its original scope: ${name}`);
+    assert.doesNotMatch(article,/outcome-firm-badge/,name);
+  }
+  a.change('outcome-firm','target');
+  for(const name of excluded)assert(!a.html().includes(name),name);
+  a.change('outcome-firm','domestic8');assert.doesNotMatch(a.html(),/SCHOOL_NAME_STUDENT|FIRM_STUDY_STUDENT/);
+  a.change('outcome-firm','big4');assert.doesNotMatch(a.html(),/FIRM_INTERNSHIP_STUDENT|FIRM_OFFER_STUDENT/);
+});
+
+test('firm counts deduplicate the same person across time and unknown mentors stay outside named mentor rows',async()=>{
+  const data=firmFixture(),a=await app(data);a.route('#outcomes');a.change('outcome-firm','target');
+  assert.match(a.get('#outcome-result-count').innerHTML,/找到 <strong>4<\/strong> 人 · 5 条去向记录/);
+  const summary=firmSummary(a.html()),table=firmTable(summary);
+  for(const [label,count] of [['四大',2],['八大',2],['导师已确认',2],['导师未公开',2]]){
+    assert(summary.includes(`${label} <strong>${count}</strong>人`),`${label}: count people, not source snapshots`);
+  }
+  assert.match(table,/FIRM_LINKED_STUDENT|DOMESTIC_LINKED_STUDENT/);
+  assert.equal((table.match(/FIRM_LINKED_STUDENT/g)||[]).length,1,'the same student-firm pair appears once in the compact mentor table');
+  assert.doesNotMatch(table,/FIRM_UNKNOWN_STUDENT|FIRM_UNSUPPORTED_MENTOR_STUDENT/);
+  for(const name of ['FIRM_UNKNOWN_STUDENT','FIRM_UNSUPPORTED_MENTOR_STUDENT']){
+    const article=outcomeArticle(a.html(),name);
+    assert.match(article,/class="outcome-mentor-unknown">导师未公开/);
+    assert.doesNotMatch(article,/data-action="mentor"/,'an ID or name without relationship evidence cannot attach a mentor');
+  }
+  a.click('mentor',data.mentors[0].id);
+  assert.doesNotMatch(a.get('#dialog-content').innerHTML,/FIRM_UNKNOWN_STUDENT|FIRM_UNSUPPORTED_MENTOR_STUDENT/);
+  const legacy=firmFixture();
+  for(const record of legacy.studentOutcomes.records)delete record.personId;
+  const b=await app(legacy);b.route('#outcomes');b.change('outcome-firm','target');
+  assert.match(b.get('#outcome-result-count').innerHTML,/找到 <strong>4<\/strong> 人 · 5 条去向记录/,'older records without personId deduplicate repeated student names');
+});
+
+test('the eight named domestic firms remain distinct from historical Ruihua records',async()=>{
+  const data=firmFixture(),base=data.studentOutcomes.records[0];
+  const names=['立信','天健','致同','容诚','天职国际','信永中和','大华','大信'];
+  data.studentOutcomes.records=[...names,'瑞华'].map((name,index)=>({
+    ...structuredClone(base),id:`scope-${index}`,personId:`scope-person-${index}`,studentName:`SCOPE_STUDENT_${index}`,mentorId:null,mentorName:null,relationship:null,
+    outcome:{...base.outcome,organization:`${name}会计师事务所`,stage:'employed',statusLabel:'正式入职'}
+  }));
+  const a=await app(data);a.route('#outcomes');
+  assert.match(a.get('#app').innerHTML,/瑞华历史去向单列/);
+  a.change('outcome-firm','domestic8');
+  for(let i=0;i<8;i++)assert(a.html().includes(`SCOPE_STUDENT_${i}`),names[i]);
+  assert.doesNotMatch(a.html(),/SCOPE_STUDENT_8|历史事务所 · 瑞华/);
+  assert.match(firmSummary(a.html()),/八大 <strong>8<\/strong>人/);
+  assert.equal((a.html().match(/outcome-firm-badge domestic8/g)||[]).length,8);
+  a.change('outcome-firm','historical_other');
+  assert.match(a.html(),/SCOPE_STUDENT_8/);assert.match(a.html(),/outcome-firm-badge historical_other/);
+  for(let i=0;i<8;i++)assert(!a.html().includes(`SCOPE_STUDENT_${i}`),names[i]);
+  assert.equal(firmSummary(a.html()),'','historical firms do not contribute to the current four/eight summary');
+  a.change('outcome-firm','target');assert.doesNotMatch(a.html(),/SCOPE_STUDENT_8/);
+});
+
+test('unnamed mentor career statements retain their source and degree limit without adding students',async()=>{
+  const data=firmFixture(),a=await app(data);a.route('#outcomes');
+  const html=a.get('#app').innerHTML;
+  assert.match(html,/导师公开培养去向 · 未具名，不计人数/);
+  assert.match(html,/class="mentor-career-statement"/);assert.match(html,/MENTOR_UNNAMED_CAREER_STATEMENT/);
+  assert.match(html,/2025-05-01 · 硕士类型未明/);
+  assert.match(html,/href="https:\/\/example.org\/public-destination"/);
+  assert.doesNotMatch(html,/UNSOURCED_CAREER_STATEMENT|UNKNOWN_MENTOR_CAREER_STATEMENT/);
+  assert.doesNotMatch(a.html(),/MENTOR_UNNAMED_CAREER_STATEMENT/);
+  a.change('outcome-firm','target');assert.match(a.get('#outcome-result-count').innerHTML,/找到 <strong>4<\/strong> 人/);
+});
+
+test('outcome screenshots open and close the independent viewer while unsafe paths have no entry',async()=>{
+  const data=firmFixture(),record=data.studentOutcomes.records[0];
+  const safe='./evidence/firm-outcomes-20261114/destination-original.png';
+  record.screenshots=[{src:safe,caption:'学校毕业去向原文',scope:['具名学生及就业单位'],width:1363,height:936}];
+  const badPaths=['../private.png','./evidence/firm-outcomes-20261114/../private.png','javascript:alert(1)','https://example.org/unapproved.png'];
+  const bad=badPaths.map((src,index)=>({...structuredClone(record),id:`bad-shot-${index}`,studentName:`UNSAFE_SHOT_STUDENT_${index}`,screenshots:[{src,caption:'不可用路径'}]}));
+  data.studentOutcomes.records=[record,...bad];
+  const a=await app(data);a.route('#outcomes');
+  assert.match(outcomeArticle(a.html(),record.studentName),/data-action="outcome-image" data-id="firm-linked"/);
+  for(const item of bad){
+    assert.doesNotMatch(outcomeArticle(a.html(),item.studentName),/data-action="outcome-image"|outcome-shot-preview/);
+    a.click('outcome-image',item.id);assert.equal(a.get('#review-image-dialog').open,false);
+  }
+  a.click('outcome-image',record.id);
+  assert.equal(a.get('#review-image-dialog').open,true);
+  assert.equal(a.get('#detail-dialog').open,false,'the source image does not open a mentor detail dialog');
+  assert.equal(a.get('#review-image-title').textContent,`${record.studentName} · 去向原文`);
+  assert(a.get('#review-image-content').innerHTML.includes(`src="${safe}"`));
+  assert.match(a.get('#review-image-content').innerHTML,/具名学生及就业单位|学校毕业去向原文/);
+  a.click('review-image-close');
+  assert.equal(a.get('#review-image-dialog').open,false);assert.equal(a.get('#review-image-content').innerHTML,'');
+  assert.deepEqual(a.errors,[]);
+});
+
+test('person counts keep same-name degrees and cohorts separate while a shared personId joins later snapshots',async()=>{
+  const data=firmFixture(),base=structuredClone(data.studentOutcomes.records[0]);
+  const record=(id,extra={})=>{
+    const item={...structuredClone(base),id,studentName:'SAME_NAME_STUDENT',mentorId:null,mentorName:null,relationship:null,...extra};
+    if(!Object.hasOwn(extra,'personId'))delete item.personId;
+    return item;
+  };
+  data.studentOutcomes.records=[
+    record('same-2025',{graduationYear:2025}),
+    record('same-2025-later',{graduationYear:2025,outcome:{...base.outcome,asOf:'2026-10-01'}}),
+    record('same-2026',{graduationYear:2026}),
+    record('same-academic',{degree:'academic_master',degreeLabel:'会计学硕',graduationYear:2025}),
+    record('same-cohort-2023',{graduationYear:null,cohort:'2023级'}),
+    record('same-cohort-2024',{graduationYear:null,cohort:'2024级'}),
+    record('known-person-earlier',{personId:'stable-person',graduationYear:2022}),
+    record('known-person-later',{personId:'stable-person',studentName:'RENAMED_STUDENT',degree:'MAud',degreeLabel:'审计专硕',graduationYear:2026})
+  ];
+  const a=await app(data);a.route('#outcomes');a.change('outcome-degree','');a.change('outcome-firm','target');
+  assert.match(a.get('#outcome-result-count').innerHTML,/找到 <strong>6<\/strong> 人 · 8 条去向记录/);
+  assert.match(firmSummary(a.html()),/四大 <strong>6<\/strong>人/);
+});
+
+test('candidate, nonpublic and unsupported relationships do not count as confirmed mentors; legacy explicit evidence still works',async()=>{
+  const data=firmFixture(),base=structuredClone(data.studentOutcomes.records[0]);
+  const rejected=[
+    ['candidate',{relationshipStatus:'candidate'}],
+    ['not-public',{relationshipStatus:'not_public'}],
+    ['non-public',{relationshipStatus:'non-public'}],
+    ['missing-source',{relationshipStatus:'confirmed',relationship:{text:'尚无注册原文',sourceIds:['MISSING_RELATIONSHIP_SOURCE']}}],
+    ['unsafe-source',{relationshipStatus:'confirmed',relationship:{text:'非法来源链接',sourceIds:['OUTCOME_UNSAFE']}}]
+  ];
+  const legacy={...base,id:'legacy-confirmed',personId:'legacy-confirmed',studentName:'LEGACY_CONFIRMED_STUDENT'};
+  delete legacy.relationshipStatus;
+  data.studentOutcomes.records=[legacy,...rejected.map(([id,extra])=>({...structuredClone(base),id,personId:id,studentName:`REJECTED_${id}`,...extra}))];
+  const a=await app(data);a.route('#outcomes');a.change('outcome-firm','target');
+  const summary=firmSummary(a.html());
+  assert.match(summary,/导师已确认 <strong>1<\/strong>人/);assert.match(summary,/导师未公开 <strong>5<\/strong>人/);
+  assert.match(firmTable(summary),/LEGACY_CONFIRMED_STUDENT/);assert.doesNotMatch(firmTable(summary),/REJECTED_/);
+  for(const [id] of rejected)assert.match(outcomeArticle(a.html(),`REJECTED_${id}`),/outcome-mentor-unknown/);
+  a.change('outcome-relationship','linked');assert.match(a.html(),/LEGACY_CONFIRMED_STUDENT/);assert.doesNotMatch(a.html(),/REJECTED_/);
+  a.click('mentor',base.mentorId);assert.doesNotMatch(a.get('#dialog-content').innerHTML,/REJECTED_/);
+  assert.deepEqual(a.errors,[]);
+});
+
+test('registered year-suffixed source IDs remain clickable instead of becoming descending citation ranges',async()=>{
+  const data=outcomeFixture(),code='OUTCOME20261114-2021';
+  data.sourceRegistry[code]={title:'专业学位点2021年报',url:'https://example.org/mpacc-2021.pdf'};
+  const record=data.studentOutcomes.records.find(item=>item.id==='school');
+  record.sourceIds=[code];record.outcome.sourceIds=[code];
+  const a=await app(data);a.route('#outcomes');
+  assert.match(a.html(),/<a[^>]+href="https:\/\/example.org\/mpacc-2021.pdf"[^>]*>\[OUTCOME20261114-2021\]<\/a>/);
 });

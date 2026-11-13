@@ -1,0 +1,17 @@
+{
+  "batch": "firm-outcomes-20261114",
+  "recordCount": 29,
+  "people": 28,
+  "mpaccRecords": 8,
+  "mpaccPeople": 7,
+  "targetFirmPeople": 3,
+  "mpaccTargetFirmPeople": 2,
+  "namedTargetFirmPeopleWithMentor": 0,
+  "qualitativeMentorStatements": 1,
+  "employerSummaries": 2,
+  "sourceRegistryEntries": 496,
+  "newRecordIds": [
+    "FO20261114-XIE-KPMG"
+  ],
+  "scope": "具名就业、整体历史就业统计、导师未具名描述、学校雇主举例分别保留；不从共著、实习、offer或合作单位推导师就业人数。"
+}

@@ -22,7 +22,7 @@ from docx.shared import Inches, Pt, RGBColor
 ROOT = Path(__file__).resolve().parents[1]
 TARGET = ROOT / 'dist/downloads/mentor-guide.docx'
 DATA = ROOT / 'dist/data/site-data.json'
-QA = ROOT / 'data/download_refresh_20261113'
+QA = ROOT / 'data/firm_outcomes_20261114'
 BASE_URL = 'https://nishino0525nanase.github.io/nau-mpacc-guide/'
 FONT = 'Noto Sans CJK SC'
 
@@ -39,6 +39,53 @@ def text(value):
 
 def clean(value):
     return text(value).replace('*未公开', '未公开').replace('。；', '。').replace('；；', '；').replace('。。', '。')
+
+
+FIRM_NAMES = {
+    '四大': ('德勤', '普华永道', '安永', '毕马威'),
+    '八大': ('立信', '天健', '致同', '容诚', '天职国际', '信永中和', '大华', '大信'),
+}
+
+
+def student_identity(record):
+    """Keep explicit identities and distinguish matching names across cohorts."""
+    explicit = record.get('personId') or record.get('studentId')
+    if explicit:
+        return ('id', str(explicit))
+    cohort = re.sub(r'\s*级\s*$', '', str(record.get('cohort') or '')).strip()
+    return (str(record.get('studentName') or ''),
+            str(record.get('institution') or '南京审计大学'),
+            str(record.get('degree') or ''), cohort,
+            str(record.get('graduationYear') or ''))
+
+
+def firm_group(record):
+    """Classify the recorded employment unit, never an internship or publication."""
+    outcome = record.get('outcome') or {}
+    if outcome.get('type') != 'employment':
+        return None
+    organization = outcome.get('organization') or ''
+    for group, firms in FIRM_NAMES.items():
+        if any(organization == name or name + '会计师事务所' in organization or
+               (group == '四大' and organization.startswith(name))
+               for name in firms):
+            return group
+    if '会计师事务所' in organization:
+        return '其他事务所'
+    return None
+
+
+def outcome_summary(records):
+    mpacc = [record for record in records if record.get('degree') == 'MPAcc']
+    firms = {group: [record for record in records if firm_group(record) == group]
+             for group in (*FIRM_NAMES, '其他事务所')}
+    return {
+        'records': len(records),
+        'people': len({student_identity(record) for record in records}),
+        'mpaccRecords': len(mpacc),
+        'mpaccPeople': len({student_identity(record) for record in mpacc}),
+        'firmGroups': firms,
+    }
 
 
 def main():
@@ -172,6 +219,7 @@ def main():
             for i, value in enumerate(values):
                 c = row.cells[i]; c.width = Inches(widths[i]); c.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
                 p = c.paragraphs[0]; p.paragraph_format.space_after = Pt(2); p.paragraph_format.space_before = Pt(2); p.paragraph_format.line_spacing = Pt(14)
+                p.paragraph_format.keep_with_next = header
                 snap = OxmlElement('w:snapToGrid'); snap.set(qn('w:val'), '0'); p._p.get_or_add_pPr().append(snap)
                 if isinstance(value, tuple):
                     link(p, clean(value[0]), value[1], size)
@@ -215,7 +263,7 @@ def main():
     for card in data['mentorCards']:
         mentor = by_id[card['mentorId']]
         heading(card['name'], 2)
-        para(card['reason'], size=10)
+        para(card['reason'], size=10, keep=True)
         fields = [(f['label'], f['value']) for f in card['profileFields'] if f['label'] not in ['姓名', '备注']]
         table(['事项', '公开信息'], fields, [1.35, 5.85], size=10)
         p = para('教师与资料入口 ', size=9)
@@ -226,7 +274,7 @@ def main():
         source_line(card.get('sourceCodes', []))
 
     heading('学生评价与原帖语境', page=True)
-    para(f'以下{review_count}条为可归属记录，包含笼统提名、课程接触、转述和指导自述，不能视作同等数量的MPAcc直系学生。同一评论的多个导师引用只算一条原评论；学校精选访谈有选择偏差。', size=10)
+    para(f'以下{review_count}条为可归属记录，包含笼统提名、课程接触、转述和指导自述，不能视作同等数量的MPAcc直系学生。同一评论的多个导师引用只算一条原评论；学校精选访谈有选择偏差。', size=10, keep=True)
     for m in mentors:
         reviews = m['studentReviews']['reviews']
         if not reviews:
@@ -310,25 +358,102 @@ def main():
     para('单文涛的规范姓名缩写采用SWT；DWT仅为历史检索变体。许汉y所在句是提问，不算评价。WY同时对应王烨、王禹；LH对应李华、凌华、李慧，须结合上下文。 [AM-SWT-PINYIN]', size=10)
 
     heading('学校公开的学生去向', page=True)
-    records = data['studentOutcomes']['records']
-    para('共28条时间点记录，涉及27人；其中明确MPAcc的为6人7条。袁璐的读博与博士毕业后任教分开记录。同名不拼接，导师未公开的保留为空；不是导师名下全体毕业生名单。', size=10)
-    for title, group in [('明确MPAcc的个案', [r for r in records if r['degree'] == 'MPAcc']), ('其他或未注明学位的个案', [r for r in records if r['degree'] != 'MPAcc'])]:
-        heading(title, 2)
+    outcome_data = data['studentOutcomes']
+    records = outcome_data['records']
+    summary = outcome_summary(records)
+    career_statements = outcome_data.get('mentorCareerStatements') or data.get('mentorCareerStatements') or []
+    employer_summaries = outcome_data.get('employerSummaries') or []
+    para(f"共{summary['records']}条时间点记录，涉及{summary['people']}人；其中明确MPAcc的为{summary['mpaccPeople']}人{summary['mpaccRecords']}条。同一人的不同去向阶段分别保留，人数合并；不同年级或学位的同名记录不直接拼接。", size=10)
+    para('先列事务所去向，再列其他升学与就业个案。毕业去向、签约、将入职和报道时任职按原资料分别显示；导师未公开的保留为未公开。这里不是导师名下全体毕业生名单。', size=10)
+
+    def mentor_label(record):
+        name = record.get('mentorName')
+        mentor_id = record.get('mentorId')
+        if not name and mentor_id in by_id:
+            name = by_id[mentor_id]['name']
+        if not name:
+            return '未公开'
+        if record.get('relationshipStatus') == 'confirmed_external':
+            return name + '\n名录外导师'
+        return name
+
+    def outcome_rows(group):
         rows = []
         for r in group:
             o = r['outcome']
             when = o.get('asOf') or '资料未列日期'
-            status = o.get('statusLabel') or ''
-            degree = r['degreeLabel']
-            outcome = o['organization'] + ('\n' + o['program'] if o.get('program') else '')
-            time_scope = status + '\n资料日期 ' + str(when) + '\n' + ''.join('[' + c + ']' for c in r['sourceIds'] if c in registry)
-            rows.append([r['studentName'] + '\n' + degree, r.get('mentorName') or '未公开', outcome, time_scope])
-        table(['学生及学位', '导师', '公开去向', '状态与来源时点'], rows, [1.4, .75, 1.9, 3.15], size=9.5)
+            status = o.get('statusLabel') or o.get('status') or '原资料未列状态'
+            degree = r.get('degreeLabel') or r.get('degree') or '学位未注明'
+            cohort = str(r.get('cohort') or '')
+            if cohort and cohort not in degree:
+                degree += '\n' + cohort
+            destination = o['organization'] + ('\n' + o['program'] if o.get('program') else '')
+            codes = list(dict.fromkeys(r.get('sourceIds', []) + o.get('sourceIds', [])))
+            time_scope = status + '\n资料日期 ' + str(when) + '\n' + ''.join('[' + c + ']' for c in codes if c in registry)
+            rows.append([r['studentName'] + '\n' + degree, mentor_label(r), destination, time_scope])
+        return rows
+
+    firm_records = [r for r in records if firm_group(r)]
+    firm_people = len({student_identity(r) for r in firm_records})
+    firm_confirmed = [r for r in firm_records
+                      if r.get('relationshipStatus') in {'confirmed', 'confirmed_external'}
+                      and (r.get('mentorName') or r.get('mentorId') in by_id)]
+    firm_confirmed_people = len({student_identity(r) for r in firm_confirmed})
+    if firm_records:
+        heading('会计师事务所去向', 2)
+        counts = '；'.join(group + str(len({student_identity(r) for r in group_records})) + '人' for group, group_records in summary['firmGroups'].items() if group in FIRM_NAMES or group_records)
+        para(f'具名事务所记录涉及{firm_people}人。{counts}。其中导师对应已公开的为{firm_confirmed_people}人，其余以学生去向单独查看。', size=10)
+        para('八大按立信、天健、致同、容诚、天职国际、信永中和、大华、大信这八家分组；其他事务所另列，不混入实习记录。', size=9)
+        for group, group_records in summary['firmGroups'].items():
+            if not group_records:
+                continue
+            para(group + '事务所' if group != '其他事务所' else group, size=11, bold=True, before=5, after=5, keep=True)
+            table(['学生及学位', '对应导师', '事务所及岗位', '状态与来源时点'], outcome_rows(group_records), [1.35, .9, 2.1, 2.85], size=9.5)
+
+    if career_statements:
+        heading('导师培养的就业方向', 2)
+        para('以下是导师培养背景中的定性去向，未公布学生名单，单独列出，不计入上面的学生人数或事务所人数。', size=10)
+        for statement in career_statements:
+            mentor_name = statement.get('mentorName') or by_id.get(statement.get('mentorId'), {}).get('name') or '资料未注明导师'
+            year = str(statement.get('year') or statement.get('publishedYear') or '资料未列年份')
+            degree = statement.get('graduateDegreeLabel') or statement.get('degreeLabel') or statement.get('graduateDegree') or '学位范围未细分'
+            para(mentor_name + '  ' + year + '年  ' + degree, size=10.5, bold=True, after=4, keep=True)
+            para(statement.get('statement') or statement.get('text') or statement.get('summary'), size=10, after=4)
+            limits = clean(statement.get('limits'))
+            if limits:
+                para(limits, size=9, after=4)
+            source_line(statement.get('sourceIds', []))
+            for source in statement.get('sources', []):
+                if source.get('url'):
+                    p = para('来源 ', size=9, after=5)
+                    link(p, source.get('title') or '打开原文', source['url'], 9)
+
+    if employer_summaries:
+        heading('学校公开的事务所雇主举例', 2)
+        para('以下为学院或项目整体介绍，不对应具体学生或导师，不计入具名学生人数。', size=10)
+        for employer_summary in employer_summaries:
+            label = employer_summary.get('label') or '事务所雇主举例'
+            date = str(employer_summary.get('date') or '')
+            para(label + ('  ' + date if date else ''), size=10.5, bold=True, after=4, keep=True)
+            para(employer_summary.get('text'), size=10, after=4)
+            scope = employer_summary.get('scope')
+            if scope:
+                para('范围 ' + clean(scope), size=9, after=4)
+            source_line(employer_summary.get('sourceIds', []))
+
+    other_records = [r for r in records if not firm_group(r)]
+    for title, group in [('其他明确MPAcc的个案', [r for r in other_records if r.get('degree') == 'MPAcc']), ('其他或未注明学位的个案', [r for r in other_records if r.get('degree') != 'MPAcc'])]:
+        if group:
+            heading(title, 2)
+            table(['学生及学位', '导师', '公开去向', '状态与来源时点'], outcome_rows(group), [1.35, .9, 1.95, 3], size=9.5)
     para('未注明学位的考博名单不能归入MPAcc。朱安琪只确认报道时与华为签约；审计署相关个案按2026年7月报道的“将入职”记载，不改写为已入职或当前任职。公开去向不构成导师就业保荐或录取承诺。', size=10)
-    for stat in data['studentOutcomes']['statistics']:
-        para(stat['cohort'] + ' ' + stat['label'] + ' ' + str(stat['value']) + '人。' + clean(stat['limits']), size=10)
+    if outcome_data.get('statistics'):
+        heading('MPAcc项目整体历史统计', 2)
+        para('就业率为相应年度MPAcc项目整体就业率，不是四大或八大事务所就业率，也不用于推算任何导师的就业人数。', size=10)
+    for stat in outcome_data.get('statistics', []):
+        unit = stat.get('unit') or '人'
+        para(stat['cohort'] + ' ' + stat['label'] + ' ' + str(stat['value']) + unit + '。' + clean(stat['limits']), size=10)
         source_line(stat['sourceIds'])
-    para('2023年报告中的就业率和分类表存在相互冲突的文字，本稿不选择其中一个数字作为统一就业率。', size=10)
 
     heading('联系导师前要问清的事', page=True)
     para('先确定研究兴趣、可投入时间和实习计划，挑选两三位方向相近的老师。邮件写清姓名、本科学校专业、拟入学身份、具体兴趣与一项真实成果，附件用简短PDF简历。不要编造论文、项目或导师承诺。')
@@ -348,7 +473,7 @@ def main():
         s = registry[code]
         title = s.get('title') or s.get('label') or code
         rows.append([code, (title, s.get('url') or s.get('canonicalUrl') or s.get('originalUrl'))])
-    table(['编号', '点击打开来源'], rows, [1, 6.2], size=9.5)
+    table(['编号', '点击打开来源'], rows, [1.35, 5.85], size=9.5)
     doc.save(TARGET)
     payload = io.BytesIO()
     with ZipFile(TARGET) as source_zip, ZipFile(payload, 'w', ZIP_DEFLATED) as target_zip:
@@ -357,8 +482,8 @@ def main():
             entry.compress_type = ZIP_DEFLATED
             target_zip.writestr(entry, source_zip.read(name))
     TARGET.write_bytes(payload.getvalue())
-    QA.mkdir(exist_ok=True)
-    report = {'file':'dist/downloads/mentor-guide.docx', 'bytes':TARGET.stat().st_size, 'sha256':sha256(TARGET.read_bytes()).hexdigest(), 'mentors':len(mentors), 'detailedCards':len(data['mentorCards']), 'reviewRecords':sum(len(m['studentReviews']['reviews']) for m in mentors), 'contextNotes':sum('contextNotes' in r for m in mentors for r in m['studentReviews']['reviews']), 'outcomeTimepointRecords':len(records), 'outcomePeople':len({r['studentName'] for r in records}), 'observedOrAmbiguousAliases':len(aliases), 'hyperlinkElements':link_count, 'referencedSourceCodes':len(used_codes), 'datasetSha256':sha256(DATA.read_bytes()).hexdigest()}
+    QA.mkdir(parents=True, exist_ok=True)
+    report = {'file':'dist/downloads/mentor-guide.docx', 'bytes':TARGET.stat().st_size, 'sha256':sha256(TARGET.read_bytes()).hexdigest(), 'mentors':len(mentors), 'detailedCards':len(data['mentorCards']), 'reviewRecords':sum(len(m['studentReviews']['reviews']) for m in mentors), 'contextNotes':sum('contextNotes' in r for m in mentors for r in m['studentReviews']['reviews']), 'outcomeTimepointRecords':summary['records'], 'outcomePeople':summary['people'], 'mpaccOutcomePeople':summary['mpaccPeople'], 'mpaccOutcomeTimepointRecords':summary['mpaccRecords'], 'firmOutcomePeople':firm_people, 'firmMentorConfirmedPeople':firm_confirmed_people, 'firmGroupPeople':{group:len({student_identity(r) for r in group_records}) for group,group_records in summary['firmGroups'].items()}, 'mentorCareerStatements':len(career_statements), 'careerStatementsCountedAsPeople':0, 'employerSummaries':len(employer_summaries), 'employerSummariesCountedAsPeople':0, 'historicalStatistics':len(outcome_data.get('statistics', [])), 'observedOrAmbiguousAliases':len(aliases), 'hyperlinkElements':link_count, 'referencedSourceCodes':len(used_codes), 'datasetSha256':sha256(DATA.read_bytes()).hexdigest()}
     with ZipFile(TARGET) as z:
         xml = z.read('word/document.xml').decode()
         assert xml.count('<w:hyperlink ') == link_count

@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-11-14",
+  "automatedTests": {
+    "passed": 170,
+    "failed": 0,
+    "command": "node --test tests/*.test.mjs"
+  },
+  "studentOutcomes": {
+    "batch": "firm-outcomes-20261114",
+    "recordCount": 29,
+    "people": 28,
+    "mpaccRecords": 8,
+    "mpaccPeople": 7,
+    "targetFirmPeople": 3,
+    "mpaccTargetFirmPeople": 2,
+    "namedTargetFirmPeopleWithMentor": 0,
+    "qualitativeMentorStatements": 1,
+    "employerSummaries": 2,
+    "sourceRegistryEntries": 496,
+    "newRecordIds": [
+      "FO20261114-XIE-KPMG"
+    ],
+    "scope": "具名就业、整体历史就业统计、导师未具名描述、学校雇主举例分别保留；不从共著、实习、offer或合作单位推导师就业人数。"
+  },
+  "browserChecks": {
+    "desktopViewportWidth": 1363,
+    "documentWidth": 1348,
+    "defaultMpaccPeople": 7,
+    "defaultMpaccTimepoints": 8,
+    "mpaccFirmPeople": 2,
+    "allDegreesFirmPeople": 3,
+    "unknownMentorNotGroupedUnderTeacher": true,
+    "sourceImageLoads": true,
+    "sourceImageInSiteDialogOpensAndCloses": true,
+    "statisticsUnits": "人/%",
+    "registeredYearSuffixSourceLinks": "fixed and regression-tested",
+    "mobileViewportVisualQA": false,
+    "mobileDeviceQA": false
+  },
+  "officeFiles": {
+    "mentor-guide.docx": {
+      "bytes": 76744,
+      "sha256": "561a5c587e1b21a47b690a7c96ae47964785d712c479fa4a5f3cf2443cf9df75"
+    },
+    "life-guide.docx": {
+      "bytes": 63367,
+      "sha256": "1861d3b0184e077d123accf3e6ea63ed50420c9e09a732e816400ca1832c9f25"
+    },
+    "evidence-index.xlsx": {
+      "bytes": 559145,
+      "sha256": "9792c2c672f8f117bb29481c405c41a24bd197ea7a6e3055886139b76be07e7f"
+    }
+  },
+  "preserved": {
+    "mentorRecords": 34,
+    "studentReviewRecords": 55,
+    "visibleAliasMappings": 19,
+    "lifeWordSha256": "1861d3b0184e077d123accf3e6ea63ed50420c9e09a732e816400ca1832c9f25"
+  },
+  "verificationLimits": [
+    "公开资料无法提供具名八大与导师完整对应；0表示未核实的公开样本，不表示实际人数。",
+    "没有从本科就业表、实习、仅获offer、项目或论文共著补造就业或导师。"
+  ]
+}

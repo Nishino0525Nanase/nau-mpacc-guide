@@ -2,7 +2,7 @@
 'use strict';
 const BASE = new URL('./', self.location.href);
 const CACHE_PREFIX = `nau-guide:${BASE.pathname}:`;
-const CACHE_NAME = `${CACHE_PREFIX}1.0.30-alias-comments-20261113`;
+const CACHE_NAME = `${CACHE_PREFIX}1.0.31-firm-outcomes-20261114`;
 const DATA_PATH = 'data/site-data.json';
 const SHELL_PATHS = [
   './', 'index.html', 'app.js', 'music.js', 'life-images.js', 'style.css', 'install.js', 'favicon.svg',
@@ -10,7 +10,7 @@ const SHELL_PATHS = [
 ];
 const SHELL = new Set(SHELL_PATHS.map(path => new URL(path, BASE).href));
 const DATA_URL = new URL(DATA_PATH, BASE).href;
-const ASSET_REVISIONS = {'app.js':'aliascomments1', 'style.css':'aliascomments1', 'life-images.js':'campus1'};
+const ASSET_REVISIONS = {'app.js':'firmoutcomes1', 'style.css':'firmoutcomes1', 'life-images.js':'campus1'};
 
 function classify(request) {
   if (request.method !== 'GET') return null;

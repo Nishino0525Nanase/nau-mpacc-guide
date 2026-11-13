@@ -1,0 +1,256 @@
+{
+  "sheets": 16,
+  "tables": 19,
+  "formulas": 1753,
+  "formulaErrors": [],
+  "rows": {
+    "完整来源目录": 500,
+    "正文未读线索": 10,
+    "生活学习要点": 454,
+    "导师反馈": 61,
+    "官方核实": 280,
+    "帖子索引": 156,
+    "检索覆盖": 74,
+    "补充证据": 23,
+    "应用版补充": 14,
+    "延伸核验": 10,
+    "继续补读": 11,
+    "学生评价总览": 38,
+    "实习资源": 64,
+    "姓名缩写对照": 45,
+    "学生公开去向": 55,
+    "校园生活图片": 28
+  },
+  "sourceSha256": "67cdebcee624dea5cfa233183b455a7a4590646f386c937e20a4847609167d83",
+  "outputSha256": "9792c2c672f8f117bb29481c405c41a24bd197ea7a6e3055886139b76be07e7f",
+  "outputBytes": 559145,
+  "renderFiles": [
+    "after-完整来源目录.png",
+    "after-帖子索引.png",
+    "after-官方核实.png",
+    "after-学生公开去向.png",
+    "after-detail-学生公开去向-firms.png",
+    "after-detail-学生公开去向-statistics.png",
+    "after-detail-学生公开去向-achievements.png",
+    "after-detail-学生公开去向-mentorCareerStatements.png",
+    "after-detail-学生公开去向-employerSummaries.png"
+  ],
+  "datasets": [
+    {
+      "name": "完整来源目录",
+      "rows": 496,
+      "columns": 12,
+      "links": 496,
+      "maxRowHeight": 118,
+      "tableName": "DownloadSourceRegistry20261113"
+    },
+    {
+      "name": "帖子索引",
+      "rows": 150,
+      "columns": 16,
+      "links": 150,
+      "maxRowHeight": 172,
+      "tableName": "NauTable4"
+    },
+    {
+      "name": "官方核实",
+      "rows": 274,
+      "columns": 13,
+      "links": 274,
+      "maxRowHeight": 199,
+      "tableName": "NauTable3"
+    },
+    {
+      "name": "学生公开去向",
+      "rows": 29,
+      "columns": 18,
+      "links": 29,
+      "maxRowHeight": 77.5,
+      "tableName": "StudentOutcomes113"
+    }
+  ],
+  "scope": "firm-outcomes",
+  "outcomeSummary": {
+    "records": 29,
+    "people": 28,
+    "mpaccRecords": 8,
+    "mpaccPeople": 7,
+    "firmRecords": 3,
+    "firmPeople": 3
+  },
+  "outcomeSections": [
+    {
+      "key": "statistics",
+      "titleRow": 38,
+      "headerRow": 39,
+      "lastRow": 45,
+      "rows": 6,
+      "tableName": "OutcomeStatistics113"
+    },
+    {
+      "key": "achievements",
+      "titleRow": 49,
+      "headerRow": 50,
+      "lastRow": 52,
+      "rows": 2,
+      "tableName": "ThesisAchievements113"
+    },
+    {
+      "key": "mentorCareerStatements",
+      "titleRow": 56,
+      "headerRow": 57,
+      "lastRow": 58,
+      "rows": 1,
+      "tableName": "MentorCareerStatements114"
+    },
+    {
+      "key": "employerSummaries",
+      "titleRow": 62,
+      "headerRow": 63,
+      "lastRow": 65,
+      "rows": 2,
+      "tableName": "EmployerSummaries114"
+    }
+  ],
+  "status": "verified",
+  "checkedModelRows": {
+    "完整来源目录": 496,
+    "帖子索引": 150,
+    "官方核实": 274,
+    "学生公开去向": 29,
+    "学生公开去向/statistics": 6,
+    "学生公开去向/achievements": 2,
+    "学生公开去向/mentorCareerStatements": 1,
+    "学生公开去向/employerSummaries": 2
+  },
+  "checkedSourceLinks": 960,
+  "allModelCellValuesMatch": true,
+  "allSourceLinksAndNativeLabelsMatch": true,
+  "unchangedSheetsWithPreservedCellsTablesAndLayout": [
+    "正文未读线索",
+    "生活学习要点",
+    "导师反馈",
+    "检索覆盖",
+    "补充证据",
+    "应用版补充",
+    "延伸核验",
+    "继续补读",
+    "学生评价总览",
+    "实习资源",
+    "姓名缩写对照",
+    "校园生活图片"
+  ],
+  "all16SheetsPreserved": true,
+  "studentSectionsNonoverlapping": true,
+  "firmEmploymentFirst": true,
+  "firmFilterFieldsPresent": true,
+  "qualitativeStatementsExcludedFromNamedPeople": true,
+  "studentTables": [
+    {
+      "name": "StudentOutcomes113",
+      "ref": "A6:R35",
+      "columns": [
+        "学生",
+        "学位与专业",
+        "入学年级",
+        "毕业年份",
+        "导师",
+        "导师关系依据",
+        "去向类别",
+        "事务所组",
+        "规范所名",
+        "院校或单位",
+        "专业或岗位",
+        "去向年份",
+        "报道时状态",
+        "资料时点原样",
+        "适用边界",
+        "来源编号",
+        "原文",
+        "记录编号"
+      ],
+      "filter": {
+        "ref": "A6:R35"
+      }
+    },
+    {
+      "name": "OutcomeStatistics113",
+      "ref": "A39:G45",
+      "columns": [
+        "统计指标",
+        "数值",
+        "单位",
+        "适用届别",
+        "学位点",
+        "适用边界",
+        "原文"
+      ],
+      "filter": {
+        "ref": "A39:G45"
+      }
+    },
+    {
+      "name": "ThesisAchievements113",
+      "ref": "A50:F52",
+      "columns": [
+        "学生",
+        "学位",
+        "导师",
+        "论文成果",
+        "适用边界",
+        "原文"
+      ],
+      "filter": {
+        "ref": "A50:F52"
+      }
+    },
+    {
+      "name": "MentorCareerStatements114",
+      "ref": "A57:F58",
+      "columns": [
+        "导师",
+        "培养情况原文",
+        "学位范围",
+        "资料时点",
+        "适用边界",
+        "原文"
+      ],
+      "filter": {
+        "ref": "A57:F58"
+      }
+    },
+    {
+      "name": "EmployerSummaries114",
+      "ref": "A63:F65",
+      "columns": [
+        "公开范围",
+        "学校说明",
+        "适用范围",
+        "资料时点",
+        "适用边界",
+        "原文"
+      ],
+      "filter": {
+        "ref": "A63:F65"
+      }
+    }
+  ],
+  "outputPath": "/workspace/scratch/c08135c62de4/outputs/nau-firm-workbook-20261114/evidence-index.xlsx",
+  "visualReview": {
+    "status": "passed",
+    "renderedAndReviewedRanges": 9,
+    "unclippedTableHeadersAndBody": true,
+    "firmGroupAndNormalizedNameReadable": true,
+    "statisticUnitsAndHistoricalScopeVisible": true,
+    "separateStatementsAndEmployerRangesVisible": true
+  },
+  "regressionChecks": {
+    "extensionTo120RecordsNonoverlapping": true,
+    "internshipTypeExcludedFromFirmEmployment": true,
+    "unclassifiedOrganizationNotGuessed": true,
+    "unattributedStatementsNotCountedAsNamedPeople": true,
+    "independentReadOnlyScriptAudit": "passed"
+  },
+  "publishedDownloadPath": "dist/downloads/evidence-index.xlsx",
+  "publishedDownloadSha256": "9792c2c672f8f117bb29481c405c41a24bd197ea7a6e3055886139b76be07e7f"
+}
