@@ -1,0 +1,700 @@
+{
+  "auditDateClient": "2026-11-14",
+  "snapshot": {
+    "path": "dist/data/site-data.json",
+    "sha256": "16389927b30bf9d1c99c77a8cac08a730516fc16ab04ac0291c2c10e53004308",
+    "readOnly": true
+  },
+  "headline": {
+    "mentorCount": 34,
+    "mentorReviewRecords": 55,
+    "mentorsWithReviews": 24,
+    "primaryReviewContentPages": 11,
+    "allReferencedSourceCodes": 13,
+    "allReferencedCanonicalPagesIncludingRelationshipSupport": 12,
+    "xhsReviewRecords": 48,
+    "xhsPrimaryPosts": 4,
+    "twoLargestXhsPostsRecords": 46,
+    "twoLargestShareOfAllRecordsPct": 83.64,
+    "curatedInstitutionalFeatureRecords": 7,
+    "curatedInstitutionalFeaturePages": 7,
+    "explicitMPAccConcreteGuidanceRecords": 4,
+    "explicitMPAccConcreteGuidanceMentors": 3,
+    "explicitMPAccConcreteGuidanceUGCRecords": 0
+  },
+  "countingBoundaries": [
+    "55是导师档案记录，既不是55篇帖子，也不是55名独立评论者。",
+    "11是主内容页面去重数，不代表11份相互独立或无选择偏差的口碑样本。",
+    "13个source code中O-PJ与18指同一网页；MOA05是袁璐导师关系的学院名单支持，不是新增学生评价帖。",
+    "同帖多评论、同人跟评、同条评论涉及多导师分别保留，不能按行数累加独立口碑。",
+    "149条socialPosts包括生活、实习、背景和筛除项，不能作为导师帖子覆盖数。",
+    "postDate的年份只统计来源发表时间；页面只显示月日时不从URL、帖子ID或入学届别补年份。"
+  ],
+  "primaryReviewPages": [
+    {
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "postId": "67ecb72b000000001e0042af",
+      "platform": "小红书",
+      "contentType": "UGC导师求推荐帖",
+      "recordCount": 32,
+      "recordShareOf55Pct": 58.18,
+      "sourceCodes": [
+        "X01"
+      ],
+      "title": "南审mpacc导师求推荐 · 缩写评论",
+      "postDateValues": [
+        "2025-04-02"
+      ],
+      "publicationYear": "2025",
+      "mentors": [
+        "傅祥斐",
+        "刘国城",
+        "叶邦银",
+        "崔秀梅",
+        "张兴亮",
+        "张力",
+        "徐伟",
+        "李仲泽",
+        "温素彬",
+        "潘俊",
+        "王敬勇",
+        "王烨",
+        "王菁华",
+        "董必荣",
+        "蔡显军",
+        "谭志东",
+        "马德林",
+        "高凤莲",
+        "黄中生"
+      ],
+      "reviewIds": [
+        "sr-alias-20261113-dbr",
+        "sr-alias-comments-20261113-dong-thread",
+        "sr-6f547fefb6425f",
+        "sr-e63702f4d750b2",
+        "sr-750f53d05ce465",
+        "sr-7bab2c5d878adc",
+        "sr-85d51ea94d9f58",
+        "sr-alias-comments-20261113-zl",
+        "sr-alias-20261113-mdl",
+        "sr-5a6799f7da764b",
+        "sr-919e575806f96f",
+        "sr-9b7c6d9b39f91a",
+        "sr-4c04a46901e7aa",
+        "sr-da5ecd5a194ba6",
+        "sr-129b0dd973f0d1",
+        "sr-alias-comments-20261113-lgc-qingjiao",
+        "sr-alias-comments-20261113-pj-linyu",
+        "sr-c00afa8e554a7f",
+        "sr-ea460f83b4da49",
+        "sr-alias-comments-20261113-zxl-qiuqiu",
+        "sr-alias-comments-20261113-zxl-wm",
+        "sr-alias-20261113-yby",
+        "sr-alias-comments-20261113-xw",
+        "sr-8eb242b45986c8",
+        "sr-alias-comments-20261113-tzd",
+        "sr-818ece587d45da",
+        "sr-alias-comments-20261113-cxj",
+        "sr-6eb60f59829dc8",
+        "sr-cc151a6d666e87",
+        "sr-6cc30c5c8335af",
+        "sr-d89d4112f56288",
+        "sr-4f903dfc6b113f"
+      ]
+    },
+    {
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+      "postId": "69cba3e80000000028008246",
+      "platform": "小红书",
+      "contentType": "UGC导师求推荐帖",
+      "recordCount": 14,
+      "recordShareOf55Pct": 25.45,
+      "sourceCodes": [
+        "X02"
+      ],
+      "title": "nau会计专硕导师求推荐",
+      "postDateValues": [
+        "03-31（年份未显示）"
+      ],
+      "publicationYear": "unknown",
+      "mentors": [
+        "傅祥斐",
+        "凌华",
+        "崔秀梅",
+        "张兴亮",
+        "徐伟",
+        "李仲泽",
+        "李慧",
+        "王禹",
+        "程博",
+        "蔡显军",
+        "高凤莲"
+      ],
+      "reviewIds": [
+        "sr-c8216c4fc1a3f7",
+        "sr-3ec4800bf7c77e",
+        "sr-158538e20f5e0f",
+        "sr-alias-comments-20261113-zxl-liangliang",
+        "sr-alias-comments-20261113-xw-x02",
+        "sr-69b5e3bc556593",
+        "sr-685b44c44b5c9f",
+        "sr-c605b1a1635921",
+        "sr-c2059cb1c24af6",
+        "sr-56c2d22b39f07a",
+        "sr-0d724bc0692077",
+        "sr-421ff5269383ef",
+        "sr-31d691701e3414",
+        "sr-cdcc2e0a36c2e2"
+      ]
+    },
+    {
+      "canonicalUrl": "https://gs.nau.edu.cn/2017/1023/c4415a31467/page.htm",
+      "postId": null,
+      "platform": "南审官方网站",
+      "contentType": "机构精选人物报道或校友访谈",
+      "recordCount": 1,
+      "recordShareOf55Pct": 1.82,
+      "sourceCodes": [
+        "19"
+      ],
+      "title": "2017 优秀毕业生特辑 · 张蓓",
+      "postDateValues": [
+        "2017-06-16"
+      ],
+      "publicationYear": "2017",
+      "mentors": [
+        "许汉友"
+      ],
+      "reviewIds": [
+        "sr-587b14b4d29676"
+      ]
+    },
+    {
+      "canonicalUrl": "https://nau.edu.cn/2025/0820/c11307a146844/page.htm",
+      "postId": null,
+      "platform": "南审官方网站",
+      "contentType": "机构精选人物报道或校友访谈",
+      "recordCount": 1,
+      "recordShareOf55Pct": 1.82,
+      "sourceCodes": [
+        "18",
+        "O-PJ"
+      ],
+      "title": "南审本硕毕业，读博的他立志做守护文物的会计学者",
+      "postDateValues": [
+        "2025-08-20"
+      ],
+      "publicationYear": "2025",
+      "mentors": [
+        "潘俊"
+      ],
+      "reviewIds": [
+        "sr-fc7bcc49c9bde1"
+      ]
+    },
+    {
+      "canonicalUrl": "https://news.nau.edu.cn/2026/0622/c5799a159560/page.htm",
+      "postId": null,
+      "platform": "南审官方网站",
+      "contentType": "机构精选人物报道或校友访谈",
+      "recordCount": 1,
+      "recordShareOf55Pct": 1.82,
+      "sourceCodes": [
+        "R702"
+      ],
+      "title": "我与南审 | 浦军：敏知楼417的灯，还亮着",
+      "postDateValues": [
+        "2026-07-08（页面显示；URL路径0622不作为发表日期）"
+      ],
+      "publicationYear": "2026",
+      "mentors": [
+        "叶邦银"
+      ],
+      "reviewIds": [
+        "sr-6c241a500ddbae"
+      ]
+    },
+    {
+      "canonicalUrl": "https://news.nau.edu.cn/2026/1014/c11360a162564/page.psp",
+      "postId": null,
+      "platform": "南审官方网站",
+      "contentType": "机构精选人物报道或校友访谈",
+      "recordCount": 1,
+      "recordShareOf55Pct": 1.82,
+      "sourceCodes": [
+        "17"
+      ],
+      "title": "我与南审｜崔秀梅：是严师，也是赛场领航人",
+      "postDateValues": [
+        "2026-10-19"
+      ],
+      "publicationYear": "2026",
+      "mentors": [
+        "崔秀梅"
+      ],
+      "reviewIds": [
+        "sr-4fbfea450b83a9"
+      ]
+    },
+    {
+      "canonicalUrl": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+      "postId": null,
+      "platform": "教指委精选校友访谈",
+      "contentType": "机构精选人物报道或校友访谈",
+      "recordCount": 1,
+      "recordShareOf55Pct": 1.82,
+      "sourceCodes": [
+        "MOA05",
+        "R802"
+      ],
+      "title": "【MPAcc教育20周年】MPAcc筑梦之路：从学子到教育者的成长与探索——记南京审计大学2020届MPAcc校友袁璐",
+      "postDateValues": [
+        "2025-04-14"
+      ],
+      "publicationYear": "2025",
+      "mentors": [
+        "潘俊"
+      ],
+      "reviewIds": [
+        "sr-outcomes-20261113-yuanlu"
+      ]
+    },
+    {
+      "canonicalUrl": "https://sohu.com/a/500320907_769713",
+      "postId": null,
+      "platform": "搜狐学校人物报道",
+      "contentType": "机构精选人物报道或校友访谈",
+      "recordCount": 1,
+      "recordShareOf55Pct": 1.82,
+      "sourceCodes": [
+        "R701"
+      ],
+      "title": "6人签约华为，2022届南审人棒！",
+      "postDateValues": [
+        "2021-11-10 17:42"
+      ],
+      "publicationYear": "2021",
+      "mentors": [
+        "刘国城"
+      ],
+      "reviewIds": [
+        "sr-34a7e9d17a7ee0"
+      ]
+    },
+    {
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/67aef89b0000000029009825",
+      "postId": "67aef89b0000000029009825",
+      "platform": "小红书",
+      "contentType": "UGC会计专硕选课攻略",
+      "recordCount": 1,
+      "recordShareOf55Pct": 1.82,
+      "sourceCodes": [
+        "R318"
+      ],
+      "title": "✨南审选课攻略·会计专硕篇（欢迎补充！）",
+      "postDateValues": [
+        "2025-02-14"
+      ],
+      "publicationYear": "2025",
+      "mentors": [
+        "程博"
+      ],
+      "reviewIds": [
+        "sr-b159805b34d9db"
+      ]
+    },
+    {
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6a50b7c5000000002103f3aa",
+      "postId": "6a50b7c5000000002103f3aa",
+      "platform": "小红书",
+      "contentType": "UGC教师提名帖",
+      "recordCount": 1,
+      "recordShareOf55Pct": 1.82,
+      "sourceCodes": [
+        "M01"
+      ],
+      "title": "一人提名一位南京审计大学夯爆了的老师",
+      "postDateValues": [
+        "07-10（页面未显示年份）\n07-10（年份未显示）"
+      ],
+      "publicationYear": "unknown",
+      "mentors": [
+        "黄中生"
+      ],
+      "reviewIds": [
+        "sr-3a193b9650523d"
+      ]
+    },
+    {
+      "canonicalUrl": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "postId": null,
+      "platform": "学校校园号精选访谈",
+      "contentType": "机构精选人物报道或校友访谈",
+      "recordCount": 1,
+      "recordShareOf55Pct": 1.82,
+      "sourceCodes": [
+        "R801"
+      ],
+      "title": "他们起航！下一站，读博！",
+      "postDateValues": [
+        "2022-12-22"
+      ],
+      "publicationYear": "2022",
+      "mentors": [
+        "潘俊"
+      ],
+      "reviewIds": [
+        "sr-r7-panjun-lijialin-2022"
+      ]
+    }
+  ],
+  "platformCoverage": [
+    {
+      "platform": "小红书",
+      "recordCount": 48,
+      "recordShareOf55Pct": 87.27,
+      "primaryPageCount": 4
+    },
+    {
+      "platform": "南审官方网站",
+      "recordCount": 4,
+      "recordShareOf55Pct": 7.27,
+      "primaryPageCount": 4
+    },
+    {
+      "platform": "搜狐学校人物报道",
+      "recordCount": 1,
+      "recordShareOf55Pct": 1.82,
+      "primaryPageCount": 1
+    },
+    {
+      "platform": "学校校园号精选访谈",
+      "recordCount": 1,
+      "recordShareOf55Pct": 1.82,
+      "primaryPageCount": 1
+    },
+    {
+      "platform": "教指委精选校友访谈",
+      "recordCount": 1,
+      "recordShareOf55Pct": 1.82,
+      "primaryPageCount": 1
+    }
+  ],
+  "contentTypeCoverage": [
+    {
+      "contentType": "UGC导师求推荐帖",
+      "primaryPageCount": 2,
+      "recordCount": 46
+    },
+    {
+      "contentType": "机构精选人物报道或校友访谈",
+      "primaryPageCount": 7,
+      "recordCount": 7
+    },
+    {
+      "contentType": "UGC会计专硕选课攻略",
+      "primaryPageCount": 1,
+      "recordCount": 1
+    },
+    {
+      "contentType": "UGC教师提名帖",
+      "primaryPageCount": 1,
+      "recordCount": 1
+    }
+  ],
+  "sourcePublicationYearCoverage": {
+    "primaryPageCounts": {
+      "2017": 1,
+      "2021": 1,
+      "2022": 1,
+      "2025": 4,
+      "2026": 2,
+      "unknown": 2
+    },
+    "recordCounts": {
+      "2017": 1,
+      "2021": 1,
+      "2022": 1,
+      "2025": 35,
+      "2026": 2,
+      "unknown": 15
+    },
+    "note": "来源发表年份；不能称相同年份学生的培养体验。X02和M01年份未显示。"
+  },
+  "reviewTypeCoverage": [
+    {
+      "experienceType": "general",
+      "records": 26,
+      "shareOf55Pct": 47.27
+    },
+    {
+      "experienceType": "course",
+      "records": 20,
+      "shareOf55Pct": 36.36
+    },
+    {
+      "experienceType": "guidance",
+      "records": 4,
+      "shareOf55Pct": 7.27
+    },
+    {
+      "experienceType": "interview",
+      "records": 5,
+      "shareOf55Pct": 9.09
+    }
+  ],
+  "degreeCoverage": [
+    {
+      "degreeGroup": "unspecified_or_not_verified",
+      "records": 37,
+      "shareOf55Pct": 67.27
+    },
+    {
+      "degreeGroup": "explicit_undergraduate",
+      "records": 12,
+      "shareOf55Pct": 21.82
+    },
+    {
+      "degreeGroup": "explicit_MPAcc",
+      "records": 4,
+      "shareOf55Pct": 7.27
+    },
+    {
+      "degreeGroup": "master_type_not_confirmed",
+      "records": 2,
+      "shareOf55Pct": 3.64
+    }
+  ],
+  "firsthandCoverage": {
+    "true": 28,
+    "null": 26,
+    "false": 1,
+    "note": "true包括本科课程、项目、笼统相处和精选访谈，不等于研究生直系指导。程博、李仲泽的混合记录中本科本人部分和朋友/学姐转述不能靠单个flag充分描述。"
+  },
+  "explicitMPAccConcreteGuidance": {
+    "records": [
+      {
+        "mentorName": "崔秀梅",
+        "mentorId": "mentor-07",
+        "reviewId": "sr-4fbfea450b83a9",
+        "narrator": "包昕梦、郁圳乐",
+        "date": "2026-10-19",
+        "yearOrCohort": "2023级",
+        "canonicalUrl": "https://news.nau.edu.cn/2026/1014/c11360a162564/page.psp",
+        "sourceIds": [
+          "17"
+        ],
+        "limits": [
+          "官方选取的成功个案不代表全组体验；本科备赛深夜反馈不能作为研究生日常响应承诺。",
+          "任务强度、时间冲突及当年要求仍应向近年直系核实。"
+        ]
+      },
+      {
+        "mentorName": "许汉友",
+        "mentorId": "mentor-08",
+        "reviewId": "sr-587b14b4d29676",
+        "narrator": "张蓓",
+        "date": "2017-06-16",
+        "yearOrCohort": "2015级",
+        "canonicalUrl": "https://gs.nau.edu.cn/2017/1023/c4415a31467/page.htm",
+        "sourceIds": [
+          "19"
+        ],
+        "limits": [
+          "2017年发布的历史个案；不能推定2026年本人工作安排、见面频率或实习政策。",
+          "优秀毕业生访谈有选择偏差。"
+        ]
+      },
+      {
+        "mentorName": "潘俊",
+        "mentorId": "mentor-11",
+        "reviewId": "sr-fc7bcc49c9bde1",
+        "narrator": "孙昊晨，2025届会计专业硕士毕业生，具名受访者",
+        "date": "2025-08-20",
+        "yearOrCohort": "2025届",
+        "canonicalUrl": "https://nau.edu.cn/2025/0820/c11307a146844/page.htm",
+        "sourceIds": [
+          "O-PJ",
+          "18"
+        ],
+        "limits": [
+          "单名选择继续读博学生的官方正面访谈，有选择性；不能代表所有学生体验。",
+          "可证实研究能力导向，不等于所有MPAcc学生必须申博或发表论文。",
+          "没有固定组会频次、反馈期限、能否长期实习或统一毕业要求的信息。"
+        ]
+      },
+      {
+        "mentorName": "潘俊",
+        "mentorId": "mentor-11",
+        "reviewId": "sr-outcomes-20261113-yuanlu",
+        "narrator": "袁璐",
+        "date": "2025-04-14",
+        "yearOrCohort": "2020届",
+        "canonicalUrl": "https://paccesc.ruc.edu.cn/info/1127/3387.htm",
+        "sourceIds": [
+          "MOA05",
+          "R802"
+        ],
+        "limits": [
+          "通过姓名、南审硕士身份与厦门大学博士去向交叉归属；访谈本篇未直接点名潘俊。",
+          "只将校内导师角色及双导师共同训练归入这段历史经历，不把全部调研、写作训练独归潘俊。",
+          "访谈中李建发指导明确属于博士阶段，不能移植为潘俊评价。",
+          "2024年回南审任教为后续公开去向，不代表导师保证留校或就业。"
+        ]
+      }
+    ],
+    "note": "4条为机构精选具名个案：崔秀梅合并两名学生；袁璐访谈未在正文点名潘俊，需学院名单交叉归属且为双导师共同训练。不等同4位学生、当前普遍体验或无偏独立样本。社交评论中的明确MPAcc直系具体指导为0。"
+  },
+  "sourceCommentIdentityAudit": {
+    "recordsWithExplicitSourceCommentKey": 13,
+    "uniqueKeysAmongThoseRecords": 12,
+    "recordsWithoutExplicitCommentKey": 42,
+    "duplicateExplicitKeys": [
+      {
+        "sourceCommentKey": "X01:天天发癫:2025-04-09:tzd-zl",
+        "recordCount": 2,
+        "reviewIds": [
+          "sr-alias-comments-20261113-zl",
+          "sr-alias-comments-20261113-tzd"
+        ]
+      }
+    ],
+    "legacySharedCommentGroups": [
+      {
+        "narrator": "冬日来信",
+        "sourceCodes": [
+          "X01"
+        ],
+        "mentorNames": [
+          "温素彬",
+          "王敬勇",
+          "王菁华"
+        ],
+        "reviewIds": [
+          "sr-6f547fefb6425f",
+          "sr-8eb242b45986c8",
+          "sr-818ece587d45da"
+        ],
+        "note": "同一原评论涉及多位导师，或原评论与同人跟评合并；不能按导师档案行数算多个独立评论者。"
+      },
+      {
+        "narrator": "1874",
+        "sourceCodes": [
+          "X01"
+        ],
+        "mentorNames": [
+          "张力",
+          "黄中生",
+          "张兴亮"
+        ],
+        "reviewIds": [
+          "sr-750f53d05ce465",
+          "sr-9b7c6d9b39f91a",
+          "sr-ea460f83b4da49"
+        ],
+        "note": "同一原评论涉及多位导师，或原评论与同人跟评合并；不能按导师档案行数算多个独立评论者。"
+      },
+      {
+        "narrator": "阿言爱吃棒棒糖",
+        "sourceCodes": [
+          "X01"
+        ],
+        "mentorNames": [
+          "傅祥斐",
+          "李仲泽"
+        ],
+        "reviewIds": [
+          "sr-6eb60f59829dc8",
+          "sr-d89d4112f56288"
+        ],
+        "note": "同一原评论涉及多位导师，或原评论与同人跟评合并；不能按导师档案行数算多个独立评论者。"
+      },
+      {
+        "narrator": "哦哦",
+        "sourceCodes": [
+          "X02"
+        ],
+        "mentorNames": [
+          "李仲泽",
+          "王禹",
+          "李慧"
+        ],
+        "reviewIds": [
+          "sr-421ff5269383ef",
+          "sr-31d691701e3414",
+          "sr-cdcc2e0a36c2e2"
+        ],
+        "note": "同一原评论涉及多位导师，或原评论与同人跟评合并；不能按导师档案行数算多个独立评论者。"
+      }
+    ],
+    "uncertainSameNarratorCases": [
+      {
+        "narrator": "🥑🥑🥑",
+        "note": "黄中生课程与张力随和来自同一讨论支线，但现有结构未明确每条父/子评论键；不自动给出精确独立评论数。"
+      },
+      {
+        "narrator": "momo",
+        "note": "通用昵称在不同楼层反复出现，不能只按昵称合并为一个人。"
+      }
+    ],
+    "conclusion": "现有键覆盖不足，不给全55行虚构一个“精确独立评论人数”。"
+  },
+  "noAttributedReviewMentors": [
+    "章之旺",
+    "罗琰",
+    "吴青川",
+    "刘静",
+    "李华",
+    "王永妍",
+    "王永青",
+    "贺建刚",
+    "陈冬华",
+    "单文涛"
+  ],
+  "researchGaps": {
+    "platformsWithoutAttributedReviewInCurrent55": [
+      "知乎",
+      "百度贴吧",
+      "哔哩哔哩",
+      "微博",
+      "豆瓣",
+      "抖音"
+    ],
+    "importantTypeGaps": [
+      "近两届明确MPAcc直系学生的具体改稿、组会、反馈时长与论文节点",
+      "允许实习的真实安排、实习与论文冲突的本人处理经历",
+      "开题、盲审、答辩、延期与毕业去向的过程性个案",
+      "负面劝退和强烈推荐的具体理由及直接接触身份",
+      "课程帖子与研究生日常指导的区分；本科班主任和课程口碑不代替MPAcc培养体验",
+      "同一导师不同届、不同学生及不同帖子交叉印证"
+    ],
+    "priorityTeacherGaps": [
+      "章之旺",
+      "罗琰",
+      "吴青川",
+      "刘静",
+      "李华",
+      "王永妍",
+      "王永青",
+      "贺建刚",
+      "陈冬华",
+      "单文涛"
+    ],
+    "identityRisks": [
+      "李华存在同校不同学院同名；需学院/课程/履历核对。",
+      "高老师、黄老师、崔老师、蔡老师尚有单姓候选，不能跨楼自动归名。",
+      "WY、LH为多人缩写；DWT仅为单文涛历史检索写法，规范SWT。"
+    ],
+    "queryTypesToExpand": [
+      "导师全名/缩写＋改稿/开题/盲审/答辩/论文/延期",
+      "导师全名/缩写＋组会/反馈/实习/读博/项目",
+      "在读研究生日记、毕业复盘、选课讨论、答辩经验、实习记录、视频评论区",
+      "学校旧称南京审计学院、南审、nau、会计学硕/会计专硕/MPAcc与MAud分开查"
+    ]
+  },
+  "dedupReference": {
+    "canonicalKnownUrlCount": 397,
+    "knownXhsPostIdCount": 110,
+    "note": "去重底表来自既有站点数据；该底表不是新增已读来源，不重复复制。"
+  }
+}
