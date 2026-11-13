@@ -10,7 +10,7 @@
   if ('ResizeObserver' in window) new ResizeObserver(updateHeaderOffset).observe(header);
   else window.addEventListener('resize', updateHeaderOffset, {passive:true});
   const dialog = $('#detail-dialog');
-  const state = { data: null, view: 'mentors', query: '', direction: '', savedOnly: false, reviewCoverage: '', internGroup: '', internCity: '', internStatus: 'current', postQuery: '', postTopic: '', postCategory: '', postLimit: 20, chapter: 'life-01', saved: {}, compareIds: [], dialogType: '', contactMentorId: '', contactMode: 'outline', contactEdits: {}, postCodes: {}, lastFocus: null, lastFocusId: null };
+  const state = { data: null, view: 'mentors', query: '', direction: '', savedOnly: false, reviewCoverage: '', internGroup: '', internCity: '', internStatus: 'current', postQuery: '', postTopic: '', postCategory: '', postLimit: 20, chapter: 'life-01', studentPhase: '', saved: {}, compareIds: [], dialogType: '', contactMentorId: '', contactMode: 'outline', contactEdits: {}, postCodes: {}, lastFocus: null, lastFocusId: null };
   const icons = {
     search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.6" cy="10.6" r="6.8"/><path d="m16 16 5 5"/></svg>',
     bookmark: '<svg viewBox="0 0 18 22" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 2h12v18l-6-4-6 4z"/></svg>'
@@ -99,6 +99,11 @@
 
   function blockHtml(block) {
     if (!block) return '';
+    if (block.type === 'callout') {
+      const tone = ['note', 'action', 'confirm'].includes(block.tone) ? block.tone : 'note';
+      return `<aside class="life-callout life-callout-${tone}" role="note">${block.label ? `<span class="life-callout-label">${inline(block.label)}</span>` : ''}${block.title ? `<h4>${inline(block.title)}</h4>` : ''}${block.text ? `<p>${inline(block.text)}</p>` : ''}${array(block.items).length ? `<ul>${array(block.items).map(item => `<li>${inline(item)}</li>`).join('')}</ul>` : ''}</aside>`;
+    }
+    if (block.type === 'checklist') return `<section class="life-checklist" aria-label="${esc(block.title || '本页行动清单')}">${block.title ? `<h4>${inline(block.title)}</h4>` : ''}<ul>${array(block.items).map(item => `<li><label><input type="checkbox"><span>${inline(item)}</span></label></li>`).join('')}</ul></section>`;
     if (block.type === 'screenshots') return screenshotsHtml(block.items, block.sourceUrl);
     if (block.type === 'heading') {
       const tag = block.level >= 3 ? 'h4' : 'h3';
@@ -512,6 +517,52 @@
     return `<section class="internship-hub" aria-label="事务所与企业实习资源"><div class="intern-hub-intro"><span class="small-label">INTERNSHIP NOTEBOOK</span><h3>先找到渠道，再核对适合自己的项目</h3><p>${inline(data.intro || '从南京出发，分清项目、投递渠道和历史参考，再核对自己的年级与可出勤时间。')}</p><p class="intern-count"><strong>${firms.length}</strong> 家机构 · <strong>${resources.length}</strong> 条资源记录</p><p class="intern-small">条目包含实习项目、列表线索、长期入口与历史参考，不等于同数量的在招岗位。</p></div><div class="intern-scope">${inline(data.scopeNote || '办公室所在地与项目实际工作地点需要分别核对。')}${data.firmGroupNote ? `<p>${inline(data.firmGroupNote)}</p>` : ''}</div>${rulesHtml}<div class="intern-filters">${select('intern-group','机构类型',[['','全部机构'],['big_four','四大'],['domestic','国内所'],['enterprise','企业财务／内审']],state.internGroup)}${select('intern-city','原文明示的项目地区',[['','全部地域'],...cities.map(city=>[city,city]),['__channels__','仅看投递渠道']],state.internCity)}${select('intern-status','资源性质与状态',[['current','当前入口与项目'],['','全部资料（含往期）'],['programs','已发布的实习项目'],['listings','岗位列表 · 状态待核'],['channels','长期投递渠道'],['past','窗口已结束／历史参考'],['upcoming','尚未开放的项目']],state.internStatus)}</div><div class="results-bar"><span id="internship-result-count" role="status" aria-live="polite"></span><button type="button" class="text-button" data-action="reset-internships">清除实习筛选</button></div><div id="internship-results" class="intern-firms"></div>${internshipSupportHtml(data)}${data.sourceNote ? `<p class="intern-source-note">${inline(data.sourceNote)}</p>` : ''}</section>`;
   }
 
+  function studentStartModel() {
+    const data = state.data.studentStart;
+    if (!data || typeof data !== 'object') return null;
+    const seen = new Set();
+    const phases = array(data.phases).filter(phase => {
+      if (!phase || typeof phase !== 'object' || typeof phase.id !== 'string' || !phase.id.trim() || seen.has(phase.id)) return false;
+      seen.add(phase.id);
+      return true;
+    }).slice(0, 4);
+    if (!phases.length) return null;
+    const phase = phases.find(item => item.id === state.studentPhase) || phases[0];
+    state.studentPhase = phase.id;
+    return {data, phases, phase};
+  }
+
+  function studentChapterHref(id) {
+    return typeof id === 'string' && array(state.data.lifeChapters).some(chapter => chapter.id === id) ? '#life/' + id : '';
+  }
+
+  function studentStartPanelHtml(phase) {
+    const tasks = array(phase.tasks).filter(task => task && typeof task === 'object').slice(0, 4);
+    return `<div class="student-start-phase-heading"><h3 id="student-start-phase-label">${inline(phase.label || '准备清单')}</h3>${phase.summary ? `<p>${inline(phase.summary)}</p>` : ''}</div><div class="student-start-tasks">${tasks.map(task => {
+      const href = studentChapterHref(task.chapterId);
+      return `<article class="student-start-task">${task.title ? `<h4>${inline(task.title)}</h4>` : ''}${task.text ? `<p>${inline(task.text)}</p>` : ''}${href ? `<a href="${esc(href)}">阅读相关章节 <span aria-hidden="true">↗</span></a>` : ''}</article>`;
+    }).join('')}</div>`;
+  }
+
+  function studentStartHtml(chapterId) {
+    const model = studentStartModel();
+    if (!model) return '';
+    const {data, phases, phase} = model;
+    const links = array(data.quickLinks).map(link => {
+      const href = link && typeof link === 'object' ? studentChapterHref(link.chapterId) : '';
+      return href ? `<a href="${esc(href)}">${esc(textOf(link.label || '查看章节'))} <span aria-hidden="true">↗</span></a>` : '';
+    }).filter(Boolean);
+    return `<details class="student-start" id="student-start"${chapterId === 'life-01' ? ' open' : ''}><summary><span><small>新生行动单</small><strong>${inline(data.title || '先把眼前几件事安顿好')}</strong></span><span class="student-start-toggle" aria-hidden="true"></span></summary><div class="student-start-body">${data.intro ? `<p class="student-start-intro">${inline(data.intro)}</p>` : ''}<div class="student-start-phases" role="group" aria-label="选择准备阶段">${phases.map(item => `<button type="button" data-action="student-phase" data-id="${esc(item.id)}" aria-pressed="${item.id === phase.id}" aria-controls="student-start-content">${esc(textOf(item.label || item.id))}</button>`).join('')}</div><div id="student-start-content" role="region" aria-live="polite" aria-labelledby="student-start-phase-label">${studentStartPanelHtml(phase)}</div>${links.length ? `<nav class="student-start-links" aria-label="常用生活入口">${links.join('')}</nav>` : ''}</div></details>`;
+  }
+
+  function renderStudentStartPanel() {
+    const model = studentStartModel();
+    const target = $('#student-start-content');
+    if (!model || !target) return;
+    target.innerHTML = studentStartPanelHtml(model.phase);
+    $$('[data-action="student-phase"]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.id === model.phase.id)));
+  }
+
   function renderLife() {
     const chapters = state.data.lifeChapters;
     let chapter = chapters.find(c => c.id === state.chapter) || chapters[0];
@@ -519,11 +570,13 @@
     const i = chapters.indexOf(chapter);
     const hasInternships = Boolean(state.data.internships && array(state.data.internships.firms).length);
     const showInternships = hasInternships && chapter.id === 'life-09';
-    const chapterBody = chapter.blocks.map(blockHtml).join('');
+    const beforeInternships = showInternships ? chapter.blocks.filter(block => block.placement === 'before-internships').map(blockHtml).join('') : '';
+    const chapterBody = chapter.blocks.filter(block => !showInternships || block.placement !== 'before-internships').map(blockHtml).join('');
     const chapterImages = window.NAULifeImages?.renderChapter?.(chapter.id, state.data.lifeImageIndex) || '';
     const imageShortcut = array(state.data.lifeImageIndex?.entries).length ? '<div class="life-image-shortcut"><button type="button" class="text-button" data-action="life-images">图片与原帖索引 <span aria-hidden="true">↗</span></button><span>按章节找图片，点图查看原图与来源。</span></div>' : '';
-    app.innerHTML = heading('02 / CAMPUS & GRADUATE LIFE', '在南审，慢慢把生活安顿好', '从入学与住宿，到课程、实习、论文和办事。以浦口校区为主，涉及本科、MAud、莫愁或历史年份的经验，在正文里分别说明。', `<strong>${chapters.length}</strong> 章 · 可逐条返回来源`) + `${imageShortcut}${hasInternships ? '<a class="intern-life-shortcut" href="#life/life-09"><span>实习准备</span>查看四大、国内所与企业财务内审资源 <span aria-hidden="true">↗</span></a>' : ''}<div class="life-mobile-index"><label for="mobile-chapter">选择章节</label><select id="mobile-chapter">${chapters.map(c => `<option value="${esc(c.id)}"${c.id === chapter.id ? ' selected' : ''}>${esc(c.title)}</option>`).join('')}</select></div><div class="life-layout"><aside class="chapter-sidebar"><div class="sidebar-label"><span>阅读目录</span><span>CONTENTS</span></div><nav aria-label="学习生活章节目录">${chapters.map(c => `<a class="chapter-link" href="#life/${esc(c.id)}"${c.id === chapter.id ? ' aria-current="page"' : ''}><span class="chapter-number">${String(c.number).padStart(2,'0')}</span><span>${esc(c.title.replace(/^第[一二三四五六七八九十十二]+章\s*/,''))}</span></a>`).join('')}</nav></aside><article class="article-panel" id="current-chapter"><div class="article-kicker">CHAPTER ${String(chapter.number).padStart(2,'0')} / ${String(chapters.length).padStart(2,'0')}</div><h2 class="article-title">${esc(chapter.title)}</h2>${chapterImages}<div class="article-body">${showInternships ? internshipHubHtml() + `<details class="intern-legacy-chapter"><summary>奖助、预算与原职业准备资料</summary>${chapterBody}</details>` : chapterBody}</div><nav class="chapter-pagination" aria-label="章节翻页">${i > 0 ? `<a href="#life/${esc(chapters[i-1].id)}"><small>← 上一章</small>${esc(chapters[i-1].title)}</a>` : '<span></span>'}${i < chapters.length-1 ? `<a href="#life/${esc(chapters[i+1].id)}"><small>下一章 →</small>${esc(chapters[i+1].title)}</a>` : '<span></span>'}</nav></article></div>`;
+    app.innerHTML = heading('02 / CAMPUS & GRADUATE LIFE', '在南审，慢慢把生活安顿好', '从入学与住宿，到课程、实习、论文和办事。以浦口校区为主，涉及本科、MAud、莫愁或历史年份的经验，在正文里分别说明。', `<strong>${chapters.length}</strong> 章 · 可逐条返回来源`) + `${studentStartHtml(chapter.id)}${imageShortcut}${hasInternships ? '<a class="intern-life-shortcut" href="#life/life-09"><span>实习准备</span>查看四大、国内所与企业财务内审资源 <span aria-hidden="true">↗</span></a>' : ''}<div class="life-mobile-index"><label for="mobile-chapter">选择章节</label><select id="mobile-chapter">${chapters.map(c => `<option value="${esc(c.id)}"${c.id === chapter.id ? ' selected' : ''}>${esc(c.title)}</option>`).join('')}</select></div><div class="life-layout"><aside class="chapter-sidebar"><div class="sidebar-label"><span>阅读目录</span><span>CONTENTS</span></div><nav aria-label="学习生活章节目录">${chapters.map(c => `<a class="chapter-link" href="#life/${esc(c.id)}"${c.id === chapter.id ? ' aria-current="page"' : ''}><span class="chapter-number">${String(c.number).padStart(2,'0')}</span><span>${esc(c.title.replace(/^第[一二三四五六七八九十百零〇两]+章\s*/,''))}</span></a>`).join('')}</nav></aside><article class="article-panel" id="current-chapter"><div class="article-kicker">CHAPTER ${String(chapter.number).padStart(2,'0')} / ${String(chapters.length).padStart(2,'0')}</div><h2 class="article-title">${esc(chapter.title)}</h2>${chapterImages}<div class="article-body">${showInternships ? beforeInternships + internshipHubHtml() + `<details class="intern-legacy-chapter"><summary>奖助、预算与原职业准备资料</summary>${chapterBody}</details>` : chapterBody}</div><nav class="chapter-pagination" aria-label="章节翻页">${i > 0 ? `<a href="#life/${esc(chapters[i-1].id)}"><small>← 上一章</small>${esc(chapters[i-1].title)}</a>` : '<span></span>'}${i < chapters.length-1 ? `<a href="#life/${esc(chapters[i+1].id)}"><small>下一章 →</small>${esc(chapters[i+1].title)}</a>` : '<span></span>'}</nav></article></div>`;
     if (showInternships) renderInternshipResults();
+    renderStudentStartPanel();
   }
 
   function socialCodes(post) {
@@ -748,6 +801,7 @@
         case 'quiet-letter': openQuietLetter(); break;
         case 'letter-code': openLetterCode(); break;
         case 'life-images': openLifeImages(); break;
+        case 'student-phase': if (studentStartModel()?.phases.some(phase => phase.id === id)) { state.studentPhase = id; renderStudentStartPanel(); } break;
         case 'compare-toggle': toggleCompare(id); break;
         case 'compare-open': openComparison(); break;
         case 'compare-clear': clearCompare(); break;

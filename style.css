@@ -90,3 +90,65 @@
 @media(max-width:380px){.life-photo-card{padding:13px}.life-photo img{height:215px}.life-photo-expanded{grid-template-columns:1fr}.life-photo-expanded img{height:230px}}
 
 .life-photo-card-wide{grid-column:1/-1}.life-photo-card-wide .life-photo img{height:auto;max-height:540px}.life-photo-archives{margin-top:18px;border-top:1px solid var(--line);padding-top:13px}.life-photo-archives>summary{font-size:13px;line-height:1.9;color:var(--teal);cursor:pointer}.life-photo-archives>.life-photo-cards{padding-top:15px}
+
+
+/* Short, optional starting points for a new student's first weeks. */
+.student-start{min-width:0;margin:0 0 24px;border:1px solid #cddbcf;border-radius:10px;background:#f0f4ec;overflow:hidden}
+.student-start>summary{display:flex;align-items:center;justify-content:space-between;gap:18px;cursor:pointer;list-style:none;padding:17px 20px;color:var(--teal)}
+.student-start>summary::-webkit-details-marker{display:none}
+.student-start>summary small{display:block;font-size:10px;letter-spacing:1.5px;color:#728770;margin-bottom:4px}
+.student-start>summary strong{display:block;font:600 19px/1.6 var(--serif);overflow-wrap:anywhere}
+.student-start-toggle{flex-shrink:0;font:25px/1 Georgia,serif}
+.student-start-toggle:after{content:'+'}
+.student-start[open] .student-start-toggle:after{content:'−'}
+.student-start[open]>summary{border-bottom:1px solid #d6e0d3}
+.student-start-body{min-width:0;padding:18px 20px 20px}
+.student-start-intro{margin:0 0 17px;font-size:12px;line-height:1.95;color:#5d7160;max-width:850px;overflow-wrap:anywhere}
+.student-start-phases{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}
+.student-start-phases button{border:1px solid #cad7c6;border-radius:5px;background:#fffefa;padding:9px 16px;min-height:42px;font-size:12px;color:#536c55;line-height:1.6;overflow-wrap:anywhere;max-width:100%}
+.student-start-phases button:hover{border-color:var(--teal)}
+.student-start-phases button[aria-pressed=true]{background:var(--teal);border-color:var(--teal);color:#fffefa}
+.student-start-phase-heading h3{margin:0 0 5px;font:600 18px/1.7 var(--serif);color:var(--ink)}
+.student-start-phase-heading p{margin:0 0 15px;font-size:12px;line-height:1.9;color:#657466;overflow-wrap:anywhere}
+.student-start-tasks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;min-width:0}
+.student-start-task{min-width:0;padding:17px 16px 15px;background:#fffefa;border:1px solid #d9e2d2;border-radius:6px;display:flex;flex-direction:column;align-items:flex-start;overflow-wrap:anywhere}
+.student-start-task h4{font:600 14px/1.7 var(--sans);color:#355e4b;margin:0 0 9px}
+.student-start-task p{font-size:12px;line-height:1.95;color:#5a6c5b;margin:0 0 13px}
+.student-start-task>a{font-size:11px;color:var(--teal);text-decoration:underline;text-underline-offset:4px;margin-top:auto;padding:4px 0;line-height:1.8}
+.student-start-links{display:flex;gap:10px 20px;flex-wrap:wrap;border-top:1px solid #dbe4d4;margin-top:18px;padding-top:14px}
+.student-start-links a{font-size:12px;color:var(--teal);text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere;max-width:100%}
+.article-body .life-callout{margin:20px 0;border:1px solid #d5e0d2;border-left:4px solid #8ba58a;border-radius:5px;padding:16px 19px;background:#f1f5ec;overflow-wrap:anywhere}
+.article-body .life-callout-action{border-left-color:var(--teal);background:#edf4ef}
+.article-body .life-callout-confirm{border-color:#e1d6bf;border-left-color:#b39563;background:#f7f1e5}
+.life-callout-label{display:block;font-size:10px;letter-spacing:1px;color:#70846d;margin-bottom:6px}
+.article-body .life-callout h4{font:600 16px/1.8 var(--serif);color:#365c47;margin:0 0 9px}
+.article-body .life-callout p{font-size:13px;line-height:2;margin:0;color:#53695a}
+.article-body .life-callout ul{font-size:13px;line-height:1.95;margin:10px 0 0;padding-left:20px;color:#53695a}
+.article-body .life-callout li+li{margin-top:6px}
+.article-body .life-checklist{margin:20px 0;padding:17px 19px;border:1px solid #d6ded1;border-radius:6px;background:#fffefa;min-width:0}
+.article-body .life-checklist h4{font:600 16px/1.8 var(--serif);margin:0 0 10px;color:#355c49}
+.article-body .life-checklist ul{padding:0;margin:0;list-style:none}
+.article-body .life-checklist li{margin:0;border-top:1px solid #e8ece2}
+.article-body .life-checklist li:first-child{border-top:0}
+.life-checklist label{display:flex;align-items:flex-start;gap:11px;padding:11px 0;min-height:44px;font-size:13px;line-height:1.95;cursor:pointer;color:#4f6556;min-width:0}
+.life-checklist input{flex-shrink:0;accent-color:var(--teal);width:18px;height:18px;margin:4px 0 0}
+.life-checklist label>span{min-width:0;overflow-wrap:anywhere}
+.life-checklist input:checked+span{color:#81907e}
+@media(max-width:1000px){.student-start-tasks{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){
+ .student-start{margin-bottom:20px;border-radius:7px}
+ .student-start>summary{padding:14px 15px;gap:12px}
+ .student-start>summary strong{font-size:17px}
+ .student-start-body{padding:15px}
+ .student-start-phases{gap:7px;margin-bottom:17px}
+ .student-start-phases button{padding:9px 12px;font-size:11px}
+ .student-start-tasks{grid-template-columns:1fr;gap:10px}
+ .student-start-task{padding:15px}
+ .student-start-task h4{font-size:13px}
+ .student-start-task p,.student-start-intro,.student-start-phase-heading p{font-size:11px}
+ .student-start-links{gap:10px 16px}
+ .student-start-links a{font-size:11px}
+ .article-body .life-callout,.article-body .life-checklist{padding:14px 15px}
+ .article-body .life-callout h4,.article-body .life-checklist h4{font-size:15px}
+ .article-body .life-callout p,.article-body .life-callout ul,.life-checklist label{font-size:12px}
+}
