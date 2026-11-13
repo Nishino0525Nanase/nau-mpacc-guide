@@ -1,0 +1,34 @@
+{
+  "batch": "campus-housing-20261113",
+  "sourceMap": {
+    "DH01": "U974",
+    "DH02": "U975",
+    "DH03": "U976",
+    "DH04": "U977",
+    "DH05": "U978",
+    "CI01": "U979",
+    "CI02": "U980",
+    "CI03": "U981",
+    "CI04": "U982",
+    "CI05": "U983"
+  },
+  "reviewedSources": 10,
+  "newSources": 10,
+  "lifeChapters": 16,
+  "sourceRegistry": 482,
+  "imageIndex": {
+    "entries": 16,
+    "newSourceOriginalImages": 19,
+    "reusedBrowserScreenshots": 5,
+    "images": 24,
+    "sources": 16,
+    "chaptersWithImages": 10
+  },
+  "newImages": 4,
+  "boundaries": [
+    "新增1张真实历史寝室图和3张官方校园环境图，不是四张MPAcc宿舍实拍。",
+    "新宿舍建成不等于MPAcc女生入住分配，未核到当前卫浴和洗衣全景。",
+    "原图字节、来源日期和可见空间保留；未生成或重绘实景。",
+    "网页与图集更新，Word、Excel和APK未重建。"
+  ]
+}

@@ -4,7 +4,7 @@
   const esc = value => String(value ?? '').replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
   const array = value => Array.isArray(value) ? value : [];
   const kinds = [
-    ['map', '校园地图'], ['takeaway', '外卖与取餐'], ['food', '吃饭与采购'],
+    ['map', '校园地图'], ['campus', '校园环境'], ['takeaway', '外卖与取餐'], ['food', '吃饭与采购'],
     ['parcel', '快递与办事'], ['housing', '宿舍与用品'], ['travel', '出行路线'],
     ['course', '课程与学习'], ['service', '校园服务'],
   ];

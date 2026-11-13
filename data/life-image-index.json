@@ -488,10 +488,135 @@
           "textAltered": false
         }
       ]
+    },
+    {
+      "id": "life-housing-chengyuan-2024",
+      "title": "澄园历史房间 · 上床下桌与通道",
+      "chapterIds": [
+        "life-03"
+      ],
+      "sourceCode": "U978",
+      "sourceUrl": "https://cysy.nau.edu.cn/2024/0927/c4939a135882/page.htm",
+      "sourceTitle": "澄园2024级新生内务风采秀",
+      "sourceAuthor": "南京审计大学澄园书院；图片：各新生宿舍",
+      "sourceDate": "2024-09-20",
+      "kind": "housing",
+      "primary": true,
+      "expansionBatch": "campus-housing-20261113",
+      "scopeNote": "2024级新生军训内务活动中的历史房间局部，未确认MPAcc。可见床桌、梯子、床栏与通道；不推总人数和床宽。图中床帘不代表现行允许，2026公寓规定禁止另拉床帘。",
+      "images": [
+        {
+          "src": "./evidence/life/nau-chengyuan-dorm-2024-layout.jpg",
+          "width": 589,
+          "height": 786,
+          "bytes": 78962,
+          "sha256": "8704b6c8686763cfe25f2ce3291a89d23c6faca0b39e280cc8ad5e48a23aea0d",
+          "kind": "official-source-image",
+          "originalImageUrl": "https://cysy.nau.edu.cn/_upload/article/images/cc/27/7e0bbbad4afb892241e77c6bdc28/e2e44d0a-f680-48a2-a69d-eaa4e0d3ee25.jpg",
+          "alt": "澄园2024历史寝室上床下桌、梯子与局部通道实拍",
+          "caption": "澄园2024历史实拍：上床下桌、梯子与局部通道。照片中的床帘不适用于现行公寓规则，请勿照搬安装。",
+          "visualReview": "已直接查看原图，无人物及清晰私人信息；可见床桌、梯子与通道。原始字节未修改。"
+        }
+      ]
+    },
+    {
+      "id": "campus-night-road-2025",
+      "title": "官网《南审的夜》中的道路与绿地夜景",
+      "chapterIds": [
+        "life-16"
+      ],
+      "sourceCode": "U981",
+      "sourceUrl": "https://www.nau.edu.cn/_t505/2025/1120/c5756a151075/page.htm",
+      "sourceTitle": "南审的夜",
+      "sourceAuthor": "南京审计大学校园风光栏目／南审官微原创",
+      "sourceDate": "2025-11-20",
+      "kind": "campus",
+      "scopeNote": "不指认照片中的具体园区；摄影灯光不作为夜间安全和通行保证。",
+      "images": [
+        {
+          "src": "./evidence/life/nau-campus-night-road-2025.jpg",
+          "width": 1687,
+          "height": 1095,
+          "bytes": 449574,
+          "sha256": "c613271d45b8f113a509163fec89f4f741a037acf3a7a387cb8519cb2a9e3d3c",
+          "caption": "官网《南审的夜》中的道路与绿地夜景（2025年图集）。",
+          "alt": "校园夜间道路、绿地和灯光的俯视实景",
+          "originalImageUrl": "https://www.nau.edu.cn/_upload/article/images/ad/ae/41a499b94c02b722612aaf49ae41/e0298c98-5433-4ed6-973b-74245ddb1aa1.jpg",
+          "kind": "official-source-image",
+          "visualReview": "能看见道路、绿地、树木与斑马线；没有可识别人脸。 已用view_image直接查看，原始字节未修改。",
+          "whatCanShow": "能看见道路、绿地、树木与斑马线；没有可识别人脸。",
+          "cannotInfer": "不指认照片中的具体园区；摄影灯光不作为夜间安全和通行保证。"
+        }
+      ],
+      "expansionBatch": "campus-housing-20261113"
+    },
+    {
+      "id": "campus-minzhi-2019",
+      "title": "敏知楼临水外观",
+      "chapterIds": [
+        "life-16",
+        "life-11"
+      ],
+      "sourceCode": "U982",
+      "sourceUrl": "https://www.nau.edu.cn/_t505/2019/0612/c5756a55798/page.htm",
+      "sourceTitle": "敏知楼（官方校园风光）",
+      "sourceAuthor": "南京审计大学校园风光栏目",
+      "sourceDate": "2019-06-12",
+      "kind": "campus",
+      "scopeNote": "不说明当前办事入口与内部门牌，具体事务仍看F39。",
+      "images": [
+        {
+          "src": "./evidence/life/nau-campus-minzhi-building-2019.jpg",
+          "width": 1711,
+          "height": 1140,
+          "bytes": 462411,
+          "sha256": "c2b07080c9f3c10f80a45f62ec0e826cad5d7581178f94004c0ee765699d4603",
+          "caption": "敏知楼临水外观（官网2019年图片，保留原貌）。",
+          "alt": "南京审计大学敏知楼临水外观历史照片",
+          "originalImageUrl": "https://www.nau.edu.cn/_upload/article/images/be/d5/b732020943bda5772404b2299d2b/edc6a724-de85-4bf7-a744-96597b684b18.jpg",
+          "kind": "official-source-image",
+          "visualReview": "官方页面标题指认敏知楼；可见楼体、水面与岸边植被；无人脸、房号或私人信息。 已用view_image直接查看，原始字节未修改。",
+          "whatCanShow": "官方页面标题指认敏知楼；可见楼体、水面与岸边植被；无人脸、房号或私人信息。",
+          "cannotInfer": "不说明当前办事入口与内部门牌，具体事务仍看F39。"
+        }
+      ],
+      "expansionBatch": "campus-housing-20261113"
+    },
+    {
+      "id": "campus-chengdian-2023",
+      "title": "澄典书屋入口与书架",
+      "chapterIds": [
+        "life-16",
+        "life-07"
+      ],
+      "sourceCode": "U983",
+      "sourceUrl": "https://cysy.nau.edu.cn/2023/0506/c4939a113711/page.htm",
+      "sourceTitle": "欢迎乘坐“一站式”澄园观光列车",
+      "sourceAuthor": "南京审计大学澄园书院；摄影：张玉优、澄园书院",
+      "sourceDate": "2023-05-05",
+      "kind": "campus",
+      "scopeNote": "不是寝室内景，也不代表MPAcc免费开放或全天可用空间。",
+      "images": [
+        {
+          "src": "./evidence/life/nau-campus-chengdian-bookhouse-2023.jpg",
+          "width": 589,
+          "height": 441,
+          "bytes": 80004,
+          "sha256": "7cd3c759294ad7a02fa77423d95bffeab5e6d290920ebfcd032866278f385b2b",
+          "caption": "澄典书屋入口与书架（澄园书院2023年介绍图）。",
+          "alt": "澄园书院澄典书屋入口及书架",
+          "originalImageUrl": "https://cysy.nau.edu.cn/_upload/article/images/1c/51/d999a54249488fbc91849a90ff05/39b871ab-b791-4d48-8995-7f82c7e26dcd.jpg",
+          "kind": "official-source-image",
+          "visualReview": "原图可见澄典书屋招牌、玻璃入口和书架；无可识别人物或私人信息。 已用view_image直接查看，原始字节未修改。",
+          "whatCanShow": "原图可见澄典书屋招牌、玻璃入口和书架；无可识别人物或私人信息。",
+          "cannotInfer": "不是寝室内景，也不代表MPAcc免费开放或全天可用空间。"
+        }
+      ],
+      "expansionBatch": "campus-housing-20261113"
     }
   ],
   "limits": [
-    "新增14张原始来源图片，来自8篇小红书生活/周边帖与2个学校官网页面；另外复用R317的5张既有真实浏览器截图。原图和浏览器截图分别标注，不以图片张数虚增来源数或学生评价条数。",
+    "来源原图与浏览器截图分别标注；同一来源的多张照片只计一个来源，不以图片张数增加学生评价或体验条数。图片的年份、学段与空间用途见各图注。",
     "小红书图片来自此次实际读取页面的原图元数据，已下载为本地文件，字节保持不变；未伪造、重绘或生成截图。CDN链接仅作溯源，网站应使用本地src。",
     "已取得8篇帖的23张图片，但每篇元数据最多提供前4张；精选12张入库。不宣称看完全部相册或全部评论，评论此次显示Loading，未重新展开。",
     "L10、P02、P16此次读取超时，未据此增加配图或声称审读。",
@@ -502,11 +627,11 @@
     "2019中文官网地图原始文件约8.8MB，建议惰性加载，并保留查看原图功能。"
   ],
   "counts": {
-    "entries": 12,
-    "newSourceOriginalImages": 15,
+    "entries": 16,
+    "newSourceOriginalImages": 19,
     "reusedBrowserScreenshots": 5,
-    "images": 20,
-    "sources": 12,
-    "chaptersWithImages": 9
+    "images": 24,
+    "sources": 16,
+    "chaptersWithImages": 10
   }
 }

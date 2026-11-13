@@ -1,0 +1,225 @@
+{
+  "checked_at": "2026-11-13",
+  "scope": "浦口新建宿舍与历史实拍；用于环境先览，不推定MPAcc女生分配",
+  "sources": [
+    {
+      "id": "DH01",
+      "title": "我校参加全省政府投资工程集中建设信息发布交流会并作报告",
+      "url": "https://news.nau.edu.cn/2026/0417/c5797a156234/page.htm",
+      "date": "2026-04-17",
+      "publisher": "南京审计大学新闻网·基建处",
+      "population": "浦口校区新建学生宿舍项目；未列入住年级、专业或性别",
+      "facts": [
+        "基建处回顾明确写浦口新建学生宿舍于2025年9月建成，增加住宿床位2600余个。",
+        "该回顾可以支持“已有新楼建成”，比此前计划建设的新闻更进一步；不能代表全校老楼都完成改造。"
+      ],
+      "reading_scope": "公开正文全读，重点第27—31行，web turn198view0／turn196search0。",
+      "limits": [
+        "没有给出MPAcc女生分楼或床位分配，不能写会计专硕将入住新楼。",
+        "增床数是整个项目规模，不推每间住几人。",
+        "建成回顾没有逐项列出卫浴、电梯、床板尺寸、供电及门禁。"
+      ]
+    },
+    {
+      "id": "DH02",
+      "title": "校长陆华良调研新建学生宿舍项目",
+      "url": "https://news.nau.edu.cn/2025/0324/c5796a142148/page.htm",
+      "date": "2025-03-24",
+      "publisher": "南京审计大学新闻网·基建处",
+      "population": "浦口校区新建宿舍1—3号楼建设项目；不是宿舍分配通知",
+      "facts": [
+        "当时项目介绍为新建3栋宿舍，地上层数分别6、8、9层，并有地下空间和配套变电所。",
+        "项目介绍南北朝向、内廊为主的布局；现场调研涉及样板间设计和设施，但配图本身展示的是施工现场外部。"
+      ],
+      "reading_scope": "公开正文与唯一文章照片已读并目视，重点第27—32行，web turn198view1／turn206view0。",
+      "limits": [
+        "当时计划秋季交付，建成事实应与DH01后续报道合看。",
+        "项目编号1—3不能自动等同于现行行政楼号、MPAcc楼号或女生楼。",
+        "照片不是寝室室内、交付后外观或样板间照片，不用于证明床桌、卫浴、电梯配置。"
+      ]
+    },
+    {
+      "id": "DH03",
+      "title": "【石榴籽观影】以坚守赴使命，以同心护家国——藏在光影里的爱国情怀",
+      "url": "https://xgc.nau.edu.cn/2026/0410/c3440a155965/page.htm",
+      "date": "2026-04-10",
+      "eventDate": "2026-04-08",
+      "publisher": "南京审计大学学生工作处",
+      "population": "石榴籽工作室参与学生；未区分研究生或MPAcc",
+      "facts": [
+        "公开活动报道把2026年4月8日观影地点明确写为沁园新宿舍二栋109活动室。",
+        "可支持新宿舍内存在已开展集体活动的公共房间，帮助理解寝室之外还有社区活动空间。"
+      ],
+      "reading_scope": "正文全读，活动时间地点位于第9行，web turn206view3。",
+      "limits": [
+        "一次活动不能证明该房间向每位学生随时开放、可自由预约或作为自习室使用。",
+        "不把109公开活动室写成学生个人房间，不推全楼有同样公共空间。",
+        "未取得可核室内活动照片；网页抓取仅显页尾图，不将其计作活动室实景。"
+      ]
+    },
+    {
+      "id": "DH04",
+      "title": "晨光启新，赴约沁园——2026级迎新现场纪实",
+      "url": "https://qysy.nau.edu.cn/2026/0912/c1700a161590/page.htm",
+      "date": "2026-09-12",
+      "documentDate": "2026-09-10",
+      "publisher": "南京审计大学沁园书院",
+      "population": "沁园书院2026级迎新；未确认为MPAcc或研究生",
+      "facts": [
+        "报道展示书院迎新点、搬运行李及宿舍领钥匙等场景。",
+        "文字说明宿管在楼前核对信息、发放钥匙、交待入住注意事项；公开图可帮助认识迎新与入楼的外部场景。"
+      ],
+      "reading_scope": "全文已读，且下载目视第55和58图；web turn198view3，图click返回超时后从同一原URL下载成功。",
+      "limits": [
+        "两张所检图片都是书院入口或入口外的搬运场景，不是宿舍内部。",
+        "原文所指领钥匙段不能据配图倒推出某幢楼或房型；“keys”是研究缓存文件名而非画面已证明在发钥匙。",
+        "画面有计算机学院迎新标识，不将其改写成MPAcc专场。",
+        "不能把当次志愿服务和家长进入画面推为全年访客/留宿授权。"
+      ]
+    },
+    {
+      "id": "DH05",
+      "title": "异彩纷澄丨澄园书院2024-2025学年秋学期“军训进行时之内务风采秀”新生宿舍内务整理活动圆满落幕",
+      "url": "https://cysy.nau.edu.cn/2024/0927/c4939a135882/page.htm",
+      "date": "2024-09-20",
+      "publisher": "南京审计大学澄园书院",
+      "population": "澄园书院2024级新生军训内务活动；未直接注明学位阶段，未确认MPAcc",
+      "facts": [
+        "官方活动正文附新生宿舍内务整理前后照片，图片署名为澄园书院各新生宿舍。",
+        "已检两张整理后照片中，一张能看到床下书桌和上方分层书架；另一张能看到上床下桌家具、两处桌位、梯子与床栏。"
+      ],
+      "reading_scope": "公开正文与图30、31已读、下载并目视；正文第33行标2024-09-20，不能按URL的09-27推日期。web turn208view0、turn209view0、turn209view1。",
+      "limits": [
+        "作为2024历史实例，不能证明2026或2027房型、床位数、床宽与MPAcc分配。",
+        "照片取自整理活动，有布置选择；不是每间寝室的平均状态。",
+        "照片出现床帘，而现行F12公寓规定禁止另拉床帘；应在图注提示此差异，不推荐照搬安装。",
+        "第二张并未拍全房间，不凭两处桌位推断房间总人数；浴室、洗衣和空调未在画面中获得证明。"
+      ]
+    }
+  ],
+  "image_candidates": [
+    {
+      "id": "DHI01",
+      "source_id": "DH02",
+      "url": "https://news.nau.edu.cn/_upload/article/images/47/0d/ede7279248c6868c0769e02c6039/713a993a-5f49-4a1a-8c5f-a88695998464.jpg",
+      "localImagePath": "/workspace/scratch/c08135c62de4/nau-dorm-image-candidates/project-investigation.jpg",
+      "caption": "2025年新建宿舍施工现场外部（历史建设阶段）",
+      "what_can_show": [
+        "楼体外观、施工围挡与现场通道"
+      ],
+      "cannot_infer": [
+        "不是竣工后的住宿环境",
+        "不是样板间或寝室内部"
+      ],
+      "image_type": "原发布者实拍",
+      "recommended_if_needed": false,
+      "visually_inspected": true,
+      "width": 600,
+      "height": 450,
+      "bytes": 129839,
+      "sha256": "dee3cede6c9086d241e0e9cfb27e52494f630cb975922179a9f1651d5f09d34f"
+    },
+    {
+      "id": "DHI02",
+      "source_id": "DH04",
+      "url": "https://qysy.nau.edu.cn/_upload/article/images/ad/d6/3da606934bfb95d2686e973df385/70314b7f-1f2a-41fe-92e6-f0dc21b8f0f7.png",
+      "localImagePath": "/workspace/scratch/c08135c62de4/nau-dorm-image-candidates/qinyuan-arrival-overview.png",
+      "caption": "2026级沁园书院迎新入口场景",
+      "what_can_show": [
+        "书院迎新入口立面、横幅与携带行李的来校人群"
+      ],
+      "cannot_infer": [
+        "不是寝室内部",
+        "不证明MPAcc报到地点或宿舍分配"
+      ],
+      "image_type": "原发布者实拍",
+      "recommended_if_needed": true,
+      "visually_inspected": true,
+      "width": 1279,
+      "height": 1706,
+      "bytes": 2331686,
+      "sha256": "c268615673516c5775b644eee273d30e097ce90d943dbcaba1bc8eb91e8d2cd9"
+    },
+    {
+      "id": "DHI03",
+      "source_id": "DH04",
+      "url": "https://qysy.nau.edu.cn/_upload/article/images/ad/d6/3da606934bfb95d2686e973df385/fae2c1f8-755e-4449-9225-c9f7e525fae7.png",
+      "localImagePath": "/workspace/scratch/c08135c62de4/nau-dorm-image-candidates/qinyuan-arrival-keys.png",
+      "caption": "2026沁园迎新入口外的行李协助",
+      "what_can_show": [
+        "入口外空间、志愿者帮助处理行李"
+      ],
+      "cannot_infer": [
+        "不能仅凭画面说正在发钥匙",
+        "不是宿舍内部或公共活动室"
+      ],
+      "image_type": "原发布者实拍",
+      "recommended_if_needed": false,
+      "visually_inspected": true,
+      "width": 1280,
+      "height": 1463,
+      "bytes": 2329875,
+      "sha256": "dfd3714eb065170312010f07a57561c4ab4d805db4360b999e66366b019f20cb"
+    },
+    {
+      "id": "DHI04",
+      "source_id": "DH05",
+      "url": "https://cysy.nau.edu.cn/_upload/article/images/cc/27/7e0bbbad4afb892241e77c6bdc28/e341a476-751f-4af8-959e-3f05068fc213.png",
+      "localImagePath": "/workspace/scratch/c08135c62de4/nau-dorm-image-candidates/chengyuan-dorm-2024-after-01.png",
+      "caption": "澄园2024新生整理活动实拍：床下桌面与书架（历史）",
+      "what_can_show": [
+        "桌面、分层书架及局部床下布置"
+      ],
+      "cannot_infer": [
+        "不证明当前标准尺寸",
+        "不证明MPAcc房型",
+        "原图清晰度仅359×271，不适合作大幅图"
+      ],
+      "image_type": "原发布者实拍",
+      "recommended_if_needed": true,
+      "visually_inspected": true,
+      "width": 361,
+      "height": 271,
+      "bytes": 223316,
+      "sha256": "b3438adcc70534a3dbfb8dcf4568b0c1cba264bc89a408f911efacdcae091b5e"
+    },
+    {
+      "id": "DHI05",
+      "source_id": "DH05",
+      "url": "https://cysy.nau.edu.cn/_upload/article/images/cc/27/7e0bbbad4afb892241e77c6bdc28/e2e44d0a-f680-48a2-a69d-eaa4e0d3ee25.jpg",
+      "localImagePath": "/workspace/scratch/c08135c62de4/nau-dorm-image-candidates/chengyuan-dorm-2024-after-02.jpg",
+      "caption": "澄园2024新生整理活动实拍：上床下桌与梯子（历史）",
+      "what_can_show": [
+        "上床下桌、梯子、床栏和局部通道"
+      ],
+      "cannot_infer": [
+        "不证明全房人数和当前配置",
+        "不证明MPAcc女生分配",
+        "画面床帘不代表现行允许，须明确F12禁用"
+      ],
+      "image_type": "原发布者实拍",
+      "recommended_if_needed": true,
+      "visually_inspected": true,
+      "width": 589,
+      "height": 786,
+      "bytes": 78962,
+      "sha256": "8704b6c8686763cfe25f2ce3291a89d23c6faca0b39e280cc8ad5e48a23aea0d"
+    }
+  ],
+  "new_source_dedup_check": "五个原文a156234、a142148、a155965、a161590、a135882均未在当前472条sourceRegistry匹配；同文不同站点或模板仍按单源。",
+  "important_boundaries": [
+    "2025新楼建成事实与2026沁园11—15老楼改造中标是不同项目；不能合并为全园完成。",
+    "用户希望看到环境，可用既有L01与DH05历史实拍具体解释床桌差别，同时把MPAcc分配未知写清楚。",
+    "没有获得2026MPAcc女生卧室、浴室或洗衣房的可核新实拍。"
+  ],
+  "not_adopted": [
+    {
+      "url": "https://gzb.nau.edu.cn/_upload/article/files/ad/d4/33663fb1467bbbcdd94186022b43/65755be2-db5b-4e9b-ae69-d9aae89a0ea7.pdf",
+      "reason": "搜索标七个月前，但正文采购期明确2024-03/04；38元/吨是当年招标口径，不升级为2026现行热水账单。"
+    },
+    {
+      "url": "https://qysy.nau.edu.cn/2026/0523/c1700a157783/page.psp",
+      "reason": "2026文明宿舍答辩文章主要是活动与PPT展示，未获得可代表室内环境的新实拍，暂不补为独立环境实例。"
+    }
+  ]
+}

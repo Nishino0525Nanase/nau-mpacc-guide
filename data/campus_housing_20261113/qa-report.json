@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-13",
+  "checks": {
+    "tests": 117,
+    "passed": 117,
+    "idempotentMerge": true,
+    "originalContentProtected": true,
+    "originalImageBytesVerified": true,
+    "dataAndPublishedImageIndexesMatch": true
+  },
+  "browser": {
+    "environment": "managed local preview",
+    "viewportWidth": 1363,
+    "pageWidth": 1348,
+    "chapters": 16,
+    "verified": [
+      "宿舍环境快捷入口与第三章新标题",
+      "589像素寝室原图加载、大图卡和历史图注",
+      "第十六章三张校园环境原图加载",
+      "学校介绍与图书馆功能调整内容",
+      "章节跳转与无整页横向溢出"
+    ],
+    "limits": [
+      "未完成手机真机或移动视口视觉验收。"
+    ],
+    "screenshot": "qa/housing-overview-20261113.jpg"
+  },
+  "media": {
+    "nau-campus-night-road-2025.jpg": "c613271d45b8f113a509163fec89f4f741a037acf3a7a387cb8519cb2a9e3d3c",
+    "nau-campus-minzhi-building-2019.jpg": "c2b07080c9f3c10f80a45f62ec0e826cad5d7581178f94004c0ee765699d4603",
+    "nau-campus-chengdian-bookhouse-2023.jpg": "7cd3c759294ad7a02fa77423d95bffeab5e6d290920ebfcd032866278f385b2b",
+    "nau-chengyuan-dorm-2024-layout.jpg": "8704b6c8686763cfe25f2ce3291a89d23c6faca0b39e280cc8ad5e48a23aea0d"
+  }
+}
