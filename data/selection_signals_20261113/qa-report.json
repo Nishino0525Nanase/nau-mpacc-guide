@@ -1,0 +1,32 @@
+{
+  "tests": {
+    "passed": 153,
+    "failed": 0
+  },
+  "browser": {
+    "viewportWidth": 1363,
+    "documentScrollWidth": 1348,
+    "defaultMentors": 14,
+    "strongAvoidMentors": [
+      "叶邦银"
+    ],
+    "strongRecommendMentors": [
+      "李仲泽"
+    ],
+    "checks": [
+      "firstScreenPriorityPanel",
+      "warningBeforePositiveProjectInDossier",
+      "summaryNotQuoted",
+      "filterAvoid",
+      "filterRecommend",
+      "panelImageViewerAndReturn"
+    ]
+  },
+  "existingReviewFieldsPreserved": true,
+  "otherCollectionsPreserved": true,
+  "idempotent": true,
+  "newReviews": 0,
+  "newSources": 0,
+  "mobileVisualCheck": false,
+  "screenshot": "qa/selection-signals-20261113.jpg"
+}

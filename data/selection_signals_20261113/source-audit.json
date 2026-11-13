@@ -1,0 +1,40 @@
+{
+  "signals": [
+    {
+      "mentor": "叶邦银",
+      "reviewId": "sr-alias-20261113-yby",
+      "direction": "avoid",
+      "intensity": "strong",
+      "alias": "YBY",
+      "excerpt": {
+        "kind": "visible_quote",
+        "text": "答应我千万不要选yby..."
+      },
+      "sourceIds": [
+        "X01"
+      ],
+      "scope": "明确劝退态度；截图末尾截断，原因、学位和接触关系未说明。"
+    },
+    {
+      "mentor": "李仲泽",
+      "reviewId": "sr-4f903dfc6b113f",
+      "direction": "recommend",
+      "intensity": "strong",
+      "excerpt": {
+        "kind": "recorded_summary",
+        "text": "momo按全名强烈推荐李仲泽，称年轻、幽默、为学生考虑。"
+      },
+      "sourceIds": [
+        "X01"
+      ],
+      "scope": "已存评论摘要；论文帮助属于期待性判断，未说明实际指导过程。"
+    }
+  ],
+  "newReviews": 0,
+  "newSources": 0,
+  "rule": "仅提高明确选择态度的展示优先级，原亲历、学位、事实与推荐理由门槛不变。",
+  "excluded": [
+    "程博的口号式高度肯定未确认选导行动语句。",
+    "王烨、蔡显军有反话歧义，不认定强烈推荐。"
+  ]
+}
