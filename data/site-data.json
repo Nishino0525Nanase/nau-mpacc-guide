@@ -5,9 +5,9 @@
     "counts": {
       "mentors": 34,
       "detailedMentorCards": 17,
-      "lifeChapters": 15,
+      "lifeChapters": 16,
       "socialPosts": 149,
-      "officialEvidence": 259,
+      "officialEvidence": 269,
       "feedbackRecords": 21,
       "screenedSources": 15,
       "unreadLeads": 6,
@@ -10093,8 +10093,107 @@
     {
       "id": "life-03",
       "number": 3,
-      "title": "第三章 住宿用品和室友生活",
+      "title": "第三章 宿舍环境、用品与室友生活",
       "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "宿舍环境先览：先看真实空间，再看入住清单",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "p",
+          "text": "本章图片区可以对照两类实际记录：沁园南向宿舍的上下铺与联排书桌，以及澄园2024年内务活动中的上床下桌。它们展示的是来源当时拍到的房间局部；同一园区也可能有不同楼栋、朝向和改造阶段。先形成空间印象，再用自己的分配通知找对应房间。[L01][U978]",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "L01",
+            "U978"
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "想了解的环境",
+            "目前能看到或确认的情况"
+          ],
+          "rows": [
+            [
+              "床、书桌和收纳",
+              "沁园原帖两张照片可见上下铺、竖排衣柜、联排书桌，另有飘窗版本；澄园2024官方图可见上床下桌、梯子和局部通道。图片并未拍全所有房间，不凭照片估床宽或总人数。[L01][U978]"
+            ],
+            [
+              "新宿舍是否只是规划",
+              "校方2026年基建回顾明确：浦口新建学生宿舍项目于2025年9月建成，新增床位2600余个。它证明新楼已有建成，未公布MPAcc女生具体分楼，也不代表全部老楼都改为同一标准。[U974]"
+            ],
+            [
+              "房间之外有没有公共空间",
+              "2026年4月活动报道明确使用了沁园新宿舍二栋109活动室；澄园2023社区介绍也有书屋、服务与活动空间。实际开放对象、用途和预约按当前安排确认。[U976][U983]"
+            ],
+            [
+              "浴室与套间怎么看",
+              "既有泽园资料有多个小寝共用客厅、卫生间和淋浴的记录；卧室人数与套间总人数要分开看。2026沁园11—15栋淋浴房改造公告是工程范围，不能改写成每间寝室独卫。[L02][L101][U931]"
+            ],
+            [
+              "空调、洗衣与热水",
+              "沁园一张原图可见壁挂空调外观；本楼是否可用、怎样付费与报修仍需确认。现有资料没有覆盖全校的洗衣、卫浴实拍，设备操作见本章后文。[L01][U933]"
+            ]
+          ],
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "L01",
+            "U978",
+            "U974",
+            "U976",
+            "U983",
+            "L02",
+            "L101",
+            "U931",
+            "U933"
+          ]
+        },
+        {
+          "type": "callout",
+          "title": "照片里的布置，和现在允许使用的东西分开看",
+          "text": "澄园图来自2024级新生军训内务活动，未确认MPAcc，可以观察床桌与通道。图中床帘属于当时布置，2026公寓规定禁止另拉床帘，不能照图采购安装。照片也不是下一届MPAcc的分房承诺。[U978][F12]",
+          "tone": "note",
+          "label": "看图时留意",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U978",
+            "F12"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "如果想进一步问清一间宿舍",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "table",
+          "headers": [
+            "先拿到的信息",
+            "再问到实际生活"
+          ],
+          "rows": [
+            [
+              "园区、楼栋、楼层、朝向与分配床位",
+              "是一间小寝还是套间？本卧室和共用卫浴分别有多少人？"
+            ],
+            [
+              "同楼、同类型房间近期的完整照片",
+              "床桌形式、柜内空间、走道、窗边与晾晒点；照片是否在最近一次改造之后？"
+            ],
+            [
+              "实际洗浴、洗衣、饮水和报修点",
+              "从房间走过去是否方便、怎样支付、故障联系谁；不只问“有没有独卫／空调”。"
+            ]
+          ],
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": []
+        },
         {
           "type": "callout",
           "title": "衣服和被褥，按学期分批准备",
@@ -10405,16 +10504,21 @@
         }
       ],
       "sourceCodes": [
-        "U959",
-        "U960",
-        "F12",
-        "U932",
-        "U934",
+        "L01",
+        "U978",
+        "U974",
+        "U976",
+        "U983",
+        "L02",
+        "L101",
         "U931",
         "U933",
+        "F12",
+        "U959",
+        "U960",
+        "U932",
+        "U934",
         "U954",
-        "L01",
-        "L02",
         "L11",
         "L13",
         "L14",
@@ -10427,7 +10531,6 @@
         "E003",
         "E004",
         "E005",
-        "L101",
         "L105"
       ]
     },
@@ -11129,10 +11232,11 @@
         },
         {
           "type": "p",
-          "text": "浦口图书馆常规表列总服务台和四楼研究生阅览室7:30—22:00，三楼信息共享空间8:30—21:00。选座页面的服务时段则为8:30—22:00，预约6:00—22:00，可约当天和次日。开馆、某个窗口开放、座位预约是不同口径；假期先看公告，别把某借阅室标注“全天”解释为全馆通宵。[F17][F18]",
+          "text": "浦口图书馆常规表列总服务台7:30—22:00、三楼信息共享空间8:30—21:00；另一官方资源目录则将“研究生阅览室”标为“功能调整”。两页均未标独立更新时间，不能只按四楼时刻认定该室当前开放。选座页面另列服务与预约时段：开馆、馆室用途和预约是不同口径，出发前看当前公告、可预约座位并向馆内确认。也不要把某借阅室“全天”解释为全馆通宵。[F17][F18][U980]",
           "sourceCodes": [
             "F17",
-            "F18"
+            "F18",
+            "U980"
           ]
         },
         {
@@ -11275,6 +11379,7 @@
         "U958",
         "F17",
         "F18",
+        "U980",
         "F19",
         "P09",
         "P10",
@@ -12715,6 +12820,103 @@
       "number": 12,
       "title": "第十二章 来源与进一步阅读",
       "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "学校概况与住宿环境来源",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "source",
+          "text": "[U974] 我校参加全省政府投资工程集中建设信息发布交流会并作报告",
+          "url": "https://news.nau.edu.cn/2026/0417/c5797a156234/page.htm",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U974"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U975] 校长陆华良调研新建学生宿舍项目",
+          "url": "https://news.nau.edu.cn/2025/0324/c5796a142148/page.htm",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U975"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U976] 【石榴籽观影】以坚守赴使命，以同心护家国——藏在光影里的爱国情怀",
+          "url": "https://xgc.nau.edu.cn/2026/0410/c3440a155965/page.htm",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U976"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U977] 晨光启新，赴约沁园——2026级迎新现场纪实",
+          "url": "https://qysy.nau.edu.cn/2026/0912/c1700a161590/page.htm",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U977"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U978] 异彩纷澄丨澄园书院2024-2025学年秋学期“军训进行时之内务风采秀”新生宿舍内务整理活动圆满落幕",
+          "url": "https://cysy.nau.edu.cn/2024/0927/c4939a135882/page.htm",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U978"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U979] 南京审计大学学校简介",
+          "url": "https://nau.edu.cn/18/list.htm",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U979"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U980] 图书馆资源分布",
+          "url": "https://lib.nau.edu.cn/zyfb/list.htm",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U980"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U981] 南审的夜",
+          "url": "https://www.nau.edu.cn/_t505/2025/1120/c5756a151075/page.htm",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U981"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U982] 敏知楼（官方校园风光）",
+          "url": "https://www.nau.edu.cn/_t505/2019/0612/c5756a55798/page.htm",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U982"
+          ]
+        },
+        {
+          "type": "source",
+          "text": "[U983] 欢迎乘坐“一站式”澄园观光列车",
+          "url": "https://cysy.nau.edu.cn/2023/0506/c4939a113711/page.htm",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U983"
+          ]
+        },
         {
           "type": "heading",
           "level": 2,
@@ -15156,6 +15358,16 @@
         }
       ],
       "sourceCodes": [
+        "U974",
+        "U975",
+        "U976",
+        "U977",
+        "U978",
+        "U979",
+        "U980",
+        "U981",
+        "U982",
+        "U983",
         "U959",
         "U960",
         "U961",
@@ -15938,6 +16150,219 @@
         "U961",
         "F12",
         "U962"
+      ]
+    },
+    {
+      "id": "life-16",
+      "number": 16,
+      "title": "第十六章 先认识南审的校园生活",
+      "blocks": [
+        {
+          "type": "callout",
+          "title": "先认识你每天会用到的南审",
+          "text": "学校简介列浦口、莫愁两个校区，以及润园、泽园、澄园、沁园四个书院。对准备来浦口读MPAcc的你，先认校区、园区和具体楼名，能帮助你把每天会用到的地方串起来。下面的官方照片保留拍摄或发布年份，用来认识建筑与公共空间。[U979]",
+          "tone": "note",
+          "label": "来之前先看看",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U979"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "校区、学院、书院和宿舍园区，分别是什么",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "table",
+          "headers": [
+            "你会看到的名称",
+            "怎样理解更实用"
+          ],
+          "rows": [
+            [
+              "南京审计大学／金审学院",
+              "本指南对应南京审计大学。检索寝室、通知和地图时核对官网学校全称；不能把金审学院住宿照片当作本校MPAcc分配。[U979][C15]"
+            ],
+            [
+              "浦口／莫愁",
+              "学校有两个校区。2026级MPAcc按研究生通知在浦口报到；未来一届读本人通知，莫愁的住宿和服务不直接套到浦口。[U979][F06][F10]"
+            ],
+            [
+              "会计学院／MPAcc",
+              "这是专业培养和相关研究生事务的入口；审计专硕MAud与会计专硕MPAcc是不同项目，经验帖先核身份。[F39]"
+            ],
+            [
+              "润园／泽园／澄园／沁园",
+              "这些名字出现在书院、住宿、食堂与校园地理中。学院名不能自动推出你住哪个园区；拿到分配后再查园区、楼栋和本楼设施。[U979]"
+            ]
+          ],
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U979",
+            "C15",
+            "F06",
+            "F10",
+            "F39"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "从校园照片，先建立一点空间印象",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "p",
+          "text": "敏知楼的官方照片能帮助认识临水楼体外观，MPAcc办事地点仍按当前学院信息核对；道路夜景可以看到道路、绿地与校园灯光，照片的长曝光亮度不代表每晚的实际照明；澄典书屋展示的是书院公共阅读空间，也不是寝室内景。[U981][U982][U983][F39]",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U981",
+            "U982",
+            "U983",
+            "F39"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "新楼与既有宿舍，怎样对照着看",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "p",
+          "text": "南审已有新楼，也保留不同年代、类型和改造阶段的住宿空间。2025年项目介绍过新建三栋宿舍，后续校方回顾确认该项目在2025年9月建成；现有历史寝室图还能看到上下铺配联排桌、上床下桌等不同形式。了解环境时，把楼栋、房型与照片年份一起看；第三章集中放了实际房间对照。[U974][U975][L01][U978]",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U974",
+            "U975",
+            "L01",
+            "U978"
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "想先了解",
+            "本指南可直接看什么"
+          ],
+          "rows": [
+            [
+              "室内住起来是什么样",
+              "第三章的沁园与澄园真实房间图、床桌收纳与卫浴结构说明。"
+            ],
+            [
+              "吃饭与周末换口味",
+              "第五章的食堂窗口、江浦商圈和湘味餐饮；与自己的上课、回寝路线一起安排。"
+            ],
+            [
+              "学费、住宿和日常支出",
+              "第十三章分年度列费用、奖助申请和生活预算，不用从宿舍照片猜费用。"
+            ],
+            [
+              "天气和衣物",
+              "第十五章按开学、四季与梅雨安排衣物和晾晒。"
+            ]
+          ],
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "自习、阅读与公共生活，可以慢慢找自己的位置",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "p",
+          "text": "图书馆不仅是自习座位：官方资源目录有专业图书、财经类馆藏分区、外文资料和工具书；信息共享空间提供数据库查询等服务，信息咨询部有数据库利用辅导。想找会计、金融相关资料时，用索书号与馆藏目录可以更快找到所需资料。资源目录将研究生阅览室标为“功能调整”，具体可用空间先向馆内确认。[U980]",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U980"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "书院生活也不只是一间寝室。澄园2023介绍记录过书屋、学生服务、沟通与活动空间；2026沁园新宿舍已有公共活动室开展活动。它们可以帮助你认识校园生活的可能性，但要先查当前用途、开放对象和预约，不默认研究生可随时进入或占作线上面试房。[U983][U976]",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "U983",
+            "U976"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "第一次逛校园，可以走一条小环线",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "table",
+          "headers": [
+            "从自己住处出发",
+            "现场顺手确认"
+          ],
+          "rows": [
+            [
+              "本楼值班点 → 食堂",
+              "入口、就餐层和回寝方向；选择自己愿意经常吃的一顿饭。"
+            ],
+            [
+              "食堂 → 本人课表上的教学楼",
+              "楼名、门牌和教室；不把有“敏”字的楼当成同一幢。"
+            ],
+            [
+              "教学楼 → 图书馆或获准使用的学习空间",
+              "当前座位、预约、饮水与安静要求；讨论和阅览分开。"
+            ],
+            [
+              "快递点／生活服务 → 宿舍",
+              "取件、重件搬运、洗衣和维修入口；校园地势起伏，第一次留点步行余量。[F13][U929]"
+            ]
+          ],
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": [
+            "F13",
+            "U929"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "先走通自己的日常路线，之后再按兴趣逛书屋、运动场或校园风景。照片帮助想象环境，课表、住宿分配与当期服务通知决定你实际怎样使用这里。",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": []
+        },
+        {
+          "type": "source",
+          "text": "查看浦口校区中文校园示意图（官网2022年历史标注）",
+          "url": "https://lxsy.nau.edu.cn/2022/0318/c7261a94405/page.htm",
+          "campusHousingBatch": "campus-housing-20261113",
+          "sourceCodes": []
+        }
+      ],
+      "sourceCodes": [
+        "U979",
+        "C15",
+        "F06",
+        "F10",
+        "F39",
+        "U981",
+        "U982",
+        "U983",
+        "U974",
+        "U975",
+        "L01",
+        "U978",
+        "U980",
+        "U976",
+        "F13",
+        "U929"
       ]
     }
   ],
@@ -35443,6 +35868,156 @@
       "readingScope": "地图POI搜索正文店名、地址与地铁出口说明已读，web turn192search2。",
       "limitations": "只核商场位置，非其中每家商户营业证明。；地铁线路、出口与校门临时变化出发当天查询，不计算固定到店车程。",
       "expansionBatch": "food-climate-20261113"
+    },
+    "U974": {
+      "code": "U974",
+      "title": "我校参加全省政府投资工程集中建设信息发布交流会并作报告",
+      "label": "我校参加全省政府投资工程集中建设信息发布交流会并作报告",
+      "url": "https://news.nau.edu.cn/2026/0417/c5797a156234/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2026/0417/c5797a156234/page.htm",
+      "originalUrl": "https://news.nau.edu.cn/2026/0417/c5797a156234/page.htm",
+      "date": "2026-04-17",
+      "summary": "基建处回顾明确写浦口新建学生宿舍于2025年9月建成，增加住宿床位2600余个。；该回顾可以支持“已有新楼建成”，比此前计划建设的新闻更进一步；不能代表全校老楼都完成改造。",
+      "kind": "校园与住宿官方资料",
+      "population": "浦口校区新建学生宿舍项目；未列入住年级、专业或性别",
+      "readingScope": "公开正文全读，重点第27—31行，web turn198view0／turn196search0。",
+      "limitations": "没有给出MPAcc女生分楼或床位分配，不能写会计专硕将入住新楼。；增床数是整个项目规模，不推每间住几人。；建成回顾没有逐项列出卫浴、电梯、床板尺寸、供电及门禁。",
+      "expansionBatch": "campus-housing-20261113"
+    },
+    "U975": {
+      "code": "U975",
+      "title": "校长陆华良调研新建学生宿舍项目",
+      "label": "校长陆华良调研新建学生宿舍项目",
+      "url": "https://news.nau.edu.cn/2025/0324/c5796a142148/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2025/0324/c5796a142148/page.htm",
+      "originalUrl": "https://news.nau.edu.cn/2025/0324/c5796a142148/page.htm",
+      "date": "2025-03-24",
+      "summary": "当时项目介绍为新建3栋宿舍，地上层数分别6、8、9层，并有地下空间和配套变电所。；项目介绍南北朝向、内廊为主的布局；现场调研涉及样板间设计和设施，但配图本身展示的是施工现场外部。",
+      "kind": "校园与住宿官方资料",
+      "population": "浦口校区新建宿舍1—3号楼建设项目；不是宿舍分配通知",
+      "readingScope": "公开正文与唯一文章照片已读并目视，重点第27—32行，web turn198view1／turn206view0。",
+      "limitations": "当时计划秋季交付，建成事实应与DH01后续报道合看。；项目编号1—3不能自动等同于现行行政楼号、MPAcc楼号或女生楼。；照片不是寝室室内、交付后外观或样板间照片，不用于证明床桌、卫浴、电梯配置。",
+      "expansionBatch": "campus-housing-20261113"
+    },
+    "U976": {
+      "code": "U976",
+      "title": "【石榴籽观影】以坚守赴使命，以同心护家国——藏在光影里的爱国情怀",
+      "label": "【石榴籽观影】以坚守赴使命，以同心护家国——藏在光影里的爱国情怀",
+      "url": "https://xgc.nau.edu.cn/2026/0410/c3440a155965/page.htm",
+      "canonicalUrl": "https://xgc.nau.edu.cn/2026/0410/c3440a155965/page.htm",
+      "originalUrl": "https://xgc.nau.edu.cn/2026/0410/c3440a155965/page.htm",
+      "date": "2026-04-10",
+      "summary": "公开活动报道把2026年4月8日观影地点明确写为沁园新宿舍二栋109活动室。；可支持新宿舍内存在已开展集体活动的公共房间，帮助理解寝室之外还有社区活动空间。",
+      "kind": "校园与住宿官方资料",
+      "population": "石榴籽工作室参与学生；未区分研究生或MPAcc",
+      "readingScope": "正文全读，活动时间地点位于第9行，web turn206view3。",
+      "limitations": "一次活动不能证明该房间向每位学生随时开放、可自由预约或作为自习室使用。；不把109公开活动室写成学生个人房间，不推全楼有同样公共空间。；未取得可核室内活动照片；网页抓取仅显页尾图，不将其计作活动室实景。",
+      "expansionBatch": "campus-housing-20261113"
+    },
+    "U977": {
+      "code": "U977",
+      "title": "晨光启新，赴约沁园——2026级迎新现场纪实",
+      "label": "晨光启新，赴约沁园——2026级迎新现场纪实",
+      "url": "https://qysy.nau.edu.cn/2026/0912/c1700a161590/page.htm",
+      "canonicalUrl": "https://qysy.nau.edu.cn/2026/0912/c1700a161590/page.htm",
+      "originalUrl": "https://qysy.nau.edu.cn/2026/0912/c1700a161590/page.htm",
+      "date": "2026-09-12",
+      "summary": "报道展示书院迎新点、搬运行李及宿舍领钥匙等场景。；文字说明宿管在楼前核对信息、发放钥匙、交待入住注意事项；公开图可帮助认识迎新与入楼的外部场景。",
+      "kind": "校园与住宿官方资料",
+      "population": "沁园书院2026级迎新；未确认为MPAcc或研究生",
+      "readingScope": "全文已读，且下载目视第55和58图；web turn198view3，图click返回超时后从同一原URL下载成功。",
+      "limitations": "两张所检图片都是书院入口或入口外的搬运场景，不是宿舍内部。；原文所指领钥匙段不能据配图倒推出某幢楼或房型；“keys”是研究缓存文件名而非画面已证明在发钥匙。；画面有计算机学院迎新标识，不将其改写成MPAcc专场。；不能把当次志愿服务和家长进入画面推为全年访客/留宿授权。",
+      "expansionBatch": "campus-housing-20261113"
+    },
+    "U978": {
+      "code": "U978",
+      "title": "异彩纷澄丨澄园书院2024-2025学年秋学期“军训进行时之内务风采秀”新生宿舍内务整理活动圆满落幕",
+      "label": "异彩纷澄丨澄园书院2024-2025学年秋学期“军训进行时之内务风采秀”新生宿舍内务整理活动圆满落幕",
+      "url": "https://cysy.nau.edu.cn/2024/0927/c4939a135882/page.htm",
+      "canonicalUrl": "https://cysy.nau.edu.cn/2024/0927/c4939a135882/page.htm",
+      "originalUrl": "https://cysy.nau.edu.cn/2024/0927/c4939a135882/page.htm",
+      "date": "2024-09-20",
+      "summary": "官方活动正文附新生宿舍内务整理前后照片，图片署名为澄园书院各新生宿舍。；已检两张整理后照片中，一张能看到床下书桌和上方分层书架；另一张能看到上床下桌家具、两处桌位、梯子与床栏。",
+      "kind": "校园与住宿官方资料",
+      "population": "澄园书院2024级新生军训内务活动；未直接注明学位阶段，未确认MPAcc",
+      "readingScope": "公开正文与图30、31已读、下载并目视；正文第33行标2024-09-20，不能按URL的09-27推日期。web turn208view0、turn209view0、turn209view1。",
+      "limitations": "作为2024历史实例，不能证明2026或2027房型、床位数、床宽与MPAcc分配。；照片取自整理活动，有布置选择；不是每间寝室的平均状态。；照片出现床帘，而现行F12公寓规定禁止另拉床帘；应在图注提示此差异，不推荐照搬安装。；第二张并未拍全房间，不凭两处桌位推断房间总人数；浴室、洗衣和空调未在画面中获得证明。",
+      "expansionBatch": "campus-housing-20261113"
+    },
+    "U979": {
+      "code": "U979",
+      "title": "南京审计大学学校简介",
+      "label": "南京审计大学学校简介",
+      "url": "https://nau.edu.cn/18/list.htm",
+      "canonicalUrl": "https://nau.edu.cn/18/list.htm",
+      "originalUrl": "https://nau.edu.cn/18/list.htm",
+      "date": null,
+      "summary": "学校现有浦口、莫愁两个校区。；学校设有润园、泽园、澄园、沁园书院，实行书院与学院双院制育人模式。；学校当前简介列会计学院等教学机构；会计专业与审计专业、学院与书院名称应分别辨认。",
+      "kind": "校园与住宿官方资料",
+      "population": "全校概况；不是某届MPAcc住宿安排",
+      "readingScope": "官方学校简介正文74—79行已读（web turn201view0）；只采校区、书院及机构结构，不采用排名、就业质量与师资规模宣传。",
+      "limitations": "页面没有单独发布时间，date留空；不以页面更新的在校生或教师人数作长期不变事实。；双院制概况不等于MPAcc研究生必归某书院，也不能由会计学院联系本科书院推定女生宿舍园区。；未确认某届MPAcc教学楼与床位分配，按本人通知和课表核对。",
+      "expansionBatch": "campus-housing-20261113"
+    },
+    "U980": {
+      "code": "U980",
+      "title": "图书馆资源分布",
+      "label": "图书馆资源分布",
+      "url": "https://lib.nau.edu.cn/zyfb/list.htm",
+      "canonicalUrl": "https://lib.nau.edu.cn/zyfb/list.htm",
+      "originalUrl": "https://lib.nau.edu.cn/zyfb/list.htm",
+      "date": null,
+      "summary": "目录列新书、专业图书、学科建设、外文资料与工具书等分区，财经类文献按索书号和馆藏分区查找。；信息共享空间服务包括专业数据库查询、网络信息浏览、多媒体与外语视听学习、打印复印；五楼信息咨询部提供数据库利用辅导等服务。；目录把研究生阅览室标为“功能调整”。",
+      "kind": "校园与住宿官方资料",
+      "population": "使用学校图书馆的读者，研究生相关空间仍需当前确认",
+      "readingScope": "官方资源分布表64—82行已读（web turn201view2）；重点核读F类财经书、信息共享空间、咨询及研究生室状态。",
+      "limitations": "页面无单独更新日期，不将目录视作实时座位、开放与预约系统。；另一官方入馆规则F17仍列四楼研究生阅览室7:30—22:00，两无日期页面口径不同，不能仅凭旧时刻保证该室当前功能和开放。；未据服务目录推定打印费用、预约权限或全天开放；出发前查当前公告与咨询。",
+      "expansionBatch": "campus-housing-20261113"
+    },
+    "U981": {
+      "code": "U981",
+      "title": "南审的夜",
+      "label": "南审的夜",
+      "url": "https://www.nau.edu.cn/_t505/2025/1120/c5756a151075/page.htm",
+      "canonicalUrl": "https://www.nau.edu.cn/_t505/2025/1120/c5756a151075/page.htm",
+      "originalUrl": "https://www.nau.edu.cn/_t505/2025/1120/c5756a151075/page.htm",
+      "date": "2025-11-20",
+      "summary": "官方校园风光栏目于2025年11月20日更新夜景图集。；所选图可见夜间道路、绿地、树木、斑马线与灯光，适合帮助读者形成校园空间印象。",
+      "kind": "校园与住宿官方资料",
+      "population": "校园环境图集；非住宿设施或通行规则",
+      "readingScope": "图集正文48—101行及所选原图已读、已下载直接视觉核对（web turn205view0，原图turn207view1）。",
+      "limitations": "夜景采用长曝光等摄影表达，不用亮度、车流轨迹推断日常照明强度、人流或通行安全。；未按照片推定某校门夜间开放、住宿园区、返寝路线和步行时长。；原文声明图文版权归学校，欢迎注明来源转载、未经授权勿商用；使用需保留学校与官微来源。",
+      "expansionBatch": "campus-housing-20261113"
+    },
+    "U982": {
+      "code": "U982",
+      "title": "敏知楼（官方校园风光）",
+      "label": "敏知楼（官方校园风光）",
+      "url": "https://www.nau.edu.cn/_t505/2019/0612/c5756a55798/page.htm",
+      "canonicalUrl": "https://www.nau.edu.cn/_t505/2019/0612/c5756a55798/page.htm",
+      "originalUrl": "https://www.nau.edu.cn/_t505/2019/0612/c5756a55798/page.htm",
+      "date": "2019-06-12",
+      "summary": "官方图片标题明确为敏知楼，发布时间2019年6月12日。；所选照片可见临水楼体、岸边绿地和建筑外观。",
+      "kind": "校园与住宿官方资料",
+      "population": "建筑外观历史图；可配现有F39办事地点阅读",
+      "readingScope": "官方敏知楼页面48—56行与原图已读、已下载直接视觉核对（web turn205view2/turn207view3）。",
+      "limitations": "2019年历史外观不说明2026门牌、开放入口、内部楼层或房间现状。；MPAcc事务位置仍引用已存在F39联系方式，不能从照片单独确认办公室。",
+      "expansionBatch": "campus-housing-20261113"
+    },
+    "U983": {
+      "code": "U983",
+      "title": "欢迎乘坐“一站式”澄园观光列车",
+      "label": "欢迎乘坐“一站式”澄园观光列车",
+      "url": "https://cysy.nau.edu.cn/2023/0506/c4939a113711/page.htm",
+      "canonicalUrl": "https://cysy.nau.edu.cn/2023/0506/c4939a113711/page.htm",
+      "originalUrl": "https://cysy.nau.edu.cn/2023/0506/c4939a113711/page.htm",
+      "date": "2023-05-05",
+      "summary": "图文介绍师生沟通、学生支持、导师工作室、学生服务、活动、澄典书屋及劳动实践厨房等社区空间。；澄典书屋照片可见门头、玻璃门、室内书架与入口环境。；原文同时介绍澄园操场和食堂，说明书院生活空间不只是一间寝室。",
+      "kind": "校园与住宿官方资料",
+      "population": "澄园书院社区空间介绍，主要为该书院学生生活报道；非MPAcc专属开放承诺",
+      "readingScope": "2023图文33—234行已读，澄典书屋原图已下载直接查看（web turn201view3/turn210view0）；本次只选无人物书屋入口图，不复用原文宿舍布置图。",
+      "limitations": "2023年介绍是历史空间样貌，不保证当前全部设施、开放时间、预约流程或研究生准入。；不把本科书院服务模式直接转为MPAcc研究生管理规则，也不由配图推断分楼、房型或寝室允许布置。；原文部分宿舍图出现床帘等旧布置，现行2026公寓F12规则优先；本次不选相关图。",
+      "expansionBatch": "campus-housing-20261113"
     }
   },
   "targetProfiles": [
@@ -43155,6 +43730,259 @@
         "地图POI搜索正文店名、地址与地铁出口说明已读，web turn192search2。"
       ],
       "official": false,
+      "screened_only": false
+    },
+    {
+      "key": "official:campus-housing-20261113:U974",
+      "ids": [
+        "U974"
+      ],
+      "title": "我校参加全省政府投资工程集中建设信息发布交流会并作报告",
+      "date_display": "2026-04-17",
+      "url": "https://news.nau.edu.cn/2026/0417/c5797a156234/page.htm",
+      "canonical_url": "https://news.nau.edu.cn/2026/0417/c5797a156234/page.htm",
+      "summary": "基建处回顾明确写浦口新建学生宿舍于2025年9月建成，增加住宿床位2600余个。；该回顾可以支持“已有新楼建成”，比此前计划建设的新闻更进一步；不能代表全校老楼都完成改造。",
+      "population": "浦口校区新建学生宿舍项目；未列入住年级、专业或性别",
+      "tips": [
+        "基建处回顾明确写浦口新建学生宿舍于2025年9月建成，增加住宿床位2600余个。",
+        "该回顾可以支持“已有新楼建成”，比此前计划建设的新闻更进一步；不能代表全校老楼都完成改造。"
+      ],
+      "comments": [],
+      "limits": "没有给出MPAcc女生分楼或床位分配，不能写会计专硕将入住新楼。；增床数是整个项目规模，不推每间住几人。；建成回顾没有逐项列出卫浴、电梯、床板尺寸、供电及门禁。",
+      "topic": "校园与住宿官方资料",
+      "use_status": "校园与住宿官方资料",
+      "reading_scopes": [
+        "公开正文全读，重点第27—31行，web turn198view0／turn196search0。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:campus-housing-20261113:U975",
+      "ids": [
+        "U975"
+      ],
+      "title": "校长陆华良调研新建学生宿舍项目",
+      "date_display": "2025-03-24",
+      "url": "https://news.nau.edu.cn/2025/0324/c5796a142148/page.htm",
+      "canonical_url": "https://news.nau.edu.cn/2025/0324/c5796a142148/page.htm",
+      "summary": "当时项目介绍为新建3栋宿舍，地上层数分别6、8、9层，并有地下空间和配套变电所。；项目介绍南北朝向、内廊为主的布局；现场调研涉及样板间设计和设施，但配图本身展示的是施工现场外部。",
+      "population": "浦口校区新建宿舍1—3号楼建设项目；不是宿舍分配通知",
+      "tips": [
+        "当时项目介绍为新建3栋宿舍，地上层数分别6、8、9层，并有地下空间和配套变电所。",
+        "项目介绍南北朝向、内廊为主的布局；现场调研涉及样板间设计和设施，但配图本身展示的是施工现场外部。"
+      ],
+      "comments": [],
+      "limits": "当时计划秋季交付，建成事实应与DH01后续报道合看。；项目编号1—3不能自动等同于现行行政楼号、MPAcc楼号或女生楼。；照片不是寝室室内、交付后外观或样板间照片，不用于证明床桌、卫浴、电梯配置。",
+      "topic": "校园与住宿官方资料",
+      "use_status": "校园与住宿官方资料",
+      "reading_scopes": [
+        "公开正文与唯一文章照片已读并目视，重点第27—32行，web turn198view1／turn206view0。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:campus-housing-20261113:U976",
+      "ids": [
+        "U976"
+      ],
+      "title": "【石榴籽观影】以坚守赴使命，以同心护家国——藏在光影里的爱国情怀",
+      "date_display": "2026-04-10",
+      "url": "https://xgc.nau.edu.cn/2026/0410/c3440a155965/page.htm",
+      "canonical_url": "https://xgc.nau.edu.cn/2026/0410/c3440a155965/page.htm",
+      "summary": "公开活动报道把2026年4月8日观影地点明确写为沁园新宿舍二栋109活动室。；可支持新宿舍内存在已开展集体活动的公共房间，帮助理解寝室之外还有社区活动空间。",
+      "population": "石榴籽工作室参与学生；未区分研究生或MPAcc",
+      "tips": [
+        "公开活动报道把2026年4月8日观影地点明确写为沁园新宿舍二栋109活动室。",
+        "可支持新宿舍内存在已开展集体活动的公共房间，帮助理解寝室之外还有社区活动空间。"
+      ],
+      "comments": [],
+      "limits": "一次活动不能证明该房间向每位学生随时开放、可自由预约或作为自习室使用。；不把109公开活动室写成学生个人房间，不推全楼有同样公共空间。；未取得可核室内活动照片；网页抓取仅显页尾图，不将其计作活动室实景。",
+      "topic": "校园与住宿官方资料",
+      "use_status": "校园与住宿官方资料",
+      "reading_scopes": [
+        "正文全读，活动时间地点位于第9行，web turn206view3。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:campus-housing-20261113:U977",
+      "ids": [
+        "U977"
+      ],
+      "title": "晨光启新，赴约沁园——2026级迎新现场纪实",
+      "date_display": "2026-09-12",
+      "url": "https://qysy.nau.edu.cn/2026/0912/c1700a161590/page.htm",
+      "canonical_url": "https://qysy.nau.edu.cn/2026/0912/c1700a161590/page.htm",
+      "summary": "报道展示书院迎新点、搬运行李及宿舍领钥匙等场景。；文字说明宿管在楼前核对信息、发放钥匙、交待入住注意事项；公开图可帮助认识迎新与入楼的外部场景。",
+      "population": "沁园书院2026级迎新；未确认为MPAcc或研究生",
+      "tips": [
+        "报道展示书院迎新点、搬运行李及宿舍领钥匙等场景。",
+        "文字说明宿管在楼前核对信息、发放钥匙、交待入住注意事项；公开图可帮助认识迎新与入楼的外部场景。"
+      ],
+      "comments": [],
+      "limits": "两张所检图片都是书院入口或入口外的搬运场景，不是宿舍内部。；原文所指领钥匙段不能据配图倒推出某幢楼或房型；“keys”是研究缓存文件名而非画面已证明在发钥匙。；画面有计算机学院迎新标识，不将其改写成MPAcc专场。；不能把当次志愿服务和家长进入画面推为全年访客/留宿授权。",
+      "topic": "校园与住宿官方资料",
+      "use_status": "校园与住宿官方资料",
+      "reading_scopes": [
+        "全文已读，且下载目视第55和58图；web turn198view3，图click返回超时后从同一原URL下载成功。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:campus-housing-20261113:U978",
+      "ids": [
+        "U978"
+      ],
+      "title": "异彩纷澄丨澄园书院2024-2025学年秋学期“军训进行时之内务风采秀”新生宿舍内务整理活动圆满落幕",
+      "date_display": "2024-09-20",
+      "url": "https://cysy.nau.edu.cn/2024/0927/c4939a135882/page.htm",
+      "canonical_url": "https://cysy.nau.edu.cn/2024/0927/c4939a135882/page.htm",
+      "summary": "官方活动正文附新生宿舍内务整理前后照片，图片署名为澄园书院各新生宿舍。；已检两张整理后照片中，一张能看到床下书桌和上方分层书架；另一张能看到上床下桌家具、两处桌位、梯子与床栏。",
+      "population": "澄园书院2024级新生军训内务活动；未直接注明学位阶段，未确认MPAcc",
+      "tips": [
+        "官方活动正文附新生宿舍内务整理前后照片，图片署名为澄园书院各新生宿舍。",
+        "已检两张整理后照片中，一张能看到床下书桌和上方分层书架；另一张能看到上床下桌家具、两处桌位、梯子与床栏。"
+      ],
+      "comments": [],
+      "limits": "作为2024历史实例，不能证明2026或2027房型、床位数、床宽与MPAcc分配。；照片取自整理活动，有布置选择；不是每间寝室的平均状态。；照片出现床帘，而现行F12公寓规定禁止另拉床帘；应在图注提示此差异，不推荐照搬安装。；第二张并未拍全房间，不凭两处桌位推断房间总人数；浴室、洗衣和空调未在画面中获得证明。",
+      "topic": "校园与住宿官方资料",
+      "use_status": "校园与住宿官方资料",
+      "reading_scopes": [
+        "公开正文与图30、31已读、下载并目视；正文第33行标2024-09-20，不能按URL的09-27推日期。web turn208view0、turn209view0、turn209view1。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:campus-housing-20261113:U979",
+      "ids": [
+        "U979"
+      ],
+      "title": "南京审计大学学校简介",
+      "date_display": null,
+      "url": "https://nau.edu.cn/18/list.htm",
+      "canonical_url": "https://nau.edu.cn/18/list.htm",
+      "summary": "学校现有浦口、莫愁两个校区。；学校设有润园、泽园、澄园、沁园书院，实行书院与学院双院制育人模式。；学校当前简介列会计学院等教学机构；会计专业与审计专业、学院与书院名称应分别辨认。",
+      "population": "全校概况；不是某届MPAcc住宿安排",
+      "tips": [
+        "学校现有浦口、莫愁两个校区。",
+        "学校设有润园、泽园、澄园、沁园书院，实行书院与学院双院制育人模式。",
+        "学校当前简介列会计学院等教学机构；会计专业与审计专业、学院与书院名称应分别辨认。"
+      ],
+      "comments": [],
+      "limits": "页面没有单独发布时间，date留空；不以页面更新的在校生或教师人数作长期不变事实。；双院制概况不等于MPAcc研究生必归某书院，也不能由会计学院联系本科书院推定女生宿舍园区。；未确认某届MPAcc教学楼与床位分配，按本人通知和课表核对。",
+      "topic": "校园与住宿官方资料",
+      "use_status": "校园与住宿官方资料",
+      "reading_scopes": [
+        "官方学校简介正文74—79行已读（web turn201view0）；只采校区、书院及机构结构，不采用排名、就业质量与师资规模宣传。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:campus-housing-20261113:U980",
+      "ids": [
+        "U980"
+      ],
+      "title": "图书馆资源分布",
+      "date_display": null,
+      "url": "https://lib.nau.edu.cn/zyfb/list.htm",
+      "canonical_url": "https://lib.nau.edu.cn/zyfb/list.htm",
+      "summary": "目录列新书、专业图书、学科建设、外文资料与工具书等分区，财经类文献按索书号和馆藏分区查找。；信息共享空间服务包括专业数据库查询、网络信息浏览、多媒体与外语视听学习、打印复印；五楼信息咨询部提供数据库利用辅导等服务。；目录把研究生阅览室标为“功能调整”。",
+      "population": "使用学校图书馆的读者，研究生相关空间仍需当前确认",
+      "tips": [
+        "目录列新书、专业图书、学科建设、外文资料与工具书等分区，财经类文献按索书号和馆藏分区查找。",
+        "信息共享空间服务包括专业数据库查询、网络信息浏览、多媒体与外语视听学习、打印复印；五楼信息咨询部提供数据库利用辅导等服务。",
+        "目录把研究生阅览室标为“功能调整”。"
+      ],
+      "comments": [],
+      "limits": "页面无单独更新日期，不将目录视作实时座位、开放与预约系统。；另一官方入馆规则F17仍列四楼研究生阅览室7:30—22:00，两无日期页面口径不同，不能仅凭旧时刻保证该室当前功能和开放。；未据服务目录推定打印费用、预约权限或全天开放；出发前查当前公告与咨询。",
+      "topic": "校园与住宿官方资料",
+      "use_status": "校园与住宿官方资料",
+      "reading_scopes": [
+        "官方资源分布表64—82行已读（web turn201view2）；重点核读F类财经书、信息共享空间、咨询及研究生室状态。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:campus-housing-20261113:U981",
+      "ids": [
+        "U981"
+      ],
+      "title": "南审的夜",
+      "date_display": "2025-11-20",
+      "url": "https://www.nau.edu.cn/_t505/2025/1120/c5756a151075/page.htm",
+      "canonical_url": "https://www.nau.edu.cn/_t505/2025/1120/c5756a151075/page.htm",
+      "summary": "官方校园风光栏目于2025年11月20日更新夜景图集。；所选图可见夜间道路、绿地、树木、斑马线与灯光，适合帮助读者形成校园空间印象。",
+      "population": "校园环境图集；非住宿设施或通行规则",
+      "tips": [
+        "官方校园风光栏目于2025年11月20日更新夜景图集。",
+        "所选图可见夜间道路、绿地、树木、斑马线与灯光，适合帮助读者形成校园空间印象。"
+      ],
+      "comments": [],
+      "limits": "夜景采用长曝光等摄影表达，不用亮度、车流轨迹推断日常照明强度、人流或通行安全。；未按照片推定某校门夜间开放、住宿园区、返寝路线和步行时长。；原文声明图文版权归学校，欢迎注明来源转载、未经授权勿商用；使用需保留学校与官微来源。",
+      "topic": "校园与住宿官方资料",
+      "use_status": "校园与住宿官方资料",
+      "reading_scopes": [
+        "图集正文48—101行及所选原图已读、已下载直接视觉核对（web turn205view0，原图turn207view1）。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:campus-housing-20261113:U982",
+      "ids": [
+        "U982"
+      ],
+      "title": "敏知楼（官方校园风光）",
+      "date_display": "2019-06-12",
+      "url": "https://www.nau.edu.cn/_t505/2019/0612/c5756a55798/page.htm",
+      "canonical_url": "https://www.nau.edu.cn/_t505/2019/0612/c5756a55798/page.htm",
+      "summary": "官方图片标题明确为敏知楼，发布时间2019年6月12日。；所选照片可见临水楼体、岸边绿地和建筑外观。",
+      "population": "建筑外观历史图；可配现有F39办事地点阅读",
+      "tips": [
+        "官方图片标题明确为敏知楼，发布时间2019年6月12日。",
+        "所选照片可见临水楼体、岸边绿地和建筑外观。"
+      ],
+      "comments": [],
+      "limits": "2019年历史外观不说明2026门牌、开放入口、内部楼层或房间现状。；MPAcc事务位置仍引用已存在F39联系方式，不能从照片单独确认办公室。",
+      "topic": "校园与住宿官方资料",
+      "use_status": "校园与住宿官方资料",
+      "reading_scopes": [
+        "官方敏知楼页面48—56行与原图已读、已下载直接视觉核对（web turn205view2/turn207view3）。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:campus-housing-20261113:U983",
+      "ids": [
+        "U983"
+      ],
+      "title": "欢迎乘坐“一站式”澄园观光列车",
+      "date_display": "2023-05-05",
+      "url": "https://cysy.nau.edu.cn/2023/0506/c4939a113711/page.htm",
+      "canonical_url": "https://cysy.nau.edu.cn/2023/0506/c4939a113711/page.htm",
+      "summary": "图文介绍师生沟通、学生支持、导师工作室、学生服务、活动、澄典书屋及劳动实践厨房等社区空间。；澄典书屋照片可见门头、玻璃门、室内书架与入口环境。；原文同时介绍澄园操场和食堂，说明书院生活空间不只是一间寝室。",
+      "population": "澄园书院社区空间介绍，主要为该书院学生生活报道；非MPAcc专属开放承诺",
+      "tips": [
+        "图文介绍师生沟通、学生支持、导师工作室、学生服务、活动、澄典书屋及劳动实践厨房等社区空间。",
+        "澄典书屋照片可见门头、玻璃门、室内书架与入口环境。",
+        "原文同时介绍澄园操场和食堂，说明书院生活空间不只是一间寝室。"
+      ],
+      "comments": [],
+      "limits": "2023年介绍是历史空间样貌，不保证当前全部设施、开放时间、预约流程或研究生准入。；不把本科书院服务模式直接转为MPAcc研究生管理规则，也不由配图推断分楼、房型或寝室允许布置。；原文部分宿舍图出现床帘等旧布置，现行2026公寓F12规则优先；本次不选相关图。",
+      "topic": "校园与住宿官方资料",
+      "use_status": "校园与住宿官方资料",
+      "reading_scopes": [
+        "2023图文33—234行已读，澄典书屋原图已下载直接查看（web turn201view3/turn210view0）；本次只选无人物书屋入口图，不复用原文宿舍布置图。"
+      ],
+      "official": true,
       "screened_only": false
     }
   ],
@@ -54596,10 +55424,135 @@
             "textAltered": false
           }
         ]
+      },
+      {
+        "id": "life-housing-chengyuan-2024",
+        "title": "澄园历史房间 · 上床下桌与通道",
+        "chapterIds": [
+          "life-03"
+        ],
+        "sourceCode": "U978",
+        "sourceUrl": "https://cysy.nau.edu.cn/2024/0927/c4939a135882/page.htm",
+        "sourceTitle": "澄园2024级新生内务风采秀",
+        "sourceAuthor": "南京审计大学澄园书院；图片：各新生宿舍",
+        "sourceDate": "2024-09-20",
+        "kind": "housing",
+        "primary": true,
+        "expansionBatch": "campus-housing-20261113",
+        "scopeNote": "2024级新生军训内务活动中的历史房间局部，未确认MPAcc。可见床桌、梯子、床栏与通道；不推总人数和床宽。图中床帘不代表现行允许，2026公寓规定禁止另拉床帘。",
+        "images": [
+          {
+            "src": "./evidence/life/nau-chengyuan-dorm-2024-layout.jpg",
+            "width": 589,
+            "height": 786,
+            "bytes": 78962,
+            "sha256": "8704b6c8686763cfe25f2ce3291a89d23c6faca0b39e280cc8ad5e48a23aea0d",
+            "kind": "official-source-image",
+            "originalImageUrl": "https://cysy.nau.edu.cn/_upload/article/images/cc/27/7e0bbbad4afb892241e77c6bdc28/e2e44d0a-f680-48a2-a69d-eaa4e0d3ee25.jpg",
+            "alt": "澄园2024历史寝室上床下桌、梯子与局部通道实拍",
+            "caption": "澄园2024历史实拍：上床下桌、梯子与局部通道。照片中的床帘不适用于现行公寓规则，请勿照搬安装。",
+            "visualReview": "已直接查看原图，无人物及清晰私人信息；可见床桌、梯子与通道。原始字节未修改。"
+          }
+        ]
+      },
+      {
+        "id": "campus-night-road-2025",
+        "title": "官网《南审的夜》中的道路与绿地夜景",
+        "chapterIds": [
+          "life-16"
+        ],
+        "sourceCode": "U981",
+        "sourceUrl": "https://www.nau.edu.cn/_t505/2025/1120/c5756a151075/page.htm",
+        "sourceTitle": "南审的夜",
+        "sourceAuthor": "南京审计大学校园风光栏目／南审官微原创",
+        "sourceDate": "2025-11-20",
+        "kind": "campus",
+        "scopeNote": "不指认照片中的具体园区；摄影灯光不作为夜间安全和通行保证。",
+        "images": [
+          {
+            "src": "./evidence/life/nau-campus-night-road-2025.jpg",
+            "width": 1687,
+            "height": 1095,
+            "bytes": 449574,
+            "sha256": "c613271d45b8f113a509163fec89f4f741a037acf3a7a387cb8519cb2a9e3d3c",
+            "caption": "官网《南审的夜》中的道路与绿地夜景（2025年图集）。",
+            "alt": "校园夜间道路、绿地和灯光的俯视实景",
+            "originalImageUrl": "https://www.nau.edu.cn/_upload/article/images/ad/ae/41a499b94c02b722612aaf49ae41/e0298c98-5433-4ed6-973b-74245ddb1aa1.jpg",
+            "kind": "official-source-image",
+            "visualReview": "能看见道路、绿地、树木与斑马线；没有可识别人脸。 已用view_image直接查看，原始字节未修改。",
+            "whatCanShow": "能看见道路、绿地、树木与斑马线；没有可识别人脸。",
+            "cannotInfer": "不指认照片中的具体园区；摄影灯光不作为夜间安全和通行保证。"
+          }
+        ],
+        "expansionBatch": "campus-housing-20261113"
+      },
+      {
+        "id": "campus-minzhi-2019",
+        "title": "敏知楼临水外观",
+        "chapterIds": [
+          "life-16",
+          "life-11"
+        ],
+        "sourceCode": "U982",
+        "sourceUrl": "https://www.nau.edu.cn/_t505/2019/0612/c5756a55798/page.htm",
+        "sourceTitle": "敏知楼（官方校园风光）",
+        "sourceAuthor": "南京审计大学校园风光栏目",
+        "sourceDate": "2019-06-12",
+        "kind": "campus",
+        "scopeNote": "不说明当前办事入口与内部门牌，具体事务仍看F39。",
+        "images": [
+          {
+            "src": "./evidence/life/nau-campus-minzhi-building-2019.jpg",
+            "width": 1711,
+            "height": 1140,
+            "bytes": 462411,
+            "sha256": "c2b07080c9f3c10f80a45f62ec0e826cad5d7581178f94004c0ee765699d4603",
+            "caption": "敏知楼临水外观（官网2019年图片，保留原貌）。",
+            "alt": "南京审计大学敏知楼临水外观历史照片",
+            "originalImageUrl": "https://www.nau.edu.cn/_upload/article/images/be/d5/b732020943bda5772404b2299d2b/edc6a724-de85-4bf7-a744-96597b684b18.jpg",
+            "kind": "official-source-image",
+            "visualReview": "官方页面标题指认敏知楼；可见楼体、水面与岸边植被；无人脸、房号或私人信息。 已用view_image直接查看，原始字节未修改。",
+            "whatCanShow": "官方页面标题指认敏知楼；可见楼体、水面与岸边植被；无人脸、房号或私人信息。",
+            "cannotInfer": "不说明当前办事入口与内部门牌，具体事务仍看F39。"
+          }
+        ],
+        "expansionBatch": "campus-housing-20261113"
+      },
+      {
+        "id": "campus-chengdian-2023",
+        "title": "澄典书屋入口与书架",
+        "chapterIds": [
+          "life-16",
+          "life-07"
+        ],
+        "sourceCode": "U983",
+        "sourceUrl": "https://cysy.nau.edu.cn/2023/0506/c4939a113711/page.htm",
+        "sourceTitle": "欢迎乘坐“一站式”澄园观光列车",
+        "sourceAuthor": "南京审计大学澄园书院；摄影：张玉优、澄园书院",
+        "sourceDate": "2023-05-05",
+        "kind": "campus",
+        "scopeNote": "不是寝室内景，也不代表MPAcc免费开放或全天可用空间。",
+        "images": [
+          {
+            "src": "./evidence/life/nau-campus-chengdian-bookhouse-2023.jpg",
+            "width": 589,
+            "height": 441,
+            "bytes": 80004,
+            "sha256": "7cd3c759294ad7a02fa77423d95bffeab5e6d290920ebfcd032866278f385b2b",
+            "caption": "澄典书屋入口与书架（澄园书院2023年介绍图）。",
+            "alt": "澄园书院澄典书屋入口及书架",
+            "originalImageUrl": "https://cysy.nau.edu.cn/_upload/article/images/1c/51/d999a54249488fbc91849a90ff05/39b871ab-b791-4d48-8995-7f82c7e26dcd.jpg",
+            "kind": "official-source-image",
+            "visualReview": "原图可见澄典书屋招牌、玻璃入口和书架；无可识别人物或私人信息。 已用view_image直接查看，原始字节未修改。",
+            "whatCanShow": "原图可见澄典书屋招牌、玻璃入口和书架；无可识别人物或私人信息。",
+            "cannotInfer": "不是寝室内景，也不代表MPAcc免费开放或全天可用空间。"
+          }
+        ],
+        "expansionBatch": "campus-housing-20261113"
       }
     ],
     "limits": [
-      "新增14张原始来源图片，来自8篇小红书生活/周边帖与2个学校官网页面；另外复用R317的5张既有真实浏览器截图。原图和浏览器截图分别标注，不以图片张数虚增来源数或学生评价条数。",
+      "来源原图与浏览器截图分别标注；同一来源的多张照片只计一个来源，不以图片张数增加学生评价或体验条数。图片的年份、学段与空间用途见各图注。",
       "小红书图片来自此次实际读取页面的原图元数据，已下载为本地文件，字节保持不变；未伪造、重绘或生成截图。CDN链接仅作溯源，网站应使用本地src。",
       "已取得8篇帖的23张图片，但每篇元数据最多提供前4张；精选12张入库。不宣称看完全部相册或全部评论，评论此次显示Loading，未重新展开。",
       "L10、P02、P16此次读取超时，未据此增加配图或声称审读。",
@@ -54610,12 +55563,12 @@
       "2019中文官网地图原始文件约8.8MB，建议惰性加载，并保留查看原图功能。"
     ],
     "counts": {
-      "entries": 12,
-      "newSourceOriginalImages": 15,
+      "entries": 16,
+      "newSourceOriginalImages": 19,
       "reusedBrowserScreenshots": 5,
-      "images": 20,
-      "sources": 12,
-      "chaptersWithImages": 9
+      "images": 24,
+      "sources": 16,
+      "chaptersWithImages": 10
     }
   },
   "studentStart": {
@@ -54732,6 +55685,14 @@
       }
     ],
     "quickLinks": [
+      {
+        "label": "先认识校园",
+        "chapterId": "life-16"
+      },
+      {
+        "label": "宿舍环境与实拍",
+        "chapterId": "life-03"
+      },
       {
         "label": "学费与预算",
         "chapterId": "life-13"
