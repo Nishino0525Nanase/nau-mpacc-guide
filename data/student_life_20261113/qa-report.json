@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-13",
+  "site": "https://nishino0525nanase.github.io/nau-mpacc-guide/",
+  "publishedCommit": "a71830afaf5e80bfc0c3e0978eb6970fb34c2cf4",
+  "pagesBuild": "built",
+  "tests": {
+    "total": 117,
+    "passed": 117
+  },
+  "liveFiles": {
+    "index.html": {
+      "matchesPublishedBytes": true,
+      "sha256": "ae720745488dc05bc722553d37d3bc4f754387288969ec228269358de071f325"
+    },
+    "app.js": {
+      "matchesPublishedBytes": true,
+      "sha256": "cd64fb318a3a795070732403bec0663f9bdae3b323e531f60ad07f18e4b84e57"
+    },
+    "style.css": {
+      "matchesPublishedBytes": true,
+      "sha256": "ecdd1e8ed2bb16dbb8b17580b129a5bee5b65519781c79eba475008d0a171d0d"
+    },
+    "sw.js": {
+      "matchesPublishedBytes": true,
+      "sha256": "beb6118abfdf9ed073e659583ee6c586b1aef1bd7c209ae3120d8b29791d8638"
+    },
+    "data/site-data.json": {
+      "matchesPublishedBytes": true,
+      "sha256": "57ab3b2361ced4d452d46d342ac07c28edc5ac49e5dcab7a066c7bbbdb2c3a2e"
+    }
+  },
+  "browser": {
+    "viewportWidth": 1363,
+    "pageWidth": 1348,
+    "chapters": 14,
+    "verified": [
+      "14章目录与127条可见来源概览",
+      "入住当天与研一阶段切换",
+      "第十三章预算入口与政策年份",
+      "第十四章标题及提示块版面",
+      "实习清单位于资源前且可勾选"
+    ],
+    "screenshot": "qa/student-life-20261113.jpg",
+    "limits": [
+      "本地预览通道属于另一项目，未更改其服务；本次浏览器验收使用已发布站点。",
+      "未完成手机真机或移动视口的浏览器视觉验收。"
+    ]
+  }
+}
