@@ -2,7 +2,7 @@
 'use strict';
 const BASE = new URL('./', self.location.href);
 const CACHE_PREFIX = `nau-guide:${BASE.pathname}:`;
-const CACHE_NAME = `${CACHE_PREFIX}1.0.22-plain-copy-20261113`;
+const CACHE_NAME = `${CACHE_PREFIX}1.0.23-mentor-outcomes-20261113`;
 const DATA_PATH = 'data/site-data.json';
 const SHELL_PATHS = [
   './', 'index.html', 'app.js', 'music.js', 'life-images.js', 'style.css', 'install.js', 'favicon.svg',
@@ -10,6 +10,7 @@ const SHELL_PATHS = [
 ];
 const SHELL = new Set(SHELL_PATHS.map(path => new URL(path, BASE).href));
 const DATA_URL = new URL(DATA_PATH, BASE).href;
+const ASSET_REVISIONS = {'app.js':'outcomes1', 'style.css':'outcomes1', 'life-images.js':'campus1'};
 
 function classify(request) {
   if (request.method !== 'GET') return null;
@@ -18,6 +19,7 @@ function classify(request) {
   const isDocument = url.pathname === BASE.pathname || url.pathname === `${BASE.pathname}index.html`;
   for (const [key, value] of url.searchParams) {
     if (key === 'v' && value === 'edition1') continue;
+    if (key === 'v' && value === ASSET_REVISIONS[url.pathname.slice(BASE.pathname.length)]) continue;
     if (isDocument && key === 'exclude_self' && value === '1') continue;
     return null;
   }
