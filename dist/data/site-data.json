@@ -11,8 +11,8 @@
       "feedbackRecords": 21,
       "screenedSources": 15,
       "unreadLeads": 6,
-      "studentReviewRecords": 41,
-      "mentorsWithStudentReviews": 20,
+      "studentReviewRecords": 44,
+      "mentorsWithStudentReviews": 22,
       "studentOutcomes": 28
     },
     "socialPostCategories": {
@@ -661,16 +661,16 @@
       "batch": "student-reviews-2026-11",
       "teachersSearched": 34,
       "teacherCount": 34,
-      "teachersWithAttributableReviews": 20,
+      "teachersWithAttributableReviews": 22,
       "coverageCounts": {
-        "not_found": 14,
-        "weak_mentions": 3,
+        "weak_mentions": 5,
         "course_only": 9,
         "mpacc_guidance": 3,
         "guidance_unspecified": 4,
+        "not_found": 12,
         "non_mpacc_guidance": 1
       },
-      "reviewRecords": 41,
+      "reviewRecords": 44,
       "newSourceCodes": [
         "R701",
         "R702",
@@ -681,7 +681,7 @@
       "newOfficialEvidenceCount": 3,
       "updatedExistingSourceCount": 7,
       "newPostCountNote": "同帖新增评论、重新展开与官方访谈重读均不增加来源或帖子数。",
-      "attributionRule": "完整姓名及明确上下文才归名；缩写、单姓和名单唯一匹配不足以归名。",
+      "attributionRule": "姓名缩写按当前南审导师语境建立对照；多候选保留歧义，评价另按接触身份、具体内容与来源标注。",
       "notFoundMeaning": "未检得不等于没有评价，不据此打分、排序或作避雷结论。",
       "round7": {
         "newSources": 1,
@@ -807,6 +807,14 @@
       "records": 28,
       "linkedMentorRecords": 16,
       "distinctStudents": 27
+    },
+    "mentorAliasResearch": {
+      "date": "2026-11-13",
+      "rosterNames": 34,
+      "initialGroups": 31,
+      "namedGeneralRecords": 3,
+      "newFirsthandRecords": 0,
+      "newXhsPosts": 0
     }
   },
   "directions": [
@@ -930,11 +938,11 @@
           "url": "https://account.nau.edu.cn/_s23/_t40/2014/0310/c820a6766/page.psp"
         }
       ],
-      "feedbackStatus": "未找到可归属的个人评价",
+      "feedbackStatus": "原帖提名 · 暂缺具体经历",
       "feedbackDetails": {
-        "status": "未找到可归属的个人评价",
-        "basis": "未取得可归属的个人体验；单姓/缩写线索不转实名",
-        "limits": "X01的“董”、d b r提名无全名确认和具体指导过程；单姓分支跟评称认识学长但属转述。；冬日来信全名提到董必荣当时职务，仅身份事实，不是指导评价。；搜索主要返回任职、获奖与官方履历；未找到近年直系MPAcc亲历。；尚缺近两届明确MPAcc直系学生的具体日常指导经历。"
+        "status": "原帖提名 · 暂缺具体经历",
+        "basis": "DBR已对应董必荣；现有评论是提名，尚缺具体指导经历。",
+        "limits": "评论完整原句或接触细节缺失；提名不代表已核实的指导体验。"
       },
       "quotaStatus": "未公开/须向当年学院双选通知及导师本人核实",
       "notes": "现个人页未列个人邮箱。旧2017官方页的历史邮箱另存，不能把页脚211815当邮箱。",
@@ -950,10 +958,51 @@
       "rosterSourceDate": "2026-01-08",
       "sourceCodes": [],
       "studentReviews": {
-        "coverageStatus": "not_found",
-        "coverageLabel": "未找到可归属的个人评价",
-        "summary": "未取得可归属的个人体验；单姓/缩写线索不转实名",
-        "reviews": [],
+        "coverageStatus": "weak_mentions",
+        "coverageLabel": "原帖提名 · 暂缺具体经历",
+        "summary": "DBR已对应董必荣；现有评论是提名，尚缺具体指导经历。",
+        "reviews": [
+          {
+            "sourceIds": [
+              "X01"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+            "narrator": "评论者（昵称未留存）",
+            "date": null,
+            "postDate": "2025-04-02",
+            "degree": "未说明",
+            "relationship": "未说明本人接触关系",
+            "experienceType": "general",
+            "firsthand": null,
+            "polarity": "neutral",
+            "text": "选导求助帖的评论出现“d b r”提名，未说明本人接触关系或具体指导过程。",
+            "attribution": {
+              "status": "confirmed",
+              "alias": "d b r",
+              "reason": "南审会计专硕选导帖语境中，按当前名录姓名缩写对应；接触身份与具体内容另行标注。"
+            },
+            "contextAssessment": {
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "displayLabel": "原帖提名 · 未说明具体经历",
+              "status": "alias_attitude_without_experience",
+              "batch": "mentor-aliases-20261113"
+            },
+            "id": "sr-alias-20261113-dbr",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "sourceTitle": "南审mpacc导师求推荐 · 缩写评论",
+            "year": null,
+            "specifics": [],
+            "limits": [
+              "这是既有阅读摘要，不是完整评论逐字引文。",
+              "评论作者、日期及接触身份未保留；不能据此推断指导风格或推荐强度。"
+            ],
+            "readingScope": [
+              "复核此前已读评论摘要；本次未重新取得该层评论逐字稿。"
+            ],
+            "readThisRound": false
+          }
+        ],
         "recommendationPoints": [],
         "concerns": [],
         "verificationQuestions": [
@@ -961,10 +1010,7 @@
           "结合“智力资本财务与会计、行政事业单位内部控制”，请近两届直系MPAcc举一次本人收到的选题或改稿反馈，并说明联系频率、反馈周期和实习时的论文节点。"
         ],
         "gaps": [
-          "X01的“董”、d b r提名无全名确认和具体指导过程；单姓分支跟评称认识学长但属转述。",
-          "冬日来信全名提到董必荣当时职务，仅身份事实，不是指导评价。",
-          "现有公开资料以任职、获奖与履历为主，尚缺近年直系MPAcc亲历。",
-          "尚缺近两届明确MPAcc直系学生的具体日常指导经历。"
+          "评论者学位、年级和本人接触关系未说明；尚缺近年直系MPAcc的具体指导经历。"
         ],
         "aliasesTried": [
           "董必荣",
@@ -981,10 +1027,7 @@
           ],
           "readingScopes": [],
           "gaps": [
-            "X01的“董”、d b r提名无全名确认和具体指导过程；单姓分支跟评称认识学长但属转述。",
-            "冬日来信全名提到董必荣当时职务，仅身份事实，不是指导评价。",
-            "搜索主要返回任职、获奖与官方履历；未找到近年直系MPAcc亲历。",
-            "尚缺近两届明确MPAcc直系学生的具体日常指导经历。"
+            "评论者学位、年级和本人接触关系未说明；尚缺近年直系MPAcc的具体指导经历。"
           ],
           "note": "只说明实际检索和阅读边界，不声称覆盖全网或完整平台评论。"
         },
@@ -1773,11 +1816,11 @@
           "url": "https://account.nau.edu.cn/2017/0225/c8880a99566/page.htm"
         }
       ],
-      "feedbackStatus": "未找到可归属的个人评价",
+      "feedbackStatus": "原帖提名 · 暂缺具体经历",
       "feedbackDetails": {
-        "status": "未找到可归属的个人评价",
-        "basis": "仅发现MDL弱提名；未确认对象及本人指导经历",
-        "limits": "X01 douzie的MDL正面提名无全名确认、无具体行为；不能只凭名单与拼音映射。；全名和MDL网页检索多为任职、课程、访企拓岗，均非个人学生评价。；小红书全名搜索主要回到X01/X02/M01，未获得新的实名亲历。；尚缺近两届明确MPAcc直系学生的具体日常指导经历。"
+        "status": "原帖提名 · 暂缺具体经历",
+        "basis": "MDL已对应马德林；现有评论是提名，尚缺具体指导经历。",
+        "limits": "评论完整原句或接触细节缺失；提名不代表已核实的指导体验。"
       },
       "quotaStatus": "未公开/须向当年学院双选通知及导师本人核实",
       "notes": "官方现教师页。",
@@ -1788,10 +1831,53 @@
       "rosterSourceDate": "2026-01-08",
       "sourceCodes": [],
       "studentReviews": {
-        "coverageStatus": "not_found",
-        "coverageLabel": "未找到可归属的个人评价",
-        "summary": "仅发现MDL弱提名；未确认对象及本人指导经历",
-        "reviews": [],
+        "coverageStatus": "weak_mentions",
+        "coverageLabel": "原帖提名 · 暂缺具体经历",
+        "summary": "MDL已对应马德林；现有评论是提名，尚缺具体指导经历。",
+        "reviews": [
+          {
+            "sourceIds": [
+              "X01"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+            "narrator": "douzie",
+            "date": null,
+            "postDate": "2025-04-02",
+            "degree": "未说明",
+            "relationship": "未说明本人接触关系",
+            "experienceType": "general",
+            "firsthand": null,
+            "polarity": "positive",
+            "text": "选导求助帖中，douzie以MDL作正面提名，未给出具体行为或本人指导关系。",
+            "attribution": {
+              "status": "confirmed",
+              "alias": "MDL",
+              "reason": "南审会计专硕选导帖语境中，按当前名录姓名缩写对应；接触身份与具体内容另行标注。"
+            },
+            "contextAssessment": {
+              "status": "alias_attitude_without_experience",
+              "displayLabel": "原帖提名 · 未说明具体经历",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "未交代本人指导关系、具体行为与结果；不将态度词改写成真实相处或MPAcc培养结论。",
+              "batch": "mentor-aliases-20261113"
+            },
+            "id": "sr-alias-20261113-mdl",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "sourceTitle": "南审mpacc导师求推荐 · 缩写评论",
+            "year": null,
+            "specifics": [],
+            "limits": [
+              "来自既有X01同帖的缩写内容；不增加帖子数量。",
+              "只表示该评论者的未详述态度，不能据此概括全部学生或推定导师指导方式。",
+              "原句未留存，只采用已读摘要，不添加引号假装逐字引用。"
+            ],
+            "readingScope": [
+              "复核本地reviews_group_a.json马德林段及evidence-index.xlsx同一摘记；本轮未重新读到该层评论原句。"
+            ],
+            "readThisRound": false
+          }
+        ],
         "recommendationPoints": [],
         "concerns": [],
         "verificationQuestions": [
@@ -1799,10 +1885,7 @@
           "结合“高管激励、财务治理与管理控制”，请近两届直系MPAcc举一次本人收到的选题或改稿反馈，并说明联系频率、反馈周期和实习时的论文节点。"
         ],
         "gaps": [
-          "X01 douzie的MDL正面提名无全名确认、无具体行为；不能只凭名单与拼音映射。",
-          "全名和MDL网页检索多为任职、课程、访企拓岗，均非个人学生评价。",
-          "X01、X02、M01尚未提供可实名归属的具体指导经历。",
-          "尚缺近两届明确MPAcc直系学生的具体日常指导经历。"
+          "评论者学位、年级和本人接触关系未说明；尚缺近年直系MPAcc的具体指导经历。"
         ],
         "aliasesTried": [
           "马德林",
@@ -1817,10 +1900,7 @@
           ],
           "readingScopes": [],
           "gaps": [
-            "X01 douzie的MDL正面提名无全名确认、无具体行为；不能只凭名单与拼音映射。",
-            "全名和MDL网页检索多为任职、课程、访企拓岗，均非个人学生评价。",
-            "小红书全名搜索主要回到X01/X02/M01，未获得新的实名亲历。",
-            "尚缺近两届明确MPAcc直系学生的具体日常指导经历。"
+            "评论者学位、年级和本人接触关系未说明；尚缺近年直系MPAcc的具体指导经历。"
           ],
           "note": "只说明实际检索和阅读边界，不声称覆盖全网或完整平台评论。"
         },
@@ -4091,6 +4171,67 @@
             ],
             "readingScope": "通过网页open实际阅读全文，核对页面显示日期、浦军班级身份、2025年11月瓶颈过程及三位老师各自分工；未只读检索摘要。",
             "readThisRound": true
+          },
+          {
+            "sourceIds": [
+              "X01"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+            "narrator": "粥Zhou",
+            "date": "2025-04-02",
+            "postDate": "2025-04-02",
+            "degree": "未说明",
+            "relationship": "未说明本人接触关系",
+            "experienceType": "general",
+            "firsthand": null,
+            "polarity": "negative",
+            "text": "粥Zhou的评论表达不建议选择YBY的态度；可见部分未说明原因、学位或本人接触关系。",
+            "attribution": {
+              "status": "confirmed",
+              "alias": "YBY",
+              "reason": "南审会计专硕选导帖语境中，按当前名录姓名缩写对应；接触身份与具体内容另行标注。"
+            },
+            "contextAssessment": {
+              "status": "alias_attitude_without_experience",
+              "displayLabel": "选择态度 · 未说明理由或经历",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "未交代本人指导关系、具体行为与结果；不将态度词改写成真实相处或MPAcc培养结论。",
+              "batch": "mentor-aliases-20261113"
+            },
+            "id": "sr-alias-20261113-yby",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "sourceTitle": "南审mpacc导师求推荐 · 缩写评论",
+            "year": null,
+            "specifics": [],
+            "limits": [
+              "来自既有X01同帖的缩写内容；不增加帖子数量。",
+              "只表示该评论者的未详述态度，不能据此概括全部学生或推定导师指导方式。",
+              "原句画面末尾截断，只引用可见片段；未读到或截到后续原因。"
+            ],
+            "readingScope": [
+              "实际查看已发布原帖截图dist/evidence/xhs/x01-post-top.jpg；只保留画面可见片段。"
+            ],
+            "readThisRound": true,
+            "screenshots": [
+              {
+                "id": "x01-post-top",
+                "src": "./evidence/xhs/x01-post-top.jpg",
+                "alt": "原帖正文与首段公开评论",
+                "caption": "原帖正文与首段公开评论",
+                "scope": "可见作者、标题、日期及首段缩写讨论；缩写按姓名对照展示；截图不确认评论者学位或指导关系。",
+                "sourceUrl": "https://www.rednote.com/discovery/item/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+                "sourceId": "X01",
+                "width": 400,
+                "height": 725,
+                "bytes": 39245,
+                "sha256": "77bf288c3f704755f9c1f94b0adcf02a9b144f629e9a478cb9145d4cc1c54bf6",
+                "mentorId": null,
+                "reviewId": null,
+                "kind": "actual-browser-screenshot",
+                "textAltered": false
+              }
+            ]
           }
         ],
         "recommendationPoints": [
@@ -12623,7 +12764,7 @@
             },
             {
               "type": "p",
-              "text": "X01中温素彬的笼统正面提名，来自冬日来信2025-04-02的评论；未说明具体课程、指导经历或MPAcc身份。王烨相关回复为身份未核实的主观讨论，未说明具体MPAcc指导经历。负面缩写及只有姓氏的评论不映射给任何导师。[X01]",
+              "text": "X01中温素彬的笼统正面提名，来自冬日来信2025-04-02的评论；未说明具体课程、指导经历或MPAcc身份。王烨相关回复为身份未核实的主观讨论，未说明具体MPAcc指导经历。缩写与称呼按对照表列姓名或候选；无理由态度不当作具体指导经历。[X01]",
               "sourceCodes": [
                 "X01"
               ],
@@ -19241,7 +19382,7 @@
         },
         {
           "type": "p",
-          "text": "以上四人已有官方简介，列作延伸了解对象，并非因缺少方向而搁置。当前证据仍不足以回答谁一定允许实习、谁反馈最快、谁能保证轻松毕业。缩写、姓氏不完整、无理由的负面评论及私聊引流均未用于个人判断；不将求助者“希望不PUA”等愿望当作对任何教师的指控。",
+          "text": "以上四人已有官方简介，列作延伸了解对象，并非因缺少方向而搁置。当前证据仍不足以回答谁一定允许实习、谁反馈最快、谁能保证轻松毕业。缩写与姓名分项对照；无理由态度和私聊引流不作具体指导结论；不将求助者“希望不PUA”等愿望当作对任何教师的指控。",
           "sourceCodes": []
         },
         {
@@ -20858,9 +20999,62 @@
             "reason": "没有本人指导关系、事件或实际去向。",
             "batch": "review-context-audit-round10"
           }
+        },
+        {
+          "teacher": "董必荣",
+          "author": "评论者（昵称未留存）",
+          "date_display": "日期未留存",
+          "relationship": "未说明本人接触关系",
+          "content": "选导求助帖的评论出现“d b r”提名，未说明本人接触关系或具体指导过程。",
+          "limits": "这是既有阅读摘要，不是完整评论逐字引文。；评论作者、日期及接触身份未保留；不能据此推断指导风格或推荐强度。",
+          "use_status": "原帖提名 · 未说明具体经历",
+          "contextAssessment": {
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "displayLabel": "原帖提名 · 未说明具体经历",
+            "status": "alias_attitude_without_experience",
+            "batch": "mentor-aliases-20261113"
+          },
+          "aliasReviewId": "sr-alias-20261113-dbr"
+        },
+        {
+          "teacher": "马德林",
+          "author": "douzie",
+          "date_display": "日期未留存",
+          "relationship": "未说明本人接触关系",
+          "content": "选导求助帖中，douzie以MDL作正面提名，未给出具体行为或本人指导关系。",
+          "limits": "来自既有X01同帖的缩写内容；不增加帖子数量。；只表示该评论者的未详述态度，不能据此概括全部学生或推定导师指导方式。；原句未留存，只采用已读摘要，不添加引号假装逐字引用。",
+          "use_status": "原帖提名 · 未说明具体经历",
+          "contextAssessment": {
+            "status": "alias_attitude_without_experience",
+            "displayLabel": "原帖提名 · 未说明具体经历",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "未交代本人指导关系、具体行为与结果；不将态度词改写成真实相处或MPAcc培养结论。",
+            "batch": "mentor-aliases-20261113"
+          },
+          "aliasReviewId": "sr-alias-20261113-mdl"
+        },
+        {
+          "teacher": "叶邦银",
+          "author": "粥Zhou",
+          "date_display": "2025-04-02",
+          "relationship": "未说明本人接触关系",
+          "content": "粥Zhou的评论表达不建议选择YBY的态度；可见部分未说明原因、学位或本人接触关系。",
+          "limits": "来自既有X01同帖的缩写内容；不增加帖子数量。；只表示该评论者的未详述态度，不能据此概括全部学生或推定导师指导方式。；原句画面末尾截断，只引用可见片段；未读到或截到后续原因。",
+          "use_status": "选择态度 · 未说明理由或经历",
+          "contextAssessment": {
+            "status": "alias_attitude_without_experience",
+            "displayLabel": "选择态度 · 未说明理由或经历",
+            "eligibleForRecommendation": false,
+            "eligibleForConcern": false,
+            "reason": "未交代本人指导关系、具体行为与结果；不将态度词改写成真实相处或MPAcc培养结论。",
+            "batch": "mentor-aliases-20261113"
+          },
+          "aliasReviewId": "sr-alias-20261113-yby"
         }
       ],
-      "limitations": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+      "limitations": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
       "category": "有边界的导师课程反馈",
       "reviewReason": "有可归属完整姓名的评论；多为本科或阶段未明，不能统计成MPAcc直系共识。",
       "verificationStatus": "存在有条件的个人反馈线索",
@@ -20868,7 +21062,7 @@
       "screenedOnly": false,
       "promotion": "原记录未单独标注",
       "readingScopes": [
-        "页面显示95条评论；记录仅覆盖已展开的相关内容，不能将95条均视为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+        "页面显示95条评论；记录仅覆盖已展开的相关内容，不能将95条均视为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
         "文字正文、已加载至页尾的顶层评论，以及王烨分支的5条可见回复。其他折叠支线未全面展开，不代表95条评论逐字完整覆盖；图片不在这项文字评论范围内。温素彬提名与冬日来信的署名、2025-04-02日期出现在同一条评论中。",
         "已加载的顶层评论与可见跟评；未覆盖全部折叠支线，不代表95条评论逐字完整覆盖。",
         "已加载的顶层评论与王烨、黄中生、傅祥斐、李仲泽等相关支线；页面显示95条评论，未加载内容和未穷尽支线仍未覆盖，不能由页面计数推算已读或未读条数。"
@@ -20895,7 +21089,7 @@
             "同条评论中的本人课程接触指王菁华，竞赛求教指王敬勇；这两段关系不能转接成与温素彬的关系。",
             "只修归因和阅读范围，不增加新帖子，也不把笼统提名改为MPAcc亲历或日常指导证据。"
           ],
-          "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。负面缩写及只有姓氏的评论不映射给任何导师。",
+          "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。缩写与称呼按对照表列姓名或候选；无理由态度不当作具体指导经历。",
           "readingScope": "本轮文字正文、95条计数所对应的所有已加载顶层评论逐段读取至THE END；新点展开王烨分支的4条追加回复并全部读到。其他折叠支线未全面展开，不能称95条逐字全读；图片未单独重新审读。温素彬提名在冬日来信同条评论内直接见到作者与完整日期。",
           "changeType": "updated",
           "advisorNames": [],
@@ -20908,7 +21102,7 @@
           "src": "./evidence/xhs/x01-post-top.jpg",
           "alt": "原帖正文与首段公开评论",
           "caption": "原帖正文与首段公开评论",
-          "scope": "可见作者、标题、日期及首段缩写讨论；不是导师名单认证，缩写不对应实名。",
+          "scope": "可见作者、标题、日期及首段缩写讨论；缩写按姓名对照展示；截图不确认评论者学位或指导关系。",
           "sourceUrl": "https://www.rednote.com/discovery/item/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
           "sourceId": "X01",
           "width": 400,
@@ -20940,7 +21134,7 @@
       ],
       "latestAuthenticatedReadingScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。",
       "authenticatedReadingLimits": [
-        "只有姓氏、缩写或称呼的评论不归到实名导师，即使出现在同一帖的相邻位置。",
+        "缩写和称呼按原帖语境对应姓名；多候选不强配，相邻评论不自动共用对象。",
         "姓名明确但仅有行政职务描述的评论不属于个人指导评价。",
         "同一评论者的跟评、同帖重读与已收录评论不增加独立来源。",
         "个别评论日期与既有日志存在显示差异，保留原记录，不据单次二手提取覆盖历史日期。"
@@ -28946,7 +29140,7 @@
       "population": "求助者与评论者身份各异；可归属反馈以本科或阶段未知为主",
       "campus": "未说明",
       "category": "有边界的导师课程反馈",
-      "limitations": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+      "limitations": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
       "research102Updates": [
         {
           "code": "X01",
@@ -28963,7 +29157,7 @@
             "同条评论中的本人课程接触指王菁华，竞赛求教指王敬勇；这两段关系不能转接成与温素彬的关系。",
             "只修归因和阅读范围，不增加新帖子，也不把笼统提名改为MPAcc亲历或日常指导证据。"
           ],
-          "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。负面缩写及只有姓氏的评论不映射给任何导师。",
+          "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。缩写与称呼按对照表列姓名或候选；无理由态度不当作具体指导经历。",
           "readingScope": "本轮文字正文、95条计数所对应的所有已加载顶层评论逐段读取至THE END；新点展开王烨分支的4条追加回复并全部读到。其他折叠支线未全面展开，不能称95条逐字全读；图片未单独重新审读。温素彬提名在冬日来信同条评论内直接见到作者与完整日期。",
           "changeType": "updated",
           "advisorNames": [],
@@ -29011,7 +29205,7 @@
           "src": "./evidence/xhs/x01-post-top.jpg",
           "alt": "原帖正文与首段公开评论",
           "caption": "原帖正文与首段公开评论",
-          "scope": "可见作者、标题、日期及首段缩写讨论；不是导师名单认证，缩写不对应实名。",
+          "scope": "可见作者、标题、日期及首段缩写讨论；缩写按姓名对照展示；截图不确认评论者学位或指导关系。",
           "sourceUrl": "https://www.rednote.com/discovery/item/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
           "sourceId": "X01",
           "width": 400,
@@ -29044,7 +29238,7 @@
       "latestPublicReadingScope": "本次读到当前已加载的顶层评论与可见跟评；登录后全部评论和折叠支线未读。不称95条逐字全读。",
       "latestAuthenticatedReadingScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。",
       "authenticatedReadingLimits": [
-        "只有姓氏、缩写或称呼的评论不归到实名导师，即使出现在同一帖的相邻位置。",
+        "缩写和称呼按原帖语境对应姓名；多候选不强配，相邻评论不自动共用对象。",
         "姓名明确但仅有行政职务描述的评论不属于个人指导评价。",
         "同一评论者的跟评、同帖重读与已收录评论不增加独立来源。",
         "个别评论日期与既有日志存在显示差异，保留原记录，不据单次二手提取覆盖历史日期。"
@@ -29337,7 +29531,7 @@
       "date": "2025-04-02",
       "kind": "小红书原帖",
       "population": "求助者与评论者身份各异；可归属反馈以本科或阶段未知为主",
-      "limitations": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+      "limitations": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
       "category": "有边界的导师课程反馈",
       "originalId": "67ecb72b000000001e0042af",
       "postId": "67ecb72b000000001e0042af",
@@ -37141,6 +37335,20 @@
       "readingScope": "已读正文6人专业、毕业届次、录取去向及经历段。核对潘良庆正文自述为国家审计学院审计专硕；袁思祺为2022届本科校友。未读取照片。",
       "limitations": "学校选取6名不同学院与学段毕业生，不能当成MPAcc就业结果或2026届统一样本；发布时称“将入职”，非后续在岗证明。全文未具名硕士导师；吴泽泰提到的周维培为选修课授课老师，不能写学位导师。",
       "expansionBatch": "mentor-outcomes-20261113"
+    },
+    "AM-SWT-PINYIN": {
+      "code": "AM-SWT-PINYIN",
+      "kind": "official",
+      "title": "连锁董事网络与企业动态创新能力——基于多重治理情境的调节作用",
+      "label": "连锁董事网络与企业动态创新能力——基于多重治理情境的调节作用",
+      "url": "https://cjlc.zufe.edu.cn/CN/abstract/abstract1859.shtml",
+      "canonicalUrl": "https://cjlc.zufe.edu.cn/CN/abstract/abstract1859.shtml",
+      "originalUrl": "https://cjlc.zufe.edu.cn/CN/abstract/abstract1859.shtml",
+      "date": "2021-11-04",
+      "platform": "《财经论丛》期刊官网",
+      "readingScope": "中英文作者、单位、作者简介及出版日期，L4—25；学校单文涛个人页L145列同篇，身份对应。",
+      "limitations": "仅核对中英文姓名与学校单位，不作为学生评价或毕业去向。",
+      "expansionBatch": "mentor-aliases-20261113"
     }
   },
   "targetProfiles": [
@@ -45646,7 +45854,7 @@
       "point": "围绕导师推荐、相处与投入展开讨论；少量完整姓名及具体经历，多数评论不足以判断MPAcc指导安排。",
       "context": "围绕导师推荐、相处与投入展开讨论；少量完整姓名及具体经历，多数评论不足以判断MPAcc指导安排。",
       "scope": "求助者与评论者身份各异；可归属反馈以本科或阶段未知为主\n校区：未说明",
-      "limits": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+      "limits": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
       "author": "银河落九天",
       "date_display": "2025-04-02",
       "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
@@ -45662,7 +45870,7 @@
       "point": "评论补充：自称受其论文指导，描述老师会解释如何修改；同人跟评主观称“不push”。另有本科课程正面印象。",
       "context": "围绕导师推荐、相处与投入展开讨论；少量完整姓名及具体经历，多数评论不足以判断MPAcc指导安排。",
       "scope": "求助者与评论者身份各异；可归属反馈以本科或阶段未知为主\n校区：未说明\n评论者关系：自称论文指导关系，阶段未明",
-      "limits": "论文修改描述相对具体；同人跟评只算一条来源。优先核实当前MPAcc初稿反馈和节点要求。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+      "limits": "论文修改描述相对具体；同人跟评只算一条来源。优先核实当前MPAcc初稿反馈和节点要求。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
       "author": "评论：阿言爱吃棒棒糖\n发帖：银河落九天",
       "date_display": "评论：2025-04-02／04\n发帖：2025-04-02",
       "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
@@ -45678,7 +45886,7 @@
       "point": "评论补充：本人曾上其课程；朋友论文经历中的“不push、事不多”属于转述。",
       "context": "围绕导师推荐、相处与投入展开讨论；少量完整姓名及具体经历，多数评论不足以判断MPAcc指导安排。",
       "scope": "求助者与评论者身份各异；可归属反馈以本科或阶段未知为主\n校区：未说明\n评论者关系：本人上课＋朋友论文经历",
-      "limits": "论文指导属于转述；不能推出反馈及时或允许长期实习。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+      "limits": "论文指导属于转述；不能推出反馈及时或允许长期实习。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
       "author": "评论：阿言爱吃棒棒糖\n发帖：银河落九天",
       "date_display": "评论：2025-04-02\n发帖：2025-04-02",
       "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
@@ -45694,7 +45902,7 @@
       "point": "评论补充：本科课程接触者用“佛系”描述个人印象，并给出总体正面评价。",
       "context": "围绕导师推荐、相处与投入展开讨论；少量完整姓名及具体经历，多数评论不足以判断MPAcc指导安排。",
       "scope": "求助者与评论者身份各异；可归属反馈以本科或阶段未知为主\n校区：未说明\n评论者关系：本科中级会计课程",
-      "limits": "仅课程印象；不能推出研究生任务少、论文要求低。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+      "limits": "仅课程印象；不能推出研究生任务少、论文要求低。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
       "author": "评论：迟早会有狗狗的（综合弹窗版）\n发帖：银河落九天",
       "date_display": "评论：2025-04-03\n发帖：2025-04-02",
       "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
@@ -45710,7 +45918,7 @@
       "point": "评论补充：围绕自主安排的评论存在不同理解，缺少具体指导过程。",
       "context": "围绕导师推荐、相处与投入展开讨论；少量完整姓名及具体经历，多数评论不足以判断MPAcc指导安排。",
       "scope": "求助者与评论者身份各异；可归属反馈以本科或阶段未知为主\n校区：未说明\n评论者关系：关系身份未明",
-      "limits": "不能推出容易毕业。若考虑，重点问固定交流、遇阻支持及实习期间的论文节点。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+      "limits": "不能推出容易毕业。若考虑，重点问固定交流、遇阻支持及实习期间的论文节点。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
       "author": "评论：超酷酷的、wm等\n发帖：银河落九天",
       "date_display": "评论：2025-04-02／03\n发帖：2025-04-02",
       "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
@@ -45726,7 +45934,7 @@
       "point": "评论补充：本科指导的总体评价正面。",
       "context": "围绕导师推荐、相处与投入展开讨论；少量完整姓名及具体经历，多数评论不足以判断MPAcc指导安排。",
       "scope": "求助者与评论者身份各异；可归属反馈以本科或阶段未知为主\n校区：未说明\n评论者关系：自称本科导师关系",
-      "limits": "无MPAcc日常指导细节；可作延伸访谈线索。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+      "limits": "无MPAcc日常指导细节；可作延伸访谈线索。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
       "author": "评论：白昼岑星（高珊珊附体版）\n发帖：银河落九天",
       "date_display": "评论：2025-04-09\n发帖：2025-04-02",
       "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
@@ -45742,7 +45950,7 @@
       "point": "评论补充：总体评价正面，未给具体行为。",
       "context": "围绕导师推荐、相处与投入展开讨论；少量完整姓名及具体经历，多数评论不足以判断MPAcc指导安排。",
       "scope": "求助者与评论者身份各异；可归属反馈以本科或阶段未知为主\n校区：未说明\n评论者关系：自称曾受指导，阶段未明",
-      "limits": "信息量较低；不能据此判断组会、实习或反馈。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+      "limits": "信息量较低；不能据此判断组会、实习或反馈。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
       "author": "评论：momo\n发帖：银河落九天",
       "date_display": "评论：2025-04-03\n发帖：2025-04-02",
       "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
@@ -45758,7 +45966,7 @@
       "point": "评论补充：认为教学和对待学生的体验正面。",
       "context": "围绕导师推荐、相处与投入展开讨论；少量完整姓名及具体经历，多数评论不足以判断MPAcc指导安排。",
       "scope": "求助者与评论者身份各异；可归属反馈以本科或阶段未知为主\n校区：未说明\n评论者关系：本科成本管理会计课",
-      "limits": "只作为课堂接触线索，继续找硕士直系核实。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+      "limits": "只作为课堂接触线索，继续找硕士直系核实。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
       "author": "评论：冬日来信\n发帖：银河落九天",
       "date_display": "评论：2025-04-02\n发帖：2025-04-02",
       "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
@@ -45774,7 +45982,7 @@
       "point": "评论补充：自述曾请其指导竞赛，感觉有经验；提到的比赛并非已核实MPAcc案例赛。",
       "context": "围绕导师推荐、相处与投入展开讨论；少量完整姓名及具体经历，多数评论不足以判断MPAcc指导安排。",
       "scope": "求助者与评论者身份各异；可归属反馈以本科或阶段未知为主\n校区：未说明\n评论者关系：竞赛求教阶段未明",
-      "limits": "问清实际指导赛事、参与渠道和投入；不能把三创竞赛当MPAcc案例赛成绩。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+      "limits": "问清实际指导赛事、参与渠道和投入；不能把三创竞赛当MPAcc案例赛成绩。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
       "author": "评论：冬日来信\n发帖：银河落九天",
       "date_display": "评论：2025-04-02\n发帖：2025-04-02",
       "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
@@ -45790,7 +45998,7 @@
       "point": "评论补充：既有主稿记录X01有笼统正面提名，没有具体日常指导过程。",
       "context": "围绕导师推荐、相处与投入展开讨论；少量完整姓名及具体经历，多数评论不足以判断MPAcc指导安排。",
       "scope": "求助者与评论者身份各异；可归属反馈以本科或阶段未知为主\n校区：未说明\n评论者关系：身份未说明",
-      "limits": "只保留主稿已有线索，不补充评论者身份、阶段或行为；案例指导另以官方报道为准。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证，缩写不映射；同人跟评不算独立来源。",
+      "limits": "只保留主稿已有线索，不补充评论者身份、阶段或行为；案例指导另以官方报道为准。\n页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
       "author": "评论：既有汇总未记录评论者\n发帖：银河落九天",
       "date_display": "评论：既有汇总未记录日期\n发帖：2025-04-02",
       "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
@@ -51051,7 +51259,7 @@
       "point": "补全既有温素彬弱线索的评论者为冬日来信，显示日期为2025-04-02。",
       "context": "X01中温素彬的笼统正面提名，可以准确归于冬日来信在2025-04-02发布的一条评论；并未提供与温素彬的具体课程或指导经历。",
       "scope": "本轮只修温素彬笼统提名的评论归因；评论者未说明自己与温素彬的接触关系、学位类别或年级。",
-      "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。负面缩写及只有姓氏的评论不映射给任何导师。",
+      "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。缩写与称呼按对照表列姓名或候选；无理由态度不当作具体指导经历。",
       "author": "银河落九天",
       "date_display": "2025-04-02",
       "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
@@ -51067,7 +51275,7 @@
       "point": "同条评论中的本人课程接触指王菁华，竞赛求教指王敬勇；这两段关系不能转接成与温素彬的关系。",
       "context": "X01中温素彬的笼统正面提名，可以准确归于冬日来信在2025-04-02发布的一条评论；并未提供与温素彬的具体课程或指导经历。",
       "scope": "本轮只修温素彬笼统提名的评论归因；评论者未说明自己与温素彬的接触关系、学位类别或年级。",
-      "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。负面缩写及只有姓氏的评论不映射给任何导师。",
+      "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。缩写与称呼按对照表列姓名或候选；无理由态度不当作具体指导经历。",
       "author": "银河落九天",
       "date_display": "2025-04-02",
       "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
@@ -51083,7 +51291,7 @@
       "point": "只修归因和阅读范围，不增加新帖子，也不把笼统提名改为MPAcc亲历或日常指导证据。",
       "context": "X01中温素彬的笼统正面提名，可以准确归于冬日来信在2025-04-02发布的一条评论；并未提供与温素彬的具体课程或指导经历。",
       "scope": "本轮只修温素彬笼统提名的评论归因；评论者未说明自己与温素彬的接触关系、学位类别或年级。",
-      "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。负面缩写及只有姓氏的评论不映射给任何导师。",
+      "limits": "温素彬部分只有笼统好感，无具体行为、阶段或MPAcc身份；王烨4条追加回复本轮展开后仍为身份未核实的主观讨论，与基线已限定内容一致，不作新评价。缩写与称呼按对照表列姓名或候选；无理由态度不当作具体指导经历。",
       "author": "银河落九天",
       "date_display": "2025-04-02",
       "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
@@ -51576,41 +51784,53 @@
       "alias": "董",
       "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
       "sourceCode": "X01",
-      "status": "unresolved",
-      "label": "已见线索但归属未确认",
-      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
-      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
-      "publishUnderNamedMentor": false
+      "status": "mapped_identity",
+      "label": "姓名已对应",
+      "reason": "当前名录中的姓氏对照；不跨帖推定接触关系。",
+      "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
+      "publishUnderNamedMentor": false,
+      "mentorIds": [
+        "mentor-01"
+      ]
     },
     {
       "alias": "d b r",
       "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
       "sourceCode": "X01",
-      "status": "unresolved",
-      "label": "已见线索但归属未确认",
-      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
-      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
-      "publishUnderNamedMentor": false
+      "status": "mapped_identity",
+      "label": "姓名已对应",
+      "reason": "Dong Bi Rong 的姓名缩写，限定南审选导帖语境。",
+      "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
+      "publishUnderNamedMentor": true,
+      "mentorIds": [
+        "mentor-01"
+      ]
     },
     {
       "alias": "mdl",
       "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
       "sourceCode": "X01",
-      "status": "unresolved",
-      "label": "已见线索但归属未确认",
-      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
-      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
-      "publishUnderNamedMentor": false
+      "status": "mapped_identity",
+      "label": "姓名已对应",
+      "reason": "南审选导帖语境与当前名录姓名对应。",
+      "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
+      "publishUnderNamedMentor": true,
+      "mentorIds": [
+        "mentor-05"
+      ]
     },
     {
       "alias": "zl",
       "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
       "sourceCode": "X01",
-      "status": "unresolved",
-      "label": "已见线索但归属未确认",
-      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
-      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
-      "publishUnderNamedMentor": false
+      "status": "mapped_identity",
+      "label": "姓名已对应",
+      "reason": "南审选导帖语境与当前名录姓名对应。",
+      "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
+      "publishUnderNamedMentor": false,
+      "mentorIds": [
+        "mentor-04"
+      ]
     },
     {
       "alias": "黄老师/黄导",
@@ -51627,80 +51847,107 @@
       "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
       "sourceCode": "X01",
       "status": "potential_collision",
-      "label": "缩写存在潜在重名",
-      "reason": "同一拼音缩写可能对应多名教师；这是归属核验提示，不表示本轮出现了该缩写的真实评价。",
-      "verificationGap": "如遇缩写评论，需要独立的全名确认与本人接触关系，不能按名单猜测。",
-      "publishUnderNamedMentor": false
+      "label": "多位姓名候选",
+      "reason": "当前名录中同一缩写对应多位老师。",
+      "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
+      "publishUnderNamedMentor": false,
+      "mentorIds": [
+        "mentor-03",
+        "mentor-31"
+      ]
     },
     {
       "alias": "崔老师",
       "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
       "sourceCode": "X01",
-      "status": "unresolved",
-      "label": "已见线索但归属未确认",
-      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
-      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
-      "publishUnderNamedMentor": false
+      "status": "mapped_identity",
+      "label": "姓名已对应",
+      "reason": "当前名录中的姓氏对照；具体经历另看原文。",
+      "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
+      "publishUnderNamedMentor": false,
+      "mentorIds": [
+        "mentor-07"
+      ]
     },
     {
       "alias": "许汉 y",
       "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
       "sourceCode": "X02",
-      "status": "unresolved",
-      "label": "已见线索但归属未确认",
-      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
-      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
-      "publishUnderNamedMentor": false
+      "status": "mapped_identity",
+      "label": "姓名已对应",
+      "reason": "部分姓名对应；原帖这句是询问，不是评价。",
+      "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
+      "publishUnderNamedMentor": false,
+      "mentorIds": [
+        "mentor-08"
+      ]
     },
     {
       "alias": "XW/xw",
       "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
       "sourceCode": "X02",
-      "status": "unresolved",
-      "label": "已见线索但归属未确认",
-      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
-      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
-      "publishUnderNamedMentor": false
+      "status": "mapped_identity",
+      "label": "姓名已对应",
+      "reason": "南审选导帖语境与当前名录姓名对应。",
+      "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
+      "publishUnderNamedMentor": false,
+      "mentorIds": [
+        "mentor-19"
+      ]
     },
     {
       "alias": "WJY/wjy",
       "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
       "sourceCode": "X02",
-      "status": "unresolved",
-      "label": "已见线索但归属未确认",
-      "reason": "原文仅缩写、半姓名或姓氏；没有足够的全名确认、接触身份与具体经历，不归入任何实名导师评价。",
-      "verificationGap": "需要作者明确全名及本人学位、接触年份/关系，并提供可核的专业经历。",
-      "publishUnderNamedMentor": false
+      "status": "mapped_identity",
+      "label": "姓名已对应",
+      "reason": "南审选导帖语境与当前名录姓名对应。",
+      "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
+      "publishUnderNamedMentor": false,
+      "mentorIds": [
+        "mentor-20"
+      ]
     },
     {
       "alias": "LH/lh",
       "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
       "sourceCode": "X02",
       "status": "potential_collision",
-      "label": "缩写存在潜在重名",
-      "reason": "同一拼音缩写可能对应多名教师；这是归属核验提示，不表示本轮出现了该缩写的真实评价。",
-      "verificationGap": "如遇缩写评论，需要独立的全名确认与本人接触关系，不能按名单猜测。",
-      "publishUnderNamedMentor": false
+      "label": "多位姓名候选",
+      "reason": "当前名录中同一缩写对应多位老师。",
+      "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
+      "publishUnderNamedMentor": false,
+      "mentorIds": [
+        "mentor-18",
+        "mentor-22",
+        "mentor-32"
+      ]
     },
     {
       "alias": "SWT / DWT",
       "sourceUrl": null,
       "sourceCode": null,
       "status": "search_only",
-      "label": "仅检索候选",
-      "reason": "仅为检索尝试的拼音缩写；本轮未取得对应评价原文，不表示发现了未确认的学生评价。",
-      "verificationGap": "如以后检得实际评论，再核对原文全名、接触身份和具体经历。",
-      "publishUnderNamedMentor": false
+      "label": "多位姓名候选",
+      "reason": "姓氏英文署名为 SHAN，规范缩写 SWT。",
+      "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
+      "publishUnderNamedMentor": false,
+      "mentorIds": [
+        "mentor-34"
+      ]
     },
     {
       "alias": "高老师",
       "sourceUrl": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
       "sourceCode": "X02",
-      "status": "unresolved",
-      "label": "已见线索但归属未确认",
-      "reason": "原文仅有姓氏，所在对话未给出全名；不跨楼沿用其他评论的对象。",
-      "verificationGap": "需要作者明确姓名和本人接触关系。",
-      "publishUnderNamedMentor": false
+      "status": "mapped_identity",
+      "label": "姓名已对应",
+      "reason": "当前名录中的姓氏对照；不跨帖推定接触关系。",
+      "verificationGap": "姓名对应后，仍分别核对评论者身份与具体经历。",
+      "publishUnderNamedMentor": false,
+      "mentorIds": [
+        "mentor-09"
+      ]
     }
   ],
   "internships": {
@@ -57884,5 +58131,681 @@
         }
       }
     ]
-  }
+  },
+  "mentorAliases": [
+    {
+      "alias": "DBR",
+      "variants": [
+        "dbr",
+        "D B R",
+        "DBR"
+      ],
+      "mentorIds": [
+        "mentor-01"
+      ],
+      "status": "matched",
+      "basis": "Dong Bi Rong 的姓名缩写，限定南审选导帖语境。",
+      "sourceIds": [
+        "X01"
+      ],
+      "reviewIds": [
+        "sr-alias-20261113-dbr"
+      ],
+      "observedInComment": true
+    },
+    {
+      "alias": "WSB",
+      "variants": [
+        "wsb",
+        "W S B"
+      ],
+      "mentorIds": [
+        "mentor-02"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-温素彬"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "WY",
+      "variants": [
+        "wy",
+        "W Y",
+        "WY"
+      ],
+      "mentorIds": [
+        "mentor-03",
+        "mentor-31"
+      ],
+      "status": "ambiguous",
+      "basis": "当前名录中同一缩写对应多位老师。",
+      "sourceIds": [],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "ZL",
+      "variants": [
+        "zl",
+        "Z L",
+        "ZL"
+      ],
+      "mentorIds": [
+        "mentor-04"
+      ],
+      "status": "matched",
+      "basis": "南审选导帖语境与当前名录姓名对应。",
+      "sourceIds": [
+        "X01"
+      ],
+      "reviewIds": [],
+      "observedInComment": true
+    },
+    {
+      "alias": "MDL",
+      "variants": [
+        "mdl",
+        "M D L",
+        "MDL"
+      ],
+      "mentorIds": [
+        "mentor-05"
+      ],
+      "status": "matched",
+      "basis": "南审选导帖语境与当前名录姓名对应。",
+      "sourceIds": [
+        "X01"
+      ],
+      "reviewIds": [
+        "sr-alias-20261113-mdl"
+      ],
+      "observedInComment": true
+    },
+    {
+      "alias": "HZS",
+      "variants": [
+        "hzs",
+        "H Z S"
+      ],
+      "mentorIds": [
+        "mentor-06"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-黄中生"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "CXM",
+      "variants": [
+        "cxm",
+        "C X M"
+      ],
+      "mentorIds": [
+        "mentor-07"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-崔秀梅"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "XHY",
+      "variants": [
+        "xhy",
+        "X H Y"
+      ],
+      "mentorIds": [
+        "mentor-08"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-许汉友"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "GFL",
+      "variants": [
+        "gfl",
+        "G F L"
+      ],
+      "mentorIds": [
+        "mentor-09"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-高凤莲"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "LGC",
+      "variants": [
+        "lgc",
+        "L G C"
+      ],
+      "mentorIds": [
+        "mentor-10"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "22"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "PJ",
+      "variants": [
+        "pj",
+        "P J"
+      ],
+      "mentorIds": [
+        "mentor-11"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-潘俊"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "ZZW",
+      "variants": [
+        "zzw",
+        "Z Z W"
+      ],
+      "mentorIds": [
+        "mentor-12"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-章之旺"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "ZXL",
+      "variants": [
+        "zxl",
+        "Z X L"
+      ],
+      "mentorIds": [
+        "mentor-13"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "23"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "YBY",
+      "variants": [
+        "yby",
+        "Y B Y",
+        "YBY"
+      ],
+      "mentorIds": [
+        "mentor-14"
+      ],
+      "status": "matched",
+      "basis": "南审选导帖语境与当前名录姓名对应。",
+      "sourceIds": [
+        "X01"
+      ],
+      "reviewIds": [
+        "sr-alias-20261113-yby"
+      ],
+      "observedInComment": true
+    },
+    {
+      "alias": "LY",
+      "variants": [
+        "ly",
+        "L Y"
+      ],
+      "mentorIds": [
+        "mentor-15"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-罗琰"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "WQC",
+      "variants": [
+        "wqc",
+        "W Q C"
+      ],
+      "mentorIds": [
+        "mentor-16"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-吴青川"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "LJ",
+      "variants": [
+        "lj",
+        "L J"
+      ],
+      "mentorIds": [
+        "mentor-17"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-刘静"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "LH",
+      "variants": [
+        "lh",
+        "L H",
+        "LH"
+      ],
+      "mentorIds": [
+        "mentor-18",
+        "mentor-22",
+        "mentor-32"
+      ],
+      "status": "ambiguous",
+      "basis": "当前名录中同一缩写对应多位老师。",
+      "sourceIds": [],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "XW",
+      "variants": [
+        "xw",
+        "X W",
+        "XW"
+      ],
+      "mentorIds": [
+        "mentor-19"
+      ],
+      "status": "matched",
+      "basis": "南审选导帖语境与当前名录姓名对应。",
+      "sourceIds": [
+        "X01",
+        "X02"
+      ],
+      "reviewIds": [],
+      "observedInComment": true
+    },
+    {
+      "alias": "WJY",
+      "variants": [
+        "wjy",
+        "W J Y",
+        "WJY"
+      ],
+      "mentorIds": [
+        "mentor-20"
+      ],
+      "status": "matched",
+      "basis": "南审选导帖语境与当前名录姓名对应。",
+      "sourceIds": [
+        "X02"
+      ],
+      "reviewIds": [],
+      "observedInComment": true
+    },
+    {
+      "alias": "CB",
+      "variants": [
+        "cb",
+        "C B"
+      ],
+      "mentorIds": [
+        "mentor-21"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "20"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "TZD",
+      "variants": [
+        "tzd",
+        "T Z D",
+        "TZD"
+      ],
+      "mentorIds": [
+        "mentor-23"
+      ],
+      "status": "matched",
+      "basis": "南审选导帖语境与当前名录姓名对应。",
+      "sourceIds": [
+        "X01"
+      ],
+      "reviewIds": [],
+      "observedInComment": true
+    },
+    {
+      "alias": "WJH",
+      "variants": [
+        "wjh",
+        "W J H"
+      ],
+      "mentorIds": [
+        "mentor-24"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-王菁华"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "CXJ",
+      "variants": [
+        "cxj",
+        "C X J",
+        "CXJ"
+      ],
+      "mentorIds": [
+        "mentor-25"
+      ],
+      "status": "matched",
+      "basis": "南审选导帖语境与当前名录姓名对应。",
+      "sourceIds": [
+        "X01"
+      ],
+      "reviewIds": [],
+      "observedInComment": true
+    },
+    {
+      "alias": "FXF",
+      "variants": [
+        "fxf",
+        "F X F"
+      ],
+      "mentorIds": [
+        "mentor-26"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-傅祥斐"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "WYY",
+      "variants": [
+        "wyy",
+        "W Y Y"
+      ],
+      "mentorIds": [
+        "mentor-27"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-王永妍"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "LZZ",
+      "variants": [
+        "lzz",
+        "L Z Z"
+      ],
+      "mentorIds": [
+        "mentor-28"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-李仲泽"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "WYQ",
+      "variants": [
+        "wyq",
+        "W Y Q"
+      ],
+      "mentorIds": [
+        "mentor-29"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-王永青"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "HJG",
+      "variants": [
+        "hjg",
+        "H J G"
+      ],
+      "mentorIds": [
+        "mentor-30"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-贺建刚"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "CDH",
+      "variants": [
+        "cdh",
+        "C D H"
+      ],
+      "mentorIds": [
+        "mentor-33"
+      ],
+      "status": "search_only",
+      "basis": "姓名首字母检索",
+      "sourceIds": [
+        "ROSTER-陈冬华"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "SWT",
+      "variants": [
+        "swt",
+        "S W T",
+        "SWT"
+      ],
+      "mentorIds": [
+        "mentor-34"
+      ],
+      "status": "search_only",
+      "basis": "姓氏英文署名为 SHAN，规范缩写 SWT。",
+      "sourceIds": [
+        "AM-SWT-PINYIN",
+        "ROSTER-单文涛"
+      ],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "许汉 y",
+      "variants": [
+        "许汉 y",
+        "许汉Y"
+      ],
+      "mentorIds": [
+        "mentor-08"
+      ],
+      "status": "matched",
+      "basis": "部分姓名对应；原帖这句是询问，不是评价。",
+      "sourceIds": [
+        "X02"
+      ],
+      "reviewIds": [],
+      "observedInComment": true
+    },
+    {
+      "alias": "崔老师",
+      "variants": [
+        "崔老师"
+      ],
+      "mentorIds": [
+        "mentor-07"
+      ],
+      "status": "matched",
+      "basis": "当前名录中的姓氏对照；具体经历另看原文。",
+      "sourceIds": [
+        "X01"
+      ],
+      "reviewIds": [],
+      "observedInComment": true
+    },
+    {
+      "alias": "黄老师/黄导",
+      "variants": [
+        "黄老师/黄导"
+      ],
+      "mentorIds": [
+        "mentor-06"
+      ],
+      "status": "matched",
+      "basis": "当前名录中的姓氏对照；具体经历另看原文。",
+      "sourceIds": [
+        "X01"
+      ],
+      "reviewIds": [],
+      "observedInComment": true
+    },
+    {
+      "alias": "张老师",
+      "variants": [
+        "张老师"
+      ],
+      "mentorIds": [
+        "mentor-04",
+        "mentor-13"
+      ],
+      "status": "ambiguous",
+      "basis": "称呼对应多位候选，需结合原对话。",
+      "sourceIds": [
+        "X01"
+      ],
+      "reviewIds": [],
+      "observedInComment": true
+    },
+    {
+      "alias": "C开头",
+      "variants": [
+        "c开头",
+        "C开头"
+      ],
+      "mentorIds": [
+        "mentor-07",
+        "mentor-21",
+        "mentor-25",
+        "mentor-33"
+      ],
+      "status": "ambiguous",
+      "basis": "称呼对应多位候选，需结合原对话。",
+      "sourceIds": [
+        "X01"
+      ],
+      "reviewIds": [],
+      "observedInComment": true
+    },
+    {
+      "alias": "DWT",
+      "variants": [
+        "dwt",
+        "DWT"
+      ],
+      "mentorIds": [
+        "mentor-34"
+      ],
+      "status": "search_only",
+      "basis": "历史检索变体；规范缩写为 SWT。",
+      "sourceIds": [],
+      "reviewIds": [],
+      "observedInComment": false
+    },
+    {
+      "alias": "董",
+      "variants": [],
+      "mentorIds": [
+        "mentor-01"
+      ],
+      "status": "matched",
+      "basis": "当前名录中的姓氏对照；不跨帖推定接触关系。",
+      "sourceIds": [
+        "X01"
+      ],
+      "reviewIds": [],
+      "observedInComment": true
+    },
+    {
+      "alias": "高老师",
+      "variants": [],
+      "mentorIds": [
+        "mentor-09"
+      ],
+      "status": "matched",
+      "basis": "当前名录中的姓氏对照；不跨帖推定接触关系。",
+      "sourceIds": [
+        "X02"
+      ],
+      "reviewIds": [],
+      "observedInComment": true
+    }
+  ]
 }

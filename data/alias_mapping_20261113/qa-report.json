@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-13",
+  "rosterNames": 34,
+  "initialGroups": 31,
+  "aliasEntries": 39,
+  "visibleCorrespondences": 17,
+  "studentReviewRecords": 44,
+  "newGeneralMentions": 3,
+  "newFirsthandRecords": 0,
+  "newXhsPosts": 0,
+  "allPrevious41ReviewsPreserved": true,
+  "studentOutcomesPreserved": true,
+  "mergeIdempotent": true,
+  "automatedTests": 138,
+  "browser": {
+    "dbr": [
+      "董必荣"
+    ],
+    "spacedDbr": [
+      "董必荣"
+    ],
+    "wy": [
+      "王烨",
+      "王禹"
+    ],
+    "lh": [
+      "李华",
+      "凌华",
+      "李慧"
+    ],
+    "yby": [
+      "叶邦银"
+    ],
+    "generalAliasCommentVisibleOnExactSearch": true,
+    "aliasSourceVisible": true,
+    "defaultConcreteMentors": 13
+  },
+  "screenshot": "qa/mentor-aliases-20261113.jpg",
+  "scope": "Web edition; no rebuilt Word/Excel/APK attachments."
+}

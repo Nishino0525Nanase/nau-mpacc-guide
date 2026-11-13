@@ -47,6 +47,7 @@ async function app({secure=true,clipboard=true,denied=false,data=dataset}={}) {
 const emptyDossier=()=>({coverageStatus:'not_found',coverageLabel:'暂无可归属学生评价',summary:'尚缺可归属的学生体验。',reviews:[],recommendationPoints:[],concerns:[],verificationQuestions:['近期是否固定组会，论文每轮反馈一般多久？'],gaps:['近年直系学生的公开经历尚缺。']});
 const reviewFixture=()=>{
   const data=structuredClone(dataset);
+  delete data.mentorAliases; // This fixture exercises legacy data without a resolved alias catalog.
   data.ambiguousMentorAliases=[{alias:'LH/lh',text:'UNRESOLVED_GLOBAL_ALLEGATION'}, {alias:'WY',text:'DO_NOT_ASSIGN'}, {alias:'XW/xw',status:'unresolved'}, {alias:'WJY/wjy',status:'unresolved'}, {alias:'d b r',status:'unresolved'}, {alias:'XW xw',status:'unresolved'}, {alias:'SWT / DWT',status:'search_only'}, {alias:'高老师',status:'unresolved'}, {alias:'许汉 y',status:'unresolved'}, {alias:'QZ',status:'potential_collision'}];
   data.sourceRegistry.TEST_GOOD={url:'https://example.org/student-story',title:'学生经历来源'};
   data.sourceRegistry.TEST_BAD={url:'javascript:alert(1)',title:'不安全地址'};

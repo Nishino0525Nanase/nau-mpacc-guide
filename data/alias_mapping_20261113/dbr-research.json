@@ -1,0 +1,177 @@
+{
+  "checkedAt": "2026-11-13",
+  "task": "DBR—董必荣姓名对应及公开评价定向核查",
+  "mapping": {
+    "alias": "DBR",
+    "variants": [
+      "DBR",
+      "dbr",
+      "d b r"
+    ],
+    "mentorId": "mentor-01",
+    "mentorName": "董必荣",
+    "status": "user_confirmed",
+    "label": "DBR → 董必荣",
+    "basis": [
+      "用户本轮明确确认DBR对应董必荣。",
+      "姓名拼音Dong Bi Rong与DBR相符；映射限定在当前南审导师语境。"
+    ],
+    "sourceIds": [
+      "X01"
+    ],
+    "observedAlias": "d b r",
+    "scope": "姓名对应可明确展示；评论者是否为直系学生、学位类型、具体指导过程另外判断。"
+  },
+  "existingEvidence": [
+    {
+      "sourceId": "X01",
+      "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "postTitle": "南审mpacc导师求推荐",
+      "postAuthor": "银河落九天",
+      "postDateStored": "2025-04-02",
+      "recordKind": "既有阅读摘要，不是完整评论逐字稿",
+      "localFiles": [
+        "data/reviews_research/reviews_group_a.json",
+        "data/student-review-sources.json"
+      ],
+      "recordedSummary": "X01中出现“董”、d b r提名；单姓分支跟评称认识学长，属于转述；冬日来信以全名提及董必荣当时职务，但没有给出指导评价。",
+      "literalAliasPreserved": "d b r",
+      "fullCommentQuote": null,
+      "commentAuthor": null,
+      "commentDate": null,
+      "commenterDegree": null,
+      "commenterRelationship": null,
+      "previousExclusion": "旧流程因缩写或姓氏而不归实名，同时缺少具体接触经历。",
+      "updatedInterpretation": "用户确认解决DBR的姓名对应；没有解决评论原文缺失、身份未知或转述边界。"
+    },
+    {
+      "sourceId": "ROSTER-董必荣",
+      "url": "https://account.nau.edu.cn/_s23/_t40/2014/0310/c820a6766/page.psp",
+      "title": "董必荣（2017年官方历史简介）",
+      "date": "2017-07-09",
+      "fact": "官方历史简介记载连续多年被评为学生心中“我最喜爱的老师”。",
+      "kind": "官方履历中的汇总荣誉，非具名学生亲历评价",
+      "newSource": false,
+      "limits": [
+        "未列各次评选年份、投票人数或学位分组。",
+        "不能视为当下MPAcc直系指导口碑或个体学生评价。",
+        "网页还含历史职务与联系方式，仅采所述历史荣誉，不据此判断当前职务。"
+      ],
+      "webRefs": [
+        "turn282view1",
+        "turn280search0"
+      ]
+    }
+  ],
+  "proposedIntegration": {
+    "aliasIndex": {
+      "normalizedAlias": "DBR",
+      "mentorIds": [
+        "mentor-01"
+      ],
+      "resolutionStatus": "user_confirmed",
+      "evidenceStatus": "mention_only",
+      "sourceIds": [
+        "X01"
+      ],
+      "summary": "原帖有DBR提名记录；完整评论、作者及具体接触经历未保留。",
+      "showUnderMentor": true
+    },
+    "doNotRequire": "姓名对应不再卡在“必须重新出现全名”上。",
+    "dossierPlacement": "放到董必荣详情中的“缩写提名／原帖线索”，并可点击原帖；不要把完整评论缺失的摘要充当新增学生亲历记录。",
+    "reviewIfParentUsesGeneralRecord": {
+      "id": "alias-dbr-x01-mention",
+      "mentorId": "mentor-01",
+      "sourceIds": [
+        "X01"
+      ],
+      "experienceType": "general",
+      "firsthand": null,
+      "polarity": "neutral",
+      "text": "既有阅读记录在南审MPAcc求推荐帖中记录了“d b r”提名。",
+      "degree": "未说明",
+      "relationship": "未说明",
+      "attribution": {
+        "status": "confirmed",
+        "alias": "d b r",
+        "reason": "用户确认DBR对应董必荣；映射限于该南审选导帖语境。"
+      },
+      "contextAssessment": {
+        "eligibleForRecommendation": false,
+        "eligibleForConcern": false,
+        "displayLabel": "缩写提名 · 缺具体经历"
+      },
+      "limits": [
+        "这是既有阅读摘要，不是完整评论逐字引文。",
+        "评论作者、日期及接触身份未保留；不能据此推断指导风格或推荐强度。"
+      ]
+    },
+    "newFirsthandReviews": 0,
+    "newIndependentStudentSources": 0
+  },
+  "freshReads": [
+    {
+      "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "tool": "web open",
+      "result": "工具返回不可访问，未取得正文或评论。"
+    },
+    {
+      "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "tool": "TinyFish fetch_content",
+      "result": "canonical URL跳转rednote 404，未取得笔记正文或评论。"
+    },
+    {
+      "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af?xsec_token=ABhGgw9PirLc0MBu2eKS0U-x16B6p2o3WzXyocvJkhtqY=&xsec_source=pc_search&source=web_explore_feed",
+      "tool": "TinyFish fetch_content",
+      "result": "使用项目已保存分享URL后可读标题、作者和求推荐正文；评论处仍为“読み込み中...”，没有读到DBR支线。工具显示日期4/1/2025，与既有中国时区2025-04-02记录不同，不覆盖旧日期。"
+    },
+    {
+      "url": "https://www.ykakaoyan.cn/search?q=%E8%91%A3%E5%BF%85%E8%8D%A3",
+      "tool": "TinyFish fetch_content",
+      "result": "搜索页实际显示没有找到“董必荣”相关导师；不能把站点自称海量导师等同存在DBR个案。"
+    },
+    {
+      "url": "https://account.nau.edu.cn/_s23/_t40/2014/0310/c820a6766/page.psp",
+      "tool": "web open",
+      "result": "全文可读；重读已有历史官方简介，提取学生喜爱教师荣誉边界。"
+    }
+  ],
+  "queries": [
+    "\"南审\" \"dbr\" 导师",
+    "\"董必荣\" \"导师\" \"评价\"",
+    "\"南审mpacc导师求推荐\" \"董\"",
+    "\"南审\" \"d b r\"",
+    "\"董必荣\" \"学生\" \"导师\" \"我\"",
+    "\"董必荣\" \"研究生\" 评价",
+    "\"董必荣\" \"DBR\"",
+    "\"DBR\" \"南审\" \"推荐\"",
+    "site.xiaohongshu.com \"南审\" \"dbr\"",
+    "site.xiaohongshu.com \"董必荣\"",
+    "\"董必荣\" \"老师\" \"耐心\"",
+    "\"董必荣\" \"学长\"",
+    "site.ykakaoyan.cn \"南京审计大学\" \"DBR\"",
+    "site.ykakaoyan.cn \"董必荣\"",
+    "\"董必荣\" \"我最喜爱的老师\"",
+    "\"董必荣\" \"感谢\" \"导师\"",
+    "\"董必荣\" \"恩师\"",
+    "\"董必荣\" \"李珮\"",
+    "\"董必荣\" \"赵婷婷\" \"指导\""
+  ],
+  "searchOutcome": "system1与system2定向搜索未找到新增可读学生亲历。检出结果主要为教师履历、行政活动与既有考博名单。",
+  "excluded": [
+    {
+      "url": "https://m.wfaozh.com/account/rcpy/list.htm",
+      "reason": "非官方博彩SEO镜像，不用作高校证据；保留原nau.edu.cn同文。"
+    },
+    {
+      "url": "https://www.alewahouse.com/9533/list3.html",
+      "reason": "非官方博彩SEO镜像，不据同名教师新闻拼接学生身份或导师关系。"
+    }
+  ],
+  "screenshotAudit": {
+    "filesInspected": [
+      "dist/evidence/xhs/x01-post-top.jpg"
+    ],
+    "result": "现有X01顶部图只见主帖与首段评论，没有董/DBR支线，不标成DBR评论截图。"
+  }
+}

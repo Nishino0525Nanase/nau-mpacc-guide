@@ -1,0 +1,1022 @@
+{
+  "batch": "alias-mapping-20261113-roster",
+  "checkedAt": "2026-11-13",
+  "scope": "当前34位南京审计大学MPAcc名录及X01/X02选导帖语境；不跨校套用缩写",
+  "summary": {
+    "rosterNames": 34,
+    "distinctInitials": 31,
+    "collisionGroups": {
+      "WY": [
+        "王烨",
+        "王禹"
+      ],
+      "LH": [
+        "李华",
+        "凌华",
+        "李慧"
+      ]
+    },
+    "proposedNamedGeneralRecords": 2,
+    "newFirsthandExperienceRecords": 0,
+    "newXhsPosts": 0,
+    "newExternalUrlsForPronunciation": 1
+  },
+  "rosterInitials": [
+    {
+      "mentorId": "mentor-01",
+      "name": "董必荣",
+      "pinyin": "Dong Bi Rong",
+      "abbreviation": "DBR",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "董必荣"
+      ],
+      "source_ids": [
+        "ROSTER-董必荣"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-02",
+      "name": "温素彬",
+      "pinyin": "Wen Su Bin",
+      "abbreviation": "WSB",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "温素彬"
+      ],
+      "source_ids": [
+        "ROSTER-温素彬"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-03",
+      "name": "王烨",
+      "pinyin": "Wang Ye",
+      "abbreviation": "WY",
+      "uniqueInCurrentRoster": false,
+      "sameAbbreviationNames": [
+        "王烨",
+        "王禹"
+      ],
+      "source_ids": [
+        "21"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-04",
+      "name": "张力",
+      "pinyin": "Zhang Li",
+      "abbreviation": "ZL",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "张力"
+      ],
+      "source_ids": [
+        "ROSTER-张力"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-05",
+      "name": "马德林",
+      "pinyin": "Ma De Lin",
+      "abbreviation": "MDL",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "马德林"
+      ],
+      "source_ids": [
+        "ROSTER-马德林"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-06",
+      "name": "黄中生",
+      "pinyin": "Huang Zhong Sheng",
+      "abbreviation": "HZS",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "黄中生"
+      ],
+      "source_ids": [
+        "ROSTER-黄中生"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-07",
+      "name": "崔秀梅",
+      "pinyin": "Cui Xiu Mei",
+      "abbreviation": "CXM",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "崔秀梅"
+      ],
+      "source_ids": [
+        "ROSTER-崔秀梅"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-08",
+      "name": "许汉友",
+      "pinyin": "Xu Han You",
+      "abbreviation": "XHY",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "许汉友"
+      ],
+      "source_ids": [
+        "ROSTER-许汉友"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-09",
+      "name": "高凤莲",
+      "pinyin": "Gao Feng Lian",
+      "abbreviation": "GFL",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "高凤莲"
+      ],
+      "source_ids": [
+        "ROSTER-高凤莲"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-10",
+      "name": "刘国城",
+      "pinyin": "Liu Guo Cheng",
+      "abbreviation": "LGC",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "刘国城"
+      ],
+      "source_ids": [
+        "22"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-11",
+      "name": "潘俊",
+      "pinyin": "Pan Jun",
+      "abbreviation": "PJ",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "潘俊"
+      ],
+      "source_ids": [
+        "ROSTER-潘俊"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-12",
+      "name": "章之旺",
+      "pinyin": "Zhang Zhi Wang",
+      "abbreviation": "ZZW",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "章之旺"
+      ],
+      "source_ids": [
+        "ROSTER-章之旺"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-13",
+      "name": "张兴亮",
+      "pinyin": "Zhang Xing Liang",
+      "abbreviation": "ZXL",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "张兴亮"
+      ],
+      "source_ids": [
+        "23"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-14",
+      "name": "叶邦银",
+      "pinyin": "Ye Bang Yin",
+      "abbreviation": "YBY",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "叶邦银"
+      ],
+      "source_ids": [
+        "ROSTER-叶邦银"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-15",
+      "name": "罗琰",
+      "pinyin": "Luo Yan",
+      "abbreviation": "LY",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "罗琰"
+      ],
+      "source_ids": [
+        "ROSTER-罗琰"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-16",
+      "name": "吴青川",
+      "pinyin": "Wu Qing Chuan",
+      "abbreviation": "WQC",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "吴青川"
+      ],
+      "source_ids": [
+        "ROSTER-吴青川"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-17",
+      "name": "刘静",
+      "pinyin": "Liu Jing",
+      "abbreviation": "LJ",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "刘静"
+      ],
+      "source_ids": [
+        "ROSTER-刘静"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-18",
+      "name": "李华",
+      "pinyin": "Li Hua",
+      "abbreviation": "LH",
+      "uniqueInCurrentRoster": false,
+      "sameAbbreviationNames": [
+        "李华",
+        "凌华",
+        "李慧"
+      ],
+      "source_ids": [
+        "ROSTER-李华"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-19",
+      "name": "徐伟",
+      "pinyin": "Xu Wei",
+      "abbreviation": "XW",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "徐伟"
+      ],
+      "source_ids": [
+        "ROSTER-徐伟"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-20",
+      "name": "王敬勇",
+      "pinyin": "Wang Jing Yong",
+      "abbreviation": "WJY",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "王敬勇"
+      ],
+      "source_ids": [
+        "ROSTER-王敬勇"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-21",
+      "name": "程博",
+      "pinyin": "Cheng Bo",
+      "abbreviation": "CB",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "程博"
+      ],
+      "source_ids": [
+        "20"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-22",
+      "name": "凌华",
+      "pinyin": "Ling Hua",
+      "abbreviation": "LH",
+      "uniqueInCurrentRoster": false,
+      "sameAbbreviationNames": [
+        "李华",
+        "凌华",
+        "李慧"
+      ],
+      "source_ids": [
+        "ROSTER-凌华"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-23",
+      "name": "谭志东",
+      "pinyin": "Tan Zhi Dong",
+      "abbreviation": "TZD",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "谭志东"
+      ],
+      "source_ids": [
+        "ROSTER-谭志东"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-24",
+      "name": "王菁华",
+      "pinyin": "Wang Jing Hua",
+      "abbreviation": "WJH",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "王菁华"
+      ],
+      "source_ids": [
+        "ROSTER-王菁华"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-25",
+      "name": "蔡显军",
+      "pinyin": "Cai Xian Jun",
+      "abbreviation": "CXJ",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "蔡显军"
+      ],
+      "source_ids": [
+        "ROSTER-蔡显军"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-26",
+      "name": "傅祥斐",
+      "pinyin": "Fu Xiang Fei",
+      "abbreviation": "FXF",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "傅祥斐"
+      ],
+      "source_ids": [
+        "ROSTER-傅祥斐"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-27",
+      "name": "王永妍",
+      "pinyin": "Wang Yong Yan",
+      "abbreviation": "WYY",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "王永妍"
+      ],
+      "source_ids": [
+        "ROSTER-王永妍"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-28",
+      "name": "李仲泽",
+      "pinyin": "Li Zhong Ze",
+      "abbreviation": "LZZ",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "李仲泽"
+      ],
+      "source_ids": [
+        "ROSTER-李仲泽"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-29",
+      "name": "王永青",
+      "pinyin": "Wang Yong Qing",
+      "abbreviation": "WYQ",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "王永青"
+      ],
+      "source_ids": [
+        "ROSTER-王永青"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-30",
+      "name": "贺建刚",
+      "pinyin": "He Jian Gang",
+      "abbreviation": "HJG",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "贺建刚"
+      ],
+      "source_ids": [
+        "ROSTER-贺建刚"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-31",
+      "name": "王禹",
+      "pinyin": "Wang Yu",
+      "abbreviation": "WY",
+      "uniqueInCurrentRoster": false,
+      "sameAbbreviationNames": [
+        "王烨",
+        "王禹"
+      ],
+      "source_ids": [
+        "ROSTER-王禹"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-32",
+      "name": "李慧",
+      "pinyin": "Li Hui",
+      "abbreviation": "LH",
+      "uniqueInCurrentRoster": false,
+      "sameAbbreviationNames": [
+        "李华",
+        "凌华",
+        "李慧"
+      ],
+      "source_ids": [
+        "ROSTER-李慧"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-33",
+      "name": "陈冬华",
+      "pinyin": "Chen Dong Hua",
+      "abbreviation": "CDH",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "陈冬华"
+      ],
+      "source_ids": [
+        "ROSTER-陈冬华"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    },
+    {
+      "mentorId": "mentor-34",
+      "name": "单文涛",
+      "pinyin": "Shan Wen Tao",
+      "abbreviation": "SWT",
+      "uniqueInCurrentRoster": true,
+      "sameAbbreviationNames": [
+        "单文涛"
+      ],
+      "source_ids": [
+        "ROSTER-单文涛",
+        "AM-SWT-PINYIN"
+      ],
+      "role": "姓名检索对照；不因字典存在便宣称发现对应评价"
+    }
+  ],
+  "aliases": [
+    {
+      "alias": "DBR",
+      "normalized": "DBR",
+      "mentorIds": [
+        "mentor-01"
+      ],
+      "mentorNames": [
+        "董必荣"
+      ],
+      "status": "user_confirmed",
+      "observedInComment": true,
+      "source_ids": [
+        "X01"
+      ],
+      "reason": "用户本轮明确确认DBR为董必荣；姓名首字母对照一致。此处只确认名称，d b r具体评论由DBR研究组另补。"
+    },
+    {
+      "alias": "MDL",
+      "normalized": "MDL",
+      "mentorIds": [
+        "mentor-05"
+      ],
+      "mentorNames": [
+        "马德林"
+      ],
+      "status": "context_unique",
+      "observedInComment": true,
+      "source_ids": [
+        "X01"
+      ],
+      "reason": "南审MPAcc选导帖语境中，当前34人名录的MDL唯一对应马德林；评价内容与本人经历是否具体另行标注。",
+      "associatedComment": {
+        "author": "douzie",
+        "date": null,
+        "postDate": "2025-04-02",
+        "quote": null,
+        "summary": "现有已读摘记记载：douzie在该选导帖中以MDL作正面提名，没有具体行为。",
+        "kind": "general_endorsement",
+        "firsthand": null,
+        "degree": null,
+        "relationship": null,
+        "rawQuoteRetained": false,
+        "reading_scope": "复核本地reviews_group_a.json马德林段及evidence-index.xlsx同一摘记；本轮未重新读到该层评论原句。"
+      }
+    },
+    {
+      "alias": "ZL",
+      "normalized": "ZL",
+      "mentorIds": [
+        "mentor-04"
+      ],
+      "mentorNames": [
+        "张力"
+      ],
+      "status": "context_unique",
+      "observedInComment": true,
+      "source_ids": [
+        "X01"
+      ],
+      "reason": "当前名录中ZL唯一对应张力；本地语境摘记确认出现，但原句、作者及日期未单独保留。"
+    },
+    {
+      "alias": "XW",
+      "normalized": "XW",
+      "mentorIds": [
+        "mentor-19"
+      ],
+      "mentorNames": [
+        "徐伟"
+      ],
+      "status": "context_unique",
+      "observedInComment": true,
+      "source_ids": [
+        "X01",
+        "X02"
+      ],
+      "reason": "当前名录中XW唯一对应徐伟；X01与X02阅读日志均记载出现。X02一条追加回复曾读，原句未存，不编造态度或指导事实。"
+    },
+    {
+      "alias": "WJY",
+      "normalized": "WJY",
+      "mentorIds": [
+        "mentor-20"
+      ],
+      "mentorNames": [
+        "王敬勇"
+      ],
+      "status": "context_unique",
+      "observedInComment": true,
+      "source_ids": [
+        "X02"
+      ],
+      "reason": "当前名录中WJY唯一对应王敬勇。原先读取记录载明WJY主评和可见致谢，但原句及作者未保留；既有王敬勇全名竞赛经历另有独立记录。"
+    },
+    {
+      "alias": "YBY",
+      "normalized": "YBY",
+      "mentorIds": [
+        "mentor-14"
+      ],
+      "mentorNames": [
+        "叶邦银"
+      ],
+      "status": "context_unique",
+      "observedInComment": true,
+      "source_ids": [
+        "X01"
+      ],
+      "reason": "南审MPAcc选导帖中YBY按当前名录唯一对应叶邦银；可见评论是未说明理由的选择态度，不作具体指导或避雷事实。",
+      "associatedComment": {
+        "author": "粥Zhou",
+        "date": "2025-04-02",
+        "postDate": "2025-04-02",
+        "quote": "答应我千万不要选yby...",
+        "summary": "评论表达不建议选择YBY的态度；画面中原句末尾截断，未给出原因或本人接触关系。",
+        "kind": "selection_attitude",
+        "firsthand": null,
+        "degree": null,
+        "relationship": null,
+        "rawQuoteRetained": true,
+        "reading_scope": "实际查看已发布原帖截图dist/evidence/xhs/x01-post-top.jpg；只保留画面可见片段。",
+        "screenshot": "./evidence/xhs/x01-post-top.jpg"
+      }
+    },
+    {
+      "alias": "CXJ",
+      "normalized": "CXJ",
+      "mentorIds": [
+        "mentor-25"
+      ],
+      "mentorNames": [
+        "蔡显军"
+      ],
+      "status": "context_unique",
+      "observedInComment": true,
+      "source_ids": [
+        "X01"
+      ],
+      "reason": "当前名录中CXJ唯一对应蔡显军；只有已读语境摘记，未保存该缩写评论逐字原句，不反推具体经历。"
+    },
+    {
+      "alias": "TZD",
+      "normalized": "TZD",
+      "mentorIds": [
+        "mentor-23"
+      ],
+      "mentorNames": [
+        "谭志东"
+      ],
+      "status": "context_unique",
+      "observedInComment": true,
+      "source_ids": [
+        "X01"
+      ],
+      "reason": "当前名录中TZD唯一对应谭志东；只有已读语境摘记，未保存该缩写评论逐字原句。"
+    },
+    {
+      "alias": "许汉 y",
+      "normalized": "许汉Y",
+      "mentorIds": [
+        "mentor-08"
+      ],
+      "mentorNames": [
+        "许汉友"
+      ],
+      "status": "partial_name_context",
+      "observedInComment": true,
+      "source_ids": [
+        "X02"
+      ],
+      "reason": "两字完整姓名加末字首字母，且位于南审会计专硕导师求助帖，可对照许汉友；该句是问题而非评价。",
+      "associatedComment": {
+        "author": "不想说",
+        "date": "03-31（年份未显示）",
+        "postDate": "03-31（年份未显示）",
+        "quote": "想问一下许汉y老师怎么样呀，有没有了解的",
+        "summary": "询问老师情况，属于求助，不是正负面评价。",
+        "kind": "question",
+        "firsthand": null,
+        "degree": null,
+        "relationship": null,
+        "rawQuoteRetained": true,
+        "reading_scope": "实际查看dist/evidence/xhs/x02-post-top.jpg；未读截图中折叠的3条回复。",
+        "screenshot": "./evidence/xhs/x02-post-top.jpg"
+      }
+    },
+    {
+      "alias": "崔老师",
+      "normalized": "崔老师",
+      "mentorIds": [
+        "mentor-07"
+      ],
+      "mentorNames": [
+        "崔秀梅"
+      ],
+      "status": "roster_context_candidate",
+      "observedInComment": true,
+      "source_ids": [
+        "X01"
+      ],
+      "reason": "当前名录唯一崔姓老师为崔秀梅；原分支原句未保留，先做候选对照，不将笼统称呼附会成特定指导经历。"
+    },
+    {
+      "alias": "黄老师/黄导",
+      "normalized": "黄老师/黄导",
+      "mentorIds": [
+        "mentor-06"
+      ],
+      "mentorNames": [
+        "黄中生"
+      ],
+      "status": "roster_context_candidate",
+      "observedInComment": true,
+      "source_ids": [
+        "X01"
+      ],
+      "reason": "当前名录唯一黄姓老师为黄中生；作为候选姓名对照，具体分支的引用与褒贬仍须看原文，不能从称呼自动生成口碑。"
+    },
+    {
+      "alias": "WY",
+      "normalized": "WY",
+      "mentorIds": [
+        "mentor-03",
+        "mentor-31"
+      ],
+      "mentorNames": [
+        "王烨",
+        "王禹"
+      ],
+      "status": "multiple_candidates",
+      "observedInComment": false,
+      "source_ids": [],
+      "reason": "当前34人名录中同缩写有王烨、王禹。既有potential_collision条目仅表示潜在重名，不证明原帖出现WY评价。"
+    },
+    {
+      "alias": "LH",
+      "normalized": "LH",
+      "mentorIds": [
+        "mentor-18",
+        "mentor-22",
+        "mentor-32"
+      ],
+      "mentorNames": [
+        "李华",
+        "凌华",
+        "李慧"
+      ],
+      "status": "multiple_candidates",
+      "observedInComment": false,
+      "source_ids": [],
+      "reason": "当前34人名录中同缩写有李华、凌华、李慧三位。既有potential_collision条目仅表示潜在重名，不证明原帖出现LH评价。"
+    },
+    {
+      "alias": "张老师",
+      "normalized": "张老师",
+      "mentorIds": [
+        "mentor-04",
+        "mentor-13"
+      ],
+      "mentorNames": [
+        "张力",
+        "张兴亮"
+      ],
+      "status": "multiple_candidates",
+      "observedInComment": true,
+      "source_ids": [
+        "X01"
+      ],
+      "reason": "当前名录有两位张姓老师，不把泛称张老师强配给其中一位；章之旺为章姓，不并入张老师候选。"
+    },
+    {
+      "alias": "C开头",
+      "normalized": "C开头",
+      "mentorIds": [
+        "mentor-07",
+        "mentor-21",
+        "mentor-25",
+        "mentor-33"
+      ],
+      "mentorNames": [
+        "崔秀梅",
+        "程博",
+        "蔡显军",
+        "陈冬华"
+      ],
+      "status": "multiple_candidates",
+      "observedInComment": true,
+      "source_ids": [
+        "X01"
+      ],
+      "reason": "当前名录多位姓氏首字母为C；这个不完整缩写不足以唯一定位。"
+    },
+    {
+      "alias": "SWT",
+      "normalized": "SWT",
+      "mentorIds": [
+        "mentor-34"
+      ],
+      "mentorNames": [
+        "单文涛"
+      ],
+      "status": "dictionary_only",
+      "observedInComment": false,
+      "source_ids": [
+        "AM-SWT-PINYIN",
+        "ROSTER-单文涛"
+      ],
+      "reason": "学校个人页列同篇论文；期刊中英文作者对应单文涛/SHAN Wentao，姓氏拼音可核。未检得SWT评论原文，不能生成评价。"
+    },
+    {
+      "alias": "DWT",
+      "normalized": "DWT",
+      "mentorIds": [
+        "mentor-34"
+      ],
+      "mentorNames": [
+        "单文涛"
+      ],
+      "status": "search_variant_only",
+      "observedInComment": false,
+      "source_ids": [],
+      "reason": "历史检索曾把多音字单试读为Dan；现有期刊英文明列SHAN Wentao，DWT只作历史检索变体，不并列为已证实姓名拼音。"
+    }
+  ],
+  "reviewProposals": [
+    {
+      "suggestedId": "sr-alias-20261113-mdl",
+      "mentorId": "mentor-05",
+      "mentorName": "马德林",
+      "sourceIds": [
+        "X01"
+      ],
+      "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "narrator": "douzie",
+      "date": null,
+      "postDate": "2025-04-02",
+      "degree": "未说明",
+      "year": null,
+      "relationship": "未说明本人接触关系",
+      "experienceType": "general",
+      "firsthand": null,
+      "polarity": "positive",
+      "text": "现有已读摘记记载：douzie在该选导帖中以MDL作正面提名，没有具体行为。",
+      "originalExcerpt": null,
+      "attribution": {
+        "status": "confirmed_context_mapping",
+        "alias": "MDL",
+        "reason": "同校MPAcc选导帖语境与当前名录唯一拼音缩写对应；姓名对应和体验证据分别呈现。"
+      },
+      "contextAssessment": {
+        "status": "abbreviation_attitude_without_experience",
+        "displayLabel": "缩写提名／选择态度 · 未说明具体经历",
+        "eligibleForRecommendation": false,
+        "eligibleForConcern": false,
+        "reason": "未交代本人指导关系、具体行为与结果；不将态度词改写成真实相处或MPAcc培养结论。"
+      },
+      "readingScope": "复核本地reviews_group_a.json马德林段及evidence-index.xlsx同一摘记；本轮未重新读到该层评论原句。",
+      "readThisRound": false,
+      "isNewIndependentSource": false,
+      "isNewStudentExperience": false,
+      "limits": [
+        "来自既有X01同帖的缩写内容；不增加帖子数量。",
+        "只表示该评论者的未详述态度，不能据此概括全部学生或推定导师指导方式。",
+        "原句未留存，只采用已读摘要，不添加引号假装逐字引用。"
+      ]
+    },
+    {
+      "suggestedId": "sr-alias-20261113-yby",
+      "mentorId": "mentor-14",
+      "mentorName": "叶邦银",
+      "sourceIds": [
+        "X01"
+      ],
+      "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "narrator": "粥Zhou",
+      "date": "2025-04-02",
+      "postDate": "2025-04-02",
+      "degree": "未说明",
+      "year": null,
+      "relationship": "未说明本人接触关系",
+      "experienceType": "general",
+      "firsthand": null,
+      "polarity": "negative",
+      "text": "评论表达不建议选择YBY的态度；画面中原句末尾截断，未给出原因或本人接触关系。",
+      "originalExcerpt": "答应我千万不要选yby...",
+      "attribution": {
+        "status": "confirmed_context_mapping",
+        "alias": "YBY",
+        "reason": "同校MPAcc选导帖语境与当前名录唯一拼音缩写对应；姓名对应和体验证据分别呈现。"
+      },
+      "contextAssessment": {
+        "status": "abbreviation_attitude_without_experience",
+        "displayLabel": "缩写提名／选择态度 · 未说明具体经历",
+        "eligibleForRecommendation": false,
+        "eligibleForConcern": false,
+        "reason": "未交代本人指导关系、具体行为与结果；不将态度词改写成真实相处或MPAcc培养结论。"
+      },
+      "readingScope": "实际查看已发布原帖截图dist/evidence/xhs/x01-post-top.jpg；只保留画面可见片段。",
+      "readThisRound": true,
+      "isNewIndependentSource": false,
+      "isNewStudentExperience": false,
+      "limits": [
+        "来自既有X01同帖的缩写内容；不增加帖子数量。",
+        "只表示该评论者的未详述态度，不能据此概括全部学生或推定导师指导方式。",
+        "原句画面末尾截断，只引用可见片段；未读到或截到后续原因。"
+      ]
+    }
+  ],
+  "nonReviewComments": [
+    {
+      "mentorId": "mentor-08",
+      "mentorName": "许汉友",
+      "source_ids": [
+        "X02"
+      ],
+      "author": "不想说",
+      "date": "03-31（年份未显示）",
+      "postDate": "03-31（年份未显示）",
+      "quote": "想问一下许汉y老师怎么样呀，有没有了解的",
+      "summary": "询问老师情况，属于求助，不是正负面评价。",
+      "kind": "question",
+      "firsthand": null,
+      "degree": null,
+      "relationship": null,
+      "rawQuoteRetained": true,
+      "reading_scope": "实际查看dist/evidence/xhs/x02-post-top.jpg；未读截图中折叠的3条回复。",
+      "screenshot": "./evidence/xhs/x02-post-top.jpg",
+      "includeInStudentReviewCount": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "X01",
+      "title": "南审mpacc导师求推荐",
+      "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "date": "2025-04-02",
+      "publisher": "小红书／银河落九天",
+      "reading_scope": "本轮查看已发布原帖顶层截图及复核本地既有阅读日志；本轮网页直接open不可访问，没有重新打开所有评论。",
+      "limits": [
+        "本轮只在截图直接读到YBY片段，MDL等其他条目仅有既有摘要。",
+        "整篇与截图是同一来源，不重复增加来源。"
+      ]
+    },
+    {
+      "id": "X02",
+      "title": "nau会计专硕导师求推荐",
+      "url": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+      "date": null,
+      "publisher": "小红书／17元博物馆✨",
+      "reading_scope": "本轮实际查看已发布x02-post-top.jpg，读到许汉y提问；其余缩写仅复核既有阅读日志。网页直接open不可访问。",
+      "limits": [
+        "年份未显示。",
+        "提问不当作学生评价。"
+      ]
+    },
+    {
+      "id": "AM-SWT-PINYIN",
+      "title": "连锁董事网络与企业动态创新能力——基于多重治理情境的调节作用",
+      "url": "https://cjlc.zufe.edu.cn/CN/abstract/abstract1859.shtml",
+      "date": "2021-11-04",
+      "publisher": "《财经论丛》期刊官网",
+      "reading_scope": "中英文作者、单位、作者简介及出版日期，L4—25；学校单文涛个人页L145列同篇，身份对应。",
+      "limits": [
+        "只用于姓名拼音核对，不是导师学生评价或学生去向。"
+      ],
+      "web_ref": "turn278view0"
+    },
+    {
+      "id": "ROSTER-单文涛",
+      "title": "单文涛（南京审计大学会计学院教师页）",
+      "url": "https://account.nau.edu.cn/2019/0620/c8881a99630/page.htm",
+      "date": "2023-08-17",
+      "publisher": "南京审计大学会计学院",
+      "reading_scope": "教师身份及主要论文第19项，与期刊中英文作者对应。",
+      "limits": [
+        "既有教师来源，不计新增独立来源。"
+      ],
+      "web_ref": "turn278view1"
+    }
+  ],
+  "searches": [
+    {
+      "query": "南审 wjy 导师 评价；南审 mdl 导师；南京审计大学 徐伟 学生 评价",
+      "engine": "system1",
+      "result": "主要返回教师简介、教学荣誉与已有官方报道，未取得可读的新缩写评论。ACCA教学荣誉不当作学生个人评价。"
+    },
+    {
+      "query": "南审 单文涛 Shan；单文涛 Dan Wentao；单文涛 Shan Wentao",
+      "engine": "system1",
+      "result": "期刊主站同篇中英文作者与南审单位可对应，确定SHAN/SWT；未采用同名法律文书与仿冒学校镜像。"
+    },
+    {
+      "url": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+      "operation": "web open",
+      "result": "tool reports not accessible；不宣称重新读过评论。"
+    },
+    {
+      "url": "https://www.xiaohongshu.com/explore/69cba3e80000000028008246",
+      "operation": "web open",
+      "result": "tool reports not accessible；不宣称重新读过评论。"
+    }
+  ],
+  "mergeNotes": [
+    "姓名对照与评价可信度拆开：唯一缩写可显示对应姓名，不再一刀切写仅检索候选；只有态度的内容仍保持general/firsthand:null。",
+    "MDL可按既有摘要归在马德林名下，YBY可按实际截图归在叶邦银名下；两者eligibleForRecommendation及eligibleForConcern均false。",
+    "ZL/XW/WJY/CXJ/TZD原句没有被现有研究文件逐字保留，先提供姓名对照与原帖入口，不凭语境集合为每位编造单独褒贬。",
+    "许汉y是问题，不能因能对应许汉友就给他新增评价样本。",
+    "WY与LH是候选冲突字典，existing potential_collision条目未证明原帖中真实出现，不计实际缩写评论。",
+    "旧gaps中的无全名所以不能对应应改为具体经历/身份尚缺，而非继续否认可用姓名对照。"
+  ]
+}

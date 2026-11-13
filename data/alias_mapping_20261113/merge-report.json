@@ -1,0 +1,25 @@
+{
+  "aliasEntries": 39,
+  "visibleAliasEntries": 17,
+  "initialGroups": 31,
+  "namedGeneralRecordIds": [
+    "sr-alias-20261113-dbr",
+    "sr-alias-20261113-mdl",
+    "sr-alias-20261113-yby"
+  ],
+  "studentReviewRecords": 44,
+  "newFirsthandRecords": 0,
+  "newSocialPosts": 0,
+  "sourceRegistryCount": 491,
+  "collisionGroups": {
+    "WY": [
+      "王烨",
+      "王禹"
+    ],
+    "LH": [
+      "李华",
+      "凌华",
+      "李慧"
+    ]
+  }
+}
