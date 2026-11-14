@@ -1,0 +1,173 @@
+{
+  "checkedAt": "2026-11-14",
+  "mentors": [
+    "王永妍",
+    "王永青",
+    "贺建刚",
+    "陈冬华",
+    "单文涛"
+  ],
+  "newAdoptablePersonalReviews": 0,
+  "newPrimaryReviewPages": 0,
+  "newRecommendationOrAvoidanceStatements": 0,
+  "newScreenshots": 0,
+  "newSources": 0,
+  "queryScope": {
+    "directQueries": [
+      "\"王永妍\" 老师 评价 学生",
+      "\"王永青\" \"南审\" 老师",
+      "\"单文涛\" 老师 评价 学生",
+      "\"南审\" \"WYY\" 导师",
+      "\"单文涛\" site:zhihu.com",
+      "\"王永妍\" site:xiaohongshu.com",
+      "\"王永青\" \"南京审计大学\" \"老师\" -site:nau.edu.cn -site:paper.edu.cn",
+      "\"南审\" \"swt\" \"老师\"",
+      "\"王永妍\" \"评价\"",
+      "\"单文涛\" \"评价\"",
+      "\"王永青\" \"导师\" \"学生\" 南京",
+      "\"南京审计大学\" \"单\" \"导师\" \"避雷\"",
+      "\"南审\" \"单老师\"",
+      "\"南京审计大学\" \"王永妍\" -site:nau.edu.cn -site:cnki.net -site:asc.net.cn -site:zucaitz.com -site:stlbakes.com",
+      "\"南审\" \"王永青\" -site:nau.edu.cn -site:cnki.net -site:zucaitz.com",
+      "\"南审\" \"wyy\" \"推荐\"",
+      "\"南审\" \"王永妍\" 小红书 知乎 贴吧",
+      "\"单文涛\" site:bilibili.com",
+      "\"王永青\" \"南审\" site:tieba.baidu.com",
+      "\"WYY\" \"南审\" \"避雷\"",
+      "\"王永妍\" \"挂科\"",
+      "\"王永青\" \"push\"",
+      "\"单文涛\" \"不push\"",
+      "\"南审\" \"单老师\" \"选课\""
+    ],
+    "directQueryCount": 24,
+    "engines": [
+      "system1",
+      "system2"
+    ],
+    "childSearch": [
+      "system1按全名检索导师评价、避雷、恩师、论文指导和本人经历",
+      "system2定向知乎、贴吧交叉检索",
+      "未访问或更换小红书浏览器、未登录、未绕过会员限制"
+    ]
+  },
+  "excludedExamples": [
+    {
+      "url": "https://news.nau.edu.cn/2026/1014/c11360a162564/page.htm",
+      "refs": [
+        "turn442search0",
+        "turn458search3"
+      ],
+      "finding": "既有崔秀梅采访，提及王永妍共同指导。",
+      "disposition": "既有来源；不能把明确谈崔秀梅的个人行为转归王永妍。"
+    },
+    {
+      "url": "https://mpacc.nau.edu.cn/2025/1107/c11508a150102/page.htm",
+      "refs": [
+        "turn442search1",
+        "turn455search5"
+      ],
+      "finding": "现有案例赛团队和共同指导报道。",
+      "disposition": "不是新的个人推荐或避雷，不增加评价。"
+    },
+    {
+      "url": "https://mpacc.nau.edu.cn/2026/0622/c11508a159587/page.htm",
+      "refs": [
+        "turn442search2",
+        "turn455search4"
+      ],
+      "finding": "既有王永妍讲座。",
+      "disposition": "讲座主题、项目过程不代替指导体验。"
+    },
+    {
+      "url": "https://account.nau.edu.cn/2019/0620/c8881a99630/page.htm",
+      "refs": [
+        "turn442search7",
+        "turn445search0",
+        "turn464search1"
+      ],
+      "finding": "单文涛个人页含学生评教荣誉，无具体学生评论正文。",
+      "disposition": "不将汇总荣誉拆成口碑条目，不推日常指导。"
+    },
+    {
+      "refs": [
+        "turn455search0",
+        "turn455search6",
+        "turn455search8"
+      ],
+      "finding": "“单老师”检索主要为其他部门教务联系人。",
+      "disposition": "单姓不能对应单文涛。"
+    },
+    {
+      "refs": [
+        "turn449search1",
+        "turn449search7",
+        "turn449search18",
+        "turn464search0"
+      ],
+      "finding": "同名的工科教师、留学顾问或专利发明人。",
+      "disposition": "身份不符，排除。"
+    },
+    {
+      "refs": [
+        "turn445search1",
+        "turn445search2",
+        "turn445search6",
+        "turn458search0"
+      ],
+      "finding": "非学校域名的检索结果把学校名称替换为博彩品牌。",
+      "disposition": "仅见检索结果，不访问，不作为原始来源。"
+    },
+    {
+      "url": "https://daoshipingjia.net/schools/%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%AD%A6/%E5%95%86%E5%AD%A6%E9%99%A2%EF%BC%88%E7%BB%8F%E6%B5%8E%E5%AD%A6%E9%99%A2%EF%BC%8C%E7%AE%A1%E7%90%86%E5%AD%A6%E9%99%A2%EF%BC%89",
+      "ref": "turn448view0",
+      "scope": "学校目录可读，陈冬华入口为社区会员专享；未读个人评论正文",
+      "disposition": "不采用目录数字、排名或更新月当推荐/避雷；仍是南京大学历史归属而非南审MPAcc个案。"
+    },
+    {
+      "url": "https://www.scribd.com/document/636820102/%E7%BA%A2",
+      "refs": [
+        "turn448search1",
+        "turn452search0"
+      ],
+      "scope": "搜索服务给出课程表摘录，未取得原始学生记录来源、作者与完整语境",
+      "disposition": "“会计学 陈冬华”条目仅有含不明缩写的零碎课程特征，不能理解成导师避雷或推荐。"
+    },
+    {
+      "url": "https://www.nju.edu.cn/info/3181/36581.htm",
+      "ref": "turn461search0",
+      "scope": "官方人物获奖报道搜索摘录",
+      "disposition": "“获得学生的一致好评”为机构概述，没有具体学生、评论原话或接触过程，不补为个人评价。"
+    },
+    {
+      "url": "https://mpacc.nau.edu.cn/2026/0917/c11506a161858/page.htm",
+      "refs": [
+        "turn448search3",
+        "turn452search4"
+      ],
+      "scope": "官方新生讲座报道",
+      "disposition": "现有来源或讲座事实，不作个人口碑。"
+    },
+    {
+      "url": "https://www.zhihu.com/xen/market/remix/paid_magazine/1394520625306722304",
+      "ref": "turn457search0",
+      "scope": "系统检索指向贺建刚等论文的下架商品",
+      "disposition": "论文而非导师评价，不采用。"
+    },
+    {
+      "url": "https://www.scribd.com/document/636820102/%E7%BA%A2",
+      "refs": [
+        "turn467view0",
+        "turn467view1"
+      ],
+      "readingScope": "实际读取说明与陈冬华会计学条目附近；说明为2021年12月18日南小宝数据导出，Scribd上传者Yeyeye。",
+      "finding": "陈冬华条目仅有“关于课程特色:可能去到lmh...”的残缺语句。",
+      "disposition": "来源是南京大学历史选课资料；缩写与句意不足以确立推荐、避雷或论文指导体验，不采用。"
+    }
+  ],
+  "limits": [
+    "未找到新增可归名反馈，不代表网络上不存在。",
+    "不重试先前遇设备登录限制的小红书浏览器，也未登录、换代理、换指纹或绕过会员入口。",
+    "未使用招录名单、考试成绩、身份信息或无关个人信息补导师画像。",
+    "不把官方奖项、课程表残句、搜索次数或重复镜像算作新增评价。"
+  ]
+}

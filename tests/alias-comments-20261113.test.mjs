@@ -60,8 +60,8 @@ async function boot(data=dataset){
 }
 
 test('the November alias update adds eleven records from ten comments without multiplying source posts',()=>{
-  assert.equal(entries.length,55);
-  assert.equal(new Set(entries.map(({review})=>review.id)).size,55,'review ids must remain unique');
+  assert.equal(entries.length,dataset.meta.counts.studentReviewRecords);
+  assert.equal(new Set(entries.map(({review})=>review.id)).size,entries.length,'review ids must remain unique');
   assert.equal(added.length,11);
   const expected={
     'sr-alias-comments-20261113-xw':'徐伟',

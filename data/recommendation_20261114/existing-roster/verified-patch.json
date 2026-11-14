@@ -1,0 +1,407 @@
+{
+  "newSources": [
+    {
+      "code": "RGE01",
+      "title": "棒！五个南审学霸组团考博成功（2021年采访原图；网页2025年展示）",
+      "label": "潘俊师门五人考博访谈原图",
+      "url": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "originalUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "date": "2025-07-21",
+      "experienceDate": "2021-06",
+      "kind": "官方",
+      "platform": "南京审计大学新闻网",
+      "category": "学校选编具名学生经历",
+      "population": "长图点名五名研究生及共同导师潘俊；本次新增三个具名指导叙述，三人是既有去向名单中的人。",
+      "limitations": "学校正面选编，不是独立平台评价；三条叙述同一来源，未出现明确推荐选导或避雷措辞。长图未区分个人学硕/专硕。网页标2025.07.21；既有孙昊晨访谈明确回忆2021年6月策划同名推送，不能当作2025年新经历或新增升学人数。",
+      "readingScope": [
+        "实际读取学校正文与唯一720×17791原始长图全部文字；逐段核读五人姓名、个人叙述及底部潘俊师生关系。",
+        "用既有O-PJ/18（孙昊晨2025-08-20访谈）L89核对采访策划时间；学校2021-06-04报道另明确余一品为2020届会计专业硕士，但本补丁未据此修改原去向或新增第二主要来源。"
+      ],
+      "relatedExistingSourceIds": [
+        "O-PJ",
+        "18",
+        "MOA05"
+      ],
+      "originalImage": {
+        "src": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+        "caption": "学校原始长图全文：五名研究生科研与考博经历，页示2025年，实际采访为2021年",
+        "sourceId": "RGE01",
+        "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+        "originalImageUrl": "https://news.nau.edu.cn/_upload/article/images/ef/d3/c3031ab44986b04ca38d71a27545/fa581f15-4b76-4dbf-b51c-38c08f85d3f0.jpg",
+        "kind": "original-post-image",
+        "textAltered": false,
+        "width": 720,
+        "height": 17791,
+        "bytes": 6165360,
+        "sha256": "5ca8220007c7a38476ca948f0fde3426d5303f384ebfbe803f35b295e077489f",
+        "scope": [
+          "学校正文唯一长图逐段实际读完；本地仅分段查看辅助核读，公开文件为服务器原始字节，未裁切、拼接、改字。"
+        ],
+        "capturedAt": "2026-11-14"
+      }
+    },
+    {
+      "code": "RGE02",
+      "title": "〖毕业季〗会计学院2021届毕业研究生培养再创佳绩（余一品MPAcc身份核对）",
+      "label": "余一品2020届会计专业硕士身份",
+      "url": "https://nau.edu.cn/_t505/2021/0604/c5729a79657/page.htm",
+      "originalUrl": "https://nau.edu.cn/_t505/2021/0604/c5729a79657/page.htm",
+      "canonicalUrl": "https://nau.edu.cn/_t505/2021/0604/c5729a79657/page.htm",
+      "date": "2021-06-04",
+      "kind": "官方",
+      "platform": "南京审计大学官网",
+      "category": "学位身份交叉核对",
+      "author": "会计学院 柳希望 周书明 报道",
+      "population": "正文明确余一品为2020届会计专业硕士毕业生，2021年考取上海财经大学博士。",
+      "limitations": "仅用来核对余一品身份和年代，不增加一篇导师评价或新增学生去向。其余学生只写会计硕士，不据此确定MPAcc。",
+      "readingScope": [
+        "实际阅读全文L47—61，核对署名、页面日期和余一品所在段；没有把全院就业单位套到单个学生或导师。"
+      ],
+      "samePersonBasis": [
+        "RGE01与本页均为南京审计大学会计学院研究生余一品。",
+        "两页均记其2021年考取上海财经大学博士；RGE01图内明确会计学博士，文章采访年份由既有O-PJ/18的2021年6月回忆交叉确定。",
+        "本页再明确其2020届会计专业硕士身份；不是只凭姓名将外校同名者拼接。"
+      ],
+      "role": "identity-only-support-not-new-review-page"
+    }
+  ],
+  "newPersonalReviews": [
+    {
+      "sourceIds": [
+        "RGE01",
+        "RGE02"
+      ],
+      "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "sourceTitle": "棒！五个南审学霸组团考博成功",
+      "postAuthor": "南京审计大学新闻网（原图未见个人署名）",
+      "postDate": "2025-07-21",
+      "date": "2025-07-21",
+      "experienceDate": "2021-06",
+      "year": "2020届硕士；2021年采访（网页标2025-07-21）",
+      "degree": "MPAcc（RGE02正文明确2020届会计专业硕士）",
+      "degreeScope": "mpacc",
+      "identity": "余一品，2020届会计专业硕士毕业生；2021年采访中的具名受访者",
+      "relationship": "硕士导师；长图末段明确潘俊是这五名研究生的导师，另与既有MOA05具名名单相符",
+      "experienceType": "interview",
+      "experienceLabel": "2021年学校选编指导经历",
+      "firsthand": true,
+      "polarity": "positive",
+      "attribution": {
+        "status": "confirmed",
+        "alias": "原文全名",
+        "reason": "原图逐人列出姓名，末段明确五名研究生共同导师为潘俊；不是按缩写或共同署名推断。"
+      },
+      "limits": [
+        "学校选编的历史正面经历，同篇三个受访者不等于三个独立来源；没有明确推荐/劝退选导语句。",
+        "采访实际为2021年，网页标2025年；不据此推定当前组会、反馈或就业安排。",
+        "RGE01未写学位类型，余一品MPAcc身份由RGE02的同学院、同名及同年同一博士去向交叉核实；此补丁不新增去向人数。",
+        "直接引语涵盖学院与导师，不能把平台或实习机会单独归功潘俊。"
+      ],
+      "readingScope": [
+        "学校正文及原始长图全段实际读取；姓名、个人叙述和底部共同导师说明已核对。"
+      ],
+      "readThisRound": true,
+      "screenshots": [
+        {
+          "src": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+          "caption": "学校原始长图全文：五名研究生科研与考博经历，页示2025年，实际采访为2021年",
+          "sourceId": "RGE01",
+          "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+          "originalImageUrl": "https://news.nau.edu.cn/_upload/article/images/ef/d3/c3031ab44986b04ca38d71a27545/fa581f15-4b76-4dbf-b51c-38c08f85d3f0.jpg",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 720,
+          "height": 17791,
+          "bytes": 6165360,
+          "sha256": "5ca8220007c7a38476ca948f0fde3426d5303f384ebfbe803f35b295e077489f",
+          "scope": [
+            "学校正文唯一长图逐段实际读完；本地仅分段查看辅助核读，公开文件为服务器原始字节，未裁切、拼接、改字。"
+          ],
+          "capturedAt": "2026-11-14"
+        }
+      ],
+      "contextAssessment": {
+        "status": "official_named_historical_guidance",
+        "displayLabel": "2021年具名指导经历 · 学校选编",
+        "eligibleForRecommendation": false,
+        "eligibleForConcern": false,
+        "reason": "可支持具体指导方式；受访者未直接表达选导推荐或避雷，不能加权为选择票。",
+        "scope": "历史单人个案，同一官方选编来源",
+        "batch": "recommendation-20261114"
+      },
+      "expansionBatch": "recommendation-20261114",
+      "id": "sr-recommendation-20261114-panjun-yuyipin",
+      "mentorId": "mentor-11",
+      "mentorName": "潘俊",
+      "narrator": "余一品",
+      "text": "余一品回忆：就业与读博规划均得到导师耐心指导，写首篇论文遇困难时，导师点拨帮助其找到方向。",
+      "specifics": [],
+      "relatedStudentOutcomeIds": [
+        "MOA-PJ-YYP"
+      ],
+      "contextNotes": {
+        "excerpt": {
+          "kind": "visible_quote",
+          "text": "耐心地指导我们",
+          "sourceIds": [
+            "RGE01"
+          ],
+          "screenshotSrc": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+          "scope": "学校原始长图可见文字；仅摘极短原句，完整上下文见同一原图。"
+        },
+        "sourceIds": [
+          "RGE01"
+        ]
+      },
+      "degreeEvidence": {
+        "sourceIds": [
+          "RGE02"
+        ],
+        "url": "https://nau.edu.cn/_t505/2021/0604/c5729a79657/page.htm",
+        "text": "学校2021-06-04报道明确写余一品为2020届会计专业硕士毕业生，且同年考取上海财经大学博士，与RGE01同学院、姓名、2021年博士去向相符。",
+        "readingScope": "正文L60及作者/日期L50—52实际读取；不只凭姓名合并身份。"
+      }
+    },
+    {
+      "sourceIds": [
+        "RGE01"
+      ],
+      "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "sourceTitle": "棒！五个南审学霸组团考博成功",
+      "postAuthor": "南京审计大学新闻网（原图未见个人署名）",
+      "postDate": "2025-07-21",
+      "date": "2025-07-21",
+      "experienceDate": "2021-06",
+      "year": "2021年采访（网页标2025-07-21）",
+      "degree": "硕士（本长图未区分学硕/专硕）",
+      "degreeScope": "master_unspecified",
+      "identity": "学校选编采访中的具名研究生",
+      "relationship": "硕士导师；长图末段明确潘俊是这五名研究生的导师，另与既有MOA05具名名单相符",
+      "experienceType": "interview",
+      "experienceLabel": "2021年学校选编指导经历",
+      "firsthand": true,
+      "polarity": "positive",
+      "attribution": {
+        "status": "confirmed",
+        "alias": "原文全名",
+        "reason": "原图逐人列出姓名，末段明确五名研究生共同导师为潘俊；不是按缩写或共同署名推断。"
+      },
+      "limits": [
+        "学校选编的历史正面经历，同篇三个受访者不等于三个独立来源；没有明确推荐/劝退选导语句。",
+        "采访实际为2021年，网页标2025年；不据此推定当前组会、反馈或就业安排。",
+        "本长图未写个人学硕/专硕，不升级为已确认MPAcc，也不新增去向人数。",
+        "复试帮助来自同门余一品，不能改写成潘俊亲自准备。",
+        "每周组会频次是姚继晴段落中的学校报道叙述；不是受访者加引号的逐字原话。"
+      ],
+      "readingScope": [
+        "学校正文及原始长图全段实际读取；姓名、个人叙述和底部共同导师说明已核对。"
+      ],
+      "readThisRound": true,
+      "screenshots": [
+        {
+          "src": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+          "caption": "学校原始长图全文：五名研究生科研与考博经历，页示2025年，实际采访为2021年",
+          "sourceId": "RGE01",
+          "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+          "originalImageUrl": "https://news.nau.edu.cn/_upload/article/images/ef/d3/c3031ab44986b04ca38d71a27545/fa581f15-4b76-4dbf-b51c-38c08f85d3f0.jpg",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 720,
+          "height": 17791,
+          "bytes": 6165360,
+          "sha256": "5ca8220007c7a38476ca948f0fde3426d5303f384ebfbe803f35b295e077489f",
+          "scope": [
+            "学校正文唯一长图逐段实际读完；本地仅分段查看辅助核读，公开文件为服务器原始字节，未裁切、拼接、改字。"
+          ],
+          "capturedAt": "2026-11-14"
+        }
+      ],
+      "contextAssessment": {
+        "status": "official_named_historical_guidance",
+        "displayLabel": "2021年具名指导经历 · 学校选编",
+        "eligibleForRecommendation": false,
+        "eligibleForConcern": false,
+        "reason": "可支持具体指导方式；受访者未直接表达选导推荐或避雷，不能加权为选择票。",
+        "scope": "历史单人个案，同一官方选编来源",
+        "batch": "recommendation-20261114"
+      },
+      "expansionBatch": "recommendation-20261114",
+      "id": "sr-recommendation-20261114-panjun-yaojiqing",
+      "mentorId": "mentor-11",
+      "mentorName": "潘俊",
+      "narrator": "姚继晴",
+      "text": "姚继晴的具名段落记载，团队按周汇报论文和课题进度，师门互学；申博复试前余一品帮其梳理材料和准备面试。",
+      "specifics": [],
+      "relatedStudentOutcomeIds": [
+        "MOA-PJ-YJQ"
+      ],
+      "contextNotes": {
+        "excerpt": {
+          "kind": "visible_quote",
+          "text": "每周有一次组会",
+          "sourceIds": [
+            "RGE01"
+          ],
+          "screenshotSrc": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+          "scope": "学校原始长图姚继晴段落的报道叙述；该短句不是加引号的受访者逐字引语，完整上下文见同一原图。",
+          "attributionType": "school_report_within_named_interview_section"
+        },
+        "sourceIds": [
+          "RGE01"
+        ]
+      }
+    },
+    {
+      "sourceIds": [
+        "RGE01"
+      ],
+      "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "sourceTitle": "棒！五个南审学霸组团考博成功",
+      "postAuthor": "南京审计大学新闻网（原图未见个人署名）",
+      "postDate": "2025-07-21",
+      "date": "2025-07-21",
+      "experienceDate": "2021-06",
+      "year": "2021年采访（网页标2025-07-21）",
+      "degree": "硕士（本长图未区分学硕/专硕）",
+      "degreeScope": "master_unspecified",
+      "identity": "学校选编采访中的具名研究生",
+      "relationship": "硕士导师；长图末段明确潘俊是这五名研究生的导师，另与既有MOA05具名名单相符",
+      "experienceType": "interview",
+      "experienceLabel": "2021年学校选编指导经历",
+      "firsthand": true,
+      "polarity": "positive",
+      "attribution": {
+        "status": "confirmed",
+        "alias": "原文全名",
+        "reason": "原图逐人列出姓名，末段明确五名研究生共同导师为潘俊；不是按缩写或共同署名推断。"
+      },
+      "limits": [
+        "学校选编的历史正面经历，同篇三个受访者不等于三个独立来源；没有明确推荐/劝退选导语句。",
+        "采访实际为2021年，网页标2025年；不据此推定当前组会、反馈或就业安排。",
+        "本长图未写个人学硕/专硕，不升级为已确认MPAcc，也不新增去向人数。",
+        "鼓励由导师和师兄共同提供；不把全部技术训练归功导师。"
+      ],
+      "readingScope": [
+        "学校正文及原始长图全段实际读取；姓名、个人叙述和底部共同导师说明已核对。"
+      ],
+      "readThisRound": true,
+      "screenshots": [
+        {
+          "src": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+          "caption": "学校原始长图全文：五名研究生科研与考博经历，页示2025年，实际采访为2021年",
+          "sourceId": "RGE01",
+          "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+          "originalImageUrl": "https://news.nau.edu.cn/_upload/article/images/ef/d3/c3031ab44986b04ca38d71a27545/fa581f15-4b76-4dbf-b51c-38c08f85d3f0.jpg",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 720,
+          "height": 17791,
+          "bytes": 6165360,
+          "sha256": "5ca8220007c7a38476ca948f0fde3426d5303f384ebfbe803f35b295e077489f",
+          "scope": [
+            "学校正文唯一长图逐段实际读完；本地仅分段查看辅助核读，公开文件为服务器原始字节，未裁切、拼接、改字。"
+          ],
+          "capturedAt": "2026-11-14"
+        }
+      ],
+      "contextAssessment": {
+        "status": "official_named_historical_guidance",
+        "displayLabel": "2021年具名指导经历 · 学校选编",
+        "eligibleForRecommendation": false,
+        "eligibleForConcern": false,
+        "reason": "可支持具体指导方式；受访者未直接表达选导推荐或避雷，不能加权为选择票。",
+        "scope": "历史单人个案，同一官方选编来源",
+        "batch": "recommendation-20261114"
+      },
+      "expansionBatch": "recommendation-20261114",
+      "id": "sr-recommendation-20261114-panjun-zhouhuiyang",
+      "mentorId": "mentor-11",
+      "mentorName": "潘俊",
+      "narrator": "周会洋",
+      "text": "周会洋回忆考博状态低落时获得导师和师兄鼓励；报道也记载导师引导其把编程用于科研。",
+      "specifics": [],
+      "relatedStudentOutcomeIds": [
+        "MOA-PJ-ZHY"
+      ],
+      "contextNotes": {
+        "excerpt": {
+          "kind": "visible_quote",
+          "text": "给了我很大的鼓励",
+          "sourceIds": [
+            "RGE01"
+          ],
+          "screenshotSrc": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+          "scope": "学校原始长图可见文字；仅摘极短原句，完整上下文见同一原图。"
+        },
+        "sourceIds": [
+          "RGE01"
+        ]
+      }
+    }
+  ],
+  "newSocialPosts": [
+    {
+      "id": "RGE01-five-phd-original",
+      "key": "南京审计大学新闻网:146632",
+      "sourceIds": [
+        "RGE01"
+      ],
+      "url": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "title": "五人考博访谈：论文点拨、每周组会与备考支持",
+      "author": "南京审计大学新闻网",
+      "date": "2025-07-21（实际2021年采访）",
+      "platform": "学校官网",
+      "category": "具名指导经历",
+      "topic": "导师与研究训练",
+      "population": "2021年学校选编的研究生访谈；长图未区分个人学硕/专硕。",
+      "summary": "同一潘俊师门访谈中，三位具名学生提供具体科研或备考经历；属于既有去向名单中的人。",
+      "tips": [
+        "余一品：就业/读博规划与论文点拨。",
+        "姚继晴：每周组会、同门互助。",
+        "周会洋：编程用于科研、低落期支持。"
+      ],
+      "comments": [],
+      "limitations": "学校选编正面访谈，不是独立评价样本；网页2025年展示不能当作2025年经历。不把吴小涵明确谈校外导师供数据的段落归给潘俊；景雪峰仅赞学校平台，未新增个人导师评价。",
+      "readingScopes": [
+        "学校正文和唯一原始长图全部文字已实际读完。"
+      ],
+      "verificationStatus": "原始长图已核读；具体指导可追溯",
+      "screenedOnly": false,
+      "needsVerification": false,
+      "screenshots": [
+        {
+          "src": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+          "caption": "学校原始长图全文：五名研究生科研与考博经历，页示2025年，实际采访为2021年",
+          "sourceId": "RGE01",
+          "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+          "originalImageUrl": "https://news.nau.edu.cn/_upload/article/images/ef/d3/c3031ab44986b04ca38d71a27545/fa581f15-4b76-4dbf-b51c-38c08f85d3f0.jpg",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 720,
+          "height": 17791,
+          "bytes": 6165360,
+          "sha256": "5ca8220007c7a38476ca948f0fde3426d5303f384ebfbe803f35b295e077489f",
+          "scope": [
+            "学校正文唯一长图逐段实际读完；本地仅分段查看辅助核读，公开文件为服务器原始字节，未裁切、拼接、改字。"
+          ],
+          "capturedAt": "2026-11-14"
+        }
+      ],
+      "expansionBatch": "recommendation-20261114"
+    }
+  ],
+  "newSelectionSignals": [],
+  "sourceCodesUsed": [
+    "RGE01",
+    "RGE02"
+  ],
+  "newDestinations": [],
+  "newStudents": [],
+  "countingNote": "3条新历史具名叙述、1个新指导访谈主要页面＋1个身份核对页面、0条明确选导推荐/避雷、0个新去向/新学生。三人已在MOA05去向名单内；原图全部五人去向都已存在，禁止重计。",
+  "suggestedMentorSummaryAppend": "另有2021年学校选编的余一品、姚继晴、周会洋三个具体经历：论文点拨、每周组会与备考支持；同篇来源，余一品由2021年学校报道确认为2020届MPAcc，其余两人未确认学位类型。"
+}

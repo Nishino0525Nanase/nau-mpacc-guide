@@ -143,3 +143,15 @@ test('post images open in the same-page gallery, keep comment context, and rejec
   a.click('post-image',{id:post.id,src:'./evidence/xhs/another-post.jpg'});
   assert.equal(a.get('#review-image-dialog').open,false);
 });
+
+test('verified long original images open from the review without admitting traversal paths',async()=>{
+  const data=fixture(),path='./evidence/recommendation-20261114/panjun-five-phd-original.jpg';
+  setReview(data,0,{screenshots:[shot(path,{width:720,height:17791}),shot('./evidence/recommendation-20261114/../private.jpg')]});
+  const a=await boot(data),html=a.detail();
+  assert.equal(imgCount(html,path),1);assert.doesNotMatch(html,/private.jpg/);
+  a.click('review-image',{mentorId:'mentor-01',reviewId:'image-review-0',index:'0'});
+  assert.equal(a.get('#review-image-dialog').open,true);
+  assert.match(a.get('#review-image-content').innerHTML,/panjun-five-phd-original.jpg/);
+  a.click('review-image-mode',{mode:'original'});
+  assert.equal(a.get('#review-image-content').dataset.mode,'original');
+});

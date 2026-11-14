@@ -122,3 +122,46 @@ test('curated signal excerpts and scope text are escaped before prominent render
   assert.match(html,/&lt;script&gt;SCOPE_ATTACK/);
   assert.doesNotMatch(html,/<img src=x|<script>SCOPE_ATTACK|href="javascript:/);
 });
+
+test('a shared contextual warning stays one comment and is not promoted to strong or firsthand',async()=>{
+  const records=dataset.mentors.flatMap(mentor=>mentor.studentReviews.reviews
+    .filter(review=>review.sharedCommentId==='x01-shaxue-20250404-first-two')
+    .map(review=>({mentor,review})));
+  assert.deepEqual(records.map(({mentor})=>mentor.name),['董必荣','温素彬']);
+  assert.equal(new Set(records.map(({review})=>review.sourceCommentKey)).size,1);
+  for(const {review} of records){
+    assert.equal(review.selectionSignal.direction,'avoid');
+    assert.equal(review.selectionSignal.intensity,'explicit');
+    assert.notEqual(review.firsthand,true);
+    assert.equal(review.contextAssessment.eligibleForConcern,false);
+  }
+  const a=await boot(dataset);a.input('沙雪');
+  assert.deepEqual(namesInCards(a.cards()),['董必荣','温素彬']);
+  assert.match(a.panel(),/同一评论涉及董必荣、温素彬/);
+  assert.doesNotMatch(a.panel(),/强烈劝退|强烈不建议/);
+});
+
+test('historical school-selected experiences do not become new selection votes or current arrangements',async()=>{
+  const mentor=dataset.mentors.find(mentor=>mentor.name==='潘俊');
+  const reviews=mentor.studentReviews.reviews.filter(review=>review.expansionBatch==='recommendation-20261114');
+  assert.equal(reviews.length,3);
+  assert.equal(new Set(reviews.map(review=>review.sourceUrl)).size,1);
+  for(const review of reviews){
+    assert.equal(review.experienceDate,'2021-06');
+    assert.match(review.year,/2021.*2025/);
+    assert.equal(review.selectionSignal,undefined);
+    assert.equal(review.contextAssessment.eligibleForRecommendation,false);
+    assert(review.screenshots[0].height>17000);
+  }
+  const yyp=reviews.find(review=>review.narrator==='余一品');
+  assert.equal(yyp.degreeScope,'mpacc');assert(yyp.sourceIds.includes('RGE02'));
+  assert(reviews.filter(review=>review!==yyp).every(review=>review.degreeScope==='master_unspecified'));
+  assert.equal(dataset.sourceRegistry.RGE02.role,'identity-only-support-not-new-review-page');
+  const a=await boot(dataset);a.input('姚继晴');
+  assert.deepEqual(namesInCards(a.cards()),['潘俊']);
+  assert.doesNotMatch(a.panel(),/潘俊/);
+  const detail=a.detail(mentor.id);
+  assert.match(detail,/历史经历 · 学校选编/);
+  assert.match(detail,/经历2021-06 · 网页2025-07-21/);
+  assert.match(detail,/每周有一次组会/);
+});

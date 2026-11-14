@@ -1,0 +1,22 @@
+{
+  "batch": "recommendation-20261114",
+  "reviewRecords": 60,
+  "newIndependentComments": 1,
+  "newDossierRecords": 2,
+  "newNamedHistoricalExperiences": 3,
+  "newPrimaryPages": 1,
+  "newIdentitySupportPages": 1,
+  "newStrongSelectionSignals": 0,
+  "newStudents": 0,
+  "newDestinations": 0,
+  "directImageEvidenceUpdatedRecords": 4,
+  "sharedCommentId": "x01-shaxue-20250404-first-two",
+  "sharedMentorIds": [
+    "mentor-01",
+    "mentor-02"
+  ],
+  "sourceRegistryEntries": 510,
+  "rawPostRecords": 157,
+  "officialEvidenceEntries": 285,
+  "countingNote": "一条既有帖评论对应两位导师；三条历史经历来自同一新访谈，另有一页仅用于身份核对。不是五名独立评论者或五篇新帖。"
+}

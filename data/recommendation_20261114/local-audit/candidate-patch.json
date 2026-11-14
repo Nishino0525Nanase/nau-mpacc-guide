@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 1,
+  "batch": "recommendation-local-audit-20261114",
+  "baseReviewRecordCount": 55,
+  "scope": "Local saved original screenshot reread only. Candidate patch for parent review; no primary data or generated site changes were applied.",
+  "counts": {
+    "newPrimaryComments": 1,
+    "newReviewRecords": 2,
+    "newSourcePages": 0,
+    "newImages": 0,
+    "existingReviewEvidenceUpdates": 4
+  },
+  "newReviewRecords": [
+    {
+      "mentorId": "mentor-01",
+      "mentorName": "董必荣",
+      "review": {
+        "id": "sr-local-20261114-dbr-shaxue",
+        "sourceIds": [
+          "X01"
+        ],
+        "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+        "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+        "sourceTitle": "南审mpacc导师求推荐",
+        "postAuthor": "银河落九天",
+        "postDate": "2025-04-02",
+        "narrator": "沙雪",
+        "date": "2025-04-04",
+        "year": "2025",
+        "degree": "未说明",
+        "identity": "评论账号；未说明学位及与老师的接触关系，身份未独立认证",
+        "relationship": "未说明本人接触关系",
+        "experienceType": "general",
+        "experienceLabel": "按名单指代的明确劝退 · 接触未明",
+        "firsthand": null,
+        "polarity": "negative",
+        "text": "同帖评论明确不建议选名单前两位，并表达对老师事务繁忙、指导时间有限的担心；未说明本人接触关系或具体指导经历。",
+        "specifics": [],
+        "attribution": {
+          "status": "confirmed",
+          "alias": "前两个",
+          "reason": "同一张原网页截图的原帖教师名单前两位依次为董必荣、温素彬；“前两个”按这段可见名单顺序对应。确认仅指评论对象归属，不代表评论者身份及其说法已获证实。"
+        },
+        "contextAssessment": {
+          "status": "alias_attitude_without_experience",
+          "displayLabel": "明确劝退 · 接触未明",
+          "eligibleForRecommendation": false,
+          "eligibleForConcern": false,
+          "reason": "有明确选择态度与评论者的担心，但未说明本人指导关系、具体事件和结果；不生成导师投入或培养质量结论。",
+          "batch": "recommendation-local-audit-20261114"
+        },
+        "limits": [
+          "董必荣、温素彬两份档案引用的是沙雪同一条评论，只计一条独立评论，不增加帖子或独立来源数量。",
+          "评论者身份、学位及本人接触关系未核实；所述事务繁忙及指导时间担心是其个人说法，不能当作已证实的指导事实。",
+          "评论原话为明确劝退，没有强烈程度修饰或反复强调，不提高为强烈避雷；历史评论也不用于断言当前职务或现状。"
+        ],
+        "readingScope": [
+          "2026-11-14复核2026-11-13保存的原网页截图：读到沙雪2025-04-04主评及同图原帖名单前两位；未重新访问原帖，未新增展开回复。"
+        ],
+        "readThisRound": true,
+        "contextNotes": {
+          "excerpt": {
+            "kind": "visible_quote",
+            "text": "前两个劝你别选",
+            "sourceIds": [
+              "X01"
+            ],
+            "scope": "原网页保存截图可见沙雪、2025-04-04和同图名单；只摘录明确选择态度短句。",
+            "screenshotSrc": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg"
+          },
+          "context": [
+            "同图原帖左侧名单前两位依次为董必荣、温素彬。",
+            "评论后文表达其对事务繁忙和指导时间的担心，未说明具体接触过程。"
+          ],
+          "interpretation": {
+            "text": "这是一条指向两位名单对象的明确劝退意见；所述原因仍是评论者未经核实的说法。",
+            "confidence": "limited",
+            "alternative": "未知评论者本人是否受其指导，也未见具体事件、频次或结果。"
+          },
+          "limits": [
+            "不由职务、名单指代或一句选导意见推断当前指导表现。"
+          ],
+          "sourceIds": [
+            "X01"
+          ]
+        },
+        "researchProvenance": {
+          "file": "data/recommendation_20261114/local-audit/audit.json",
+          "method": "local-original-screenshot-reread",
+          "screenshotAvailableThisRound": true,
+          "capturedAt": "2026-11-13",
+          "rereadAt": "2026-11-14"
+        },
+        "selectionSignal": {
+          "direction": "avoid",
+          "intensity": "explicit",
+          "displayLabel": "原帖明确劝退",
+          "alias": "前两个",
+          "excerpt": {
+            "kind": "visible_quote",
+            "text": "前两个劝你别选"
+          },
+          "sourceIds": [
+            "X01"
+          ],
+          "scope": "明确劝退用语；没有强烈程度修饰或反复强调。名单顺序确认对象，未说明本人接触关系，不证实其对指导时间的推测。"
+        },
+        "sourceCommentKey": "X01:沙雪:2025-04-04:前两个",
+        "screenshots": [
+          {
+            "src": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+            "caption": "沙雪明确劝退“前两个”；同图保留评论日期与原帖名单前两位姓名",
+            "sourceId": "X01",
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false,
+            "width": 1363,
+            "height": 936,
+            "bytes": 89529,
+            "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
+            "scope": [
+              "保存的原网页截图可见该条顶层评论及原帖教师名单；2026-11-14本地复核，未重新访问原帖，未声称读完折叠回复。"
+            ],
+            "capturedAt": "2026-11-13"
+          }
+        ]
+      }
+    },
+    {
+      "mentorId": "mentor-02",
+      "mentorName": "温素彬",
+      "review": {
+        "id": "sr-local-20261114-wsb-shaxue",
+        "sourceIds": [
+          "X01"
+        ],
+        "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+        "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+        "sourceTitle": "南审mpacc导师求推荐",
+        "postAuthor": "银河落九天",
+        "postDate": "2025-04-02",
+        "narrator": "沙雪",
+        "date": "2025-04-04",
+        "year": "2025",
+        "degree": "未说明",
+        "identity": "评论账号；未说明学位及与老师的接触关系，身份未独立认证",
+        "relationship": "未说明本人接触关系",
+        "experienceType": "general",
+        "experienceLabel": "按名单指代的明确劝退 · 接触未明",
+        "firsthand": null,
+        "polarity": "negative",
+        "text": "同帖评论明确不建议选名单前两位，并表达对老师事务繁忙、指导时间有限的担心；未说明本人接触关系或具体指导经历。",
+        "specifics": [],
+        "attribution": {
+          "status": "confirmed",
+          "alias": "前两个",
+          "reason": "同一张原网页截图的原帖教师名单前两位依次为董必荣、温素彬；“前两个”按这段可见名单顺序对应。确认仅指评论对象归属，不代表评论者身份及其说法已获证实。"
+        },
+        "contextAssessment": {
+          "status": "alias_attitude_without_experience",
+          "displayLabel": "明确劝退 · 接触未明",
+          "eligibleForRecommendation": false,
+          "eligibleForConcern": false,
+          "reason": "有明确选择态度与评论者的担心，但未说明本人指导关系、具体事件和结果；不生成导师投入或培养质量结论。",
+          "batch": "recommendation-local-audit-20261114"
+        },
+        "limits": [
+          "董必荣、温素彬两份档案引用的是沙雪同一条评论，只计一条独立评论，不增加帖子或独立来源数量。",
+          "评论者身份、学位及本人接触关系未核实；所述事务繁忙及指导时间担心是其个人说法，不能当作已证实的指导事实。",
+          "评论原话为明确劝退，没有强烈程度修饰或反复强调，不提高为强烈避雷；历史评论也不用于断言当前职务或现状。"
+        ],
+        "readingScope": [
+          "2026-11-14复核2026-11-13保存的原网页截图：读到沙雪2025-04-04主评及同图原帖名单前两位；未重新访问原帖，未新增展开回复。"
+        ],
+        "readThisRound": true,
+        "contextNotes": {
+          "excerpt": {
+            "kind": "visible_quote",
+            "text": "前两个劝你别选",
+            "sourceIds": [
+              "X01"
+            ],
+            "scope": "原网页保存截图可见沙雪、2025-04-04和同图名单；只摘录明确选择态度短句。",
+            "screenshotSrc": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg"
+          },
+          "context": [
+            "同图原帖左侧名单前两位依次为董必荣、温素彬。",
+            "评论后文表达其对事务繁忙和指导时间的担心，未说明具体接触过程。"
+          ],
+          "interpretation": {
+            "text": "这是一条指向两位名单对象的明确劝退意见；所述原因仍是评论者未经核实的说法。",
+            "confidence": "limited",
+            "alternative": "未知评论者本人是否受其指导，也未见具体事件、频次或结果。"
+          },
+          "limits": [
+            "不由职务、名单指代或一句选导意见推断当前指导表现。"
+          ],
+          "sourceIds": [
+            "X01"
+          ]
+        },
+        "researchProvenance": {
+          "file": "data/recommendation_20261114/local-audit/audit.json",
+          "method": "local-original-screenshot-reread",
+          "screenshotAvailableThisRound": true,
+          "capturedAt": "2026-11-13",
+          "rereadAt": "2026-11-14"
+        },
+        "selectionSignal": {
+          "direction": "avoid",
+          "intensity": "explicit",
+          "displayLabel": "原帖明确劝退",
+          "alias": "前两个",
+          "excerpt": {
+            "kind": "visible_quote",
+            "text": "前两个劝你别选"
+          },
+          "sourceIds": [
+            "X01"
+          ],
+          "scope": "明确劝退用语；没有强烈程度修饰或反复强调。名单顺序确认对象，未说明本人接触关系，不证实其对指导时间的推测。"
+        },
+        "sourceCommentKey": "X01:沙雪:2025-04-04:前两个",
+        "screenshots": [
+          {
+            "src": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+            "caption": "沙雪明确劝退“前两个”；同图保留评论日期与原帖名单前两位姓名",
+            "sourceId": "X01",
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false,
+            "width": 1363,
+            "height": 936,
+            "bytes": 89529,
+            "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
+            "scope": [
+              "保存的原网页截图可见该条顶层评论及原帖教师名单；2026-11-14本地复核，未重新访问原帖，未声称读完折叠回复。"
+            ],
+            "capturedAt": "2026-11-13"
+          }
+        ]
+      }
+    }
+  ],
+  "existingReviewEvidenceUpdates": [
+    {
+      "mentorId": "mentor-24",
+      "mentorName": "王菁华",
+      "reviewId": "sr-818ece587d45da",
+      "set": {
+        "screenshots": [
+          {
+            "src": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+            "caption": "冬日来信同条评论：王菁华课程体验；同图保留其他老师段落以便分开归因",
+            "sourceId": "X01",
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false,
+            "width": 1363,
+            "height": 936,
+            "bytes": 104838,
+            "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
+            "scope": [
+              "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+            ],
+            "capturedAt": "2026-11-13"
+          }
+        ]
+      },
+      "operation": "add-direct-source-screenshot-only",
+      "preserveFields": [
+        "polarity",
+        "firsthand",
+        "degree",
+        "relationship",
+        "experienceType",
+        "experienceLabel",
+        "contextAssessment",
+        "selectionSignal",
+        "text",
+        "specifics",
+        "limits"
+      ],
+      "sourceCommentCountDelta": 0
+    },
+    {
+      "mentorId": "mentor-20",
+      "mentorName": "王敬勇",
+      "reviewId": "sr-8eb242b45986c8",
+      "set": {
+        "screenshots": [
+          {
+            "src": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+            "caption": "冬日来信同条评论：王敬勇竞赛接触评价；其成绩说法仍属评论者陈述",
+            "sourceId": "X01",
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false,
+            "width": 1363,
+            "height": 936,
+            "bytes": 104838,
+            "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
+            "scope": [
+              "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+            ],
+            "capturedAt": "2026-11-13"
+          }
+        ]
+      },
+      "operation": "add-direct-source-screenshot-only",
+      "preserveFields": [
+        "polarity",
+        "firsthand",
+        "degree",
+        "relationship",
+        "experienceType",
+        "experienceLabel",
+        "contextAssessment",
+        "selectionSignal",
+        "text",
+        "specifics",
+        "limits"
+      ],
+      "sourceCommentCountDelta": 0
+    },
+    {
+      "mentorId": "mentor-02",
+      "mentorName": "温素彬",
+      "reviewId": "sr-6f547fefb6425f",
+      "set": {
+        "screenshots": [
+          {
+            "src": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+            "caption": "冬日来信同条评论：温素彬总体好感；不能将同评他人的课程或竞赛经历归给温素彬",
+            "sourceId": "X01",
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false,
+            "width": 1363,
+            "height": 936,
+            "bytes": 104838,
+            "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
+            "scope": [
+              "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+            ],
+            "capturedAt": "2026-11-13"
+          }
+        ]
+      },
+      "operation": "add-direct-source-screenshot-only",
+      "preserveFields": [
+        "polarity",
+        "firsthand",
+        "degree",
+        "relationship",
+        "experienceType",
+        "experienceLabel",
+        "contextAssessment",
+        "selectionSignal",
+        "text",
+        "specifics",
+        "limits"
+      ],
+      "sourceCommentCountDelta": 0
+    },
+    {
+      "mentorId": "mentor-26",
+      "mentorName": "傅祥斐",
+      "reviewId": "sr-6cc30c5c8335af",
+      "set": {
+        "screenshots": [
+          {
+            "src": "./evidence/xhs/x01-lgc-20261113.jpg",
+            "caption": "momo自述Excel实验课接触，评价温和、关心学生及不push；不推断研究生指导要求",
+            "sourceId": "X01",
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false,
+            "width": 1363,
+            "height": 936,
+            "bytes": 94409,
+            "sha256": "8fe6d54e6c3b7692479906ea09328eebf8f77b8ec8b227760b502f4d87d031d0",
+            "scope": [
+              "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+            ],
+            "capturedAt": "2026-11-13"
+          }
+        ]
+      },
+      "operation": "add-direct-source-screenshot-only",
+      "preserveFields": [
+        "polarity",
+        "firsthand",
+        "degree",
+        "relationship",
+        "experienceType",
+        "experienceLabel",
+        "contextAssessment",
+        "selectionSignal",
+        "text",
+        "specifics",
+        "limits"
+      ],
+      "sourceCommentCountDelta": 0
+    }
+  ],
+  "sourceUpdates": []
+}

@@ -1,0 +1,151 @@
+{
+  "scope": [
+    "章之旺",
+    "罗琰",
+    "吴青川",
+    "刘静",
+    "李华"
+  ],
+  "checkedDate": "2026-11-14",
+  "newAttributedPersonalReviews": 0,
+  "newReadUGCReviewPosts": 0,
+  "newAvoidOrRecommendSignals": 0,
+  "queriesByBatch": [
+    [
+      "章之旺 导师 评价",
+      "罗琰 南审 推荐",
+      "吴青川 学生 老师 评价",
+      "刘静 南京审计 导师 评价"
+    ],
+    [
+      "章之旺 老师 推荐 学生（排除官网）",
+      "罗琰 老师 评价（排除官网）",
+      "吴青川 老师 学生 推荐（排除官网）",
+      "南京审计大学 刘静 导师（排除招生简介）"
+    ],
+    [
+      "章之旺 site:zhihu.com",
+      "罗琰 site:xiaohongshu.com",
+      "吴青川 site:tieba.baidu.com",
+      "刘静 南审 site:xiaohongshu.com"
+    ],
+    [
+      "南京审计 李华老师",
+      "南审 章之旺",
+      "吴青川 推荐 导师 学长 学姐",
+      "南审 LY 导师 推荐"
+    ],
+    [
+      "南京审计大学 章之旺 导师评价",
+      "南审 罗琰 刘静 导师 推荐",
+      "南审 吴青川 避雷 推荐 导师"
+    ],
+    [
+      "章之旺 导师 论坛",
+      "吴青川 南审 贴吧",
+      "刘静 南审 老师 评教",
+      "罗琰 老师 南审 课程 推荐"
+    ],
+    [
+      "章之旺 感谢 导师",
+      "罗琰 致谢",
+      "吴青川 感谢 老师",
+      "刘静 南审 感谢 导师"
+    ],
+    [
+      "南审 导师 zzw 推荐",
+      "南审 wqc 老师",
+      "南审 ly 导师 避雷",
+      "南审 lj 导师 论文"
+    ]
+  ],
+  "queryCount": 31,
+  "note": "查询数不是帖子数量；多数结果是教师简介、获奖、新闻或同名误命中，没有用来填充个人口碑。",
+  "actualPageReadings": [
+    {
+      "url": "https://www.sohu.com/a/396733161_769713",
+      "ref": "turn456view0",
+      "title": "这41位老师，是你们最爱的，果然赞！",
+      "date": "2020-05-21",
+      "readingScope": "正文及完整教师/课程列表，重点刘静对应段",
+      "finding": "名单为2018—2019学期学生评教奖，列刘静及其课程；未见学生个人发言或具体指导过程。",
+      "decision": "不新增个人评价，不把集体奖项当推荐样本。"
+    },
+    {
+      "url": "https://www.sohu.com/a/400560059_769713",
+      "ref": "turn456view1",
+      "title": "我为什么推荐南审？学霸毕业生们的硬核表白",
+      "date": "2020-06-08",
+      "readingScope": "公开毕业生推荐段落；按五名目标教师姓名检索未见可归名评价",
+      "finding": "有学生对学校及老师群体的泛称赞，未对应本分组五位导师。",
+      "decision": "不把泛称赞归个人；实习及offer也不改就业。",
+      "nameFindRefs": [
+        "turn468view0",
+        "turn468view1",
+        "turn468view2",
+        "turn468view3",
+        "turn468view4"
+      ]
+    },
+    {
+      "url": "https://edu.jschina.com.cn/jybb/202305/t20230523_7949767.shtml",
+      "ref": "turn456view2",
+      "title": "从保险学高分跨考物理学，南审这个男生太酷啦",
+      "date": "2023-05-23",
+      "readingScope": "正文，重点本科课程教师印象",
+      "finding": "学生所评为刘妍、冯海昱，并非罗琰；不能因发音或保险专业背景改名。",
+      "decision": "排除当前34人导师口碑；不添名录外教师。"
+    }
+  ],
+  "identityWarnings": [
+    {
+      "name": "李华",
+      "rosterIdentity": "当前mentor-18：会计学院教授，管理会计/智能财务/绩效评价，人大商学院管理学博士，公开邮箱270457@nau.edu.cn。",
+      "otherSameName": "政府审计学院同名副教授，舞弊审计/CPA审计，天津财经大学会计学硕士，公开邮箱1069059126@qq.com。",
+      "sourceUrl": "https://sga.nau.edu.cn/2020/0527/c6377a65419/page.htm",
+      "ref": "turn441search0",
+      "readingScope": "搜索服务抽取的官方简介；另有辅修课通知命中",
+      "limit": "同校同名不合并，前者辅修课程或课堂反馈不得归入当前会计学教师。"
+    }
+  ],
+  "excludedSearchResults": [
+    {
+      "kind": "同名人物",
+      "description": "罗琰作为其他大学MBA论文作者、USMLE讨论者，以及深圳中学刘静老师等均非当前南审导师。"
+    },
+    {
+      "kind": "伪装镜像",
+      "description": "搜索返回若干博彩/不相关域名改写的南审文章，不作为来源或绕过官网的替代。"
+    },
+    {
+      "kind": "履历与奖励",
+      "description": "吴青川最喜爱老师荣誉、刘静学生评教奖、章之旺咨询和案例成果，都没有被转成学生个人推荐。"
+    },
+    {
+      "kind": "不完整缩写",
+      "description": "ZZW、WQC、LY、LJ查询没有得到可见原评论与全名上下文，不做缩写归名。"
+    }
+  ],
+  "platformLimits": [
+    "未重复访问已有设备登录限制的小红书浏览器，未换代理、客户端或登录绕过。",
+    "定向知乎/小红书/贴吧索引查询无可采用结果，不等于平台没有帖子或评价。"
+  ],
+  "webReferenceIds": [
+    "turn438search0",
+    "turn438search2",
+    "turn438search4",
+    "turn438search6",
+    "turn439search5",
+    "turn441search0",
+    "turn441search8",
+    "turn453search11",
+    "turn453search20",
+    "turn453search23",
+    "turn456view0",
+    "turn456view1",
+    "turn456view2",
+    "turn459search1",
+    "turn459search2",
+    "turn463search8"
+  ]
+}

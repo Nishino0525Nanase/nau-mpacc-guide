@@ -283,7 +283,8 @@ def main():
         for r in reviews:
             review_start = len(doc.paragraphs)
             relationship = clean(r.get('relationship') or '接触关系未说明')
-            meta = ' · '.join(str(v) for v in [r.get('narrator') or '评论者未记录', r.get('date') or '评论日期未显示', r.get('degree') or '学位未说明', relationship] if v)
+            date_label = ('经历' + r['experienceDate'] + '（网页' + str(r.get('postDate') or r.get('date')) + '）') if r.get('experienceDate') else (r.get('date') or '评论日期未显示')
+            meta = ' · '.join(str(v) for v in [r.get('narrator') or '评论者未记录', date_label, r.get('degree') or '学位未说明', relationship] if v)
             para(meta, size=9, after=3, keep=True)
             signal = r.get('selectionSignal')
             signal_label = ''
@@ -295,6 +296,10 @@ def main():
             if note:
                 kind = note['excerpt']['kind']
                 label = '原话片段' if kind == 'visible_quote' else '此前摘记用词' if kind == 'recorded_quote' else '已存摘要'
+                if note['excerpt'].get('attributionType') == 'school_report_within_named_interview_section':
+                    label = '学校报道叙述'
+                if not note.get('context') and not (note.get('interpretation') or {}).get('text'):
+                    para(r['text'], after=3)
                 para((signal_label + '  ' if signal_label else '') + label + '：' + note['excerpt']['text'], bold=bool(signal_label), after=3)
                 if note.get('context'):
                     para('上下文：' + clean(note['context']), size=10, after=3)
@@ -303,6 +308,10 @@ def main():
                     para('可能含义：' + interpretation['text'] + ' ' + clean(interpretation.get('alternative')), size=10, after=3)
                 if note.get('limits'):
                     para('边界：' + clean(note['limits']), size=9, after=4)
+                elif r.get('experienceDate'):
+                    para('边界：' + clean((r.get('limits') or [])[:2]), size=9, after=4)
+                if r.get('sharedCommentId'):
+                    para('同一评论在两位导师档案中引用，不计作两条独立评论。', size=9, after=4)
             else:
                 if signal_label:
                     para(signal_label, size=10, bold=True, after=3)

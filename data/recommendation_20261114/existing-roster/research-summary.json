@@ -1,0 +1,175 @@
+{
+  "checkedAt": "2026-11-14",
+  "mentors": [
+    "董必荣",
+    "温素彬",
+    "王烨",
+    "张力",
+    "马德林",
+    "黄中生",
+    "崔秀梅",
+    "许汉友",
+    "高凤莲",
+    "刘国城",
+    "潘俊",
+    "张兴亮",
+    "叶邦银",
+    "徐伟",
+    "王敬勇",
+    "程博",
+    "凌华",
+    "谭志东",
+    "王菁华",
+    "蔡显军",
+    "傅祥斐",
+    "李仲泽",
+    "王禹",
+    "李慧"
+  ],
+  "newAdoptablePersonalReviews": 3,
+  "newPrimaryReviewPages": 1,
+  "newRecommendationOrAvoidanceStatements": 0,
+  "newIndependentUgcReviews": 0,
+  "newSources": 2,
+  "newStudents": 0,
+  "newDestinations": 0,
+  "newOriginalImages": 1,
+  "sourceCodesUsed": [
+    "RGE01",
+    "RGE02"
+  ],
+  "finding": "在学校研究生教育列表第2页发现搜索摘要未展示正文的唯一长图，逐段读出具名学生具体科研/备考体验；全部来自同一学校选编原图。",
+  "readingEvidence": {
+    "pageUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+    "pageRef": "turn474view0",
+    "rawImageUrl": "https://news.nau.edu.cn/_upload/article/images/ef/d3/c3031ab44986b04ca38d71a27545/fa581f15-4b76-4dbf-b51c-38c08f85d3f0.jpg",
+    "imageRefs": [
+      "turn475view0",
+      "turn476view0"
+    ],
+    "pageDisplayedDate": "2025-07-21",
+    "actualExperienceDateBound": "2021-06",
+    "dateBasis": {
+      "url": "https://nau.edu.cn/2025/0820/c11307a146844/page.htm",
+      "sourceIds": [
+        "O-PJ",
+        "18"
+      ],
+      "ref": "turn479view0",
+      "lines": "89-91",
+      "finding": "既有孙昊晨报道明确回忆2021年6月以学生记者身份策划同名推送，并说明故事主角的导师为潘俊。"
+    },
+    "readingScope": "学校正文HTML及唯一720×17791原始图片全文全部读完；原图本地分段查看辅助阅读，未将分段图发布或当作原始截图。网页没有可见评论区。",
+    "fetchNote": "搜索工具首次成功打开原页，后续同URL有Internal Error；urllib实际重新取得HTML，确认2025.07.21及唯一原图src。没有登录、代理或访问控制绕过。"
+  },
+  "deduplication": {
+    "existingOutcomeIds": [
+      "MOA-PJ-YYP",
+      "MOA-PJ-JXF",
+      "MOA-PJ-YJQ",
+      "MOA-PJ-ZHY",
+      "MOA-PJ-WXH"
+    ],
+    "note": "同名五人全部已有学院考博去向记录；主数据没有此篇标题/文章ID/原图，也未收余、姚、周三人的个人指导叙述。新叙述不增加已知学生或考博人数。",
+    "existingMentorReviewIdsChecked": [
+      "sr-fc7bcc49c9bde1",
+      "sr-r7-panjun-lijialin-2022",
+      "sr-outcomes-20261113-yuanlu",
+      "sr-alias-comments-20261113-pj-linyu"
+    ]
+  },
+  "exclusionsFromNewImage": [
+    {
+      "person": "吴小涵",
+      "disposition": "长图记载普华永道实习与之后决定考博，但未载潘俊为其推荐实习；校外导师提供案例单位报表数据的叙述明确属于校外导师，不能归给潘俊。未新建潘俊个人评价。"
+    },
+    {
+      "person": "景雪峰",
+      "disposition": "个人叙述赞学校/学院学术平台、会议、名校讲座；没有具体潘俊行为，不转化为个人导师评价。"
+    },
+    {
+      "person": "潘俊",
+      "disposition": "文末他本人谈培养理念与生活段落属于教师/学校视角，不另拆成独立学生好评；严谨发火段落没有具体受访者，不单列负面评价。"
+    }
+  ],
+  "identityClarificationNotMerged": {
+    "url": "https://nau.edu.cn/_t505/2021/0604/c5729a79657/page.htm",
+    "ref": "turn479view2",
+    "title": "〖毕业季〗会计学院2021届毕业研究生培养再创佳绩",
+    "date": "2021-06-04",
+    "author": "会计学院 柳希望 周书明 报道",
+    "readingScope": "学校正文全文L47—61已读。",
+    "finding": "此独立历史报道明确余一品为2020届会计专业硕士、2021年考取上海财经大学博士；与RGE01同名、同学院、同年同一博士去向对应。其余两人仍仅标学位类型未说明。",
+    "status": "已作为RGE02身份核对来源纳入余一品评论；只补评论身份，未改去向记录。"
+  },
+  "searchScope": {
+    "engines": [
+      "system1",
+      "system2",
+      "TinyFish search（仅搜索，无浏览器操作）"
+    ],
+    "representativeQueries": [
+      "南京审计大学 导师 评价 董必荣 温素彬 王烨 张力",
+      "南审 会计 专硕 导师 避雷 推荐",
+      "南京审计大学 许汉友 张蓓 导师",
+      "南京审计大学 刘国城 导师 学生 评价",
+      "南京审计大学 潘俊 学生 科研 导师",
+      "南审 导师 董必荣 温素彬 知乎 贴吧",
+      "南京审计大学 程博 张兴亮 导师 推荐",
+      "南京审计大学 李仲泽 傅祥斐 王禹 李慧 学生",
+      "余一品 景雪峰 潘俊",
+      "棒！五个南审学霸组团考博成功",
+      "吴小涵 周会洋 2021",
+      "姚继晴 专业硕士",
+      "周会洋 专业硕士",
+      "吴小涵 专业硕士"
+    ],
+    "queryListNote": "这是代表性检索范围，未声称本文件是所有调用的逐字日志；没有用查询条数充当评论或来源数量。",
+    "nonSearchDiscovery": "顺着学校“研究生教育”列表2页的文章链接找到原图，不从未读搜索摘要补细节。"
+  },
+  "excludedExamples": [
+    {
+      "url": "https://nau.edu.cn/2020/0711/c5729a66714/page.htm",
+      "reason": "许汉友机构优秀导师介绍，既有R305；不把2020年聚合宣传重复拆成新学生评价。"
+    },
+    {
+      "url": "https://tw.nau.edu.cn/_t177/2024/0909/c3364a135121/page.psp",
+      "reason": "李仲泽吾爱吾师提名已收，不重计。"
+    },
+    {
+      "url": "https://news.nau.edu.cn/2020/0619/c5796a66103/page.htm",
+      "ref": "turn466view0",
+      "reason": "2020招生宣传主要是路国平及慕课团队，不是当前24人新的个人评价。"
+    },
+    {
+      "url": "https://news.nau.edu.cn/2026/1014/c11360a162564/page.htm",
+      "reason": "崔秀梅既有访谈，不重复采用。"
+    },
+    {
+      "ref": "turn443search0",
+      "reason": "Scribd教师评价资料不具本组具体身份与导师关系，不采用。"
+    },
+    {
+      "reason": "博彩域名镜像与同名CBA张兴亮等均排除，不访问博彩镜像，不从相似姓名映射。"
+    }
+  ],
+  "limits": [
+    "本组0条新增明确选导推荐/避雷，3条仅是历史具名指导叙述；未找到不代表不存在。",
+    "没有重试既有小红书设备登录限制、没有登录或更换客户端/代理；没有调用生产网站或私人访问数据。",
+    "三人属于同一个学校精选来源，不能扩大为三篇独立口碑或三个新去向。",
+    "姚继晴段落的组会频次是学校报道叙述，只有周会洋鼓励等部分是直接引语，分别标注。"
+  ],
+  "newIdentitySupportPages": 1,
+  "newAdoptableMPAccPersonalReviews": 1,
+  "visualQaPaths": {
+    "original": "/workspace/scratch/c08135c62de4/nau-mpacc-guide/dist/evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+    "localReadingOnlySegments": {
+      "nameAndDestinations": "/tmp/nau-five-phd-analysis/part-01.png",
+      "yuPersonalGuidance": "/tmp/nau-five-phd-analysis/part-02.png",
+      "yaoTeamWeeklyMeeting": "/tmp/nau-five-phd-analysis/part-07.png",
+      "zhouTechGuidance": "/tmp/nau-five-phd-analysis/part-08.png",
+      "zhouEncouragementAndExplicitFiveMentorRelationship": "/tmp/nau-five-phd-analysis/part-09.png"
+    },
+    "note": "分段仅用于本地阅读同一原图；没有发布，公开证据为字节未变原图。"
+  }
+}

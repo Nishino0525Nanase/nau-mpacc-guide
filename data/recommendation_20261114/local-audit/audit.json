@@ -1,0 +1,337 @@
+{
+  "batch": "recommendation-local-audit-20261114",
+  "date": "2026-11-14",
+  "status": "candidate-only; parent independently confirmed the newly recovered comment screenshot",
+  "method": [
+    "Read local source/history JSONs and current55 review records; searched exact comment text/nickname before proposing additions.",
+    "Visually inspected saved original webpage screenshots; duplicated crops and repeated comments remain one comment.",
+    "No live browser, production website, visitor statistics, private sessions or new online searches used."
+  ],
+  "counts": {
+    "newPrimaryComments": 1,
+    "newReviewRecords": 2,
+    "newSourcePages": 0,
+    "newImages": 0,
+    "existingReviewEvidenceUpdates": 4
+  },
+  "inspectedScreenshots": [
+    {
+      "src": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+      "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
+      "bytes": 104838,
+      "hashMatchesManifest": true
+    },
+    {
+      "src": "./evidence/xhs/x01-lgc-20261113.jpg",
+      "sha256": "8fe6d54e6c3b7692479906ea09328eebf8f77b8ec8b227760b502f4d87d031d0",
+      "bytes": 94409,
+      "hashMatchesManifest": true
+    },
+    {
+      "src": "./evidence/xhs/x01-pj-zxl-20261113.jpg",
+      "sha256": "34a51590467ea63993eada38d0a0b99c728fa20a948b121771c0596fe9d76b14",
+      "bytes": 93273,
+      "hashMatchesManifest": true
+    },
+    {
+      "src": "./evidence/xhs/x01-xw-dong-20261113.jpg",
+      "sha256": "62e9b6000515837900671ebd284725ad760de3720cf09a1ba48a8637fd621da5",
+      "bytes": 96979,
+      "hashMatchesManifest": true
+    },
+    {
+      "src": "./evidence/xhs/x01-cxj-20261113.jpg",
+      "sha256": "0e70d263283122f2779cd9b9392ddbef66a0a94ebc90d7fe9e1ebed007175162",
+      "bytes": 86317,
+      "hashMatchesManifest": true
+    },
+    {
+      "src": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+      "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
+      "bytes": 89529,
+      "hashMatchesManifest": true
+    },
+    {
+      "src": "./evidence/xhs/x02-gfl-20261113.jpg",
+      "sha256": "c50bc40fe957186a56983ef07c0fc4c001a0953e714cc06946f6364fd86b812a",
+      "bytes": 103616,
+      "hashMatchesManifest": true
+    },
+    {
+      "src": "./evidence/xhs/x02-liangliang-20261113.jpg",
+      "sha256": "b01fe8f9f047d9566d283f22c1b4120cdc9e35fc6369f6aa94808ac4546f2261",
+      "bytes": 92852,
+      "hashMatchesManifest": true
+    }
+  ],
+  "newPrimaryComment": {
+    "sourceId": "X01",
+    "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+    "sourceCommentKey": "X01:沙雪:2025-04-04:前两个",
+    "narrator": "沙雪",
+    "date": "2025-04-04",
+    "rawVisibleText": "前两个劝你别选，书记和院长都很忙没空管学生的",
+    "displayExcerpt": "前两个劝你别选",
+    "rawTextPurpose": "Local audit transcription only. Public review excerpt uses the short selection-attitude sentence; the stated reason is attributed/paraphrased as commenter concern.",
+    "sameImageContext": "Original-post visible list places 董必荣 first and 温素彬 second.",
+    "targetMentorIds": [
+      "mentor-01",
+      "mentor-02"
+    ],
+    "mappingConfidence": "Visible list-position reference; root independently viewed and confirmed.",
+    "identity": "Unknown/unverified",
+    "degree": "Unknown",
+    "firsthand": null,
+    "sourceImage": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+    "commentCount": 1,
+    "dossierRecordCount": 2,
+    "newPostCount": 0,
+    "intensity": "explicit, not strong",
+    "dedupeSearch": "No 沙雪 / 前两个 / 劝你别选 / 书记和院长 / 没空管学生 matches in prior data files or current dist dataset."
+  },
+  "existingEvidenceOnly": [
+    {
+      "mentorId": "mentor-24",
+      "mentorName": "王菁华",
+      "reviewId": "sr-818ece587d45da",
+      "set": {
+        "screenshots": [
+          {
+            "src": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+            "caption": "冬日来信同条评论：王菁华课程体验；同图保留其他老师段落以便分开归因",
+            "sourceId": "X01",
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false,
+            "width": 1363,
+            "height": 936,
+            "bytes": 104838,
+            "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
+            "scope": [
+              "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+            ],
+            "capturedAt": "2026-11-13"
+          }
+        ]
+      },
+      "operation": "add-direct-source-screenshot-only",
+      "preserveFields": [
+        "polarity",
+        "firsthand",
+        "degree",
+        "relationship",
+        "experienceType",
+        "experienceLabel",
+        "contextAssessment",
+        "selectionSignal",
+        "text",
+        "specifics",
+        "limits"
+      ],
+      "sourceCommentCountDelta": 0
+    },
+    {
+      "mentorId": "mentor-20",
+      "mentorName": "王敬勇",
+      "reviewId": "sr-8eb242b45986c8",
+      "set": {
+        "screenshots": [
+          {
+            "src": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+            "caption": "冬日来信同条评论：王敬勇竞赛接触评价；其成绩说法仍属评论者陈述",
+            "sourceId": "X01",
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false,
+            "width": 1363,
+            "height": 936,
+            "bytes": 104838,
+            "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
+            "scope": [
+              "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+            ],
+            "capturedAt": "2026-11-13"
+          }
+        ]
+      },
+      "operation": "add-direct-source-screenshot-only",
+      "preserveFields": [
+        "polarity",
+        "firsthand",
+        "degree",
+        "relationship",
+        "experienceType",
+        "experienceLabel",
+        "contextAssessment",
+        "selectionSignal",
+        "text",
+        "specifics",
+        "limits"
+      ],
+      "sourceCommentCountDelta": 0
+    },
+    {
+      "mentorId": "mentor-02",
+      "mentorName": "温素彬",
+      "reviewId": "sr-6f547fefb6425f",
+      "set": {
+        "screenshots": [
+          {
+            "src": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+            "caption": "冬日来信同条评论：温素彬总体好感；不能将同评他人的课程或竞赛经历归给温素彬",
+            "sourceId": "X01",
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false,
+            "width": 1363,
+            "height": 936,
+            "bytes": 104838,
+            "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
+            "scope": [
+              "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+            ],
+            "capturedAt": "2026-11-13"
+          }
+        ]
+      },
+      "operation": "add-direct-source-screenshot-only",
+      "preserveFields": [
+        "polarity",
+        "firsthand",
+        "degree",
+        "relationship",
+        "experienceType",
+        "experienceLabel",
+        "contextAssessment",
+        "selectionSignal",
+        "text",
+        "specifics",
+        "limits"
+      ],
+      "sourceCommentCountDelta": 0
+    },
+    {
+      "mentorId": "mentor-26",
+      "mentorName": "傅祥斐",
+      "reviewId": "sr-6cc30c5c8335af",
+      "set": {
+        "screenshots": [
+          {
+            "src": "./evidence/xhs/x01-lgc-20261113.jpg",
+            "caption": "momo自述Excel实验课接触，评价温和、关心学生及不push；不推断研究生指导要求",
+            "sourceId": "X01",
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false,
+            "width": 1363,
+            "height": 936,
+            "bytes": 94409,
+            "sha256": "8fe6d54e6c3b7692479906ea09328eebf8f77b8ec8b227760b502f4d87d031d0",
+            "scope": [
+              "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+            ],
+            "capturedAt": "2026-11-13"
+          }
+        ]
+      },
+      "operation": "add-direct-source-screenshot-only",
+      "preserveFields": [
+        "polarity",
+        "firsthand",
+        "degree",
+        "relationship",
+        "experienceType",
+        "experienceLabel",
+        "contextAssessment",
+        "selectionSignal",
+        "text",
+        "specifics",
+        "limits"
+      ],
+      "sourceCommentCountDelta": 0
+    }
+  ],
+  "knownExistingCommentExamples": [
+    {
+      "reviewIds": [
+        "sr-alias-comments-20261113-dong-thread",
+        "sr-alias-comments-20261113-xw"
+      ],
+      "image": "./evidence/xhs/x01-xw-dong-20261113.jpg",
+      "result": "Already represented; no new record."
+    },
+    {
+      "reviewIds": [
+        "sr-alias-comments-20261113-cxj"
+      ],
+      "image": "./evidence/xhs/x01-cxj-20261113.jpg",
+      "result": "Already represented; no new record."
+    },
+    {
+      "reviewIds": [
+        "sr-alias-20261113-dbr"
+      ],
+      "image": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+      "result": "Existing 涂卡图 DBR comment; distinct from recovered 沙雪 comment, no duplicate addition."
+    },
+    {
+      "reviewIds": [
+        "sr-4f903dfc6b113f",
+        "sr-alias-comments-20261113-zxl-qiuqiu"
+      ],
+      "image": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+      "result": "Already represented; no new record."
+    },
+    {
+      "reviewIds": [
+        "sr-e63702f4d750b2",
+        "sr-alias-comments-20261113-lgc-qingjiao"
+      ],
+      "image": "./evidence/xhs/x01-lgc-20261113.jpg",
+      "result": "Already represented; no attitude or intensity upgrade."
+    },
+    {
+      "reviewIds": [
+        "sr-5a6799f7da764b",
+        "sr-4c04a46901e7aa",
+        "sr-alias-comments-20261113-pj-linyu",
+        "sr-alias-comments-20261113-zxl-wm"
+      ],
+      "image": "./evidence/xhs/x01-pj-zxl-20261113.jpg",
+      "result": "Already represented; optional further direct-screenshot attachment only, omitted from four-update patch per root scope."
+    },
+    {
+      "reviewIds": [
+        "sr-69b5e3bc556593",
+        "sr-3ec4800bf7c77e"
+      ],
+      "image": "./evidence/xhs/x02-gfl-20261113.jpg",
+      "result": "Already represented; no new record."
+    },
+    {
+      "reviewIds": [
+        "sr-alias-comments-20261113-xw-x02",
+        "sr-alias-comments-20261113-zxl-liangliang"
+      ],
+      "image": "./evidence/xhs/x02-liangliang-20261113.jpg",
+      "result": "Already represented; no new record."
+    }
+  ],
+  "unassigned": [
+    {
+      "sourceId": "X01",
+      "image": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+      "narrator": "Cassie",
+      "date": "2025-04-03",
+      "visibleAttitude": "Recommends 黄老师 emphatically; surname only.",
+      "decision": "Do not map to 黄中生 or other named mentor; no full-name/reply-context confirmation. Keep existing ambiguous alias unresolved.",
+      "newNamedRecords": 0
+    }
+  ],
+  "readLimits": [
+    "Eight listed saved images were visually read. Other image files have not been claimed as inspected; an attempted seven-image output was truncated and provides no reliable inspection evidence.",
+    "Source X01 and X02 posts were previously known; no new source code or independently corroborating post is created.",
+    "No degree/firsthand/evidence threshold or existing review polarity was relaxed to increase counts.",
+    "Four screenshot updates preserve all existing review conclusions and add direct provenance only."
+  ]
+}

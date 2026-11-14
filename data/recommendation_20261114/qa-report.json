@@ -1,0 +1,98 @@
+{
+  "batch": "recommendation-20261114",
+  "baselineReviews": 55,
+  "finalReviews": 60,
+  "existingReviewChanges": {
+    "sr-6f547fefb6425f": [
+      "screenshots"
+    ],
+    "sr-8eb242b45986c8": [
+      "screenshots"
+    ],
+    "sr-818ece587d45da": [
+      "screenshots"
+    ],
+    "sr-6cc30c5c8335af": [
+      "screenshots"
+    ]
+  },
+  "newReviewIds": [
+    "sr-local-20261114-dbr-shaxue",
+    "sr-local-20261114-wsb-shaxue",
+    "sr-recommendation-20261114-panjun-yaojiqing",
+    "sr-recommendation-20261114-panjun-yuyipin",
+    "sr-recommendation-20261114-panjun-zhouhuiyang"
+  ],
+  "unchanged": [
+    "studentOutcomes",
+    "internships",
+    "lifeChapters",
+    "musicPlaylist"
+  ],
+  "originalImage": {
+    "path": "dist/evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+    "bytes": 6165360,
+    "sha256": "5ca8220007c7a38476ca948f0fde3426d5303f384ebfbe803f35b295e077489f"
+  },
+  "idempotentMerge": true,
+  "localBrowser": {
+    "sharedCommentTwoTeachers": true,
+    "explicitNotStrong": true,
+    "historicalDateVisibleInCollapsedSummary": true,
+    "originalImageNaturalDimensions": [
+      720,
+      17791
+    ],
+    "originalSizeScrollable": true,
+    "pageWidth": 1363,
+    "documentScrollWidth": 1363,
+    "mobileVisualValidation": false
+  },
+  "automaticChecks": {
+    "tests": 186,
+    "passed": 186,
+    "failed": 0,
+    "command": "node --test tests/*.test.mjs"
+  },
+  "independentDataReview": "passed; one shared avoid comment, three curated historical experiences; no outcome or award changes",
+  "downloads": [
+    {
+      "id": "mentor-guide",
+      "url": "./downloads/mentor-guide.docx?v=c3f5aa53bf41",
+      "filename": "mentor-guide.docx",
+      "bytes": 79985,
+      "sha256": "c3f5aa53bf418f043796c79d9ae18962680fee86e3c6143f62bfd411daf1007b"
+    },
+    {
+      "id": "life-guide",
+      "url": "./downloads/life-guide.docx?v=3ffca143e433",
+      "filename": "life-guide.docx",
+      "bytes": 64205,
+      "sha256": "3ffca143e433698dbfa719dcde818a6f3f31ec7ec9e16ced75509a604d0065d5"
+    },
+    {
+      "id": "evidence-index",
+      "url": "./downloads/evidence-index.xlsx?v=077a3f2f0947",
+      "filename": "evidence-index.xlsx",
+      "bytes": 577816,
+      "sha256": "077a3f2f0947b4fd9672a7e0e5610948e46932455a4e077cd81a0d92ecb2cdf8"
+    }
+  ],
+  "officeValidation": {
+    "mentorWord": {
+      "pages": 29,
+      "bytes": 79985,
+      "sha256": "c3f5aa53bf418f043796c79d9ae18962680fee86e3c6143f62bfd411daf1007b",
+      "recordCount": 60
+    },
+    "workbook": {
+      "sheets": 16,
+      "tables": 19,
+      "formulas": 1811,
+      "formulaErrors": 0,
+      "affectedLinksChecked": 1078,
+      "unchangedSheets": 11,
+      "recordLabelsCorrected": true
+    }
+  }
+}
