@@ -1,0 +1,307 @@
+{
+  "checkedAt": "2026-11-14",
+  "status": "passed",
+  "deliverable": "dist/downloads/mentor-guide.docx",
+  "sha256": "153dc7b80de99e7d02771b90226b431d726ec1461af217e8d7a94387b2042faf",
+  "bytes": 77136,
+  "pageCount": 27,
+  "build": {
+    "file": "dist/downloads/mentor-guide.docx",
+    "bytes": 77136,
+    "sha256": "153dc7b80de99e7d02771b90226b431d726ec1461af217e8d7a94387b2042faf",
+    "mentors": 34,
+    "detailedCards": 17,
+    "reviewRecords": 55,
+    "contextNotes": 20,
+    "outcomeTimepointRecords": 30,
+    "outcomePeople": 29,
+    "mpaccOutcomePeople": 7,
+    "mpaccOutcomeTimepointRecords": 8,
+    "firmOutcomePeople": 3,
+    "firmMentorConfirmedPeople": 0,
+    "firmGroupPeople": {
+      "四大": 3,
+      "八大": 0,
+      "其他事务所": 0
+    },
+    "mentorCareerStatements": 1,
+    "careerStatementsCountedAsPeople": 0,
+    "employerSummaries": 2,
+    "employerSummariesCountedAsPeople": 0,
+    "historicalStatistics": 6,
+    "observedOrAmbiguousAliases": 19,
+    "hyperlinkElements": 257,
+    "referencedSourceCodes": 37,
+    "datasetSha256": "747a28aa68be45c12ea7cb2076afd8894eaab77d944289f6ce975a6f7d7d90f7"
+  },
+  "contentChecks": {
+    "allMentorNamesPresent": true,
+    "allStudentNamesPresent": true,
+    "reviewParagraphs55": true,
+    "aliasTableRows19": true,
+    "dynamic30Timepoints29People": true,
+    "mpacc7People8Timepoints": true,
+    "firm3People": true,
+    "big4ThreeDomestic8Zero": true,
+    "firmMentorsRemainUnconfirmed": true,
+    "linYiGraduationDestination2025": true,
+    "linYiMentorUnpublished": true,
+    "linYiCurrentEmploymentNotClaimed": true,
+    "linYiMasterTypeLabel": true,
+    "linYiDestination": true,
+    "linYiOfficialCareerLink": true,
+    "linYiEducationCrosscheckLink": true,
+    "politicalNoticeNotExported": true,
+    "noPrivateBackendDescription": true,
+    "noOldCounts": true,
+    "allTablesHaveRepeatingHeaders": true,
+    "hyperlinkCountMatches": true,
+    "docxHashMatchesBuild": true,
+    "historicalRates96And92": true,
+    "sourceTableFontUnchanged": true
+  },
+  "actualDocxCounts": {
+    "reviewParagraphs": 55,
+    "aliasTableRows": 19,
+    "tables": 25,
+    "hyperlinks": 257
+  },
+  "contentProjectionSha256": "bfdff74eff032cceb1d3a0db3bf65c20a15db09a6ad279266872588d6d374ad3",
+  "render": {
+    "renderer": "/home/agent/.codex/skills/builtins/documents/render_docx.py",
+    "directory": "/workspace/scratch/c08135c62de4/mentor-docx-render-20261114b-v2",
+    "pngCount": 27,
+    "everyPageVisuallyReviewed": true,
+    "iterations": 2,
+    "allChecksPassed": true,
+    "unchangedPageVerification": "最终1至25页PNG与本批次已实际逐页打开检查的v1逐文件SHA-256一致；最终26至27页重新打开检查。"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b/word_visual_1_14",
+      "imageSha256": "d8f2dc0a86267150dcaf5b0ce0a9d8aaba5054ffa0b15d791186023ff9743290",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 2,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b/word_visual_1_14",
+      "imageSha256": "1ceb68dd146049068f717e020018fe74ad3c0b3003a62bf7da7522a93a37ce4e",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 3,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b/word_visual_1_14",
+      "imageSha256": "bd9a0755b7cecd9365c7f96dbd508a2ae2754cd9e2a1d1992a3d8ebceb5d188e",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 4,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b/word_visual_1_14",
+      "imageSha256": "aee8a639da8832b912939f21fe18c766c66685c1244aadba677dc1d7fc2b58ff",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 5,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b/word_visual_1_14",
+      "imageSha256": "51facf67d2c20400fc53701c953c8ada9f74257714bc4f390ad7f4f176e7150b",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 6,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b/word_visual_1_14",
+      "imageSha256": "680026503d2df59f5088d201085102eacc32b2bc15a960a7f5f4097b524b26a5",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 7,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b/word_visual_1_14",
+      "imageSha256": "af1175dd1bbbe67e008b907f1754e6d73c2754c212357a52d742ed66e0b6f93f",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 8,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b/word_visual_1_14",
+      "imageSha256": "f7e16dd3a72aceef7e841ae6dad8c63834199f81a573a9ba6c26b0532f7a6182",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 9,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b/word_visual_1_14",
+      "imageSha256": "fbddd2497f875dc5cd405f8c3295d1601da545dd98b249035d4fcb6d5075948a",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 10,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b/word_visual_1_14",
+      "imageSha256": "4f09f2b7de701385303fa1689b40f7c445923b948206dbfc5a6a99810922db75",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 11,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b/word_visual_1_14",
+      "imageSha256": "8bc0ebe2dcd4719eaa7e2614f9d9d344bc5747427de0673a2cfca5f4c2d949f7",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 12,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b/word_visual_1_14",
+      "imageSha256": "1689c57b5d4284d3ad362fd82d2847ed10fe65904a7c00c74fb39f29ed317a8b",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 13,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b/word_visual_1_14",
+      "imageSha256": "19222cdffa6f74b5a6a8010d6c38554db030ab672229db6a0464e5532cf2c781",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 14,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b/word_visual_1_14",
+      "imageSha256": "8fa2f3a0b7b440a62aed11ba0cf897c846a9f83cd209e313e200bc89452e5fbe",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 15,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b",
+      "imageSha256": "c85e85906fb471b77f1d9ff19eb02a9678612843522f742aa7c16f9b2fa82ec3",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 16,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b",
+      "imageSha256": "6edccd7c621ebc18e35b042a494ab98c5a17e01f7cf2986f318b12565ecceab3",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 17,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b",
+      "imageSha256": "142b1176bc06c9bca31d421e19ea04a138e41d944a5fad358dd3d98577b1a20f",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 18,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b",
+      "imageSha256": "651c3931dce1dca6735e11143e156ce9050d5e4c23eff0d17e9f24c99825548c",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 19,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b",
+      "imageSha256": "b52b4b0401c4fedfbde059d04ae72783f13c4fb2ec801b91128126d81bb0e235",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 20,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b",
+      "imageSha256": "cf4f31884d4da3e2c9390482e168a67e3aeb72b11767eb6f0a32a98b0998551a",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 21,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b",
+      "imageSha256": "d4cbdc722c23379aafccde2ac7be860a7b2156dc30aa7d3002db84ac305dc59f",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 22,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b",
+      "imageSha256": "bc9960ca3b7d08bc8c19634ab08c667b44abed7e2200a25c74167a73574e8cd0",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 23,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b",
+      "imageSha256": "ad8dfc976d92183bd690d3b556d7bff299ff9a0a28fced83ed589b277974af14",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 24,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b",
+      "imageSha256": "466669d908901e841f8ad5f43500cea4d326bef5d7372aca3256360c8cca6448",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 25,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b",
+      "imageSha256": "2f0b5b43ad71c4f3b38a28ab41c499b8c62432c32ff5d6fca8ac60acc41b1149",
+      "identicalToReviewedV1": true,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 26,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b",
+      "imageSha256": "50f62f9d355081f50cca28006eb81e0627cd16af146d2c55dc31995072182971",
+      "identicalToReviewedV1": false,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    },
+    {
+      "page": 27,
+      "status": "pass",
+      "reviewer": "/root/outcome_sources_20261114b",
+      "imageSha256": "1d820089563a277fd43de1b66619b13c1f71916271bc53d3c4082f1f003ca511",
+      "identicalToReviewedV1": false,
+      "visualCheck": "实际打开完整页PNG检查；中文、表格、链接、页脚及分页正常。"
+    }
+  ],
+  "fixedLayoutIssues": [
+    "新增两条林仪来源后，首轮末页只余4条来源。引用目录单独采用3pt上下单元格内边距、1pt段前后间距；字号9.5pt、行距14pt及列宽保留。最终27页，取消稀疏末页。"
+  ],
+  "scopeNotes": [
+    "导师评价55条、缩写19行保持原内容。",
+    "林仪按2025毕业去向记录，导师未知；未当成当前在职、四大或八大就业。",
+    "只引用专业班级教育信息，不导出李慧慧公示或个人政治信息。",
+    "原始帖子如无导师评价引用，不自动收录到导师Word。",
+    "只修改导师Word、生成脚本和本批次Word QA；未修改主数据、README、app或生活Word。"
+  ]
+}

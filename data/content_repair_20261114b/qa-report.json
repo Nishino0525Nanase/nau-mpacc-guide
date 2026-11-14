@@ -1,0 +1,30 @@
+{
+  "batch": "content-repair-20261114b",
+  "automatedChecks": {
+    "tests": 173,
+    "pass": true,
+    "command": "node --test tests/*.test.mjs"
+  },
+  "dataChecks": {
+    "mergeByteIdempotent": true,
+    "adoptedNewSources": 6,
+    "newRegistryCodes": 7,
+    "newOriginalImages": 14,
+    "allImageBytesAndHashesMatch": true,
+    "anonymousCluesNotNamedOutcomeRecords": true
+  },
+  "previewBrowser": {
+    "desktop": true,
+    "longSourceCodeSearch": true,
+    "compoundThemeFilters": true,
+    "newPracticalDetails": true,
+    "postGalleryOpen": true,
+    "postGalleryNextImageLoaded": true,
+    "closeKeepsPostDialog": true,
+    "extraImagesFolded": true,
+    "mobileViewportTested": false
+  },
+  "productionVerification": {
+    "status": "pending"
+  }
+}

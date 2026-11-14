@@ -1,0 +1,29 @@
+{
+  "batch": "content-repair-20261114b",
+  "asOf": "2026-11-14",
+  "newPostIds": [
+    "6aaccdac000000002802c027",
+    "69cbaede000000001e00f0de",
+    "maud-firm-practice-155451",
+    "maud-audit-office-practice-153705",
+    "nowcoder-tianzhi-interview-381922610068684800",
+    "CR20261114B-LINYI-POST"
+  ],
+  "newSourceCodes": [
+    "PR20261114B01",
+    "PR20261114B02",
+    "PR20261114B03",
+    "CR20261114B-LINYI",
+    "CR20261114B-LINYI-MAUD",
+    "CR20261114B-MAUD-01",
+    "CR20261114B-FIRM-01"
+  ],
+  "socialPosts": 156,
+  "visiblePosts": 134,
+  "sourceRegistryEntries": 503,
+  "officialEvidence": 278,
+  "studentOutcomeTimepoints": 30,
+  "studentOutcomePeople": 29,
+  "newReviewRecordsAssignedToMPAccRoster": 0,
+  "scope": "MAud、学位未知的社交反馈、实习及毕业就业分别标明；不由简称、共著、offer或实习推导师就业人数。"
+}

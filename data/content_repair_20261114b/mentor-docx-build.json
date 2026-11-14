@@ -1,0 +1,29 @@
+{
+  "file": "dist/downloads/mentor-guide.docx",
+  "bytes": 77136,
+  "sha256": "153dc7b80de99e7d02771b90226b431d726ec1461af217e8d7a94387b2042faf",
+  "mentors": 34,
+  "detailedCards": 17,
+  "reviewRecords": 55,
+  "contextNotes": 20,
+  "outcomeTimepointRecords": 30,
+  "outcomePeople": 29,
+  "mpaccOutcomePeople": 7,
+  "mpaccOutcomeTimepointRecords": 8,
+  "firmOutcomePeople": 3,
+  "firmMentorConfirmedPeople": 0,
+  "firmGroupPeople": {
+    "四大": 3,
+    "八大": 0,
+    "其他事务所": 0
+  },
+  "mentorCareerStatements": 1,
+  "careerStatementsCountedAsPeople": 0,
+  "employerSummaries": 2,
+  "employerSummariesCountedAsPeople": 0,
+  "historicalStatistics": 6,
+  "observedOrAmbiguousAliases": 19,
+  "hyperlinkElements": 257,
+  "referencedSourceCodes": 37,
+  "datasetSha256": "747a28aa68be45c12ea7cb2076afd8894eaab77d944289f6ce975a6f7d7d90f7"
+}

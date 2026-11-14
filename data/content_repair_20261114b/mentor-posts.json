@@ -1,0 +1,363 @@
+{
+  "checkedAt": "2026-11-14",
+  "scope": "新增小红书选导评论及公开就业榜原图，供网站内容修订；不修改主data。",
+  "baseline": {
+    "rawPosts": 150,
+    "visiblePosts": 128,
+    "mentorReviews": 55,
+    "mentors": 34,
+    "dedupFiles": [
+      "dist/data/site-data.json",
+      "data/breadth_research_20261114/research-summary.json"
+    ]
+  },
+  "summary": {
+    "usableNewPosts": 2,
+    "newAttributedReviewsForExisting34Mentors": 0,
+    "employmentImages": 13,
+    "anonymousProfessionalClues": 3,
+    "newNamedEmploymentPeople": 0
+  },
+  "posts": [
+    {
+      "id": "CR20261114B-MAUD-01",
+      "platform": "小红书",
+      "postId": "69cbaede000000001e00f0de",
+      "title": "南审审专导师",
+      "author": "..",
+      "dateDisplayed": "03-31",
+      "dateNote": "页面只显示月日，未在正文显示年份。",
+      "url": "https://www.xiaohongshu.com/explore/69cbaede000000001e00f0de",
+      "contentStatus": "正文与可见评论已核读；展开庞艳红线程及王昊多条回复。",
+      "commentCountDisplayed": 34,
+      "readCoverage": "已读正文、可见首层评论，展开庞艳红线程至具体评价；王昊线程读到07-14/09-11回复。不称全量34条均已读。",
+      "identityScope": "正文标签“审计专硕”，询问社会审计/内部审计导师；属于MAud范围，不是MPAcc评价。评论者与导师的实际师生关系未被独立认证。",
+      "summary": "偏考证、实习的MAud选导讨论。评论明确点名王昊、庞艳红、张华；只能作为匿名个人评价，保留学位范围。",
+      "reviews": [
+        {
+          "mentorName": "王昊",
+          "commentAuthor": "果粒ovo",
+          "dateDisplayed": "03-31",
+          "type": "明确推荐",
+          "quote": "很尊重你的想法和选择",
+          "paraphrase": "同一作者另于04-01再次表达强烈支持。没有具体论文或实习事件，不推断为放实习承诺。",
+          "mapping": "原评论直接写全名；不属于现有34名MPAcc导师。"
+        },
+        {
+          "mentorName": "庞艳红",
+          "commentAuthor": "过敏",
+          "dateDisplayed": "05-28",
+          "type": "指导强度评价",
+          "quote": "不怎么严，不怎么push",
+          "paraphrase": "回复“莜～”时明确谈庞老师；前文已限定博主询问的是内部与社会审计。",
+          "mapping": "同一线程首评直接写庞艳红；不属于现有34名MPAcc导师。"
+        },
+        {
+          "mentorName": "张华",
+          "commentAuthor": "Frau Lachen",
+          "dateDisplayed": "04-01",
+          "type": "明确正面评价",
+          "quote": "很负责",
+          "paraphrase": "评论明确称社会审计的张华老师不错。",
+          "mapping": "原评论直接写全名及社审范围；不属于现有34名MPAcc导师。"
+        }
+      ],
+      "otherVisibleComments": [
+        {
+          "author": "momo",
+          "dateDisplayed": "04-01",
+          "content": "仅提名陈伟，无具体经历；不另计有效指导评价。"
+        },
+        {
+          "author": "回家不认路",
+          "dateDisplayed": "04-01",
+          "content": "社审院ZH被简短推荐；不能仅凭相邻张华评论把ZH自动映射为张华。"
+        },
+        {
+          "author": "Tempt.",
+          "dateDisplayed": "04-16",
+          "content": "MMS只有提问、没有评价，不建立人名映射。"
+        },
+        {
+          "author": "果粒ovo",
+          "dateDisplayed": "07-14、09-11",
+          "content": "称王老师已满/不收学生；未独立核实，不发布为当前招生事实。"
+        }
+      ],
+      "evidence": [
+        {
+          "type": "browser-screenshot-crop",
+          "localPath": "dist/evidence/content-repair-20261114b/maud-69cbaede-comments.jpg",
+          "description": "原网页真实局部截图，保留原帖作者和王昊、张华两条具名评论；裁去无关界面。未重绘。"
+        }
+      ],
+      "limits": [
+        "不计入现有34名MPAcc导师反馈数。",
+        "泛提名、问句、私聊邀请不扩写成指导经历。",
+        "未见就业导师对应关系。",
+        "页面评论里的地区标签不是身份或学位证据。"
+      ]
+    },
+    {
+      "id": "CR20261114B-FIRM-01",
+      "platform": "小红书",
+      "postId": "6aaccdac000000002802c027",
+      "title": "南审er2026多少毕业去前十会计师事务所了？",
+      "author": "无法试算平衡之物",
+      "dateDisplayed": "编辑于 09-18",
+      "dateNote": "标题涉及2026届；页面编辑日期只显示月日。",
+      "url": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+      "contentStatus": "正文、可见评论和13张原图均已实际核读。",
+      "commentCountDisplayed": 59,
+      "readCoverage": "正文、首层可见评论与作者回复；13张原图已下载并逐图核对字段及重叠。未称59条评论全量读完。",
+      "identityScope": "公开校园就业榜的用户拍照转帖；表内跨学院及专业，学位层次未载，不能整帖标成本科或MPAcc。",
+      "summary": "13张就业榜照片，单位含四大及多家国内所、分所。原图可点开核对；专业写“会计”的3条匿名线索单列提示，不计具名就业人数。",
+      "tableTitle": "入职十大会计师事务所名单",
+      "tableFields": [
+        "姓名（实际显示某同学）",
+        "学院名称",
+        "专业方向",
+        "单位名称"
+      ],
+      "tableDegreeField": false,
+      "tableMentorField": false,
+      "facts": [
+        "表头不含学历层次或导师，不能把“会计”直接认定为MPAcc。",
+        "图片多为同一长榜不同局部，图1/2/3、图4/5/6、图7/8/9、图10/11/12、图13与其他图存在大量重叠。",
+        "只展现十大会计师事务所名单，并非全校全部毕业去向或全体毕业生分母。",
+        "发布者在评论解释完整照片更多；当前只核读本帖13张，不把其89张说法当作本帖覆盖数量。"
+      ],
+      "visibleFirms": [
+        "普华永道中天",
+        "德勤华永",
+        "安永华明",
+        "毕马威华振",
+        "立信",
+        "天健",
+        "容诚",
+        "天职国际",
+        "信永中和",
+        "中审众环"
+      ],
+      "anonymousClues": [
+        {
+          "label": "王同学",
+          "college": "会计学院",
+          "programAsPrinted": "会计",
+          "employerAsPrinted": "天健会计师事务所（特殊普通合伙）",
+          "sourceImages": [
+            6,
+            13
+          ],
+          "degreeLevel": "未载",
+          "mentor": null,
+          "publicationUse": "原帖tips；不写入studentOutcomes、不计MPAcc/导师就业人数。"
+        },
+        {
+          "label": "闫同学",
+          "college": "会计学院",
+          "programAsPrinted": "会计",
+          "employerAsPrinted": "德勤华永会计师事务所（特殊普通合伙）南京分所",
+          "sourceImages": [
+            6,
+            13
+          ],
+          "degreeLevel": "未载",
+          "mentor": null,
+          "publicationUse": "原帖tips；不写入studentOutcomes、不计MPAcc/导师就业人数。"
+        },
+        {
+          "label": "黄同学",
+          "college": "会计学院",
+          "programAsPrinted": "会计",
+          "employerAsPrinted": "容诚会计师事务所（特殊普通合伙）南京分所",
+          "sourceImages": [
+            6,
+            13
+          ],
+          "degreeLevel": "未载",
+          "mentor": null,
+          "publicationUse": "原帖tips；不写入studentOutcomes、不计MPAcc/导师就业人数。"
+        }
+      ],
+      "images": [
+        {
+          "number": 1,
+          "localPath": "dist/evidence/content-repair-20261114b/firm-6aaccdac-01.webp",
+          "sourceUrl": "https://sns-webpic-qc.xhscdn.com/202611140933/18aecbb86872abedec37cfb2c1a8c53d/1040g0083258a995kkk005pjeutphokc1df0439o!nd_dft_wlteh_webp_3",
+          "width": 1080,
+          "height": 1440,
+          "sha256": "b3d466bff7b5e8233ee58f9048d64d131063ca42f2eeacaae6f33884204363dd",
+          "readScope": "计算机、数学、文、外国语、国际学院；计算机审计、软件工程、金融数学、审计等",
+          "degreeLevel": "图表未载；不因专业名推断本/硕",
+          "mentorField": false
+        },
+        {
+          "number": 2,
+          "localPath": "dist/evidence/content-repair-20261114b/firm-6aaccdac-02.webp",
+          "sourceUrl": "https://sns-webpic-qc.xhscdn.com/202611140933/3e97d7cd0c848c0864d2d74aeda65c3b/1040g2sg3258eb1b156g05pjeutphokc1oth6itg!nd_dft_wlteh_webp_3",
+          "width": 1080,
+          "height": 1440,
+          "sha256": "3a7e926f9c33fca5daeb6ec2b1beeb78711ef530f43a8ea7cddb6a360a085932",
+          "readScope": "金融、经济与金融研究院、法、统计与数据科学、计算机、数学、文、外国语、国际学院",
+          "degreeLevel": "图表未载；不因专业名推断本/硕",
+          "mentorField": false
+        },
+        {
+          "number": 3,
+          "localPath": "dist/evidence/content-repair-20261114b/firm-6aaccdac-03.webp",
+          "sourceUrl": "https://sns-webpic-qc.xhscdn.com/202611140933/5e62537e508224694c99a850d39d7dc3/1040g2sg3258eb1b156f05pjeutphokc11jpjrm0!nd_dft_wlteh_webp_3",
+          "width": 1080,
+          "height": 1440,
+          "sha256": "94e96b62d4d1f5b0f15baf456b9f3cfbc9d405aa7effd72cca5d47be2a5671b3",
+          "readScope": "金融学院起，经法、统计，至计算机学院",
+          "degreeLevel": "图表未载；不因专业名推断本/硕",
+          "mentorField": false
+        },
+        {
+          "number": 4,
+          "localPath": "dist/evidence/content-repair-20261114b/firm-6aaccdac-04.webp",
+          "sourceUrl": "https://sns-webpic-qc.xhscdn.com/202611140933/899d85ca3815af1444e3022ec50fd7a6/1040g2sg3258eb1b156b05pjeutphokc1makpb00!nd_dft_wlteh_webp_3",
+          "width": 1080,
+          "height": 1440,
+          "sha256": "ed5cec192d31abd8bd734ef6e0169e507bfa3b5d7549a3c17279b40962e6ac7a",
+          "readScope": "会计学尾段，经商、国家安全、经济学院，末尾金融学院",
+          "degreeLevel": "图表未载；不因专业名推断本/硕",
+          "mentorField": false
+        },
+        {
+          "number": 5,
+          "localPath": "dist/evidence/content-repair-20261114b/firm-6aaccdac-05.webp",
+          "sourceUrl": "https://sns-webpic-qc.xhscdn.com/202611140933/029eea61e18d6d59614aa0a304c8292d/1040g2sg3258eb1b156c05pjeutphokc12bcu3vg!nd_dft_wlteh_webp_3",
+          "width": 1080,
+          "height": 1440,
+          "sha256": "33df67c0f56dd6bfd06b6065f3b7edc9108046b013e805fd4341356e649d97a5",
+          "readScope": "会计学中后段，经商、国家安全，至经济学院",
+          "degreeLevel": "图表未载；不因专业名推断本/硕",
+          "mentorField": false
+        },
+        {
+          "number": 6,
+          "localPath": "dist/evidence/content-repair-20261114b/firm-6aaccdac-06.webp",
+          "sourceUrl": "https://sns-webpic-qc.xhscdn.com/202611140933/97f1cce7db3802a0129ad59c8e9e10b7/1040g2sg3258eb1b156cg5pjeutphokc1dtdlflg!nd_dft_wlteh_webp_3",
+          "width": 1080,
+          "height": 1440,
+          "sha256": "b017d27b8b812ad36bf52cf568a9881f499f23aef68df52996f772a51bb35c9a",
+          "readScope": "会计学院表头及开头：会计、会计学；下接商学院",
+          "degreeLevel": "图表未载；不因专业名推断本/硕",
+          "mentorField": false
+        },
+        {
+          "number": 7,
+          "localPath": "dist/evidence/content-repair-20261114b/firm-6aaccdac-07.webp",
+          "sourceUrl": "https://sns-webpic-qc.xhscdn.com/202611140933/028f973b6ded479357d468379e0996f4/1040g2sg3258eb1b156e05pjeutphokc1duj3ga8!nd_dft_wlteh_webp_3",
+          "width": 1080,
+          "height": 1440,
+          "sha256": "aa609c61114bdc2313f8e251a83f6fcc1ba10a5efcf99c456fc67a0fda8444c3",
+          "readScope": "社会审计学院审计学（ACCA/创新基地班）；中审学院；工程审计学院；会计学院财务管理、会计",
+          "degreeLevel": "图表未载；不因专业名推断本/硕",
+          "mentorField": false
+        },
+        {
+          "number": 8,
+          "localPath": "dist/evidence/content-repair-20261114b/firm-6aaccdac-08.webp",
+          "sourceUrl": "https://sns-webpic-qc.xhscdn.com/202611140933/908dce47e38620405b9bd555755a567f/1040g2sg3258eb1b156eg5pjeutphokc1pr7b1q0!nd_dft_wlteh_webp_3",
+          "width": 1080,
+          "height": 1440,
+          "sha256": "ab5e050e5833c10de8e1c326758d6866c24202eddb6dff6268ba588aa8d75369",
+          "readScope": "社会审计学院审计学及ACCA/创新基地班；中审学院；工程审计学院；会计学院财务管理",
+          "degreeLevel": "图表未载；不因专业名推断本/硕",
+          "mentorField": false
+        },
+        {
+          "number": 9,
+          "localPath": "dist/evidence/content-repair-20261114b/firm-6aaccdac-09.webp",
+          "sourceUrl": "https://sns-webpic-qc.xhscdn.com/202611140933/b233ad263afcac64df9e4a32a62a0a40/1040g2sg3258eb1b156d05pjeutphokc1r2mmaog!nd_dft_wlteh_webp_3",
+          "width": 1080,
+          "height": 1440,
+          "sha256": "225564959fec496035966e4f9902d0dc6a18d9923bff61f63306201944fb1104",
+          "readScope": "内部审计学院审计学（IAEP/内部审计方向）；社会审计学院；中审学院",
+          "degreeLevel": "图表未载；不因专业名推断本/硕",
+          "mentorField": false
+        },
+        {
+          "number": 10,
+          "localPath": "dist/evidence/content-repair-20261114b/firm-6aaccdac-10.webp",
+          "sourceUrl": "https://sns-webpic-qc.xhscdn.com/202611140933/0c6c903f839f40dc1252463c0d0026c9/1040g2sg3258eb1b156dg5pjeutphokc1qhl3828!nd_dft_wlteh_webp_3",
+          "width": 1080,
+          "height": 1440,
+          "sha256": "cbfe841df692ef11527ad697d4047f315949f24fcca5d59962627b82bba5763d",
+          "readScope": "国家审计学院审计学及大数据/资源环境方向；内部审计学院审计及IAEP方向",
+          "degreeLevel": "图表未载；不因专业名推断本/硕",
+          "mentorField": false
+        },
+        {
+          "number": 11,
+          "localPath": "dist/evidence/content-repair-20261114b/firm-6aaccdac-11.webp",
+          "sourceUrl": "https://sns-webpic-qc.xhscdn.com/202611140933/b7a0c1994d363092eacf7f90ca93966c/1040g2sg3258eb1b156bg5pjeutphokc1ccjffbg!nd_dft_wlteh_webp_3",
+          "width": 1080,
+          "height": 1440,
+          "sha256": "4ff4ea2fe334121e063b4bb5d3f217fe744ab93363390f6948667ac5392f7113",
+          "readScope": "国家审计学院审计学；内部审计学院审计及IAEP方向",
+          "degreeLevel": "图表未载；不因专业名推断本/硕",
+          "mentorField": false
+        },
+        {
+          "number": 12,
+          "localPath": "dist/evidence/content-repair-20261114b/firm-6aaccdac-12.webp",
+          "sourceUrl": "https://sns-webpic-qc.xhscdn.com/202611140933/2c5fe7d62a0ebd82afcf1e2a64e3f119/1040g2sg3258eb1b156fg5pjeutphokc1alm1tio!nd_dft_wlteh_webp_3",
+          "width": 1080,
+          "height": 1440,
+          "sha256": "16735e3b58cfcfd5c33b0c3609fecd61c425e02aa4e935809c539da5d8eb0414",
+          "readScope": "国家审计学院表头及开头：审计、审计学；右侧为内部审计学院部分",
+          "degreeLevel": "图表未载；不因专业名推断本/硕",
+          "mentorField": false
+        },
+        {
+          "number": 13,
+          "localPath": "dist/evidence/content-repair-20261114b/firm-6aaccdac-13.webp",
+          "sourceUrl": "https://sns-webpic-qc.xhscdn.com/202611140933/019d87588e0e062f55023bbcd5811006/1040g2sg3258eb1b156gg5pjeutphokc1pebdeio!nd_dft_wgth_webp_3",
+          "width": 1440,
+          "height": 1080,
+          "sha256": "30ae27e83030bcaaa66127ea333c42d5a7a25e00e3e8dcb3136c3ca553abfa1d",
+          "readScope": "就业榜标题“入职十大会计师事务所名单”；左侧内部/社会审计学院，右侧会计学院表头和开头",
+          "degreeLevel": "图表未载；不因专业名推断本/硕",
+          "mentorField": false
+        }
+      ],
+      "limits": [
+        "匿名标签不可补全全名。",
+        "不得累计照片行数为人数；同榜重复拍摄较多。",
+        "不从学校/学院、专业名或雇主反推导师。",
+        "不是学校可下载原始表，属于公开原帖照片，数据完整性与最终签约仍待官方来源核对。",
+        "未包含学号、联系电话或其他无关敏感字段；附件仅公开教育/职业事实。"
+      ]
+    }
+  ],
+  "checkedButExcluded": [
+    {
+      "postId": "6acb5478000000001403083c",
+      "title": "寒假实习",
+      "author": "洋洋饼饼脸",
+      "dateDisplayed": "10-11",
+      "status": "已读可见正文及评论",
+      "reason": "只有求实习与无事务所经历投四大的问答，未确定南审/学位/导师，不采用。"
+    },
+    {
+      "postId": "6a86e5a0000000002701f819",
+      "title": "南审实习询问 开学不能第一时间回学校",
+      "author": "Chengolden",
+      "dateDisplayed": "08-20",
+      "status": "正文与可见评论已读",
+      "reason": "正文明确金融学院开学大四，属于本科课务/实习协调，不灌入研究生导师或MPAcc信息。"
+    }
+  ],
+  "searchNotes": {
+    "webSearch": "站外定向检索南审导师实习、放养、YBY等未得到可新增的对应导师原评论；随后用站内公开搜索核读具体帖子。",
+    "onsiteQueries": [
+      "南审 导师 实习",
+      "南审 会计 研二"
+    ],
+    "stopReason": "已得到两条内容明确的新原帖；按主任务要求停止扩搜，优先处理13张事实表原图。"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "asOf": "2026-11-14",
+  "scope": "对上一轮未整合的林仪新线索及刘子诺、李慧慧两条事务所系列线索做有界核实；未重做34位教师主页搜索。",
+  "counts": {
+    "newNamedPeople": 1,
+    "newNamedOutcomes": 1,
+    "newBig4People": 0,
+    "newDomestic8People": 0,
+    "newConfirmedMentorLinks": 0
+  },
+  "sources": [
+    {
+      "code": "CR20261114B-LINYI",
+      "kind": "official",
+      "title": "华为、腾讯、中国航发…南审的他们毕业去这里了",
+      "url": "https://nau.edu.cn/_t505/2025/0820/c11308a146848/page.htm",
+      "canonicalUrl": "https://nau.edu.cn/_t505/2025/0820/c11308a146848/page.htm",
+      "originalUrl": "https://nau.edu.cn/_t505/2025/0820/c11308a146848/page.htm",
+      "platform": "南京审计大学新闻网",
+      "date": "2025-08-20",
+      "population": "2025毕业季具名学生；其中林仪为2022级内部审计方向专硕",
+      "summary": "林仪的2025毕业就业去向是中国航发四川燃气涡轮研究院。",
+      "readingScope": "实际读取全文及更新时间；核对开头2025毕业季口径和林仪姓名、专业班级、就业去向段。另核同页四大人物的专业身份，未混入硕士四大计数。",
+      "limits": "文章给的是当年毕业去向，没有公开导师、岗位、签约或入职日期；不能据此声称2026年仍在职。"
+    },
+    {
+      "code": "CR20261114B-LINYI-MAUD",
+      "kind": "official",
+      "title": "南京审计大学研究生院第十八期青共校学院名单",
+      "url": "https://gs.nau.edu.cn/_upload/article/files/5a/c2/c3f6b258430591994dccc74526ca/3290c8fe-cf29-4a0d-957a-05feda6597f8.pdf",
+      "canonicalUrl": "https://gs.nau.edu.cn/_upload/article/files/5a/c2/c3f6b258430591994dccc74526ca/3290c8fe-cf29-4a0d-957a-05feda6597f8.pdf",
+      "originalUrl": "https://gs.nau.edu.cn/_upload/article/files/5a/c2/c3f6b258430591994dccc74526ca/3290c8fe-cf29-4a0d-957a-05feda6597f8.pdf",
+      "platform": "南京审计大学研究生院",
+      "date": null,
+      "population": "在校研究生专业班级名单",
+      "summary": "名单第47项明确林仪为2022级审计专硕4班，用于交叉核实MAud类型。",
+      "readingScope": "实际读取PDF提取全文；仅采用林仪姓名与专业班级，不展示学号或其他个人信息。",
+      "limits": "仅用于专业身份核实；不提供就业或导师证据。"
+    }
+  ],
+  "records": [
+    {
+      "id": "CR20261114B-LINYI-AECC",
+      "personId": "person-lin-yi-nau-maud",
+      "studentName": "林仪",
+      "degree": "MAud",
+      "degreeLabel": "审计专硕；2022级内部审计方向",
+      "cohort": "2022级",
+      "graduationYear": 2025,
+      "mentorId": null,
+      "mentorName": null,
+      "relationship": null,
+      "relationshipStatus": "not_public",
+      "outcome": {
+        "type": "employment",
+        "organization": "中国航发四川燃气涡轮研究院",
+        "program": null,
+        "year": 2025,
+        "statusLabel": "2025毕业季官方公布的就业去向；具体入职日期及当前状态未公开",
+        "stage": "reported_destination",
+        "asOf": "2025-08-20",
+        "firmGroup": null,
+        "firmName": null,
+        "sourceIds": [
+          "CR20261114B-LINYI"
+        ]
+      },
+      "sourceIds": [
+        "CR20261114B-LINYI",
+        "CR20261114B-LINYI-MAUD"
+      ],
+      "limits": [
+        "毕业年份采用文章明确的2025毕业季口径，不由2022入学年份自行推算。",
+        "就业岗位、签约日、报到日未公开。",
+        "杨静主页列有与林仪共著的论文，但没有明示其学位导师，不能认定指导关系。",
+        "竞赛名单中的公彦德、徐礼伯是竞赛指导教师，不能认定为学位导师。"
+      ]
+    }
+  ],
+  "unresolvedLeads": [
+    {
+      "studentName": "刘子诺",
+      "adoptEmployment": false,
+      "mentorName": null,
+      "reason": "未取得可采用的具名就业原文；不能把搜索摘要或共著当作就业及导师证明。"
+    },
+    {
+      "studentName": "李慧慧",
+      "adoptEmployment": false,
+      "mentorName": null,
+      "reason": "未取得可采用的具名就业原文；不能把搜索摘要或共著当作就业及导师证明。"
+    }
+  ],
+  "excludedFromMastersFirmCounts": [
+    {
+      "sourceId": "CR20261114B-LINYI",
+      "names": [
+        "左子扬",
+        "李亦翔",
+        "许靖甄",
+        "孙佳元"
+      ],
+      "reason": "同页虽有四大就业去向，但专业栏没有硕士身份；不纳入本次硕士四大或导师学生统计。左子扬的容诚、天健经历明确属于实习，不能另算八大就业。"
+    }
+  ],
+  "mentorRelationshipChecks": [
+    {
+      "studentName": "林仪",
+      "relatedName": "杨静",
+      "url": "https://sia.nau.edu.cn/2023/0112/c9512a109074/page.htm",
+      "readingScope": "实际读取当前教师主页全文，核对个人简介、科研论文、项目及教学获奖。",
+      "result": "只发现2025、2023年论文共著；未见对林仪的学位指导关系明示。",
+      "adoptMentor": false
+    }
+  ],
+  "searchBoundary": {
+    "method": "林仪新官方全文优先；围绕林仪导师和刘子诺、李慧慧两名既有线索做姓名精确搜索，使用第二搜索渠道复核覆盖缺口。",
+    "stoppedBecause": "新增线索已完成原文核对，其余没有出现足够建立就业或学位导师关系的一手正文；不以增加查询数量替代证据。",
+    "repeated34MentorProfileSweep": false,
+    "retriedBlockedWechatOriginals": false,
+    "mainAppDataModified": false
+  }
+}

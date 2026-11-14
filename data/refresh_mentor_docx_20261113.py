@@ -200,7 +200,7 @@ def main():
             return
         para(caption + ' ' + ''.join('[' + c + ']' for c in codes), size=9, after=6)
 
-    def table(headers, rows, widths, size=9.5):
+    def table(headers, rows, widths, size=9.5, compact=False):
         t = doc.add_table(rows=1, cols=len(headers))
         t.autofit = False
         t.style = 'Table Grid'
@@ -212,13 +212,13 @@ def main():
         t._tbl.tblPr.append(borders)
         margins = OxmlElement('w:tblCellMar')
         for edge in ['top', 'left', 'bottom', 'right']:
-            m = OxmlElement('w:' + edge); m.set(qn('w:w'), '75' if edge in ['top', 'bottom'] else '90'); m.set(qn('w:type'), 'dxa'); margins.append(m)
+            m = OxmlElement('w:' + edge); m.set(qn('w:w'), ('60' if compact else '75') if edge in ['top', 'bottom'] else '90'); m.set(qn('w:type'), 'dxa'); margins.append(m)
         t._tbl.tblPr.append(margins)
         def fill(row, values, header=False, number=0):
             row._tr.get_or_add_trPr().append(OxmlElement('w:cantSplit'))
             for i, value in enumerate(values):
                 c = row.cells[i]; c.width = Inches(widths[i]); c.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
-                p = c.paragraphs[0]; p.paragraph_format.space_after = Pt(2); p.paragraph_format.space_before = Pt(2); p.paragraph_format.line_spacing = Pt(14)
+                p = c.paragraphs[0]; p.paragraph_format.space_after = Pt(1 if compact else 2); p.paragraph_format.space_before = Pt(1 if compact else 2); p.paragraph_format.line_spacing = Pt(14)
                 p.paragraph_format.keep_with_next = header
                 snap = OxmlElement('w:snapToGrid'); snap.set(qn('w:val'), '0'); p._p.get_or_add_pPr().append(snap)
                 if isinstance(value, tuple):
@@ -473,7 +473,7 @@ def main():
         s = registry[code]
         title = s.get('title') or s.get('label') or code
         rows.append([code, (title, s.get('url') or s.get('canonicalUrl') or s.get('originalUrl'))])
-    table(['编号', '点击打开来源'], rows, [1.35, 5.85], size=9.5)
+    table(['编号', '点击打开来源'], rows, [1.35, 5.85], size=9.5, compact=True)
     doc.save(TARGET)
     payload = io.BytesIO()
     with ZipFile(TARGET) as source_zip, ZipFile(payload, 'w', ZIP_DEFLATED) as target_zip:

@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-14",
+  "baseCommit": "e8e5958",
+  "scope": [
+    "原帖索引搜索",
+    "主题筛选",
+    "来源链接",
+    "学生去向与事务所筛选",
+    "下载索引"
+  ],
+  "method": "Read-only audit of existing app and dataset; reused the existing tests/source-search.test.mjs VM UI harness against the unchanged production dataset, drove the real input and change event handlers, and recorded rendered result counts and card codes. No mirrored search implementation or application edits.",
+  "findings": [
+    {
+      "id": "post-code-search-drops-modern-ids",
+      "severity": "medium",
+      "title": "来源编号格式限制使已发布来源和卡片编号无法检索",
+      "files": [
+        {
+          "path": "dist/app.js",
+          "lines": [
+            1059,
+            1060,
+            1084,
+            1087,
+            1089,
+            1371,
+            1376
+          ]
+        }
+      ],
+      "productionData": {
+        "postId": "FO20261114-XIE-POST",
+        "title": "校友风采之20届会计专业谢晓俊",
+        "sourceIds": [
+          "FO20261114-XIE",
+          "FO20261114-2021",
+          "FO20261114-2022"
+        ]
+      },
+      "steps": [
+        "打开 #posts，清除筛选。",
+        "输入“谢晓俊”：显示 1 条，并看到卡片来源码 IE-POST。",
+        "分别改搜 FO20261114-XIE、FO20261114-2021、IE-POST。"
+      ],
+      "expected": "公开来源编号与卡片上显示的来源码均能找到对应原帖；来源标识使用已登记编号。",
+      "actual": "三个编号搜索均显示 0 条；卡片显示截断 post.id 的 IE-POST，而非 FO20261114-XIE。",
+      "cause": "boot 只将单个大写字母加 2–3 位数字写入 postCodes；postSearchText 不包含原始 sourceIds、id 或 socialCodes 的 fallback。",
+      "suggestedRegressionAssertions": [
+        "On production data, searching FO20261114-XIE returns the post titled 校友风采之20届会计专业谢晓俊.",
+        "Search any displayed socialCodes value for a public post and the post remains retrievable.",
+        "Retain existing exact R79 versus R799 behavior."
+      ]
+    },
+    {
+      "id": "composite-topic-lost-in-existing-filter",
+      "severity": "medium",
+      "title": "合并来源的多主题字段被当作单个主题，常用主题筛选漏掉相关原帖",
+      "files": [
+        {
+          "path": "dist/app.js",
+          "lines": [
+            1089,
+            1105
+          ]
+        }
+      ],
+      "productionData": {
+        "postId": "690b43480000000004022f3e",
+        "title": "Nau研一到期中啦",
+        "topic": "导师与培养\n学习与就业"
+      },
+      "steps": [
+        "打开 #posts，搜索“Nau研一到期中啦”：显示 1 条。",
+        "内容主题选择“导师与培养”。",
+        "切换内容主题为“学习与就业”。"
+      ],
+      "expected": "该记录同时标有这两个主题；任选其中之一时仍显示该记录。",
+      "actual": "两个选择均变为 0 条；主题下拉另外生成一个含换行的“导师与培养 学习与就业”复合项。",
+      "cause": "从原始 topic 字符串直接建立 Set，筛选用 p.topic===state.postTopic，未拆分由合并资料产生的换行主题。",
+      "suggestedRegressionAssertions": [
+        "On production data, title query plus post-topic=导师与培养 returns post 690b43480000000004022f3e.",
+        "The same query plus post-topic=学习与就业 also returns that post.",
+        "Topic options do not contain newline-combined duplicates."
+      ]
+    }
+  ],
+  "validation": {
+    "existingTests": {
+      "command": "node --test tests/source-search.test.mjs tests/downloads.test.mjs tests/student-outcomes.test.mjs",
+      "passed": 23,
+      "failed": 0
+    },
+    "uiHarnessProbe": [
+      {
+        "query": "谢晓俊",
+        "count": 1,
+        "codes": [
+          "IE-POST"
+        ]
+      },
+      {
+        "query": "FO20261114-XIE",
+        "count": 0
+      },
+      {
+        "query": "FO20261114-2021",
+        "count": 0
+      },
+      {
+        "query": "IE-POST",
+        "count": 0
+      },
+      {
+        "query": "300F56C",
+        "count": 0
+      },
+      {
+        "query": "Nau研一到期中啦",
+        "count": 1
+      },
+      {
+        "query": "Nau研一到期中啦",
+        "topic": "导师与培养",
+        "count": 0
+      },
+      {
+        "query": "Nau研一到期中啦",
+        "topic": "学习与就业",
+        "count": 0
+      }
+    ],
+    "otherChecks": "All local image src references in site-data resolve to files. Existing download manifest hashes/byte sizes/links and firm-filter tests passed. No new reproducible defect found in firm grouping or download index."
+  }
+}

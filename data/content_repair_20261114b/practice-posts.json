@@ -1,0 +1,425 @@
+{
+  "checkedAt": "2026-11-14",
+  "batch": "content-repair-20261114b",
+  "scope": "只整理未索引的学生实习任务与历史求职原帖；署期与本轮发现日期分列。",
+  "deduplication": {
+    "baselineFile": "dist/data/site-data.json",
+    "baselineUniqueUrlStrings": 514,
+    "previousResearch": "data/breadth_research_20261114/research-summary.json",
+    "method": "核对sourceRegistry/socialPosts原URL、帖子ID和官方文章ID；移动版和带sourceSSR的牛客页面只算同一篇。",
+    "newRecommendedOriginalPages": 3,
+    "optionalOriginalPages": 1,
+    "newMentorReviews": 0,
+    "newMPAccStudentOutcomes": 0
+  },
+  "findings": [
+    {
+      "sourceCode": "PR20261114B01",
+      "url": "https://shsjxy.nau.edu.cn/2026/0330/c7575a155451/page.htm",
+      "identity": "MAud",
+      "scope": "实际读取完整正文：开头培养规模、三名学生姓名/班级/单位、实习任务和心得；页面显示署期2026-03-19。未把URL中的0330当发布日期。",
+      "publicationDate": "2026-03-19",
+      "discoveredAt": "2026-11-14",
+      "adoption": "adopt",
+      "adoptionReason": "与已有企业篇互补，三名学生的实际工作过程具体，可用于实习准备。",
+      "originalImageUrls": [
+        "https://shsjxy.nau.edu.cn/_upload/article/images/a9/75/f781e66e45e0a0a3304fe7f1cd6f/be1470f1-f71b-44ea-b4b1-422782213aaa.png",
+        "https://shsjxy.nau.edu.cn/_upload/article/images/a9/75/f781e66e45e0a0a3304fe7f1cd6f/76c755fd-766d-4138-a815-f64228416b35.png",
+        "https://shsjxy.nau.edu.cn/_upload/article/images/a9/75/f781e66e45e0a0a3304fe7f1cd6f/5e53b0c0-34f2-48f0-8197-68cdecf034a0.png"
+      ],
+      "mediaNote": "这些是原页公开配图链接，尚未逐张视觉核读，不当截图或正文证据。"
+    },
+    {
+      "sourceCode": "PR20261114B02",
+      "url": "https://shsjxy.nau.edu.cn/2026/0210/c7575a153705/page.htm",
+      "identity": "MAud",
+      "scope": "实际读取完整正文：三名学生班级、实习局、任务与自述；页面显示2026-01-24。URL中的0210为路径日期，不采为发布日期。",
+      "publicationDate": "2026-01-24",
+      "discoveredAt": "2026-11-14",
+      "adoption": "adopt",
+      "adoptionReason": "展示机关与事务所工作的具体差别，学生任务明确；避开原文总体人数差额。",
+      "originalImageUrls": [],
+      "mediaNote": "没有保存原页图片或截图。"
+    },
+    {
+      "sourceCode": "PR20261114B03",
+      "url": "https://www.nowcoder.com/discuss/381922610068684800",
+      "identity": "未知",
+      "scope": "完整正文及页面可见3条评论已读取；另用公开网页可访问界面核实作者卡为“小人物cool”、2022-07-27 21:44、南京审计大学/财务。正文自述完整年审经历及面试后收到offer；没有实名、学历或导师信息。",
+      "publicationDate": "2022-07-27",
+      "discoveredAt": "2026-11-14",
+      "adoption": "adopt-with-label",
+      "adoptionReason": "新平台、有完整过程的第一人称面经；单独标历史面经及学历未明即可用作准备参考。",
+      "originalImageUrls": [],
+      "mediaNote": "没有保存原页图片或截图。"
+    },
+    {
+      "sourceCode": "PR20261114B04",
+      "url": "https://www.nowcoder.com/discuss/488840842665390080",
+      "identity": "未知",
+      "scope": "完整原帖正文已读取，原页显示暂无评论；公开网页界面核实作者卡为“复盘中的小白很想去夏威夷”、2023-05-18 22:38、南京审计大学/财务。公开主页亦自填南京审计大学、2023、财务，但无学位；未推断为MPAcc。",
+      "publicationDate": "2023-05-18",
+      "discoveredAt": "2026-11-14",
+      "adoption": "optional-low-priority",
+      "adoptionReason": "确为新平台第一人称复盘，但信息少且业务线混写，适合放可折叠延伸阅读，不值得为数量置顶。",
+      "originalImageUrls": [],
+      "mediaNote": "没有保存原页图片或截图。"
+    }
+  ],
+  "sourceRegistry": {
+    "PR20261114B01": {
+      "code": "PR20261114B01",
+      "title": "社会审计学院2024级审计专硕实习实践专访：事务所篇",
+      "label": "社会审计学院2024级审计专硕实习实践专访：事务所篇",
+      "url": "https://shsjxy.nau.edu.cn/2026/0330/c7575a155451/page.htm",
+      "originalUrl": "https://shsjxy.nau.edu.cn/2026/0330/c7575a155451/page.htm",
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/0330/c7575a155451/page.htm",
+      "date": "2026-03-19",
+      "discoveredAt": "2026-11-14",
+      "checkedAt": "2026-11-14",
+      "platform": "官方原始发布",
+      "kind": "官方发布的具名学生实习专访",
+      "population": "奚悦然、周扬、周吉，均为2024级社会审计专硕班",
+      "summary": "三位2024级MAud学生具体写了在中审众环、天健上海做年审、IPO和国网项目时承担的任务。",
+      "readingScope": "实际读取完整正文：开头培养规模、三名学生姓名/班级/单位、实习任务和心得；页面显示署期2026-03-19。未把URL中的0330当发布日期。",
+      "limitations": "MAud实习个案，不是MPAcc统一安排；未载校内导师、是否留用、工作强度或薪酬，不计入毕业就业或四大八大去向统计。学院导言称23人进入18家事务所，仅是该班该次实习，不能外推全校或未来名额。",
+      "expansionBatch": "content-repair-20261114b"
+    },
+    "PR20261114B02": {
+      "code": "PR20261114B02",
+      "title": "社会审计学院2024级审计专硕实习实践专访：审计局篇",
+      "label": "社会审计学院2024级审计专硕实习实践专访：审计局篇",
+      "url": "https://shsjxy.nau.edu.cn/2026/0210/c7575a153705/page.htm",
+      "originalUrl": "https://shsjxy.nau.edu.cn/2026/0210/c7575a153705/page.htm",
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/0210/c7575a153705/page.htm",
+      "date": "2026-01-24",
+      "discoveredAt": "2026-11-14",
+      "checkedAt": "2026-11-14",
+      "platform": "官方原始发布",
+      "kind": "官方发布的具名学生实习专访",
+      "population": "李思璇、茆文萱、姜珊，均为2024级社会审计专硕班",
+      "summary": "三位2024级MAud学生分别介绍了审计局的数据核查、整改材料整理和经济责任审计取证工作。",
+      "readingScope": "实际读取完整正文：三名学生班级、实习局、任务与自述；页面显示2026-01-24。URL中的0210为路径日期，不采为发布日期。",
+      "limitations": "MAud个案，不是MPAcc实习分配或机关录用结果；不把实习单位当毕业去向。导言36名学生的分类数字23+7+5只合计35，存在未解释差额，建议网站只采用三名具名任务、不转写全班比例。",
+      "expansionBatch": "content-repair-20261114b"
+    },
+    "PR20261114B03": {
+      "code": "PR20261114B03",
+      "title": "天职国际深圳分所面经",
+      "label": "天职国际深圳分所面经",
+      "url": "https://www.nowcoder.com/discuss/381922610068684800",
+      "originalUrl": "https://www.nowcoder.com/discuss/381922610068684800",
+      "canonicalUrl": "https://www.nowcoder.com/discuss/381922610068684800",
+      "date": "2022-07-27",
+      "discoveredAt": "2026-11-14",
+      "checkedAt": "2026-11-14",
+      "platform": "牛客",
+      "kind": "第一人称历史面经",
+      "population": "公开作者卡标注“南京审计大学 财务”；未说明本科/硕士及具体学位",
+      "summary": "一位自填南审背景的求职者记录了2022年天职深圳的群面、3对1面试及对年审实习的追问。",
+      "readingScope": "完整正文及页面可见3条评论已读取；另用公开网页可访问界面核实作者卡为“小人物cool”、2022-07-27 21:44、南京审计大学/财务。正文自述完整年审经历及面试后收到offer；没有实名、学历或导师信息。",
+      "limitations": "2022年历史自述；学校为作者自填，学位未知，不标MPAcc。匿名offer不可作为实名就业去向或导师学生结果；当年的面试题、转岗说法不能当2026/2027招聘规定。",
+      "expansionBatch": "content-repair-20261114b"
+    },
+    "PR20261114B04": {
+      "code": "PR20261114B04",
+      "title": "毕马威 审计岗 秋招par面经",
+      "label": "毕马威 审计岗 秋招par面经",
+      "url": "https://www.nowcoder.com/discuss/488840842665390080",
+      "originalUrl": "https://www.nowcoder.com/discuss/488840842665390080",
+      "canonicalUrl": "https://www.nowcoder.com/discuss/488840842665390080",
+      "date": "2023-05-18",
+      "discoveredAt": "2026-11-14",
+      "checkedAt": "2026-11-14",
+      "platform": "牛客",
+      "kind": "第一人称历史面经",
+      "population": "公开作者卡标注“南京审计大学 财务”；未说明学位",
+      "summary": "一位自填南审背景的作者复盘了2023年毕马威面试，重点是岗位选择理由、个人优势和反问准备。",
+      "readingScope": "完整原帖正文已读取，原页显示暂无评论；公开网页界面核实作者卡为“复盘中的小白很想去夏威夷”、2023-05-18 22:38、南京审计大学/财务。公开主页亦自填南京审计大学、2023、财务，但无学位；未推断为MPAcc。",
+      "limitations": "2023年历史帖，学位未明、业务线表述冲突。权重低于天职原帖，不作为审计专岗面试流程或MPAcc求职结果。如页面已有足够面试材料，可不新增可见卡片。",
+      "expansionBatch": "content-repair-20261114b"
+    }
+  },
+  "socialPosts": [
+    {
+      "id": "maud-firm-practice-155451",
+      "key": "南京审计大学社会审计学院:maud-firm-practice-155451",
+      "sourceIds": [
+        "PR20261114B01"
+      ],
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/0330/c7575a155451/page.htm",
+      "url": "https://shsjxy.nau.edu.cn/2026/0330/c7575a155451/page.htm",
+      "title": "社会审计学院2024级审计专硕实习实践专访：事务所篇",
+      "author": "南京审计大学社会审计学院",
+      "date": "2026-03-19",
+      "discoveredAt": "2026-11-14",
+      "platform": "南京审计大学社会审计学院",
+      "topic": "就业与实习",
+      "campus": "按原文具体项目或面试地点",
+      "population": "奚悦然、周扬、周吉，均为2024级社会审计专硕班",
+      "identity": "MAud",
+      "summary": "三位2024级MAud学生具体写了在中审众环、天健上海做年审、IPO和国网项目时承担的任务。",
+      "tips": [
+        "奚悦然在中审众环参与年审，整理证据、用审计软件编底稿，并写项目工作小结。",
+        "周扬在天健上海参与年审与IPO项目：抽凭核账、到仓库盘点，并跟进银行函证的填制、发出、催收和回函核对。",
+        "周吉在中审众环江苏参与宣城国网年报项目，核对设备采购合同、银行回单与凭证，并为底稿异常补齐合同或回函等材料。",
+        "周吉还具体提到总账与明细账的勾稽核对；比只写“做过年审”更能说明实习实际接触的程序。"
+      ],
+      "comments": [],
+      "limitations": "MAud实习个案，不是MPAcc统一安排；未载校内导师、是否留用、工作强度或薪酬，不计入毕业就业或四大八大去向统计。学院导言称23人进入18家事务所，仅是该班该次实习，不能外推全校或未来名额。",
+      "category": "可用生活学习线索",
+      "reviewReason": "与已有企业篇互补，三名学生的实际工作过程具体，可用于实习准备。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [
+        "实际读取完整正文：开头培养规模、三名学生姓名/班级/单位、实习任务和心得；页面显示署期2026-03-19。未把URL中的0330当发布日期。"
+      ],
+      "expansionBatch": "content-repair-20261114b",
+      "screenshots": []
+    },
+    {
+      "id": "maud-audit-office-practice-153705",
+      "key": "南京审计大学社会审计学院:maud-audit-office-practice-153705",
+      "sourceIds": [
+        "PR20261114B02"
+      ],
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/0210/c7575a153705/page.htm",
+      "url": "https://shsjxy.nau.edu.cn/2026/0210/c7575a153705/page.htm",
+      "title": "社会审计学院2024级审计专硕实习实践专访：审计局篇",
+      "author": "南京审计大学社会审计学院",
+      "date": "2026-01-24",
+      "discoveredAt": "2026-11-14",
+      "platform": "南京审计大学社会审计学院",
+      "topic": "就业与实习",
+      "campus": "按原文具体项目或面试地点",
+      "population": "李思璇、茆文萱、姜珊，均为2024级社会审计专硕班",
+      "identity": "MAud",
+      "summary": "三位2024级MAud学生分别介绍了审计局的数据核查、整改材料整理和经济责任审计取证工作。",
+      "tips": [
+        "李思璇在徐州市审计局参与设备更新、消费品以旧换新的政策审计调查，从销售平台取证，用Excel比对销售信息、查找疑点。",
+        "茆文萱在南通市审计局整理统计资料和历年整改材料，并参与整改会议，接触问题发现后的跟踪督办。",
+        "姜珊在肥西县审计局跟随项目到被审计单位核对财务和资金使用情况，协助写取证单、分类并核对项目档案。"
+      ],
+      "comments": [],
+      "limitations": "MAud个案，不是MPAcc实习分配或机关录用结果；不把实习单位当毕业去向。导言36名学生的分类数字23+7+5只合计35，存在未解释差额，建议网站只采用三名具名任务、不转写全班比例。",
+      "category": "可用生活学习线索",
+      "reviewReason": "展示机关与事务所工作的具体差别，学生任务明确；避开原文总体人数差额。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [
+        "实际读取完整正文：三名学生班级、实习局、任务与自述；页面显示2026-01-24。URL中的0210为路径日期，不采为发布日期。"
+      ],
+      "expansionBatch": "content-repair-20261114b",
+      "screenshots": []
+    },
+    {
+      "id": "nowcoder-tianjian-interview-381922610068684800",
+      "key": "牛客:nowcoder-tianjian-interview-381922610068684800",
+      "sourceIds": [
+        "PR20261114B03"
+      ],
+      "canonicalUrl": "https://www.nowcoder.com/discuss/381922610068684800",
+      "url": "https://www.nowcoder.com/discuss/381922610068684800",
+      "title": "天职国际深圳分所面经",
+      "author": "小人物cool",
+      "date": "2022-07-27",
+      "discoveredAt": "2026-11-14",
+      "platform": "牛客",
+      "topic": "就业与实习",
+      "campus": "按原文具体项目或面试地点",
+      "population": "公开作者卡标注“南京审计大学 财务”；未说明本科/硕士及具体学位",
+      "identity": "未知",
+      "summary": "一位自填南审背景的求职者记录了2022年天职深圳的群面、3对1面试及对年审实习的追问。",
+      "tips": [
+        "作者经历的一面为反诈主题无领导讨论；二面为3名面试官对1名候选人，追问完整年审实习做了什么、加班情况。",
+        "作者提到喜欢事务所一体化管理后，面试官继续追问其理解，说明写进回答的理由需要能展开。",
+        "其他问题涉及领导任务有误如何处理、制度不合理怎么办，以及选择审计的原因与职业计划。",
+        "作者自述面试后两天内收到offer；帖子中的调岗、转所说法未经现行制度验证，仅保留为当年个人叙述。"
+      ],
+      "comments": [],
+      "limitations": "2022年历史自述；学校为作者自填，学位未知，不标MPAcc。匿名offer不可作为实名就业去向或导师学生结果；当年的面试题、转岗说法不能当2026/2027招聘规定。",
+      "category": "可用生活学习线索",
+      "reviewReason": "新平台、有完整过程的第一人称面经；单独标历史面经及学历未明即可用作准备参考。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [
+        "完整正文及页面可见3条评论已读取；另用公开网页可访问界面核实作者卡为“小人物cool”、2022-07-27 21:44、南京审计大学/财务。正文自述完整年审经历及面试后收到offer；没有实名、学历或导师信息。"
+      ],
+      "expansionBatch": "content-repair-20261114b",
+      "screenshots": []
+    },
+    {
+      "id": "nowcoder-kpmg-interview-488840842665390080",
+      "key": "牛客:nowcoder-kpmg-interview-488840842665390080",
+      "sourceIds": [
+        "PR20261114B04"
+      ],
+      "canonicalUrl": "https://www.nowcoder.com/discuss/488840842665390080",
+      "url": "https://www.nowcoder.com/discuss/488840842665390080",
+      "title": "毕马威 审计岗 秋招par面经",
+      "author": "复盘中的小白很想去夏威夷",
+      "date": "2023-05-18",
+      "discoveredAt": "2026-11-14",
+      "platform": "牛客",
+      "topic": "就业与实习",
+      "campus": "按原文具体项目或面试地点",
+      "population": "公开作者卡标注“南京审计大学 财务”；未说明学位",
+      "identity": "未知",
+      "summary": "一位自填南审背景的作者复盘了2023年毕马威面试，重点是岗位选择理由、个人优势和反问准备。",
+      "tips": [
+        "作者列出的问答包括自我介绍、为何选择该单位、个人优势以及反问。",
+        "作者复盘自己临场表达缺少逻辑，且反问时没有准备问题，建议提前熟悉目标业务和岗位内容。",
+        "题名写审计，正文却多次写咨询，还将四大写成“四大行”；保留原题，不能据此确定所面业务线。",
+        "未写录取结果；这条只用来补充历史面试准备，不作录用、待遇或岗位制度依据。"
+      ],
+      "comments": [],
+      "limitations": "2023年历史帖，学位未明、业务线表述冲突。权重低于天职原帖，不作为审计专岗面试流程或MPAcc求职结果。如页面已有足够面试材料，可不新增可见卡片。",
+      "category": "可用生活学习线索",
+      "reviewReason": "确为新平台第一人称复盘，但信息少且业务线混写，适合放可折叠延伸阅读，不值得为数量置顶。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [
+        "完整原帖正文已读取，原页显示暂无评论；公开网页界面核实作者卡为“复盘中的小白很想去夏威夷”、2023-05-18 22:38、南京审计大学/财务。公开主页亦自填南京审计大学、2023、财务，但无学位；未推断为MPAcc。"
+      ],
+      "expansionBatch": "content-repair-20261114b",
+      "screenshots": []
+    }
+  ],
+  "lifeChapterAdditions": [
+    {
+      "chapterId": "life-09",
+      "placement": "before-internships",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "南审学生实习，实际做过什么",
+          "sourceCodes": [
+            "PR20261114B01",
+            "PR20261114B02"
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "样本",
+            "实际任务"
+          ],
+          "rows": [
+            [
+              "天健上海｜周扬，2024级MAud",
+              "年审/IPO：抽凭、仓库盘点、银行函证从填制到回函核对。[PR20261114B01]"
+            ],
+            [
+              "中审众环江苏｜周吉，2024级MAud",
+              "国网年报项目：核采购合同/回单/凭证，核总账与明细账勾稽，为异常补附件。[PR20261114B01]"
+            ],
+            [
+              "徐州审计局｜李思璇，2024级MAud",
+              "以旧换新政策调查：销售平台取证、Excel对比交易并找疑点。[PR20261114B02]"
+            ],
+            [
+              "南通审计局｜茆文萱，2024级MAud",
+              "整理整改材料、参加整改会议，了解后续督办。[PR20261114B02]"
+            ],
+            [
+              "肥西审计局｜姜珊，2024级MAud",
+              "经济责任审计现场核资金使用、辅助取证单和项目归档。[PR20261114B02]"
+            ]
+          ],
+          "sourceCodes": [
+            "PR20261114B01",
+            "PR20261114B02"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "这些是2024级MAud的历史实习任务，帮助看懂岗位内容；不代表MPAcc分配名额、留用或毕业去向。",
+          "sourceCodes": [
+            "PR20261114B01",
+            "PR20261114B02"
+          ]
+        }
+      ]
+    },
+    {
+      "chapterId": "life-09",
+      "placement": "before-internships",
+      "optional": true,
+      "blocks": [
+        {
+          "type": "p",
+          "text": "历史面经里，面试官会顺着实习经历追问具体任务、加班情况和选择理由：一位自填南审背景的作者记录了天职深圳2022年反诈群面、3对1面试。可先把一段项目经历整理成“做了什么、怎样核对、遇到什么问题、结果怎样”。末句是准备建议；原帖未公开作者学位，不能标为MPAcc。[PR20261114B03]",
+          "sourceCodes": [
+            "PR20261114B03"
+          ]
+        }
+      ]
+    }
+  ],
+  "screenedButNotRecommended": [
+    {
+      "url": "https://shsjxy.nau.edu.cn/2024/0919/c7489a135481/page.psp",
+      "title": "ACCA校友风采：李剑",
+      "identity": "本科",
+      "readScope": "完整访谈正文；显示2023-06-16",
+      "reason": "本科资深校友职业建议，离即将入学MPAcc的具体任务较远，不为增加数量收录。"
+    },
+    {
+      "url": "https://shsjxy.nau.edu.cn/2024/0919/c7489a135464/page.psp",
+      "title": "ACCA校友风采：李志强",
+      "identity": "本科",
+      "readScope": "完整访谈正文；显示2024-09-04",
+      "reason": "本科校友长期职业史与通用建议，不是新的研究生实习样本。"
+    },
+    {
+      "url": "https://account.nau.edu.cn/2017/0929/c8942a100811/page.htm",
+      "title": "会计学院召开2016级会计专业硕士研究生社会实践报告会",
+      "identity": "MPAcc",
+      "readScope": "完整正文；2017-09-29",
+      "reason": "虽披露19人约6个月实习及单位，但未展示具体学生任务；年代久，不把历史时长当本级要求。"
+    },
+    {
+      "url": "https://account.nau.edu.cn/2020/0930/c8942a100757/page.htm",
+      "title": "手执时间的火把 照亮前行的道路",
+      "identity": "MPAcc与学硕混合",
+      "readScope": "完整正文；2020-09-30",
+      "reason": "只有交流会概述，无具体失败教训或投稿办法；旧毕业条件不代替现行规则。"
+    },
+    {
+      "url": "https://www.nowcoder.com/feed/main/detail/30aa15e95b04486b9013bc93cc5bd758",
+      "title": "一个双非天坑专业的求职记录",
+      "identity": "本科",
+      "readScope": "完整正文及可见评论；正文写2023年分次更新",
+      "reason": "经济学本科求职挫折个案；八大年审实习未实名单位、未正式offer，不能补MPAcc就业统计。"
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/677232494",
+      "title": "复试前十！南审mpacc学姐的复试经验贴（2023年上岸）",
+      "identity": "自称MPAcc",
+      "readScope": "完整正文；编辑于2024-01-11",
+      "reason": "主要复试培训引流，与本轮读研实习/生活目标不符；参考书说法也有时效风险。"
+    }
+  ],
+  "platformLimits": [
+    {
+      "url": "https://www.xiaohongshu.com/search_result?keyword=%E5%8D%97%E5%AE%A1%20%E5%AE%9E%E4%B9%A0&type=51",
+      "scope": "抓取只返回页脚及导航，没有实际结果帖；不算实读小红书帖子，不补造评论。"
+    }
+  ],
+  "integrationNotes": [
+    "优先合并PR20261114B01/02/03；PR20261114B04信息弱，可只归档或折叠，不必增加可见卡片。",
+    "没有新导师归因证据，未将任何学生关联到具体校内导师。",
+    "上述日期为网页显示署期；均不是2026-11-14新发表的帖子。",
+    "3名MAud事务所学生属于实习，牛客offer属于未实名自述；都不增加实名就业去向统计。",
+    "只提供短摘要和改写要点；没有复制全篇原文，没有保存或发布第三方配图。"
+  ]
+}

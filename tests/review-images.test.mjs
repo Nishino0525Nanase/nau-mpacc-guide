@@ -121,3 +121,25 @@ test('the independent viewer navigates, changes scale and restores focus while p
   a.escapeImage();assert.equal(viewer.open,false);assert.equal(a.document.activeElement,secondTrigger);
   assert.equal(mentorDialog.open,true);assert.equal(a.get('#dialog-content').innerHTML,mentorHtml);
 });
+
+test('post images open in the same-page gallery, keep comment context, and reject images from another post',async()=>{
+  const data=fixture();
+  addPost(data,[shot('./evidence/content-repair-20261114b/table-01.webp'),shot('./evidence/content-repair-20261114b/table-02.webp')]);
+  const post=data.socialPosts[0];
+  post.comments=[{author:'评论者',text:'与本帖相关的评论',screenshots:[shot('./evidence/xhs/own-comment.jpg')]}];
+  const a=await boot(data);a.click('post',{id:post.id});
+  const html=a.get('#dialog-content').innerHTML;
+  assert.match(html,/data-action="post-image"/);
+  const trigger=a.click('post-image',{id:post.id,src:'./evidence/content-repair-20261114b/table-01.webp'});
+  assert.equal(a.get('#review-image-dialog').open,true);
+  assert.match(a.get('#review-image-content').innerHTML,/table-01.webp/);
+  a.click('review-image-next');assert.match(a.get('#review-image-content').innerHTML,/table-02.webp/);
+  a.click('review-image-prev');a.click('review-image-prev');
+  assert.match(a.get('#review-image-content').innerHTML,/own-comment.jpg/);
+  a.escapeImage();assert.equal(a.get('#review-image-dialog').open,false);
+  assert.equal(a.document.activeElement,trigger);
+  assert.equal(a.get('#detail-dialog').open,true);
+  assert.equal(a.get('#dialog-content').innerHTML,html);
+  a.click('post-image',{id:post.id,src:'./evidence/xhs/another-post.jpg'});
+  assert.equal(a.get('#review-image-dialog').open,false);
+});

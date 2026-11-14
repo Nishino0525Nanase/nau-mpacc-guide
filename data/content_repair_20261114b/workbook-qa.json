@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-14",
+  "status": "passed",
+  "file": "dist/downloads/evidence-index.xlsx",
+  "sha256": "250f83e7bd21b20342ed4f34ad07a94b11aceb9dae33831f330e6930ef715e33",
+  "bytes": 567278,
+  "scope": [
+    "完整来源目录",
+    "帖子索引",
+    "官方核实",
+    "学生公开去向"
+  ],
+  "sheets": 16,
+  "nativeTables": 19,
+  "nativeRecalculatedFormulas": 1771,
+  "formulaErrors": [],
+  "dataRows": {
+    "完整来源目录": 503,
+    "帖子索引": 156,
+    "官方核实": 278,
+    "学生公开去向": 30
+  },
+  "visiblePosts": 134,
+  "outcomeSummary": {
+    "records": 30,
+    "people": 29,
+    "mpaccRecords": 8,
+    "mpaccPeople": 7,
+    "firmRecords": 3,
+    "firmPeople": 3
+  },
+  "mainTableDataCellsChecked": 12686,
+  "mainTableHyperlinksChecked": 967,
+  "outcomeSupplementHyperlinksChecked": 11,
+  "all1771HyperlinkProtocolsSafe": true,
+  "other12Sheets": {
+    "count": 12,
+    "valuesFormulasCachesStylesLayoutAndNativeTablesUnchanged": true
+  },
+  "visualReview": {
+    "status": "passed",
+    "changedSheetOpeningViews": 4,
+    "newSourceRows": 7,
+    "newPostRows": 6,
+    "newOfficialRows": 4,
+    "newOutcomeRows": 1,
+    "outcomeSupplementsReviewed": 4,
+    "noClippingOrBlockedContent": true,
+    "renderDirectory": "/workspace/scratch/c08135c62de4/outputs/content-repair-20261114b-workbook"
+  },
+  "sourceWorkbookSha256": "9792c2c672f8f117bb29481c405c41a24bd197ea7a6e3055886139b76be07e7f",
+  "inputDatasetSha256": "531bdc5708dedfa0b38793ce67cd05a2b79390323154704c5eae10e09744ba81",
+  "metadataModified": false
+}

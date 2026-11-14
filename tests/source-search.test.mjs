@@ -101,3 +101,24 @@ test('exact source numbers and combined filters survive the broader content sear
   a.click('reset-posts');assert.equal(a.count(),2);
   a.route('#life/life-01');a.route('#posts');assert.equal(a.count(),2);
 });
+
+test('long source codes and complete post IDs find the same employment source shown on its card',async()=>{
+  const a=await app();
+  for(const query of ['FO20261114-XIE','fo20261114-2021','FO20261114-2022','FO20261114-XIE-POST']) {
+    a.search(query);assert.equal(a.count(),1,query);
+    assert.match(a.results(),/校友风采之20届会计专业谢晓俊/);
+    assert.match(a.results(),/FO20261114-XIE \/ FO20261114-2021 \/ FO20261114-2022/);
+    assert.doesNotMatch(a.results(),/>IE-POST</);
+  }
+});
+
+test('a post in two themes remains discoverable under either theme and keeps the search intersection',async()=>{
+  const a=await app();a.search('Nau研一到期中啦');assert.equal(a.count(),1);
+  for(const topic of ['导师与培养','学习与就业']) {
+    a.filter('post-topic',topic);assert.equal(a.count(),1,topic);
+    assert.match(a.results(),/Nau研一到期中啦/);
+  }
+  a.filter('post-topic','住宿与日常');assert.equal(a.count(),0);
+  a.click('reset-posts');
+  assert.doesNotMatch(a.get('#app').innerHTML,/<option[^>]*>导师与培养\n学习与就业<\/option>/);
+});
