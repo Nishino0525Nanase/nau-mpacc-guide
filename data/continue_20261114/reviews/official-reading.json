@@ -1,0 +1,29 @@
+[
+  {
+    "sourceId": "13",
+    "url": "https://account.nau.edu.cn/2024/0118/c9533a124812/page.htm",
+    "existingCanonicalUrl": "https://account.nau.edu.cn/2024/0118/c8917a124812/page.htm",
+    "articleId": "124812",
+    "date": "2024-01-18",
+    "webRef": "turn434view0",
+    "readLines": "63-89",
+    "readStatus": "原文和作者—导师表实读",
+    "existingSource": true,
+    "newNamedRecords": 2,
+    "newEmploymentRecords": 0,
+    "newPersonalReviews": 0
+  },
+  {
+    "sourceId": "11",
+    "url": "https://account.nau.edu.cn/2024/0603/c8917a131562/page.htm",
+    "articleId": "131562",
+    "date": "2024-06-03",
+    "webRef": "turn435view0",
+    "readLines": "81-87",
+    "readStatus": "原文成果、成员与指导老师实读；图片未逐张审读",
+    "existingSource": true,
+    "newTeamRecords": 2,
+    "newEmploymentRecords": 0,
+    "newPersonalReviews": 0
+  }
+]

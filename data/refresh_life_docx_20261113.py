@@ -88,7 +88,10 @@ def heading(doc,value,level=1,page=False):
 def cell_content(doc,cell,value,registry,header=False):
     cell.vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER
     p=cell.paragraphs[0];p.paragraph_format.space_after=Pt(3);p.paragraph_format.space_before=Pt(3);p.paragraph_format.line_spacing=Pt(14.5)
-    inline(doc,p,value,registry,10.5,header)
+    if isinstance(value,dict) and safe(value.get('url')):
+        link(doc,p,txt(value),value['url'],10.5)
+    else:
+        inline(doc,p,value,registry,10.5,header)
     tcPr=cell._tc.get_or_add_tcPr()
     mar=OxmlElement('w:tcMar')
     for tag,val in [('top','65'),('left','90'),('bottom','65'),('right','90')]:

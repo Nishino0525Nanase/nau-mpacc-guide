@@ -1,0 +1,88 @@
+{
+  "file": "dist/downloads/life-guide.docx",
+  "bytes": 64205,
+  "sha256": "3ffca143e433698dbfa719dcde818a6f3f31ec7ec9e16ced75509a604d0065d5",
+  "officialTemplateLinks": 5,
+  "changedPackageParts": [
+    "word/document.xml",
+    "word/_rels/document.xml.rels"
+  ],
+  "authorMetadataBlank": true,
+  "rendered": true,
+  "pageCount": 20,
+  "originalBodyElementsPreserved": true,
+  "sourceCoreMetadataUnchanged": true,
+  "personalCreditScanPassed": true,
+  "renderComparison": {
+    "pixelIdenticalPages": [
+      2,
+      3,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "differentPages": [
+      {
+        "page": 1,
+        "differenceBounds": [
+          468,
+          189,
+          503,
+          218
+        ]
+      },
+      {
+        "page": 6,
+        "differenceBounds": [
+          126,
+          186,
+          1420,
+          1873
+        ]
+      },
+      {
+        "page": 7,
+        "differenceBounds": [
+          126,
+          125,
+          1420,
+          1870
+        ]
+      },
+      {
+        "page": 8,
+        "differenceBounds": [
+          126,
+          136,
+          1420,
+          1662
+        ]
+      }
+    ],
+    "pageOneUnchangedXml": true,
+    "pageOneDifference": "small subtitle glyph rasterization only; no flow or content change"
+  },
+  "visualReview": {
+    "passed": true,
+    "inspectedChangedPages": [
+      1,
+      6,
+      7,
+      8
+    ],
+    "unchangedPages": "16 pages pixel-identical to previously approved render",
+    "table": "all five rows complete on page 6 with clickable names and source codes; no clipping or split rows",
+    "followingContent": "chapters12-16 reflowed across pages7-8, appendix pages9-20 retained exactly"
+  }
+}

@@ -3,23 +3,23 @@
     {
       "id": "mentor-guide",
       "filename": "mentor-guide.docx",
-      "url": "./downloads/mentor-guide.docx?v=a247d5cee67d",
-      "bytes": 77125,
-      "sha256": "a247d5cee67dcd26a3b88f368a68daada8ae49fe58eb89aab4aaa82d49ebdf30"
+      "url": "./downloads/mentor-guide.docx?v=a4b40e39d6de",
+      "bytes": 78747,
+      "sha256": "a4b40e39d6de96400c3a34eec4744aa2bd9e8b11ee0122e349f9c51b311f463a"
     },
     {
       "id": "life-guide",
       "filename": "life-guide.docx",
-      "url": "./downloads/life-guide.docx?v=ad2c72d41729",
-      "bytes": 63339,
-      "sha256": "ad2c72d41729c228cf664b8c7acd8f2b32d2bd644364fb08aa951f9633682dc6"
+      "url": "./downloads/life-guide.docx?v=3ffca143e433",
+      "bytes": 64205,
+      "sha256": "3ffca143e433698dbfa719dcde818a6f3f31ec7ec9e16ced75509a604d0065d5"
     },
     {
       "id": "evidence-index",
       "filename": "evidence-index.xlsx",
-      "url": "./downloads/evidence-index.xlsx?v=250f83e7bd21",
-      "bytes": 567278,
-      "sha256": "250f83e7bd21b20342ed4f34ad07a94b11aceb9dae33831f330e6930ef715e33"
+      "url": "./downloads/evidence-index.xlsx?v=a0049780c104",
+      "bytes": 572743,
+      "sha256": "a0049780c10403c87198f16159d29ab3375c49a75e0aa805c8f25dd80a305000"
     }
   ]
 }

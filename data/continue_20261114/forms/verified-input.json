@@ -1,0 +1,125 @@
+{
+  "sources": [
+    {
+      "code": "CD01",
+      "title": "参考文献著录格式",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/825c00b9-6e9f-44f7-a32b-9d62b58952c1.docx",
+      "bytes": 19016,
+      "sha256": "052b9154d046d6c6f7e913af0252b2a6a366ade519080600f8f8ca09acc47756",
+      "status": 200,
+      "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "label": "参考文献著录格式",
+      "canonicalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/825c00b9-6e9f-44f7-a32b-9d62b58952c1.docx",
+      "originalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/825c00b9-6e9f-44f7-a32b-9d62b58952c1.docx",
+      "date": null,
+      "kind": "official",
+      "platform": "南京审计大学MPAcc官网下载中心",
+      "population": "研究生办事与论文写作参考模板；未注明适用年级。",
+      "summary": "写参考文献时对照期刊、专著、学位论文及电子资源的示例。",
+      "limits": "官网下载中心公开模板，页面及文件未给出适用年级或明确发布日期；提交前核对本级现行通知。",
+      "readingScope": "官网下载中心链接实际下载，核对DOCX压缩包完整性，读取word/document.xml全文；未填写任何个人字段。",
+      "expansionBatch": "continue-20261114"
+    },
+    {
+      "code": "CD02",
+      "title": "硕士研究生学术报告",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/01fe0a04-2802-4f3e-809b-ae9e8185fb93.docx",
+      "bytes": 18629,
+      "sha256": "185ae7b691f290ab35765c47b094dfc90138c868a097c8764ba4153206016e0b",
+      "status": 200,
+      "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "label": "硕士研究生学术报告",
+      "canonicalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/01fe0a04-2802-4f3e-809b-ae9e8185fb93.docx",
+      "originalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/01fe0a04-2802-4f3e-809b-ae9e8185fb93.docx",
+      "date": null,
+      "kind": "official",
+      "platform": "南京审计大学MPAcc官网下载中心",
+      "population": "研究生办事与论文写作参考模板；未注明适用年级。",
+      "summary": "记录讲座主题、时间地点、报告内容、学习体会及导师审核意见。",
+      "limits": "官网下载中心公开模板，页面及文件未给出适用年级或明确发布日期；提交前核对本级现行通知。",
+      "readingScope": "官网下载中心链接实际下载，核对DOCX压缩包完整性，读取word/document.xml全文；未填写任何个人字段。",
+      "expansionBatch": "continue-20261114"
+    },
+    {
+      "code": "CD03",
+      "title": "学位论文开题报告书",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/7e272042-8e6b-4970-b0fd-34c789c46d01.docx",
+      "bytes": 13793,
+      "sha256": "d3f5986ba55d070519a2b55eb643669c7a5c7a191efbdbef78567f86ede9d517",
+      "status": 200,
+      "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "label": "学位论文开题报告书",
+      "canonicalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/7e272042-8e6b-4970-b0fd-34c789c46d01.docx",
+      "originalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/7e272042-8e6b-4970-b0fd-34c789c46d01.docx",
+      "date": null,
+      "kind": "official",
+      "platform": "南京审计大学MPAcc官网下载中心",
+      "population": "研究生办事与论文写作参考模板；未注明适用年级。",
+      "summary": "准备开题选题、研究方案与参考文献。字数和提交节点按本级通知核对。",
+      "limits": "官网下载中心公开模板，页面及文件未给出适用年级或明确发布日期；提交前核对本级现行通知。",
+      "readingScope": "官网下载中心链接实际下载，核对DOCX压缩包完整性，读取word/document.xml全文；未填写任何个人字段。",
+      "expansionBatch": "continue-20261114"
+    },
+    {
+      "code": "CD04",
+      "title": "硕士学位论文格式规范",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/5ac40616-2523-4c55-906a-7c52466b4bc6.docx",
+      "bytes": 216619,
+      "sha256": "3c8ef9a85e8fab48f233ac5d6acbc40a357a35502f8eae96cf270c0033ca4e2f",
+      "status": 200,
+      "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "label": "硕士学位论文格式规范",
+      "canonicalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/5ac40616-2523-4c55-906a-7c52466b4bc6.docx",
+      "originalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/5ac40616-2523-4c55-906a-7c52466b4bc6.docx",
+      "date": null,
+      "kind": "official",
+      "platform": "南京审计大学MPAcc官网下载中心",
+      "population": "研究生办事与论文写作参考模板；未注明适用年级。",
+      "summary": "核对论文封面、摘要、目录、图表、参考文献和页码格式。",
+      "limits": "官网下载中心公开模板，页面及文件未给出适用年级或明确发布日期；提交前核对本级现行通知。",
+      "readingScope": "官网下载中心链接实际下载，核对DOCX压缩包完整性，读取word/document.xml全文；未填写任何个人字段。",
+      "expansionBatch": "continue-20261114"
+    }
+  ],
+  "officialDownloads": [
+    {
+      "sourceId": "C505",
+      "title": "导师互选志愿表",
+      "purpose": "准备导师志愿与签批材料",
+      "format": "DOCX",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/23094817-5c38-43a7-a04d-188b86fa560e.docx"
+    },
+    {
+      "sourceId": "CD02",
+      "title": "硕士研究生学术报告",
+      "purpose": "记录讲座主题、时间地点、报告内容、学习体会及导师审核意见。",
+      "format": "DOCX",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/01fe0a04-2802-4f3e-809b-ae9e8185fb93.docx"
+    },
+    {
+      "sourceId": "CD03",
+      "title": "学位论文开题报告书",
+      "purpose": "准备开题选题、研究方案与参考文献。字数和提交节点按本级通知核对。",
+      "format": "DOCX",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/7e272042-8e6b-4970-b0fd-34c789c46d01.docx"
+    },
+    {
+      "sourceId": "CD04",
+      "title": "硕士学位论文格式规范",
+      "purpose": "核对论文封面、摘要、目录、图表、参考文献和页码格式。",
+      "format": "DOCX",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/5ac40616-2523-4c55-906a-7c52466b4bc6.docx"
+    },
+    {
+      "sourceId": "CD01",
+      "title": "参考文献著录格式",
+      "purpose": "写参考文献时对照期刊、专著、学位论文及电子资源的示例。",
+      "format": "DOCX",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/825c00b9-6e9f-44f7-a32b-9d62b58952c1.docx"
+    }
+  ],
+  "indexUrl": "https://mpacc.nau.edu.cn/11500/list.htm",
+  "note": "官网下载中心公开模板，页面及文件未给出适用年级或明确发布日期；提交前核对本级现行通知。",
+  "readingDate": "2026-11-14",
+  "newIndependentSources": 4
+}

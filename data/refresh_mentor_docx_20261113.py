@@ -429,10 +429,10 @@ def main():
                     link(p, source.get('title') or '打开原文', source['url'], 9)
 
     if employer_summaries:
-        heading('学校公开的事务所雇主举例', 2)
+        heading('学校公开的事务所资料', 2)
         para('以下为学院或项目整体介绍，不对应具体学生或导师，不计入具名学生人数。', size=10)
         for employer_summary in employer_summaries:
-            label = employer_summary.get('label') or '事务所雇主举例'
+            label = employer_summary.get('label') or '事务所公开资料'
             date = str(employer_summary.get('date') or '')
             para(label + ('  ' + date if date else ''), size=10.5, bold=True, after=4, keep=True)
             para(employer_summary.get('text'), size=10, after=4)
@@ -455,8 +455,21 @@ def main():
         para(stat['cohort'] + ' ' + stat['label'] + ' ' + str(stat['value']) + unit + '。' + clean(stat['limits']), size=10)
         source_line(stat['sourceIds'])
 
+    achievements = outcome_data.get('achievements') or []
+    if achievements:
+        heading('培养成果与指导对应')
+        para('论文获奖与案例竞赛分开看。以下成果可核对指导关系，不计入毕业去向或学生评价人数；赛事指导不等于学位论文导师。', size=10)
+        rows = []
+        for item in achievements:
+            relation = '赛事指导' if item.get('relationshipType') == 'competition_guidance' else '论文导师'
+            guides = '、'.join([item['mentorName']] + item.get('coMentors', []))
+            result = item['achievement']['text'] + '\n' + ''.join('[' + code + ']' for code in item['achievement']['sourceIds'])
+            rows.append([item['studentName'], relation + '\n' + guides, result])
+        table(['学生或团队', '指导关系', '公开成果与来源'], rows, [1.55, 1.4, 4.25], size=10)
+        para('共同指导的论文保留两位指导老师；团队成果按一项展示。获奖年份不作为毕业年份，未公开的就业单位和届别不补猜测。', size=9)
+
     heading('联系导师前要问清的事', page=True)
-    para('先确定研究兴趣、可投入时间和实习计划，挑选两三位方向相近的老师。邮件写清姓名、本科学校专业、拟入学身份、具体兴趣与一项真实成果，附件用简短PDF简历。不要编造论文、项目或导师承诺。')
+    para('先确定研究兴趣、可投入时间和实习计划，挑选两三位方向相近的老师。邮件写清姓名、本科学校专业、拟入学身份、具体兴趣与一项真实成果，附件用简短PDF简历。不要编造论文、项目或导师承诺。', keep=True)
     table(['想了解的问题', '可向导师或直系学生询问的事实'], [
         ('日常指导', '主要由谁指导；组会大致频率；初稿通常怎样反馈；遇到选题或数据困难怎样处理。'),
         ('任务与实习', '论文、课程、竞赛的节点；竞赛参与是否自愿；实习出勤与返校要求；冲突时怎样协调。'),

@@ -1,0 +1,86 @@
+{
+  "asOf": "2026-11-14",
+  "adoptedNewSources": 1,
+  "newNamedMpaccOrMasterFirmRecords": 0,
+  "newConfirmedMentorStudentFirmLinks": 0,
+  "newOfficialAggregate": {
+    "sourceId": "CO01",
+    "degree": "undergraduate",
+    "cohortRange": "2022—2025",
+    "count": 45,
+    "status": "四大会计师事务所录取；不扩写为当前在职"
+  },
+  "webReferences": {
+    "CO01": [
+      "turn430view0",
+      "turn431search0"
+    ]
+  },
+  "excludedOrUnchanged": [
+    {
+      "url": "https://shsjxy.nau.edu.cn/2025/0915/c7575a147584/page.psp",
+      "refs": [
+        "turn432view0"
+      ],
+      "readingScope": "核读官网L124—L127毕业去向问答",
+      "finding": "2025-09-07稿称近三年ACCA本科四大录取40人；起止年未明。",
+      "disposition": "不与CO01的2022—2025四年45人相加或相减，不增加个人数。原范围不同，不判为冲突或新增5人。"
+    },
+    {
+      "url": "https://www.sohu.com/a/909049640_769713",
+      "refs": [
+        "turn420view0",
+        "turn422view0"
+      ],
+      "readingScope": "学校署名搜狐号全文，重点四大段L339—L384。",
+      "finding": "列邱悦—安永上海、谢苏宇—毕马威南京、孟子宸—德勤南京、苏贻哲—安永企业咨询南京、田的—普华永道；均2021级，田的另明确双学士。",
+      "disposition": "原文未逐人标本科学位，且不属已确认MPAcc/硕士个案；本次不借年级推定学位，不加入去向表。可作为学校公开本科就业线索后续交叉核实。"
+    },
+    {
+      "url": "https://gs.nau.edu.cn/2025/1205/c7079a151790/page.htm",
+      "refs": [
+        "turn425view0"
+      ],
+      "readingScope": "当前目录页全部可见附件。",
+      "finding": "2025年度页仍只列管理科学与工程硕士报告，没有会计硕士PDF。",
+      "disposition": "不据目录标题补写MPAcc2025就业统计。"
+    },
+    {
+      "url": "https://account.nau.edu.cn/2023/1120/c8917a121170/page.htm",
+      "refs": [
+        "turn420view1"
+      ],
+      "readingScope": "官方全文及毕业生风采索引说明。",
+      "finding": "已有来源，仅证明2023年曾推事务所系列，未列逐人原文链接。",
+      "disposition": "既有材料不加来源数；刘子诺、李慧慧未取得原文，仍不进具名就业表。"
+    },
+    {
+      "url": "https://www.nau.edu.cn/2022/0802/c5728a102807/page.htm",
+      "refs": [
+        "turn426search7"
+      ],
+      "readingScope": "搜索服务返回官方全文片段。",
+      "finding": "安永介绍近五年入职人数，但网页未列数值；同场教师为走访人员。",
+      "disposition": "不能补录人数或师生关系。"
+    },
+    {
+      "url": "https://shsjxy.nau.edu.cn/2023/0823/c7575a117632/page.htm",
+      "refs": [
+        "turn426search8"
+      ],
+      "readingScope": "搜索服务官方全文片段。",
+      "finding": "校友杨杰、项澄、刘岩分享入职安永经历，未明学位及导师。",
+      "disposition": "不冒充MPAcc/硕士导师学生。"
+    }
+  ],
+  "readLimits": [
+    "没有获得新增可核MPAcc/硕士四大八大具名去向或导师关系；这不代表不存在。",
+    "未读取考试名单的个人成绩、学号，也未用政治身份或其他敏感字段补画像。",
+    "未访问生产指南、私有统计或浏览器登录态。",
+    "学校署名平台内容仅保留就业去向线索，不采集无关个人荣誉与政治身份。"
+  ],
+  "mergeNotes": [
+    "主补丁只增加一项本科历史累计雇主说明，不改既有具名学生统计。",
+    "如果就业页默认只看MPAcc，建议此条仅在本科/全部范围出现；至少确保标题与scope明确本科，不能混入MPAcc统计卡。"
+  ]
+}

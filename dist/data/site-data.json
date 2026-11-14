@@ -7,7 +7,7 @@
       "detailedMentorCards": 17,
       "lifeChapters": 16,
       "socialPosts": 156,
-      "officialEvidence": 278,
+      "officialEvidence": 283,
       "feedbackRecords": 21,
       "screenedSources": 15,
       "unreadLeads": 6,
@@ -15086,6 +15086,82 @@
           "sourceCodes": []
         },
         {
+          "type": "heading",
+          "text": "常用表格直接下载",
+          "continuationBlock": "official-downloads",
+          "sourceCodes": [
+            "C505",
+            "CD02",
+            "CD03",
+            "CD04",
+            "CD01"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "以下为学校官网公开模板，未注明适用年级。提交前先核对本级通知。",
+          "continuationBlock": "official-downloads",
+          "sourceCodes": [
+            "C505",
+            "CD02",
+            "CD03",
+            "CD04",
+            "CD01"
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            "材料",
+            "什么时候用"
+          ],
+          "rows": [
+            [
+              {
+                "label": "导师互选志愿表",
+                "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/23094817-5c38-43a7-a04d-188b86fa560e.docx"
+              },
+              "准备导师志愿与签批材料 [C505]"
+            ],
+            [
+              {
+                "label": "硕士研究生学术报告",
+                "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/01fe0a04-2802-4f3e-809b-ae9e8185fb93.docx"
+              },
+              "记录讲座主题、时间地点、报告内容、学习体会及导师审核意见。 [CD02]"
+            ],
+            [
+              {
+                "label": "学位论文开题报告书",
+                "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/7e272042-8e6b-4970-b0fd-34c789c46d01.docx"
+              },
+              "准备开题选题、研究方案与参考文献。字数和提交节点按本级通知核对。 [CD03]"
+            ],
+            [
+              {
+                "label": "硕士学位论文格式规范",
+                "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/5ac40616-2523-4c55-906a-7c52466b4bc6.docx"
+              },
+              "核对论文封面、摘要、目录、图表、参考文献和页码格式。 [CD04]"
+            ],
+            [
+              {
+                "label": "参考文献著录格式",
+                "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/825c00b9-6e9f-44f7-a32b-9d62b58952c1.docx"
+              },
+              "写参考文献时对照期刊、专著、学位论文及电子资源的示例。 [CD01]"
+            ]
+          ],
+          "continuationBlock": "official-downloads",
+          "sourceCodes": [
+            "C505",
+            "CD02",
+            "CD03",
+            "CD04",
+            "CD01"
+          ]
+        },
+        {
           "type": "details",
           "text": "详细资料与原文",
           "readingArchive": true,
@@ -15212,7 +15288,12 @@
         "F21",
         "C11",
         "F28",
-        "F33"
+        "F33",
+        "C505",
+        "CD02",
+        "CD03",
+        "CD04",
+        "CD01"
       ],
       "originalTitle": "第十一章 常用联系人和第一周安排",
       "concise": true
@@ -31434,8 +31515,9 @@
       "url": "https://account.nau.edu.cn/2024/0118/c8917a124812/page.htm",
       "originalUrl": "https://account.nau.edu.cn/2024/0118/c8917a124812/page.htm",
       "kind": "导师手册来源",
-      "date": "",
-      "canonicalUrl": "https://account.nau.edu.cn/2024/0118/c8917a124812/page.htm"
+      "date": "2024-01-18",
+      "canonicalUrl": "https://account.nau.edu.cn/2024/0118/c8917a124812/page.htm",
+      "readingScope": "获奖原文及作者—导师表实际核读；非仅搜索摘要。"
     },
     "14": {
       "code": "14",
@@ -40161,6 +40243,101 @@
       "summary": "13张事务所就业榜照片；会计学院有天健、德勤南京、容诚南京3条匿名“会计”线索，学位与导师未载。",
       "readingScope": "正文、首层可见评论与作者回复；13张原图已下载并逐图核对字段及重叠。未称59条评论全量读完。",
       "limits": "跨学院的用户拍照转帖，姓名以“某同学”匿名。表中没有学位、导师字段，不能把“会计”直接认定为MPAcc；未计入具名就业统计。"
+    },
+    "CD01": {
+      "code": "CD01",
+      "title": "参考文献著录格式",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/825c00b9-6e9f-44f7-a32b-9d62b58952c1.docx",
+      "bytes": 19016,
+      "sha256": "052b9154d046d6c6f7e913af0252b2a6a366ade519080600f8f8ca09acc47756",
+      "status": 200,
+      "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "label": "参考文献著录格式",
+      "canonicalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/825c00b9-6e9f-44f7-a32b-9d62b58952c1.docx",
+      "originalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/825c00b9-6e9f-44f7-a32b-9d62b58952c1.docx",
+      "date": null,
+      "kind": "official",
+      "platform": "南京审计大学MPAcc官网下载中心",
+      "population": "研究生办事与论文写作参考模板；未注明适用年级。",
+      "summary": "写参考文献时对照期刊、专著、学位论文及电子资源的示例。",
+      "limits": "官网下载中心公开模板，页面及文件未给出适用年级或明确发布日期；提交前核对本级现行通知。",
+      "readingScope": "官网下载中心链接实际下载，核对DOCX压缩包完整性，读取word/document.xml全文；未填写任何个人字段。",
+      "expansionBatch": "continue-20261114"
+    },
+    "CD02": {
+      "code": "CD02",
+      "title": "硕士研究生学术报告",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/01fe0a04-2802-4f3e-809b-ae9e8185fb93.docx",
+      "bytes": 18629,
+      "sha256": "185ae7b691f290ab35765c47b094dfc90138c868a097c8764ba4153206016e0b",
+      "status": 200,
+      "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "label": "硕士研究生学术报告",
+      "canonicalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/01fe0a04-2802-4f3e-809b-ae9e8185fb93.docx",
+      "originalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/01fe0a04-2802-4f3e-809b-ae9e8185fb93.docx",
+      "date": null,
+      "kind": "official",
+      "platform": "南京审计大学MPAcc官网下载中心",
+      "population": "研究生办事与论文写作参考模板；未注明适用年级。",
+      "summary": "记录讲座主题、时间地点、报告内容、学习体会及导师审核意见。",
+      "limits": "官网下载中心公开模板，页面及文件未给出适用年级或明确发布日期；提交前核对本级现行通知。",
+      "readingScope": "官网下载中心链接实际下载，核对DOCX压缩包完整性，读取word/document.xml全文；未填写任何个人字段。",
+      "expansionBatch": "continue-20261114"
+    },
+    "CD03": {
+      "code": "CD03",
+      "title": "学位论文开题报告书",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/7e272042-8e6b-4970-b0fd-34c789c46d01.docx",
+      "bytes": 13793,
+      "sha256": "d3f5986ba55d070519a2b55eb643669c7a5c7a191efbdbef78567f86ede9d517",
+      "status": 200,
+      "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "label": "学位论文开题报告书",
+      "canonicalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/7e272042-8e6b-4970-b0fd-34c789c46d01.docx",
+      "originalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/7e272042-8e6b-4970-b0fd-34c789c46d01.docx",
+      "date": null,
+      "kind": "official",
+      "platform": "南京审计大学MPAcc官网下载中心",
+      "population": "研究生办事与论文写作参考模板；未注明适用年级。",
+      "summary": "准备开题选题、研究方案与参考文献。字数和提交节点按本级通知核对。",
+      "limits": "官网下载中心公开模板，页面及文件未给出适用年级或明确发布日期；提交前核对本级现行通知。",
+      "readingScope": "官网下载中心链接实际下载，核对DOCX压缩包完整性，读取word/document.xml全文；未填写任何个人字段。",
+      "expansionBatch": "continue-20261114"
+    },
+    "CD04": {
+      "code": "CD04",
+      "title": "硕士学位论文格式规范",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/5ac40616-2523-4c55-906a-7c52466b4bc6.docx",
+      "bytes": 216619,
+      "sha256": "3c8ef9a85e8fab48f233ac5d6acbc40a357a35502f8eae96cf270c0033ca4e2f",
+      "status": 200,
+      "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "label": "硕士学位论文格式规范",
+      "canonicalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/5ac40616-2523-4c55-906a-7c52466b4bc6.docx",
+      "originalUrl": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/5ac40616-2523-4c55-906a-7c52466b4bc6.docx",
+      "date": null,
+      "kind": "official",
+      "platform": "南京审计大学MPAcc官网下载中心",
+      "population": "研究生办事与论文写作参考模板；未注明适用年级。",
+      "summary": "核对论文封面、摘要、目录、图表、参考文献和页码格式。",
+      "limits": "官网下载中心公开模板，页面及文件未给出适用年级或明确发布日期；提交前核对本级现行通知。",
+      "readingScope": "官网下载中心链接实际下载，核对DOCX压缩包完整性，读取word/document.xml全文；未填写任何个人字段。",
+      "expansionBatch": "continue-20261114"
+    },
+    "CO01": {
+      "code": "CO01",
+      "kind": "official",
+      "title": "特色项目宣传 | 审计学（ACCA方向）招生简章",
+      "url": "https://shsjxy.nau.edu.cn/2026/0915/c7575a161723/page.htm",
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/0915/c7575a161723/page.htm",
+      "originalUrl": "https://shsjxy.nau.edu.cn/2026/0915/c7575a161723/page.htm",
+      "additionalUrls": [],
+      "platform": "南京审计大学社会审计学院",
+      "date": "2026-09-05",
+      "population": "审计学（ACCA方向）本科毕业生；非MPAcc",
+      "summary": "学院问答列2022—2025年该本科方向累计获四大会计师事务所录取45人。",
+      "readingScope": "实际核读官网全文；L57、L165确认本科项目，L169—L172为毕业去向问答与四年合计。网页发布时间为2026-09-05，不由URL推定9月15日。",
+      "limits": "这是本科方向跨四年的招生宣传统计，不是MPAcc人数、四大就业率或某导师就业成果。未给逐所、逐年、导师或个人名单；不与具名记录相加，也不由“约20%”反推全校人数。"
     }
   },
   "targetProfiles": [
@@ -40362,32 +40539,32 @@
     {
       "id": "mentor-guide",
       "title": "导师选择参考",
-      "url": "./downloads/mentor-guide.docx?v=a247d5cee67d",
+      "url": "./downloads/mentor-guide.docx?v=a4b40e39d6de",
       "format": "docx",
       "description": "34位导师，含学生评价、缩写对照与公开学生去向，保留来源链接",
       "filename": "mentor-guide.docx",
-      "bytes": 77125,
-      "sha256": "a247d5cee67dcd26a3b88f368a68daada8ae49fe58eb89aab4aaa82d49ebdf30"
+      "bytes": 78747,
+      "sha256": "a4b40e39d6de96400c3a34eec4744aa2bd9e8b11ee0122e349f9c51b311f463a"
     },
     {
       "id": "life-guide",
       "title": "学习生活攻略",
-      "url": "./downloads/life-guide.docx?v=ad2c72d41729",
+      "url": "./downloads/life-guide.docx?v=3ffca143e433",
       "format": "docx",
       "description": "16章生活资料，含校园宿舍、南京气候、湘味餐饮与实习资源",
       "filename": "life-guide.docx",
-      "bytes": 63339,
-      "sha256": "ad2c72d41729c228cf664b8c7acd8f2b32d2bd644364fb08aa951f9633682dc6"
+      "bytes": 64205,
+      "sha256": "3ffca143e433698dbfa719dcde818a6f3f31ec7ec9e16ced75509a604d0065d5"
     },
     {
       "id": "evidence-index",
       "title": "原帖与官方证据索引",
-      "url": "./downloads/evidence-index.xlsx?v=250f83e7bd21",
+      "url": "./downloads/evidence-index.xlsx?v=a0049780c104",
       "format": "xlsx",
       "description": "来源、导师评价、缩写、学生去向和实习索引，可筛选并点击原始链接",
       "filename": "evidence-index.xlsx",
-      "bytes": 567278,
-      "sha256": "250f83e7bd21b20342ed4f34ad07a94b11aceb9dae33831f330e6930ef715e33"
+      "bytes": 572743,
+      "sha256": "a0049780c10403c87198f16159d29ab3375c49a75e0aa805c8f25dd80a305000"
     }
   ],
   "officialEvidence": [
@@ -48340,6 +48517,126 @@
       "use_status": "有范围的官方资料",
       "reading_scopes": [
         "实际读取PDF提取全文；仅采用林仪姓名与专业班级，不展示学号或其他个人信息。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:continue-20261114:CD01",
+      "ids": [
+        "CD01"
+      ],
+      "title": "参考文献著录格式",
+      "date_display": "未标注",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/825c00b9-6e9f-44f7-a32b-9d62b58952c1.docx",
+      "canonical_url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/825c00b9-6e9f-44f7-a32b-9d62b58952c1.docx",
+      "summary": "写参考文献时对照期刊、专著、学位论文及电子资源的示例。",
+      "population": "研究生办事与论文写作参考模板；未注明适用年级。",
+      "tips": [
+        "写参考文献时对照期刊、专著、学位论文及电子资源的示例。"
+      ],
+      "comments": [],
+      "limits": "官网下载中心公开模板，页面及文件未给出适用年级或明确发布日期；提交前核对本级现行通知。",
+      "topic": "研究生常用表格与论文写作",
+      "use_status": "官网公开模板，适用年级需核对",
+      "reading_scopes": [
+        "官网下载中心链接实际下载，核对DOCX压缩包完整性，读取word/document.xml全文；未填写任何个人字段。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:continue-20261114:CD02",
+      "ids": [
+        "CD02"
+      ],
+      "title": "硕士研究生学术报告",
+      "date_display": "未标注",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/01fe0a04-2802-4f3e-809b-ae9e8185fb93.docx",
+      "canonical_url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/01fe0a04-2802-4f3e-809b-ae9e8185fb93.docx",
+      "summary": "记录讲座主题、时间地点、报告内容、学习体会及导师审核意见。",
+      "population": "研究生办事与论文写作参考模板；未注明适用年级。",
+      "tips": [
+        "记录讲座主题、时间地点、报告内容、学习体会及导师审核意见。"
+      ],
+      "comments": [],
+      "limits": "官网下载中心公开模板，页面及文件未给出适用年级或明确发布日期；提交前核对本级现行通知。",
+      "topic": "研究生常用表格与论文写作",
+      "use_status": "官网公开模板，适用年级需核对",
+      "reading_scopes": [
+        "官网下载中心链接实际下载，核对DOCX压缩包完整性，读取word/document.xml全文；未填写任何个人字段。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:continue-20261114:CD03",
+      "ids": [
+        "CD03"
+      ],
+      "title": "学位论文开题报告书",
+      "date_display": "未标注",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/7e272042-8e6b-4970-b0fd-34c789c46d01.docx",
+      "canonical_url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/7e272042-8e6b-4970-b0fd-34c789c46d01.docx",
+      "summary": "准备开题选题、研究方案与参考文献。字数和提交节点按本级通知核对。",
+      "population": "研究生办事与论文写作参考模板；未注明适用年级。",
+      "tips": [
+        "准备开题选题、研究方案与参考文献。字数和提交节点按本级通知核对。"
+      ],
+      "comments": [],
+      "limits": "官网下载中心公开模板，页面及文件未给出适用年级或明确发布日期；提交前核对本级现行通知。",
+      "topic": "研究生常用表格与论文写作",
+      "use_status": "官网公开模板，适用年级需核对",
+      "reading_scopes": [
+        "官网下载中心链接实际下载，核对DOCX压缩包完整性，读取word/document.xml全文；未填写任何个人字段。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:continue-20261114:CD04",
+      "ids": [
+        "CD04"
+      ],
+      "title": "硕士学位论文格式规范",
+      "date_display": "未标注",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/5ac40616-2523-4c55-906a-7c52466b4bc6.docx",
+      "canonical_url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/5ac40616-2523-4c55-906a-7c52466b4bc6.docx",
+      "summary": "核对论文封面、摘要、目录、图表、参考文献和页码格式。",
+      "population": "研究生办事与论文写作参考模板；未注明适用年级。",
+      "tips": [
+        "核对论文封面、摘要、目录、图表、参考文献和页码格式。"
+      ],
+      "comments": [],
+      "limits": "官网下载中心公开模板，页面及文件未给出适用年级或明确发布日期；提交前核对本级现行通知。",
+      "topic": "研究生常用表格与论文写作",
+      "use_status": "官网公开模板，适用年级需核对",
+      "reading_scopes": [
+        "官网下载中心链接实际下载，核对DOCX压缩包完整性，读取word/document.xml全文；未填写任何个人字段。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:continue-20261114:CO01",
+      "ids": [
+        "CO01"
+      ],
+      "title": "特色项目宣传 | 审计学（ACCA方向）招生简章",
+      "date_display": "2026-09-05",
+      "url": "https://shsjxy.nau.edu.cn/2026/0915/c7575a161723/page.htm",
+      "canonical_url": "https://shsjxy.nau.edu.cn/2026/0915/c7575a161723/page.htm",
+      "summary": "学院问答列2022—2025年该本科方向累计获四大会计师事务所录取45人。",
+      "population": "审计学（ACCA方向）本科毕业生；非MPAcc",
+      "tips": [
+        "四年累计45人；仅限本科ACCA方向。"
+      ],
+      "comments": [],
+      "limits": "这是本科方向跨四年的招生宣传统计，不是MPAcc人数、四大就业率或某导师就业成果。未给逐所、逐年、导师或个人名单；不与具名记录相加，也不由“约20%”反推全校人数。",
+      "topic": "学校公开事务所就业统计",
+      "use_status": "本科项目官方历史累计；与MPAcc分开看",
+      "reading_scopes": [
+        "实际核读官网全文；L57、L165确认本科项目，L169—L172为毕业去向问答与四年合计。网页发布时间为2026-09-05，不由URL推定9月15日。"
       ],
       "official": true,
       "screened_only": false
@@ -61312,6 +61609,160 @@
             "A403"
           ]
         }
+      },
+      {
+        "degree": "MPAcc",
+        "degreeLabel": "会计专业硕士（MPAcc）",
+        "cohort": null,
+        "graduationYear": null,
+        "relationshipStatus": "confirmed",
+        "outcome": null,
+        "id": "CR-gu-zijia-dong",
+        "studentName": "顾子嘉",
+        "mentorId": "mentor-01",
+        "mentorName": "董必荣",
+        "relationshipType": "thesis_guidance",
+        "sourceIds": [
+          "13"
+        ],
+        "relationship": {
+          "text": "学校2024年1月18日获奖报道的作者—导师表，明确顾子嘉的论文指导教师为董必荣、刘辉。",
+          "sourceIds": [
+            "13"
+          ]
+        },
+        "coMentors": [
+          "刘辉"
+        ],
+        "achievement": {
+          "text": "以徐工机械数字化转型及价值创造为题的硕士论文，获评2023年江苏省优秀专业学位硕士学位论文。",
+          "sourceIds": [
+            "13"
+          ]
+        },
+        "limits": [
+          "双导师共同指导，不将成果独归一位老师。",
+          "获奖年与网页发布年分别为2023、2024；不是毕业届别或就业状态。",
+          "该记录只能证明论文成果及指导关系，不证明日常相处、实习安排或就业资源。"
+        ]
+      },
+      {
+        "degree": "MPAcc",
+        "degreeLabel": "会计专业硕士（MPAcc）",
+        "cohort": null,
+        "graduationYear": null,
+        "relationshipStatus": "confirmed",
+        "outcome": null,
+        "id": "CR-gao-mingjing-gao",
+        "studentName": "高铭婧",
+        "mentorId": "mentor-09",
+        "mentorName": "高凤莲",
+        "relationshipType": "thesis_guidance",
+        "sourceIds": [
+          "13"
+        ],
+        "relationship": {
+          "text": "学校2024年1月18日获奖报道的作者—导师表，明确高铭婧的论文指导教师为高凤莲、史晓明。",
+          "sourceIds": [
+            "13"
+          ]
+        },
+        "coMentors": [
+          "史晓明"
+        ],
+        "achievement": {
+          "text": "以美邦服饰代际传承、企业家社会资本与绩效为题的硕士论文，获评2023年江苏省优秀专业学位硕士学位论文。",
+          "sourceIds": [
+            "13"
+          ]
+        },
+        "limits": [
+          "双导师共同指导，不将成果独归一位老师。",
+          "获奖年与网页发布年分别为2023、2024；不是毕业届别或就业状态。",
+          "该记录只能证明论文成果及指导关系，不证明日常相处、实习安排或就业资源。"
+        ]
+      },
+      {
+        "degree": "MPAcc",
+        "degreeLabel": "会计专业硕士（MPAcc）",
+        "cohort": null,
+        "graduationYear": null,
+        "relationshipStatus": "confirmed",
+        "outcome": null,
+        "id": "CR-shangchunshan-shan",
+        "studentName": "上春山队（周家钰等4人）",
+        "studentNames": [
+          "周家钰",
+          "王欢",
+          "薛晓",
+          "徐天"
+        ],
+        "mentorId": "mentor-34",
+        "mentorName": "单文涛",
+        "relationshipType": "competition_guidance",
+        "sourceIds": [
+          "11"
+        ],
+        "relationship": {
+          "text": "学院报道明确该队MPAcc学生的赛事指导老师为单文涛；没有确认各队员的学位论文导师。",
+          "sourceIds": [
+            "11"
+          ]
+        },
+        "achievement": {
+          "text": "2024年第21届长三角MPAcc智能财会案例研究论坛特等奖；围绕企业数字化转型开展案例分析与现场答辩。成员：周家钰、王欢、薛晓、徐天。",
+          "sourceIds": [
+            "11"
+          ]
+        },
+        "limits": [
+          "仅为竞赛指导关系，不等于各队员的学位论文导师。",
+          "长三角区域论坛，不写成全国MPAcc案例大赛；2024年赛事，不等于2025年同类荣誉。",
+          "团队获奖按一项团队成果展示；不按成员人数增加独立来源、个人评价或就业人数。",
+          "毕业届别、就业单位与读博去向均未在此文披露。"
+        ]
+      },
+      {
+        "degree": "MPAcc",
+        "degreeLabel": "会计专业硕士（MPAcc）",
+        "cohort": null,
+        "graduationYear": null,
+        "relationshipStatus": "confirmed",
+        "outcome": null,
+        "id": "CR-anlimingti-wen",
+        "studentName": "案例大赛命题组队（陈欣瑞等6人）",
+        "studentNames": [
+          "陈欣瑞",
+          "何智玲",
+          "何宇博",
+          "冒涵颖",
+          "董龙龙",
+          "刘雨晨"
+        ],
+        "mentorId": "mentor-02",
+        "mentorName": "温素彬",
+        "relationshipType": "competition_guidance",
+        "sourceIds": [
+          "11"
+        ],
+        "relationship": {
+          "text": "学院报道明确该队MPAcc学生的赛事指导老师为温素彬；没有确认各队员的学位论文导师。",
+          "sourceIds": [
+            "11"
+          ]
+        },
+        "achievement": {
+          "text": "2024年第21届长三角MPAcc智能财会案例研究论坛二等奖；围绕企业数字化转型开展案例分析与现场答辩。成员：陈欣瑞、何智玲、何宇博、冒涵颖、董龙龙、刘雨晨。",
+          "sourceIds": [
+            "11"
+          ]
+        },
+        "limits": [
+          "仅为竞赛指导关系，不等于各队员的学位论文导师。",
+          "长三角区域论坛，不写成全国MPAcc案例大赛；2024年赛事，不等于2025年同类荣誉。",
+          "团队获奖按一项团队成果展示；不按成员人数增加独立来源、个人评价或就业人数。",
+          "毕业届别、就业单位与读博去向均未在此文披露。"
+        ]
       }
     ],
     "mentorCareerStatements": [
@@ -61343,6 +61794,11 @@
         "date": "2019-10-24",
         "sourceIds": [
           "FO20261114-2019"
+        ],
+        "degrees": [
+          "MPAcc",
+          "academic_master",
+          "master_unspecified"
         ]
       },
       {
@@ -61353,6 +61809,19 @@
         "date": "2025-10-21",
         "sourceIds": [
           "FO20261114-2025"
+        ],
+        "degree": "MPAcc"
+      },
+      {
+        "id": "CO01-ACCA-BIG4-2022-2025",
+        "label": "本科ACCA方向 · 2022—2025四大录取",
+        "text": "学院公布四年累计45人获四大会计师事务所录取。",
+        "scope": "审计学（ACCA方向）本科口径，非MPAcc；跨四年累计，未列逐所人数和导师。不能与下方具名个案相加或换算MPAcc就业率。",
+        "date": "2026-09-05",
+        "degree": "undergraduate",
+        "countTowardNamedOutcomes": false,
+        "sourceIds": [
+          "CO01"
         ]
       }
     ],
@@ -62098,6 +62567,43 @@
       ],
       "reviewIds": [],
       "observedInComment": true
+    }
+  ],
+  "officialDownloads": [
+    {
+      "sourceId": "C505",
+      "title": "导师互选志愿表",
+      "purpose": "准备导师志愿与签批材料",
+      "format": "DOCX",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/23094817-5c38-43a7-a04d-188b86fa560e.docx"
+    },
+    {
+      "sourceId": "CD02",
+      "title": "硕士研究生学术报告",
+      "purpose": "记录讲座主题、时间地点、报告内容、学习体会及导师审核意见。",
+      "format": "DOCX",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/01fe0a04-2802-4f3e-809b-ae9e8185fb93.docx"
+    },
+    {
+      "sourceId": "CD03",
+      "title": "学位论文开题报告书",
+      "purpose": "准备开题选题、研究方案与参考文献。字数和提交节点按本级通知核对。",
+      "format": "DOCX",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/7e272042-8e6b-4970-b0fd-34c789c46d01.docx"
+    },
+    {
+      "sourceId": "CD04",
+      "title": "硕士学位论文格式规范",
+      "purpose": "核对论文封面、摘要、目录、图表、参考文献和页码格式。",
+      "format": "DOCX",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/5ac40616-2523-4c55-906a-7c52466b4bc6.docx"
+    },
+    {
+      "sourceId": "CD01",
+      "title": "参考文献著录格式",
+      "purpose": "写参考文献时对照期刊、专著、学位论文及电子资源的示例。",
+      "format": "DOCX",
+      "url": "https://mpacc.nau.edu.cn/_upload/article/files/d6/9a/a93ed8684f53a32d88a4bac438ed/825c00b9-6e9f-44f7-a32b-9d62b58952c1.docx"
     }
   ]
 }

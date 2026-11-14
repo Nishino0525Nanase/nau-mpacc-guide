@@ -39,8 +39,8 @@ async function app({secure=true,clipboard=true,denied=false,data=dataset}={}) {
   const navigator=clipboard?{clipboard:{writeText:async text=>{if(denied)throw new Error("NotAllowedError");copies.push(text);}}}:{};
   vm.runInNewContext(script,{document,window,location,navigator,URL,console,CSS:{escape:x=>x},CustomEvent:class{constructor(name,options){this.type=name;this.detail=options?.detail;}},Event:class{},fetch:async()=>({ok:true,json:async()=>structuredClone(data),headers:{get:()=>null}}),localStorage:{getItem:()=>null,setItem:(key,value)=>writes.push([key,value])},requestAnimationFrame:fn=>fn(),setTimeout:()=>1,clearTimeout(){}});
   for(let i=0;i<12;i++)await Promise.resolve();
-  const click=(action,id,extra={})=>handlers.get('click')({target:{closest:selector=>selector==='[data-action]'?{dataset:{action,id,...extra}}:null},preventDefault(){}});
-  return {get,copies,writes,click,location,window,changeReview(value){handlers.get('change')({target:{id:'review-coverage',value}});},editContact(text){get('#contact-copy-text').value=text;handlers.get('input')({target:{id:'contact-copy-text',value:text}});},async changeMentor(id){handlers.get('change')({target:{id:'contact-mentor',value:id}});await Promise.resolve();},route(hash){location.hash=hash;winHandlers.get('hashchange')();},async flush(){for(let i=0;i<6;i++)await Promise.resolve();}};
+  const click=(action,id,extra={})=>{const target=new Element('action');target.dataset={action,id,...extra};handlers.get('click')({target:{closest:selector=>selector==='[data-action]'?target:null},preventDefault(){}});};
+  return {get,copies,writes,click,location,window,search(value){handlers.get('input')({target:{id:'mentor-search',value,parentElement:{querySelector:()=>get('.search-clear')}}});},changeReview(value){handlers.get('change')({target:{id:'review-coverage',value}});},editContact(text){get('#contact-copy-text').value=text;handlers.get('input')({target:{id:'contact-copy-text',value:text}});},async changeMentor(id){handlers.get('change')({target:{id:'contact-mentor',value:id}});await Promise.resolve();},route(hash){location.hash=hash;winHandlers.get('hashchange')();},async flush(){for(let i=0;i<6;i++)await Promise.resolve();}};
 }
 
 
@@ -204,4 +204,48 @@ test('ambiguous endorsements stay neutral without exposing maintenance summaries
  }
  a.route('#posts');const latest=a.get('#app').innerHTML;
  assert.doesNotMatch(latest,/本轮修正|本轮未新增|新增 <strong>1<\/strong> 份教师本人自述|补入 <strong>5<\/strong> 张真实截图/);
+});
+
+
+test('mentor keyword search finds visible confirmed comment text, quotes and attribution',async()=>{
+  const data=reviewFixture(),mentor=data.mentors[1],review=mentor.studentReviews.reviews[0];
+  review.text='论文会逐段批注，修改建议比较具体。';
+  review.specifics=['组会先讲研究设计'];
+  review.contextNotes={excerpt:{kind:'visible_quote',text:'这次作业反馈很细'},context:['同楼层说明是本科课程'],interpretation:{text:'不能从课程直接推导硕士培养'}};
+  const a=await app({data});
+  for(const query of ['逐段批注','组会先讲研究设计','这次作业反馈很细','课程评论者','同楼层说明是本科课程']) {
+    a.search(query);
+    const names=[...a.get('#mentor-results').innerHTML.matchAll(/<h3 class="mentor-name">([^<]+)/g)].map(match=>match[1]);
+    assert.deepEqual(names,[mentor.name],query);
+  }
+  a.click('mentor',mentor.id);
+  const detail=a.get('#dialog-content').innerHTML;
+  assert.match(detail,/这次作业反馈很细/);
+  assert.match(detail,/本科会计学/,'search does not change the actual degree boundary');
+});
+
+test('mentor comment search excludes unresolved aliases, unsupported points and superseded internals',async()=>{
+  const data=reviewFixture(),review=data.mentors[1].studentReviews.reviews[0];
+  review.contextInterpretationBeforeRound10={text:'SUPERSEDED_REVIEW_MARKER'};
+  review.inputFiles=['INTERNAL_REVIEW_FILE_MARKER'];
+  review.selectionSignal={direction:'avoid',intensity:'strong',excerpt:{kind:'visible_quote',text:'INVALID_SIGNAL_MARKER'},sourceIds:['TEST_BAD']};
+  const a=await app({data});
+  for(const query of ['HIDDEN_ALIAS_CLAIM','UNRESOLVED_PERSONAL_ALLEGATION','UNRESOLVED_GLOBAL_ALLEGATION','UNSUPPORTED_PRAISE','UNSUPPORTED_CONCERN','SUPERSEDED_REVIEW_MARKER','INTERNAL_REVIEW_FILE_MARKER','INVALID_SIGNAL_MARKER','LEGACY_DUPLICATE_FEEDBACK']) {
+    a.search(query);
+    assert.doesNotMatch(a.get('#mentor-results').innerHTML,/class="mentor-name"/,query);
+  }
+});
+
+test('comment keyword search intersects review coverage, direction and saved filters',async()=>{
+  const data=reviewFixture(),course=data.mentors[1],mpacc=data.mentors[2];
+  course.studentReviews.reviews[0].text=mpacc.studentReviews.reviews[0].text='讨论研究设计中的具体问题';
+  course.directions=['G2'];mpacc.directions=['G3'];
+  const a=await app({data});a.search('研究设计中的具体问题');
+  const names=()=>[...a.get('#mentor-results').innerHTML.matchAll(/<h3 class="mentor-name">([^<]+)/g)].map(match=>match[1]);
+  assert.deepEqual(names(),[course.name,mpacc.name]);
+  a.changeReview('mpacc_guidance');assert.deepEqual(names(),[mpacc.name]);
+  a.click('direction','G2');assert.deepEqual(names(),[]);
+  a.click('direction','G3');assert.deepEqual(names(),[mpacc.name]);
+  a.click('saved-only');assert.deepEqual(names(),[]);
+  a.click('save',mpacc.id);assert.deepEqual(names(),[mpacc.name]);
 });

@@ -331,3 +331,10 @@
 .outcome-evidence .outcome-shot-preview{width:68px;max-width:100%;margin:6px 0}.outcome-shot-preview .review-shot-media{height:52px}.outcome-shot-preview figcaption{font-size:10px;line-height:1.5}
 
 .evidence-more-images{margin-top:12px}.evidence-more-images>summary{cursor:pointer;font-size:12px;color:var(--teal);padding:8px 0}.evidence-more-images[open]>summary{margin-bottom:8px}
+
+/* Practical official templates share the guide table layout. */
+.official-downloads{margin:28px 0 32px;padding-top:24px;border-top:1px solid var(--line)}
+.official-downloads h3{font:600 21px/1.5 var(--serif);margin:0 0 8px}
+.official-downloads>p{font-size:12px;color:var(--muted);margin:0 0 14px}
+.official-downloads>p a{text-decoration:underline;text-underline-offset:3px}
+.official-downloads .content-table{font-size:13px}

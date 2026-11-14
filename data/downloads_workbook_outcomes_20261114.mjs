@@ -27,10 +27,10 @@ export function studentOutcomeSheet(site, sourceLinks) {
 export function studentOutcomeSections(site, mainSpec, sourceLinks) {
   const outcomes = site.studentOutcomes || {}, sections = [];
   let nextHeaderRow = mainSpec.headerRow + mainSpec.rows.length + 4;
-  const add = (key,title,headers,rows,sourceRows,tableName) => {
+  const add = (key,title,headers,rows,sourceRows,tableName,linkColumn=headers.length-1) => {
     if (!rows.length) return;
     const links = [];
-    sourceRows.forEach((record,rowIndex) => {const source = sourceLinks(record.sourceIds)[0];if(source)links.push({rowIndex,colIndex:headers.length-1,url:source.url,label:source.code + ' 原文'});});
+    sourceRows.forEach((record,rowIndex) => {const source = sourceLinks(record.sourceIds)[0];if(source)links.push({rowIndex,colIndex:linkColumn,url:source.url,label:source.code + ' 原文'});});
     const section = {key,title,titleRow:nextHeaderRow-1,headerRow:nextHeaderRow,headers,rows,links,tableName,widths:mainSpec.widths.slice(0,headers.length)};
     sections.push(section);
     nextHeaderRow += rows.length + 5;
@@ -38,10 +38,11 @@ export function studentOutcomeSections(site, mainSpec, sourceLinks) {
   const stats = list(outcomes.statistics);
   add('statistics','学校公开统计（不计入具名人数）',['统计指标','数值','单位','适用届别','学位点','适用边界','原文'],stats.map(record => [record.label,record.value,record.unit || (/人数|人次/.test(record.label || '') ? '人' : '未注明'),record.cohort,record.scope,text(record.limits),sourceLinks(record.sourceIds)[0]?.url || '']),stats,'OutcomeStatistics113');
   const awards = list(outcomes.achievements);
-  add('achievements','论文成果（不作为就业记录）',['学生','学位','导师','论文成果','适用边界','原文'],awards.map(record => [record.studentName,record.degreeLabel,record.mentorName,record.achievement?.text,text(record.limits),sourceLinks(record.sourceIds)[0]?.url || '']),awards,'ThesisAchievements113');
+  const guidance = record => (record.relationshipType === 'competition_guidance' ? '赛事指导：' : '论文导师：') + [...new Set([record.mentorName,...list(record.coMentors)].filter(Boolean))].join('、');
+  add('achievements','培养成果（不作为就业记录）',['学生或团队','培养成果','指导关系','学位','原文','适用边界'],awards.map(record => [record.studentName,record.achievement?.text,guidance(record),record.degreeLabel,sourceLinks(record.sourceIds)[0]?.url || '',text(record.limits)]),awards,'ThesisAchievements113',4);
   const statements = list(outcomes.mentorCareerStatements);
   add('mentorCareerStatements','导师培养情况（未具名，不计入学生人数）',['导师','培养情况原文','学位范围','资料时点','适用边界','原文'],statements.map(record => [record.mentorName || list(site.mentors).find(mentor => mentor.id === record.mentorId)?.name || '未公开',text(record.text || record.statement),text(record.degreeScope || record.graduateDegreeLabel),record.date || record.year || '',[text(record.limits),'未具名培养情况，不可推算具体学生或就业人数。'].filter(Boolean).join('\n'),sourceLinks(record.sourceIds)[0]?.url || '']),statements,'MentorCareerStatements114');
   const employers = list(outcomes.employerSummaries);
-  add('employerSummaries','学校公开事务所范围（无人数，不计入具名记录）',['公开范围','学校说明','适用范围','资料时点','适用边界','原文'],employers.map(record => [record.label,text(record.text),text(record.scope),record.date || record.year || '',[text(record.limits),'学校概括性就业范围，无具名学生或分单位人数。'].filter(Boolean).join('\n'),sourceLinks(record.sourceIds)[0]?.url || '']),employers,'EmployerSummaries114');
+  add('employerSummaries','学校公开事务所资料（不计入具名记录）',['公开范围','学校说明','适用范围','资料时点','适用边界','原文'],employers.map(record => [record.label,text(record.text),text(record.scope),record.date || record.year || '',[text(record.limits),'学校汇总口径，逐项按适用范围核对；不与具名记录相加。'].filter(Boolean).join('\n'),sourceLinks(record.sourceIds)[0]?.url || '']),employers,'EmployerSummaries114');
   return sections;
 }

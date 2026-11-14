@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-11-14",
+  "newAttributedPersonalReviews": 0,
+  "newPrimaryReviewPosts": 0,
+  "newEmploymentRecords": 0,
+  "newSourcePages": 0,
+  "supplementalAchievementRecords": 4,
+  "supplementalIndividualThesisRecords": 2,
+  "supplementalTeamCaseRecords": 2,
+  "countingNotes": [
+    "两篇官网文章均为既有来源，新增的是原文中尚未结构化的学生及指导关系，不计新增帖子。",
+    "奖项记录不增加就业、读博或个人评价人数；团队成员不拆为独立来源。",
+    "搜索结果、目录和未取得正文的网页不计为已读口碑。"
+  ],
+  "readSources": [
+    {
+      "sourceId": "13",
+      "articleId": "124812",
+      "url": "https://account.nau.edu.cn/2024/0118/c9533a124812/page.htm",
+      "webRef": "turn434view0",
+      "readingScope": "发布日期、正文、作者—导师表",
+      "date": "2024-01-18",
+      "awardYear": 2023
+    },
+    {
+      "sourceId": "11",
+      "articleId": "131562",
+      "url": "https://account.nau.edu.cn/2024/0603/c8917a131562/page.htm",
+      "webRef": "turn435view0",
+      "readingScope": "发布日期、正文首段的团队成员/指导老师/奖项及赛事范围；图片未逐张审读",
+      "date": "2024-06-03",
+      "awardYear": 2024
+    }
+  ],
+  "publicSocialReading": {
+    "runUrl": "https://agent.tinyfish.ai/runs/8f2ddc20-5980-407a-9d79-a5f872cd1448",
+    "status": "completed_with_reading_block",
+    "site": "小红书",
+    "observedMessage": "电脑设备登录超限，请重新登录",
+    "scope": "本次未登录浏览器对南审会计导师相关搜索的读取，不能外推平台对所有人不可读。",
+    "originalNoteBodiesOrCommentsRead": 0,
+    "screenshotsAdded": 0,
+    "action": "停止读取；未登录、提交表单或绕过限制。"
+  },
+  "otherSearchDisposition": [
+    "导师官方简介、新闻列表和机构活动不当学生口碑。",
+    "同名异校教师、商学院非当前名录教师、其他学位导师不归入当前34人评价。",
+    "王永妍与贺建刚两篇讲座已在当前数据，未重复新增。",
+    "单文涛2024年团队成果与2025/2026年个人简介荣誉不混用年份。"
+  ]
+}

@@ -15,9 +15,10 @@ const baseline=path.join(outputDir,'evidence-index.before.xlsx');
 const site=JSON.parse(await fs.readFile(path.join(repo,'dist/data/site-data.json'),'utf8'));
 const scopedAliasRefresh=process.argv.includes('--alias-comments');
 const scopedFirmRefresh=process.argv.includes('--firm-outcomes');
-if(scopedAliasRefresh&&scopedFirmRefresh)throw Error('Choose one scoped refresh mode');
-const scopedRefresh=scopedAliasRefresh||scopedFirmRefresh;
-const affectedSheetNames=new Set(scopedFirmRefresh?['完整来源目录','帖子索引','官方核实','学生公开去向']:['导师反馈','学生评价总览','姓名缩写对照']);
+const scopedContinuationRefresh=process.argv.includes('--continuation');
+if([scopedAliasRefresh,scopedFirmRefresh,scopedContinuationRefresh].filter(Boolean).length>1)throw Error('Choose one scoped refresh mode');
+const scopedRefresh=scopedAliasRefresh||scopedFirmRefresh||scopedContinuationRefresh;
+const affectedSheetNames=new Set(scopedContinuationRefresh?['完整来源目录','帖子索引','官方核实','生活学习要点','学生公开去向']:scopedFirmRefresh?['完整来源目录','帖子索引','官方核实','学生公开去向']:['导师反馈','学生评价总览','姓名缩写对照']);
 const allReviews=site.mentors.flatMap(m=>m.studentReviews.reviews);
 const reviewTotal=allReviews.length;
 const reviewedMentorTotal=site.mentors.filter(m=>m.studentReviews.reviews.length).length;
@@ -44,7 +45,7 @@ const wb=await SpreadsheetFile.importXlsx(await FileBlob.load(baseline));
 if(process.argv.includes('--profile')){
  const profile=await wb.inspect({kind:'workbook,sheet,table',maxChars:14000,tableMaxRows:2,tableMaxCols:3,tableMaxCellChars:60});
  await fs.writeFile(path.join(outputDir,'before-profile.ndjson'),profile.ndjson);
- for(const [name,range] of [['学生公开去向','A2:F8'],['学生公开去向','A39:F48']]){
+ for(const [name,range] of scopedContinuationRefresh?[...affectedSheetNames].map(name=>[name,'A2:F8']):[['学生公开去向','A2:F8'],['学生公开去向','A39:F48']]){
   const blob=await wb.render({sheetName:name,range,scale:1,format:'png'});
   await fs.writeFile(path.join(outputDir,'before-'+name+'-'+range.replace(':','-')+'.png'),new Uint8Array(await blob.arrayBuffer()));
  }
@@ -166,10 +167,11 @@ for(const name of scopedRefresh?[...affectedSheetNames]:['导师反馈','学生�
 const errorScan=await wb.inspect({kind:'match',searchTerm:'#REF!|#DIV/0!|#VALUE!|#NAME\\?|#N/A|#NUM!|#NULL!|#SPILL!|#CALC!',options:{useRegex:true,maxResults:20},maxChars:3000});
 await fs.writeFile(path.join(outputDir,'artifact-formula-scan.ndjson'),errorScan.ndjson);
 const stage=path.join(outputDir,'artifact-authored.xlsx');await(await SpreadsheetFile.exportXlsx(wb)).save(stage);
-await fs.writeFile(path.join(outputDir,'workbook-model.json'),JSON.stringify({sourceSha,rows:qaRows,datasets,outcomeSections:scopedAliasRefresh?[]:outcomeSections,scope:scopedFirmRefresh?'firm-outcomes':scopedAliasRefresh?'alias-comments':'full'},null,2)+'\n');
+await fs.writeFile(path.join(outputDir,'workbook-model.json'),JSON.stringify({sourceSha,rows:qaRows,datasets,outcomeSections:scopedAliasRefresh?[]:outcomeSections,scope:scopedContinuationRefresh?'continuation':scopedFirmRefresh?'firm-outcomes':scopedAliasRefresh?'alias-comments':'full'},null,2)+'\n');
 console.log(JSON.stringify({authored:stage,sheets:qaRows,sourceSha},null,2));
 
 async function finish(){
+ const awardLayoutPreviewOnly=scopedContinuationRefresh&&process.argv.includes('--award-layout-preview');
  const stage=path.join(outputDir,'artifact-authored.xlsx');
  const model=JSON.parse(await fs.readFile(path.join(outputDir,'workbook-model.json'),'utf8'));
  const layout=await SpreadsheetFile.importXlsx(await FileBlob.load(stage));
@@ -261,13 +263,26 @@ print(json.dumps({'sheets':len(am),'tables':len(tables),'formulas':count,'formul
  for(const section of model.outcomeSections||[])for(const link of section.links)finalWb.worksheets.getItem('学生公开去向').getRange(`${col(link.colIndex)}${section.headerRow+1+link.rowIndex}`).values=[[link.label]];
  finalWb.recalculate();
  const renderFiles=[];
- for(const name of scopedRefresh?[...affectedSheetNames]:['完整来源目录','正文未读线索','生活学习要点','导师反馈','官方核实','帖子索引','检索覆盖','补充证据','应用版补充','延伸核验','继续补读','学生评价总览','实习资源','姓名缩写对照','学生公开去向','校园生活图片']){
+ for(const name of awardLayoutPreviewOnly?[]:scopedRefresh?[...affectedSheetNames]:['完整来源目录','正文未读线索','生活学习要点','导师反馈','官方核实','帖子索引','检索覆盖','补充证据','应用版补充','延伸核验','继续补读','学生评价总览','实习资源','姓名缩写对照','学生公开去向','校园生活图片']){
   const blob=await finalWb.render({sheetName:name,range:'A2:F8',scale:1,format:'png'});
   const file='after-'+name+'.png';renderFiles.push(file);await fs.writeFile(path.join(outputDir,file),new Uint8Array(await blob.arrayBuffer()));
  }
  const outcomeDetails=(model.outcomeSections||[]).map(section=>['学生公开去向',`A${section.titleRow}:${col(section.headers.length-1)}${section.headerRow+Math.min(2,section.rows.length)}`,section.key]);
- const extra=scopedAliasRefresh?[['导师反馈','M6:S8'],['姓名缩写对照','E6:I9']]:scopedFirmRefresh?[['学生公开去向','G6:N9','firms'],...outcomeDetails]:[['导师反馈','M6:S8'],...outcomeDetails,['校园生活图片','G6:M8'],['姓名缩写对照','E6:I9']];
- for(const [name,range,key] of extra){const blob=await finalWb.render({sheetName:name,range,scale:1,format:'png'});const file='after-detail-'+name+(key?'-'+key:'')+'.png';renderFiles.push(file);await fs.writeFile(path.join(outputDir,file),new Uint8Array(await blob.arrayBuffer()));}
+ const extra=scopedAliasRefresh?[['导师反馈','M6:S8'],['姓名缩写对照','E6:I9']]:scopedFirmRefresh||scopedContinuationRefresh?[['学生公开去向','G6:N9','firms'],...outcomeDetails]:[['导师反馈','M6:S8'],...outcomeDetails,['校园生活图片','G6:M8'],['姓名缩写对照','E6:I9']];
+ for(const [name,range,key] of awardLayoutPreviewOnly?[]:extra){const blob=await finalWb.render({sheetName:name,range,scale:1,format:'png'});const file='after-detail-'+name+(key?'-'+key:'')+'.png';renderFiles.push(file);await fs.writeFile(path.join(outputDir,file),new Uint8Array(await blob.arrayBuffer()));}
+ if(scopedContinuationRefresh){
+  const views=[];
+  for(const name of awardLayoutPreviewOnly?[]:['完整来源目录','官方核实','生活学习要点']){
+   const spec=model.datasets.find(item=>item.name===name);
+   const indexes=spec.rows.map((row,index)=>({row,index})).filter(({row})=>/(?:CD0[1-4]|CO01)/.test(row.join('\n'))).map(item=>item.index);
+   for(let i=0;i<indexes.length;i+=2){const first=indexes[i],last=indexes[Math.min(i+1,indexes.length-1)];views.push([name,`A${spec.headerRow+1+first}:F${spec.headerRow+1+last}`,`${name}-new-${i/2+1}`]);}
+  }
+  const awards=(model.outcomeSections||[]).find(section=>section.key==='achievements');
+  if(awards)for(let i=0;i<awards.rows.length;i+=2)views.push(['学生公开去向',`A${awards.headerRow+1+i}:F${awards.headerRow+Math.min(i+2,awards.rows.length)}`,`achievements-${i/2+1}`]);
+  const employers=(model.outcomeSections||[]).find(section=>section.key==='employerSummaries');
+  if(employers&&!awardLayoutPreviewOnly)views.push(['学生公开去向',`A${employers.headerRow}:F${employers.headerRow+employers.rows.length}`,'employer-details']);
+  for(const [name,range,key] of views){const blob=await finalWb.render({sheetName:name,range,scale:1,format:'png'});const file=`after-continuation-${key}.png`;renderFiles.push(file);await fs.writeFile(path.join(outputDir,file),new Uint8Array(await blob.arrayBuffer()));}
+ }
  if(scopedAliasRefresh){
   const spec=model.datasets.find(s=>s.name==='导师反馈');
   for(const id of ['sr-alias-comments-20261113-xw','sr-alias-comments-20261113-cxj','sr-alias-comments-20261113-tzd']){

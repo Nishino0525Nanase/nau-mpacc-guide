@@ -1,0 +1,63 @@
+{
+  "sourceRegistry": {
+    "CO01": {
+      "code": "CO01",
+      "kind": "official",
+      "title": "特色项目宣传 | 审计学（ACCA方向）招生简章",
+      "url": "https://shsjxy.nau.edu.cn/2026/0915/c7575a161723/page.htm",
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/0915/c7575a161723/page.htm",
+      "originalUrl": "https://shsjxy.nau.edu.cn/2026/0915/c7575a161723/page.htm",
+      "additionalUrls": [],
+      "platform": "南京审计大学社会审计学院",
+      "date": "2026-09-05",
+      "population": "审计学（ACCA方向）本科毕业生；非MPAcc",
+      "summary": "学院问答列2022—2025年该本科方向累计获四大会计师事务所录取45人。",
+      "readingScope": "实际核读官网全文；L57、L165确认本科项目，L169—L172为毕业去向问答与四年合计。网页发布时间为2026-09-05，不由URL推定9月15日。",
+      "limits": "这是本科方向跨四年的招生宣传统计，不是MPAcc人数、四大就业率或某导师就业成果。未给逐所、逐年、导师或个人名单；不与具名记录相加，也不由“约20%”反推全校人数。"
+    }
+  },
+  "studentOutcomes": {
+    "records": [],
+    "statistics": [],
+    "employerSummaries": [
+      {
+        "id": "CO01-ACCA-BIG4-2022-2025",
+        "label": "本科ACCA方向 · 2022—2025四大录取",
+        "text": "学院公布四年累计45人获四大会计师事务所录取。",
+        "scope": "审计学（ACCA方向）本科口径，非MPAcc；跨四年累计，未列逐所人数和导师。不能与下方具名个案相加或换算MPAcc就业率。",
+        "date": "2026-09-05",
+        "degree": "undergraduate",
+        "countTowardNamedOutcomes": false,
+        "sourceIds": [
+          "CO01"
+        ]
+      }
+    ]
+  },
+  "officialEvidence": [
+    {
+      "key": "official:continue-20261114:CO01",
+      "ids": [
+        "CO01"
+      ],
+      "title": "特色项目宣传 | 审计学（ACCA方向）招生简章",
+      "date_display": "2026-09-05",
+      "url": "https://shsjxy.nau.edu.cn/2026/0915/c7575a161723/page.htm",
+      "canonical_url": "https://shsjxy.nau.edu.cn/2026/0915/c7575a161723/page.htm",
+      "summary": "学院问答列2022—2025年该本科方向累计获四大会计师事务所录取45人。",
+      "population": "审计学（ACCA方向）本科毕业生；非MPAcc",
+      "tips": [
+        "四年累计45人；仅限本科ACCA方向。"
+      ],
+      "comments": [],
+      "limits": "这是本科方向跨四年的招生宣传统计，不是MPAcc人数、四大就业率或某导师就业成果。未给逐所、逐年、导师或个人名单；不与具名记录相加，也不由“约20%”反推全校人数。",
+      "topic": "学校公开事务所就业统计",
+      "use_status": "本科项目官方历史累计；与MPAcc分开看",
+      "reading_scopes": [
+        "实际核读官网全文；L57、L165确认本科项目，L169—L172为毕业去向问答与四年合计。网页发布时间为2026-09-05，不由URL推定9月15日。"
+      ],
+      "official": true,
+      "screened_only": false
+    }
+  ]
+}

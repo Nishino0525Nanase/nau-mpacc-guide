@@ -1,0 +1,42 @@
+{
+  "batch": "continue-20261114",
+  "registeredSources": 508,
+  "officialEvidence": 283,
+  "visiblePosts": 134,
+  "rawPosts": 156,
+  "newSources": 5,
+  "newOfficialTemplates": 4,
+  "displayedOfficialTemplates": 5,
+  "personalReviews": 55,
+  "newPersonalReviews": 0,
+  "outcomeRecords": 30,
+  "newNamedMasterFirmOutcomes": 0,
+  "achievements": 6,
+  "newAchievements": 4,
+  "jsTests": 182,
+  "allTestsPassed": true,
+  "mergeIdempotent": true,
+  "personalCreditScanPassed": true,
+  "nativeInstallerChanged": false,
+  "localBrowserVerification": {
+    "commentQueries": {
+      "不push": [
+        "傅祥斐",
+        "李仲泽"
+      ],
+      "千万不要选yby": [
+        "叶邦银"
+      ]
+    },
+    "officialTemplateRows": 5,
+    "viewport": 1348,
+    "horizontalOverflow": false,
+    "mobileVisualTest": false
+  },
+  "productionVerification": null,
+  "attachmentHashes": {
+    "mentor-guide.docx": "a4b40e39d6de96400c3a34eec4744aa2bd9e8b11ee0122e349f9c51b311f463a",
+    "life-guide.docx": "3ffca143e433698dbfa719dcde818a6f3f31ec7ec9e16ced75509a604d0065d5",
+    "evidence-index.xlsx": "a0049780c10403c87198f16159d29ab3375c49a75e0aa805c8f25dd80a305000"
+  }
+}

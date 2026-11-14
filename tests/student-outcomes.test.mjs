@@ -403,3 +403,32 @@ test('registered year-suffixed source IDs remain clickable instead of becoming d
   const a=await app(data);a.route('#outcomes');
   assert.match(a.html(),/<a[^>]+href="https:\/\/example.org\/mpacc-2021.pdf"[^>]*>\[OUTCOME20261114-2021\]<\/a>/);
 });
+
+test('undergraduate firm aggregates follow the degree filter without changing named student counts',async()=>{
+  const data=outcomeFixture();
+  data.studentOutcomes.employerSummaries=[{id:'aggregate',degree:'undergraduate',label:'本科历史累计',text:'本科方向累计45人获四大录取',scope:'四年累计，不能并入具名人数。',sourceIds:['OUTCOME_TEST']}];
+  const a=await app(data);a.route('#outcomes');
+  assert.doesNotMatch(a.get('#outcome-employers').innerHTML,/累计45人/);
+  a.change('outcome-degree','undergraduate');
+  assert.match(a.get('#outcome-employers').innerHTML,/本科方向累计45人/);
+  assert.match(a.get('#outcome-result-count').innerHTML,/找到 <strong>2<\/strong> 人/);
+  a.change('outcome-degree','');
+  assert.match(a.get('#outcome-employers').innerHTML,/累计45人/);
+  assert.match(a.get('#outcome-result-count').innerHTML,/找到 <strong>10<\/strong> 人/);
+  a.change('outcome-degree','MPAcc');
+  assert.doesNotMatch(a.get('#outcome-employers').innerHTML,/累计45人/);
+});
+
+test('thesis co-advisors and competition guidance keep distinct labels outside destinations',async()=>{
+  const data=outcomeFixture(),mentor=data.mentors[0];
+  const base={degree:'MPAcc',degreeLabel:'会计专硕',mentorId:mentor.id,mentorName:mentor.name,relationshipStatus:'confirmed',relationship:{text:'原文明示具体指导关系',sourceIds:['OUTCOME_TEST']},sourceIds:['OUTCOME_TEST'],limits:[]};
+  data.studentOutcomes.achievements=[
+    {...structuredClone(base),id:'thesis',studentName:'THESIS_STUDENT',coMentors:['共同指导老师'],relationshipType:'thesis_guidance',achievement:{text:'优秀论文',sourceIds:['OUTCOME_TEST']}},
+    {...structuredClone(base),id:'team',studentName:'COMPETITION_TEAM',relationshipType:'competition_guidance',achievement:{text:'团队案例奖',sourceIds:['OUTCOME_TEST']}}
+  ];
+  const a=await app(data);a.route('#outcomes');
+  const html=a.get('#app').innerHTML;
+  assert(html.includes('论文导师：'+mentor.name+'、共同指导老师'));
+  assert(html.includes('赛事指导：'+mentor.name));
+  assert.doesNotMatch(a.html(),/THESIS_STUDENT|COMPETITION_TEAM/);
+});

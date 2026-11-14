@@ -1,0 +1,174 @@
+{
+  "batch": "continue-reviews-20261114",
+  "newPersonalReviews": [],
+  "newSocialPosts": [],
+  "newSources": [],
+  "sourceRegistryUpdates": {
+    "13": {
+      "date": "2024-01-18",
+      "readingScope": "获奖原文及作者—导师表实际核读；非仅搜索摘要。"
+    }
+  },
+  "achievements": [
+    {
+      "degree": "MPAcc",
+      "degreeLabel": "会计专业硕士（MPAcc）",
+      "cohort": null,
+      "graduationYear": null,
+      "relationshipStatus": "confirmed",
+      "outcome": null,
+      "id": "CR-gu-zijia-dong",
+      "studentName": "顾子嘉",
+      "mentorId": "mentor-01",
+      "mentorName": "董必荣",
+      "relationshipType": "thesis_guidance",
+      "sourceIds": [
+        "13"
+      ],
+      "relationship": {
+        "text": "学校2024年1月18日获奖报道的作者—导师表，明确顾子嘉的论文指导教师为董必荣、刘辉。",
+        "sourceIds": [
+          "13"
+        ]
+      },
+      "coMentors": [
+        "刘辉"
+      ],
+      "achievement": {
+        "text": "以徐工机械数字化转型及价值创造为题的硕士论文，获评2023年江苏省优秀专业学位硕士学位论文。",
+        "sourceIds": [
+          "13"
+        ]
+      },
+      "limits": [
+        "双导师共同指导，不将成果独归一位老师。",
+        "获奖年与网页发布年分别为2023、2024；不是毕业届别或就业状态。",
+        "该记录只能证明论文成果及指导关系，不证明日常相处、实习安排或就业资源。"
+      ]
+    },
+    {
+      "degree": "MPAcc",
+      "degreeLabel": "会计专业硕士（MPAcc）",
+      "cohort": null,
+      "graduationYear": null,
+      "relationshipStatus": "confirmed",
+      "outcome": null,
+      "id": "CR-gao-mingjing-gao",
+      "studentName": "高铭婧",
+      "mentorId": "mentor-09",
+      "mentorName": "高凤莲",
+      "relationshipType": "thesis_guidance",
+      "sourceIds": [
+        "13"
+      ],
+      "relationship": {
+        "text": "学校2024年1月18日获奖报道的作者—导师表，明确高铭婧的论文指导教师为高凤莲、史晓明。",
+        "sourceIds": [
+          "13"
+        ]
+      },
+      "coMentors": [
+        "史晓明"
+      ],
+      "achievement": {
+        "text": "以美邦服饰代际传承、企业家社会资本与绩效为题的硕士论文，获评2023年江苏省优秀专业学位硕士学位论文。",
+        "sourceIds": [
+          "13"
+        ]
+      },
+      "limits": [
+        "双导师共同指导，不将成果独归一位老师。",
+        "获奖年与网页发布年分别为2023、2024；不是毕业届别或就业状态。",
+        "该记录只能证明论文成果及指导关系，不证明日常相处、实习安排或就业资源。"
+      ]
+    },
+    {
+      "degree": "MPAcc",
+      "degreeLabel": "会计专业硕士（MPAcc）",
+      "cohort": null,
+      "graduationYear": null,
+      "relationshipStatus": "confirmed",
+      "outcome": null,
+      "id": "CR-shangchunshan-shan",
+      "studentName": "上春山队（周家钰等4人）",
+      "studentNames": [
+        "周家钰",
+        "王欢",
+        "薛晓",
+        "徐天"
+      ],
+      "mentorId": "mentor-34",
+      "mentorName": "单文涛",
+      "relationshipType": "competition_guidance",
+      "sourceIds": [
+        "11"
+      ],
+      "relationship": {
+        "text": "学院报道明确该队MPAcc学生的赛事指导老师为单文涛；没有确认各队员的学位论文导师。",
+        "sourceIds": [
+          "11"
+        ]
+      },
+      "achievement": {
+        "text": "2024年第21届长三角MPAcc智能财会案例研究论坛特等奖；围绕企业数字化转型开展案例分析与现场答辩。成员：周家钰、王欢、薛晓、徐天。",
+        "sourceIds": [
+          "11"
+        ]
+      },
+      "limits": [
+        "仅为竞赛指导关系，不等于各队员的学位论文导师。",
+        "长三角区域论坛，不写成全国MPAcc案例大赛；2024年赛事，不等于2025年同类荣誉。",
+        "团队获奖按一项团队成果展示；不按成员人数增加独立来源、个人评价或就业人数。",
+        "毕业届别、就业单位与读博去向均未在此文披露。"
+      ]
+    },
+    {
+      "degree": "MPAcc",
+      "degreeLabel": "会计专业硕士（MPAcc）",
+      "cohort": null,
+      "graduationYear": null,
+      "relationshipStatus": "confirmed",
+      "outcome": null,
+      "id": "CR-anlimingti-wen",
+      "studentName": "案例大赛命题组队（陈欣瑞等6人）",
+      "studentNames": [
+        "陈欣瑞",
+        "何智玲",
+        "何宇博",
+        "冒涵颖",
+        "董龙龙",
+        "刘雨晨"
+      ],
+      "mentorId": "mentor-02",
+      "mentorName": "温素彬",
+      "relationshipType": "competition_guidance",
+      "sourceIds": [
+        "11"
+      ],
+      "relationship": {
+        "text": "学院报道明确该队MPAcc学生的赛事指导老师为温素彬；没有确认各队员的学位论文导师。",
+        "sourceIds": [
+          "11"
+        ]
+      },
+      "achievement": {
+        "text": "2024年第21届长三角MPAcc智能财会案例研究论坛二等奖；围绕企业数字化转型开展案例分析与现场答辩。成员：陈欣瑞、何智玲、何宇博、冒涵颖、董龙龙、刘雨晨。",
+        "sourceIds": [
+          "11"
+        ]
+      },
+      "limits": [
+        "仅为竞赛指导关系，不等于各队员的学位论文导师。",
+        "长三角区域论坛，不写成全国MPAcc案例大赛；2024年赛事，不等于2025年同类荣誉。",
+        "团队获奖按一项团队成果展示；不按成员人数增加独立来源、个人评价或就业人数。",
+        "毕业届别、就业单位与读博去向均未在此文披露。"
+      ]
+    }
+  ],
+  "integrationNotes": [
+    "沿用既有来源11和13，不另分配CR来源码，不计为新增两篇原帖。",
+    "2项个人论文成果、2项团队案例成果；不并入studentOutcomes.records。",
+    "当前网页培养成果通用标签为“导师”，比赛条目应显示“赛事指导”，避免把竞赛关系误作学位导师。",
+    "当前55条导师档案评价不因本补丁增加。"
+  ]
+}
