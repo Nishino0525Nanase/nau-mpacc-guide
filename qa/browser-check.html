@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>浏览器标记自检 · 南审手记</title>
+<style>body{max-width:760px;margin:40px auto;padding:0 20px;color:#243d36;font:16px/1.8 system-ui;background:#f8f8f2}h1{font-size:25px}table{width:100%;border-collapse:collapse;background:white}th,td{text-align:left;border-bottom:1px solid #d9dfd3;padding:12px}th{width:42%}.note{padding:14px;background:#e6eee6}small{color:#657369}a{color:#246452}</style>
+<h1>浏览器标记自检</h1>
+<p class="note">本页不加载统计脚本，不上报访问或停留。以下只显示浏览器自报信息，不能证明是真实硬件或真人。</p>
+<table><tbody id="checks"></tbody></table>
+<p><small>此页不查询或显示IP，不请求定位权限，不读取硬件型号，不保存检测结果。</small></p>
+<p><a href="../?exclude_self=once#posts">打开指南验收页面（本次不计入统计）</a></p>
+<script>
+(function(){
+  function read(object,key){try{return object&&object[key];}catch{return undefined;}}
+  var n=navigator,ua=read(n,'userAgent')||'',hints=read(n,'userAgentData'),platform=read(hints,'platform')||read(n,'platform')||'未提供';
+  var browser=/Edg\//.test(ua)?'Edge':/OPR\//.test(ua)?'Opera':/Chrome\//.test(ua)?'Chrome':/Firefox\//.test(ua)?'Firefox':/Safari\//.test(ua)?'Safari':'未识别';
+  var driver=read(n,'webdriver'),dnt=read(n,'doNotTrack'),gpc=read(n,'globalPrivacyControl');
+  var excluded='未保存永久排除';try{if(localStorage.getItem('nau_analytics_opt_out')==='1')excluded='已保存永久排除';}catch{excluded='存储不可用';}
+  var rows=[['浏览器自报平台',platform],['浏览器自报家族',browser],['自动化标记 webdriver',driver===true?'true（明确自动化标记）':driver===false?'false（不能证明是真人）':'未提供（不能证明是真人）'],['Do Not Track',dnt==null?'未提供':String(dnt)],['Global Privacy Control',gpc===undefined?'未提供':String(gpc)],['本浏览器排除偏好',excluded],['本页统计脚本','未加载'],['本页访问统计请求','0']];
+  var target=document.getElementById('checks');
+  rows.forEach(function(row){var tr=document.createElement('tr');row.forEach(function(value,i){var cell=document.createElement(i?'td':'th');cell.textContent=value;tr.appendChild(cell);});target.appendChild(tr);});
+}());
+</script>
+</html>
