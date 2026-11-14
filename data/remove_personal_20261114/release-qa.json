@@ -1,0 +1,37 @@
+{
+  "sourceCommit": "3f6e1a64282147c45cc159457ec9d8e12f82fdac",
+  "runId": 43567021898,
+  "runUrl": "https://github.com/Nishino0525Nanase/nau-mpacc-guide/actions/runs/43567021898",
+  "artifactId": 14102812236,
+  "bytes": 22500394,
+  "sha256": "29c4519a3f52aea19a142b5efa823c98f54e9e47f6f4e58b324baffe4570015d",
+  "certificateSha256": "5ccc0ee83c6b431026e864fa1d15b962a0e4f5e948a43930eb5939aa473d5d29",
+  "signatureVerified": true,
+  "versionCode": 7,
+  "versionName": "1.0.6",
+  "retiredInstallers": [
+    "downloads/nau-mpacc-guide-1.0.0.apk",
+    "downloads/nau-mpacc-guide-1.0.0.apk.sha256",
+    "downloads/nau-mpacc-guide-1.0.1.apk",
+    "downloads/nau-mpacc-guide-1.0.1.apk.sha256",
+    "downloads/nau-mpacc-guide-1.0.2.apk",
+    "downloads/nau-mpacc-guide-1.0.2.apk.sha256",
+    "downloads/nau-mpacc-guide-1.0.3.apk",
+    "downloads/nau-mpacc-guide-1.0.3.apk.sha256",
+    "downloads/nau-mpacc-guide-1.0.4.apk",
+    "downloads/nau-mpacc-guide-1.0.4.apk.sha256",
+    "downloads/nau-mpacc-guide-1.0.5.apk",
+    "downloads/nau-mpacc-guide-1.0.5.apk.sha256"
+  ],
+  "assetVerifier": "passed against build source snapshot before publication metadata promotion",
+  "nativeSmokeTest": "not run",
+  "realDeviceTest": "not run",
+  "newPackagePersonalTextScan": {
+    "passed": true,
+    "currentTextFiles": 244,
+    "apkGuideAssets": 78,
+    "officeTextAndMetadata": true,
+    "nicknamePreserved": true
+  },
+  "publicVerification": "pending"
+}

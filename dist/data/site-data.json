@@ -574,10 +574,10 @@
       },
       "android": {
         "available": true,
-        "url": "./downloads/nau-mpacc-guide-1.0.5.apk",
-        "version": "1.0.5",
-        "bytes": 1037472,
-        "sha256": "21af195ff9b7288bac97bd9fe9ab41017f80adb94dd949a930d5ec3233f5e566",
+        "url": "./downloads/nau-mpacc-guide-1.0.6.apk",
+        "version": "1.0.6",
+        "bytes": 22500394,
+        "sha256": "29c4519a3f52aea19a142b5efa823c98f54e9e47f6f4e58b324baffe4570015d",
         "label": "下载 Android 安装包",
         "changes": []
       }

@@ -2,9 +2,11 @@
 
 原生 Android Activity + 系统 WebView，包名 `cn.nau.mpacc.guide`，支持 Android 7.0 及以上；面向 Android 14（含 Redmi K60E）使用。`minSdk 24`、`compileSdk/targetSdk 35`、`versionCode 7`、`versionName 1.0.6`。这是一份独立整理指南的个人应用，非学校官方应用。
 
-## 1.0.6 构建准备
+## 1.0.6 发布验证
 
-本版本使用当前已去除个人署名的网页与附件重新生成离线资产，保留包名和既有签名配置，供同证书覆盖升级。当前文档只记录源码与验证规则准备完成；1.0.6的实际构建、签名和安装结果以本次CI产物为准，不沿用1.0.5的验收结论。
+本版本使用已去除个人署名的网页与附件重新生成离线资产，保留包名和既有签名，供同证书覆盖升级。[CI构建](https://github.com/Nishino0525Nanase/nau-mpacc-guide/actions/runs/43567021898)已通过编译、lint、签名验证和内置资料字节校验。本次未运行模拟器或真机安装测试。
+
+发布包 `nau-mpacc-guide-1.0.6.apk`：22500394 字节；SHA256 `29c4519a3f52aea19a142b5efa823c98f54e9e47f6f4e58b324baffe4570015d`。签名证书SHA256 `5ccc0ee83c6b431026e864fa1d15b962a0e4f5e948a43930eb5939aa473d5d29`，与原发布版一致。当前公开下载目录仅保留本版安装包。
 
 ## 功能与数据
 
@@ -57,6 +59,7 @@ python3 verify-apk.py app/build/outputs/apk/debug/app-debug.apk
 音乐记录含 `audioUrl` 时，站点录音不在 APK 内，离线原生烟测跳过音乐检查，`smoke/music-result.txt` 明确写 `SKIPPED: embedded streaming is verified in the web browser; this offline native smoke covers reading only.`，不会写音乐 PASS。在线音频播放、计时和跳转在浏览器另行验证。兼容原先无 `audioUrl` 的旧快照时，仍保留独立重启后经系统文件选择器导入自制 WAV、解码计时前进、取消第二次选择并暂停的原音乐用例，只有整套通过才写音乐 PASS。1.0.5的历史音乐烟测来自旧快照，不作为1.0.6已通过该项的证明。
 
 <!-- NATIVE_VERIFICATION -->
+当前1.0.6：CI构建、lint、稳定签名和全部内置资产校验通过。未运行本版模拟器或真机测试；内置JSON按构建源码快照核对，发布后在线JSON增加本版安装包的URL、大小及哈希，因此不要求其与包内构建快照完全相同。
 历史记录：1.0.5 已通过 GitHub Actions 构建、稳定签名和内置资产校验。Android 14 模拟器通过原有离线回退、导师详情和返回键检查；音乐栏目通过真实系统文件选择器导入自制测试音频、解码播放进度及暂停检查。已发布安装包来自这次通过检查的构建，只需联网权限。尚未验证 Redmi 真机。
 <!-- END_NATIVE_VERIFICATION -->
 
