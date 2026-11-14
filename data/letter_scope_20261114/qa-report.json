@@ -9,5 +9,46 @@
   "existingJsTestsPassed": 182,
   "additionalScopeTestPassed": 1,
   "localBrowserPassed": true,
-  "productionVerification": null
+  "productionVerification": {
+    "assets": [
+      {
+        "path": "index.html",
+        "status": 200,
+        "bytes": 11251,
+        "sha256": "fa2c5f17ad5f73dc47c89bc35677ba259e175811e5f2aee307fbe01a821f4452",
+        "matches": true
+      },
+      {
+        "path": "style.css",
+        "status": 200,
+        "bytes": 130644,
+        "sha256": "b70ec89c1d9dae2d1551910fa17d1bad5f4efb5e9b411ee8a42ca468c8be34c6",
+        "matches": true
+      },
+      {
+        "path": "sw.js",
+        "status": 200,
+        "bytes": 5187,
+        "sha256": "4923e4837e4ea679db9579404b0c91c4f3b10ccf789d724ccbc7538746ec32e8",
+        "matches": true
+      }
+    ],
+    "allAssetsMatch": true,
+    "assetCount": 3,
+    "sourceCommit": "a9a6149c3a2b2cb5c1d1c786b94bcefb9bd104f4",
+    "pagesCommit": "2925c94161677ec9dd15ba9541fce16b9fc6872d",
+    "browser": {
+      "letterContentVisibleOnOpen": true,
+      "personalDetailsOutsideLetter": false,
+      "compactLetterEntry": true,
+      "publicManagementEntryAbsent": true,
+      "excludeSelfOnce": true,
+      "screenshot": "qa/letter-scope-20261114.jpg"
+    },
+    "pagesBuild": {
+      "status": "built",
+      "commit": "2925c94161677ec9dd15ba9541fce16b9fc6872d",
+      "matchesCommit": true
+    }
+  }
 }
