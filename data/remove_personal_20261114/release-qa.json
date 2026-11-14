@@ -33,5 +33,152 @@
     "officeTextAndMetadata": true,
     "nicknamePreserved": true
   },
-  "publicVerification": "pending"
+  "publicVerification": {
+    "retired": [
+      {
+        "path": "downloads/nau-mpacc-guide-1.0.0.apk",
+        "status": 404,
+        "removed": true
+      },
+      {
+        "path": "downloads/nau-mpacc-guide-1.0.0.apk.sha256",
+        "status": 404,
+        "removed": true
+      },
+      {
+        "path": "downloads/nau-mpacc-guide-1.0.1.apk",
+        "status": 404,
+        "removed": true
+      },
+      {
+        "path": "downloads/nau-mpacc-guide-1.0.1.apk.sha256",
+        "status": 404,
+        "removed": true
+      },
+      {
+        "path": "downloads/nau-mpacc-guide-1.0.2.apk",
+        "status": 404,
+        "removed": true
+      },
+      {
+        "path": "downloads/nau-mpacc-guide-1.0.2.apk.sha256",
+        "status": 404,
+        "removed": true
+      },
+      {
+        "path": "downloads/nau-mpacc-guide-1.0.3.apk",
+        "status": 404,
+        "removed": true
+      },
+      {
+        "path": "downloads/nau-mpacc-guide-1.0.3.apk.sha256",
+        "status": 404,
+        "removed": true
+      },
+      {
+        "path": "downloads/nau-mpacc-guide-1.0.4.apk",
+        "status": 404,
+        "removed": true
+      },
+      {
+        "path": "downloads/nau-mpacc-guide-1.0.4.apk.sha256",
+        "status": 404,
+        "removed": true
+      },
+      {
+        "path": "downloads/nau-mpacc-guide-1.0.5.apk",
+        "status": 404,
+        "removed": true
+      },
+      {
+        "path": "downloads/nau-mpacc-guide-1.0.5.apk.sha256",
+        "status": 404,
+        "removed": true
+      }
+    ],
+    "allRetiredUnavailable": true,
+    "assets": [
+      {
+        "path": "data/site-data.json",
+        "status": 200,
+        "bytes": 3316018,
+        "sha256": "3e4de00a5fc624313dc9e9b903f0a2b09c094d7849c44bd910e9f3d3c9c27a01",
+        "matches": true
+      },
+      {
+        "path": "downloads/nau-mpacc-guide-1.0.6.apk",
+        "status": 200,
+        "bytes": 22500394,
+        "sha256": "29c4519a3f52aea19a142b5efa823c98f54e9e47f6f4e58b324baffe4570015d",
+        "matches": true
+      },
+      {
+        "path": "downloads/nau-mpacc-guide-1.0.6.apk.sha256",
+        "status": 200,
+        "bytes": 92,
+        "sha256": "79081fb737fe48e25729201cabadd35db1388d7e4fc886648d01f9c5a21b1a51",
+        "matches": true
+      }
+    ],
+    "allAssetsMatch": true,
+    "assetCount": 3,
+    "sourceCommit": "7e43c7b1ccbc21c47ab71cc13486063523c3b87c",
+    "pagesCommit": "eb57122e512dfbb936c5d0650301ae01cca228a7",
+    "phaseOne": {
+      "assets": [
+        {
+          "path": "index.html",
+          "status": 200,
+          "bytes": 11914,
+          "sha256": "55c58ca6f974b89517f7cf016a7665c83ea30d736ef10416101307d3758a71f0",
+          "matches": true
+        },
+        {
+          "path": "sw.js",
+          "status": 200,
+          "bytes": 5197,
+          "sha256": "ed2678de1897c383208175315c54f47d792fa16d29e02956dd10ad103a72ce98",
+          "matches": true
+        },
+        {
+          "path": "data/site-data.json",
+          "status": 200,
+          "bytes": 3316017,
+          "sha256": "ae8d04177d3c71d7000e9d8ee30673e6116a33778c9f79e443ace567c0dd7376",
+          "matches": true
+        },
+        {
+          "path": "downloads/mentor-guide.docx",
+          "status": 200,
+          "bytes": 77125,
+          "sha256": "a247d5cee67dcd26a3b88f368a68daada8ae49fe58eb89aab4aaa82d49ebdf30",
+          "matches": true
+        },
+        {
+          "path": "downloads/life-guide.docx",
+          "status": 200,
+          "bytes": 63339,
+          "sha256": "ad2c72d41729c228cf664b8c7acd8f2b32d2bd644364fb08aa951f9633682dc6",
+          "matches": true
+        }
+      ],
+      "allAssetsMatch": true,
+      "assetCount": 5,
+      "sourceCommit": "3f6e1a64282147c45cc159457ec9d8e12f82fdac",
+      "pagesCommit": "02abfed0db6376ec84008eeb2400a2beb2e1ac68"
+    },
+    "browser": {
+      "creditCards": 0,
+      "fullIdentityRemoved": true,
+      "nicknamePreserved": true,
+      "downloadVersion": "1.0.6",
+      "excludeSelfOnce": true,
+      "screenshot": "qa/remove-personal-20261114.jpg"
+    },
+    "pagesBuild": {
+      "status": "built",
+      "commit": "eb57122e512dfbb936c5d0650301ae01cca228a7",
+      "matchesCommit": true
+    }
+  }
 }
