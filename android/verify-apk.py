@@ -1,6 +1,8 @@
 """Check the built APK against dist; apksigner/aapt checks run separately in CI."""
 from pathlib import Path
 from zipfile import ZipFile
+from collections import Counter
+from datetime import date
 import hashlib
 import json
 import math
@@ -78,11 +80,20 @@ def verify_internships(data):
     guide = data.get("internships")
     assert isinstance(guide, dict), "Missing offline internship resources"
     firms = guide.get("firms", [])
-    assert len(firms) == 12 and len({firm["id"] for firm in firms}) == 12, "Incomplete or duplicate internship firms"
-    assert sum(firm["group"] == "big_four" for firm in firms) == 4, "Four international firms required"
-    assert sum(firm["group"] == "domestic" for firm in firms) == 8, "Eight domestic firms required"
+    counts = guide.get("counts")
+    assert isinstance(counts, dict), "Missing internship resource counts"
+    assert isinstance(firms, list) and firms, "Missing internship firms"
+    firm_ids = [firm.get("id") for firm in firms]
+    assert all(isinstance(firm_id, str) and firm_id for firm_id in firm_ids), "Missing internship firm id"
+    assert len(set(firm_ids)) == len(firms), "Duplicate internship firm ids"
+    assert counts.get("firmCount") == len(firms), "Internship firm count differs from current data"
+    groups = Counter(firm.get("group") for firm in firms)
+    assert set(groups).issubset({"big_four", "domestic", "enterprise"}), "Unknown internship firm group"
+    assert groups["big_four"] == counts.get("bigFourCount") == 4, "Four international firms required"
+    assert groups["domestic"] == counts.get("domesticFirmCount"), "Domestic firm count differs from current data"
+    assert groups["enterprise"] == counts.get("enterpriseCount", 0), "Enterprise count differs from current data"
     statuses = {"program_open", "program_announced", "listing_seen", "entry_only", "closed", "historical", "upcoming"}
-    kinds = {"internship_program", "job_listing", "channel", "historical", "graduate_recruitment", "preparation_program"}
+    kinds = {"internship_program", "job_listing", "channel", "historical", "graduate_recruitment", "preparation_program", "organization_reference"}
     registry = data["sourceRegistry"]
     ids = set()
     for firm in firms:
@@ -100,12 +111,18 @@ def verify_internships(data):
             assert isinstance(resource.get("cityTags"), list), "Missing explicit project-city list"
             assert all(field in resource for field in ("applicationWindow", "period", "deadline")), "Application window, implementation period and deadline must remain separate"
             deadline = resource["deadline"]
-            assert deadline is None or re.fullmatch(r"\d{4}-\d{2}-\d{2}", deadline), "Unknown deadline must remain null"
+            assert deadline is None or isinstance(deadline, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}(?:（[^（）\r\n]+）)?", deadline), "Unknown deadline must remain null; a known date may retain its scope note"
+            if deadline is not None:
+                try:
+                    date.fromisoformat(deadline[:10])
+                except ValueError as error:
+                    raise AssertionError("Invalid internship deadline date") from error
             assert resource.get("summary"), "Missing internship resource context"
             if resource["status"] != "entry_only":
                 assert resource.get("limits"), "Missing program or listing scope limits"
-            if resource["kind"] in ("graduate_recruitment", "preparation_program"):
+            if resource["kind"] in ("graduate_recruitment", "preparation_program", "organization_reference"):
                 assert resource["status"] != "program_open", "Non-internship program mislabeled as an open internship window"
+    assert counts.get("resourceCount") == len(ids), "Internship resource count differs from current data"
 
 
 def verify_music_playlist(data):
@@ -150,4 +167,4 @@ def verify_music_playlist(data):
 
 if __name__ == "__main__":
     verify_apk(Path(sys.argv[1]).resolve(), Path(__file__).resolve().parent.parent)
-    print("PASS: APK structure, reading assets, 34 mentor dossiers, 12 internship firms and 19 music records match (installers and website audio excluded)")
+    print("PASS: APK structure, reading assets, 34 mentor dossiers, current internship firms and 19 music records match (installers and website audio excluded)")

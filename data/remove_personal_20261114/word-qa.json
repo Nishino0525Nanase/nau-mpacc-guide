@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-11-14",
+  "status": "passed",
+  "scope": "Targeted author-credit and document metadata removal; existing guide content retained.",
+  "files": {
+    "mentor-guide.docx": {
+      "bytes": 77125,
+      "sha256": "a247d5cee67dcd26a3b88f368a68daada8ae49fe58eb89aab4aaa82d49ebdf30",
+      "changedParts": [
+        "docProps/core.xml"
+      ],
+      "allXmlTextAndMetadataScanPassed": true,
+      "blankCreator": true,
+      "pageCount": 27,
+      "allPagesRendered": true,
+      "hyperlinksPreserved": true
+    },
+    "life-guide.docx": {
+      "bytes": 63339,
+      "sha256": "ad2c72d41729c228cf664b8c7acd8f2b32d2bd644364fb08aa951f9633682dc6",
+      "changedParts": [
+        "docProps/core.xml",
+        "word/document.xml"
+      ],
+      "allXmlTextAndMetadataScanPassed": true,
+      "blankCreator": true,
+      "pageCount": 20,
+      "allPagesRendered": true,
+      "hyperlinksPreserved": true
+    }
+  },
+  "visualComparison": {
+    "mentorAll27PagesPixelIdenticalToPreviouslyApprovedRender": true,
+    "lifePages2Through20PixelIdenticalToBefore": true,
+    "lifePage1DiffRestrictedToRemovedCredit": true,
+    "lifePage1DiffBox": [
+      127,
+      246,
+      345,
+      272
+    ],
+    "lifePage1AndMentorPage1OpenedAndReviewed": true,
+    "paginationPreserved": true,
+    "noLayoutRebuild": true
+  },
+  "generatorScriptsPreventReintroduction": true
+}

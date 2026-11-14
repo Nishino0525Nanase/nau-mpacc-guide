@@ -122,7 +122,7 @@ def main():
             border.getparent().remove(border)
     doc.styles['Normal'].font.size = Pt(10.5)
     doc.core_properties.title = '南京审计大学 MPAcc 导师选择参考'
-    doc.core_properties.author = '胡雨诺'
+    doc.core_properties.author = ''
     doc.core_properties.subject = '导师研究方向 学生评价与公开去向'
     used_codes = set()
     link_count = 0

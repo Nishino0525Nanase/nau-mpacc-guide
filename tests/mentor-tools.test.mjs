@@ -81,7 +81,7 @@ test('contact drafts target one teacher with truthful placeholders and can be co
  let text=a.get('#contact-copy-text').value;
  assert.match(text,/王永妍老师您好/);assert.doesNotMatch(text,/董必荣老师您好/);
  assert.match(text,/【姓名】/);assert.match(text,/【学校、专业及年级／拟入学项目】/);assert.match(text,/准备进一步阅读【/);
- assert.doesNotMatch(text,/胡雨诺|刘鑫磊|海南大学|3\.04/);
+ assert.doesNotMatch(text,/刘鑫磊|海南大学|3\.04/);
  a.click('copy-contact');await a.flush();assert.equal(a.copies[0],text);
  await a.changeMentor('mentor-01');text=a.get('#contact-copy-text').value;assert.match(text,/董必荣老师您好/);assert.doesNotMatch(text,/王永妍老师您好/);
 });

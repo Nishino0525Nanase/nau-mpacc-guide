@@ -55,12 +55,6 @@
       "research_life_new.json",
       "research_xhs_browser_new.json"
     ],
-    "author": {
-      "name": "胡雨诺",
-      "role": "策划与设计",
-      "background": "西南林业大学 → 南京审计大学 MPAcc（保研）",
-      "informationSource": "用户提供"
-    },
     "researchExpansion": {
       "baseline": {
         "socialPosts": 82,
@@ -40368,22 +40362,22 @@
     {
       "id": "mentor-guide",
       "title": "导师选择参考",
-      "url": "./downloads/mentor-guide.docx?v=153dc7b80de9",
+      "url": "./downloads/mentor-guide.docx?v=a247d5cee67d",
       "format": "docx",
       "description": "34位导师，含学生评价、缩写对照与公开学生去向，保留来源链接",
       "filename": "mentor-guide.docx",
-      "bytes": 77136,
-      "sha256": "153dc7b80de99e7d02771b90226b431d726ec1461af217e8d7a94387b2042faf"
+      "bytes": 77125,
+      "sha256": "a247d5cee67dcd26a3b88f368a68daada8ae49fe58eb89aab4aaa82d49ebdf30"
     },
     {
       "id": "life-guide",
       "title": "学习生活攻略",
-      "url": "./downloads/life-guide.docx?v=1861d3b0184e",
+      "url": "./downloads/life-guide.docx?v=ad2c72d41729",
       "format": "docx",
       "description": "16章生活资料，含校园宿舍、南京气候、湘味餐饮与实习资源",
       "filename": "life-guide.docx",
-      "bytes": 63367,
-      "sha256": "1861d3b0184e077d123accf3e6ea63ed50420c9e09a732e816400ca1832c9f25"
+      "bytes": 63339,
+      "sha256": "ad2c72d41729c228cf664b8c7acd8f2b32d2bd644364fb08aa951f9633682dc6"
     },
     {
       "id": "evidence-index",

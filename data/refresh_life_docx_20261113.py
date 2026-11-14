@@ -148,11 +148,11 @@ def main():
         for a in ('ascii','hAnsi','eastAsia','cs'):f.set(qn('w:'+a),FONT)
         pp=st.element.get_or_add_pPr()
         for b in list(pp.findall(qn('w:pBdr'))):pp.remove(b)
-    doc.core_properties.title='南京审计大学MPAcc学习生活攻略';doc.core_properties.author='胡雨诺';doc.core_properties.subject='入学准备 校园生活 实习资源'
+    doc.core_properties.title='南京审计大学MPAcc学习生活攻略';doc.core_properties.author='';doc.core_properties.subject='入学准备 校园生活 实习资源'
     doc.core_properties.created=doc.core_properties.modified=datetime(2026,11,13,tzinfo=timezone.utc)
     paragraph(doc,'南京审计大学MPAcc学习生活攻略',size=23,style='Title')
     paragraph(doc,'入学准备 住宿日常 课程实践与实习资源',size=12,style='Subtitle')
-    paragraph(doc,'策划与设计 胡雨诺',size=10.5)
+    paragraph(doc,'',size=10.5)
     paragraph(doc,'来浦口读会计专硕，先确认本人校区和宿舍，再安排床品、行程与预算；课程、论文和实践按本级通知衔接。这里把常用事项按16章列出，正文编号可直接打开出处。',registry)
     paragraph(doc,'宿舍、店铺、交通和资助都保留资料年份或适用对象。学生生活帖用于了解具体经历，不能代替当届分房、收费或培养通知。',registry)
     p=paragraph(doc,'');link(doc,p,'打开网页版指南',SITE+'#life');fmt_run(p.add_run('  '),10.5);link(doc,p,'查看原帖与访谈索引',SITE+'#posts')
