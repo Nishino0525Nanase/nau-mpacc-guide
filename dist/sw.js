@@ -2,7 +2,7 @@
 'use strict';
 const BASE = new URL('./', self.location.href);
 const CACHE_PREFIX = `nau-guide:${BASE.pathname}:`;
-const CACHE_NAME = `${CACHE_PREFIX}1.0.32-content-repair-20261114b`;
+const CACHE_NAME = `${CACHE_PREFIX}1.0.33-traffic-20261114`;
 const DATA_PATH = 'data/site-data.json';
 const SHELL_PATHS = [
   './', 'index.html', 'app.js', 'music.js', 'life-images.js', 'style.css', 'install.js', 'favicon.svg',
@@ -20,7 +20,7 @@ function classify(request) {
   for (const [key, value] of url.searchParams) {
     if (key === 'v' && value === 'edition1') continue;
     if (key === 'v' && value === ASSET_REVISIONS[url.pathname.slice(BASE.pathname.length)]) continue;
-    if (isDocument && key === 'exclude_self' && value === '1') continue;
+    if (isDocument && key === 'exclude_self' && ['1','once'].includes(value)) continue;
     return null;
   }
   url.search = '';

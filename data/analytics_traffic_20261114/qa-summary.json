@@ -1,0 +1,29 @@
+{
+  "automatedTests": 177,
+  "pass": true,
+  "analyticsTests": 66,
+  "explicitQaExclusion": true,
+  "webdriverTrueOnlyExclusion": true,
+  "normalWindowsChromePreserved": true,
+  "realTestEventsSent": false,
+  "privateRecordsInRepository": false,
+  "backendChange": {
+    "compiled": true,
+    "geoInputsPreserved": true,
+    "existingQueryPreviewPassed": true,
+    "rawRecordsRewritten": false,
+    "sandboxInvocation": "API returned400; no successful invocation claimed"
+  },
+  "browserPreview": {
+    "explicitOnceToast": true,
+    "analyticsRevision": "traffic1",
+    "cloudBrowserClaim": {
+      "platform": "Linux",
+      "browser": "Chrome",
+      "webdriver": false
+    },
+    "cloudBrowserClaimsDoNotProveHuman": true
+  },
+  "production": "pending",
+  "newBrowserCaptureFields": false
+}

@@ -243,6 +243,57 @@ test('owner link fails closed and reports when the persistent write fails', () =
   assert.equal(env.window.NAUAnalytics.isOptedOut(), true);
   assert.match(env.toast.textContent, /未能保存/);
 });
+test('a QA exclusion link survives refresh without changing future ordinary visits', () => {
+  const env = boot({url:site+'?exclude_self=once#mentors'});
+  assert.equal(env.requests.length,0);
+  assert.equal(env.window.NAUAnalytics.isOptedOut(),true);
+  assert.equal(env.window.location.href,site+'?exclude_self=once#mentors');
+  assert.equal(env.toast.textContent,'本次验收不计入访问统计。');
+  assert.deepEqual(env.notices,['visible']);
+  assert.deepEqual(env.writes,[]);
+  assert.equal(env.map.has('nau_analytics_opt_out'),false);
+  env.advance(45000);env.visibility('hidden');env.emit('pagehide');
+  assert.equal(env.requests.length,0);
+  assert.equal(env.timers.size,0);
+  assert.equal(boot({url:env.window.location.href,map:env.map}).requests.length,0);
+  assert.equal(boot({map:env.map}).requests.length,1);
+});
+test('QA exclusion needs no writable storage and cannot undo an existing opt-out', () => {
+  for(const options of [{blocked:true},{writeFails:true},{map:new Map([['nau_analytics_opt_out','1']])}]) {
+    const env=boot({...options,url:site+'?exclude_self=once'});
+    assert.equal(env.requests.length,0);
+    assert.equal(env.window.NAUAnalytics.isOptedOut(),true);
+    assert.deepEqual(env.writes,[]);
+    env.advance(30000);env.emit('pageshow',{persisted:true});env.emit('pagehide');
+    assert.equal(env.requests.length,0);
+    assert.equal(env.timers.size,0);
+  }
+  const map=new Map([['nau_analytics_opt_out','1']]);
+  boot({map,url:site+'?exclude_self=once'});
+  assert.equal(map.get('nau_analytics_opt_out'),'1');
+  assert.equal(boot({map}).requests.length,0);
+});
+test('an explicit WebDriver session produces neither pageviews nor dwell events', () => {
+  const env=boot({navigator:{webdriver:true,userAgent:'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/156.0.0.0 Safari/537.36',platform:'Win32'}});
+  assert.equal(env.requests.length,0);
+  assert.equal(env.window.NAUAnalytics.isOptedOut(),true);
+  env.advance(60000);env.visibility('hidden');env.visibility('visible');env.emit('pagehide');env.emit('pageshow',{persisted:true});
+  assert.equal(env.requests.length,0);
+  assert.equal(env.timers.size,0);
+  assert.deepEqual(env.writes,[]);
+  assert.equal(boot({map:env.map}).requests.length,1);
+});
+test('false, missing or inaccessible WebDriver markers do not exclude ordinary browser traffic', () => {
+  for(const webdriver of [false,undefined,'true',1]) {
+    const env=boot({navigator:{webdriver,userAgent:'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/156.0.0.0 Safari/537.36',platform:'Win32'}});
+    assert.equal(env.requests.length,1);
+    assert.equal(env.requests[0].payload.properties.device_os,'Windows');
+    assert.equal(env.requests[0].payload.properties.device_browser,'Chrome');
+    assert.equal(env.window.NAUAnalytics.isOptedOut(),false);
+  }
+  const navigator=Object.defineProperty({},'webdriver',{get(){throw Error('unavailable');}});
+  assert.equal(boot({navigator}).requests.length,1);
+});
 test('legacy identity is deleted; prior explicit refusal is respected', () => {
   const map = new Map([['nau_mpacc_guide_anon_id_v1','old-id'],['nau_privacy_consent_v1',JSON.stringify({version:1, analytics:false})]]);
   const env=boot({map});
@@ -265,6 +316,8 @@ for (const [label, opts] of [
 test('device properties are not read before exclusion, storage, host, or config guards', () => {
   for(const opts of [
     {url:site+'?exclude_self=1'},
+    {url:site+'?exclude_self=once'},
+    {navigator:{webdriver:true}},
     {map:new Map([['nau_analytics_opt_out','1']])},
     {navigator:{doNotTrack:'1'}},
     {navigator:{globalPrivacyControl:true}},

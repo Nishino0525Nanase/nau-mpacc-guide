@@ -73,7 +73,7 @@ test('SW only intercepts the exact local GET whitelist, including owner exclusio
   await sw.lifecycle('install');
   const currentShell=[...readFileSync(new URL('index.html',root),'utf8').matchAll(/(?:src|href)="\.\/((?:app\.js|style\.css|life-images\.js)\?[^\"]+)"/g)].map(match=>match[1]);
   assert.equal(currentShell.length,3,'the current public shell must expose its three versioned assets');
-  for (const path of ['', 'index.html?exclude_self=1', 'app.js?v=edition1',...currentShell,'music.js?v=edition1','data/site-data.json?v=edition1']) assert(await sw.request(path),path);
+  for (const path of ['', 'index.html?exclude_self=1', 'index.html?exclude_self=once', 'app.js?v=edition1',...currentShell,'music.js?v=edition1','data/site-data.json?v=edition1']) assert(await sw.request(path),path);
   const count=sw.calls.length;
   for (const path of ['analytics.js','analytics-config.js','admin/','admin/index.html','video/','?admin=1','?unexpected=1','downloads/test.apk','music/private-song.mp3','media/music/sample-track.mp3','media/music/sample-track.m4a','../another-project/','https://us.i.posthog.com/i/v0/e/','https://example.com/app.js']) assert.equal(await sw.request(path),null,path);
   assert.equal(await sw.request('data/site-data.json','POST'),null);
@@ -106,6 +106,7 @@ test('missing offline data is explicit, exclusion navigation keeps its shell and
   await sw.lifecycle('install');
   const page=await sw.request('?exclude_self=1');
   assert.equal(await page.text(),'shell');
+  assert.equal(await (await sw.request('?exclude_self=once')).text(),'shell');
   sw.stores.set('nau-guide:/nau-mpacc-guide/:old',new Map());
   sw.stores.set('nau-guide:/other-project/:old',new Map());
   sw.stores.set('unrelated-cache',new Map());

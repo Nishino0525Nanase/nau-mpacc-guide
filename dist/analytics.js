@@ -1,6 +1,8 @@
 /* Page-open counts and approximate foreground-visible duration. No cookies, visitor ID, SDK or replay.
  * Each page load gets an ephemeral random event ID; never interpret it as UV.
  * Owner exclusion uses a local preference, processed before any capture.
+ * Explicit QA URLs and a true WebDriver flag skip this load without saving a preference.
+ * A missing or false WebDriver flag does not establish that a visitor is human.
  * Device categories are estimates, not a hardware model or persistent identity.
  */
 (function () {
@@ -69,11 +71,11 @@
       return p;
     } catch (_) { return null; }
   }
-  function notifyOwner(saved) {
+  function notifyOwner(saved, once) {
     var doc = window.document;
     var target = doc && doc.getElementById && doc.getElementById('toast');
     if (!target) return;
-    target.textContent = saved ? '已排除当前浏览器：以后的访问不计入统计。' : '本次访问已排除，但设置未能保存；下次请仍使用排除链接打开。';
+    target.textContent = once ? '本次验收不计入访问统计。' : saved ? '已排除当前浏览器：以后的访问不计入统计。' : '本次访问已排除，但设置未能保存；下次请仍使用排除链接打开。';
     if (target.classList) target.classList.add('visible');
   }
   function coarseDevice(n) {
@@ -308,7 +310,13 @@
   window.NAUAnalytics = Object.freeze({ disable: disable, isOptedOut: isOptedOut });
   try {
     var ownerPage = new URL(window.location.href);
-    if (ownerPage.searchParams.get('exclude_self') === '1') {
+    var exclusionMode = ownerPage.searchParams.get('exclude_self');
+    if (exclusionMode === 'once') {
+      disabled = true;
+      notifyOwner(false, true);
+      return;
+    }
+    if (exclusionMode === '1') {
       var saved = disable();
       ownerPage.searchParams.delete('exclude_self');
       if (window.history && typeof window.history.replaceState === 'function') window.history.replaceState(null, '', ownerPage.href);
@@ -321,6 +329,12 @@
     if (attempted || !c || isOptedOut() || typeof window.fetch !== 'function') return;
     var p = allowedPage(c);
     if (!p || !window.crypto || typeof window.crypto.randomUUID !== 'function') return;
+    try {
+      if (window.navigator && window.navigator.webdriver === true) {
+        disabled = true;
+        return;
+      }
+    } catch (_) {}
     var id;
     try { id = 'pv_' + window.crypto.randomUUID(); } catch (_) { return; }
     var referrer = '';
