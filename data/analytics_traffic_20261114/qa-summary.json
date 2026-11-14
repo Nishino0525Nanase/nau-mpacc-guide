@@ -7,13 +7,6 @@
   "normalWindowsChromePreserved": true,
   "realTestEventsSent": false,
   "privateRecordsInRepository": false,
-  "backendChange": {
-    "compiled": true,
-    "geoInputsPreserved": true,
-    "existingQueryPreviewPassed": true,
-    "rawRecordsRewritten": false,
-    "sandboxInvocation": "API returned400; no successful invocation claimed"
-  },
   "browserPreview": {
     "explicitOnceToast": true,
     "analyticsRevision": "traffic1",
@@ -24,6 +17,21 @@
     },
     "cloudBrowserClaimsDoNotProveHuman": true
   },
-  "production": "pending",
+  "production": {
+    "allAssetBytesMatch": true,
+    "assetCount": 4,
+    "explicitExclusionToastBeforeAndAfterReload": true,
+    "currentCloudPermanentOptOutAlreadyEnabled": true,
+    "claimPlatform": "Linux",
+    "claimBrowser": "Chrome",
+    "claimWebdriver": false,
+    "proof": "qa/analytics-traffic-20261114.jpg",
+    "noNewPageviewsDuringExcludedQa": true,
+    "pagesBuild": {
+      "status": "built",
+      "commit": "52b2244a9dc5c8344e46f6f88bd91710d8ef63ab",
+      "matchesCommit": true
+    }
+  },
   "newBrowserCaptureFields": false
 }
