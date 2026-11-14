@@ -6,12 +6,12 @@
       "mentors": 34,
       "detailedMentorCards": 17,
       "lifeChapters": 16,
-      "socialPosts": 156,
-      "officialEvidence": 283,
+      "socialPosts": 157,
+      "officialEvidence": 285,
       "feedbackRecords": 21,
       "screenedSources": 15,
       "unreadLeads": 6,
-      "studentReviewRecords": 55,
+      "studentReviewRecords": 60,
       "mentorsWithStudentReviews": 24,
       "studentOutcomes": 30
     },
@@ -1030,8 +1030,8 @@
       "sourceCodes": [],
       "studentReviews": {
         "coverageStatus": "weak_mentions",
-        "coverageLabel": "选导态度 · 未说明具体经历",
-        "summary": "DBR问句与“董”反讽支线分别保留；未说明具体指导经历。",
+        "coverageLabel": "选导态度 · 接触未明",
+        "summary": "同帖有明确劝退、DBR问句及单姓支线；身份和具体经历未说明。",
         "reviews": [
           {
             "sourceIds": [
@@ -1221,6 +1221,118 @@
                 "capturedAt": "2026-11-13"
               }
             ]
+          },
+          {
+            "id": "sr-local-20261114-dbr-shaxue",
+            "sourceIds": [
+              "X01"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "sourceTitle": "南审mpacc导师求推荐",
+            "postAuthor": "银河落九天",
+            "postDate": "2025-04-02",
+            "narrator": "沙雪",
+            "date": "2025-04-04",
+            "year": "2025",
+            "degree": "未说明",
+            "identity": "评论账号；未说明学位及与老师的接触关系，身份未独立认证",
+            "relationship": "未说明本人接触关系",
+            "experienceType": "general",
+            "experienceLabel": "按名单指代的明确劝退 · 接触未明",
+            "firsthand": null,
+            "polarity": "negative",
+            "text": "沙雪明确劝退原帖名单前两位，担心两人事务繁忙、指导时间有限；未说明本人接触关系。",
+            "specifics": [],
+            "attribution": {
+              "status": "confirmed",
+              "alias": "前两个",
+              "reason": "同一张原网页截图的原帖教师名单前两位依次为董必荣、温素彬；“前两个”按这段可见名单顺序对应。确认仅指评论对象归属，不代表评论者身份及其说法已获证实。"
+            },
+            "contextAssessment": {
+              "status": "alias_attitude_without_experience",
+              "displayLabel": "明确劝退 · 接触未明",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "有明确选择态度与评论者的担心，但未说明本人指导关系、具体事件和结果；不生成导师投入或培养质量结论。",
+              "batch": "recommendation-local-audit-20261114"
+            },
+            "limits": [
+              "董必荣、温素彬两份档案引用的是沙雪同一条评论，只计一条独立评论，不增加帖子或独立来源数量。",
+              "评论者身份、学位及本人接触关系未核实；所述事务繁忙及指导时间担心是其个人说法，不能当作已证实的指导事实。",
+              "评论原话为明确劝退，没有强烈程度修饰或反复强调，不提高为强烈避雷；历史评论也不用于断言当前职务或现状。"
+            ],
+            "readingScope": [
+              "2026-11-14复核2026-11-13保存的原网页截图：读到沙雪2025-04-04主评及同图原帖名单前两位；未重新访问原帖，未新增展开回复。"
+            ],
+            "readThisRound": true,
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "前两个劝你别选",
+                "sourceIds": [
+                  "X01"
+                ],
+                "scope": "原网页保存截图可见沙雪、2025-04-04和同图名单；只摘录明确选择态度短句。",
+                "screenshotSrc": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg"
+              },
+              "context": [
+                "同图原帖左侧名单前两位依次为董必荣、温素彬。",
+                "评论后文表达其对事务繁忙和指导时间的担心，未说明具体接触过程。"
+              ],
+              "interpretation": {
+                "text": "这是一条指向两位名单对象的明确劝退意见；所述原因仍是评论者未经核实的说法。",
+                "confidence": "limited",
+                "alternative": "未知评论者本人是否受其指导，也未见具体事件、频次或结果。"
+              },
+              "limits": [
+                "不由职务、名单指代或一句选导意见推断当前指导表现。"
+              ],
+              "sourceIds": [
+                "X01"
+              ]
+            },
+            "researchProvenance": {
+              "file": "data/recommendation_20261114/local-audit/audit.json",
+              "method": "local-original-screenshot-reread",
+              "screenshotAvailableThisRound": true,
+              "capturedAt": "2026-11-13",
+              "rereadAt": "2026-11-14"
+            },
+            "selectionSignal": {
+              "direction": "avoid",
+              "intensity": "explicit",
+              "displayLabel": "原帖明确劝退",
+              "alias": "前两个",
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "前两个劝你别选"
+              },
+              "sourceIds": [
+                "X01"
+              ],
+              "scope": "同一评论涉及董必荣、温素彬；未说明本人接触关系。关于指导时间是评论者的担心。"
+            },
+            "sourceCommentKey": "X01:沙雪:2025-04-04:前两个",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+                "caption": "沙雪明确劝退“前两个”；同图保留评论日期与原帖名单前两位姓名",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 89529,
+                "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
+                "scope": [
+                  "保存的原网页截图可见该条顶层评论及原帖教师名单；2026-11-14本地复核，未重新访问原帖，未声称读完折叠回复。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ],
+            "sharedCommentId": "x01-shaxue-20250404-first-two"
           }
         ],
         "recommendationPoints": [],
@@ -1433,8 +1545,8 @@
       ],
       "studentReviews": {
         "coverageStatus": "weak_mentions",
-        "coverageLabel": "仅笼统提名或身份未明",
-        "summary": "只有笼统好感，未说明本人接触关系；不作为具体指导体验。",
+        "coverageLabel": "选导态度 · 接触未明",
+        "summary": "同帖既有笼统好感，也有明确劝退；均未说明本人指导关系。",
         "reviews": [
           {
             "id": "sr-6f547fefb6425f",
@@ -1492,7 +1604,137 @@
               "reason": "笼统好感／社交提名；没有证据认定为玩梗，但也没有本人接触事实",
               "scope": "复核既有摘记，未新增原帖或学生经历；不武断确认反讽。",
               "batch": "review-context-audit-round10"
-            }
+            },
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+                "caption": "冬日来信同条评论：温素彬总体好感；不能将同评他人的课程或竞赛经历归给温素彬",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 104838,
+                "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
+                "scope": [
+                  "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
+          },
+          {
+            "id": "sr-local-20261114-wsb-shaxue",
+            "sourceIds": [
+              "X01"
+            ],
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "canonicalUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "sourceTitle": "南审mpacc导师求推荐",
+            "postAuthor": "银河落九天",
+            "postDate": "2025-04-02",
+            "narrator": "沙雪",
+            "date": "2025-04-04",
+            "year": "2025",
+            "degree": "未说明",
+            "identity": "评论账号；未说明学位及与老师的接触关系，身份未独立认证",
+            "relationship": "未说明本人接触关系",
+            "experienceType": "general",
+            "experienceLabel": "按名单指代的明确劝退 · 接触未明",
+            "firsthand": null,
+            "polarity": "negative",
+            "text": "沙雪明确劝退原帖名单前两位，担心两人事务繁忙、指导时间有限；未说明本人接触关系。",
+            "specifics": [],
+            "attribution": {
+              "status": "confirmed",
+              "alias": "前两个",
+              "reason": "同一张原网页截图的原帖教师名单前两位依次为董必荣、温素彬；“前两个”按这段可见名单顺序对应。确认仅指评论对象归属，不代表评论者身份及其说法已获证实。"
+            },
+            "contextAssessment": {
+              "status": "alias_attitude_without_experience",
+              "displayLabel": "明确劝退 · 接触未明",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "有明确选择态度与评论者的担心，但未说明本人指导关系、具体事件和结果；不生成导师投入或培养质量结论。",
+              "batch": "recommendation-local-audit-20261114"
+            },
+            "limits": [
+              "董必荣、温素彬两份档案引用的是沙雪同一条评论，只计一条独立评论，不增加帖子或独立来源数量。",
+              "评论者身份、学位及本人接触关系未核实；所述事务繁忙及指导时间担心是其个人说法，不能当作已证实的指导事实。",
+              "评论原话为明确劝退，没有强烈程度修饰或反复强调，不提高为强烈避雷；历史评论也不用于断言当前职务或现状。"
+            ],
+            "readingScope": [
+              "2026-11-14复核2026-11-13保存的原网页截图：读到沙雪2025-04-04主评及同图原帖名单前两位；未重新访问原帖，未新增展开回复。"
+            ],
+            "readThisRound": true,
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "前两个劝你别选",
+                "sourceIds": [
+                  "X01"
+                ],
+                "scope": "原网页保存截图可见沙雪、2025-04-04和同图名单；只摘录明确选择态度短句。",
+                "screenshotSrc": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg"
+              },
+              "context": [
+                "同图原帖左侧名单前两位依次为董必荣、温素彬。",
+                "评论后文表达其对事务繁忙和指导时间的担心，未说明具体接触过程。"
+              ],
+              "interpretation": {
+                "text": "这是一条指向两位名单对象的明确劝退意见；所述原因仍是评论者未经核实的说法。",
+                "confidence": "limited",
+                "alternative": "未知评论者本人是否受其指导，也未见具体事件、频次或结果。"
+              },
+              "limits": [
+                "不由职务、名单指代或一句选导意见推断当前指导表现。"
+              ],
+              "sourceIds": [
+                "X01"
+              ]
+            },
+            "researchProvenance": {
+              "file": "data/recommendation_20261114/local-audit/audit.json",
+              "method": "local-original-screenshot-reread",
+              "screenshotAvailableThisRound": true,
+              "capturedAt": "2026-11-13",
+              "rereadAt": "2026-11-14"
+            },
+            "selectionSignal": {
+              "direction": "avoid",
+              "intensity": "explicit",
+              "displayLabel": "原帖明确劝退",
+              "alias": "前两个",
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "前两个劝你别选"
+              },
+              "sourceIds": [
+                "X01"
+              ],
+              "scope": "同一评论涉及董必荣、温素彬；未说明本人接触关系。关于指导时间是评论者的担心。"
+            },
+            "sourceCommentKey": "X01:沙雪:2025-04-04:前两个",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+                "caption": "沙雪明确劝退“前两个”；同图保留评论日期与原帖名单前两位姓名",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 89529,
+                "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
+                "scope": [
+                  "保存的原网页截图可见该条顶层评论及原帖教师名单；2026-11-14本地复核，未重新访问原帖，未声称读完折叠回复。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ],
+            "sharedCommentId": "x01-shaxue-20250404-first-two"
           }
         ],
         "recommendationPoints": [],
@@ -4062,7 +4304,7 @@
       "studentReviews": {
         "coverageStatus": "mpacc_guidance",
         "coverageLabel": "明确MPAcc指导经历",
-        "summary": "孙昊晨、袁璐有明确MPAcc身份的历史指导经历；李佳林为具名硕士研究入门经历，未确认MPAcc。均为学校或教指委精选访谈，袁璐的导师关系由学院名单交叉核对。",
+        "summary": "孙昊晨、袁璐、余一品有明确MPAcc身份的历史指导经历；李佳林、姚继晴、周会洋未确认学位类型。均为学校或教指委选编；其中2021年访谈涉及论文点拨、每周组会与备考支持，不代表当前安排。",
         "reviews": [
           {
             "id": "sr-fc7bcc49c9bde1",
@@ -4288,6 +4530,281 @@
                 "capturedAt": "2026-11-13"
               }
             ]
+          },
+          {
+            "sourceIds": [
+              "RGE01",
+              "RGE02"
+            ],
+            "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+            "canonicalUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+            "sourceTitle": "棒！五个南审学霸组团考博成功",
+            "postAuthor": "南京审计大学新闻网（原图未见个人署名）",
+            "postDate": "2025-07-21",
+            "date": "2025-07-21",
+            "experienceDate": "2021-06",
+            "year": "2020届硕士；2021年采访（网页标2025-07-21）",
+            "degree": "MPAcc（RGE02正文明确2020届会计专业硕士）",
+            "degreeScope": "mpacc",
+            "identity": "余一品，2020届会计专业硕士毕业生；2021年采访中的具名受访者",
+            "relationship": "硕士导师；长图末段明确潘俊是这五名研究生的导师，另与既有MOA05具名名单相符",
+            "experienceType": "interview",
+            "experienceLabel": "2021年学校选编指导经历",
+            "firsthand": true,
+            "polarity": "positive",
+            "attribution": {
+              "status": "confirmed",
+              "alias": "原文全名",
+              "reason": "原图逐人列出姓名，末段明确五名研究生共同导师为潘俊；不是按缩写或共同署名推断。"
+            },
+            "limits": [
+              "学校选编的历史正面经历，同篇三个受访者不等于三个独立来源；没有明确推荐/劝退选导语句。",
+              "采访实际为2021年，网页标2025年；不据此推定当前组会、反馈或就业安排。",
+              "RGE01未写学位类型，余一品MPAcc身份由RGE02的同学院、同名及同年同一博士去向交叉核实；此补丁不新增去向人数。",
+              "直接引语涵盖学院与导师，不能把平台或实习机会单独归功潘俊。"
+            ],
+            "readingScope": [
+              "学校正文及原始长图全段实际读取；姓名、个人叙述和底部共同导师说明已核对。"
+            ],
+            "readThisRound": true,
+            "screenshots": [
+              {
+                "src": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+                "caption": "学校原始长图全文：五名研究生科研与考博经历，页示2025年，实际采访为2021年",
+                "sourceId": "RGE01",
+                "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+                "originalImageUrl": "https://news.nau.edu.cn/_upload/article/images/ef/d3/c3031ab44986b04ca38d71a27545/fa581f15-4b76-4dbf-b51c-38c08f85d3f0.jpg",
+                "kind": "original-post-image",
+                "textAltered": false,
+                "width": 720,
+                "height": 17791,
+                "bytes": 6165360,
+                "sha256": "5ca8220007c7a38476ca948f0fde3426d5303f384ebfbe803f35b295e077489f",
+                "scope": [
+                  "学校正文唯一长图逐段实际读完；本地仅分段查看辅助核读，公开文件为服务器原始字节，未裁切、拼接、改字。"
+                ],
+                "capturedAt": "2026-11-14"
+              }
+            ],
+            "contextAssessment": {
+              "status": "official_named_historical_guidance",
+              "displayLabel": "2021年具名指导经历 · 学校选编",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "可支持具体指导方式；受访者未直接表达选导推荐或避雷，不能加权为选择票。",
+              "scope": "历史单人个案，同一官方选编来源",
+              "batch": "recommendation-20261114"
+            },
+            "expansionBatch": "recommendation-20261114",
+            "id": "sr-recommendation-20261114-panjun-yuyipin",
+            "mentorId": "mentor-11",
+            "mentorName": "潘俊",
+            "narrator": "余一品",
+            "text": "余一品回忆：就业与读博规划均得到导师耐心指导，写首篇论文遇困难时，导师点拨帮助其找到方向。",
+            "specifics": [],
+            "relatedStudentOutcomeIds": [
+              "MOA-PJ-YYP"
+            ],
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "耐心地指导我们",
+                "sourceIds": [
+                  "RGE01"
+                ],
+                "screenshotSrc": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+                "scope": "学校原始长图可见文字；仅摘极短原句，完整上下文见同一原图。"
+              },
+              "sourceIds": [
+                "RGE01"
+              ]
+            },
+            "degreeEvidence": {
+              "sourceIds": [
+                "RGE02"
+              ],
+              "url": "https://nau.edu.cn/_t505/2021/0604/c5729a79657/page.htm",
+              "text": "学校2021-06-04报道明确写余一品为2020届会计专业硕士毕业生，且同年考取上海财经大学博士，与RGE01同学院、姓名、2021年博士去向相符。",
+              "readingScope": "正文L60及作者/日期L50—52实际读取；不只凭姓名合并身份。"
+            }
+          },
+          {
+            "sourceIds": [
+              "RGE01"
+            ],
+            "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+            "canonicalUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+            "sourceTitle": "棒！五个南审学霸组团考博成功",
+            "postAuthor": "南京审计大学新闻网（原图未见个人署名）",
+            "postDate": "2025-07-21",
+            "date": "2025-07-21",
+            "experienceDate": "2021-06",
+            "year": "2021年采访（网页标2025-07-21）",
+            "degree": "硕士（本长图未区分学硕/专硕）",
+            "degreeScope": "master_unspecified",
+            "identity": "学校选编采访中的具名研究生",
+            "relationship": "硕士导师；长图末段明确潘俊是这五名研究生的导师，另与既有MOA05具名名单相符",
+            "experienceType": "interview",
+            "experienceLabel": "2021年学校选编指导经历",
+            "firsthand": true,
+            "polarity": "positive",
+            "attribution": {
+              "status": "confirmed",
+              "alias": "原文全名",
+              "reason": "原图逐人列出姓名，末段明确五名研究生共同导师为潘俊；不是按缩写或共同署名推断。"
+            },
+            "limits": [
+              "学校选编的历史正面经历，同篇三个受访者不等于三个独立来源；没有明确推荐/劝退选导语句。",
+              "采访实际为2021年，网页标2025年；不据此推定当前组会、反馈或就业安排。",
+              "本长图未写个人学硕/专硕，不升级为已确认MPAcc，也不新增去向人数。",
+              "复试帮助来自同门余一品，不能改写成潘俊亲自准备。",
+              "每周组会频次是姚继晴段落中的学校报道叙述；不是受访者加引号的逐字原话。"
+            ],
+            "readingScope": [
+              "学校正文及原始长图全段实际读取；姓名、个人叙述和底部共同导师说明已核对。"
+            ],
+            "readThisRound": true,
+            "screenshots": [
+              {
+                "src": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+                "caption": "学校原始长图全文：五名研究生科研与考博经历，页示2025年，实际采访为2021年",
+                "sourceId": "RGE01",
+                "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+                "originalImageUrl": "https://news.nau.edu.cn/_upload/article/images/ef/d3/c3031ab44986b04ca38d71a27545/fa581f15-4b76-4dbf-b51c-38c08f85d3f0.jpg",
+                "kind": "original-post-image",
+                "textAltered": false,
+                "width": 720,
+                "height": 17791,
+                "bytes": 6165360,
+                "sha256": "5ca8220007c7a38476ca948f0fde3426d5303f384ebfbe803f35b295e077489f",
+                "scope": [
+                  "学校正文唯一长图逐段实际读完；本地仅分段查看辅助核读，公开文件为服务器原始字节，未裁切、拼接、改字。"
+                ],
+                "capturedAt": "2026-11-14"
+              }
+            ],
+            "contextAssessment": {
+              "status": "official_named_historical_guidance",
+              "displayLabel": "2021年具名指导经历 · 学校选编",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "可支持具体指导方式；受访者未直接表达选导推荐或避雷，不能加权为选择票。",
+              "scope": "历史单人个案，同一官方选编来源",
+              "batch": "recommendation-20261114"
+            },
+            "expansionBatch": "recommendation-20261114",
+            "id": "sr-recommendation-20261114-panjun-yaojiqing",
+            "mentorId": "mentor-11",
+            "mentorName": "潘俊",
+            "narrator": "姚继晴",
+            "text": "姚继晴的具名段落记载，团队按周汇报论文和课题进度，师门互学；申博复试前余一品帮其梳理材料和准备面试。",
+            "specifics": [],
+            "relatedStudentOutcomeIds": [
+              "MOA-PJ-YJQ"
+            ],
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "每周有一次组会",
+                "sourceIds": [
+                  "RGE01"
+                ],
+                "screenshotSrc": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+                "scope": "学校原始长图姚继晴段落的报道叙述；该短句不是加引号的受访者逐字引语，完整上下文见同一原图。",
+                "attributionType": "school_report_within_named_interview_section"
+              },
+              "sourceIds": [
+                "RGE01"
+              ]
+            }
+          },
+          {
+            "sourceIds": [
+              "RGE01"
+            ],
+            "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+            "canonicalUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+            "sourceTitle": "棒！五个南审学霸组团考博成功",
+            "postAuthor": "南京审计大学新闻网（原图未见个人署名）",
+            "postDate": "2025-07-21",
+            "date": "2025-07-21",
+            "experienceDate": "2021-06",
+            "year": "2021年采访（网页标2025-07-21）",
+            "degree": "硕士（本长图未区分学硕/专硕）",
+            "degreeScope": "master_unspecified",
+            "identity": "学校选编采访中的具名研究生",
+            "relationship": "硕士导师；长图末段明确潘俊是这五名研究生的导师，另与既有MOA05具名名单相符",
+            "experienceType": "interview",
+            "experienceLabel": "2021年学校选编指导经历",
+            "firsthand": true,
+            "polarity": "positive",
+            "attribution": {
+              "status": "confirmed",
+              "alias": "原文全名",
+              "reason": "原图逐人列出姓名，末段明确五名研究生共同导师为潘俊；不是按缩写或共同署名推断。"
+            },
+            "limits": [
+              "学校选编的历史正面经历，同篇三个受访者不等于三个独立来源；没有明确推荐/劝退选导语句。",
+              "采访实际为2021年，网页标2025年；不据此推定当前组会、反馈或就业安排。",
+              "本长图未写个人学硕/专硕，不升级为已确认MPAcc，也不新增去向人数。",
+              "鼓励由导师和师兄共同提供；不把全部技术训练归功导师。"
+            ],
+            "readingScope": [
+              "学校正文及原始长图全段实际读取；姓名、个人叙述和底部共同导师说明已核对。"
+            ],
+            "readThisRound": true,
+            "screenshots": [
+              {
+                "src": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+                "caption": "学校原始长图全文：五名研究生科研与考博经历，页示2025年，实际采访为2021年",
+                "sourceId": "RGE01",
+                "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+                "originalImageUrl": "https://news.nau.edu.cn/_upload/article/images/ef/d3/c3031ab44986b04ca38d71a27545/fa581f15-4b76-4dbf-b51c-38c08f85d3f0.jpg",
+                "kind": "original-post-image",
+                "textAltered": false,
+                "width": 720,
+                "height": 17791,
+                "bytes": 6165360,
+                "sha256": "5ca8220007c7a38476ca948f0fde3426d5303f384ebfbe803f35b295e077489f",
+                "scope": [
+                  "学校正文唯一长图逐段实际读完；本地仅分段查看辅助核读，公开文件为服务器原始字节，未裁切、拼接、改字。"
+                ],
+                "capturedAt": "2026-11-14"
+              }
+            ],
+            "contextAssessment": {
+              "status": "official_named_historical_guidance",
+              "displayLabel": "2021年具名指导经历 · 学校选编",
+              "eligibleForRecommendation": false,
+              "eligibleForConcern": false,
+              "reason": "可支持具体指导方式；受访者未直接表达选导推荐或避雷，不能加权为选择票。",
+              "scope": "历史单人个案，同一官方选编来源",
+              "batch": "recommendation-20261114"
+            },
+            "expansionBatch": "recommendation-20261114",
+            "id": "sr-recommendation-20261114-panjun-zhouhuiyang",
+            "mentorId": "mentor-11",
+            "mentorName": "潘俊",
+            "narrator": "周会洋",
+            "text": "周会洋回忆考博状态低落时获得导师和师兄鼓励；报道也记载导师引导其把编程用于科研。",
+            "specifics": [],
+            "relatedStudentOutcomeIds": [
+              "MOA-PJ-ZHY"
+            ],
+            "contextNotes": {
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "给了我很大的鼓励",
+                "sourceIds": [
+                  "RGE01"
+                ],
+                "screenshotSrc": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+                "scope": "学校原始长图可见文字；仅摘极短原句，完整上下文见同一原图。"
+              },
+              "sourceIds": [
+                "RGE01"
+              ]
+            }
           }
         ],
         "recommendationPoints": [
@@ -6203,7 +6720,25 @@
             "readingScope": "X01中该条评论的文字记录；未覆盖整帖全部折叠回复。",
             "readThisRound": false,
             "evidenceOrigin": "existing_baseline_reaudited",
-            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+                "caption": "冬日来信同条评论：王敬勇竞赛接触评价；其成绩说法仍属评论者陈述",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 104838,
+                "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
+                "scope": [
+                  "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
           }
         ],
         "recommendationPoints": [],
@@ -7208,7 +7743,25 @@
             "readingScope": "X01中该条评论的文字记录；未覆盖整帖全部折叠回复。",
             "readThisRound": false,
             "evidenceOrigin": "existing_baseline_reaudited",
-            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-lzz-zxl-20261113.jpg",
+                "caption": "冬日来信同条评论：王菁华课程体验；同图保留其他老师段落以便分开归因",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 104838,
+                "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
+                "scope": [
+                  "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
           }
         ],
         "recommendationPoints": [],
@@ -7935,7 +8488,25 @@
             ],
             "readingScope": "该条可见顶层评论；未覆盖全部折叠回复。",
             "readThisRound": true,
-            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-lgc-20261113.jpg",
+                "caption": "momo自述Excel实验课接触，评价温和、关心学生及不push；不推断研究生指导要求",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 94409,
+                "sha256": "8fe6d54e6c3b7692479906ea09328eebf8f77b8ec8b227760b502f4d87d031d0",
+                "scope": [
+                  "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
           }
         ],
         "recommendationPoints": [
@@ -23452,6 +24023,35 @@
             "reason": "原话仅表达选择态度，未说明本人指导关系、具体事件与结果；不生成指导方式或培养质量结论。",
             "batch": "alias-comments-20261113"
           }
+        },
+        {
+          "id": "x01-shaxue-20250404-first-two",
+          "sourceCommentKey": "X01:沙雪:2025-04-04:前两个",
+          "author": "沙雪",
+          "date_display": "2025-04-04",
+          "teacher": "董必荣、温素彬",
+          "text": "明确不建议选名单前两位，并表达对老师事务繁忙、指导时间有限的担心。",
+          "identity": "未说明学位或本人指导关系",
+          "assessment": "明确选导态度；所述原因未经独立核实。",
+          "limits": "同一条评论同时涉及两位老师，不拆成两名评论者。",
+          "screenshots": [
+            {
+              "src": "./evidence/xhs/x01-tzd-zl-dbr-20261113.jpg",
+              "caption": "沙雪明确劝退“前两个”；同图保留评论日期与原帖名单前两位姓名",
+              "sourceId": "X01",
+              "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+              "kind": "actual-browser-screenshot",
+              "textAltered": false,
+              "width": 1363,
+              "height": 936,
+              "bytes": 89529,
+              "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
+              "scope": [
+                "保存的原网页截图可见该条顶层评论及原帖教师名单；2026-11-14本地复核，未重新访问原帖，未声称读完折叠回复。"
+              ],
+              "capturedAt": "2026-11-13"
+            }
+          ]
         }
       ],
       "limitations": "页面显示95评论；只宣称既有记录所述已展开范围，不宣称95条均为有效评价。评论身份未独立认证；缩写按姓名对照关联，体验仍按原文身份标注；同人跟评不算独立来源。",
@@ -29790,6 +30390,56 @@
       ],
       "screenedOnly": false,
       "needsVerification": false
+    },
+    {
+      "id": "RGE01-five-phd-original",
+      "key": "南京审计大学新闻网:146632",
+      "sourceIds": [
+        "RGE01"
+      ],
+      "url": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "title": "五人考博访谈：论文点拨、每周组会与备考支持",
+      "author": "南京审计大学新闻网",
+      "date": "2025-07-21（实际2021年采访）",
+      "platform": "学校官网",
+      "category": "具名指导经历",
+      "topic": "导师与培养",
+      "population": "2021年学校选编的研究生访谈；长图未区分个人学硕/专硕。",
+      "summary": "同一潘俊师门访谈中，三位具名学生提供具体科研或备考经历；属于既有去向名单中的人。",
+      "tips": [
+        "余一品：就业/读博规划与论文点拨。",
+        "姚继晴：每周组会、同门互助。",
+        "周会洋：编程用于科研、低落期支持。"
+      ],
+      "comments": [],
+      "limitations": "学校选编正面访谈，不是独立评价样本；网页2025年展示不能当作2025年经历。不把吴小涵明确谈校外导师供数据的段落归给潘俊；景雪峰仅赞学校平台，未新增个人导师评价。",
+      "readingScopes": [
+        "学校正文和唯一原始长图全部文字已实际读完。"
+      ],
+      "verificationStatus": "原始长图已核读；具体指导可追溯",
+      "screenedOnly": false,
+      "needsVerification": false,
+      "screenshots": [
+        {
+          "src": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+          "caption": "学校原始长图全文：五名研究生科研与考博经历，页示2025年，实际采访为2021年",
+          "sourceId": "RGE01",
+          "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+          "originalImageUrl": "https://news.nau.edu.cn/_upload/article/images/ef/d3/c3031ab44986b04ca38d71a27545/fa581f15-4b76-4dbf-b51c-38c08f85d3f0.jpg",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 720,
+          "height": 17791,
+          "bytes": 6165360,
+          "sha256": "5ca8220007c7a38476ca948f0fde3426d5303f384ebfbe803f35b295e077489f",
+          "scope": [
+            "学校正文唯一长图逐段实际读完；本地仅分段查看辅助核读，公开文件为服务器原始字节，未裁切、拼接、改字。"
+          ],
+          "capturedAt": "2026-11-14"
+        }
+      ],
+      "expansionBatch": "recommendation-20261114"
     }
   ],
   "sourceRegistry": {
@@ -40338,6 +40988,71 @@
       "summary": "学院问答列2022—2025年该本科方向累计获四大会计师事务所录取45人。",
       "readingScope": "实际核读官网全文；L57、L165确认本科项目，L169—L172为毕业去向问答与四年合计。网页发布时间为2026-09-05，不由URL推定9月15日。",
       "limits": "这是本科方向跨四年的招生宣传统计，不是MPAcc人数、四大就业率或某导师就业成果。未给逐所、逐年、导师或个人名单；不与具名记录相加，也不由“约20%”反推全校人数。"
+    },
+    "RGE01": {
+      "code": "RGE01",
+      "title": "棒！五个南审学霸组团考博成功（2021年采访原图；网页2025年展示）",
+      "label": "潘俊师门五人考博访谈原图",
+      "url": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "originalUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "canonicalUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "date": "2025-07-21",
+      "experienceDate": "2021-06",
+      "kind": "official",
+      "platform": "南京审计大学新闻网",
+      "category": "学校选编具名学生经历",
+      "population": "长图点名五名研究生及共同导师潘俊；本次新增三个具名指导叙述，三人是既有去向名单中的人。",
+      "limitations": "学校正面选编，不是独立平台评价；三条叙述同一来源，未出现明确推荐选导或避雷措辞。长图未区分个人学硕/专硕。网页标2025.07.21；既有孙昊晨访谈明确回忆2021年6月策划同名推送，不能当作2025年新经历或新增升学人数。",
+      "readingScope": [
+        "实际读取学校正文与唯一720×17791原始长图全部文字；逐段核读五人姓名、个人叙述及底部潘俊师生关系。",
+        "用既有O-PJ/18（孙昊晨2025-08-20访谈）L89核对采访策划时间；学校2021-06-04报道另明确余一品为2020届会计专业硕士，但本补丁未据此修改原去向或新增第二主要来源。"
+      ],
+      "relatedExistingSourceIds": [
+        "O-PJ",
+        "18",
+        "MOA05"
+      ],
+      "originalImage": {
+        "src": "./evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+        "caption": "学校原始长图全文：五名研究生科研与考博经历，页示2025年，实际采访为2021年",
+        "sourceId": "RGE01",
+        "sourceUrl": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+        "originalImageUrl": "https://news.nau.edu.cn/_upload/article/images/ef/d3/c3031ab44986b04ca38d71a27545/fa581f15-4b76-4dbf-b51c-38c08f85d3f0.jpg",
+        "kind": "original-post-image",
+        "textAltered": false,
+        "width": 720,
+        "height": 17791,
+        "bytes": 6165360,
+        "sha256": "5ca8220007c7a38476ca948f0fde3426d5303f384ebfbe803f35b295e077489f",
+        "scope": [
+          "学校正文唯一长图逐段实际读完；本地仅分段查看辅助核读，公开文件为服务器原始字节，未裁切、拼接、改字。"
+        ],
+        "capturedAt": "2026-11-14"
+      }
+    },
+    "RGE02": {
+      "code": "RGE02",
+      "title": "〖毕业季〗会计学院2021届毕业研究生培养再创佳绩（余一品MPAcc身份核对）",
+      "label": "余一品2020届会计专业硕士身份",
+      "url": "https://nau.edu.cn/_t505/2021/0604/c5729a79657/page.htm",
+      "originalUrl": "https://nau.edu.cn/_t505/2021/0604/c5729a79657/page.htm",
+      "canonicalUrl": "https://nau.edu.cn/_t505/2021/0604/c5729a79657/page.htm",
+      "date": "2021-06-04",
+      "kind": "official",
+      "platform": "南京审计大学官网",
+      "category": "学位身份交叉核对",
+      "author": "会计学院 柳希望 周书明 报道",
+      "population": "正文明确余一品为2020届会计专业硕士毕业生，2021年考取上海财经大学博士。",
+      "limitations": "仅用来核对余一品身份和年代，不增加一篇导师评价或新增学生去向。其余学生只写会计硕士，不据此确定MPAcc。",
+      "readingScope": [
+        "实际阅读全文L47—61，核对署名、页面日期和余一品所在段；没有把全院就业单位套到单个学生或导师。"
+      ],
+      "samePersonBasis": [
+        "RGE01与本页均为南京审计大学会计学院研究生余一品。",
+        "两页均记其2021年考取上海财经大学博士；RGE01图内明确会计学博士，文章采访年份由既有O-PJ/18的2021年6月回忆交叉确定。",
+        "本页再明确其2020届会计专业硕士身份；不是只凭姓名将外校同名者拼接。"
+      ],
+      "role": "identity-only-support-not-new-review-page"
     }
   },
   "targetProfiles": [
@@ -40539,12 +41254,12 @@
     {
       "id": "mentor-guide",
       "title": "导师选择参考",
-      "url": "./downloads/mentor-guide.docx?v=a4b40e39d6de",
+      "url": "./downloads/mentor-guide.docx?v=c3f5aa53bf41",
       "format": "docx",
       "description": "34位导师，含学生评价、缩写对照与公开学生去向，保留来源链接",
       "filename": "mentor-guide.docx",
-      "bytes": 78747,
-      "sha256": "a4b40e39d6de96400c3a34eec4744aa2bd9e8b11ee0122e349f9c51b311f463a"
+      "bytes": 79985,
+      "sha256": "c3f5aa53bf418f043796c79d9ae18962680fee86e3c6143f62bfd411daf1007b"
     },
     {
       "id": "life-guide",
@@ -40559,12 +41274,12 @@
     {
       "id": "evidence-index",
       "title": "原帖与官方证据索引",
-      "url": "./downloads/evidence-index.xlsx?v=a0049780c104",
+      "url": "./downloads/evidence-index.xlsx?v=077a3f2f0947",
       "format": "xlsx",
       "description": "来源、导师评价、缩写、学生去向和实习索引，可筛选并点击原始链接",
       "filename": "evidence-index.xlsx",
-      "bytes": 572743,
-      "sha256": "a0049780c10403c87198f16159d29ab3375c49a75e0aa805c8f25dd80a305000"
+      "bytes": 577816,
+      "sha256": "077a3f2f0947b4fd9672a7e0e5610948e46932455a4e077cd81a0d92ecb2cdf8"
     }
   ],
   "officialEvidence": [
@@ -48637,6 +49352,51 @@
       "use_status": "本科项目官方历史累计；与MPAcc分开看",
       "reading_scopes": [
         "实际核读官网全文；L57、L165确认本科项目，L169—L172为毕业去向问答与四年合计。网页发布时间为2026-09-05，不由URL推定9月15日。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:recommendation-20261114:RGE01",
+      "ids": [
+        "RGE01"
+      ],
+      "title": "棒！五个南审学霸组团考博成功（2021年采访原图；网页2025年展示）",
+      "date_display": "2025-07-21",
+      "url": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "canonical_url": "https://news.nau.edu.cn/2025/0721/c11358a146632/page.htm",
+      "summary": "余一品、姚继晴、周会洋的论文点拨、组会与备考支持经历；实际采访在2021年。",
+      "population": "长图点名五名研究生及共同导师潘俊；本次新增三个具名指导叙述，三人是既有去向名单中的人。",
+      "tips": [],
+      "comments": [],
+      "limits": "学校正面选编，不是独立平台评价；三条叙述同一来源，未出现明确推荐选导或避雷措辞。长图未区分个人学硕/专硕。网页标2025.07.21；既有孙昊晨访谈明确回忆2021年6月策划同名推送，不能当作2025年新经历或新增升学人数。",
+      "topic": "导师与培养",
+      "use_status": "2021年具名指导经历；学校选编",
+      "reading_scopes": [
+        "实际读取学校正文与唯一720×17791原始长图全部文字；逐段核读五人姓名、个人叙述及底部潘俊师生关系。",
+        "用既有O-PJ/18（孙昊晨2025-08-20访谈）L89核对采访策划时间；学校2021-06-04报道另明确余一品为2020届会计专业硕士，但本补丁未据此修改原去向或新增第二主要来源。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:recommendation-20261114:RGE02",
+      "ids": [
+        "RGE02"
+      ],
+      "title": "〖毕业季〗会计学院2021届毕业研究生培养再创佳绩（余一品MPAcc身份核对）",
+      "date_display": "2021-06-04",
+      "url": "https://nau.edu.cn/_t505/2021/0604/c5729a79657/page.htm",
+      "canonical_url": "https://nau.edu.cn/_t505/2021/0604/c5729a79657/page.htm",
+      "summary": "正文明确余一品为2020届会计专业硕士毕业生，2021年考取上海财经大学博士。",
+      "population": "正文明确余一品为2020届会计专业硕士毕业生，2021年考取上海财经大学博士。",
+      "tips": [],
+      "comments": [],
+      "limits": "仅用来核对余一品身份和年代，不增加一篇导师评价或新增学生去向。其余学生只写会计硕士，不据此确定MPAcc。",
+      "topic": "导师与培养",
+      "use_status": "身份核对，非新增评价",
+      "reading_scopes": [
+        "实际阅读全文L47—61，核对署名、页面日期和余一品所在段；没有把全院就业单位套到单个学生或导师。"
       ],
       "official": true,
       "screened_only": false
