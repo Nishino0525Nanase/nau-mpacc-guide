@@ -6,30 +6,30 @@
       "mentors": 34,
       "detailedMentorCards": 17,
       "lifeChapters": 16,
-      "socialPosts": 150,
-      "officialEvidence": 274,
+      "socialPosts": 156,
+      "officialEvidence": 278,
       "feedbackRecords": 21,
       "screenedSources": 15,
       "unreadLeads": 6,
       "studentReviewRecords": 55,
       "mentorsWithStudentReviews": 24,
-      "studentOutcomes": 29
+      "studentOutcomes": 30
     },
     "socialPostCategories": {
+      "历史职业参考": 3,
+      "背景或待核实材料": 34,
+      "可用生活学习线索": 66,
+      "就业与校友资料": 2,
       "学习生活资料": 1,
       "实习申请资料": 6,
-      "可用生活学习线索": 64,
       "实务学习资料": 2,
       "校内合作资料": 1,
-      "历史职业参考": 1,
       "历史生活影像": 2,
-      "背景或待核实材料": 33,
       "排除主要攻略选导依据": 20,
       "有边界的导师课程反馈": 4,
       "仅筛选记录": 2,
       "历史学习经验": 7,
-      "校园人物访谈": 6,
-      "就业与校友资料": 1
+      "校园人物访谈": 6
     },
     "rosterSource": {
       "title": "十、会计（125300）专业学位硕士研究生导师",
@@ -863,6 +863,35 @@
         "FO20261114-XIE-KPMG"
       ],
       "scope": "具名就业、整体历史就业统计、导师未具名描述、学校雇主举例分别保留；不从共著、实习、offer或合作单位推导师就业人数。"
+    },
+    "contentRepair20261114b": {
+      "batch": "content-repair-20261114b",
+      "asOf": "2026-11-14",
+      "newPostIds": [
+        "6aaccdac000000002802c027",
+        "69cbaede000000001e00f0de",
+        "maud-firm-practice-155451",
+        "maud-audit-office-practice-153705",
+        "nowcoder-tianzhi-interview-381922610068684800",
+        "CR20261114B-LINYI-POST"
+      ],
+      "newSourceCodes": [
+        "PR20261114B01",
+        "PR20261114B02",
+        "PR20261114B03",
+        "CR20261114B-LINYI",
+        "CR20261114B-LINYI-MAUD",
+        "CR20261114B-MAUD-01",
+        "CR20261114B-FIRM-01"
+      ],
+      "socialPosts": 156,
+      "visiblePosts": 134,
+      "sourceRegistryEntries": 503,
+      "officialEvidence": 278,
+      "studentOutcomeTimepoints": 30,
+      "studentOutcomePeople": 29,
+      "newReviewRecordsAssignedToMPAccRoster": 0,
+      "scope": "MAud、学位未知的社交反馈、实习及毕业就业分别标明；不由简称、共著、offer或实习推导师就业人数。"
     }
   },
   "directions": [
@@ -21251,6 +21280,467 @@
   ],
   "socialPosts": [
     {
+      "id": "6aaccdac000000002802c027",
+      "key": "小红书:6aaccdac000000002802c027",
+      "sourceIds": [
+        "CR20261114B-FIRM-01"
+      ],
+      "url": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+      "title": "南审er2026多少毕业去前十会计师事务所了？",
+      "author": "无法试算平衡之物",
+      "date": "编辑于 09-18（年份未显示）",
+      "platform": "小红书",
+      "category": "历史职业参考",
+      "topic": "就业与实习",
+      "population": "公开校园就业榜的用户拍照转帖；表内跨学院及专业，学位层次未载，不能整帖标成本科或MPAcc。",
+      "summary": "13张事务所就业榜照片；会计学院有天健、德勤南京、容诚南京3条匿名“会计”线索，学位与导师未载。",
+      "tips": [
+        "会计学院｜王同学｜专业栏“会计”→天健会计师事务所（特殊普通合伙）；学位、导师均未载。",
+        "会计学院｜闫同学｜专业栏“会计”→德勤华永会计师事务所（特殊普通合伙）南京分所；学位、导师均未载。",
+        "会计学院｜黄同学｜专业栏“会计”→容诚会计师事务所（特殊普通合伙）南京分所；学位、导师均未载。",
+        "原表题为“入职十大会计师事务所名单”，含四大、立信、天健、容诚、天职国际、信永中和、中审众环；“前十”不等于本页八大口径。",
+        "照片有大量重叠，仅为部分单位就业榜；不能计算全校或MPAcc就业率。"
+      ],
+      "comments": [],
+      "limitations": "跨学院的用户拍照转帖，姓名以“某同学”匿名。表中没有学位、导师字段，不能把“会计”直接认定为MPAcc；未计入具名就业统计。",
+      "reviewReason": "部分单位的匿名就业照片，供核对原始信息。",
+      "verificationStatus": "原图可核对；学位与导师未载",
+      "readingScopes": [
+        "正文、13张原图及可见部分评论；不含作者另提到的其他照片。"
+      ],
+      "screenedOnly": false,
+      "needsVerification": true,
+      "screenshots": [
+        {
+          "src": "./evidence/content-repair-20261114b/firm-6aaccdac-13.webp",
+          "caption": "原帖图13/13：就业榜标题“入职十大会计师事务所名单”；左侧内部/社会审计学院，右侧会计学院表头和开头",
+          "sourceId": "CR20261114B-FIRM-01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 1440,
+          "height": 1080,
+          "bytes": 370182,
+          "sha256": "30ae27e83030bcaaa66127ea333c42d5a7a25e00e3e8dcb3136c3ca553abfa1d",
+          "scope": [
+            "原帖就业榜照片，图中不同学位未分列，多张存在重叠；不按照片行数累计人数。"
+          ],
+          "capturedAt": "2026-11-14"
+        },
+        {
+          "src": "./evidence/content-repair-20261114b/firm-6aaccdac-06.webp",
+          "caption": "原帖图6/13：会计学院表头及开头：会计、会计学；下接商学院",
+          "sourceId": "CR20261114B-FIRM-01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 1080,
+          "height": 1440,
+          "bytes": 451580,
+          "sha256": "b017d27b8b812ad36bf52cf568a9881f499f23aef68df52996f772a51bb35c9a",
+          "scope": [
+            "原帖就业榜照片，图中不同学位未分列，多张存在重叠；不按照片行数累计人数。"
+          ],
+          "capturedAt": "2026-11-14"
+        },
+        {
+          "src": "./evidence/content-repair-20261114b/firm-6aaccdac-01.webp",
+          "caption": "原帖图1/13：计算机、数学、文、外国语、国际学院；计算机审计、软件工程、金融数学、审计等",
+          "sourceId": "CR20261114B-FIRM-01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 1080,
+          "height": 1440,
+          "bytes": 539164,
+          "sha256": "b3d466bff7b5e8233ee58f9048d64d131063ca42f2eeacaae6f33884204363dd",
+          "scope": [
+            "原帖就业榜照片，图中不同学位未分列，多张存在重叠；不按照片行数累计人数。"
+          ],
+          "capturedAt": "2026-11-14"
+        },
+        {
+          "src": "./evidence/content-repair-20261114b/firm-6aaccdac-02.webp",
+          "caption": "原帖图2/13：金融、经济与金融研究院、法、统计与数据科学、计算机、数学、文、外国语、国际学院",
+          "sourceId": "CR20261114B-FIRM-01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 1080,
+          "height": 1440,
+          "bytes": 513250,
+          "sha256": "3a7e926f9c33fca5daeb6ec2b1beeb78711ef530f43a8ea7cddb6a360a085932",
+          "scope": [
+            "原帖就业榜照片，图中不同学位未分列，多张存在重叠；不按照片行数累计人数。"
+          ],
+          "capturedAt": "2026-11-14"
+        },
+        {
+          "src": "./evidence/content-repair-20261114b/firm-6aaccdac-03.webp",
+          "caption": "原帖图3/13：金融学院起，经法、统计，至计算机学院",
+          "sourceId": "CR20261114B-FIRM-01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 1080,
+          "height": 1440,
+          "bytes": 451248,
+          "sha256": "94e96b62d4d1f5b0f15baf456b9f3cfbc9d405aa7effd72cca5d47be2a5671b3",
+          "scope": [
+            "原帖就业榜照片，图中不同学位未分列，多张存在重叠；不按照片行数累计人数。"
+          ],
+          "capturedAt": "2026-11-14"
+        },
+        {
+          "src": "./evidence/content-repair-20261114b/firm-6aaccdac-04.webp",
+          "caption": "原帖图4/13：会计学尾段，经商、国家安全、经济学院，末尾金融学院",
+          "sourceId": "CR20261114B-FIRM-01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 1080,
+          "height": 1440,
+          "bytes": 524288,
+          "sha256": "ed5cec192d31abd8bd734ef6e0169e507bfa3b5d7549a3c17279b40962e6ac7a",
+          "scope": [
+            "原帖就业榜照片，图中不同学位未分列，多张存在重叠；不按照片行数累计人数。"
+          ],
+          "capturedAt": "2026-11-14"
+        },
+        {
+          "src": "./evidence/content-repair-20261114b/firm-6aaccdac-05.webp",
+          "caption": "原帖图5/13：会计学中后段，经商、国家安全，至经济学院",
+          "sourceId": "CR20261114B-FIRM-01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 1080,
+          "height": 1440,
+          "bytes": 473398,
+          "sha256": "33df67c0f56dd6bfd06b6065f3b7edc9108046b013e805fd4341356e649d97a5",
+          "scope": [
+            "原帖就业榜照片，图中不同学位未分列，多张存在重叠；不按照片行数累计人数。"
+          ],
+          "capturedAt": "2026-11-14"
+        },
+        {
+          "src": "./evidence/content-repair-20261114b/firm-6aaccdac-07.webp",
+          "caption": "原帖图7/13：社会审计学院审计学（ACCA/创新基地班）；中审学院；工程审计学院；会计学院财务管理、会计",
+          "sourceId": "CR20261114B-FIRM-01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 1080,
+          "height": 1440,
+          "bytes": 468960,
+          "sha256": "aa609c61114bdc2313f8e251a83f6fcc1ba10a5efcf99c456fc67a0fda8444c3",
+          "scope": [
+            "原帖就业榜照片，图中不同学位未分列，多张存在重叠；不按照片行数累计人数。"
+          ],
+          "capturedAt": "2026-11-14"
+        },
+        {
+          "src": "./evidence/content-repair-20261114b/firm-6aaccdac-08.webp",
+          "caption": "原帖图8/13：社会审计学院审计学及ACCA/创新基地班；中审学院；工程审计学院；会计学院财务管理",
+          "sourceId": "CR20261114B-FIRM-01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 1080,
+          "height": 1440,
+          "bytes": 459918,
+          "sha256": "ab5e050e5833c10de8e1c326758d6866c24202eddb6dff6268ba588aa8d75369",
+          "scope": [
+            "原帖就业榜照片，图中不同学位未分列，多张存在重叠；不按照片行数累计人数。"
+          ],
+          "capturedAt": "2026-11-14"
+        },
+        {
+          "src": "./evidence/content-repair-20261114b/firm-6aaccdac-09.webp",
+          "caption": "原帖图9/13：内部审计学院审计学（IAEP/内部审计方向）；社会审计学院；中审学院",
+          "sourceId": "CR20261114B-FIRM-01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 1080,
+          "height": 1440,
+          "bytes": 391492,
+          "sha256": "225564959fec496035966e4f9902d0dc6a18d9923bff61f63306201944fb1104",
+          "scope": [
+            "原帖就业榜照片，图中不同学位未分列，多张存在重叠；不按照片行数累计人数。"
+          ],
+          "capturedAt": "2026-11-14"
+        },
+        {
+          "src": "./evidence/content-repair-20261114b/firm-6aaccdac-10.webp",
+          "caption": "原帖图10/13：国家审计学院审计学及大数据/资源环境方向；内部审计学院审计及IAEP方向",
+          "sourceId": "CR20261114B-FIRM-01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 1080,
+          "height": 1440,
+          "bytes": 471252,
+          "sha256": "cbfe841df692ef11527ad697d4047f315949f24fcca5d59962627b82bba5763d",
+          "scope": [
+            "原帖就业榜照片，图中不同学位未分列，多张存在重叠；不按照片行数累计人数。"
+          ],
+          "capturedAt": "2026-11-14"
+        },
+        {
+          "src": "./evidence/content-repair-20261114b/firm-6aaccdac-11.webp",
+          "caption": "原帖图11/13：国家审计学院审计学；内部审计学院审计及IAEP方向",
+          "sourceId": "CR20261114B-FIRM-01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 1080,
+          "height": 1440,
+          "bytes": 453952,
+          "sha256": "4ff4ea2fe334121e063b4bb5d3f217fe744ab93363390f6948667ac5392f7113",
+          "scope": [
+            "原帖就业榜照片，图中不同学位未分列，多张存在重叠；不按照片行数累计人数。"
+          ],
+          "capturedAt": "2026-11-14"
+        },
+        {
+          "src": "./evidence/content-repair-20261114b/firm-6aaccdac-12.webp",
+          "caption": "原帖图12/13：国家审计学院表头及开头：审计、审计学；右侧为内部审计学院部分",
+          "sourceId": "CR20261114B-FIRM-01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+          "kind": "original-post-image",
+          "textAltered": false,
+          "width": 1080,
+          "height": 1440,
+          "bytes": 394094,
+          "sha256": "16735e3b58cfcfd5c33b0c3609fecd61c425e02aa4e935809c539da5d8eb0414",
+          "scope": [
+            "原帖就业榜照片，图中不同学位未分列，多张存在重叠；不按照片行数累计人数。"
+          ],
+          "capturedAt": "2026-11-14"
+        }
+      ],
+      "expansionBatch": "content-repair-20261114b"
+    },
+    {
+      "id": "69cbaede000000001e00f0de",
+      "key": "小红书:69cbaede000000001e00f0de",
+      "sourceIds": [
+        "CR20261114B-MAUD-01"
+      ],
+      "url": "https://www.xiaohongshu.com/explore/69cbaede000000001e00f0de",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/69cbaede000000001e00f0de",
+      "title": "南审审专导师",
+      "author": "..",
+      "date": "03-31（年份未显示）",
+      "platform": "小红书",
+      "category": "背景或待核实材料",
+      "topic": "导师与培养",
+      "population": "正文标签“审计专硕”，询问社会审计/内部审计导师；属于MAud范围，不是MPAcc评价。评论者与导师的实际师生关系未被独立认证。",
+      "summary": "MAud选导讨论：王昊被强烈推荐，另有庞艳红的指导强度评价、张华的正面反馈。",
+      "tips": [
+        "作者偏考证、实习，询问社会审计和内部审计的MAud导师。",
+        "以下是评论者的个人评价，实际师生关系与当前名额均未核实。"
+      ],
+      "comments": [
+        {
+          "author": "果粒ovo",
+          "date_display": "03-31（年份未显示）",
+          "text": "【强烈推荐｜MAud】王昊：“很尊重你的想法和选择”。同作者次日再次推荐，未写具体论文或实习事件。",
+          "relationship": "评论者与老师的接触关系未明",
+          "limits": "不外推到MPAcc培养；未核实当年招生名额。"
+        },
+        {
+          "author": "过敏",
+          "date_display": "05-28（年份未显示）",
+          "text": "庞艳红：“不怎么严，不怎么push”。回复“莜～”时明确谈庞老师；前文已限定博主询问的是内部与社会审计。",
+          "relationship": "评论者与老师的接触关系未明",
+          "limits": "不外推到MPAcc培养；未核实当年招生名额。"
+        },
+        {
+          "author": "Frau Lachen",
+          "date_display": "04-01（年份未显示）",
+          "text": "张华：“很负责”。评论明确称社会审计的张华老师不错。",
+          "relationship": "评论者与老师的接触关系未明",
+          "limits": "不外推到MPAcc培养；未核实当年招生名额。"
+        }
+      ],
+      "limitations": "属于审计专硕MAud，所提老师不在本站34名MPAcc名录中。个人评论未独立验证，不构成实习安排、论文要求或招生名额承诺。",
+      "reviewReason": "审计专硕选导的个人反馈。",
+      "verificationStatus": "原帖可核对；师生关系未明",
+      "readingScopes": [
+        "正文与部分展开回复；不保证涵盖全部评论。"
+      ],
+      "screenedOnly": false,
+      "needsVerification": true,
+      "screenshots": [
+        {
+          "src": "./evidence/content-repair-20261114b/maud-69cbaede-comments.jpg",
+          "caption": "MAud选导原帖：王昊、张华等评论及回复",
+          "sourceId": "CR20261114B-MAUD-01",
+          "sourceUrl": "https://www.xiaohongshu.com/explore/69cbaede000000001e00f0de",
+          "kind": "actual-browser-screenshot",
+          "textAltered": false,
+          "width": 400,
+          "height": 815,
+          "bytes": 57099,
+          "sha256": "98f83a55ab97a1b90a0cd6c55da5875008b02ab0f63ff9ab1fcdf80f0cb137c1",
+          "scope": [
+            "只展示画面内的评论和回复；不含庞艳红评价楼层，也不代表全部评论。"
+          ],
+          "capturedAt": "2026-11-14"
+        }
+      ],
+      "expansionBatch": "content-repair-20261114b"
+    },
+    {
+      "id": "maud-firm-practice-155451",
+      "key": "南京审计大学社会审计学院:maud-firm-practice-155451",
+      "sourceIds": [
+        "PR20261114B01"
+      ],
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/0330/c7575a155451/page.htm",
+      "url": "https://shsjxy.nau.edu.cn/2026/0330/c7575a155451/page.htm",
+      "title": "社会审计学院2024级审计专硕实习实践专访：事务所篇",
+      "author": "南京审计大学社会审计学院",
+      "date": "2026-03-19",
+      "discoveredAt": "2026-11-14",
+      "platform": "南京审计大学社会审计学院",
+      "topic": "就业与实习",
+      "campus": "上海及项目现场",
+      "population": "奚悦然、周扬、周吉，均为2024级社会审计专硕班",
+      "identity": "MAud",
+      "summary": "三位2024级MAud学生具体写了在中审众环、天健上海做年审、IPO和国网项目时承担的任务。",
+      "tips": [
+        "奚悦然在中审众环参与年审，整理证据、用审计软件编底稿，并写项目工作小结。",
+        "周扬在天健上海参与年审与IPO项目：抽凭核账、到仓库盘点，并跟进银行函证的填制、发出、催收和回函核对。",
+        "周吉在中审众环江苏参与宣城国网年报项目，核对设备采购合同、银行回单与凭证，并为底稿异常补齐合同或回函等材料。",
+        "周吉还具体提到总账与明细账的勾稽核对；比只写“做过年审”更能说明实习实际接触的程序。"
+      ],
+      "comments": [],
+      "limitations": "MAud实习个案，不是MPAcc统一安排；未载校内导师、是否留用、工作强度或薪酬，不计入毕业就业或四大八大去向统计。",
+      "category": "可用生活学习线索",
+      "reviewReason": "MAud的实际实习任务，供了解岗位内容。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [
+        "正文三名学生的班级、实习单位、任务及心得；不含留用结果。"
+      ],
+      "expansionBatch": "content-repair-20261114b",
+      "screenshots": []
+    },
+    {
+      "id": "maud-audit-office-practice-153705",
+      "key": "南京审计大学社会审计学院:maud-audit-office-practice-153705",
+      "sourceIds": [
+        "PR20261114B02"
+      ],
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/0210/c7575a153705/page.htm",
+      "url": "https://shsjxy.nau.edu.cn/2026/0210/c7575a153705/page.htm",
+      "title": "社会审计学院2024级审计专硕实习实践专访：审计局篇",
+      "author": "南京审计大学社会审计学院",
+      "date": "2026-01-24",
+      "discoveredAt": "2026-11-14",
+      "platform": "南京审计大学社会审计学院",
+      "topic": "就业与实习",
+      "campus": "徐州、南通、肥西",
+      "population": "李思璇、茆文萱、姜珊，均为2024级社会审计专硕班",
+      "identity": "MAud",
+      "summary": "三位2024级MAud学生分别介绍了审计局的数据核查、整改材料整理和经济责任审计取证工作。",
+      "tips": [
+        "李思璇在徐州市审计局参与设备更新、消费品以旧换新的政策审计调查，从销售平台取证，用Excel比对销售信息、查找疑点。",
+        "茆文萱在南通市审计局整理统计资料和历年整改材料，并参与整改会议，接触问题发现后的跟踪督办。",
+        "姜珊在肥西县审计局跟随项目到被审计单位核对财务和资金使用情况，协助写取证单、分类并核对项目档案。"
+      ],
+      "comments": [],
+      "limitations": "MAud个案，不是MPAcc实习分配或机关录用结果；不把实习单位当毕业去向。",
+      "category": "可用生活学习线索",
+      "reviewReason": "MAud的实际实习任务，供了解岗位内容。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [
+        "正文三名学生的审计局实践任务；不采用全班分类人数比例。"
+      ],
+      "expansionBatch": "content-repair-20261114b",
+      "screenshots": []
+    },
+    {
+      "id": "nowcoder-tianzhi-interview-381922610068684800",
+      "key": "牛客:nowcoder-tianzhi-interview-381922610068684800",
+      "sourceIds": [
+        "PR20261114B03"
+      ],
+      "canonicalUrl": "https://www.nowcoder.com/discuss/381922610068684800",
+      "url": "https://www.nowcoder.com/discuss/381922610068684800",
+      "title": "天职国际深圳分所面经",
+      "author": "小人物cool",
+      "date": "2022-07-27",
+      "discoveredAt": "2026-11-14",
+      "platform": "牛客",
+      "topic": "就业与实习",
+      "campus": "深圳；历史面试经历",
+      "population": "公开作者卡标注“南京审计大学 财务”；未说明本科/硕士及具体学位",
+      "identity": "未知",
+      "summary": "一位自填南审背景的求职者记录了2022年天职深圳的群面、3对1面试及对年审实习的追问。",
+      "tips": [
+        "作者经历的一面为反诈主题无领导讨论；二面为3名面试官对1名候选人，追问完整年审实习做了什么、加班情况。",
+        "作者提到喜欢事务所一体化管理后，面试官继续追问其理解，说明写进回答的理由需要能展开。",
+        "其他问题涉及领导任务有误如何处理、制度不合理怎么办，以及选择审计的原因与职业计划。",
+        "作者自述面试后两天内收到offer；帖子中的调岗、转所说法未经现行制度验证，仅保留为当年个人叙述。"
+      ],
+      "comments": [],
+      "limitations": "2022年历史自述；学校为作者自填，学位未知，不标MPAcc。匿名offer不可作为实名就业去向或导师学生结果；当年的面试题、转岗说法不能当2026/2027招聘规定。",
+      "category": "历史职业参考",
+      "reviewReason": "历史面试准备参考，非当前招聘规定。",
+      "verificationStatus": "原文可核对",
+      "needsVerification": true,
+      "screenedOnly": false,
+      "promotion": null,
+      "readingScopes": [
+        "正文及3条可见评论；学校为作者自填，未公开学位及实名。"
+      ],
+      "expansionBatch": "content-repair-20261114b",
+      "screenshots": []
+    },
+    {
+      "id": "CR20261114B-LINYI-POST",
+      "key": "official:CR20261114B-LINYI-POST",
+      "sourceIds": [
+        "CR20261114B-LINYI",
+        "CR20261114B-LINYI-MAUD"
+      ],
+      "url": "https://nau.edu.cn/_t505/2025/0820/c11308a146848/page.htm",
+      "canonicalUrl": "https://nau.edu.cn/_t505/2025/0820/c11308a146848/page.htm",
+      "title": "华为、腾讯、中国航发…南审的他们毕业去这里了",
+      "author": "南京审计大学新闻网",
+      "date": "2025-08-20",
+      "platform": "南京审计大学新闻网",
+      "category": "就业与校友资料",
+      "topic": "就业与实习",
+      "population": "2025届本科与硕士的混合校友报道；本文选取林仪的内部审计专硕记录",
+      "campus": "就业地区四川；校区未说明",
+      "summary": "林仪为2022级内部审计方向专硕，2025毕业去向是中国航发四川燃气涡轮研究院。",
+      "tips": [
+        "报道为2025毕业季去向，未写具体岗位或入职日期。",
+        "林仪的学位导师未公开；其他人物的本科去向不并入MPAcc统计。"
+      ],
+      "comments": [],
+      "limitations": "文章给的是当年毕业去向，没有公开导师、岗位、签约或入职日期；不能据此声称2026年仍在职。",
+      "reviewReason": "官方具名硕士毕业去向。",
+      "verificationStatus": "原文可核对；导师未公开",
+      "readingScopes": [
+        "毕业季口径及林仪的姓名、专业班级、就业去向段；专业类型另核研究生班级名单。"
+      ],
+      "screenedOnly": false,
+      "needsVerification": false,
+      "expansionBatch": "content-repair-20261114b"
+    },
+    {
       "id": "nau-accounting-student-feedback-157425",
       "key": "南京审计大学会计学院:nau-accounting-student-feedback-157425",
       "sourceIds": [
@@ -39563,6 +40053,120 @@
           "capturedAt": "2026-11-14"
         }
       ]
+    },
+    "PR20261114B01": {
+      "code": "PR20261114B01",
+      "title": "社会审计学院2024级审计专硕实习实践专访：事务所篇",
+      "label": "社会审计学院2024级审计专硕实习实践专访：事务所篇",
+      "url": "https://shsjxy.nau.edu.cn/2026/0330/c7575a155451/page.htm",
+      "originalUrl": "https://shsjxy.nau.edu.cn/2026/0330/c7575a155451/page.htm",
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/0330/c7575a155451/page.htm",
+      "date": "2026-03-19",
+      "discoveredAt": "2026-11-14",
+      "checkedAt": "2026-11-14",
+      "platform": "官方原始发布",
+      "kind": "官方发布的具名学生实习专访",
+      "population": "奚悦然、周扬、周吉，均为2024级社会审计专硕班",
+      "summary": "三位2024级MAud学生具体写了在中审众环、天健上海做年审、IPO和国网项目时承担的任务。",
+      "readingScope": "实际读取完整正文：开头培养规模、三名学生姓名/班级/单位、实习任务和心得；页面显示署期2026-03-19。未把URL中的0330当发布日期。",
+      "limitations": "MAud实习个案，不是MPAcc统一安排；未载校内导师、是否留用、工作强度或薪酬，不计入毕业就业或四大八大去向统计。学院导言称23人进入18家事务所，仅是该班该次实习，不能外推全校或未来名额。",
+      "expansionBatch": "content-repair-20261114b"
+    },
+    "PR20261114B02": {
+      "code": "PR20261114B02",
+      "title": "社会审计学院2024级审计专硕实习实践专访：审计局篇",
+      "label": "社会审计学院2024级审计专硕实习实践专访：审计局篇",
+      "url": "https://shsjxy.nau.edu.cn/2026/0210/c7575a153705/page.htm",
+      "originalUrl": "https://shsjxy.nau.edu.cn/2026/0210/c7575a153705/page.htm",
+      "canonicalUrl": "https://shsjxy.nau.edu.cn/2026/0210/c7575a153705/page.htm",
+      "date": "2026-01-24",
+      "discoveredAt": "2026-11-14",
+      "checkedAt": "2026-11-14",
+      "platform": "官方原始发布",
+      "kind": "官方发布的具名学生实习专访",
+      "population": "李思璇、茆文萱、姜珊，均为2024级社会审计专硕班",
+      "summary": "三位2024级MAud学生分别介绍了审计局的数据核查、整改材料整理和经济责任审计取证工作。",
+      "readingScope": "实际读取完整正文：三名学生班级、实习局、任务与自述；页面显示2026-01-24。URL中的0210为路径日期，不采为发布日期。",
+      "limitations": "MAud个案，不是MPAcc实习分配或机关录用结果；不把实习单位当毕业去向。导言36名学生的分类数字23+7+5只合计35，存在未解释差额，建议网站只采用三名具名任务、不转写全班比例。",
+      "expansionBatch": "content-repair-20261114b"
+    },
+    "PR20261114B03": {
+      "code": "PR20261114B03",
+      "title": "天职国际深圳分所面经",
+      "label": "天职国际深圳分所面经",
+      "url": "https://www.nowcoder.com/discuss/381922610068684800",
+      "originalUrl": "https://www.nowcoder.com/discuss/381922610068684800",
+      "canonicalUrl": "https://www.nowcoder.com/discuss/381922610068684800",
+      "date": "2022-07-27",
+      "discoveredAt": "2026-11-14",
+      "checkedAt": "2026-11-14",
+      "platform": "牛客",
+      "kind": "第一人称历史面经",
+      "population": "公开作者卡标注“南京审计大学 财务”；未说明本科/硕士及具体学位",
+      "summary": "一位自填南审背景的求职者记录了2022年天职深圳的群面、3对1面试及对年审实习的追问。",
+      "readingScope": "完整正文及页面可见3条评论已读取；另用公开网页可访问界面核实作者卡为“小人物cool”、2022-07-27 21:44、南京审计大学/财务。正文自述完整年审经历及面试后收到offer；没有实名、学历或导师信息。",
+      "limitations": "2022年历史自述；学校为作者自填，学位未知，不标MPAcc。匿名offer不可作为实名就业去向或导师学生结果；当年的面试题、转岗说法不能当2026/2027招聘规定。",
+      "expansionBatch": "content-repair-20261114b"
+    },
+    "CR20261114B-LINYI": {
+      "code": "CR20261114B-LINYI",
+      "kind": "official",
+      "title": "华为、腾讯、中国航发…南审的他们毕业去这里了",
+      "url": "https://nau.edu.cn/_t505/2025/0820/c11308a146848/page.htm",
+      "canonicalUrl": "https://nau.edu.cn/_t505/2025/0820/c11308a146848/page.htm",
+      "originalUrl": "https://nau.edu.cn/_t505/2025/0820/c11308a146848/page.htm",
+      "platform": "南京审计大学新闻网",
+      "date": "2025-08-20",
+      "population": "2025毕业季具名学生；其中林仪为2022级内部审计方向专硕",
+      "summary": "林仪的2025毕业就业去向是中国航发四川燃气涡轮研究院。",
+      "readingScope": "实际读取全文及更新时间；核对开头2025毕业季口径和林仪姓名、专业班级、就业去向段。另核同页四大人物的专业身份，未混入硕士四大计数。",
+      "limits": "文章给的是当年毕业去向，没有公开导师、岗位、签约或入职日期；不能据此声称2026年仍在职。"
+    },
+    "CR20261114B-LINYI-MAUD": {
+      "code": "CR20261114B-LINYI-MAUD",
+      "kind": "official",
+      "title": "南京审计大学研究生院第十八期青共校学院名单",
+      "url": "https://gs.nau.edu.cn/_upload/article/files/5a/c2/c3f6b258430591994dccc74526ca/3290c8fe-cf29-4a0d-957a-05feda6597f8.pdf",
+      "canonicalUrl": "https://gs.nau.edu.cn/_upload/article/files/5a/c2/c3f6b258430591994dccc74526ca/3290c8fe-cf29-4a0d-957a-05feda6597f8.pdf",
+      "originalUrl": "https://gs.nau.edu.cn/_upload/article/files/5a/c2/c3f6b258430591994dccc74526ca/3290c8fe-cf29-4a0d-957a-05feda6597f8.pdf",
+      "platform": "南京审计大学研究生院",
+      "date": null,
+      "population": "在校研究生专业班级名单",
+      "summary": "名单第47项明确林仪为2022级审计专硕4班，用于交叉核实MAud类型。",
+      "readingScope": "实际读取PDF提取全文；仅采用林仪姓名与专业班级，不展示学号或其他个人信息。",
+      "limits": "仅用于专业身份核实；不提供就业或导师证据。"
+    },
+    "CR20261114B-MAUD-01": {
+      "code": "CR20261114B-MAUD-01",
+      "title": "南审审专导师",
+      "label": "南审审专导师",
+      "url": "https://www.xiaohongshu.com/explore/69cbaede000000001e00f0de",
+      "originalUrl": "https://www.xiaohongshu.com/explore/69cbaede000000001e00f0de",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/69cbaede000000001e00f0de",
+      "date": "03-31（年份未显示）",
+      "platform": "小红书",
+      "kind": "社交原帖",
+      "postId": "69cbaede000000001e00f0de",
+      "population": "正文标签“审计专硕”，询问社会审计/内部审计导师；属于MAud范围，不是MPAcc评价。评论者与导师的实际师生关系未被独立认证。",
+      "summary": "MAud选导讨论：王昊被强烈推荐，另有庞艳红的指导强度评价、张华的正面反馈。",
+      "readingScope": "已读正文、可见首层评论，展开庞艳红线程至具体评价；王昊线程读到07-14/09-11回复。不称全量34条均已读。",
+      "limits": "属于审计专硕MAud，所提老师不在本站34名MPAcc名录中。个人评论未独立验证，不构成实习安排、论文要求或招生名额承诺。"
+    },
+    "CR20261114B-FIRM-01": {
+      "code": "CR20261114B-FIRM-01",
+      "title": "南审er2026多少毕业去前十会计师事务所了？",
+      "label": "南审er2026多少毕业去前十会计师事务所了？",
+      "url": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+      "originalUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6aaccdac000000002802c027",
+      "date": "编辑于 09-18（年份未显示）",
+      "platform": "小红书",
+      "kind": "社交原帖",
+      "postId": "6aaccdac000000002802c027",
+      "population": "公开校园就业榜的用户拍照转帖；表内跨学院及专业，学位层次未载，不能整帖标成本科或MPAcc。",
+      "summary": "13张事务所就业榜照片；会计学院有天健、德勤南京、容诚南京3条匿名“会计”线索，学位与导师未载。",
+      "readingScope": "正文、首层可见评论与作者回复；13张原图已下载并逐图核对字段及重叠。未称59条评论全量读完。",
+      "limits": "跨学院的用户拍照转帖，姓名以“某同学”匿名。表中没有学位、导师字段，不能把“会计”直接认定为MPAcc；未计入具名就业统计。"
     }
   },
   "targetProfiles": [
@@ -39764,12 +40368,12 @@
     {
       "id": "mentor-guide",
       "title": "导师选择参考",
-      "url": "./downloads/mentor-guide.docx?v=561a5c587e1b",
+      "url": "./downloads/mentor-guide.docx?v=153dc7b80de9",
       "format": "docx",
       "description": "34位导师，含学生评价、缩写对照与公开学生去向，保留来源链接",
       "filename": "mentor-guide.docx",
-      "bytes": 76744,
-      "sha256": "561a5c587e1b21a47b690a7c96ae47964785d712c479fa4a5f3cf2443cf9df75"
+      "bytes": 77136,
+      "sha256": "153dc7b80de99e7d02771b90226b431d726ec1461af217e8d7a94387b2042faf"
     },
     {
       "id": "life-guide",
@@ -39784,12 +40388,12 @@
     {
       "id": "evidence-index",
       "title": "原帖与官方证据索引",
-      "url": "./downloads/evidence-index.xlsx?v=9792c2c672f8",
+      "url": "./downloads/evidence-index.xlsx?v=250f83e7bd21",
       "format": "xlsx",
       "description": "来源、导师评价、缩写、学生去向和实习索引，可筛选并点击原始链接",
       "filename": "evidence-index.xlsx",
-      "bytes": 559145,
-      "sha256": "9792c2c672f8f117bb29481c405c41a24bd197ea7a6e3055886139b76be07e7f"
+      "bytes": 567278,
+      "sha256": "250f83e7bd21b20342ed4f34ad07a94b11aceb9dae33831f330e6930ef715e33"
     }
   ],
   "officialEvidence": [
@@ -47646,6 +48250,102 @@
       "use_status": "有范围的官方资料",
       "reading_scopes": [
         "浏览器实际读取正文、发布日期和院校名称；网页提取工具仅抽出导航，未将导航当全文。南审2021年报表5与2022年报表6另核MPAcc身份。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-repair-20261114b:PR20261114B01",
+      "ids": [
+        "PR20261114B01"
+      ],
+      "title": "社会审计学院2024级审计专硕实习实践专访：事务所篇",
+      "date_display": "2026-03-19",
+      "url": "https://shsjxy.nau.edu.cn/2026/0330/c7575a155451/page.htm",
+      "canonical_url": "https://shsjxy.nau.edu.cn/2026/0330/c7575a155451/page.htm",
+      "summary": "三位2024级MAud学生具体写了在中审众环、天健上海做年审、IPO和国网项目时承担的任务。",
+      "population": "奚悦然、周扬、周吉，均为2024级社会审计专硕班",
+      "tips": [
+        "三位2024级MAud学生具体写了在中审众环、天健上海做年审、IPO和国网项目时承担的任务。"
+      ],
+      "comments": [],
+      "limits": "MAud实习个案，不是MPAcc统一安排；未载校内导师、是否留用、工作强度或薪酬，不计入毕业就业或四大八大去向统计。学院导言称23人进入18家事务所，仅是该班该次实习，不能外推全校或未来名额。",
+      "topic": "研究生实习与公开去向",
+      "use_status": "有范围的官方资料",
+      "reading_scopes": [
+        "实际读取完整正文：开头培养规模、三名学生姓名/班级/单位、实习任务和心得；页面显示署期2026-03-19。未把URL中的0330当发布日期。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-repair-20261114b:PR20261114B02",
+      "ids": [
+        "PR20261114B02"
+      ],
+      "title": "社会审计学院2024级审计专硕实习实践专访：审计局篇",
+      "date_display": "2026-01-24",
+      "url": "https://shsjxy.nau.edu.cn/2026/0210/c7575a153705/page.htm",
+      "canonical_url": "https://shsjxy.nau.edu.cn/2026/0210/c7575a153705/page.htm",
+      "summary": "三位2024级MAud学生分别介绍了审计局的数据核查、整改材料整理和经济责任审计取证工作。",
+      "population": "李思璇、茆文萱、姜珊，均为2024级社会审计专硕班",
+      "tips": [
+        "三位2024级MAud学生分别介绍了审计局的数据核查、整改材料整理和经济责任审计取证工作。"
+      ],
+      "comments": [],
+      "limits": "MAud个案，不是MPAcc实习分配或机关录用结果；不把实习单位当毕业去向。导言36名学生的分类数字23+7+5只合计35，存在未解释差额，建议网站只采用三名具名任务、不转写全班比例。",
+      "topic": "研究生实习与公开去向",
+      "use_status": "有范围的官方资料",
+      "reading_scopes": [
+        "实际读取完整正文：三名学生班级、实习局、任务与自述；页面显示2026-01-24。URL中的0210为路径日期，不采为发布日期。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-repair-20261114b:CR20261114B-LINYI",
+      "ids": [
+        "CR20261114B-LINYI"
+      ],
+      "title": "华为、腾讯、中国航发…南审的他们毕业去这里了",
+      "date_display": "2025-08-20",
+      "url": "https://nau.edu.cn/_t505/2025/0820/c11308a146848/page.htm",
+      "canonical_url": "https://nau.edu.cn/_t505/2025/0820/c11308a146848/page.htm",
+      "summary": "林仪的2025毕业就业去向是中国航发四川燃气涡轮研究院。",
+      "population": "2025毕业季具名学生；其中林仪为2022级内部审计方向专硕",
+      "tips": [
+        "林仪的2025毕业就业去向是中国航发四川燃气涡轮研究院。"
+      ],
+      "comments": [],
+      "limits": "文章给的是当年毕业去向，没有公开导师、岗位、签约或入职日期；不能据此声称2026年仍在职。",
+      "topic": "研究生实习与公开去向",
+      "use_status": "有范围的官方资料",
+      "reading_scopes": [
+        "实际读取全文及更新时间；核对开头2025毕业季口径和林仪姓名、专业班级、就业去向段。另核同页四大人物的专业身份，未混入硕士四大计数。"
+      ],
+      "official": true,
+      "screened_only": false
+    },
+    {
+      "key": "official:content-repair-20261114b:CR20261114B-LINYI-MAUD",
+      "ids": [
+        "CR20261114B-LINYI-MAUD"
+      ],
+      "title": "南京审计大学研究生院第十八期青共校学院名单",
+      "date_display": "未显示",
+      "url": "https://gs.nau.edu.cn/_upload/article/files/5a/c2/c3f6b258430591994dccc74526ca/3290c8fe-cf29-4a0d-957a-05feda6597f8.pdf",
+      "canonical_url": "https://gs.nau.edu.cn/_upload/article/files/5a/c2/c3f6b258430591994dccc74526ca/3290c8fe-cf29-4a0d-957a-05feda6597f8.pdf",
+      "summary": "名单第47项明确林仪为2022级审计专硕4班，用于交叉核实MAud类型。",
+      "population": "在校研究生专业班级名单",
+      "tips": [
+        "名单第47项明确林仪为2022级审计专硕4班，用于交叉核实MAud类型。"
+      ],
+      "comments": [],
+      "limits": "仅用于专业身份核实；不提供就业或导师证据。",
+      "topic": "研究生实习与公开去向",
+      "use_status": "有范围的官方资料",
+      "reading_scopes": [
+        "实际读取PDF提取全文；仅采用林仪姓名与专业班级，不展示学号或其他个人信息。"
       ],
       "official": true,
       "screened_only": false
@@ -60428,6 +61128,43 @@
           "南审2021年报表5及2022年报表6用同一SJCX21_0860实践创新项目确认其MPAcc身份；项目年份不当毕业年份。",
           "两份年报项目表均无指导教师列；与许汉友共著的论文不构成导师关系证明。",
           "仅确认2023年报道时任职，不据此断言2026年当前任职或首次就业单位。"
+        ]
+      },
+      {
+        "id": "CR20261114B-LINYI-AECC",
+        "personId": "person-lin-yi-nau-maud",
+        "studentName": "林仪",
+        "degree": "MAud",
+        "degreeLabel": "审计专硕；2022级内部审计方向",
+        "cohort": "2022级",
+        "graduationYear": 2025,
+        "mentorId": null,
+        "mentorName": null,
+        "relationship": null,
+        "relationshipStatus": "not_public",
+        "outcome": {
+          "type": "employment",
+          "organization": "中国航发四川燃气涡轮研究院",
+          "program": null,
+          "year": 2025,
+          "statusLabel": "2025毕业季官方公布的就业去向；具体入职日期及当前状态未公开",
+          "stage": "reported_destination",
+          "asOf": "2025-08-20",
+          "firmGroup": null,
+          "firmName": null,
+          "sourceIds": [
+            "CR20261114B-LINYI"
+          ]
+        },
+        "sourceIds": [
+          "CR20261114B-LINYI",
+          "CR20261114B-LINYI-MAUD"
+        ],
+        "limits": [
+          "毕业年份采用文章明确的2025毕业季口径，不由2022入学年份自行推算。",
+          "就业岗位、签约日、报到日未公开。",
+          "杨静主页列有与林仪共著的论文，但没有明示其学位导师，不能认定指导关系。",
+          "竞赛名单中的公彦德、徐礼伯是竞赛指导教师，不能认定为学位导师。"
         ]
       }
     ],

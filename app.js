@@ -25,7 +25,7 @@
   const validUrl = value => { try { const url = new URL(value, window.location.href); return ['http:', 'https:', 'mailto:', 'tel:'].includes(url.protocol) ? url.href : ''; } catch { return ''; } };
   const external = (url, label, className = '') => { const safe = validUrl(url); return safe ? `<a href="${esc(safe)}" target="_blank" rel="noopener noreferrer"${className ? ` class="${className}"` : ''}>${label}</a>` : label; };
   const source = code => state.data.sourceRegistry?.[code];
-  const screenshotPath = value => typeof value === 'string' && /^\.\/evidence\/(?:xhs|refresh-20261110|firm-outcomes-20261114)\/[A-Za-z0-9][A-Za-z0-9_-]{0,160}\.(?:png|jpe?g|webp)$/i.test(value) ? value : '';
+  const screenshotPath = value => typeof value === 'string' && /^\.\/evidence\/(?:xhs|refresh-20261110|firm-outcomes-20261114|content-repair-20261114b)\/[A-Za-z0-9][A-Za-z0-9_-]{0,160}\.(?:png|jpe?g|webp)$/i.test(value) ? value : '';
   const screenshotSource = value => {
     if (typeof value !== 'string' || !/^https?:\/\//i.test(value)) return '';
     try { const url = new URL(value); return ['http:', 'https:'].includes(url.protocol) && !url.username && !url.password ? url.href : ''; } catch { return ''; }
@@ -45,15 +45,18 @@
     return screenshotItems([...array(post.screenshots), ...codes.flatMap(code => array(source(code)?.screenshots))], post.url || post.canonicalUrl);
   }
 
-  function screenshotsHtml(items, defaultSourceUrl = '') {
+  function screenshotsHtml(items, defaultSourceUrl = '', viewerPostId = '') {
     const shots = screenshotItems(items, defaultSourceUrl);
     if (!shots.length) return '';
     const dimension = (value, fallback) => Number.isInteger(value) && value >= 1 && value <= 16000 ? value : fallback;
-    return `<section class="evidence-screenshots" aria-label="来源页面与评论截图"><div class="evidence-screenshots-heading"><h4>来源页面与评论截图</h4><span>${shots.length} 张 · 点图查看原图</span></div><div class="evidence-screenshots-grid">${shots.map((item, index) => {
+    const figures = shots.map((item, index) => {
       const caption = textOf(item.caption || `截图 ${index + 1}`);
       const scope = array(item.scope).map(textOf).filter(Boolean).join('；') || '仅保留画面中可见的内容，未展示部分仍需打开原帖核对。';
-      return `<figure class="evidence-shot"><div class="evidence-shot-media"><a class="evidence-shot-open" href="${esc(item.src)}" target="_blank" rel="noopener noreferrer" aria-label="${esc('查看截图原图：' + caption)}"><img class="evidence-shot-thumb" src="${esc(item.src)}" alt="${esc(item.alt || caption)}" width="${dimension(item.width, 1200)}" height="${dimension(item.height, 900)}" loading="lazy" decoding="async" data-evidence-shot></a><span class="evidence-shot-fallback" hidden>截图暂时无法载入，请打开下方原帖核对。</span></div><figcaption><strong>${esc(caption)}</strong><p><span>截图范围：</span>${esc(scope)}</p><div class="evidence-shot-links"><a href="${esc(item.src)}" target="_blank" rel="noopener noreferrer">查看原图 ↗</a>${item.sourceUrl ? external(item.sourceUrl, '打开原帖 ↗') : ''}</div></figcaption></figure>`;
-    }).join('')}</div></section>`;
+      const viewerAction = viewerPostId ? ` data-action="post-image" data-id="${esc(viewerPostId)}" data-src="${esc(item.src)}"` : '';
+      return `<figure class="evidence-shot"><div class="evidence-shot-media"><a class="evidence-shot-open" href="${esc(item.src)}" target="_blank" rel="noopener noreferrer"${viewerAction} aria-label="${esc('查看截图原图：' + caption)}"><img class="evidence-shot-thumb" src="${esc(item.src)}" alt="${esc(item.alt || caption)}" width="${dimension(item.width, 1200)}" height="${dimension(item.height, 900)}" loading="lazy" decoding="async" data-evidence-shot></a><span class="evidence-shot-fallback" hidden>截图暂时无法载入，请打开下方原帖核对。</span></div><figcaption><strong>${esc(caption)}</strong><p><span>截图范围：</span>${esc(scope)}</p><div class="evidence-shot-links"><a href="${esc(item.src)}" target="_blank" rel="noopener noreferrer"${viewerAction}>查看原图 ↗</a>${item.sourceUrl ? external(item.sourceUrl, '打开原帖 ↗') : ''}</div></figcaption></figure>`;
+    });
+    const grid = values => `<div class="evidence-screenshots-grid">${values.join('')}</div>`;
+    return `<section class="evidence-screenshots" aria-label="来源页面与评论截图"><div class="evidence-screenshots-heading"><h4>来源图片与评论截图</h4><span>${shots.length} 张 · 点图查看${viewerPostId ? '并切换原图' : '原图'}</span></div>${shots.length > 4 ? grid(figures.slice(0,2)) + `<details class="evidence-more-images"><summary>其余 ${shots.length-2} 张原图</summary>${grid(figures.slice(2))}</details>` : grid(figures)}</section>`;
   }
 
   document.addEventListener('error', event => {
@@ -1056,8 +1059,13 @@
   }
 
   function socialCodes(post) {
-    const short = state.postCodes[post.id] || array(post.sourceIds).filter(s => /^[A-Z]\d{2,3}$/.test(s));
-    return short.length ? short.join(' / ') : post.id.slice(-7).toUpperCase();
+    const codes = state.postCodes[post.id] || array(post.sourceIds);
+    const labels = codes.filter(code => code !== post.id);
+    return (labels.length ? labels : codes).join(' / ') || post.id;
+  }
+
+  function postTopics(post) {
+    return [...new Set(array(post.topic).flatMap(value => textOf(value).split(/\r?\n/)).map(value => value.trim()).filter(Boolean))];
   }
 
   function publicPosts() {
@@ -1081,17 +1089,18 @@
       const parts = postCommentParts(comment);
       return [parts.author, parts.date, parts.body, ...parts.identity, ...parts.limits];
     });
-    return normalize([post.title,post.author,post.summary,post.platform,post.topic,post.category,post.population,post.campus,post.date,post.verificationStatus,post.promotion,post.reviewReason,post.limitations,...array(post.tips).map(textOf),...array(post.readingScopes).map(textOf),...(state.postCodes[post.id] || []),...comments].join(' '));
+    return normalize([post.id,...array(post.sourceIds),post.title,post.author,post.summary,post.platform,...postTopics(post),post.category,post.population,post.campus,post.date,post.verificationStatus,post.promotion,post.reviewReason,post.limitations,...array(post.tips).map(textOf),...array(post.readingScopes).map(textOf),...(state.postCodes[post.id] || []),...comments].join(' '));
   }
 
   function filteredPosts() {
     const q = normalize(state.postQuery);
-    return publicPosts().filter(p => (!state.postTopic || p.topic === state.postTopic) && (!state.postCategory || p.category === state.postCategory) && (!q || (/^[a-z]\d{2,3}$/.test(q) ? (state.postCodes[p.id] || []).some(code=>normalize(code)===q) : postSearchText(p).includes(q))));
+    const sourceQuery = q && Object.keys(state.data.sourceRegistry || {}).some(code => normalize(code) === q);
+    return publicPosts().filter(p => (!state.postTopic || postTopics(p).includes(state.postTopic)) && (!state.postCategory || p.category === state.postCategory) && (!q || (sourceQuery ? (state.postCodes[p.id] || []).some(code=>normalize(code)===q) : postSearchText(p).includes(q))));
   }
 
   function postCard(p) {
     const shots = postScreenshots(p);
-    return `<article class="post-card"><div class="post-topline"><span class="post-platform">${esc(p.platform)} / ${esc(p.topic)}</span><span class="post-codes">${esc(socialCodes(p))}</span></div><h3 class="post-title">${esc(p.title)}</h3><div class="post-byline">${esc(p.author || '作者未记录')} · ${esc(p.date || '日期未显示')}</div><p class="post-summary">${esc(p.summary || '查看原始来源了解具体内容，并结合作者身份与年份使用。')}</p><div class="tags"><span class="tag${p.category.includes('排除') || p.screenedOnly ? ' secondary' : ' warm'}">${esc(p.category)}</span></div><div class="post-population">接触身份：${esc(p.population || '未说明')}${p.campus && p.campus !== '未说明' ? ` · ${esc(p.campus)}` : ''}</div>${shots.length ? `<p class="post-shot-count">附 ${shots.length} 张原帖／评论截图</p>` : ''}<div class="post-actions"><button type="button" data-action="post" data-id="${esc(p.id)}">${shots.length ? '展开截图与摘记' : '查看内容与来源'} <span aria-hidden="true">↗</span><span class="sr-only">：${esc(p.title)}</span></button>${external(p.url || p.canonicalUrl, '打开原帖 ↗')}</div></article>`;
+    return `<article class="post-card"><div class="post-topline"><span class="post-platform">${esc(p.platform)} / ${esc(postTopics(p).join(' · '))}</span><span class="post-codes">${esc(socialCodes(p))}</span></div><h3 class="post-title">${esc(p.title)}</h3><div class="post-byline">${esc(p.author || '作者未记录')} · ${esc(p.date || '日期未显示')}</div><p class="post-summary">${esc(p.summary || '查看原始来源了解具体内容，并结合作者身份与年份使用。')}</p><div class="tags"><span class="tag${p.category.includes('排除') || p.screenedOnly ? ' secondary' : ' warm'}">${esc(p.category)}</span></div><div class="post-population">接触身份：${esc(p.population || '未说明')}${p.campus && p.campus !== '未说明' ? ` · ${esc(p.campus)}` : ''}</div>${shots.length ? `<p class="post-shot-count">附 ${shots.length} 张原帖／评论截图</p>` : ''}<div class="post-actions"><button type="button" data-action="post" data-id="${esc(p.id)}">${shots.length ? '展开截图与摘记' : '查看内容与来源'} <span aria-hidden="true">↗</span><span class="sr-only">：${esc(p.title)}</span></button>${external(p.url || p.canonicalUrl, '打开原帖 ↗')}</div></article>`;
   }
 
   function renderPostResults() {
@@ -1102,7 +1111,7 @@
   }
 
   function renderPosts() {
-    const topics = [...new Set(publicPosts().map(p => p.topic).filter(Boolean))];
+    const topics = [...new Set(publicPosts().flatMap(postTopics))];
     const cats = [...new Set(publicPosts().map(p => p.category).filter(Boolean))];
     app.innerHTML = heading('03 / SOURCE NOTEBOOK', '建议的背后，是这些原始来源', '按主题查找校园生活、课程体验和选导参考。每条资料保留作者、日期与原始链接。', `<strong>${publicPosts().length}</strong> 条来源`) + `<div class="notice">${esc(state.data.meta.platformNote)} 社交平台原页可能需要登录，请结合来源日期和适用范围使用。</div><div class="posts-toolbar">${searchField('post-search','搜索标题、作者、来源编号或经历关键词',state.postQuery)}<div class="select-field"><label for="post-topic">内容主题</label><select id="post-topic"><option value="">全部主题</option>${topics.map(t => `<option${state.postTopic===t?' selected':''}>${esc(t)}</option>`).join('')}</select></div><div class="select-field"><label for="post-category">采用类别</label><select id="post-category"><option value="">全部类别</option>${cats.map(c => `<option${state.postCategory===c?' selected':''}>${esc(c)}</option>`).join('')}</select></div></div><div class="results-bar"><span id="post-result-count" role="status" aria-live="polite"></span><button type="button" class="text-button" data-action="reset-posts">清除筛选</button></div><div class="posts-grid" id="post-results"></div><div id="post-load-more"></div>`;
     renderPostResults();
@@ -1124,7 +1133,7 @@
       if (shownScreenshots.has(item.src)) return false;
       shownScreenshots.add(item.src);
       return true;
-    }), p.url || p.canonicalUrl);
+    }), p.url || p.canonicalUrl, p.id);
     openDialog('原帖摘记 / ' + socialCodes(p), `${returnMentor ? `<div class="review-post-return"><button type="button" class="text-button" data-action="mentor" data-id="${esc(returnMentor.id)}">← 返回${esc(returnMentor.name)}导师资料</button></div>` : ''}<div class="dialog-heading"><div><h2 id="dialog-title">${esc(p.title)}</h2><div class="dialog-subtitle">${esc(p.platform)} · ${esc(p.author || '作者未记录')} · ${esc(p.date || '日期未显示')}</div></div></div><div class="tags"><span class="tag warm">${esc(p.category)}</span><span class="tag secondary">${esc(p.topic)}</span></div><dl class="profile-fields"><div class="profile-row"><dt>接触身份</dt><dd>${esc(p.population || '未说明')}</dd></div><div class="profile-row"><dt>适用校区</dt><dd>${esc(p.campus || '未说明')}</dd></div><div class="profile-row"><dt>核实状态</dt><dd>${esc(p.verificationStatus || '见采用边界')}</dd></div>${p.promotion ? `<div class="profile-row"><dt>商业或导流线索</dt><dd>${esc(p.promotion)}</dd></div>` : ''}</dl><section class="dialog-section"><h3>内容要点</h3><p class="dialog-content-intro">${inline(p.summary || '本条只保留筛选范围，未形成可采用的具体内容。')}</p>${array(p.tips).length ? `<ul class="tip-list">${array(p.tips).map(t => `<li>${inline(t)}</li>`).join('')}</ul>` : ''}</section>${comments.length ? `<section class="dialog-section"><h3>可见评论与回复摘记</h3>${comments.map(c => postCommentHtml(c, uniqueScreenshotsHtml)).join('')}</section>` : ''}${uniqueScreenshotsHtml(postScreenshots(p))}<section class="dialog-section"><h3>适用范围</h3><div class="evidence-note">${inline(p.reviewReason || '')}${p.limitations ? `<p>${inline(p.limitations)}</p>` : ''}</div>${array(p.readingScopes).length ? `<ul class="tip-list">${array(p.readingScopes).map(scope => `<li>${inline(scope)}</li>`).join('')}</ul>` : ''}</section><div class="source-actions">${external(p.url || p.canonicalUrl, '打开原帖 ↗', 'button secondary')}</div>`);
     emit('post_open', {id});
   }
@@ -1288,6 +1297,13 @@
         case 'mentor': openMentor(id); break;
         case 'post': openPost(id, action.dataset.mentorId || ''); break;
         case 'review-image': if (!event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey && (event.button == null || event.button === 0) && openReviewImage(action.dataset.mentorId, action.dataset.reviewId, action.dataset.index, action)) event.preventDefault(); break;
+        case 'post-image': {
+          const post = publicPosts().find(post => post.id === action.dataset.id);
+          const shots = post ? screenshotItems([...array(post.comments).flatMap(comment => array(comment.screenshots)),...postScreenshots(post)],post.url || post.canonicalUrl) : [];
+          const index = shots.findIndex(shot => shot.src === action.dataset.src);
+          if (index >= 0 && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey && (event.button == null || event.button === 0) && openSourceImage(shots,post.title,index,action)) event.preventDefault();
+          break;
+        }
         case 'outcome-image': {
           const record = outcomeRecords().find(item=>item.id===id);
           if (record && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey && (event.button == null || event.button === 0) && openSourceImage(outcomeImages(record),`${record.studentName} · 去向原文`,0,action)) event.preventDefault();
@@ -1368,9 +1384,8 @@
       state.data=data;
       window.dispatchEvent(new CustomEvent('nau:data-ready', {detail:{offlineCache:response.headers.get('X-Guide-Offline')==='cached'}}));
       for(const post of data.socialPosts){
-        const codes=array(post.sourceIds).filter(code=>/^[A-Z]\d{2,3}$/.test(code));
+        const codes=array(post.sourceIds).filter(code=>typeof code==='string' && Object.hasOwn(data.sourceRegistry || {},code));
         for(const [code,entry] of Object.entries(data.sourceRegistry||{})){
-          if(!/^[A-Z]\d{2,3}$/.test(code))continue;
           if(entry.postId===post.id||entry.original_id===post.id||array(entry.sourceIds).includes(post.id)||String(entry.canonicalUrl||entry.url||'').includes('/'+post.id))codes.push(code);
         }
         state.postCodes[post.id]=[...new Set(codes)];
