@@ -25,6 +25,188 @@
     "mobileViewportTested": false
   },
   "productionVerification": {
-    "status": "pending"
+    "assets": [
+      {
+        "path": "app.js",
+        "status": 200,
+        "bytes": 149468,
+        "sha256": "7de31c67ccf3be45aaff0d4d437c4982453f1f9ae84c9e8fe36ee30b033f4583",
+        "matches": true
+      },
+      {
+        "path": "index.html",
+        "status": 200,
+        "bytes": 12336,
+        "sha256": "924a7b8c0048f5ea5fcc25eb84db44c2116bb8a8270acbce532f9b424d069a34",
+        "matches": true
+      },
+      {
+        "path": "style.css",
+        "status": 200,
+        "bytes": 129934,
+        "sha256": "06bb1975c536f7a17f9241f5fd01ab92c6c930aed6d164a5f8bf654eb95254ee",
+        "matches": true
+      },
+      {
+        "path": "sw.js",
+        "status": 200,
+        "bytes": 5184,
+        "sha256": "090eabb2e5faf985771b1820a5f913e3253e0b1a6bfab35c977364d2afffdda8",
+        "matches": true
+      },
+      {
+        "path": "data/site-data.json",
+        "status": 200,
+        "bytes": 3316225,
+        "sha256": "06ee45b0ead8dba76ecedd7c303769e1028dbc554e5bdeadfc0006f7377f9b2b",
+        "matches": true
+      },
+      {
+        "path": "downloads/mentor-guide.docx",
+        "status": 200,
+        "bytes": 77136,
+        "sha256": "153dc7b80de99e7d02771b90226b431d726ec1461af217e8d7a94387b2042faf",
+        "matches": true
+      },
+      {
+        "path": "downloads/evidence-index.xlsx",
+        "status": 200,
+        "bytes": 567278,
+        "sha256": "250f83e7bd21b20342ed4f34ad07a94b11aceb9dae33831f330e6930ef715e33",
+        "matches": true
+      },
+      {
+        "path": "evidence/content-repair-20261114b/firm-6aaccdac-01.webp",
+        "status": 200,
+        "bytes": 539164,
+        "sha256": "b3d466bff7b5e8233ee58f9048d64d131063ca42f2eeacaae6f33884204363dd",
+        "matches": true
+      },
+      {
+        "path": "evidence/content-repair-20261114b/firm-6aaccdac-02.webp",
+        "status": 200,
+        "bytes": 513250,
+        "sha256": "3a7e926f9c33fca5daeb6ec2b1beeb78711ef530f43a8ea7cddb6a360a085932",
+        "matches": true
+      },
+      {
+        "path": "evidence/content-repair-20261114b/firm-6aaccdac-03.webp",
+        "status": 200,
+        "bytes": 451248,
+        "sha256": "94e96b62d4d1f5b0f15baf456b9f3cfbc9d405aa7effd72cca5d47be2a5671b3",
+        "matches": true
+      },
+      {
+        "path": "evidence/content-repair-20261114b/firm-6aaccdac-04.webp",
+        "status": 200,
+        "bytes": 524288,
+        "sha256": "ed5cec192d31abd8bd734ef6e0169e507bfa3b5d7549a3c17279b40962e6ac7a",
+        "matches": true
+      },
+      {
+        "path": "evidence/content-repair-20261114b/firm-6aaccdac-05.webp",
+        "status": 200,
+        "bytes": 473398,
+        "sha256": "33df67c0f56dd6bfd06b6065f3b7edc9108046b013e805fd4341356e649d97a5",
+        "matches": true
+      },
+      {
+        "path": "evidence/content-repair-20261114b/firm-6aaccdac-06.webp",
+        "status": 200,
+        "bytes": 451580,
+        "sha256": "b017d27b8b812ad36bf52cf568a9881f499f23aef68df52996f772a51bb35c9a",
+        "matches": true
+      },
+      {
+        "path": "evidence/content-repair-20261114b/firm-6aaccdac-07.webp",
+        "status": 200,
+        "bytes": 468960,
+        "sha256": "aa609c61114bdc2313f8e251a83f6fcc1ba10a5efcf99c456fc67a0fda8444c3",
+        "matches": true
+      },
+      {
+        "path": "evidence/content-repair-20261114b/firm-6aaccdac-08.webp",
+        "status": 200,
+        "bytes": 459918,
+        "sha256": "ab5e050e5833c10de8e1c326758d6866c24202eddb6dff6268ba588aa8d75369",
+        "matches": true
+      },
+      {
+        "path": "evidence/content-repair-20261114b/firm-6aaccdac-09.webp",
+        "status": 200,
+        "bytes": 391492,
+        "sha256": "225564959fec496035966e4f9902d0dc6a18d9923bff61f63306201944fb1104",
+        "matches": true
+      },
+      {
+        "path": "evidence/content-repair-20261114b/firm-6aaccdac-10.webp",
+        "status": 200,
+        "bytes": 471252,
+        "sha256": "cbfe841df692ef11527ad697d4047f315949f24fcca5d59962627b82bba5763d",
+        "matches": true
+      },
+      {
+        "path": "evidence/content-repair-20261114b/firm-6aaccdac-11.webp",
+        "status": 200,
+        "bytes": 453952,
+        "sha256": "4ff4ea2fe334121e063b4bb5d3f217fe744ab93363390f6948667ac5392f7113",
+        "matches": true
+      },
+      {
+        "path": "evidence/content-repair-20261114b/firm-6aaccdac-12.webp",
+        "status": 200,
+        "bytes": 394094,
+        "sha256": "16735e3b58cfcfd5c33b0c3609fecd61c425e02aa4e935809c539da5d8eb0414",
+        "matches": true
+      },
+      {
+        "path": "evidence/content-repair-20261114b/firm-6aaccdac-13.webp",
+        "status": 200,
+        "bytes": 370182,
+        "sha256": "30ae27e83030bcaaa66127ea333c42d5a7a25e00e3e8dcb3136c3ca553abfa1d",
+        "matches": true
+      },
+      {
+        "path": "evidence/content-repair-20261114b/maud-69cbaede-comments.jpg",
+        "status": 200,
+        "bytes": 57099,
+        "sha256": "98f83a55ab97a1b90a0cd6c55da5875008b02ab0f63ff9ab1fcdf80f0cb137c1",
+        "matches": true
+      }
+    ],
+    "allAssetsMatch": true,
+    "assetCount": 21,
+    "sourceCommit": "ec066b56659923190d847f72876ee8d6a10033ba",
+    "pagesCommit": "69dd4e1f8b6d6ed0af6304862c3cc48e435cfcb3",
+    "status": "verified",
+    "browser": {
+      "visibleSources": 134,
+      "longSourceCodeFound": true,
+      "compoundThemesEachFindPost": true,
+      "maudScopeDisplayed": true,
+      "maudImageLoaded": {
+        "width": 400,
+        "height": 815
+      },
+      "firmGalleryImages": 13,
+      "nextImageIndex": 2,
+      "originalSizeMode": true,
+      "escapePreservesPostDialog": true,
+      "pageHorizontalOverflow": false,
+      "dialogHorizontalOverflow": false,
+      "viewportWidth": 1363,
+      "mobileViewportTested": false
+    },
+    "actualExcelDownload": {
+      "bytes": 567278,
+      "sha256": "250f83e7bd21b20342ed4f34ad07a94b11aceb9dae33831f330e6930ef715e33",
+      "matchesFinalFile": true
+    },
+    "proof": "qa/content-repair-20261114b.jpg",
+    "pagesBuild": {
+      "status": "built",
+      "commit": "69dd4e1f8b6d6ed0af6304862c3cc48e435cfcb3",
+      "matchesCommit": true
+    }
   }
 }
