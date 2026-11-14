@@ -94,5 +94,100 @@
       "unchangedSheets": 11,
       "recordLabelsCorrected": true
     }
+  },
+  "liveDownloadedWorkbook": {
+    "bytes": 577816,
+    "sha256": "077a3f2f0947b4fd9672a7e0e5610948e46932455a4e077cd81a0d92ecb2cdf8",
+    "matchesPublishedPackage": true,
+    "downloadedThroughVisibleButton": true
+  },
+  "productionBrowserDetails": {
+    "width": 1348,
+    "documentScrollWidth": 1348,
+    "sharedScopeCards": 2,
+    "labels": [
+      "原帖明确劝退",
+      "原帖明确劝退"
+    ],
+    "historicalReviewDateLabel": "经历2021-06 · 网页2025-07-21",
+    "longImageNaturalDimensions": [
+      720,
+      17791
+    ],
+    "originalImageStageScrollHeight": 17811,
+    "excludeSelfOnce": true,
+    "managementEntryVisible": false
+  },
+  "productionVerification": {
+    "assets": [
+      {
+        "path": "index.html",
+        "status": 200,
+        "bytes": 11257,
+        "sha256": "d6e3e86494482757b0d27698f2cb7085fd49e563728e4075c6cfd2be0d1d4cb7",
+        "matches": true
+      },
+      {
+        "path": "app.js",
+        "status": 200,
+        "bytes": 152251,
+        "sha256": "eacb01abac5378cdf6d4d0686e2284e8a515a75f782abea7f699340c94b2f9d8",
+        "matches": true
+      },
+      {
+        "path": "sw.js",
+        "status": 200,
+        "bytes": 5196,
+        "sha256": "7ee85750da2ee86814b6b95c68143c2b2028ef74ee8734a11b2edd082b01bfc3",
+        "matches": true
+      },
+      {
+        "path": "data/site-data.json",
+        "status": 200,
+        "bytes": 3382992,
+        "sha256": "a9176d0098ee4806d0faf6ad5002f9efca2b4c1535e6b84b8fa0731c08c766ae",
+        "matches": true
+      },
+      {
+        "path": "downloads/mentor-guide.docx",
+        "status": 200,
+        "bytes": 79985,
+        "sha256": "c3f5aa53bf418f043796c79d9ae18962680fee86e3c6143f62bfd411daf1007b",
+        "matches": true
+      },
+      {
+        "path": "downloads/evidence-index.xlsx",
+        "status": 200,
+        "bytes": 577816,
+        "sha256": "077a3f2f0947b4fd9672a7e0e5610948e46932455a4e077cd81a0d92ecb2cdf8",
+        "matches": true
+      },
+      {
+        "path": "evidence/recommendation-20261114/panjun-five-phd-original.jpg",
+        "status": 200,
+        "bytes": 6165360,
+        "sha256": "5ca8220007c7a38476ca948f0fde3426d5303f384ebfbe803f35b295e077489f",
+        "matches": true
+      }
+    ],
+    "allAssetsMatch": true,
+    "assetCount": 7,
+    "sourceCommit": "1e89f00338915311bdc861d5f851147f12ab5cad",
+    "pagesCommit": "22e1a37c3adb0b0296bfc464a7cdccc9fa635d55",
+    "browser": {
+      "sharedCommentAttributionVisible": true,
+      "explicitNotStrong": true,
+      "historicalDatesVisible": true,
+      "longOriginalImageLoaded": true,
+      "originalSizeScrollable": true,
+      "publicManagementEntryAbsent": true,
+      "excludeSelfOnce": true,
+      "screenshot": "qa/recommendation-20261114.jpg"
+    },
+    "pagesBuild": {
+      "status": "built",
+      "commit": "22e1a37c3adb0b0296bfc464a7cdccc9fa635d55",
+      "matchesCommit": true
+    }
   }
 }
