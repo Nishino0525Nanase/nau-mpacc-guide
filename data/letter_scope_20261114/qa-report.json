@@ -1,0 +1,13 @@
+{
+  "personalContentInsideLetter": true,
+  "personalDetailsOutsideLetter": false,
+  "largeGreetingCardRemoved": true,
+  "shortLetterEntryRetained": true,
+  "publicManagementUiAbsent": true,
+  "guideDatasetUnchanged": true,
+  "downloadDocumentsUnchanged": true,
+  "existingJsTestsPassed": 182,
+  "additionalScopeTestPassed": 1,
+  "localBrowserPassed": true,
+  "productionVerification": null
+}
