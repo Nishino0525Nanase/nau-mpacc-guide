@@ -33,10 +33,95 @@
     "horizontalOverflow": false,
     "mobileVisualTest": false
   },
-  "productionVerification": null,
+  "productionVerification": {
+    "assets": [
+      {
+        "path": "index.html",
+        "status": 200,
+        "bytes": 11904,
+        "sha256": "8fa38c3918a7cee372f17d96c90f04ffec9f96b0edac158e2eaf9e14bcec4bd4",
+        "matches": true
+      },
+      {
+        "path": "app.js",
+        "status": 200,
+        "bytes": 151961,
+        "sha256": "95b32930b638f6df57d03da4b0c576404be4ca35e82dc6a69962da740e000a4c",
+        "matches": true
+      },
+      {
+        "path": "style.css",
+        "status": 200,
+        "bytes": 130361,
+        "sha256": "6c0ac599de25e3a6f0e97f932a4a08504fb3395750fd180c82d37f81b66039ee",
+        "matches": true
+      },
+      {
+        "path": "sw.js",
+        "status": 200,
+        "bytes": 5182,
+        "sha256": "63189e960ef0836dda030d4873ae384a9683871b80eff101645221e483e9bfca",
+        "matches": true
+      },
+      {
+        "path": "data/site-data.json",
+        "status": 200,
+        "bytes": 3340833,
+        "sha256": "832505dc6e9abb2ed0cb67e9e503b8a208f15774f489fd389196d98c40c3ec34",
+        "matches": true
+      },
+      {
+        "path": "downloads/mentor-guide.docx",
+        "status": 200,
+        "bytes": 78747,
+        "sha256": "a4b40e39d6de96400c3a34eec4744aa2bd9e8b11ee0122e349f9c51b311f463a",
+        "matches": true
+      },
+      {
+        "path": "downloads/life-guide.docx",
+        "status": 200,
+        "bytes": 64205,
+        "sha256": "3ffca143e433698dbfa719dcde818a6f3f31ec7ec9e16ced75509a604d0065d5",
+        "matches": true
+      },
+      {
+        "path": "downloads/evidence-index.xlsx",
+        "status": 200,
+        "bytes": 572743,
+        "sha256": "a0049780c10403c87198f16159d29ab3375c49a75e0aa805c8f25dd80a305000",
+        "matches": true
+      }
+    ],
+    "allAssetsMatch": true,
+    "assetCount": 8,
+    "sourceCommit": "f39fe278fe684bd242f2d30788812763cf1c4aa6",
+    "pagesCommit": "73f1eb6879d68ae1a29c5d78b7f5ec21670afbe5",
+    "browser": {
+      "commentSearch": true,
+      "officialTemplateRows": 5,
+      "coAdvisorsPreserved": true,
+      "competitionLabelsDistinct": true,
+      "undergraduateAggregateScope": true,
+      "excludeSelfOnce": true,
+      "screenshot": "qa/continue-20261114.jpg",
+      "horizontalOverflow": false,
+      "mobileVisualTest": false
+    },
+    "pagesBuild": {
+      "status": "built",
+      "commit": "73f1eb6879d68ae1a29c5d78b7f5ec21670afbe5",
+      "matchesCommit": true
+    }
+  },
   "attachmentHashes": {
     "mentor-guide.docx": "a4b40e39d6de96400c3a34eec4744aa2bd9e8b11ee0122e349f9c51b311f463a",
     "life-guide.docx": "3ffca143e433698dbfa719dcde818a6f3f31ec7ec9e16ced75509a604d0065d5",
     "evidence-index.xlsx": "a0049780c10403c87198f16159d29ab3375c49a75e0aa805c8f25dd80a305000"
+  },
+  "actualBrowserDownload": {
+    "file": "life-guide.docx",
+    "bytes": 64205,
+    "sha256": "3ffca143e433698dbfa719dcde818a6f3f31ec7ec9e16ced75509a604d0065d5",
+    "matchesPublishedFile": true
   }
 }
