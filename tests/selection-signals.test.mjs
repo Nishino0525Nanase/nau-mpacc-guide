@@ -138,7 +138,38 @@ test('a shared contextual warning stays one comment and is not promoted to stron
   const a=await boot(dataset);a.input('沙雪');
   assert.deepEqual(namesInCards(a.cards()),['董必荣','温素彬']);
   assert.match(a.panel(),/同一评论涉及董必荣、温素彬/);
+  assert.equal((a.panel().match(/class="selection-panel-card /g)||[]).length,1,'one shared source comment has one priority card');
   assert.doesNotMatch(a.panel(),/强烈劝退|强烈不建议/);
+});
+
+test('one abbreviated recommendation maps both teachers while keeping one shared panel entry',async()=>{
+  const a=await boot(dataset);a.input('天天发癫');
+  assert.deepEqual(namesInCards(a.cards()),['张力','谭志东']);
+  const panel=a.panel();
+  assert.equal((panel.match(/class="selection-panel-card /g)||[]).length,1);
+  assert.equal((panel.match(/<q>那就tzd和zl，比较符合你的要求<\/q>/g)||[]).length,1);
+  assert.match(panel,/张力 · ZL/);assert.match(panel,/谭志东 · TZD/);
+  assert.match(panel,/1 条评论 · 2 位导师/);
+  assert.doesNotMatch(panel,/>原帖强烈推荐<|MPAcc指导亲历/);
+  for(const mentor of dataset.mentors.filter(mentor=>['张力','谭志东'].includes(mentor.name))){
+    const r=mentor.studentReviews.reviews.find(review=>review.narrator==='天天发癫');
+    assert.equal(r.sharedCommentId,'x01-tiantian-20250409-tzd-zl');
+    assert.equal(r.firsthand,null);assert.equal(r.contextAssessment.eligibleForRecommendation,false);
+    assert.match(a.detail(mentor.id),/原帖明确推荐/);
+  }
+});
+
+test('shared comment ids cannot merge different directions or invent a signal for ambiguous course feedback',async()=>{
+  const data=fixture();
+  setReview(data,'叶邦银',{sharedCommentId:'same',selectionSignal:signal('avoid','SHARED_WARNING')});
+  setReview(data,'李仲泽',{sharedCommentId:'same',selectionSignal:signal('recommend','SHARED_RECOMMENDATION')});
+  const a=await boot(data);
+  assert.equal((a.panel().match(/class="selection-panel-card /g)||[]).length,2);
+  for(const id of ['sr-e63702f4d750b2','sr-4c04a46901e7aa']){
+    const review=dataset.mentors.flatMap(mentor=>mentor.studentReviews.reviews).find(review=>review.id===id);
+    assert(review.screenshots?.length);assert.equal(review.selectionSignal,undefined);
+    assert.equal(review.contextAssessment?.eligibleForRecommendation===true,false);
+  }
 });
 
 test('historical school-selected experiences do not become new selection votes or current arrangements',async()=>{

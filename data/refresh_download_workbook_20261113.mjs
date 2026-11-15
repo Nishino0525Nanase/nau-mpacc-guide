@@ -324,6 +324,12 @@ print(json.dumps({'sheets':len(am),'tables':len(tables),'formulas':count,'formul
   }
   result.reviewQaIds=[...reviewIds];
   result.refreshedReviewLabels=refreshedReviewLabels;
+  const overview=model.datasets.find(spec=>spec.name==='学生评价总览');
+  const selectedNames=new Set(reviewSpec.rows.filter(row=>reviewIds.has(row[12])).map(row=>row[0]));
+  if(overview)for(let i=0;i<overview.rows.length;i++)if(selectedNames.has(overview.rows[i][0])){
+   const r=overview.headerRow+1+i,blob=await finalWb.render({sheetName:overview.name,range:`A${r}:F${r}`,scale:1,format:'png'});
+   const file=`after-recommendation-overview-${i+1}.png`;renderFiles.push(file);await fs.writeFile(path.join(outputDir,file),new Uint8Array(await blob.arrayBuffer()));
+  }
   const codes=new Set((process.env.NAU_REVIEW_QA_SOURCE_IDS||'').split(',').filter(Boolean));
   for(const name of ['完整来源目录','帖子索引','官方核实']){
    const spec=model.datasets.find(item=>item.name===name);if(!spec)continue;

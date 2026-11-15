@@ -1,0 +1,94 @@
+{
+  "batch": "mentor-signals-20261115",
+  "baselineCommit": "b7bd55d2975ff33dcb0d321adb4a4137d3bebd1b",
+  "reviewCount": 60,
+  "newSources": 0,
+  "newComments": 0,
+  "newReviewRecords": 0,
+  "sharedRecommendation": {
+    "aliases": {
+      "TZD": "谭志东",
+      "ZL": "张力"
+    },
+    "sharedCommentIdPreserved": true,
+    "intensity": "explicit",
+    "firsthand": null,
+    "concreteRecommendationEligibility": false
+  },
+  "localBrowser": {
+    "filteredMentors": [
+      "张力",
+      "谭志东"
+    ],
+    "sharedPriorityCards": 1,
+    "bothTeacherDetailLinksWork": true,
+    "sourceImageLoaded": [
+      1363,
+      936
+    ],
+    "nestedImageDoesNotCloseMentor": true,
+    "ambiguousWangYeSignalAbsent": true,
+    "documentWidth": 1348,
+    "documentScrollWidth": 1348,
+    "mobileVisualValidation": false
+  },
+  "unchangedSections": [
+    "sourceRegistry",
+    "socialPosts",
+    "officialEvidence",
+    "mentorAliases",
+    "studentOutcomes",
+    "internships",
+    "musicPlaylist",
+    "lifeChapters"
+  ],
+  "idempotentMerge": true,
+  "officeValidation": {
+    "mentorWord": {
+      "pages": 29,
+      "bytes": 80018,
+      "sha256": "5a23ea68eaeb692766fe751d63d622e1522d46703bc22b96cd7accbb33f11a8b",
+      "records": 60
+    },
+    "workbook": {
+      "sheets": 16,
+      "tables": 19,
+      "formulas": 1813,
+      "formulaErrors": 0,
+      "affectedLinksChecked": 128,
+      "unchangedSheets": 14,
+      "bytes": 577888,
+      "sha256": "6379d409b7d100e470936a80a949238a0c7114deaa179d2a8b85778fed48f623"
+    }
+  },
+  "downloads": [
+    {
+      "id": "mentor-guide",
+      "filename": "mentor-guide.docx",
+      "bytes": 80018,
+      "sha256": "5a23ea68eaeb692766fe751d63d622e1522d46703bc22b96cd7accbb33f11a8b",
+      "url": "./downloads/mentor-guide.docx?v=5a23ea68eaeb"
+    },
+    {
+      "id": "life-guide",
+      "filename": "life-guide.docx",
+      "bytes": 64205,
+      "sha256": "3ffca143e433698dbfa719dcde818a6f3f31ec7ec9e16ced75509a604d0065d5",
+      "url": "./downloads/life-guide.docx?v=3ffca143e433"
+    },
+    {
+      "id": "evidence-index",
+      "filename": "evidence-index.xlsx",
+      "bytes": 577888,
+      "sha256": "6379d409b7d100e470936a80a949238a0c7114deaa179d2a8b85778fed48f623",
+      "url": "./downloads/evidence-index.xlsx?v=6379d409b7d1"
+    }
+  ],
+  "independentReview": "归属、计数、稳定共享ID与保护字段已独立复核；已清理截图scope中的维护前缀。",
+  "automaticChecks": {
+    "tests": 188,
+    "passed": 188,
+    "failed": 0,
+    "command": "node --test tests/*.test.mjs"
+  }
+}

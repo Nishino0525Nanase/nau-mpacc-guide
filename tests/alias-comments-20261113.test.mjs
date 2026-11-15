@@ -103,7 +103,11 @@ test('TZD and ZL share one nomination while different narrators retain separate 
   assert.equal(zl.narrator,'天天发癫');
   assert.equal(tzd.date,'2025-04-09','the directly captured date supersedes the earlier reading result');
   assert.equal(zl.date,'2025-04-09');
-  assert(!tzd.selectionSignal&&!zl.selectionSignal,'a conditional nomination is not a strong recommendation');
+  for(const review of [tzd,zl]){
+    assert.equal(review.selectionSignal.direction,'recommend');
+    assert.equal(review.selectionSignal.intensity,'explicit','advice for this requester is not a strong recommendation');
+    assert.match(review.selectionSignal.scope,/针对发帖人|不作普遍/);
+  }
   const group=added.filter(({review})=>review.sourceCommentKey===tzd.sourceCommentKey);
   assert.deepEqual(group.map(({mentor})=>mentor.name).sort(),['张力','谭志东']);
   assert.notEqual(find('sr-alias-comments-20261113-zxl-qiuqiu').review.sourceCommentKey,find('sr-alias-comments-20261113-zxl-wm').review.sourceCommentKey);

@@ -1,0 +1,241 @@
+{
+  "batch": "mentor-signals-20261115",
+  "scope": "16位现有但明确选择态度不足的MPAcc导师，姓名/缩写与跨平台原帖检索",
+  "teachers": [
+    "王烨",
+    "马德林",
+    "黄中生",
+    "许汉友",
+    "崔秀梅",
+    "刘国城",
+    "潘俊",
+    "王敬勇",
+    "程博",
+    "凌华",
+    "王菁华",
+    "傅祥斐",
+    "王禹",
+    "李慧",
+    "谭志东",
+    "张力"
+  ],
+  "queryCount": 32,
+  "queries": [
+    {
+      "query": "\"南审\" \"王烨\" \"推荐\" 导师",
+      "engine": "system2"
+    },
+    {
+      "query": "\"南审\" \"马德林\" \"导师\" \"评价\"",
+      "engine": "system2"
+    },
+    {
+      "query": "\"南京审计大学\" \"黄中生\" \"导师\" 评价",
+      "engine": "system2"
+    },
+    {
+      "query": "\"南审\" \"许汉友\" \"推荐\"",
+      "engine": "system2"
+    },
+    {
+      "query": "\"南审\" (\"MDL\" OR \"马德林\") (\"避雷\" OR \"推荐\" OR \"不要\")",
+      "engine": "system1"
+    },
+    {
+      "query": "\"南审\" (\"王烨\" OR \"王禹\") (\"避雷\" OR \"导师推荐\")",
+      "engine": "system1"
+    },
+    {
+      "query": "\"南审\" (\"CXM\" OR \"崔秀梅\") (\"避雷\" OR \"推荐\")",
+      "engine": "system1"
+    },
+    {
+      "query": "\"南审\" (\"HZS\" OR \"黄中生\") (\"选导师\" OR \"推荐\")",
+      "engine": "system1"
+    },
+    {
+      "query": "南审 王敬勇 导师 评价 -site:nau.edu.cn",
+      "engine": "system2"
+    },
+    {
+      "query": "南京审计大学 程博 导师 评价 推荐 -site:nau.edu.cn",
+      "engine": "system2"
+    },
+    {
+      "query": "南审 傅祥斐 推荐 导师 -site:nau.edu.cn",
+      "engine": "system2"
+    },
+    {
+      "query": "南审 谭志东 张力 导师 推荐 -site:nau.edu.cn",
+      "engine": "system2"
+    },
+    {
+      "query": "site:xiaohongshu.com \"南审\" \"导师\" \"推荐\"",
+      "engine": "system1"
+    },
+    {
+      "query": "site:xiaohongshu.com \"南审\" \"避雷\" \"导师\"",
+      "engine": "system1"
+    },
+    {
+      "query": "site:zhihu.com \"南审\" \"导师\" \"推荐\"",
+      "engine": "system1"
+    },
+    {
+      "query": "site:bilibili.com \"南审\" \"导师\" \"避雷\"",
+      "engine": "system1"
+    },
+    {
+      "query": "南审 会计 导师 避雷 推荐 TZD ZL",
+      "engine": "tinyfish"
+    },
+    {
+      "query": "南审 傅祥斐 李仲泽 程博 导师 推荐",
+      "engine": "tinyfish"
+    },
+    {
+      "query": "南审 王敬勇 王菁华 黄中生 导师 评价",
+      "engine": "tinyfish"
+    },
+    {
+      "query": "南京审计大学 选导师 王烨 马德林",
+      "engine": "tinyfish"
+    },
+    {
+      "query": "\"南审\" \"WJY\" 导师",
+      "engine": "system2"
+    },
+    {
+      "query": "\"南审\" \"WJH\" 推荐",
+      "engine": "system2"
+    },
+    {
+      "query": "\"南审\" \"FXF\" 导师",
+      "engine": "system2"
+    },
+    {
+      "query": "\"南审\" \"TZD\" 导师",
+      "engine": "system2"
+    },
+    {
+      "query": "南京审计大学 导师避雷 程博 傅祥斐 小红书",
+      "engine": "tinyfish"
+    },
+    {
+      "query": "南京审计大学 王菁华 学生 评价 小红书",
+      "engine": "tinyfish"
+    },
+    {
+      "query": "南审 选导 李慧 王禹 凌华 推荐",
+      "engine": "tinyfish"
+    },
+    {
+      "query": "南审 mpacc 导师 推荐 tzD MDL zl 不要选",
+      "engine": "tinyfish"
+    },
+    {
+      "query": "\"程博\" \"导师\" \"避雷\"",
+      "engine": "system1"
+    },
+    {
+      "query": "\"傅祥斐\" \"评价\"",
+      "engine": "system1"
+    },
+    {
+      "query": "\"谭志东\" \"推荐\" 学生",
+      "engine": "system1"
+    },
+    {
+      "query": "\"南审\" \"李慧\" \"推荐\"",
+      "engine": "system1"
+    }
+  ],
+  "readingAttempts": [
+    {
+      "url": "https://www.pinggu.org/xszh.php?id=522&mod=teacherinfo",
+      "title": "王敬勇_南京审计大学|预约导师1v1交流-就学",
+      "status": "full_public_text_read",
+      "scope": "公开介绍、咨询话题、评分展示与用户评价区实际读完；没有发起咨询或登录。",
+      "finding": "页面显示5.0，同时用户评价明确为暂无评论。",
+      "decision": "exclude_no_student_review",
+      "reason": "不能将页面评分展示或付费咨询营销当作学生推荐；导师自述区也无可用学生叙述。"
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/717272668",
+      "title": "客观评价南京审计大学，除了审计，优点不多",
+      "status": "full_public_text_read",
+      "scope": "公开正文和页面底部可见评论区实际读取，文末标2024-08-29。",
+      "finding": "正文批评学校整体口碑、学科与性价比，未点名本名录教师；页面称尚无评论。",
+      "decision": "exclude_school_level_opinion",
+      "reason": "学校评价不能拆成具名导师避雷。"
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/354245882",
+      "title": "深度解读南京审计大学，高考志愿别乱填",
+      "status": "unread_timeout",
+      "scope": "仅搜索标题和摘要，TinyFish读取超时。",
+      "decision": "exclude_unread",
+      "reason": "没有原文或导师评论证据，未改路绕验证或声称已阅读全文。"
+    },
+    {
+      "url": "https://bilibili.com/video/BV19UQnYHEUf",
+      "title": "研究生选导师选择指南！！",
+      "status": "unread_timeout_and_tool_unavailable",
+      "scope": "仅搜索标题/2025-03-12索引日期；TinyFish读取超时，search-service直接打开不可达。没有播放、字幕或评论。",
+      "decision": "exclude_unread_unattributed",
+      "reason": "通用标题不能证明涉及南审或本名录教师。",
+      "additionalMetadataAttempt": {
+        "url": "https://api.bilibili.com/x/web-interface/view?bvid=BV19UQnYHEUf",
+        "result": "HTTPError",
+        "scope": "只尝试公开视频基础信息接口，未获得数据；没有视频、字幕或评论。没有cookie、登录态、代理或指纹变更。"
+      }
+    },
+    {
+      "url": "https://zhihu.com/question/545193514/answer/121843342182",
+      "title": "知乎审计专硕回答（标题未核）",
+      "status": "unread_tool_unavailable",
+      "scope": "仅搜索摘要提双导师制；search-service打开不可达。",
+      "decision": "exclude_unread",
+      "reason": "未获得具名选导态度或个人经历原文。"
+    }
+  ],
+  "otherExcludedDiscoveries": [
+    {
+      "url": "https://kjxy.naujsc.edu.cn/2026/0403/c703a23106/page.htm",
+      "scope": "搜索结果公开正文",
+      "reason": "金审学院教师科研团队交流，非MPAcc学生选导推荐；没有把程博指导青年教师的场景改成学生评价。"
+    },
+    {
+      "url": "https://dxs.moe.gov.cn/zx/a/xyh_xyh_lzdxcyzx/211019/1733532.shtml",
+      "scope": "搜索结果公开正文",
+      "reason": "兰州大学同名程博，研究场景为细胞/实验，不是南审会计教师。"
+    },
+    {
+      "url": "https://mse.haut.edu.cn/info/1011/12806.htm",
+      "scope": "搜索结果教师简介",
+      "reason": "河南工业大学材料学同名程博；不能对应南审CB。"
+    },
+    {
+      "url": "https://people.ucas.ac.cn/~0000655",
+      "scope": "搜索结果教师简介",
+      "reason": "中科院遥感同名程博；不能对应南审CB。"
+    },
+    {
+      "url": "https://xyh.univs.cn/a/xyh_xyh_nsqn/221222/1824163.shtml",
+      "scope": "搜索摘要；既有来源R801已登记",
+      "reason": "潘俊李佳林历史访谈已入现数据，不能重计新帖/新评价。"
+    },
+    {
+      "url": "https://www.zucaitz.com/2021/0902/c9536a99579/page.htm",
+      "scope": "搜索结果异常镜像",
+      "reason": "博彩域名替换校名的教师简介镜像，不当作评价来源。"
+    }
+  ],
+  "newSources": 0,
+  "newPersonalReviews": 0,
+  "newExplicitSelectionSignals": 0,
+  "newAliasMappings": 0,
+  "countingNote": "32条查询不等于32篇原帖；5个独立候选尝试原文读取，其中2篇公开正文可读但不含可用具名选导评价，另外3篇没有取得可用正文；没有新增真实截图。",
+  "constraints": "未探测登录状态、未访问生产指南或发统计事件、未绕过登录/验证码/设备限制；缩写同名碰撞未强配，未拿获奖/讲座/咨询评分充推荐票。",
+  "stopReason": "本分组未核实到可新增具名明确推荐/避雷原评论，继续保留缺口。"
+}

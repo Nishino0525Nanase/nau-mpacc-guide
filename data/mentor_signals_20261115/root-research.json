@@ -1,0 +1,77 @@
+{
+  "batch": "mentor-signals-20261115",
+  "rootSearchQueries": [
+    {
+      "engine": "system1",
+      "query": "\"南审\" \"导师\" \"避雷\" -site:nau.edu.cn"
+    },
+    {
+      "engine": "system1",
+      "query": "\"南京审计大学\" \"导师\" \"推荐\" 小红书 评论"
+    },
+    {
+      "engine": "system1",
+      "query": "\"南审\" \"mpacc\" \"导师\" \"不要\""
+    },
+    {
+      "engine": "system1",
+      "query": "\"南审\" \"导师\" \"缩写\""
+    },
+    {
+      "engine": "tinyfish-search",
+      "query": "南京审计大学 mpacc 导师 推荐 避雷 小红书"
+    },
+    {
+      "engine": "system2",
+      "query": "\"南审\" \"不要选\" 导师"
+    },
+    {
+      "engine": "system2",
+      "query": "\"南审\" \"强烈推荐\" 导师 小红书"
+    },
+    {
+      "engine": "system2",
+      "query": "\"南审\" \"YBY\" \"导师\""
+    },
+    {
+      "engine": "system2",
+      "query": "\"南审\" \"推荐\" \"tzd\""
+    },
+    {
+      "engine": "system1",
+      "query": "\"南京审计大学\" \"导师评价\" -site:nau.edu.cn"
+    },
+    {
+      "engine": "system1",
+      "query": "\"南审\" \"导师避雷\" -site:nau.edu.cn"
+    },
+    {
+      "engine": "system1",
+      "query": "\"南审\" \"选导师\" \"推荐\" 小红书"
+    },
+    {
+      "engine": "system1",
+      "query": "\"南审\" \"会计专硕\" \"导师\" \"避雷\" -site:nau.edu.cn"
+    }
+  ],
+  "candidateReadings": [
+    {
+      "url": "https://www.scribd.com/document/859159421/导师评价",
+      "title": "导师评价",
+      "readingScope": "公开文本中搜索南审及两名既有导师，并读南审命中邻近目录；未通读1776页。",
+      "decision": "唯一南审名录为国际审计学院戚振东，不在当前34人范围；其余学校不得移接。",
+      "adoptedReviews": 0
+    }
+  ],
+  "xhsPublicSearch": {
+    "status": "access_restriction",
+    "message": "电脑设备登录达到上限，停止；无新增可读原文评论。",
+    "automatedRunUrl": "https://agent.tinyfish.ai/runs/4cc408d7-5e03-4cbb-bc6e-1ee48d45adce",
+    "newReadNotes": 0,
+    "accountActions": false,
+    "workaroundsAttempted": false
+  },
+  "newIndependentSources": 0,
+  "newReviewRecords": 0,
+  "maintenanceOnly": true
+}

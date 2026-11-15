@@ -1,0 +1,171 @@
+{
+  "checkedDate": "2026-11-15",
+  "scope": [
+    "章之旺",
+    "罗琰",
+    "吴青川",
+    "刘静",
+    "李华",
+    "王永妍",
+    "王永青",
+    "贺建刚",
+    "陈冬华",
+    "单文涛"
+  ],
+  "baseline": {
+    "reviewRecords": 60,
+    "sourceRegistryEntries": 510,
+    "rawPostRecords": 157
+  },
+  "newAdoptedSources": 0,
+  "newAttributedReviews": 0,
+  "newRecommendationOrAvoidanceSignals": 0,
+  "newScreenshots": 0,
+  "queriesByBatch": [
+    [
+      "\"南审\" \"ZZW\" 推荐 避雷",
+      "\"南审\" \"WQC\" 推荐 导师",
+      "\"南京审计大学\" \"罗琰\" \"老师\" 评价",
+      "\"南审\" \"刘静\" 推荐 避雷"
+    ],
+    [
+      "\"章之旺\" \"推荐\"",
+      "\"吴青川\" \"避雷\"",
+      "\"罗琰\" \"老师\" -site:nau.edu.cn -site:nufe.edu.cn -site:shupl.edu.cn",
+      "\"刘静\" \"南审\" \"老师\" -site:nau.edu.cn"
+    ],
+    [
+      "\"南审\" \"王永妍\" \"推荐\"",
+      "\"南审\" \"王永青\" \"避雷\"",
+      "\"南审\" \"HJG\" \"推荐\"",
+      "\"南审\" \"SWT\" \"避雷\""
+    ],
+    [
+      "\"陈冬华\" \"导师\" \"推荐\" -site:nju.edu.cn -site:nau.edu.cn",
+      "\"贺建刚\" \"老师\" \"推荐\" -site:nau.edu.cn",
+      "\"李华\" \"南审\" \"选课\"",
+      "\"南审\" \"ZZW\" \"选课\""
+    ],
+    [
+      "\"章之旺\" site:xiaohongshu.com",
+      "\"罗琰\" site:xiaohongshu.com",
+      "\"吴青川\" site:bilibili.com",
+      "\"刘静\" \"南审\" site:zhihu.com"
+    ],
+    [
+      "\"南京审计大学\" \"李华\" \"推荐\" \"学生\"",
+      "\"王永妍\" site:zhihu.com",
+      "\"王永青\" site:xiaohongshu.com",
+      "\"单文涛\" \"选课\""
+    ],
+    [
+      "\"陈冬华\" \"导师\" \"性格\"",
+      "\"贺建刚\" \"导师\" \"评价\"",
+      "\"单文涛\" \"老师\" \"好\"",
+      "\"王永妍\" \"老师\" \"好\""
+    ],
+    [
+      "南京审计大学 选课 推荐 老师 GitHub",
+      "南审 导师 评价 WYY WYQ HJG",
+      "南京审计大学 李华 讲课 同学 评价",
+      "\"南审\" \"单老师\" \"推荐\""
+    ]
+  ],
+  "searchQueries": 32,
+  "queryLimits": "搜索次数不等于帖子数；两搜索引擎交替交叉检索，未把结果卡片当成原文全文。",
+  "priorResearchRead": [
+    "data/recommendation_20261114/gap-a/research-summary.json",
+    "data/recommendation_20261114/gap-b/research-summary.json"
+  ],
+  "newPublicSite": {
+    "home": "https://www.ykakaoyan.cn/",
+    "discoveredFrom": "turn498search8",
+    "readingMethod": "首页、搜索空页、高校页通过搜索服务实际读取；带参数搜索和导师页在搜索服务返回不可读取后，使用公开HTTP GET读取服务端渲染文字。未登录、未提交评价、未操作匿名表态。",
+    "observedSearchForm": {
+      "url": "https://www.ykakaoyan.cn/search",
+      "method": "get",
+      "action": "/search",
+      "field": "q"
+    },
+    "pagesActuallyRead": [
+      "https://www.ykakaoyan.cn/",
+      "https://www.ykakaoyan.cn/search",
+      "https://www.ykakaoyan.cn/schools",
+      "https://www.ykakaoyan.cn/search?q=%E5%8D%97%E4%BA%AC%E5%AE%A1%E8%AE%A1%E5%A4%A7%E5%AD%A6",
+      "https://www.ykakaoyan.cn/search?q=%E9%99%88%E5%86%AC%E5%8D%8E",
+      "https://www.ykakaoyan.cn/tutor/16083",
+      "https://www.ykakaoyan.cn/tutor/1047",
+      "https://www.ykakaoyan.cn/tutor/303059"
+    ],
+    "nauSearchResult": [
+      {
+        "alias": "SGY",
+        "college": "会计学院",
+        "url": "https://www.ykakaoyan.cn/tutor/16083",
+        "displayedReviewCount": 1,
+        "decision": "实际读到匿名专业相关负评，但无法对应当前34人，未猜实名；未加入导师评价。"
+      },
+      {
+        "alias": "QZD",
+        "college": "国际审计学院",
+        "url": "https://www.ykakaoyan.cn/tutor/15263",
+        "displayedReviewCount": 1,
+        "decision": "仅搜索目录实际可见；不在当前34人，未阅读该个人页、不新增评价。"
+      },
+      {
+        "alias": "CDP",
+        "college": "政府审计学院",
+        "url": "https://www.ykakaoyan.cn/tutor/310704",
+        "displayedReviewCount": 1,
+        "decision": "仅搜索目录实际可见；不在当前34人，未阅读该个人页、不猜实名。"
+      }
+    ],
+    "chenDonghuaSearch": {
+      "searchTerm": "陈冬华",
+      "displayedIdentity": "CDH，南京大学商学院；一页另写教授",
+      "pages": [
+        "https://www.ykakaoyan.cn/tutor/1047",
+        "https://www.ykakaoyan.cn/tutor/303059"
+      ],
+      "readingScope": "两页全文已实际读取；每页展示两条匿名评论，正文逐字相同。只核对专业相关内容的适用范围，不保存或转述私人指控。",
+      "professionalFinding": "存在对学术劳动分工及博士培养时长的负面抱怨，未有明确选择导师的劝退或推荐语句。",
+      "author": "未显示",
+      "commentDate": "未显示",
+      "firsthandRelationship": "未自证",
+      "originalReviewSourceUrl": "未提供",
+      "deduplication": "两目录为同组复制评论，不算两份独立材料或四名评论者。",
+      "decision": "不采用为当前南审MPAcc推荐/避雷。缺作者、时间、接触关系和原始来源，且内容混入未经证实的私生活指控。不能把负面情绪升级为明确劝退，不能用平台红榜/均分当推荐。",
+      "privateAllegationsSaved": false
+    },
+    "platformClaims": "首页自称免费并将导师姓名显示为首字母；这只是平台说明，不代表评论真实性已核实。"
+  },
+  "excludedResultTypes": [
+    "官方讲座、职务、学术成果、奖励、师生调研活动不补作个人口碑。",
+    "同名罗琰的AI培训讲师、舞蹈教师，以及同名刘静的校友或外校教师已排除。",
+    "政府审计学院同名李华与当前会计学院教授李华不能混配；舞弊审计课程条目不归当前导师。",
+    "GitHub的NJU-Hub面向南京大学，不因南京或浦口字样当作南京审计大学数据；既有Scribd南小宝资料不重复算新帖。",
+    "博彩域名复制的学校文章不访问、不作为原始评价来源。",
+    "报名、推免、奖助公示和其他含无关个人身份材料的搜索命中不用于本任务。"
+  ],
+  "accessLimits": "未启动浏览器、未探测登录态、未重试先前设备登录限制的小红书浏览器，未改代理或绕过限制。平台定向索引无可采用结果，不等于平台没有评价。",
+  "webReferences": [
+    "turn484search0",
+    "turn488search2",
+    "turn488search5",
+    "turn488search17",
+    "turn489search1",
+    "turn492search0",
+    "turn494search0",
+    "turn495search3",
+    "turn496search2",
+    "turn496search3",
+    "turn496search4",
+    "turn498search0",
+    "turn498search4",
+    "turn498search8",
+    "turn499view0",
+    "turn501view0",
+    "turn501view1"
+  ],
+  "mainDatasetChanged": false
+}

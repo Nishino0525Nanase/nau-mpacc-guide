@@ -1,0 +1,83 @@
+{
+  "batch": "mentor-signals-20261115-saved",
+  "readMethod": "actual view_image of published unaltered source images; local review only",
+  "readAt": "2026-11-15",
+  "imagesActuallyViewed": [
+    "x01-tzd-zl-dbr-20261113.jpg",
+    "x01-post-top.jpg",
+    "x01-lgc-20261113.jpg",
+    "x01-lzz-zxl-20261113.jpg",
+    "x01-xw-dong-20261113.jpg",
+    "x02-post-top.jpg",
+    "x02-cuixiumei.jpg",
+    "x01-pj-zxl-20261113.jpg",
+    "x01-liuguocheng.jpg",
+    "x02-xw-20261113.jpg"
+  ],
+  "imageCount": 10,
+  "sourcePages": [
+    "X01",
+    "X02"
+  ],
+  "acceptedExistingSignalUpgrades": [
+    {
+      "teachers": [
+        "谭志东",
+        "张力"
+      ],
+      "aliases": [
+        "TZD",
+        "ZL"
+      ],
+      "commenter": "天天发癫",
+      "date": "2025-04-09",
+      "reason": "直接回应求推荐，明确建议两位且说明针对发帖人要求；现有两条记录漏selectionSignal。",
+      "independentCommentCount": 1,
+      "strength": "explicit_only"
+    }
+  ],
+  "imageOnlyOrQuoteCorrections": [
+    {
+      "teacher": "王烨",
+      "reviewId": "sr-e63702f4d750b2",
+      "scope": "首评短句可见，补直接图证；保持语气不确定、不设优先推荐信号。"
+    },
+    {
+      "teacher": "崔秀梅",
+      "reviewId": "sr-4c04a46901e7aa",
+      "scope": "既有课程体验补原图；不当明确劝退。"
+    }
+  ],
+  "notPromoted": [
+    {
+      "candidate": "王烨/王禹",
+      "reason": "王烨首评全名可见，不能缩为WY后误配王禹；笑语、条件与追问不能当作已核导师工作量。"
+    },
+    {
+      "candidate": "马德林MDL",
+      "reason": "当前保存的相关图未找到douzie MDL原句，本地不能据旧摘要追加明确推荐。"
+    },
+    {
+      "candidate": "董必荣DBR",
+      "reason": "“敢不敢选d b r”为问句或语气待核；既有沙雪明确劝退已录，不增加。"
+    },
+    {
+      "candidate": "黄老师/Cassie",
+      "reason": "只有单姓；同图名单不足以确定全名，不归到黄中生。"
+    },
+    {
+      "candidate": "潘俊/张兴亮/LGC泛夸赞",
+      "reason": "带你读博、打call、好的批等不补为强烈或具体推荐。"
+    },
+    {
+      "candidate": "CXM/XW要求高",
+      "reason": "要求高不等于明确不要选；保留原有体验，不生成额外劝退票。"
+    }
+  ],
+  "newSources": 0,
+  "newPosts": 0,
+  "newComments": 0,
+  "newReviewRecords": 0,
+  "hasProductionVisits": false,
+  "originalSiteDataModified": false
+}

@@ -1,0 +1,55 @@
+{
+  "batch": "mentor-signals-20261115",
+  "reviewCount": 60,
+  "updatedRecords": [
+    {
+      "mentorId": "mentor-23",
+      "mentorName": "谭志东",
+      "reviewId": "sr-alias-comments-20261113-tzd",
+      "fields": [
+        "selectionSignal",
+        "sharedCommentId"
+      ]
+    },
+    {
+      "mentorId": "mentor-04",
+      "mentorName": "张力",
+      "reviewId": "sr-alias-comments-20261113-zl",
+      "fields": [
+        "selectionSignal",
+        "sharedCommentId"
+      ]
+    },
+    {
+      "mentorId": "mentor-03",
+      "mentorName": "王烨",
+      "reviewId": "sr-e63702f4d750b2",
+      "fields": [
+        "contextNotes",
+        "screenshots"
+      ]
+    },
+    {
+      "mentorId": "mentor-07",
+      "mentorName": "崔秀梅",
+      "reviewId": "sr-4c04a46901e7aa",
+      "fields": [
+        "screenshots"
+      ]
+    }
+  ],
+  "newReviews": 0,
+  "newIndependentComments": 0,
+  "newSources": 0,
+  "newPosts": 0,
+  "newImageFiles": 0,
+  "newPriorityMentorRecords": 2,
+  "newPriorityIndependentComments": 1,
+  "priorityCommentWasAlreadyArchived": true,
+  "sharedCommentId": "x01-tiantian-20250409-tzd-zl",
+  "selectionIntensity": "explicit",
+  "directImageUpdates": 2,
+  "sourceCount": 510,
+  "postCount": 157,
+  "countingNote": "同一旧评论在两位导师档案补明确推荐标记；王烨语气未确认，崔秀梅仅为课程适配提醒，不生成新选导票。"
+}

@@ -1,0 +1,237 @@
+{
+  "batch": "mentor-signals-20261115-saved",
+  "newSources": [],
+  "newReviews": [],
+  "existingReviewUpdates": [
+    {
+      "mentorId": "mentor-23",
+      "mentorName": "谭志东",
+      "reviewId": "sr-alias-comments-20261113-tzd",
+      "set": {
+        "selectionSignal": {
+          "direction": "recommend",
+          "intensity": "explicit",
+          "displayLabel": "原帖明确推荐",
+          "excerpt": {
+            "kind": "visible_quote",
+            "text": "那就tzd和zl，比较符合你的要求"
+          },
+          "sourceIds": [
+            "X01"
+          ],
+          "scope": "针对发帖人要求的选导建议；同一条评论同时涉及谭志东、张力。未说明理由或本人接触关系，不作普遍或强烈推荐。"
+        },
+        "sharedCommentId": "x01-tiantianfadian-20250409-tzd-zl"
+      },
+      "reason": "求导师推荐帖下直接建议选择TZD/ZL；原图同框名单可核对缩写。只提升明确选择态度展示，不改变具体经历门槛。",
+      "preserveFields": [
+        "firsthand",
+        "degree",
+        "relationship",
+        "polarity",
+        "contextAssessment.eligibleForRecommendation",
+        "contextAssessment.eligibleForConcern"
+      ]
+    },
+    {
+      "mentorId": "mentor-04",
+      "mentorName": "张力",
+      "reviewId": "sr-alias-comments-20261113-zl",
+      "set": {
+        "selectionSignal": {
+          "direction": "recommend",
+          "intensity": "explicit",
+          "displayLabel": "原帖明确推荐",
+          "excerpt": {
+            "kind": "visible_quote",
+            "text": "那就tzd和zl，比较符合你的要求"
+          },
+          "sourceIds": [
+            "X01"
+          ],
+          "scope": "针对发帖人要求的选导建议；同一条评论同时涉及谭志东、张力。未说明理由或本人接触关系，不作普遍或强烈推荐。"
+        },
+        "sharedCommentId": "x01-tiantianfadian-20250409-tzd-zl"
+      },
+      "reason": "求导师推荐帖下直接建议选择TZD/ZL；原图同框名单可核对缩写。只提升明确选择态度展示，不改变具体经历门槛。",
+      "preserveFields": [
+        "firsthand",
+        "degree",
+        "relationship",
+        "polarity",
+        "contextAssessment.eligibleForRecommendation",
+        "contextAssessment.eligibleForConcern"
+      ]
+    },
+    {
+      "mentorId": "mentor-03",
+      "mentorName": "王烨",
+      "reviewId": "sr-e63702f4d750b2",
+      "set": {
+        "screenshots": [
+          {
+            "src": "./evidence/xhs/x01-lgc-20261113.jpg",
+            "caption": "王烨条件式推荐首评及追问；同图名单区分王烨与王禹",
+            "sourceId": "X01",
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false,
+            "width": 1363,
+            "height": 936,
+            "bytes": 94409,
+            "sha256": "8fe6d54e6c3b7692479906ea09328eebf8f77b8ec8b227760b502f4d87d031d0",
+            "scope": [
+              "2026-11-15实际查看既有原网页截图；可见超酷酷的首评与我不准说话追问，未展开全部4条回复。保留笑语和条件，不推定任务少、好毕业或真实推荐方向。"
+            ],
+            "capturedAt": "2026-11-13"
+          }
+        ],
+        "contextNotes": {
+          "excerpt": {
+            "kind": "visible_quote",
+            "text": "如果想躺平的话推荐王烨老师",
+            "sourceIds": [
+              "X01"
+            ],
+            "scope": "本图实际可见超酷酷的2025-04-02首评前半句；后续连续笑语见原图。本引语不包括其他账号的追问或附和。",
+            "screenshotSrc": "./evidence/xhs/x01-lgc-20261113.jpg"
+          },
+          "context": [
+            "超酷酷的首评明确带“想躺平”的条件及连续笑语；能看到推荐字样，不因此判定为无条件推荐或已核指导强度。",
+            "现有聚合记录还包括跟评追问和附和；本次图证只覆盖超酷酷的首评和一条追问，未声称展开全部回复。"
+          ],
+          "interpretation": {
+            "text": "可能是在谈自主安排较多、主动督促较少；对希望老师盯进度的人，这是需要核实的沟通点。",
+            "confidence": "limited",
+            "alternative": "也可能含玩笑、夸张或反讽，现有摘要不能确定真正的推荐方向。"
+          },
+          "limits": [
+            "未说明评论者学位或直系关系。",
+            "不能由这段讨论断言放养、不负责、容易毕业或允许长期实习。"
+          ],
+          "sourceIds": [
+            "X01"
+          ]
+        }
+      },
+      "reason": "现存原图已可核实首评短句，修复“未取得逐字原话”的过时摘记；不添加selectionSignal，不改变方向或本人经历。",
+      "preserveFields": [
+        "text",
+        "firsthand",
+        "degree",
+        "relationship",
+        "polarity",
+        "contextAssessment",
+        "selectionSignal"
+      ]
+    },
+    {
+      "mentorId": "mentor-07",
+      "mentorName": "崔秀梅",
+      "reviewId": "sr-4c04a46901e7aa",
+      "set": {
+        "screenshots": [
+          {
+            "src": "./evidence/xhs/x01-pj-zxl-20261113.jpg",
+            "caption": "禁止熬夜自述崔秀梅管理会计课，正面评价并提醒与“不卷”目标的匹配",
+            "sourceId": "X01",
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false,
+            "width": 1363,
+            "height": 936,
+            "bytes": 93273,
+            "sha256": "34a51590467ea63993eada38d0a0b99c728fa20a948b121771c0596fe9d76b14",
+            "scope": [
+              "2026-11-15实际查看既有原网页截图；可见禁止熬夜2025-04-02首评全句。估计不符合“不卷”的判断属于课程接触者推测，不是直系研究生任务量或明确劝退。"
+            ],
+            "capturedAt": "2026-11-13"
+          }
+        ]
+      },
+      "reason": "为既有课程体验及匹配提醒补直接原图；不升级为避雷。",
+      "preserveFields": [
+        "text",
+        "firsthand",
+        "degree",
+        "relationship",
+        "polarity",
+        "contextAssessment",
+        "selectionSignal"
+      ]
+    }
+  ],
+  "sourcePostCommentSuggestions": [
+    {
+      "postId": "67ecb72b000000001e0042af",
+      "sourceCommentKey": "X01:天天发癫:2025-04-09:tzd-zl",
+      "set": {
+        "sharedCommentId": "x01-tiantianfadian-20250409-tzd-zl",
+        "use_status": "明确推荐（针对发帖人要求）· 未说明理由或经历"
+      }
+    },
+    {
+      "postId": "67ecb72b000000001e0042af",
+      "teacher": "王烨",
+      "suggestedSet": {
+        "screenshots": [
+          {
+            "src": "./evidence/xhs/x01-lgc-20261113.jpg",
+            "caption": "王烨条件式推荐首评及追问；同图名单区分王烨与王禹",
+            "sourceId": "X01",
+            "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+            "kind": "actual-browser-screenshot",
+            "textAltered": false,
+            "width": 1363,
+            "height": 936,
+            "bytes": 94409,
+            "sha256": "8fe6d54e6c3b7692479906ea09328eebf8f77b8ec8b227760b502f4d87d031d0",
+            "scope": [
+              "2026-11-15实际查看既有原网页截图；可见超酷酷的首评与我不准说话追问，未展开全部4条回复。保留笑语和条件，不推定任务少、好毕业或真实推荐方向。"
+            ],
+            "capturedAt": "2026-11-13"
+          }
+        ],
+        "contextNotes": {
+          "excerpt": {
+            "kind": "visible_quote",
+            "text": "如果想躺平的话推荐王烨老师",
+            "sourceIds": [
+              "X01"
+            ],
+            "scope": "本图实际可见超酷酷的2025-04-02首评前半句；后续连续笑语见原图。本引语不包括其他账号的追问或附和。",
+            "screenshotSrc": "./evidence/xhs/x01-lgc-20261113.jpg"
+          },
+          "context": [
+            "超酷酷的首评明确带“想躺平”的条件及连续笑语；能看到推荐字样，不因此判定为无条件推荐或已核指导强度。",
+            "现有聚合记录还包括跟评追问和附和；本次图证只覆盖超酷酷的首评和一条追问，未声称展开全部回复。"
+          ],
+          "interpretation": {
+            "text": "可能是在谈自主安排较多、主动督促较少；对希望老师盯进度的人，这是需要核实的沟通点。",
+            "confidence": "limited",
+            "alternative": "也可能含玩笑、夸张或反讽，现有摘要不能确定真正的推荐方向。"
+          },
+          "limits": [
+            "未说明评论者学位或直系关系。",
+            "不能由这段讨论断言放养、不负责、容易毕业或允许长期实习。"
+          ],
+          "sourceIds": [
+            "X01"
+          ]
+        }
+      },
+      "matchWarning": "先核对实际评论结构；若该记录为多账号聚合，应保留原聚合身份，仅说明图证覆盖首评。"
+    }
+  ],
+  "counting": {
+    "newIndependentPosts": 0,
+    "newIndependentComments": 0,
+    "newDossierRecords": 0,
+    "newProminentTeacherSignals": 2,
+    "newProminentIndependentComments": 1,
+    "newStrongSignals": 0,
+    "directImageEvidenceUpgrades": 2,
+    "unchangedReviewRecordTotal": 60
+  },
+  "interpretationBoundary": "TZD/ZL为针对发帖人要求的明确建议，只升explicit选导态度，不升亲历或具体推荐理由。王烨保留条件、笑语及语气歧义；崔秀梅为课程接触者适配提醒，不升避雷。"
+}
