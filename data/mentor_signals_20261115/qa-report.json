@@ -90,5 +90,86 @@
     "passed": 188,
     "failed": 0,
     "command": "node --test tests/*.test.mjs"
+  },
+  "productionBrowser": {
+    "filteredMentors": [
+      "张力",
+      "谭志东"
+    ],
+    "sharedPriorityCards": 1,
+    "recommendationLabel": "原帖明确推荐",
+    "bothMentorLinksVerified": true,
+    "originalImageLoaded": [
+      1363,
+      936
+    ],
+    "excludeSelfOnce": true,
+    "documentWidth": 1348,
+    "documentScrollWidth": 1348,
+    "downloadedMentorWord": {
+      "bytes": 80018,
+      "sha256": "5a23ea68eaeb692766fe751d63d622e1522d46703bc22b96cd7accbb33f11a8b",
+      "matchesPublishedPackage": true
+    },
+    "screenshot": "qa/mentor-signals-20261115.jpg"
+  },
+  "productionVerification": {
+    "assets": [
+      {
+        "path": "index.html",
+        "status": 200,
+        "bytes": 11259,
+        "sha256": "f0e390818153dbf776dc1e891984e2f402b789dc1dd0d2331cfe39d210fd049a",
+        "matches": true
+      },
+      {
+        "path": "app.js",
+        "status": 200,
+        "bytes": 153086,
+        "sha256": "7dc25c6724ad50aff7990e74ca9e672fb11322688ab8a09109747cc96cf3dcd7",
+        "matches": true
+      },
+      {
+        "path": "style.css",
+        "status": 200,
+        "bytes": 130734,
+        "sha256": "97514af3df6f3743cc6f37a7762f53989a33bf3c7447ed5b778f406464e8aaa7",
+        "matches": true
+      },
+      {
+        "path": "sw.js",
+        "status": 200,
+        "bytes": 5198,
+        "sha256": "a5caba19cd7f564e73c6f017736a2129d4cacd71d12b8885ca99b64de559f667",
+        "matches": true
+      },
+      {
+        "path": "data/site-data.json",
+        "status": 200,
+        "bytes": 3386283,
+        "sha256": "ab729a4126ec52cfccad3a6da6db8cc8a4353bbb3b3ecdb0c757d700bf7e2029",
+        "matches": true
+      },
+      {
+        "path": "downloads/mentor-guide.docx",
+        "status": 200,
+        "bytes": 80018,
+        "sha256": "5a23ea68eaeb692766fe751d63d622e1522d46703bc22b96cd7accbb33f11a8b",
+        "matches": true
+      },
+      {
+        "path": "downloads/evidence-index.xlsx",
+        "status": 200,
+        "bytes": 577888,
+        "sha256": "6379d409b7d100e470936a80a949238a0c7114deaa179d2a8b85778fed48f623",
+        "matches": true
+      }
+    ],
+    "allAssetsMatch": true,
+    "pagesBuild": {
+      "status": "built",
+      "commit": "c623c29f1dd306220237a07fdaf6a17ca85ef9fa",
+      "matchesCommit": true
+    }
   }
 }
