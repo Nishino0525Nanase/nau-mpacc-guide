@@ -19,9 +19,61 @@
     "screenshotViewer": true,
     "readingScopeExpanded": true,
     "originalCommentDateVisible": "2025-04-04",
-    "workDatesVisible": false
+    "workDatesVisible": false,
+    "lifeSourceListChecked": true,
+    "originalSourceDatesVisible": [
+      "2023-12-29",
+      "2018-11-07"
+    ]
   },
   "wordFilesUnchanged": true,
   "apkUnchanged": true,
-  "mobileViewportChecked": false
+  "mobileViewportChecked": false,
+  "automatedChecks": {
+    "tests": 188,
+    "passed": 188,
+    "failed": 0
+  },
+  "liveBrowser": {
+    "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/?exclude_self=once#mentors",
+    "excludedFromAnalytics": true,
+    "screenshotViewerShowsCleanedScope": true,
+    "originalCommentDatesPreserved": true,
+    "originalImageLoaded": {
+      "width": 1363,
+      "height": 936
+    },
+    "screenshot": "qa/source-dates-20261115.jpg"
+  },
+  "productionVerification": {
+    "assets": [
+      {
+        "path": "sw.js",
+        "status": 200,
+        "bytes": 5187,
+        "sha256": "18d5fb926a71bee14c4b73319bcc22a79d798e365dde1237134ae7c2c8091d13",
+        "matches": true
+      },
+      {
+        "path": "data/site-data.json",
+        "status": 200,
+        "bytes": 3385157,
+        "sha256": "ea43ecdf6a382b014639d04856bc2352b954d83d4201e3a85fc3ac48e85366c4",
+        "matches": true
+      },
+      {
+        "path": "downloads/evidence-index.xlsx",
+        "status": 200,
+        "bytes": 577808,
+        "sha256": "3278ff2cf1dfb6938af96e133e30bfdcaf033b8406f5f853d43cbfb4dadd0bb8",
+        "matches": true
+      }
+    ],
+    "allAssetsMatch": true,
+    "pagesBuild": {
+      "status": "built",
+      "commit": "689b327f6a73b8ce07a20b2fd0a9208a7a8cda32",
+      "matchesCommit": true
+    }
+  }
 }
