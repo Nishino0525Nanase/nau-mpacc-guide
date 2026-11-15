@@ -1263,7 +1263,7 @@
               "评论原话为明确劝退，没有强烈程度修饰或反复强调，不提高为强烈避雷；历史评论也不用于断言当前职务或现状。"
             ],
             "readingScope": [
-              "2026-11-14复核2026-11-13保存的原网页截图：读到沙雪2025-04-04主评及同图原帖名单前两位；未重新访问原帖，未新增展开回复。"
+              "原网页截图可见沙雪2025-04-04主评及同图原帖名单前两位；未展开的回复不在摘录范围内。"
             ],
             "readThisRound": true,
             "contextNotes": {
@@ -1327,7 +1327,7 @@
                 "bytes": 89529,
                 "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
                 "scope": [
-                  "保存的原网页截图可见该条顶层评论及原帖教师名单；2026-11-14本地复核，未重新访问原帖，未声称读完折叠回复。"
+                  "原网页截图可见该条顶层评论及原帖教师名单；折叠回复不在摘录范围内。"
                 ],
                 "capturedAt": "2026-11-13"
               }
@@ -1618,7 +1618,7 @@
                 "bytes": 104838,
                 "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
                 "scope": [
-                  "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+                  "原网页截图可见本条评论；未展示的部分以原帖为准。"
                 ],
                 "capturedAt": "2026-11-13"
               }
@@ -1665,7 +1665,7 @@
               "评论原话为明确劝退，没有强烈程度修饰或反复强调，不提高为强烈避雷；历史评论也不用于断言当前职务或现状。"
             ],
             "readingScope": [
-              "2026-11-14复核2026-11-13保存的原网页截图：读到沙雪2025-04-04主评及同图原帖名单前两位；未重新访问原帖，未新增展开回复。"
+              "原网页截图可见沙雪2025-04-04主评及同图原帖名单前两位；未展开的回复不在摘录范围内。"
             ],
             "readThisRound": true,
             "contextNotes": {
@@ -1729,7 +1729,7 @@
                 "bytes": 89529,
                 "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
                 "scope": [
-                  "保存的原网页截图可见该条顶层评论及原帖教师名单；2026-11-14本地复核，未重新访问原帖，未声称读完折叠回复。"
+                  "原网页截图可见该条顶层评论及原帖教师名单；折叠回复不在摘录范围内。"
                 ],
                 "capturedAt": "2026-11-13"
               }
@@ -6785,7 +6785,7 @@
                 "bytes": 104838,
                 "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
                 "scope": [
-                  "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+                  "原网页截图可见本条评论；未展示的部分以原帖为准。"
                 ],
                 "capturedAt": "2026-11-13"
               }
@@ -7822,7 +7822,7 @@
                 "bytes": 104838,
                 "sha256": "c8fc7832d35cd5dc64942dec9113a6a1f4bff5684ae8b65596fe32c0ea27a438",
                 "scope": [
-                  "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+                  "原网页截图可见本条评论；未展示的部分以原帖为准。"
                 ],
                 "capturedAt": "2026-11-13"
               }
@@ -8567,7 +8567,7 @@
                 "bytes": 94409,
                 "sha256": "8fe6d54e6c3b7692479906ea09328eebf8f77b8ec8b227760b502f4d87d031d0",
                 "scope": [
-                  "2026-11-14本地复核2026-11-13保存的原网页截图，可见对应既有评论；仅补直接图证，不增加评论或独立来源，不改变已有评价等级。"
+                  "原网页截图可见本条评论；未展示的部分以原帖为准。"
                 ],
                 "capturedAt": "2026-11-13"
               }
@@ -16639,7 +16639,7 @@
             },
             {
               "type": "source",
-              "text": "[F38] 招生就业处官网  检索于2026-11-04",
+              "text": "[F38] 招生就业处官网  未标日期",
               "url": "https://zsjyc.nau.edu.cn/",
               "sourceCodes": [
                 "F38"
@@ -16655,7 +16655,7 @@
             },
             {
               "type": "source",
-              "text": "[F40] 研究生院  检索于2026-11-04",
+              "text": "[F40] 研究生院  未标日期",
               "url": "https://gs.nau.edu.cn/",
               "sourceCodes": [
                 "F40"
@@ -17087,7 +17087,7 @@
             },
             {
               "type": "source",
-              "text": "[V01] 浦口校区医务所位置与联系  未标日期 检索2026-11-04",
+              "text": "[V01] 浦口校区医务所位置与联系  未标日期",
               "url": "https://zwwyh.nau.edu.cn/lxwm/",
               "sourceCodes": [
                 "V01"
@@ -17111,7 +17111,7 @@
             },
             {
               "type": "source",
-              "text": "[V04] 校内心理咨询正式预约  未标日期 检索2026-11-04",
+              "text": "[V04] 校内心理咨询正式预约  未标日期",
               "url": "https://xljxb.nau.edu.cn/yyfs/list.htm",
               "sourceCodes": [
                 "V04"
@@ -17119,7 +17119,7 @@
             },
             {
               "type": "source",
-              "text": "[V05] 后勤网上报修与应急维修  未标日期 检索2026-11-04",
+              "text": "[V05] 后勤网上报修与应急维修  未标日期",
               "url": "https://zwwyh.nau.edu.cn/fwzn/",
               "sourceCodes": [
                 "V05"
@@ -17135,7 +17135,7 @@
             },
             {
               "type": "source",
-              "text": "[V07] 失物招领正式入口  未标日期 检索2026-11-04",
+              "text": "[V07] 失物招领正式入口  未标日期",
               "url": "https://bwb.nau.edu.cn/swzl/list.htm",
               "sourceCodes": [
                 "V07"
@@ -19767,7 +19767,7 @@
   "mentorIntro": [
     {
       "type": "p",
-      "text": "内部参考与选导决策辅助｜核验日期 2026年11月5日｜适用对象 报考及已录取MPAcc学生",
+      "text": "内部参考与选导决策辅助｜适用对象 报考及已录取MPAcc学生",
       "sourceCodes": []
     },
     {
@@ -21808,7 +21808,7 @@
         },
         {
           "type": "p",
-          "text": "以下链接与卡片教师页构成核实入口，统一访问日期为2026年11月5日。网页日期或URL年份不等于最后更新时间。17—19为具名学生个案，X01—X03为匿名社交反馈，不能与官方名单或当年名额互相替代。",
+          "text": "以下链接与卡片教师页构成核实入口。网页日期或URL年份不等于最后更新时间。17—19为具名学生个案，X01—X03为匿名社交反馈，不能与官方名单或当年名额互相替代。",
           "sourceCodes": []
         },
         {
@@ -24112,7 +24112,7 @@
               "bytes": 89529,
               "sha256": "85f1c59749cb5992f6c7ef5c56c0ca0d282bd6663eea003bd8fc14bc44055d56",
               "scope": [
-                "保存的原网页截图可见该条顶层评论及原帖教师名单；2026-11-14本地复核，未重新访问原帖，未声称读完折叠回复。"
+                "原网页截图可见该条顶层评论及原帖教师名单；折叠回复不在摘录范围内。"
               ],
               "capturedAt": "2026-11-13"
             }
@@ -30931,7 +30931,7 @@
     "F38": {
       "title": "招生就业处官网",
       "url": "https://zsjyc.nau.edu.cn/",
-      "date": "检索于2026-11-04",
+      "date": "未标日期",
       "kind": "官方",
       "original_id": "F38",
       "code": "F38",
@@ -30953,7 +30953,7 @@
     "F40": {
       "title": "研究生院",
       "url": "https://gs.nau.edu.cn/",
-      "date": "检索于2026-11-04",
+      "date": "未标日期",
       "kind": "官方",
       "original_id": "F40",
       "code": "F40",
@@ -31950,7 +31950,7 @@
     "V01": {
       "title": "浦口校区医务所位置与联系",
       "url": "https://zwwyh.nau.edu.cn/lxwm/",
-      "date": "页面未标发布日期；检索于2026-11-04",
+      "date": "页面未标发布日期",
       "kind": "官方服务",
       "original_id": "V01",
       "code": "V01",
@@ -31961,7 +31961,7 @@
     "V02": {
       "title": "浦口门诊时间的可查范围",
       "url": "https://zwwyh.nau.edu.cn/_t206/3541/list.psp",
-      "date": "页面未标日期，内容仍含南京审计学院旧制度称谓；检索于2026-11-04",
+      "date": "页面未标日期，内容仍含南京审计学院旧制度称谓",
       "kind": "官方服务",
       "original_id": "V02",
       "code": "V02",
@@ -31972,7 +31972,7 @@
     "V03": {
       "title": "学生医保报销办事入口",
       "url": "https://cwc.nau.edu.cn/2023/1229/c3000a123816/page.htm",
-      "date": "财务指南2023-12-29；后勤栏目未标日期；检索于2026-11-04",
+      "date": "财务指南2023-12-29；后勤栏目未标日期",
       "kind": "官方服务",
       "original_id": "V03",
       "code": "V03",
@@ -31983,7 +31983,7 @@
     "V04": {
       "title": "校内心理咨询正式预约",
       "url": "https://xljxb.nau.edu.cn/yyfs/list.htm",
-      "date": "栏目未标发布日期；检索于2026-11-04",
+      "date": "栏目未标发布日期",
       "kind": "官方服务",
       "original_id": "V04",
       "code": "V04",
@@ -31994,7 +31994,7 @@
     "V05": {
       "title": "后勤网上报修与应急维修",
       "url": "https://zwwyh.nau.edu.cn/fwzn/",
-      "date": "栏目未标发布日期；检索于2026-11-04",
+      "date": "栏目未标发布日期",
       "kind": "官方服务",
       "original_id": "V05",
       "code": "V05",
@@ -32016,7 +32016,7 @@
     "V07": {
       "title": "失物招领正式入口",
       "url": "https://bwb.nau.edu.cn/swzl/list.htm",
-      "date": "栏目未标日期；检索于2026-11-04",
+      "date": "栏目未标日期",
       "kind": "官方服务",
       "original_id": "V07",
       "code": "V07",
@@ -32027,7 +32027,7 @@
     "V08": {
       "title": "浦口区图书馆开放时间与晚间说法",
       "url": "https://wlj.nanjing.gov.cn/whcg/tsg/pkqtsg/201807/t20180731_1078669.html",
-      "date": "页面显示2018-11-07；检索于2026-11-04",
+      "date": "页面显示2018-11-07",
       "kind": "官方服务",
       "original_id": "V08",
       "code": "V08",
@@ -41339,12 +41339,12 @@
     {
       "id": "evidence-index",
       "title": "原帖与官方证据索引",
-      "url": "./downloads/evidence-index.xlsx?v=6379d409b7d1",
+      "url": "./downloads/evidence-index.xlsx?v=3278ff2cf1df",
       "format": "xlsx",
       "description": "来源、导师评价、缩写、学生去向和实习索引，可筛选并点击原始链接",
       "filename": "evidence-index.xlsx",
-      "bytes": 577888,
-      "sha256": "6379d409b7d100e470936a80a949238a0c7114deaa179d2a8b85778fed48f623"
+      "bytes": 577808,
+      "sha256": "3278ff2cf1dfb6938af96e133e30bfdcaf033b8406f5f853d43cbfb4dadd0bb8"
     }
   ],
   "officialEvidence": [
@@ -42285,7 +42285,7 @@
       "topic": "失物招领正式入口",
       "title": "失物招领正式入口",
       "author": "南京审计大学官方页面",
-      "date_display": "栏目未标日期；检索于2026-11-04",
+      "date_display": "栏目未标日期",
       "url": "https://bwb.nau.edu.cn/swzl/list.htm",
       "canonical_url": "https://bwb.nau.edu.cn/swzl/list.htm",
       "campus": "未说明",
@@ -42317,7 +42317,7 @@
       "topic": "学生医保报销办事入口",
       "title": "学生医保报销办事入口",
       "author": "南京审计大学官方页面",
-      "date_display": "财务指南2023-12-29；后勤栏目未标日期；检索于2026-11-04",
+      "date_display": "财务指南2023-12-29；后勤栏目未标日期",
       "url": "https://cwc.nau.edu.cn/2023/1229/c3000a123816/page.htm",
       "canonical_url": "https://cwc.nau.edu.cn/2023/1229/c3000a123816/page.htm",
       "campus": "未说明",
@@ -42349,7 +42349,7 @@
       "topic": "办事联系",
       "title": "研究生院",
       "author": "南京审计大学官方页面",
-      "date_display": "检索于2026-11-04",
+      "date_display": "未标日期",
       "url": "https://gs.nau.edu.cn/",
       "canonical_url": "https://gs.nau.edu.cn/",
       "campus": "未说明",
@@ -43821,7 +43821,7 @@
       "topic": "浦口区图书馆开放时间与晚间说法",
       "title": "浦口区图书馆开放时间与晚间说法",
       "author": "南京审计大学官方页面",
-      "date_display": "页面显示2018-11-07；检索于2026-11-04",
+      "date_display": "页面显示2018-11-07",
       "url": "https://wlj.nanjing.gov.cn/whcg/tsg/pkqtsg/201807/t20180731_1078669.html",
       "canonical_url": "https://wlj.nanjing.gov.cn/whcg/tsg/pkqtsg/201807/t20180731_1078669.html",
       "campus": "未说明",
@@ -43853,7 +43853,7 @@
       "topic": "校内心理咨询正式预约",
       "title": "校内心理咨询正式预约",
       "author": "南京审计大学官方页面",
-      "date_display": "栏目未标发布日期；检索于2026-11-04",
+      "date_display": "栏目未标发布日期",
       "url": "https://xljxb.nau.edu.cn/yyfs/list.htm",
       "canonical_url": "https://xljxb.nau.edu.cn/yyfs/list.htm",
       "campus": "未说明",
@@ -43949,7 +43949,7 @@
       "topic": "就业发展",
       "title": "招生就业处官网",
       "author": "南京审计大学官方页面",
-      "date_display": "检索于2026-11-04",
+      "date_display": "未标日期",
       "url": "https://zsjyc.nau.edu.cn/",
       "canonical_url": "https://zsjyc.nau.edu.cn/",
       "campus": "未说明",
@@ -43981,7 +43981,7 @@
       "topic": "浦口门诊时间的可查范围",
       "title": "浦口门诊时间的可查范围",
       "author": "南京审计大学官方页面",
-      "date_display": "页面未标日期，内容仍含南京审计学院旧制度称谓；检索于2026-11-04",
+      "date_display": "页面未标日期，内容仍含南京审计学院旧制度称谓",
       "url": "https://zwwyh.nau.edu.cn/_t206/3541/list.psp",
       "canonical_url": "https://zwwyh.nau.edu.cn/_t206/3541/list.psp",
       "campus": "未说明",
@@ -44013,7 +44013,7 @@
       "topic": "后勤网上报修与应急维修",
       "title": "后勤网上报修与应急维修",
       "author": "南京审计大学官方页面",
-      "date_display": "栏目未标发布日期；检索于2026-11-04",
+      "date_display": "栏目未标发布日期",
       "url": "https://zwwyh.nau.edu.cn/fwzn/",
       "canonical_url": "https://zwwyh.nau.edu.cn/fwzn/",
       "campus": "未说明",
@@ -44045,7 +44045,7 @@
       "topic": "浦口校区医务所位置与联系",
       "title": "浦口校区医务所位置与联系",
       "author": "南京审计大学官方页面",
-      "date_display": "页面未标发布日期；检索于2026-11-04",
+      "date_display": "页面未标发布日期",
       "url": "https://zwwyh.nau.edu.cn/lxwm/",
       "canonical_url": "https://zwwyh.nau.edu.cn/lxwm/",
       "campus": "未说明",
