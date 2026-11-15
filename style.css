@@ -267,6 +267,7 @@
 .selection-panel-card{display:flex;gap:12px;padding:13px 15px;border:1px solid #d6dfcf;border-left:4px solid #28734c;background:#f2f8f2;border-radius:5px;min-width:0}
 .selection-panel-card.avoid{border-color:#e2b3a8;border-left-color:#a34132;background:#fff2ed}
 .selection-panel-copy{flex:1;min-width:0}
+.selection-mentor-links{display:flex;align-items:baseline;flex-wrap:wrap;column-gap:14px}
 .selection-mentor-link{font-size:17px;font-weight:700;line-height:1.5;min-height:0;padding:0;margin-bottom:7px}
 .selection-panel-card.avoid .selection-mentor-link{color:#8d3025}
 .selection-panel-card .review-shot-preview{flex:0 0 76px;width:76px;margin:0;align-self:start}

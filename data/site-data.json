@@ -1944,16 +1944,17 @@
             },
             "contextNotes": {
               "excerpt": {
-                "text": "首评以自行安排、躺平取向提名；跟评把它理解成老师不主动干预，并追问是否容易毕业。",
-                "kind": "summary",
+                "kind": "visible_quote",
+                "text": "如果想躺平的话推荐王烨老师",
                 "sourceIds": [
                   "X01"
                 ],
-                "scope": "据既有评论摘记概括，未取得完整逐字原话，不作为直接引文。"
+                "scope": "本图实际可见超酷酷的2025-04-02首评前半句；后续连续笑语见原图。本引语不包括其他账号的追问或附和。",
+                "screenshotSrc": "./evidence/xhs/x01-lgc-20261113.jpg"
               },
               "context": [
-                "现存摘记涉及首评、追问和附和，不是同一人完整讲述指导经历。",
-                "关于任务轻、好毕业、不卡毕业的内容是提问或理解，未留存具体毕业过程或答复承诺。"
+                "超酷酷的首评明确带“想躺平”的条件及连续笑语；能看到推荐字样，不因此判定为无条件推荐或已核指导强度。",
+                "现有聚合记录还包括跟评追问和附和；本次图证只覆盖超酷酷的首评和一条追问，未声称展开全部回复。"
               ],
               "interpretation": {
                 "text": "可能是在谈自主安排较多、主动督促较少；对希望老师盯进度的人，这是需要核实的沟通点。",
@@ -1967,7 +1968,25 @@
               "sourceIds": [
                 "X01"
               ]
-            }
+            },
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-lgc-20261113.jpg",
+                "caption": "王烨条件式推荐首评及追问；同图名单区分王烨与王禹",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 94409,
+                "sha256": "8fe6d54e6c3b7692479906ea09328eebf8f77b8ec8b227760b502f4d87d031d0",
+                "scope": [
+                  "可见超酷酷的首评与我不准说话追问，未展开全部4条回复。保留笑语和条件，不推定任务少、好毕业或真实推荐方向。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
           }
         ],
         "recommendationPoints": [],
@@ -2283,7 +2302,21 @@
                 ],
                 "capturedAt": "2026-11-13"
               }
-            ]
+            ],
+            "selectionSignal": {
+              "direction": "recommend",
+              "intensity": "explicit",
+              "displayLabel": "原帖明确推荐",
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "那就tzd和zl，比较符合你的要求"
+              },
+              "sourceIds": [
+                "X01"
+              ],
+              "scope": "针对发帖人要求的选导建议；同一条评论同时涉及谭志东、张力。未说明理由或本人接触关系，不作普遍或强烈推荐。",
+              "alias": "ZL"
+            }
           }
         ],
         "recommendationPoints": [
@@ -3117,7 +3150,25 @@
             ],
             "readingScope": "文字评论；未展开回复及图片名单不在此条材料范围内。",
             "readThisRound": true,
-            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。"
+            "authenticatedRereadScope": "带入已保存登录状态，补读已加载的顶层评论并展开王烨、黄中生、傅祥斐、李仲泽及其他相关支线；评论计数95，未加载部分及未穷尽支线仍未读，不以约数计算已读或未读条数。",
+            "screenshots": [
+              {
+                "src": "./evidence/xhs/x01-pj-zxl-20261113.jpg",
+                "caption": "禁止熬夜自述崔秀梅管理会计课，正面评价并提醒与“不卷”目标的匹配",
+                "sourceId": "X01",
+                "sourceUrl": "https://www.xiaohongshu.com/explore/67ecb72b000000001e0042af",
+                "kind": "actual-browser-screenshot",
+                "textAltered": false,
+                "width": 1363,
+                "height": 936,
+                "bytes": 93273,
+                "sha256": "34a51590467ea63993eada38d0a0b99c728fa20a948b121771c0596fe9d76b14",
+                "scope": [
+                  "可见禁止熬夜2025-04-02首评全句。估计不符合“不卷”的判断属于课程接触者推测，不是直系研究生任务量或明确劝退。"
+                ],
+                "capturedAt": "2026-11-13"
+              }
+            ]
           },
           {
             "id": "sr-c8216c4fc1a3f7",
@@ -7479,8 +7530,8 @@
       "sourceCodes": [],
       "studentReviews": {
         "coverageStatus": "weak_mentions",
-        "coverageLabel": "选导态度 · 未说明具体经历",
-        "summary": "TZD与ZL在同一条评论中被提名；未说明具体理由。",
+        "coverageLabel": "明确选导推荐 · 接触未明",
+        "summary": "同帖建议考虑TZD（谭志东）和ZL（张力），针对发帖人要求；两档案共用一条评论，理由和接触关系未说明。",
         "reviews": [
           {
             "id": "sr-alias-comments-20261113-tzd",
@@ -7580,7 +7631,21 @@
                 ],
                 "capturedAt": "2026-11-13"
               }
-            ]
+            ],
+            "selectionSignal": {
+              "direction": "recommend",
+              "intensity": "explicit",
+              "displayLabel": "原帖明确推荐",
+              "excerpt": {
+                "kind": "visible_quote",
+                "text": "那就tzd和zl，比较符合你的要求"
+              },
+              "sourceIds": [
+                "X01"
+              ],
+              "scope": "针对发帖人要求的选导建议；同一条评论同时涉及谭志东、张力。未说明理由或本人接触关系，不作普遍或强烈推荐。",
+              "alias": "TZD"
+            }
           }
         ],
         "recommendationPoints": [],
@@ -41254,12 +41319,12 @@
     {
       "id": "mentor-guide",
       "title": "导师选择参考",
-      "url": "./downloads/mentor-guide.docx?v=c3f5aa53bf41",
+      "url": "./downloads/mentor-guide.docx?v=5a23ea68eaeb",
       "format": "docx",
       "description": "34位导师，含学生评价、缩写对照与公开学生去向，保留来源链接",
       "filename": "mentor-guide.docx",
-      "bytes": 79985,
-      "sha256": "c3f5aa53bf418f043796c79d9ae18962680fee86e3c6143f62bfd411daf1007b"
+      "bytes": 80018,
+      "sha256": "5a23ea68eaeb692766fe751d63d622e1522d46703bc22b96cd7accbb33f11a8b"
     },
     {
       "id": "life-guide",
@@ -41274,12 +41339,12 @@
     {
       "id": "evidence-index",
       "title": "原帖与官方证据索引",
-      "url": "./downloads/evidence-index.xlsx?v=077a3f2f0947",
+      "url": "./downloads/evidence-index.xlsx?v=6379d409b7d1",
       "format": "xlsx",
       "description": "来源、导师评价、缩写、学生去向和实习索引，可筛选并点击原始链接",
       "filename": "evidence-index.xlsx",
-      "bytes": 577816,
-      "sha256": "077a3f2f0947b4fd9672a7e0e5610948e46932455a4e077cd81a0d92ecb2cdf8"
+      "bytes": 577888,
+      "sha256": "6379d409b7d100e470936a80a949238a0c7114deaa179d2a8b85778fed48f623"
     }
   ],
   "officialEvidence": [

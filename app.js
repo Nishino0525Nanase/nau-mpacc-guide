@@ -406,12 +406,12 @@
     return `<strong class="selection-signal-badge ${signal.direction}">原帖${intensity}${direction}</strong>`;
   }
 
-  function selectionSignalHtml(review, compact = false) {
+  function selectionSignalHtml(review, compact = false, showAlias = true) {
     const signal = selectionSignalFor(review);
     if (!signal) return '';
     const quote = signal.excerpt.kind !== 'recorded_summary';
     const label = signal.excerpt.kind === 'visible_quote' ? '截图原话' : quote ? '此前摘记原话' : '已存摘要';
-    return `<div class="selection-signal selection-signal-${signal.direction}${compact ? ' compact' : ''}" data-signal-direction="${signal.direction}"><div class="selection-signal-heading">${selectionSignalBadge(review)}<small>${label}${signal.alias ? ' · ' + esc(signal.alias) : ''}</small></div><p class="selection-signal-excerpt">${quote ? `<q>${esc(signal.excerpt.text)}</q>` : esc(signal.excerpt.text)}</p><p class="selection-signal-scope">${esc(signal.scope || '评论者的选择态度；接触关系与具体理由见原文。')}</p><div class="selection-signal-source">${esc(review.narrator || '评论者未留存')}${review.date ? ' · ' + esc(review.date) : ''} ${inline('[' + signal.sourceIds.join('、') + ']')}</div></div>`;
+    return `<div class="selection-signal selection-signal-${signal.direction}${compact ? ' compact' : ''}" data-signal-direction="${signal.direction}"><div class="selection-signal-heading">${selectionSignalBadge(review)}<small>${label}${showAlias && signal.alias ? ' · ' + esc(signal.alias) : ''}</small></div><p class="selection-signal-excerpt">${quote ? `<q>${esc(signal.excerpt.text)}</q>` : esc(signal.excerpt.text)}</p><p class="selection-signal-scope">${esc(signal.scope || '评论者的选择态度；接触关系与具体理由见原文。')}</p><div class="selection-signal-source">${esc(review.narrator || '评论者未留存')}${review.date ? ' · ' + esc(review.date) : ''} ${inline('[' + signal.sourceIds.join('、') + ']')}</div></div>`;
   }
 
   function mentorSelectionSignalHtml(mentor, compact = false) {
@@ -422,8 +422,20 @@
     const panel = $('#mentor-selection-signals');
     if (!panel) return;
     const entries = mentors.flatMap(mentor => mentorSelectionSignals(mentor).map(item => ({mentor,...item}))).sort((a,b) => a.signal.direction === b.signal.direction ? 0 : a.signal.direction === 'avoid' ? -1 : 1);
+    const grouped = new Map();
+    for (const entry of entries) {
+      const {mentor,review,signal} = entry;
+      const key = review.sharedCommentId ? JSON.stringify([review.sharedCommentId, signal.direction, signal.intensity, signal.excerpt.kind, signal.excerpt.text, signal.sourceIds]) : `${mentor.id}:${review.id}`;
+      if (!grouped.has(key)) grouped.set(key, []);
+      const members = grouped.get(key);
+      if (!members.some(member => member.mentor.id === mentor.id)) members.push(entry);
+    }
     panel.hidden = !entries.length;
-    panel.innerHTML = entries.length ? `<div class="selection-panel-heading"><h3>选导评论重点</h3><span>原评论的明确选导态度 · 优先查看</span></div><div class="selection-panel-grid">${entries.map(({mentor,review,signal}) => `<article class="selection-panel-card ${signal.direction}"><div class="selection-panel-copy"><button type="button" class="text-button selection-mentor-link" data-action="mentor" data-id="${esc(mentor.id)}">${esc(mentor.name)}${signal.alias ? ' · ' + esc(signal.alias) : ''} ↗</button>${selectionSignalHtml(review,true)}</div>${reviewImageThumbnail(review,mentor.id,reviewImages(review))}</article>`).join('')}</div>` : '';
+    panel.innerHTML = entries.length ? `<div class="selection-panel-heading"><h3>选导评论重点</h3><span>${grouped.size} 条评论 · ${new Set(entries.map(entry => entry.mentor.id)).size} 位导师 · 同条评论合并显示</span></div><div class="selection-panel-grid">${[...grouped.values()].map(members => {
+      const {mentor,review,signal} = members[0];
+      const links = members.map(member => `<button type="button" class="text-button selection-mentor-link" data-action="mentor" data-id="${esc(member.mentor.id)}">${esc(member.mentor.name)}${member.signal.alias ? ' · ' + esc(member.signal.alias) : ''} ↗</button>`).join('');
+      return `<article class="selection-panel-card ${signal.direction}"><div class="selection-panel-copy"><div class="selection-mentor-links">${links}</div>${selectionSignalHtml(review,true,members.length === 1)}</div>${reviewImageThumbnail(review,mentor.id,reviewImages(review))}</article>`;
+    }).join('')}</div>` : '';
   }
 
   function reviewImages(item) {
