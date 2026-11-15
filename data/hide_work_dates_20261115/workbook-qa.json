@@ -1,0 +1,255 @@
+{
+  "status": "verified",
+  "sourceBytes": 577888,
+  "sourceSha256": "6379d409b7d100e470936a80a949238a0c7114deaa179d2a8b85778fed48f623",
+  "outputBytes": 577808,
+  "outputSha256": "3278ff2cf1dfb6938af96e133e30bfdcaf033b8406f5f853d43cbfb4dadd0bb8",
+  "changedDisplayCells": 34,
+  "suffixesRemoved": 26,
+  "undatedLabelsInserted": 8,
+  "remainingRemovedMarkerHits": 0,
+  "sheets": 16,
+  "tables": 19,
+  "unchangedFormulasAndCaches": 1813,
+  "allFormulasAreConstantHyperlinksWithoutEditedCellDependencies": true,
+  "formulaErrors": [],
+  "onlyThreeWorksheetPartsChanged": true,
+  "onlyRequestedValueTextSpansChanged": true,
+  "allOtherPackagePartsByteIdentical": true,
+  "allUnrelatedCellsStylesTablesLinksAndLayoutPreserved": true,
+  "realDatesPreservedByExactRequestedReplacement": true,
+  "nativeRecalculationRequired": false,
+  "nativeRecalculationReason": "Only constant display labels changed; formula definitions and all existing native caches are byte-identical.",
+  "changes": [
+    {
+      "sheetName": "完整来源目录",
+      "address": "D58",
+      "oldValue": "检索于2026-11-04",
+      "newValue": "未标日期"
+    },
+    {
+      "sheetName": "完整来源目录",
+      "address": "D60",
+      "oldValue": "检索于2026-11-04",
+      "newValue": "未标日期"
+    },
+    {
+      "sheetName": "完整来源目录",
+      "address": "D112",
+      "oldValue": "页面未标发布日期；检索于2026-11-04",
+      "newValue": "页面未标发布日期"
+    },
+    {
+      "sheetName": "完整来源目录",
+      "address": "D113",
+      "oldValue": "页面未标日期，内容仍含南京审计学院旧制度称谓；检索于2026-11-04",
+      "newValue": "页面未标日期，内容仍含南京审计学院旧制度称谓"
+    },
+    {
+      "sheetName": "完整来源目录",
+      "address": "D114",
+      "oldValue": "财务指南2023-12-29；后勤栏目未标日期；检索于2026-11-04",
+      "newValue": "财务指南2023-12-29；后勤栏目未标日期"
+    },
+    {
+      "sheetName": "完整来源目录",
+      "address": "D115",
+      "oldValue": "栏目未标发布日期；检索于2026-11-04",
+      "newValue": "栏目未标发布日期"
+    },
+    {
+      "sheetName": "完整来源目录",
+      "address": "D116",
+      "oldValue": "栏目未标发布日期；检索于2026-11-04",
+      "newValue": "栏目未标发布日期"
+    },
+    {
+      "sheetName": "完整来源目录",
+      "address": "D118",
+      "oldValue": "栏目未标日期；检索于2026-11-04",
+      "newValue": "栏目未标日期"
+    },
+    {
+      "sheetName": "完整来源目录",
+      "address": "D119",
+      "oldValue": "页面显示2018-11-07；检索于2026-11-04",
+      "newValue": "页面显示2018-11-07"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G59",
+      "oldValue": "页面未标发布日期；检索于2026-11-04",
+      "newValue": "页面未标发布日期"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G60",
+      "oldValue": "财务指南2023-12-29；后勤栏目未标日期；检索于2026-11-04",
+      "newValue": "财务指南2023-12-29；后勤栏目未标日期"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G61",
+      "oldValue": "栏目未标发布日期；检索于2026-11-04",
+      "newValue": "栏目未标发布日期"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G64",
+      "oldValue": "财务指南2023-12-29；后勤栏目未标日期；检索于2026-11-04",
+      "newValue": "财务指南2023-12-29；后勤栏目未标日期"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G66",
+      "oldValue": "检索于2026-11-04",
+      "newValue": "未标日期"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G67",
+      "oldValue": "检索于2026-11-04",
+      "newValue": "未标日期"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G68",
+      "oldValue": "检索于2026-11-04",
+      "newValue": "未标日期"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G69",
+      "oldValue": "页面未标发布日期；检索于2026-11-04",
+      "newValue": "页面未标发布日期"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G70",
+      "oldValue": "财务指南2023-12-29；后勤栏目未标日期；检索于2026-11-04",
+      "newValue": "财务指南2023-12-29；后勤栏目未标日期"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G71",
+      "oldValue": "栏目未标发布日期；检索于2026-11-04",
+      "newValue": "栏目未标发布日期"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G72",
+      "oldValue": "栏目未标发布日期；检索于2026-11-04",
+      "newValue": "栏目未标发布日期"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G73",
+      "oldValue": "2026-05-14；与2024-04-03值班页交叉核对；栏目未标日期；检索于2026-11-04",
+      "newValue": "2026-05-14；与2024-04-03值班页交叉核对；栏目未标日期"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G93",
+      "oldValue": "2026-09-01；财务指南2023-12-29；后勤栏目未标日期；检索于2026-11-04",
+      "newValue": "2026-09-01；财务指南2023-12-29；后勤栏目未标日期"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G94",
+      "oldValue": "2026-09-01；财务指南2023-12-29；后勤栏目未标日期；检索于2026-11-04",
+      "newValue": "2026-09-01；财务指南2023-12-29；后勤栏目未标日期"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G95",
+      "oldValue": "栏目未标发布日期；检索于2026-11-04",
+      "newValue": "栏目未标发布日期"
+    },
+    {
+      "sheetName": "生活学习要点",
+      "address": "G106",
+      "oldValue": "检索于2026-11-04",
+      "newValue": "未标日期"
+    },
+    {
+      "sheetName": "官方核实",
+      "address": "H36",
+      "oldValue": "栏目未标日期；检索于2026-11-04",
+      "newValue": "栏目未标日期"
+    },
+    {
+      "sheetName": "官方核实",
+      "address": "H37",
+      "oldValue": "财务指南2023-12-29；后勤栏目未标日期；检索于2026-11-04",
+      "newValue": "财务指南2023-12-29；后勤栏目未标日期"
+    },
+    {
+      "sheetName": "官方核实",
+      "address": "H38",
+      "oldValue": "检索于2026-11-04",
+      "newValue": "未标日期"
+    },
+    {
+      "sheetName": "官方核实",
+      "address": "H84",
+      "oldValue": "页面显示2018-11-07；检索于2026-11-04",
+      "newValue": "页面显示2018-11-07"
+    },
+    {
+      "sheetName": "官方核实",
+      "address": "H85",
+      "oldValue": "栏目未标发布日期；检索于2026-11-04",
+      "newValue": "栏目未标发布日期"
+    },
+    {
+      "sheetName": "官方核实",
+      "address": "H88",
+      "oldValue": "检索于2026-11-04",
+      "newValue": "未标日期"
+    },
+    {
+      "sheetName": "官方核实",
+      "address": "H89",
+      "oldValue": "页面未标日期，内容仍含南京审计学院旧制度称谓；检索于2026-11-04",
+      "newValue": "页面未标日期，内容仍含南京审计学院旧制度称谓"
+    },
+    {
+      "sheetName": "官方核实",
+      "address": "H90",
+      "oldValue": "栏目未标发布日期；检索于2026-11-04",
+      "newValue": "栏目未标发布日期"
+    },
+    {
+      "sheetName": "官方核实",
+      "address": "H91",
+      "oldValue": "页面未标发布日期；检索于2026-11-04",
+      "newValue": "页面未标发布日期"
+    }
+  ],
+  "visualReview": {
+    "status": "passed",
+    "beforeAfterViews": [
+      "完整来源目录 C58:D60",
+      "生活学习要点 F59:G61",
+      "生活学习要点 F66:G68",
+      "官方核实 G36:H38"
+    ],
+    "finding": "Dates and undated labels remain legible; existing typography, row sizing, fills and borders preserved."
+  },
+  "independentBaselineAudit": {
+    "status": "passed",
+    "targetCells": 34,
+    "wholeCellLabels": 8,
+    "suffixLabels": 26,
+    "unexpectedWorkDateDisplayHits": 0
+  },
+  "downloadCopyVerified": true,
+  "independentFinalAudit": {
+    "status": "passed",
+    "changedConstantCells": 34,
+    "onlyExpectedThreeWorksheetPartsChanged": true,
+    "remainingRemovedMarkerHits": 0,
+    "unrelatedPackagePartsByteIdentical": true,
+    "allOtherCellXmlPreserved": true
+  }
+}
