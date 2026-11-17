@@ -1,0 +1,29 @@
+{
+  "automatedChecks": {
+    "passed": 191,
+    "failed": 0
+  },
+  "personalLetterTemplatesUnchanged": true,
+  "existingPassphraseConditionUnchanged": true,
+  "standaloneContinuationHeadingRemoved": true,
+  "dateCluesRemovedFromFormAndErrors": true,
+  "localUi": {
+    "singlePunctuationEntry": true,
+    "keyboardEnterOpensForm": true,
+    "tabFocusWorks": true,
+    "emptySubmitGenericError": true,
+    "escapeRestoresOriginalEntry": true,
+    "backReturnsToShortLetter": true,
+    "observedTargetWidth": 33,
+    "observedTargetHeight": 50.84375
+  },
+  "offlineSubmitCases": [
+    "empty",
+    "incorrect",
+    "existing"
+  ],
+  "browserCredentialEntryUsed": false,
+  "mobileViewportChecked": false,
+  "siteDataAndDownloadsUnchanged": true,
+  "apkUnchanged": true
+}
