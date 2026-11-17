@@ -341,8 +341,5 @@
 .official-downloads .content-table{font-size:13px}
 
 /* Keep the letter entry separate from the practical guide. */
-.quiet-letter-page .letter-inline-turn{display:inline-block;position:relative;box-sizing:content-box;min-width:16px;min-height:16px;margin:-8px;padding:8px;border:0;border-radius:0;background:none;color:inherit;font:inherit;letter-spacing:inherit;line-height:inherit;vertical-align:baseline;text-decoration:none;box-shadow:none}
-.quiet-letter-page .letter-inline-turn:focus-visible{outline:2px solid var(--teal);outline-offset:1px}
 .letter-entry{max-width:1224px;margin:0 auto 28px;padding:0 28px;text-align:right}
-.letter-entry .text-button{font-size:12px;color:var(--muted)}
 @media(max-width:680px){.letter-entry{padding:0 18px;margin-bottom:22px}}

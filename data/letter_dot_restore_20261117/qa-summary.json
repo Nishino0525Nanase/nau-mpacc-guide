@@ -1,0 +1,24 @@
+{
+  "referenceCommit": "f39fe27",
+  "automatedChecks": {
+    "passed": 191,
+    "failed": 0
+  },
+  "personalLetterTemplatesUnchanged": true,
+  "existingPassphraseConditionUnchanged": true,
+  "publicEntry": {
+    "visibleText": "·",
+    "separateVisibleLetterLabel": false
+  },
+  "localUi": {
+    "dotOpensShortLetter": true,
+    "sealedEntryOnlyInsideLetter": true,
+    "YYYYMMDDPlaceholderVisible": true,
+    "newPunctuationEntryRemoved": true,
+    "emptySubmitShowsError": true,
+    "backReturnsToShortLetter": true
+  },
+  "browserCredentialEntryUsed": false,
+  "siteDataAndDownloadsUnchanged": true,
+  "apkUnchanged": true
+}
