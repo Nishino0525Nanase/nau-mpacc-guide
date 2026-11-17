@@ -25,5 +25,70 @@
   "browserCredentialEntryUsed": false,
   "mobileViewportChecked": false,
   "siteDataAndDownloadsUnchanged": true,
-  "apkUnchanged": true
+  "apkUnchanged": true,
+  "liveBrowser": {
+    "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/?exclude_self=once#mentors",
+    "qaExclusionNoticeVisible": true,
+    "appRevision": "letterquiet1",
+    "punctuationEntryChecked": true,
+    "neutralFormChecked": true,
+    "dateCluesAbsent": true,
+    "browserCredentialEntryUsed": false,
+    "screenshot": "qa/quiet-letter-20261117.jpg"
+  },
+  "productionVerification": {
+    "sourceCommit": "840b756d485c76e2fdd8e3c6a9e737f65c9e730d",
+    "pagesCommit": "05b05a70f8c096fe69cb04b3503fdc1a84dac296",
+    "pagesBuild": {
+      "status": "built",
+      "commit": "05b05a70f8c096fe69cb04b3503fdc1a84dac296",
+      "matchesCommit": true
+    },
+    "assets": [
+      {
+        "path": "index.html",
+        "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/index.html?exclude_self=once",
+        "status": 200,
+        "bytes": 11255,
+        "sha256": "6fa57900a8215a5e83aa902b94deee79e0c2d922fcd3fe89a3f8e11b7724c126",
+        "expectedBytes": 11255,
+        "expectedSha256": "6fa57900a8215a5e83aa902b94deee79e0c2d922fcd3fe89a3f8e11b7724c126",
+        "byteMatch": true
+      },
+      {
+        "path": "app.js",
+        "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/app.js?v=letterquiet1",
+        "status": 200,
+        "bytes": 152896,
+        "sha256": "e4141240fc6da81adf2eeada1176f4ef1cd19404e15755aaa5cefbb4ce7ad251",
+        "expectedBytes": 152896,
+        "expectedSha256": "e4141240fc6da81adf2eeada1176f4ef1cd19404e15755aaa5cefbb4ce7ad251",
+        "byteMatch": true
+      },
+      {
+        "path": "style.css",
+        "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/style.css?v=letterquiet1",
+        "status": 200,
+        "bytes": 131166,
+        "sha256": "7cf594ff00e4ee1942e2b40acb03f465ffdec66bb49c281ff2d8e25b40ea68ba",
+        "expectedBytes": 131166,
+        "expectedSha256": "7cf594ff00e4ee1942e2b40acb03f465ffdec66bb49c281ff2d8e25b40ea68ba",
+        "byteMatch": true
+      },
+      {
+        "path": "sw.js",
+        "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/sw.js",
+        "status": 200,
+        "bytes": 5183,
+        "sha256": "1559d63dcb70ef60d6e4d2e5d2b116843f1dac012606526be4729b78ed31ab9c",
+        "expectedBytes": 5183,
+        "expectedSha256": "1559d63dcb70ef60d6e4d2e5d2b116843f1dac012606526be4729b78ed31ab9c",
+        "byteMatch": true
+      }
+    ],
+    "allAssetsByteMatch": true,
+    "plainHttpReadsOnly": true,
+    "assetFetchExecutedBrowserCode": false,
+    "captureEventsSent": false
+  }
 }
