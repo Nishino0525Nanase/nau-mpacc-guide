@@ -18,5 +18,51 @@
   },
   "independentReviewPassed": true,
   "browserCredentialEntryUsed": false,
-  "siteDataAndDownloadsUnchanged": true
+  "siteDataAndDownloadsUnchanged": true,
+  "liveBrowser": {
+    "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/?exclude_self=once#mentors",
+    "appRevision": "letterlayer3",
+    "publicEntryVisibleText": "读一封小信 ↗",
+    "secondLetterEntryVisibleText": "·",
+    "secondLetterEntryCount": 1,
+    "sealedHeadingAbsentFromFirstLetter": true,
+    "dotOpensYYYYMMDDForm": true,
+    "backReturnsToFirstLetterWithDot": true,
+    "qaExclusionNoticeVisible": true,
+    "browserCredentialEntryUsed": false,
+    "screenshot": "qa/inner-letter-dot-20261117.jpg"
+  },
+  "productionVerification": {
+    "sourceCommit": "ddbea47031ee88264864edd878f006c713a99732",
+    "pagesCommit": "4e7d742d63558b5fa6594f1361152581f30854a3",
+    "pagesBuild": "built",
+    "allAssetsByteMatch": true,
+    "assets": [
+      {
+        "path": "index.html",
+        "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/index.html?exclude_self=once",
+        "byteMatch": true,
+        "sha256": "6199016b7b8ed6af845bda9c2f327f1a3bd8bb486bcf71ab6430a19142308cf5"
+      },
+      {
+        "path": "app.js",
+        "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/app.js?v=letterlayer3",
+        "byteMatch": true,
+        "sha256": "4a52f1fc7a14e87186423966511552796acf7752d455f8675ab3c7368140a960"
+      },
+      {
+        "path": "style.css",
+        "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/style.css?v=letterlayer3",
+        "byteMatch": true,
+        "sha256": "97514af3df6f3743cc6f37a7762f53989a33bf3c7447ed5b778f406464e8aaa7"
+      },
+      {
+        "path": "sw.js",
+        "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/sw.js",
+        "byteMatch": true,
+        "sha256": "e167b5c488da78c43957f6d59d93d2614091052bf969c4e07edebb86bf4c2a4d"
+      }
+    ],
+    "captureEventsSent": false
+  }
 }
