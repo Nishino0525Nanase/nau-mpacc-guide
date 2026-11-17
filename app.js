@@ -1192,7 +1192,7 @@
     const page = $('#short-letter-template');
     if (!page?.innerHTML.trim()) return;
     const copy = page.innerHTML.replace('<h3>', '<h2 id="dialog-title">').replace('</h3>', '</h2>');
-    openDialog('纸页背面', `<article class="quiet-letter-page">${copy}<div class="letter-page-turn"><button type="button" class="text-button letter-code-entry" data-action="letter-code">封存的一页 <span aria-hidden="true">↗</span></button></div></article>`, 'quiet-letter');
+    openDialog('纸页背面', `<article class="quiet-letter-page">${copy}<div class="afterword-corner"><button type="button" class="afterword-key" data-action="letter-code" aria-label="翻页"><span aria-hidden="true">·</span></button></div></article>`, 'quiet-letter');
   }
 
   function openQuietLetter() {
