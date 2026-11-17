@@ -14,5 +14,50 @@
   "existingPrivacyAndQaExclusionGuardsPreserved": true,
   "productionSyntheticEventsSent": false,
   "dataAndAttachmentsUnchanged": true,
-  "apkRebuilt": false
+  "apkRebuilt": false,
+  "productionVerification": {
+    "sourceCommit": "7df132949c8ee922970794bead8e4217ae7ed848",
+    "pagesCommit": "d3c10f01356fe4c66cf35fd35cfc305bd8353445",
+    "pagesBuild": {
+      "status": "built",
+      "commit": "d3c10f01356fe4c66cf35fd35cfc305bd8353445",
+      "matchesCommit": true
+    },
+    "assets": [
+      {
+        "path": "index.html",
+        "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/index.html?exclude_self=once",
+        "status": 200,
+        "bytes": 11259,
+        "sha256": "3f3743d2f4a842e719a2ba672f7a710f4aad2d9726b3d0d1b63f598f05730b70",
+        "expectedBytes": 11259,
+        "expectedSha256": "3f3743d2f4a842e719a2ba672f7a710f4aad2d9726b3d0d1b63f598f05730b70",
+        "byteMatch": true
+      },
+      {
+        "path": "analytics.js",
+        "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/analytics.js?v=traffic2",
+        "status": 200,
+        "bytes": 17351,
+        "sha256": "c722a49c869ef0fcd1ac22b88a3f8d6340b725e0a21f8a6369a9cff628e07343",
+        "expectedBytes": 17351,
+        "expectedSha256": "c722a49c869ef0fcd1ac22b88a3f8d6340b725e0a21f8a6369a9cff628e07343",
+        "byteMatch": true
+      },
+      {
+        "path": "sw.js",
+        "url": "https://nishino0525nanase.github.io/nau-mpacc-guide/sw.js",
+        "status": 200,
+        "bytes": 5192,
+        "sha256": "c9c8e04afa7a89bdfaa290de49daf0fac789eb23853400cc77cea9da04509835",
+        "expectedBytes": 5192,
+        "expectedSha256": "c9c8e04afa7a89bdfaa290de49daf0fac789eb23853400cc77cea9da04509835",
+        "byteMatch": true
+      }
+    ],
+    "allAssetsByteMatch": true,
+    "plainHttpReadsOnly": true,
+    "browserExecuted": false,
+    "captureEventsSent": false
+  }
 }
