@@ -1192,8 +1192,7 @@
     const page = $('#short-letter-template');
     if (!page?.innerHTML.trim()) return;
     const copy = page.innerHTML.replace('<h3>', '<h2 id="dialog-title">').replace('</h3>', '</h2>');
-    const markedCopy = copy.replace(/。(<\/p>)(?![\s\S]*<p\b)/, '<button type="button" class="letter-inline-turn" data-action="letter-code" aria-label="翻页">。</button>$1');
-    openDialog('纸页背面', `<article class="quiet-letter-page">${markedCopy}</article>`, 'quiet-letter');
+    openDialog('纸页背面', `<article class="quiet-letter-page">${copy}<div class="letter-page-turn"><button type="button" class="text-button letter-code-entry" data-action="letter-code">封存的一页 <span aria-hidden="true">↗</span></button></div></article>`, 'quiet-letter');
   }
 
   function openQuietLetter() {
@@ -1202,7 +1201,7 @@
   }
 
   function openLetterCode() {
-    openDialog('纸页背面', '<section class="letter-code-page"><h2 id="dialog-title">继续阅读</h2><form id="letter-code-form" novalidate><label for="letter-code">口令</label><input id="letter-code" type="password" inputmode="numeric" maxlength="8" autocomplete="off" aria-describedby="letter-code-error"><p id="letter-code-error" class="letter-code-error" role="alert" hidden></p><div class="letter-code-actions"><button type="button" class="text-button" data-action="short-letter">返回</button><button type="submit" class="button secondary">继续</button></div></form></section>', 'letter-code');
+    openDialog('夹页', '<section class="letter-code-page"><h2 id="dialog-title">封存的一页</h2><p>用一段旧日期，翻开这一页。</p><form id="letter-code-form" novalidate><label for="letter-code">八位日期</label><input id="letter-code" type="password" inputmode="numeric" maxlength="8" autocomplete="off" placeholder="YYYYMMDD" aria-describedby="letter-code-hint letter-code-error"><p id="letter-code-hint" class="letter-code-hint">按年月日填写。</p><p id="letter-code-error" class="letter-code-error" role="alert" hidden></p><div class="letter-code-actions"><button type="button" class="text-button" data-action="short-letter">← 回到小信</button><button type="submit" class="button secondary">翻开</button></div></form></section>', 'letter-code');
     $('#letter-code').focus({preventScroll:true});
   }
 
