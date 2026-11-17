@@ -1,0 +1,22 @@
+{
+  "automatedChecks": {
+    "passed": 191,
+    "failed": 0
+  },
+  "personalLetterTemplatesUnchanged": true,
+  "existingPassphraseConditionUnchanged": true,
+  "dateFormUnchanged": true,
+  "localUi": {
+    "publicEntryVisibleText": "读一封小信 ↗",
+    "firstLetterTextUnchanged": true,
+    "secondLetterEntryVisibleText": "·",
+    "secondLetterEntryCount": 1,
+    "sealedHeadingAbsentFromFirstLetter": true,
+    "oldDividerRemoved": true,
+    "dotOpensYYYYMMDDForm": true,
+    "backReturnsToFirstLetterWithDot": true
+  },
+  "independentReviewPassed": true,
+  "browserCredentialEntryUsed": false,
+  "siteDataAndDownloadsUnchanged": true
+}
