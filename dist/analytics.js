@@ -1,7 +1,7 @@
 /* Page-open counts and approximate foreground-visible duration. No cookies, visitor ID, SDK or replay.
  * Each page load gets an ephemeral random event ID; never interpret it as UV.
  * Owner exclusion uses a local preference, processed before any capture.
- * Explicit QA URLs and a true WebDriver flag skip this load without saving a preference.
+ * QA URLs, a true WebDriver flag, and explicit headless UA tokens skip this load without saving a preference.
  * A missing or false WebDriver flag does not establish that a visitor is human.
  * Device categories are estimates, not a hardware model or persistent identity.
  */
@@ -15,6 +15,7 @@
   var attempted = false;
   var stopDwell = function () {};
   var DWELL_VERSION = 'visible_v1';
+  var CAPTURE_BUILD = 'traffic2';
   function storage() {
     try { return window.localStorage; } catch (_) { return null; }
   }
@@ -335,6 +336,14 @@
         return;
       }
     } catch (_) {}
+    try {
+      // Inspect only explicit self-identification locally; missing UA remains unknown.
+      var ua = window.navigator && window.navigator.userAgent;
+      if (typeof ua === 'string' && /(?:^|[\s;(])(?:HeadlessChrome|PhantomJS)\/\d+(?:\.\d+)*(?=$|[\s;)])/i.test(ua)) {
+        disabled = true;
+        return;
+      }
+    } catch (_) {}
     var id;
     try { id = 'pv_' + window.crypto.randomUUID(); } catch (_) { return; }
     var referrer = '';
@@ -347,6 +356,7 @@
       properties: {
         source: 'nau-mpacc-guide',
         analytics_mode: 'aggregate_v3_devices',
+        capture_build: CAPTURE_BUILD,
         pageview_id: id,
         dwell_tracking_version: DWELL_VERSION,
         device_type: device.type,

@@ -1,0 +1,18 @@
+{
+  "captureBuild": "traffic2",
+  "automatedTests": {
+    "passed": 191,
+    "failed": 0
+  },
+  "explicitHeadlessSelfIdentificationExcluded": [
+    "HeadlessChrome",
+    "PhantomJS"
+  ],
+  "unknownOrMissingUAStillUnknown": true,
+  "rawUserAgentUploaded": false,
+  "permanentVisitorIdentityAdded": false,
+  "existingPrivacyAndQaExclusionGuardsPreserved": true,
+  "productionSyntheticEventsSent": false,
+  "dataAndAttachmentsUnchanged": true,
+  "apkRebuilt": false
+}

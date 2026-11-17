@@ -83,6 +83,7 @@ test('one anonymous pageview without persistent identity, private URL or cookies
   assert.equal(payload.properties.$ip, null);
   assert.equal(payload.properties.$geoip_disable, true);
   assert.equal(payload.properties.analytics_mode, 'aggregate_v3_devices');
+  assert.equal(payload.properties.capture_build, 'traffic2');
   assert.equal(payload.properties.pageview_id, payload.distinct_id);
   assert.equal(payload.properties.dwell_tracking_version, 'visible_v1');
   assert.equal(payload.properties.device_type, '其他');
@@ -132,7 +133,7 @@ test('device fields allow only browser major version and never raw UA, model, fu
   assert.equal(env.requests.length,1);
   assert.deepEqual(Object.keys(env.requests[0].payload.properties).sort(),[
     '$current_url','$geoip_disable','$host','$ip','$pathname','$process_person_profile',
-    'analytics_mode','device_browser','device_browser_major','device_browser_context','device_detection_basis',
+    'analytics_mode','capture_build','device_browser','device_browser_major','device_browser_context','device_detection_basis',
     'device_detection_status','device_info_version','device_os','device_type','referrer_host','source','pageview_id','dwell_tracking_version'
   ].sort());
   assert.doesNotMatch(env.requests[0].init.body,/PRIVATE_|156\.1\.2\.3|userAgent|model|platformVersion|device_id/);
@@ -283,6 +284,54 @@ test('an explicit WebDriver session produces neither pageviews nor dwell events'
   assert.deepEqual(env.writes,[]);
   assert.equal(boot({map:env.map}).requests.length,1);
 });
+test('explicit HeadlessChrome and PhantomJS tokens produce neither pageviews nor dwell without a WebDriver flag', () => {
+  for(const userAgent of [
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 HeadlessChrome/156.0.0.0 Safari/537.36',
+    'Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 PhantomJS/2.1.1 Safari/538.1',
+    'HeadlessChrome/156.0.0.0',
+    'Mozilla/5.0 (headlesschrome/156.0.0.0; compatible)',
+    'Mozilla/5.0 (PhantomJS/2.1.1)'
+  ]) for(const webdriver of [false,undefined]) {
+    const env=boot({navigator:{webdriver,userAgent}});
+    assert.equal(env.requests.length,0,userAgent);
+    assert.equal(env.window.NAUAnalytics.isOptedOut(),true);
+    env.advance(60000);env.visibility('hidden');env.visibility('visible');
+    env.emit('pagehide');env.emit('pageshow',{persisted:true});
+    assert.equal(env.requests.length,0);
+    assert.equal(env.timers.size,0);
+    assert.deepEqual(env.writes,[],'headless exclusion is limited to this load');
+    assert.equal(boot({map:env.map}).requests.length,1);
+  }
+});
+test('headless names embedded in other tokens or URLs do not trigger exclusion', () => {
+  for(const userAgent of [
+    'Mozilla/5.0 NotHeadlessChrome/156.0.0.0',
+    'Mozilla/5.0 HeadlessChromeCompat/156.0.0.0',
+    'Mozilla/5.0 HeadlessChrome/156.0.0.0compat',
+    'Mozilla/5.0 NotPhantomJS/2.1.1',
+    'Mozilla/5.0 PhantomJSCompat/2.1.1',
+    'Mozilla/5.0 PhantomJS/2.1.1beta',
+    'Mozilla/5.0 https://example.test/HeadlessChrome/156.0.0.0',
+    'Mozilla/5.0 https://example.test/PhantomJS/2.1.1'
+  ]) {
+    const env=boot({navigator:{webdriver:false,userAgent}});
+    assert.equal(env.requests.length,1,userAgent);
+    assert.equal(env.window.NAUAnalytics.isOptedOut(),false);
+  }
+});
+test('ordinary or unavailable UA remains unclassified rather than being excluded', () => {
+  for(const userAgent of [undefined,'','Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/156.0.0.0 Safari/537.36']) {
+    const env=boot({navigator:{webdriver:false,userAgent}});
+    env.advance(15000);
+    assert.deepEqual(env.requests.map(request=>request.payload.event),['$pageview','nau_page_dwell']);
+    assert.equal(env.window.NAUAnalytics.isOptedOut(),false);
+    for(const request of env.requests) assert.equal(request.payload.properties.capture_build,'traffic2');
+  }
+  const navigator=Object.defineProperty({},'userAgent',{get(){throw Error('unavailable');}});
+  const env=boot({navigator});
+  env.advance(15000);
+  assert.deepEqual(env.requests.map(request=>request.payload.event),['$pageview','nau_page_dwell']);
+});
 test('false, missing or inaccessible WebDriver markers do not exclude ordinary browser traffic', () => {
   for(const webdriver of [false,undefined,'true',1]) {
     const env=boot({navigator:{webdriver,userAgent:'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/156.0.0.0 Safari/537.36',platform:'Win32'}});
@@ -323,8 +372,11 @@ test('device properties are not read before exclusion, storage, host, or config 
     {navigator:{globalPrivacyControl:true}},
     {blocked:true},
     {url:'https://example.com/nau-mpacc-guide/'},
+    {url:site+'unrelated/'},
+    {url:site.replace('https:','http:')},
     {url:site+'admin/'},
-    {config:{enabled:false}}
+    {config:{enabled:false}},
+    {config:{token:'phx_private_key'}}
   ]) {
     let reads=0;
     const navigator={...opts.navigator};
@@ -351,6 +403,7 @@ test('visible time uses cumulative checkpoints linked only to the current page l
     assert.equal(request.payload.distinct_id, env.requests[0].payload.distinct_id);
     assert.equal(request.payload.properties.pageview_id, env.requests[0].payload.distinct_id);
     assert.equal(request.payload.properties.dwell_tracking_version, 'visible_v1');
+    assert.equal(request.payload.properties.capture_build, 'traffic2');
     assert.equal(request.payload.properties.dwell_reason, 'heartbeat');
     assert.equal(request.init.keepalive, true);
     assert.equal(request.init.credentials, 'omit');
